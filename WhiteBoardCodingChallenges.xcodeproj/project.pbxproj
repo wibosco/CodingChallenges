@@ -39,6 +39,9 @@
 		F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2711CDDE3230062F8B7 /* SummingTests.swift */; };
+		F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */; };
+		F49EE27B1CDE0E300062F8B7 /* Percentages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27A1CDE0E300062F8B7 /* Percentages.swift */; };
+		F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27A1CDE0E300062F8B7 /* Percentages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,8 @@
 		4353DA6C1CDB86FB00A07167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49EE26E1CDDE2E10062F8B7 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
 		F49EE2711CDDE3230062F8B7 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
+		F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentagesTests.swift; sourceTree = "<group>"; };
+		F49EE27A1CDE0E300062F8B7 /* Percentages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +103,14 @@
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
-				F49EE26D1CDDE2D10062F8B7 /* Summing */,
 				432685B21CDCA499005B1E61 /* AlphabeticalOrdering */,
 				432685B81CDCAD01005B1E61 /* DecimalToBinary */,
 				432685C41CDCD348005B1E61 /* GreatestCommonDenominator */,
 				432685BE1CDCCD1A005B1E61 /* Palindrome */,
+				F49EE2791CDE0E300062F8B7 /* Percentages */,
 				432685CA1CDCF656005B1E61 /* Prime */,
 				432685AE1CDCA288005B1E61 /* ReverseString */,
+				F49EE26D1CDDE2D10062F8B7 /* Summing */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				432685CE1CDCF72D005B1E61 /* PrimeTests.swift */,
 				4326858F1CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift */,
 				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
+				F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */,
 			);
 			path = WhiteBoardCodingChallengesTests;
 			sourceTree = "<group>";
@@ -282,6 +289,14 @@
 				F49EE26E1CDDE2E10062F8B7 /* Summing.swift */,
 			);
 			path = Summing;
+			sourceTree = "<group>";
+		};
+		F49EE2791CDE0E300062F8B7 /* Percentages */ = {
+			isa = PBXGroup;
+			children = (
+				F49EE27A1CDE0E300062F8B7 /* Percentages.swift */,
+			);
+			path = Percentages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +406,7 @@
 				432685AA1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
+				F49EE27B1CDE0E300062F8B7 /* Percentages.swift in Sources */,
 				432685B01CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				432685B41CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
 				F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */,
@@ -414,6 +430,7 @@
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				432685B11CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
+				F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */,
 				432685CF1CDCF72D005B1E61 /* PrimeTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				432685C11CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
@@ -421,6 +438,7 @@
 				432685C31CDCCD38005B1E61 /* PalindromeTests.swift in Sources */,
 				432685901CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift in Sources */,
 				432685BB1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
+				F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
