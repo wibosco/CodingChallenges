@@ -36,6 +36,9 @@
 		4353DA721CDB86FB00A07167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353DA621CDB86FB00A07167 /* AppDelegate.swift */; };
 		4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353DA621CDB86FB00A07167 /* AppDelegate.swift */; };
 		4353DA7B1CDB86FB00A07167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4353DA6C1CDB86FB00A07167 /* Info.plist */; };
+		F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
+		F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
+		F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2711CDDE3230062F8B7 /* SummingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,8 @@
 		4353DA581CDB868200A07167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4353DA621CDB86FB00A07167 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4353DA6C1CDB86FB00A07167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49EE26E1CDDE2E10062F8B7 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
+		F49EE2711CDDE3230062F8B7 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,7 @@
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				F49EE26D1CDDE2D10062F8B7 /* Summing */,
 				432685B21CDCA499005B1E61 /* AlphabeticalOrdering */,
 				432685B81CDCAD01005B1E61 /* DecimalToBinary */,
 				432685C41CDCD348005B1E61 /* GreatestCommonDenominator */,
@@ -249,6 +255,7 @@
 				432685C21CDCCD38005B1E61 /* PalindromeTests.swift */,
 				432685CE1CDCF72D005B1E61 /* PrimeTests.swift */,
 				4326858F1CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift */,
+				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
 			);
 			path = WhiteBoardCodingChallengesTests;
 			sourceTree = "<group>";
@@ -267,6 +274,14 @@
 				4353DA6C1CDB86FB00A07167 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F49EE26D1CDDE2D10062F8B7 /* Summing */ = {
+			isa = PBXGroup;
+			children = (
+				F49EE26E1CDDE2E10062F8B7 /* Summing.swift */,
+			);
+			path = Summing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +393,7 @@
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
 				432685B01CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				432685B41CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
+				F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				432685CC1CDCF664005B1E61 /* Prime.swift in Sources */,
 				432685BA1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
@@ -391,11 +407,13 @@
 				432685C91CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift in Sources */,
 				432685CD1CDCF664005B1E61 /* Prime.swift in Sources */,
 				432685AB1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
+				F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */,
 				432685B51CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
 				432685C71CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				432685B11CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
+				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
 				432685CF1CDCF72D005B1E61 /* PrimeTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				432685C11CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
