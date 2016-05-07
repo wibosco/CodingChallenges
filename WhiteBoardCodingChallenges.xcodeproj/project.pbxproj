@@ -48,6 +48,12 @@
 		F49EE2891CDE75B20062F8B7 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */; };
 		F49EE28A1CDE75B20062F8B7 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */; };
 		F49EE28C1CDE75C80062F8B7 /* TimeConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */; };
+		F49EE28F1CDE86690062F8B7 /* AngryProfessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE28E1CDE86690062F8B7 /* AngryProfessor.swift */; };
+		F49EE2901CDE86690062F8B7 /* AngryProfessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE28E1CDE86690062F8B7 /* AngryProfessor.swift */; };
+		F49EE2921CDE86750062F8B7 /* AngryProfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2911CDE86750062F8B7 /* AngryProfessorTests.swift */; };
+		F49EE2951CDE8EB20062F8B7 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2941CDE8EB20062F8B7 /* Beast.swift */; };
+		F49EE2961CDE8EB20062F8B7 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2941CDE8EB20062F8B7 /* Beast.swift */; };
+		F49EE2981CDE8FF40062F8B7 /* BeastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2971CDE8FF40062F8B7 /* BeastTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,10 @@
 		F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaircaseTests.swift; sourceTree = "<group>"; };
 		F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
 		F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConverterTests.swift; sourceTree = "<group>"; };
+		F49EE28E1CDE86690062F8B7 /* AngryProfessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngryProfessor.swift; sourceTree = "<group>"; };
+		F49EE2911CDE86750062F8B7 /* AngryProfessorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngryProfessorTests.swift; sourceTree = "<group>"; };
+		F49EE2941CDE8EB20062F8B7 /* Beast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beast.swift; sourceTree = "<group>"; };
+		F49EE2971CDE8FF40062F8B7 /* BeastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeastTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				432685B21CDCA499005B1E61 /* AlphabeticalOrdering */,
+				F49EE28D1CDE864F0062F8B7 /* AngryProfessor */,
+				F49EE2931CDE8EA30062F8B7 /* Beast */,
 				432685B81CDCAD01005B1E61 /* DecimalToBinary */,
 				432685C41CDCD348005B1E61 /* GreatestCommonDenominator */,
 				432685BE1CDCCD1A005B1E61 /* Palindrome */,
@@ -267,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				432685B61CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift */,
+				F49EE2911CDE86750062F8B7 /* AngryProfessorTests.swift */,
+				F49EE2971CDE8FF40062F8B7 /* BeastTests.swift */,
 				432685BC1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift */,
 				432685C81CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift */,
 				4353DA581CDB868200A07167 /* Info.plist */,
@@ -327,6 +341,22 @@
 				F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */,
 			);
 			path = TimeConverter;
+			sourceTree = "<group>";
+		};
+		F49EE28D1CDE864F0062F8B7 /* AngryProfessor */ = {
+			isa = PBXGroup;
+			children = (
+				F49EE28E1CDE86690062F8B7 /* AngryProfessor.swift */,
+			);
+			path = AngryProfessor;
+			sourceTree = "<group>";
+		};
+		F49EE2931CDE8EA30062F8B7 /* Beast */ = {
+			isa = PBXGroup;
+			children = (
+				F49EE2941CDE8EB20062F8B7 /* Beast.swift */,
+			);
+			path = Beast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,7 +471,9 @@
 				432685B01CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				432685B41CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
 				F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */,
+				F49EE28F1CDE86690062F8B7 /* AngryProfessor.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
+				F49EE2951CDE8EB20062F8B7 /* Beast.swift in Sources */,
 				F49EE27F1CDE60CB0062F8B7 /* Staircase.swift in Sources */,
 				432685CC1CDCF664005B1E61 /* Prime.swift in Sources */,
 				432685BA1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
@@ -454,6 +486,7 @@
 			files = (
 				432685C91CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift in Sources */,
 				432685CD1CDCF664005B1E61 /* Prime.swift in Sources */,
+				F49EE2981CDE8FF40062F8B7 /* BeastTests.swift in Sources */,
 				432685AB1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
 				F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */,
 				432685B51CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
@@ -463,6 +496,8 @@
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				432685B11CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
+				F49EE2961CDE8EB20062F8B7 /* Beast.swift in Sources */,
+				F49EE2901CDE86690062F8B7 /* AngryProfessor.swift in Sources */,
 				F49EE2801CDE60CB0062F8B7 /* Staircase.swift in Sources */,
 				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
 				F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */,
@@ -475,6 +510,7 @@
 				F49EE2821CDE612E0062F8B7 /* StaircaseTests.swift in Sources */,
 				432685BB1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
 				F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */,
+				F49EE2921CDE86750062F8B7 /* AngryProfessorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
