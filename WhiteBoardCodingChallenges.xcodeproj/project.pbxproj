@@ -42,6 +42,9 @@
 		F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */; };
 		F49EE27B1CDE0E300062F8B7 /* Percentages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27A1CDE0E300062F8B7 /* Percentages.swift */; };
 		F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27A1CDE0E300062F8B7 /* Percentages.swift */; };
+		F49EE27F1CDE60CB0062F8B7 /* Staircase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */; };
+		F49EE2801CDE60CB0062F8B7 /* Staircase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */; };
+		F49EE2821CDE612E0062F8B7 /* StaircaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,8 @@
 		F49EE2711CDDE3230062F8B7 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
 		F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentagesTests.swift; sourceTree = "<group>"; };
 		F49EE27A1CDE0E300062F8B7 /* Percentages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentages.swift; sourceTree = "<group>"; };
+		F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staircase.swift; sourceTree = "<group>"; };
+		F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaircaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,7 @@
 				F49EE2791CDE0E300062F8B7 /* Percentages */,
 				432685CA1CDCF656005B1E61 /* Prime */,
 				432685AE1CDCA288005B1E61 /* ReverseString */,
+				F49EE27D1CDE60B90062F8B7 /* Staircase */,
 				F49EE26D1CDDE2D10062F8B7 /* Summing */,
 			);
 			path = Challenges;
@@ -263,6 +269,7 @@
 				4326858F1CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift */,
 				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
 				F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */,
+				F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */,
 			);
 			path = WhiteBoardCodingChallengesTests;
 			sourceTree = "<group>";
@@ -297,6 +304,14 @@
 				F49EE27A1CDE0E300062F8B7 /* Percentages.swift */,
 			);
 			path = Percentages;
+			sourceTree = "<group>";
+		};
+		F49EE27D1CDE60B90062F8B7 /* Staircase */ = {
+			isa = PBXGroup;
+			children = (
+				F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */,
+			);
+			path = Staircase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +426,7 @@
 				432685B41CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
 				F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
+				F49EE27F1CDE60CB0062F8B7 /* Staircase.swift in Sources */,
 				432685CC1CDCF664005B1E61 /* Prime.swift in Sources */,
 				432685BA1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
 			);
@@ -429,6 +445,7 @@
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				432685B11CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
+				F49EE2801CDE60CB0062F8B7 /* Staircase.swift in Sources */,
 				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
 				F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */,
 				432685CF1CDCF72D005B1E61 /* PrimeTests.swift in Sources */,
@@ -437,6 +454,7 @@
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				432685C31CDCCD38005B1E61 /* PalindromeTests.swift in Sources */,
 				432685901CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift in Sources */,
+				F49EE2821CDE612E0062F8B7 /* StaircaseTests.swift in Sources */,
 				432685BB1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
 				F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */,
 			);
