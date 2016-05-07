@@ -45,6 +45,9 @@
 		F49EE27F1CDE60CB0062F8B7 /* Staircase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */; };
 		F49EE2801CDE60CB0062F8B7 /* Staircase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */; };
 		F49EE2821CDE612E0062F8B7 /* StaircaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */; };
+		F49EE2891CDE75B20062F8B7 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */; };
+		F49EE28A1CDE75B20062F8B7 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */; };
+		F49EE28C1CDE75C80062F8B7 /* TimeConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,8 @@
 		F49EE27A1CDE0E300062F8B7 /* Percentages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentages.swift; sourceTree = "<group>"; };
 		F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staircase.swift; sourceTree = "<group>"; };
 		F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaircaseTests.swift; sourceTree = "<group>"; };
+		F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
+		F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConverterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,7 @@
 				432685AE1CDCA288005B1E61 /* ReverseString */,
 				F49EE27D1CDE60B90062F8B7 /* Staircase */,
 				F49EE26D1CDDE2D10062F8B7 /* Summing */,
+				F49EE2871CDE75B20062F8B7 /* TimeConverter */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -265,11 +271,12 @@
 				432685C81CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift */,
 				4353DA581CDB868200A07167 /* Info.plist */,
 				432685C21CDCCD38005B1E61 /* PalindromeTests.swift */,
+				F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */,
 				432685CE1CDCF72D005B1E61 /* PrimeTests.swift */,
 				4326858F1CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift */,
-				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
-				F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */,
 				F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */,
+				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
+				F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */,
 			);
 			path = WhiteBoardCodingChallengesTests;
 			sourceTree = "<group>";
@@ -312,6 +319,14 @@
 				F49EE27E1CDE60CB0062F8B7 /* Staircase.swift */,
 			);
 			path = Staircase;
+			sourceTree = "<group>";
+		};
+		F49EE2871CDE75B20062F8B7 /* TimeConverter */ = {
+			isa = PBXGroup;
+			children = (
+				F49EE2881CDE75B20062F8B7 /* TimeConverter.swift */,
+			);
+			path = TimeConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +436,7 @@
 				432685AA1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
+				F49EE2891CDE75B20062F8B7 /* TimeConverter.swift in Sources */,
 				F49EE27B1CDE0E300062F8B7 /* Percentages.swift in Sources */,
 				432685B01CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				432685B41CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
@@ -441,6 +457,8 @@
 				432685AB1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
 				F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */,
 				432685B51CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
+				F49EE28C1CDE75C80062F8B7 /* TimeConverterTests.swift in Sources */,
+				F49EE28A1CDE75B20062F8B7 /* TimeConverter.swift in Sources */,
 				432685C71CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,

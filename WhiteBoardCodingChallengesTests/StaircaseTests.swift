@@ -13,6 +13,7 @@ class StaircaseTests: XCTestCase {
     // MARK: TestLifecycle
     
     override func setUp() {
+        
         super.setUp()
         
     }
