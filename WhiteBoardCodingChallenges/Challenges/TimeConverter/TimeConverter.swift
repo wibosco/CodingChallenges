@@ -9,8 +9,8 @@
 import UIKit
 
 class TimeConverter: NSObject {
-
-    class func convertFrom12HourTo24Hour(time: String) -> String {
+    
+    class func convertFrom12HourTo24HourUsingStringManipulation(time: String) -> String {
         
         let timeComponents = time.characters.split(":").map(String.init)
         
@@ -27,7 +27,7 @@ class TimeConverter: NSObject {
                 hour = timeComponents[0]
             } else {
                 
-               hour = String(Int(timeComponents[0])! + 12)
+                hour = String(Int(timeComponents[0])! + 12)
             }
         }
         else {
@@ -45,5 +45,18 @@ class TimeConverter: NSObject {
         let seconds = String(secondsWithSuffix[secondsWithSuffix.startIndex.advancedBy(0)...secondsWithSuffix.startIndex.advancedBy(1)])
         
         return "\(hour):\(timeComponents[1]):\(seconds)"
+    }
+    
+    class func convertFrom12HourTo24HourUsingDateManipulation(time: String) -> String {
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "h:mm:ssa"
+        
+        let date12 = dateFormatter.dateFromString(time)
+        
+        dateFormatter.dateFormat = "HH:mm:ss"
+        let date24 = dateFormatter.stringFromDate(date12!)
+        
+        return date24
     }
 }
