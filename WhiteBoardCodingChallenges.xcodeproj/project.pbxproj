@@ -69,6 +69,9 @@
 		F49EE2B31CDFDB780062F8B7 /* CutTheSticks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2B21CDFDB780062F8B7 /* CutTheSticks.swift */; };
 		F49EE2B41CDFDB780062F8B7 /* CutTheSticks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2B21CDFDB780062F8B7 /* CutTheSticks.swift */; };
 		F49EE2B61CDFDD750062F8B7 /* CutTheSticksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2B51CDFDD750062F8B7 /* CutTheSticksTests.swift */; };
+		F49EE2B91CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2B81CDFE7620062F8B7 /* ChocolateFeast.swift */; };
+		F49EE2BA1CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2B81CDFE7620062F8B7 /* ChocolateFeast.swift */; };
+		F49EE2BC1CDFE7D50062F8B7 /* ChocolateFeastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2BB1CDFE7D50062F8B7 /* ChocolateFeastTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,8 @@
 		F49EE2AF1CDFC5A30062F8B7 /* ServiceLaneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLaneTests.swift; sourceTree = "<group>"; };
 		F49EE2B21CDFDB780062F8B7 /* CutTheSticks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutTheSticks.swift; sourceTree = "<group>"; };
 		F49EE2B51CDFDD750062F8B7 /* CutTheSticksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutTheSticksTests.swift; sourceTree = "<group>"; };
+		F49EE2B81CDFE7620062F8B7 /* ChocolateFeast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateFeast.swift; sourceTree = "<group>"; };
+		F49EE2BB1CDFE7D50062F8B7 /* ChocolateFeastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateFeastTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,7 @@
 				432685B21CDCA499005B1E61 /* AlphabeticalOrdering */,
 				F49EE28D1CDE864F0062F8B7 /* AngryProfessor */,
 				F49EE2931CDE8EA30062F8B7 /* Beast */,
+				F49EE2B71CDFE7530062F8B7 /* ChocolateFeast */,
 				F49EE2B11CDFDB6A0062F8B7 /* CutTheSticks */,
 				432685B81CDCAD01005B1E61 /* DecimalToBinary */,
 				F49EE29F1CDF39D40062F8B7 /* FindDigits */,
@@ -311,6 +317,7 @@
 				432685B61CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift */,
 				F49EE2911CDE86750062F8B7 /* AngryProfessorTests.swift */,
 				F49EE2971CDE8FF40062F8B7 /* BeastTests.swift */,
+				F49EE2BB1CDFE7D50062F8B7 /* ChocolateFeastTests.swift */,
 				F49EE2B51CDFDD750062F8B7 /* CutTheSticksTests.swift */,
 				432685BC1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift */,
 				F49EE2A31CDF39ED0062F8B7 /* FindDigitsTests.swift */,
@@ -434,6 +441,14 @@
 			path = CutTheSticks;
 			sourceTree = "<group>";
 		};
+		F49EE2B71CDFE7530062F8B7 /* ChocolateFeast */ = {
+			isa = PBXGroup;
+			children = (
+				F49EE2B81CDFE7620062F8B7 /* ChocolateFeast.swift */,
+			);
+			path = ChocolateFeast;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -553,6 +568,7 @@
 				F49EE2951CDE8EB20062F8B7 /* Beast.swift in Sources */,
 				F49EE2A71CDFA3190062F8B7 /* SherlockSquares.swift in Sources */,
 				F49EE29B1CDF37020062F8B7 /* UtopianTree.swift in Sources */,
+				F49EE2B91CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */,
 				F49EE27F1CDE60CB0062F8B7 /* Staircase.swift in Sources */,
 				432685CC1CDCF664005B1E61 /* Prime.swift in Sources */,
 				432685BA1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
@@ -573,6 +589,7 @@
 				432685B51CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
 				F49EE28C1CDE75C80062F8B7 /* TimeConverterTests.swift in Sources */,
 				F49EE28A1CDE75B20062F8B7 /* TimeConverter.swift in Sources */,
+				F49EE2BC1CDFE7D50062F8B7 /* ChocolateFeastTests.swift in Sources */,
 				432685C71CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				F49EE2AE1CDFC3FA0062F8B7 /* ServiceLane.swift in Sources */,
@@ -598,6 +615,7 @@
 				F49EE2821CDE612E0062F8B7 /* StaircaseTests.swift in Sources */,
 				F49EE2B41CDFDB780062F8B7 /* CutTheSticks.swift in Sources */,
 				F49EE29C1CDF37020062F8B7 /* UtopianTree.swift in Sources */,
+				F49EE2BA1CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */,
 				432685BB1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
 				F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */,
 				F49EE2921CDE86750062F8B7 /* AngryProfessorTests.swift in Sources */,

@@ -17,13 +17,9 @@ class CutTheSticks: NSObject {
         
         var sticksToBeCut = sticks
         
-        var greaterThenZeroValues = true
-        
-        while greaterThenZeroValues {
+        while (sticksToBeCut.filter{$0 > 0}.count) > 0 {
             
             sticksRemainingAtEachCut.append(sticksToBeCut.filter{$0 > 0}.count)
-            
-            greaterThenZeroValues = false
             
             let minStickLength = sticksToBeCut.filter{$0 > 0}.minElement()!
             
@@ -34,11 +30,6 @@ class CutTheSticks: NSObject {
                 let newStickLength = stick - minStickLength
                 
                 sticksToBeCut[index] = newStickLength
-                
-                if newStickLength > 0 {
-                    
-                    greaterThenZeroValues = true
-                }
             }
         }
         
