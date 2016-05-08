@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/sherlock-and-the-beast
 class Beast: NSObject {
 
     /*
@@ -45,8 +46,7 @@ class Beast: NSObject {
         
         for decreasedRange in (0..<range).reverse() {
             
-            if decreasedRange % 3 == 0 &&
-                (range - decreasedRange) % 5 == 0 {
+            if decreasedRange % 3 == 0 && (range - decreasedRange) % 5 == 0 {
 
                 let numberOf5s = decreasedRange
                 let numberOf3s = (range - decreasedRange)

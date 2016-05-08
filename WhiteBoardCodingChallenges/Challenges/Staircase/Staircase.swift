@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/staircase
 class Staircase: NSObject {
 
     class func staircase(height: Int) -> String {

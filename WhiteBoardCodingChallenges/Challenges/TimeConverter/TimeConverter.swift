@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/time-conversion
 class TimeConverter: NSObject {
     
     class func convertFrom12HourTo24HourUsingStringManipulation(time: String) -> String {

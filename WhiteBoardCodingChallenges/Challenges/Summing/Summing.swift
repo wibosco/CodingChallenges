@@ -11,6 +11,7 @@ import UIKit
 
 class Summing: NSObject {
     
+    //https://www.hackerrank.com/challenges/simple-array-sum
     class func sum(array: [Int]) -> Int {
         
         var sum = 0
@@ -23,6 +24,7 @@ class Summing: NSObject {
         return sum
     }
     
+    //https://www.hackerrank.com/challenges/a-very-big-sum
     class func sumLargeValue(array: [Double]) -> Double {
         
         var sum: Double = 0
@@ -35,6 +37,7 @@ class Summing: NSObject {
         return sum
     }
     
+    //https://www.hackerrank.com/challenges/diagonal-difference
     class func sumMatrixDiagonals(matrix: [[Int]]) -> Int {
         
         var sumOfRightDiagonal = 0

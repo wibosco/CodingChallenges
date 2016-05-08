@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/plus-minus
 class Percentages: NSObject {
 
     class func percentageOfUnqiueSets(array: [Int]) -> (positivePercentage: Double, negativePercentage: Double, zeroPercentage: Double) {
