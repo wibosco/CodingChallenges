@@ -39,6 +39,9 @@
 		43635B341CE09FD10004BC05 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43635B331CE09FD10004BC05 /* LisasWorkbook.swift */; };
 		43635B351CE09FD10004BC05 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43635B331CE09FD10004BC05 /* LisasWorkbook.swift */; };
 		43635B371CE09FDE0004BC05 /* LisasWorkbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */; };
+		43D630921CE0CC760023328A /* GridSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D630911CE0CC760023328A /* GridSearch.swift */; };
+		43D630931CE0CC7B0023328A /* GridSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D630911CE0CC760023328A /* GridSearch.swift */; };
+		43D630951CE0CC880023328A /* GridSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D630941CE0CC880023328A /* GridSearchTests.swift */; };
 		F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2711CDDE3230062F8B7 /* SummingTests.swift */; };
@@ -111,6 +114,8 @@
 		4353DA6C1CDB86FB00A07167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43635B331CE09FD10004BC05 /* LisasWorkbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbook.swift; sourceTree = "<group>"; };
 		43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbookTests.swift; sourceTree = "<group>"; };
+		43D630911CE0CC760023328A /* GridSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearch.swift; sourceTree = "<group>"; };
+		43D630941CE0CC880023328A /* GridSearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearchTests.swift; sourceTree = "<group>"; };
 		F49EE26E1CDDE2E10062F8B7 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
 		F49EE2711CDDE3230062F8B7 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
 		F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentagesTests.swift; sourceTree = "<group>"; };
@@ -166,6 +171,7 @@
 				432685B81CDCAD01005B1E61 /* DecimalToBinary */,
 				F49EE29F1CDF39D40062F8B7 /* FindDigits */,
 				432685C41CDCD348005B1E61 /* GreatestCommonDenominator */,
+				43D630901CE0CC680023328A /* GridSearch */,
 				43635B321CE09FBF0004BC05 /* LisasWorkbook */,
 				432685BE1CDCCD1A005B1E61 /* Palindrome */,
 				F49EE2791CDE0E300062F8B7 /* Percentages */,
@@ -328,6 +334,7 @@
 				432685BC1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift */,
 				F49EE2A31CDF39ED0062F8B7 /* FindDigitsTests.swift */,
 				432685C81CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift */,
+				43D630941CE0CC880023328A /* GridSearchTests.swift */,
 				4353DA581CDB868200A07167 /* Info.plist */,
 				43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */,
 				432685C21CDCCD38005B1E61 /* PalindromeTests.swift */,
@@ -366,6 +373,14 @@
 				43635B331CE09FD10004BC05 /* LisasWorkbook.swift */,
 			);
 			path = LisasWorkbook;
+			sourceTree = "<group>";
+		};
+		43D630901CE0CC680023328A /* GridSearch */ = {
+			isa = PBXGroup;
+			children = (
+				43D630911CE0CC760023328A /* GridSearch.swift */,
+			);
+			path = GridSearch;
 			sourceTree = "<group>";
 		};
 		F49EE26D1CDDE2D10062F8B7 /* Summing */ = {
@@ -571,6 +586,7 @@
 				F49EE2A11CDF39E00062F8B7 /* FindDigits.swift in Sources */,
 				43635B341CE09FD10004BC05 /* LisasWorkbook.swift in Sources */,
 				432685AA1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
+				43D630921CE0CC760023328A /* GridSearch.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
 				F49EE2891CDE75B20062F8B7 /* TimeConverter.swift in Sources */,
@@ -610,9 +626,11 @@
 				432685C71CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				F49EE2AE1CDFC3FA0062F8B7 /* ServiceLane.swift in Sources */,
+				43D630951CE0CC880023328A /* GridSearchTests.swift in Sources */,
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				F49EE2B61CDFDD750062F8B7 /* CutTheSticksTests.swift in Sources */,
 				F49EE2B01CDFC5A30062F8B7 /* ServiceLaneTests.swift in Sources */,
+				43D630931CE0CC7B0023328A /* GridSearch.swift in Sources */,
 				F49EE2A41CDF39ED0062F8B7 /* FindDigitsTests.swift in Sources */,
 				432685B11CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				F49EE2961CDE8EB20062F8B7 /* Beast.swift in Sources */,
