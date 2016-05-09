@@ -36,6 +36,9 @@
 		4353DA721CDB86FB00A07167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353DA621CDB86FB00A07167 /* AppDelegate.swift */; };
 		4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353DA621CDB86FB00A07167 /* AppDelegate.swift */; };
 		4353DA7B1CDB86FB00A07167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4353DA6C1CDB86FB00A07167 /* Info.plist */; };
+		43635B341CE09FD10004BC05 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43635B331CE09FD10004BC05 /* LisasWorkbook.swift */; };
+		43635B351CE09FD10004BC05 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43635B331CE09FD10004BC05 /* LisasWorkbook.swift */; };
+		43635B371CE09FDE0004BC05 /* LisasWorkbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */; };
 		F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2711CDDE3230062F8B7 /* SummingTests.swift */; };
@@ -106,6 +109,8 @@
 		4353DA581CDB868200A07167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4353DA621CDB86FB00A07167 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4353DA6C1CDB86FB00A07167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43635B331CE09FD10004BC05 /* LisasWorkbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbook.swift; sourceTree = "<group>"; };
+		43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbookTests.swift; sourceTree = "<group>"; };
 		F49EE26E1CDDE2E10062F8B7 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
 		F49EE2711CDDE3230062F8B7 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
 		F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentagesTests.swift; sourceTree = "<group>"; };
@@ -161,6 +166,7 @@
 				432685B81CDCAD01005B1E61 /* DecimalToBinary */,
 				F49EE29F1CDF39D40062F8B7 /* FindDigits */,
 				432685C41CDCD348005B1E61 /* GreatestCommonDenominator */,
+				43635B321CE09FBF0004BC05 /* LisasWorkbook */,
 				432685BE1CDCCD1A005B1E61 /* Palindrome */,
 				F49EE2791CDE0E300062F8B7 /* Percentages */,
 				432685CA1CDCF656005B1E61 /* Prime */,
@@ -323,6 +329,7 @@
 				F49EE2A31CDF39ED0062F8B7 /* FindDigitsTests.swift */,
 				432685C81CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift */,
 				4353DA581CDB868200A07167 /* Info.plist */,
+				43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */,
 				432685C21CDCCD38005B1E61 /* PalindromeTests.swift */,
 				F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */,
 				432685CE1CDCF72D005B1E61 /* PrimeTests.swift */,
@@ -351,6 +358,14 @@
 				4353DA6C1CDB86FB00A07167 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		43635B321CE09FBF0004BC05 /* LisasWorkbook */ = {
+			isa = PBXGroup;
+			children = (
+				43635B331CE09FD10004BC05 /* LisasWorkbook.swift */,
+			);
+			path = LisasWorkbook;
 			sourceTree = "<group>";
 		};
 		F49EE26D1CDDE2D10062F8B7 /* Summing */ = {
@@ -554,6 +569,7 @@
 			files = (
 				4353DA721CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				F49EE2A11CDF39E00062F8B7 /* FindDigits.swift in Sources */,
+				43635B341CE09FD10004BC05 /* LisasWorkbook.swift in Sources */,
 				432685AA1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
@@ -580,6 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43635B371CE09FDE0004BC05 /* LisasWorkbookTests.swift in Sources */,
 				432685C91CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift in Sources */,
 				432685CD1CDCF664005B1E61 /* Prime.swift in Sources */,
 				F49EE2981CDE8FF40062F8B7 /* BeastTests.swift in Sources */,
@@ -604,6 +621,7 @@
 				F49EE2801CDE60CB0062F8B7 /* Staircase.swift in Sources */,
 				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
 				F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */,
+				43635B351CE09FD10004BC05 /* LisasWorkbook.swift in Sources */,
 				432685CF1CDCF72D005B1E61 /* PrimeTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				432685C11CDCCD2A005B1E61 /* Palindrome.swift in Sources */,

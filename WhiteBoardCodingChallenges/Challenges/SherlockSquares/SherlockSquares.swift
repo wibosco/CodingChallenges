@@ -27,8 +27,6 @@ class SherlockSquares: NSObject {
 //    
 //        return count
         
-        //return ceil(sqrt(Double(upperBoundary)) - sqrt(Double(lowerBoundary)))
-        
         //https://en.wikipedia.org/wiki/Intermediate_value_theorem
         return Int(floor(sqrt(Double(upperBoundary))) - ceil(sqrt(Double(lowerBoundary))) + 1)
     }
