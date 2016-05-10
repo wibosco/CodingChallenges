@@ -45,6 +45,9 @@
 		43FF2D301CE1F35C00D6FCDF /* CavityMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D2F1CE1F35C00D6FCDF /* CavityMapTests.swift */; };
 		43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */; };
 		43FF2D331CE1F36F00D6FCDF /* CavityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */; };
+		43FF2D351CE214EE00D6FCDF /* CaesarCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D341CE214EE00D6FCDF /* CaesarCipherTests.swift */; };
+		43FF2D381CE2151300D6FCDF /* CaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D371CE2151300D6FCDF /* CaesarCipher.swift */; };
+		43FF2D391CE2151300D6FCDF /* CaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D371CE2151300D6FCDF /* CaesarCipher.swift */; };
 		F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2711CDDE3230062F8B7 /* SummingTests.swift */; };
@@ -121,6 +124,8 @@
 		43D630941CE0CC880023328A /* GridSearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearchTests.swift; sourceTree = "<group>"; };
 		43FF2D2F1CE1F35C00D6FCDF /* CavityMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMapTests.swift; sourceTree = "<group>"; };
 		43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMap.swift; sourceTree = "<group>"; };
+		43FF2D341CE214EE00D6FCDF /* CaesarCipherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarCipherTests.swift; sourceTree = "<group>"; };
+		43FF2D371CE2151300D6FCDF /* CaesarCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarCipher.swift; sourceTree = "<group>"; };
 		F49EE26E1CDDE2E10062F8B7 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
 		F49EE2711CDDE3230062F8B7 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
 		F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentagesTests.swift; sourceTree = "<group>"; };
@@ -171,6 +176,7 @@
 				432685B21CDCA499005B1E61 /* AlphabeticalOrdering */,
 				F49EE28D1CDE864F0062F8B7 /* AngryProfessor */,
 				F49EE2931CDE8EA30062F8B7 /* Beast */,
+				43FF2D361CE2150200D6FCDF /* CaesarCipher */,
 				43FF2D2C1CE1F33500D6FCDF /* CavityMap */,
 				F49EE2B71CDFE7530062F8B7 /* ChocolateFeast */,
 				F49EE2B11CDFDB6A0062F8B7 /* CutTheSticks */,
@@ -335,6 +341,7 @@
 				432685B61CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift */,
 				F49EE2911CDE86750062F8B7 /* AngryProfessorTests.swift */,
 				F49EE2971CDE8FF40062F8B7 /* BeastTests.swift */,
+				43FF2D341CE214EE00D6FCDF /* CaesarCipherTests.swift */,
 				43FF2D2F1CE1F35C00D6FCDF /* CavityMapTests.swift */,
 				F49EE2BB1CDFE7D50062F8B7 /* ChocolateFeastTests.swift */,
 				F49EE2B51CDFDD750062F8B7 /* CutTheSticksTests.swift */,
@@ -396,6 +403,14 @@
 				43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */,
 			);
 			path = CavityMap;
+			sourceTree = "<group>";
+		};
+		43FF2D361CE2150200D6FCDF /* CaesarCipher */ = {
+			isa = PBXGroup;
+			children = (
+				43FF2D371CE2151300D6FCDF /* CaesarCipher.swift */,
+			);
+			path = CaesarCipher;
 			sourceTree = "<group>";
 		};
 		F49EE26D1CDDE2D10062F8B7 /* Summing */ = {
@@ -602,6 +617,7 @@
 				F49EE2A11CDF39E00062F8B7 /* FindDigits.swift in Sources */,
 				43635B341CE09FD10004BC05 /* LisasWorkbook.swift in Sources */,
 				432685AA1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
+				43FF2D381CE2151300D6FCDF /* CaesarCipher.swift in Sources */,
 				43D630921CE0CC760023328A /* GridSearch.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
@@ -628,6 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FF2D391CE2151300D6FCDF /* CaesarCipher.swift in Sources */,
 				43635B371CE09FDE0004BC05 /* LisasWorkbookTests.swift in Sources */,
 				432685C91CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift in Sources */,
 				432685CD1CDCF664005B1E61 /* Prime.swift in Sources */,
@@ -647,6 +664,7 @@
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				43FF2D301CE1F35C00D6FCDF /* CavityMapTests.swift in Sources */,
 				F49EE2B61CDFDD750062F8B7 /* CutTheSticksTests.swift in Sources */,
+				43FF2D351CE214EE00D6FCDF /* CaesarCipherTests.swift in Sources */,
 				F49EE2B01CDFC5A30062F8B7 /* ServiceLaneTests.swift in Sources */,
 				43D630931CE0CC7B0023328A /* GridSearch.swift in Sources */,
 				F49EE2A41CDF39ED0062F8B7 /* FindDigitsTests.swift in Sources */,
