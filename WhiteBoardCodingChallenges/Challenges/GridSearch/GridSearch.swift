@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/the-grid-search
 class GridSearch: NSObject {
 
     class func gridContainsPattern(grid: [String], pattern: [String]) -> Bool {

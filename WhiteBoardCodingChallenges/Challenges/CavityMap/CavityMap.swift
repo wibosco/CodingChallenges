@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/cavity-map
 class CavityMap: NSObject {
     
     class func generateCavityMap(map: [String]) -> [String] {
