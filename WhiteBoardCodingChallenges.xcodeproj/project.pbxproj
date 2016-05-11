@@ -33,6 +33,9 @@
 		432685CC1CDCF664005B1E61 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432685CB1CDCF664005B1E61 /* Prime.swift */; };
 		432685CD1CDCF664005B1E61 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432685CB1CDCF664005B1E61 /* Prime.swift */; };
 		432685CF1CDCF72D005B1E61 /* PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432685CE1CDCF72D005B1E61 /* PrimeTests.swift */; };
+		433ACF871CE333AC00B3B624 /* ACMICPCTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACF861CE333AC00B3B624 /* ACMICPCTeam.swift */; };
+		433ACF881CE333AC00B3B624 /* ACMICPCTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACF861CE333AC00B3B624 /* ACMICPCTeam.swift */; };
+		433ACF8A1CE333B900B3B624 /* ACMICPCTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACF891CE333B900B3B624 /* ACMICPCTeamTests.swift */; };
 		4353DA721CDB86FB00A07167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353DA621CDB86FB00A07167 /* AppDelegate.swift */; };
 		4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353DA621CDB86FB00A07167 /* AppDelegate.swift */; };
 		4353DA7B1CDB86FB00A07167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4353DA6C1CDB86FB00A07167 /* Info.plist */; };
@@ -119,6 +122,8 @@
 		432685C81CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreatestCommonDenominatorTests.swift; sourceTree = "<group>"; };
 		432685CB1CDCF664005B1E61 /* Prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
 		432685CE1CDCF72D005B1E61 /* PrimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeTests.swift; sourceTree = "<group>"; };
+		433ACF861CE333AC00B3B624 /* ACMICPCTeam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACMICPCTeam.swift; sourceTree = "<group>"; };
+		433ACF891CE333B900B3B624 /* ACMICPCTeamTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACMICPCTeamTests.swift; sourceTree = "<group>"; };
 		4353DA3C1CDB868200A07167 /* WhiteBoardCodingChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteBoardCodingChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4353DA521CDB868200A07167 /* WhiteBoardCodingChallengesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteBoardCodingChallengesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4353DA581CDB868200A07167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +188,7 @@
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				433ACF851CE3339D00B3B624 /* ACMICPCTeam */,
 				432685B21CDCA499005B1E61 /* AlphabeticalOrdering */,
 				F49EE28D1CDE864F0062F8B7 /* AngryProfessor */,
 				F49EE2931CDE8EA30062F8B7 /* Beast */,
@@ -317,6 +323,14 @@
 			path = Prime;
 			sourceTree = "<group>";
 		};
+		433ACF851CE3339D00B3B624 /* ACMICPCTeam */ = {
+			isa = PBXGroup;
+			children = (
+				433ACF861CE333AC00B3B624 /* ACMICPCTeam.swift */,
+			);
+			path = ACMICPCTeam;
+			sourceTree = "<group>";
+		};
 		4353DA331CDB868200A07167 = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +364,7 @@
 		4353DA551CDB868200A07167 /* WhiteBoardCodingChallengesTests */ = {
 			isa = PBXGroup;
 			children = (
+				433ACF891CE333B900B3B624 /* ACMICPCTeamTests.swift */,
 				432685B61CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift */,
 				F49EE2911CDE86750062F8B7 /* AngryProfessorTests.swift */,
 				F49EE2971CDE8FF40062F8B7 /* BeastTests.swift */,
@@ -661,6 +676,7 @@
 				43FF2D3C1CE2387900D6FCDF /* LibraryFine.swift in Sources */,
 				F49EE2B31CDFDB780062F8B7 /* CutTheSticks.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
+				433ACF871CE333AC00B3B624 /* ACMICPCTeam.swift in Sources */,
 				F49EE2951CDE8EB20062F8B7 /* Beast.swift in Sources */,
 				F49EE2A71CDFA3190062F8B7 /* SherlockSquares.swift in Sources */,
 				F49EE29B1CDF37020062F8B7 /* UtopianTree.swift in Sources */,
@@ -699,6 +715,7 @@
 				43FF2D351CE214EE00D6FCDF /* CaesarCipherTests.swift in Sources */,
 				F49EE2B01CDFC5A30062F8B7 /* ServiceLaneTests.swift in Sources */,
 				43D630931CE0CC7B0023328A /* GridSearch.swift in Sources */,
+				433ACF881CE333AC00B3B624 /* ACMICPCTeam.swift in Sources */,
 				F49EE2A41CDF39ED0062F8B7 /* FindDigitsTests.swift in Sources */,
 				43FF2D451CE2467100D6FCDF /* ManasaAndStonesTests.swift in Sources */,
 				432685B11CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
@@ -709,6 +726,7 @@
 				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
 				F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */,
 				43635B351CE09FD10004BC05 /* LisasWorkbook.swift in Sources */,
+				433ACF8A1CE333B900B3B624 /* ACMICPCTeamTests.swift in Sources */,
 				432685CF1CDCF72D005B1E61 /* PrimeTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				432685C11CDCCD2A005B1E61 /* Palindrome.swift in Sources */,

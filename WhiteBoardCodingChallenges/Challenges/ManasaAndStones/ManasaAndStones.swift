@@ -12,7 +12,7 @@ class ManasaAndStones: NSObject {
 
     class func possibleValuesForFinalStone(numberOfStones: Int, gapValueA: Int, gapValueB: Int) -> Set<Int> {
 
-        var multiplesOfA = (numberOfStones-1)
+        var multiplesOfA = (numberOfStones - 1)
         var multiplesOfB = 0
         
         var possibleValues = Set<Int>()
