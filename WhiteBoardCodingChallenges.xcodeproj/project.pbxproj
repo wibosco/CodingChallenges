@@ -48,6 +48,9 @@
 		43D630921CE0CC760023328A /* GridSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D630911CE0CC760023328A /* GridSearch.swift */; };
 		43D630931CE0CC7B0023328A /* GridSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D630911CE0CC760023328A /* GridSearch.swift */; };
 		43D630951CE0CC880023328A /* GridSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D630941CE0CC880023328A /* GridSearchTests.swift */; };
+		43FB3F081CE4866A00AFCDA7 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */; };
+		43FB3F091CE4866A00AFCDA7 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */; };
+		43FB3F0B1CE4867700AFCDA7 /* TimeInWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F0A1CE4867700AFCDA7 /* TimeInWordsTests.swift */; };
 		43FF2D301CE1F35C00D6FCDF /* CavityMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D2F1CE1F35C00D6FCDF /* CavityMapTests.swift */; };
 		43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */; };
 		43FF2D331CE1F36F00D6FCDF /* CavityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */; };
@@ -138,6 +141,8 @@
 		43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbookTests.swift; sourceTree = "<group>"; };
 		43D630911CE0CC760023328A /* GridSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearch.swift; sourceTree = "<group>"; };
 		43D630941CE0CC880023328A /* GridSearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearchTests.swift; sourceTree = "<group>"; };
+		43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWords.swift; sourceTree = "<group>"; };
+		43FB3F0A1CE4867700AFCDA7 /* TimeInWordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWordsTests.swift; sourceTree = "<group>"; };
 		43FF2D2F1CE1F35C00D6FCDF /* CavityMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMapTests.swift; sourceTree = "<group>"; };
 		43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMap.swift; sourceTree = "<group>"; };
 		43FF2D341CE214EE00D6FCDF /* CaesarCipherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarCipherTests.swift; sourceTree = "<group>"; };
@@ -218,6 +223,7 @@
 				F49EE27D1CDE60B90062F8B7 /* Staircase */,
 				F49EE26D1CDDE2D10062F8B7 /* Summing */,
 				F49EE2871CDE75B20062F8B7 /* TimeConverter */,
+				43FB3F061CE4865A00AFCDA7 /* TimeInWords */,
 				F49EE2991CDF36F10062F8B7 /* UtopianTree */,
 			);
 			path = Challenges;
@@ -404,6 +410,7 @@
 				F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */,
 				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
 				F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */,
+				43FB3F0A1CE4867700AFCDA7 /* TimeInWordsTests.swift */,
 				F49EE29D1CDF372F0062F8B7 /* UtopianTreeTests.swift */,
 			);
 			path = WhiteBoardCodingChallengesTests;
@@ -439,6 +446,14 @@
 				43D630911CE0CC760023328A /* GridSearch.swift */,
 			);
 			path = GridSearch;
+			sourceTree = "<group>";
+		};
+		43FB3F061CE4865A00AFCDA7 /* TimeInWords */ = {
+			isa = PBXGroup;
+			children = (
+				43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */,
+			);
+			path = TimeInWords;
 			sourceTree = "<group>";
 		};
 		43FF2D2C1CE1F33500D6FCDF /* CavityMap */ = {
@@ -673,6 +688,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */,
+				43FB3F081CE4866A00AFCDA7 /* TimeInWords.swift in Sources */,
 				43FF2D421CE2466600D6FCDF /* ManasaAndStones.swift in Sources */,
 				4353DA721CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				F49EE2A11CDF39E00062F8B7 /* FindDigits.swift in Sources */,
@@ -709,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FF2D391CE2151300D6FCDF /* CaesarCipher.swift in Sources */,
+				43FB3F091CE4866A00AFCDA7 /* TimeInWords.swift in Sources */,
 				43635B371CE09FDE0004BC05 /* LisasWorkbookTests.swift in Sources */,
 				432685C91CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift in Sources */,
 				432685CD1CDCF664005B1E61 /* Prime.swift in Sources */,
@@ -751,6 +768,7 @@
 				43FF2D3D1CE2387900D6FCDF /* LibraryFine.swift in Sources */,
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				432685C31CDCCD38005B1E61 /* PalindromeTests.swift in Sources */,
+				43FB3F0B1CE4867700AFCDA7 /* TimeInWordsTests.swift in Sources */,
 				43FF2D3F1CE2388800D6FCDF /* LibraryFineTests.swift in Sources */,
 				432685901CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift in Sources */,
 				43FF2D431CE2466600D6FCDF /* ManasaAndStones.swift in Sources */,
