@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/the-time-in-words
 class TimeInWords: NSObject {
 
     class func timeInWords(hour: Int, minute: Int) -> String {

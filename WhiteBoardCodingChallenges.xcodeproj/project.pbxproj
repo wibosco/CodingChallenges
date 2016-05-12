@@ -51,6 +51,12 @@
 		43FB3F081CE4866A00AFCDA7 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */; };
 		43FB3F091CE4866A00AFCDA7 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */; };
 		43FB3F0B1CE4867700AFCDA7 /* TimeInWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F0A1CE4867700AFCDA7 /* TimeInWordsTests.swift */; };
+		43FB3F0E1CE4994000AFCDA7 /* Kaprekar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F0D1CE4994000AFCDA7 /* Kaprekar.swift */; };
+		43FB3F0F1CE4994000AFCDA7 /* Kaprekar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F0D1CE4994000AFCDA7 /* Kaprekar.swift */; };
+		43FB3F111CE4994C00AFCDA7 /* KaprekarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F101CE4994C00AFCDA7 /* KaprekarTests.swift */; };
+		43FB3F141CE4C47B00AFCDA7 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F131CE4C47B00AFCDA7 /* Encryption.swift */; };
+		43FB3F151CE4C47B00AFCDA7 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F131CE4C47B00AFCDA7 /* Encryption.swift */; };
+		43FB3F171CE4C48600AFCDA7 /* EncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB3F161CE4C48600AFCDA7 /* EncryptionTests.swift */; };
 		43FF2D301CE1F35C00D6FCDF /* CavityMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D2F1CE1F35C00D6FCDF /* CavityMapTests.swift */; };
 		43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */; };
 		43FF2D331CE1F36F00D6FCDF /* CavityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */; };
@@ -143,6 +149,10 @@
 		43D630941CE0CC880023328A /* GridSearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearchTests.swift; sourceTree = "<group>"; };
 		43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWords.swift; sourceTree = "<group>"; };
 		43FB3F0A1CE4867700AFCDA7 /* TimeInWordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWordsTests.swift; sourceTree = "<group>"; };
+		43FB3F0D1CE4994000AFCDA7 /* Kaprekar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kaprekar.swift; sourceTree = "<group>"; };
+		43FB3F101CE4994C00AFCDA7 /* KaprekarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaprekarTests.swift; sourceTree = "<group>"; };
+		43FB3F131CE4C47B00AFCDA7 /* Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		43FB3F161CE4C48600AFCDA7 /* EncryptionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionTests.swift; sourceTree = "<group>"; };
 		43FF2D2F1CE1F35C00D6FCDF /* CavityMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMapTests.swift; sourceTree = "<group>"; };
 		43FF2D311CE1F36A00D6FCDF /* CavityMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMap.swift; sourceTree = "<group>"; };
 		43FF2D341CE214EE00D6FCDF /* CaesarCipherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarCipherTests.swift; sourceTree = "<group>"; };
@@ -208,9 +218,11 @@
 				F49EE2B11CDFDB6A0062F8B7 /* CutTheSticks */,
 				432685B81CDCAD01005B1E61 /* DecimalToBinary */,
 				433ACF8C1CE3920600B3B624 /* DikshasBirthday */,
+				43FB3F121CE4C47000AFCDA7 /* Encryption */,
 				F49EE29F1CDF39D40062F8B7 /* FindDigits */,
 				432685C41CDCD348005B1E61 /* GreatestCommonDenominator */,
 				43D630901CE0CC680023328A /* GridSearch */,
+				43FB3F0C1CE4993100AFCDA7 /* Kaprekar */,
 				43FF2D3A1CE2386800D6FCDF /* LibraryFine */,
 				43635B321CE09FBF0004BC05 /* LisasWorkbook */,
 				43FF2D401CE2465400D6FCDF /* ManasaAndStones */,
@@ -394,10 +406,12 @@
 				F49EE2B51CDFDD750062F8B7 /* CutTheSticksTests.swift */,
 				432685BC1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift */,
 				433ACF901CE3922200B3B624 /* DikshasBirthdayTests.swift */,
+				43FB3F161CE4C48600AFCDA7 /* EncryptionTests.swift */,
 				F49EE2A31CDF39ED0062F8B7 /* FindDigitsTests.swift */,
 				432685C81CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift */,
 				43D630941CE0CC880023328A /* GridSearchTests.swift */,
 				4353DA581CDB868200A07167 /* Info.plist */,
+				43FB3F101CE4994C00AFCDA7 /* KaprekarTests.swift */,
 				43FF2D3E1CE2388800D6FCDF /* LibraryFineTests.swift */,
 				43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */,
 				43FF2D441CE2467100D6FCDF /* ManasaAndStonesTests.swift */,
@@ -454,6 +468,22 @@
 				43FB3F071CE4866A00AFCDA7 /* TimeInWords.swift */,
 			);
 			path = TimeInWords;
+			sourceTree = "<group>";
+		};
+		43FB3F0C1CE4993100AFCDA7 /* Kaprekar */ = {
+			isa = PBXGroup;
+			children = (
+				43FB3F0D1CE4994000AFCDA7 /* Kaprekar.swift */,
+			);
+			path = Kaprekar;
+			sourceTree = "<group>";
+		};
+		43FB3F121CE4C47000AFCDA7 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				43FB3F131CE4C47B00AFCDA7 /* Encryption.swift */,
+			);
+			path = Encryption;
 			sourceTree = "<group>";
 		};
 		43FF2D2C1CE1F33500D6FCDF /* CavityMap */ = {
@@ -704,10 +734,12 @@
 				432685B41CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
 				F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */,
 				F49EE28F1CDE86690062F8B7 /* AngryProfessor.swift in Sources */,
+				43FB3F0E1CE4994000AFCDA7 /* Kaprekar.swift in Sources */,
 				43FF2D3C1CE2387900D6FCDF /* LibraryFine.swift in Sources */,
 				F49EE2B31CDFDB780062F8B7 /* CutTheSticks.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				433ACF8E1CE3921700B3B624 /* DikshasBirthday.swift in Sources */,
+				43FB3F141CE4C47B00AFCDA7 /* Encryption.swift in Sources */,
 				433ACF871CE333AC00B3B624 /* ACMICPCTeam.swift in Sources */,
 				F49EE2951CDE8EB20062F8B7 /* Beast.swift in Sources */,
 				F49EE2A71CDFA3190062F8B7 /* SherlockSquares.swift in Sources */,
@@ -742,6 +774,7 @@
 				F49EE2AE1CDFC3FA0062F8B7 /* ServiceLane.swift in Sources */,
 				43D630951CE0CC880023328A /* GridSearchTests.swift in Sources */,
 				433ACF8F1CE3921700B3B624 /* DikshasBirthday.swift in Sources */,
+				43FB3F151CE4C47B00AFCDA7 /* Encryption.swift in Sources */,
 				43FF2D331CE1F36F00D6FCDF /* CavityMap.swift in Sources */,
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				433ACF911CE3922200B3B624 /* DikshasBirthdayTests.swift in Sources */,
@@ -775,9 +808,12 @@
 				F49EE2A21CDF39E00062F8B7 /* FindDigits.swift in Sources */,
 				F49EE2AA1CDFA3230062F8B7 /* SherlockSquaresTests.swift in Sources */,
 				F49EE2821CDE612E0062F8B7 /* StaircaseTests.swift in Sources */,
+				43FB3F171CE4C48600AFCDA7 /* EncryptionTests.swift in Sources */,
 				F49EE2B41CDFDB780062F8B7 /* CutTheSticks.swift in Sources */,
+				43FB3F0F1CE4994000AFCDA7 /* Kaprekar.swift in Sources */,
 				F49EE29C1CDF37020062F8B7 /* UtopianTree.swift in Sources */,
 				F49EE2BA1CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */,
+				43FB3F111CE4994C00AFCDA7 /* KaprekarTests.swift in Sources */,
 				432685BB1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
 				F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */,
 				F49EE2921CDE86750062F8B7 /* AngryProfessorTests.swift in Sources */,
