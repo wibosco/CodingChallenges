@@ -29,55 +29,71 @@ class LarrysArray: NSObject {
     
     class func canRobotSort(values: [Int]) -> Bool {
         
-        let sortedValues = values.sort { (a, b) -> Bool in
-            
-            return b > a
-        }
-        
         var valuesAfterRotation = values
-        
+    
         for index in 0..<(values.count - 2) {
+        
+            valuesAfterRotation = LarrysArray.attemptToMoveValueIntoPosition(valuesAfterRotation, valueToMove: (index + 1))
             
-            var previousValuesAfterRotation = valuesAfterRotation
-            
-            for sequence in 0..<Sequence.count {
+            if index > 0 {
                 
-                let potentialValuesAfterRotation = LarrysArray.rotate(previousValuesAfterRotation, sequence: Sequence(rawValue: sequence)!, startingIndex: index)
-                
-                if potentialValuesAfterRotation == sortedValues {
+                if valuesAfterRotation[(index - 1)] > valuesAfterRotation[index]  {
                     
-                    return true
-                }
-                else {
-                    
-                    if potentialValuesAfterRotation[0..<(index + 1)] == sortedValues[0..<(index + 1)] {
-                        
-                        valuesAfterRotation = potentialValuesAfterRotation
-                        
-                        break
-                    }
-                    else {
-                        
-                        previousValuesAfterRotation = potentialValuesAfterRotation
-                    }
+                    return false
                 }
             }
         }
         
-        return false
+        if valuesAfterRotation[(valuesAfterRotation.count - 1)] > valuesAfterRotation[(valuesAfterRotation.count - 2)] {
+            
+            return true
+        }
+        else {
+            
+            return false
+        }
+    }
+    
+    class func attemptToMoveValueIntoPosition(values: [Int], valueToMove: Int) -> [Int] {
+        
+        let index = values.indexOf(valueToMove)!
+        
+        if index == (valueToMove - 1) {
+            
+            return values
+        }
+        else {
+            
+            let indexValueShouldBeMovedTo = (valueToMove - 1)
+            
+            if index == (indexValueShouldBeMovedTo + 1) {
+                
+                return rotate(values, sequence: .BCA, startingIndex: indexValueShouldBeMovedTo)
+            }
+            else if index == (indexValueShouldBeMovedTo + 2) {
+            
+                return rotate(values, sequence: .CAB, startingIndex: indexValueShouldBeMovedTo)
+            }
+            else {
+                
+                let valuesAfterRotation = rotate(values, sequence: .CAB, startingIndex: (index - 2))
+                
+                return attemptToMoveValueIntoPosition(valuesAfterRotation, valueToMove: valueToMove)
+            }
+        }
     }
     
     class func rotate(values: [Int], sequence: Sequence, startingIndex: Int) -> [Int] {
         
         var rotatedValues = values
         
+        let indexOfABeforeRotation = startingIndex
+        let indexOfBBeforeRotation = startingIndex + 1
+        let indexOfCBeforeRotation = startingIndex + 2
+        
         switch sequence {
         case .BCA:
-            
-            let indexOfABeforeRotation = startingIndex
-            let indexOfBBeforeRotation = startingIndex + 1
-            let indexOfCBeforeRotation = startingIndex + 2
-            
+        
             let indexOfAAfterRotation = startingIndex + 2
             let indexOfBAftereRotation = startingIndex
             let indexOfCAfterRotation = startingIndex + 1
@@ -87,10 +103,6 @@ class LarrysArray: NSObject {
             rotatedValues[indexOfCAfterRotation] = values[indexOfCBeforeRotation]
             
         case .CAB:
-            
-            let indexOfABeforeRotation = startingIndex + 2
-            let indexOfBBeforeRotation = startingIndex
-            let indexOfCBeforeRotation = startingIndex + 1
             
             let indexOfAAfterRotation = startingIndex + 1
             let indexOfBAftereRotation = startingIndex + 2
