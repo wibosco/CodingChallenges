@@ -115,4 +115,46 @@ class LarrysArray: NSObject {
         
         return rotatedValues
     }
+    
+    // MARK: Alt
+    
+    class func canRobotSortAlt(values: [Int]) -> Bool {
+        
+        let isInversionsCountOdd = (LarrysArray.countOfInversions(values) % 2 != 0)
+        
+        if isInversionsCountOdd {
+            
+            return false
+        }
+        
+        return true
+    }
+    
+    //https://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html
+    class func countOfInversions(values: [Int]) -> Int {
+        
+        var inversions = 0
+        
+        for index in 0..<values.count {
+            
+            let value = values[index]
+            
+            var valuesBeforeThatAreGreaterThanCurrentValue = values.count - index
+            
+            for previousValueIndex in 0..<index {
+                
+                let previousValue = values[previousValueIndex]
+                
+                if previousValue > value {
+                    
+                    valuesBeforeThatAreGreaterThanCurrentValue -= 1
+                }
+            }
+            
+            inversions += ((values.count - index) - valuesBeforeThatAreGreaterThanCurrentValue)
+        }
+        
+        return inversions
+    }
+    
 }
