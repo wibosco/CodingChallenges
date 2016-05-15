@@ -72,6 +72,9 @@
 		43FF2D421CE2466600D6FCDF /* ManasaAndStones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D411CE2466600D6FCDF /* ManasaAndStones.swift */; };
 		43FF2D431CE2466600D6FCDF /* ManasaAndStones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D411CE2466600D6FCDF /* ManasaAndStones.swift */; };
 		43FF2D451CE2467100D6FCDF /* ManasaAndStonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D441CE2467100D6FCDF /* ManasaAndStonesTests.swift */; };
+		F43170CD1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
+		F43170CE1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
+		F43170D01CE7D5360093D062 /* NewYearChaosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */; };
 		F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE26E1CDDE2E10062F8B7 /* Summing.swift */; };
 		F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE2711CDDE3230062F8B7 /* SummingTests.swift */; };
@@ -166,6 +169,8 @@
 		43FF2D3E1CE2388800D6FCDF /* LibraryFineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryFineTests.swift; sourceTree = "<group>"; };
 		43FF2D411CE2466600D6FCDF /* ManasaAndStones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManasaAndStones.swift; sourceTree = "<group>"; };
 		43FF2D441CE2467100D6FCDF /* ManasaAndStonesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManasaAndStonesTests.swift; sourceTree = "<group>"; };
+		F43170CC1CE7D5270093D062 /* NewYearChaos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaos.swift; sourceTree = "<group>"; };
+		F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaosTests.swift; sourceTree = "<group>"; };
 		F49EE26E1CDDE2E10062F8B7 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
 		F49EE2711CDDE3230062F8B7 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
 		F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentagesTests.swift; sourceTree = "<group>"; };
@@ -232,6 +237,7 @@
 				43FF2D3A1CE2386800D6FCDF /* LibraryFine */,
 				43635B321CE09FBF0004BC05 /* LisasWorkbook */,
 				43FF2D401CE2465400D6FCDF /* ManasaAndStones */,
+				F43170CB1CE7D5070093D062 /* NewYearChaos */,
 				432685BE1CDCCD1A005B1E61 /* Palindrome */,
 				F49EE2791CDE0E300062F8B7 /* Percentages */,
 				432685CA1CDCF656005B1E61 /* Prime */,
@@ -422,6 +428,7 @@
 				43FF2D3E1CE2388800D6FCDF /* LibraryFineTests.swift */,
 				43635B361CE09FDE0004BC05 /* LisasWorkbookTests.swift */,
 				43FF2D441CE2467100D6FCDF /* ManasaAndStonesTests.swift */,
+				F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */,
 				432685C21CDCCD38005B1E61 /* PalindromeTests.swift */,
 				F49EE2771CDE090D0062F8B7 /* PercentagesTests.swift */,
 				432685CE1CDCF72D005B1E61 /* PrimeTests.swift */,
@@ -531,6 +538,14 @@
 				43FF2D411CE2466600D6FCDF /* ManasaAndStones.swift */,
 			);
 			path = ManasaAndStones;
+			sourceTree = "<group>";
+		};
+		F43170CB1CE7D5070093D062 /* NewYearChaos */ = {
+			isa = PBXGroup;
+			children = (
+				F43170CC1CE7D5270093D062 /* NewYearChaos.swift */,
+			);
+			path = NewYearChaos;
 			sourceTree = "<group>";
 		};
 		F49EE26D1CDDE2D10062F8B7 /* Summing */ = {
@@ -734,6 +749,7 @@
 			files = (
 				43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */,
 				43FB3F081CE4866A00AFCDA7 /* TimeInWords.swift in Sources */,
+				F43170CD1CE7D5270093D062 /* NewYearChaos.swift in Sources */,
 				43FF2D421CE2466600D6FCDF /* ManasaAndStones.swift in Sources */,
 				4353DA721CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				F49EE2A11CDF39E00062F8B7 /* FindDigits.swift in Sources */,
@@ -789,11 +805,13 @@
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				F49EE2AE1CDFC3FA0062F8B7 /* ServiceLane.swift in Sources */,
 				43D630951CE0CC880023328A /* GridSearchTests.swift in Sources */,
+				F43170D01CE7D5360093D062 /* NewYearChaosTests.swift in Sources */,
 				433ACF8F1CE3921700B3B624 /* DikshasBirthday.swift in Sources */,
 				43FB3F151CE4C47B00AFCDA7 /* Encryption.swift in Sources */,
 				43FF2D331CE1F36F00D6FCDF /* CavityMap.swift in Sources */,
 				432685B71CDCA4C0005B1E61 /* AlphabeticalOrderingTests.swift in Sources */,
 				433ACF911CE3922200B3B624 /* DikshasBirthdayTests.swift in Sources */,
+				F43170CE1CE7D5270093D062 /* NewYearChaos.swift in Sources */,
 				43FB3F1D1CE4E85D00AFCDA7 /* LarrysArrayTests.swift in Sources */,
 				43FF2D301CE1F35C00D6FCDF /* CavityMapTests.swift in Sources */,
 				F49EE2B61CDFDD750062F8B7 /* CutTheSticksTests.swift in Sources */,
