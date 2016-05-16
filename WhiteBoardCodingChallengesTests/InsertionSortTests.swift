@@ -55,4 +55,13 @@ class InsertionSortTests: XCTestCase {
         XCTAssertEqual(expectedSteps, steps)
     }
     
+    // MARK: NumberOfShifts
+    
+    func test_numberOfShiftsA() {
+        
+        let numberOfShifts = InsertionSort.numberOfShiftsToSort([2, 1, 3, 1, 2])
+        
+        XCTAssertEqual(4, numberOfShifts)
+    }
+    
 }
