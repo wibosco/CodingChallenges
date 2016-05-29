@@ -2,7 +2,7 @@
 //  NewYearChaosTests.swift
 //  WhiteBoardCodingChallenges
 //
-//  Created by Home on 14/05/2016.
+//  Created by Boles on 14/05/2016.
 //  Copyright © 2016 Boles. All rights reserved.
 //
 
