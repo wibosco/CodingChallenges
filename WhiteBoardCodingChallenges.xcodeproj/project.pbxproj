@@ -81,11 +81,11 @@
 		910597071CFC50B80057BD82 /* PalindromePermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910597061CFC50B80057BD82 /* PalindromePermutation.swift */; };
 		910597081CFC50B80057BD82 /* PalindromePermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910597061CFC50B80057BD82 /* PalindromePermutation.swift */; };
 		9105970A1CFC51090057BD82 /* PalindromePermutationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910597091CFC51090057BD82 /* PalindromePermutationTests.swift */; };
-		915E1FD31CFB08A900F13872 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E1FD21CFB08A900F13872 /* Node.swift */; };
-		915E1FD41CFB08A900F13872 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E1FD21CFB08A900F13872 /* Node.swift */; };
+		9105970E1CFC59D20057BD82 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105970C1CFC59D20057BD82 /* Node.swift */; };
+		9105970F1CFC59D20057BD82 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105970C1CFC59D20057BD82 /* Node.swift */; };
+		910597101CFC59D20057BD82 /* ReconstructBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105970D1CFC59D20057BD82 /* ReconstructBinaryTree.swift */; };
+		910597111CFC59D20057BD82 /* ReconstructBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105970D1CFC59D20057BD82 /* ReconstructBinaryTree.swift */; };
 		915E1FD61CFB094200F13872 /* ReconstructBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E1FD51CFB094200F13872 /* ReconstructBinaryTreeTests.swift */; };
-		915E1FD81CFB27F200F13872 /* ReconstructBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E1FD71CFB27F200F13872 /* ReconstructBinaryTree.swift */; };
-		915E1FD91CFB27F200F13872 /* ReconstructBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E1FD71CFB27F200F13872 /* ReconstructBinaryTree.swift */; };
 		F43170CD1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
 		F43170CE1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
 		F43170D01CE7D5360093D062 /* NewYearChaosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */; };
@@ -195,9 +195,9 @@
 		43FF2D441CE2467100D6FCDF /* ManasaAndStonesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManasaAndStonesTests.swift; sourceTree = "<group>"; };
 		910597061CFC50B80057BD82 /* PalindromePermutation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromePermutation.swift; sourceTree = "<group>"; };
 		910597091CFC51090057BD82 /* PalindromePermutationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromePermutationTests.swift; sourceTree = "<group>"; };
-		915E1FD21CFB08A900F13872 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		9105970C1CFC59D20057BD82 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		9105970D1CFC59D20057BD82 /* ReconstructBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTree.swift; sourceTree = "<group>"; };
 		915E1FD51CFB094200F13872 /* ReconstructBinaryTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTreeTests.swift; sourceTree = "<group>"; };
-		915E1FD71CFB27F200F13872 /* ReconstructBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTree.swift; sourceTree = "<group>"; };
 		F43170CC1CE7D5270093D062 /* NewYearChaos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaos.swift; sourceTree = "<group>"; };
 		F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaosTests.swift; sourceTree = "<group>"; };
 		F43170D31CE8B2000093D062 /* SortingIntro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingIntro.swift; sourceTree = "<group>"; };
@@ -256,7 +256,6 @@
 				F49EE28D1CDE864F0062F8B7 /* AngryProfessor */,
 				F49EE2931CDE8EA30062F8B7 /* Beast */,
 				436BD3DC1CEB590200C5D7A9 /* BiggerIsGreater */,
-				915E1FCB1CFB078F00F13872 /* BinaryTree */,
 				43FF2D361CE2150200D6FCDF /* CaesarCipher */,
 				43FF2D2C1CE1F33500D6FCDF /* CavityMap */,
 				F49EE2B71CDFE7530062F8B7 /* ChocolateFeast */,
@@ -279,6 +278,7 @@
 				F49EE2791CDE0E300062F8B7 /* Percentages */,
 				432685CA1CDCF656005B1E61 /* Prime */,
 				43963CF01CEA08E10049F176 /* QuickSort */,
+				9105970B1CFC59D20057BD82 /* ReconstructBinaryTree */,
 				432685AE1CDCA288005B1E61 /* ReverseString */,
 				F49EE2AB1CDFC3DD0062F8B7 /* ServiceLane */,
 				F49EE2A51CDFA30C0062F8B7 /* SherlockSquares */,
@@ -609,13 +609,13 @@
 			path = PalindromePermutation;
 			sourceTree = "<group>";
 		};
-		915E1FCB1CFB078F00F13872 /* BinaryTree */ = {
+		9105970B1CFC59D20057BD82 /* ReconstructBinaryTree */ = {
 			isa = PBXGroup;
 			children = (
-				915E1FD21CFB08A900F13872 /* Node.swift */,
-				915E1FD71CFB27F200F13872 /* ReconstructBinaryTree.swift */,
+				9105970C1CFC59D20057BD82 /* Node.swift */,
+				9105970D1CFC59D20057BD82 /* ReconstructBinaryTree.swift */,
 			);
-			path = BinaryTree;
+			path = ReconstructBinaryTree;
 			sourceTree = "<group>";
 		};
 		F43170CB1CE7D5070093D062 /* NewYearChaos */ = {
@@ -841,7 +841,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915E1FD81CFB27F200F13872 /* ReconstructBinaryTree.swift in Sources */,
 				910597071CFC50B80057BD82 /* PalindromePermutation.swift in Sources */,
 				43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */,
 				43FB3F081CE4866A00AFCDA7 /* TimeInWords.swift in Sources */,
@@ -853,9 +852,10 @@
 				432685AA1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
 				43FF2D381CE2151300D6FCDF /* CaesarCipher.swift in Sources */,
 				F43170DA1CE8B6740093D062 /* InsertionSort.swift in Sources */,
+				9105970E1CFC59D20057BD82 /* Node.swift in Sources */,
 				43D630921CE0CC760023328A /* GridSearch.swift in Sources */,
-				915E1FD31CFB08A900F13872 /* Node.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
+				910597101CFC59D20057BD82 /* ReconstructBinaryTree.swift in Sources */,
 				43FB3F1A1CE4E85200AFCDA7 /* LarrysArray.swift in Sources */,
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
 				F49EE2891CDE75B20062F8B7 /* TimeConverter.swift in Sources */,
@@ -900,6 +900,7 @@
 				432685AB1CDCA129005B1E61 /* SingleTextFieldViewController.swift in Sources */,
 				F49EE29E1CDF372F0062F8B7 /* UtopianTreeTests.swift in Sources */,
 				F43170D71CE8B20D0093D062 /* SortingIntroTests.swift in Sources */,
+				910597111CFC59D20057BD82 /* ReconstructBinaryTree.swift in Sources */,
 				F49EE2721CDDE3230062F8B7 /* SummingTests.swift in Sources */,
 				F43170D51CE8B2000093D062 /* SortingIntro.swift in Sources */,
 				910597081CFC50B80057BD82 /* PalindromePermutation.swift in Sources */,
@@ -936,14 +937,12 @@
 				43963CF51CEA08FF0049F176 /* QuickSortTests.swift in Sources */,
 				F49EE2901CDE86690062F8B7 /* AngryProfessor.swift in Sources */,
 				F49EE2801CDE60CB0062F8B7 /* Staircase.swift in Sources */,
-				915E1FD91CFB27F200F13872 /* ReconstructBinaryTree.swift in Sources */,
 				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
 				F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */,
 				43635B351CE09FD10004BC05 /* LisasWorkbook.swift in Sources */,
 				433ACF8A1CE333B900B3B624 /* ACMICPCTeamTests.swift in Sources */,
 				432685CF1CDCF72D005B1E61 /* PrimeTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
-				915E1FD41CFB08A900F13872 /* Node.swift in Sources */,
 				432685C11CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
 				43FF2D3D1CE2387900D6FCDF /* LibraryFine.swift in Sources */,
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
@@ -960,6 +959,7 @@
 				43FB3F1B1CE4E85200AFCDA7 /* LarrysArray.swift in Sources */,
 				43FB3F171CE4C48600AFCDA7 /* EncryptionTests.swift in Sources */,
 				F49EE2B41CDFDB780062F8B7 /* CutTheSticks.swift in Sources */,
+				9105970F1CFC59D20057BD82 /* Node.swift in Sources */,
 				43FB3F0F1CE4994000AFCDA7 /* Kaprekar.swift in Sources */,
 				F49EE29C1CDF37020062F8B7 /* UtopianTree.swift in Sources */,
 				F49EE2BA1CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */,

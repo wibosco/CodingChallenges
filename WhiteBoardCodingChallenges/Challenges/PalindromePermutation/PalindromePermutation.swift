@@ -22,7 +22,7 @@ class PalindromePermutation: NSObject {
         //Not sure if we need this shortcut?
         if spacesRemovedOriginal.characters.count == 2 {
             
-            if spacesRemovedOriginal.substringWithRange(spacesRemovedOriginal.characters.startIndex..<spacesRemovedOriginal.characters.startIndex.advancedBy(1)) == spacesRemovedOriginal.substringWithRange(spacesRemovedOriginal.characters.endIndex.advancedBy(-1)..<spacesRemovedOriginal.characters.endIndex) {
+            if spacesRemovedOriginal[spacesRemovedOriginal.characters.startIndex] == spacesRemovedOriginal[spacesRemovedOriginal.characters.endIndex.advancedBy(-1)] {
                 
                 return true
             }
