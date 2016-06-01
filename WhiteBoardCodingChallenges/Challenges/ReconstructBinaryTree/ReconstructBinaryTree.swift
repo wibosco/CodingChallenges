@@ -12,14 +12,14 @@ class ReconstructBinaryTree: NSObject {
 
     // MARK: Properties
     
-    lazy var nodes: [Int: Node] = {
+    lazy var nodes: [Int: ReconstructBinaryTreeNode] = {
        
-        return [Int: Node]()
+        return [Int: ReconstructBinaryTreeNode]()
     }()
     
     // MARK: Reconstruct
     
-    func reconstructTree(deconstructedTree: [[Int]]) -> Node {
+    func reconstructTree(deconstructedTree: [[Int]]) -> ReconstructBinaryTreeNode {
         
         for nodePair in deconstructedTree {
             
@@ -30,7 +30,7 @@ class ReconstructBinaryTree: NSObject {
             
             if parentNode == nil {
                 
-                parentNode = Node.init(value: parentKey)
+                parentNode = ReconstructBinaryTreeNode.init(value: parentKey)
                 nodes[parentKey] = parentNode!
             }
             
@@ -38,7 +38,7 @@ class ReconstructBinaryTree: NSObject {
             
             if childNode == nil {
                 
-                childNode = Node.init(value: childKey)
+                childNode = ReconstructBinaryTreeNode.init(value: childKey)
                 nodes[childKey] = childNode!
             }
             
@@ -48,7 +48,7 @@ class ReconstructBinaryTree: NSObject {
         return rootNode()
     }
     
-    private func rootNode() -> Node {
+    private func rootNode() -> ReconstructBinaryTreeNode {
         
         var rootNode = nodes.values.first!
         

@@ -8,14 +8,14 @@
 
 import UIKit
 
-class Node: NSObject {
+class ReconstructBinaryTreeNode: NSObject {
 
     // MARK: Properties
     
-    var parent: Node?
+    var parent: ReconstructBinaryTreeNode?
     
-    var left: Node?
-    var right: Node?
+    var left: ReconstructBinaryTreeNode?
+    var right: ReconstructBinaryTreeNode?
     
     var value: Int
     
@@ -30,7 +30,7 @@ class Node: NSObject {
     
     // MARK: Value
     
-    func hasValueAsNodeChild(value: Int) -> Node? {
+    func hasValueAsNodeChild(value: Int) -> ReconstructBinaryTreeNode? {
         
         if left?.value == value {
             
@@ -47,7 +47,7 @@ class Node: NSObject {
     
     // MARK: Nodes
     
-    func addNodeAsChild(node: Node) {
+    func addNodeAsChild(node: ReconstructBinaryTreeNode) {
         
         if left == nil {
             
