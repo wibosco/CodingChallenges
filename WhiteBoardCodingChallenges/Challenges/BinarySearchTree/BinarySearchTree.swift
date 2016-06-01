@@ -170,11 +170,4 @@ class BinarySearchTree: NSObject {
         
         return ""
     }
-    
-//    private func levelTraversal(node: BinarySearchTreeNode?, inout ordering: String) {
-//        
-//        addNodeToOrdering(node!, ordering: &ordering)
-//        levelTraversal(node?.left, ordering: &ordering)
-//        levelTraversal(node?.right, ordering: &ordering)
-//    }
 }
