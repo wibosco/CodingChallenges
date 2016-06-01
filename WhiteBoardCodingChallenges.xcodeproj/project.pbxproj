@@ -111,6 +111,13 @@
 		91F80FD51CFEFC920029F848 /* MinStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FD41CFEFC920029F848 /* MinStackTests.swift */; };
 		91F80FD71CFEFCB70029F848 /* MinStackNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FD61CFEFCB70029F848 /* MinStackNode.swift */; };
 		91F80FD81CFEFCB70029F848 /* MinStackNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FD61CFEFCB70029F848 /* MinStackNode.swift */; };
+		91F80FDB1CFF09BB0029F848 /* StackOfPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FDA1CFF09BB0029F848 /* StackOfPlates.swift */; };
+		91F80FDC1CFF09BB0029F848 /* StackOfPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FDA1CFF09BB0029F848 /* StackOfPlates.swift */; };
+		91F80FDE1CFF09FD0029F848 /* StackOfPlatesNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FDD1CFF09FD0029F848 /* StackOfPlatesNode.swift */; };
+		91F80FDF1CFF09FD0029F848 /* StackOfPlatesNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FDD1CFF09FD0029F848 /* StackOfPlatesNode.swift */; };
+		91F80FE11CFF0A9A0029F848 /* StackOfPlatesStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FE01CFF0A9A0029F848 /* StackOfPlatesStack.swift */; };
+		91F80FE21CFF0A9A0029F848 /* StackOfPlatesStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FE01CFF0A9A0029F848 /* StackOfPlatesStack.swift */; };
+		91F80FE41CFF0DD10029F848 /* StackOfPlatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FE31CFF0DD10029F848 /* StackOfPlatesTests.swift */; };
 		F43170CD1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
 		F43170CE1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
 		F43170D01CE7D5360093D062 /* NewYearChaosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */; };
@@ -238,6 +245,10 @@
 		91F80FD11CFEFC830029F848 /* MinStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStack.swift; sourceTree = "<group>"; };
 		91F80FD41CFEFC920029F848 /* MinStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackTests.swift; sourceTree = "<group>"; };
 		91F80FD61CFEFCB70029F848 /* MinStackNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackNode.swift; sourceTree = "<group>"; };
+		91F80FDA1CFF09BB0029F848 /* StackOfPlates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackOfPlates.swift; sourceTree = "<group>"; };
+		91F80FDD1CFF09FD0029F848 /* StackOfPlatesNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackOfPlatesNode.swift; sourceTree = "<group>"; };
+		91F80FE01CFF0A9A0029F848 /* StackOfPlatesStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackOfPlatesStack.swift; sourceTree = "<group>"; };
+		91F80FE31CFF0DD10029F848 /* StackOfPlatesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackOfPlatesTests.swift; sourceTree = "<group>"; };
 		F43170CC1CE7D5270093D062 /* NewYearChaos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaos.swift; sourceTree = "<group>"; };
 		F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaosTests.swift; sourceTree = "<group>"; };
 		F43170D31CE8B2000093D062 /* SortingIntro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingIntro.swift; sourceTree = "<group>"; };
@@ -328,6 +339,7 @@
 				F49EE2AB1CDFC3DD0062F8B7 /* ServiceLane */,
 				F49EE2A51CDFA30C0062F8B7 /* SherlockSquares */,
 				F43170D21CE8B1EE0093D062 /* SortingIntro */,
+				91F80FD91CFF09A20029F848 /* StackOfPlates */,
 				F49EE27D1CDE60B90062F8B7 /* Staircase */,
 				F49EE26D1CDDE2D10062F8B7 /* Summing */,
 				F49EE2871CDE75B20062F8B7 /* TimeConverter */,
@@ -530,6 +542,7 @@
 				F49EE2AF1CDFC5A30062F8B7 /* ServiceLaneTests.swift */,
 				F49EE2A91CDFA3230062F8B7 /* SherlockSquaresTests.swift */,
 				F43170D61CE8B20D0093D062 /* SortingIntroTests.swift */,
+				91F80FE31CFF0DD10029F848 /* StackOfPlatesTests.swift */,
 				F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */,
 				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
 				F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */,
@@ -719,6 +732,16 @@
 				91F80FD61CFEFCB70029F848 /* MinStackNode.swift */,
 			);
 			path = MinStack;
+			sourceTree = "<group>";
+		};
+		91F80FD91CFF09A20029F848 /* StackOfPlates */ = {
+			isa = PBXGroup;
+			children = (
+				91F80FDA1CFF09BB0029F848 /* StackOfPlates.swift */,
+				91F80FDD1CFF09FD0029F848 /* StackOfPlatesNode.swift */,
+				91F80FE01CFF0A9A0029F848 /* StackOfPlatesStack.swift */,
+			);
+			path = StackOfPlates;
 			sourceTree = "<group>";
 		};
 		F43170CB1CE7D5070093D062 /* NewYearChaos */ = {
@@ -945,6 +968,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9105971D1CFCAEEA0057BD82 /* LinkedListNode.swift in Sources */,
+				91F80FE11CFF0A9A0029F848 /* StackOfPlatesStack.swift in Sources */,
 				910597201CFCAF410057BD82 /* SingleLinkedList.swift in Sources */,
 				910597071CFC50B80057BD82 /* PalindromePermutation.swift in Sources */,
 				43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */,
@@ -969,11 +993,13 @@
 				432685B01CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				432685B41CDCA4AF005B1E61 /* AlphabeticalOrdering.swift in Sources */,
 				91F80FCE1CFDB06F0029F848 /* LevelTraversalQueue.swift in Sources */,
+				91F80FDE1CFF09FD0029F848 /* StackOfPlatesNode.swift in Sources */,
 				F49EE26F1CDDE2E10062F8B7 /* Summing.swift in Sources */,
 				9105971A1CFCAEDE0057BD82 /* LinkedListIntersectingNode.swift in Sources */,
 				F49EE28F1CDE86690062F8B7 /* AngryProfessor.swift in Sources */,
 				91F80FD71CFEFCB70029F848 /* MinStackNode.swift in Sources */,
 				43FB3F0E1CE4994000AFCDA7 /* Kaprekar.swift in Sources */,
+				91F80FDB1CFF09BB0029F848 /* StackOfPlates.swift in Sources */,
 				43FF2D3C1CE2387900D6FCDF /* LibraryFine.swift in Sources */,
 				F49EE2B31CDFDB780062F8B7 /* CutTheSticks.swift in Sources */,
 				9189B1991CFCB7610048B1C7 /* CircularLinkedList.swift in Sources */,
@@ -1050,6 +1076,7 @@
 				43FF2D351CE214EE00D6FCDF /* CaesarCipherTests.swift in Sources */,
 				F49EE2B01CDFC5A30062F8B7 /* ServiceLaneTests.swift in Sources */,
 				91F80FC91CFDA2F00029F848 /* BinarySearchTreeTests.swift in Sources */,
+				91F80FDC1CFF09BB0029F848 /* StackOfPlates.swift in Sources */,
 				91F80FCF1CFDB06F0029F848 /* LevelTraversalQueue.swift in Sources */,
 				43D630931CE0CC7B0023328A /* GridSearch.swift in Sources */,
 				433ACF881CE333AC00B3B624 /* ACMICPCTeam.swift in Sources */,
@@ -1062,6 +1089,7 @@
 				43963CF51CEA08FF0049F176 /* QuickSortTests.swift in Sources */,
 				F49EE2901CDE86690062F8B7 /* AngryProfessor.swift in Sources */,
 				F49EE2801CDE60CB0062F8B7 /* Staircase.swift in Sources */,
+				91F80FE21CFF0A9A0029F848 /* StackOfPlatesStack.swift in Sources */,
 				F49EE2701CDDE2E40062F8B7 /* Summing.swift in Sources */,
 				F49EE27C1CDE0E300062F8B7 /* Percentages.swift in Sources */,
 				43635B351CE09FD10004BC05 /* LisasWorkbook.swift in Sources */,
@@ -1084,6 +1112,7 @@
 				F49EE2821CDE612E0062F8B7 /* StaircaseTests.swift in Sources */,
 				F43170DB1CE8B6740093D062 /* InsertionSort.swift in Sources */,
 				43FB3F1B1CE4E85200AFCDA7 /* LarrysArray.swift in Sources */,
+				91F80FDF1CFF09FD0029F848 /* StackOfPlatesNode.swift in Sources */,
 				43FB3F171CE4C48600AFCDA7 /* EncryptionTests.swift in Sources */,
 				F49EE2B41CDFDB780062F8B7 /* CutTheSticks.swift in Sources */,
 				9105970F1CFC59D20057BD82 /* ReconstructBinaryTreeNode.swift in Sources */,
@@ -1091,6 +1120,7 @@
 				F49EE29C1CDF37020062F8B7 /* UtopianTree.swift in Sources */,
 				F49EE2BA1CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */,
 				43FB3F111CE4994C00AFCDA7 /* KaprekarTests.swift in Sources */,
+				91F80FE41CFF0DD10029F848 /* StackOfPlatesTests.swift in Sources */,
 				910597211CFCAF410057BD82 /* SingleLinkedList.swift in Sources */,
 				432685BB1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
 				F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */,
