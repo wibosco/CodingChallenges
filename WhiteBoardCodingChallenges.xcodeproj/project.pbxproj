@@ -123,6 +123,13 @@
 		91F80FED1CFF12DB0029F848 /* QueueViaStacksStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FEC1CFF12DB0029F848 /* QueueViaStacksStack.swift */; };
 		91F80FEE1CFF12DB0029F848 /* QueueViaStacksStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FEC1CFF12DB0029F848 /* QueueViaStacksStack.swift */; };
 		91F80FF01CFF158A0029F848 /* QueueViaStacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FEF1CFF158A0029F848 /* QueueViaStacksTests.swift */; };
+		91F80FF31CFF1D850029F848 /* RoutePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FF21CFF1D850029F848 /* RoutePlanner.swift */; };
+		91F80FF41CFF1D850029F848 /* RoutePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FF21CFF1D850029F848 /* RoutePlanner.swift */; };
+		91F80FF61CFF1D930029F848 /* RoutePlannerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FF51CFF1D930029F848 /* RoutePlannerNode.swift */; };
+		91F80FF71CFF1D930029F848 /* RoutePlannerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FF51CFF1D930029F848 /* RoutePlannerNode.swift */; };
+		91F80FFC1CFF1E910029F848 /* RoutePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FFB1CFF1E910029F848 /* RoutePlannerTests.swift */; };
+		91F80FFE1CFF20120029F848 /* RoutePlannerQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FFD1CFF20120029F848 /* RoutePlannerQueue.swift */; };
+		91F80FFF1CFF20120029F848 /* RoutePlannerQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F80FFD1CFF20120029F848 /* RoutePlannerQueue.swift */; };
 		F43170CD1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
 		F43170CE1CE7D5270093D062 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CC1CE7D5270093D062 /* NewYearChaos.swift */; };
 		F43170D01CE7D5360093D062 /* NewYearChaosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */; };
@@ -257,6 +264,10 @@
 		91F80FE61CFF12070029F848 /* QueueViaStacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueViaStacks.swift; sourceTree = "<group>"; };
 		91F80FEC1CFF12DB0029F848 /* QueueViaStacksStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueViaStacksStack.swift; sourceTree = "<group>"; };
 		91F80FEF1CFF158A0029F848 /* QueueViaStacksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueViaStacksTests.swift; sourceTree = "<group>"; };
+		91F80FF21CFF1D850029F848 /* RoutePlanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePlanner.swift; sourceTree = "<group>"; };
+		91F80FF51CFF1D930029F848 /* RoutePlannerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePlannerNode.swift; sourceTree = "<group>"; };
+		91F80FFB1CFF1E910029F848 /* RoutePlannerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePlannerTests.swift; sourceTree = "<group>"; };
+		91F80FFD1CFF20120029F848 /* RoutePlannerQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePlannerQueue.swift; sourceTree = "<group>"; };
 		F43170CC1CE7D5270093D062 /* NewYearChaos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaos.swift; sourceTree = "<group>"; };
 		F43170CF1CE7D5360093D062 /* NewYearChaosTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaosTests.swift; sourceTree = "<group>"; };
 		F43170D31CE8B2000093D062 /* SortingIntro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingIntro.swift; sourceTree = "<group>"; };
@@ -345,6 +356,7 @@
 				43963CF01CEA08E10049F176 /* QuickSort */,
 				9105970B1CFC59D20057BD82 /* ReconstructBinaryTree */,
 				432685AE1CDCA288005B1E61 /* ReverseString */,
+				91F80FF11CFF1D6F0029F848 /* RoutePlanner */,
 				F49EE2AB1CDFC3DD0062F8B7 /* ServiceLane */,
 				F49EE2A51CDFA30C0062F8B7 /* SherlockSquares */,
 				F43170D21CE8B1EE0093D062 /* SortingIntro */,
@@ -549,6 +561,7 @@
 				43963CF41CEA08FF0049F176 /* QuickSortTests.swift */,
 				915E1FD51CFB094200F13872 /* ReconstructBinaryTreeTests.swift */,
 				4326858F1CDC9E70005B1E61 /* ReverseStringAndKeepWordOrderingTests.swift */,
+				91F80FFB1CFF1E910029F848 /* RoutePlannerTests.swift */,
 				F49EE2AF1CDFC5A30062F8B7 /* ServiceLaneTests.swift */,
 				F49EE2A91CDFA3230062F8B7 /* SherlockSquaresTests.swift */,
 				F43170D61CE8B20D0093D062 /* SortingIntroTests.swift */,
@@ -761,6 +774,16 @@
 				91F80FEC1CFF12DB0029F848 /* QueueViaStacksStack.swift */,
 			);
 			path = QueueViaStacks;
+			sourceTree = "<group>";
+		};
+		91F80FF11CFF1D6F0029F848 /* RoutePlanner */ = {
+			isa = PBXGroup;
+			children = (
+				91F80FF21CFF1D850029F848 /* RoutePlanner.swift */,
+				91F80FF51CFF1D930029F848 /* RoutePlannerNode.swift */,
+				91F80FFD1CFF20120029F848 /* RoutePlannerQueue.swift */,
+			);
+			path = RoutePlanner;
 			sourceTree = "<group>";
 		};
 		F43170CB1CE7D5070093D062 /* NewYearChaos */ = {
@@ -994,6 +1017,7 @@
 				43FB3F081CE4866A00AFCDA7 /* TimeInWords.swift in Sources */,
 				F43170CD1CE7D5270093D062 /* NewYearChaos.swift in Sources */,
 				91F80FC61CFDA0360029F848 /* BinarySearchTreeNode.swift in Sources */,
+				91F80FF31CFF1D850029F848 /* RoutePlanner.swift in Sources */,
 				43FF2D421CE2466600D6FCDF /* ManasaAndStones.swift in Sources */,
 				4353DA721CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				F49EE2A11CDF39E00062F8B7 /* FindDigits.swift in Sources */,
@@ -1006,6 +1030,7 @@
 				43D630921CE0CC760023328A /* GridSearch.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				910597101CFC59D20057BD82 /* ReconstructBinaryTree.swift in Sources */,
+				91F80FFE1CFF20120029F848 /* RoutePlannerQueue.swift in Sources */,
 				43FB3F1A1CE4E85200AFCDA7 /* LarrysArray.swift in Sources */,
 				432685C01CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
 				F49EE2891CDE75B20062F8B7 /* TimeConverter.swift in Sources */,
@@ -1033,6 +1058,7 @@
 				F49EE29B1CDF37020062F8B7 /* UtopianTree.swift in Sources */,
 				F49EE2B91CDFE7620062F8B7 /* ChocolateFeast.swift in Sources */,
 				436BD3DE1CEB591100C5D7A9 /* BiggerIsGreater.swift in Sources */,
+				91F80FF61CFF1D930029F848 /* RoutePlannerNode.swift in Sources */,
 				F49EE27F1CDE60CB0062F8B7 /* Staircase.swift in Sources */,
 				432685CC1CDCF664005B1E61 /* Prime.swift in Sources */,
 				432685BA1CDCAD11005B1E61 /* DecimalToBinary.swift in Sources */,
@@ -1055,6 +1081,7 @@
 				436BD3E11CEB596700C5D7A9 /* BiggerIsGreaterTests.swift in Sources */,
 				43635B371CE09FDE0004BC05 /* LisasWorkbookTests.swift in Sources */,
 				432685C91CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift in Sources */,
+				91F80FFF1CFF20120029F848 /* RoutePlannerQueue.swift in Sources */,
 				432685CD1CDCF664005B1E61 /* Prime.swift in Sources */,
 				F49EE2981CDE8FF40062F8B7 /* BeastTests.swift in Sources */,
 				91F80FC41CFDA0280029F848 /* BinarySearchTree.swift in Sources */,
@@ -1078,6 +1105,7 @@
 				F49EE2BC1CDFE7D50062F8B7 /* ChocolateFeastTests.swift in Sources */,
 				432685C71CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
 				91F80FEE1CFF12DB0029F848 /* QueueViaStacksStack.swift in Sources */,
+				91F80FFC1CFF1E910029F848 /* RoutePlannerTests.swift in Sources */,
 				91F80FD81CFEFCB70029F848 /* MinStackNode.swift in Sources */,
 				432685BD1CDCAD1E005B1E61 /* DecimalToBinaryTests.swift in Sources */,
 				F49EE2AE1CDFC3FA0062F8B7 /* ServiceLane.swift in Sources */,
@@ -1095,6 +1123,7 @@
 				9105970A1CFC51090057BD82 /* PalindromePermutationTests.swift in Sources */,
 				F49EE2B61CDFDD750062F8B7 /* CutTheSticksTests.swift in Sources */,
 				436BD3DF1CEB591100C5D7A9 /* BiggerIsGreater.swift in Sources */,
+				91F80FF71CFF1D930029F848 /* RoutePlannerNode.swift in Sources */,
 				43FF2D351CE214EE00D6FCDF /* CaesarCipherTests.swift in Sources */,
 				F49EE2B01CDFC5A30062F8B7 /* ServiceLaneTests.swift in Sources */,
 				91F80FC91CFDA2F00029F848 /* BinarySearchTreeTests.swift in Sources */,
@@ -1122,6 +1151,7 @@
 				432685C11CDCCD2A005B1E61 /* Palindrome.swift in Sources */,
 				43FF2D3D1CE2387900D6FCDF /* LibraryFine.swift in Sources */,
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
+				91F80FF41CFF1D850029F848 /* RoutePlanner.swift in Sources */,
 				432685C31CDCCD38005B1E61 /* PalindromeTests.swift in Sources */,
 				43963CF31CEA08F30049F176 /* QuickSort.swift in Sources */,
 				910597231CFCB1090057BD82 /* LinkedListIntersectingNodeTests.swift in Sources */,
