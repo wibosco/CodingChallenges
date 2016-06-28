@@ -10,14 +10,26 @@ import XCTest
 
 class HeapSortTests: XCTestCase {
 
-    // MARK: Tests
+    // MARK: MaxTests
     
-    func test_MaxHeapSortA() {
+    func test_maxHeapSortA() {
         
         let input = [6,5,1,7,14,9]
         let expectedOutput = [1,5,6,7,9,14]
         
         let actualOutput = HeapSort.maxHeapSort(input)
+        
+        XCTAssertEqual(actualOutput, expectedOutput)
+    }
+    
+    // MARK: MinTests
+    
+    func test_minHeapSortA() {
+        
+        let input = [6,5,1,7,14,9]
+        let expectedOutput = [14,9,7,6,5,1]
+        
+        let actualOutput = HeapSort.minHeapSort(input)
         
         XCTAssertEqual(actualOutput, expectedOutput)
     }

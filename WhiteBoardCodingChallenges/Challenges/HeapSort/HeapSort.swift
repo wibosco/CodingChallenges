@@ -35,6 +35,31 @@ class HeapSort: NSObject {
         return heapSorted
     }
     
+    // MARK: Min
+    
+    class func minHeapSort(input: [Int]) -> [Int] {
+        
+        if input.count < 2 {
+            
+            return input
+        }
+        
+        var minHeap = MinHeap.buildMinHeap(input)
+        var heapSorted = [Int]()
+        
+        while minHeap.count > 1 {
+            
+            heapSorted.insert(minHeap[0], atIndex: 0)
+            exchange(&minHeap, i: 0, j: (minHeap.count - 1))
+            minHeap.removeLast()
+            MinHeap.minHeapify(&minHeap, indexRoot: 0)
+        }
+        
+        heapSorted.insert(minHeap[0], atIndex: 0)
+        
+        return heapSorted
+    }
+    
     // MARK: Exchange
     
     class func exchange<T>(inout heap: [T], i:Int, j:Int) {
