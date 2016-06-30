@@ -13,19 +13,17 @@ class EvenTree: NSObject {
     
     // MARK: Edges
     
-    class func totalEdgesRemovedToFormForestOfEvenTrees(totalNodes: Int, edges: [[Int]]) -> Int {
-        let nodes = buildNodes(totalNodes)
+    class func totalEdgesRemovedToFormForestOfEvenTrees(numberOfNodes: Int, edges: [[Int]]) -> Int {
+        let nodes = buildNodes(numberOfNodes)
         connectEdges(nodes, edges: edges)
         
         var totalEdgesRemoved = 0
         
         for node in nodes {
-            if node.immediateChildren.count > 0 {
-                for childNode in node.immediateChildren {
-                    if (childNode.totalChildren + 1) % 2 == 0 {
-                        childNode.breakConnectionWithParent()
-                        totalEdgesRemoved += 1
-                    }
+            if node.parent != nil { // skip root
+                let count = nodesInTree(node)
+                if count % 2 == 0 {
+                    totalEdgesRemoved += 1
                 }
             }
         }
@@ -35,11 +33,10 @@ class EvenTree: NSObject {
     
     // MARK: Build
     
-    class func buildNodes(totalNodes: Int) -> [EvenTreeNode] {
+    class func buildNodes(numberOfNodes: Int) -> [EvenTreeNode] {
         var nodes = [EvenTreeNode]()
         
-        for i in 0..<totalNodes {
-            
+        for i in 0..<numberOfNodes {
             let node = EvenTreeNode(value: i)
             nodes.append(node)
         }
@@ -54,5 +51,17 @@ class EvenTree: NSObject {
             
             parent.addChild(child)
         }
+    }
+    
+    // MARK: DFS
+    
+    class func nodesInTree(root: EvenTreeNode) -> Int {
+        var count = 1 // start at 1 as you need to count the root node
+        
+        for child in root.children {
+            count += nodesInTree(child)
+        }
+        
+        return count
     }
 }

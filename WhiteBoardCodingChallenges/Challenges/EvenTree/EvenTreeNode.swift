@@ -12,12 +12,11 @@ class EvenTreeNode: NSObject {
 
     // MARK: - Properties
     
-    var value: Int
+    var value: Int // to help with debugging
     var parent: EvenTreeNode?
-    var immediateChildren: [EvenTreeNode] = {
+    var children: [EvenTreeNode] = {
         return [EvenTreeNode]()
     }()
-    var totalChildren = 0
     
     // MARK: - Lifecycle
     
@@ -30,50 +29,15 @@ class EvenTreeNode: NSObject {
     // MARK: Child
     
     func addChild(child: EvenTreeNode) {
-        immediateChildren.append(child)
+        children.append(child)
         child.parent = self
-        
-        totalChildren += 1
-        
-        if let parent = parent {
-            parent.childAddedChild()
-        }
-    }
-    
-    func childAddedChild() {
-        totalChildren += 1
-        
-        if let parent = parent {
-            parent.childAddedChild()
-        }
     }
     
     // MARK: Parent
     
-    func breakConnectionWithParent() {
-        if let parent = parent {
-            parent.removeChild(self)
-        }
-        
-        parent = nil
-    }
-    
     func removeChild(child: EvenTreeNode) {
-        totalChildren -= 1
-        
-        let index = immediateChildren.indexOf(child)!
-        immediateChildren.removeAtIndex(index)
-        
-        if let parent = parent {
-            parent.childRemovedChild()
-        }
-    }
-    
-    func childRemovedChild() {
-        totalChildren -= 1
-        
-        if let parent = parent {
-            parent.childRemovedChild()
-        }
+        let childIndex = children.indexOf(child)!
+        children.removeAtIndex(childIndex)
+        child.parent = nil
     }
 }
