@@ -8,6 +8,7 @@
 
 import UIKit
 
+//CtCI 3.3
 class StackOfPlates: NSObject {
 
     // MARK: Properties

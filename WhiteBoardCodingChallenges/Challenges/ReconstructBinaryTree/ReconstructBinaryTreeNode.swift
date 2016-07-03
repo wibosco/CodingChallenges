@@ -28,23 +28,6 @@ class ReconstructBinaryTreeNode: NSObject {
         super.init()
     }
     
-    // MARK: Value
-    
-    func hasValueAsNodeChild(value: Int) -> ReconstructBinaryTreeNode? {
-        
-        if left?.value == value {
-            
-            return left
-        }
-        
-        if right?.value == value {
-            
-            return right
-        }
-        
-        return nil
-    }
-    
     // MARK: Nodes
     
     func addNodeAsChild(node: ReconstructBinaryTreeNode) {

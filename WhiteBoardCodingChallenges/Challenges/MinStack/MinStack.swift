@@ -8,6 +8,7 @@
 
 import UIKit
 
+//CtCI 3.2
 class MinStack: NSObject {
 
     // MARK: Properties

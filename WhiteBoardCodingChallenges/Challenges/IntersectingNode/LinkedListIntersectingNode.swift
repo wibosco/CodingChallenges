@@ -8,6 +8,7 @@
 
 import UIKit
 
+//CtCI 2.7
 class LinkedListIntersectingNode: NSObject {
 
     class func areIntersecting(linkedListA: SingleLinkedList, linkedListB: SingleLinkedList) -> Bool {

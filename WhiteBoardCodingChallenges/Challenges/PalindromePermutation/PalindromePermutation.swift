@@ -8,6 +8,7 @@
 
 import Foundation
 
+//CtCI 1.4
 class PalindromePermutation: NSObject {
 
     class func premutationCanBePalindrome(original: String) -> Bool {

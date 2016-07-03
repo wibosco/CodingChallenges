@@ -8,6 +8,7 @@
 
 import UIKit
 
+//CtCI 2.8
 class CircularLinkedList: NSObject {
 
     class func isCircular(linkedList: SingleLinkedList) -> Bool {
