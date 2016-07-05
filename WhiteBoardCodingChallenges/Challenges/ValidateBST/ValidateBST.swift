@@ -8,7 +8,7 @@
 
 import UIKit
 
-//CtCI 4.6
+//CtCI 4.5
 class ValidateBST: NSObject {
     
     // MARK: InOrder
