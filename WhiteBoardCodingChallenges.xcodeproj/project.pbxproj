@@ -107,6 +107,9 @@
 		910767371D1D7C1A00918E82 /* BFSShortReachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910767361D1D7C1A00918E82 /* BFSShortReachTests.swift */; };
 		9107673A1D1D7D3900918E82 /* BFSSearchReachNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910767391D1D7D3900918E82 /* BFSSearchReachNode.swift */; };
 		9107673B1D1D7D3900918E82 /* BFSSearchReachNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910767391D1D7D3900918E82 /* BFSSearchReachNode.swift */; };
+		910C63A31D33E85500B98B97 /* IceCreamParlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C63A21D33E85500B98B97 /* IceCreamParlor.swift */; };
+		910C63A51D33E8DB00B98B97 /* IceCreamParlorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C63A41D33E8DB00B98B97 /* IceCreamParlorTests.swift */; };
+		910C63A61D33EFD300B98B97 /* IceCreamParlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C63A21D33E85500B98B97 /* IceCreamParlor.swift */; };
 		911822B71D281C2B001E5A51 /* ValidateBST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911822B61D281C2B001E5A51 /* ValidateBST.swift */; };
 		911822B91D281C64001E5A51 /* ValidateBSTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911822B81D281C64001E5A51 /* ValidateBSTNode.swift */; };
 		911822BB1D281CDF001E5A51 /* ValidateBSTFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911822BA1D281CDF001E5A51 /* ValidateBSTFactory.swift */; };
@@ -328,6 +331,8 @@
 		910767331D1D7A5B00918E82 /* BFSShortReach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSShortReach.swift; sourceTree = "<group>"; };
 		910767361D1D7C1A00918E82 /* BFSShortReachTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSShortReachTests.swift; sourceTree = "<group>"; };
 		910767391D1D7D3900918E82 /* BFSSearchReachNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSSearchReachNode.swift; sourceTree = "<group>"; };
+		910C63A21D33E85500B98B97 /* IceCreamParlor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlor.swift; sourceTree = "<group>"; };
+		910C63A41D33E8DB00B98B97 /* IceCreamParlorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlorTests.swift; sourceTree = "<group>"; };
 		911822B61D281C2B001E5A51 /* ValidateBST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateBST.swift; sourceTree = "<group>"; };
 		911822B81D281C64001E5A51 /* ValidateBSTNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateBSTNode.swift; sourceTree = "<group>"; };
 		911822BA1D281CDF001E5A51 /* ValidateBSTFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateBSTFactory.swift; sourceTree = "<group>"; };
@@ -462,6 +467,7 @@
 				432685C41CDCD348005B1E61 /* GreatestCommonDenominator */,
 				43D630901CE0CC680023328A /* GridSearch */,
 				91ED6FC61D21751D006226B5 /* HeapSort */,
+				910C63A11D33E83A00B98B97 /* IceCreamParlor */,
 				F43170D81CE8B6660093D062 /* InsertionSort */,
 				910597181CFCAEB70057BD82 /* IntersectingNode */,
 				43FB3F0C1CE4993100AFCDA7 /* Kaprekar */,
@@ -679,6 +685,7 @@
 				432685C81CDCD36E005B1E61 /* GreatestCommonDenominatorTests.swift */,
 				43D630941CE0CC880023328A /* GridSearchTests.swift */,
 				91ED6FCA1D2177B4006226B5 /* HeapSortTests.swift */,
+				910C63A41D33E8DB00B98B97 /* IceCreamParlorTests.swift */,
 				4353DA581CDB868200A07167 /* Info.plist */,
 				F43170DC1CE8B9EF0093D062 /* InsertionSortTests.swift */,
 				43FB3F101CE4994C00AFCDA7 /* KaprekarTests.swift */,
@@ -893,6 +900,14 @@
 				910767391D1D7D3900918E82 /* BFSSearchReachNode.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		910C63A11D33E83A00B98B97 /* IceCreamParlor */ = {
+			isa = PBXGroup;
+			children = (
+				910C63A21D33E85500B98B97 /* IceCreamParlor.swift */,
+			);
+			path = IceCreamParlor;
 			sourceTree = "<group>";
 		};
 		911822B51D281C0D001E5A51 /* ValidateBST */ = {
@@ -1303,6 +1318,7 @@
 				91F80FE11CFF0A9A0029F848 /* StackOfPlatesStack.swift in Sources */,
 				910597201CFCAF410057BD82 /* SingleLinkedList.swift in Sources */,
 				91A1CE6A1D2C0AE7002CB291 /* BalancedBST.swift in Sources */,
+				910C63A31D33E85500B98B97 /* IceCreamParlor.swift in Sources */,
 				911822B91D281C64001E5A51 /* ValidateBSTNode.swift in Sources */,
 				910597071CFC50B80057BD82 /* PalindromePermutation.swift in Sources */,
 				43FF2D321CE1F36A00D6FCDF /* CavityMap.swift in Sources */,
@@ -1459,6 +1475,7 @@
 				436BD3DF1CEB591100C5D7A9 /* BiggerIsGreater.swift in Sources */,
 				91F8100F1CFF73960029F848 /* BinarySearchTreeDepthNode.swift in Sources */,
 				91F80FF71CFF1D930029F848 /* RoutePlannerNode.swift in Sources */,
+				910C63A61D33EFD300B98B97 /* IceCreamParlor.swift in Sources */,
 				919340C61D22C30900AF44F7 /* PrimsMSTTests.swift in Sources */,
 				43FF2D351CE214EE00D6FCDF /* CaesarCipherTests.swift in Sources */,
 				91A1CE6F1D2C0BEE002CB291 /* BalancedBSTFactory.swift in Sources */,
@@ -1485,6 +1502,7 @@
 				91F8100C1CFF737F0029F848 /* BinarySearchTreeDepth.swift in Sources */,
 				432685B11CDCA288005B1E61 /* ReverseStringAndKeepWordOrdering.swift in Sources */,
 				F49EE2961CDE8EB20062F8B7 /* Beast.swift in Sources */,
+				910C63A51D33E8DB00B98B97 /* IceCreamParlorTests.swift in Sources */,
 				F49EE2A81CDFA3190062F8B7 /* SherlockSquares.swift in Sources */,
 				43963CF51CEA08FF0049F176 /* QuickSortTests.swift in Sources */,
 				F49EE2901CDE86690062F8B7 /* AngryProfessor.swift in Sources */,
