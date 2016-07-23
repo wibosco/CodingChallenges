@@ -25,10 +25,12 @@ class TheatreGuests: NSObject {
             guests[guest] = partners
         }
         
-        var jumpsSinceLastMove = 0
+        var partners = 0
         var index = 0
         
-        while jumpsSinceLastMove < ((guestsInSeats.count/2)-1) {
+        while partners < ((guestsInSeats.count/2)-1) {
+            print("index: \(index), seating: \(guestsInSeats.joinWithSeparator(" "))")
+            
             let guestToBePartneredUp = guestsInSeats[index]
             var guestToBeMovedIndex: Int
             
@@ -63,10 +65,10 @@ class TheatreGuests: NSObject {
                     }
                 }
             
-                jumpsSinceLastMove = 0
+                partners += 1
                 index = guestToBePartneredUpPartnersIndex
             } else {
-                jumpsSinceLastMove += 1
+                partners += 1
                 index += 2
             }
         }
