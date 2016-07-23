@@ -157,6 +157,9 @@
 		91AD5A2B1D242B700051F3FD /* EvenTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD5A2A1D242B700051F3FD /* EvenTreeNode.swift */; };
 		91AD5A2C1D242B700051F3FD /* EvenTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD5A2A1D242B700051F3FD /* EvenTreeNode.swift */; };
 		91AD5A2E1D2432FC0051F3FD /* EvenTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD5A2D1D2432FC0051F3FD /* EvenTreeTests.swift */; };
+		91B1A2461D3D3C7700A214E8 /* TheatreGuests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1A2451D3D3C7700A214E8 /* TheatreGuests.swift */; };
+		91B1A2471D3D3C8300A214E8 /* TheatreGuests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1A2451D3D3C7700A214E8 /* TheatreGuests.swift */; };
+		91B1A2491D3D3CA600A214E8 /* TheatreGuestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1A2481D3D3CA600A214E8 /* TheatreGuestsTests.swift */; };
 		91ED6FC21D216B6C006226B5 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ED6FC11D216B6C006226B5 /* MaxHeap.swift */; };
 		91ED6FC41D21709E006226B5 /* MaxHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ED6FC31D21709E006226B5 /* MaxHeapTests.swift */; };
 		91ED6FC51D21711E006226B5 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ED6FC11D216B6C006226B5 /* MaxHeap.swift */; };
@@ -368,6 +371,8 @@
 		91AD5A271D23ECB40051F3FD /* EvenTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenTree.swift; sourceTree = "<group>"; };
 		91AD5A2A1D242B700051F3FD /* EvenTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenTreeNode.swift; sourceTree = "<group>"; };
 		91AD5A2D1D2432FC0051F3FD /* EvenTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenTreeTests.swift; sourceTree = "<group>"; };
+		91B1A2451D3D3C7700A214E8 /* TheatreGuests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheatreGuests.swift; sourceTree = "<group>"; };
+		91B1A2481D3D3CA600A214E8 /* TheatreGuestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheatreGuestsTests.swift; sourceTree = "<group>"; };
 		91ED6FC11D216B6C006226B5 /* MaxHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
 		91ED6FC31D21709E006226B5 /* MaxHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapTests.swift; sourceTree = "<group>"; };
 		91ED6FC71D217531006226B5 /* HeapSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
@@ -512,6 +517,7 @@
 				F49EE27D1CDE60B90062F8B7 /* Staircase */,
 				91070EC21D2C664C00B51D3A /* SuccessorBST */,
 				F49EE26D1CDDE2D10062F8B7 /* Summing */,
+				91B1A2441D3D3C7700A214E8 /* TheatreGuests */,
 				F49EE2871CDE75B20062F8B7 /* TimeConverter */,
 				43FB3F061CE4865A00AFCDA7 /* TimeInWords */,
 				F49EE2991CDF36F10062F8B7 /* UtopianTree */,
@@ -734,6 +740,7 @@
 				F49EE2811CDE612E0062F8B7 /* StaircaseTests.swift */,
 				91070ECC1D2C6F4A00B51D3A /* SuccessorBSTTests.swift */,
 				F49EE2711CDDE3230062F8B7 /* SummingTests.swift */,
+				91B1A2481D3D3CA600A214E8 /* TheatreGuestsTests.swift */,
 				F49EE28B1CDE75C80062F8B7 /* TimeConverterTests.swift */,
 				43FB3F0A1CE4867700AFCDA7 /* TimeInWordsTests.swift */,
 				F49EE29D1CDF372F0062F8B7 /* UtopianTreeTests.swift */,
@@ -1010,6 +1017,14 @@
 				91AD5A2A1D242B700051F3FD /* EvenTreeNode.swift */,
 			);
 			path = EvenTree;
+			sourceTree = "<group>";
+		};
+		91B1A2441D3D3C7700A214E8 /* TheatreGuests */ = {
+			isa = PBXGroup;
+			children = (
+				91B1A2451D3D3C7700A214E8 /* TheatreGuests.swift */,
+			);
+			path = TheatreGuests;
 			sourceTree = "<group>";
 		};
 		91ED6FC01D216B6C006226B5 /* MaxHeap */ = {
@@ -1370,6 +1385,7 @@
 				91FE81211D00464500BBE456 /* ProjectBuildOrderNode.swift in Sources */,
 				F43170DA1CE8B6740093D062 /* InsertionSort.swift in Sources */,
 				9105970E1CFC59D20057BD82 /* ReconstructBinaryTreeNode.swift in Sources */,
+				91B1A2461D3D3C7700A214E8 /* TheatreGuests.swift in Sources */,
 				91F8101B1CFF9E330029F848 /* BinarySearchTreeDepthLinkedList.swift in Sources */,
 				43D630921CE0CC760023328A /* GridSearch.swift in Sources */,
 				432685C61CDCD35B005B1E61 /* GreatestCommonDenominator.swift in Sources */,
@@ -1531,6 +1547,7 @@
 				911822BD1D2823DB001E5A51 /* ValidateBSTTests.swift in Sources */,
 				910C63AC1D33FE1A00B98B97 /* MaximizeSumTests.swift in Sources */,
 				F49EE2A41CDF39ED0062F8B7 /* FindDigitsTests.swift in Sources */,
+				91B1A2471D3D3C8300A214E8 /* TheatreGuests.swift in Sources */,
 				91A1CE701D2C0BF0002CB291 /* BalancedBST.swift in Sources */,
 				91ED6FCB1D2177B4006226B5 /* HeapSortTests.swift in Sources */,
 				43FF2D451CE2467100D6FCDF /* ManasaAndStonesTests.swift in Sources */,
@@ -1596,6 +1613,7 @@
 				91070ECB1D2C675C00B51D3A /* SuccessorBSTFactory.swift in Sources */,
 				F49EE2781CDE090D0062F8B7 /* PercentagesTests.swift in Sources */,
 				F49EE2921CDE86750062F8B7 /* AngryProfessorTests.swift in Sources */,
+				91B1A2491D3D3CA600A214E8 /* TheatreGuestsTests.swift in Sources */,
 				912A54CB1D0AFF2400CF7242 /* MaximumSubarray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
