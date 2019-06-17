@@ -56,7 +56,7 @@ class NewYearChaos: NSObject {
      
         var inversions = 0
         
-        if NewYearChaos.isValidQueue(queue) {
+        if NewYearChaos.isValidQueue(queue: queue) {
             
             for index in 0..<queue.count {
                 

@@ -16,8 +16,8 @@ class StackOfPlatesTests: XCTestCase {
         
         let stacksOfPlates = StackOfPlates()
         
-        stacksOfPlates.push(1)
-        stacksOfPlates.push(2)
+        stacksOfPlates.push(value: 1)
+        stacksOfPlates.push(value: 2)
         
         XCTAssertEqual(1, stacksOfPlates.stacks.count)
     }
@@ -26,9 +26,9 @@ class StackOfPlatesTests: XCTestCase {
         
         let stacksOfPlates = StackOfPlates()
         
-        stacksOfPlates.push(1)
-        stacksOfPlates.push(2)
-        stacksOfPlates.push(3)
+        stacksOfPlates.push(value: 1)
+        stacksOfPlates.push(value: 2)
+        stacksOfPlates.push(value: 3)
         
         XCTAssertEqual(2, stacksOfPlates.stacks.count)
     }
@@ -37,11 +37,11 @@ class StackOfPlatesTests: XCTestCase {
         
         let stacksOfPlates = StackOfPlates()
         
-        stacksOfPlates.push(1)
-        stacksOfPlates.push(2)
-        stacksOfPlates.push(3)
+        stacksOfPlates.push(value: 1)
+        stacksOfPlates.push(value: 2)
+        stacksOfPlates.push(value: 3)
         
-        stacksOfPlates.pop()
+        _ = stacksOfPlates.pop()
         
         XCTAssertEqual(1, stacksOfPlates.stacks.count)
     }

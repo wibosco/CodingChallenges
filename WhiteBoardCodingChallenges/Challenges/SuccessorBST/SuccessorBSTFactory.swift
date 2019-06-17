@@ -33,10 +33,10 @@ class SuccessorBSTFactory: NSObject {
                 nodes[childNodeValue] = childNode
             }
             
-            parentNode!.addNodeAsChild(childNode!)
+            parentNode!.addNodeAsChild(node: childNode!)
         }
         
-        return rootNode(nodes)
+        return rootNode(nodes: nodes)
     }
     
     class func rootNode(nodes: [Int: SuccessorBSTNode]) -> SuccessorBSTNode {

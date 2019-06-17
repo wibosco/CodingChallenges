@@ -28,7 +28,7 @@ class PalindromeTests: XCTestCase {
         
         let string = "toaoT"
         
-        let isPalindrome = Palindrome.isPalindrome(string)
+        let isPalindrome = Palindrome.isPalindrome(string: string)
         
         XCTAssertTrue(isPalindrome, "Should be true")
     }
@@ -37,7 +37,7 @@ class PalindromeTests: XCTestCase {
         
         let string = "bananana"
         
-        let isPalindrome = Palindrome.isPalindrome(string)
+        let isPalindrome = Palindrome.isPalindrome(string: string)
         
         XCTAssertFalse(isPalindrome, "Should be false")
     }

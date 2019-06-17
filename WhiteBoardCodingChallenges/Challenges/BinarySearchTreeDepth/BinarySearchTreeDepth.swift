@@ -25,7 +25,7 @@ class BinarySearchTreeDepth: NSObject {
         }
         else {
             
-            addValue(value, root: root!)
+            addValue(value: value, root: root!)
         }
     }
     
@@ -39,7 +39,7 @@ class BinarySearchTreeDepth: NSObject {
             }
             else {
                 
-                addValue(value, root: root.left!)
+                addValue(value: value, root: root.left!)
             }
         }
         else {
@@ -50,14 +50,14 @@ class BinarySearchTreeDepth: NSObject {
             }
             else {
                 
-                addValue(value, root: root.right!)
+                addValue(value: value, root: root.right!)
             }
         }
     }
     
     // MARK: Visit
     
-    private func visited(node: BinarySearchTreeDepthNode, inout nodesVisted: [BinarySearchTreeDepthLinkedList]) {
+    private func visited(node: BinarySearchTreeDepthNode, nodesVisted: inout [BinarySearchTreeDepthLinkedList]) {
         
         let depth = node.depth
         
@@ -73,7 +73,7 @@ class BinarySearchTreeDepth: NSObject {
             list = nodesVisted[node.depth]
         }
         
-        list.addNode(node)
+        list.addNode(binarySearchNode: node)
     }
     
     // MARK: Depth
@@ -82,19 +82,19 @@ class BinarySearchTreeDepth: NSObject {
         
         var nodesVisited = [BinarySearchTreeDepthLinkedList]()
         
-        nodesInDepth(root, nodesVisted: &nodesVisited)
+        nodesInDepth(root: root, nodesVisted: &nodesVisited)
         
         return nodesVisited
     }
     
-    private func nodesInDepth(root: BinarySearchTreeDepthNode?, inout nodesVisted: [BinarySearchTreeDepthLinkedList]) {
+    private func nodesInDepth(root: BinarySearchTreeDepthNode?, nodesVisted: inout [BinarySearchTreeDepthLinkedList]) {
         
         if let root = root {
             
-            visited(root, nodesVisted: &nodesVisted)
+            visited(node: root, nodesVisted: &nodesVisted)
             
-            nodesInDepth(root.left, nodesVisted: &nodesVisted)
-            nodesInDepth(root.right, nodesVisted: &nodesVisted)
+            nodesInDepth(root: root.left, nodesVisted: &nodesVisted)
+            nodesInDepth(root: root.right, nodesVisted: &nodesVisted)
         }
     }
 }

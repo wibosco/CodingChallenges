@@ -29,7 +29,7 @@ class SuccessorBSTTests: XCTestCase {
                          [5,7],
                          [5,8]]
         
-        root = SuccessorBSTFactory.buildBinaryTree(relationships)
+        root = SuccessorBSTFactory.buildBinaryTree(relationships: relationships)
     }
     
     override func tearDown() {
@@ -41,31 +41,31 @@ class SuccessorBSTTests: XCTestCase {
     // MARK: InOrderPreSorted
     
     func test_successorBSTA() {
-        let successor = SuccessorBST.successorNode(root)
+        let successor = SuccessorBST.successorNode(predecessorNode: root)
         
         XCTAssertEqual(successor, root.right!)
     }
     
     func test_successorBSTB() {
-        let successor = SuccessorBST.successorNode(root.left!)
+        let successor = SuccessorBST.successorNode(predecessorNode: root.left!)
         
         XCTAssertEqual(successor, root.left!.right)
     }
     
     func test_successorBSTC() {
-        let successor = SuccessorBST.successorNode(root.left!.right!)
+        let successor = SuccessorBST.successorNode(predecessorNode: root.left!.right!)
         
         XCTAssertEqual(successor, root)
     }
     
     func test_successorBSTD() {
-        let successor = SuccessorBST.successorNode(root.right!)
+        let successor = SuccessorBST.successorNode(predecessorNode: root.right!)
         
         XCTAssertEqual(successor, root.right!.right!)
     }
     
     func test_successorBSTE() {
-        let successor = SuccessorBST.successorNode(root.right!.right!)
+        let successor = SuccessorBST.successorNode(predecessorNode: root.right!.right!)
         
         XCTAssertNil(successor)
     }    

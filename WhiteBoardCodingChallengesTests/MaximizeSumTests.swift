@@ -16,7 +16,7 @@ class MaximizeSumTests: XCTestCase {
         let values = [3,3,9,9,5]
         let modulo = 7
         
-        let maximum = MaximizeSum.maximizeSum(values, modulo: modulo)
+        let maximum = MaximizeSum.maximizeSum(values: values, modulo: modulo)
         
         XCTAssertEqual(maximum, 6)
     }

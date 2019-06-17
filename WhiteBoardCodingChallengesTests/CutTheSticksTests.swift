@@ -16,7 +16,7 @@ class CutTheSticksTests: XCTestCase {
         
         let sticks = [5, 4, 4, 2, 2, 8]
         
-        let sticksRemainingForEachCut = CutTheSticks.cutUntilDone(sticks)
+        let sticksRemainingForEachCut = CutTheSticks.cutUntilDone(sticks: sticks)
         
         XCTAssertEqual([6, 4, 2, 1], sticksRemainingForEachCut)
     }
@@ -25,7 +25,7 @@ class CutTheSticksTests: XCTestCase {
         
         let sticks = [1, 2, 3, 4, 3, 3, 2, 1]
         
-        let sticksRemainingForEachCut = CutTheSticks.cutUntilDone(sticks)
+        let sticksRemainingForEachCut = CutTheSticks.cutUntilDone(sticks: sticks)
         
         XCTAssertEqual([8, 6, 4, 1], sticksRemainingForEachCut)
     }

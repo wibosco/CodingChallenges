@@ -12,41 +12,30 @@ import Foundation
 class PalindromePermutation: NSObject {
 
     class func premutationCanBePalindrome(original: String) -> Bool {
-    
-        let spacesRemovedOriginal = original.stringByReplacingOccurrencesOfString(" ", withString: "").lowercaseString
-        
-        if spacesRemovedOriginal.characters.count < 2 {
-            
+        let spacesRemovedOriginal = original.replacingOccurrences(of: " ", with: "").lowercased()
+
+        if spacesRemovedOriginal.count < 2 {
             return false
         }
-        
+
         //Not sure if we need this shortcut?
-        if spacesRemovedOriginal.characters.count == 2 {
-            
-            if spacesRemovedOriginal[spacesRemovedOriginal.characters.startIndex] == spacesRemovedOriginal[spacesRemovedOriginal.characters.endIndex.advancedBy(-1)] {
-                
+        if spacesRemovedOriginal.count == 2 {
+            if spacesRemovedOriginal[spacesRemovedOriginal.startIndex] == spacesRemovedOriginal[spacesRemovedOriginal.index(spacesRemovedOriginal.endIndex, offsetBy: -1)] {
                 return true
-            }
-            else {
-                
+            } else {
                 return false
             }
         }
-        
-        let occurrences = countOccurrencesOfCharacters(spacesRemovedOriginal)
-        
+
+        let occurrences = countOccurrencesOfCharacters(original: spacesRemovedOriginal)
+
         var foundOddValue = false
-        
+
         for count in occurrences.values {
-            
             if count % 2 != 0 {
-                
                 if foundOddValue {
-                    
                     return false
-                }
-                else {
-                    
+                } else {
                     foundOddValue = true
                 }
             }
@@ -56,19 +45,14 @@ class PalindromePermutation: NSObject {
     }
     
     class func countOccurrencesOfCharacters(original: String) -> [String : Int] {
-        
         var occurrences = [String : Int]()
         
-        for character in original.characters {
-            
+        for character in original {
             if occurrences[String(character)] != nil {
-                
                 let count = occurrences[String(character)]!
                 
                 occurrences[String(character)] = count+1
-            }
-            else {
-                
+            } else {
                 occurrences[String(character)] = 1
             }
         }

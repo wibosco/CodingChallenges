@@ -61,7 +61,7 @@ class QuickSort: NSObject {
             }
         }
         
-        return sort(left) + [pivot] + sort(right)
+        return sort(array: left) + [pivot] + sort(array: right)
     }
     
     class func sortAlt(array: [Int]) -> [Int] {
@@ -78,28 +78,28 @@ class QuickSort: NSObject {
         let left = strippedArray.filter {$0 <= pivot}
         let right = strippedArray.filter{$0 > pivot}
         
-        return sort(left) + [pivot] + sort(right)
+        return sort(array: left) + [pivot] + sort(array: right)
     }
     
     // MARK: InPlace
     
     //https://www.hackerrank.com/challenges/quicksort3
-    class func sortInPlace(inout array: [Int], leftIndex: Int, rightIndex: Int) {
+    class func sortInPlace(array: inout [Int], leftIndex: Int, rightIndex: Int) {
         
         //if this isn't true then the array is sorted
         if leftIndex < rightIndex {
             
-            let partionIndex = partion(&array, leftIndex: leftIndex, rightIndex: rightIndex)
+            let partionIndex = partion(array: &array, leftIndex: leftIndex, rightIndex: rightIndex)
             
-            print(array.map(String.init).joinWithSeparator(" "))
+            print(array.map(String.init).joined(separator: " "))
             
-            QuickSort.sortInPlace(&array, leftIndex: leftIndex, rightIndex: partionIndex - 1)
-            QuickSort.sortInPlace(&array, leftIndex: partionIndex + 1, rightIndex: rightIndex)
+            QuickSort.sortInPlace(array: &array, leftIndex: leftIndex, rightIndex: partionIndex - 1)
+            QuickSort.sortInPlace(array: &array, leftIndex: partionIndex + 1, rightIndex: rightIndex)
         }
     }
     
     //swap elements so that they are on the correct side of the partion, we don't care about the ordering anymore than that here
-    class func swap(inout array: [Int], aIndex: Int, bIndex: Int) {
+    class func swap(array: inout [Int], aIndex: Int, bIndex: Int) {
         
         let temp = array[aIndex]
         
@@ -108,7 +108,7 @@ class QuickSort: NSObject {
         
     }
     
-    class func partion(inout array: [Int], leftIndex: Int, rightIndex: Int) -> Int {
+    class func partion(array: inout [Int], leftIndex: Int, rightIndex: Int) -> Int {
         
         let pivotValue = array[rightIndex]
         
@@ -121,7 +121,7 @@ class QuickSort: NSObject {
 //                print("Before swap array is now: \(array[leftIndex..<rightIndex])")
 //                print("about to swap value index: \(i) with partion index: \(partionIndex)")
                 
-                QuickSort.swap(&array, aIndex: i, bIndex: partionIndex)
+                QuickSort.swap(array: &array, aIndex: i, bIndex: partionIndex)
                 
 //                print("After swap array is now: \(array[leftIndex..<rightIndex])")
 //                print("")
@@ -131,7 +131,7 @@ class QuickSort: NSObject {
         }
         
         //Move pivot into positon behind partion
-        QuickSort.swap(&array, aIndex: partionIndex, bIndex: rightIndex)
+        QuickSort.swap(array: &array, aIndex: partionIndex, bIndex: rightIndex)
         
         return partionIndex
     }

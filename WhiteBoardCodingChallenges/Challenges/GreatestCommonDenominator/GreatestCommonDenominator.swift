@@ -34,7 +34,7 @@ class GreatestCommonDenominator: NSObject {
         
         let lowestUpperBounds = lowest / 2
         
-        for index in (0...lowestUpperBounds).reverse() {
+        for index in (0...lowestUpperBounds).reversed() {
             
             if lowest % index == 0 && highest % index == 0 {
                 

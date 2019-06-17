@@ -49,7 +49,7 @@ class ACMICPCTeam: NSObject {
         
         let binaryMaximum = String(maximum, radix: 2)
         
-        for ch in binaryMaximum.characters {
+        for ch in binaryMaximum {
             
             if ch == Character("1") {
                 
@@ -80,10 +80,10 @@ class ACMICPCTeam: NSObject {
                     var uniqueTopicsForContestantCombination = 0
                     var numberOfUnknownTopics = 0
                     
-                    for characterIndex in secondContestantTopicKnowledge.characters.indices {
+                    for characterIndex in secondContestantTopicKnowledge.indices {
                         
-                        let topicKnowledgeA = Int(String(firstContestantTopicKnowledge.characters[characterIndex]))!
-                        let topicKnowledgeB = Int(String(secondContestantTopicKnowledge.characters[characterIndex]))!
+                        let topicKnowledgeA = Int(String(firstContestantTopicKnowledge[characterIndex]))!
+                        let topicKnowledgeB = Int(String(secondContestantTopicKnowledge[characterIndex]))!
                         
                         if topicKnowledgeA | topicKnowledgeB == 1 {
                             
@@ -96,7 +96,7 @@ class ACMICPCTeam: NSObject {
                             numberOfUnknownTopics += 1
                         }
                         
-                        if maximum > (secondContestantTopicKnowledge.characters.count - numberOfUnknownTopics) {
+                        if maximum > (secondContestantTopicKnowledge.count - numberOfUnknownTopics) {
                             
                             break
                         }

@@ -19,7 +19,7 @@ class MinimalBinarySearchTree: NSObject {
     
     func constructBinarySearchTreeFromSortedArray(sortedArray: [Int]) {
         
-        constructBinarySearchTreeFromSortedArray(sortedArray, root: nil)
+        constructBinarySearchTreeFromSortedArray(sortedArray: sortedArray, root: nil)
     }
     
     private func constructBinarySearchTreeFromSortedArray(sortedArray: [Int], root: MinimalBinarySearchTreeNode?) {
@@ -40,14 +40,14 @@ class MinimalBinarySearchTree: NSObject {
         }
         else {
             
-            root!.addChild(node)
+            root!.addChild(node: node)
         }
         
         let leftSortedArray = Array(sortedArray[0..<centralIndex])
         let rightSortedArray = Array(sortedArray[(centralIndex+1)..<sortedArray.count])
         
-        constructBinarySearchTreeFromSortedArray(leftSortedArray, root: node)
-        constructBinarySearchTreeFromSortedArray(rightSortedArray, root: node)
+        constructBinarySearchTreeFromSortedArray(sortedArray: leftSortedArray, root: node)
+        constructBinarySearchTreeFromSortedArray(sortedArray: rightSortedArray, root: node)
     }
     
     // MARK: Traversal
@@ -56,7 +56,7 @@ class MinimalBinarySearchTree: NSObject {
         
         if root != nil {
             
-            preOrderTraversal(root)
+            preOrderTraversal(node: root)
         }
     }
     
@@ -66,8 +66,8 @@ class MinimalBinarySearchTree: NSObject {
             
             print(node!.value)
             
-            preOrderTraversal(node?.left)
-            preOrderTraversal(node?.right)
+            preOrderTraversal(node: node?.left)
+            preOrderTraversal(node: node?.right)
         }
     }
     
@@ -75,7 +75,7 @@ class MinimalBinarySearchTree: NSObject {
         
         if root != nil {
             
-            inOrderTraversal(root)
+            inOrderTraversal(node: root)
         }
     }
     
@@ -83,9 +83,9 @@ class MinimalBinarySearchTree: NSObject {
         
         if node != nil {
             
-            inOrderTraversal(node?.left)
+            inOrderTraversal(node: node?.left)
             print(node!.value)
-            inOrderTraversal(node?.right)
+            inOrderTraversal(node: node?.right)
         }
     }
     
@@ -93,7 +93,7 @@ class MinimalBinarySearchTree: NSObject {
         
         if root != nil {
             
-            postOrderTraversal(root)
+            postOrderTraversal(node: root)
         }
     }
     
@@ -101,8 +101,8 @@ class MinimalBinarySearchTree: NSObject {
         
         if node != nil {
             
-            postOrderTraversal(node?.left)
-            postOrderTraversal(node?.right)
+            postOrderTraversal(node: node?.left)
+            postOrderTraversal(node: node?.right)
             print(node!.value)
         }
     }

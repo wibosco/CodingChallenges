@@ -20,7 +20,7 @@ class MinStackTests: XCTestCase {
         
         for value in stackValues {
             
-            stack.push(value)
+            stack.push(value: value)
         }
         
         XCTAssertEqual(1, stack.min()!.lowerNodeMinNode!.value)
@@ -34,7 +34,7 @@ class MinStackTests: XCTestCase {
         
         for value in stackValues {
             
-            stack.push(value)
+            stack.push(value: value)
         }
         
         XCTAssertEqual(1, stack.min()!.lowerNodeMinNode!.value)
@@ -48,7 +48,7 @@ class MinStackTests: XCTestCase {
         
         for value in stackValues {
             
-            stack.push(value)
+            stack.push(value: value)
         }
         
         XCTAssertEqual(1, stack.min()!.lowerNodeMinNode!.value)
@@ -62,7 +62,7 @@ class MinStackTests: XCTestCase {
         
         for value in stackValues {
             
-            stack.push(value)
+            stack.push(value: value)
         }
         
         XCTAssertEqual(1, stack.min()!.lowerNodeMinNode!.value)
@@ -76,10 +76,10 @@ class MinStackTests: XCTestCase {
         
         for value in stackValues {
             
-            stack.push(value)
+            stack.push(value: value)
         }
         
-        stack.pop()
+        _ = stack.pop()
         
         XCTAssertEqual(2, stack.min()!.lowerNodeMinNode!.value)
     }
@@ -92,10 +92,10 @@ class MinStackTests: XCTestCase {
         
         for value in stackValues {
             
-            stack.push(value)
+            stack.push(value: value)
         }
         
-        stack.pop()
+        _ = stack.pop()
         
         XCTAssertEqual(2, stack.min()!.lowerNodeMinNode!.value)
     }
@@ -108,10 +108,10 @@ class MinStackTests: XCTestCase {
         
         for value in stackValues {
             
-            stack.push(value)
+            stack.push(value: value)
         }
         
-        stack.pop()
+        _ = stack.pop()
         
         XCTAssertEqual(1, stack.min()!.lowerNodeMinNode!.value)
     }

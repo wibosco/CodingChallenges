@@ -21,30 +21,30 @@ class CircularLinkedListTests: XCTestCase {
         
         let linkedList = SingleLinkedList()
         
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(circularNodeA)
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(circularNodeB)
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: circularNodeA)
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: circularNodeB)
         
-        XCTAssertTrue(CircularLinkedList.isCircular(linkedList))
+        XCTAssertTrue(CircularLinkedList.isCircular(linkedList: linkedList))
     }
     
     func test_circularLinkedListB() {
         
         let linkedList = SingleLinkedList()
         
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
         
-        XCTAssertFalse(CircularLinkedList.isCircular(linkedList))
+        XCTAssertFalse(CircularLinkedList.isCircular(linkedList: linkedList))
     }
     
     // Mark CircularOnNode
@@ -58,30 +58,30 @@ class CircularLinkedListTests: XCTestCase {
         
         let linkedList = SingleLinkedList()
         
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(circularNodeA)
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(circularNodeB)
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: circularNodeA)
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: circularNodeB)
         
-        XCTAssertEqual(circularNodeA, CircularLinkedList.isCircularOnNode(linkedList))
+        XCTAssertEqual(circularNodeA, CircularLinkedList.isCircularOnNode(linkedList: linkedList))
     }
     
     func test_isCircularOnNodeB() {
         
         let linkedList = SingleLinkedList()
         
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
         
-        XCTAssertNil(CircularLinkedList.isCircularOnNode(linkedList))
+        XCTAssertNil(CircularLinkedList.isCircularOnNode(linkedList: linkedList))
     }
     
     // Mark CircularFromNode
@@ -95,30 +95,30 @@ class CircularLinkedListTests: XCTestCase {
         
         let linkedList = SingleLinkedList()
         
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(circularNodeA)
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(circularNodeB)
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: circularNodeA)
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: circularNodeB)
         
-        XCTAssertEqual(circularNodeB, CircularLinkedList.isCircularFromNode(linkedList))
+        XCTAssertEqual(circularNodeB, CircularLinkedList.isCircularFromNode(linkedList: linkedList))
     }
     
     func test_isCircularFromNodeB() {
         
         let linkedList = SingleLinkedList()
         
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
-        linkedList.addNode(LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
+        linkedList.addNode(node: LinkedListNode.init(value: 3))
         
-        XCTAssertNil(CircularLinkedList.isCircularFromNode(linkedList))
+        XCTAssertNil(CircularLinkedList.isCircularFromNode(linkedList: linkedList))
     }
 
 

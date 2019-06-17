@@ -28,7 +28,7 @@ class ReverseStringAndKeepWordOrderingTests: XCTestCase {
 
         let stringToBeReversed = "to be reversed"
         
-        let reversedString = ReverseStringAndKeepWordOrdering.reverse(stringToBeReversed)
+        let reversedString = ReverseStringAndKeepWordOrdering.reverse(string: stringToBeReversed)
         
         XCTAssertEqual(reversedString, "ot eb desrever", "Should have reversed string maintain ordering of words")
     }

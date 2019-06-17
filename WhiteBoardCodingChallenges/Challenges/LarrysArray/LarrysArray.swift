@@ -33,7 +33,7 @@ class LarrysArray: NSObject {
     
         for index in 0..<(values.count - 2) {
         
-            valuesAfterRotation = LarrysArray.attemptToMoveValueIntoPosition(valuesAfterRotation, valueToMove: (index + 1))
+            valuesAfterRotation = LarrysArray.attemptToMoveValueIntoPosition(values: valuesAfterRotation, valueToMove: (index + 1))
             
             if index > 0 {
                 
@@ -56,7 +56,7 @@ class LarrysArray: NSObject {
     
     class func attemptToMoveValueIntoPosition(values: [Int], valueToMove: Int) -> [Int] {
         
-        let index = values.indexOf(valueToMove)!
+        let index = values.firstIndex(of: valueToMove)!
         
         if index == (valueToMove - 1) {
             
@@ -68,17 +68,17 @@ class LarrysArray: NSObject {
             
             if index == (indexValueShouldBeMovedTo + 1) {
                 
-                return rotate(values, sequence: .BCA, startingIndex: indexValueShouldBeMovedTo)
+                return rotate(values: values, sequence: .BCA, startingIndex: indexValueShouldBeMovedTo)
             }
             else if index == (indexValueShouldBeMovedTo + 2) {
             
-                return rotate(values, sequence: .CAB, startingIndex: indexValueShouldBeMovedTo)
+                return rotate(values: values, sequence: .CAB, startingIndex: indexValueShouldBeMovedTo)
             }
             else {
                 
-                let valuesAfterRotation = rotate(values, sequence: .CAB, startingIndex: (index - 2))
+                let valuesAfterRotation = rotate(values: values, sequence: .CAB, startingIndex: (index - 2))
                 
-                return attemptToMoveValueIntoPosition(valuesAfterRotation, valueToMove: valueToMove)
+                return attemptToMoveValueIntoPosition(values: valuesAfterRotation, valueToMove: valueToMove)
             }
         }
     }
@@ -120,7 +120,7 @@ class LarrysArray: NSObject {
     
     class func canRobotSortAlt(values: [Int]) -> Bool {
         
-        let isInversionsCountOdd = (LarrysArray.countOfInversions(values) % 2 != 0)
+        let isInversionsCountOdd = (LarrysArray.countOfInversions(values: values) % 2 != 0)
         
         if isInversionsCountOdd {
             

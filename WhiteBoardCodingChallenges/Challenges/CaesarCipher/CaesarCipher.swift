@@ -18,25 +18,25 @@ class CaesarCipher: NSObject {
         var uncapitalisedLetters = [Character]()
         var capitalisedLetters = [Character]()
         
-        for letter in alphabet.characters {
+        for letter in alphabet {
             
             uncapitalisedLetters.append(letter)
-            capitalisedLetters.append(Character(String(letter).capitalizedString))
+            capitalisedLetters.append(Character(String(letter).capitalized))
         }
         
         var encryptedString = ""
         
-        for character in originalString.characters {
+        for character in originalString {
             
             var encryptedCharacter = character
             
             if uncapitalisedLetters.contains(character) {
                 
-                encryptedCharacter = CaesarCipher.retrieveCharacterAfterRotation(character, characterSet: uncapitalisedLetters, rotate: rotate)
+                encryptedCharacter = CaesarCipher.retrieveCharacterAfterRotation(character: character, characterSet: uncapitalisedLetters, rotate: rotate)
             }
             else if capitalisedLetters.contains(character) {
                 
-                encryptedCharacter = CaesarCipher.retrieveCharacterAfterRotation(character, characterSet: capitalisedLetters, rotate: rotate)
+                encryptedCharacter = CaesarCipher.retrieveCharacterAfterRotation(character: character, characterSet: capitalisedLetters, rotate: rotate)
             }
             
             encryptedString += String(encryptedCharacter)
@@ -47,7 +47,7 @@ class CaesarCipher: NSObject {
     
     class func retrieveCharacterAfterRotation(character: Character, characterSet: [Character], rotate: Int) -> Character {
         
-        let index = characterSet.indexOf(character)!
+        let index = characterSet.firstIndex(of: character)!
         let indexAfterRotation = index + rotate
         var indexForEncryptedCharacter = indexAfterRotation
         

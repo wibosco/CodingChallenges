@@ -19,18 +19,18 @@ class HeapSort: NSObject {
             return input
         }
         
-        var maxHeap = MaxHeap.buildMaxHeap(input)
+        var maxHeap = MaxHeap.buildMaxHeap(input: input)
         var heapSorted = [Int]()
         
         while maxHeap.count > 1 {
             
-            heapSorted.insert(maxHeap[0], atIndex: 0)
-            exchange(&maxHeap, i: 0, j: (maxHeap.count - 1))
+            heapSorted.insert(maxHeap[0], at: 0)
+            exchange(heap: &maxHeap, i: 0, j: (maxHeap.count - 1))
             maxHeap.removeLast()
-            MaxHeap.maxHeapify(&maxHeap, indexRoot: 0)
+            MaxHeap.maxHeapify(heap: &maxHeap, indexRoot: 0)
         }
         
-        heapSorted.insert(maxHeap[0], atIndex: 0)
+        heapSorted.insert(maxHeap[0], at: 0)
         
         return heapSorted
     }
@@ -44,25 +44,25 @@ class HeapSort: NSObject {
             return input
         }
         
-        var minHeap = MinHeap.buildMinHeap(input)
+        var minHeap = MinHeap.buildMinHeap(input: input)
         var heapSorted = [Int]()
         
         while minHeap.count > 1 {
             
-            heapSorted.insert(minHeap[0], atIndex: 0)
-            exchange(&minHeap, i: 0, j: (minHeap.count - 1))
+            heapSorted.insert(minHeap[0], at: 0)
+            exchange(heap: &minHeap, i: 0, j: (minHeap.count - 1))
             minHeap.removeLast()
-            MinHeap.minHeapify(&minHeap, indexRoot: 0)
+            MinHeap.minHeapify(heap: &minHeap, indexRoot: 0)
         }
         
-        heapSorted.insert(minHeap[0], atIndex: 0)
+        heapSorted.insert(minHeap[0], at: 0)
         
         return heapSorted
     }
     
     // MARK: Exchange
     
-    class func exchange<T>(inout heap: [T], i:Int, j:Int) {
+    class func exchange<T>(heap: inout [T], i:Int, j:Int) {
         
         let temp:T = heap[i]
         heap[i] = heap[j]

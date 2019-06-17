@@ -12,38 +12,37 @@ import Foundation
 class LibraryFine: NSObject {
 
     class func calculateFine(dueDate: String, expectedDueDate: String) -> Int {
-        
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MM yyyy"
-        
-        let dueDateAsDate = dateFormatter.dateFromString(dueDate)!
-        let expectedDateAsDate = dateFormatter.dateFromString(expectedDueDate)!
-        
+
+        let dueDateAsDate = dateFormatter.date(from: dueDate)!
+        let expectedDateAsDate = dateFormatter.date(from: expectedDueDate)!
+
         var fine = 0
-        
-        if dueDateAsDate.compare(expectedDateAsDate) == NSComparisonResult.OrderedDescending {
-            
-            let dueDateAsDateComponents = NSCalendar .currentCalendar().components([.Day, .Month, .Year], fromDate: dueDateAsDate)
-            let expectedDateAsDateComponents = NSCalendar .currentCalendar().components([.Day, .Month, .Year], fromDate: expectedDateAsDate)
-            
+
+        if dueDateAsDate.compare(expectedDateAsDate) == ComparisonResult.orderedDescending {
+
+            let dueDateAsDateComponents = NSCalendar.current.dateComponents([.day, .month, .year], from: dueDateAsDate)
+            let expectedDateAsDateComponents = NSCalendar.current.dateComponents([.day, .month, .year], from: expectedDateAsDate)
+
             if dueDateAsDateComponents.year != expectedDateAsDateComponents.year {
-                
+
                 fine = 10000
             }
             else if dueDateAsDateComponents.month != expectedDateAsDateComponents.month {
-                
-                let difference = dueDateAsDateComponents.month - expectedDateAsDateComponents.month
-                
+
+                let difference = dueDateAsDateComponents.month! - expectedDateAsDateComponents.month!
+
                 fine = 500 * difference
             }
             else {
-                
-                let difference = dueDateAsDateComponents.day - expectedDateAsDateComponents.day
-                
+
+                let difference = dueDateAsDateComponents.day! - expectedDateAsDateComponents.day!
+
                 fine = 15 * difference
             }
         }
-        
+
         return fine
     }
 }

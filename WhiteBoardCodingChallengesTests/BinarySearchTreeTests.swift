@@ -29,7 +29,7 @@ class BinarySearchTreeTests: XCTestCase {
         
         for value in values {
             
-            populatedBinarySearchTree!.addValue(value)
+            populatedBinarySearchTree!.addValue(value: value)
         }
     }
     
@@ -48,7 +48,7 @@ class BinarySearchTreeTests: XCTestCase {
         
         for value in values {
             
-            self.binarySearchTree!.addValue(value)
+            self.binarySearchTree!.addValue(value: value)
         }
         
         XCTAssertEqual(self.values[0], self.binarySearchTree!.root!.value)

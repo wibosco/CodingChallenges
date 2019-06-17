@@ -12,7 +12,6 @@ import UIKit
 class SortingIntro: NSObject {
 
     class func indexOfValue(value: Int, array: [Int]) -> Int {
-        
-        return array.indexOf(value)!
+        return array.firstIndex(of: value)!
     }
 }

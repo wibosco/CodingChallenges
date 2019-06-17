@@ -15,7 +15,7 @@ class Staircase: NSObject {
         
         var staircaseString = ""
         
-        for row in (0..<height).reverse() {
+        for row in (0..<height).reversed() {
             
             var rowString = ""
             
@@ -35,7 +35,7 @@ class Staircase: NSObject {
                 rowString = "\(rowString)\(elementString)"
             }
             
-            if staircaseString.characters.count > 0 {
+            if staircaseString.count > 0 {
                 
                 staircaseString = "\(staircaseString)\n\(rowString)"
             }

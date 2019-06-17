@@ -20,7 +20,7 @@ class BinarySearchTreeDepthTests: XCTestCase {
         
         for value in values {
             
-            tree.addValue(value)
+            tree.addValue(value: value)
         }
         
         let lists = tree.nodesInDepth()
@@ -36,7 +36,7 @@ class BinarySearchTreeDepthTests: XCTestCase {
         
         for value in values {
             
-            tree.addValue(value)
+            tree.addValue(value: value)
         }
         
         let lists = tree.nodesInDepth()

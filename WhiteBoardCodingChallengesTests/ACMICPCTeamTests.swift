@@ -19,7 +19,7 @@ class ACMICPCTeamTests: XCTestCase {
                                          "11010",
                                          "00101"];
         
-        let bestCombination = ACMICPCTeam.bestCombination(contestantsTopicKnowledge)
+        let bestCombination = ACMICPCTeam.bestCombination(contestantsTopicKnowledge: contestantsTopicKnowledge)
         
         XCTAssertEqual(5, bestCombination.maximumTopicsKnown)
         XCTAssertEqual(2, bestCombination.teamsThatCanAchieveThis)
@@ -34,7 +34,7 @@ class ACMICPCTeamTests: XCTestCase {
                                          "11010",
                                          "00101"];
         
-        let bestCombination = ACMICPCTeam.bestCombinationAlt(contestantsTopicKnowledge)
+        let bestCombination = ACMICPCTeam.bestCombinationAlt(contestantsTopicKnowledge: contestantsTopicKnowledge)
         
         XCTAssertEqual(5, bestCombination.maximumTopicsKnown)
         XCTAssertEqual(2, bestCombination.teamsThatCanAchieveThis)
@@ -143,7 +143,7 @@ class ACMICPCTeamTests: XCTestCase {
                                          "0011101111110010001011110000110111111111100000100110010011010110101001100100000100101001110001100001",
                                          "1110011111110101111011111010111010011111111011010011100001100101011111101110001111111101111101001000"];
         
-        let bestCombination = ACMICPCTeam.bestCombinationAlt(contestantsTopicKnowledge)
+        let bestCombination = ACMICPCTeam.bestCombinationAlt(contestantsTopicKnowledge: contestantsTopicKnowledge)
         
         XCTAssertEqual(97, bestCombination.maximumTopicsKnown)
         XCTAssertEqual(5, bestCombination.teamsThatCanAchieveThis)

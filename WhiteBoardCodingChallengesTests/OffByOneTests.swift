@@ -15,36 +15,36 @@ class OffByOneTests: XCTestCase {
     
     func test_OffByOneA() {
         
-        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange("pale", destination: "ple"))
+        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pale", destination: "ple"))
     }
     
     func test_offByOneB() {
         
-        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange("pales", destination: "pale"))
+        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pales", destination: "pale"))
     }
     
     func test_offByOneC() {
         
-        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange("pale", destination: "bale"))
+        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pale", destination: "bale"))
     }
     
     func test_offByOneD() {
         
-        XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange("pale", destination: "bae"))
+        XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pale", destination: "bae"))
     }
     
     func test_offByOneE() {
         
-        XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange("paled", destination: "bae"))
+        XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "paled", destination: "bae"))
     }
     
     func test_offByOneF() {
         
-        XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange("bae", destination: "breed"))
+        XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "bae", destination: "breed"))
     }
     
     func test_offByOneG() {
         
-        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange("bae", destination: "bae"))
+        XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "bae", destination: "bae"))
     }
 }

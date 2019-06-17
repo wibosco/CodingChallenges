@@ -23,7 +23,7 @@ class PrimsMSTTests: XCTestCase {
                      [2,4,7]]
         let sourceIndex = 0
         
-        let totalWeight = PrimsMST.totalWeight(sourceIndex, totalNodes: totalNodes, edges: edges)
+        let totalWeight = PrimsMST.totalWeight(sourceIndex: sourceIndex, totalNodes: totalNodes, edges: edges)
         
         XCTAssertEqual(totalWeight, 15)
     }

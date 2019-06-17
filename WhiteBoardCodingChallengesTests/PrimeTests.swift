@@ -26,24 +26,24 @@ class PrimeTests: XCTestCase {
     
     func test_isPrimeTrue() {
         
-        XCTAssertTrue(Prime.isPrime(5))
+        XCTAssertTrue(Prime.isPrime(value: 5))
     }
     
     func test_isPrimeFalseEven() {
         
-        XCTAssertFalse(Prime.isPrime(28))
+        XCTAssertFalse(Prime.isPrime(value: 28))
     }
     
     func test_isPrimeFalseOdd() {
         
-        XCTAssertFalse(Prime.isPrime(55))
+        XCTAssertFalse(Prime.isPrime(value: 55))
     }
     
     // MARK: PrimeFactors
     
     func test_primeFactors() {
         
-        Prime.primeFactors(864)
+        Prime.primeFactors(value: 864)
         
         XCTAssertTrue(true)
     }

@@ -17,7 +17,7 @@ class HeapSortTests: XCTestCase {
         let input = [6,5,1,7,14,9]
         let expectedOutput = [1,5,6,7,9,14]
         
-        let actualOutput = HeapSort.maxHeapSort(input)
+        let actualOutput = HeapSort.maxHeapSort(input: input)
         
         XCTAssertEqual(actualOutput, expectedOutput)
     }
@@ -29,7 +29,7 @@ class HeapSortTests: XCTestCase {
         let input = [6,5,1,7,14,9]
         let expectedOutput = [14,9,7,6,5,1]
         
-        let actualOutput = HeapSort.minHeapSort(input)
+        let actualOutput = HeapSort.minHeapSort(input: input)
         
         XCTAssertEqual(actualOutput, expectedOutput)
     }

@@ -24,7 +24,7 @@ class BinarySearchTree: NSObject {
         }
         else {
             
-            addValue(value, root: root!)
+            addValue(value: value, root: root!)
         }
     }
     
@@ -38,7 +38,7 @@ class BinarySearchTree: NSObject {
             }
             else {
                 
-                addValue(value, root: root.left!)
+                addValue(value: value, root: root.left!)
             }
         }
         else {
@@ -49,16 +49,16 @@ class BinarySearchTree: NSObject {
             }
             else {
                 
-                addValue(value, root: root.right!)
+                addValue(value: value, root: root.right!)
             }
         }
     }
     
     // MARK: Traversal
     
-    private func addNodeToOrdering(node: BinarySearchTreeNode, inout ordering: String) {
+    private func addNodeToOrdering(node: BinarySearchTreeNode, ordering: inout String) {
     
-        if ordering.characters.count > 0 {
+        if ordering.count > 0 {
             
             ordering += ", "
         }
@@ -72,7 +72,7 @@ class BinarySearchTree: NSObject {
             
             var ordering = ""
             
-            preOrderTraversal(root, ordering: &ordering)
+            preOrderTraversal(node: root, ordering: &ordering)
             
             return ordering
         }
@@ -80,14 +80,14 @@ class BinarySearchTree: NSObject {
         return ""
     }
     
-    private func preOrderTraversal(node: BinarySearchTreeNode?, inout ordering: String) {
+    private func preOrderTraversal(node: BinarySearchTreeNode?, ordering: inout String) {
         
         if node != nil {
             
-            addNodeToOrdering(node!, ordering: &ordering)
+            addNodeToOrdering(node: node!, ordering: &ordering)
             
-            preOrderTraversal(node?.left, ordering: &ordering)
-            preOrderTraversal(node?.right, ordering: &ordering)
+            preOrderTraversal(node: node?.left, ordering: &ordering)
+            preOrderTraversal(node: node?.right, ordering: &ordering)
         }
     }
     
@@ -97,7 +97,7 @@ class BinarySearchTree: NSObject {
             
             var ordering = ""
             
-            inOrderTraversal(root, ordering: &ordering)
+            inOrderTraversal(node: root, ordering: &ordering)
             
             return ordering
         }
@@ -105,13 +105,13 @@ class BinarySearchTree: NSObject {
         return ""
     }
     
-    private func inOrderTraversal(node: BinarySearchTreeNode?, inout ordering: String) {
+    private func inOrderTraversal(node: BinarySearchTreeNode?, ordering: inout String) {
         
         if node != nil {
     
-            inOrderTraversal(node?.left, ordering: &ordering)
-            addNodeToOrdering(node!, ordering: &ordering)
-            inOrderTraversal(node?.right, ordering: &ordering)
+            inOrderTraversal(node: node?.left, ordering: &ordering)
+            addNodeToOrdering(node: node!, ordering: &ordering)
+            inOrderTraversal(node: node?.right, ordering: &ordering)
         }
     }
     
@@ -121,7 +121,7 @@ class BinarySearchTree: NSObject {
             
             var ordering = ""
             
-            postOrderTraversal(root, ordering: &ordering)
+            postOrderTraversal(node: root, ordering: &ordering)
             
             return ordering
         }
@@ -129,13 +129,13 @@ class BinarySearchTree: NSObject {
         return ""
     }
     
-    private func postOrderTraversal(node: BinarySearchTreeNode?, inout ordering: String) {
+    private func postOrderTraversal(node: BinarySearchTreeNode?, ordering: inout String) {
         
         if node != nil {
             
-            postOrderTraversal(node?.left, ordering: &ordering)
-            postOrderTraversal(node?.right, ordering: &ordering)
-            addNodeToOrdering(node!, ordering: &ordering)
+            postOrderTraversal(node: node?.left, ordering: &ordering)
+            postOrderTraversal(node: node?.right, ordering: &ordering)
+            addNodeToOrdering(node: node!, ordering: &ordering)
         }
     }
     
@@ -146,22 +146,22 @@ class BinarySearchTree: NSObject {
             var ordering = ""
             
             let queue = LevelTraversalQueue()
-            queue.enqueue(root!)
+            queue.enqueue(node: root!)
             
             while !queue.isEmpty() {
                 
                 let node = queue.dequeue()
                 
-                addNodeToOrdering(node, ordering: &ordering)
+                addNodeToOrdering(node: node, ordering: &ordering)
                 
                 if node.left != nil {
                     
-                    queue.enqueue(node.left!)
+                    queue.enqueue(node: node.left!)
                 }
                 
                 if node.right != nil {
                     
-                    queue.enqueue(node.right!)
+                    queue.enqueue(node: node.right!)
                 }
             }
 

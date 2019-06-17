@@ -18,7 +18,7 @@ class InsertionSort: NSObject {
         let valueToBeSorted = array.last!
         var intermediateStep = array
         
-        for index in (0..<(array.count - 1)).reverse() {
+        for index in (0..<(array.count - 1)).reversed() {
             
             intermediateStep[index + 1] = intermediateStep[index]
             
@@ -55,7 +55,7 @@ class InsertionSort: NSObject {
             
             let value = array[index]
             
-            for sortingIndex in (0..<index).reverse() {
+            for sortingIndex in (0..<index).reversed() {
                 
                 let comparisonValue = sortingArray[sortingIndex]
                 
@@ -86,7 +86,7 @@ class InsertionSort: NSObject {
             
             let value = array[index]
             
-            for sortingIndex in (0..<index).reverse() {
+            for sortingIndex in (0..<index).reversed() {
                 
                 let comparisonValue = sortingArray[sortingIndex]
                 

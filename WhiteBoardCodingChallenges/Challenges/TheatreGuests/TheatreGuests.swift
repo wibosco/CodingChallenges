@@ -11,12 +11,12 @@ import Foundation
 //Google
 //Can only move each guest once
 class TheatreGuests: NSObject {
-
+    
     // MARK: MaximumOneMoveEach
     
-    class func sortGuestsInSeatsAlt(inout guestsInSeats: [String]) {
+    class func sortGuestsInSeatsAlt(guestsInSeats: inout [String]) {
         var guests = [String: [Int]]()
-        for (index, guest) in guestsInSeats.enumerate() {
+        for (index, guest) in guestsInSeats.enumerated() {
             var partners = guests[guest]
             if partners == nil {
                 partners = [Int]()
@@ -29,7 +29,7 @@ class TheatreGuests: NSObject {
         var index = 0
         
         while partners < ((guestsInSeats.count/2)-1) {
-            print("index: \(index), seating: \(guestsInSeats.joinWithSeparator(" "))")
+            print("index: \(index), seating: \(guestsInSeats.joined(separator: " "))")
             
             let guestToBePartneredUp = guestsInSeats[index]
             var guestToBeMovedIndex: Int
@@ -39,9 +39,9 @@ class TheatreGuests: NSObject {
             } else {
                 guestToBeMovedIndex = index-1
             }
-
+            
             let guestToBeMoved = guestsInSeats[guestToBeMovedIndex]
-        
+            
             if guestToBePartneredUp != guestToBeMoved {
                 let partnerIndexes = guests[guestToBePartneredUp]!
                 var guestToBePartneredUpPartnersIndex = 0
@@ -57,14 +57,14 @@ class TheatreGuests: NSObject {
                 
                 var guestToBeMovedIndexes = guests[guestToBeMoved]!
                 
-                for (index, guestIndex) in guestToBeMovedIndexes.enumerate() {
+                for (index, guestIndex) in guestToBeMovedIndexes.enumerated() {
                     if guestIndex == guestToBeMovedIndex {
                         guestToBeMovedIndexes[index] = guestToBePartneredUpPartnersIndex
                         guests[guestToBeMoved] = guestToBeMovedIndexes
                         break
                     }
                 }
-            
+                
                 partners += 1
                 index = guestToBePartneredUpPartnersIndex
             } else {
@@ -76,14 +76,14 @@ class TheatreGuests: NSObject {
     
     // MARK: MultipleMoves
     
-    class func sortGuestsInSeats(inout guestsInSeats: [String]) {
+    class func sortGuestsInSeats(guestsInSeats: inout [String]) {
         var index = 1
         while index < guestsInSeats.count {
             if guestsInSeats[index-1] != guestsInSeats[index] {
                 let remainingGuests = Array(guestsInSeats[(index+1)..<guestsInSeats.count])
-                let partnerIndex = (findGuestsPartnerIndex(remainingGuests, partner:guestsInSeats[index-1])) + (index+1)
+                let partnerIndex = (findGuestsPartnerIndex(guestsInSeats: remainingGuests, partner:guestsInSeats[index-1])) + (index+1)
                 
-                TheatreGuests.swap(&guestsInSeats, source:index, destination:partnerIndex)
+                TheatreGuests.swap(data: &guestsInSeats, source:index, destination:partnerIndex)
             }
             
             index += 2
@@ -91,7 +91,7 @@ class TheatreGuests: NSObject {
     }
     
     class func findGuestsPartnerIndex(guestsInSeats: [String], partner: String) -> Int {
-        for (index, guest) in guestsInSeats.enumerate() {
+        for (index, guest) in guestsInSeats.enumerated() {
             if guest == partner {
                 return index
             }
@@ -100,7 +100,7 @@ class TheatreGuests: NSObject {
         return -1
     }
     
-    class func swap(inout data: [String], source: Int, destination: Int) {
+    class func swap(data: inout [String], source: Int, destination: Int) {
         let temp = data[destination]
         data[destination] = data[source]
         data[source] = temp

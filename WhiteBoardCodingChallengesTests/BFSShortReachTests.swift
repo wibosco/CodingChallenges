@@ -18,7 +18,7 @@ class BFSShortReachTests: XCTestCase {
         let edges = [[0, 1], [0, 2]]
         let sourceIndex = 0
         
-        let nodes = BFSShortReach.distanceFromSourceToAllOtherNodes(sourceIndex, totalNodes: totalNodes, edges: edges)
+        let nodes = BFSShortReach.distanceFromSourceToAllOtherNodes(sourceIndex: sourceIndex, totalNodes: totalNodes, edges: edges)
         
         let distancesFromSource = [0, 6, 6, -1]
         
@@ -34,7 +34,7 @@ class BFSShortReachTests: XCTestCase {
         let edges = [[1, 2]]
         let sourceIndex = 1
         
-        let nodes = BFSShortReach.distanceFromSourceToAllOtherNodes(sourceIndex, totalNodes: totalNodes, edges: edges)
+        let nodes = BFSShortReach.distanceFromSourceToAllOtherNodes(sourceIndex: sourceIndex, totalNodes: totalNodes, edges: edges)
         
         let distancesFromSource = [-1, 0, 6]
         
@@ -50,7 +50,7 @@ class BFSShortReachTests: XCTestCase {
         let edges = [[1, 2]]
         let sourceIndex = 1
         
-        let nodes = BFSShortReach.distanceFromSourceToAllOtherNodes(sourceIndex, totalNodes: totalNodes, edges: edges)
+        let nodes = BFSShortReach.distanceFromSourceToAllOtherNodes(sourceIndex: sourceIndex, totalNodes: totalNodes, edges: edges)
         
         let distancesFromSource = [-1, 0, 6]
         

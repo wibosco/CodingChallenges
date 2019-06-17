@@ -20,7 +20,7 @@ class QueueViaStacksTests: XCTestCase {
         
         for value in values {
             
-            queue.enqueue(value)
+            queue.enqueue(value: value)
         }
         
         XCTAssertEqual(3, queue.peek())

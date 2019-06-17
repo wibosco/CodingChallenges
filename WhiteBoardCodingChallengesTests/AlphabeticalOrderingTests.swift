@@ -28,7 +28,7 @@ class AlphabeticalOrderingTests: XCTestCase {
         
         let stringToBeSorted = "to be sorted as a big string"
         
-        let sortedString = AlphabeticalOrdering.sort(stringToBeSorted)
+        let sortedString = AlphabeticalOrdering.sort(string: stringToBeSorted)
         
         XCTAssertEqual(sortedString, "a as be big sorted string to", "Should have sorted by alphabetical ordering")
     }

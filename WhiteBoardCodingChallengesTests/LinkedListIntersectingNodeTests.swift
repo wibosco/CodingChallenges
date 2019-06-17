@@ -16,19 +16,19 @@ class LinkedListIntersectingNodeTests: XCTestCase {
         
         let linkedListA = SingleLinkedList()
         
-        linkedListA.addNode(LinkedListNode.init(value: 1))
-        linkedListA.addNode(LinkedListNode.init(value: 2))
-        linkedListA.addNode(LinkedListNode.init(value: 3))
-        linkedListA.addNode(LinkedListNode.init(value: 4))
+        linkedListA.addNode(node: LinkedListNode.init(value: 1))
+        linkedListA.addNode(node: LinkedListNode.init(value: 2))
+        linkedListA.addNode(node: LinkedListNode.init(value: 3))
+        linkedListA.addNode(node: LinkedListNode.init(value: 4))
         
         let linkedListB = SingleLinkedList()
         
-        linkedListB.addNode(LinkedListNode.init(value: 1))
-        linkedListB.addNode(LinkedListNode.init(value: 2))
-        linkedListB.addNode(LinkedListNode.init(value: 3))
-        linkedListB.addNode(LinkedListNode.init(value: 4))
+        linkedListB.addNode(node: LinkedListNode.init(value: 1))
+        linkedListB.addNode(node: LinkedListNode.init(value: 2))
+        linkedListB.addNode(node: LinkedListNode.init(value: 3))
+        linkedListB.addNode(node: LinkedListNode.init(value: 4))
         
-        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA, linkedListB: linkedListB)
+        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA: linkedListA, linkedListB: linkedListB)
         
         XCTAssertFalse(intersecting)
     }
@@ -39,19 +39,19 @@ class LinkedListIntersectingNodeTests: XCTestCase {
         
         let linkedListA = SingleLinkedList()
         
-        linkedListA.addNode(LinkedListNode.init(value: 1))
-        linkedListA.addNode(commonNode)
-        linkedListA.addNode(LinkedListNode.init(value: 3))
-        linkedListA.addNode(LinkedListNode.init(value: 4))
+        linkedListA.addNode(node: LinkedListNode.init(value: 1))
+        linkedListA.addNode(node: commonNode)
+        linkedListA.addNode(node: LinkedListNode.init(value: 3))
+        linkedListA.addNode(node: LinkedListNode.init(value: 4))
         
         let linkedListB = SingleLinkedList()
         
-        linkedListB.addNode(LinkedListNode.init(value: 1))
-        linkedListB.addNode(LinkedListNode.init(value: 2))
-        linkedListB.addNode(commonNode)
-        linkedListB.addNode(LinkedListNode.init(value: 4))
+        linkedListB.addNode(node: LinkedListNode.init(value: 1))
+        linkedListB.addNode(node: LinkedListNode.init(value: 2))
+        linkedListB.addNode(node: commonNode)
+        linkedListB.addNode(node: LinkedListNode.init(value: 4))
         
-        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA, linkedListB: linkedListB)
+        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA: linkedListA, linkedListB: linkedListB)
         
         XCTAssertTrue(intersecting)
     }
@@ -62,18 +62,18 @@ class LinkedListIntersectingNodeTests: XCTestCase {
         
         let linkedListA = SingleLinkedList()
         
-        linkedListA.addNode(commonNode)
-        linkedListA.addNode(LinkedListNode.init(value: 3))
-        linkedListA.addNode(LinkedListNode.init(value: 4))
+        linkedListA.addNode(node: commonNode)
+        linkedListA.addNode(node: LinkedListNode.init(value: 3))
+        linkedListA.addNode(node: LinkedListNode.init(value: 4))
         
         let linkedListB = SingleLinkedList()
         
-        linkedListB.addNode(LinkedListNode.init(value: 1))
-        linkedListB.addNode(LinkedListNode.init(value: 2))
-        linkedListB.addNode(LinkedListNode.init(value: 4))
-        linkedListB.addNode(commonNode)
+        linkedListB.addNode(node: LinkedListNode.init(value: 1))
+        linkedListB.addNode(node: LinkedListNode.init(value: 2))
+        linkedListB.addNode(node: LinkedListNode.init(value: 4))
+        linkedListB.addNode(node: commonNode)
         
-        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA, linkedListB: linkedListB)
+        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA: linkedListA, linkedListB: linkedListB)
         
         XCTAssertTrue(intersecting)
     }
@@ -84,24 +84,24 @@ class LinkedListIntersectingNodeTests: XCTestCase {
         
         let linkedListA = SingleLinkedList()
         
-        linkedListA.addNode(LinkedListNode.init(value: 3))
-        linkedListA.addNode(LinkedListNode.init(value: 4))
-        linkedListA.addNode(LinkedListNode.init(value: 3))
-        linkedListA.addNode(LinkedListNode.init(value: 4))
-        linkedListA.addNode(LinkedListNode.init(value: 3))
-        linkedListA.addNode(LinkedListNode.init(value: 4))
-        linkedListA.addNode(LinkedListNode.init(value: 3))
-        linkedListA.addNode(LinkedListNode.init(value: 4))
-        linkedListA.addNode(commonNode)
+        linkedListA.addNode(node: LinkedListNode.init(value: 3))
+        linkedListA.addNode(node: LinkedListNode.init(value: 4))
+        linkedListA.addNode(node: LinkedListNode.init(value: 3))
+        linkedListA.addNode(node: LinkedListNode.init(value: 4))
+        linkedListA.addNode(node: LinkedListNode.init(value: 3))
+        linkedListA.addNode(node: LinkedListNode.init(value: 4))
+        linkedListA.addNode(node: LinkedListNode.init(value: 3))
+        linkedListA.addNode(node: LinkedListNode.init(value: 4))
+        linkedListA.addNode(node: commonNode)
         
         let linkedListB = SingleLinkedList()
         
-        linkedListB.addNode(LinkedListNode.init(value: 1))
-        linkedListB.addNode(LinkedListNode.init(value: 2))
-        linkedListB.addNode(LinkedListNode.init(value: 4))
-        linkedListB.addNode(commonNode)
+        linkedListB.addNode(node: LinkedListNode.init(value: 1))
+        linkedListB.addNode(node: LinkedListNode.init(value: 2))
+        linkedListB.addNode(node: LinkedListNode.init(value: 4))
+        linkedListB.addNode(node: commonNode)
         
-        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA, linkedListB: linkedListB)
+        let intersecting = LinkedListIntersectingNode.areIntersecting(linkedListA: linkedListA, linkedListB: linkedListB)
         
         XCTAssertTrue(intersecting)
     }

@@ -22,7 +22,7 @@ class ReconstructBinaryTreeTests: XCTestCase {
         
         let binaryTree = ReconstructBinaryTree()
         
-        let firstNode = binaryTree.reconstructTree(nodeList)
+        let firstNode = binaryTree.reconstructTree(deconstructedTree: nodeList)
         
         XCTAssertEqual(firstNode.value, 1)
     }

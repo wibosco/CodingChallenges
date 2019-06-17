@@ -12,13 +12,13 @@ class AlphabeticalOrdering: NSObject {
 
     class func sort(string: String) -> String {
         
-        let seperateWords = string.characters.split(" ").map(String.init)
+        let seperateWords = string.split(separator: " ").map(String.init)
         
-        let sortedWords = seperateWords.sort({ (i: String, j: String) -> Bool in
+        let sortedWords = seperateWords.sorted(by: { (i: String, j: String) -> Bool in
             
             var shortestWord: String
             
-            if i.characters.count > j.characters.count {
+            if i.count > j.count {
                 shortestWord = j
             }
             else {
@@ -27,7 +27,7 @@ class AlphabeticalOrdering: NSObject {
             
             /*----------------*/
             
-            for index in shortestWord.characters.indices {
+            for index in shortestWord.indices {
                 
                 let iCharacter = i[index]
                 let jCharacter = j[index]
@@ -44,7 +44,7 @@ class AlphabeticalOrdering: NSObject {
             
             /*----------------*/
             
-            if i.characters.count > j.characters.count {
+            if i.count > j.count {
                 
                 return false
             }
@@ -54,6 +54,6 @@ class AlphabeticalOrdering: NSObject {
             }
         })
         
-        return sortedWords.joinWithSeparator(" ")
+        return sortedWords.joined(separator: " ")
     }
 }

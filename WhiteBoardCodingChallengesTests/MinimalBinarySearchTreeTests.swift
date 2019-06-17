@@ -18,7 +18,7 @@ class MinimalBinarySearchTreeTests: XCTestCase {
         
         let bst = MinimalBinarySearchTree()
         
-        bst.constructBinarySearchTreeFromSortedArray(sortedArray)
+        bst.constructBinarySearchTreeFromSortedArray(sortedArray: sortedArray)
         
         XCTAssertEqual(4, bst.root?.value)
     }
@@ -29,7 +29,7 @@ class MinimalBinarySearchTreeTests: XCTestCase {
         
         let bst = MinimalBinarySearchTree()
         
-        bst.constructBinarySearchTreeFromSortedArray(sortedArray)
+        bst.constructBinarySearchTreeFromSortedArray(sortedArray: sortedArray)
         
         XCTAssertEqual(6, bst.root?.value)
     }

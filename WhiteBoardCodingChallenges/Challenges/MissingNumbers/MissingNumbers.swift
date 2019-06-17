@@ -40,7 +40,7 @@ class MissingNumbers: NSObject {
             }
         }
         
-        return missing.sort({ (a, b) -> Bool in
+        return missing.sorted(by: { (a, b) -> Bool in
             return b > a
         })
     }

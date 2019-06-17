@@ -21,7 +21,7 @@ class CutTheSticks: NSObject {
             
             sticksRemainingAtEachCut.append(sticksToBeCut.filter{$0 > 0}.count)
             
-            let minStickLength = sticksToBeCut.filter{$0 > 0}.minElement()!
+            let minStickLength = sticksToBeCut.filter{$0 > 0}.min()!
             
             for index in 0..<sticksToBeCut.count {
                 

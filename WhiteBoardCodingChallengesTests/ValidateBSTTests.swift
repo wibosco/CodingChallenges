@@ -19,8 +19,8 @@ class ValidateBSTTests: XCTestCase {
                              [1, 3],
                              [2, 5]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -33,8 +33,8 @@ class ValidateBSTTests: XCTestCase {
                              [7, 6],
                              [7, 8]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
         
         XCTAssertTrue(isBST)
     }
@@ -47,8 +47,8 @@ class ValidateBSTTests: XCTestCase {
                              [7, 6],
                              [7, 8]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -64,8 +64,8 @@ class ValidateBSTTests: XCTestCase {
                              [12, 9],
                              [9, 10]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -82,8 +82,8 @@ class ValidateBSTTests: XCTestCase {
                              [9, 10],
                              [9, 11]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -99,8 +99,8 @@ class ValidateBSTTests: XCTestCase {
                              [10, 8],
                              [10, 11]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
         
         XCTAssertTrue(isBST)
     }
@@ -114,8 +114,8 @@ class ValidateBSTTests: XCTestCase {
                              [1, 3],
                              [2, 5]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.maxMinIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.maxMinIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -128,8 +128,8 @@ class ValidateBSTTests: XCTestCase {
                              [7, 6],
                              [7, 8]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.maxMinIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.maxMinIsBST(root: root)
         
         XCTAssertTrue(isBST)
     }
@@ -142,8 +142,8 @@ class ValidateBSTTests: XCTestCase {
                              [7, 6],
                              [7, 8]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.maxMinIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.maxMinIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -159,8 +159,8 @@ class ValidateBSTTests: XCTestCase {
                              [12, 9],
                              [9, 10]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.maxMinIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.maxMinIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -176,8 +176,8 @@ class ValidateBSTTests: XCTestCase {
                              [12, 9],
                              [9, 10]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.maxMinIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.maxMinIsBST(root: root)
         
         XCTAssertFalse(isBST)
     }
@@ -193,8 +193,8 @@ class ValidateBSTTests: XCTestCase {
                              [10, 8],
                              [10, 11]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships)
-        let isBST = ValidateBST.maxMinIsBST(root)
+        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBST = ValidateBST.maxMinIsBST(root: root)
         
         XCTAssertTrue(isBST)
     }

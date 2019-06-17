@@ -27,7 +27,7 @@ class StaircaseTests: XCTestCase {
     
     func test_staircase() {
     
-        let staircase = Staircase.staircase(6)
+        let staircase = Staircase.staircase(height: 6)
         
         print(staircase)
         

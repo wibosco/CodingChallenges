@@ -14,21 +14,21 @@ class ChocolateFeastTests: XCTestCase {
     
     func test_chocolatedEatenA() {
         
-        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(10, chocolatePrice: 2, wrapperExchangeTheshold: 5)
+        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(dollarsInPocket: 10, chocolatePrice: 2, wrapperExchangeTheshold: 5)
         
         XCTAssertEqual(6, chocolatesEaten)
     }
     
     func test_chocolatedEatenB() {
         
-        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(12, chocolatePrice: 4, wrapperExchangeTheshold: 4)
+        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(dollarsInPocket: 12, chocolatePrice: 4, wrapperExchangeTheshold: 4)
         
         XCTAssertEqual(3, chocolatesEaten)
     }
     
     func test_chocolatedEatenC() {
         
-        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(6, chocolatePrice: 2, wrapperExchangeTheshold: 2)
+        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(dollarsInPocket: 6, chocolatePrice: 2, wrapperExchangeTheshold: 2)
         
         XCTAssertEqual(5, chocolatesEaten)
     }
@@ -37,7 +37,7 @@ class ChocolateFeastTests: XCTestCase {
     
     func test_chocolatedEatenD() {
         
-        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(43203, chocolatePrice: 60, wrapperExchangeTheshold: 5)
+        let chocolatesEaten = ChocolateFeast.countOfEatenChocolates(dollarsInPocket: 43203, chocolatePrice: 60, wrapperExchangeTheshold: 5)
         
         XCTAssertEqual(899, chocolatesEaten)
     }

@@ -41,13 +41,13 @@ class PrimsMSTNode: NSObject {
             if existingEdge.weight > weight {
                 
                 edges[destination] = PrimsMSTEdge(source: self, destination: destination, weight: weight)
-                destination.addEdge(self, weight: weight)
+                destination.addEdge(destination: self, weight: weight)
             }
         }
         else {
             
             edges[destination] = PrimsMSTEdge(source: self, destination: destination, weight: weight)
-            destination.addEdge(self, weight: weight)
+            destination.addEdge(destination: self, weight: weight)
         }
     }
 }

@@ -26,14 +26,14 @@ class SummingTests: XCTestCase {
     
     func test_sum() {
         
-        let sum = Summing.sum([7, 8, 67, 5, 23, 9])
+        let sum = Summing.sum(array: [7, 8, 67, 5, 23, 9])
         
         XCTAssertEqual(119, sum, "Summing up has failed to produce the expected answer")
     }
     
     func test_sumLargeValues() {
         
-        let sum = Summing.sumLargeValue([1000000000000001, 1000000000000002, 1000000000000003, 1000000000000004, 1000000000000005])
+        let sum = Summing.sumLargeValue(array: [1000000000000001, 1000000000000002, 1000000000000003, 1000000000000004, 1000000000000005])
         
         XCTAssertEqual(5000000000000015, sum, "Summing up has failed to produce the expected answer")
     }
@@ -46,7 +46,7 @@ class SummingTests: XCTestCase {
         
         let matrix = [row1, row2, row3]
         
-        let sum = Summing.sumMatrixDiagonals(matrix)
+        let sum = Summing.sumMatrixDiagonals(matrix: matrix)
         
         XCTAssertEqual(15, sum, "Summing up has failed to produce the expected answer")
         

@@ -18,7 +18,7 @@ class BinarySearchTreeDepthLinkedList: NSObject {
     
     func addNode(binarySearchNode: BinarySearchTreeDepthNode) {
         
-        addNode(binarySearchNode, linkedListNode: head)
+        addNode(binarySearchNode: binarySearchNode, linkedListNode: head)
     }
     
     private func addNode(binarySearchNode: BinarySearchTreeDepthNode, linkedListNode: BinarySearchTreeDepthLinkedListNode?) {
@@ -34,7 +34,7 @@ class BinarySearchTreeDepthLinkedList: NSObject {
             }
             else {
                 
-                addNode(binarySearchNode, linkedListNode: linkedListNode.next)
+                addNode(binarySearchNode: binarySearchNode, linkedListNode: linkedListNode.next)
             }
         }
         else {

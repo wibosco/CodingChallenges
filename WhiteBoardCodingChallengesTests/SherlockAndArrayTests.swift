@@ -14,14 +14,14 @@ class SherlockAndArrayTests: XCTestCase {
     
     func test_sherlockAndArrayA() {
         let array = [1,2,3]
-        let possible = SherlockAndArray.leftRightEqualityPossible(array)
+        let possible = SherlockAndArray.leftRightEqualityPossible(array: array)
         
         XCTAssertFalse(possible)
     }
     
     func test_sherlockAndArrayB() {
         let array = [1,2,3,3]
-        let possible = SherlockAndArray.leftRightEqualityPossible(array)
+        let possible = SherlockAndArray.leftRightEqualityPossible(array: array)
         
         XCTAssertTrue(possible)
     }

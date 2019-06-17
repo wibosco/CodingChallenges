@@ -13,13 +13,13 @@ class ProjectBuildOrder: NSObject {
 
     class func buildOrder(projects: [String], dependencies: [[String]]) -> [ProjectBuildOrderNode]? {
         
-        let nodes = buildNodes(projects, dependencies: dependencies)
+        let nodes = buildNodes(projects: projects, dependencies: dependencies)
         
         for node in nodes {
             
             for dependency in node.dependencies {
                 
-                if dependencyCycleExistsBetweenNodes(dependency, destination: node) {
+                if dependencyCycleExistsBetweenNodes(source: dependency, destination: node) {
                     
                     return nil
                 }
@@ -32,20 +32,20 @@ class ProjectBuildOrder: NSObject {
             
             if !node.pathVisited {
             
-                buildOrder(node, vistedNodes: &orderedNodes)
+                buildOrder(rootNode: node, vistedNodes: &orderedNodes)
             }
         }
         
         return orderedNodes
     }
     
-    private class func buildOrder(rootNode: ProjectBuildOrderNode, inout vistedNodes: [ProjectBuildOrderNode]) {
+    private class func buildOrder(rootNode: ProjectBuildOrderNode, vistedNodes: inout [ProjectBuildOrderNode]) {
         
         for dependency in rootNode.dependencies {
             
             if !dependency.pathVisited {
                 
-                buildOrder(dependency, vistedNodes: &vistedNodes)
+                buildOrder(rootNode: dependency, vistedNodes: &vistedNodes)
             }
         }
         
@@ -72,7 +72,7 @@ class ProjectBuildOrder: NSObject {
             let dependentNode = nodes[dependent]
             let dependencyNode = nodes[dependency]
             
-            dependentNode?.addDependency(dependencyNode!)
+            dependentNode?.addDependency(dependency: dependencyNode!)
         }
         
         return Array(nodes.values)

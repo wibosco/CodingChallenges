@@ -30,7 +30,7 @@ class GridSearchTests: XCTestCase {
                        "3845",
                        "3530"]
         
-        let containsPattern = GridSearch.gridContainsPattern(grid, pattern: pattern)
+        let containsPattern = GridSearch.gridContainsPattern(grid: grid, pattern: pattern)
         
         XCTAssertTrue(containsPattern)
     }
@@ -44,7 +44,7 @@ class GridSearchTests: XCTestCase {
         let pattern = ["99",
                        "99"]
         
-        let containsPattern = GridSearch.gridContainsPattern(grid, pattern: pattern)
+        let containsPattern = GridSearch.gridContainsPattern(grid: grid, pattern: pattern)
         
         XCTAssertFalse(containsPattern)
     }
@@ -59,7 +59,7 @@ class GridSearchTests: XCTestCase {
         let pattern = ["12",
                        "21"]
         
-        let containsPattern = GridSearch.gridContainsPattern(grid, pattern: pattern)
+        let containsPattern = GridSearch.gridContainsPattern(grid: grid, pattern: pattern)
         
         XCTAssertFalse(containsPattern)
     }
@@ -74,7 +74,7 @@ class GridSearchTests: XCTestCase {
         let pattern = ["12",
                        "34"]
         
-        let containsPattern = GridSearch.gridContainsPattern(grid, pattern: pattern)
+        let containsPattern = GridSearch.gridContainsPattern(grid: grid, pattern: pattern)
         
         XCTAssertTrue(containsPattern)
     }
@@ -87,7 +87,7 @@ class GridSearchTests: XCTestCase {
         let pattern = ["99",
                        "11"]
         
-        let containsPattern = GridSearch.gridContainsPattern(grid, pattern: pattern)
+        let containsPattern = GridSearch.gridContainsPattern(grid: grid, pattern: pattern)
         
         XCTAssertTrue(containsPattern)
     }
@@ -104,7 +104,7 @@ class GridSearchTests: XCTestCase {
                        "11111",
                        "11110"]
         
-        let containsPattern = GridSearch.gridContainsPattern(grid, pattern: pattern)
+        let containsPattern = GridSearch.gridContainsPattern(grid: grid, pattern: pattern)
         
         XCTAssertTrue(containsPattern)
     }

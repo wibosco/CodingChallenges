@@ -20,8 +20,8 @@ class BalancedBSTTests: XCTestCase {
                              [2,5],
                              [2,6]]
         
-        let root = BalancedBSTFactory.buildBinaryTree(relationships)
-        let isBalanced = BalancedBST.isBalancedBST(root)
+        let root = BalancedBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBalanced = BalancedBST.isBalancedBST(root: root)
         
         XCTAssertTrue(isBalanced)
     }
@@ -36,8 +36,8 @@ class BalancedBSTTests: XCTestCase {
                              [5,7],
                              [5,8]]
         
-        let root = BalancedBSTFactory.buildBinaryTree(relationships)
-        let isBalanced = BalancedBST.isBalancedBST(root)
+        let root = BalancedBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBalanced = BalancedBST.isBalancedBST(root: root)
         
         XCTAssertTrue(isBalanced)
     }
@@ -54,8 +54,8 @@ class BalancedBSTTests: XCTestCase {
                              [7,9],
                              [7,10]]
         
-        let root = BalancedBSTFactory.buildBinaryTree(relationships)
-        let isBalanced = BalancedBST.isBalancedBST(root)
+        let root = BalancedBSTFactory.buildBinaryTree(relationships: relationships)
+        let isBalanced = BalancedBST.isBalancedBST(root: root)
         
         XCTAssertFalse(isBalanced)
     }

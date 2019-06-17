@@ -51,7 +51,7 @@ class StackOfPlatesStack: NSObject {
         
         let node = StackOfPlatesNode.init(value: value)
         
-        nodes.insert(node, atIndex: 0)
+        nodes.insert(node, at: 0)
     }
     
     func pop() -> StackOfPlatesNode? {

@@ -14,14 +14,14 @@ class EvenTree: NSObject {
     // MARK: Edges
     
     class func totalEdgesRemovedToFormForestOfEvenTrees(numberOfNodes: Int, edges: [[Int]]) -> Int {
-        let nodes = buildNodes(numberOfNodes)
-        connectEdges(nodes, edges: edges)
+        let nodes = buildNodes(numberOfNodes: numberOfNodes)
+        connectEdges(nodes: nodes, edges: edges)
         
         var totalEdgesRemoved = 0
         
         for node in nodes {
             if node.parent != nil { // skip root
-                let count = nodesInTree(node)
+                let count = nodesInTree(root: node)
                 if count % 2 == 0 {
                     totalEdgesRemoved += 1
                 }
@@ -49,7 +49,7 @@ class EvenTree: NSObject {
             let child = nodes[edge[0]]
             let parent = nodes[edge[1]]
             
-            parent.addChild(child)
+            parent.addChild(child: child)
         }
     }
     
@@ -59,7 +59,7 @@ class EvenTree: NSObject {
         var count = 1 // start at 1 as you need to count the root node
         
         for child in root.children {
-            count += nodesInTree(child)
+            count += nodesInTree(root: child)
         }
         
         return count

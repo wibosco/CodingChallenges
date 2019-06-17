@@ -15,7 +15,7 @@ class ValidateBST: NSObject {
     
     class func inOrderTraversalIsBST(root: ValidateBSTNode) -> Bool {
         var order = [ValidateBSTNode]()
-        inOrderTraversal(root, order: &order)
+        inOrderTraversal(root: root, order: &order)
         
         for i in 1..<order.count {
             if order[i-1].value > order[i].value {
@@ -26,11 +26,11 @@ class ValidateBST: NSObject {
         return true
     }
     
-    class func inOrderTraversal(root: ValidateBSTNode?, inout order: [ValidateBSTNode]) {
+    class func inOrderTraversal(root: ValidateBSTNode?, order: inout [ValidateBSTNode]) {
         if let root = root {
-            inOrderTraversal(root.left, order: &order)
+            inOrderTraversal(root: root.left, order: &order)
             order.append(root)
-            inOrderTraversal(root.right, order: &order)
+            inOrderTraversal(root: root.right, order: &order)
         }
     }
     
@@ -38,7 +38,7 @@ class ValidateBST: NSObject {
     
     class func maxMinIsBST(root: ValidateBSTNode) -> Bool {
         
-        return maxMinIsBST(root, min: nil, max: nil)
+        return maxMinIsBST(root: root, min: nil, max: nil)
     }
     
     class func maxMinIsBST(root: ValidateBSTNode?, min: Int?, max: Int?) -> Bool {
@@ -46,11 +46,11 @@ class ValidateBST: NSObject {
             return true
         }
         
-        if (min != nil && root.value <= min) || (max != nil && root.value > max) {
+        if (min != nil && root.value <= min!) || (max != nil && root.value > max!) {
             return false
         }
         
-        if !maxMinIsBST(root.left, min: min, max: root.value) || !maxMinIsBST(root.right, min: root.value, max: max) {
+        if !maxMinIsBST(root: root.left, min: min, max: root.value) || !maxMinIsBST(root: root.right, min: root.value, max: max) {
             return false
         }
         

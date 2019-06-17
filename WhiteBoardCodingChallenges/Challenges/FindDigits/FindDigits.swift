@@ -17,12 +17,9 @@ class FindDigits: NSObject {
         
         let stringNumber = String(number)
         
-        for index in stringNumber.characters.indices {
-            
-            let ch = stringNumber.characters[index]
-            
+        for ch in stringNumber {
             if let digit = Int(String(ch)) {
-             
+                
                 if digit > 0 {
                     
                     if number % digit == 0 {

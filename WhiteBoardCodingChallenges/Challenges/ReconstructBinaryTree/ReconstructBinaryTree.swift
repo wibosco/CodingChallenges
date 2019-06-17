@@ -43,7 +43,7 @@ class ReconstructBinaryTree: NSObject {
                 nodes[childKey] = childNode!
             }
             
-            parentNode!.addNodeAsChild(childNode!)
+            parentNode!.addNodeAsChild(node: childNode!)
         }
         
         return rootNode()

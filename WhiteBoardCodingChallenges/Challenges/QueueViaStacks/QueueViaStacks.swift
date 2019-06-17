@@ -29,7 +29,7 @@ class QueueViaStacks: NSObject {
         
         for _ in 0..<sourceStack.nodes.count {
             
-            destinationStack.push(sourceStack.pop())
+            destinationStack.push(value: sourceStack.pop())
         }
     }
     
@@ -39,17 +39,17 @@ class QueueViaStacks: NSObject {
         
         if !dequeueStack.isEmpty() {
             
-            transferContents(dequeueStack, destinationStack: enqueueStack)
+            transferContents(sourceStack: dequeueStack, destinationStack: enqueueStack)
         }
         
-        enqueueStack.push(value)
+        enqueueStack.push(value: value)
     }
     
     func dequeue() -> Int {
         
         if !enqueueStack.isEmpty() {
             
-            transferContents(enqueueStack, destinationStack: dequeueStack)
+            transferContents(sourceStack: enqueueStack, destinationStack: dequeueStack)
         }
         
         return dequeueStack.pop()
@@ -59,7 +59,7 @@ class QueueViaStacks: NSObject {
         
         if !enqueueStack.isEmpty() {
             
-            transferContents(enqueueStack, destinationStack: dequeueStack)
+            transferContents(sourceStack: enqueueStack, destinationStack: dequeueStack)
         }
         
         return dequeueStack.peek()

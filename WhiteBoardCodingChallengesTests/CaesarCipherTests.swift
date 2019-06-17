@@ -14,14 +14,14 @@ class CaesarCipherTests: XCTestCase {
     
     func test_caesarCipherA() {
         
-        let encryptedString = CaesarCipher.encrypt("middle-Outz", rotate: 2)
+        let encryptedString = CaesarCipher.encrypt(originalString: "middle-Outz", rotate: 2)
         
         XCTAssertEqual("okffng-Qwvb", encryptedString)
     }
     
     func test_caesarCipherB() {
         
-        let encryptedString = CaesarCipher.encrypt("www.abc.xy", rotate: 87)
+        let encryptedString = CaesarCipher.encrypt(originalString: "www.abc.xy", rotate: 87)
         
         XCTAssertEqual("fff.jkl.gh", encryptedString)
     }

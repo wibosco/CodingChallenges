@@ -12,39 +12,39 @@ import UIKit
 class BiggerIsGreater: NSObject {
 
     //Copied from http://stackoverflow.com/questions/34968470/calculate-all-permutations-of-a-string-in-swift
-    class func possiblePermutations(n:Int, inout a:[String], inout permutations: [String]) {
+    class func possiblePermutations(n:Int, a:inout [String], permutations: inout [String]) {
         
         if n == 1 {
             
-            permutations.append(a.joinWithSeparator(""))
+            permutations.append(a.joined(separator: ""))
             
             return
         }
         
         for i in 0..<n-1 {
             
-            possiblePermutations(n-1, a: &a, permutations: &permutations)
+            possiblePermutations(n: n-1, a: &a, permutations: &permutations)
             
-            swap(&a[n-1], &a[(n%2 == 1) ? 0 : i])
+            a.swapAt(n-1, (n%2 == 1) ? 0 : i)
         }
         
-        possiblePermutations(n-1, a: &a, permutations: &permutations)
+        possiblePermutations(n: n-1, a: &a, permutations: &permutations)
     }
     
     class func permutationGreaterThanOrginal(original: String) -> String {
     
-        guard original != String(original.characters.reverse()) else {
+        guard original != String(original.reversed()) else {
             
             return "no answer"
         }
         
-        var characters = original.characters.map{String($0)}
+        var characters = original.map{String($0)}
         
         var maximumValuePermutation: String?
         
         var permutations = [String]()
         
-        BiggerIsGreater.possiblePermutations(characters.count, a: &characters, permutations: &permutations)
+        BiggerIsGreater.possiblePermutations(n: characters.count, a: &characters, permutations: &permutations)
         
         for permutation in permutations {
             
@@ -54,7 +54,7 @@ class BiggerIsGreater: NSObject {
                     
                     maximumValuePermutation = permutation
                 }
-                else if maximumValuePermutation > permutation {
+                else if maximumValuePermutation! > permutation {
                     
                     maximumValuePermutation = permutation
                 }
@@ -66,18 +66,18 @@ class BiggerIsGreater: NSObject {
     
     class func permutationGreaterThanOrginalAlt(original: String) -> String {
         
-        guard original != String(original.characters.reverse()) else {
+        guard original != String(original.reversed()) else {
             
             return "no answer"
         }
         
-        var characters = original.characters.map{String($0)}
+        var characters = original.map{String($0)}
         
         var permutations = [String]()
         
-        BiggerIsGreater.possiblePermutations(characters.count, a: &characters, permutations: &permutations)
+        BiggerIsGreater.possiblePermutations(n: characters.count, a: &characters, permutations: &permutations)
         
-        let sortedPermutations = permutations.filter{$0 > original}.sort{$1 > $0}
+        let sortedPermutations = permutations.filter{$0 > original}.sorted{$1 > $0}
         
         if sortedPermutations.count > 0 {
             
@@ -91,11 +91,11 @@ class BiggerIsGreater: NSObject {
     
     // MARK: Alt
     
-    class func possiblePermutationsAlt(n:Int, inout a:[String], original: String, inout greaterValue: String?) {
+    class func possiblePermutationsAlt(n:Int, a:inout [String], original: String, greaterValue: inout String?) {
         
         if n == 1 {
             
-            let permutation = a.joinWithSeparator("")
+            let permutation = a.joined(separator: "")
             
             if permutation > original {
                 
@@ -103,7 +103,7 @@ class BiggerIsGreater: NSObject {
                     
                     greaterValue = permutation
                 }
-                else if greaterValue > permutation {
+                else if greaterValue! > permutation {
                     
                     greaterValue = permutation
                 }
@@ -114,12 +114,12 @@ class BiggerIsGreater: NSObject {
         
         for i in 0..<n-1 {
             
-            possiblePermutationsAlt(n-1, a: &a, original: original, greaterValue: &greaterValue)
+            possiblePermutationsAlt(n: n-1, a: &a, original: original, greaterValue: &greaterValue)
             
-            swap(&a[n-1], &a[(n%2 == 1) ? 0 : i])
+            a.swapAt(n-1, (n%2 == 1) ? 0 : i)
         }
         
-        possiblePermutationsAlt(n-1, a: &a, original: original, greaterValue: &greaterValue)
+        possiblePermutationsAlt(n: n-1, a: &a, original: original, greaterValue: &greaterValue)
     }
 
 

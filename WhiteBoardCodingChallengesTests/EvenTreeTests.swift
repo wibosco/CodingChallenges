@@ -25,7 +25,7 @@ class EvenTreeTests: XCTestCase {
                      [8,7],
                      [9,7]]
         
-        let removedEdges = EvenTree.totalEdgesRemovedToFormForestOfEvenTrees(totalNodes, edges: edges)
+        let removedEdges = EvenTree.totalEdgesRemovedToFormForestOfEvenTrees(numberOfNodes: totalNodes, edges: edges)
         
         XCTAssertEqual(2, removedEdges)
     }
@@ -63,7 +63,7 @@ class EvenTreeTests: XCTestCase {
                      [28,3],
                      [29,24]]
         
-        let removedEdges = EvenTree.totalEdgesRemovedToFormForestOfEvenTrees(totalNodes, edges: edges)
+        let removedEdges = EvenTree.totalEdgesRemovedToFormForestOfEvenTrees(numberOfNodes: totalNodes, edges: edges)
         
         XCTAssertEqual(11, removedEdges)
     }

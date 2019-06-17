@@ -28,7 +28,7 @@ class GreatestCommonDenominatorTests: XCTestCase {
         
         let commonDenominator = 28
         
-        let gcd = GreatestCommonDenominator.greatestCommonDenominator(84, highest: 868)
+        let gcd = GreatestCommonDenominator.greatestCommonDenominator(lowest: 84, highest: 868)
         
         XCTAssertEqual(gcd, commonDenominator, "GCD should be \(commonDenominator)")
     }

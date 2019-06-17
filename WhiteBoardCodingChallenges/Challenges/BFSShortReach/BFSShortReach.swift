@@ -15,12 +15,12 @@ class BFSShortReach: NSObject {
     
     class func distanceFromSourceToAllOtherNodes(sourceIndex: Int, totalNodes: Int, edges: [[Int]]) -> [BFSSearchReachNode] {
         
-        let nodes = buildNodes(totalNodes)
-        connectNodes(nodes, edges: edges)
+        let nodes = buildNodes(totalNodes: totalNodes)
+        connectNodes(nodes: nodes, edges: edges)
 
         let source = nodes[sourceIndex]
         
-        findDistanceFromSourceToAllOtherNodes(source)
+        findDistanceFromSourceToAllOtherNodes(source: source)
         
         return nodes
     }
@@ -75,7 +75,7 @@ class BFSShortReach: NSObject {
             let sourceNode = nodes[sourceNodeIndex]
             let destinationNode = nodes[destinationNodeIndex]
             
-            sourceNode.addRelationshipWithNode(destinationNode)
+            sourceNode.addRelationshipWithNode(node: destinationNode)
         }
     }
 }

@@ -16,7 +16,7 @@ class MinHeapTests: XCTestCase {
         
         let input = [3,5,6,7,8,9,12,15,4,1]
         
-        let heap = MinHeap.buildMinHeap(input)
+        let heap = MinHeap.buildMinHeap(input: input)
         
         XCTAssertEqual(heap[0], 1)
     }
@@ -25,7 +25,7 @@ class MinHeapTests: XCTestCase {
         
         let input = [3,17,4]
         
-        let heap = MinHeap.buildMinHeap(input)
+        let heap = MinHeap.buildMinHeap(input: input)
         
         XCTAssertEqual(heap[0], 3)
     }

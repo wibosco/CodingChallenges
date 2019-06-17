@@ -14,7 +14,7 @@ class TimeConverterTests: XCTestCase {
     
     func test_timeConverterPM() {
     
-        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation("07:05:45PM")
+        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation(time: "07:05:45PM")
         
         XCTAssertEqual(time, "19:05:45")
         
@@ -23,21 +23,21 @@ class TimeConverterTests: XCTestCase {
     
     func test_timeConverterAM() {
         
-        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation("03:05:32AM")
+        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation(time: "03:05:32AM")
         
         XCTAssertEqual(time, "03:05:32")
     }
     
     func test_timeConverterNoon() {
         
-        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation("12:05:30PM")
+        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation(time: "12:05:30PM")
         
         XCTAssertEqual(time, "12:05:30")
     }
     
     func test_timeConverterMidnight() {
         
-        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation("12:48:23AM")
+        let time = TimeConverter.convertFrom12HourTo24HourUsingDateManipulation(time: "12:48:23AM")
         
         XCTAssertEqual(time, "00:48:23")
     }

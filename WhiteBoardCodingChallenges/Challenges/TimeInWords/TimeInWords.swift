@@ -17,7 +17,7 @@ class TimeInWords: NSObject {
         
         if minute <= 30 {
             
-            let hourAsWord = TimeInWords.numericUnitToWordUnit(hour)
+            let hourAsWord = TimeInWords.numericUnitToWordUnit(unit: hour)
             
             if minute == 0 {
                 
@@ -39,7 +39,7 @@ class TimeInWords: NSObject {
                 }
                 else {
                     
-                    let minuteAsWord = TimeInWords.numericUnitToWordUnit(minute)
+                    let minuteAsWord = TimeInWords.numericUnitToWordUnit(unit: minute)
                     
                     timeInWords = "\(minuteAsWord) minutes past \(hourAsWord)"
                 }
@@ -48,7 +48,7 @@ class TimeInWords: NSObject {
         }
         else {
             
-            let nextHourAsWord = TimeInWords.numericUnitToWordUnit(TimeInWords.nextHour(hour))
+            let nextHourAsWord = TimeInWords.numericUnitToWordUnit(unit: TimeInWords.nextHour(hour: hour))
             
             if minute == 45 {
                 
@@ -64,7 +64,7 @@ class TimeInWords: NSObject {
                     
                     let minuteToValue = 60 - minute
                     
-                    let minuteAsWord = TimeInWords.numericUnitToWordUnit(minuteToValue)
+                    let minuteAsWord = TimeInWords.numericUnitToWordUnit(unit: minuteToValue)
                     
                     timeInWords = "\(minuteAsWord) minutes to \(nextHourAsWord)"
                 }
@@ -88,11 +88,11 @@ class TimeInWords: NSObject {
     
     class func numericUnitToWordUnit(unit: Int) -> String {
         
-        let numberFormatter = NSNumberFormatter()
-        numberFormatter.numberStyle = .SpellOutStyle
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .spellOut
         
-        let formattedNumber = numberFormatter.stringFromNumber(unit)!
+        let formattedNumber = numberFormatter.string(from: NSNumber(value: unit))!
         
-        return formattedNumber.stringByReplacingOccurrencesOfString("-", withString: " ")
+        return formattedNumber.replacingOccurrences(of: "-", with: " ")
     }
 }

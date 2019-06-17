@@ -28,7 +28,7 @@ class RoutePlanner: NSObject {
         
         let queue = RoutePlannerQueue()
         
-        queue.enqueue(source)
+        queue.enqueue(node: source)
         
         while !queue.isEmpty() {
             
@@ -46,7 +46,7 @@ class RoutePlanner: NSObject {
                         
                         connectionNode.visited = true
                         
-                        queue.enqueue(connectionNode)
+                        queue.enqueue(node: connectionNode)
                     }
                 }
             }
@@ -59,7 +59,7 @@ class RoutePlanner: NSObject {
         
         let queue = RoutePlannerQueue()
         
-        queue.enqueue(source)
+        queue.enqueue(node: source)
         
         while !queue.isEmpty() {
             
@@ -97,7 +97,7 @@ class RoutePlanner: NSObject {
                         connectionNode.visited = true
                         connectionNode.previousVisitedNode = node
                         
-                        queue.enqueue(connectionNode)
+                        queue.enqueue(node: connectionNode)
                     }
                 }
             }

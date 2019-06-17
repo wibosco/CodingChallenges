@@ -19,7 +19,7 @@ class CavityMapTests: XCTestCase {
                    "1892",
                    "1234",]
         
-        let cavityMap = CavityMap.generateCavityMap(map)
+        let cavityMap = CavityMap.generateCavityMap(map: map)
         
         let expectedCavityMap = ["1112",
                                  "1X12",
@@ -33,7 +33,7 @@ class CavityMapTests: XCTestCase {
         
         let map = ["9"]
         
-        let cavityMap = CavityMap.generateCavityMap(map)
+        let cavityMap = CavityMap.generateCavityMap(map: map)
         
         let expectedCavityMap = ["9"]
         

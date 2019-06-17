@@ -19,11 +19,11 @@ class SuccessorBST: NSObject {
             return predecessorNode.right
         }
         
-        let root = findRootFromNode(parent)
+        let root = findRootFromNode(node: parent)
         var sorted = [SuccessorBSTNode]()
-        inOrder(root, sorted: &sorted)
+        inOrder(node: root, sorted: &sorted)
         
-        let indexOfPredecessorNode = sorted.indexOf(predecessorNode)
+        let indexOfPredecessorNode = sorted.firstIndex(of: predecessorNode)
         let indexOfNextNode = indexOfPredecessorNode! + 1
         
         if indexOfNextNode >= sorted.count {
@@ -39,14 +39,14 @@ class SuccessorBST: NSObject {
             return node
         }
         
-        return findRootFromNode(parent)
+        return findRootFromNode(node: parent)
     }
     
-    class func inOrder(node: SuccessorBSTNode?, inout sorted: [SuccessorBSTNode]) {
+    class func inOrder(node: SuccessorBSTNode?, sorted: inout [SuccessorBSTNode]) {
         if (node != nil) {
-            inOrder(node!.left, sorted: &sorted)
+            inOrder(node: node!.left, sorted: &sorted)
             sorted.append(node!)
-            inOrder(node!.right, sorted: &sorted)
+            inOrder(node: node!.right, sorted: &sorted)
         }
     }    
 }

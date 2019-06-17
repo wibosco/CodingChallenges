@@ -36,8 +36,8 @@ class EvenTreeNode: NSObject {
     // MARK: Parent
     
     func removeChild(child: EvenTreeNode) {
-        let childIndex = children.indexOf(child)!
-        children.removeAtIndex(childIndex)
+        let childIndex = children.firstIndex(of: child)!
+        children.remove(at: childIndex)
         child.parent = nil
     }
 }

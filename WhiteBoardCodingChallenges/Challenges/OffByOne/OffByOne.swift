@@ -16,7 +16,7 @@ class OffByOne: NSObject {
      */
     class func canTransformSourceStringIntoDestinationStringWithOneChange(source: String, destination: String) -> Bool {
         
-        if abs(source.characters.count - destination.characters.count) > 1 {
+        if abs(source.count - destination.count) > 1 {
             
             return false
         }
@@ -26,13 +26,13 @@ class OffByOne: NSObject {
             return true
         }
         
-        if source.characters.count == destination.characters.count {
+        if source.count == destination.count {
             
-            return canConvertByOneTransformationBetweenStrings(source, destination: destination)
+            return canConvertByOneTransformationBetweenStrings(source: source, destination: destination)
         }
         else {
             
-            return canConvertByOneInsertionOrDeletionBetweenStrings(source, destination: destination)
+            return canConvertByOneInsertionOrDeletionBetweenStrings(source: source, destination: destination)
         }
     }
     
@@ -40,9 +40,9 @@ class OffByOne: NSObject {
         
         var foundDifferentCharacters = false
         
-        for characterIndex in source.characters.indices {
+        for characterIndex in source.indices {
             
-            if source.characters[characterIndex] != destination.characters[characterIndex] {
+            if source[characterIndex] != destination[characterIndex] {
                 
                 if foundDifferentCharacters {
                     
@@ -58,23 +58,23 @@ class OffByOne: NSObject {
     
     class func canConvertByOneInsertionOrDeletionBetweenStrings(source: String, destination: String) -> Bool {
         
-        let sortedSource = String(source.characters.sort { (a: Character, b: Character) -> Bool in
+        let sortedSource = String(source.sorted { (a: Character, b: Character) -> Bool in
             
             return a > b
         })
         
-        let sortedDestination = String(destination.characters.sort { (a: Character, b: Character) -> Bool in
+        let sortedDestination = String(destination.sorted { (a: Character, b: Character) -> Bool in
             
             return a > b
         })
         
-        if source.characters.count > destination.characters.count {
+        if source.count > destination.count {
             
-            return sortedSource.containsString(sortedDestination)
+            return sortedSource.contains(sortedDestination)
         }
         else {
             
-            return sortedDestination.containsString(sortedSource)
+            return sortedDestination.contains(sortedSource)
         }
     }
 }

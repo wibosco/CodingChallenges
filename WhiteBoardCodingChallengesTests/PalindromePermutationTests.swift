@@ -14,32 +14,32 @@ class PalindromePermutationTests: XCTestCase {
     
     func test_palindromePermutationA() {
         
-        XCTAssertFalse(PalindromePermutation.premutationCanBePalindrome("ab"))
+        XCTAssertFalse(PalindromePermutation.premutationCanBePalindrome(original: "ab"))
     }
     
     func test_palindromePermutationB() {
         
-        XCTAssertTrue(PalindromePermutation.premutationCanBePalindrome("annaa"))
+        XCTAssertTrue(PalindromePermutation.premutationCanBePalindrome(original: "annaa"))
     }
     
     func test_palindromePermutationC() {
         
-        XCTAssertFalse(PalindromePermutation.premutationCanBePalindrome("abc"))
+        XCTAssertFalse(PalindromePermutation.premutationCanBePalindrome(original: "abc"))
     }
     
     func test_palindromePermutationD() {
         
-        XCTAssertTrue(PalindromePermutation.premutationCanBePalindrome("tact coa"))
+        XCTAssertTrue(PalindromePermutation.premutationCanBePalindrome(original: "tact coa"))
     }
     
     func test_palindromePermutationE() {
         
-        XCTAssertFalse(PalindromePermutation.premutationCanBePalindrome("annaat"))
+        XCTAssertFalse(PalindromePermutation.premutationCanBePalindrome(original: "annaat"))
     }
     
     func test_palindromePermutationF() {
         
-        XCTAssertTrue(PalindromePermutation.premutationCanBePalindrome("bb"))
+        XCTAssertTrue(PalindromePermutation.premutationCanBePalindrome(original: "bb"))
     }
     
 }

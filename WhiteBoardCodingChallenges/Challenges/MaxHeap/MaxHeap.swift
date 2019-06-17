@@ -24,7 +24,7 @@ class MaxHeap: NSObject {
         
         while lastParentIndex >= 0 {
             
-            maxHeapify(&heap, indexRoot: lastParentIndex)
+            maxHeapify(heap: &heap, indexRoot: lastParentIndex)
             lastParentIndex -= 1
         }
         
@@ -33,9 +33,9 @@ class MaxHeap: NSObject {
     
     // MARK: Heapify
     
-    class func maxHeapify(inout heap: [Int], indexRoot: Int) {
+    class func maxHeapify(heap: inout [Int], indexRoot: Int) {
         
-        if leftLeafIndex(indexRoot) > heapLastIndex(heap) {
+        if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
             
             return
         }
@@ -44,27 +44,27 @@ class MaxHeap: NSObject {
         var largestIndex = indexRoot
         var largestValue = rootValue
         
-        if heap.count > leftLeafIndex(indexRoot) {
+        if heap.count > leftLeafIndex(rootIndex: indexRoot) {
             
-            let leftLeafValue = heap[leftLeafIndex(indexRoot)]
+            let leftLeafValue = heap[leftLeafIndex(rootIndex: indexRoot)]
             
             if leftLeafValue > largestValue {
                 
                 largestValue = leftLeafValue
-                largestIndex = leftLeafIndex(indexRoot)
+                largestIndex = leftLeafIndex(rootIndex: indexRoot)
             }
         }
         
-        if rightLeafIndex(indexRoot) <= heapLastIndex(heap) {
+        if rightLeafIndex(rootIndex: indexRoot) <= heapLastIndex(heap: heap) {
             
-            if heap.count > rightLeafIndex(indexRoot) {
+            if heap.count > rightLeafIndex(rootIndex: indexRoot) {
                 
-                let rightLeafValue = heap[rightLeafIndex(indexRoot)]
+                let rightLeafValue = heap[rightLeafIndex(rootIndex: indexRoot)]
                 
                 if rightLeafValue > largestValue {
                     
                     largestValue = rightLeafValue
-                    largestIndex = rightLeafIndex(indexRoot)
+                    largestIndex = rightLeafIndex(rootIndex: indexRoot)
                 }
 
             }
@@ -72,14 +72,14 @@ class MaxHeap: NSObject {
         
         if largestIndex != indexRoot {
             
-            exchange(&heap, i: indexRoot, j: largestIndex)
-            maxHeapify(&heap, indexRoot: largestIndex)
+            exchange(heap: &heap, i: indexRoot, j: largestIndex)
+            maxHeapify(heap: &heap, indexRoot: largestIndex)
         }
     }
     
     // MARK: Exchange
     
-    class func exchange<T>(inout heap: [T], i:Int, j:Int) {
+    class func exchange<T>(heap: inout [T], i:Int, j:Int) {
         
         let temp:T = heap[i]
         heap[i] = heap[j]

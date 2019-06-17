@@ -24,7 +24,7 @@ class MinHeap: NSObject {
         
         while lastParentIndex >= 0 {
             
-            minHeapify(&heap, indexRoot: lastParentIndex)
+            minHeapify(heap: &heap, indexRoot: lastParentIndex)
             lastParentIndex -= 1
         }
         
@@ -33,9 +33,9 @@ class MinHeap: NSObject {
     
     // MARK: Heapify
     
-    class func minHeapify(inout heap: [Int], indexRoot: Int) {
+    class func minHeapify(heap: inout [Int], indexRoot: Int) {
         
-        if leftLeafIndex(indexRoot) > heapLastIndex(heap) {
+        if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
             
             return
         }
@@ -44,27 +44,27 @@ class MinHeap: NSObject {
         var smallestIndex = indexRoot
         var smallestValue = rootValue
         
-        if heap.count > leftLeafIndex(indexRoot) {
+        if heap.count > leftLeafIndex(rootIndex: indexRoot) {
             
-            let leftLeafValue = heap[leftLeafIndex(indexRoot)]
+            let leftLeafValue = heap[leftLeafIndex(rootIndex: indexRoot)]
             
             if smallestValue > leftLeafValue {
                 
                 smallestValue = leftLeafValue
-                smallestIndex = leftLeafIndex(indexRoot)
+                smallestIndex = leftLeafIndex(rootIndex: indexRoot)
             }
         }
         
-        if rightLeafIndex(indexRoot) <= heapLastIndex(heap) {
+        if rightLeafIndex(rootIndex: indexRoot) <= heapLastIndex(heap: heap) {
             
-            if heap.count > rightLeafIndex(indexRoot) {
+            if heap.count > rightLeafIndex(rootIndex: indexRoot) {
                 
-                let rightLeafValue = heap[rightLeafIndex(indexRoot)]
+                let rightLeafValue = heap[rightLeafIndex(rootIndex: indexRoot)]
                 
                 if smallestValue > rightLeafValue {
                     
                     smallestValue = rightLeafValue
-                    smallestIndex = rightLeafIndex(indexRoot)
+                    smallestIndex = rightLeafIndex(rootIndex: indexRoot)
                 }
                 
             }
@@ -72,14 +72,14 @@ class MinHeap: NSObject {
         
         if smallestIndex != indexRoot {
             
-            exchange(&heap, i: indexRoot, j: smallestIndex)
-            minHeapify(&heap, indexRoot: smallestIndex)
+            exchange(heap: &heap, i: indexRoot, j: smallestIndex)
+            minHeapify(heap: &heap, indexRoot: smallestIndex)
         }
     }
     
     // MARK: Exchange
     
-    class func exchange<T>(inout heap: [T], i:Int, j:Int) {
+    class func exchange<T>(heap: inout [T], i:Int, j:Int) {
         
         let temp:T = heap[i]
         heap[i] = heap[j]

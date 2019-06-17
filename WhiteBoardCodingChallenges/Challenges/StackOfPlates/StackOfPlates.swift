@@ -44,7 +44,7 @@ class StackOfPlates: NSObject {
             stacks.append(pushStack)
         }
         
-        pushStack.push(value)
+        pushStack.push(value: value)
     }
     
     func pop() -> StackOfPlatesNode? {

@@ -12,8 +12,8 @@ class MaximumSubarray: NSObject {
 
     class func maximumTotals(array: [Int]) -> (contiguousTotal: Int, nonContiguousTotal: Int) {
     
-        let contiguousTotal = MaximumSubarray.maximumContiguous(array)
-        let nonContiguousTotal = MaximumSubarray.maximumNonContiguousTotal(array)
+        let contiguousTotal = MaximumSubarray.maximumContiguous(array: array)
+        let nonContiguousTotal = MaximumSubarray.maximumNonContiguousTotal(array: array)
         
         return (contiguousTotal, nonContiguousTotal)
     }

@@ -14,7 +14,7 @@ class ChocolateFeast: NSObject {
     class func countOfEatenChocolates(dollarsInPocket: Int, chocolatePrice: Int, wrapperExchangeTheshold: Int) -> Int {
         
         let chocolatesBrought = dollarsInPocket/chocolatePrice
-        let chocolatesExchanged = ChocolateFeast.exchangeWrappersForChocolate(chocolatesBrought, wrapperExchangeTheshold: wrapperExchangeTheshold)
+        let chocolatesExchanged = ChocolateFeast.exchangeWrappersForChocolate(wrappers: chocolatesBrought, wrapperExchangeTheshold: wrapperExchangeTheshold)
         
         return chocolatesBrought + chocolatesExchanged
     }
@@ -29,7 +29,7 @@ class ChocolateFeast: NSObject {
             
             let furtherChocolateExchange = chocolatesFromExchange + leftOverWrappersCount
             
-            let potentialFurtherChocolateInExchange = ChocolateFeast.exchangeWrappersForChocolate(furtherChocolateExchange, wrapperExchangeTheshold: wrapperExchangeTheshold)
+            let potentialFurtherChocolateInExchange = ChocolateFeast.exchangeWrappersForChocolate(wrappers: furtherChocolateExchange, wrapperExchangeTheshold: wrapperExchangeTheshold)
             
             if potentialFurtherChocolateInExchange > 0 {
                 

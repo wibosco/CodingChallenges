@@ -44,7 +44,7 @@ class Beast: NSObject {
             return decentNumber
         }
         
-        for decreasedRange in (0..<range).reverse() {
+        for decreasedRange in (0..<range).reversed() {
             
             if decreasedRange % 3 == 0 && (range - decreasedRange) % 5 == 0 {
 
