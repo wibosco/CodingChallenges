@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2F4BB02729624200E0AEBC /* MinMaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F4BAF2729624200E0AEBC /* MinMaxSum.swift */; };
+		3D2F4BB2272966EF00E0AEBC /* MinMaxSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F4BB1272966EF00E0AEBC /* MinMaxSumTests.swift */; };
 		3D9D35A32729518600112474 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35212729518600112474 /* LisasWorkbook.swift */; };
 		3D9D35A42729518600112474 /* IceCreamParlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35232729518600112474 /* IceCreamParlor.swift */; };
 		3D9D35A52729518600112474 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35252729518600112474 /* TimeInWords.swift */; };
@@ -185,6 +187,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2F4BAF2729624200E0AEBC /* MinMaxSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxSum.swift; sourceTree = "<group>"; };
+		3D2F4BB1272966EF00E0AEBC /* MinMaxSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxSumTests.swift; sourceTree = "<group>"; };
 		3D9D35212729518600112474 /* LisasWorkbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbook.swift; sourceTree = "<group>"; };
 		3D9D35232729518600112474 /* IceCreamParlor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlor.swift; sourceTree = "<group>"; };
 		3D9D35252729518600112474 /* TimeInWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWords.swift; sourceTree = "<group>"; };
@@ -370,6 +374,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2F4BAE2729621900E0AEBC /* MinMaxSum */ = {
+			isa = PBXGroup;
+			children = (
+				3D2F4BAF2729624200E0AEBC /* MinMaxSum.swift */,
+			);
+			name = MinMaxSum;
+			path = WhiteBoardCodingChallenges/Challenges/HackerRank/MinMaxSum;
+			sourceTree = SOURCE_ROOT;
+		};
 		3D9D34D72729518600112474 /* CrackingTheCodingInterview */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +431,7 @@
 				3D9D35452729518600112474 /* ManasaAndStones */,
 				3D9D35472729518600112474 /* MaximizeSum */,
 				3D9D35632729518600112474 /* MaximumSubarray */,
+				3D2F4BAE2729621900E0AEBC /* MinMaxSum */,
 				3D9D355B2729518600112474 /* MissingNumbers */,
 				3D9D35392729518600112474 /* NewYearChaos */,
 				3D9D356E2729518600112474 /* Percentages */,
@@ -1177,6 +1191,7 @@
 				43FB3F0A1CE4867700AFCDA7 /* TimeInWordsTests.swift */,
 				F49EE29D1CDF372F0062F8B7 /* UtopianTreeTests.swift */,
 				911822BC1D2823DB001E5A51 /* ValidateBSTTests.swift */,
+				3D2F4BB1272966EF00E0AEBC /* MinMaxSumTests.swift */,
 			);
 			path = WhiteBoardCodingChallengesTests;
 			sourceTree = "<group>";
@@ -1302,6 +1317,7 @@
 				3D9D365227295D0300112474 /* BinarySearchTree.swift in Sources */,
 				3D9D35A52729518600112474 /* TimeInWords.swift in Sources */,
 				3D9D35A62729518600112474 /* Encryption.swift in Sources */,
+				3D2F4BB02729624200E0AEBC /* MinMaxSum.swift in Sources */,
 				3D9D35C62729518600112474 /* MaximumSubarray.swift in Sources */,
 				3D9D362427295CF700112474 /* BinarySearchTreeDepthLinkedList.swift in Sources */,
 				3D9D362527295CF700112474 /* BinarySearchTreeDepthLinkedListNode.swift in Sources */,
@@ -1429,6 +1445,7 @@
 				43FF2D301CE1F35C00D6FCDF /* CavityMapTests.swift in Sources */,
 				9105970A1CFC51090057BD82 /* PalindromePermutationTests.swift in Sources */,
 				F49EE2B61CDFDD750062F8B7 /* CutTheSticksTests.swift in Sources */,
+				3D2F4BB2272966EF00E0AEBC /* MinMaxSumTests.swift in Sources */,
 				3D9D35DC272952A100112474 /* InsertionSort2Tests.swift in Sources */,
 				919340C61D22C30900AF44F7 /* PrimsMSTTests.swift in Sources */,
 				43FF2D351CE214EE00D6FCDF /* CaesarCipherTests.swift in Sources */,
