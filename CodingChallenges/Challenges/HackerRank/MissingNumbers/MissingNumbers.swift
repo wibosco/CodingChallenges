@@ -10,39 +10,53 @@ import UIKit
 
 //https://www.hackerrank.com/challenges/missing-numbers/problem
 class MissingNumbers {
-
+    
     // MARK: Missing
     
-     static func missingNumbers(complete: [Int], incomplete: [Int]) -> [Int] {
-        var occurrences = [Int: Int]()
+    static func missingNumbers(arr: [Int], brr: [Int]) -> [Int] {
+        var arrOccurrences = [Int: Int]()
+        var brrOccurrences = [Int: Int]()
         
-        for i in 0..<complete.count {
-            let completeValue = complete[i]
-            if let existingCount = occurrences[completeValue] {
-                occurrences[completeValue] = existingCount+1
+        for element in arr {
+            if let existingCount = arrOccurrences[element] {
+                arrOccurrences[element] = existingCount + 1
             } else {
-                occurrences[completeValue] = 1
+                arrOccurrences[element] = 1
             }
-            
-            if i < incomplete.count {
-                let incompleteValue = incomplete[i]
-                if let existingCount = occurrences[incompleteValue] {
-                    occurrences[incompleteValue] = existingCount-1
-                } else {
-                    occurrences[incompleteValue] = -1
-                }
+        }
+        
+        for element in brr {
+            if let existingCount = brrOccurrences[element] {
+                brrOccurrences[element] = existingCount + 1
+            } else {
+                brrOccurrences[element] = 1
             }
         }
         
         var missing = [Int]()
-        for key in occurrences.keys {
-            if occurrences[key] != 0 {
+        for key in brrOccurrences.keys {
+            if brrOccurrences[key] != arrOccurrences[key] {
                 missing.append(key)
             }
         }
         
-        return missing.sorted(by: { (a, b) -> Bool in
-            return b > a
-        })
+        return missing.sorted(by: <)
+    }
+    
+    static func missingNumbersAlt(arr: [Int], brr: [Int]) -> [Int] {
+        var occurrences = [Int: Int]()
+        for value in brr {
+            occurrences[value] = (nil == occurrences[value]) ? 1 : occurrences[value]! + 1
+        }
+        
+        for value in arr {
+            occurrences[value] = (occurrences[value]! - 1)
+            if occurrences[value] == 0 {
+                occurrences.removeValue(forKey: value)
+            }
+        }
+        
+        return occurrences.keys.sorted(by: <)
     }
 }
+
