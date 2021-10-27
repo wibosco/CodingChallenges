@@ -19,7 +19,7 @@ platform :ios do
   desc "Runs unit tests"
   lane :run_unit_tests do
     scan(
-      scheme: "WhiteBoardCodingChallenges",
+      scheme: "CodingChallenges",
       skip_build: true
     )
   end
