@@ -18,7 +18,7 @@ class SingleLinkedList {
     
     func addNode(node: LinkedListNode) {
         guard var head = head else {
-            head = node
+            self.head = node
             return
         }
         
