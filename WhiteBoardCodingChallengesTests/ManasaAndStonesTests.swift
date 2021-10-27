@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class ManasaAndStonesTests: XCTestCase {
     
     // MARK: Tests

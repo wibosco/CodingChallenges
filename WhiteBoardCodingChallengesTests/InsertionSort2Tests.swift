@@ -1,5 +1,5 @@
 //
-//  InsertionSortTests.swift
+//  InsertionSort2Tests.swift
 //  WhiteBoardCodingChallenges
 //
 //  Created by Boles on 15/05/2016.
@@ -8,27 +8,13 @@
 
 import XCTest
 
-class InsertionSortTests: XCTestCase {
-    
-    // MARK: RightMost
-    
-    func test_insertionSortRightMostA() {
-        
-        let steps = InsertionSort.sortRightMostElementIntoCorrectPosition(array: [2, 4, 6, 8, 3])
-        
-        let expectedSteps = [[2, 4, 6, 8, 8],
-                             [2, 4, 6, 6, 8],
-                             [2, 4, 4, 6, 8],
-                             [2, 3, 4, 6, 8]]
-        
-        XCTAssertEqual(expectedSteps, steps)
-    }
-    
-    // MARK: All
+@testable import WhiteBoardCodingChallenges
+
+class InsertionSort2Tests: XCTestCase {
     
     func test_insertionSortAllA() {
         
-        let steps = InsertionSort.sort(array: [1, 4, 3, 5, 6, 2])
+        let steps = InsertionSort2.sort(array: [1, 4, 3, 5, 6, 2])
         
         let expectedSteps = [[1, 4, 3, 5, 6, 2],
                              [1, 3, 4, 5, 6, 2],
@@ -41,7 +27,7 @@ class InsertionSortTests: XCTestCase {
     
     func test_insertionSortAllB() {
         
-        let steps = InsertionSort.sort(array: [9, 8, 6, 7, 3, 5, 4, 1, 2])
+        let steps = InsertionSort2.sort(array: [9, 8, 6, 7, 3, 5, 4, 1, 2])
         
         let expectedSteps = [[8, 9, 6, 7, 3, 5, 4, 1, 2],
                              [6, 8, 9, 7, 3, 5, 4, 1, 2],
@@ -54,14 +40,4 @@ class InsertionSortTests: XCTestCase {
         
         XCTAssertEqual(expectedSteps, steps)
     }
-    
-    // MARK: NumberOfShifts
-    
-    func test_numberOfShiftsA() {
-        
-        let numberOfShifts = InsertionSort.numberOfShiftsToSort(array: [2, 1, 3, 1, 2])
-        
-        XCTAssertEqual(4, numberOfShifts)
-    }
-    
 }

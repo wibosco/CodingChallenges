@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class CutTheSticksTests: XCTestCase {
     
     // MARK: Tests

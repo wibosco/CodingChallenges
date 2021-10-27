@@ -8,9 +8,10 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class FindDigitsTests: XCTestCase {
     
-
     // MARK: Tests
     
     func test_divisableValuesOf12() {

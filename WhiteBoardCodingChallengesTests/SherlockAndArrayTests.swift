@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class SherlockAndArrayTests: XCTestCase {
     
     // MARK: Tests

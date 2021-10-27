@@ -8,6 +8,7 @@
 
 import UIKit
 
+//https://www.hackerrank.com/challenges/sherlock-and-array/problem
 class SherlockAndArray: NSObject {
 
     class func leftRightEqualityPossible(array: [Int]) -> Bool {

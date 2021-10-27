@@ -8,20 +8,9 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class StaircaseTests: XCTestCase {
-    
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
     
     // MARK: Tests
     
@@ -33,5 +22,4 @@ class StaircaseTests: XCTestCase {
         
         XCTAssertEqual("     #\n    ##\n   ###\n  ####\n #####\n######", staircase, "Staircasing not valid")
     }
-    
 }

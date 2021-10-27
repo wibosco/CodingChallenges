@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class MaximumSubarrayTests: XCTestCase {
     
     // MARK: Tests

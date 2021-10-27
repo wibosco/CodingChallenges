@@ -8,19 +8,9 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class DecimalToBinaryTests: XCTestCase {
-    
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
     
     // MARK: Tests
     

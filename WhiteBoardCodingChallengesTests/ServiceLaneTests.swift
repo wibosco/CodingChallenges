@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class ServiceLaneTests: XCTestCase {
     
     // MARK: Accessors

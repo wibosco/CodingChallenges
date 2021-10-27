@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class EvenTreeTests: XCTestCase {
     
     // MARK: Tests

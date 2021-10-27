@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class PalindromeTests: XCTestCase {
     
     // MARK: TestLifecycle
