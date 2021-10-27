@@ -172,6 +172,8 @@
 		3DA4B13C27299BA60026F7D9 /* GradingStudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */; };
 		3DA4B13F2729AE1D0026F7D9 /* SaveThePrisoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */; };
 		3DA4B1412729AF240026F7D9 /* SaveThePrisonerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B1402729AF240026F7D9 /* SaveThePrisonerTests.swift */; };
+		3DA4B1442729FF750026F7D9 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */; };
+		3DA4B146272A04100026F7D9 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -359,6 +361,8 @@
 		3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudentsTests.swift; sourceTree = "<group>"; };
 		3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrisoner.swift; sourceTree = "<group>"; };
 		3DA4B1402729AF240026F7D9 /* SaveThePrisonerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrisonerTests.swift; sourceTree = "<group>"; };
+		3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
+		3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -458,6 +462,7 @@
 				3D4E3FCF2729712200DE491D /* TimeInWordsTests.swift */,
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
 				3D4E3FCA2729712200DE491D /* ValidateBSTTests.swift */,
+				3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -502,6 +507,7 @@
 		3D9D351F2729518600112474 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				3DA4B1422729FF5B0026F7D9 /* AppleAndOrange */,
 				3DA4B13D2729ADFA0026F7D9 /* SaveThePrisoner */,
 				3DA4B138272983610026F7D9 /* GradingStudents */,
 				3D9D35512729518600112474 /* ACMICPCTeam */,
@@ -1155,6 +1161,14 @@
 			path = SaveThePrisoner;
 			sourceTree = "<group>";
 		};
+		3DA4B1422729FF5B0026F7D9 /* AppleAndOrange */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */,
+			);
+			path = AppleAndOrange;
+			sourceTree = "<group>";
+		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -1381,6 +1395,7 @@
 				3D9D361927295CF700112474 /* SuccessorBSTFactory.swift in Sources */,
 				3D9D35AD2729518600112474 /* ServiceLane.swift in Sources */,
 				3D9D362927295CF700112474 /* StackOfPlatesStack.swift in Sources */,
+				3DA4B1442729FF750026F7D9 /* AppleAndOrange.swift in Sources */,
 				3D9D35BB2729518600112474 /* Staircase.swift in Sources */,
 				3D9D360F27295CF700112474 /* ProjectBuildOrder.swift in Sources */,
 				3D9D361427295CF700112474 /* OffByOne.swift in Sources */,
@@ -1468,6 +1483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA4B146272A04100026F7D9 /* AppleAndOrange.swift in Sources */,
 				3D4E3FE82729712300DE491D /* PrimsMSTTests.swift in Sources */,
 				3D4E40132729712300DE491D /* EncryptionTests.swift in Sources */,
 				3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */,

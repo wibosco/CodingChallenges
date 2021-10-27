@@ -12,33 +12,23 @@ import UIKit
 class DikshasBirthday {
 
      static func costOfGifts(numberOfBlackGifts: Int, numberOfWhiteGifts: Int, costOfBlackGift: Int, costOfWhiteGift: Int, costOfConvertingAGift: Int) -> Int {
-        
         var costOfGifts = 0
         
         if costOfBlackGift == costOfWhiteGift {
-            
             costOfGifts = (numberOfBlackGifts * costOfBlackGift) + (numberOfWhiteGifts * costOfWhiteGift)
-        }
-        else {
-            
+        } else {
             var costOfWhiteGifts = 0
             var costOfBlackGifts = 0
             
             if (numberOfWhiteGifts * costOfWhiteGift) > (numberOfWhiteGifts * (costOfBlackGift + costOfConvertingAGift)) {
-
                 costOfWhiteGifts = (numberOfWhiteGifts * (costOfBlackGift + costOfConvertingAGift))
-            }
-            else {
-                
+            } else {
                 costOfWhiteGifts = (numberOfWhiteGifts * costOfWhiteGift)
             }
             
             if (numberOfBlackGifts * costOfBlackGift) > (numberOfBlackGifts * (costOfWhiteGift + costOfConvertingAGift)) {
-
                 costOfBlackGifts = (numberOfBlackGifts * (costOfWhiteGift + costOfConvertingAGift))
-            }
-            else {
-                
+            } else {
                 costOfBlackGifts = (numberOfBlackGifts * costOfBlackGift)
             }
             
