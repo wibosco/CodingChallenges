@@ -13,69 +13,40 @@ class BFSShortReach {
     
     // MARK: Distance
     
-     static func distanceFromSourceToAllOtherNodes(sourceIndex: Int, totalNodes: Int, edges: [[Int]]) -> [BFSSearchReachNode] {
-        
-        let nodes = buildNodes(totalNodes: totalNodes)
-        connectNodes(nodes: nodes, edges: edges)
-
-        let source = nodes[sourceIndex]
-        
-        findDistanceFromSourceToAllOtherNodes(source: source)
-        
-        return nodes
-    }
-    
-     static func findDistanceFromSourceToAllOtherNodes(source: BFSSearchReachNode) {
-    
-        source.visted = true
-        source.distanceFromSource = 0
-        
-        var queue = [BFSSearchReachNode]()
-        queue.append(source)
-        
-        while queue.count > 0 {
-            
-            let node = queue.removeFirst()
-            
-            for connectedNode in node.nodes {
-                
-                if !connectedNode.visted {
-                    
-                    queue.append(connectedNode)
-                    connectedNode.visted = true
-                    connectedNode.distanceFromSource = (node.distanceFromSource + 6)
-                }
-            }
-        }
-    }
-    
-    // MARK: Build
-    
-     static func buildNodes(totalNodes: Int) -> [BFSSearchReachNode] {
-        
-        var nodes = [BFSSearchReachNode]()
-        
-        for _ in 0..<totalNodes {
-            
-            let node = BFSSearchReachNode()
-            
-            nodes.append(node)
-        }
-        
-        return nodes
-    }
-    
-     static func connectNodes(nodes: [BFSSearchReachNode], edges: [[Int]]) {
+    func distanceFromSourceToAllOtherNodes(startingIndex: Int, totalNodes: Int, edges: [[Int]]) -> [Int] {
+        let nodes = (0..<totalNodes).map { _ in BFSSearchReachNode() }
         
         for edge in edges {
-            
-            let sourceNodeIndex = edge[0]
-            let destinationNodeIndex = edge[1]
+            let sourceNodeIndex = edge[0] - 1
+            let destinationNodeIndex = edge[1] - 1
             
             let sourceNode = nodes[sourceNodeIndex]
             let destinationNode = nodes[destinationNodeIndex]
             
-            sourceNode.addRelationshipWithNode(node: destinationNode)
+            sourceNode.connect(with: destinationNode)
+            destinationNode.connect(with: sourceNode)
         }
+        
+        let startingNode = nodes[(startingIndex - 1)]
+        startingNode.distanceFromSource = 0
+        startingNode.visted = true
+        
+        var queue = [BFSSearchReachNode]()
+        queue.append(startingNode)
+        
+        while queue.count > 0 {
+            let node = queue.removeFirst()
+            
+            for connectedNode in node.nodes {
+                if !connectedNode.visted {
+                    connectedNode.visted = true
+                    connectedNode.distanceFromSource = (node.distanceFromSource + 6)
+                    
+                    queue.append(connectedNode)
+                }
+            }
+        }
+
+        return nodes.filter { $0 != startingNode }.map { $0.distanceFromSource }
     }
 }

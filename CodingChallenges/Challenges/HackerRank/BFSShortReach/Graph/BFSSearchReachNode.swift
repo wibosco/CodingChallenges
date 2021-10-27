@@ -12,19 +12,23 @@ class BFSSearchReachNode {
     var distanceFromSource = -1
     var visted = false
     
-    var nodes = [BFSSearchReachNode]()
+    var nodes = Set<BFSSearchReachNode>()
     
     // MARK: Add
     
-    func addRelationshipWithNode(node: BFSSearchReachNode) {
-        if !nodes.contains(node) {
-            nodes.append(node)
-        }
+    func connect(with node: BFSSearchReachNode) {
+        nodes.insert(node)
     }
 }
 
 extension BFSSearchReachNode: Equatable {
     static func == (lhs: BFSSearchReachNode, rhs: BFSSearchReachNode) -> Bool {
-        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+}
+
+extension BFSSearchReachNode: Hashable {
+    func hash(into hasher: inout Hasher) {
+        return hasher.combine(ObjectIdentifier(self))
     }
 }
