@@ -9,12 +9,12 @@
 import UIKit
 
 //CtCI 1.5
-class OffByOne: NSObject {
+class OffByOne {
 
     /**
      Can transform one string into another one with only one change: inserting new charatcer, removing existing character or transforming existing character.
      */
-    class func canTransformSourceStringIntoDestinationStringWithOneChange(source: String, destination: String) -> Bool {
+     static func canTransformSourceStringIntoDestinationStringWithOneChange(source: String, destination: String) -> Bool {
         
         if abs(source.count - destination.count) > 1 {
             
@@ -36,7 +36,7 @@ class OffByOne: NSObject {
         }
     }
     
-    class func canConvertByOneTransformationBetweenStrings(source: String, destination: String) -> Bool {
+     static func canConvertByOneTransformationBetweenStrings(source: String, destination: String) -> Bool {
         
         var foundDifferentCharacters = false
         
@@ -56,7 +56,7 @@ class OffByOne: NSObject {
         return true
     }
     
-    class func canConvertByOneInsertionOrDeletionBetweenStrings(source: String, destination: String) -> Bool {
+     static func canConvertByOneInsertionOrDeletionBetweenStrings(source: String, destination: String) -> Bool {
         
         let sortedSource = String(source.sorted { (a: Character, b: Character) -> Bool in
             

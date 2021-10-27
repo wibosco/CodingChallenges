@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StackOfPlatesNode: NSObject {
+class StackOfPlatesNode {
 
     // MARK: Properties
     
@@ -17,9 +17,6 @@ class StackOfPlatesNode: NSObject {
     // MARK: Init
     
     init(value: Int) {
-        
         self.value = value
-        
-        super.init()
     }
 }

@@ -9,9 +9,9 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/maxsubarray/problem
-class MaximumSubarray: NSObject {
+class MaximumSubarray {
 
-    class func maximumTotals(array: [Int]) -> (contiguousTotal: Int, nonContiguousTotal: Int) {
+     static func maximumTotals(array: [Int]) -> (contiguousTotal: Int, nonContiguousTotal: Int) {
     
         let contiguousTotal = MaximumSubarray.maximumContiguous(array: array)
         let nonContiguousTotal = MaximumSubarray.maximumNonContiguousTotal(array: array)
@@ -19,7 +19,7 @@ class MaximumSubarray: NSObject {
         return (contiguousTotal, nonContiguousTotal)
     }
     
-    class func maximumNonContiguousTotal(array: [Int]) -> Int {
+     static func maximumNonContiguousTotal(array: [Int]) -> Int {
         
         var nonContiguousTotal = array[0]
         
@@ -41,7 +41,7 @@ class MaximumSubarray: NSObject {
         return nonContiguousTotal
     }
     
-    class func maximumContiguous(array: [Int]) -> Int {
+     static func maximumContiguous(array: [Int]) -> Int {
         
         var contiguousTotal = array[0]
         

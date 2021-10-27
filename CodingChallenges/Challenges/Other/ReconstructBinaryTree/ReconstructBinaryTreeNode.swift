@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReconstructBinaryTreeNode: NSObject {
+class ReconstructBinaryTreeNode {
 
     // MARK: Properties
     
@@ -22,10 +22,7 @@ class ReconstructBinaryTreeNode: NSObject {
     // MARK: Init
     
     init(value: Int) {
-        
         self.value = value
-        
-        super.init()
     }
     
     // MARK: Nodes

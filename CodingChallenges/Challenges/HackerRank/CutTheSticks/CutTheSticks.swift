@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/cut-the-sticks
-class CutTheSticks: NSObject {
+class CutTheSticks {
 
-    class func cutUntilDone(sticks: [Int]) -> [Int] {
+     static func cutUntilDone(sticks: [Int]) -> [Int] {
         
         var sticksRemainingAtEachCut = [Int]()
         

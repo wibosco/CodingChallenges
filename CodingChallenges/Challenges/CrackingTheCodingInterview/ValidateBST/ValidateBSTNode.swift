@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ValidateBSTNode: NSObject {
+class ValidateBSTNode {
 
     // MARK: Properties
     
@@ -21,7 +21,6 @@ class ValidateBSTNode: NSObject {
     
     init(value: Int) {
         self.value = value
-        super.init()
     }
     
     // MARK: Nodes

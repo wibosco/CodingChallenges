@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LevelTraversalQueue: NSObject {
+class LevelTraversalQueue {
 
     // MARK: Properties
     

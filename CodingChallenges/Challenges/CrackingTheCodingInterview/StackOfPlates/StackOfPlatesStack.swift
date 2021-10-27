@@ -8,37 +8,27 @@
 
 import UIKit
 
-class StackOfPlatesStack: NSObject {
+class StackOfPlatesStack {
 
     // MARK: Properties
     
-    lazy var nodes: [StackOfPlatesNode] = {
-       
-        return [StackOfPlatesNode]()
-    }()
-    
+    var nodes = [StackOfPlatesNode]()
     var capacity: Int
     
     // MARK: Init
     
     init(capacity: Int) {
-        
         self.capacity = capacity
-        
-        super.init()
     }
     
     // MARK: Meta
     
     func isEmpty() -> Bool {
-        
         return nodes.count == 0
     }
     
     func isFull() -> Bool {
-        
         if self.capacity == nodes.count {
-            
             return true
         }
         
@@ -48,19 +38,15 @@ class StackOfPlatesStack: NSObject {
     // MARK: Actions
     
     func push(value: Int) {
-        
-        let node = StackOfPlatesNode.init(value: value)
-        
+        let node = StackOfPlatesNode(value: value)
         nodes.insert(node, at: 0)
     }
     
     func pop() -> StackOfPlatesNode? {
-        
-        if !isEmpty() {
-            
-            return nodes.removeFirst()
+        guard !isEmpty() else {
+            return nil
         }
         
-        return nil
+        return nodes.removeFirst()
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 //CtCI 3.3
-class StackOfPlates: NSObject {
+class StackOfPlates {
 
     // MARK: Properties
     
@@ -30,7 +30,7 @@ class StackOfPlates: NSObject {
             
             if stack.isFull() {
                 
-                pushStack = StackOfPlatesStack.init(capacity: stackCapacity)
+                pushStack = StackOfPlatesStack(capacity: stackCapacity)
                 stacks.append(pushStack)
             }
             else {
@@ -40,7 +40,7 @@ class StackOfPlates: NSObject {
         }
         else {
             
-            pushStack = StackOfPlatesStack.init(capacity: stackCapacity)
+            pushStack = StackOfPlatesStack(capacity: stackCapacity)
             stacks.append(pushStack)
         }
         

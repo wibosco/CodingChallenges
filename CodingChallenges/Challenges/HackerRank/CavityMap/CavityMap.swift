@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/cavity-map
-class CavityMap: NSObject {
+class CavityMap {
     
-    class func generateCavityMap(map: [String]) -> [String] {
+     static func generateCavityMap(map: [String]) -> [String] {
         let cavity = "X"
         
         var cavityMap = map

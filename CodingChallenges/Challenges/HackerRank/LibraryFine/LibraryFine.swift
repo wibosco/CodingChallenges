@@ -9,9 +9,9 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/library-fine
-class LibraryFine: NSObject {
+class LibraryFine {
 
-    class func calculateFine(dueDate: String, expectedDueDate: String) -> Int {
+     static func calculateFine(dueDate: String, expectedDueDate: String) -> Int {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MM yyyy"
 

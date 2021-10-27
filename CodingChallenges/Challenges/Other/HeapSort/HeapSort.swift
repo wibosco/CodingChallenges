@@ -8,11 +8,11 @@
 
 import Foundation
 
-class HeapSort: NSObject {
+class HeapSort {
 
     // MARK: Max
     
-    class func maxHeapSort(input: [Int]) -> [Int] {
+     static func maxHeapSort(input: [Int]) -> [Int] {
         
         if input.count < 2 {
             
@@ -37,7 +37,7 @@ class HeapSort: NSObject {
     
     // MARK: Min
     
-    class func minHeapSort(input: [Int]) -> [Int] {
+     static func minHeapSort(input: [Int]) -> [Int] {
         
         if input.count < 2 {
             
@@ -62,7 +62,7 @@ class HeapSort: NSObject {
     
     // MARK: Exchange
     
-    class func exchange<T>(heap: inout [T], i:Int, j:Int) {
+     static func exchange<T>(heap: inout [T], i:Int, j:Int) {
         
         let temp:T = heap[i]
         heap[i] = heap[j]

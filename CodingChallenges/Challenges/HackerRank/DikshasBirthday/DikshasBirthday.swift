@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/taum-and-bday
-class DikshasBirthday: NSObject {
+class DikshasBirthday {
 
-    class func costOfGifts(numberOfBlackGifts: Int, numberOfWhiteGifts: Int, costOfBlackGift: Int, costOfWhiteGift: Int, costOfConvertingAGift: Int) -> Int {
+     static func costOfGifts(numberOfBlackGifts: Int, numberOfWhiteGifts: Int, costOfBlackGift: Int, costOfWhiteGift: Int, costOfConvertingAGift: Int) -> Int {
         
         var costOfGifts = 0
         

@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/kaprekar-numbers
-class Kaprekar: NSObject {
+class Kaprekar {
 
-    class func kaprekarRange(lowerBounds: Int, upperBounds: Int) -> [Int] {
+     static func kaprekarRange(lowerBounds: Int, upperBounds: Int) -> [Int] {
         var kaprekarRange = [Int]()
 
         for i in lowerBounds...upperBounds {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PrimsMSTEdge: NSObject {
+class PrimsMSTEdge {
 
     // MARK: Properties
     
@@ -19,11 +19,20 @@ class PrimsMSTEdge: NSObject {
     // MARK: Lifecycle
     
     init(source: PrimsMSTNode, destination: PrimsMSTNode, weight: Int) {
-        
         self.source = source
         self.destination = destination
         self.weight = weight
-        
-        super.init()
+    }
+}
+
+extension PrimsMSTEdge: Equatable {
+    static func == (lhs: PrimsMSTEdge, rhs: PrimsMSTEdge) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+}
+
+extension PrimsMSTEdge: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
     }
 }

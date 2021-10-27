@@ -9,7 +9,7 @@
 import UIKit
 
 //CtCI 4.2
-class MinimalBinarySearchTree: NSObject {
+class MinimalBinarySearchTree {
     
     // MARK: Properties
     
@@ -32,7 +32,7 @@ class MinimalBinarySearchTree: NSObject {
         let centralIndex = Int(sortedArray.count/2)
         let centralValue = sortedArray[centralIndex]
         
-        let node = MinimalBinarySearchTreeNode.init(value: centralValue)
+        let node = MinimalBinarySearchTreeNode(value: centralValue)
         
         if root == nil {
             

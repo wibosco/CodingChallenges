@@ -8,10 +8,10 @@
 
 import Foundation
 
-class ReverseStringAndKeepWordOrdering: NSObject {
+class ReverseStringAndKeepWordOrdering {
 
     
-    class func reverse(string: String) -> String {
+     static func reverse(string: String) -> String {
         
         let seperateWords = string.split(separator: " ").map(String.init)
         

@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/sherlock-and-array/problem
-class SherlockAndArray: NSObject {
+class SherlockAndArray {
 
-    class func leftRightEqualityPossible(array: [Int]) -> Bool {
+     static func leftRightEqualityPossible(array: [Int]) -> Bool {
         if array.count < 3 {
             return false
         }

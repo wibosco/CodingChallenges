@@ -9,9 +9,9 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/new-year-chaos
-class NewYearChaos: NSObject {
+class NewYearChaos {
 
-    class func numberOfBribesToAchieveQueue(queue: [Int]) -> Int {
+     static func numberOfBribesToAchieveQueue(queue: [Int]) -> Int {
         
         var numberOfBribesToAchieveQueue = 0
         
@@ -52,7 +52,7 @@ class NewYearChaos: NSObject {
     
     // MARK: Alt
     
-    class func numberOfBribesToAchieveQueueAlt(queue: [Int]) -> Int {
+     static func numberOfBribesToAchieveQueueAlt(queue: [Int]) -> Int {
      
         var inversions = 0
         
@@ -85,7 +85,7 @@ class NewYearChaos: NSObject {
         }
     }
     
-    class func isValidQueue(queue: [Int]) -> Bool {
+     static func isValidQueue(queue: [Int]) -> Bool {
     
         let maxmimumQueueJump = 2
         

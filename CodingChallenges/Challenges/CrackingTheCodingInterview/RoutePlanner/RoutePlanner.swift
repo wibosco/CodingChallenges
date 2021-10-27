@@ -9,7 +9,7 @@
 import UIKit
 
 //CtCI 4.1
-class RoutePlanner: NSObject {
+class RoutePlanner {
 
     // MARK: Properties
     
@@ -25,7 +25,6 @@ class RoutePlanner: NSObject {
     // MARK: Path
     
     func pathExistsBetweenNodes(source: RoutePlannerNode, destination: RoutePlannerNode) -> Bool {
-        
         let queue = RoutePlannerQueue()
         
         queue.enqueue(node: source)
@@ -35,17 +34,11 @@ class RoutePlanner: NSObject {
             let node = queue.dequeue()
             
             if node == destination {
-                
                 return true
-            }
-            else {
-                
+            } else {
                 for connectionNode in node.connectedNodes {
-                    
                     if !connectionNode.visited {
-                        
                         connectionNode.visited = true
-                        
                         queue.enqueue(node: connectionNode)
                     }
                 }

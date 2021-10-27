@@ -8,11 +8,11 @@
 
 import UIKit
 
-class Prime: NSObject {
+class Prime {
 
     // MARK: isPrime
     
-    class func isPrime(value: Int) -> Bool {
+     static func isPrime(value: Int) -> Bool {
         
         if value < 4 {
             
@@ -48,7 +48,7 @@ class Prime: NSObject {
     
     // MARK: PrimeFactors
     
-    class func primeFactors(value: Int) {
+     static func primeFactors(value: Int) {
 
         var runningTotal = value
         

@@ -8,16 +8,11 @@
 
 import UIKit
 
-class MinStackNode: NSObject {
-    
+class MinStackNode {
     var value: Int
     var lowerNodeMinNode: MinStackNode?
     
     init(value: Int) {
-        
         self.value = value
-        
-        super.init()
     }
-    
 }

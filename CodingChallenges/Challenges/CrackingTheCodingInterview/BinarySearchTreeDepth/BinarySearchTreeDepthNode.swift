@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BinarySearchTreeDepthNode: NSObject {
+class BinarySearchTreeDepthNode {
 
     // MARK: Properties
     
@@ -21,10 +21,7 @@ class BinarySearchTreeDepthNode: NSObject {
     // MARK: Init
     
     init(value: Int, depth: Int) {
-        
         self.value = value
         self.depth = depth
-        
-        super.init()
     }
 }

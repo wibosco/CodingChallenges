@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BinarySearchTree: NSObject {
+class BinarySearchTree {
 
     // MARK: Properties
     
@@ -20,7 +20,7 @@ class BinarySearchTree: NSObject {
         
         if root == nil {
             
-            root = BinarySearchTreeNode.init(value: value)
+            root = BinarySearchTreeNode(value: value)
         }
         else {
             
@@ -34,7 +34,7 @@ class BinarySearchTree: NSObject {
             
             if root.left == nil {
                 
-                root.left = BinarySearchTreeNode.init(value: value)
+                root.left = BinarySearchTreeNode(value: value)
             }
             else {
                 
@@ -45,7 +45,7 @@ class BinarySearchTree: NSObject {
             
             if root.right == nil {
                 
-                root.right = BinarySearchTreeNode.init(value: value)
+                root.right = BinarySearchTreeNode(value: value)
             }
             else {
                 

@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/find-digits
-class FindDigits: NSObject {
+class FindDigits {
 
-    class func findCountOFDivisableValuesOfNumberInNumber(number: Int) -> Int {
+     static func findCountOFDivisableValuesOfNumberInNumber(number: Int) -> Int {
         
         var divisables = 0
         

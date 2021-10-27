@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MinimalBinarySearchTreeNode: NSObject {
+class MinimalBinarySearchTreeNode {
 
     // MARK: Properties
     
@@ -20,22 +20,15 @@ class MinimalBinarySearchTreeNode: NSObject {
     // MARK: Init
     
     init(value: Int) {
-        
         self.value = value
-        
-        super.init()
     }
     
     // MARK: Child
     
     func addChild(node: MinimalBinarySearchTreeNode) {
-        
         if node.value <= self.value {
-            
             left = node
-        }
-        else {
-            
+        } else {
             right = node
         }
     }

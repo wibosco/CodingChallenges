@@ -9,11 +9,11 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/missing-numbers/problem
-class MissingNumbers: NSObject {
+class MissingNumbers {
 
     // MARK: Missing
     
-    class func missingNumbers(complete: [Int], incomplete: [Int]) -> [Int] {
+     static func missingNumbers(complete: [Int], incomplete: [Int]) -> [Int] {
         var occurrences = [Int: Int]()
         
         for i in 0..<complete.count {

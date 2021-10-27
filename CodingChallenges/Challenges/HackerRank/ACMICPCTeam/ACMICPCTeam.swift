@@ -9,10 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/acm-icpc-team
-class ACMICPCTeam: NSObject {
+class ACMICPCTeam {
 
-    class func bestCombination(contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
-        
+    static func bestCombination(contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
         var maximum = Int(contestantsTopicKnowledge[0], radix: 2)!
         var teamsKnowledgeScore = [Int]()
         
@@ -61,14 +60,12 @@ class ACMICPCTeam: NSObject {
         return (maximumTopics, teamsWithMaximumScore)
     }
     
-    class func bestCombinationAlt(contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
-        
+     static func bestCombinationAlt(contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
         var maximum = 0
-        
         var teamsKnowledgeScore = [Int]()
         
         for i in 0..<contestantsTopicKnowledge.count {
-            
+
             let firstContestantTopicKnowledge = contestantsTopicKnowledge[i]
             
             for j in (i+1)..<contestantsTopicKnowledge.count {
@@ -124,5 +121,4 @@ class ACMICPCTeam: NSObject {
         
         return (maximum, teamsWithMaximumScore)
     }
-
 }

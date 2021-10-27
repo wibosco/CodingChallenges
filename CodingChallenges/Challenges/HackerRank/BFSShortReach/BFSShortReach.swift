@@ -9,11 +9,11 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/bfsshortreach
-class BFSShortReach: NSObject {
+class BFSShortReach {
     
     // MARK: Distance
     
-    class func distanceFromSourceToAllOtherNodes(sourceIndex: Int, totalNodes: Int, edges: [[Int]]) -> [BFSSearchReachNode] {
+     static func distanceFromSourceToAllOtherNodes(sourceIndex: Int, totalNodes: Int, edges: [[Int]]) -> [BFSSearchReachNode] {
         
         let nodes = buildNodes(totalNodes: totalNodes)
         connectNodes(nodes: nodes, edges: edges)
@@ -25,7 +25,7 @@ class BFSShortReach: NSObject {
         return nodes
     }
     
-    class func findDistanceFromSourceToAllOtherNodes(source: BFSSearchReachNode) {
+     static func findDistanceFromSourceToAllOtherNodes(source: BFSSearchReachNode) {
     
         source.visted = true
         source.distanceFromSource = 0
@@ -51,7 +51,7 @@ class BFSShortReach: NSObject {
     
     // MARK: Build
     
-    class func buildNodes(totalNodes: Int) -> [BFSSearchReachNode] {
+     static func buildNodes(totalNodes: Int) -> [BFSSearchReachNode] {
         
         var nodes = [BFSSearchReachNode]()
         
@@ -65,7 +65,7 @@ class BFSShortReach: NSObject {
         return nodes
     }
     
-    class func connectNodes(nodes: [BFSSearchReachNode], edges: [[Int]]) {
+     static func connectNodes(nodes: [BFSSearchReachNode], edges: [[Int]]) {
         
         for edge in edges {
             

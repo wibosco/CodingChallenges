@@ -9,11 +9,11 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/primsmstsub
-class PrimsMST: NSObject {
+class PrimsMST {
 
     // MARK: Distance
     
-    class func totalWeight(sourceIndex: Int, totalNodes: Int, edges: [[Int]]) -> Int {
+     static func totalWeight(sourceIndex: Int, totalNodes: Int, edges: [[Int]]) -> Int {
         
         let nodes = buildNodes(totalNodes: totalNodes)
         connectNodes(nodes: nodes, edges: edges)
@@ -54,13 +54,10 @@ class PrimsMST: NSObject {
     
     // MARK: Build
     
-    class func buildNodes(totalNodes: Int) -> [PrimsMSTNode] {
-        
+     static func buildNodes(totalNodes: Int) -> [PrimsMSTNode] {
         var nodes = [PrimsMSTNode]()
-        
         for i in 0..<totalNodes {
-            
-            let node = PrimsMSTNode.init(value: i)
+            let node = PrimsMSTNode(value: i)
             nodes.append(node)
         }
         
@@ -69,7 +66,7 @@ class PrimsMST: NSObject {
     
     // MARK: Connect
     
-    class func connectNodes(nodes: [PrimsMSTNode], edges: [[Int]]) {
+     static func connectNodes(nodes: [PrimsMSTNode], edges: [[Int]]) {
     
         for edge in edges {
             

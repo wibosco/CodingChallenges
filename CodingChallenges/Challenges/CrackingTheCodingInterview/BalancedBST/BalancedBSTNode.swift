@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BalancedBSTNode: NSObject {
+class BalancedBSTNode {
 
     // MARK: Properties
     
@@ -22,7 +22,6 @@ class BalancedBSTNode: NSObject {
     
     init(value: Int) {
         self.value = value
-        super.init()
     }
     
     // MARK: Nodes

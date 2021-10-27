@@ -8,9 +8,9 @@
 
 import UIKit
 
-class GreatestCommonDenominator: NSObject {
+class GreatestCommonDenominator {
     
-    class func greatestCommonDenominator(lowest: Int, highest: Int) -> Int {
+     static func greatestCommonDenominator(lowest: Int, highest: Int) -> Int {
         
         if lowest == 0 && highest == 0 {
             

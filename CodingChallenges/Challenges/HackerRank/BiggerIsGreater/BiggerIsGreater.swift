@@ -9,10 +9,10 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/bigger-is-greater
-class BiggerIsGreater: NSObject {
+class BiggerIsGreater {
 
     //Copied from http://stackoverflow.com/questions/34968470/calculate-all-permutations-of-a-string-in-swift
-    class func possiblePermutations(n:Int, a:inout [String], permutations: inout [String]) {
+     static func possiblePermutations(n:Int, a:inout [String], permutations: inout [String]) {
         
         if n == 1 {
             
@@ -31,7 +31,7 @@ class BiggerIsGreater: NSObject {
         possiblePermutations(n: n-1, a: &a, permutations: &permutations)
     }
     
-    class func permutationGreaterThanOrginal(original: String) -> String {
+     static func permutationGreaterThanOrginal(original: String) -> String {
     
         guard original != String(original.reversed()) else {
             
@@ -64,7 +64,7 @@ class BiggerIsGreater: NSObject {
         return maximumValuePermutation!
     }
     
-    class func permutationGreaterThanOrginalAlt(original: String) -> String {
+     static func permutationGreaterThanOrginalAlt(original: String) -> String {
         
         guard original != String(original.reversed()) else {
             
@@ -91,7 +91,7 @@ class BiggerIsGreater: NSObject {
     
     // MARK: Alt
     
-    class func possiblePermutationsAlt(n:Int, a:inout [String], original: String, greaterValue: inout String?) {
+     static func possiblePermutationsAlt(n:Int, a:inout [String], original: String, greaterValue: inout String?) {
         
         if n == 1 {
             

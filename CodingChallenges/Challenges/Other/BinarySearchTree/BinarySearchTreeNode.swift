@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BinarySearchTreeNode: NSObject {
+class BinarySearchTreeNode {
 
     // MARK: Properties
     
@@ -19,9 +19,6 @@ class BinarySearchTreeNode: NSObject {
     // MARK: Inits
     
     init(value: Int) {
-        
         self.value = value
-        
-        super.init()
     }
 }

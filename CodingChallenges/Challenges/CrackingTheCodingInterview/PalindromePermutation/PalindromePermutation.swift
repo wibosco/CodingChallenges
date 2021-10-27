@@ -9,9 +9,9 @@
 import Foundation
 
 //CtCI 1.4
-class PalindromePermutation: NSObject {
+class PalindromePermutation {
 
-    class func premutationCanBePalindrome(original: String) -> Bool {
+     static func premutationCanBePalindrome(original: String) -> Bool {
         let spacesRemovedOriginal = original.replacingOccurrences(of: " ", with: "").lowercased()
 
         if spacesRemovedOriginal.count < 2 {
@@ -44,7 +44,7 @@ class PalindromePermutation: NSObject {
         return true
     }
     
-    class func countOccurrencesOfCharacters(original: String) -> [String : Int] {
+     static func countOccurrencesOfCharacters(original: String) -> [String : Int] {
         var occurrences = [String : Int]()
         
         for character in original {

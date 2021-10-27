@@ -8,11 +8,11 @@
 
 import Foundation
 
-class MinHeap: NSObject {
+class MinHeap {
 
     // MARK: Construct
     
-    class func buildMinHeap(input: [Int]) -> [Int] {
+     static func buildMinHeap(input: [Int]) -> [Int] {
         
         if input.count < 2 {
             
@@ -33,7 +33,7 @@ class MinHeap: NSObject {
     
     // MARK: Heapify
     
-    class func minHeapify(heap: inout [Int], indexRoot: Int) {
+     static func minHeapify(heap: inout [Int], indexRoot: Int) {
         
         if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
             
@@ -79,7 +79,7 @@ class MinHeap: NSObject {
     
     // MARK: Exchange
     
-    class func exchange<T>(heap: inout [T], i:Int, j:Int) {
+     static func exchange<T>(heap: inout [T], i:Int, j:Int) {
         
         let temp:T = heap[i]
         heap[i] = heap[j]
@@ -88,21 +88,21 @@ class MinHeap: NSObject {
     
     // MARK: Index
     
-    class func leftLeafIndex(rootIndex: Int) -> Int {
+     static func leftLeafIndex(rootIndex: Int) -> Int {
         
         let heapIndex = (rootIndex + 1)
         
         return ((heapIndex * 2) - 1)
     }
     
-    class func rightLeafIndex(rootIndex: Int) -> Int {
+     static func rightLeafIndex(rootIndex: Int) -> Int {
         
         let heapIndex = (rootIndex + 1)
         
         return (heapIndex * 2)
     }
     
-    class func heapLastIndex(heap: [Int]) -> Int {
+     static func heapLastIndex(heap: [Int]) -> Int {
         
         return (heap.count - 1)
     }

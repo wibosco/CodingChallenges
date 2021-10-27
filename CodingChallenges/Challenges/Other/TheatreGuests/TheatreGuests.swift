@@ -10,11 +10,11 @@ import Foundation
 
 //Google
 //Can only move each guest once
-class TheatreGuests: NSObject {
+class TheatreGuests {
     
     // MARK: MaximumOneMoveEach
     
-    class func sortGuestsInSeatsAlt(guestsInSeats: inout [String]) {
+     static func sortGuestsInSeatsAlt(guestsInSeats: inout [String]) {
         var guests = [String: [Int]]()
         for (index, guest) in guestsInSeats.enumerated() {
             var partners = guests[guest]
@@ -76,7 +76,7 @@ class TheatreGuests: NSObject {
     
     // MARK: MultipleMoves
     
-    class func sortGuestsInSeats(guestsInSeats: inout [String]) {
+     static func sortGuestsInSeats(guestsInSeats: inout [String]) {
         var index = 1
         while index < guestsInSeats.count {
             if guestsInSeats[index-1] != guestsInSeats[index] {
@@ -90,7 +90,7 @@ class TheatreGuests: NSObject {
         }
     }
     
-    class func findGuestsPartnerIndex(guestsInSeats: [String], partner: String) -> Int {
+     static func findGuestsPartnerIndex(guestsInSeats: [String], partner: String) -> Int {
         for (index, guest) in guestsInSeats.enumerated() {
             if guest == partner {
                 return index
@@ -100,7 +100,7 @@ class TheatreGuests: NSObject {
         return -1
     }
     
-    class func swap(data: inout [String], source: Int, destination: Int) {
+     static func swap(data: inout [String], source: Int, destination: Int) {
         let temp = data[destination]
         data[destination] = data[source]
         data[source] = temp

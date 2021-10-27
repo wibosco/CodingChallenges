@@ -9,11 +9,11 @@
 import UIKit
 
 //CtCI 4.4
-class BalancedBST: NSObject {
+class BalancedBST {
 
     // MARK: Balanced
     
-    class func isBalancedBST(root: BalancedBSTNode) -> Bool {
+     static func isBalancedBST(root: BalancedBSTNode) -> Bool {
         calculateHeightOfNodes(root: root)
         
         var queue = [BalancedBSTNode]()
@@ -46,7 +46,7 @@ class BalancedBST: NSObject {
     // MARK: Heights
     
     @discardableResult
-    class func calculateHeightOfNodes(root: BalancedBSTNode) -> Int {
+     static func calculateHeightOfNodes(root: BalancedBSTNode) -> Int {
         var leftHeight = 0
         if let left = root.left {
             leftHeight += 1

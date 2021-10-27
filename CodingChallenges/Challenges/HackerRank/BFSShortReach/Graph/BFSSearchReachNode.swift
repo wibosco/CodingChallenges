@@ -8,26 +8,23 @@
 
 import Foundation
 
-class BFSSearchReachNode: NSObject {
-
-    // MARK: Properties
-    
+class BFSSearchReachNode {
     var distanceFromSource = -1
     var visted = false
     
-    var nodes: [BFSSearchReachNode] = {
-        
-        let nodes = [BFSSearchReachNode]()
-        
-        return nodes
-    }()
+    var nodes = [BFSSearchReachNode]()
     
     // MARK: Add
     
     func addRelationshipWithNode(node: BFSSearchReachNode) {
-        
         if !nodes.contains(node) {
             nodes.append(node)
         }
+    }
+}
+
+extension BFSSearchReachNode: Equatable {
+    static func == (lhs: BFSSearchReachNode, rhs: BFSSearchReachNode) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class QuickSort: NSObject {
+class QuickSort {
 
     // MARK: QuickSort
     
     //https://www.hackerrank.com/challenges/quicksort1
-    class func sortIntoGroups(array: [Int], indexOfPivot: Int) -> [Int] {
+     static func sortIntoGroups(array: [Int], indexOfPivot: Int) -> [Int] {
         
         var left = [Int]()
         var right = [Int]()
@@ -35,7 +35,7 @@ class QuickSort: NSObject {
         return left + right
     }
     
-    class func sort(array: [Int]) -> [Int] {
+     static func sort(array: [Int]) -> [Int] {
         
         if array.count == 0 {
             
@@ -64,7 +64,7 @@ class QuickSort: NSObject {
         return sort(array: left) + [pivot] + sort(array: right)
     }
     
-    class func sortAlt(array: [Int]) -> [Int] {
+     static func sortAlt(array: [Int]) -> [Int] {
         
         if array.count == 0 {
             
@@ -84,7 +84,7 @@ class QuickSort: NSObject {
     // MARK: InPlace
     
     //https://www.hackerrank.com/challenges/quicksort3
-    class func sortInPlace(array: inout [Int], leftIndex: Int, rightIndex: Int) {
+     static func sortInPlace(array: inout [Int], leftIndex: Int, rightIndex: Int) {
         
         //if this isn't true then the array is sorted
         if leftIndex < rightIndex {
@@ -99,7 +99,7 @@ class QuickSort: NSObject {
     }
     
     //swap elements so that they are on the correct side of the partion, we don't care about the ordering anymore than that here
-    class func swap(array: inout [Int], aIndex: Int, bIndex: Int) {
+     static func swap(array: inout [Int], aIndex: Int, bIndex: Int) {
         
         let temp = array[aIndex]
         
@@ -108,7 +108,7 @@ class QuickSort: NSObject {
         
     }
     
-    class func partion(array: inout [Int], leftIndex: Int, rightIndex: Int) -> Int {
+     static func partion(array: inout [Int], leftIndex: Int, rightIndex: Int) -> Int {
         
         let pivotValue = array[rightIndex]
         
@@ -117,15 +117,7 @@ class QuickSort: NSObject {
         for i in leftIndex..<rightIndex {
             
             if array[i] < pivotValue {
-                
-//                print("Before swap array is now: \(array[leftIndex..<rightIndex])")
-//                print("about to swap value index: \(i) with partion index: \(partionIndex)")
-                
                 QuickSort.swap(array: &array, aIndex: i, bIndex: partionIndex)
-                
-//                print("After swap array is now: \(array[leftIndex..<rightIndex])")
-//                print("")
-                
                 partionIndex += 1
             }
         }

@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/time-conversion
-class TimeConverter: NSObject {
+class TimeConverter {
     
-    class func convertFrom12HourTo24HourUsingDateManipulation(time: String) -> String {
+     static func convertFrom12HourTo24HourUsingDateManipulation(time: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mm:ssa"
         

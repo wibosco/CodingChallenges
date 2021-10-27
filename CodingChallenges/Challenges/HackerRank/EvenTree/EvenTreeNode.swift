@@ -8,22 +8,15 @@
 
 import Foundation
 
-class EvenTreeNode: NSObject {
-
-    // MARK: - Properties
-    
+class EvenTreeNode {
     var value: Int // to help with debugging
     var parent: EvenTreeNode?
-    var children: [EvenTreeNode] = {
-        return [EvenTreeNode]()
-    }()
+    var children = [EvenTreeNode]()
     
     // MARK: - Lifecycle
     
     init(value: Int) {
         self.value = value
-        
-        super.init()
     }
     
     // MARK: Child
@@ -39,5 +32,11 @@ class EvenTreeNode: NSObject {
         let childIndex = children.firstIndex(of: child)!
         children.remove(at: childIndex)
         child.parent = nil
+    }
+}
+
+extension EvenTreeNode: Equatable {
+    static func == (lhs: EvenTreeNode, rhs: EvenTreeNode) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/sherlock-and-the-beast
-class Beast: NSObject {
+class Beast {
 
     /*
      A Decent Number has the following properties:
@@ -25,7 +25,7 @@ class Beast: NSObject {
      5 = 33333
      11 = 55555533333
      */
-    class func decentNumber(range: Int) -> String {
+     static func decentNumber(range: Int) -> String {
         
         if range < 3 {
             

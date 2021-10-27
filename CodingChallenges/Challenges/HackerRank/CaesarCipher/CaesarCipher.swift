@@ -9,9 +9,9 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/caesar-cipher-1
-class CaesarCipher: NSObject {
+class CaesarCipher {
 
-    class func encrypt(originalString: String, rotate: Int) -> String {
+     static func encrypt(originalString: String, rotate: Int) -> String {
         
         let alphabet = "abcdefghijklmnopqrstuvwxyz"
 
@@ -45,7 +45,7 @@ class CaesarCipher: NSObject {
         return encryptedString
     }
     
-    class func retrieveCharacterAfterRotation(character: Character, characterSet: [Character], rotate: Int) -> Character {
+     static func retrieveCharacterAfterRotation(character: Character, characterSet: [Character], rotate: Int) -> Character {
         
         let index = characterSet.firstIndex(of: character)!
         let indexAfterRotation = index + rotate

@@ -9,7 +9,7 @@
 import UIKit
 
 //Amazon - Javier
-class ReconstructBinaryTree: NSObject {
+class ReconstructBinaryTree {
 
     // MARK: Properties
     
@@ -31,7 +31,7 @@ class ReconstructBinaryTree: NSObject {
             
             if parentNode == nil {
                 
-                parentNode = ReconstructBinaryTreeNode.init(value: parentKey)
+                parentNode = ReconstructBinaryTreeNode(value: parentKey)
                 nodes[parentKey] = parentNode!
             }
             
@@ -39,7 +39,7 @@ class ReconstructBinaryTree: NSObject {
             
             if childNode == nil {
                 
-                childNode = ReconstructBinaryTreeNode.init(value: childKey)
+                childNode = ReconstructBinaryTreeNode(value: childKey)
                 nodes[childKey] = childNode!
             }
             

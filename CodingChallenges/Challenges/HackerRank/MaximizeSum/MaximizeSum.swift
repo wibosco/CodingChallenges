@@ -9,11 +9,11 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/maximize-sum
-class MaximizeSum: NSObject {
+class MaximizeSum {
     
     // MARK: Maximum
     
-    class func maximizeSum(values: [Int], modulo: Int) -> Int {
+     static func maximizeSum(values: [Int], modulo: Int) -> Int {
         var prefix = [Int]()
         var current = 0
         for value in values {

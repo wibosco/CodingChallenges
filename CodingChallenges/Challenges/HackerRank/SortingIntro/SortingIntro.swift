@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/tutorial-intro
-class SortingIntro: NSObject {
+class SortingIntro {
 
-    class func indexOfValue(value: Int, array: [Int]) -> Int {
+     static func indexOfValue(value: Int, array: [Int]) -> Int {
         return array.firstIndex(of: value)!
     }
 }

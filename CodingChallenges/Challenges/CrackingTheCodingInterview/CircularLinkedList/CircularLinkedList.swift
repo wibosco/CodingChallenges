@@ -9,17 +9,14 @@
 import UIKit
 
 //CtCI 2.8
-class CircularLinkedList: NSObject {
+class CircularLinkedList {
 
-    class func isCircular(linkedList: SingleLinkedList) -> Bool {
-        
+     static func isCircular(linkedList: SingleLinkedList) -> Bool {
         var slow = linkedList.head
         var fast = slow!.next
         
         while fast != nil {
-            
             if slow == fast {
-                
                 return true
             }
             
@@ -30,20 +27,15 @@ class CircularLinkedList: NSObject {
         return false
     }
     
-    class func isCircularOnNode(linkedList: SingleLinkedList) -> LinkedListNode? {
-        
+     static func isCircularOnNode(linkedList: SingleLinkedList) -> LinkedListNode? {
         var node = linkedList.head
         
         var nodesVisited = [LinkedListNode: Bool]()
         
         while node != nil {
-            
             if nodesVisited[node!] != nil  {
-                
                 return node
-            }
-            else {
-                
+            } else {
                 nodesVisited[node!] = true
             }
         
@@ -53,28 +45,24 @@ class CircularLinkedList: NSObject {
         return nil
     }
     
-    class func isCircularFromNode(linkedList: SingleLinkedList) -> LinkedListNode? {
-        
+     static func isCircularFromNode(linkedList: SingleLinkedList) -> LinkedListNode? {
         var advanced = linkedList.head?.next
         var followUp = linkedList.head
-        
+
         var nodesVisited = [LinkedListNode: Bool]()
-        
+
         while advanced != nil {
-            
             if nodesVisited[advanced!] != nil  {
-                
                 return followUp
             }
             else {
-                
                 nodesVisited[advanced!] = true
             }
-            
+
             advanced = advanced?.next
             followUp = followUp?.next
         }
-        
+
         return nil
     }
 }

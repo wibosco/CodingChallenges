@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/encryption
-class Encryption: NSObject {
+class Encryption {
 
-    class func encrypt(originalString: String) -> String {
+     static func encrypt(originalString: String) -> String {
         var rowsCount = Int(floor(sqrt(Double(originalString.count))))
         let columnsCount = Int(ceil(sqrt(Double(originalString.count))))
 

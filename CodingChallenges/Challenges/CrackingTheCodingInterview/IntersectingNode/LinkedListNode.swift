@@ -8,15 +8,23 @@
 
 import UIKit
 
-class LinkedListNode: NSObject {
-
+class LinkedListNode {
     var value: Int
     var next: LinkedListNode?
     
     init(value: Int) {
-        
         self.value = value
-        
-        super.init()
+    }
+}
+
+extension LinkedListNode: Equatable {
+    static func == (lhs: LinkedListNode, rhs: LinkedListNode) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+}
+
+extension LinkedListNode: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
     }
 }

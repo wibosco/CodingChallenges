@@ -9,11 +9,11 @@
 import UIKit
 
 //CtCI 4.6
-class SuccessorBST: NSObject {
+class SuccessorBST {
     
     // MARK: InOrderPreSorted
     
-    class func successorNode(predecessorNode: SuccessorBSTNode) -> SuccessorBSTNode? {
+     static func successorNode(predecessorNode: SuccessorBSTNode) -> SuccessorBSTNode? {
         guard let parent = predecessorNode.parent else {
             //predecessorNode is the root node
             return predecessorNode.right
@@ -33,7 +33,7 @@ class SuccessorBST: NSObject {
         }
     }
     
-    class func findRootFromNode(node: SuccessorBSTNode) -> SuccessorBSTNode {
+     static func findRootFromNode(node: SuccessorBSTNode) -> SuccessorBSTNode {
         guard let parent = node.parent else {
             //node is the root node
             return node
@@ -42,7 +42,7 @@ class SuccessorBST: NSObject {
         return findRootFromNode(node: parent)
     }
     
-    class func inOrder(node: SuccessorBSTNode?, sorted: inout [SuccessorBSTNode]) {
+     static func inOrder(node: SuccessorBSTNode?, sorted: inout [SuccessorBSTNode]) {
         if (node != nil) {
             inOrder(node: node!.left, sorted: &sorted)
             sorted.append(node!)

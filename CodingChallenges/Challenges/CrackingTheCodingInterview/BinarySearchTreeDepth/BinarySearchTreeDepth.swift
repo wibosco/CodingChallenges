@@ -9,7 +9,7 @@
 import UIKit
 
 //CtCI 4.3
-class BinarySearchTreeDepth: NSObject {
+class BinarySearchTreeDepth {
     
     // MARK: Properties
     
@@ -21,7 +21,7 @@ class BinarySearchTreeDepth: NSObject {
         
         if root == nil {
             
-            self.root = BinarySearchTreeDepthNode.init(value: value, depth: 0)
+            self.root = BinarySearchTreeDepthNode(value: value, depth: 0)
         }
         else {
             
@@ -35,7 +35,7 @@ class BinarySearchTreeDepth: NSObject {
             
             if root.left == nil {
                 
-                root.left = BinarySearchTreeDepthNode.init(value: value, depth: root.depth+1)
+                root.left = BinarySearchTreeDepthNode(value: value, depth: root.depth+1)
             }
             else {
                 
@@ -46,7 +46,7 @@ class BinarySearchTreeDepth: NSObject {
             
             if root.right == nil {
                 
-                root.right = BinarySearchTreeDepthNode.init(value: value, depth: root.depth+1)
+                root.right = BinarySearchTreeDepthNode(value: value, depth: root.depth+1)
             }
             else {
                 

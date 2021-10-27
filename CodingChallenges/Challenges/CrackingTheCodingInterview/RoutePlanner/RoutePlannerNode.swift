@@ -6,25 +6,22 @@
 //  Copyright © 2016 Boles. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class RoutePlannerNode: NSObject {
-
-    // MARK: Properties
-    
-    lazy var connectedNodes: [RoutePlannerNode] = {
-        
-        return [RoutePlannerNode]()
-    }()
-    
+class RoutePlannerNode {
+    var connectedNodes = [RoutePlannerNode]()
     var visited = false
-    
     var previousVisitedNode: RoutePlannerNode?
     
     // MARK: Connections
     
     func addConnection(node: RoutePlannerNode) {
-     
         connectedNodes.append(node)
+    }
+}
+
+extension RoutePlannerNode: Equatable {
+    static func == (lhs: RoutePlannerNode, rhs: RoutePlannerNode) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }

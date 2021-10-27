@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/the-time-in-words
-class TimeInWords: NSObject {
+class TimeInWords {
 
-    class func timeInWords(hour: Int, minute: Int) -> String {
+     static func timeInWords(hour: Int, minute: Int) -> String {
         
         var timeInWords = ""
         
@@ -74,7 +74,7 @@ class TimeInWords: NSObject {
         return timeInWords
     }
     
-    class func nextHour(hour: Int) -> Int {
+     static func nextHour(hour: Int) -> Int {
         
         var nextHour = 1
         
@@ -86,7 +86,7 @@ class TimeInWords: NSObject {
         return nextHour
     }
     
-    class func numericUnitToWordUnit(unit: Int) -> String {
+     static func numericUnitToWordUnit(unit: Int) -> String {
         
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .spellOut

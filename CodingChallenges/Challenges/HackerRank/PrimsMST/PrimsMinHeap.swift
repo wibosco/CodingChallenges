@@ -8,11 +8,11 @@
 
 import Foundation
 
-class PrimsMinHeap: NSObject {
+class PrimsMinHeap {
 
     // MARK: Construct
     
-    class func buildMinHeap(input: [PrimsMSTEdge]) -> [PrimsMSTEdge] {
+     static func buildMinHeap(input: [PrimsMSTEdge]) -> [PrimsMSTEdge] {
         
         if input.count < 2 {
             
@@ -33,7 +33,7 @@ class PrimsMinHeap: NSObject {
     
     // MARK: Heapify
     
-    class func minHeapify(heap: inout [PrimsMSTEdge], indexRoot: Int) {
+     static func minHeapify(heap: inout [PrimsMSTEdge], indexRoot: Int) {
         
         if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
             
@@ -78,7 +78,7 @@ class PrimsMinHeap: NSObject {
     
     // MARK: Exchange
     
-    class func exchange<T>(heap: inout [T], i:Int, j:Int) {
+     static func exchange<T>(heap: inout [T], i:Int, j:Int) {
         
         let temp:T = heap[i]
         heap[i] = heap[j]
@@ -87,21 +87,21 @@ class PrimsMinHeap: NSObject {
     
     // MARK: Index
     
-    class func leftLeafIndex(rootIndex: Int) -> Int {
+     static func leftLeafIndex(rootIndex: Int) -> Int {
         
         let heapIndex = (rootIndex + 1)
         
         return ((heapIndex * 2) - 1)
     }
     
-    class func rightLeafIndex(rootIndex: Int) -> Int {
+     static func rightLeafIndex(rootIndex: Int) -> Int {
         
         let heapIndex = (rootIndex + 1)
         
         return (heapIndex * 2)
     }
     
-    class func heapLastIndex(heap: [PrimsMSTEdge]) -> Int {
+     static func heapLastIndex(heap: [PrimsMSTEdge]) -> Int {
         
         return (heap.count - 1)
     }

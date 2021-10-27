@@ -9,7 +9,7 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/larrys-array
-class LarrysArray: NSObject {
+class LarrysArray {
 
     enum Sequence: Int {
         case BCA
@@ -27,7 +27,7 @@ class LarrysArray: NSObject {
         }()
     }
     
-    class func canRobotSort(values: [Int]) -> Bool {
+     static func canRobotSort(values: [Int]) -> Bool {
         
         var valuesAfterRotation = values
     
@@ -54,7 +54,7 @@ class LarrysArray: NSObject {
         }
     }
     
-    class func attemptToMoveValueIntoPosition(values: [Int], valueToMove: Int) -> [Int] {
+     static func attemptToMoveValueIntoPosition(values: [Int], valueToMove: Int) -> [Int] {
         
         let index = values.firstIndex(of: valueToMove)!
         
@@ -83,7 +83,7 @@ class LarrysArray: NSObject {
         }
     }
     
-    class func rotate(values: [Int], sequence: Sequence, startingIndex: Int) -> [Int] {
+     static func rotate(values: [Int], sequence: Sequence, startingIndex: Int) -> [Int] {
         
         var rotatedValues = values
         
@@ -118,7 +118,7 @@ class LarrysArray: NSObject {
     
     // MARK: Alt
     
-    class func canRobotSortAlt(values: [Int]) -> Bool {
+     static func canRobotSortAlt(values: [Int]) -> Bool {
         
         let isInversionsCountOdd = (LarrysArray.countOfInversions(values: values) % 2 != 0)
         
@@ -131,7 +131,7 @@ class LarrysArray: NSObject {
     }
     
     //https://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html
-    class func countOfInversions(values: [Int]) -> Int {
+     static func countOfInversions(values: [Int]) -> Int {
         
         var inversions = 0
         

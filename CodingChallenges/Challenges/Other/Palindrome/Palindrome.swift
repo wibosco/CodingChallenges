@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Palindrome: NSObject {
+class Palindrome {
 
-    class func isPalindrome(string: String) -> Bool {
+     static func isPalindrome(string: String) -> Bool {
         if string.count < 2 {
             return false
         }

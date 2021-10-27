@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/runningtime
-class RunningTime: NSObject {
+class RunningTime {
     
-    class func numberOfShiftsToSort(array: [Int]) -> Int {
+     static func numberOfShiftsToSort(array: [Int]) -> Int {
         
         var numberOfShiftsToSort = 0
         var sortingArray = array

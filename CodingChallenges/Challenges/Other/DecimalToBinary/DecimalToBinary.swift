@@ -8,9 +8,9 @@
 
 import UIKit
 
-class DecimalToBinary: NSObject {
+class DecimalToBinary {
 
-    class func convertDecimalToBinary(decimal: Int) -> String {
+     static func convertDecimalToBinary(decimal: Int) -> String {
         
         var convertingDecimal = decimal
         var binaryValue = ""

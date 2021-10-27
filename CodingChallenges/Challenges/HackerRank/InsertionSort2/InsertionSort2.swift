@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/insertionsort2
-class InsertionSort2: NSObject {
+class InsertionSort2 {
 
-    class func sort(array: [Int]) -> [[Int]] {
+     static func sort(array: [Int]) -> [[Int]] {
         
         var sortedSteps = [[Int]]()
         var sortingArray = array

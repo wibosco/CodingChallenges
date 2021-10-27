@@ -168,6 +168,8 @@
 		3D9D365827295D0300112474 /* ReconstructBinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364827295D0300112474 /* ReconstructBinaryTreeNode.swift */; };
 		3D9D365927295D0300112474 /* ReconstructBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364927295D0300112474 /* ReconstructBinaryTree.swift */; };
 		3D9D365A27295D0300112474 /* DecimalToBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364B27295D0300112474 /* DecimalToBinary.swift */; };
+		3DA4B13A272983760026F7D9 /* GradingStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B139272983760026F7D9 /* GradingStudents.swift */; };
+		3DA4B13C27299BA60026F7D9 /* GradingStudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -351,6 +353,8 @@
 		3D9D364827295D0300112474 /* ReconstructBinaryTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTreeNode.swift; sourceTree = "<group>"; };
 		3D9D364927295D0300112474 /* ReconstructBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTree.swift; sourceTree = "<group>"; };
 		3D9D364B27295D0300112474 /* DecimalToBinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalToBinary.swift; sourceTree = "<group>"; };
+		3DA4B139272983760026F7D9 /* GradingStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudents.swift; sourceTree = "<group>"; };
+		3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudentsTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -401,6 +405,7 @@
 				3D4E3FD02729712200DE491D /* EncryptionTests.swift */,
 				3D4E3FB02729712200DE491D /* EvenTreeTests.swift */,
 				3D4E3F982729712200DE491D /* FindDigitsTests.swift */,
+				3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */,
 				3D4E3F972729712200DE491D /* GreatestCommonDenominatorTests.swift */,
 				3D4E3FB82729712200DE491D /* GridSearchTests.swift */,
 				3D4E3FAD2729712200DE491D /* HeapSortTests.swift */,
@@ -492,6 +497,7 @@
 		3D9D351F2729518600112474 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				3DA4B138272983610026F7D9 /* GradingStudents */,
 				3D9D35512729518600112474 /* ACMICPCTeam */,
 				3D9D35592729518600112474 /* AngryProfessor */,
 				3D9D353B2729518600112474 /* Beast */,
@@ -1127,6 +1133,14 @@
 			path = DecimalToBinary;
 			sourceTree = "<group>";
 		};
+		3DA4B138272983610026F7D9 /* GradingStudents */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4B139272983760026F7D9 /* GradingStudents.swift */,
+			);
+			path = GradingStudents;
+			sourceTree = "<group>";
+		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -1413,6 +1427,7 @@
 				3D9D35B12729518600112474 /* NewYearChaos.swift in Sources */,
 				3D9D35BD2729518600112474 /* ACMICPCTeam.swift in Sources */,
 				3D9D362127295CF700112474 /* MinimalBinarySearchTree.swift in Sources */,
+				3DA4B13A272983760026F7D9 /* GradingStudents.swift in Sources */,
 				3D9D361827295CF700112474 /* SuccessorBST.swift in Sources */,
 				3D9D361E27295CF700112474 /* RoutePlannerQueue.swift in Sources */,
 				3D9D35C72729518600112474 /* LibraryFine.swift in Sources */,
@@ -1500,6 +1515,7 @@
 				3D4E40102729712300DE491D /* PercentagesTests.swift in Sources */,
 				3D4E400A2729712300DE491D /* IceCreamParlorTests.swift in Sources */,
 				3D4E3FF22729712300DE491D /* LibraryFineTests.swift in Sources */,
+				3DA4B13C27299BA60026F7D9 /* GradingStudentsTests.swift in Sources */,
 				3D4E40112729712300DE491D /* QueueViaStacksTests.swift in Sources */,
 				3D4E3FEB2729712300DE491D /* ProjectBuildOrderTests.swift in Sources */,
 				3D4E3FD82729712200DE491D /* BeastTests.swift in Sources */,

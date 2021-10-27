@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoutePlannerQueue: NSObject {
+class RoutePlannerQueue {
     
     // MARK: Properties
     

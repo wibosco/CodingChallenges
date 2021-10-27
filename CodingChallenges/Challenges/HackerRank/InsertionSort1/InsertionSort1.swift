@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/insertionsort1
-class InsertionSort1: NSObject {
+class InsertionSort1 {
     
-    class func sortRightMostElementIntoCorrectPosition(array: [Int]) -> [[Int]] {
+     static func sortRightMostElementIntoCorrectPosition(array: [Int]) -> [[Int]] {
         
         var intermediateSteps = [[Int]]()
         

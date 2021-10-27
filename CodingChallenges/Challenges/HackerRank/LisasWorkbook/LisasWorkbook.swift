@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/bear-and-workbook
-class LisasWorkbook: NSObject {
+class LisasWorkbook {
 
-    class func specialProblemsInBook(problemsPerChapter: [Int], problemsPerPage: Int) -> Int {
+     static func specialProblemsInBook(problemsPerChapter: [Int], problemsPerPage: Int) -> Int {
         
         var specialProblems = 0
         var pageNumber = 1
@@ -41,7 +41,7 @@ class LisasWorkbook: NSObject {
         return specialProblems
     }
     
-    class func specialProblemsInBookAlt(problemsPerChapter: [Int], problemsPerPage: Int) -> Int {
+     static func specialProblemsInBookAlt(problemsPerChapter: [Int], problemsPerPage: Int) -> Int {
         
         var specialProblems = 0
         var pageNumber = 1

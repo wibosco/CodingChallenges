@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/manasa-and-stones/problem
-class ManasaAndStones: NSObject {
+class ManasaAndStones {
 
-    class func possibleValuesForFinalStone(numberOfStones: Int, gapValueA: Int, gapValueB: Int) -> Set<Int> {
+     static func possibleValuesForFinalStone(numberOfStones: Int, gapValueA: Int, gapValueB: Int) -> Set<Int> {
 
         var multiplesOfA = (numberOfStones - 1)
         var multiplesOfB = 0

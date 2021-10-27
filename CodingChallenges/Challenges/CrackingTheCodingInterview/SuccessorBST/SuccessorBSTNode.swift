@@ -6,12 +6,9 @@
 //  Copyright © 2016 Boles. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class SuccessorBSTNode: NSObject {
-
-    // MARK: Properties
-    
+class SuccessorBSTNode {
     var value: Int
     var parent: SuccessorBSTNode?
     var left: SuccessorBSTNode?
@@ -21,7 +18,6 @@ class SuccessorBSTNode: NSObject {
     
     init(value: Int) {
         self.value = value
-        super.init()
     }
     
     // MARK: Nodes
@@ -34,5 +30,11 @@ class SuccessorBSTNode: NSObject {
         }
         
         node.parent = self
+    }
+}
+
+extension SuccessorBSTNode: Equatable {
+    static func == (lhs: SuccessorBSTNode, rhs: SuccessorBSTNode) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }

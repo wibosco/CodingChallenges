@@ -9,7 +9,7 @@
 import UIKit
 
 //CtCI 3.2
-class MinStack: NSObject {
+class MinStack {
 
     // MARK: Properties
     
@@ -22,7 +22,7 @@ class MinStack: NSObject {
     
     func push(value: Int) {
         
-        let node = MinStackNode.init(value: value)
+        let node = MinStackNode(value: value)
         
         if let peek = peek() {
             

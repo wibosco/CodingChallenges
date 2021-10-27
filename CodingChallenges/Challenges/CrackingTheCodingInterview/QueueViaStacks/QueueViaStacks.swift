@@ -9,7 +9,7 @@
 import UIKit
 
 //CtCI 3.4
-class QueueViaStacks: NSObject {
+class QueueViaStacks {
 
     // MARK: Properties
     

@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/angry-professor
-class AngryProfessor: NSObject {
+class AngryProfessor {
     
-    class func shouldCancelClass(studentArrivalTimes: [Int], cancellationThreshold: Int) -> Bool {
+     static func shouldCancelClass(studentArrivalTimes: [Int], cancellationThreshold: Int) -> Bool {
         
         var lateStudents = 0
         

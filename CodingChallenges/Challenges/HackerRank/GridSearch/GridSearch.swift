@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/the-grid-search
-class GridSearch: NSObject {
+class GridSearch {
 
-    class func gridContainsPattern(grid: [String], pattern: [String]) -> Bool {
+     static func gridContainsPattern(grid: [String], pattern: [String]) -> Bool {
      
         for index in 0..<grid.count {
             
@@ -40,7 +40,7 @@ class GridSearch: NSObject {
         return false
     }
     
-    class func doesContainPatternMatchingRange(grid: [String], pattern: [String], range: Range<String.Index>) -> Bool {
+     static func doesContainPatternMatchingRange(grid: [String], pattern: [String], range: Range<String.Index>) -> Bool {
         let patternRange = grid[0].range(of: pattern[0], options: NSString.CompareOptions.caseInsensitive, range: range, locale: nil)
         
         if patternRange != nil {
@@ -61,7 +61,7 @@ class GridSearch: NSObject {
         return false
     }
     
-    class func rangeOfAllOccurrancesOfPatternInRow(row: String, pattern: String) -> [Range<String.Index>] {
+     static func rangeOfAllOccurrancesOfPatternInRow(row: String, pattern: String) -> [Range<String.Index>] {
         
         var occurrances = [Range<String.Index>]()
         

@@ -9,11 +9,11 @@
 import UIKit
 
 //CtCI 4.5
-class ValidateBST: NSObject {
+class ValidateBST {
     
     // MARK: InOrder
     
-    class func inOrderTraversalIsBST(root: ValidateBSTNode) -> Bool {
+     static func inOrderTraversalIsBST(root: ValidateBSTNode) -> Bool {
         var order = [ValidateBSTNode]()
         inOrderTraversal(root: root, order: &order)
         
@@ -26,7 +26,7 @@ class ValidateBST: NSObject {
         return true
     }
     
-    class func inOrderTraversal(root: ValidateBSTNode?, order: inout [ValidateBSTNode]) {
+     static func inOrderTraversal(root: ValidateBSTNode?, order: inout [ValidateBSTNode]) {
         if let root = root {
             inOrderTraversal(root: root.left, order: &order)
             order.append(root)
@@ -36,12 +36,12 @@ class ValidateBST: NSObject {
     
     // MARK: MaxMin
     
-    class func maxMinIsBST(root: ValidateBSTNode) -> Bool {
+     static func maxMinIsBST(root: ValidateBSTNode) -> Bool {
         
         return maxMinIsBST(root: root, min: nil, max: nil)
     }
     
-    class func maxMinIsBST(root: ValidateBSTNode?, min: Int?, max: Int?) -> Bool {
+     static func maxMinIsBST(root: ValidateBSTNode?, min: Int?, max: Int?) -> Bool {
         guard let root = root else {
             return true
         }

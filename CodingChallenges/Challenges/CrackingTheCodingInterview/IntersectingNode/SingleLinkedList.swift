@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SingleLinkedList: NSObject {
+class SingleLinkedList {
     
     // MARK: Properties
     
@@ -17,21 +17,14 @@ class SingleLinkedList: NSObject {
     // MARK: Add
     
     func addNode(node: LinkedListNode) {
-        
-        if head == nil {
-            
+        guard var head = head else {
             head = node
+            return
         }
-        else {
-            
-            var n = head!
-            
-            while n.next != nil {
-                
-                n = n.next!
-            }
-            
-            n.next = node
+        
+        while head.next != nil {
+            head = head.next!
         }
+        head.next = node
     }
 }

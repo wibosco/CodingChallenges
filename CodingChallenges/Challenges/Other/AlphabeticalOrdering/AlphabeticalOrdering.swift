@@ -8,9 +8,9 @@
 
 import UIKit
 
-class AlphabeticalOrdering: NSObject {
+class AlphabeticalOrdering {
 
-    class func sort(string: String) -> String {
+     static func sort(string: String) -> String {
         
         let seperateWords = string.split(separator: " ").map(String.init)
         

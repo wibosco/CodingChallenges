@@ -9,9 +9,9 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/icecream-parlor
-class IceCreamParlor: NSObject {
+class IceCreamParlor {
 
-    class func chosenIceCreams(money: Int, iceCreamChoices: [Int]) -> (firstIceCream: Int?, secondIceCream: Int?) {
+     static func chosenIceCreams(money: Int, iceCreamChoices: [Int]) -> (firstIceCream: Int?, secondIceCream: Int?) {
         for i in 0..<(iceCreamChoices.count-1) {
             for j in (i+1)..<iceCreamChoices.count {
                 if (iceCreamChoices[i] + iceCreamChoices[j]) == money {

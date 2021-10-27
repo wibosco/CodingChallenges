@@ -6,29 +6,19 @@
 //  Copyright © 2016 Boles. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class ProjectBuildOrderNode: NSObject {
-
-    // MARK: Properties
-    
+class ProjectBuildOrderNode {
     var value: String
     
     var visited = false
     var pathVisited = false
-    
-    var dependencies: [ProjectBuildOrderNode] = {
-       
-        return [ProjectBuildOrderNode]()
-    }()
+    var dependencies = [ProjectBuildOrderNode]()
     
     // MARK: Init
     
     init(value: String) {
-        
         self.value = value
-        
-        super.init()
     }
     
     // MARK: Dependency
@@ -36,5 +26,11 @@ class ProjectBuildOrderNode: NSObject {
     func addDependency(dependency: ProjectBuildOrderNode) {
         
         dependencies.append(dependency)
+    }
+}
+
+extension ProjectBuildOrderNode: Equatable {
+    static func == (lhs: ProjectBuildOrderNode, rhs: ProjectBuildOrderNode) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }

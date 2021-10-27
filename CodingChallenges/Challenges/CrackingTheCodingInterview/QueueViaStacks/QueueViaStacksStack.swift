@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QueueViaStacksStack: NSObject {
+class QueueViaStacksStack {
     
     // MARK: Nodes
     

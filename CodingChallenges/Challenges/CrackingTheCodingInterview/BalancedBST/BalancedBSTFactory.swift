@@ -8,11 +8,11 @@
 
 import UIKit
 
-class BalancedBSTFactory: NSObject {
+class BalancedBSTFactory {
 
     // MARK: Build
     
-    class func buildBinaryTree(relationships: [[Int]]) -> BalancedBSTNode {
+     static func buildBinaryTree(relationships: [[Int]]) -> BalancedBSTNode {
         
         var nodes = [Int: BalancedBSTNode]()
         
@@ -39,7 +39,7 @@ class BalancedBSTFactory: NSObject {
         return rootNode(nodes: nodes)
     }
     
-    class func rootNode(nodes: [Int: BalancedBSTNode]) -> BalancedBSTNode {
+     static func rootNode(nodes: [Int: BalancedBSTNode]) -> BalancedBSTNode {
         var rootNode: BalancedBSTNode?
         
         for node in nodes.values {

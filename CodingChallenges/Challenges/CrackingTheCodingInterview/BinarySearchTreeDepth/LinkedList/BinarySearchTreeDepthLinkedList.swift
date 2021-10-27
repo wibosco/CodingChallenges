@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BinarySearchTreeDepthLinkedList: NSObject {
+class BinarySearchTreeDepthLinkedList {
 
     // MARK: Properties
     

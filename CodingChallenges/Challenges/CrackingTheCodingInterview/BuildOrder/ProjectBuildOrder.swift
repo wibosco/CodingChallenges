@@ -9,9 +9,9 @@
 import UIKit
 
 //CtCI 4.7
-class ProjectBuildOrder: NSObject {
+class ProjectBuildOrder {
 
-    class func buildOrder(projects: [String], dependencies: [[String]]) -> [ProjectBuildOrderNode]? {
+     static func buildOrder(projects: [String], dependencies: [[String]]) -> [ProjectBuildOrderNode]? {
         
         let nodes = buildNodes(projects: projects, dependencies: dependencies)
         
@@ -39,7 +39,7 @@ class ProjectBuildOrder: NSObject {
         return orderedNodes
     }
     
-    private class func buildOrder(rootNode: ProjectBuildOrderNode, vistedNodes: inout [ProjectBuildOrderNode]) {
+    private  static func buildOrder(rootNode: ProjectBuildOrderNode, vistedNodes: inout [ProjectBuildOrderNode]) {
         
         for dependency in rootNode.dependencies {
             
@@ -53,13 +53,13 @@ class ProjectBuildOrder: NSObject {
         rootNode.pathVisited = true
     }
     
-    private class func buildNodes(projects: [String], dependencies: [[String]]) -> [ProjectBuildOrderNode] {
+    private  static func buildNodes(projects: [String], dependencies: [[String]]) -> [ProjectBuildOrderNode] {
         
         var nodes = [String: ProjectBuildOrderNode]()
         
         for project in projects {
             
-            let node = ProjectBuildOrderNode.init(value: project)
+            let node = ProjectBuildOrderNode(value: project)
             
             nodes[project] = node
         }
@@ -78,7 +78,7 @@ class ProjectBuildOrder: NSObject {
         return Array(nodes.values)
     }
     
-    private class func dependencyCycleExistsBetweenNodes(source: ProjectBuildOrderNode, destination: ProjectBuildOrderNode) -> Bool {
+    private  static func dependencyCycleExistsBetweenNodes(source: ProjectBuildOrderNode, destination: ProjectBuildOrderNode) -> Bool {
         
         var queue = [ProjectBuildOrderNode]()
         queue.append(source)
