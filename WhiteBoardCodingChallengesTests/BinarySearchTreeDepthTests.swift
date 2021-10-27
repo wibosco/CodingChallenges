@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class BinarySearchTreeDepthTests: XCTestCase {
     
     // MARK: Tests

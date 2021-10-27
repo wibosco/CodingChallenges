@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class ProjectBuildOrderTests: XCTestCase {
     
     // MARK: Tests

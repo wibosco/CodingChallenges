@@ -8,19 +8,9 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class PercentagesTests: XCTestCase {
-    
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
     
     // MARK: Tests
     

@@ -8,6 +8,7 @@
 
 import Foundation
 
+//https://www.hackerrank.com/challenges/maxsubarray/problem
 class MaximumSubarray: NSObject {
 
     class func maximumTotals(array: [Int]) -> (contiguousTotal: Int, nonContiguousTotal: Int) {

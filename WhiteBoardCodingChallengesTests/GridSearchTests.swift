@@ -8,8 +8,9 @@
 
 import XCTest
 
+@testable import WhiteBoardCodingChallenges
+
 class GridSearchTests: XCTestCase {
-    
     
     // MARK: Tests
     
