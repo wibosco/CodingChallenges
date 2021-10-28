@@ -181,6 +181,8 @@
 		3DA4B152272AF1F80026F7D9 /* BreakingTheRecordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B151272AF1F80026F7D9 /* BreakingTheRecordsTests.swift */; };
 		3DA4B155272AF7860026F7D9 /* BirthdayBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B154272AF7860026F7D9 /* BirthdayBar.swift */; };
 		3DA4B157272AF7B80026F7D9 /* BirthdayBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B156272AF7B80026F7D9 /* BirthdayBarTests.swift */; };
+		3DA4B15A272AFDDE0026F7D9 /* DivisibleSumPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B159272AFDDE0026F7D9 /* DivisibleSumPairs.swift */; };
+		3DA4B15C272AFE140026F7D9 /* DivisibleSumPairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B15B272AFE140026F7D9 /* DivisibleSumPairsTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -377,6 +379,8 @@
 		3DA4B151272AF1F80026F7D9 /* BreakingTheRecordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingTheRecordsTests.swift; sourceTree = "<group>"; };
 		3DA4B154272AF7860026F7D9 /* BirthdayBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayBar.swift; sourceTree = "<group>"; };
 		3DA4B156272AF7B80026F7D9 /* BirthdayBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayBarTests.swift; sourceTree = "<group>"; };
+		3DA4B159272AFDDE0026F7D9 /* DivisibleSumPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisibleSumPairs.swift; sourceTree = "<group>"; };
+		3DA4B15B272AFE140026F7D9 /* DivisibleSumPairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisibleSumPairsTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -427,6 +431,7 @@
 				3D4E3FA42729712200DE491D /* CutTheSticksTests.swift */,
 				3D4E3FC22729712200DE491D /* DecimalToBinaryTests.swift */,
 				3D4E3FA12729712200DE491D /* DikshasBirthdayTests.swift */,
+				3DA4B15B272AFE140026F7D9 /* DivisibleSumPairsTests.swift */,
 				3D4E3FD02729712200DE491D /* EncryptionTests.swift */,
 				3D4E3FB02729712200DE491D /* EvenTreeTests.swift */,
 				3D4E3F982729712200DE491D /* FindDigitsTests.swift */,
@@ -503,6 +508,7 @@
 		3D9D34D72729518600112474 /* CrackingTheCodingInterview */ = {
 			isa = PBXGroup;
 			children = (
+				3DA4B158272AFDC60026F7D9 /* DivisibleSumPairs */,
 				3D9D35E227295CF700112474 /* BalancedBST */,
 				3D9D35FC27295CF700112474 /* BinarySearchTreeDepth */,
 				3D9D35DF27295CF600112474 /* BuildOrder */,
@@ -1214,6 +1220,15 @@
 			path = BirthdayBar;
 			sourceTree = "<group>";
 		};
+		3DA4B158272AFDC60026F7D9 /* DivisibleSumPairs */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4B159272AFDDE0026F7D9 /* DivisibleSumPairs.swift */,
+			);
+			name = DivisibleSumPairs;
+			path = CodingChallenges/Challenges/HackerRank/DivisibleSumPairs;
+			sourceTree = SOURCE_ROOT;
+		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -1447,6 +1462,7 @@
 				3D9D361427295CF700112474 /* OffByOne.swift in Sources */,
 				3D9D35AC2729518600112474 /* PrimsMSTEdge.swift in Sources */,
 				3D9D361B27295CF700112474 /* MinStack.swift in Sources */,
+				3DA4B15A272AFDDE0026F7D9 /* DivisibleSumPairs.swift in Sources */,
 				3D9D362227295CF700112474 /* MinimalBinarySearchTreeNode.swift in Sources */,
 				3D9D365527295D0300112474 /* Palindrome.swift in Sources */,
 				3D9D364C27295D0300112474 /* GreatestCommonDenominator.swift in Sources */,
@@ -1581,6 +1597,7 @@
 				3D4E3FED2729712300DE491D /* PrimeTests.swift in Sources */,
 				3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
+				3DA4B15C272AFE140026F7D9 /* DivisibleSumPairsTests.swift in Sources */,
 				3D4E3FE42729712300DE491D /* DikshasBirthdayTests.swift in Sources */,
 				3D4E40072729712300DE491D /* BalancedBSTTests.swift in Sources */,
 				3D4E3FF92729712300DE491D /* SummingTests.swift in Sources */,
