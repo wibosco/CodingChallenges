@@ -72,7 +72,7 @@
 		3D4E40132729712300DE491D /* EncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3FD02729712200DE491D /* EncryptionTests.swift */; };
 		3D4E40142729712300DE491D /* ReverseStringAndKeepWordOrderingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3FD12729712200DE491D /* ReverseStringAndKeepWordOrderingTests.swift */; };
 		3D4E40152729712300DE491D /* BinarySearchTreeDepthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3FD22729712200DE491D /* BinarySearchTreeDepthTests.swift */; };
-		3D4E40162729712300DE491D /* TheatreGuestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3FD32729712200DE491D /* TheatreGuestsTests.swift */; };
+		3D4E40162729712300DE491D /* TheatreGuestsMultipleMovesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3FD32729712200DE491D /* TheatreGuestsMultipleMovesTests.swift */; };
 		3D4E401A2729714B00DE491D /* MinMaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E40192729714A00DE491D /* MinMaxSum.swift */; };
 		3D4E401D2729770F00DE491D /* BirthdayCakeCandles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */; };
 		3D4E401F2729795C00DE491D /* BirthdayCakeCandlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E401E2729795C00DE491D /* BirthdayCakeCandlesTests.swift */; };
@@ -163,7 +163,7 @@
 		3D9D365327295D0300112474 /* LevelTraversalQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D363F27295D0300112474 /* LevelTraversalQueue.swift */; };
 		3D9D365427295D0300112474 /* BinarySearchTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364027295D0300112474 /* BinarySearchTreeNode.swift */; };
 		3D9D365527295D0300112474 /* Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364227295D0300112474 /* Palindrome.swift */; };
-		3D9D365627295D0300112474 /* TheatreGuests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364427295D0300112474 /* TheatreGuests.swift */; };
+		3D9D365627295D0300112474 /* TheatreGuestsSingleMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364427295D0300112474 /* TheatreGuestsSingleMove.swift */; };
 		3D9D365727295D0300112474 /* AlphabeticalOrdering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364627295D0300112474 /* AlphabeticalOrdering.swift */; };
 		3D9D365827295D0300112474 /* ReconstructBinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364827295D0300112474 /* ReconstructBinaryTreeNode.swift */; };
 		3D9D365927295D0300112474 /* ReconstructBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364927295D0300112474 /* ReconstructBinaryTree.swift */; };
@@ -174,6 +174,7 @@
 		3DA4B1412729AF240026F7D9 /* SaveThePrisonerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B1402729AF240026F7D9 /* SaveThePrisonerTests.swift */; };
 		3DA4B1442729FF750026F7D9 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */; };
 		3DA4B146272A04100026F7D9 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */; };
+		3DA4B148272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B147272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -260,7 +261,7 @@
 		3D4E3FD02729712200DE491D /* EncryptionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionTests.swift; sourceTree = "<group>"; };
 		3D4E3FD12729712200DE491D /* ReverseStringAndKeepWordOrderingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseStringAndKeepWordOrderingTests.swift; sourceTree = "<group>"; };
 		3D4E3FD22729712200DE491D /* BinarySearchTreeDepthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeDepthTests.swift; sourceTree = "<group>"; };
-		3D4E3FD32729712200DE491D /* TheatreGuestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheatreGuestsTests.swift; sourceTree = "<group>"; };
+		3D4E3FD32729712200DE491D /* TheatreGuestsMultipleMovesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheatreGuestsMultipleMovesTests.swift; sourceTree = "<group>"; };
 		3D4E3FD42729712200DE491D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4E40192729714A00DE491D /* MinMaxSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxSum.swift; sourceTree = "<group>"; };
 		3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandles.swift; sourceTree = "<group>"; };
@@ -352,7 +353,7 @@
 		3D9D363F27295D0300112474 /* LevelTraversalQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelTraversalQueue.swift; sourceTree = "<group>"; };
 		3D9D364027295D0300112474 /* BinarySearchTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeNode.swift; sourceTree = "<group>"; };
 		3D9D364227295D0300112474 /* Palindrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palindrome.swift; sourceTree = "<group>"; };
-		3D9D364427295D0300112474 /* TheatreGuests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheatreGuests.swift; sourceTree = "<group>"; };
+		3D9D364427295D0300112474 /* TheatreGuestsSingleMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheatreGuestsSingleMove.swift; sourceTree = "<group>"; };
 		3D9D364627295D0300112474 /* AlphabeticalOrdering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticalOrdering.swift; sourceTree = "<group>"; };
 		3D9D364827295D0300112474 /* ReconstructBinaryTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTreeNode.swift; sourceTree = "<group>"; };
 		3D9D364927295D0300112474 /* ReconstructBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTree.swift; sourceTree = "<group>"; };
@@ -363,6 +364,7 @@
 		3DA4B1402729AF240026F7D9 /* SaveThePrisonerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrisonerTests.swift; sourceTree = "<group>"; };
 		3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
 		3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
+		3DA4B147272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheatreGuestsMultipleMoves.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -457,7 +459,7 @@
 				3D4E3FC92729712200DE491D /* StaircaseTests.swift */,
 				3D4E3FC12729712200DE491D /* SuccessorBSTTests.swift */,
 				3D4E3FB62729712200DE491D /* SummingTests.swift */,
-				3D4E3FD32729712200DE491D /* TheatreGuestsTests.swift */,
+				3D4E3FD32729712200DE491D /* TheatreGuestsMultipleMovesTests.swift */,
 				3D4E3F9D2729712200DE491D /* TimeConverterTests.swift */,
 				3D4E3FCF2729712200DE491D /* TimeInWordsTests.swift */,
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
@@ -1115,7 +1117,8 @@
 		3D9D364327295D0300112474 /* TheatreGuests */ = {
 			isa = PBXGroup;
 			children = (
-				3D9D364427295D0300112474 /* TheatreGuests.swift */,
+				3D9D364427295D0300112474 /* TheatreGuestsSingleMove.swift */,
+				3DA4B147272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift */,
 			);
 			path = TheatreGuests;
 			sourceTree = "<group>";
@@ -1387,7 +1390,8 @@
 				3D9D35BE2729518600112474 /* Summing.swift in Sources */,
 				3D9D35B92729518600112474 /* BiggerIsGreater.swift in Sources */,
 				3D9D365927295D0300112474 /* ReconstructBinaryTree.swift in Sources */,
-				3D9D365627295D0300112474 /* TheatreGuests.swift in Sources */,
+				3DA4B148272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift in Sources */,
+				3D9D365627295D0300112474 /* TheatreGuestsSingleMove.swift in Sources */,
 				3D9D365827295D0300112474 /* ReconstructBinaryTreeNode.swift in Sources */,
 				3D9D35D72729521400112474 /* InsertionSort1.swift in Sources */,
 				3D9D365027295D0300112474 /* MaxHeap.swift in Sources */,
@@ -1539,7 +1543,7 @@
 				3D4E3FF12729712300DE491D /* SherlockSquaresTests.swift in Sources */,
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				3D4E3FDF2729712200DE491D /* StackOfPlatesTests.swift in Sources */,
-				3D4E40162729712300DE491D /* TheatreGuestsTests.swift in Sources */,
+				3D4E40162729712300DE491D /* TheatreGuestsMultipleMovesTests.swift in Sources */,
 				3D4E40052729712300DE491D /* DecimalToBinaryTests.swift in Sources */,
 				3D4E3FF32729712300DE491D /* EvenTreeTests.swift in Sources */,
 				3D4E3FFB2729712300DE491D /* GridSearchTests.swift in Sources */,
