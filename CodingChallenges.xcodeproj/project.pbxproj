@@ -175,6 +175,8 @@
 		3DA4B1442729FF750026F7D9 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */; };
 		3DA4B146272A04100026F7D9 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */; };
 		3DA4B148272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B147272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift */; };
+		3DA4B14B272AE0020026F7D9 /* Kangaroo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B14A272AE0020026F7D9 /* Kangaroo.swift */; };
+		3DA4B14D272AE0210026F7D9 /* KangarooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B14C272AE0210026F7D9 /* KangarooTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -365,6 +367,8 @@
 		3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
 		3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
 		3DA4B147272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheatreGuestsMultipleMoves.swift; sourceTree = "<group>"; };
+		3DA4B14A272AE0020026F7D9 /* Kangaroo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kangaroo.swift; sourceTree = "<group>"; };
+		3DA4B14C272AE0210026F7D9 /* KangarooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KangarooTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -398,6 +402,7 @@
 				3D4E3FC32729712200DE491D /* ACMICPCTeamTests.swift */,
 				3D4E3FBD2729712200DE491D /* AlphabeticalOrderingTests.swift */,
 				3D4E3F9E2729712200DE491D /* AngryProfessorTests.swift */,
+				3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */,
 				3D4E3FC42729712200DE491D /* BalancedBSTTests.swift */,
 				3D4E3F952729712200DE491D /* BeastTests.swift */,
 				3D4E3FB52729712200DE491D /* BFSShortReachTests.swift */,
@@ -422,6 +427,7 @@
 				3D4E3FC72729712200DE491D /* IceCreamParlorTests.swift */,
 				3D4E3FA02729712200DE491D /* InsertionSort1Tests.swift */,
 				3D4E3FB92729712200DE491D /* InsertionSort2Tests.swift */,
+				3DA4B14C272AE0210026F7D9 /* KangarooTests.swift */,
 				3D4E3FC82729712200DE491D /* KaprekarTests.swift */,
 				3D4E3FBF2729712200DE491D /* LarrysArrayTests.swift */,
 				3D4E3FAF2729712200DE491D /* LibraryFineTests.swift */,
@@ -464,7 +470,6 @@
 				3D4E3FCF2729712200DE491D /* TimeInWordsTests.swift */,
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
 				3D4E3FCA2729712200DE491D /* ValidateBSTTests.swift */,
-				3DA4B145272A04100026F7D9 /* AppleAndOrange.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -509,6 +514,7 @@
 		3D9D351F2729518600112474 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				3DA4B149272ADFEF0026F7D9 /* Kangaroo */,
 				3DA4B1422729FF5B0026F7D9 /* AppleAndOrange */,
 				3DA4B13D2729ADFA0026F7D9 /* SaveThePrisoner */,
 				3DA4B138272983610026F7D9 /* GradingStudents */,
@@ -1172,6 +1178,14 @@
 			path = AppleAndOrange;
 			sourceTree = "<group>";
 		};
+		3DA4B149272ADFEF0026F7D9 /* Kangaroo */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4B14A272AE0020026F7D9 /* Kangaroo.swift */,
+			);
+			path = Kangaroo;
+			sourceTree = "<group>";
+		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -1426,6 +1440,7 @@
 				3D9D362027295CF700112474 /* PalindromePermutation.swift in Sources */,
 				3D9D35C32729518600112474 /* SherlockSquares.swift in Sources */,
 				3D9D35AF2729518600112474 /* BFSShortReach.swift in Sources */,
+				3DA4B14B272AE0020026F7D9 /* Kangaroo.swift in Sources */,
 				3D9D35B82729518600112474 /* MaximizeSum.swift in Sources */,
 				3D9D35BF2729518600112474 /* TimeConverter.swift in Sources */,
 				3D9D35C92729518600112474 /* EvenTreeNode.swift in Sources */,
@@ -1511,6 +1526,7 @@
 				3D4E400D2729712300DE491D /* ValidateBSTTests.swift in Sources */,
 				3D4E3FDE2729712200DE491D /* LinkedListIntersectingNodeTests.swift in Sources */,
 				3D4E3FF72729712300DE491D /* CavityMapTests.swift in Sources */,
+				3DA4B14D272AE0210026F7D9 /* KangarooTests.swift in Sources */,
 				3D4E3FDC2729712200DE491D /* MinMaxSumTests.swift in Sources */,
 				3D4E3FF82729712300DE491D /* BFSShortReachTests.swift in Sources */,
 				3D4E3FE92729712300DE491D /* ManasaAndStonesTests.swift in Sources */,
