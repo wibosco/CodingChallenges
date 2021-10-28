@@ -179,6 +179,8 @@
 		3DA4B14D272AE0210026F7D9 /* KangarooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B14C272AE0210026F7D9 /* KangarooTests.swift */; };
 		3DA4B150272AF1C80026F7D9 /* BreakingTheRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B14F272AF1C80026F7D9 /* BreakingTheRecords.swift */; };
 		3DA4B152272AF1F80026F7D9 /* BreakingTheRecordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B151272AF1F80026F7D9 /* BreakingTheRecordsTests.swift */; };
+		3DA4B155272AF7860026F7D9 /* BirthdayBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B154272AF7860026F7D9 /* BirthdayBar.swift */; };
+		3DA4B157272AF7B80026F7D9 /* BirthdayBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B156272AF7B80026F7D9 /* BirthdayBarTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -373,6 +375,8 @@
 		3DA4B14C272AE0210026F7D9 /* KangarooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KangarooTests.swift; sourceTree = "<group>"; };
 		3DA4B14F272AF1C80026F7D9 /* BreakingTheRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingTheRecords.swift; sourceTree = "<group>"; };
 		3DA4B151272AF1F80026F7D9 /* BreakingTheRecordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingTheRecordsTests.swift; sourceTree = "<group>"; };
+		3DA4B154272AF7860026F7D9 /* BirthdayBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayBar.swift; sourceTree = "<group>"; };
+		3DA4B156272AF7B80026F7D9 /* BirthdayBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayBarTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -413,6 +417,7 @@
 				3D4E3FA92729712200DE491D /* BiggerIsGreaterTests.swift */,
 				3D4E3FD22729712200DE491D /* BinarySearchTreeDepthTests.swift */,
 				3D4E3FBE2729712200DE491D /* BinarySearchTreeTests.swift */,
+				3DA4B156272AF7B80026F7D9 /* BirthdayBarTests.swift */,
 				3D4E401E2729795C00DE491D /* BirthdayCakeCandlesTests.swift */,
 				3DA4B151272AF1F80026F7D9 /* BreakingTheRecordsTests.swift */,
 				3D4E3FA32729712200DE491D /* CaesarCipherTests.swift */,
@@ -525,6 +530,7 @@
 				3D9D353B2729518600112474 /* Beast */,
 				3D9D35352729518600112474 /* BFSShortReach */,
 				3D9D35492729518600112474 /* BiggerIsGreater */,
+				3DA4B153272AF7760026F7D9 /* BirthdayBar */,
 				3D4E401B272976F200DE491D /* BirthdayCakeCandles */,
 				3DA4B14E272AF1A90026F7D9 /* BreakingTheRecords */,
 				3D9D35332729518600112474 /* CaesarCipher */,
@@ -1200,6 +1206,14 @@
 			path = BreakingTheRecords;
 			sourceTree = "<group>";
 		};
+		3DA4B153272AF7760026F7D9 /* BirthdayBar */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4B154272AF7860026F7D9 /* BirthdayBar.swift */,
+			);
+			path = BirthdayBar;
+			sourceTree = "<group>";
+		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -1466,6 +1480,7 @@
 				3D9D365427295D0300112474 /* BinarySearchTreeNode.swift in Sources */,
 				3D9D362327295CF700112474 /* BinarySearchTreeDepth.swift in Sources */,
 				3D9D35A82729518600112474 /* ChocolateFeast.swift in Sources */,
+				3DA4B155272AF7860026F7D9 /* BirthdayBar.swift in Sources */,
 				3D9D362627295CF700112474 /* BinarySearchTreeDepthNode.swift in Sources */,
 				3D9D35AB2729518600112474 /* PrimsMST.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
@@ -1554,6 +1569,7 @@
 				3D4E40082729712300DE491D /* MaximizeSumTests.swift in Sources */,
 				3D4E3FDB2729712200DE491D /* FindDigitsTests.swift in Sources */,
 				3D4E3FF52729712300DE491D /* ServiceLaneTests.swift in Sources */,
+				3DA4B157272AF7B80026F7D9 /* BirthdayBarTests.swift in Sources */,
 				3D4E3FEC2729712300DE491D /* BiggerIsGreaterTests.swift in Sources */,
 				3D4E3FEA2729712300DE491D /* MinimalBinarySearchTreeTests.swift in Sources */,
 				3D4E40032729712300DE491D /* MaximumSubarrayTests.swift in Sources */,
