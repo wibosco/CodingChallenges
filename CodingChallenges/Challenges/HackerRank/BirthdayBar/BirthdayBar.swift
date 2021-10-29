@@ -8,6 +8,7 @@
 
 import Foundation
 
+//https://www.hackerrank.com/challenges/the-birthday-bar/problem
 struct BirthdayBar {
     static func birthday(s: [Int], d: Int, m: Int) -> Int {
         guard s.count >= m else {

@@ -8,6 +8,7 @@
 
 import Foundation
 
+//https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 struct BreakingTheRecords {
     static func breakingRecords(scores: [Int]) -> (max: Int, min: Int) {
         class ScoreUpdateCount {

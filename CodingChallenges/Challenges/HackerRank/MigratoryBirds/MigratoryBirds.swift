@@ -8,6 +8,7 @@
 
 import Foundation
 
+//https://www.hackerrank.com/challenges/migratory-birds/problem
 struct MigratoryBirds {
     static func mostFrequentBird(from arr: [Int]) -> Int {
         var countedBirds = [arr[0]: 1]
