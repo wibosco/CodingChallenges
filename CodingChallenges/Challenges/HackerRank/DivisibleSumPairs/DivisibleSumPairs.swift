@@ -8,6 +8,7 @@
 
 import Foundation
 
+//https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
 struct DivisibleSumPairs {
     static func divisibleSumPairs(k: Int, ar: [Int]) -> Int {
         //Pair does not need to be beside each other
