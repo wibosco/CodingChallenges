@@ -183,6 +183,8 @@
 		3DA4B157272AF7B80026F7D9 /* BirthdayBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B156272AF7B80026F7D9 /* BirthdayBarTests.swift */; };
 		3DA4B15A272AFDDE0026F7D9 /* DivisibleSumPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B159272AFDDE0026F7D9 /* DivisibleSumPairs.swift */; };
 		3DA4B15C272AFE140026F7D9 /* DivisibleSumPairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B15B272AFE140026F7D9 /* DivisibleSumPairsTests.swift */; };
+		3DECC3B6272C24A100A206FD /* MigratoryBirds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DECC3B5272C24A100A206FD /* MigratoryBirds.swift */; };
+		3DECC3B8272C24FD00A206FD /* MigratoryBirdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DECC3B7272C24FD00A206FD /* MigratoryBirdsTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -381,6 +383,8 @@
 		3DA4B156272AF7B80026F7D9 /* BirthdayBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayBarTests.swift; sourceTree = "<group>"; };
 		3DA4B159272AFDDE0026F7D9 /* DivisibleSumPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisibleSumPairs.swift; sourceTree = "<group>"; };
 		3DA4B15B272AFE140026F7D9 /* DivisibleSumPairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisibleSumPairsTests.swift; sourceTree = "<group>"; };
+		3DECC3B5272C24A100A206FD /* MigratoryBirds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratoryBirds.swift; sourceTree = "<group>"; };
+		3DECC3B7272C24FD00A206FD /* MigratoryBirdsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigratoryBirdsTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -485,6 +489,7 @@
 				3D4E3FCF2729712200DE491D /* TimeInWordsTests.swift */,
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
 				3D4E3FCA2729712200DE491D /* ValidateBSTTests.swift */,
+				3DECC3B7272C24FD00A206FD /* MigratoryBirdsTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -508,6 +513,7 @@
 		3D9D34D72729518600112474 /* CrackingTheCodingInterview */ = {
 			isa = PBXGroup;
 			children = (
+				3DECC3B4272C248700A206FD /* MigratoryBirds */,
 				3DA4B158272AFDC60026F7D9 /* DivisibleSumPairs */,
 				3D9D35E227295CF700112474 /* BalancedBST */,
 				3D9D35FC27295CF700112474 /* BinarySearchTreeDepth */,
@@ -1229,6 +1235,15 @@
 			path = CodingChallenges/Challenges/HackerRank/DivisibleSumPairs;
 			sourceTree = SOURCE_ROOT;
 		};
+		3DECC3B4272C248700A206FD /* MigratoryBirds */ = {
+			isa = PBXGroup;
+			children = (
+				3DECC3B5272C24A100A206FD /* MigratoryBirds.swift */,
+			);
+			name = MigratoryBirds;
+			path = CodingChallenges/Challenges/HackerRank/MigratoryBirds;
+			sourceTree = SOURCE_ROOT;
+		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -1529,6 +1544,7 @@
 				3D9D362F27295CF700112474 /* ValidateBSTNode.swift in Sources */,
 				3D9D361D27295CF700112474 /* RoutePlanner.swift in Sources */,
 				3D9D35A32729518600112474 /* LisasWorkbook.swift in Sources */,
+				3DECC3B6272C24A100A206FD /* MigratoryBirds.swift in Sources */,
 				3D9D364E27295D0300112474 /* Prime.swift in Sources */,
 				3D9D35C02729518600112474 /* SherlockAndArray.swift in Sources */,
 				3D9D35B42729518600112474 /* GridSearch.swift in Sources */,
@@ -1581,6 +1597,7 @@
 				3D4E40122729712300DE491D /* TimeInWordsTests.swift in Sources */,
 				3D4E3FFA2729712300DE491D /* SherlockAndArrayTests.swift in Sources */,
 				3D4E3FE02729712200DE491D /* TimeConverterTests.swift in Sources */,
+				3DECC3B8272C24FD00A206FD /* MigratoryBirdsTests.swift in Sources */,
 				3DA4B152272AF1F80026F7D9 /* BreakingTheRecordsTests.swift in Sources */,
 				3D4E40082729712300DE491D /* MaximizeSumTests.swift in Sources */,
 				3D4E3FDB2729712200DE491D /* FindDigitsTests.swift in Sources */,
