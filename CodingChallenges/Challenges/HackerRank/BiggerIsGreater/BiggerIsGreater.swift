@@ -9,118 +9,84 @@
 import UIKit
 
 //https://www.hackerrank.com/challenges/bigger-is-greater
-class BiggerIsGreater {
 
-    //Copied from http://stackoverflow.com/questions/34968470/calculate-all-permutations-of-a-string-in-swift
-     static func possiblePermutations(n:Int, a:inout [String], permutations: inout [String]) {
-        
-        if n == 1 {
-            
-            permutations.append(a.joined(separator: ""))
-            
-            return
-        }
-        
-        for i in 0..<n-1 {
-            
-            possiblePermutations(n: n-1, a: &a, permutations: &permutations)
-            
-            a.swapAt(n-1, (n%2 == 1) ? 0 : i)
-        }
-        
-        possiblePermutations(n: n-1, a: &a, permutations: &permutations)
-    }
-    
-     static func permutationGreaterThanOrginal(original: String) -> String {
-    
-        guard original != String(original.reversed()) else {
-            
-            return "no answer"
-        }
-        
-        var characters = original.map{String($0)}
-        
-        var maximumValuePermutation: String?
-        
-        var permutations = [String]()
-        
-        BiggerIsGreater.possiblePermutations(n: characters.count, a: &characters, permutations: &permutations)
-        
-        for permutation in permutations {
-            
-            if permutation > original {
-                
-                if maximumValuePermutation == nil {
-                    
-                    maximumValuePermutation = permutation
-                }
-                else if maximumValuePermutation! > permutation {
-                    
-                    maximumValuePermutation = permutation
-                }
+//Both of these solutions are too slow to pass this test
+struct BiggerIsGreater {
+    static func biggerIsGreater(w: String) -> String {
+        var chars = Array(w)
+
+        var pivot: Int?
+        for lsc in (0..<chars.count).reversed() {
+            guard lsc != 0 else {
+                break
+            }
+            let msc = lsc - 1
+            if chars[lsc] > chars[msc] {
+                pivot = msc
+                break
             }
         }
-        
-        return maximumValuePermutation!
-    }
-    
-     static func permutationGreaterThanOrginalAlt(original: String) -> String {
-        
-        guard original != String(original.reversed()) else {
+
+        if let pivot = pivot {
+            let insidePivot = (pivot + 1)
+            let sortRange = insidePivot..<chars.count
+            let sorted = chars[sortRange].sorted()
+            chars.replaceSubrange(sortRange, with: sorted)
             
-            return "no answer"
-        }
-        
-        var characters = original.map{String($0)}
-        
-        var permutations = [String]()
-        
-        BiggerIsGreater.possiblePermutations(n: characters.count, a: &characters, permutations: &permutations)
-        
-        let sortedPermutations = permutations.filter{$0 > original}.sorted{$1 > $0}
-        
-        if sortedPermutations.count > 0 {
-            
-            return sortedPermutations[0]
-        }
-        else {
-            
-            return "no answer"
-        }
-    }
-    
-    // MARK: Alt
-    
-     static func possiblePermutationsAlt(n:Int, a:inout [String], original: String, greaterValue: inout String?) {
-        
-        if n == 1 {
-            
-            let permutation = a.joined(separator: "")
-            
-            if permutation > original {
-                
-                if greaterValue == nil {
-                    
-                    greaterValue = permutation
-                }
-                else if greaterValue! > permutation {
-                    
-                    greaterValue = permutation
+            for index in insidePivot..<chars.count {
+                if chars[index] > chars[pivot] {
+                    chars.swapAt(pivot, index)
+                    break
                 }
             }
-            
-            return
+
+            return String(chars)
         }
-        
-        for i in 0..<n-1 {
-            
-            possiblePermutationsAlt(n: n-1, a: &a, original: original, greaterValue: &greaterValue)
-            
-            a.swapAt(n-1, (n%2 == 1) ? 0 : i)
-        }
-        
-        possiblePermutationsAlt(n: n-1, a: &a, original: original, greaterValue: &greaterValue)
+
+        return "no answer"
     }
+    
+    static func biggerIsGreaterAlt(w: String) -> String {
+        var pivot: (String.Index, Character)?
+        for lsc in w.indices.reversed() {
+            guard lsc != w.startIndex else {
+                break
+            }
 
+            let msc = w.index(lsc, offsetBy: -1)
 
+            if w[lsc] > w[msc] {
+                pivot = (msc, w[msc])
+                break
+            }
+        }
+
+        if let pivot = pivot {
+            var min: (String.Index, Character)?
+            let insidePivotIndex = w.index(pivot.0, offsetBy: 1)
+            for index in w[insidePivotIndex..<w.endIndex].indices.reversed() {
+                if w[index] > pivot.1 {
+                    if let tmpMin = min {
+                        if w[index] < tmpMin.1 {
+                            min = (index, w[index])
+                        }
+                    } else {
+                        min = (index, w[index])
+                    }
+                }
+            }
+
+            var adjustable = w
+            adjustable.replaceSubrange(min!.0...min!.0, with: String(pivot.1))
+            adjustable.replaceSubrange(pivot.0...pivot.0, with: String(min!.1))
+
+            let sortRange = insidePivotIndex..<adjustable.endIndex
+            let sorted = adjustable[sortRange].sorted()
+            adjustable.replaceSubrange(sortRange, with: sorted)
+
+            return adjustable
+        }
+
+        return "no answer"
+    }
 }
