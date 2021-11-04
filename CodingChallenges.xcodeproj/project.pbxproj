@@ -195,6 +195,8 @@
 		3DFDC7C227332A5E0026EBA9 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7C027332A5E0026EBA9 /* TwoSum.swift */; };
 		3DFDC7C427332A760026EBA9 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7C327332A750026EBA9 /* AddTwoNumbers.swift */; };
 		3DFDC7C627332AED0026EBA9 /* AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7C527332AEC0026EBA9 /* AddTwoNumbersTests.swift */; };
+		3DFDC7C92733E8E40026EBA9 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7C82733E8E40026EBA9 /* LongestSubstring.swift */; };
+		3DFDC7CB2733E9110026EBA9 /* LongestSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7CA2733E9110026EBA9 /* LongestSubstringTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -405,6 +407,8 @@
 		3DFDC7C027332A5E0026EBA9 /* TwoSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		3DFDC7C327332A750026EBA9 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
 		3DFDC7C527332AEC0026EBA9 /* AddTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTests.swift; sourceTree = "<group>"; };
+		3DFDC7C82733E8E40026EBA9 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
+		3DFDC7CA2733E9110026EBA9 /* LongestSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -474,6 +478,7 @@
 				3D4E3FAF2729712200DE491D /* LibraryFineTests.swift */,
 				3D4E3F9B2729712200DE491D /* LinkedListIntersectingNodeTests.swift */,
 				3D4E3FCB2729712200DE491D /* LisasWorkbookTests.swift */,
+				3DFDC7CA2733E9110026EBA9 /* LongestSubstringTests.swift */,
 				3DECC3BC272C3C6A00A206FD /* MagicSqaureTests.swift */,
 				3D4E3FA62729712200DE491D /* ManasaAndStonesTests.swift */,
 				3D4E3F932729712200DE491D /* MaxHeapTests.swift */,
@@ -1299,6 +1304,7 @@
 		3DFDC7BA2732F56C0026EBA9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				3DFDC7C72733E8D70026EBA9 /* LongestSubstring */,
 				3DFDC7C127332A5E0026EBA9 /* AddTwoNumbers */,
 				3DFDC7BF27332A5E0026EBA9 /* TwoSum */,
 			);
@@ -1319,6 +1325,14 @@
 				3DFDC7C327332A750026EBA9 /* AddTwoNumbers.swift */,
 			);
 			path = AddTwoNumbers;
+			sourceTree = "<group>";
+		};
+		3DFDC7C72733E8D70026EBA9 /* LongestSubstring */ = {
+			isa = PBXGroup;
+			children = (
+				3DFDC7C82733E8E40026EBA9 /* LongestSubstring.swift */,
+			);
+			path = LongestSubstring;
 			sourceTree = "<group>";
 		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
@@ -1604,6 +1618,7 @@
 				3D9D35CC2729518600112474 /* Percentages.swift in Sources */,
 				3D9D35B62729518600112474 /* Kaprekar.swift in Sources */,
 				3D9D35BC2729518600112474 /* UtopianTree.swift in Sources */,
+				3DFDC7C92733E8E40026EBA9 /* LongestSubstring.swift in Sources */,
 				3D9D365127295D0300112474 /* HeapSort.swift in Sources */,
 				3D9D35B22729518600112474 /* Beast.swift in Sources */,
 				3D9D35B52729518600112474 /* CavityMap.swift in Sources */,
@@ -1659,6 +1674,7 @@
 				3D4E3FE72729712300DE491D /* CutTheSticksTests.swift in Sources */,
 				3D4E400B2729712300DE491D /* KaprekarTests.swift in Sources */,
 				3DFDC7BE2732F5BF0026EBA9 /* TwoSumTests.swift in Sources */,
+				3DFDC7CB2733E9110026EBA9 /* LongestSubstringTests.swift in Sources */,
 				3D4E400C2729712300DE491D /* StaircaseTests.swift in Sources */,
 				3D4E40092729712300DE491D /* RunningTimeTests.swift in Sources */,
 				3D4E400F2729712300DE491D /* UtopianTreeTests.swift in Sources */,
