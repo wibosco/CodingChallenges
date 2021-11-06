@@ -197,6 +197,8 @@
 		3DFDC7C627332AED0026EBA9 /* AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7C527332AEC0026EBA9 /* AddTwoNumbersTests.swift */; };
 		3DFDC7C92733E8E40026EBA9 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7C82733E8E40026EBA9 /* LongestSubstring.swift */; };
 		3DFDC7CB2733E9110026EBA9 /* LongestSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7CA2733E9110026EBA9 /* LongestSubstringTests.swift */; };
+		3DFDC7CE27341DA40026EBA9 /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7CD27341DA40026EBA9 /* LongestPalindromicSubstring.swift */; };
+		3DFDC7D027341DDC0026EBA9 /* LongestPalindromicSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDC7CF27341DDC0026EBA9 /* LongestPalindromicSubstringTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -409,6 +411,8 @@
 		3DFDC7C527332AEC0026EBA9 /* AddTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTests.swift; sourceTree = "<group>"; };
 		3DFDC7C82733E8E40026EBA9 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 		3DFDC7CA2733E9110026EBA9 /* LongestSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringTests.swift; sourceTree = "<group>"; };
+		3DFDC7CD27341DA40026EBA9 /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
+		3DFDC7CF27341DDC0026EBA9 /* LongestPalindromicSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstringTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -478,6 +482,7 @@
 				3D4E3FAF2729712200DE491D /* LibraryFineTests.swift */,
 				3D4E3F9B2729712200DE491D /* LinkedListIntersectingNodeTests.swift */,
 				3D4E3FCB2729712200DE491D /* LisasWorkbookTests.swift */,
+				3DFDC7CF27341DDC0026EBA9 /* LongestPalindromicSubstringTests.swift */,
 				3DFDC7CA2733E9110026EBA9 /* LongestSubstringTests.swift */,
 				3DECC3BC272C3C6A00A206FD /* MagicSqaureTests.swift */,
 				3D4E3FA62729712200DE491D /* ManasaAndStonesTests.swift */,
@@ -1304,8 +1309,9 @@
 		3DFDC7BA2732F56C0026EBA9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				3DFDC7C72733E8D70026EBA9 /* LongestSubstring */,
 				3DFDC7C127332A5E0026EBA9 /* AddTwoNumbers */,
+				3DFDC7CC27341D900026EBA9 /* LongestPalindromicSubstring */,
+				3DFDC7C72733E8D70026EBA9 /* LongestSubstring */,
 				3DFDC7BF27332A5E0026EBA9 /* TwoSum */,
 			);
 			path = LeetCode;
@@ -1333,6 +1339,14 @@
 				3DFDC7C82733E8E40026EBA9 /* LongestSubstring.swift */,
 			);
 			path = LongestSubstring;
+			sourceTree = "<group>";
+		};
+		3DFDC7CC27341D900026EBA9 /* LongestPalindromicSubstring */ = {
+			isa = PBXGroup;
+			children = (
+				3DFDC7CD27341DA40026EBA9 /* LongestPalindromicSubstring.swift */,
+			);
+			path = LongestPalindromicSubstring;
 			sourceTree = "<group>";
 		};
 		432685911CDC9F6C005B1E61 /* Challenges */ = {
@@ -1609,6 +1623,7 @@
 				3DA4B155272AF7860026F7D9 /* BirthdayBar.swift in Sources */,
 				3D9D362627295CF700112474 /* BinarySearchTreeDepthNode.swift in Sources */,
 				3D9D35AB2729518600112474 /* PrimsMST.swift in Sources */,
+				3DFDC7CE27341DA40026EBA9 /* LongestPalindromicSubstring.swift in Sources */,
 				3DFDC7C427332A760026EBA9 /* AddTwoNumbers.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				3D9D361C27295CF700112474 /* MinStackNode.swift in Sources */,
@@ -1677,6 +1692,7 @@
 				3DFDC7CB2733E9110026EBA9 /* LongestSubstringTests.swift in Sources */,
 				3D4E400C2729712300DE491D /* StaircaseTests.swift in Sources */,
 				3D4E40092729712300DE491D /* RunningTimeTests.swift in Sources */,
+				3DFDC7D027341DDC0026EBA9 /* LongestPalindromicSubstringTests.swift in Sources */,
 				3D4E400F2729712300DE491D /* UtopianTreeTests.swift in Sources */,
 				3D4E40002729712300DE491D /* AlphabeticalOrderingTests.swift in Sources */,
 				3D4E40062729712300DE491D /* ACMICPCTeamTests.swift in Sources */,

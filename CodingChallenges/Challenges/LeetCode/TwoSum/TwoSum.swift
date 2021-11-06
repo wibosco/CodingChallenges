@@ -10,7 +10,7 @@ import Foundation
 
 //https://leetcode.com/problems/two-sum/
 struct TwoSum {
-    //O(n2)
+    //O(n^2)
     static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var indices = [Int]()
         outerLoop: for i in 0..<nums.count {
@@ -27,6 +27,7 @@ struct TwoSum {
         return indices
     }
     
+    //O(n)
     static func twoSumAlt(_ nums: [Int], _ target: Int) -> [Int] {
         var visted = [Int : Int]()
         

@@ -14,22 +14,22 @@ struct LongestSubstring {
         var visited = [Character: Int]()
         var longestNonRepeatingWindow = 0
         var currentWindowStartIndex = 0
-        
+
         for (currentWindowEndIndex, char) in s.enumerated() {
             if let vistedIndex = visited[char], vistedIndex >= currentWindowStartIndex {
                 currentWindowStartIndex = (vistedIndex + 1)
             }
-            
+
             let currentWindowSize = (currentWindowEndIndex + 1) - currentWindowStartIndex
             longestNonRepeatingWindow = max(longestNonRepeatingWindow, currentWindowSize)
-            
+
             visited[char] = currentWindowEndIndex
         }
-    
+
         return longestNonRepeatingWindow
     }
     
-    static func lengthOfLongestSubstringSlow(_ s: String) -> Int {
+    static func lengthOfLongestSubstringAlt(_ s: String) -> Int {
         var visited = [Character: Int]()
         var longestNonRepeatingWindow = 0
         var currentWindowStartIndex = 0
