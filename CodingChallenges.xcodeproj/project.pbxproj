@@ -78,6 +78,8 @@
 		3D4E401F2729795C00DE491D /* BirthdayCakeCandlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E401E2729795C00DE491D /* BirthdayCakeCandlesTests.swift */; };
 		3D60103827392A7A000586D2 /* StringToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60103727392A7A000586D2 /* StringToInteger.swift */; };
 		3D60103A27392A99000586D2 /* StringToIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60103927392A99000586D2 /* StringToIntegerTests.swift */; };
+		3D60103D273942DB000586D2 /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60103C273942DB000586D2 /* PalindromeNumber.swift */; };
+		3D60103F27394307000586D2 /* PalindromeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60103E27394307000586D2 /* PalindromeNumberTests.swift */; };
 		3D9D35A32729518600112474 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35212729518600112474 /* LisasWorkbook.swift */; };
 		3D9D35A42729518600112474 /* IceCreamParlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35232729518600112474 /* IceCreamParlor.swift */; };
 		3D9D35A52729518600112474 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35252729518600112474 /* TimeInWords.swift */; };
@@ -298,6 +300,8 @@
 		3D4E401E2729795C00DE491D /* BirthdayCakeCandlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandlesTests.swift; sourceTree = "<group>"; };
 		3D60103727392A7A000586D2 /* StringToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToInteger.swift; sourceTree = "<group>"; };
 		3D60103927392A99000586D2 /* StringToIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToIntegerTests.swift; sourceTree = "<group>"; };
+		3D60103C273942DB000586D2 /* PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
+		3D60103E27394307000586D2 /* PalindromeNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumberTests.swift; sourceTree = "<group>"; };
 		3D9D35212729518600112474 /* LisasWorkbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbook.swift; sourceTree = "<group>"; };
 		3D9D35232729518600112474 /* IceCreamParlor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlor.swift; sourceTree = "<group>"; };
 		3D9D35252729518600112474 /* TimeInWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWords.swift; sourceTree = "<group>"; };
@@ -510,6 +514,7 @@
 				3D4E3FB12729712200DE491D /* NewYearChaosTests.swift */,
 				3D4E3F9F2729712200DE491D /* OffByOneTests.swift */,
 				3DECC3C1272C765300A206FD /* OrganizingContainersOfBallsTests.swift */,
+				3D60103E27394307000586D2 /* PalindromeNumberTests.swift */,
 				3D4E3F962729712200DE491D /* PalindromePermutationTests.swift */,
 				3D4E3FAC2729712200DE491D /* PalindromeTests.swift */,
 				3D4E3FCD2729712200DE491D /* PercentagesTests.swift */,
@@ -530,6 +535,7 @@
 				3D4E3FB32729712200DE491D /* SortingIntroTests.swift */,
 				3D4E3F9C2729712200DE491D /* StackOfPlatesTests.swift */,
 				3D4E3FC92729712200DE491D /* StaircaseTests.swift */,
+				3D60103927392A99000586D2 /* StringToIntegerTests.swift */,
 				3D4E3FC12729712200DE491D /* SuccessorBSTTests.swift */,
 				3D4E3FB62729712200DE491D /* SummingTests.swift */,
 				3D4E3FD32729712200DE491D /* TheatreGuestsMultipleMovesTests.swift */,
@@ -539,7 +545,6 @@
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
 				3D4E3FCA2729712200DE491D /* ValidateBSTTests.swift */,
 				3DD392992737311000B65AC6 /* ZigzagConversionTests.swift */,
-				3D60103927392A99000586D2 /* StringToIntegerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -566,6 +571,14 @@
 				3D60103727392A7A000586D2 /* StringToInteger.swift */,
 			);
 			path = StringToInteger;
+			sourceTree = "<group>";
+		};
+		3D60103B273942CA000586D2 /* PalindromeNumber */ = {
+			isa = PBXGroup;
+			children = (
+				3D60103C273942DB000586D2 /* PalindromeNumber.swift */,
+			);
+			path = PalindromeNumber;
 			sourceTree = "<group>";
 		};
 		3D9D34D72729518600112474 /* CrackingTheCodingInterview */ = {
@@ -1351,6 +1364,7 @@
 				3DFDC7C127332A5E0026EBA9 /* AddTwoNumbers */,
 				3DFDC7CC27341D900026EBA9 /* LongestPalindromicSubstring */,
 				3DFDC7C72733E8D70026EBA9 /* LongestSubstring */,
+				3D60103B273942CA000586D2 /* PalindromeNumber */,
 				3DD3929B27387CF900B65AC6 /* ReverseInteger */,
 				3D60103627392A64000586D2 /* StringToInteger */,
 				3DFDC7BF27332A5E0026EBA9 /* TwoSum */,
@@ -1617,6 +1631,7 @@
 				3D9D365827295D0300112474 /* ReconstructBinaryTreeNode.swift in Sources */,
 				3D9D35D72729521400112474 /* InsertionSort1.swift in Sources */,
 				3D9D365027295D0300112474 /* MaxHeap.swift in Sources */,
+				3D60103D273942DB000586D2 /* PalindromeNumber.swift in Sources */,
 				3D9D361727295CF700112474 /* LinkedListIntersectingNode.swift in Sources */,
 				3D9D361927295CF700112474 /* SuccessorBSTFactory.swift in Sources */,
 				3D9D35AD2729518600112474 /* ServiceLane.swift in Sources */,
@@ -1799,6 +1814,7 @@
 				3D4E40102729712300DE491D /* PercentagesTests.swift in Sources */,
 				3DA4B1412729AF240026F7D9 /* SaveThePrisonerTests.swift in Sources */,
 				3D4E400A2729712300DE491D /* IceCreamParlorTests.swift in Sources */,
+				3D60103F27394307000586D2 /* PalindromeNumberTests.swift in Sources */,
 				3D4E3FF22729712300DE491D /* LibraryFineTests.swift in Sources */,
 				3DA4B13C27299BA60026F7D9 /* GradingStudentsTests.swift in Sources */,
 				3D4E40112729712300DE491D /* QueueViaStacksTests.swift in Sources */,
