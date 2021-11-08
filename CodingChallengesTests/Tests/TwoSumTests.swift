@@ -14,7 +14,7 @@ class TwoSumTests: XCTestCase {
 
     // MARK: - Tests
     
-    func test_twoSumA() {
+    func test_A() {
         let nums = [2,7,11,15]
         let target = 9
         
@@ -23,7 +23,7 @@ class TwoSumTests: XCTestCase {
         XCTAssertEqual([0, 1], indices)
     }
     
-    func test_twoSumB() {
+    func test_B() {
         let nums = [3, 2, 4]
         let target = 6
         
@@ -32,7 +32,7 @@ class TwoSumTests: XCTestCase {
         XCTAssertEqual([1, 2], indices)
     }
     
-    func test_twoSumC() {
+    func test_C() {
         let nums = [3, 3]
         let target = 6
         
@@ -43,7 +43,7 @@ class TwoSumTests: XCTestCase {
     
     // MARK: - Alt
     
-    func test_twoSumAltA() {
+    func test_AltA() {
         let nums = [2,7,11,15]
         let target = 9
         
@@ -52,7 +52,7 @@ class TwoSumTests: XCTestCase {
         XCTAssertEqual([0, 1], indices)
     }
     
-    func test_twoSumAltB() {
+    func test_AltB() {
         let nums = [3, 2, 4]
         let target = 6
         
@@ -61,7 +61,7 @@ class TwoSumTests: XCTestCase {
         XCTAssertEqual([1, 2], indices)
     }
     
-    func test_twoSumAltC() {
+    func test_AltC() {
         let nums = [3, 3]
         let target = 6
         

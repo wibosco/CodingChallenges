@@ -16,7 +16,7 @@ class MinMaxSumTests: XCTestCase {
     
     // MARK: Loop
     
-    func test_minMaxSumA() {
+    func test_A() {
         let data: [UInt] = [1, 3, 5, 7, 9]
         let (minSum, maxSum) = MinMaxSum.minMaxSum(data)
         
@@ -24,7 +24,7 @@ class MinMaxSumTests: XCTestCase {
         XCTAssertEqual(24, maxSum)
     }
     
-    func test_minMaxSumB() {
+    func test_B() {
         let data: [UInt] = [1, 2, 3, 4, 5]
         let (minSum, maxSum) = MinMaxSum.minMaxSum(data)
         
@@ -32,7 +32,7 @@ class MinMaxSumTests: XCTestCase {
         XCTAssertEqual(14, maxSum)
     }
     
-    func test_minMaxSumC() {
+    func test_C() {
         let data: [UInt] = [7, 69, 2, 221, 8974]
         let (minSum, maxSum) = MinMaxSum.minMaxSum(data)
         
@@ -42,7 +42,7 @@ class MinMaxSumTests: XCTestCase {
     
     // MARK: Alt
     
-    func test_minMaxSumAltA() {
+    func test_AltA() {
         let data: [UInt] = [1, 3, 5, 7, 9]
         let (minSum, maxSum) = MinMaxSum.minMaxSumAlt(data)
         
@@ -50,7 +50,7 @@ class MinMaxSumTests: XCTestCase {
         XCTAssertEqual(24, maxSum)
     }
     
-    func test_minMaxSumAltB() {
+    func test_AltB() {
         let data: [UInt] = [1, 2, 3, 4, 5]
         let (minSum, maxSum) = MinMaxSum.minMaxSumAlt(data)
         
@@ -58,7 +58,7 @@ class MinMaxSumTests: XCTestCase {
         XCTAssertEqual(14, maxSum)
     }
     
-    func test_minMaxSumAltC() {
+    func test_AltC() {
         let data: [UInt] = [7, 69, 2, 221, 8974]
         let (minSum, maxSum) = MinMaxSum.minMaxSumAlt(data)
         
@@ -68,7 +68,7 @@ class MinMaxSumTests: XCTestCase {
     
     // MARK: Performance
     
-    func test_minMaxSum_performance() {
+    func test_performance() {
         let data: [UInt] = [1, 3, 5, 7, 9]
         
         self.measure {
@@ -76,7 +76,7 @@ class MinMaxSumTests: XCTestCase {
         }
     }
     
-    func test_minMaxSumAlt_performance() {
+    func test_alt_performance() {
         let data: [UInt] = [1, 3, 5, 7, 9]
         
         self.measure {

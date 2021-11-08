@@ -14,8 +14,7 @@ class RoutePlannerTests: XCTestCase {
     
     // MARK: PathExists
     
-    func test_routeExistsAsDirectConnection() {
-        
+    func test_A() {
         let routePlanner = RoutePlanner()
         
         let nodeA = RoutePlannerNode()
@@ -29,8 +28,7 @@ class RoutePlannerTests: XCTestCase {
         XCTAssertTrue(routePlanner.pathExistsBetweenNodes(source: nodeA, destination: nodeB))
     }
     
-    func test_routeExistsAsDistantConnection() {
-        
+    func test_B() {
         let routePlanner = RoutePlanner()
         
         let nodeA = RoutePlannerNode()
@@ -53,7 +51,7 @@ class RoutePlannerTests: XCTestCase {
         XCTAssertTrue(routePlanner.pathExistsBetweenNodes(source: nodeA, destination: nodeE))
     }
     
-    func test_routeDoesNotExist() {
+    func test_C() {
         
         let routePlanner = RoutePlanner()
         
@@ -72,7 +70,7 @@ class RoutePlannerTests: XCTestCase {
     
     // MARK: Path
     
-    func test_pathAsDirectConnection() {
+    func test_path_A() {
         
         let routePlanner = RoutePlanner()
         
@@ -87,7 +85,7 @@ class RoutePlannerTests: XCTestCase {
         XCTAssertEqual([nodeB, nodeA], routePlanner.pathBetweenNodes(source: nodeA, destination: nodeB)!)
     }
     
-    func test_pathExistsAsDistantConnection() {
+    func test_path_B() {
         
         let routePlanner = RoutePlanner()
         
@@ -111,7 +109,7 @@ class RoutePlannerTests: XCTestCase {
         XCTAssertEqual([nodeE, nodeD, nodeB, nodeA], routePlanner.pathBetweenNodes(source: nodeA, destination: nodeE)!)
     }
     
-    func test_pathDoesNotExist() {
+    func test_path_C() {
         
         let routePlanner = RoutePlanner()
         

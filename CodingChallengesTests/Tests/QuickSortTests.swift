@@ -15,7 +15,6 @@ class QuickSortTests: XCTestCase {
     // MARK: PartialSort
     
     func test_quickSortPartialA() {
-        
         let sortedArray = QuickSort.sortIntoGroups(array: [4, 5, 3, 7, 2], indexOfPivot: 0)
         
         XCTAssertEqual([3, 2, 4, 5, 7], sortedArray)

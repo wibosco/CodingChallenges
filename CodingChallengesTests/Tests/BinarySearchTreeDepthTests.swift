@@ -14,14 +14,12 @@ class BinarySearchTreeDepthTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_binarySearchTreeDepthA() {
-        
+    func test_A() {
         let tree = BinarySearchTreeDepth()
         
         let values = [5,4,2,3,7,1,6,8,10]
         
         for value in values {
-            
             tree.addValue(value: value)
         }
         
@@ -30,14 +28,12 @@ class BinarySearchTreeDepthTests: XCTestCase {
         XCTAssertEqual(4, lists.count)
     }
     
-    func test_binarySearchTreeDepthB() {
-        
+    func test_B() {
         let tree = BinarySearchTreeDepth()
         
         let values = [5,4,2,3,7,1,6,8,10]
         
         for value in values {
-            
             tree.addValue(value: value)
         }
         

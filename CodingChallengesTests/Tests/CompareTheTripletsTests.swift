@@ -14,7 +14,7 @@ class CompareTheTripletsTests: XCTestCase {
 
     // MARK: - Tests
     
-    func test_scoreA() {
+    func test_A() {
         let a = [1, 2, 3]
         let b = [3, 2, 1]
         
@@ -23,7 +23,7 @@ class CompareTheTripletsTests: XCTestCase {
         XCTAssertEqual([1, 1], score)
     }
     
-    func test_scoreB() {
+    func test_B() {
         let a = [5, 6, 7]
         let b = [3, 6, 10]
         
@@ -32,7 +32,7 @@ class CompareTheTripletsTests: XCTestCase {
         XCTAssertEqual([1, 1], score)
     }
     
-    func test_scoreC() {
+    func test_C() {
         let a = [17, 28, 30]
         let b = [99, 16, 8]
         

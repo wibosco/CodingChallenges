@@ -12,8 +12,7 @@ import XCTest
 
 class RunningTimeTests: XCTestCase {
     
-    func test_numberOfShiftsA() {
-        
+    func test_A() {
         let numberOfShifts = RunningTime.numberOfShiftsToSort(array: [2, 1, 3, 1, 2])
         
         XCTAssertEqual(4, numberOfShifts)

@@ -14,7 +14,7 @@ class ReconstructBinaryTreeTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_binaryTreeA() {
+    func test_A() {
         
         let nodeList = [[2, 4],
                         [1, 2],

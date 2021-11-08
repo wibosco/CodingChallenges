@@ -14,7 +14,7 @@ class AddTwoNumbersTests: XCTestCase {
 
     // MARK: - Tests
     
-    func test_addTwoNumbersA() {
+    func test_A() {
         let l1 = ListNode.createList(fromArray: [2, 4, 3])
         let l2 = ListNode.createList(fromArray: [5, 6, 4])
         
@@ -25,7 +25,7 @@ class AddTwoNumbersTests: XCTestCase {
         XCTAssertEqual(node?.next?.next?.val, 8)
     }
     
-    func test_addTwoNumbersB() {
+    func test_B() {
         let l1 = ListNode.createList(fromArray: [0])
         let l2 = ListNode.createList(fromArray: [0])
         
@@ -34,7 +34,7 @@ class AddTwoNumbersTests: XCTestCase {
         XCTAssertEqual(node?.val, 0)
     }
     
-    func test_addTwoNumbersC() {
+    func test_C() {
         let l1 = ListNode.createList(fromArray: [9, 9, 9, 9, 9, 9, 9])
         let l2 = ListNode.createList(fromArray: [9, 9, 9, 9])
         
@@ -50,7 +50,7 @@ class AddTwoNumbersTests: XCTestCase {
         XCTAssertEqual(node?.next?.next?.next?.next?.next?.next?.next?.val, 1)
     }
     
-    func test_addTwoNumbersD() {
+    func test_D() {
         let l1 = ListNode.createList(fromArray: [2, 4, 9])
         let l2 = ListNode.createList(fromArray: [5, 6, 4, 9])
         

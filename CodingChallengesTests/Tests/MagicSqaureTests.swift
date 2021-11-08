@@ -13,7 +13,7 @@ import XCTest
 class MagicSqaureTests: XCTestCase {
     // MARK: - Tests
     
-    func test_costA() {
+    func test_A() {
         let square = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
         
         let cost = MagicSqaure.formingMagicSquare(s: square)
@@ -21,7 +21,7 @@ class MagicSqaureTests: XCTestCase {
         XCTAssertEqual(7, cost)
     }
     
-    func test_costB() {
+    func test_B() {
         let square = [[4, 9, 2], [3, 5, 7], [8, 1, 5]]
         
         let cost = MagicSqaure.formingMagicSquare(s: square)
@@ -29,7 +29,7 @@ class MagicSqaureTests: XCTestCase {
         XCTAssertEqual(1, cost)
     }
     
-    func test_costC() {
+    func test_C() {
         let square = [[4, 8, 2], [4, 5, 7], [6, 1, 6]]
         
         let cost = MagicSqaure.formingMagicSquare(s: square)
@@ -37,7 +37,7 @@ class MagicSqaureTests: XCTestCase {
         XCTAssertEqual(4, cost)
     }
     
-    func test_costD() {
+    func test_D() {
         let square = [[4, 5, 8], [2, 4, 1], [1, 9, 7]]
         
         let cost = MagicSqaure.formingMagicSquare(s: square)

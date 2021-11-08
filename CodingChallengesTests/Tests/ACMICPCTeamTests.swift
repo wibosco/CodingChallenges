@@ -14,8 +14,7 @@ class ACMICPCTeamTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_bestCombinationA() {
-        
+    func test_A() {
         let contestantsTopicKnowledge = ["10101",
                                          "11100",
                                          "11010",
@@ -29,8 +28,7 @@ class ACMICPCTeamTests: XCTestCase {
     
     // MARK: Alt
     
-    func test_bestCombinationAltA() {
-        
+    func test_AltA() {
         let contestantsTopicKnowledge = ["10101",
                                          "11100",
                                          "11010",
@@ -42,8 +40,7 @@ class ACMICPCTeamTests: XCTestCase {
         XCTAssertEqual(2, bestCombination.teamsThatCanAchieveThis)
     }
     
-    func test_bestCombinationAltB() {
-        
+    func test_AltB() {
         let contestantsTopicKnowledge = ["1001101111101011011100101100100110111011111011000100111100111110111101011011011100111001100011111010",
                                          "1111010101101010011101101101011101111111111011110010001001100111000111011111101110010111110111110010",
                                          "0011111011111010111101111110101101111001111111100011111101101100100011010011111011111110110011111000",

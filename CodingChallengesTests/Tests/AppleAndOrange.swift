@@ -14,7 +14,7 @@ class AppleAndOrangeTests: XCTestCase {
 
     // MARK: - Tests
     
-    func test_appleAndOrangeA() {
+    func test_A() {
         let start = 7
         let end = 10
         
@@ -35,7 +35,7 @@ class AppleAndOrangeTests: XCTestCase {
         XCTAssertEqual(orangeHits, 2)
     }
     
-    func test_appleAndOrangeB() {
+    func test_B() {
         let start = 7
         let end = 11
         

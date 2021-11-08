@@ -12,7 +12,7 @@ import XCTest
 
 class InsertionSort2Tests: XCTestCase {
     
-    func test_insertionSortAllA() {
+    func test_A() {
         
         let steps = InsertionSort2.sort(array: [1, 4, 3, 5, 6, 2])
         
@@ -25,7 +25,7 @@ class InsertionSort2Tests: XCTestCase {
         XCTAssertEqual(expectedSteps, steps)
     }
     
-    func test_insertionSortAllB() {
+    func test_B() {
         
         let steps = InsertionSort2.sort(array: [9, 8, 6, 7, 3, 5, 4, 1, 2])
         

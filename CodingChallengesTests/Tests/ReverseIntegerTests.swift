@@ -14,7 +14,7 @@ class ReverseIntegerTests: XCTestCase {
 
     // MARK: - Tests
     
-    func test_reverseA() {
+    func test_A() {
         let x = 123
         
         let reversed = ReverseInteger.reverse(x)
@@ -22,7 +22,7 @@ class ReverseIntegerTests: XCTestCase {
         XCTAssertEqual(reversed, 321)
     }
     
-    func test_reverseB() {
+    func test_B() {
         let x = -123
         
         let reversed = ReverseInteger.reverse(x)
@@ -30,7 +30,7 @@ class ReverseIntegerTests: XCTestCase {
         XCTAssertEqual(reversed, -321)
     }
     
-    func test_reverseC() {
+    func test_C() {
         let x = 120
         
         let reversed = ReverseInteger.reverse(x)
@@ -38,7 +38,7 @@ class ReverseIntegerTests: XCTestCase {
         XCTAssertEqual(reversed, 21)
     }
     
-    func test_reverseD() {
+    func test_D() {
         let x = 0
         
         let reversed = ReverseInteger.reverse(x)
@@ -46,7 +46,7 @@ class ReverseIntegerTests: XCTestCase {
         XCTAssertEqual(reversed, 0)
     }
     
-    func test_reverseE() {
+    func test_E() {
         let x = 1534236469
         
         let reversed = ReverseInteger.reverse(x)

@@ -14,8 +14,7 @@ class CavityMapTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_cavityMapA() {
-        
+    func test_A() {
         let map = ["1112",
                    "1912",
                    "1892",
@@ -31,8 +30,7 @@ class CavityMapTests: XCTestCase {
         XCTAssertEqual(expectedCavityMap, cavityMap)
     }
     
-    func test_cavityMapB() {
-        
+    func test_B() {
         let map = ["9"]
         
         let cavityMap = CavityMap.generateCavityMap(map: map)
@@ -41,5 +39,4 @@ class CavityMapTests: XCTestCase {
         
         XCTAssertEqual(expectedCavityMap, cavityMap)
     }
-    
 }

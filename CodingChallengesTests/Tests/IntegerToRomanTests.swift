@@ -10,7 +10,6 @@ import XCTest
 
 @testable import CodingChallenges
 
-//https://leetcode.com/problems/integer-to-roman/
 class IntegerToRomanTests: XCTestCase {
 
     // MARK: - Tests

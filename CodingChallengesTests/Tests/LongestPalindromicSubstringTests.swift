@@ -14,7 +14,7 @@ class LongestPalindromicSubstringTests: XCTestCase {
 
     // MARK: - Tests
 
-    func test_longestA() {
+    func test_A() {
         let s = "babad"
         
         let longest = LongestPalindromicSubstring.longestPalindrome(s)
@@ -22,7 +22,7 @@ class LongestPalindromicSubstringTests: XCTestCase {
         XCTAssertEqual(longest, "bab")
     }
     
-    func test_longestB() {
+    func test_B() {
         let s = "cbbd"
         
         let longest = LongestPalindromicSubstring.longestPalindrome(s)
@@ -30,7 +30,7 @@ class LongestPalindromicSubstringTests: XCTestCase {
         XCTAssertEqual(longest, "bb")
     }
     
-    func test_longestC() {
+    func test_C() {
         let s = "a"
         
         let longest = LongestPalindromicSubstring.longestPalindrome(s)
@@ -38,7 +38,7 @@ class LongestPalindromicSubstringTests: XCTestCase {
         XCTAssertEqual(longest, "a")
     }
     
-    func test_longestD() {
+    func test_D() {
         let s = "ac"
         
         let longest = LongestPalindromicSubstring.longestPalindrome(s)
@@ -46,7 +46,7 @@ class LongestPalindromicSubstringTests: XCTestCase {
         XCTAssertEqual(longest, "a")
     }
     
-    func test_longestE() {
+    func test_E() {
         let s = "jglknendplocymmvwtoxvebkekzfdhykknufqdkntnqvgfbahsljkobhbxkvyictzkqjqydczuxjkgecdyhixdttxfqmgksrkyvopwprsgoszftuhawflzjyuyrujrxluhzjvbflxgcovilthvuihzttzithnsqbdxtafxrfrblulsakrahulwthhbjcslceewxfxtavljpimaqqlcbrdgtgjryjytgxljxtravwdlnrrauxplempnbfeusgtqzjtzshwieutxdytlrrqvyemlyzolhbkzhyfyttevqnfvmpqjngcnazmaagwihxrhmcibyfkccyrqwnzlzqeuenhwlzhbxqxerfifzncimwqsfatudjihtumrtjtggzleovihifxufvwqeimbxvzlxwcsknksogsbwwdlwulnetdysvsfkonggeedtshxqkgbhoscjgpiel"
         
         let longest = LongestPalindromicSubstring.longestPalindrome(s)
@@ -54,7 +54,7 @@ class LongestPalindromicSubstringTests: XCTestCase {
         XCTAssertEqual(longest, "sknks")
     }
     
-    func test_longestF() {
+    func test_F() {
         let s = "abeba"
         
         let longest = LongestPalindromicSubstring.longestPalindrome(s)
@@ -62,7 +62,7 @@ class LongestPalindromicSubstringTests: XCTestCase {
         XCTAssertEqual(longest, "abeba")
     }
     
-    func test_longestG() {
+    func test_G() {
         let s = "racecar"
         
         let longest = LongestPalindromicSubstring.longestPalindrome(s)

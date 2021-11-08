@@ -14,7 +14,7 @@ class PrimsMSTTests: XCTestCase {
     
     // MARK: Tests
 
-    func test_primsMSTA() {
+    func test_A() {
         
         let totalNodes = 5
         let edges = [[0,1,3],

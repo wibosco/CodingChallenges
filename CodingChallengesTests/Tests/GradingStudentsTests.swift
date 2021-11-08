@@ -14,7 +14,7 @@ class GradingStudentsTests: XCTestCase {
 
     // MARK: - Tests
     
-    func test_gradingStudentsA() {
+    func test_A() {
         let grades = [64, 29, 57]
         
         let roundedGrades = GradingStudents.roundGrades(grades)
@@ -22,7 +22,7 @@ class GradingStudentsTests: XCTestCase {
         XCTAssertEqual(roundedGrades, [65, 29, 57])
     }
     
-    func test_gradingStudentsB() {
+    func test_B() {
         let grades = [73, 67, 38, 33]
         
         let roundedGrades = GradingStudents.roundGrades(grades)

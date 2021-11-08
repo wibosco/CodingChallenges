@@ -14,13 +14,12 @@ class DecimalToBinaryTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_convertDecimalToBinary() {
-        
+    func test_A() {
         let decimalValue = 294
         
         let binaryValue = DecimalToBinary.convertDecimalToBinary(decimal: decimalValue)
         
-        XCTAssertEqual(binaryValue, "100100110", "Should have converted decimal value to binary")
+        XCTAssertEqual(binaryValue, "100100110")
     }
     
 }

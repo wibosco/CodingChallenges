@@ -14,15 +14,13 @@ class KaprekarTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_kaprekarA() {
-        
+    func test_A() {
         let range = Kaprekar.kaprekarRange(lowerBounds: 1, upperBounds: 100)
         
         XCTAssertEqual([1, 9, 45, 55, 99], range)
     }
     
-    func test_kaprekarB() {
-        
+    func test_B() {
         let range = Kaprekar.kaprekarRange(lowerBounds: 297, upperBounds: 300)
         
         XCTAssertEqual([297], range)

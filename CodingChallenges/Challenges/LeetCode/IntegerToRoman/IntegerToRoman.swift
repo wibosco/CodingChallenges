@@ -10,6 +10,8 @@ import Foundation
 
 //https://leetcode.com/problems/integer-to-roman/
 struct IntegerToRoman {
+    
+    //O(n)
     static func intToRoman(_ num: Int) -> String {
         let romanNumerals = [
             ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], // Units

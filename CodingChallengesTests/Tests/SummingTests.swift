@@ -11,19 +11,7 @@ import XCTest
 @testable import CodingChallenges
 
 class SummingTests: XCTestCase {
-    
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
-    
+
     // MARK: Tests
     
     func test_sum() {

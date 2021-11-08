@@ -18,35 +18,35 @@ class ServiceLaneTests: XCTestCase {
     
     // MARK: Test
     
-    func test_serviceLaneEntrance0Exit3() {
+    func test_A() {
         
         let largestVechile = ServiceLane.largestVechile(servicelane: self.serviceLane, entrance: 0, exit: 3)
         
         XCTAssertEqual(1, largestVechile)
     }
     
-    func test_serviceLaneEntrance4Exit6() {
+    func test_B() {
         
         let largestVechile = ServiceLane.largestVechile(servicelane: self.serviceLane, entrance: 4, exit: 6)
         
         XCTAssertEqual(2, largestVechile)
     }
     
-    func test_serviceLaneEntrance6Exit7() {
+    func test_C() {
         
         let largestVechile = ServiceLane.largestVechile(servicelane: self.serviceLane, entrance: 6, exit: 7)
         
         XCTAssertEqual(3, largestVechile)
     }
     
-    func test_serviceLaneEntrance3Exit5() {
+    func test_D() {
         
         let largestVechile = ServiceLane.largestVechile(servicelane: self.serviceLane, entrance: 3, exit: 5)
         
         XCTAssertEqual(2, largestVechile)
     }
     
-    func test_serviceLaneEntrance0Exit7() {
+    func test_E() {
         
         let largestVechile = ServiceLane.largestVechile(servicelane: self.serviceLane, entrance: 0, exit: 7)
         

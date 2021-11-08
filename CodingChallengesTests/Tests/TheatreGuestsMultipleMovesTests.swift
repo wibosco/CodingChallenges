@@ -14,7 +14,7 @@ class TheatreGuestsMultipleMovesTests: XCTestCase {
 
     // MARK: Tests
     
-    func test_sortA() {
+    func test_A() {
         var guestsInSeats = ["A", "B", "C", "D", "A", "B", "C", "D"]
         let expectedGuestsInSeats = ["A", "A", "C", "C", "B", "B", "D", "D"]
         
@@ -23,7 +23,7 @@ class TheatreGuestsMultipleMovesTests: XCTestCase {
         XCTAssertEqual(guestsInSeats, expectedGuestsInSeats)
     }
     
-    func test_sortB() {
+    func test_B() {
         var guestsInSeats = ["A", "B", "D", "C", "D", "B", "C", "A"]
         let expectedGuestsInSeats = ["A", "A", "D", "D", "C", "C", "B", "B"]
         
@@ -32,7 +32,7 @@ class TheatreGuestsMultipleMovesTests: XCTestCase {
         XCTAssertEqual(guestsInSeats, expectedGuestsInSeats)
     }
     
-    func test_sortC() {
+    func test_C() {
         var guestsInSeats = ["A", "B", "E", "D", "D", "B", "C", "A", "E", "C"]
         let expectedGuestsInSeats = ["A", "A", "E", "E", "D", "D", "C", "C", "B", "B"]
         

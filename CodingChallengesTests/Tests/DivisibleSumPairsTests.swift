@@ -13,7 +13,7 @@ import XCTest
 class DivisibleSumPairsTests: XCTestCase {
     // MARK: - Tests
     
-    func test_divisibleSumPairsA() {
+    func test_A() {
         let ar = [1, 2, 3, 4, 5, 6]
         let k = 5
         
@@ -22,7 +22,7 @@ class DivisibleSumPairsTests: XCTestCase {
         XCTAssertEqual(pairsCount, 3)
     }
     
-    func test_divisibleSumPairsB() {
+    func test_B() {
         let ar = [1, 3, 2, 6, 1, 2]
         let k = 3
         

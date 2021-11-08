@@ -12,27 +12,12 @@ import XCTest
 
 class GreatestCommonDenominatorTests: XCTestCase {
     
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
-    
     // MARK: Tests
     
-    func test_greatestCommonDenominator() {
-        
-        let commonDenominator = 28
-        
+    func test_A() {
         let gcd = GreatestCommonDenominator.greatestCommonDenominator(lowest: 84, highest: 868)
         
-        XCTAssertEqual(gcd, commonDenominator, "GCD should be \(commonDenominator)")
+        XCTAssertEqual(gcd, 28)
     }
     
 }

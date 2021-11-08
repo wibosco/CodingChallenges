@@ -12,21 +12,9 @@ import XCTest
 
 class PalindromeTests: XCTestCase {
     
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
-    
     // MARK: Tests
     
-    func test_isPalindromeTrue() {
+    func test_A() {
         
         let string = "toaoT"
         
@@ -35,7 +23,7 @@ class PalindromeTests: XCTestCase {
         XCTAssertTrue(isPalindrome, "Should be true")
     }
     
-    func test_isPalindromeFalse() {
+    func test_B() {
         
         let string = "bananana"
         

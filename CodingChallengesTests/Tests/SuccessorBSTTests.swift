@@ -42,31 +42,31 @@ class SuccessorBSTTests: XCTestCase {
     
     // MARK: InOrderPreSorted
     
-    func test_successorBSTA() {
+    func test_A() {
         let successor = SuccessorBST.successorNode(predecessorNode: root)
         
         XCTAssertEqual(successor, root.right!)
     }
     
-    func test_successorBSTB() {
+    func test_B() {
         let successor = SuccessorBST.successorNode(predecessorNode: root.left!)
         
         XCTAssertEqual(successor, root.left!.right)
     }
     
-    func test_successorBSTC() {
+    func test_C() {
         let successor = SuccessorBST.successorNode(predecessorNode: root.left!.right!)
         
         XCTAssertEqual(successor, root)
     }
     
-    func test_successorBSTD() {
+    func test_D() {
         let successor = SuccessorBST.successorNode(predecessorNode: root.right!)
         
         XCTAssertEqual(successor, root.right!.right!)
     }
     
-    func test_successorBSTE() {
+    func test_E() {
         let successor = SuccessorBST.successorNode(predecessorNode: root.right!.right!)
         
         XCTAssertNil(successor)

@@ -14,8 +14,7 @@ class MaximumSubarrayTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_maximumSubarrayA() {
-        
+    func test_A() {
         let array = [1,2,3,4]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -24,8 +23,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, 10)
     }
     
-    func test_maximumSubarrayB() {
-        
+    func test_B() {
         let array = [2,-1,2,3,4,-5]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -34,8 +32,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, 11)
     }
     
-    func test_maximumSubarrayC() {
-        
+    func test_C() {
         let array = [1]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -44,8 +41,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, 1)
     }
     
-    func test_maximumSubarrayD() {
-        
+    func test_D() {
         let array = [-1,-2,-3,-4,-5,-6]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -54,8 +50,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, -1)
     }
     
-    func test_maximumSubarrayE() {
-        
+    func test_E() {
         let array = [1, -2]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -64,8 +59,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, 1)
     }
     
-    func test_maximumSubarrayF() {
-        
+    func test_F() {
         let array = [1, 2, 3]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -74,8 +68,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, 6)
     }
     
-    func test_maximumSubarrayG() {
-        
+    func test_G() {
         let array = [-10]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -84,8 +77,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, -10)
     }
     
-    func test_maximumSubarrayH() {
-        
+    func test_H() {
         let array = [1, -1, -1, -1, -1, 5]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
@@ -94,8 +86,7 @@ class MaximumSubarrayTests: XCTestCase {
         XCTAssertEqual(maximums.nonContiguousTotal, 6)
     }
     
-    func test_maximumSubarrayI() {
-        
+    func test_I() {
         let array = [-2, -3, 4, -1, -2, 1, 5, -3]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)

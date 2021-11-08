@@ -15,37 +15,37 @@ class OffByOneTests: XCTestCase {
 
     // MARK: Tests
     
-    func test_OffByOneA() {
+    func test_A() {
         
         XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pale", destination: "ple"))
     }
     
-    func test_offByOneB() {
+    func test_B() {
         
         XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pales", destination: "pale"))
     }
     
-    func test_offByOneC() {
+    func test_C() {
         
         XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pale", destination: "bale"))
     }
     
-    func test_offByOneD() {
+    func test_D() {
         
         XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "pale", destination: "bae"))
     }
     
-    func test_offByOneE() {
+    func test_E() {
         
         XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "paled", destination: "bae"))
     }
     
-    func test_offByOneF() {
+    func test_F() {
         
         XCTAssertFalse(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "bae", destination: "breed"))
     }
     
-    func test_offByOneG() {
+    func test_G() {
         
         XCTAssertTrue(OffByOne.canTransformSourceStringIntoDestinationStringWithOneChange(source: "bae", destination: "bae"))
     }

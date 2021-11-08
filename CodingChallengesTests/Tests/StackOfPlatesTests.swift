@@ -14,8 +14,7 @@ class StackOfPlatesTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_stackOfPlates_oneStack() {
-        
+    func test_A() {
         let stacksOfPlates = StackOfPlates()
         
         stacksOfPlates.push(value: 1)
@@ -24,7 +23,7 @@ class StackOfPlatesTests: XCTestCase {
         XCTAssertEqual(1, stacksOfPlates.stacks.count)
     }
     
-    func test_stackOfPlates_twoStacks() {
+    func test_B() {
         
         let stacksOfPlates = StackOfPlates()
         
@@ -35,7 +34,7 @@ class StackOfPlatesTests: XCTestCase {
         XCTAssertEqual(2, stacksOfPlates.stacks.count)
     }
     
-    func test_stackOfPlates_reducingStacks() {
+    func test_C() {
         
         let stacksOfPlates = StackOfPlates()
         

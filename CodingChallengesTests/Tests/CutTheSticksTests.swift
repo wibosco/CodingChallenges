@@ -14,7 +14,7 @@ class CutTheSticksTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_cutSticksA() {
+    func test_A() {
         
         let sticks = [5, 4, 4, 2, 2, 8]
         
@@ -23,7 +23,7 @@ class CutTheSticksTests: XCTestCase {
         XCTAssertEqual([6, 4, 2, 1], sticksRemainingForEachCut)
     }
     
-    func test_cutSticksB() {
+    func test_B() {
         
         let sticks = [1, 2, 3, 4, 3, 3, 2, 1]
         

@@ -14,7 +14,7 @@ class InsertionSort1Tests: XCTestCase {
     
     // MARK: RightMost
     
-    func test_insertionSortRightMostA() {
+    func test_A() {
         
         let steps = InsertionSort1.sortRightMostElementIntoCorrectPosition(array: [2, 4, 6, 8, 3])
         

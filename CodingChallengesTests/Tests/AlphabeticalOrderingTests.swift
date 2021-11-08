@@ -11,23 +11,10 @@ import XCTest
 @testable import CodingChallenges
 
 class AlphabeticalOrderingTests: XCTestCase {
-    
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
-    
+
     // MARK: Tests
     
-    func test_alphabeticalSort() {
-        
+    func test_A() {
         let stringToBeSorted = "to be sorted as a big string"
         
         let sortedString = AlphabeticalOrdering.sort(string: stringToBeSorted)

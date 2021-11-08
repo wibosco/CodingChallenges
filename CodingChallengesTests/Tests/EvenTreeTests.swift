@@ -14,8 +14,7 @@ class EvenTreeTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_evenTreeA() {
-        
+    func test_A() {
         let totalNodes = 10
         let edges = [[1,0],
                      [2,0],
@@ -32,8 +31,7 @@ class EvenTreeTests: XCTestCase {
         XCTAssertEqual(2, removedEdges)
     }
     
-    func test_evenTreeB() {
-        
+    func test_B() {
         let totalNodes = 30
         let edges = [[1,0],
                      [2,1],

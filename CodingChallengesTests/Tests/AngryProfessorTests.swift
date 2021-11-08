@@ -14,15 +14,13 @@ class AngryProfessorTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_classCancelled() {
-        
+    func test_A() {
         let cancelled = AngryProfessor.shouldCancelClass(studentArrivalTimes: [-1, 5, 6, 8], cancellationThreshold: 2)
         
         XCTAssertTrue(cancelled)
     }
     
-    func test_classNotCancelled() {
-        
+    func test_B() {
         let cancelled = AngryProfessor.shouldCancelClass(studentArrivalTimes: [-9, 3, -4, -8], cancellationThreshold: 2)
         
         XCTAssertFalse(cancelled)

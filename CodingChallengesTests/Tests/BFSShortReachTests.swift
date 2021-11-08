@@ -14,7 +14,7 @@ class BFSShortReachTests: XCTestCase {
 
     // MARK: - Tests
     
-    func test_BFSShortRangeA() {
+    func test_A() {
         let totalNodes = 4
         let edges = [[1, 2], [1, 3]]
         let sourceIndex = 1
@@ -24,7 +24,7 @@ class BFSShortReachTests: XCTestCase {
         XCTAssertEqual(distances, [6, 6, -1])
     }
     
-    func test_BFSShortRangeB() {
+    func test_B() {
         let totalNodes = 3
         let edges = [[2, 3]]
         let sourceIndex = 2
@@ -34,7 +34,7 @@ class BFSShortReachTests: XCTestCase {
         XCTAssertEqual(distances, [-1, 6])
     }
     
-    func test_BFSShortRangeC() {
+    func test_C() {
         let totalNodes = 5
         let edges = [[1, 2], [1, 3], [3, 4]]
         let sourceIndex = 1

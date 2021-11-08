@@ -14,7 +14,7 @@ class MaximizeSumTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_maximizeSumA() {
+    func test_A() {
         let values = [3,3,9,9,5]
         let modulo = 7
         

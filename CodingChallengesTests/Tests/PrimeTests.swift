@@ -12,39 +12,23 @@ import XCTest
 
 class PrimeTests: XCTestCase {
     
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
-    
     // MARK: IsPrime
     
-    func test_isPrimeTrue() {
-        
+    func test_A() {
         XCTAssertTrue(Prime.isPrime(value: 5))
     }
     
-    func test_isPrimeFalseEven() {
-        
+    func test_B() {
         XCTAssertFalse(Prime.isPrime(value: 28))
     }
     
-    func test_isPrimeFalseOdd() {
-        
+    func test_C() {
         XCTAssertFalse(Prime.isPrime(value: 55))
     }
     
     // MARK: PrimeFactors
     
     func test_primeFactors() {
-        
         Prime.primeFactors(value: 864)
         
         XCTAssertTrue(true)

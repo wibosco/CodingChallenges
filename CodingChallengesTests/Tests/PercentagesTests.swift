@@ -14,8 +14,7 @@ class PercentagesTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_percentages() {
-        
+    func test_A() {
         let percentages = Percentages.percentageOfUnqiueSets(array: [-4, 3, -9, 0, 4, 1])
         
         XCTAssertEqual(0.500000, percentages.positivePercentage, accuracy: 0.000001, "Postive percentage did not match expected result")

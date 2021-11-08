@@ -14,22 +14,19 @@ class EncryptionTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_encryptionA() {
-        
+    func test_A() {
         let encryptedValue = Encryption.encrypt(originalString: "haveaniceday")
         
         XCTAssertEqual("hae and via ecy", encryptedValue)
     }
     
-    func test_encryptionB() {
-        
+    func test_B() {
         let encryptedValue = Encryption.encrypt(originalString: "feedthedog")
         
         XCTAssertEqual("fto ehg ee dd", encryptedValue)
     }
     
-    func test_encryptionC() {
-        
+    func test_C() {
         let encryptedValue = Encryption.encrypt(originalString: "chillout")
         
         XCTAssertEqual("clu hlt io", encryptedValue)

@@ -14,8 +14,7 @@ class StaircaseTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_staircase() {
-    
+    func test_A() {
         let staircase = Staircase.staircase(height: 6)
         
         print(staircase)

@@ -14,7 +14,7 @@ class MinHeapTests: XCTestCase {
 
     // MARK: Tests
     
-    func test_minHeapA() {
+    func test_A() {
         
         let input = [3,5,6,7,8,9,12,15,4,1]
         
@@ -23,7 +23,7 @@ class MinHeapTests: XCTestCase {
         XCTAssertEqual(heap[0], 1)
     }
     
-    func test_minHeapB() {
+    func test_B() {
         
         let input = [3,17,4]
         

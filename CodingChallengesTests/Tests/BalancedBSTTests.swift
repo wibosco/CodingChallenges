@@ -14,7 +14,7 @@ class BalancedBSTTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_balancedBSTA() {
+    func test_A() {
         let relationships = [[0,1],
                              [0,2],
                              [1,3],
@@ -28,7 +28,7 @@ class BalancedBSTTests: XCTestCase {
         XCTAssertTrue(isBalanced)
     }
     
-    func test_balancedBSTB() {
+    func test_B() {
         let relationships = [[0,1],
                              [0,2],
                              [1,3],
@@ -44,7 +44,7 @@ class BalancedBSTTests: XCTestCase {
         XCTAssertTrue(isBalanced)
     }
     
-    func test_balancedBSTC() {
+    func test_C() {
         let relationships = [[0,1],
                              [0,2],
                              [1,3],

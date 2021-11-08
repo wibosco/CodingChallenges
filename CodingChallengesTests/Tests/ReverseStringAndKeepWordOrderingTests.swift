@@ -12,22 +12,9 @@ import XCTest
 
 class ReverseStringAndKeepWordOrderingTests: XCTestCase {
     
-    // MARK: TestLifecycle
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
-    override func tearDown() {
-        
-        super.tearDown()
-    }
-    
     // MARK: Tests
     
-    func test_reverseString() {
-
+    func test_A() {
         let stringToBeReversed = "to be reversed"
         
         let reversedString = ReverseStringAndKeepWordOrdering.reverse(string: stringToBeReversed)

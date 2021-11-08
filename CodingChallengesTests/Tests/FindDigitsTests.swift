@@ -14,14 +14,14 @@ class FindDigitsTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_divisableValuesOf12() {
+    func test_A() {
         
         let divisables = FindDigits.findCountOFDivisableValuesOfNumberInNumber(number: 12)
         
         XCTAssertEqual(2, divisables)
     }
     
-    func test_divisableValuesOf1012() {
+    func test_B() {
         
         let divisables = FindDigits.findCountOFDivisableValuesOfNumberInNumber(number: 1012)
         

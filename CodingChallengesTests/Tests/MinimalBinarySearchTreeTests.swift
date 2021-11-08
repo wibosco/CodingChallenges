@@ -14,7 +14,7 @@ class MinimalBinarySearchTreeTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_minimalBinarySearchTreeA() {
+    func test_A() {
         
         let sortedArray = [1,2,3,4,5,6]
         
@@ -25,7 +25,7 @@ class MinimalBinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(4, bst.root?.value)
     }
     
-    func test_minimalBinarySearchTreeB() {
+    func test_B() {
         
         let sortedArray = [1,2,3,4,5,6,7,8,9,10,11]
         

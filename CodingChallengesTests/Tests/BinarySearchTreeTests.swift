@@ -36,7 +36,6 @@ class BinarySearchTreeTests: XCTestCase {
     }
     
     override func tearDown() {
-        
         super.tearDown()
         
         binarySearchTree = nil

@@ -14,7 +14,7 @@ class ZigzagConversionTests: XCTestCase {
 
    // MARK: - Tests
     
-    func test_zigzagA() {
+    func test_A() {
         let s = "PAYPALISHIRING"
         let numRows = 3
         
@@ -23,7 +23,7 @@ class ZigzagConversionTests: XCTestCase {
         XCTAssertEqual(conversion, "PAHNAPLSIIGYIR")
     }
 
-    func test_zigzagB() {
+    func test_B() {
         let s = "PAYPALISHIRING"
         let numRows = 4
         
@@ -32,7 +32,7 @@ class ZigzagConversionTests: XCTestCase {
         XCTAssertEqual(conversion, "PINALSIGYAHRPI")
     }
     
-    func test_zigzagC() {
+    func test_C() {
         let s = "A"
         let numRows = 1
         
@@ -41,7 +41,7 @@ class ZigzagConversionTests: XCTestCase {
         XCTAssertEqual(conversion, "A")
     }
     
-    func test_zigzagD() {
+    func test_D() {
         let s = "PAYPALISHIRING"
         let numRows = 1
         
@@ -50,7 +50,7 @@ class ZigzagConversionTests: XCTestCase {
         XCTAssertEqual(conversion, "PAYPALISHIRING")
     }
     
-    func test_zigzagE() {
+    func test_E() {
         let s = "hjouvsuyoypayulyeimuotehzriicfskpggkbbipzzrzucxamludfykgruowzgiooobppleqlwphapjnadqhdcnvwdtxjbmyppphauxnspusgdhiixqmbfjxjcvudjsuyibyebmwsiqyoygyxymzevypzvjegebeocfuftsxdixtigsieehkchzdflilrjqfnxztqrsvbspkyhsenbppkqtpddbuotbbqcwivrfxjujjddntgeiqvdgaijvwcyaubwewpjvygehljxepbpiwuqzdzubdubzvafspqpqwuzifwovyddwyvvburczmgyjgfdxvtnunneslsplwuiupfxlzbknhkwppanltcfirjcddsozoyvegurfwcsfmoxeqmrjowrghwlkobmeahkgccnaehhsveymqpxhlrnunyfdzrhbasjeuygafoubutpnimuwfjqsjxvkqdorxxvrwctdsneogvbpkxlpgdirbfcriqifpgynkrrefx"
         let numRows = 503
         
@@ -59,7 +59,7 @@ class ZigzagConversionTests: XCTestCase {
         XCTAssertEqual(conversion, "hjouvsuyoypayulyeimuotehzriicfskpggkbbipzzrzucxamludfykgruowzgiooobppleqlwphapjnadqhdcnvwdtxjbmyppphauxnspusgdhiixqmbfjxjcvudjsuyibyebmwsiqyoygyxymzevypzvjegebeocfuftsxdixtigsieehkchzdflilrjqfnxztqrsvbspkyhsenbppkqtpddbuotbbqcwivrfxjujjddntgeiqvdgaijvwcyaubwewpjvygehljxepbpiwuqzdzubdubzvafspqpqwuzifwovyddwyvvburczmgyjgfdxvtnunneslsplwuiupfxlzbknhkwppanltcfirjcddsozoyvegurfwcsfmoxeqmrjowrghwlkobmeahkgccnaehhsveymqpxhlrnunyfdzrhbasjeuygafoubutpnimuwfjqsjxvkqdorxxvrwctdsneogvbpkxlpgdirbfcriqifpgynkrxrfe")
     }
     
-    func test_zigzagF() {
+    func test_F() {
         let s = "txkrsdyronxiisbacxkdczwdlevfughpftgxzhpnuoxegagixsnbujffpcmkivbpoimnrddnrcuzdakatxcnjjsangmxbomryahpekexmyzrzjsuiwjrfduujgrkuddsfkjjwqjjoiaptulbquvxxprgvksqnwktiwefmpqczsusnfufarfxgygbjatywgthcamqpcsrumjjufpuwwteubifcbeajzhnzvdrxyismtdgbscxqyclzksdnwgzypmxlsqisaceuglvapurnyepkwuavaztqnsbhjlzjoefurcwgznwxtliqfklileyywbihmhtanywebvnakjzewjudthlenlflontbumdimcopxbrhmrlkahqwqdafphrfumgrakzmmpclttshmgsnpilgllncteipqqgschfoxjbqcuzrcrerbrzpcnrxtbpmsveudjlcsmuxitoknueonfdpsxpmaeyubepgociiqehbyxlltrbgxfypepdevdzwiqdyungksqlqnzdjqepnlpfrekwzoxwynbwjqetiuhakidtykkoxavpefngvketzfpivudgqkgasmvtygjxiemmjzuhlyakfsudoyjekrhffcydkjbsnphyrdfcciphajkojvsunbzsezyqiblvquvjxbobjdjjovzyrruettyzswraxexqyszyvnzgsirjeqjxkdbfwzeqyxqxcpnchpafcclxkdgqtpndsqkqsqgqoynsnduwsxbwznvlsbensttmkdceukuiijaxowugtxfukageeksydllpontiansizuinrcwmbdhofnslzkkcvvsmknukdpvcjdrchppiuyyalrlmbxqzsilfyhpbwmdgrwiaozjixhikawwctndoxotvvkwsxbaoyipmiaufjfqmdooybtmzhfwestwpuwfuhwi"
         let numRows = 926
         

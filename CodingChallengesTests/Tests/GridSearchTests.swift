@@ -14,8 +14,7 @@ class GridSearchTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_gridSearchA() {
-        
+    func test_A() {
         let grid = ["7283455864",
                     "6731158619",
                     "8988242643",
@@ -36,8 +35,7 @@ class GridSearchTests: XCTestCase {
         XCTAssertTrue(containsPattern)
     }
     
-    func test_gridSearchB() {
-        
+    func test_B() {
         let grid = ["511799789562806",
                     "404007454272504",
                     "549043809916080"]
@@ -50,8 +48,7 @@ class GridSearchTests: XCTestCase {
         XCTAssertFalse(containsPattern)
     }
     
-    func test_gridSearchC() {
-        
+    func test_C() {
         let grid = ["1234",
                     "4321",
                     "9999",
@@ -65,8 +62,7 @@ class GridSearchTests: XCTestCase {
         XCTAssertFalse(containsPattern)
     }
     
-    func test_gridSearchD() {
-        
+    func test_D() {
         let grid = ["123412",
                     "561212",
                     "123634",
@@ -80,11 +76,10 @@ class GridSearchTests: XCTestCase {
         XCTAssertTrue(containsPattern)
     }
     
-    func test_gridSearchE() {
-        
+    func test_E() {
         let grid = ["999999",
                     "121211"]
-        
+
         let pattern = ["99",
                        "11"]
         
@@ -93,8 +88,7 @@ class GridSearchTests: XCTestCase {
         XCTAssertTrue(containsPattern)
     }
     
-    func test_gridSearchF() {
-        
+    func test_F() {
         let grid = ["111111111111111",
                     "111111111111111",
                     "111111011111111",

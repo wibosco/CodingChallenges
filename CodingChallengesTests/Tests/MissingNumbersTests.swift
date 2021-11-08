@@ -16,7 +16,7 @@ class MissingNumbersTests: XCTestCase {
     
     // MARK: Loops
     
-    func test_missingNumbersA() {
+    func test_A() {
         let arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
         let brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
         
@@ -25,7 +25,7 @@ class MissingNumbersTests: XCTestCase {
         XCTAssertEqual([204, 205, 206], missing)
     }
     
-    func test_missingNumbersB() {
+    func test_B() {
         let arr = [11, 4, 11, 7, 13, 4, 12, 11, 10, 14]
         let brr = [11, 4, 11, 7, 3, 7, 10, 13, 4, 8, 12, 11, 10, 14, 12]
         
@@ -36,7 +36,7 @@ class MissingNumbersTests: XCTestCase {
     
     // MARK: High order functions
     
-    func test_missingNumbersAltA() {
+    func test_altA() {
         let arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
         let brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
         
@@ -45,7 +45,7 @@ class MissingNumbersTests: XCTestCase {
         XCTAssertEqual([204, 205, 206], missing)
     }
     
-    func test_missingNumbersAltB() {
+    func test_altB() {
         let arr = [11, 4, 11, 7, 13, 4, 12, 11, 10, 14]
         let brr = [11, 4, 11, 7, 3, 7, 10, 13, 4, 8, 12, 11, 10, 14, 12]
         
@@ -56,7 +56,7 @@ class MissingNumbersTests: XCTestCase {
     
     // MARK: - Performance
     
-    func test_missingNumbersA_performance() {
+    func test_A_performance() {
         let arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
         let brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
         
@@ -65,7 +65,7 @@ class MissingNumbersTests: XCTestCase {
         }
     }
     
-    func test_missingNumbersAltA_performance() {
+    func test_altA_performance() {
         let arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
         let brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
         

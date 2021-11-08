@@ -13,7 +13,7 @@ import XCTest
 class BirthdayBarTests: XCTestCase {
     // MARK: - Tests
     
-    func test_birthdayA() {
+    func test_A() {
         let segments = [2, 2, 1, 3, 2]
         let day = 4
         let month = 2
@@ -23,7 +23,7 @@ class BirthdayBarTests: XCTestCase {
         XCTAssertEqual(found, 2)
     }
     
-    func test_birthdayB() {
+    func test_B() {
         let segments = [1, 1, 1, 1, 1, 1]
         let day = 3
         let month = 2
@@ -33,7 +33,7 @@ class BirthdayBarTests: XCTestCase {
         XCTAssertEqual(found, 0)
     }
     
-    func test_birthdayC() {
+    func test_C() {
         let segments = [4]
         let day = 4
         let month = 1

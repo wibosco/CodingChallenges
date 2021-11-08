@@ -14,22 +14,19 @@ class UtopianTreeTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_heightAfter0Cycles() {
-        
+    func test_A() {
         let height = UtopianTree.heightOfTree(cycles: 0)
         
         XCTAssertEqual(1, height)
     }
     
-    func test_heightAfter1Cycles() {
-        
+    func test_B() {
         let height = UtopianTree.heightOfTree(cycles: 1)
         
         XCTAssertEqual(2, height)
     }
     
-    func test_heightAfter4Cycles() {
-     
+    func test_C() {
         let height = UtopianTree.heightOfTree(cycles: 4)
         
         XCTAssertEqual(7, height)

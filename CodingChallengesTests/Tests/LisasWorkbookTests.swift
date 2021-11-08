@@ -14,14 +14,14 @@ class LisasWorkbookTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_specialProblemsA() {
+    func test_A() {
     
         let specialProblems = LisasWorkbook.specialProblemsInBook(problemsPerChapter: [4, 2, 6, 1, 10], problemsPerPage: 3)
         
         XCTAssertEqual(4, specialProblems)
     }
     
-    func test_specialProblemsB() {
+    func test_B() {
         
         let specialProblems = LisasWorkbook.specialProblemsInBook(problemsPerChapter: [1, 8, 19, 15, 2, 29, 3, 2, 25, 2, 19, 26, 17, 33, 22], problemsPerPage: 20)
         
@@ -30,14 +30,14 @@ class LisasWorkbookTests: XCTestCase {
     
     // MARK: AltTests
     
-    func test_specialProblemsAltA() {
+    func test_AltA() {
         
         let specialProblems = LisasWorkbook.specialProblemsInBookAlt(problemsPerChapter: [4, 2, 6, 1, 10], problemsPerPage: 3)
         
         XCTAssertEqual(4, specialProblems)
     }
     
-    func test_specialProblemsAltB() {
+    func test_AltB() {
         
         let specialProblems = LisasWorkbook.specialProblemsInBookAlt(problemsPerChapter: [1, 8, 19, 15, 2, 29, 3, 2, 25, 2, 19, 26, 17, 33, 22], problemsPerPage: 20)
         

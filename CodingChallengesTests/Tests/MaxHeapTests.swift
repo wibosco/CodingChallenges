@@ -14,8 +14,7 @@ class MaxHeapTests: XCTestCase {
 
     // MARK: Tests
     
-    func test_maxHeapA() {
-        
+    func test_A() {
         let input = [3,5,6,7,8,9,12,15,4,1]
         
         let heap = MaxHeap.buildMaxHeap(input: input)
@@ -23,8 +22,7 @@ class MaxHeapTests: XCTestCase {
         XCTAssertEqual(heap[0], 15)
     }
     
-    func test_maxHeapB() {
-        
+    func test_B() {
         let input = [3,17,4]
         
         let heap = MaxHeap.buildMaxHeap(input: input)
