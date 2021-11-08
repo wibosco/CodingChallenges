@@ -76,6 +76,8 @@
 		3D4E401A2729714B00DE491D /* MinMaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E40192729714A00DE491D /* MinMaxSum.swift */; };
 		3D4E401D2729770F00DE491D /* BirthdayCakeCandles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */; };
 		3D4E401F2729795C00DE491D /* BirthdayCakeCandlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E401E2729795C00DE491D /* BirthdayCakeCandlesTests.swift */; };
+		3D60103827392A7A000586D2 /* StringToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60103727392A7A000586D2 /* StringToInteger.swift */; };
+		3D60103A27392A99000586D2 /* StringToIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60103927392A99000586D2 /* StringToIntegerTests.swift */; };
 		3D9D35A32729518600112474 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35212729518600112474 /* LisasWorkbook.swift */; };
 		3D9D35A42729518600112474 /* IceCreamParlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35232729518600112474 /* IceCreamParlor.swift */; };
 		3D9D35A52729518600112474 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35252729518600112474 /* TimeInWords.swift */; };
@@ -294,6 +296,8 @@
 		3D4E40192729714A00DE491D /* MinMaxSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxSum.swift; sourceTree = "<group>"; };
 		3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandles.swift; sourceTree = "<group>"; };
 		3D4E401E2729795C00DE491D /* BirthdayCakeCandlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandlesTests.swift; sourceTree = "<group>"; };
+		3D60103727392A7A000586D2 /* StringToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToInteger.swift; sourceTree = "<group>"; };
+		3D60103927392A99000586D2 /* StringToIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToIntegerTests.swift; sourceTree = "<group>"; };
 		3D9D35212729518600112474 /* LisasWorkbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbook.swift; sourceTree = "<group>"; };
 		3D9D35232729518600112474 /* IceCreamParlor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlor.swift; sourceTree = "<group>"; };
 		3D9D35252729518600112474 /* TimeInWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWords.swift; sourceTree = "<group>"; };
@@ -535,6 +539,7 @@
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
 				3D4E3FCA2729712200DE491D /* ValidateBSTTests.swift */,
 				3DD392992737311000B65AC6 /* ZigzagConversionTests.swift */,
+				3D60103927392A99000586D2 /* StringToIntegerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -553,6 +558,14 @@
 				3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */,
 			);
 			path = BirthdayCakeCandles;
+			sourceTree = "<group>";
+		};
+		3D60103627392A64000586D2 /* StringToInteger */ = {
+			isa = PBXGroup;
+			children = (
+				3D60103727392A7A000586D2 /* StringToInteger.swift */,
+			);
+			path = StringToInteger;
 			sourceTree = "<group>";
 		};
 		3D9D34D72729518600112474 /* CrackingTheCodingInterview */ = {
@@ -1339,6 +1352,7 @@
 				3DFDC7CC27341D900026EBA9 /* LongestPalindromicSubstring */,
 				3DFDC7C72733E8D70026EBA9 /* LongestSubstring */,
 				3DD3929B27387CF900B65AC6 /* ReverseInteger */,
+				3D60103627392A64000586D2 /* StringToInteger */,
 				3DFDC7BF27332A5E0026EBA9 /* TwoSum */,
 				3DD39296273730C400B65AC6 /* ZigzagConversion */,
 			);
@@ -1675,6 +1689,7 @@
 				3D9D362A27295CF700112474 /* QueueViaStacksStack.swift in Sources */,
 				3D9D362E27295CF700112474 /* ValidateBST.swift in Sources */,
 				3DA4B150272AF1C80026F7D9 /* BreakingTheRecords.swift in Sources */,
+				3D60103827392A7A000586D2 /* StringToInteger.swift in Sources */,
 				3DECC3BB272C3C1D00A206FD /* MagicSquare.swift in Sources */,
 				3D9D35B12729518600112474 /* NewYearChaos.swift in Sources */,
 				3D9D35BD2729518600112474 /* ACMICPCTeam.swift in Sources */,
@@ -1750,6 +1765,7 @@
 				3D4E40082729712300DE491D /* MaximizeSumTests.swift in Sources */,
 				3D4E3FDB2729712200DE491D /* FindDigitsTests.swift in Sources */,
 				3D4E3FF52729712300DE491D /* ServiceLaneTests.swift in Sources */,
+				3D60103A27392A99000586D2 /* StringToIntegerTests.swift in Sources */,
 				3DA4B157272AF7B80026F7D9 /* BirthdayBarTests.swift in Sources */,
 				3D4E3FEC2729712300DE491D /* BiggerIsGreaterTests.swift in Sources */,
 				3D4E3FEA2729712300DE491D /* MinimalBinarySearchTreeTests.swift in Sources */,
