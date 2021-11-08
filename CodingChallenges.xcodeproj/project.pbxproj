@@ -82,6 +82,8 @@
 		3D60103F27394307000586D2 /* PalindromeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60103E27394307000586D2 /* PalindromeNumberTests.swift */; };
 		3D6010422739508E000586D2 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6010412739508E000586D2 /* ContainerWithMostWater.swift */; };
 		3D601044273950B9000586D2 /* ContainerWithMostWaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D601043273950B9000586D2 /* ContainerWithMostWaterTests.swift */; };
+		3D60104727395BC6000586D2 /* IntegerToRoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60104627395BC6000586D2 /* IntegerToRoman.swift */; };
+		3D60104927395BED000586D2 /* IntegerToRomanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60104827395BED000586D2 /* IntegerToRomanTests.swift */; };
 		3D9D35A32729518600112474 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35212729518600112474 /* LisasWorkbook.swift */; };
 		3D9D35A42729518600112474 /* IceCreamParlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35232729518600112474 /* IceCreamParlor.swift */; };
 		3D9D35A52729518600112474 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D35252729518600112474 /* TimeInWords.swift */; };
@@ -306,6 +308,8 @@
 		3D60103E27394307000586D2 /* PalindromeNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumberTests.swift; sourceTree = "<group>"; };
 		3D6010412739508E000586D2 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		3D601043273950B9000586D2 /* ContainerWithMostWaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWaterTests.swift; sourceTree = "<group>"; };
+		3D60104627395BC6000586D2 /* IntegerToRoman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerToRoman.swift; sourceTree = "<group>"; };
+		3D60104827395BED000586D2 /* IntegerToRomanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerToRomanTests.swift; sourceTree = "<group>"; };
 		3D9D35212729518600112474 /* LisasWorkbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbook.swift; sourceTree = "<group>"; };
 		3D9D35232729518600112474 /* IceCreamParlor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlor.swift; sourceTree = "<group>"; };
 		3D9D35252729518600112474 /* TimeInWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWords.swift; sourceTree = "<group>"; };
@@ -550,6 +554,7 @@
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
 				3D4E3FCA2729712200DE491D /* ValidateBSTTests.swift */,
 				3DD392992737311000B65AC6 /* ZigzagConversionTests.swift */,
+				3D60104827395BED000586D2 /* IntegerToRomanTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -592,6 +597,14 @@
 				3D6010412739508E000586D2 /* ContainerWithMostWater.swift */,
 			);
 			path = ContainerWithMostWater;
+			sourceTree = "<group>";
+		};
+		3D60104527395BB8000586D2 /* IntegerToRoman */ = {
+			isa = PBXGroup;
+			children = (
+				3D60104627395BC6000586D2 /* IntegerToRoman.swift */,
+			);
+			path = IntegerToRoman;
 			sourceTree = "<group>";
 		};
 		3D9D34D72729518600112474 /* CrackingTheCodingInterview */ = {
@@ -1374,6 +1387,7 @@
 		3DFDC7BA2732F56C0026EBA9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				3D60104527395BB8000586D2 /* IntegerToRoman */,
 				3D60104027395076000586D2 /* ContainerWithMostWater */,
 				3DFDC7C127332A5E0026EBA9 /* AddTwoNumbers */,
 				3DFDC7CC27341D900026EBA9 /* LongestPalindromicSubstring */,
@@ -1733,6 +1747,7 @@
 				3D9D35A32729518600112474 /* LisasWorkbook.swift in Sources */,
 				3DECC3B6272C24A100A206FD /* MigratoryBirds.swift in Sources */,
 				3D9D364E27295D0300112474 /* Prime.swift in Sources */,
+				3D60104727395BC6000586D2 /* IntegerToRoman.swift in Sources */,
 				3D9D35C02729518600112474 /* SherlockAndArray.swift in Sources */,
 				3D9D35B42729518600112474 /* GridSearch.swift in Sources */,
 				3D9D361327295CF700112474 /* BalancedBSTNode.swift in Sources */,
@@ -1809,6 +1824,7 @@
 				3D4E3FED2729712300DE491D /* PrimeTests.swift in Sources */,
 				3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
+				3D60104927395BED000586D2 /* IntegerToRomanTests.swift in Sources */,
 				3DA4B15C272AFE140026F7D9 /* DivisibleSumPairsTests.swift in Sources */,
 				3D4E3FE42729712300DE491D /* DikshasBirthdayTests.swift in Sources */,
 				3DECC3BD272C3C6A00A206FD /* MagicSqaureTests.swift in Sources */,
