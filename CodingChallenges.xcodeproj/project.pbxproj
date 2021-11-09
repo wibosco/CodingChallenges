@@ -1412,7 +1412,6 @@
 			children = (
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
 				3D54C6FF273ADBEF006A9F67 /* ContainerWithMostWater.swift */,
-				3D54C715273ADCA6006A9F67 /* Helpers */,
 				3D54C702273ADBEF006A9F67 /* IntegerToRoman.swift */,
 				3D54C6FC273ADBEF006A9F67 /* LetterCombinations.swift */,
 				3D54C701273ADBEF006A9F67 /* LongestCommonPrefix.swift */,
@@ -1427,6 +1426,7 @@
 				3D54C6FB273ADBEF006A9F67 /* TwoSum.swift */,
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
+				3D54C715273ADCA6006A9F67 /* Helpers */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";

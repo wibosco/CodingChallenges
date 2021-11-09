@@ -11,7 +11,7 @@ Contains solutions to challenges found in:
 - HackerRank
   - https://www.hackerrank.com/
 - LeetCode
- - https://leetcode.com/
+  - https://leetcode.com/
 - Cracking the Coding Interview
   - https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/
 - Other

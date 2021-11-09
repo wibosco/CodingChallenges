@@ -12,12 +12,12 @@ import Foundation
 struct RotateList {
     // O(n)
     static func rotateRight(_ head: ListNode?, _ k: Int) -> ListNode? {
-        guard let head = head, head.next != nil, k > 0 else {
+        guard head != nil, head?.next != nil, k > 0 else {
             return head
         }
 
         var nodes = [ListNode]()
-        var node: ListNode? = head
+        var node = head
         while let n = node {
             nodes.append(n)
             node = n.next
