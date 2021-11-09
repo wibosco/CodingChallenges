@@ -8,17 +8,6 @@
 
 import Foundation
 
-class ListNode {
-    var val: Int
-    var next: ListNode?
-    
-    // MARK: - Init
-    
-    init(_ val: Int) {
-        self.val = val
-    }
-}
-
 //https://leetcode.com/problems/add-two-numbers/
 class AddTwoNumbers {
     

@@ -63,16 +63,3 @@ class AddTwoNumbersTests: XCTestCase {
         XCTAssertEqual(node?.next?.next?.next?.next?.val, 1)
     }
 }
-
-private extension ListNode {
-    static func createList(fromArray array: [Int]) -> ListNode {
-        var prev: ListNode?
-        for value in array.reversed() {
-            let node = ListNode(value)
-            node.next = prev
-            prev = node
-        }
-        
-        return prev!
-    }
-}
