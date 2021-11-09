@@ -10,6 +10,8 @@ import Foundation
 
 //https://leetcode.com/problems/zigzag-conversion/
 struct ZigzagConversion {
+    
+    //O(n)
     static func convert(_ s: String, _ numRows: Int) -> String {
         guard numRows > 1 else {
             return s
@@ -31,6 +33,7 @@ struct ZigzagConversion {
         return result.joined()
     }
     
+    //O(3n)
     static func convertSlow(_ s: String, _ numRows: Int) -> String {
         guard numRows > 1 else {
             return s

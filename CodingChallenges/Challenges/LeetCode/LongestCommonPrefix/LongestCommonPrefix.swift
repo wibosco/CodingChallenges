@@ -10,6 +10,7 @@ import Foundation
 
 //https://leetcode.com/problems/longest-common-prefix/
 struct LongestCommonPrefix {
+    //0(n^2)
     static func longestCommonPrefix(_ strs: [String]) -> String {
         let charactersArray = strs.map { Array($0) }
         

@@ -11,6 +11,7 @@ import Foundation
 //https://leetcode.com/problems/container-with-most-water/
 struct ContainerWithMostWater {
     
+    //O(n)
     static func maxArea(_ height: [Int]) -> Int {
         var maxArea = 0
         

@@ -11,7 +11,8 @@ import Foundation
 //https://leetcode.com/problems/longest-substring-without-repeating-characters/
 struct LongestSubstring {
     
-    //This solution is sufficiently longer due to `for (currentWindowEndIndex, char) in s.enumerated()`
+    //This solution is sufficiently quicker due to `for (currentWindowEndIndex, char) in s.enumerated()`
+    //O(n)
     static func lengthOfLongestSubstring(_ s: String) -> Int {
         var visited = [Character: Int]()
         var longestNonRepeatingWindow = 0
@@ -32,6 +33,7 @@ struct LongestSubstring {
     }
     
     //This solution is sufficiently longer due to `let char = s[s.index(s.startIndex, offsetBy: index)]`
+    //O(n)
     static func lengthOfLongestSubstringAlt(_ s: String) -> Int {
         var visited = [Character: Int]()
         var longestNonRepeatingWindow = 0

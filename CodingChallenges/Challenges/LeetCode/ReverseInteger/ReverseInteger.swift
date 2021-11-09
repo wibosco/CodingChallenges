@@ -10,6 +10,8 @@ import Foundation
 
 //https://leetcode.com/problems/reverse-integer/
 struct ReverseInteger {
+    
+    //0(n)
     static func reverse(_ x: Int) -> Int {
         guard x != 0 else {
             return 0

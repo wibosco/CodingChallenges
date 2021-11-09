@@ -10,6 +10,7 @@ import Foundation
 
 //https://leetcode.com/problems/palindrome-number/
 struct PalindromeNumber {
+    //O(n)
     static func isPalindrome(_ x: Int) -> Bool {
         guard x >= 0 else {
             return false

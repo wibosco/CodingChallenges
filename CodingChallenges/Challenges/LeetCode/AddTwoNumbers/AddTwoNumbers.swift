@@ -21,6 +21,8 @@ class ListNode {
 
 //https://leetcode.com/problems/add-two-numbers/
 class AddTwoNumbers {
+    
+    //O(n)
     static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         var l1: ListNode? = l1
         var l2: ListNode? = l2
