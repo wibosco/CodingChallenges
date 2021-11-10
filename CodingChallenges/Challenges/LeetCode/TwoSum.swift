@@ -9,6 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/two-sum/
+//dictionary
 struct TwoSum {
     
     //O(n)

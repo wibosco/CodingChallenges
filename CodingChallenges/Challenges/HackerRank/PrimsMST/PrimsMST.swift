@@ -14,7 +14,6 @@ class PrimsMST {
     // MARK: Distance
     
      static func totalWeight(sourceIndex: Int, totalNodes: Int, edges: [[Int]]) -> Int {
-        
         let nodes = buildNodes(totalNodes: totalNodes)
         connectNodes(nodes: nodes, edges: edges)
         
@@ -27,14 +26,12 @@ class PrimsMST {
         source.connected = true
         
         while totalEdgesInMST > countOfEdgesAddedToTotal {
-            
             let minimumEdge = edgeHeap.removeFirst()
             
             let edgeDestination = minimumEdge.destination
             let edgeSource = minimumEdge.source
             
             if !(edgeDestination.connected && edgeSource.connected) {
-                
                 edgeDestination.connected = true
                 edgeSource.connected = true
                 
@@ -67,9 +64,7 @@ class PrimsMST {
     // MARK: Connect
     
      static func connectNodes(nodes: [PrimsMSTNode], edges: [[Int]]) {
-    
         for edge in edges {
-            
             let source = nodes[edge[0]]
             let destination = nodes[edge[1]]
             let weight = edge[2]

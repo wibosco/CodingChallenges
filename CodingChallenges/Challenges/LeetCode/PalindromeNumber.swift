@@ -9,6 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/palindrome-number/
+//modulo
 struct PalindromeNumber {
     //O(n)
     static func isPalindrome(_ x: Int) -> Bool {

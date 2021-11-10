@@ -9,6 +9,8 @@
 import Foundation
 
 //https://leetcode.com/problems/container-with-most-water/
+//two pointers
+//greedy
 struct ContainerWithMostWater {
     
     //O(n)

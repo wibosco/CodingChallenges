@@ -9,6 +9,8 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+//linked list
+//array
 struct RemoveNthFromList {
     
     //O(n)

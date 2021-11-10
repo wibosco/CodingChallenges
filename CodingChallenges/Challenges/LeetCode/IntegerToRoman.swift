@@ -9,6 +9,8 @@
 import Foundation
 
 //https://leetcode.com/problems/integer-to-roman/
+//dictionary
+//modulo
 struct IntegerToRoman {
     
     //O(n)

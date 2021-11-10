@@ -9,6 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-two-sorted-lists/
+//linked list
 struct MergeTwoSortedLists {
     
     //O(n)

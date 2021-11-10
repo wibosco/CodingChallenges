@@ -9,6 +9,8 @@
 import Foundation
 
 //https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+//dictionary
+//backtracking (DFS)
 struct LetterCombinations {
     static let keypad: [Character: [Character]] = ["2" : ["a", "b", "c"],
                                                     "3" : ["d", "e", "f"],
@@ -19,8 +21,33 @@ struct LetterCombinations {
                                                     "8" : ["t", "u", "v"],
                                                     "9" : ["w", "x", "y", "z"]]
     
-    //O(n^3)
     static func letterCombinations(_ digits: String) -> [String] {
+        guard !digits.isEmpty else {
+            return []
+        }
+        
+        var combinations = [String]()
+        backtrack(&combinations, digits: digits, value: "", digitIndex: 0)
+        
+        return combinations
+    }
+    
+    static func backtrack(_ array: inout [String], digits: String, value: String, digitIndex: Int) {
+        //Goal
+        guard digitIndex < digits.count else {
+            array.append(value)
+            return
+        }
+        
+        let index = digits.index(digits.startIndex, offsetBy: digitIndex)
+        let letters = keypad[digits[index]]!
+        for letter in letters { //Choice
+            backtrack(&array,  digits: digits, value: value + String(letter), digitIndex: (digitIndex + 1))
+        }
+    }
+    
+    //O(n^3)
+    static func lettercAlt(_ digits: String) -> [String] {
         guard !digits.isEmpty else {
             return []
         }

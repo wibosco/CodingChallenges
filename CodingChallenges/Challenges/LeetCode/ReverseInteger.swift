@@ -9,6 +9,8 @@
 import Foundation
 
 //https://leetcode.com/problems/reverse-integer/
+//modulo
+//overflow
 struct ReverseInteger {
     
     //0(n)

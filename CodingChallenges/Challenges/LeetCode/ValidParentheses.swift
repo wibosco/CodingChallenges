@@ -9,6 +9,8 @@
 import Foundation
 
 //https://leetcode.com/problems/valid-parentheses/
+//dictionary
+//stack
 struct ValidParentheses {
     static let mapping: [Character: Character] = ["(" : ")",
                                                   "{" : "}",

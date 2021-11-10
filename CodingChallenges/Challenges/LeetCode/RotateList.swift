@@ -9,6 +9,9 @@
 import Foundation
 
 //https://leetcode.com/problems/rotate-list/
+//linked list
+//array
+//modulo
 struct RotateList {
     // O(n)
     static func rotateRight(_ head: ListNode?, _ k: Int) -> ListNode? {

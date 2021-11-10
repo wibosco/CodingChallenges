@@ -9,6 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/add-two-numbers/
+//linked list
 class AddTwoNumbers {
     
     //O(n)

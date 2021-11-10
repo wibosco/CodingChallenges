@@ -9,6 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/longest-substring-without-repeating-characters/
+//sliding window
 struct LongestSubstring {
     
     //This solution is sufficiently quicker due to `for (currentWindowEndIndex, char) in s.enumerated()`

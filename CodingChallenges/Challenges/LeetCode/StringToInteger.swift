@@ -9,6 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/string-to-integer-atoi/
+//overflow
 struct StringToInteger {
     static func myAtoi(_ s: String) -> Int {
         var result = 0
