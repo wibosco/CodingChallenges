@@ -209,6 +209,8 @@
 		3D9D365827295D0300112474 /* ReconstructBinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364827295D0300112474 /* ReconstructBinaryTreeNode.swift */; };
 		3D9D365927295D0300112474 /* ReconstructBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364927295D0300112474 /* ReconstructBinaryTree.swift */; };
 		3D9D365A27295D0300112474 /* DecimalToBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364B27295D0300112474 /* DecimalToBinary.swift */; };
+		3D9F9FA9273D643B00A9BD72 /* MinimumValueToGetPositive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */; };
+		3D9F9FAB273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FAA273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift */; };
 		3DA4B13A272983760026F7D9 /* GradingStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B139272983760026F7D9 /* GradingStudents.swift */; };
 		3DA4B13C27299BA60026F7D9 /* GradingStudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */; };
 		3DA4B13F2729AE1D0026F7D9 /* SaveThePrisoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */; };
@@ -462,6 +464,8 @@
 		3D9D364827295D0300112474 /* ReconstructBinaryTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTreeNode.swift; sourceTree = "<group>"; };
 		3D9D364927295D0300112474 /* ReconstructBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructBinaryTree.swift; sourceTree = "<group>"; };
 		3D9D364B27295D0300112474 /* DecimalToBinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalToBinary.swift; sourceTree = "<group>"; };
+		3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumValueToGetPositive.swift; sourceTree = "<group>"; };
+		3D9F9FAA273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumValueToGetPositiveTests.swift; sourceTree = "<group>"; };
 		3DA4B139272983760026F7D9 /* GradingStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudents.swift; sourceTree = "<group>"; };
 		3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudentsTests.swift; sourceTree = "<group>"; };
 		3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrisoner.swift; sourceTree = "<group>"; };
@@ -580,6 +584,7 @@
 				3DECC3B7272C24FD00A206FD /* MigratoryBirdsTests.swift */,
 				3D4E3FBC2729712200DE491D /* MinHeapTests.swift */,
 				3D4E3FA72729712200DE491D /* MinimalBinarySearchTreeTests.swift */,
+				3D9F9FAA273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift */,
 				3D4E3F992729712200DE491D /* MinMaxSumTests.swift */,
 				3D4E3F922729712200DE491D /* MinStackTests.swift */,
 				3D4E3FA22729712200DE491D /* MissingNumbersTests.swift */,
@@ -1434,6 +1439,7 @@
 				3D54C703273ADBF0006A9F67 /* LongestPalindromicSubstring.swift */,
 				3D54C6F8273ADBEF006A9F67 /* LongestSubstring.swift */,
 				3D54C720273BB647006A9F67 /* MergeTwoSortedLists.swift */,
+				3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */,
 				3D54C6F7273ADBEF006A9F67 /* PalindromeNumber.swift */,
 				3D54C72B273C70D8006A9F67 /* RemoveDuplicates.swift */,
 				3D54C718273B0D6B006A9F67 /* RemoveNthFromList.swift */,
@@ -1755,6 +1761,7 @@
 				3D9D35B62729518600112474 /* Kaprekar.swift in Sources */,
 				3D9D35BC2729518600112474 /* UtopianTree.swift in Sources */,
 				3D9D365127295D0300112474 /* HeapSort.swift in Sources */,
+				3D9F9FA9273D643B00A9BD72 /* MinimumValueToGetPositive.swift in Sources */,
 				3D54C708273ADBF0006A9F67 /* TwoSum.swift in Sources */,
 				3D9D35B22729518600112474 /* Beast.swift in Sources */,
 				3D54C709273ADBF0006A9F67 /* LetterCombinations.swift in Sources */,
@@ -1891,6 +1898,7 @@
 				3D4E3FFB2729712300DE491D /* GridSearchTests.swift in Sources */,
 				3D4E40102729712300DE491D /* PercentagesTests.swift in Sources */,
 				3D54C6F6273AC490006A9F67 /* CafeteriaTests.swift in Sources */,
+				3D9F9FAB273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift in Sources */,
 				3DA4B1412729AF240026F7D9 /* SaveThePrisonerTests.swift in Sources */,
 				3D601053273977C2000586D2 /* LongestCommonPrefixTests.swift in Sources */,
 				3D4E400A2729712300DE491D /* IceCreamParlorTests.swift in Sources */,
