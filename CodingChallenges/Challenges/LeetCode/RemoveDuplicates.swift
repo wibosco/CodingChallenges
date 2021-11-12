@@ -25,25 +25,9 @@ struct RemoveDuplicates {
             // care about anything after `slow` we treating it as a
             // dumpingg ground so [1,1,2,2,3,3] becomes [1,2,3,2,3,3]
             nums[slow] = nums[fast]
-            print(nums)
             slow += 1
         }
         
         return slow
     }
 }
-
-
-//while i < (nums.count - duplicateOffset) {
-//    var j = (i + 1)
-//    while j < (nums.count - duplicateOffset) {
-//        if nums[i] == nums[j] {
-//            let duplicate = nums.remove(at: j)
-//            nums.append(duplicate)
-//            duplicateOffset += 1
-//            j -= 1
-//        }
-//        j += 1
-//    }
-//    i += 1
-//}

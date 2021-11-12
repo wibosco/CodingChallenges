@@ -211,6 +211,8 @@
 		3D9D365A27295D0300112474 /* DecimalToBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D364B27295D0300112474 /* DecimalToBinary.swift */; };
 		3D9F9FA9273D643B00A9BD72 /* MinimumValueToGetPositive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */; };
 		3D9F9FAB273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FAA273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift */; };
+		3D9F9FAD273D757500A9BD72 /* ImplementStrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */; };
+		3D9F9FAF273D75A300A9BD72 /* ImplementStrStrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FAE273D75A300A9BD72 /* ImplementStrStrTests.swift */; };
 		3DA4B13A272983760026F7D9 /* GradingStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B139272983760026F7D9 /* GradingStudents.swift */; };
 		3DA4B13C27299BA60026F7D9 /* GradingStudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */; };
 		3DA4B13F2729AE1D0026F7D9 /* SaveThePrisoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */; };
@@ -466,6 +468,8 @@
 		3D9D364B27295D0300112474 /* DecimalToBinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalToBinary.swift; sourceTree = "<group>"; };
 		3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumValueToGetPositive.swift; sourceTree = "<group>"; };
 		3D9F9FAA273D652400A9BD72 /* MinimumValueToGetPositiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumValueToGetPositiveTests.swift; sourceTree = "<group>"; };
+		3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementStrStr.swift; sourceTree = "<group>"; };
+		3D9F9FAE273D75A300A9BD72 /* ImplementStrStrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementStrStrTests.swift; sourceTree = "<group>"; };
 		3DA4B139272983760026F7D9 /* GradingStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudents.swift; sourceTree = "<group>"; };
 		3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudentsTests.swift; sourceTree = "<group>"; };
 		3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrisoner.swift; sourceTree = "<group>"; };
@@ -562,6 +566,7 @@
 				3D4E3FB82729712200DE491D /* GridSearchTests.swift */,
 				3D4E3FAD2729712200DE491D /* HeapSortTests.swift */,
 				3D4E3FC72729712200DE491D /* IceCreamParlorTests.swift */,
+				3D9F9FAE273D75A300A9BD72 /* ImplementStrStrTests.swift */,
 				3D4E3FA02729712200DE491D /* InsertionSort1Tests.swift */,
 				3D4E3FB92729712200DE491D /* InsertionSort2Tests.swift */,
 				3D60104827395BED000586D2 /* IntegerToRomanTests.swift */,
@@ -1433,6 +1438,7 @@
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
 				3D54C6FF273ADBEF006A9F67 /* ContainerWithMostWater.swift */,
 				3D54C724273BEBC9006A9F67 /* GenerateParentheses.swift */,
+				3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */,
 				3D54C702273ADBEF006A9F67 /* IntegerToRoman.swift */,
 				3D54C6FC273ADBEF006A9F67 /* LetterCombinations.swift */,
 				3D54C701273ADBEF006A9F67 /* LongestCommonPrefix.swift */,
@@ -1692,6 +1698,7 @@
 				3D9D35AD2729518600112474 /* ServiceLane.swift in Sources */,
 				3D9D362927295CF700112474 /* StackOfPlatesStack.swift in Sources */,
 				3D54C705273ADBF0006A9F67 /* LongestSubstring.swift in Sources */,
+				3D9F9FAD273D757500A9BD72 /* ImplementStrStr.swift in Sources */,
 				3D54C706273ADBF0006A9F67 /* ReverseInteger.swift in Sources */,
 				3DA4B1442729FF750026F7D9 /* AppleAndOrange.swift in Sources */,
 				3D54C710273ADBF0006A9F67 /* LongestPalindromicSubstring.swift in Sources */,
@@ -1830,6 +1837,7 @@
 				3DFDC7D027341DDC0026EBA9 /* LongestPalindromicSubstringTests.swift in Sources */,
 				3D54C6F2273AC041006A9F67 /* BattleshipTests.swift in Sources */,
 				3D4E400F2729712300DE491D /* UtopianTreeTests.swift in Sources */,
+				3D9F9FAF273D75A300A9BD72 /* ImplementStrStrTests.swift in Sources */,
 				3DD3929F27387D2E00B65AC6 /* ReverseIntegerTests.swift in Sources */,
 				3D4E40002729712300DE491D /* AlphabeticalOrderingTests.swift in Sources */,
 				3D54C71B273B0D97006A9F67 /* RemoveNthFromListTests.swift in Sources */,

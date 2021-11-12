@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/
-//prefix sum
 //array
 struct MinimumValueToGetPositive {
     
     //O(n)
+    //prefix sum
     static func minStartValue(_ nums: [Int]) -> Int {
         var minValue = 0
         var runningTotal = 0
@@ -27,6 +27,7 @@ struct MinimumValueToGetPositive {
     
     //O(nlogn)
     //The index is sorted
+    //binary search
     static func minStartValueBinarySearch(_ nums: [Int]) -> Int {
         var left = 1
         var right = nums.count * 100 + 1 //nums have a range of -100 to 100

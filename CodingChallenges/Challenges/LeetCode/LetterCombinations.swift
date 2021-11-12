@@ -10,7 +10,8 @@ import Foundation
 
 //https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 //dictionary
-//backtracking (DFS)
+//backtracking (DFS) - has three parts Choice, Constraint (optional) and Goal
+//tree
 struct LetterCombinations {
     static let keypad: [Character: [Character]] = ["2" : ["a", "b", "c"],
                                                     "3" : ["d", "e", "f"],
@@ -41,7 +42,8 @@ struct LetterCombinations {
         
         let index = digits.index(digits.startIndex, offsetBy: digitIndex)
         let letters = keypad[digits[index]]!
-        for letter in letters { //Choice
+        //Choice, this problem does not have constraints
+        for letter in letters {
             backtrack(&array,  digits: digits, value: value + String(letter), digitIndex: (digitIndex + 1))
         }
     }

@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/generate-parentheses/
-//backtracking (DFS)
+//backtracking (DFS) - has three parts Choice, Constraint (optional) and Goal
 struct GenerateParentheses {
     static func generateParenthesis(_ n: Int) -> [String] {
         var parentheses = [String]()
@@ -25,7 +25,7 @@ struct GenerateParentheses {
             return
         }
         
-        //Decisions - whether to add an "(" or ")"
+        //Choice - whether to add an "(" or ")"
         if open > 0 {
             backtrack(array: &array, value: value + "(", open: (open - 1), close: close, max: max)
         }
