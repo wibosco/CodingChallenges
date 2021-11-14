@@ -6,15 +6,19 @@
 //  Copyright © 2016 Boles. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 //https://www.hackerrank.com/challenges/bigger-is-greater
+//two pointers
+//arrays
 
 //Both of these solutions are too slow to pass this test
 struct BiggerIsGreater {
     static func biggerIsGreater(w: String) -> String {
         var chars = Array(w)
 
+        //find smallest index where the less-significant index
+        //is larger than the more-significant index
         var pivot: Int?
         for lsc in (0..<chars.count).reversed() {
             guard lsc != 0 else {
@@ -27,7 +31,13 @@ struct BiggerIsGreater {
             }
         }
 
+        //if we didn't find our pivot, then there is no bigger
+        //permutation
         if let pivot = pivot {
+            //sort everything to the right of the pivot (least-
+            //significant) into ascending order and then swap
+            //the pivot for the first (smallest) vslue that is
+            //greater than itself
             let insidePivot = (pivot + 1)
             let sortRange = insidePivot..<chars.count
             let sorted = chars[sortRange].sorted()

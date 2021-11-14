@@ -12,7 +12,8 @@ import Foundation
 //binary search
 //array
 struct SearchInRotatedSortedArray {
-    static func search(_ nums: [Int], _ target: Int) -> Int {
+    //O(log n)
+    static func searchAlt(_ nums: [Int], _ target: Int) -> Int {
         var low = 0
         var high = nums.count - 1
         
@@ -58,8 +59,9 @@ struct SearchInRotatedSortedArray {
         return -1
     }
     
-    //More complex but only one search
-    static func searchAlt(_ nums: [Int], _ target: Int) -> Int {
+    //More complex but only one pass
+    //O(log n)
+    static func search(_ nums: [Int], _ target: Int) -> Int {
         var low = 0
         var high = nums.count - 1
         
