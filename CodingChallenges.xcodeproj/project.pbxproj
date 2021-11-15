@@ -11,6 +11,8 @@
 		3D0198B62741B6B1007B24C1 /* NextPermutationNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B52741B6B1007B24C1 /* NextPermutationNumberTests.swift */; };
 		3D34E85D27426EBF006500EB /* Pow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85C27426EBF006500EB /* Pow.swift */; };
 		3D34E85F27426EE9006500EB /* PowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85E27426EE9006500EB /* PowTests.swift */; };
+		3D34E8612742A3A1006500EB /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8602742A3A0006500EB /* MergeIntervals.swift */; };
+		3D34E8632742A3CE006500EB /* MergeIntervalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8622742A3CE006500EB /* MergeIntervalsTests.swift */; };
 		3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F922729712200DE491D /* MinStackTests.swift */; };
 		3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F932729712200DE491D /* MaxHeapTests.swift */; };
 		3D4E3FD72729712200DE491D /* CircularLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */; };
@@ -275,6 +277,8 @@
 		3D0198B52741B6B1007B24C1 /* NextPermutationNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumberTests.swift; sourceTree = "<group>"; };
 		3D34E85C27426EBF006500EB /* Pow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pow.swift; sourceTree = "<group>"; };
 		3D34E85E27426EE9006500EB /* PowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowTests.swift; sourceTree = "<group>"; };
+		3D34E8602742A3A0006500EB /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
+		3D34E8622742A3CE006500EB /* MergeIntervalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervalsTests.swift; sourceTree = "<group>"; };
 		3D4E3F922729712200DE491D /* MinStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackTests.swift; sourceTree = "<group>"; };
 		3D4E3F932729712200DE491D /* MaxHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapTests.swift; sourceTree = "<group>"; };
 		3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedListTests.swift; sourceTree = "<group>"; };
@@ -602,6 +606,7 @@
 				3D4E3F932729712200DE491D /* MaxHeapTests.swift */,
 				3D4E3FC52729712200DE491D /* MaximizeSumTests.swift */,
 				3D4E3FC02729712200DE491D /* MaximumSubarrayTests.swift */,
+				3D34E8622742A3CE006500EB /* MergeIntervalsTests.swift */,
 				3D54C722273BB662006A9F67 /* MergeTwoSortedListsTests.swift */,
 				3DECC3B7272C24FD00A206FD /* MigratoryBirdsTests.swift */,
 				3D4E3FBC2729712200DE491D /* MinHeapTests.swift */,
@@ -1465,6 +1470,7 @@
 				3D54C701273ADBEF006A9F67 /* LongestCommonPrefix.swift */,
 				3D54C703273ADBF0006A9F67 /* LongestPalindromicSubstring.swift */,
 				3D54C6F8273ADBEF006A9F67 /* LongestSubstring.swift */,
+				3D34E8602742A3A0006500EB /* MergeIntervals.swift */,
 				3D54C720273BB647006A9F67 /* MergeTwoSortedLists.swift */,
 				3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */,
 				3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */,
@@ -1784,6 +1790,7 @@
 				3D54C707273ADBF0006A9F67 /* AddTwoNumbers.swift in Sources */,
 				3DA4B155272AF7860026F7D9 /* BirthdayBar.swift in Sources */,
 				3D9D362627295CF700112474 /* BinarySearchTreeDepthNode.swift in Sources */,
+				3D34E8612742A3A1006500EB /* MergeIntervals.swift in Sources */,
 				3D9D35AB2729518600112474 /* PrimsMST.swift in Sources */,
 				3D54C70E273ADBF0006A9F67 /* LongestCommonPrefix.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
@@ -1891,6 +1898,7 @@
 				3D4E40022729712300DE491D /* LarrysArrayTests.swift in Sources */,
 				3D4E40142729712300DE491D /* ReverseStringAndKeepWordOrderingTests.swift in Sources */,
 				3D4E40122729712300DE491D /* TimeInWordsTests.swift in Sources */,
+				3D34E8632742A3CE006500EB /* MergeIntervalsTests.swift in Sources */,
 				3D4E3FFA2729712300DE491D /* SherlockAndArrayTests.swift in Sources */,
 				3D601044273950B9000586D2 /* ContainerWithMostWaterTests.swift in Sources */,
 				3D4E3FE02729712200DE491D /* TimeConverterTests.swift in Sources */,
