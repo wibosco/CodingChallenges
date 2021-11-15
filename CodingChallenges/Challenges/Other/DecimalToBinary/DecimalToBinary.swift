@@ -11,12 +11,10 @@ import UIKit
 class DecimalToBinary {
 
      static func convertDecimalToBinary(decimal: Int) -> String {
-        
         var convertingDecimal = decimal
         var binaryValue = ""
         
         while convertingDecimal > 0 {
-            
             let modValue = convertingDecimal % 2
             convertingDecimal = convertingDecimal / 2
             

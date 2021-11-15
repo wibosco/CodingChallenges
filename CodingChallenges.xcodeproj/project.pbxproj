@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */; };
 		3D0198B62741B6B1007B24C1 /* NextPermutationNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B52741B6B1007B24C1 /* NextPermutationNumberTests.swift */; };
+		3D34E85D27426EBF006500EB /* Pow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85C27426EBF006500EB /* Pow.swift */; };
+		3D34E85F27426EE9006500EB /* PowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85E27426EE9006500EB /* PowTests.swift */; };
 		3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F922729712200DE491D /* MinStackTests.swift */; };
 		3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F932729712200DE491D /* MaxHeapTests.swift */; };
 		3D4E3FD72729712200DE491D /* CircularLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */; };
@@ -271,6 +273,8 @@
 /* Begin PBXFileReference section */
 		3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumber.swift; sourceTree = "<group>"; };
 		3D0198B52741B6B1007B24C1 /* NextPermutationNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumberTests.swift; sourceTree = "<group>"; };
+		3D34E85C27426EBF006500EB /* Pow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pow.swift; sourceTree = "<group>"; };
+		3D34E85E27426EE9006500EB /* PowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowTests.swift; sourceTree = "<group>"; };
 		3D4E3F922729712200DE491D /* MinStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackTests.swift; sourceTree = "<group>"; };
 		3D4E3F932729712200DE491D /* MaxHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapTests.swift; sourceTree = "<group>"; };
 		3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedListTests.swift; sourceTree = "<group>"; };
@@ -614,6 +618,7 @@
 				3D4E3F962729712200DE491D /* PalindromePermutationTests.swift */,
 				3D4E3FAC2729712200DE491D /* PalindromeTests.swift */,
 				3D4E3FCD2729712200DE491D /* PercentagesTests.swift */,
+				3D34E85E27426EE9006500EB /* PowTests.swift */,
 				3D4E3FAA2729712200DE491D /* PrimeTests.swift */,
 				3D4E3FA52729712200DE491D /* PrimsMSTTests.swift */,
 				3D4E3FA82729712200DE491D /* ProjectBuildOrderTests.swift */,
@@ -1464,6 +1469,7 @@
 				3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */,
 				3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */,
 				3D54C6F7273ADBEF006A9F67 /* PalindromeNumber.swift */,
+				3D34E85C27426EBF006500EB /* Pow.swift */,
 				3D54C72B273C70D8006A9F67 /* RemoveDuplicates.swift */,
 				3D54C718273B0D6B006A9F67 /* RemoveNthFromList.swift */,
 				3D54C6F9273ADBEF006A9F67 /* ReverseInteger.swift */,
@@ -1753,6 +1759,7 @@
 				3D54C721273BB647006A9F67 /* MergeTwoSortedLists.swift in Sources */,
 				3D54C70C273ADBF0006A9F67 /* ContainerWithMostWater.swift in Sources */,
 				3D54C717273ADCB1006A9F67 /* ListNode.swift in Sources */,
+				3D34E85D27426EBF006500EB /* Pow.swift in Sources */,
 				3D9D362027295CF700112474 /* PalindromePermutation.swift in Sources */,
 				3D9D35C32729518600112474 /* SherlockSquares.swift in Sources */,
 				3D54C719273B0D6B006A9F67 /* RemoveNthFromList.swift in Sources */,
@@ -1847,6 +1854,7 @@
 				3D4E3FFD2729712300DE491D /* RoutePlannerTests.swift in Sources */,
 				3D4E400E2729712300DE491D /* LisasWorkbookTests.swift in Sources */,
 				3D4E3FF42729712300DE491D /* NewYearChaosTests.swift in Sources */,
+				3D34E85F27426EE9006500EB /* PowTests.swift in Sources */,
 				3D4E3FE72729712300DE491D /* CutTheSticksTests.swift in Sources */,
 				3D54C6EE273AB30F006A9F67 /* AllWrongTests.swift in Sources */,
 				3D4E400B2729712300DE491D /* KaprekarTests.swift in Sources */,
