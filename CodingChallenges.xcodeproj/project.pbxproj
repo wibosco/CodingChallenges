@@ -17,6 +17,9 @@
 		3D34E8672742CA71006500EB /* SimplifyPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8662742CA71006500EB /* SimplifyPathTests.swift */; };
 		3D34E8692742D457006500EB /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8682742D457006500EB /* ValidPalindrome.swift */; };
 		3D34E86B2742D47C006500EB /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E86A2742D47C006500EB /* ValidPalindromeTests.swift */; };
+		3D34E86D2742FF73006500EB /* CopyListWithRandomPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */; };
+		3D34E86F2742FF9D006500EB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E86E2742FF9D006500EB /* Node.swift */; };
+		3D34E8712742FFF8006500EB /* CopyListWithRandomPointerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8702742FFF8006500EB /* CopyListWithRandomPointerTests.swift */; };
 		3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F922729712200DE491D /* MinStackTests.swift */; };
 		3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F932729712200DE491D /* MaxHeapTests.swift */; };
 		3D4E3FD72729712200DE491D /* CircularLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */; };
@@ -287,6 +290,9 @@
 		3D34E8662742CA71006500EB /* SimplifyPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyPathTests.swift; sourceTree = "<group>"; };
 		3D34E8682742D457006500EB /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
 		3D34E86A2742D47C006500EB /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
+		3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListWithRandomPointer.swift; sourceTree = "<group>"; };
+		3D34E86E2742FF9D006500EB /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		3D34E8702742FFF8006500EB /* CopyListWithRandomPointerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListWithRandomPointerTests.swift; sourceTree = "<group>"; };
 		3D4E3F922729712200DE491D /* MinStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackTests.swift; sourceTree = "<group>"; };
 		3D4E3F932729712200DE491D /* MaxHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapTests.swift; sourceTree = "<group>"; };
 		3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedListTests.swift; sourceTree = "<group>"; };
@@ -581,6 +587,7 @@
 				3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */,
 				3DFDC7B82732EEFE0026EBA9 /* CompareTheTripletsTests.swift */,
 				3D601043273950B9000586D2 /* ContainerWithMostWaterTests.swift */,
+				3D34E8702742FFF8006500EB /* CopyListWithRandomPointerTests.swift */,
 				3D4E3FA42729712200DE491D /* CutTheSticksTests.swift */,
 				3D4E3FC22729712200DE491D /* DecimalToBinaryTests.swift */,
 				3D4E3FA12729712200DE491D /* DikshasBirthdayTests.swift */,
@@ -702,6 +709,7 @@
 			isa = PBXGroup;
 			children = (
 				3D54C716273ADCB1006A9F67 /* ListNode.swift */,
+				3D34E86E2742FF9D006500EB /* Node.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1472,6 +1480,7 @@
 			children = (
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
 				3D54C6FF273ADBEF006A9F67 /* ContainerWithMostWater.swift */,
+				3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */,
 				3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */,
 				3D54C724273BEBC9006A9F67 /* GenerateParentheses.swift */,
 				3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */,
@@ -1800,6 +1809,7 @@
 				3D9D362327295CF700112474 /* BinarySearchTreeDepth.swift in Sources */,
 				3D9D35A82729518600112474 /* ChocolateFeast.swift in Sources */,
 				3D54C72C273C70D8006A9F67 /* RemoveDuplicates.swift in Sources */,
+				3D34E86D2742FF73006500EB /* CopyListWithRandomPointer.swift in Sources */,
 				3D54C707273ADBF0006A9F67 /* AddTwoNumbers.swift in Sources */,
 				3DA4B155272AF7860026F7D9 /* BirthdayBar.swift in Sources */,
 				3D9D362627295CF700112474 /* BinarySearchTreeDepthNode.swift in Sources */,
@@ -1851,6 +1861,7 @@
 				3D9D361327295CF700112474 /* BalancedBSTNode.swift in Sources */,
 				3D9D35C82729518600112474 /* SortingIntro.swift in Sources */,
 				3D4E401D2729770F00DE491D /* BirthdayCakeCandles.swift in Sources */,
+				3D34E86F2742FF9D006500EB /* Node.swift in Sources */,
 				3D9D361A27295CF700112474 /* SuccessorBSTNode.swift in Sources */,
 				3D9D362827295CF700112474 /* StackOfPlatesNode.swift in Sources */,
 				3D9D362727295CF700112474 /* StackOfPlates.swift in Sources */,
@@ -1896,6 +1907,7 @@
 				3D4E40152729712300DE491D /* BinarySearchTreeDepthTests.swift in Sources */,
 				3D54C72E273C710D006A9F67 /* RemoveDuplicatesTests.swift in Sources */,
 				3D4E3FD92729712200DE491D /* PalindromePermutationTests.swift in Sources */,
+				3D34E8712742FFF8006500EB /* CopyListWithRandomPointerTests.swift in Sources */,
 				3D4E3FEE2729712300DE491D /* ChocolateFeastTests.swift in Sources */,
 				3D4E3FF62729712300DE491D /* SortingIntroTests.swift in Sources */,
 				3D9F9FCE273EFFC800A9BD72 /* DivideTwoIntegersTests.swift in Sources */,
