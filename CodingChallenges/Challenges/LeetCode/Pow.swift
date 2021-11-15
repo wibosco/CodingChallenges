@@ -34,8 +34,8 @@ struct Pow {
         }
         
         var result = myPowHelper(x, (n / 2))
-        result *= result //no need to call `myPowHelper` for each half instead just mulitple it by itself
-        if n % 2 != 0 { // if n was odd then mulitiple again by x
+        result *= result //no need to call `myPowHelper` for each half instead just multiply it by itself
+        if n % 2 != 0 { // if n was odd then multiply again by x
             result *= x
         }
         
