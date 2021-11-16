@@ -8,29 +8,48 @@
 
 import UIKit
 
+class ReconstructBinaryTreeNode {
+    var parent: ReconstructBinaryTreeNode?
+    
+    var left: ReconstructBinaryTreeNode?
+    var right: ReconstructBinaryTreeNode?
+    
+    let value: Int
+    
+    // MARK: - Init
+    
+    init(value: Int) {
+        self.value = value
+    }
+    
+    // MARK: - Nodes
+    
+    func addNodeAsChild(node: ReconstructBinaryTreeNode) {
+        if left == nil {
+            left = node
+        } else {
+            right = node
+        }
+        
+        node.parent = self
+    }
+}
+
+
 //Amazon - Javier
 class ReconstructBinaryTree {
+    var nodes: [Int: ReconstructBinaryTreeNode] = [Int: ReconstructBinaryTreeNode]()
 
-    // MARK: Properties
-    
-    lazy var nodes: [Int: ReconstructBinaryTreeNode] = {
-       
-        return [Int: ReconstructBinaryTreeNode]()
-    }()
-    
-    // MARK: Reconstruct
+    // MARK: - Reconstruct
     
     func reconstructTree(deconstructedTree: [[Int]]) -> ReconstructBinaryTreeNode {
-        
         for nodePair in deconstructedTree {
-            
             let parentKey = nodePair[0]
             let childKey = nodePair[1]
             
             var parentNode = nodes[parentKey]
             
             if parentNode == nil {
-                
                 parentNode = ReconstructBinaryTreeNode(value: parentKey)
                 nodes[parentKey] = parentNode!
             }
@@ -38,7 +57,6 @@ class ReconstructBinaryTree {
             var childNode = nodes[childKey]
             
             if childNode == nil {
-                
                 childNode = ReconstructBinaryTreeNode(value: childKey)
                 nodes[childKey] = childNode!
             }
@@ -50,11 +68,8 @@ class ReconstructBinaryTree {
     }
     
     private func rootNode() -> ReconstructBinaryTreeNode {
-        
         var rootNode = nodes.values.first!
-        
         while rootNode.parent != nil {
-            
             rootNode = rootNode.parent!
         }
         

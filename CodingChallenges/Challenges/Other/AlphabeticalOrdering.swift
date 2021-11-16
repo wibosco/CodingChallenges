@@ -9,35 +9,27 @@
 import UIKit
 
 class AlphabeticalOrdering {
-
      static func sort(string: String) -> String {
-        
-        let seperateWords = string.split(separator: " ").map(String.init)
+         let seperateWords = string.split(separator: " ").map { String($0) }
         
         let sortedWords = seperateWords.sorted(by: { (i: String, j: String) -> Bool in
-            
             var shortestWord: String
             
             if i.count > j.count {
                 shortestWord = j
-            }
-            else {
+            } else {
                 shortestWord = i
             }
             
             /*----------------*/
             
             for index in shortestWord.indices {
-                
                 let iCharacter = i[index]
                 let jCharacter = j[index]
                 
                 if iCharacter > jCharacter {
-                    
                     return false
-                }
-                else if jCharacter > iCharacter {
-                    
+                } else if jCharacter > iCharacter {
                     return true
                 }
             }
@@ -45,11 +37,8 @@ class AlphabeticalOrdering {
             /*----------------*/
             
             if i.count > j.count {
-                
                 return false
-            }
-            else {
-                
+            } else {
                 return true
             }
         })

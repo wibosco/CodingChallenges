@@ -9,7 +9,6 @@
 import UIKit
 
 class DecimalToBinary {
-
      static func convertDecimalToBinary(decimal: Int) -> String {
         var convertingDecimal = decimal
         var binaryValue = ""

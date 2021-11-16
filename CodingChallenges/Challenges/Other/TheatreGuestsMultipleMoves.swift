@@ -11,7 +11,9 @@ import Foundation
 /**
  Google
  
- You have pairs of guests that show up to the cinema and the booking system isn’t working so each guest gets a seat but that seat isn’t necessary beside their partner. Sort these guests so that they are sitting beside whom they came with?
+ You have pairs of guests that show up to the cinema and the booking system isn’t working so
+ each guest gets a seat but that seat isn’t necessary beside their partner. Sort these guests so
+ that they are sitting beside whom they came with?
 
  Eg.
 

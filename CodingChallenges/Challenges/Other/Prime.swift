@@ -13,34 +13,28 @@ class Prime {
     // MARK: isPrime
     
      static func isPrime(value: Int) -> Bool {
-        
-        if value < 4 {
-            
-            return true
-        }
-        
-        if value % 2 == 0 {
-            
-            return false
-        }
+         guard value > 3 else {
+             return true
+         }
+         
+         guard value % 2 != 0 else {
+             return false
+         }
         
         let squareRootDouble: Double = sqrt(Double(value))
         
         if squareRootDouble == floor(squareRootDouble) {
-            
             return false
         }
         
         var i = 5
         
         while i * i < value {
-            
             if value % i == 0 {
-                
                 return false
             }
             
-            i = i + 2
+            i += 2
         }
         
         return true
@@ -49,23 +43,17 @@ class Prime {
     // MARK: PrimeFactors
     
      static func primeFactors(value: Int) {
-
         var runningTotal = value
-        
         var i = 2
         
         while i < runningTotal {
-            
             if runningTotal % i == 0 {
-                
                 print("\(i)")
-                
                 runningTotal = runningTotal / i
                 
                 i = 2
-            }
-            else {
-                i = i + 1
+            } else {
+                i += 1
             }
         }
         

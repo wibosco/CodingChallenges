@@ -33,5 +33,4 @@ class PrimeTests: XCTestCase {
         
         XCTAssertTrue(true)
     }
-    
 }

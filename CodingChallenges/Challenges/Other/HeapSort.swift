@@ -9,13 +9,11 @@
 import Foundation
 
 class HeapSort {
-
-    // MARK: Max
     
-     static func maxHeapSort(input: [Int]) -> [Int] {
-        
-        if input.count < 2 {
-            
+    // MARK: - Max
+    
+    static func maxHeapSort(input: [Int]) -> [Int] {
+        guard input.count > 1 else {
             return input
         }
         
@@ -23,9 +21,8 @@ class HeapSort {
         var heapSorted = [Int]()
         
         while maxHeap.count > 1 {
-            
             heapSorted.insert(maxHeap[0], at: 0)
-            exchange(heap: &maxHeap, i: 0, j: (maxHeap.count - 1))
+            maxHeap.swapAt(0, (maxHeap.count - 1))
             maxHeap.removeLast()
             MaxHeap.maxHeapify(heap: &maxHeap, indexRoot: 0)
         }
@@ -35,12 +32,10 @@ class HeapSort {
         return heapSorted
     }
     
-    // MARK: Min
+    // MARK: - Min
     
-     static func minHeapSort(input: [Int]) -> [Int] {
-        
-        if input.count < 2 {
-            
+    static func minHeapSort(input: [Int]) -> [Int] {
+        guard input.count > 1 else {
             return input
         }
         
@@ -50,7 +45,7 @@ class HeapSort {
         while minHeap.count > 1 {
             
             heapSorted.insert(minHeap[0], at: 0)
-            exchange(heap: &minHeap, i: 0, j: (minHeap.count - 1))
+            minHeap.swapAt(0, (minHeap.count - 1))
             minHeap.removeLast()
             MinHeap.minHeapify(heap: &minHeap, indexRoot: 0)
         }
@@ -58,14 +53,5 @@ class HeapSort {
         heapSorted.insert(minHeap[0], at: 0)
         
         return heapSorted
-    }
-    
-    // MARK: Exchange
-    
-     static func exchange<T>(heap: inout [T], i:Int, j:Int) {
-        
-        let temp:T = heap[i]
-        heap[i] = heap[j]
-        heap[j] = temp
     }
 }

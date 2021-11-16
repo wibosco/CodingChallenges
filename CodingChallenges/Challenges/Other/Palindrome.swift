@@ -9,17 +9,17 @@
 import UIKit
 
 class Palindrome {
-
-     static func isPalindrome(string: String) -> Bool {
-        if string.count < 2 {
+    
+    static func isPalindrome(string: String) -> Bool {
+        guard string.count > 1 else {
             return false
         }
-
+        
         let lowercaseString = string.lowercased()
-
+        
         var lowerIndex = lowercaseString.startIndex
         var upperIndex = lowercaseString.index(lowercaseString.endIndex, offsetBy: -1)
-
+        
         while lowerIndex < upperIndex {
             if lowercaseString[lowerIndex] != lowercaseString[upperIndex] {
                 return false

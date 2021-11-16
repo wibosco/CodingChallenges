@@ -12,10 +12,8 @@ class MaxHeap {
     
     // MARK: Construct
     
-     static func buildMaxHeap(input: [Int]) -> [Int] {
-        
-        if input.count < 2 {
-            
+    static func buildMaxHeap(input: [Int]) -> [Int] {
+        guard input.count > 1 else {
             return input
         }
         
@@ -23,7 +21,6 @@ class MaxHeap {
         var heap = input
         
         while lastParentIndex >= 0 {
-            
             maxHeapify(heap: &heap, indexRoot: lastParentIndex)
             lastParentIndex -= 1
         }
@@ -33,10 +30,8 @@ class MaxHeap {
     
     // MARK: Heapify
     
-     static func maxHeapify(heap: inout [Int], indexRoot: Int) {
-        
+    static func maxHeapify(heap: inout [Int], indexRoot: Int) {
         if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
-            
             return
         }
         
@@ -45,65 +40,46 @@ class MaxHeap {
         var largestValue = rootValue
         
         if heap.count > leftLeafIndex(rootIndex: indexRoot) {
-            
             let leftLeafValue = heap[leftLeafIndex(rootIndex: indexRoot)]
             
             if leftLeafValue > largestValue {
-                
                 largestValue = leftLeafValue
                 largestIndex = leftLeafIndex(rootIndex: indexRoot)
             }
         }
         
         if rightLeafIndex(rootIndex: indexRoot) <= heapLastIndex(heap: heap) {
-            
             if heap.count > rightLeafIndex(rootIndex: indexRoot) {
-                
                 let rightLeafValue = heap[rightLeafIndex(rootIndex: indexRoot)]
                 
                 if rightLeafValue > largestValue {
-                    
                     largestValue = rightLeafValue
                     largestIndex = rightLeafIndex(rootIndex: indexRoot)
                 }
-
             }
         }
         
         if largestIndex != indexRoot {
-            
-            exchange(heap: &heap, i: indexRoot, j: largestIndex)
+            heap.swapAt(indexRoot, largestIndex)
             maxHeapify(heap: &heap, indexRoot: largestIndex)
         }
     }
     
-    // MARK: Exchange
-    
-     static func exchange<T>(heap: inout [T], i:Int, j:Int) {
-        
-        let temp:T = heap[i]
-        heap[i] = heap[j]
-        heap[j] = temp
-    }
-    
     // MARK: Index
     
-     static func leftLeafIndex(rootIndex: Int) -> Int {
-        
+    static func leftLeafIndex(rootIndex: Int) -> Int {
         let heapIndex = (rootIndex + 1)
         
         return ((heapIndex * 2) - 1)
     }
     
-     static func rightLeafIndex(rootIndex: Int) -> Int {
-        
+    static func rightLeafIndex(rootIndex: Int) -> Int {
         let heapIndex = (rootIndex + 1)
         
         return (heapIndex * 2)
     }
     
-     static func heapLastIndex(heap: [Int]) -> Int {
-        
+    static func heapLastIndex(heap: [Int]) -> Int {
         return (heap.count - 1)
     }
 }

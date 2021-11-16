@@ -9,16 +9,12 @@
 import Foundation
 
 class ReverseStringAndKeepWordOrdering {
-
-    
-     static func reverse(string: String) -> String {
-        
-        let seperateWords = string.split(separator: " ").map(String.init)
+    static func reverse(string: String) -> String {
+        let seperateWords = string.split(separator: " ").map { String($0) }
         
         var reversedSentence = [String]()
         
         for word in seperateWords {
-            
             reversedSentence.append(String(word.reversed()))
         }
         
