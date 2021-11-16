@@ -13,7 +13,7 @@ import Foundation
 //linked list
 struct CopyListWithRandomPointer {
     
-    //0(n)
+    //O(n)
     static func copyRandomList(_ head: Node?) -> Node? {
         guard let head = head else {
             return nil

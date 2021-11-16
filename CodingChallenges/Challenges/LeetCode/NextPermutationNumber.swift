@@ -10,7 +10,7 @@ import Foundation
 
 //https://leetcode.com/problems/next-permutation/
 //two pointers
-//arrays
+//array
 //see https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
 struct NextPermutationNumber {
     

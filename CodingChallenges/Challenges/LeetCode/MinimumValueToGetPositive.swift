@@ -52,7 +52,7 @@ struct MinimumValueToGetPositive {
         return left
     }
     
-    //0(n^2)
+    //O(n^2)
     static func minStartValueBruteForce(_ nums: [Int]) -> Int {
         var i = 1
     outerloop: while i < Int.max {

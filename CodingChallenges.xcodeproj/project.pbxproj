@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */; };
 		3D0198B62741B6B1007B24C1 /* NextPermutationNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B52741B6B1007B24C1 /* NextPermutationNumberTests.swift */; };
+		3D33959427443FA1002EE4AC /* FindPeakElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33959327443FA1002EE4AC /* FindPeakElement.swift */; };
+		3D33959627443FD6002EE4AC /* FindPeakElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33959527443FD6002EE4AC /* FindPeakElementTests.swift */; };
 		3D34E85D27426EBF006500EB /* Pow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85C27426EBF006500EB /* Pow.swift */; };
 		3D34E85F27426EE9006500EB /* PowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85E27426EE9006500EB /* PowTests.swift */; };
 		3D34E8612742A3A1006500EB /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8602742A3A0006500EB /* MergeIntervals.swift */; };
@@ -282,6 +284,8 @@
 /* Begin PBXFileReference section */
 		3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumber.swift; sourceTree = "<group>"; };
 		3D0198B52741B6B1007B24C1 /* NextPermutationNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumberTests.swift; sourceTree = "<group>"; };
+		3D33959327443FA1002EE4AC /* FindPeakElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPeakElement.swift; sourceTree = "<group>"; };
+		3D33959527443FD6002EE4AC /* FindPeakElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPeakElementTests.swift; sourceTree = "<group>"; };
 		3D34E85C27426EBF006500EB /* Pow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pow.swift; sourceTree = "<group>"; };
 		3D34E85E27426EE9006500EB /* PowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowTests.swift; sourceTree = "<group>"; };
 		3D34E8602742A3A0006500EB /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
@@ -596,6 +600,7 @@
 				3D4E3FD02729712200DE491D /* EncryptionTests.swift */,
 				3D4E3FB02729712200DE491D /* EvenTreeTests.swift */,
 				3D4E3F982729712200DE491D /* FindDigitsTests.swift */,
+				3D33959527443FD6002EE4AC /* FindPeakElementTests.swift */,
 				3D54C726273BEBEA006A9F67 /* GenerateParenthesesTests.swift */,
 				3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */,
 				3D4E3F972729712200DE491D /* GreatestCommonDenominatorTests.swift */,
@@ -1482,6 +1487,7 @@
 				3D54C6FF273ADBEF006A9F67 /* ContainerWithMostWater.swift */,
 				3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */,
 				3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */,
+				3D33959327443FA1002EE4AC /* FindPeakElement.swift */,
 				3D54C724273BEBC9006A9F67 /* GenerateParentheses.swift */,
 				3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */,
 				3D54C702273ADBEF006A9F67 /* IntegerToRoman.swift */,
@@ -1738,6 +1744,7 @@
 				3D9D35BE2729518600112474 /* Summing.swift in Sources */,
 				3D9D35B92729518600112474 /* BiggerIsGreater.swift in Sources */,
 				3D9D365927295D0300112474 /* ReconstructBinaryTree.swift in Sources */,
+				3D33959427443FA1002EE4AC /* FindPeakElement.swift in Sources */,
 				3DA4B148272AA7C10026F7D9 /* TheatreGuestsMultipleMoves.swift in Sources */,
 				3D9D365627295D0300112474 /* TheatreGuestsSingleMove.swift in Sources */,
 				3D54C712273ADC06006A9F67 /* RotateList.swift in Sources */,
@@ -1984,6 +1991,7 @@
 				3D4E40112729712300DE491D /* QueueViaStacksTests.swift in Sources */,
 				3D4E3FEB2729712300DE491D /* ProjectBuildOrderTests.swift in Sources */,
 				3D4E3FD82729712200DE491D /* BeastTests.swift in Sources */,
+				3D33959627443FD6002EE4AC /* FindPeakElementTests.swift in Sources */,
 				3D4E3FE12729712200DE491D /* AngryProfessorTests.swift in Sources */,
 				3D4E3FFC2729712300DE491D /* InsertionSort2Tests.swift in Sources */,
 				3DFDC7C627332AED0026EBA9 /* AddTwoNumbersTests.swift in Sources */,

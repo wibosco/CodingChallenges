@@ -10,7 +10,7 @@ import Foundation
 
 //https://www.hackerrank.com/challenges/bigger-is-greater
 //two pointers
-//arrays
+//array
 
 //Both of these solutions are too slow to pass this test
 struct BiggerIsGreater {

@@ -13,7 +13,7 @@ import Foundation
 //overflow
 struct ReverseInteger {
     
-    //0(n)
+    //O(n)
     static func reverse(_ x: Int) -> Int {
         guard x != 0 else {
             return 0
