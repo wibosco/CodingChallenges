@@ -40,4 +40,13 @@ class BinarySearchLeetCodeTests: XCTestCase {
         
         XCTAssertEqual(index, 0)
     }
+    
+    func test_D() {
+        let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        let target = 6
+        
+        let index = BinarySearchLeetCode.search(nums, target)
+        
+        XCTAssertEqual(index, 5)
+    }
 }

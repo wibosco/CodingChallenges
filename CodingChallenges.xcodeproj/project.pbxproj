@@ -32,6 +32,8 @@
 		3D3395BC2745A187002EE4AC /* BinarySearchLeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395BB2745A187002EE4AC /* BinarySearchLeetCodeTests.swift */; };
 		3D3395BE2745A31C002EE4AC /* Sqrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395BD2745A31C002EE4AC /* Sqrt.swift */; };
 		3D3395C02745A35F002EE4AC /* SqrtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395BF2745A35F002EE4AC /* SqrtTests.swift */; };
+		3D3395C22745B1E8002EE4AC /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395C12745B1E8002EE4AC /* GuessNumberHigherOrLower.swift */; };
+		3D3395C42745B2CD002EE4AC /* GuessNumberHigherOrLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395C32745B2CD002EE4AC /* GuessNumberHigherOrLowerTests.swift */; };
 		3D34E85D27426EBF006500EB /* Pow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85C27426EBF006500EB /* Pow.swift */; };
 		3D34E85F27426EE9006500EB /* PowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85E27426EE9006500EB /* PowTests.swift */; };
 		3D34E8612742A3A1006500EB /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8602742A3A0006500EB /* MergeIntervals.swift */; };
@@ -312,6 +314,8 @@
 		3D3395BB2745A187002EE4AC /* BinarySearchLeetCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchLeetCodeTests.swift; sourceTree = "<group>"; };
 		3D3395BD2745A31C002EE4AC /* Sqrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sqrt.swift; sourceTree = "<group>"; };
 		3D3395BF2745A35F002EE4AC /* SqrtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqrtTests.swift; sourceTree = "<group>"; };
+		3D3395C12745B1E8002EE4AC /* GuessNumberHigherOrLower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberHigherOrLower.swift; sourceTree = "<group>"; };
+		3D3395C32745B2CD002EE4AC /* GuessNumberHigherOrLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberHigherOrLowerTests.swift; sourceTree = "<group>"; };
 		3D34E85C27426EBF006500EB /* Pow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pow.swift; sourceTree = "<group>"; };
 		3D34E85E27426EE9006500EB /* PowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowTests.swift; sourceTree = "<group>"; };
 		3D34E8602742A3A0006500EB /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
@@ -693,6 +697,7 @@
 				3D34E86A2742D47C006500EB /* ValidPalindromeTests.swift */,
 				3D54C71E273B1B4C006A9F67 /* ValidParenthesesTests.swift */,
 				3DD392992737311000B65AC6 /* ZigzagConversionTests.swift */,
+				3D3395C32745B2CD002EE4AC /* GuessNumberHigherOrLowerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1425,6 +1430,7 @@
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
+				3D3395C12745B1E8002EE4AC /* GuessNumberHigherOrLower.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1711,6 +1717,7 @@
 				3D54C704273ADBF0006A9F67 /* PalindromeNumber.swift in Sources */,
 				3D9D35BF2729518600112474 /* TimeConverter.swift in Sources */,
 				3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */,
+				3D3395C22745B1E8002EE4AC /* GuessNumberHigherOrLower.swift in Sources */,
 				3D9D35C92729518600112474 /* EvenTreeNode.swift in Sources */,
 				3D9D35A92729518600112474 /* PrimsMSTNode.swift in Sources */,
 				3D3395BA2745A155002EE4AC /* BinarySearchLeetCode.swift in Sources */,
@@ -1823,6 +1830,7 @@
 				3D54C71B273B0D97006A9F67 /* RemoveNthFromListTests.swift in Sources */,
 				3D4E40062729712300DE491D /* ACMICPCTeamTests.swift in Sources */,
 				3D4E3FF02729712300DE491D /* HeapSortTests.swift in Sources */,
+				3D3395C42745B2CD002EE4AC /* GuessNumberHigherOrLowerTests.swift in Sources */,
 				3D4E40152729712300DE491D /* BinarySearchTreeDepthTests.swift in Sources */,
 				3D54C72E273C710D006A9F67 /* RemoveDuplicatesTests.swift in Sources */,
 				3D4E3FD92729712200DE491D /* PalindromePermutationTests.swift in Sources */,
