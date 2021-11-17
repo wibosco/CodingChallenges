@@ -8,7 +8,10 @@
 
 import Foundation
 
+//https://leetcode.com/problems/binary-search/
+//binary search
 struct BinarySearchLeetCode {
+    //O(log n)
     static func search(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
