@@ -68,7 +68,7 @@ class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, -1)
     }
     
-    func test_GG() {
+    func test_G() {
         let nums = [1, 4, 7, 19, 22, 101]
         let target = 19
         

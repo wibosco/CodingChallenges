@@ -17,19 +17,15 @@ struct BinarySearch {
             return -1
         }
         
-        guard nums.count > 1 else {
-            return (nums[0] == target) ? 0 : -1
-        }
-        
         var left = 0
         var right = nums.count - 1
         
-        while right > left {
+        while right >= left {
             let mid = left + (right - left) / 2
             if nums[mid] == target {
                 return mid
             } else if nums[mid] > target {
-                right = mid
+                right = mid - 1
             } else {
                 left = mid + 1
             }

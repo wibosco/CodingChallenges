@@ -21,10 +21,11 @@ struct FindPeakElement {
         while left < right {
             let mid = left + (right - left) / 2
             if nums[mid] > nums[mid + 1] { // only compare with neighbour
-                // we don't just return here as we need to make sure that
-                //is actually this a peak i.e the previous element is not
-                //greater than it. If the previous element is greater than
-                //it then its not a peak but rather just part of the slope
+                //we don't just return here as we need to make sure that
+                //this is actually this a peak i.e the previous element is
+                //not greater than it. If the previous element is greater
+                //than it then its not a peak but rather just part of the
+                //slope
                 right = mid
             } else {
                 left = mid + 1
