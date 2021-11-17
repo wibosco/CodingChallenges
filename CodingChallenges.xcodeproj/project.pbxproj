@@ -28,6 +28,8 @@
 		3D3395B427445A2E002EE4AC /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395B327445A2E002EE4AC /* BinarySearchTests.swift */; };
 		3D3395B627459876002EE4AC /* PeakIndexMountainArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395B527459876002EE4AC /* PeakIndexMountainArray.swift */; };
 		3D3395B8274598E8002EE4AC /* PeakIndexMountainArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395B7274598E8002EE4AC /* PeakIndexMountainArrayTests.swift */; };
+		3D3395BA2745A155002EE4AC /* BinarySearchLeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395B92745A155002EE4AC /* BinarySearchLeetCode.swift */; };
+		3D3395BC2745A187002EE4AC /* BinarySearchLeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395BB2745A187002EE4AC /* BinarySearchLeetCodeTests.swift */; };
 		3D34E85D27426EBF006500EB /* Pow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85C27426EBF006500EB /* Pow.swift */; };
 		3D34E85F27426EE9006500EB /* PowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E85E27426EE9006500EB /* PowTests.swift */; };
 		3D34E8612742A3A1006500EB /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8602742A3A0006500EB /* MergeIntervals.swift */; };
@@ -304,6 +306,8 @@
 		3D3395B327445A2E002EE4AC /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		3D3395B527459876002EE4AC /* PeakIndexMountainArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakIndexMountainArray.swift; sourceTree = "<group>"; };
 		3D3395B7274598E8002EE4AC /* PeakIndexMountainArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakIndexMountainArrayTests.swift; sourceTree = "<group>"; };
+		3D3395B92745A155002EE4AC /* BinarySearchLeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchLeetCode.swift; sourceTree = "<group>"; };
+		3D3395BB2745A187002EE4AC /* BinarySearchLeetCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchLeetCodeTests.swift; sourceTree = "<group>"; };
 		3D34E85C27426EBF006500EB /* Pow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pow.swift; sourceTree = "<group>"; };
 		3D34E85E27426EE9006500EB /* PowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowTests.swift; sourceTree = "<group>"; };
 		3D34E8602742A3A0006500EB /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
@@ -683,6 +687,7 @@
 				3D34E86A2742D47C006500EB /* ValidPalindromeTests.swift */,
 				3D54C71E273B1B4C006A9F67 /* ValidParenthesesTests.swift */,
 				3DD392992737311000B65AC6 /* ZigzagConversionTests.swift */,
+				3D3395BB2745A187002EE4AC /* BinarySearchLeetCodeTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1413,6 +1418,7 @@
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
+				3D3395B92745A155002EE4AC /* BinarySearchLeetCode.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1700,6 +1706,7 @@
 				3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */,
 				3D9D35C92729518600112474 /* EvenTreeNode.swift in Sources */,
 				3D9D35A92729518600112474 /* PrimsMSTNode.swift in Sources */,
+				3D3395BA2745A155002EE4AC /* BinarySearchLeetCode.swift in Sources */,
 				3D9D35C52729518600112474 /* CutTheSticks.swift in Sources */,
 				3D9D35C42729518600112474 /* DikshasBirthday.swift in Sources */,
 				3D9D35CA2729518600112474 /* EvenTree.swift in Sources */,
@@ -1870,6 +1877,7 @@
 				3D4E3FD72729712200DE491D /* CircularLinkedListTests.swift in Sources */,
 				3D60105827399376000586D2 /* LetterCombinationsTests.swift in Sources */,
 				3D4E3FDD2729712200DE491D /* QuickSortTests.swift in Sources */,
+				3D3395BC2745A187002EE4AC /* BinarySearchLeetCodeTests.swift in Sources */,
 				3D4E3FF12729712300DE491D /* SherlockSquaresTests.swift in Sources */,
 				3D54C723273BB662006A9F67 /* MergeTwoSortedListsTests.swift in Sources */,
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
