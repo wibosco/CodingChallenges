@@ -18,12 +18,15 @@ struct SearchInRotatedSortedArray {
         var right = nums.count - 1
         
         //find pivot
-        while left < right {
+        //binary search
+        while left <= right {
             let mid = (right + left) / 2
             if nums[mid] > nums[right] {
+                //pivot is to the right of mid
                 left = mid + 1
             } else {
-                right = mid
+                //pivot is to the left of mid
+                right = mid - 1
             }
         }
         
@@ -33,11 +36,10 @@ struct SearchInRotatedSortedArray {
             return pivot
         }
         
-        
         left = 0
         right = nums.count - 1
-        //determine if which subarray target might be in and only
-        //search that subarray
+        //determine which subarray the target might
+        //be in and only search that subarray
         if target >= nums[pivot] && target <= nums[right] {
             left = pivot
         } else {

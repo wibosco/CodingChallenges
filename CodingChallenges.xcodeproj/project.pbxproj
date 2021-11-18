@@ -45,6 +45,10 @@
 		3D34E86D2742FF73006500EB /* CopyListWithRandomPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */; };
 		3D34E86F2742FF9D006500EB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E86E2742FF9D006500EB /* Node.swift */; };
 		3D34E8712742FFF8006500EB /* CopyListWithRandomPointerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E8702742FFF8006500EB /* CopyListWithRandomPointerTests.swift */; };
+		3D3879B82746630000537F46 /* MoveZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879B72746630000537F46 /* MoveZeroes.swift */; };
+		3D3879BA2746633500537F46 /* MoveZerosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879B92746633500537F46 /* MoveZerosTests.swift */; };
+		3D3879BC27468F0000537F46 /* FirstBadVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879BB27468F0000537F46 /* FirstBadVersion.swift */; };
+		3D3879BE27468FAF00537F46 /* FirstBadVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879BD27468FAF00537F46 /* FirstBadVersionTests.swift */; };
 		3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F922729712200DE491D /* MinStackTests.swift */; };
 		3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F932729712200DE491D /* MaxHeapTests.swift */; };
 		3D4E3FD72729712200DE491D /* CircularLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */; };
@@ -327,6 +331,10 @@
 		3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListWithRandomPointer.swift; sourceTree = "<group>"; };
 		3D34E86E2742FF9D006500EB /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		3D34E8702742FFF8006500EB /* CopyListWithRandomPointerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListWithRandomPointerTests.swift; sourceTree = "<group>"; };
+		3D3879B72746630000537F46 /* MoveZeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveZeroes.swift; sourceTree = "<group>"; };
+		3D3879B92746633500537F46 /* MoveZerosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveZerosTests.swift; sourceTree = "<group>"; };
+		3D3879BB27468F0000537F46 /* FirstBadVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBadVersion.swift; sourceTree = "<group>"; };
+		3D3879BD27468FAF00537F46 /* FirstBadVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBadVersionTests.swift; sourceTree = "<group>"; };
 		3D4E3F922729712200DE491D /* MinStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackTests.swift; sourceTree = "<group>"; };
 		3D4E3F932729712200DE491D /* MaxHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapTests.swift; sourceTree = "<group>"; };
 		3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedListTests.swift; sourceTree = "<group>"; };
@@ -617,10 +625,12 @@
 				3D4E3FB02729712200DE491D /* EvenTreeTests.swift */,
 				3D4E3F982729712200DE491D /* FindDigitsTests.swift */,
 				3D33959527443FD6002EE4AC /* FindPeakElementTests.swift */,
+				3D3879BD27468FAF00537F46 /* FirstBadVersionTests.swift */,
 				3D54C726273BEBEA006A9F67 /* GenerateParenthesesTests.swift */,
 				3DA4B13B27299BA60026F7D9 /* GradingStudentsTests.swift */,
 				3D4E3F972729712200DE491D /* GreatestCommonDenominatorTests.swift */,
 				3D4E3FB82729712200DE491D /* GridSearchTests.swift */,
+				3D3395C32745B2CD002EE4AC /* GuessNumberHigherOrLowerTests.swift */,
 				3D4E3FAD2729712200DE491D /* HeapSortTests.swift */,
 				3D4E3FC72729712200DE491D /* IceCreamParlorTests.swift */,
 				3D9F9FAE273D75A300A9BD72 /* ImplementStrStrTests.swift */,
@@ -651,6 +661,7 @@
 				3D4E3F992729712200DE491D /* MinMaxSumTests.swift */,
 				3D4E3F922729712200DE491D /* MinStackTests.swift */,
 				3D4E3FA22729712200DE491D /* MissingNumbersTests.swift */,
+				3D3879B92746633500537F46 /* MoveZerosTests.swift */,
 				3D4E3FB12729712200DE491D /* NewYearChaosTests.swift */,
 				3D0198B52741B6B1007B24C1 /* NextPermutationNumberTests.swift */,
 				3D4E3F9F2729712200DE491D /* OffByOneTests.swift */,
@@ -697,7 +708,6 @@
 				3D34E86A2742D47C006500EB /* ValidPalindromeTests.swift */,
 				3D54C71E273B1B4C006A9F67 /* ValidParenthesesTests.swift */,
 				3DD392992737311000B65AC6 /* ZigzagConversionTests.swift */,
-				3D3395C32745B2CD002EE4AC /* GuessNumberHigherOrLowerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1402,7 +1412,9 @@
 				3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */,
 				3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */,
 				3D33959327443FA1002EE4AC /* FindPeakElement.swift */,
+				3D3879BB27468F0000537F46 /* FirstBadVersion.swift */,
 				3D54C724273BEBC9006A9F67 /* GenerateParentheses.swift */,
+				3D3395C12745B1E8002EE4AC /* GuessNumberHigherOrLower.swift */,
 				3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */,
 				3D54C702273ADBEF006A9F67 /* IntegerToRoman.swift */,
 				3D54C6FC273ADBEF006A9F67 /* LetterCombinations.swift */,
@@ -1412,6 +1424,7 @@
 				3D34E8602742A3A0006500EB /* MergeIntervals.swift */,
 				3D54C720273BB647006A9F67 /* MergeTwoSortedLists.swift */,
 				3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */,
+				3D3879B72746630000537F46 /* MoveZeroes.swift */,
 				3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */,
 				3D54C6F7273ADBEF006A9F67 /* PalindromeNumber.swift */,
 				3D3395B527459876002EE4AC /* PeakIndexMountainArray.swift */,
@@ -1430,7 +1443,6 @@
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
-				3D3395C12745B1E8002EE4AC /* GuessNumberHigherOrLower.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1684,6 +1696,7 @@
 				3DECC3C0272C761900A206FD /* OrganizingContainersOfBalls.swift in Sources */,
 				3D9D35AC2729518600112474 /* PrimsMSTEdge.swift in Sources */,
 				3D3395AA27445470002EE4AC /* Palindrome.swift in Sources */,
+				3D3879B82746630000537F46 /* MoveZeroes.swift in Sources */,
 				3D54C70F273ADBF0006A9F67 /* IntegerToRoman.swift in Sources */,
 				3D9D361B27295CF700112474 /* MinStack.swift in Sources */,
 				3DA4B15A272AFDDE0026F7D9 /* DivisibleSumPairs.swift in Sources */,
@@ -1789,6 +1802,7 @@
 				3D34E86F2742FF9D006500EB /* Node.swift in Sources */,
 				3D9D361A27295CF700112474 /* SuccessorBSTNode.swift in Sources */,
 				3D3395A627445470002EE4AC /* MaxHeap.swift in Sources */,
+				3D3879BC27468F0000537F46 /* FirstBadVersion.swift in Sources */,
 				3D9D362827295CF700112474 /* StackOfPlatesNode.swift in Sources */,
 				3D9D362727295CF700112474 /* StackOfPlates.swift in Sources */,
 				3D9D361F27295CF700112474 /* RoutePlannerNode.swift in Sources */,
@@ -1854,6 +1868,7 @@
 				3D34E8632742A3CE006500EB /* MergeIntervalsTests.swift in Sources */,
 				3D4E3FFA2729712300DE491D /* SherlockAndArrayTests.swift in Sources */,
 				3D601044273950B9000586D2 /* ContainerWithMostWaterTests.swift in Sources */,
+				3D3879BA2746633500537F46 /* MoveZerosTests.swift in Sources */,
 				3D4E3FE02729712200DE491D /* TimeConverterTests.swift in Sources */,
 				3DECC3B8272C24FD00A206FD /* MigratoryBirdsTests.swift in Sources */,
 				3D54C727273BEBEA006A9F67 /* GenerateParenthesesTests.swift in Sources */,
@@ -1919,6 +1934,7 @@
 				3D4E3FE12729712200DE491D /* AngryProfessorTests.swift in Sources */,
 				3D4E3FFC2729712300DE491D /* InsertionSort2Tests.swift in Sources */,
 				3DFDC7C627332AED0026EBA9 /* AddTwoNumbersTests.swift in Sources */,
+				3D3879BE27468FAF00537F46 /* FirstBadVersionTests.swift in Sources */,
 				3D4E3FE62729712300DE491D /* CaesarCipherTests.swift in Sources */,
 				3D4E40012729712300DE491D /* BinarySearchTreeTests.swift in Sources */,
 			);

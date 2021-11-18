@@ -15,10 +15,17 @@ struct FindPeakElement {
     
     //O(log n)
     static func findPeakElement(_ nums: [Int]) -> Int {
+        guard nums.count > 1 else {
+            return 0
+        }
+        
         var left = 0
         var right = nums.count - 1
         
-        while left < right {
+        //Notice here that we don't check `right >= left` this is because
+        //we want to check our target `mid` against it's right most
+        //neighbour so we need to ensure that a right neighbour exists
+        while right > left {
             let mid = left + (right - left) / 2
             if nums[mid] > nums[mid + 1] { // only compare with neighbour
                 //we don't just return here as we need to make sure that
