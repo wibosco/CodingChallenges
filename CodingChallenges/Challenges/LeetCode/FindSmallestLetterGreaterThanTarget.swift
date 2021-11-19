@@ -14,18 +14,19 @@ struct FindSmallestLetterGreaterThanTarget {
     //binary search
     static func nextGreatestLetter(_ letters: [Character], _ target: Character) -> Character {
         var left = 0
-        var right = letters.count
+        var right = letters.count - 1
 
-        while left < right {
+        while left <= right {
             let mid = left + (right - left) / 2
             if letters[mid] > target {
-                right = mid
+                right = mid - 1
             } else {
                 left = mid + 1
             }
         }
 
-        return letters[(left % letters.count)] //no need to test for == inside the loop as left will end up on index if == exists
+        //no need to test for == inside the loop as left will end up on index if == exists
+        return letters[(left % letters.count)]
     }
     
     //O(n)
