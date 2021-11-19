@@ -53,6 +53,8 @@
 		3D3879C2274699D200537F46 /* FindMinimumRotatedSortedArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879C1274699D200537F46 /* FindMinimumRotatedSortedArrayTests.swift */; };
 		3D3879C42746A28100537F46 /* FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879C32746A28100537F46 /* FindFirstAndLastPositionOfElementInSortedArray.swift */; };
 		3D3879C62746A2E100537F46 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879C52746A2E100537F46 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */; };
+		3D3879C82746EA1F00537F46 /* FindKClosestElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879C72746EA1F00537F46 /* FindKClosestElements.swift */; };
+		3D3879CA2746EAC300537F46 /* FindKClosestElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879C92746EAC300537F46 /* FindKClosestElementsTests.swift */; };
 		3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F922729712200DE491D /* MinStackTests.swift */; };
 		3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F932729712200DE491D /* MaxHeapTests.swift */; };
 		3D4E3FD72729712200DE491D /* CircularLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */; };
@@ -343,6 +345,8 @@
 		3D3879C1274699D200537F46 /* FindMinimumRotatedSortedArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMinimumRotatedSortedArrayTests.swift; sourceTree = "<group>"; };
 		3D3879C32746A28100537F46 /* FindFirstAndLastPositionOfElementInSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFirstAndLastPositionOfElementInSortedArray.swift; sourceTree = "<group>"; };
 		3D3879C52746A2E100537F46 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFirstAndLastPositionOfElementInSortedArrayTests.swift; sourceTree = "<group>"; };
+		3D3879C72746EA1F00537F46 /* FindKClosestElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindKClosestElements.swift; sourceTree = "<group>"; };
+		3D3879C92746EAC300537F46 /* FindKClosestElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindKClosestElementsTests.swift; sourceTree = "<group>"; };
 		3D4E3F922729712200DE491D /* MinStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackTests.swift; sourceTree = "<group>"; };
 		3D4E3F932729712200DE491D /* MaxHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapTests.swift; sourceTree = "<group>"; };
 		3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedListTests.swift; sourceTree = "<group>"; };
@@ -633,6 +637,7 @@
 				3D4E3FB02729712200DE491D /* EvenTreeTests.swift */,
 				3D4E3F982729712200DE491D /* FindDigitsTests.swift */,
 				3D3879C52746A2E100537F46 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */,
+				3D3879C92746EAC300537F46 /* FindKClosestElementsTests.swift */,
 				3D3879C1274699D200537F46 /* FindMinimumRotatedSortedArrayTests.swift */,
 				3D33959527443FD6002EE4AC /* FindPeakElementTests.swift */,
 				3D3879BD27468FAF00537F46 /* FirstBadVersionTests.swift */,
@@ -1422,6 +1427,7 @@
 				3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */,
 				3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */,
 				3D3879C32746A28100537F46 /* FindFirstAndLastPositionOfElementInSortedArray.swift */,
+				3D3879C72746EA1F00537F46 /* FindKClosestElements.swift */,
 				3D3879BF2746999E00537F46 /* FindMinimumRotatedSortedArray.swift */,
 				3D33959327443FA1002EE4AC /* FindPeakElement.swift */,
 				3D3879BB27468F0000537F46 /* FirstBadVersion.swift */,
@@ -1811,6 +1817,7 @@
 				3D9D35B42729518600112474 /* GridSearch.swift in Sources */,
 				3D9D361327295CF700112474 /* BalancedBSTNode.swift in Sources */,
 				3D9D35C82729518600112474 /* SortingIntro.swift in Sources */,
+				3D3879C82746EA1F00537F46 /* FindKClosestElements.swift in Sources */,
 				3D4E401D2729770F00DE491D /* BirthdayCakeCandles.swift in Sources */,
 				3D34E86F2742FF9D006500EB /* Node.swift in Sources */,
 				3D9D361A27295CF700112474 /* SuccessorBSTNode.swift in Sources */,
@@ -1833,6 +1840,7 @@
 				3D60104E27396AE6000586D2 /* RomanToIntegerTests.swift in Sources */,
 				3DA4B146272A04100026F7D9 /* AppleAndOrange.swift in Sources */,
 				3D4E3FE82729712300DE491D /* PrimsMSTTests.swift in Sources */,
+				3D3879CA2746EAC300537F46 /* FindKClosestElementsTests.swift in Sources */,
 				3D4E40132729712300DE491D /* EncryptionTests.swift in Sources */,
 				3DECC3C2272C765300A206FD /* OrganizingContainersOfBallsTests.swift in Sources */,
 				3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */,
