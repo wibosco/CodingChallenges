@@ -1,0 +1,37 @@
+//
+//  ValidPerfectSquare.swift
+//  CodingChallenges
+//
+//  Created by William Boles on 19/11/2021.
+//  Copyright © 2021 Boles. All rights reserved.
+//
+
+import Foundation
+
+//https://leetcode.com/problems/valid-perfect-square/
+//binary search
+struct ValidPerfectSquare {
+    //O(log n)
+    static func isPerfectSquare(_ num: Int) -> Bool {
+        guard num != 1 else {
+            return true
+        }
+        
+        var left = 0
+        var right = num / 2
+        
+        while left <= right {
+            let mid = left + (right - left) / 2
+            let squared = mid * mid
+            if squared == num {
+                return true
+            } else if squared > num {
+                right = mid - 1
+            } else {
+                left = mid + 1
+            }
+        }
+        
+        return false
+    }
+}
