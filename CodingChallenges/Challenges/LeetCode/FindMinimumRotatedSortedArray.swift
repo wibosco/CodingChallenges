@@ -17,7 +17,7 @@ struct FindMinimumRotatedSortedArray {
         var left = 0
         var right = nums.count - 1
         
-        while right > left {
+        while left < right {
             let mid = left + (right - left) / 2
             
             if nums[mid] > nums[right] {

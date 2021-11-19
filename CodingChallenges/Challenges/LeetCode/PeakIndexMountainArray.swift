@@ -18,7 +18,7 @@ struct PeakIndexMountainArray {
         var left = 0
         var right = arr.count - 1
         
-        while right > left {
+        while left < right {
             let mid = left + (right - left) / 2
             if arr[mid] > arr[mid + 1] {
                 right = mid

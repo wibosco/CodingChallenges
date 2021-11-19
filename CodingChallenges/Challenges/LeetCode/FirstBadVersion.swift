@@ -31,7 +31,7 @@ struct FirstBadVersion {
         var left = 1
         var right = n
         
-        while right >= left {
+        while left <= right {
             let mid = left + (right - left) / 2
             
             if isBadVersion(mid) {

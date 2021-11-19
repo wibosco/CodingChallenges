@@ -25,7 +25,7 @@ struct FindPeakElement {
         //Notice here that we don't check `right >= left` this is because
         //we want to check our target `mid` against it's right most
         //neighbour so we need to ensure that a right neighbour exists
-        while right > left {
+        while left < right {
             let mid = left + (right - left) / 2
             if nums[mid] > nums[mid + 1] { // only compare with neighbour
                 //we don't just return here as we need to make sure that

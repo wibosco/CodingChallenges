@@ -21,7 +21,7 @@ struct Sqrt {
         var left = 0
         var right = x / 2
         
-        while right >= left {
+        while left <= right {
             let mid = left + (right - left) / 2
             let squared = mid * mid
             if squared == x {
