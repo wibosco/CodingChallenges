@@ -22,6 +22,7 @@ struct FindKClosestElements {
         var left = 0
         var right = arr.count - 1
         
+        //binary search
         while (left + 1) < right {
             let mid = left + (right - left) / 2
             
@@ -40,6 +41,7 @@ struct FindKClosestElements {
         left = startingIndex
         right = startingIndex
         
+        //sliding window
         for i in 0..<(k - 1) {
             let previous = left - 1
             let next = right + 1
@@ -52,7 +54,7 @@ struct FindKClosestElements {
                 break
             }
             
-            let nearestIndex = nearestIndex(to: x, in: arr, from: previous, to: next)
+            let nearestIndex = self.nearestIndex(to: x, in: arr, from: previous, to: next)
             
             if nearestIndex < left {
                 left -= 1
