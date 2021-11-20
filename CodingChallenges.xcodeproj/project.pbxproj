@@ -70,6 +70,8 @@
 		3D3879E427485A2A00537F46 /* IntersectionOfTwoArraysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879E327485A2A00537F46 /* IntersectionOfTwoArraysTests.swift */; };
 		3D3879E62749911D00537F46 /* IntersectionOfTwoArraysII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879E52749911D00537F46 /* IntersectionOfTwoArraysII.swift */; };
 		3D3879E82749928200537F46 /* IntersectionOfTwoArraysIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879E72749928200537F46 /* IntersectionOfTwoArraysIITests.swift */; };
+		3D3879EA2749A04400537F46 /* TwoSumII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879E92749A04400537F46 /* TwoSumII.swift */; };
+		3D3879EC2749A08300537F46 /* TwoSumIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3879EB2749A08300537F46 /* TwoSumIITests.swift */; };
 		3D4E3FD52729712200DE491D /* MinStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F922729712200DE491D /* MinStackTests.swift */; };
 		3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F932729712200DE491D /* MaxHeapTests.swift */; };
 		3D4E3FD72729712200DE491D /* CircularLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */; };
@@ -377,6 +379,8 @@
 		3D3879E327485A2A00537F46 /* IntersectionOfTwoArraysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionOfTwoArraysTests.swift; sourceTree = "<group>"; };
 		3D3879E52749911D00537F46 /* IntersectionOfTwoArraysII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionOfTwoArraysII.swift; sourceTree = "<group>"; };
 		3D3879E72749928200537F46 /* IntersectionOfTwoArraysIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionOfTwoArraysIITests.swift; sourceTree = "<group>"; };
+		3D3879E92749A04400537F46 /* TwoSumII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumII.swift; sourceTree = "<group>"; };
+		3D3879EB2749A08300537F46 /* TwoSumIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumIITests.swift; sourceTree = "<group>"; };
 		3D4E3F922729712200DE491D /* MinStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStackTests.swift; sourceTree = "<group>"; };
 		3D4E3F932729712200DE491D /* MaxHeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapTests.swift; sourceTree = "<group>"; };
 		3D4E3F942729712200DE491D /* CircularLinkedListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLinkedListTests.swift; sourceTree = "<group>"; };
@@ -753,6 +757,7 @@
 				3D4E3FD32729712200DE491D /* TheatreGuestsMultipleMovesTests.swift */,
 				3D4E3F9D2729712200DE491D /* TimeConverterTests.swift */,
 				3D4E3FCF2729712200DE491D /* TimeInWordsTests.swift */,
+				3D3879EB2749A08300537F46 /* TwoSumIITests.swift */,
 				3DFDC7BD2732F5BF0026EBA9 /* TwoSumTests.swift */,
 				3D4E3FCC2729712200DE491D /* UtopianTreeTests.swift */,
 				3D4E3FCA2729712200DE491D /* ValidateBSTTests.swift */,
@@ -1501,6 +1506,7 @@
 				3D3395BD2745A31C002EE4AC /* Sqrt.swift */,
 				3D54C6FD273ADBEF006A9F67 /* StringToInteger.swift */,
 				3D54C6FB273ADBEF006A9F67 /* TwoSum.swift */,
+				3D3879E92749A04400537F46 /* TwoSumII.swift */,
 				3D34E8682742D457006500EB /* ValidPalindrome.swift */,
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D3879D527483B1F00537F46 /* ValidPerfectSquare.swift */,
@@ -1830,6 +1836,7 @@
 				3D9D361527295CF700112474 /* SingleLinkedList.swift in Sources */,
 				3DA4B13F2729AE1D0026F7D9 /* SaveThePrisoner.swift in Sources */,
 				3D9D35CC2729518600112474 /* Percentages.swift in Sources */,
+				3D3879EA2749A04400537F46 /* TwoSumII.swift in Sources */,
 				3D9D35B62729518600112474 /* Kaprekar.swift in Sources */,
 				3D9D35BC2729518600112474 /* UtopianTree.swift in Sources */,
 				3D9F9FA9273D643B00A9BD72 /* MinimumValueToGetPositive.swift in Sources */,
@@ -1896,6 +1903,7 @@
 				3D3879CA2746EAC300537F46 /* FindKClosestElementsTests.swift in Sources */,
 				3D4E40132729712300DE491D /* EncryptionTests.swift in Sources */,
 				3DECC3C2272C765300A206FD /* OrganizingContainersOfBallsTests.swift in Sources */,
+				3D3879EC2749A08300537F46 /* TwoSumIITests.swift in Sources */,
 				3D3879E427485A2A00537F46 /* IntersectionOfTwoArraysTests.swift in Sources */,
 				3D4E3FD62729712200DE491D /* MaxHeapTests.swift in Sources */,
 				3D4E40042729712300DE491D /* SuccessorBSTTests.swift in Sources */,

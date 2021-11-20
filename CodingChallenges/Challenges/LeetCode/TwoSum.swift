@@ -14,7 +14,7 @@ struct TwoSum {
     
     //O(n)
     static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var visted = [Int : Int]()
+        var visted = [Int: Int]()
         
         for (index, num) in nums.enumerated() {
             let delta = target - num
