@@ -24,7 +24,7 @@ struct IntersectionOfTwoArrays {
             }
         }
         
-        return Array(intersectingValues)
+        return Array(intersectingValues).sorted() //sorting is only needed for unit testing
     }
     
     private static func search(_ nums: [Int], for target: Int) -> Bool {
