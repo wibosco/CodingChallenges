@@ -11,13 +11,10 @@ import XCTest
 @testable import CodingChallenges
 
 class SuccessorBSTTests: XCTestCase {
-    
-    // MARK: Properties
-    
     var relationships: [[Int]]!
-    var root: SuccessorBSTNode!
+    var root: TreeNodeCtCI!
     
-    // MARK SetUp
+    // MARK - SetUp
     
     override func setUp() {
         super.setUp()
@@ -31,7 +28,7 @@ class SuccessorBSTTests: XCTestCase {
                          [5,7],
                          [5,8]]
         
-        root = SuccessorBSTFactory.buildBinaryTree(relationships: relationships)
+        root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
     }
     
     override func tearDown() {
@@ -40,7 +37,7 @@ class SuccessorBSTTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: InOrderPreSorted
+    // MARK: - InOrderPreSorted
     
     func test_A() {
         let successor = SuccessorBST.successorNode(predecessorNode: root)

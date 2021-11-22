@@ -6,7 +6,7 @@
 //  Copyright © 2016 Boles. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 //https://www.hackerrank.com/challenges/taum-and-bday
 class DikshasBirthday {

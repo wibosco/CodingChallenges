@@ -16,7 +16,7 @@ class MinimalBinarySearchTreeTests: XCTestCase {
     
     func test_A() {
         
-        let sortedArray = [1,2,3,4,5,6]
+        let sortedArray = [1, 2, 3, 4, 5, 6]
         
         let bst = MinimalBinarySearchTree()
         
@@ -27,7 +27,7 @@ class MinimalBinarySearchTreeTests: XCTestCase {
     
     func test_B() {
         
-        let sortedArray = [1,2,3,4,5,6,7,8,9,10,11]
+        let sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
         
         let bst = MinimalBinarySearchTree()
         

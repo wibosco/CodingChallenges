@@ -22,35 +22,33 @@ class TreeNode {
 }
 
 extension TreeNode {
-    static func createTree(fromBFSArray array: [Int?]) -> TreeNode? {
-        let root = TreeNode(array[0]!)
-        for index in 1..<array.count {
-            guard let value = array[index] else {
-                continue
-            }
-            
-            let node = TreeNode(value)
-            var current = root
-            
-            while true {
-                if current.val >= node.val {
-                    if current.left == nil {
-                        current.left = node
-                        break
-                    } else {
-                        current = current.left!
-                    }
-                } else if current.val < node.val {
-                    if current.right == nil {
-                        current.right = node
-                        break
-                    } else {
-                        current = current.right!
-                    }
-                }
-            }
-        }
+    static func createBinaryTree(fromBFSArray array: [Int?]) -> TreeNode? {
+        var mArray = array
+        let root = TreeNode(mArray.removeFirst()!)
+
+        createBinaryTree(fromRoot: root, array: &mArray)
         
         return root
+    }
+    
+    private static func createBinaryTree(fromRoot root: TreeNode?, array: inout [Int?]) {
+        guard let root = root, !array.isEmpty else {
+            return
+        }
+        
+        var left: TreeNode?
+        if let leftVal = array.removeFirst() {
+            left = TreeNode(leftVal)
+            root.left = left
+        }
+        
+        var right: TreeNode?
+        if let rightVal = array.removeFirst() {
+            right = TreeNode(rightVal)
+            root.right = right
+        }
+        
+        createBinaryTree(fromRoot: left, array: &array)
+        createBinaryTree(fromRoot: right, array: &array)
     }
 }

@@ -14,20 +14,20 @@ class ValidateBSTTests: XCTestCase {
     
     // MARK: InOrder
     
-    func test_validateInOrderBSTA() {
+    func test_A() {
         let relationships = [[2, 4],
                              [1, 2],
                              [3, 6],
                              [1, 3],
                              [2, 5]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
+        let root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
+        let isBST = ValidateBST.isValidBST(root: root)
         
         XCTAssertFalse(isBST)
     }
     
-    func test_validateInOrderBSTB() {
+    func test_B() {
         let relationships = [[5, 2],
                              [5, 7],
                              [2, 1],
@@ -35,13 +35,13 @@ class ValidateBSTTests: XCTestCase {
                              [7, 6],
                              [7, 8]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
+        let root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
+        let isBST = ValidateBST.isValidBST(root: root)
         
         XCTAssertTrue(isBST)
     }
     
-    func test_validateInOrderBSTC() {
+    func test_C() {
         let relationships = [[5, 2],
                              [5, 7],
                              [2, 1],
@@ -49,13 +49,13 @@ class ValidateBSTTests: XCTestCase {
                              [7, 6],
                              [7, 8]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
+        let root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
+        let isBST = ValidateBST.isValidBST(root: root)
         
         XCTAssertFalse(isBST)
     }
     
-    func test_validateInOrderBSTD() {
+    func test_D() {
         let relationships = [[5, 2],
                              [5, 7],
                              [2, 1],
@@ -66,13 +66,13 @@ class ValidateBSTTests: XCTestCase {
                              [12, 9],
                              [9, 10]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
+        let root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
+        let isBST = ValidateBST.isValidBST(root: root)
         
         XCTAssertFalse(isBST)
     }
     
-    func test_validateInOrderBSTE() {
+    func test_E() {
         let relationships = [[5, 2],
                              [5, 7],
                              [2, 1],
@@ -84,13 +84,13 @@ class ValidateBSTTests: XCTestCase {
                              [9, 10],
                              [9, 11]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
+        let root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
+        let isBST = ValidateBST.isValidBST(root: root)
         
         XCTAssertFalse(isBST)
     }
     
-    func test_validateInOrderBSTF() {
+    func test_F() {
         let relationships = [[5, 2],
                              [5, 12],
                              [2, 1],
@@ -101,102 +101,8 @@ class ValidateBSTTests: XCTestCase {
                              [10, 8],
                              [10, 11]]
         
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.inOrderTraversalIsBST(root: root)
-        
-        XCTAssertTrue(isBST)
-    }
-    
-    //MARK: MinMax
-    
-    func test_validateMinMaxBSTA() {
-        let relationships = [[2, 4],
-                             [1, 2],
-                             [3, 6],
-                             [1, 3],
-                             [2, 5]]
-        
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.maxMinIsBST(root: root)
-        
-        XCTAssertFalse(isBST)
-    }
-    
-    func test_validateMinMaxBSTB() {
-        let relationships = [[5, 2],
-                             [5, 7],
-                             [2, 1],
-                             [2, 3],
-                             [7, 6],
-                             [7, 8]]
-        
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.maxMinIsBST(root: root)
-        
-        XCTAssertTrue(isBST)
-    }
-    
-    func test_validateMinMaxBSTC() {
-        let relationships = [[5, 2],
-                             [5, 7],
-                             [2, 1],
-                             [2, 9],
-                             [7, 6],
-                             [7, 8]]
-        
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.maxMinIsBST(root: root)
-        
-        XCTAssertFalse(isBST)
-    }
-    
-    func test_validateMinMaxBSTD() {
-        let relationships = [[5, 2],
-                             [5, 7],
-                             [2, 1],
-                             [2, 3],
-                             [7, 6],
-                             [7, 8],
-                             [8, 12],
-                             [12, 9],
-                             [9, 10]]
-        
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.maxMinIsBST(root: root)
-        
-        XCTAssertFalse(isBST)
-    }
-    
-    func test_validateMinMaxBSTE() {
-        let relationships = [[5, 2],
-                             [5, 7],
-                             [2, 1],
-                             [2, 3],
-                             [7, 6],
-                             [7, 8],
-                             [8, 12],
-                             [12, 9],
-                             [9, 10]]
-        
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.maxMinIsBST(root: root)
-        
-        XCTAssertFalse(isBST)
-    }
-    
-    func test_validateMinMaxBSTF() {
-        let relationships = [[5, 2],
-                             [5, 12],
-                             [2, 1],
-                             [2, 3],
-                             [12, 10],
-                             [12, 14],
-                             [14, 13],
-                             [10, 8],
-                             [10, 11]]
-        
-        let root = ValidateBSTFactory.buildBinaryTree(relationships: relationships)
-        let isBST = ValidateBST.maxMinIsBST(root: root)
+        let root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
+        let isBST = ValidateBST.isValidBST(root: root)
         
         XCTAssertTrue(isBST)
     }

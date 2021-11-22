@@ -7,7 +7,7 @@
 //  Copyright © 2016 Boles. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class Summing {
     
