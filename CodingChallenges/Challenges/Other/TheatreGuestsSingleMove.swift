@@ -21,10 +21,7 @@ import Foundation
 
  BC AB DA CD ⇒ BB CC AA DD
 */
-class TheatreGuestsSingleMove {
-    
-    // MARK: MaximumOneMoveEach
-    
+struct TheatreGuestsSingleMove {
      static func sortGuestsInSeatsAlt(guestsInSeats: inout [String]) {
         var guests = [String: [Int]]()
         for (index, guest) in guestsInSeats.enumerated() {

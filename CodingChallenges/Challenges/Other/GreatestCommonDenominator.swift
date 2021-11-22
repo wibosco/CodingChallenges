@@ -9,15 +9,14 @@
 import Foundation
 
 class GreatestCommonDenominator {
-     static func greatestCommonDenominator(lowest: Int, highest: Int) -> Int {
-         guard lowest != 0, highest != 0, highest >= lowest else {
-             return 0
-         }
+    static func greatestCommonDenominator(lowest: Int, highest: Int) -> Int {
+        guard lowest != 0, highest != 0, highest >= lowest else {
+            return 0
+        }
         
-         guard lowest != highest, highest % lowest != 0 else {
-             return lowest
-         }
-        
+        guard lowest != highest, highest % lowest != 0 else {
+            return lowest
+        }
         
         let lowestUpperBounds = lowest / 2
         

@@ -19,7 +19,7 @@ import Foundation
 
  BC AB DA CD ⇒ BB CC AA DD
 */
-class TheatreGuestsMultipleMoves {
+struct TheatreGuestsMultipleMoves {
      static func sort(guestsInSeats: inout [String]) {
         var index = 1
         while index < guestsInSeats.count {
@@ -27,7 +27,7 @@ class TheatreGuestsMultipleMoves {
                 let remainingGuests = Array(guestsInSeats[(index+1)..<guestsInSeats.count])
                 let partnerIndex = (findGuestsPartnerIndex(guestsInSeats: remainingGuests, partner:guestsInSeats[index-1])) + (index+1)
                 
-                TheatreGuestsMultipleMoves.swap(data: &guestsInSeats, source:index, destination:partnerIndex)
+                guestsInSeats.swapAt(index, partnerIndex)
             }
             
             index += 2
@@ -42,11 +42,5 @@ class TheatreGuestsMultipleMoves {
         }
         
         return -1
-    }
-    
-     static func swap(data: inout [String], source: Int, destination: Int) {
-        let temp = data[destination]
-        data[destination] = data[source]
-        data[source] = temp
     }
 }

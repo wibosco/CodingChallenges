@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Palindrome {
+struct Palindrome {
     
     static func isPalindrome(string: String) -> Bool {
         guard string.count > 1 else {

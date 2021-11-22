@@ -8,9 +8,9 @@
 
 import Foundation
 
-class MinHeap {
+struct MinHeap {
 
-    // MARK: Construct
+    // MARK: - Construct
     
      static func buildMinHeap(input: [Int]) -> [Int] {
          guard input.count > 1 else {
@@ -28,7 +28,7 @@ class MinHeap {
         return heap
     }
     
-    // MARK: Heapify
+    // MARK: - Heapify
     
      static func minHeapify(heap: inout [Int], indexRoot: Int) {
         if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
@@ -67,7 +67,7 @@ class MinHeap {
         }
     }
 
-    // MARK: Index
+    // MARK: - Index
     
      static func leftLeafIndex(rootIndex: Int) -> Int {
         let heapIndex = (rootIndex + 1)

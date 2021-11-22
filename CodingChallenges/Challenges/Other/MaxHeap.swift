@@ -8,9 +8,9 @@
 
 import Foundation
 
-class MaxHeap {
+struct MaxHeap {
     
-    // MARK: Construct
+    // MARK: - Construct
     
     static func buildMaxHeap(input: [Int]) -> [Int] {
         guard input.count > 1 else {
@@ -28,7 +28,7 @@ class MaxHeap {
         return heap
     }
     
-    // MARK: Heapify
+    // MARK: - Heapify
     
     static func maxHeapify(heap: inout [Int], indexRoot: Int) {
         if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
@@ -65,7 +65,7 @@ class MaxHeap {
         }
     }
     
-    // MARK: Index
+    // MARK: - Index
     
     static func leftLeafIndex(rootIndex: Int) -> Int {
         let heapIndex = (rootIndex + 1)

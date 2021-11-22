@@ -10,7 +10,7 @@ import Foundation
 
 class Prime {
 
-    // MARK: isPrime
+    // MARK: - isPrime
     
      static func isPrime(value: Int) -> Bool {
          guard value > 3 else {
@@ -40,7 +40,7 @@ class Prime {
         return true
     }
     
-    // MARK: PrimeFactors
+    // MARK: - PrimeFactors
     
      static func primeFactors(value: Int) {
         var runningTotal = value
