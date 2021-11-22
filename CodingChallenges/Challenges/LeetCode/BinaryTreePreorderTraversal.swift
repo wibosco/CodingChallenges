@@ -1,5 +1,5 @@
 //
-//  BinaryTreeInorderTraversal.swift
+//  BinaryTreePreorderTraversal.swift
 //  CodingChallenges
 //
 //  Created by William Boles on 22/11/2021.
@@ -8,32 +8,32 @@
 
 import Foundation
 
-//https://leetcode.com/problems/binary-tree-inorder-traversal/
+//https://leetcode.com/problems/binary-tree-preorder-traversal/
 //binary tree
 //DFS
-struct BinaryTreeInorderTraversal {
+struct BinaryTreePreorderTraversal {
     
     //Time: O(n)
     //Space: O(n)
-    static func inorderTraversal(_ root: TreeNode?) -> [Int] {
+    static func preorderTraversal(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return [Int]()
         }
         
         var visited = [Int]()
         
-        inorderTraversal(node: root, visited: &visited)
+        preorderTraversal(node: root, visited: &visited)
         
         return visited
     }
     
-    private static func inorderTraversal(node: TreeNode?, visited: inout [Int]) {
+    private static func preorderTraversal(node: TreeNode?, visited: inout [Int]) {
         guard let node = node else {
             return
         }
         
-        inorderTraversal(node: node.left, visited: &visited)
         visited.append(node.val)
-        inorderTraversal(node: node.right, visited: &visited)
+        preorderTraversal(node: node.left, visited: &visited)
+        preorderTraversal(node: node.right, visited: &visited)
     }
 }
