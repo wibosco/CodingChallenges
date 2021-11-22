@@ -214,6 +214,8 @@
 		3D3E6BD3274C0A6E00CC3893 /* LinkedListIntersectingNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E6BC4274C0A6E00CC3893 /* LinkedListIntersectingNodeTests.swift */; };
 		3D3E6BD5274C104800CC3893 /* BinaryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E6BD4274C104800CC3893 /* BinaryTreePreorderTraversal.swift */; };
 		3D3E6BD7274C108600CC3893 /* BinaryTreePreorderTraversalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E6BD6274C108600CC3893 /* BinaryTreePreorderTraversalTests.swift */; };
+		3D3E6BD9274C130000CC3893 /* BinaryTreePostorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E6BD8274C130000CC3893 /* BinaryTreePostorderTraversal.swift */; };
+		3D3E6BDB274C133700CC3893 /* BinaryTreePostorderTraversalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E6BDA274C133700CC3893 /* BinaryTreePostorderTraversalTests.swift */; };
 		3D4E401A2729714B00DE491D /* MinMaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E40192729714A00DE491D /* MinMaxSum.swift */; };
 		3D4E401D2729770F00DE491D /* BirthdayCakeCandles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */; };
 		3D54C6E8273AB044006A9F67 /* ABCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D54C6E7273AB044006A9F67 /* ABCs.swift */; };
@@ -527,6 +529,8 @@
 		3D3E6BC4274C0A6E00CC3893 /* LinkedListIntersectingNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListIntersectingNodeTests.swift; sourceTree = "<group>"; };
 		3D3E6BD4274C104800CC3893 /* BinaryTreePreorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePreorderTraversal.swift; sourceTree = "<group>"; };
 		3D3E6BD6274C108600CC3893 /* BinaryTreePreorderTraversalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePreorderTraversalTests.swift; sourceTree = "<group>"; };
+		3D3E6BD8274C130000CC3893 /* BinaryTreePostorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePostorderTraversal.swift; sourceTree = "<group>"; };
+		3D3E6BDA274C133700CC3893 /* BinaryTreePostorderTraversalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePostorderTraversalTests.swift; sourceTree = "<group>"; };
 		3D4E3FD42729712200DE491D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4E40192729714A00DE491D /* MinMaxSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxSum.swift; sourceTree = "<group>"; };
 		3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandles.swift; sourceTree = "<group>"; };
@@ -829,6 +833,7 @@
 				3D3E6ABA274C074800CC3893 /* AddTwoNumbersTests.swift */,
 				3D3E6ADD274C074800CC3893 /* BinarySearchLeetCodeTests.swift */,
 				3D3E6AE6274C074800CC3893 /* BinaryTreeInorderTraversalTests.swift */,
+				3D3E6BDA274C133700CC3893 /* BinaryTreePostorderTraversalTests.swift */,
 				3D3E6BD6274C108600CC3893 /* BinaryTreePreorderTraversalTests.swift */,
 				3D3E6AE2274C074800CC3893 /* ClosestBinarySearchTreeValueTests.swift */,
 				3D3E6AB7274C074800CC3893 /* ContainerWithMostWaterTests.swift */,
@@ -1616,6 +1621,7 @@
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
 				3D3395B92745A155002EE4AC /* BinarySearchLeetCode.swift */,
 				3D3E6AB0274C053700CC3893 /* BinaryTreeInorderTraversal.swift */,
+				3D3E6BD8274C130000CC3893 /* BinaryTreePostorderTraversal.swift */,
 				3D3E6BD4274C104800CC3893 /* BinaryTreePreorderTraversal.swift */,
 				3D3879CB2747ED2000537F46 /* ClosestBinarySearchTreeValue.swift */,
 				3D54C6FF273ADBEF006A9F67 /* ContainerWithMostWater.swift */,
@@ -1958,6 +1964,7 @@
 				3D9D35C32729518600112474 /* SherlockSquares.swift in Sources */,
 				3D387A58274BFF6F00537F46 /* StackOfPlates.swift in Sources */,
 				3D54C719273B0D6B006A9F67 /* RemoveNthFromList.swift in Sources */,
+				3D3E6BD9274C130000CC3893 /* BinaryTreePostorderTraversal.swift in Sources */,
 				3D3879D22748062500537F46 /* SearchSortedArrayOfUnknownSize.swift in Sources */,
 				3D3879D627483B1F00537F46 /* ValidPerfectSquare.swift in Sources */,
 				3D9D35AF2729518600112474 /* BFSShortReach.swift in Sources */,
@@ -2162,6 +2169,7 @@
 				3D3E6B3D274C082D00CC3893 /* BinarySearchTreeTests.swift in Sources */,
 				3D3E6AFD274C074800CC3893 /* FindDuplicateNumberTests.swift in Sources */,
 				3D3E6AEA274C074800CC3893 /* CopyListWithRandomPointerTests.swift in Sources */,
+				3D3E6BDB274C133700CC3893 /* BinaryTreePostorderTraversalTests.swift in Sources */,
 				3D3E6AF2274C074800CC3893 /* ReorderListTests.swift in Sources */,
 				3D3E6B80274C09B100CC3893 /* CompareTheTripletsTests.swift in Sources */,
 				3D3E6B7D274C09B100CC3893 /* BeastTests.swift in Sources */,

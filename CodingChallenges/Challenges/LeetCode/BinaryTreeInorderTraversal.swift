@@ -17,7 +17,7 @@ struct BinaryTreeInorderTraversal {
     //Space: O(n)
     static func inorderTraversal(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
-            return [Int]()
+            return []
         }
         
         var visited = [Int]()
