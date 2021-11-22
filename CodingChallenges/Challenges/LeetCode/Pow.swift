@@ -13,7 +13,7 @@ import Foundation
 struct Pow {
     
     //divide and conquer
-    //O(log n)
+    //Time: O(log n)
     //Example:
     //5 ^ 8 is the same as 5 ^ 4 * 5 ^ 4 which in turn
     //is the same as 5 ^ 2 * 5 ^ 2 and so on
@@ -42,7 +42,7 @@ struct Pow {
         return result
     }
     
-    //O(n)
+    //Time: O(n)
     static func myPowBruteForce(_ x: Double, _ n: Int) -> Double {
         var x = x
         var n = n

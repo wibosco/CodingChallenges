@@ -13,7 +13,7 @@ import Foundation
 //array
 struct FindPeakElement {
     
-    //O(log n)
+    //Time: O(log n)
     static func findPeakElement(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {
             return 0
@@ -42,7 +42,7 @@ struct FindPeakElement {
         return left
     }
     
-    //O(n)
+    //Time: O(n)
     static func findPeakElementLinear(_ nums: [Int]) -> Int {
         var nums = nums
         

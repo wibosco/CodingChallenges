@@ -12,7 +12,7 @@ import Foundation
 //binary search
 struct FindMinimumRotatedSortedArray {
     
-    //O(log n)
+    //Time: O(log n)
     static func findMin(_ nums: [Int]) -> Int {
         var left = 0
         var right = nums.count - 1

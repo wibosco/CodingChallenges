@@ -12,7 +12,7 @@ import Foundation
 //stack
 struct SimplifyPath {
     
-    //O(n)
+    //Time: O(n)
     static func simplifyPath(_ path: String) -> String {
         let components = path.split(separator: "/")
         var stack = [String]()

@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/intersection-of-two-arrays-ii/
 struct IntersectionOfTwoArraysII {
     
-    //O(n+m)
+    //Time: O(n+m)
     //two pointers
     static func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         let nums1Sorted = nums1.sorted()
@@ -41,7 +41,7 @@ struct IntersectionOfTwoArraysII {
         return intersectingValues
     }
     
-    //O(n + m)
+    //Time: O(n + m)
     //dictionary
     static func intersectDictionary(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var counts = [Int: Int]()
@@ -62,7 +62,7 @@ struct IntersectionOfTwoArraysII {
         return intersectingValues
     }
     
-    //O(n*m)
+    //Time: O(n*m)
     //binary search
     static func intersectBinarySearch(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersectingValues = [Int]()
@@ -73,7 +73,7 @@ struct IntersectionOfTwoArraysII {
             let result = search(sortedNums2, for: num1)
             if result.0 {
                 intersectingValues.append(num1)
-                sortedNums2.remove(at: result.1)//O(n) operation
+                sortedNums2.remove(at: result.1)//Time: O(n) operation
             }
         }
         

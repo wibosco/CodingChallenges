@@ -12,7 +12,7 @@ import Foundation
 //array
 struct IntersectionOfTwoArrays {
     
-    //O(n log m)
+    //Time: O(n log m)
     //binary search
     static func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersectingValues = Set<Int>()
@@ -45,7 +45,7 @@ struct IntersectionOfTwoArrays {
         return false
     }
     
-    //O(n*m)
+    //Time: O(n*m)
     static func intersectionLooping(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersectingValues = Set<Int>()
         

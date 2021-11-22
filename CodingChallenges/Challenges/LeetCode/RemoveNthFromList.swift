@@ -13,7 +13,7 @@ import Foundation
 //array
 struct RemoveNthFromList {
     
-    //O(n)
+    //Time: O(n)
     static func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
         var nodes = [ListNode]()
         var node = head

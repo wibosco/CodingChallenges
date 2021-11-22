@@ -11,7 +11,7 @@ import Foundation
 //binary search
 //See: https://medium.com/swlh/binary-search-find-upper-and-lower-bound-3f07867d81fb
 struct BinarySearch {
-    //O(log n)
+    //Time: O(log n)
     static func find(_ target: Int, in nums: [Int]) -> Int {
         guard !nums.isEmpty else {
             return -1

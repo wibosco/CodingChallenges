@@ -13,7 +13,7 @@ import Foundation
 struct DivideTwoIntegers {
     
     //https://www.youtube.com/watch?v=htX69j1jf5U
-    //O(logn)
+    //Time: O(logn)
     static func divide(_ dividend: Int, _ divisor: Int) -> Int {
         guard dividend != 0 else {
             return 0

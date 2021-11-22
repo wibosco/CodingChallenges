@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct MergeTwoSortedLists {
     
-    //O(n)
+    //Time: O(n)
     static func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         guard l1 != nil else {
             return l2

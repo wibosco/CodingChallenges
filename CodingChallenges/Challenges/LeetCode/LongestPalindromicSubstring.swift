@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/longest-palindromic-substring/
 struct LongestPalindromicSubstring {
     
-    //O(n^2)
+    //Time: O(n^2)
     static func longestPalindrome(_ s: String) -> String {
         var currentLongestPalindrome = [Character]()
         let characters = Array(s)
@@ -46,7 +46,7 @@ struct LongestPalindromicSubstring {
     
     // MARK: - Slow
     
-    //O(n^3)
+    //Time: O(n^3)
     static func longestPalindromeSlow(_ s: String) -> String {
         let characters = Array(s)
         var longestPalindrome = Array(arrayLiteral: characters[0])

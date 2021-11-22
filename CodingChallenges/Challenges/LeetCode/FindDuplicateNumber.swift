@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/find-the-duplicate-number/
 struct FindDuplicateNumber {
     
-    //O(n)
+    //Time: O(n)
     //linked list (think of the array as a linked list)
     //circular dependency
     //two pointers
@@ -35,7 +35,7 @@ struct FindDuplicateNumber {
         return slow
     }
     
-    //O(n log n)
+    //Time: O(n log n)
     //binary search
     static func findDuplicateBinarySearch(_ nums: [Int]) -> Int {
         var left = 1
@@ -46,7 +46,7 @@ struct FindDuplicateNumber {
             let mid = left + (right - left) / 2
             
             var count = 0
-            for n in nums where n <= mid { //O(n)
+            for n in nums where n <= mid { //Time: O(n)
                 count += 1
             }
             
@@ -61,7 +61,7 @@ struct FindDuplicateNumber {
         return dup
     }
     
-    //O(n)
+    //Time: O(n)
     //negative marking
     static func findDuplicateNegativeMarking(_ nums: [Int]) -> Int {
         var nums = nums
@@ -84,7 +84,7 @@ struct FindDuplicateNumber {
         return -1
     }
     
-    //O(n)
+    //Time: O(n)
     //dictionary
     static func findDuplicateDictionary(_ nums: [Int]) -> Int {
         var count = [Int: Int]()
@@ -99,12 +99,12 @@ struct FindDuplicateNumber {
         return -1
     }
     
-    //O(n log n)
+    //Time: O(n log n)
     //sorting
     static func findDuplicateSorting(_ nums: [Int]) -> Int {
-        let sortedNums = nums.sorted() //O(n log n)
+        let sortedNums = nums.sorted() //Time: O(n log n)
         for i in 0..<(sortedNums.count - 1) {
-            if sortedNums[i] == sortedNums[(i + 1)] { //O(n)
+            if sortedNums[i] == sortedNums[(i + 1)] { //Time: O(n)
                 return sortedNums[i]
             }
         }
@@ -112,7 +112,7 @@ struct FindDuplicateNumber {
         return -1
     }
     
-    //O(n!)
+    //Time: O(n!)
     static func findDuplicateLooping(_ nums: [Int]) -> Int {
         for i in 0..<nums.count {
             for j in (i + 1)..<nums.count {

@@ -12,7 +12,7 @@ import Foundation
 //dictionary
 struct RomanToInteger {
     
-    //O(n)
+    //Time: O(n)
     static func romanToInt(_ s: String) -> Int {
         let romanNumerals: [Character: Int] = [
             "I": 1,

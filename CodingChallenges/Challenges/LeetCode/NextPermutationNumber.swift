@@ -14,7 +14,7 @@ import Foundation
 //see https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
 struct NextPermutationNumber {
     
-    //O(n) - Don't be tricked by the for inside a for, notice the breaks
+    //Time: O(n) - Don't be tricked by the for inside a for, notice the breaks
     static func nextPermutation(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
@@ -54,7 +54,7 @@ struct NextPermutationNumber {
         nums[(pivot + 1)...].reverse()
     }
     
-    //O(n)
+    //Time: O(n)
     static func nextPermutationAlt(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return

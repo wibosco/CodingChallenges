@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/palindrome-number/
 //modulo
 struct PalindromeNumber {
-    //O(n)
+    //Time: O(n)
     static func isPalindrome(_ x: Int) -> Bool {
         guard x >= 0 else {
             return false

@@ -26,7 +26,7 @@ struct FirstBadVersion {
         version >= badVersion
     }
     
-    //O(log n)
+    //Time: O(log n)
     func firstBadVersion(_ n: Int) -> Int {
         var left = 1
         var right = n

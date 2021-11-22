@@ -10,7 +10,7 @@ import Foundation
 
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 struct FindSmallestLetterGreaterThanTarget {
-    //O(log n)
+    //Time: O(log n)
     //binary search
     static func nextGreatestLetter(_ letters: [Character], _ target: Character) -> Character {
         var left = 0
@@ -29,7 +29,7 @@ struct FindSmallestLetterGreaterThanTarget {
         return letters[(left % letters.count)]
     }
     
-    //O(n)
+    //Time: O(n)
     static func nextGreatestLetterLinear(_ letters: [Character], _ target: Character) -> Character {
         for letter in letters {
             //no need to check if target is greater than (letter - 1)

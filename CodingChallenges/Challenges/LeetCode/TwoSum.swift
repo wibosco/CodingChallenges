@@ -12,7 +12,7 @@ import Foundation
 //dictionary
 struct TwoSum {
     
-    //O(n)
+    //Time: O(n)
     static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var visted = [Int: Int]()
         
@@ -27,7 +27,7 @@ struct TwoSum {
         return []
     }
     
-    //O(n^2)
+    //Time: O(n^2)
     static func twoSumAlt(_ nums: [Int], _ target: Int) -> [Int] {
         var indices = [Int]()
         outerLoop: for i in 0..<nums.count {

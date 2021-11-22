@@ -13,7 +13,7 @@ import Foundation
 //BST
 struct ClosestBinarySearchTreeValue {
     
-    //O(log n)
+    //Time: O(log n)
     static func closestValue(_ root: TreeNode?, _ target: Double) -> Int {
         guard let root = root else {
             return -1

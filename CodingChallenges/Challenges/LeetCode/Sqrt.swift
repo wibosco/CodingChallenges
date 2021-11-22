@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/sqrtx/
 struct Sqrt {
     
-    //O(log n)
+    //Time: O(log n)
     //binary search
     static func mySqrt(_ x: Int) -> Int {
         guard x > 1 else {
@@ -36,7 +36,7 @@ struct Sqrt {
         return right
     }
     
-    //O(n)
+    //Time: O(n)
     static func mySqrtLinear(_ x: Int) -> Int {
         var i = 0
         while (i * i) <= x {

@@ -12,7 +12,7 @@ import Foundation
 //https://leetcode.com/problems/peak-index-in-a-mountain-array/
 struct PeakIndexMountainArray {
     
-    //O(log n)
+    //Time: O(log n)
     //binary search
     static func peakIndexInMountainArray(_ arr: [Int]) -> Int {
         var left = 0
@@ -31,7 +31,7 @@ struct PeakIndexMountainArray {
         return left
     }
     
-    //O(n)
+    //Time: O(n)
     static func peakIndexInMountainArrayLinear(_ arr: [Int]) -> Int {
         var peak: Int?
         var i = 1

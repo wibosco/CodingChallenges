@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/implement-strstr/
 struct ImplementStrStr {
     
-    //O(m + n)
+    //Time: O(m + n)
     //KMP
     static func strStr(_ haystack: String, _ needle: String) -> Int {
         guard !needle.isEmpty else {
@@ -56,7 +56,7 @@ struct ImplementStrStr {
         return (n == needle.count) ? h : -1
     }
     
-    //O(m*n)
+    //Time: O(m*n)
     //two pointers
     static func strStrBruteForce(_ haystack: String, _ needle: String) -> Int {
         let haystack = Array(haystack)

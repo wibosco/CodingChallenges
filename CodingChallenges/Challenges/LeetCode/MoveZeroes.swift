@@ -12,7 +12,7 @@ import Foundation
 //array
 struct MoveZeros {
     
-    //O(n)
+    //Time: O(n)
     //two pointers
     static func moveZeroes(_ nums: inout [Int]) {
         guard nums.count > 1 else {
@@ -35,7 +35,7 @@ struct MoveZeros {
         }
     }
     
-    //O(n)
+    //Time: O(n)
     static func moveZeroesAppending(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return

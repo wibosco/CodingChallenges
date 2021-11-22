@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/valid-perfect-square/
 //binary search
 struct ValidPerfectSquare {
-    //O(log n)
+    //Time: O(log n)
     static func isPerfectSquare(_ num: Int) -> Bool {
         guard num != 1 else {
             return true

@@ -48,7 +48,7 @@ struct LetterCombinations {
         }
     }
     
-    //O(n^3)
+    //Time: O(n^3)
     static func lettercAlt(_ digits: String) -> [String] {
         guard !digits.isEmpty else {
             return []

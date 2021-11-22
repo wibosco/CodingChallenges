@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 struct TwoSumII {
     
-    //O(n)
+    //Time: O(n)
     //two pointers
     static func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
         var left = 0
@@ -32,7 +32,7 @@ struct TwoSumII {
         return []
     }
     
-    //O(n log n)
+    //Time: O(n log n)
     //binary search
     static func twoSumBinarySearch(_ numbers: [Int], _ target: Int) -> [Int] {
         for (index, number) in numbers.enumerated() {
@@ -67,7 +67,7 @@ struct TwoSumII {
         return nil
     }
 
-    //O(n)
+    //Time: O(n)
     //dictionary
     static func twoSumDictionary(_ numbers: [Int], _ target: Int) -> [Int] {
         var visted = [Int: Int]()

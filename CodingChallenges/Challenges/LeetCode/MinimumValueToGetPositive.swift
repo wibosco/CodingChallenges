@@ -12,7 +12,7 @@ import Foundation
 //array
 struct MinimumValueToGetPositive {
     
-    //O(n)
+    //Time: O(n)
     //prefix sum
     static func minStartValue(_ nums: [Int]) -> Int {
         var minValue = 0
@@ -25,7 +25,7 @@ struct MinimumValueToGetPositive {
         return 1 - minValue
     }
     
-    //O(nlogn)
+    //Time: O(nlogn)
     //The index is sorted
     //binary search
     static func minStartValueBinarySearch(_ nums: [Int]) -> Int {
@@ -52,7 +52,7 @@ struct MinimumValueToGetPositive {
         return left
     }
     
-    //O(n^2)
+    //Time: O(n^2)
     static func minStartValueBruteForce(_ nums: [Int]) -> Int {
         var i = 1
     outerloop: while i < Int.max {

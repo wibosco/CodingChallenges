@@ -13,7 +13,7 @@ import Foundation
 //two pointers
 //sliding window
 struct FindKClosestElements {
-    //O((log n) + k)
+    //Time: O((log n) + k)
     static func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
         guard arr.count > k else {
             return arr

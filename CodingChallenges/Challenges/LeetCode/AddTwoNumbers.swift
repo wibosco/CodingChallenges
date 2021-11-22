@@ -12,7 +12,7 @@ import Foundation
 //linked list
 class AddTwoNumbers {
     
-    //O(n)
+    //Time: O(n)
     static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         var l1: ListNode? = l1
         var l2: ListNode? = l2

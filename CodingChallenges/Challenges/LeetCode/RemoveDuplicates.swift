@@ -12,7 +12,7 @@ import Foundation
 //two pointers
 struct RemoveDuplicates {
     //Don't use an extra memory structure
-    //O(n)
+    //Time: O(n)
     static func removeDuplicates(_ nums: inout [Int]) -> Int {
         guard nums.count > 1 else {
             return nums.count

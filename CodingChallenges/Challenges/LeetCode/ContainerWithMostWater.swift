@@ -13,7 +13,7 @@ import Foundation
 //greedy
 struct ContainerWithMostWater {
     
-    //O(n)
+    //Time: O(n)
     static func maxArea(_ height: [Int]) -> Int {
         var maxArea = 0
         
@@ -39,7 +39,7 @@ struct ContainerWithMostWater {
         return maxArea
     }
     
-    //O(n^2)
+    //Time: O(n^2)
     static func maxAreaBruteForce(_ height: [Int]) -> Int {
         var maxArea = 0
         
