@@ -23,6 +23,10 @@ class TreeNode {
 
 extension TreeNode {
     static func createBinaryTree(fromBFSArray array: [Int?]) -> TreeNode? {
+        guard !array.isEmpty else {
+            return nil
+        }
+        
         var mArray = array
         let root = TreeNode(mArray.removeFirst()!)
 
@@ -43,9 +47,11 @@ extension TreeNode {
         }
         
         var right: TreeNode?
-        if let rightVal = array.removeFirst() {
-            right = TreeNode(rightVal)
-            root.right = right
+        if !array.isEmpty {
+            if let rightVal = array.removeFirst() {
+                right = TreeNode(rightVal)
+                root.right = right
+            }
         }
         
         createBinaryTree(fromRoot: left, array: &array)
