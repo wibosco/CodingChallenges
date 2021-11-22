@@ -15,25 +15,52 @@ struct BinaryTreeInorderTraversal {
     
     //Time: O(n)
     //Space: O(n)
+    //recursion
     static func inorderTraversal(_ root: TreeNode?) -> [Int] {
+        guard let root = root else {
+            return []
+        }
+
+        var visited = [Int]()
+
+        inorderTraversal(node: root, visited: &visited)
+
+        return visited
+    }
+
+    private static func inorderTraversal(node: TreeNode?, visited: inout [Int]) {
+        guard let node = node else {
+            return
+        }
+
+        inorderTraversal(node: node.left, visited: &visited)
+        visited.append(node.val)
+        inorderTraversal(node: node.right, visited: &visited)
+    }
+    
+    //Time: O(n)
+    //Space: O(n)
+    //iterative
+    static func inorderTraversalIterative(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
         
         var visited = [Int]()
+        var stack = [TreeNode]()
+        var current: TreeNode? = root
         
-        inorderTraversal(node: root, visited: &visited)
-        
-        return visited
-    }
-    
-    private static func inorderTraversal(node: TreeNode?, visited: inout [Int]) {
-        guard let node = node else {
-            return
+        while !stack.isEmpty || current != nil {
+            if let c = current {
+                stack.append(c)
+                current = c.left
+            } else {
+                let popped = stack.removeLast()
+                visited.append(popped.val)
+                current = popped.right
+            }
         }
         
-        inorderTraversal(node: node.left, visited: &visited)
-        visited.append(node.val)
-        inorderTraversal(node: node.right, visited: &visited)
+        return visited
     }
 }
