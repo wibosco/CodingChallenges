@@ -12,7 +12,7 @@ import Foundation
 //sorting
 struct MergeIntervals {
     
-    //Time: O(nlogn)
+    //Time: O(n log n)
     static func merge(_ intervals: [[Int]]) -> [[Int]] {
         guard intervals.count > 1 else {
             return intervals

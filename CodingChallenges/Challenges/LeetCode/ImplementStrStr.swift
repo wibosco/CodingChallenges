@@ -12,7 +12,7 @@ import Foundation
 struct ImplementStrStr {
     
     //Time: O(m + n)
-    //KMP
+    //KMP - https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
     static func strStr(_ haystack: String, _ needle: String) -> Int {
         guard !needle.isEmpty else {
             return 0

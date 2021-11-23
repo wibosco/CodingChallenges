@@ -14,6 +14,7 @@ import Foundation
 struct BinaryTreeLevelOrderTraversal {
     
     //Time: O(n)
+    //Space: O(n) worst/average (O(1) for best)
     //iterative
     static func levelOrder(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
@@ -27,7 +28,7 @@ struct BinaryTreeLevelOrderTraversal {
             let levelCount = queue.count //how many node pairs are in this level
             var levelValues = [Int]()
             
-            for _ in 0..<levelCount {
+            for _ in 0..<levelCount {//need to know how many times we remove from the queue for this level
                 let node = queue.removeFirst()
                 levelValues.append(node.val)
                 
