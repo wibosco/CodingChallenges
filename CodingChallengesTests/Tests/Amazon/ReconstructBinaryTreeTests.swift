@@ -15,7 +15,6 @@ class ReconstructBinaryTreeTests: XCTestCase {
     // MARK: Tests
     
     func test_A() {
-        
         let nodeList = [[2, 4],
                         [1, 2],
                         [3, 6],
@@ -28,5 +27,4 @@ class ReconstructBinaryTreeTests: XCTestCase {
         
         XCTAssertEqual(firstNode.value, 1)
     }
-
 }

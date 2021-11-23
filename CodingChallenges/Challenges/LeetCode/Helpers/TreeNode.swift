@@ -29,32 +29,34 @@ extension TreeNode {
         
         var mArray = array
         let root = TreeNode(mArray.removeFirst()!)
+        var queue = [root]
+        
+        while !mArray.isEmpty {
+            let levelCount = queue.count
 
-        createBinaryTree(fromRoot: root, array: &mArray)
-        
-        return root
-    }
-    
-    private static func createBinaryTree(fromRoot root: TreeNode?, array: inout [Int?]) {
-        guard let root = root, !array.isEmpty else {
-            return
-        }
-        
-        var left: TreeNode?
-        if let leftVal = array.removeFirst() {
-            left = TreeNode(leftVal)
-            root.left = left
-        }
-        
-        var right: TreeNode?
-        if !array.isEmpty {
-            if let rightVal = array.removeFirst() {
-                right = TreeNode(rightVal)
-                root.right = right
+            for _ in 0..<levelCount {
+                let root = queue.removeFirst()
+                
+                //left
+                if let val = mArray.removeFirst() {
+                    let node = TreeNode(val)
+                    root.left = node
+
+                    queue.append(node)
+                }
+                
+                //right
+                if !mArray.isEmpty {
+                    if let val = mArray.removeFirst() {
+                        let node = TreeNode(val)
+                        root.right = node
+                        
+                        queue.append(node)
+                    }
+                }
             }
         }
-        
-        createBinaryTree(fromRoot: left, array: &array)
-        createBinaryTree(fromRoot: right, array: &array)
+
+        return root
     }
 }
