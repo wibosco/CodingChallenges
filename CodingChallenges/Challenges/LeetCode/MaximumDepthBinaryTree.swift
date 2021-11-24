@@ -9,6 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/maximum-depth-of-binary-tree/
+//binary tree
 struct MaximumDepthBinaryTree {
     
     //Time: O(n)
