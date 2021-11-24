@@ -31,18 +31,20 @@ extension TreeNode {
         let root = TreeNode(mArray.removeFirst()!)
         var queue = [root]
         
-        while !mArray.isEmpty {
+        while !queue.isEmpty {
             let levelCount = queue.count
 
             for _ in 0..<levelCount {
                 let root = queue.removeFirst()
                 
                 //left
-                if let val = mArray.removeFirst() {
-                    let node = TreeNode(val)
-                    root.left = node
+                if !mArray.isEmpty { //check needed incase these are leaf nodes
+                    if let val = mArray.removeFirst() {
+                        let node = TreeNode(val)
+                        root.left = node
 
-                    queue.append(node)
+                        queue.append(node)
+                    }
                 }
                 
                 //right

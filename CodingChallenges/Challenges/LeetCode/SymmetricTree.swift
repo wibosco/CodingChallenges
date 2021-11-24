@@ -25,11 +25,11 @@ struct SymmetricTree {
     }
     
     private static func isSymmetric(_ a: TreeNode?, _ b: TreeNode?) -> Bool {
-        guard let a = a, let b = b else {
+        guard a != nil, b != nil else {
            return a == nil && b == nil
         }
         
-        return (a.val == b.val) && isSymmetric(a.left, b.right) && isSymmetric(a.right, b.left)
+        return (a?.val == b?.val) && isSymmetric(a?.left, b?.right) && isSymmetric(a?.right, b?.left)
     }
     
     //Time: O(n)
