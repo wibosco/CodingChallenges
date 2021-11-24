@@ -18,7 +18,7 @@ class PathSumTests: XCTestCase {
         let data = [5, 4, 8, 11, nil, 13, 4, 7, 2, nil, nil, nil, 1]
         let targetSum = 22
         
-        let root = TreeNode.createBinaryTree(fromBFSArray: data)
+        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let exists = PathSum.hasPathSum(root, targetSum)
         
@@ -29,7 +29,7 @@ class PathSumTests: XCTestCase {
         let data = [1, 2, 3]
         let targetSum = 5
         
-        let root = TreeNode.createBinaryTree(fromBFSArray: data)
+        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let exists = PathSum.hasPathSum(root, targetSum)
         
@@ -40,7 +40,7 @@ class PathSumTests: XCTestCase {
         let data = [-2, nil, -3]
         let targetSum = -5
         
-        let root = TreeNode.createBinaryTree(fromBFSArray: data)
+        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let exists = PathSum.hasPathSum(root, targetSum)
         
