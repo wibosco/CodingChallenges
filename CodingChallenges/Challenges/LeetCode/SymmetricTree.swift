@@ -13,7 +13,7 @@ import Foundation
 struct SymmetricTree {
     
     //Time: O(n)
-    //Space: O(log n) - best, O(n) - worse (heigt of the tree)
+    //Space: O(log n) - best, O(h) - worse (height of the tree)
     //DFS
     //recursion
     static func isSymmetric(_ root: TreeNode?) -> Bool {
@@ -33,7 +33,7 @@ struct SymmetricTree {
     }
     
     //Time: O(n)
-    //Space: O(log n) - best, O(n) - worse
+    //Space: O(log n) - best, O(h) - worse
     //BFS
     //two pointers
     //iterative

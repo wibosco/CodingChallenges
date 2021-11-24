@@ -8,12 +8,12 @@
 
 import Foundation
 
-//
+//https://leetcode.com/problems/path-sum/
 //binary tree
 struct PathSum {
     
     //Time: O(n)
-    //Space: O(n) where n is the height of the tree
+    //Space: O(h) where h is the height of the tree
     //DFS
     //substitution
     static func hasPathSum(_ root: TreeNode?, _ targetSum: Int) -> Bool {
@@ -31,7 +31,7 @@ struct PathSum {
     
     
     //Time: O(n)
-    //Space: O(n) where n is the height of the tree
+    //Space: O(h) where h is the height of the tree
     //DFS
     //addition
     static func hasPathSumAddition(_ root: TreeNode?, _ targetSum: Int) -> Bool {
