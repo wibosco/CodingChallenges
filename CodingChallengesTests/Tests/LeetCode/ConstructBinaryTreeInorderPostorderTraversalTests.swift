@@ -46,5 +46,4 @@ class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
         
         XCTAssertEqual(levelOrder, [1, 2]) //[1, nil, 2]
     }
-    
 }

@@ -12,18 +12,52 @@ import Foundation
 //binary tree
 //divide and conquer
 //DFS
+//array
 struct ConstructBinaryTreeInorderPostorderTraversal {
     //postorder = left, right, root
     //inorder = left, root, right
     
     //Time: O(n)
     //Space: O(n)
+    //pointers
     static func buildTree(_ inorder: [Int], _ postorder: [Int]) -> TreeNode? {
-        var postorder = postorder
-        return buildTree(inorder, &postorder)
+        var postorderIndex = (postorder.count - 1) //postorder so we go from end to start
+        
+        var inorderMapping = [Int: Int]() //to speed up retrieve of root from inorder array
+        for (index, val) in inorder.enumerated() {
+            inorderMapping[val] = index
+        }
+    
+        return buildTree(inorderMapping, 0, (inorder.count - 1), postorder, &postorderIndex)
     }
     
-    private static func buildTree(_ inorder: [Int], _ postorder: inout [Int]) -> TreeNode? {
+    private static func buildTree(_ inorderMapping: [Int: Int], _ inorderStart: Int, _ inorderEnd: Int, _ postorder: [Int], _ postorderIndex: inout Int) -> TreeNode? {
+        guard inorderEnd >= inorderStart else {
+            return nil
+        }
+    
+        let rootVal = postorder[postorderIndex]
+        let root = TreeNode(rootVal)
+        postorderIndex -= 1 //postorder so we go from end to start
+        
+        let inorderRootIndex = inorderMapping[rootVal]! //this index will be used to split the inorder array into left and right subtrees
+        
+        // as postorder is being used as a guide, we must build the right branch first
+        root.right = buildTree(inorderMapping, (inorderRootIndex + 1), inorderEnd, postorder, &postorderIndex)
+        root.left = buildTree(inorderMapping, inorderStart, (inorderRootIndex - 1), postorder, &postorderIndex)
+        
+        return root
+    }
+    
+    //Time: O(n)
+    //Space: O(n)
+    //removal
+    static func buildTreeRemoval(_ inorder: [Int], _ postorder: [Int]) -> TreeNode? {
+        var postorder = postorder
+        return buildTreeRemoval(inorder, &postorder)
+    }
+    
+    private static func buildTreeRemoval(_ inorder: [Int], _ postorder: inout [Int]) -> TreeNode? {
         guard !postorder.isEmpty, !inorder.isEmpty else {
             return nil
         }
@@ -40,12 +74,12 @@ struct ConstructBinaryTreeInorderPostorderTraversal {
         // as postorder is being used as a guide, we must build the right branch first
         if (inorderIndex + 1) < inorder.count {
             let inorder = Array(inorder[(inorderIndex + 1)...])
-            root.right = buildTree(inorder, &postorder)
+            root.right = buildTreeRemoval(inorder, &postorder)
         }
         
         if inorderIndex > 0 {
             let inorder = Array(inorder[0..<inorderIndex])
-            root.left = buildTree(inorder, &postorder)
+            root.left = buildTreeRemoval(inorder, &postorder)
         }
         
         return root
