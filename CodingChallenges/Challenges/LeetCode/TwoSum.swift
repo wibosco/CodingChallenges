@@ -13,6 +13,11 @@ import Foundation
 struct TwoSum {
     
     //Time: O(n)
+    //Space: O(n)
+    //
+    //Solution Description:
+    //1. Builds an dictionary containing with the delta as key and index as value
+    //2. Peform lookup of delta to see if it already exists if so return current index and dictionary index
     static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var visted = [Int: Int]()
         
@@ -28,6 +33,9 @@ struct TwoSum {
     }
     
     //Time: O(n^2)
+    //
+    //Solution Description:
+    //1. Loop through all possible combinations of `nums` elements
     static func twoSumAlt(_ nums: [Int], _ target: Int) -> [Int] {
         var indices = [Int]()
         outerLoop: for i in 0..<nums.count {

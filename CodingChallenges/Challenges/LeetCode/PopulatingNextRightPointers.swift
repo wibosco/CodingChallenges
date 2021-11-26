@@ -16,6 +16,11 @@ struct PopulatingNextRightPointers {
     //Time: O(n)
     //Space: O(1)
     //linked list - treat each level as a linked list
+    //
+    //Solution Description:
+    //1. BFS traversal
+    //2. Treat each level as a linked list
+    //3. Set N + 1 `next` property from level N
     static func connect(_ root: TreeNodeNext?) -> TreeNodeNext? {
         guard let root = root else {
             return nil
@@ -47,6 +52,11 @@ struct PopulatingNextRightPointers {
     //Space: O(n) where n is number of nodes at the last level (as it's a perfect tree)
     //queue - use queue count as level count
     //pointer
+    //
+    //Solution Description:
+    //1. BFS traversal
+    //2. Queue nodes
+    //3. Use a `prev` to set the N - 1 nodes next property to the N node
     static func connectQueue(_ root: TreeNodeNext?) -> TreeNodeNext? {
         guard let root = root else {
             return nil

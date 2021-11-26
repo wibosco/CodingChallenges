@@ -11,7 +11,13 @@ import Foundation
 //https://leetcode.com/problems/valid-perfect-square/
 //binary search
 struct ValidPerfectSquare {
+    
     //Time: O(log n)
+    //Space: O(1)
+    //
+    //Solution Description:
+    //1. Note that any ascending number squence is sorted by definition
+    //2. Perfom binary search using the squared value to compare with num
     static func isPerfectSquare(_ num: Int) -> Bool {
         guard num != 1 else {
             return true

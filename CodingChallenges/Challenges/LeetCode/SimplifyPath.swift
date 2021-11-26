@@ -13,6 +13,12 @@ import Foundation
 struct SimplifyPath {
     
     //Time: O(n)
+    //Space: O(n)
+    //
+    //Solution Description:
+    //1. Split path using "/"
+    //2. Build stack of path by traversing through split path, if encoutering ".." pop last element from stack
+    //3. Concatenate stack elements together
     static func simplifyPath(_ path: String) -> String {
         let components = path.split(separator: "/")
         var stack = [String]()

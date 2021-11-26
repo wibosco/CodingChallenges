@@ -27,6 +27,11 @@ struct FirstBadVersion {
     }
     
     //Time: O(log n)
+    //Space: O(1)
+    //
+    //Solution Description:
+    //1. Treating `versions` as an array containing `true` and `false` values
+    //2. Binary search over `versions`
     func firstBadVersion(_ n: Int) -> Int {
         var left = 1
         var right = n

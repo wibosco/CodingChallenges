@@ -13,6 +13,7 @@ import Foundation
 class AddTwoNumbers {
     
     //Time: O(n)
+    //Space: O(n)
     static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         var l1: ListNode? = l1
         var l2: ListNode? = l2

@@ -14,6 +14,11 @@ import Foundation
 struct FindPeakElement {
     
     //Time: O(log n)
+    //Space: O(1)
+    //
+    //Solution Description:
+    //1. Use binary search to search through sorted array nums
+    //2. Find peak by comparing mid against it's neighbout (rather than target) to determine if mid is moving "downwards"
     static func findPeakElement(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {
             return 0
@@ -43,6 +48,10 @@ struct FindPeakElement {
     }
     
     //Time: O(n)
+    //Space: O(1)
+    //
+    //Solution Description:
+    //1. Loop through nums comparing previous with current and current with next to find the start of a peak
     static func findPeakElementLinear(_ nums: [Int]) -> Int {
         var nums = nums
         

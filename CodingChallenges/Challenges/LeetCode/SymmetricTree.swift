@@ -16,6 +16,10 @@ struct SymmetricTree {
     //Space: O(log n) - best, O(h) - worse (height of the tree)
     //DFS
     //recursion
+    //
+    //Solution Description:
+    //1. Perform DFS traversal of two opposite branches (left and right or right and left) together
+    //2. Compare node at each level to ensure they match
     static func isSymmetric(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
@@ -37,6 +41,11 @@ struct SymmetricTree {
     //BFS
     //two pointers
     //iterative
+    //
+    //Solution Description:
+    //1. Perform a level traversal
+    //2. At each level perform a comparison that levels outer most elements and then move inwards (repeat until no more elements to compare)
+    //3. Ensure that parent element is the same for any subtree
     static func isSymmetricComplex(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false

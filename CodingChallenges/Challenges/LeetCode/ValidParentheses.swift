@@ -16,6 +16,13 @@ struct ValidParentheses {
                                                   "{" : "}",
                                                   "[" : "]"]
     
+    //Time: O(n)
+    //Space: O(n)
+    //
+    //Solution Description:
+    //1. Use stack to store opening braces
+    //2. When closing brace encountered, pop from stack and ensure the brace is of the same type using `mapping`. Any mismatch results in invalid
+    //3. Once the string has been processed, check stack count to determine if valid
     static func isValid(_ s: String) -> Bool {
         guard s.count % 2 == 0 else {
             return false

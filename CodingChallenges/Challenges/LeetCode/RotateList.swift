@@ -13,7 +13,13 @@ import Foundation
 //array
 //modulo
 struct RotateList {
+    
     //Time: O(n)
+    //Space: O(n)
+    //
+    //Solution Description:
+    //1. Buils an array contain nodes
+    //2. Use modulo to wrap rotation shift around the array
     static func rotateRight(_ head: ListNode?, _ k: Int) -> ListNode? {
         guard head != nil, head?.next != nil, k > 0 else {
             return head
