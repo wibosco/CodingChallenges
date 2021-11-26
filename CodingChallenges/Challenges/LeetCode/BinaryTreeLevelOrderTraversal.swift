@@ -16,6 +16,7 @@ struct BinaryTreeLevelOrderTraversal {
     //Time: O(n)
     //Space: O(n) worst/average (O(1) for best)
     //iterative
+    //queue - use queue count as level count
     static func levelOrder(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
             return []
