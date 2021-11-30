@@ -9,18 +9,22 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-provinces/
-//graph
+//graph theory
 //disjoint set
 struct NumberOfProvinces {
     
     //Time: O(n) due to the `reduce` otherwise O(log n) for the disjoint set
-    //Space: O(n) for the `rank` array in `DisjointSet`
+    //Space: O(n) for the `rank` array in `UnionFind`
+    //
+    //Solution Description:
+    //1. A valid tree has one root and no cycles by using a disjoint set
+    //   we can test for both conditions
     static func findCircleNum(_ isConnected: [[Int]]) -> Int {
         guard !isConnected.isEmpty else {
             return 0
         }
         
-        let disjointSet = DisjointSet(count: isConnected.count)
+        let disjointSet = UnionFind(count: isConnected.count)
         
         for (i, row) in isConnected.enumerated() {
             for (j, element) in row.enumerated() where ((i != j) && (element == 1)) {
@@ -49,7 +53,7 @@ struct NumberOfProvinces {
 //   negative value. Update the smaller root to point at the other
 //   root and update the other roots count to include the count that
 //   the former root had
-private class DisjointSet {
+private class UnionFind {
     private(set) var rank: [Int]
     
     // MARK: - Init
@@ -75,17 +79,20 @@ private class DisjointSet {
         let xIndex = find(x)
         let yIndex = find(y)
         
-        if xIndex != yIndex {
-            //Choose the index with the most nodes under it i.e. the lowest negative value
-            if rank[xIndex] <= rank[yIndex] {
-                let tmp = rank[yIndex]
-                rank[yIndex] = xIndex
-                rank[xIndex] += tmp //increasing the value as this index, increases the rank of that root
-            } else {
-                let tmp = rank[xIndex]
-                rank[xIndex] = yIndex
-                rank[yIndex] =  tmp
-            }
+        guard xIndex != yIndex else {
+            //already in the same same set
+            return
+        }
+        
+        //Choose the index with the most nodes under it i.e. the lowest negative value
+        if rank[xIndex] <= rank[yIndex] {
+            let tmp = rank[yIndex]
+            rank[yIndex] = xIndex
+            rank[xIndex] += tmp //increasing the value as this index, increases the rank of that root
+        } else {
+            let tmp = rank[xIndex]
+            rank[xIndex] = yIndex
+            rank[yIndex] =  tmp
         }
     }
     
