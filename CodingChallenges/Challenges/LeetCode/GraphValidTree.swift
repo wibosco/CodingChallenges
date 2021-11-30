@@ -10,11 +10,11 @@ import Foundation
 
 //https://leetcode.com/problems/graph-valid-tree/
 //graph theory
-//disjoint sets
 struct GraphValidTree {
         
-    //Time: O(log n)
-    //Space: O(n) for the `rank` array in `DisjointSet`
+    //Time: O(n) where n is edges
+    //Space: O(n) where n is the nodes
+    //disjoint set
     //
     //Solution Description:
     //1. A valid tree has one root (all nodes need to be connected) and no cycles

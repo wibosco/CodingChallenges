@@ -10,11 +10,11 @@ import Foundation
 
 //https://leetcode.com/problems/number-of-provinces/
 //graph theory
-//disjoint set
 struct NumberOfProvinces {
     
     //Time: O(n) due to the `reduce` otherwise O(log n) for the disjoint set
     //Space: O(n) for the `rank` array in `UnionFind`
+    //disjoint set
     //
     //Solution Description:
     //1. A valid tree has one root and no cycles by using a disjoint set
@@ -24,17 +24,15 @@ struct NumberOfProvinces {
             return 0
         }
         
-        let disjointSet = UnionFind(count: isConnected.count)
+        let unionFind = UnionFind(count: isConnected.count)
         
         for (i, row) in isConnected.enumerated() {
             for (j, element) in row.enumerated() where ((i != j) && (element == 1)) {
-                disjointSet.union(x: i, y: j)
+                unionFind.union(x: i, y: j)
             }
         }
         
-        return disjointSet.rank.reduce(0) {
-            return $1 < 0 ? $0 + 1 : $0
-        }
+        return unionFind.distinctSetCount
     }
 }
 
@@ -54,11 +52,13 @@ struct NumberOfProvinces {
 //   root and update the other roots count to include the count that
 //   the former root had
 private class UnionFind {
+    private(set) var distinctSetCount: Int
     private(set) var rank: [Int]
     
     // MARK: - Init
     
     init(count: Int) {
+        self.distinctSetCount = count
         rank  = Array(repeating: -1, count: count) //-1 means this index is it's own root
     }
     
@@ -84,6 +84,8 @@ private class UnionFind {
             return
         }
         
+        distinctSetCount -= 1 //merging two sets into one
+        
         //Choose the index with the most nodes under it i.e. the lowest negative value
         if rank[xIndex] <= rank[yIndex] {
             let tmp = rank[yIndex]
@@ -92,7 +94,7 @@ private class UnionFind {
         } else {
             let tmp = rank[xIndex]
             rank[xIndex] = yIndex
-            rank[yIndex] =  tmp
+            rank[yIndex] += tmp
         }
     }
     

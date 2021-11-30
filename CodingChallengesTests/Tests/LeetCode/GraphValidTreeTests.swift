@@ -38,4 +38,15 @@ class GraphValidTreeTests: XCTestCase {
         
         XCTAssertFalse(isValid)
     }
+    
+    func test_C() {
+        let n = 5
+        let edges = [[0, 1],
+                     [1, 2],
+                     [3, 4]]
+        
+        let isValid = GraphValidTree.validTree(n, edges)
+        
+        XCTAssertFalse(isValid)
+    }
 }
