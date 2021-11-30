@@ -89,10 +89,12 @@ private class UnionFind {
             return false
         }
         
+        //join the smaller graph with larger. If both are the same
+        //size then favour `x`
         if rank[xRoot] <= rank[yRoot] {
             let tmp = rank[yRoot]
             rank[yRoot] = xRoot
-            rank[xRoot] += tmp
+            rank[xRoot] += tmp //increasing the value as this index, increases the rank of that root
         } else {
             let tmp = rank[xRoot]
             rank[xRoot] = yRoot

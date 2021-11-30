@@ -1,5 +1,5 @@
 //
-//  NumberConnectedComponentsUndirectedGraph.swift
+//  EarliestMomentWhenEveryoneBecomeFriends.swift
 //  CodingChallenges
 //
 //  Created by William Boles on 30/11/2021.
@@ -8,28 +8,32 @@
 
 import Foundation
 
-//https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+//https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/
 //graph theory
-struct NumberConnectedComponentsUndirectedGraph {
+struct EarliestMomentWhenEveryoneBecomeFriends {
     
-    //Time: O(n)
-    //Space: O(n)
-    //disjoint set
+    //Time: O(n log n) where n is the number of logs
+    //Space: O(n + l) where n is the number of nodes/vertices and l is the number of logs
+    //disjoint sets
     //
-    //Solution Description:
-    //1. Using disjoint sets combine the nodes together using the
-    //   edges array and count how many distinct sets there are
-    static func countComponents(_ n: Int, _ edges: [[Int]]) -> Int {
-        guard !edges.isEmpty else {
-            return n
-        }
-        
+    //Solution Description
+    //Using disjoint sets combine the logs together. Sort the logs so that as we merge
+    //each log into sets when we get to one set we know that we have the earliest time
+    //and can return. If we get to the end with getting to one set we know not everyone
+    //are friends and so can return -1
+    static func earliestAcq(_ logs: [[Int]], _ n: Int) -> Int {
+        let sortedLogs = logs.sorted { $0[0] < $1[0] }
         let unionFind = UnionFind(count: n)
-        for edge in edges {
-            unionFind.union(edge[0], edge[1])
-        }
         
-        return unionFind.distinctSetCount
+        for log in sortedLogs {
+            unionFind.union(log[1], log[2])
+            
+            if unionFind.distinctSetsCount == 1 {
+                return log[0]
+            }
+        }
+    
+        return -1
     }
 }
 
@@ -51,13 +55,13 @@ struct NumberConnectedComponentsUndirectedGraph {
 //4. If when attempting to union two nodes we discover they already
 //   share a root then that union will create a cycle
 private class UnionFind {
-    private(set) var distinctSetCount: Int
-    private(set) var ranks: [Int]
+    var ranks: [Int]
+    var distinctSetsCount: Int
     
     // MARK: - Init
     
     init(count: Int) {
-        self.distinctSetCount = count
+        self.distinctSetsCount = count
         ranks = Array(repeating: -1, count: count)
     }
     
@@ -68,7 +72,6 @@ private class UnionFind {
         while ranks[x] >= 0 {
             x = ranks[x]
         }
-        
         return x
     }
     
@@ -81,7 +84,7 @@ private class UnionFind {
             return
         }
         
-        distinctSetCount -= 1 //merging two sets so reduce overall sets count by 1
+        distinctSetsCount -= 1 //merging two sets so reduce overall sets count by 1
         
         //join the smaller graph with larger. If both are the same
         //size then favour `x`
