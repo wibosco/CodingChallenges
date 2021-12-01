@@ -59,23 +59,22 @@ struct GraphValidTree {
 //4. If when attempting to union two nodes we discover they already
 //   share a root then that union will create a cycle
 private class UnionFind {
-    private(set) var rank: [Int]
+    private(set) var ranks: [Int]
     
     // MARK: - Init
     
     init(count: Int) {
-        rank = Array(repeating: -1, count: count)
+        ranks = Array(repeating: -1, count: count)
     }
     
     // MARK: - Operations
     
     func find(_ x: Int) -> Int {
-        var x = x
-        while rank[x] >= 0 {
-            x = rank[x]
+        guard ranks[x] >= 0 else { // 0 is valid as an array index
+            return x
         }
-        
-        return x
+        ranks[x] = find(ranks[x]) //update ranks[x] to point nearer to the root of this set so speeding up finding
+        return ranks[x]
     }
     
     func union(_ x: Int, _ y: Int) -> Bool {
@@ -91,14 +90,14 @@ private class UnionFind {
         
         //join the smaller graph with larger. If both are the same
         //size then favour `x`
-        if rank[xRoot] <= rank[yRoot] {
-            let tmp = rank[yRoot]
-            rank[yRoot] = xRoot
-            rank[xRoot] += tmp //increasing the value as this index, increases the rank of that root
+        if ranks[xRoot] <= ranks[yRoot] {
+            let tmp = ranks[yRoot]
+            ranks[yRoot] = xRoot
+            ranks[xRoot] += tmp //increasing the value as this index, increases the rank of that root
         } else {
-            let tmp = rank[xRoot]
-            rank[xRoot] = yRoot
-            rank[yRoot] += tmp
+            let tmp = ranks[xRoot]
+            ranks[xRoot] = yRoot
+            ranks[yRoot] += tmp
         }
         
         return true

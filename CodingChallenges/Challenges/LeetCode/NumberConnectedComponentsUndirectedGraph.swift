@@ -48,8 +48,6 @@ struct NumberConnectedComponentsUndirectedGraph {
 //   negative value. Update the smaller root to point at the other
 //   root and update the other roots count to include the count that
 //   the former root had
-//4. If when attempting to union two nodes we discover they already
-//   share a root then that union will create a cycle
 private class UnionFind {
     private(set) var distinctSetCount: Int
     private(set) var ranks: [Int]
@@ -64,12 +62,11 @@ private class UnionFind {
     // MARK: - Operations
     
     func find(_ x: Int) -> Int {
-        var x = x
-        while ranks[x] >= 0 {
-            x = ranks[x]
+        guard ranks[x] >= 0 else { // 0 is valid as an array index
+            return x
         }
-        
-        return x
+        ranks[x] = find(ranks[x]) //update ranks[x] to point nearer to the root of this set so speeding up finding
+        return ranks[x]
     }
     
     func union(_ x: Int, _ y: Int) {

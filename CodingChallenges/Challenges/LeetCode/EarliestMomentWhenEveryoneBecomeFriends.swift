@@ -14,7 +14,7 @@ struct EarliestMomentWhenEveryoneBecomeFriends {
     
     //Time: O(n log n) where n is the number of logs
     //Space: O(n + l) where n is the number of nodes/vertices and l is the number of logs
-    //disjoint sets
+    //disjoint set
     //
     //Solution Description
     //Using disjoint sets combine the logs together. Sort the logs so that as we merge
@@ -52,8 +52,6 @@ struct EarliestMomentWhenEveryoneBecomeFriends {
 //   negative value. Update the smaller root to point at the other
 //   root and update the other roots count to include the count that
 //   the former root had
-//4. If when attempting to union two nodes we discover they already
-//   share a root then that union will create a cycle
 private class UnionFind {
     var ranks: [Int]
     var distinctSetsCount: Int
@@ -68,11 +66,11 @@ private class UnionFind {
     // MARK: - Operations
     
     func find(_ x: Int) -> Int {
-        var x = x
-        while ranks[x] >= 0 {
-            x = ranks[x]
+        guard ranks[x] >= 0 else { // 0 is valid as an array index
+            return x
         }
-        return x
+        ranks[x] = find(ranks[x]) //update ranks[x] to point nearer to the root of this set so speeding up finding
+        return ranks[x]
     }
     
     func union(_ x: Int, _ y: Int) {

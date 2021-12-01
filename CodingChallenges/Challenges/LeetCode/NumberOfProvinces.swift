@@ -53,24 +53,23 @@ struct NumberOfProvinces {
 //   the former root had
 private class UnionFind {
     private(set) var distinctSetCount: Int
-    private(set) var rank: [Int]
+    private(set) var ranks: [Int]
     
     // MARK: - Init
     
     init(count: Int) {
         self.distinctSetCount = count
-        rank  = Array(repeating: -1, count: count) //-1 means this index is it's own root
+        ranks = Array(repeating: -1, count: count) //-1 means this index is it's own root
     }
     
     // MARK: - Find
     
     func find(_ x: Int) -> Int {
-        var x = x
-        while rank[x] >= 0 { // 0 is valid as an array index
-            x = rank[x]
+        guard ranks[x] >= 0 else { // 0 is valid as an array index
+            return x
         }
-        
-        return x
+        ranks[x] = find(ranks[x]) //update ranks[x] to point nearer to the root of this set so speeding up finding
+        return ranks[x]
     }
     
     // MARK: - Union
@@ -87,14 +86,14 @@ private class UnionFind {
         distinctSetCount -= 1 //merging two sets into one
         
         //Choose the index with the most nodes under it i.e. the lowest negative value
-        if rank[xIndex] <= rank[yIndex] {
-            let tmp = rank[yIndex]
-            rank[yIndex] = xIndex
-            rank[xIndex] += tmp //increasing the value as this index, increases the rank of that root
+        if ranks[xIndex] <= ranks[yIndex] {
+            let tmp = ranks[yIndex]
+            ranks[yIndex] = xIndex
+            ranks[xIndex] += tmp //increasing the value as this index, increases the rank of that root
         } else {
-            let tmp = rank[xIndex]
-            rank[xIndex] = yIndex
-            rank[yIndex] += tmp
+            let tmp = ranks[xIndex]
+            ranks[xIndex] = yIndex
+            ranks[yIndex] += tmp
         }
     }
     
