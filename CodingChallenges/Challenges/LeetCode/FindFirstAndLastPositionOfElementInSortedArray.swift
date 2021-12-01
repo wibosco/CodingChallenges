@@ -12,7 +12,7 @@ import Foundation
 //binary search
 struct FindFirstAndLastPositionOfElementInSortedArray {
     
-    //(log n)
+    //Time: O(log n)
     static func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         guard nums.count > 0 else {
             return [-1, -1]

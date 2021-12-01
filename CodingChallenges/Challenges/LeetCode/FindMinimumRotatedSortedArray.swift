@@ -13,6 +13,7 @@ import Foundation
 struct FindMinimumRotatedSortedArray {
     
     //Time: O(log n)
+    //Space: O(1)
     static func findMin(_ nums: [Int]) -> Int {
         var left = 0
         var right = nums.count - 1

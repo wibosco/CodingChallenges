@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct NumberOfProvinces {
     
-    //Time: O(n) due to the `reduce` otherwise O(log n) for the disjoint set
+    //Time: O(n^2) for the disjoint set
     //Space: O(n) for the `rank` array in `UnionFind`
     //disjoint set
     //
