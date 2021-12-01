@@ -10,17 +10,65 @@ import Foundation
 
 //https://leetcode.com/problems/rotate-list/
 //linked list
-//array
-//modulo
 struct RotateList {
     
     //Time: O(n)
-    //Space: O(n)
+    //Space: O(1)
+    //two pointers
+    //modulo
     //
     //Solution Description:
-    //1. Buils an array contain nodes
-    //2. Use modulo to wrap rotation shift around the array
+    //Iterate through the list finding it's tail and the number of nodes in
+    //that list. Use modulo to rebase `k` to the `count` number base. Attach
+    //the existing tail to the head (forming a temp ring). Using two pointer
+    //iterate through the list finding the new tail and new head. Break the
+    //existing existing connection between new tail and new head (breaking
+    //the ring) and return the new head.
     static func rotateRight(_ head: ListNode?, _ k: Int) -> ListNode? {
+        guard head != nil, head?.next != nil, k > 0 else {
+            return head
+        }
+        
+        var tail: ListNode? = head
+        var count = 1
+
+        while tail?.next != nil {
+            tail = tail?.next
+            
+            count += 1
+        }
+        
+        let rotations = count - (k % count)
+        guard rotations > 0 else {
+            return head
+        }
+        
+        tail?.next = head //there will be a new tail and new head so we need to join the old ones together
+        
+        var newTail = head //slow
+        var newHead = head //fast
+        
+        for _ in 0..<rotations {
+            newTail = newHead
+            newHead = newHead?.next
+        }
+        
+        newTail?.next = nil //break existing connection between new tail and it's old next node
+        
+        return newHead
+    }
+    
+    //Time: O(n)
+    //Space: O(n)
+    //array
+    //modulo
+    //
+    //Solution Description:
+    //Build an array containing all the list nodes. Use modulo to wrap
+    //rotation shift around the array, taking care to break the last node
+    //from the new head node (as this is now the tail) and attaching the
+    //old tail to the next node i.e. the first node in the array (old head)
+    static func rotateRightArray(_ head: ListNode?, _ k: Int) -> ListNode? {
         guard head != nil, head?.next != nil, k > 0 else {
             return head
         }
@@ -33,13 +81,14 @@ struct RotateList {
         }
 
         let mapped = k % nodes.count
-        if mapped == 0 {
+        if mapped == 0 { //being rotated back the lists starting position
             return head
         }
         
+        nodes.last?.next = nodes.first //there will be a new tail and new head so we need to join the old ones together
+        
         let newHeadIndex = nodes.count - mapped
-        nodes[(newHeadIndex - 1)].next = nil
-        nodes.last?.next = head
+        nodes[(newHeadIndex - 1)].next = nil //break existing connection between new tail and it's old next node
 
         return nodes[newHeadIndex]
     }
