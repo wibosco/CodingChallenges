@@ -227,6 +227,8 @@
 		3D49F6C72757C65E00B996AB /* FindIfPathExistsInGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49F6C62757C65E00B996AB /* FindIfPathExistsInGraph.swift */; };
 		3D49F6C92757C6A100B996AB /* FindIfPathExistsInGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49F6C82757C6A100B996AB /* FindIfPathExistsInGraphTests.swift */; };
 		3D49F6CB2757CC8400B996AB /* GraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49F6CA2757CC8400B996AB /* GraphNode.swift */; };
+		3D49F6CD2757D52B00B996AB /* AllPathsFromSourceToTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49F6CC2757D52B00B996AB /* AllPathsFromSourceToTarget.swift */; };
+		3D49F6CF2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49F6CE2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift */; };
 		3D4E401A2729714B00DE491D /* MinMaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E40192729714A00DE491D /* MinMaxSum.swift */; };
 		3D4E401D2729770F00DE491D /* BirthdayCakeCandles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */; };
 		3D54C6E8273AB044006A9F67 /* ABCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D54C6E7273AB044006A9F67 /* ABCs.swift */; };
@@ -576,6 +578,8 @@
 		3D49F6C62757C65E00B996AB /* FindIfPathExistsInGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIfPathExistsInGraph.swift; sourceTree = "<group>"; };
 		3D49F6C82757C6A100B996AB /* FindIfPathExistsInGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIfPathExistsInGraphTests.swift; sourceTree = "<group>"; };
 		3D49F6CA2757CC8400B996AB /* GraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNode.swift; sourceTree = "<group>"; };
+		3D49F6CC2757D52B00B996AB /* AllPathsFromSourceToTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceToTarget.swift; sourceTree = "<group>"; };
+		3D49F6CE2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceToTargetTests.swift; sourceTree = "<group>"; };
 		3D4E3FD42729712200DE491D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4E40192729714A00DE491D /* MinMaxSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxSum.swift; sourceTree = "<group>"; };
 		3D4E401C2729770F00DE491D /* BirthdayCakeCandles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandles.swift; sourceTree = "<group>"; };
@@ -899,6 +903,7 @@
 			isa = PBXGroup;
 			children = (
 				3D3E6ABA274C074800CC3893 /* AddTwoNumbersTests.swift */,
+				3D49F6CE2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift */,
 				3D3E6ADD274C074800CC3893 /* BinarySearchLeetCodeTests.swift */,
 				3D3E6AE6274C074800CC3893 /* BinaryTreeInorderTraversalTests.swift */,
 				3D3E6BDE274C505800CC3893 /* BinaryTreeLevelOrderTraversalTests.swift */,
@@ -1705,6 +1710,7 @@
 			isa = PBXGroup;
 			children = (
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
+				3D49F6CC2757D52B00B996AB /* AllPathsFromSourceToTarget.swift */,
 				3D3395B92745A155002EE4AC /* BinarySearchLeetCode.swift */,
 				3D3E6AB0274C053700CC3893 /* BinaryTreeInorderTraversal.swift */,
 				3D3E6BDC274C501300CC3893 /* BinaryTreeLevelOrderTraversal.swift */,
@@ -2031,6 +2037,7 @@
 				3D3BFF22275579610079BBF5 /* GraphValidTree.swift in Sources */,
 				3D3395A927445470002EE4AC /* HeapSort.swift in Sources */,
 				3D9D35BB2729518600112474 /* Staircase.swift in Sources */,
+				3D49F6CD2757D52B00B996AB /* AllPathsFromSourceToTarget.swift in Sources */,
 				3D3395B627459876002EE4AC /* PeakIndexMountainArray.swift in Sources */,
 				3DECC3C0272C761900A206FD /* OrganizingContainersOfBalls.swift in Sources */,
 				3D9D35AC2729518600112474 /* PrimsMSTEdge.swift in Sources */,
@@ -2310,6 +2317,7 @@
 				3D3E6BD7274C108600CC3893 /* BinaryTreePreorderTraversalTests.swift in Sources */,
 				3D3E6B9C274C09B100CC3893 /* DivisibleSumPairsTests.swift in Sources */,
 				3D3E6AFF274C074800CC3893 /* GuessNumberHigherOrLowerTests.swift in Sources */,
+				3D49F6CF2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift in Sources */,
 				3D3E6BD3274C0A6E00CC3893 /* LinkedListIntersectingNodeTests.swift in Sources */,
 				3D3E6BA8274C09B100CC3893 /* IceCreamParlorTests.swift in Sources */,
 				3D3E6BA6274C09B100CC3893 /* MaximizeSumTests.swift in Sources */,
