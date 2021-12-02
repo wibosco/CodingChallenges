@@ -11,12 +11,68 @@ import Foundation
 class GraphNode {
     let val: Int
     
-    var connections = [GraphNode]()
+    var neighbors = [GraphNode]()
     
     // MARK: - Init
     
     init(_ val: Int) {
         self.val = val
+    }
+}
+
+extension GraphNode {
+    static func createUndirectedGraph(fromAdjList edges: [[Int]]) -> GraphNode? {
+        guard !edges.isEmpty else {
+            return nil
+        }
+        
+        var nodes = [GraphNode]()
+        for i in 1...edges.count { //1-indexed
+            let node = GraphNode(i)
+            nodes.append(node)
+        }
+        
+        for i in 0..<edges.count {
+            let fromNode = nodes[i]
+            for edge in edges[i] {
+                let toNode = nodes[(edge - 1)]
+                fromNode.neighbors.append(toNode)
+            }
+        }
+        
+        return nodes[0]
+    }
+    
+    static func extractValuesIntoAdjList(fromGraph node: GraphNode?) -> [[Int]] {
+        guard let node = node else {
+            return []
+        }
+        
+        var queue = [node]
+        var visited = [GraphNode]()
+        
+        while !queue.isEmpty {
+            let n = queue.removeFirst()
+            
+            guard !visited.contains(n) else {
+                continue
+            }
+            
+            visited.append(n)
+            
+            for neighbour in n.neighbors {
+                queue.append(neighbour)
+            }
+        }
+        
+        let orderedNodes = visited.sorted { $0.val < $1.val }
+        
+        var adjList = [[Int]]()
+        for n in orderedNodes {
+            adjList.append(n.neighbors.map { $0.val }.sorted { $0 < $1 } )
+        }
+        
+        return adjList
     }
 }
 

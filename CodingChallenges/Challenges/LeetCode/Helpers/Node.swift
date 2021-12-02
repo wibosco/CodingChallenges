@@ -41,9 +41,7 @@ extension Node {
         
         return nodes.first
     }
-}
 
-extension Node {
     static func extractValues(fromList head: Node?) -> [[Int?]] {
         var data = [[Int?]]()
         var mapping = [Node: Int]()

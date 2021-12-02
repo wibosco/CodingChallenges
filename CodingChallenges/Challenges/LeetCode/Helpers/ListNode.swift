@@ -30,9 +30,7 @@ extension ListNode {
         
         return prev
     }
-}
 
-extension ListNode {
     static func extractValues(fromList head: ListNode?) -> [Int] {
         var data = [Int]()
         

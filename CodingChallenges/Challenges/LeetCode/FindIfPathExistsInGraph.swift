@@ -131,8 +131,8 @@ struct FindIfPathExistsInGraph {
             let fromNode = nodes[edge[0]]
             let toNode = nodes[edge[1]]
             
-            fromNode.connections.append(toNode)
-            toNode.connections.append(fromNode)
+            fromNode.neighbors.append(toNode)
+            toNode.neighbors.append(fromNode)
         }
         
         let startNode = nodes[start]
@@ -151,7 +151,7 @@ struct FindIfPathExistsInGraph {
             }
             
             visited.insert(node)
-            stack.append(contentsOf: node.connections)
+            stack.append(contentsOf: node.neighbors)
         }
         
         return false
