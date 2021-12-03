@@ -23,70 +23,77 @@ class TreeNode {
 
 extension TreeNode {
     static func createBinaryTree(fromLevelOrderArray array: [Int?]) -> TreeNode? {
-        guard !array.isEmpty else {
+        guard !array.isEmpty, array[0] != nil else {
             return nil
         }
         
-        var mArray = array
-        let root = TreeNode(mArray.removeFirst()!)
+        let root = TreeNode(array[0]!)
         var queue = [root]
+        var i = 1
         
-        while !queue.isEmpty {
-            let levelCount = queue.count
-
-            for _ in 0..<levelCount {
-                let root = queue.removeFirst()
+        while i < array.count {
+            let node = queue.removeFirst()
+            
+            if let leftValue = array[i] {
+                let left = TreeNode(leftValue)
+                node.left = left
                 
-                //left
-                if !mArray.isEmpty { //check needed incase these are leaf nodes
-                    if let val = mArray.removeFirst() {
-                        let node = TreeNode(val)
-                        root.left = node
-
-                        queue.append(node)
-                    }
-                }
-                
-                //right
-                if !mArray.isEmpty {
-                    if let val = mArray.removeFirst() {
-                        let node = TreeNode(val)
-                        root.right = node
-                        
-                        queue.append(node)
-                    }
-                }
+                queue.append(left)
             }
+            
+            i += 1
+            
+            guard i < array.count else {
+                continue
+            }
+            
+            if let rightValue = array[i] {
+                let right = TreeNode(rightValue)
+                node.right = right
+                
+                queue.append(right)
+            }
+            
+            i += 1
         }
-
+        
         return root
     }
     
-    static func extractValuesInLevelOrder(fromBinaryTree root: TreeNode?) -> [Int] {
+    static func extractValuesInLevelOrder(fromBinaryTree root: TreeNode?) -> [Int?] {
         guard let root = root else {
-            return []
+            return [Int?]()
         }
         
-        var queue = [root]
-        var values = [Int]()
+        var queue = [TreeNode?]()
+        queue.append(root)
+        var values = [Int?]()
         
         while !queue.isEmpty {
-            let levelCount = queue.count //how many node pairs are in this level
+            let levelCount = queue.count
             
-            for _ in 0..<levelCount {//need to know how many times we remove from the queue for this level
-                let node = queue.removeFirst()
+            for _ in 0..<levelCount {
+                guard let node = queue.removeFirst() else {
+                    values.append(nil)
+                    continue
+                }
+                
                 values.append(node.val)
                 
-                if let left = node.left {
-                    queue.append(left)
-                }
-                
-                if let right = node.right {
-                    queue.append(right)
-                }
+                queue.append(node.left)
+                queue.append(node.right)
             }
         }
         
-        return values
+        //trim `nil` from end
+        var i = (values.count - 1)
+        while i > 0 {
+            if values[i] != nil {
+                break
+            }
+            i -= 1
+        }
+        
+        return Array(values[0...i])
     }
 }

@@ -67,11 +67,11 @@ struct SerializeDeserializeBinaryTree {
     //Iterate through the array using BFS, taking the elements in pairs as
     //the left and right of the first tree node of the queue
     static func deserialize(_ data: [Int?]) -> TreeNode? {
-        guard !data.isEmpty else {
+        guard !data.isEmpty, data[0] != nil else {
             return nil
         }
         
-        let root = TreeNode(data[0]!) //safe to do this?
+        let root = TreeNode(data[0]!)
         var queue = [root]
         var i = 1
         

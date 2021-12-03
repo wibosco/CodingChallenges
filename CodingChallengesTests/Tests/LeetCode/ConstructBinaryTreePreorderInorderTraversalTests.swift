@@ -22,7 +22,7 @@ class ConstructBinaryTreePreorderInorderTraversalTests: XCTestCase {
         
         let levelOrder = TreeNode.extractValuesInLevelOrder(fromBinaryTree: root)
         
-        XCTAssertEqual(levelOrder, [3, 9, 20, 15, 7]) //[3, 9, 20, nil, nil, 15, 7]
+        XCTAssertEqual(levelOrder, [3, 9, 20, nil, nil, 15, 7])
     }
     
     func test_B() {
@@ -44,7 +44,7 @@ class ConstructBinaryTreePreorderInorderTraversalTests: XCTestCase {
         
         let levelOrder = TreeNode.extractValuesInLevelOrder(fromBinaryTree: root)
         
-        XCTAssertEqual(levelOrder, [1, 2]) //[1, nil, 2]
+        XCTAssertEqual(levelOrder, [1, nil, 2])
     }
     
     func test_D() {
@@ -55,6 +55,6 @@ class ConstructBinaryTreePreorderInorderTraversalTests: XCTestCase {
         
         let levelOrder = TreeNode.extractValuesInLevelOrder(fromBinaryTree: root)
         
-        XCTAssertEqual(levelOrder, [3, 1, 4, 2]) //[3, 1, 4, nil, 2]
+        XCTAssertEqual(levelOrder, [3, 1, 4, nil, 2])
     }
 }
