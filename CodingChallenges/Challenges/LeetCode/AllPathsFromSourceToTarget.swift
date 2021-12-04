@@ -36,12 +36,14 @@ struct AllPathsFromSourceToTarget {
             _ = path.popLast() //backtracking by removing the last element from the path
         }
         
+        //Goal
         guard curr != target else {
             paths.append(path)
             
             return
         }
         
+        //Choice
         for next in graph[curr] {
             path.append(next)
             dfs(graph, curr: next, target: target, path: &path, paths: &paths)
