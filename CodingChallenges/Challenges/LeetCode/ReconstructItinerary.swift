@@ -27,14 +27,6 @@ struct ReconstructItinerary {
         var adjList = [String: [String]]()
         
         for ticket in tickets {
-            if adjList[ticket[0]] == nil {
-                adjList[ticket[0]] = [String]()
-            }
-            
-            if adjList[ticket[1]] == nil {
-                adjList[ticket[1]] = [String]()
-            }
-            
             adjList[ticket[0], default: [String]()].append(ticket[1])
         }
         
@@ -58,12 +50,15 @@ struct ReconstructItinerary {
             return true
         }
         
-        let neighbors = adjList[curr] ?? []
+        let neighbors = adjList[curr, default: [String]()]
         
         //Choice
         for (i, neighbor) in neighbors.enumerated() {
             var mAdjList = adjList
-            mAdjList[curr]?.remove(at: i) //ensure that we can't revisit this to-from combination (in this cycle)
+            //ensure that we can't revisit this to-from combination (in this cycle)
+            //When an edge is travelled, think of it as being used and no longer
+            //being available
+            mAdjList[curr]?.remove(at: i) //constraint
             if dfs(mAdjList, count, neighbor, &route) {
                 return true
             }
