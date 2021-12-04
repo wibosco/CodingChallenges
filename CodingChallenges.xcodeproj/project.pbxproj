@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */; };
+		3D2A61CA275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */; };
+		3D2A61CC275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */; };
 		3D33959427443FA1002EE4AC /* FindPeakElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33959327443FA1002EE4AC /* FindPeakElement.swift */; };
 		3D3395A427445470002EE4AC /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3395972744546F002EE4AC /* Prime.swift */; };
 		3D3395A627445470002EE4AC /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33959927445470002EE4AC /* MaxHeap.swift */; };
@@ -365,6 +367,8 @@
 
 /* Begin PBXFileReference section */
 		3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumber.swift; sourceTree = "<group>"; };
+		3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceLeadToDestinationTests.swift; sourceTree = "<group>"; };
+		3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceLeadToDestination.swift; sourceTree = "<group>"; };
 		3D33959327443FA1002EE4AC /* FindPeakElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPeakElement.swift; sourceTree = "<group>"; };
 		3D3395972744546F002EE4AC /* Prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
 		3D33959927445470002EE4AC /* MaxHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
@@ -915,6 +919,7 @@
 			isa = PBXGroup;
 			children = (
 				3D3E6ABA274C074800CC3893 /* AddTwoNumbersTests.swift */,
+				3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */,
 				3D49F6CE2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift */,
 				3D3E6ADD274C074800CC3893 /* BinarySearchLeetCodeTests.swift */,
 				3D3E6AE6274C074800CC3893 /* BinaryTreeInorderTraversalTests.swift */,
@@ -1725,6 +1730,7 @@
 			isa = PBXGroup;
 			children = (
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
+				3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */,
 				3D49F6CC2757D52B00B996AB /* AllPathsFromSourceToTarget.swift */,
 				3D3395B92745A155002EE4AC /* BinarySearchLeetCode.swift */,
 				3D3E6AB0274C053700CC3893 /* BinaryTreeInorderTraversal.swift */,
@@ -2101,6 +2107,7 @@
 				3D3E6BDD274C501300CC3893 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
 				3D34E85D27426EBF006500EB /* Pow.swift in Sources */,
 				3D8E34BC275683A600F5F768 /* SmallestStringWithSwaps.swift in Sources */,
+				3D2A61CC275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift in Sources */,
 				3D9D35C32729518600112474 /* SherlockSquares.swift in Sources */,
 				3D387A58274BFF6F00537F46 /* StackOfPlates.swift in Sources */,
 				3D49F6CB2757CC8400B996AB /* GraphNode.swift in Sources */,
@@ -2305,6 +2312,7 @@
 				3D3E6BD1274C0A6E00CC3893 /* BinarySearchTreeDepthTests.swift in Sources */,
 				3D82A167274E57EF004D6836 /* CountUnivalueSubtreesTests.swift in Sources */,
 				3D3E6B15274C074800CC3893 /* DivideTwoIntegersTests.swift in Sources */,
+				3D2A61CA275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift in Sources */,
 				3D82A16B274EA38A004D6836 /* ConstructBinaryTreeInorderPostorderTraversalTests.swift in Sources */,
 				3D3E6B89274C09B100CC3893 /* BreakingTheRecordsTests.swift in Sources */,
 				3D3E6BC8274C0A6E00CC3893 /* StackOfPlatesTests.swift in Sources */,
