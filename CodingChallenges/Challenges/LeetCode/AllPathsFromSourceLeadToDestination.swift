@@ -84,17 +84,13 @@ struct AllPathsFromSourceLeadToDestination {
     //destination node is part of a "valid" (see problem description) tree by check it's a leaf node
     //before undertaking a DFS traversal
     static func leadsToDestinationQuickCheck(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
-        var adjList = [Int: [Int]]()
-
-        for i in 0..<n {
-            adjList[i] = [Int]()
-        }
+        var adjList = Array(repeating: [Int](), count: n)
 
         for edge in edges {
-            adjList[edge[0]]?.append(edge[1])
+            adjList[edge[0]].append(edge[1])
         }
 
-        guard adjList[destination]!.isEmpty else { //destination needs to be a leaf node
+        guard adjList[destination].isEmpty else { //destination needs to be a leaf node
             return false
         }
 
@@ -103,7 +99,7 @@ struct AllPathsFromSourceLeadToDestination {
         return dfsQuickCheck(adjList, source, destination, &visited)
     }
 
-    private static func dfsQuickCheck(_ adjList: [Int: [Int]], _ curr: Int, _ target: Int, _ visited: inout Set<Int>) -> Bool {
+    private static func dfsQuickCheck(_ adjList: [[Int]], _ curr: Int, _ target: Int, _ visited: inout Set<Int>) -> Bool {
         guard curr != target else { //goal
             return true
         }
@@ -112,8 +108,9 @@ struct AllPathsFromSourceLeadToDestination {
         guard !visited.contains(curr) else { //constraint
             return false
         }
-
-        guard let neighbors = adjList[curr], neighbors.count > 0 else { //only the target can be a leaf node
+        
+        let neighbors = adjList[curr]
+        guard neighbors.count > 0 else { //only the target can be a leaf node
             return false
         }
 
