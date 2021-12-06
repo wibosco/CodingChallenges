@@ -16,7 +16,7 @@ struct BinaryTreePreorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //recursion
-    static func preorderTraversal(_ root: TreeNode?) -> [Int] {
+    static func preorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
@@ -28,7 +28,7 @@ struct BinaryTreePreorderTraversal {
         return visited
     }
 
-    private static func preorderTraversal(node: TreeNode?, visited: inout [Int]) {
+    private static func preorderTraversal(node: BinaryTreeNode?, visited: inout [Int]) {
         guard let node = node else {
             return
         }
@@ -41,7 +41,7 @@ struct BinaryTreePreorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //iterative
-    static func preorderTraversalIterative(_ root: TreeNode?) -> [Int] {
+    static func preorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }

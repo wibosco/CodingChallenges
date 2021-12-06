@@ -19,12 +19,12 @@ struct LowestCommonAncestorBinaryTree {
     //Solution description:
     //1. Using DFS find the path to `p` and `q` in the same call stack
     //2. When we have found both `p` and `q` in the same call, return that node as the lca
-    static func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    static func lowestCommonAncestor(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> BinaryTreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil
         }
         
-        var lca: TreeNode?
+        var lca: BinaryTreeNode?
 
         findLowestCommonAncestor(root, p, q, &lca)
         
@@ -32,7 +32,7 @@ struct LowestCommonAncestorBinaryTree {
     }
     
     @discardableResult
-    private static func findLowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?, _ lca: inout TreeNode?) -> Bool {
+    private static func findLowestCommonAncestor(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?, _ lca: inout BinaryTreeNode?) -> Bool {
         guard let root = root, let p = p, let q = q, lca == nil else {
             return false
         }
@@ -73,13 +73,13 @@ struct LowestCommonAncestorBinaryTree {
     //Solution description:
     //1. Using DFS find the path to `p` and `q`
     //2. Compare paths and return first common node
-    static func lowestCommonAncestorArray(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    static func lowestCommonAncestorArray(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> BinaryTreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil
         }
         
-        var pathToP = [TreeNode]()
-        var pathToQ = [TreeNode]()
+        var pathToP = [BinaryTreeNode]()
+        var pathToQ = [BinaryTreeNode]()
         
         findPath(to: p, from: root, path: &pathToP)
         findPath(to: q, from: root, path: &pathToQ)
@@ -96,7 +96,7 @@ struct LowestCommonAncestorBinaryTree {
     }
     
     @discardableResult
-    private static func findPath(to node: TreeNode, from root: TreeNode?,  path: inout [TreeNode]) -> Bool {
+    private static func findPath(to node: BinaryTreeNode, from root: BinaryTreeNode?,  path: inout [BinaryTreeNode]) -> Bool {
         guard let root = root else {
             return false
         }

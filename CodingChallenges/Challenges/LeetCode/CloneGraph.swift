@@ -14,7 +14,7 @@ struct CloneGraph {
     
     //Time: O(n + e) where `n` is the number of nodes and `e` is the number of edges
     //Space: O(n)
-    //dfs
+    //DFS
     //recursive
     //
     //Solution Description:
@@ -49,7 +49,7 @@ struct CloneGraph {
     
     //Time: O(n + e) where `n` is the number of nodes and `e` is the number of edges
     //Space: O(n)
-    //dfs
+    //DFS
     //recursive
     //
     //Solution Description:

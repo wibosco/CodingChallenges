@@ -14,13 +14,13 @@ import Foundation
 struct ClosestBinarySearchTreeValue {
     
     //Time: O(log n)
-    static func closestValue(_ root: TreeNode?, _ target: Double) -> Int {
+    static func closestValue(_ root: BinaryTreeNode?, _ target: Double) -> Int {
         guard let root = root else {
             return -1
         }
         
         var closetNode = root
-        var currentNode: TreeNode? = root
+        var currentNode: BinaryTreeNode? = root
         while currentNode != nil {
             let currentDelta = abs(Double(currentNode!.val) - target)
             let closetDelta = abs(Double(closetNode.val) - target)

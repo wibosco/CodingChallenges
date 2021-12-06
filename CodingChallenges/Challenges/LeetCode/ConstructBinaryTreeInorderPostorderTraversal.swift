@@ -20,7 +20,7 @@ struct ConstructBinaryTreeInorderPostorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //pointers
-    static func buildTree(_ inorder: [Int], _ postorder: [Int]) -> TreeNode? {
+    static func buildTree(_ inorder: [Int], _ postorder: [Int]) -> BinaryTreeNode? {
         var postorderIndex = (postorder.count - 1) //postorder so we go from end to start
         
         var inorderMapping = [Int: Int]() //to speed up retrieve of root from inorder array
@@ -31,13 +31,13 @@ struct ConstructBinaryTreeInorderPostorderTraversal {
         return buildTree(inorderMapping, 0, (inorder.count - 1), postorder, &postorderIndex)
     }
     
-    private static func buildTree(_ inorderMapping: [Int: Int], _ inorderStart: Int, _ inorderEnd: Int, _ postorder: [Int], _ postorderIndex: inout Int) -> TreeNode? {
+    private static func buildTree(_ inorderMapping: [Int: Int], _ inorderStart: Int, _ inorderEnd: Int, _ postorder: [Int], _ postorderIndex: inout Int) -> BinaryTreeNode? {
         guard inorderEnd >= inorderStart else {
             return nil
         }
     
         let rootVal = postorder[postorderIndex]
-        let root = TreeNode(rootVal)
+        let root = BinaryTreeNode(rootVal)
         postorderIndex -= 1 //postorder so we go from end to start
         
         if inorderEnd == inorderStart { //there are no left or right subtrees
@@ -56,18 +56,18 @@ struct ConstructBinaryTreeInorderPostorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //removal
-    static func buildTreeRemoval(_ inorder: [Int], _ postorder: [Int]) -> TreeNode? {
+    static func buildTreeRemoval(_ inorder: [Int], _ postorder: [Int]) -> BinaryTreeNode? {
         var postorder = postorder
         return buildTreeRemoval(inorder, &postorder)
     }
     
-    private static func buildTreeRemoval(_ inorder: [Int], _ postorder: inout [Int]) -> TreeNode? {
+    private static func buildTreeRemoval(_ inorder: [Int], _ postorder: inout [Int]) -> BinaryTreeNode? {
         guard !postorder.isEmpty, !inorder.isEmpty else {
             return nil
         }
         
         let rootVal = postorder.removeLast()
-        let root = TreeNode(rootVal)
+        let root = BinaryTreeNode(rootVal)
         
         var inorderIndex = 0 //will be used to split the inorder array into left and right values around the root
         for (index, val) in inorder.enumerated() where val == rootVal {

@@ -17,7 +17,7 @@ class SymmetricTreeTests: XCTestCase {
     func test_A() {
         let data = [1, 2, 2, 3, 4, 4, 3]
         
-        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let isSymmetric = SymmetricTree.isSymmetric(root)
         
@@ -27,7 +27,7 @@ class SymmetricTreeTests: XCTestCase {
     func test_B() {
         let data = [1, 2, 2, nil, 3, nil, 3]
         
-        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let isSymmetric = SymmetricTree.isSymmetric(root)
         
@@ -37,7 +37,7 @@ class SymmetricTreeTests: XCTestCase {
     func test_C() {
         let data = [1]
         
-        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let isSymmetric = SymmetricTree.isSymmetric(root)
         
@@ -47,7 +47,7 @@ class SymmetricTreeTests: XCTestCase {
     func test_D() {
         let data = [2, 3, 3, 4, 5, 5, 4, nil, nil, 8, 9, nil, nil, 9, 8]
         
-        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let isSymmetric = SymmetricTree.isSymmetric(root)
         

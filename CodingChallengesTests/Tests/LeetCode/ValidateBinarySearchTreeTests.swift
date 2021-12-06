@@ -17,7 +17,7 @@ class ValidateBinarySearchTreeTests: XCTestCase {
     func test_A() {
         let data = [2, 1, 3]
         
-        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let isValid = ValidateBinarySearchTree.isValidBST(root)
         
@@ -27,7 +27,7 @@ class ValidateBinarySearchTreeTests: XCTestCase {
     func test_B() {
         let data = [5, 1, 4, nil, nil, 3, 6]
         
-        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let isValid = ValidateBinarySearchTree.isValidBST(root)
         
@@ -37,7 +37,7 @@ class ValidateBinarySearchTreeTests: XCTestCase {
     func test_C() {
         let data = [2, 2, 2]
         
-        let root = TreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
         
         let isValid = ValidateBinarySearchTree.isValidBST(root)
         

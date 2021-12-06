@@ -20,7 +20,7 @@ struct SymmetricTree {
     //Solution Description:
     //1. Perform DFS traversal of two opposite branches (left and right or right and left) together
     //2. Compare node at each level to ensure they match
-    static func isSymmetric(_ root: TreeNode?) -> Bool {
+    static func isSymmetric(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return false
         }
@@ -28,7 +28,7 @@ struct SymmetricTree {
         return isSymmetric(root.left, root.right)
     }
     
-    private static func isSymmetric(_ a: TreeNode?, _ b: TreeNode?) -> Bool {
+    private static func isSymmetric(_ a: BinaryTreeNode?, _ b: BinaryTreeNode?) -> Bool {
         guard a != nil, b != nil else {
            return a == nil && b == nil
         }
@@ -46,7 +46,7 @@ struct SymmetricTree {
     //1. Perform a level traversal
     //2. At each level perform a comparison that levels outer most elements and then move inwards (repeat until no more elements to compare)
     //3. Ensure that parent element is the same for any subtree
-    static func isSymmetricComplex(_ root: TreeNode?) -> Bool {
+    static func isSymmetricComplex(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return false
         }
@@ -56,7 +56,7 @@ struct SymmetricTree {
         }
         
         //0 - left, 1 - right
-        var queue = [(node: TreeNode, parent: TreeNode, side: Int)]()
+        var queue = [(node: BinaryTreeNode, parent: BinaryTreeNode, side: Int)]()
         
         queue.append((node: root.left!, parent: root, side: 0))
         queue.append((node: root.right!, parent: root, side: 1))

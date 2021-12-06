@@ -10,7 +10,7 @@ import Foundation
 
 //https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 //binary tree - perfect
-//bfs
+//BFS
 struct PopulatingNextRightPointers {
     
     //Time: O(n)

@@ -16,11 +16,11 @@ struct MaximumDepthBinaryTree {
     //Space: O(log n) - best, O(n) - worse
     //DFS
     //recusive
-    static func maxDepth(_ root: TreeNode?) -> Int {
+    static func maxDepth(_ root: BinaryTreeNode?) -> Int {
         return maxDepth(root, depth: 0)
     }
     
-    private static func maxDepth(_ root: TreeNode?, depth: Int) -> Int {
+    private static func maxDepth(_ root: BinaryTreeNode?, depth: Int) -> Int {
         guard let root = root else {
             return depth
         }
@@ -35,7 +35,7 @@ struct MaximumDepthBinaryTree {
     //Space: O(n) worst/average (O(1) for best)
     //BFS
     //iterative
-    static func maxDepthBFS(_ root: TreeNode?) -> Int {
+    static func maxDepthBFS(_ root: BinaryTreeNode?) -> Int {
         guard let root = root else {
             return 0
         }

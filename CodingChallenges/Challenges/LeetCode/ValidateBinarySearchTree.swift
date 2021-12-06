@@ -15,7 +15,7 @@ struct ValidateBinarySearchTree {
     //Time: O(n)
     //Space: O(n) - stack calls
     //pre-order
-    static func isValidBST(_ root: TreeNode?) -> Bool {
+    static func isValidBST(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return true
         }
@@ -23,7 +23,7 @@ struct ValidateBinarySearchTree {
         return preOrderValidate(n: root, lower: Int.min, upper: Int.max)
     }
     
-    private static func preOrderValidate(n: TreeNode?, lower: Int?, upper: Int?) -> Bool {
+    private static func preOrderValidate(n: BinaryTreeNode?, lower: Int?, upper: Int?) -> Bool {
         guard let n = n, let lower = lower, let upper = upper else {
             return true
         }
@@ -39,7 +39,7 @@ struct ValidateBinarySearchTree {
     //Time: O(n), actually O(2n)
     //Space: O(n), actually O(2n) - stack calls and visited array
     //in-order
-    static func isValidBSTOrder(_ root: TreeNode?) -> Bool {
+    static func isValidBSTOrder(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return true
         }
@@ -61,7 +61,7 @@ struct ValidateBinarySearchTree {
         return true
     }
     
-    private static func inOrder(n: TreeNode?, visited: inout [Int]) {
+    private static func inOrder(n: BinaryTreeNode?, visited: inout [Int]) {
         guard let n = n else {
             return
         }

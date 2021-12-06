@@ -16,7 +16,7 @@ struct BinaryTreeInorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //recursion
-    static func inorderTraversal(_ root: TreeNode?) -> [Int] {
+    static func inorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
@@ -28,7 +28,7 @@ struct BinaryTreeInorderTraversal {
         return visited
     }
 
-    private static func inorderTraversal(node: TreeNode?, visited: inout [Int]) {
+    private static func inorderTraversal(node: BinaryTreeNode?, visited: inout [Int]) {
         guard let node = node else {
             return
         }
@@ -41,14 +41,14 @@ struct BinaryTreeInorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //iterative
-    static func inorderTraversalIterative(_ root: TreeNode?) -> [Int] {
+    static func inorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
         
         var visited = [Int]()
-        var stack = [TreeNode]()
-        var current: TreeNode? = root
+        var stack = [BinaryTreeNode]()
+        var current: BinaryTreeNode? = root
         
         while !stack.isEmpty || current != nil {
             if let c = current {

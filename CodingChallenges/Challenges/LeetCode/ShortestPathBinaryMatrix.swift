@@ -208,7 +208,7 @@ struct ShortestPathBinaryMatrix {
             nextRowIndex += 1
         }
         
-        //bfs
+        //BFS
         
         let target = (grid[0].count * grid.count) - 1
         var queue = [(0, 1)]

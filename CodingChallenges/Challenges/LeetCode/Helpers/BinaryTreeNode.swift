@@ -8,11 +8,11 @@
 
 import Foundation
 
-class TreeNode {
+class BinaryTreeNode {
     let val: Int
     
-    var left: TreeNode?
-    var right: TreeNode?
+    var left: BinaryTreeNode?
+    var right: BinaryTreeNode?
     
     // MARK: - Init
     
@@ -21,13 +21,13 @@ class TreeNode {
     }
 }
 
-extension TreeNode {
-    static func createBinaryTree(fromLevelOrderArray array: [Int?]) -> TreeNode? {
+extension BinaryTreeNode {
+    static func createBinaryTree(fromLevelOrderArray array: [Int?]) -> BinaryTreeNode? {
         guard !array.isEmpty, array[0] != nil else {
             return nil
         }
         
-        let root = TreeNode(array[0]!)
+        let root = BinaryTreeNode(array[0]!)
         var queue = [root]
         var i = 1
         
@@ -35,7 +35,7 @@ extension TreeNode {
             let node = queue.removeFirst()
             
             if let leftValue = array[i] {
-                let left = TreeNode(leftValue)
+                let left = BinaryTreeNode(leftValue)
                 node.left = left
                 
                 queue.append(left)
@@ -48,7 +48,7 @@ extension TreeNode {
             }
             
             if let rightValue = array[i] {
-                let right = TreeNode(rightValue)
+                let right = BinaryTreeNode(rightValue)
                 node.right = right
                 
                 queue.append(right)
@@ -60,12 +60,12 @@ extension TreeNode {
         return root
     }
     
-    static func extractValuesInLevelOrder(fromBinaryTree root: TreeNode?) -> [Int?] {
+    static func extractValuesInLevelOrder(fromBinaryTree root: BinaryTreeNode?) -> [Int?] {
         guard let root = root else {
             return [Int?]()
         }
         
-        var queue = [TreeNode?]()
+        var queue = [BinaryTreeNode?]()
         queue.append(root)
         var values = [Int?]()
         

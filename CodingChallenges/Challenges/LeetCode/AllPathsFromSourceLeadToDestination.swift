@@ -14,7 +14,7 @@ struct AllPathsFromSourceLeadToDestination {
     
     //Time: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
     //Space: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
-    //dfs
+    //DFS
     //backtracking
     //adjacency list
     //
@@ -68,7 +68,7 @@ struct AllPathsFromSourceLeadToDestination {
     
     //Time: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
     //Space: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
-    //dfs
+    //DFS
     //backtracking
     //adjacency list
     //
