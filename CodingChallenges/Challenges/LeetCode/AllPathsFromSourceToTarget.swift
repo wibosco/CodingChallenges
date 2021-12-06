@@ -26,7 +26,7 @@ struct AllPathsFromSourceToTarget {
         let target = graph.count - 1
         var paths = [[Int]]()
 
-        var queue = [(0, [0])]
+        var queue = [(0, [0])] //(node, path)
         while !queue.isEmpty {
             let item = queue.removeFirst()
             let node  = item.0
