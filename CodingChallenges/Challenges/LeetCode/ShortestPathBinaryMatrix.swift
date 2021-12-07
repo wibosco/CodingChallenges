@@ -16,6 +16,7 @@ struct ShortestPathBinaryMatrix {
     //Space: O(n)
     //BFS
     //relative indexing
+    //matrix
     //
     //Solution Description:
     //Treat the matrix as a graph with each "touching" nodes being a neighbor. "Touching" is defined
@@ -100,6 +101,7 @@ struct ShortestPathBinaryMatrix {
     //Space: O(n)
     //BFS
     //adjacent list
+    //matrix
     //
     //Solution Description:
     //Treat the matrix as a graph with each "touching" nodes being a neighbor. "Touching" is defined
