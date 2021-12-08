@@ -8,12 +8,12 @@
 
 import Foundation
 
-class TreeNodeNext {
+class BinaryTreeNodeNext {
     let val: Int
     
-    var left: TreeNodeNext?
-    var right: TreeNodeNext?
-    var next: TreeNodeNext?
+    var left: BinaryTreeNodeNext?
+    var right: BinaryTreeNodeNext?
+    var next: BinaryTreeNodeNext?
     
     // MARK: - Init
     
@@ -22,14 +22,14 @@ class TreeNodeNext {
     }
 }
 
-extension TreeNodeNext {
-    static func createBinaryTree(fromLevelOrderArray array: [Int?]) -> TreeNodeNext? {
+extension BinaryTreeNodeNext {
+    static func createBinaryTree(fromLevelOrderArray array: [Int?]) -> BinaryTreeNodeNext? {
         guard !array.isEmpty else {
             return nil
         }
         
         var mArray = array
-        let root = TreeNodeNext(mArray.removeFirst()!)
+        let root = BinaryTreeNodeNext(mArray.removeFirst()!)
         var queue = [root]
         
         while !queue.isEmpty {
@@ -41,7 +41,7 @@ extension TreeNodeNext {
                 //left
                 if !mArray.isEmpty { //check needed incase these are leaf nodes
                     if let val = mArray.removeFirst() {
-                        let node = TreeNodeNext(val)
+                        let node = BinaryTreeNodeNext(val)
                         root.left = node
 
                         queue.append(node)
@@ -51,7 +51,7 @@ extension TreeNodeNext {
                 //right
                 if !mArray.isEmpty {
                     if let val = mArray.removeFirst() {
-                        let node = TreeNodeNext(val)
+                        let node = BinaryTreeNodeNext(val)
                         root.right = node
                         
                         queue.append(node)
@@ -63,7 +63,7 @@ extension TreeNodeNext {
         return root
     }
     
-    static func extractValuesInLevelOrder(fromBinaryTree root: TreeNodeNext?) -> [String] {
+    static func extractValuesInLevelOrder(fromBinaryTree root: BinaryTreeNodeNext?) -> [String] {
         guard let root = root else {
             return []
         }

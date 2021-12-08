@@ -14,15 +14,15 @@ import Foundation
 struct CopyListWithRandomPointer {
     
     //Time: O(n)
-    static func copyRandomList(_ head: Node?) -> Node? {
+    static func copyRandomList(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil
         }
         
-        var mapping = [Node: Node]()
-        var originalNode: Node? = head
+        var mapping = [ListNodeRandom: ListNodeRandom]()
+        var originalNode: ListNodeRandom? = head
         while let on = originalNode {
-            mapping[on] = Node(on.val)
+            mapping[on] = ListNodeRandom(on.val)
             originalNode = on.next
         }
         

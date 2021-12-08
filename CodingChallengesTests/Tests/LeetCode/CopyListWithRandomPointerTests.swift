@@ -15,41 +15,41 @@ class CopyListWithRandomPointerTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let list = Node.createList(fromArray: [[7, nil], [13, 0], [11, 4], [10, 2], [1, 0]])
+        let list = ListNodeRandom.createList(fromArray: [[7, nil], [13, 0], [11, 4], [10, 2], [1, 0]])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         
-        let values = Node.extractValues(fromList: copy)
+        let values = ListNodeRandom.extractValues(fromList: copy)
         
         XCTAssertEqual(values, [[7, nil], [13, 0], [11, 4], [10, 2], [1, 0]])
     }
     
     func test_B() {
-        let list = Node.createList(fromArray: [[1, 1],[2, 1]])
+        let list = ListNodeRandom.createList(fromArray: [[1, 1],[2, 1]])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         
-        let values = Node.extractValues(fromList: copy)
+        let values = ListNodeRandom.extractValues(fromList: copy)
         
         XCTAssertEqual(values, [[1, 1], [2, 1]])
     }
     
     func test_C() {
-        let list = Node.createList(fromArray: [[3, nil], [3, 0], [3, nil]])
+        let list = ListNodeRandom.createList(fromArray: [[3, nil], [3, 0], [3, nil]])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         
-        let values = Node.extractValues(fromList: copy)
+        let values = ListNodeRandom.extractValues(fromList: copy)
         
         XCTAssertEqual(values, [[3, nil], [3, 0], [3, nil]])
     }
     
     func test_D() {
-        let list = Node.createList(fromArray: [])
+        let list = ListNodeRandom.createList(fromArray: [])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         
-        let values = Node.extractValues(fromList: copy)
+        let values = ListNodeRandom.extractValues(fromList: copy)
         
         XCTAssertEqual(values, [])
     }

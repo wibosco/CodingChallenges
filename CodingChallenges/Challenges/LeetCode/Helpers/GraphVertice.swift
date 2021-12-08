@@ -8,10 +8,10 @@
 
 import Foundation
 
-class GraphNode {
+class GraphVertice {
     let val: Int
     
-    var neighbors = [GraphNode]()
+    var neighbors = [GraphVertice]()
     
     // MARK: - Init
     
@@ -20,15 +20,15 @@ class GraphNode {
     }
 }
 
-extension GraphNode {
-    static func createUndirectedGraph(fromAdjList edges: [[Int]]) -> GraphNode? {
+extension GraphVertice {
+    static func createUndirectedGraph(fromAdjList edges: [[Int]]) -> GraphVertice? {
         guard !edges.isEmpty else {
             return nil
         }
         
-        var nodes = [GraphNode]()
+        var nodes = [GraphVertice]()
         for i in 1...edges.count { //1-indexed
-            let node = GraphNode(i)
+            let node = GraphVertice(i)
             nodes.append(node)
         }
         
@@ -43,13 +43,13 @@ extension GraphNode {
         return nodes[0]
     }
     
-    static func extractValuesIntoAdjList(fromGraph node: GraphNode?) -> [[Int]] {
+    static func extractValuesIntoAdjList(fromGraph node: GraphVertice?) -> [[Int]] {
         guard let node = node else {
             return []
         }
         
         var queue = [node]
-        var visited = [GraphNode]()
+        var visited = [GraphVertice]()
         
         while !queue.isEmpty {
             let n = queue.removeFirst()
@@ -76,13 +76,13 @@ extension GraphNode {
     }
 }
 
-extension GraphNode: Equatable {
-    static func == (lhs: GraphNode, rhs: GraphNode) -> Bool {
+extension GraphVertice: Equatable {
+    static func == (lhs: GraphVertice, rhs: GraphVertice) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
 
-extension GraphNode: Hashable {
+extension GraphVertice: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }

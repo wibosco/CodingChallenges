@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Node {
+class ListNodeRandom {
     var val: Int
-    var next: Node?
-    var random: Node?
+    var next: ListNodeRandom?
+    var random: ListNodeRandom?
     
     // MARK: - Init
     
@@ -22,11 +22,11 @@ class Node {
     }
 }
 
-extension Node {
-    static func createList(fromArray array: [[Int?]]) -> Node? {
-        var nodes = [Node]()
+extension ListNodeRandom {
+    static func createList(fromArray array: [[Int?]]) -> ListNodeRandom? {
+        var nodes = [ListNodeRandom]()
         for value in array {
-            nodes.append(Node(value[0]!))
+            nodes.append(ListNodeRandom(value[0]!))
         }
         
         for (index, value) in array.enumerated() {
@@ -42,9 +42,9 @@ extension Node {
         return nodes.first
     }
 
-    static func extractValues(fromList head: Node?) -> [[Int?]] {
+    static func extractValues(fromList head: ListNodeRandom?) -> [[Int?]] {
         var data = [[Int?]]()
-        var mapping = [Node: Int]()
+        var mapping = [ListNodeRandom: Int]()
         
         var current = head
         var counter = 0
@@ -72,13 +72,13 @@ extension Node {
     }
 }
 
-extension Node: Equatable {
-    static func == (lhs: Node, rhs: Node) -> Bool {
+extension ListNodeRandom: Equatable {
+    static func == (lhs: ListNodeRandom, rhs: ListNodeRandom) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
 
-extension Node: Hashable {
+extension ListNodeRandom: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }

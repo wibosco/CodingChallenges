@@ -16,44 +16,44 @@ class PopulatingNextRightPointersIITests: XCTestCase {
 
     func test_A() {
         let data = [1, 2, 3, 4, 5, nil, 7]
-        let root = TreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = TreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
+        let values = BinaryTreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
         
         XCTAssertEqual(values, ["1", "#", "2", "3", "#", "4", "5", "7", "#"])
     }
     
     func test_B() {
         let data = [Int]()
-        let root = TreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = TreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
+        let values = BinaryTreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
         
         XCTAssertEqual(values, [])
     }
     
     func test_C() {
         let data = [1, 2, 3, 4, 5, nil, 6, 7, nil, nil, nil, nil, 8]
-        let root = TreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = TreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
+        let values = BinaryTreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
         
         XCTAssertEqual(values, ["1", "#", "2", "3", "#", "4", "5", "6", "#", "7", "8", "#"])
     }
     
     func test_D() {
         let data = [-1, -7, 9, nil, nil, -1, -7, nil, 8, -9]
-        let root = TreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = TreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
+        let values = BinaryTreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
         
         XCTAssertEqual(values, ["-1", "#", "-7", "9", "#", "-1", "-7", "#", "8", "-9", "#"])
     }

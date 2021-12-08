@@ -9,6 +9,8 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/primsmstsub
+//MST
+//Prim's Algorithm - https://en.wikipedia.org/wiki/Prim%27s_algorithm
 class PrimsMST {
 
     // MARK: Distance

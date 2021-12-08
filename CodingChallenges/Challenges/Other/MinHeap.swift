@@ -9,13 +9,13 @@
 import Foundation
 
 struct MinHeap {
-
+    
     // MARK: - Construct
     
-     static func buildMinHeap(input: [Int]) -> [Int] {
-         guard input.count > 1 else {
-             return input
-         }
+    static func buildMinHeap(input: [Int]) -> [Int] {
+        guard input.count > 1 else {
+            return input
+        }
         
         var lastParentIndex = input.count / 2
         var heap = input
@@ -30,7 +30,7 @@ struct MinHeap {
     
     // MARK: - Heapify
     
-     static func minHeapify(heap: inout [Int], indexRoot: Int) {
+    static func minHeapify(heap: inout [Int], indexRoot: Int) {
         if leftLeafIndex(rootIndex: indexRoot) > heapLastIndex(heap: heap) {
             return
         }
@@ -66,22 +66,22 @@ struct MinHeap {
             minHeapify(heap: &heap, indexRoot: smallestIndex)
         }
     }
-
+    
     // MARK: - Index
     
-     static func leftLeafIndex(rootIndex: Int) -> Int {
+    static func leftLeafIndex(rootIndex: Int) -> Int {
         let heapIndex = (rootIndex + 1)
         
         return ((heapIndex * 2) - 1)
     }
     
-     static func rightLeafIndex(rootIndex: Int) -> Int {
+    static func rightLeafIndex(rootIndex: Int) -> Int {
         let heapIndex = (rootIndex + 1)
         
         return (heapIndex * 2)
     }
     
-     static func heapLastIndex(heap: [Int]) -> Int {
+    static func heapLastIndex(heap: [Int]) -> Int {
         return (heap.count - 1)
     }
 }

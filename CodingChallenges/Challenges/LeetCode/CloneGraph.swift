@@ -20,24 +20,24 @@ struct CloneGraph {
     //Solution Description:
     //Perform a recusive DFS search through the graph, making a copy when we encounter
     //an unvisited node and reusing visited nodes where possible.
-    static func cloneGraph(_ node: GraphNode?) -> GraphNode? {
+    static func cloneGraph(_ node: GraphVertice?) -> GraphVertice? {
         guard let node = node else {
             return nil
         }
 
-        var copiedNodes = [GraphNode: GraphNode]()
+        var copiedNodes = [GraphVertice: GraphVertice]()
         deepCopy(curr: node, nodes: &copiedNodes)
 
         return copiedNodes[node]!
     }
 
     @discardableResult
-    private static func deepCopy(curr: GraphNode, nodes: inout [GraphNode: GraphNode]) -> GraphNode {
+    private static func deepCopy(curr: GraphVertice, nodes: inout [GraphVertice: GraphVertice]) -> GraphVertice {
         guard nodes[curr] == nil else {
             return nodes[curr]!
         }
 
-        let copy = GraphNode(curr.val)
+        let copy = GraphVertice(curr.val)
         nodes[curr] = copy
 
         for neighbor in curr.neighbors {
@@ -56,27 +56,27 @@ struct CloneGraph {
     //Perform a recusive DFS search through the graph. Initally making a copy without
     //the neighbors attached and then making making another pass through and attached
     //the copied nodes with their copied neighbors
-    static func cloneGraphMultiplePasses(_ node: GraphNode?) -> GraphNode? {
+    static func cloneGraphMultiplePasses(_ node: GraphVertice?) -> GraphVertice? {
         guard let node = node else {
             return nil
         }
         
-        var nodes = [GraphNode: GraphNode]()
-        var visited = Set<GraphNode>()
+        var nodes = [GraphVertice: GraphVertice]()
+        var visited = Set<GraphVertice>()
         deepCopy(curr: node, nodes: &nodes, visited: &visited)
         connectNeighbors(nodes: nodes)
         
         return nodes[node]! //return copy of node passed in
     }
     
-    private static func deepCopy(curr: GraphNode, nodes: inout [GraphNode: GraphNode], visited: inout Set<GraphNode>) {
+    private static func deepCopy(curr: GraphVertice, nodes: inout [GraphVertice: GraphVertice], visited: inout Set<GraphVertice>) {
         guard !visited.contains(curr) else {
             return
         }
     
         visited.insert(curr)
         
-        let copy = GraphNode(curr.val)
+        let copy = GraphVertice(curr.val)
         nodes[curr] = copy
         
         for neighbor in curr.neighbors {
@@ -84,7 +84,7 @@ struct CloneGraph {
         }
     }
     
-    private static func connectNeighbors(nodes: [GraphNode: GraphNode]) {
+    private static func connectNeighbors(nodes: [GraphVertice: GraphVertice]) {
         for (original, copy) in nodes {
             for originalNeighbor in original.neighbors {
                 let copiedNeighbor = nodes[originalNeighbor]!
