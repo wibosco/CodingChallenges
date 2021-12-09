@@ -12,7 +12,7 @@ import XCTest
 
 class MaximumDepthBinaryTreeTests: XCTestCase {
     
-    // MARK: - Test
+     // MARK: - Test
     
     func test_A() {
         let data = [3, 9, 20, nil, nil, 15, 7]

@@ -15,18 +15,46 @@ struct MaximumDepthBinaryTree {
     //Time: O(n)
     //Space: O(log n) - best, O(n) - worse
     //DFS
-    //recusive
+    //recursive
+    //
+    //Solution Description:
+    //Using DFS, traverse the the end of each branch of the tree. As we
+    //return from that traverse we start counting the level. We then
+    //compare the depth of each branch and return the the largest + 1
+    //(for the current level). Once there are no more calls, we are back
+    //at the root.
     static func maxDepth(_ root: BinaryTreeNode?) -> Int {
-        return maxDepth(root, depth: 0)
+        guard let root = root else { //base
+            return 0
+        }
+        
+        let leftDepth = maxDepth(root.left)
+        let rightDepth = maxDepth(root.right)
+
+        return max(leftDepth, rightDepth) + 1 // we add 1 for the current level
     }
     
-    private static func maxDepth(_ root: BinaryTreeNode?, depth: Int) -> Int {
+    //Time: O(n)
+    //Space: O(log n) - best, O(n) - worse
+    //DFS
+    //recursive
+    //
+    //Solution Description:
+    //Using DFS, traverse down the tree adding 1 to the `depth` for level we
+    //encounter until we go beyond the leaf nodes. When this happens we
+    //return the depth on that branch. We then compare the "depth" the depth
+    //of each branch and keep the larger depth.
+    static func maxDepthDFS(_ root: BinaryTreeNode?) -> Int {
+        return maxDepthDFS(root, depth: 0)
+    }
+    
+    private static func maxDepthDFS(_ root: BinaryTreeNode?, depth: Int) -> Int {
         guard let root = root else {
             return depth
         }
         
-        let leftDepth = maxDepth(root.left, depth: depth + 1)
-        let rightDepth = maxDepth(root.right, depth: depth + 1)
+        let leftDepth = maxDepthDFS(root.left, depth: depth + 1)
+        let rightDepth = maxDepthDFS(root.right, depth: depth + 1)
 
         return max(leftDepth, rightDepth)
     }
@@ -35,6 +63,11 @@ struct MaximumDepthBinaryTree {
     //Space: O(n) worst/average (O(1) for best)
     //BFS
     //iterative
+    //queue
+    //
+    //Solution Description:
+    //Using BFS, traverse down the tree adding 1 to the `depth` for level we
+    //encounter. When the queue is empty we have the maximum depth.
     static func maxDepthBFS(_ root: BinaryTreeNode?) -> Int {
         guard let root = root else {
             return 0
