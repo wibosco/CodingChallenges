@@ -48,8 +48,8 @@ struct DiameterOfNAryTree { //DiameterOfN-AryTree
         
         var heights = [Int]()
         for child in children {
-            let height = height(child, &longestDiameter) + 1 //add this level
-            heights.append(height)
+            let childHeight = height(child, &longestDiameter) + 1 //add this level
+            heights.append(childHeight)
         }
         
         heights.sort { $0 > $1} //O(n log n)

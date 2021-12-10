@@ -10,6 +10,9 @@
 		3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */; };
 		3D1D93132762A19300CF6A27 /* DiameterOfNAryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */; };
 		3D1D93152762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */; };
+		3D1D931727636CD200CF6A27 /* CloneBinaryTreeWithRandomPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D931627636CD200CF6A27 /* CloneBinaryTreeWithRandomPointer.swift */; };
+		3D1D931927636CF900CF6A27 /* BinaryTreeNodeRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D931827636CF900CF6A27 /* BinaryTreeNodeRandom.swift */; };
+		3D1D931B27636D5200CF6A27 /* CloneBinaryTreeWithRandomPointerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D931A27636D5200CF6A27 /* CloneBinaryTreeWithRandomPointerTests.swift */; };
 		3D2A61CA275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */; };
 		3D2A61CC275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */; };
 		3D33959427443FA1002EE4AC /* FindPeakElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33959327443FA1002EE4AC /* FindPeakElement.swift */; };
@@ -355,6 +358,9 @@
 		3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumber.swift; sourceTree = "<group>"; };
 		3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiameterOfNAryTree.swift; sourceTree = "<group>"; };
 		3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiameterOfNAryTreeTests.swift; sourceTree = "<group>"; };
+		3D1D931627636CD200CF6A27 /* CloneBinaryTreeWithRandomPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneBinaryTreeWithRandomPointer.swift; sourceTree = "<group>"; };
+		3D1D931827636CF900CF6A27 /* BinaryTreeNodeRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeNodeRandom.swift; sourceTree = "<group>"; };
+		3D1D931A27636D5200CF6A27 /* CloneBinaryTreeWithRandomPointerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneBinaryTreeWithRandomPointerTests.swift; sourceTree = "<group>"; };
 		3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceLeadToDestinationTests.swift; sourceTree = "<group>"; };
 		3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceLeadToDestination.swift; sourceTree = "<group>"; };
 		3D33959327443FA1002EE4AC /* FindPeakElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPeakElement.swift; sourceTree = "<group>"; };
@@ -899,6 +905,7 @@
 				3D3E6BDA274C133700CC3893 /* BinaryTreePostorderTraversalTests.swift */,
 				3D3E6BD6274C108600CC3893 /* BinaryTreePreorderTraversalTests.swift */,
 				3D3F6A892762203A0011B7A6 /* BinaryTreeRightSideViewTests.swift */,
+				3D1D931A27636D5200CF6A27 /* CloneBinaryTreeWithRandomPointerTests.swift */,
 				3D49F6D227581CE900B996AB /* CloneGraphTests.swift */,
 				3D3E6AE2274C074800CC3893 /* ClosestBinarySearchTreeValueTests.swift */,
 				3D82A16A274EA38A004D6836 /* ConstructBinaryTreeInorderPostorderTraversalTests.swift */,
@@ -1119,6 +1126,7 @@
 			children = (
 				3D3879CD2747ED8A00537F46 /* BinaryTreeNode.swift */,
 				3D82A1A327503427004D6836 /* BinaryTreeNodeNext.swift */,
+				3D1D931827636CF900CF6A27 /* BinaryTreeNodeRandom.swift */,
 				3D49F6CA2757CC8400B996AB /* GraphVertice.swift */,
 				3D3F6A11276025660011B7A6 /* GraphWeightedEdge.swift */,
 				3D3F6A13276158BE0011B7A6 /* Heap.swift */,
@@ -1628,6 +1636,7 @@
 				3D3E6BD8274C130000CC3893 /* BinaryTreePostorderTraversal.swift */,
 				3D3E6BD4274C104800CC3893 /* BinaryTreePreorderTraversal.swift */,
 				3D3F6A8727621CAB0011B7A6 /* BinaryTreeRightSideView.swift */,
+				3D1D931627636CD200CF6A27 /* CloneBinaryTreeWithRandomPointer.swift */,
 				3D49F6D027581CD100B996AB /* CloneGraph.swift */,
 				3D3879CB2747ED2000537F46 /* ClosestBinarySearchTreeValue.swift */,
 				3D82A168274E9DF2004D6836 /* ConstructBinaryTreeInorderPostorderTraversal.swift */,
@@ -2014,6 +2023,7 @@
 				3DA4B14B272AE0020026F7D9 /* Kangaroo.swift in Sources */,
 				3D9D35B82729518600112474 /* MaximizeSum.swift in Sources */,
 				3D54C704273ADBF0006A9F67 /* PalindromeNumber.swift in Sources */,
+				3D1D931727636CD200CF6A27 /* CloneBinaryTreeWithRandomPointer.swift in Sources */,
 				3D9D35BF2729518600112474 /* TimeConverter.swift in Sources */,
 				3D8E34B42756530C00F5F768 /* NumberConnectedComponentsUndirectedGraph.swift in Sources */,
 				3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */,
@@ -2062,6 +2072,7 @@
 				3D387A5E274BFF6F00537F46 /* ProjectBuildOrder.swift in Sources */,
 				3D9D35AA2729518600112474 /* PrimsMinHeap.swift in Sources */,
 				3D9D35A42729518600112474 /* IceCreamParlor.swift in Sources */,
+				3D1D931927636CF900CF6A27 /* BinaryTreeNodeRandom.swift in Sources */,
 				3D387A5D274BFF6F00537F46 /* SuccessorBST.swift in Sources */,
 				3D3F6A0E27600A1F0011B7A6 /* MinCostToConnectAllPoints.swift in Sources */,
 				3D9D35D82729521400112474 /* InsertionSort2.swift in Sources */,
@@ -2215,6 +2226,7 @@
 				3D3E6BAB274C09B100CC3893 /* LisasWorkbookTests.swift in Sources */,
 				3D3E6B02274C074800CC3893 /* FindKClosestElementsTests.swift in Sources */,
 				3D3E6B17274C074800CC3893 /* FindSmallestLetterGreaterThanTargetTests.swift in Sources */,
+				3D1D931B27636D5200CF6A27 /* CloneBinaryTreeWithRandomPointerTests.swift in Sources */,
 				3D3E6BAC274C09B100CC3893 /* UtopianTreeTests.swift in Sources */,
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
 				3D3E6BCE274C0A6E00CC3893 /* SuccessorBSTTests.swift in Sources */,
