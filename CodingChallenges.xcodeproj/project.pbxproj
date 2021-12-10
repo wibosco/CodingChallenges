@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */; };
+		3D1D93132762A19300CF6A27 /* DiameterOfNAryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */; };
+		3D1D93152762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */; };
 		3D2A61CA275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */; };
 		3D2A61CC275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */; };
 		3D33959427443FA1002EE4AC /* FindPeakElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33959327443FA1002EE4AC /* FindPeakElement.swift */; };
@@ -351,6 +353,8 @@
 
 /* Begin PBXFileReference section */
 		3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumber.swift; sourceTree = "<group>"; };
+		3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiameterOfNAryTree.swift; sourceTree = "<group>"; };
+		3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiameterOfNAryTreeTests.swift; sourceTree = "<group>"; };
 		3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceLeadToDestinationTests.swift; sourceTree = "<group>"; };
 		3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPathsFromSourceLeadToDestination.swift; sourceTree = "<group>"; };
 		3D33959327443FA1002EE4AC /* FindPeakElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPeakElement.swift; sourceTree = "<group>"; };
@@ -903,6 +907,7 @@
 				3D3E6AB8274C074800CC3893 /* CopyListWithRandomPointerTests.swift */,
 				3D82A166274E57EF004D6836 /* CountUnivalueSubtreesTests.swift */,
 				3D3F6A8D276231D70011B7A6 /* DiameterOfBinaryTreeTests.swift */,
+				3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */,
 				3D3E6AE3274C074800CC3893 /* DivideTwoIntegersTests.swift */,
 				3D8E34B92756761D00F5F768 /* EarliestMomentWhenEveryoneBecomeFriendsTests.swift */,
 				3D3E6ACB274C074800CC3893 /* FindDuplicateNumberTests.swift */,
@@ -1631,6 +1636,7 @@
 				3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */,
 				3D82A164274E574D004D6836 /* CountUnivalueSubtrees.swift */,
 				3D3F6A8B276231610011B7A6 /* DiameterOfBinaryTree.swift */,
+				3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */,
 				3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */,
 				3D8E34B7275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift */,
 				3D3879ED2749ABE900537F46 /* FindDuplicateNumber.swift */,
@@ -2033,6 +2039,7 @@
 				3D34E8612742A3A1006500EB /* MergeIntervals.swift in Sources */,
 				3D387A59274BFF6F00537F46 /* StackOfPlatesNode.swift in Sources */,
 				3D9D35AB2729518600112474 /* PrimsMST.swift in Sources */,
+				3D1D93132762A19300CF6A27 /* DiameterOfNAryTree.swift in Sources */,
 				3D82A161274E4908004D6836 /* PathSum.swift in Sources */,
 				3D54C70E273ADBF0006A9F67 /* LongestCommonPrefix.swift in Sources */,
 				432685AC1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
@@ -2117,6 +2124,7 @@
 				3D3E6B98274C09B100CC3893 /* CavityMapTests.swift in Sources */,
 				3D3E6B08274C074800CC3893 /* FindMinimumRotatedSortedArrayIITests.swift in Sources */,
 				3D3E6BCF274C0A6E00CC3893 /* BalancedBSTTests.swift in Sources */,
+				3D1D93152762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift in Sources */,
 				3D3E6B85274C09B100CC3893 /* MagicSqaureTests.swift in Sources */,
 				3D49F6D327581CE900B996AB /* CloneGraphTests.swift in Sources */,
 				3DF50D7E275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift in Sources */,

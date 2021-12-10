@@ -9,11 +9,19 @@
 import Foundation
 
 //https://leetcode.com/problems/copy-list-with-random-pointer/
-//dictionary
 //linked list
 struct CopyListWithRandomPointer {
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of nodes in the list
+    //Space: O(n) where n is the number of nodes in the list
+    //dictionary
+    //
+    //Solution Description:
+    //First we iterate through the linked list storing a copy each node into
+    //a dictionary with the original node being used as the key (without
+    //attempting to set the `next` or `random` properties). Next we iterate
+    //through the original list again, this time setting the `next` and
+    //`random` properties
     static func copyRandomList(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil

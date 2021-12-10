@@ -23,15 +23,18 @@ struct MaximumDepthBinaryTree {
     //compare the depth of each branch and return the the largest + 1
     //(for the current level). Once there are no more calls, we are back
     //at the root.
+    //
+    //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707
+    //for difference between height and depth
     static func maxDepth(_ root: BinaryTreeNode?) -> Int {
-        guard let root = root else { //base
+        guard let root = root else { //base when we go beyond a leaf
             return 0
         }
         
-        let leftDepth = maxDepth(root.left)
-        let rightDepth = maxDepth(root.right)
+        let leftHeight = maxDepth(root.left)
+        let rightHeight = maxDepth(root.right)
 
-        return max(leftDepth, rightDepth) + 1 // we add 1 for the current level
+        return max(leftHeight, rightHeight) + 1 // we add 1 for the current level
     }
     
     //Time: O(n)
@@ -44,17 +47,20 @@ struct MaximumDepthBinaryTree {
     //encounter until we go beyond the leaf nodes. When this happens we
     //return the depth on that branch. We then compare the "depth" the depth
     //of each branch and keep the larger depth.
+    //
+    //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707
+    //for difference between height and depth
     static func maxDepthDFS(_ root: BinaryTreeNode?) -> Int {
-        return maxDepthDFS(root, depth: 0)
+        return maxDepthDFS(root, 0)
     }
     
-    private static func maxDepthDFS(_ root: BinaryTreeNode?, depth: Int) -> Int {
+    private static func maxDepthDFS(_ root: BinaryTreeNode?, _ depth: Int) -> Int {
         guard let root = root else {
             return depth
         }
         
-        let leftDepth = maxDepthDFS(root.left, depth: depth + 1)
-        let rightDepth = maxDepthDFS(root.right, depth: depth + 1)
+        let leftDepth = maxDepthDFS(root.left, depth + 1) // we add 1 for the current level
+        let rightDepth = maxDepthDFS(root.right, depth + 1)
 
         return max(leftDepth, rightDepth)
     }
