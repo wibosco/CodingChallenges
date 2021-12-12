@@ -15,6 +15,7 @@ struct RottingOranges {
     //Time: O(m * n) where m is the number of rows and n is the number of columns
     //Space: O(m * n) for `visited`
     //BFS
+    //multi-source
     //visited
     //relative indexing
     //matrix
@@ -120,6 +121,7 @@ struct RottingOranges {
     //Time: O(m * n) where m is the number of rows and n is the number of columns
     //Space: O(m * n) worse case if the queue is full as the grid only contains rotten oranges
     //BFS
+    //multi-source
     //mutating
     //relative indexing
     //matrix
@@ -127,13 +129,13 @@ struct RottingOranges {
     //Solution Description:
     //This is a graph problem. First we determine where (if) the rotten oranges are in the
     //grid and how many fresh oranges we have. The rotten are then used as the starting
-    //elements in our BFS queue. As we process the queue we use 4-way relative mapping array to
-    //determine which nodes are neighbors to the current node. From those neighbors we are only
-    //interested in the fresh ones - which we determine by checking if they are of value `1`.
-    //For every fresh orange discovered we convert it rotten in the grid and reduce the
-    //`freshFruit` count. Each top level iteration of the loop is one level completed or 1
-    //"minute". Finally we check if all of the fresh oranges are rotten, if so we return the level
-    //count otherwise we return -1
+    //elements in our BFS queue (multi-source BFS). As we process the queue we use 4-way
+    //relative mapping array to determine which nodes are neighbors to the current node.
+    //From those neighbors we are only interested in the fresh ones - which we determine by
+    //checking if they are of value `1`. For every fresh orange discovered we convert it
+    //rotten in the grid and reduce the `freshFruit` count. Each top level iteration of the
+    //loop is one level completed or 1 "minute". Finally we check if all of the fresh oranges
+    //are rotten, if so we return the level count otherwise we return -1
     //
     //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The
     //extra loop is to work through the neighbors of a nodes - don't confuse this with the actual
