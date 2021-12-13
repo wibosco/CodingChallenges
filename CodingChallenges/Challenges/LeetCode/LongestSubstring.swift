@@ -12,8 +12,10 @@ import Foundation
 //sliding window
 struct LongestSubstring {
     
-    //This solution is sufficiently quicker due to `for (currentWindowEndIndex, char) in s.enumerated()`
-    //Time: O(n)
+    //Time: O(n) where n is the characters in `s`
+    //Space: O(n) where n is the characters in `s`
+    //
+    //N.B. This solution is sufficiently quicker due to `for (currentWindowEndIndex, char) in s.enumerated()`
     static func lengthOfLongestSubstring(_ s: String) -> Int {
         var visited = [Character: Int]()
         var longestNonRepeatingWindow = 0
@@ -33,8 +35,11 @@ struct LongestSubstring {
         return longestNonRepeatingWindow
     }
     
-    //This solution is sufficiently longer due to `let char = s[s.index(s.startIndex, offsetBy: index)]`
-    //Time: O(n)
+    
+    //Time: O(n) where n is the characters in `s`
+    //Space: O(n) where n is the characters in `s`
+    //
+    //N.B. This solution is sufficiently slower due to `let char = s[s.index(s.startIndex, offsetBy: index)]`
     static func lengthOfLongestSubstringAlt(_ s: String) -> Int {
         var visited = [Character: Int]()
         var longestNonRepeatingWindow = 0
