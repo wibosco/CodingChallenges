@@ -17,11 +17,15 @@ Contains solutions to challenges found in:
 
 ## Hints for how to solve:
 
-| Question | Techniques |
+| Keywords | Techniques |
 | ----------- | ----------- |
-| "Shortest path" | `BFS` |
+| "Shortest path", "Level-by-level" | `BFS` |
 | "All paths" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
-| "Generate all" | `Backtracking (DFS)` |
-| "Sorted" | `Binary Search` |
+| "Generate all", "All permutations" | `Backtracking (DFS)` |
+| "Sorted" | `Binary Search`, `Two pointers` |
 | "Next greater element", "Next lesser element" | `Monotonic stack` |
+| "Longest sub...", "Smallest sub...", "Maximum points"| `Sliding window`|
+| "In-place" | `Swap`|
+| "Loop/cycle"| "Slow and Fast pointers"|
+| "Minimum cost" | `MST`, `Kruskal`, `Prims` |

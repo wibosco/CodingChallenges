@@ -19,7 +19,7 @@ struct FlattenBinaryTreeToLinkedList {
     //DFS
     //
     //Solution Description:
-    //Using dfs perform a preorder traversal of the tree adding the nodes that
+    //Using DFS perform a preorder traversal of the tree adding the nodes that
     //we come across to an array. After the array is populated we iterate
     //through, setting the current nodes right node to the next node in the
     //array. We also remove any existing left and right associations
