@@ -14,5 +14,14 @@ Contains solutions to challenges found in:
   - https://leetcode.com/
 - Cracking the Coding Interview
   - https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/
-- Other
-  - Random coding challenges that I've picked up along the way
+
+## Hints for how to solve:
+
+| Question | Techniques |
+| ----------- | ----------- |
+| "Shortest path" | `BFS` |
+| "All paths" | `BFS`, `DFS`       |
+| "Path exists" | `BFS`, `DFS`, `Disjont sets` |
+| "Generate all" | `Backtracking (DFS)`|
+| "Sorted"| `Binary Search` |
+| "Next greater element" | `Monotonic stack` |

@@ -9,8 +9,15 @@
 import Foundation
 
 //https://leetcode.com/problems/generate-parentheses/
-//backtracking (DFS) - has three parts Choice, Constraint (optional) and Goal
+//backtracking - has three parts Choice, Constraint (optional) and Goal
 struct GenerateParentheses {
+    
+    //Time: O(
+    //Space: O(n) where n is the number of pairs of parenthesises
+    //recursion
+    //
+    //Solution Description:
+    //Using backtracking explore each possible combination of "(" and ")" as a tree. 
     static func generateParenthesis(_ n: Int) -> [String] {
         var parentheses = [String]()
         backtrack(array: &parentheses, value: "", open: n, close: n, max: n)
@@ -19,6 +26,8 @@ struct GenerateParentheses {
     
     //See https://www.youtube.com/watch?v=sz1qaKt0KGQ for breakdown
     static func backtrack(array: inout [String], value: String, open: Int, close: Int, max: Int) {
+        print("array: \(array)")
+        
         //Goal
         guard value.count != (max * 2) else { // Max is the number of pairs
             array.append(value)

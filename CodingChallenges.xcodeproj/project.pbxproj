@@ -327,6 +327,8 @@
 		3D9F9FA9273D643B00A9BD72 /* MinimumValueToGetPositive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */; };
 		3D9F9FAD273D757500A9BD72 /* ImplementStrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */; };
 		3D9F9FCC273EFF9800A9BD72 /* DivideTwoIntegers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */; };
+		3DA392A02768EBCE00AE0A9B /* DailyTemperatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */; };
+		3DA392A22768EC1700AE0A9B /* DailyTemperaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */; };
 		3DA4B13A272983760026F7D9 /* GradingStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B139272983760026F7D9 /* GradingStudents.swift */; };
 		3DA4B13F2729AE1D0026F7D9 /* SaveThePrisoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */; };
 		3DA4B1442729FF750026F7D9 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */; };
@@ -684,6 +686,8 @@
 		3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumValueToGetPositive.swift; sourceTree = "<group>"; };
 		3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementStrStr.swift; sourceTree = "<group>"; };
 		3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideTwoIntegers.swift; sourceTree = "<group>"; };
+		3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperatures.swift; sourceTree = "<group>"; };
+		3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperaturesTests.swift; sourceTree = "<group>"; };
 		3DA4B139272983760026F7D9 /* GradingStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStudents.swift; sourceTree = "<group>"; };
 		3DA4B13E2729AE1D0026F7D9 /* SaveThePrisoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrisoner.swift; sourceTree = "<group>"; };
 		3DA4B1432729FF750026F7D9 /* AppleAndOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
@@ -929,6 +933,7 @@
 				3D3E6AB7274C074800CC3893 /* ContainerWithMostWaterTests.swift */,
 				3D3E6AB8274C074800CC3893 /* CopyListWithRandomPointerTests.swift */,
 				3D82A166274E57EF004D6836 /* CountUnivalueSubtreesTests.swift */,
+				3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */,
 				3D3F6A8D276231D70011B7A6 /* DiameterOfBinaryTreeTests.swift */,
 				3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */,
 				3D3E6AE3274C074800CC3893 /* DivideTwoIntegersTests.swift */,
@@ -1664,6 +1669,7 @@
 				3D54C6FF273ADBEF006A9F67 /* ContainerWithMostWater.swift */,
 				3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */,
 				3D82A164274E574D004D6836 /* CountUnivalueSubtrees.swift */,
+				3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */,
 				3D3F6A8B276231610011B7A6 /* DiameterOfBinaryTree.swift */,
 				3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */,
 				3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */,
@@ -2063,6 +2069,7 @@
 				3D9F9FCC273EFF9800A9BD72 /* DivideTwoIntegers.swift in Sources */,
 				3D9D35A82729518600112474 /* ChocolateFeast.swift in Sources */,
 				3D387A6B274BFF6F00537F46 /* RoutePlannerNode.swift in Sources */,
+				3DA392A02768EBCE00AE0A9B /* DailyTemperatures.swift in Sources */,
 				3D387A68274BFF6F00537F46 /* TreeNodeCtCI.swift in Sources */,
 				3D54C72C273C70D8006A9F67 /* RemoveDuplicates.swift in Sources */,
 				3D3879DE2748521200537F46 /* FindMinimumRotatedSortedArrayII.swift in Sources */,
@@ -2180,6 +2187,7 @@
 				3D8E34BE275683D700F5F768 /* SmallestStringWithSwapsTests.swift in Sources */,
 				3D3BFF24275579A80079BBF5 /* GraphValidTreeTests.swift in Sources */,
 				3D3E6B12274C074800CC3893 /* ZigzagConversionTests.swift in Sources */,
+				3DA392A22768EC1700AE0A9B /* DailyTemperaturesTests.swift in Sources */,
 				3D3E6AF6274C074800CC3893 /* ValidParenthesesTests.swift in Sources */,
 				3D3E6B8E274C09B100CC3893 /* ManasaAndStonesTests.swift in Sources */,
 				3D3E6BD0274C0A6E00CC3893 /* ValidateBSTTests.swift in Sources */,

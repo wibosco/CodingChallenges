@@ -9,11 +9,16 @@
 import Foundation
 
 //https://leetcode.com/problems/container-with-most-water/
-//two pointers
 //greedy
 struct ContainerWithMostWater {
     
     //Time: O(n)
+    //Space: O(1)
+    //two pointers
+    //
+    //Solution Description:
+    //Using two pointers move through the array is a greedy manner to maximise
+    //the area between the heights. In each iteration move the smaller pointer
     static func maxArea(_ height: [Int]) -> Int {
         var maxArea = 0
         
@@ -40,6 +45,7 @@ struct ContainerWithMostWater {
     }
     
     //Time: O(n^2)
+    //Space: O(1)
     static func maxAreaBruteForce(_ height: [Int]) -> Int {
         var maxArea = 0
         
