@@ -11,8 +11,8 @@ import XCTest
 @testable import CodingChallenges
 
 class RotateListTests: XCTestCase {
-
-   // MARK: - Tests
+    
+    // MARK: - Tests
     
     func test_A() {
         let head = ListNode.createList(fromArray: [1, 2, 3, 4, 5])

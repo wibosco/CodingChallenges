@@ -11,8 +11,8 @@ import XCTest
 @testable import CodingChallenges
 
 class ConstructBinaryTreePreorderInorderTraversalTests: XCTestCase {
-
-   // MARK: - Tests
+    
+    // MARK: - Tests
     
     func test_A() {
         let preorder = [3, 9, 20, 15, 7]

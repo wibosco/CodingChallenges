@@ -20,8 +20,8 @@ Contains solutions to challenges found in:
 | Question | Techniques |
 | ----------- | ----------- |
 | "Shortest path" | `BFS` |
-| "All paths" | `BFS`, `DFS`       |
+| "All paths" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
-| "Generate all" | `Backtracking (DFS)`|
-| "Sorted"| `Binary Search` |
-| "Next greater element" | `Monotonic stack` |
+| "Generate all" | `Backtracking (DFS)` |
+| "Sorted" | `Binary Search` |
+| "Next greater element", "Next lesser element" | `Monotonic stack` |

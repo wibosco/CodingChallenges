@@ -332,6 +332,8 @@
 		3D908C6F27693C0F0090C077 /* CutTheSticks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908C3C27693C0E0090C077 /* CutTheSticks.swift */; };
 		3D908C7027693C0F0090C077 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908C3D27693C0E0090C077 /* Summing.swift */; };
 		3D908C7227693D000090C077 /* ManasaAndStones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908C7127693D000090C077 /* ManasaAndStones.swift */; };
+		3D908C7627693EB00090C077 /* FinalPricesWithSpecialDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908C7527693EB00090C077 /* FinalPricesWithSpecialDiscount.swift */; };
+		3D908C7827693EC30090C077 /* FinalPricesWithSpecialDiscountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908C7727693EC30090C077 /* FinalPricesWithSpecialDiscountTests.swift */; };
 		3D9F9FA9273D643B00A9BD72 /* MinimumValueToGetPositive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */; };
 		3D9F9FAD273D757500A9BD72 /* ImplementStrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */; };
 		3D9F9FCC273EFF9800A9BD72 /* DivideTwoIntegers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */; };
@@ -688,6 +690,8 @@
 		3D908C3C27693C0E0090C077 /* CutTheSticks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutTheSticks.swift; sourceTree = "<group>"; };
 		3D908C3D27693C0E0090C077 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
 		3D908C7127693D000090C077 /* ManasaAndStones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManasaAndStones.swift; sourceTree = "<group>"; };
+		3D908C7527693EB00090C077 /* FinalPricesWithSpecialDiscount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalPricesWithSpecialDiscount.swift; sourceTree = "<group>"; };
+		3D908C7727693EC30090C077 /* FinalPricesWithSpecialDiscountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPricesWithSpecialDiscountTests.swift; sourceTree = "<group>"; };
 		3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumValueToGetPositive.swift; sourceTree = "<group>"; };
 		3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementStrStr.swift; sourceTree = "<group>"; };
 		3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideTwoIntegers.swift; sourceTree = "<group>"; };
@@ -932,6 +936,7 @@
 				3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */,
 				3D3E6AE3274C074800CC3893 /* DivideTwoIntegersTests.swift */,
 				3D8E34B92756761D00F5F768 /* EarliestMomentWhenEveryoneBecomeFriendsTests.swift */,
+				3D908C7727693EC30090C077 /* FinalPricesWithSpecialDiscountTests.swift */,
 				3D3E6ACB274C074800CC3893 /* FindDuplicateNumberTests.swift */,
 				3D3E6ABF274C074800CC3893 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */,
 				3D49F6C82757C6A100B996AB /* FindIfPathExistsInGraphTests.swift */,
@@ -1303,6 +1308,7 @@
 				3D34E8682742D457006500EB /* ValidPalindrome.swift */,
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D3879D527483B1F00537F46 /* ValidPerfectSquare.swift */,
+				3D908C7527693EB00090C077 /* FinalPricesWithSpecialDiscount.swift */,
 				3D51A04F27668E0E00D70AE5 /* WallsAndGates.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
@@ -1647,6 +1653,7 @@
 				3D51A05A27675CCA00D70AE5 /* NumberOfIslands.swift in Sources */,
 				3D49F6D127581CD100B996AB /* CloneGraph.swift in Sources */,
 				3D34E86D2742FF73006500EB /* CopyListWithRandomPointer.swift in Sources */,
+				3D908C7627693EB00090C077 /* FinalPricesWithSpecialDiscount.swift in Sources */,
 				3D54C707273ADBF0006A9F67 /* AddTwoNumbers.swift in Sources */,
 				3D387A62274BFF6F00537F46 /* MinimalBinarySearchTree.swift in Sources */,
 				3D908C4A27693C0E0090C077 /* CavityMap.swift in Sources */,
@@ -1809,6 +1816,7 @@
 				3D3E6BD1274C0A6E00CC3893 /* BinarySearchTreeDepthTests.swift in Sources */,
 				3D82A167274E57EF004D6836 /* CountUnivalueSubtreesTests.swift in Sources */,
 				3D3E6B15274C074800CC3893 /* DivideTwoIntegersTests.swift in Sources */,
+				3D908C7827693EC30090C077 /* FinalPricesWithSpecialDiscountTests.swift in Sources */,
 				3D2A61CA275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift in Sources */,
 				3D82A16B274EA38A004D6836 /* ConstructBinaryTreeInorderPostorderTraversalTests.swift in Sources */,
 				3D3E6B89274C09B100CC3893 /* BreakingTheRecordsTests.swift in Sources */,

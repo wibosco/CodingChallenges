@@ -11,7 +11,7 @@ import XCTest
 @testable import CodingChallenges
 
 class ContainerWithMostWaterTests: XCTestCase {
-
+    
     // MARK: - Tests
     
     func test_A() {
@@ -45,5 +45,5 @@ class ContainerWithMostWaterTests: XCTestCase {
         
         XCTAssertEqual(area, 2)
     }
-
+    
 }

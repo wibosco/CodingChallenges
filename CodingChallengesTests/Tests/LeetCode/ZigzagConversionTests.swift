@@ -11,8 +11,8 @@ import XCTest
 @testable import CodingChallenges
 
 class ZigzagConversionTests: XCTestCase {
-
-   // MARK: - Tests
+    
+    // MARK: - Tests
     
     func test_A() {
         let s = "PAYPALISHIRING"
@@ -22,7 +22,7 @@ class ZigzagConversionTests: XCTestCase {
         
         XCTAssertEqual(conversion, "PAHNAPLSIIGYIR")
     }
-
+    
     func test_B() {
         let s = "PAYPALISHIRING"
         let numRows = 4

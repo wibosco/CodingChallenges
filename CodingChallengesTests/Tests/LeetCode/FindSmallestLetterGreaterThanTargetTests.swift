@@ -13,7 +13,7 @@ import XCTest
 class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
     
     // MARK: - Tests
-        
+    
     func test_A() {
         let letters: [Character] = ["c", "f", "j"]
         let target: Character = "a"

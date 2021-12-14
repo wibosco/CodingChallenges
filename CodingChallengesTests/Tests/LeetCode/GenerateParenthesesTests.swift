@@ -11,8 +11,8 @@ import XCTest
 @testable import CodingChallenges
 
 class GenerateParenthesesTests: XCTestCase {
-
-   // MARK: - Tests
+    
+    // MARK: - Tests
     
     func test_A() {
         let n = 3
@@ -29,5 +29,5 @@ class GenerateParenthesesTests: XCTestCase {
         
         XCTAssertEqual(combinations, ["()"])
     }
-
+    
 }

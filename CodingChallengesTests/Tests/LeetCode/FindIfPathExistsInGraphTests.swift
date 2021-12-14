@@ -13,19 +13,19 @@ import XCTest
 class FindIfPathExistsInGraphTests: XCTestCase {
     
     // MARK: - Tests
-     
-     func test_A() {
-         let n = 3
-         let edges = [[0, 1],
-                      [1, 2],
-                      [2, 0]]
-         let start = 0
-         let end = 2
-         
-         let pathExists = FindIfPathExistsInGraph.validPath(n, edges, start, end)
-         
-         XCTAssertTrue(pathExists)
-     }
+    
+    func test_A() {
+        let n = 3
+        let edges = [[0, 1],
+                     [1, 2],
+                     [2, 0]]
+        let start = 0
+        let end = 2
+        
+        let pathExists = FindIfPathExistsInGraph.validPath(n, edges, start, end)
+        
+        XCTAssertTrue(pathExists)
+    }
     
     func test_B() {
         let n = 6

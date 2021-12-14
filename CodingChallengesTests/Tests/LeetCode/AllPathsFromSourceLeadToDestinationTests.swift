@@ -13,8 +13,8 @@ import XCTest
 @testable import CodingChallenges
 
 class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
-
-   // MARK: - Tests
+    
+    // MARK: - Tests
     
     func test_A() {
         let n = 3

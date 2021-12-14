@@ -11,7 +11,7 @@ import XCTest
 @testable import CodingChallenges
 
 class MergeTwoSortedListsTests: XCTestCase {
-
+    
     // MARK: - Tests
     
     func test_A() {
