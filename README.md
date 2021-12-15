@@ -27,5 +27,6 @@ Contains solutions to challenges found in:
 | "Next greater element", "Next lesser element" | `Monotonic stack` |
 | "Longest sub...", "Smallest sub...", "Maximum points"| `Sliding window`|
 | "In-place" | `Swap`|
-| "Loop/cycle"| "Slow and Fast pointers"|
+| "Loop/cycle in a linked list"| `Slow and Fast pointers`|
+| "Loop/cycle in a graph" | `Disjoint sets` |
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |

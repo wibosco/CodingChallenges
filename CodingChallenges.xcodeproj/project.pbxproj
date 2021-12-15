@@ -339,6 +339,8 @@
 		3D9F9FCC273EFF9800A9BD72 /* DivideTwoIntegers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */; };
 		3DA392A02768EBCE00AE0A9B /* DailyTemperatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */; };
 		3DA392A22768EC1700AE0A9B /* DailyTemperaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */; };
+		3DCD370C2769EE6100F46913 /* EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370B2769EE6100F46913 /* EvaluateReversePolishNotation.swift */; };
+		3DCD370E2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370D2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift */; };
 		3DF50D7C275A3185000E78E2 /* SerializeDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7B275A3185000E78E2 /* SerializeDeserializeBinaryTree.swift */; };
 		3DF50D7E275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */; };
 		3DF50D80275A6914000E78E2 /* ReconstructItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */; };
@@ -697,6 +699,8 @@
 		3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideTwoIntegers.swift; sourceTree = "<group>"; };
 		3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperatures.swift; sourceTree = "<group>"; };
 		3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperaturesTests.swift; sourceTree = "<group>"; };
+		3DCD370B2769EE6100F46913 /* EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotation.swift; sourceTree = "<group>"; };
+		3DCD370D2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotationTests.swift; sourceTree = "<group>"; };
 		3DF50D7B275A3185000E78E2 /* SerializeDeserializeBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeDeserializeBinaryTree.swift; sourceTree = "<group>"; };
 		3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeDeserializeBinaryTreeTests.swift; sourceTree = "<group>"; };
 		3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItinerary.swift; sourceTree = "<group>"; };
@@ -936,6 +940,7 @@
 				3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */,
 				3D3E6AE3274C074800CC3893 /* DivideTwoIntegersTests.swift */,
 				3D8E34B92756761D00F5F768 /* EarliestMomentWhenEveryoneBecomeFriendsTests.swift */,
+				3DCD370D2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift */,
 				3D908C7727693EC30090C077 /* FinalPricesWithSpecialDiscountTests.swift */,
 				3D3E6ACB274C074800CC3893 /* FindDuplicateNumberTests.swift */,
 				3D3E6ABF274C074800CC3893 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */,
@@ -1243,6 +1248,8 @@
 				3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */,
 				3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */,
 				3D8E34B7275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift */,
+				3DCD370B2769EE6100F46913 /* EvaluateReversePolishNotation.swift */,
+				3D908C7527693EB00090C077 /* FinalPricesWithSpecialDiscount.swift */,
 				3D3879ED2749ABE900537F46 /* FindDuplicateNumber.swift */,
 				3D3879C32746A28100537F46 /* FindFirstAndLastPositionOfElementInSortedArray.swift */,
 				3D49F6C62757C65E00B996AB /* FindIfPathExistsInGraph.swift */,
@@ -1308,7 +1315,6 @@
 				3D34E8682742D457006500EB /* ValidPalindrome.swift */,
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D3879D527483B1F00537F46 /* ValidPerfectSquare.swift */,
-				3D908C7527693EB00090C077 /* FinalPricesWithSpecialDiscount.swift */,
 				3D51A04F27668E0E00D70AE5 /* WallsAndGates.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
@@ -1661,6 +1667,7 @@
 				3D34E8612742A3A1006500EB /* MergeIntervals.swift in Sources */,
 				3D908C4E27693C0E0090C077 /* MigratoryBirds.swift in Sources */,
 				3D387A59274BFF6F00537F46 /* StackOfPlatesNode.swift in Sources */,
+				3DCD370C2769EE6100F46913 /* EvaluateReversePolishNotation.swift in Sources */,
 				3D1D93132762A19300CF6A27 /* DiameterOfNAryTree.swift in Sources */,
 				3D908C4627693C0E0090C077 /* Percentages.swift in Sources */,
 				3D82A161274E4908004D6836 /* PathSum.swift in Sources */,
@@ -1825,6 +1832,7 @@
 				3D3E6BCA274C0A6E00CC3893 /* MinimalBinarySearchTreeTests.swift in Sources */,
 				3D3E6BA2274C09B100CC3893 /* BirthdayBarTests.swift in Sources */,
 				3D3E6B7F274C09B100CC3893 /* MigratoryBirdsTests.swift in Sources */,
+				3DCD370E2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift in Sources */,
 				3D3F6A8E276231D70011B7A6 /* DiameterOfBinaryTreeTests.swift in Sources */,
 				432685AD1CDCA129005B1E61 /* QuestionsViewController.swift in Sources */,
 				3D3E6B95274C09B100CC3893 /* NewYearChaosTests.swift in Sources */,
