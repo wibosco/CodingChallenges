@@ -10,11 +10,12 @@ import Foundation
 
 //https://leetcode.com/problems/binary-tree-inorder-traversal/
 //binary tree
-//DFS
+
 struct BinaryTreeInorderTraversal {
     
     //Time: O(n)
     //Space: O(n)
+    //DFS
     //recursion
     static func inorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
@@ -40,6 +41,7 @@ struct BinaryTreeInorderTraversal {
     
     //Time: O(n)
     //Space: O(n)
+    //DFS
     //iterative
     static func inorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
