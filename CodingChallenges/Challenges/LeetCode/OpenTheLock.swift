@@ -8,7 +8,7 @@
 
 import Foundation
 
-//
+//https://leetcode.com/problems/open-the-lock/
 //graph theory
 struct OpenTheLock {
     

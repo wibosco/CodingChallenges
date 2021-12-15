@@ -11,7 +11,7 @@ import XCTest
 @testable import CodingChallenges
 
 class SerializeDeserializeBinaryTreeTests: XCTestCase {
-
+    
     //MARK: - Deserialize
     
     func test_A() {
@@ -58,5 +58,5 @@ class SerializeDeserializeBinaryTreeTests: XCTestCase {
         
         XCTAssertEqual(values, data)
     }
-
+    
 }
