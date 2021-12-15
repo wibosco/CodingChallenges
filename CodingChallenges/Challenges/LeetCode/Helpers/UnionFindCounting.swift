@@ -11,6 +11,8 @@ import Foundation
 //Union by rank
 //see: https://www.youtube.com/watch?v=wU6udHRIkcc
 //
+//Can only be applied on undirected graphs
+//
 //Solution Description:
 //1. Each vertice is given an initial value of -1 to indicate
 //   that they are there own root

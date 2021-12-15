@@ -349,6 +349,8 @@
 		3DCD371A276A524600F46913 /* FloodFillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD3719276A524600F46913 /* FloodFillTests.swift */; };
 		3DCD371C276A604300F46913 /* Matrix01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD371B276A604300F46913 /* Matrix01Tests.swift */; };
 		3DCD371E276A608E00F46913 /* Matrix01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD371D276A608E00F46913 /* Matrix01.swift */; };
+		3DCD3720276A9A5A00F46913 /* KeysAndRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD371F276A9A5A00F46913 /* KeysAndRooms.swift */; };
+		3DCD3722276A9AA300F46913 /* KeysAndRoomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD3721276A9AA300F46913 /* KeysAndRoomsTests.swift */; };
 		3DF50D7C275A3185000E78E2 /* SerializeDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7B275A3185000E78E2 /* SerializeDeserializeBinaryTree.swift */; };
 		3DF50D7E275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */; };
 		3DF50D80275A6914000E78E2 /* ReconstructItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */; };
@@ -717,6 +719,8 @@
 		3DCD3719276A524600F46913 /* FloodFillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFillTests.swift; sourceTree = "<group>"; };
 		3DCD371B276A604300F46913 /* Matrix01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix01Tests.swift; sourceTree = "<group>"; };
 		3DCD371D276A608E00F46913 /* Matrix01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix01.swift; sourceTree = "<group>"; };
+		3DCD371F276A9A5A00F46913 /* KeysAndRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysAndRooms.swift; sourceTree = "<group>"; };
+		3DCD3721276A9AA300F46913 /* KeysAndRoomsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysAndRoomsTests.swift; sourceTree = "<group>"; };
 		3DF50D7B275A3185000E78E2 /* SerializeDeserializeBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeDeserializeBinaryTree.swift; sourceTree = "<group>"; };
 		3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeDeserializeBinaryTreeTests.swift; sourceTree = "<group>"; };
 		3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItinerary.swift; sourceTree = "<group>"; };
@@ -977,6 +981,7 @@
 				3D3E6AC7274C074800CC3893 /* IntegerToRomanTests.swift */,
 				3D3E6ACE274C074800CC3893 /* IntersectionOfTwoArraysIITests.swift */,
 				3D3E6ADB274C074800CC3893 /* IntersectionOfTwoArraysTests.swift */,
+				3DCD3721276A9AA300F46913 /* KeysAndRoomsTests.swift */,
 				3D3E6AD1274C074800CC3893 /* LetterCombinationsTests.swift */,
 				3D3E6ABD274C074800CC3893 /* LongestCommonPrefixTests.swift */,
 				3D3E6ADE274C074800CC3893 /* LongestPalindromicSubstringTests.swift */,
@@ -1289,6 +1294,7 @@
 				3D54C702273ADBEF006A9F67 /* IntegerToRoman.swift */,
 				3D3879E1274859BD00537F46 /* IntersectionOfTwoArrays.swift */,
 				3D3879E52749911D00537F46 /* IntersectionOfTwoArraysII.swift */,
+				3DCD371F276A9A5A00F46913 /* KeysAndRooms.swift */,
 				3D54C6FC273ADBEF006A9F67 /* LetterCombinations.swift */,
 				3D54C701273ADBEF006A9F67 /* LongestCommonPrefix.swift */,
 				3D54C703273ADBF0006A9F67 /* LongestPalindromicSubstring.swift */,
@@ -1590,6 +1596,7 @@
 				3D54C710273ADBF0006A9F67 /* LongestPalindromicSubstring.swift in Sources */,
 				3D908C4427693C0E0090C077 /* MagicSquare.swift in Sources */,
 				3D3BFF22275579610079BBF5 /* GraphValidTree.swift in Sources */,
+				3DCD3720276A9A5A00F46913 /* KeysAndRooms.swift in Sources */,
 				3D49F6CD2757D52B00B996AB /* AllPathsFromSourceToTarget.swift in Sources */,
 				3D908C5327693C0E0090C077 /* RunningTime.swift in Sources */,
 				3D3395B627459876002EE4AC /* PeakIndexMountainArray.swift in Sources */,
@@ -1812,6 +1819,7 @@
 				3D3E6AEC274C074800CC3893 /* AddTwoNumbersTests.swift in Sources */,
 				3DCD371A276A524600F46913 /* FloodFillTests.swift in Sources */,
 				3D3F6A02275E3C890011B7A6 /* ShortestPathBinaryMatrixTests.swift in Sources */,
+				3DCD3722276A9AA300F46913 /* KeysAndRoomsTests.swift in Sources */,
 				3D3E6AF9274C074800CC3893 /* IntegerToRomanTests.swift in Sources */,
 				3D3E6B14274C074800CC3893 /* ClosestBinarySearchTreeValueTests.swift in Sources */,
 				3D3E6B81274C09B100CC3893 /* FindDigitsTests.swift in Sources */,
