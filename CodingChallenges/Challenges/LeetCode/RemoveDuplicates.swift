@@ -10,11 +10,11 @@ import Foundation
 
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 //two pointers
-//sorted
 struct RemoveDuplicates {
     //Don't use an extra memory structure
     //Time: O(n)
     //Space: O(1)
+    //sorted
     //
     //Solution Description:
     //Using two pointers we orderride duplicates with the next non-duplicate
