@@ -12,25 +12,116 @@ import Foundation
 //graph theory
 struct CloneGraph {
     
+    //Time: O(n + e) where `n` is the number of vertice and `e` is the number of edges
+    //Space: O(n) where `n` is the number stored in the `vertices` and `visited`
+    //BFS
+    //dictionary
+    //
+    //Solution Description:
+    //Traverse the graph using BFS to make a copy all of the vertices, storing those copies in the `copiedVertices`
+    //dictionary. During this traversal we also associate all copied vertices with their neighbors.
+    static func cloneGraph(_ vertice: GraphVertice?) -> GraphVertice? {
+        guard let vertice = vertice else {
+            return nil
+        }
+        
+        var copiedVertices = [GraphVertice: GraphVertice]()
+        copiedVertices[vertice] = GraphVertice(vertice.val)
+        
+        var queue = [vertice]
+        
+        while !queue.isEmpty {
+            let count = queue.count
+            
+            for _ in 0..<count {
+                let v = queue.removeFirst()
+                let copy = copiedVertices[v]
+                
+                for neighbor in v.neighbors {
+                    if let copiedNeighbor = copiedVertices[neighbor] {
+                        copy?.neighbors.append(copiedNeighbor)
+                    } else {
+                        let copiedNeighbor = GraphVertice(neighbor.val)
+                        copiedVertices[neighbor] = copiedNeighbor
+                        copy?.neighbors.append(copiedNeighbor)
+                        
+                        queue.append(neighbor)
+                    }
+                }
+            }
+        }
+        
+        return copiedVertices[vertice]
+    }
+    
+    //Time: O(n + e) where `n` is the number of vertice and `e` is the number of edges
+    //Space: O(n) where `n` is the number stored in the `vertices` and `visited`
+    //BFS
+    //dictionary
+    //
+    //Solution Description:
+    //Traverse the graph using BFS to make an initial copy all of the vertices and store those copies in the `copiedVertices`
+    //dictionary - this pass doesn't include connecting vertices together. A second pass is then made that associates the
+    //vertices with their neighbors.
+    static func cloneGraphBFS(_ vertice: GraphVertice?) -> GraphVertice? {
+        guard let vertice = vertice else {
+            return nil
+        }
+        
+        var copiedVertices = [GraphVertice: GraphVertice]()
+        copiedVertices[vertice] = GraphVertice(vertice.val)
+        
+        var queue = [vertice]
+        var visited = Set<GraphVertice>()
+        visited.insert(vertice)
+        
+        while !queue.isEmpty {
+            let count = queue.count
+            
+            for _ in 0..<count {
+                let v = queue.removeFirst()
+                
+                for neighbor in v.neighbors {
+                    guard !visited.contains(neighbor) else {
+                        continue
+                    }
+
+                    copiedVertices[neighbor] = GraphVertice(neighbor.val)
+                    
+                    queue.append(neighbor)
+                    visited.insert(neighbor)
+                }
+            }
+        }
+        
+        for v in copiedVertices.keys {
+            for neighbor in v.neighbors {
+                let copy = copiedVertices[v]
+                copy?.neighbors.append(copiedVertices[neighbor]!)
+            }
+        }
+        
+        return copiedVertices[vertice]
+    }
+    
     //Time: O(n + e) where `n` is the number of vertices and `e` is the number of edges
     //Space: O(n)
     //DFS
     //recursive
     //
     //Solution Description:
-    //Perform a recusive DFS search through the graph, making a copy when we encounter
-    //an unvisited vertice and using the original vertice to build that copies neighbor list.
-    //If we have already copied a vertice that we encounter (i.e. a later vertice has
-    //that previously copied vertice as a neighbor)
-    static func cloneGraph(_ vertice: GraphVertice?) -> GraphVertice? {
+    //Perform a recusive DFS search through the graph, making a copy when we encounter an unvisited vertice and using the
+    //original vertice to build that copies neighbor list. If we have already copied a vertice that we encounter (i.e. a
+    //later vertice that has been previously copied vertice as a neighbor) then we return it straight away.
+    static func cloneGraphDFS(_ vertice: GraphVertice?) -> GraphVertice? {
         guard let vertice = vertice else {
             return nil
         }
 
-        var copiedvertices = [GraphVertice: GraphVertice]()
-        deepCopy(curr: vertice, vertices: &copiedvertices)
+        var copiedVertices = [GraphVertice: GraphVertice]()
+        deepCopy(curr: vertice, vertices: &copiedVertices)
 
-        return copiedvertices[vertice]!
+        return copiedVertices[vertice]!
     }
 
     @discardableResult
@@ -56,9 +147,9 @@ struct CloneGraph {
     //dictionary
     //
     //Solution Description:
-    //Perform a recusive DFS search through the graph. Initally making a copy without
-    //the neighbors attached and then making making another pass through and attached
-    //the copied vertices with their copied neighbors
+    //Traverse the graph using DFS to make an initial copy all of the vertices and store those copies in the `copiedVertices`
+    //dictionary - this pass doesn't include connecting vertices together. A second pass is then made that associates the
+    //vertices with their neighbors.
     static func cloneGraphMultiplePasses(_ vertice: GraphVertice?) -> GraphVertice? {
         guard let vertice = vertice else {
             return nil

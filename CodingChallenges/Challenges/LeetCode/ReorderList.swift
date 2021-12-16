@@ -17,14 +17,11 @@ struct ReorderList {
     //no additional space
     //
     //Solution Description:
-    //First we find the middle of the list and effectively split the list
-    //into two lists. Everything from the middle to end is then reversed
-    //by getting the prev node and setting it as the `next` node of the
-    //current node. This two lists are then merged together with each step
-    //taking the reversed list's node and making it the `next` node of the
-    //non-reversed list. As we don't use an additional data structure to
-    //hold the list we need before re-assigning `next` we need to hold onto
-    //the old `next` and attach it to the new `next` so we don't lose anything.
+    //First we find the middle of the list and effectively split the list into two lists. Everything from the middle to end
+    //is then reversed by getting the prev node and setting it as the `next` node of the current node. This two lists are
+    //then merged together with each step taking the reversed list's node and making it the `next` node of the non-reversed
+    //list. As we don't use an additional data structure to hold the list we need before re-assigning `next` we need to hold
+    //onto the old `next` and attach it to the new `next` so we don't lose anything.
     static func reorderList(_ head: ListNode?) {
         var slow = head
         var fast = head
@@ -71,9 +68,8 @@ struct ReorderList {
     //array
     //
     //Solution Description:
-    //Using an array to store all nodes in order we use two pointers to
-    //move through the array from opposite sides, overriding the left
-    //nodes `next` property to now point at the right node
+    //Using an array to store all nodes in order we use two pointers to move through the array from opposite sides, overriding
+    //the left nodes `next` property to now point at the right node
     static func reorderListTwoPointers(_ head: ListNode?) {
         var nodes = [ListNode]()
         var node: ListNode? = head
