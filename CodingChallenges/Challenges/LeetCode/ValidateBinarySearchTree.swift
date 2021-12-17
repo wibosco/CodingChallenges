@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/validate-binary-search-tree/
-//bst
+//BST
 struct ValidateBinarySearchTree {
     
     //Time: O(n)
