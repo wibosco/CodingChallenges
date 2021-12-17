@@ -23,7 +23,7 @@ struct ReverseLinkedList {
     //[4 -> 5] [3 -> 2 -> 1]
     //[5] [4 -> 3 -> 2 -> 1]
     //[5 -> 4 -> 3 -> 2 -> 1]
-    //As you can see as we swap nodes, we are effectively more them from one list to another
+    //As you can see as we swap nodes, we are effectively move them from one list to another
     static func reverseList(_ head: ListNode?) -> ListNode? {
         guard let head = head else {
             return nil
