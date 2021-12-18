@@ -15,7 +15,7 @@ class CopyListWithRandomPointerTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let list = ListNodeRandom.createList(fromArray: [[7, nil], [13, 0], [11, 4], [10, 2], [1, 0]])
+        let list = ListNodeRandom.deserialize([[7, nil], [13, 0], [11, 4], [10, 2], [1, 0]])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         
@@ -25,7 +25,7 @@ class CopyListWithRandomPointerTests: XCTestCase {
     }
     
     func test_B() {
-        let list = ListNodeRandom.createList(fromArray: [[1, 1],[2, 1]])
+        let list = ListNodeRandom.deserialize([[1, 1],[2, 1]])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         
@@ -35,7 +35,7 @@ class CopyListWithRandomPointerTests: XCTestCase {
     }
     
     func test_C() {
-        let list = ListNodeRandom.createList(fromArray: [[3, nil], [3, 0], [3, nil]])
+        let list = ListNodeRandom.deserialize([[3, nil], [3, 0], [3, nil]])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         
@@ -45,7 +45,7 @@ class CopyListWithRandomPointerTests: XCTestCase {
     }
     
     func test_D() {
-        let list = ListNodeRandom.createList(fromArray: [])
+        let list = ListNodeRandom.deserialize([])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         

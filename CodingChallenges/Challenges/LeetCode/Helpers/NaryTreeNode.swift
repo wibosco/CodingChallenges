@@ -24,7 +24,7 @@ extension NaryTreeNode {
     //Nary-Tree input serialization is represented in their level order traversal,
     //each group of children is separated by the null value e.g.
     //[1, nil, 3, 2, 4, nil, 5, 6]
-    static func createNaryTree(fromLevelOrderArray array: [Int?]) -> NaryTreeNode? {
+    static func deserialize(_ array: [Int?]) -> NaryTreeNode? {
         guard !array.isEmpty else {
             return nil
         }

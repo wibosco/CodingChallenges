@@ -15,8 +15,8 @@ class AddTwoNumbersTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let l1 = ListNode.createList(fromArray: [2, 4, 3])
-        let l2 = ListNode.createList(fromArray: [5, 6, 4])
+        let l1 = ListNode.deserialize([2, 4, 3])
+        let l2 = ListNode.deserialize([5, 6, 4])
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
         
@@ -26,8 +26,8 @@ class AddTwoNumbersTests: XCTestCase {
     }
     
     func test_B() {
-        let l1 = ListNode.createList(fromArray: [0])
-        let l2 = ListNode.createList(fromArray: [0])
+        let l1 = ListNode.deserialize([0])
+        let l2 = ListNode.deserialize([0])
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
         
@@ -35,8 +35,8 @@ class AddTwoNumbersTests: XCTestCase {
     }
     
     func test_C() {
-        let l1 = ListNode.createList(fromArray: [9, 9, 9, 9, 9, 9, 9])
-        let l2 = ListNode.createList(fromArray: [9, 9, 9, 9])
+        let l1 = ListNode.deserialize([9, 9, 9, 9, 9, 9, 9])
+        let l2 = ListNode.deserialize([9, 9, 9, 9])
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
         
@@ -51,8 +51,8 @@ class AddTwoNumbersTests: XCTestCase {
     }
     
     func test_D() {
-        let l1 = ListNode.createList(fromArray: [2, 4, 9])
-        let l2 = ListNode.createList(fromArray: [5, 6, 4, 9])
+        let l1 = ListNode.deserialize([2, 4, 9])
+        let l2 = ListNode.deserialize([5, 6, 4, 9])
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
 

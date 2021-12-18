@@ -21,7 +21,8 @@ class GraphVertice {
 }
 
 extension GraphVertice {
-    static func createUndirectedGraph(fromAdjList edges: [[Int]]) -> GraphVertice? {
+    //undirect graphs
+    static func deserialize(_ edges: [[Int]]) -> GraphVertice? {
         guard !edges.isEmpty else {
             return nil
         }

@@ -17,7 +17,7 @@ class DiameterOfBinaryTreeTests: XCTestCase {
     func test_A() {
         let data = [1, 2, 3, 4, 5]
         
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.deserialize(data)
         
         let diameter = DiameterOfBinaryTree.diameterOfBinaryTree(root)
         
@@ -27,7 +27,7 @@ class DiameterOfBinaryTreeTests: XCTestCase {
     func test_Bs() {
         let data = [1, 2]
         
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.deserialize(data)
         
         let diameter = DiameterOfBinaryTree.diameterOfBinaryTree(root)
         

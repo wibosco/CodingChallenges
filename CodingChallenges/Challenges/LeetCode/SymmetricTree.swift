@@ -8,7 +8,7 @@
 
 import Foundation
 
-//
+//https://leetcode.com/problems/symmetric-tree/
 //binary tree
 struct SymmetricTree {
     

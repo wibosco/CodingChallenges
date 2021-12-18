@@ -20,7 +20,7 @@ class ListNode {
 }
 
 extension ListNode {
-    static func createList(fromArray array: [Int]) -> ListNode? {
+    static func deserialize(_ array: [Int]) -> ListNode? {
         var prev: ListNode?
         for value in array.reversed() {
             let node = ListNode(value)

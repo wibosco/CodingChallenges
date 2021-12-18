@@ -23,7 +23,8 @@ class BinaryTreeNodeRandom {
 }
 
 extension BinaryTreeNodeRandom {
-    static func createBinaryTree(fromLevelOrderArray array: [[Int?]?]) -> BinaryTreeNodeRandom? {
+    //level order
+    static func deserialize(_ array: [[Int?]?]) -> BinaryTreeNodeRandom? {
         guard !array.isEmpty else {
             return nil
         }

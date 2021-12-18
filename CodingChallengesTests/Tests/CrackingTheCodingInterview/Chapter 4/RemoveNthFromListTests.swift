@@ -15,7 +15,7 @@ class RemoveNthFromListTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let head = ListNode.createList(fromArray: [1, 2, 3, 4, 5])
+        let head = ListNode.deserialize([1, 2, 3, 4, 5])
         let n = 2
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
@@ -25,7 +25,7 @@ class RemoveNthFromListTests: XCTestCase {
     }
     
     func test_B() {
-        let head = ListNode.createList(fromArray: [1])
+        let head = ListNode.deserialize([1])
         let n = 1
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
@@ -35,7 +35,7 @@ class RemoveNthFromListTests: XCTestCase {
     }
     
     func test_C() {
-        let head = ListNode.createList(fromArray: [1, 2])
+        let head = ListNode.deserialize([1, 2])
         let n = 1
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
@@ -45,7 +45,7 @@ class RemoveNthFromListTests: XCTestCase {
     }
     
     func test_D() {
-        let head = ListNode.createList(fromArray: [1, 2])
+        let head = ListNode.deserialize([1, 2])
         let n = 2
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)

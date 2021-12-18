@@ -15,7 +15,7 @@ class RotateListTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let head = ListNode.createList(fromArray: [1, 2, 3, 4, 5])
+        let head = ListNode.deserialize([1, 2, 3, 4, 5])
         let k = 2
         
         let returnedHead = RotateList.rotateRight(head, k)
@@ -25,7 +25,7 @@ class RotateListTests: XCTestCase {
     }
     
     func test_B() {
-        let head = ListNode.createList(fromArray: [0, 1, 2])
+        let head = ListNode.deserialize([0, 1, 2])
         let k = 4
         
         let returnedHead = RotateList.rotateRight(head, k)
@@ -35,7 +35,7 @@ class RotateListTests: XCTestCase {
     }
     
     func test_C() {
-        let head = ListNode.createList(fromArray: [])
+        let head = ListNode.deserialize([])
         let k = 0
         
         let returnedHead = RotateList.rotateRight(head, k)
@@ -45,7 +45,7 @@ class RotateListTests: XCTestCase {
     }
     
     func test_D() {
-        let head = ListNode.createList(fromArray: [0, 1, 2])
+        let head = ListNode.deserialize([0, 1, 2])
         let k = 0
         
         let returnedHead = RotateList.rotateRight(head, k)
@@ -55,7 +55,7 @@ class RotateListTests: XCTestCase {
     }
     
     func test_E() {
-        let head = ListNode.createList(fromArray: [1])
+        let head = ListNode.deserialize([1])
         let k = 1
         
         let returnedHead = RotateList.rotateRight(head, k)
@@ -65,7 +65,7 @@ class RotateListTests: XCTestCase {
     }
     
     func test_F() {
-        let head = ListNode.createList(fromArray: [1, 2])
+        let head = ListNode.deserialize([1, 2])
         let k = 2
         
         let returnedHead = RotateList.rotateRight(head, k)

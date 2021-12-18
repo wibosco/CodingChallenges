@@ -16,7 +16,7 @@ class PopulatingNextRightPointersTests: XCTestCase {
     
     func test_A() {
         let data = [1, 2, 3, 4, 5, 6, 7]
-        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.deserialize(data)
         
         let node = PopulatingNextRightPointers.connect(root)
         
@@ -27,7 +27,7 @@ class PopulatingNextRightPointersTests: XCTestCase {
     
     func test_B() {
         let data = [Int]()
-        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.deserialize(data)
         
         let node = PopulatingNextRightPointers.connect(root)
         

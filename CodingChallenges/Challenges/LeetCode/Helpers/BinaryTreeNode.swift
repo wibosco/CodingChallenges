@@ -22,7 +22,8 @@ class BinaryTreeNode {
 }
 
 extension BinaryTreeNode {
-    static func createBinaryTree(fromLevelOrderArray array: [Int?]) -> BinaryTreeNode? {
+    //level order
+    static func deserialize(_ array: [Int?]) -> BinaryTreeNode? {
         guard !array.isEmpty, array[0] != nil else {
             return nil
         }

@@ -20,7 +20,7 @@ class CloneGraphTests: XCTestCase {
                        [2, 4],
                        [1, 3]]
         
-        let graph = GraphVertice.createUndirectedGraph(fromAdjList: adjList)
+        let graph = GraphVertice.deserialize(adjList)
         
         let deepCopy = CloneGraph.cloneGraph(graph)
         
@@ -33,7 +33,7 @@ class CloneGraphTests: XCTestCase {
         let adjList = [[2],
                        [1]]
         
-        let graph = GraphVertice.createUndirectedGraph(fromAdjList: adjList)
+        let graph = GraphVertice.deserialize(adjList)
         
         let deepCopy = CloneGraph.cloneGraph(graph)
         
@@ -52,7 +52,7 @@ class CloneGraphTests: XCTestCase {
                        [2],
                        [4]]
         
-        let graph = GraphVertice.createUndirectedGraph(fromAdjList: adjList)
+        let graph = GraphVertice.deserialize(adjList)
         
         let deepCopy = CloneGraph.cloneGraph(graph)
         

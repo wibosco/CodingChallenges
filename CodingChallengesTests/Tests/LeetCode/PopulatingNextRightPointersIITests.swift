@@ -16,7 +16,7 @@ class PopulatingNextRightPointersIITests: XCTestCase {
 
     func test_A() {
         let data = [1, 2, 3, 4, 5, nil, 7]
-        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.deserialize(data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         
@@ -27,7 +27,7 @@ class PopulatingNextRightPointersIITests: XCTestCase {
     
     func test_B() {
         let data = [Int]()
-        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.deserialize(data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         
@@ -38,7 +38,7 @@ class PopulatingNextRightPointersIITests: XCTestCase {
     
     func test_C() {
         let data = [1, 2, 3, 4, 5, nil, 6, 7, nil, nil, nil, nil, 8]
-        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.deserialize(data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         
@@ -49,7 +49,7 @@ class PopulatingNextRightPointersIITests: XCTestCase {
     
     func test_D() {
         let data = [-1, -7, 9, nil, nil, -1, -7, nil, 8, -9]
-        let root = BinaryTreeNodeNext.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNodeNext.deserialize(data)
         
         let node = PopulatingNextRightPointersII.connect(root)
         

@@ -17,7 +17,7 @@ class FlattenBinaryTreeToLinkedListTests: XCTestCase {
     func test_A() {
         let data = [1, 2, 5, 3, 4, nil, 6]
         
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.deserialize(data)
         
         FlattenBinaryTreeToLinkedList.flatten(root)
         
@@ -29,7 +29,7 @@ class FlattenBinaryTreeToLinkedListTests: XCTestCase {
     func test_B() {
         let data = [Int]()
         
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.deserialize(data)
         
         FlattenBinaryTreeToLinkedList.flatten(root)
         
@@ -41,7 +41,7 @@ class FlattenBinaryTreeToLinkedListTests: XCTestCase {
     func test_C() {
         let data = [0]
         
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.deserialize(data)
         
         FlattenBinaryTreeToLinkedList.flatten(root)
         

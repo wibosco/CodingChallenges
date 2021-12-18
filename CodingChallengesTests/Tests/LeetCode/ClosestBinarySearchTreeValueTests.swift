@@ -16,7 +16,7 @@ class ClosestBinarySearchTreeValueTests: XCTestCase {
     
     func test_A() {
         let target = 3.714286
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: [4, 2, 5, 1, 3])
+        let root = BinaryTreeNode.deserialize([4, 2, 5, 1, 3])
         
         let closet = ClosestBinarySearchTreeValue.closestValue(root, target)
         
@@ -25,7 +25,7 @@ class ClosestBinarySearchTreeValueTests: XCTestCase {
     
     func test_B() {
         let target = 4.428571
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: [1])
+        let root = BinaryTreeNode.deserialize([1])
         
         let closet = ClosestBinarySearchTreeValue.closestValue(root, target)
         
@@ -34,7 +34,7 @@ class ClosestBinarySearchTreeValueTests: XCTestCase {
     
     func test_C() {
         let target = 3.428571
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: [1, nil, 3])
+        let root = BinaryTreeNode.deserialize([1, nil, 3])
         
         let closet = ClosestBinarySearchTreeValue.closestValue(root, target)
         

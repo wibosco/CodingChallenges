@@ -16,7 +16,7 @@ class ReverseLinkedListTests: XCTestCase {
     
     func test_A() {
         let data = [1, 2, 3, 4, 5]
-        let head = ListNode.createList(fromArray: data)
+        let head = ListNode.deserialize(data)
         
         let reversedHead = ReverseLinkedList.reverseList(head)
         
@@ -27,7 +27,7 @@ class ReverseLinkedListTests: XCTestCase {
     
     func test_B() {
         let data = [1, 2]
-        let head = ListNode.createList(fromArray: data)
+        let head = ListNode.deserialize(data)
         
         let reversedHead = ReverseLinkedList.reverseList(head)
         
@@ -38,7 +38,7 @@ class ReverseLinkedListTests: XCTestCase {
     
     func test_C() {
         let data = [Int]()
-        let head = ListNode.createList(fromArray: data)
+        let head = ListNode.deserialize(data)
         
         let reversedHead = ReverseLinkedList.reverseList(head)
         

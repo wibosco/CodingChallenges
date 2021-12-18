@@ -23,7 +23,7 @@ class ListNodeRandom {
 }
 
 extension ListNodeRandom {
-    static func createList(fromArray array: [[Int?]]) -> ListNodeRandom? {
+    static func deserialize(_ array: [[Int?]]) -> ListNodeRandom? {
         var nodes = [ListNodeRandom]()
         for value in array {
             nodes.append(ListNodeRandom(value[0]!))

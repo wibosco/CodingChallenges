@@ -17,7 +17,7 @@ class SwapNodesInPairsTests: XCTestCase {
     func test_A() {
         let data = [1, 2, 3, 4]
         
-        let head = ListNode.createList(fromArray: data)
+        let head = ListNode.deserialize(data)
         
         let rotatedHead = SwapNodesInPairs.swapPairs(head)
         
@@ -29,7 +29,7 @@ class SwapNodesInPairsTests: XCTestCase {
     func test_B() {
         let data = [Int]()
         
-        let head = ListNode.createList(fromArray: data)
+        let head = ListNode.deserialize(data)
         
         let rotatedHead = SwapNodesInPairs.swapPairs(head)
         
@@ -41,7 +41,7 @@ class SwapNodesInPairsTests: XCTestCase {
     func test_C() {
         let data = [1]
         
-        let head = ListNode.createList(fromArray: data)
+        let head = ListNode.deserialize(data)
         
         let rotatedHead = SwapNodesInPairs.swapPairs(head)
         

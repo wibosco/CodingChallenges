@@ -16,7 +16,7 @@ class RangeSumOfBSTTests: XCTestCase {
     
     func test_A() {
         let data = [10, 5, 15, 3, 7, nil, 18]
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.deserialize(data)
         let low = 7
         let high = 15
         
@@ -27,7 +27,7 @@ class RangeSumOfBSTTests: XCTestCase {
     
     func test_B() {
         let data = [10, 5, 15, 3, 7, 13, 18, 1, nil, 6]
-        let root = BinaryTreeNode.createBinaryTree(fromLevelOrderArray: data)
+        let root = BinaryTreeNode.deserialize(data)
         let low = 6
         let high = 10
         
