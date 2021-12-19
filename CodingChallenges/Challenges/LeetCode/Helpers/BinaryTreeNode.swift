@@ -61,7 +61,7 @@ extension BinaryTreeNode {
         return root
     }
     
-    static func extractValuesInLevelOrder(fromBinaryTree root: BinaryTreeNode?) -> [Int?] {
+    static func serialize(_ root: BinaryTreeNode?) -> [Int?] {
         guard let root = root else {
             return [Int?]()
         }

@@ -14,7 +14,7 @@ import Foundation
 struct LowestCommonAncestorBinaryTree {
     
     //Time: O(n)
-    //Space: O(n) - if calll stack is counted otherwise O(1)
+    //Space: O(n) - if call stack is counted otherwise O(1)
     //
     //Solution description:
     //1. Using DFS find the path to `p` and `q` in the same call stack
