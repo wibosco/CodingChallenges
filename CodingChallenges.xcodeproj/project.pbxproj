@@ -374,6 +374,8 @@
 		3DF50D7E275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */; };
 		3DF50D80275A6914000E78E2 /* ReconstructItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */; };
 		3DF50D82275A6A2E000E78E2 /* ReconstructItineraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D81275A6A2E000E78E2 /* ReconstructItineraryTests.swift */; };
+		3DF7EA64277120E500B97559 /* PascalsTriangleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */; };
+		3DF7EA66277120FB00B97559 /* PascalsTriangleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -763,6 +765,8 @@
 		3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeDeserializeBinaryTreeTests.swift; sourceTree = "<group>"; };
 		3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItinerary.swift; sourceTree = "<group>"; };
 		3DF50D81275A6A2E000E78E2 /* ReconstructItineraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItineraryTests.swift; sourceTree = "<group>"; };
+		3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleII.swift; sourceTree = "<group>"; };
+		3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleIITests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -1043,6 +1047,7 @@
 				3D3BFF1F275560FE0079BBF5 /* NumberOfProvincesTests.swift */,
 				3D51A05D2767BE3A00D70AE5 /* OpenTheLockTests.swift */,
 				3D3E6ADF274C074800CC3893 /* PalindromeNumberTests.swift */,
+				3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */,
 				3D82A162274E4977004D6836 /* PathSumTests.swift */,
 				3D3E6AC2274C074800CC3893 /* PeakIndexMountainArrayTests.swift */,
 				3D51A0612767E8ED00D70AE5 /* PerfectSquaresTests.swift */,
@@ -1366,6 +1371,7 @@
 				3D3BFF1D275560750079BBF5 /* NumberOfProvinces.swift */,
 				3D51A05B2767BAB100D70AE5 /* OpenTheLock.swift */,
 				3D54C6F7273ADBEF006A9F67 /* PalindromeNumber.swift */,
+				3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */,
 				3D82A160274E4908004D6836 /* PathSum.swift */,
 				3D3395B527459876002EE4AC /* PeakIndexMountainArray.swift */,
 				3D51A05F2767E8C400D70AE5 /* PerfectSquares.swift */,
@@ -1785,6 +1791,7 @@
 				3D3F6A00275E3C420011B7A6 /* ShortestPathBinaryMatrix.swift in Sources */,
 				3D387A5E274BFF6F00537F46 /* ProjectBuildOrder.swift in Sources */,
 				3D1D931927636CF900CF6A27 /* BinaryTreeNodeRandom.swift in Sources */,
+				3DF7EA64277120E500B97559 /* PascalsTriangleII.swift in Sources */,
 				3D387A5D274BFF6F00537F46 /* SuccessorBST.swift in Sources */,
 				3D3DB4CC276B666000132176 /* SwapNodesInPairs.swift in Sources */,
 				3D3F6A0E27600A1F0011B7A6 /* MinCostToConnectAllPoints.swift in Sources */,
@@ -1959,6 +1966,7 @@
 				3D1D931B27636D5200CF6A27 /* CloneBinaryTreeWithRandomPointerTests.swift in Sources */,
 				3D3E6BAC274C09B100CC3893 /* UtopianTreeTests.swift in Sources */,
 				4353DA731CDB86FB00A07167 /* AppDelegate.swift in Sources */,
+				3DF7EA66277120FB00B97559 /* PascalsTriangleIITests.swift in Sources */,
 				3D3E6BCE274C0A6E00CC3893 /* SuccessorBSTTests.swift in Sources */,
 				3D3E6B03274C074800CC3893 /* LetterCombinationsTests.swift in Sources */,
 				3DF50D82275A6A2E000E78E2 /* ReconstructItineraryTests.swift in Sources */,
