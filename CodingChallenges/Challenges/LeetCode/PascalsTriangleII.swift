@@ -16,6 +16,7 @@ struct PascalsTriangleII {
     //Space: O(l) where `l` is the number of items at row index
     //iterative
     //inline
+    //
     //Solution Description:
     //Starting from 0 iteratively build up the triangle until we reach the target index - `rowIndex`. At each step we
     //append 1 to the previous row to calculate the next by going through the previous rows indexes in reverse and
@@ -44,6 +45,7 @@ struct PascalsTriangleII {
     //Time: O(n^2) where `n` is the row index
     //Space: O(l) where `l` is the number of items at row index
     //recursive
+    //memoization
     //
     //Solution Description:
     //Starting from 0 recursively build up the triangle until we reach the target index - `rowIndex`. At each step we
