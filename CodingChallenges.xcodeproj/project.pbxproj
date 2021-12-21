@@ -378,6 +378,8 @@
 		3DF7EA66277120FB00B97559 /* PascalsTriangleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */; };
 		3DF7EA682771EA5B00B97559 /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */; };
 		3DF7EA6A2771EA9600B97559 /* FibonacciNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA692771EA9600B97559 /* FibonacciNumberTests.swift */; };
+		3DF7EA6C27721FB000B97559 /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA6B27721FB000B97559 /* ClimbingStairs.swift */; };
+		3DF7EA6E27721FD400B97559 /* ClimbingStairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA6D27721FD400B97559 /* ClimbingStairsTests.swift */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -771,6 +773,8 @@
 		3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleIITests.swift; sourceTree = "<group>"; };
 		3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
 		3DF7EA692771EA9600B97559 /* FibonacciNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumberTests.swift; sourceTree = "<group>"; };
+		3DF7EA6B27721FB000B97559 /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
+		3DF7EA6D27721FD400B97559 /* ClimbingStairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairsTests.swift; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -1090,6 +1094,7 @@
 				3D3E6AE4274C074800CC3893 /* ValidPerfectSquareTests.swift */,
 				3D51A05127668E7D00D70AE5 /* WallsAndGatesTests.swift */,
 				3D3E6AE0274C074800CC3893 /* ZigzagConversionTests.swift */,
+				3DF7EA6D27721FD400B97559 /* ClimbingStairsTests.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1417,6 +1422,7 @@
 				3D51A04F27668E0E00D70AE5 /* WallsAndGates.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
+				3DF7EA6B27721FB000B97559 /* ClimbingStairs.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1659,6 +1665,7 @@
 				3D9F9FAD273D757500A9BD72 /* ImplementStrStr.swift in Sources */,
 				3D82A1A2275033B0004D6836 /* PopulatingNextRightPointers.swift in Sources */,
 				3D387A5F274BFF6F00537F46 /* ProjectBuildOrderNode.swift in Sources */,
+				3DF7EA6C27721FB000B97559 /* ClimbingStairs.swift in Sources */,
 				3DCD3718276A4E8C00F46913 /* FloodFill.swift in Sources */,
 				3D34E8692742D457006500EB /* ValidPalindrome.swift in Sources */,
 				3D3DB4D0276B934800132176 /* ReverseLinkedList.swift in Sources */,
@@ -1890,6 +1897,7 @@
 				3D3E6BAE274C09B100CC3893 /* TimeInWordsTests.swift in Sources */,
 				3D3E6AED274C074800CC3893 /* FirstBadVersionTests.swift in Sources */,
 				3D3E6B16274C074800CC3893 /* ValidPerfectSquareTests.swift in Sources */,
+				3DF7EA6E27721FD400B97559 /* ClimbingStairsTests.swift in Sources */,
 				3D3E6AF4274C074800CC3893 /* PeakIndexMountainArrayTests.swift in Sources */,
 				3D3E6AE8274C074800CC3893 /* ValidPalindromeTests.swift in Sources */,
 				3D3E6AF5274C074800CC3893 /* SqrtTests.swift in Sources */,
