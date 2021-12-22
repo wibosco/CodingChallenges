@@ -20,9 +20,9 @@ class AddTwoNumbersTests: XCTestCase {
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        XCTAssertEqual(node?.val, 7)
-        XCTAssertEqual(node?.next?.val, 0)
-        XCTAssertEqual(node?.next?.next?.val, 8)
+        let values = ListNode.serialize(node)
+        
+        XCTAssertEqual(values, [7, 0, 8])
     }
     
     func test_B() {
@@ -31,7 +31,9 @@ class AddTwoNumbersTests: XCTestCase {
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        XCTAssertEqual(node?.val, 0)
+        let values = ListNode.serialize(node)
+        
+        XCTAssertEqual(values, [0])
     }
     
     func test_C() {
@@ -40,14 +42,9 @@ class AddTwoNumbersTests: XCTestCase {
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        XCTAssertEqual(node?.val, 8)
-        XCTAssertEqual(node?.next?.val, 9)
-        XCTAssertEqual(node?.next?.next?.val, 9)
-        XCTAssertEqual(node?.next?.next?.next?.val, 9)
-        XCTAssertEqual(node?.next?.next?.next?.next?.val, 0)
-        XCTAssertEqual(node?.next?.next?.next?.next?.next?.val, 0)
-        XCTAssertEqual(node?.next?.next?.next?.next?.next?.next?.val, 0)
-        XCTAssertEqual(node?.next?.next?.next?.next?.next?.next?.next?.val, 1)
+        let values = ListNode.serialize(node)
+        
+        XCTAssertEqual(values, [8, 9, 9, 9, 0, 0, 0, 1])
     }
     
     func test_D() {
@@ -55,11 +52,9 @@ class AddTwoNumbersTests: XCTestCase {
         let l2 = ListNode.deserialize([5, 6, 4, 9])
         
         let node = AddTwoNumbers.addTwoNumbers(l1, l2)
-
-        XCTAssertEqual(node?.val, 7)
-        XCTAssertEqual(node?.next?.val, 0)
-        XCTAssertEqual(node?.next?.next?.val, 4)
-        XCTAssertEqual(node?.next?.next?.next?.val, 0)
-        XCTAssertEqual(node?.next?.next?.next?.next?.val, 1)
+        
+        let values = ListNode.serialize(node)
+        
+        XCTAssertEqual(values, [7, 0, 4, 0, 1])
     }
 }

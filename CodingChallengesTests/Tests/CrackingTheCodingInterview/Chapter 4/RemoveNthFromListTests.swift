@@ -19,7 +19,7 @@ class RemoveNthFromListTests: XCTestCase {
         let n = 2
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [1, 2, 3, 5])
     }
@@ -29,7 +29,7 @@ class RemoveNthFromListTests: XCTestCase {
         let n = 1
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [])
     }
@@ -39,7 +39,7 @@ class RemoveNthFromListTests: XCTestCase {
         let n = 1
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [1])
     }
@@ -49,7 +49,7 @@ class RemoveNthFromListTests: XCTestCase {
         let n = 2
         
         let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [2])
     }

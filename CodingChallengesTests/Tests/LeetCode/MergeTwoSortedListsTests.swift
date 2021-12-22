@@ -19,7 +19,7 @@ class MergeTwoSortedListsTests: XCTestCase {
         let l2 = ListNode.deserialize([1, 3, 4])
         
         let mergedList = MergeTwoSortedLists.mergeTwoLists(l1, l2)
-        let values = ListNode.extractValues(fromList: mergedList)
+        let values = ListNode.serialize(mergedList)
         
         XCTAssertEqual(values, [1, 1, 2, 3, 4, 4])
     }
@@ -29,7 +29,7 @@ class MergeTwoSortedListsTests: XCTestCase {
         let l2 = ListNode.deserialize([])
         
         let mergedList = MergeTwoSortedLists.mergeTwoLists(l1, l2)
-        let values = ListNode.extractValues(fromList: mergedList)
+        let values = ListNode.serialize(mergedList)
         
         XCTAssertEqual(values, [])
     }
@@ -39,7 +39,7 @@ class MergeTwoSortedListsTests: XCTestCase {
         let l2 = ListNode.deserialize([0])
         
         let mergedList = MergeTwoSortedLists.mergeTwoLists(l1, l2)
-        let values = ListNode.extractValues(fromList: mergedList)
+        let values = ListNode.serialize(mergedList)
         
         XCTAssertEqual(values, [0])
     }

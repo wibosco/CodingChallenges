@@ -21,7 +21,7 @@ class SwapNodesInPairsTests: XCTestCase {
         
         let rotatedHead = SwapNodesInPairs.swapPairs(head)
         
-        let values = ListNode.extractValues(fromList: rotatedHead)
+        let values = ListNode.serialize(rotatedHead)
         
         XCTAssertEqual(values, [2, 1, 4, 3])
     }
@@ -33,7 +33,7 @@ class SwapNodesInPairsTests: XCTestCase {
         
         let rotatedHead = SwapNodesInPairs.swapPairs(head)
         
-        let values = ListNode.extractValues(fromList: rotatedHead)
+        let values = ListNode.serialize(rotatedHead)
         
         XCTAssertEqual(values, [])
     }
@@ -45,7 +45,7 @@ class SwapNodesInPairsTests: XCTestCase {
         
         let rotatedHead = SwapNodesInPairs.swapPairs(head)
         
-        let values = ListNode.extractValues(fromList: rotatedHead)
+        let values = ListNode.serialize(rotatedHead)
         
         XCTAssertEqual(values, [1])
     }

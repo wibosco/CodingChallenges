@@ -19,7 +19,7 @@ class RotateListTests: XCTestCase {
         let k = 2
         
         let returnedHead = RotateList.rotateRight(head, k)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [4, 5, 1, 2, 3])
     }
@@ -29,7 +29,7 @@ class RotateListTests: XCTestCase {
         let k = 4
         
         let returnedHead = RotateList.rotateRight(head, k)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [2, 0, 1])
     }
@@ -39,7 +39,7 @@ class RotateListTests: XCTestCase {
         let k = 0
         
         let returnedHead = RotateList.rotateRight(head, k)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [])
     }
@@ -49,7 +49,7 @@ class RotateListTests: XCTestCase {
         let k = 0
         
         let returnedHead = RotateList.rotateRight(head, k)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [0, 1, 2])
     }
@@ -59,7 +59,7 @@ class RotateListTests: XCTestCase {
         let k = 1
         
         let returnedHead = RotateList.rotateRight(head, k)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [1])
     }
@@ -69,7 +69,7 @@ class RotateListTests: XCTestCase {
         let k = 2
         
         let returnedHead = RotateList.rotateRight(head, k)
-        let values = ListNode.extractValues(fromList: returnedHead)
+        let values = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(values, [1, 2])
     }

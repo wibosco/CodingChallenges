@@ -19,7 +19,7 @@ class ReorderListTests: XCTestCase {
         
         ReorderList.reorderList(list)
         
-        let values = ListNode.extractValues(fromList: list)
+        let values = ListNode.serialize(list)
         
         XCTAssertEqual(values, [1, 4, 2, 3])
     }
@@ -29,7 +29,7 @@ class ReorderListTests: XCTestCase {
         
         ReorderList.reorderList(list)
         
-        let values = ListNode.extractValues(fromList: list)
+        let values = ListNode.serialize(list)
         
         XCTAssertEqual(values, [1, 5, 2, 4, 3])
     }
@@ -39,7 +39,7 @@ class ReorderListTests: XCTestCase {
         
         ReorderList.reorderList(list)
         
-        let values = ListNode.extractValues(fromList: list)
+        let values = ListNode.serialize(list)
         
         XCTAssertEqual(values, [1, 2])
     }

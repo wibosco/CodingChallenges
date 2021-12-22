@@ -20,7 +20,7 @@ class ReverseLinkedListTests: XCTestCase {
         
         let reversedHead = ReverseLinkedList.reverseList(head)
         
-        let values = ListNode.extractValues(fromList: reversedHead)
+        let values = ListNode.serialize(reversedHead)
         
         XCTAssertEqual(values, [5, 4, 3, 2, 1])
     }
@@ -31,7 +31,7 @@ class ReverseLinkedListTests: XCTestCase {
         
         let reversedHead = ReverseLinkedList.reverseList(head)
         
-        let values = ListNode.extractValues(fromList: reversedHead)
+        let values = ListNode.serialize(reversedHead)
         
         XCTAssertEqual(values, [2, 1])
     }
@@ -42,7 +42,7 @@ class ReverseLinkedListTests: XCTestCase {
         
         let reversedHead = ReverseLinkedList.reverseList(head)
         
-        let values = ListNode.extractValues(fromList: reversedHead)
+        let values = ListNode.serialize(reversedHead)
         
         XCTAssertEqual(values, [])
     }

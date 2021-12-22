@@ -31,7 +31,7 @@ extension ListNode {
         return prev
     }
 
-    static func extractValues(fromList head: ListNode?) -> [Int] {
+    static func serialize(_ head: ListNode?) -> [Int] {
         var data = [Int]()
         
         var node = head
