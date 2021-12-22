@@ -93,3 +93,9 @@ extension BinaryTreeNodeNext {
         return values
     }
 }
+
+extension BinaryTreeNodeNext: Equatable {
+    static func == (lhs: BinaryTreeNodeNext, rhs: BinaryTreeNodeNext) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+}

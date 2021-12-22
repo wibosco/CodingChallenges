@@ -98,3 +98,16 @@ extension BinaryTreeNode {
         return Array(values[0...i])
     }
 }
+
+extension BinaryTreeNode: Equatable {
+    static func == (lhs: BinaryTreeNode, rhs: BinaryTreeNode) -> Bool {
+        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+}
+
+extension BinaryTreeNode: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
+    }
+}
+
