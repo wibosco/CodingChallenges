@@ -33,10 +33,4 @@ struct ValidPalindrome {
         return true
     }
 }
-
-extension String {
-    var alpha: String {
-        return components(separatedBy: CharacterSet.alphanumerics.inverted).joined()
-    }
-}
  
