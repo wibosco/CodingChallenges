@@ -20,19 +20,14 @@ struct MinCostToConnectAllPoints {
     //min heap
     //
     //Solution Description:
-    //First, calculate all possible edges between all points in the graph. The
-    //first vertice is then added to the visited set as a special case - it
-    //could have been any vertice in the graph. As this approach uses Prim's
-    //algorithm the adjacent vertices of the visited vertice are added to a min
-    //heap. A min heap is used to ensure that we always select the min edge
-    //("cheapest") between unconnected vertices. As we are building a tree we
-    //know that we will need to add n - 1 edges where n is the number of vertices
-    //in the graph - this is what we use for the condition on the while loop. As
-    //we inspect the min edge we need to ensure that using it will not create a
-    //cycle in the graph by inspecting the `visited` set. If the min edge isn't
-    //introducing a cycle we add it's weight to the `total`, add it to the
-    //`visited` set and add it's edges to the min heap causes it the potentially
-    //reconfig itself.
+    //First, calculate all possible edges between all points in the graph. The first vertice is then added to the
+    //visited set as a special case - it could have been any vertice in the graph. As this approach uses Prim's
+    //algorithm the adjacent vertices of the visited vertice are added to a min heap. A min heap is used to ensure that
+    //we always select the min edge ("cheapest") between unconnected vertices. As we are building a tree we know that we
+    //will need to add n - 1 edges where n is the number of vertices in the graph - this is what we use for the condition
+    //on the while loop. As we inspect the min edge we need to ensure that using it will not create a cycle in the graph
+    //by inspecting the `visited` set. If the min edge isn't introducing a cycle we add it's weight to the `total`, add it
+    //to the `visited` set and add it's edges to the min heap causes it the potentially reconfig itself.
     static func minCostConnectPoints(_ points: [[Int]]) -> Int {
         //sort
         var adjList = Array(repeating: [GraphWeightedEdge](), count: points.count)
@@ -84,15 +79,12 @@ struct MinCostToConnectAllPoints {
     //Kruskal’s Algorithm - https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
     //
     //Solution Description:
-    //First, calculate all possible edges between all points in the graph. These
-    //edges in then sorted in ascending order ensuring the "cheapest" edges will
-    //be processed first. As this approach uses Kruskal’s's algorithm we loop
-    //through the sorted edges that we build and use the union-find process
-    //(disjoint sets) to connect the vertices. As we are building a tree we need
-    //to ensure that no cycles are being created when we add nodes so for any
-    //edge that would create a cycle we skip over. Finally because a tree has
-    //n - 1 edges where n is the number of vertices when we reach this value we
-    //have our MST.
+    //First, calculate all possible edges between all points in the graph. These edges in then sorted in ascending order
+    //ensuring the "cheapest" edges will be processed first. As this approach uses Kruskal’s's algorithm we loop through
+    //the sorted edges that we build and use the union-find process (disjoint sets) to connect the vertices. As we are
+    //building a tree we need to ensure that no cycles are being created when we add nodes so for any edge that would
+    //create a cycle we skip over. Finally because a tree has n - 1 edges where n is the number of vertices when we reach
+    //this value we have our MST.
     static func minCostConnectPointsKruskal(_ points: [[Int]]) -> Int {
         //sort
         var edges = [GraphWeightedEdge]()

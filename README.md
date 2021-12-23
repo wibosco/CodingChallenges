@@ -22,6 +22,7 @@ Contains solutions to challenges found in:
 | "Shortest path", "Level-by-level" | `BFS` |
 | "All paths" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
+| "Path may not exist"| 'isolated vertices', `cycles` |
 | "Generate all", "All permutations" | `Backtracking (DFS)` |
 | "Sorted" | `Binary Search`, `Two pointers` |
 | "Next greater element", "Next lesser element" | `Monotonic stack` |

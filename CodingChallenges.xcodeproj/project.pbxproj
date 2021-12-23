@@ -374,6 +374,8 @@
 		3DF50D7E275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */; };
 		3DF50D80275A6914000E78E2 /* ReconstructItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */; };
 		3DF50D82275A6A2E000E78E2 /* ReconstructItineraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D81275A6A2E000E78E2 /* ReconstructItineraryTests.swift */; };
+		3DF6DA6F27748EEF00B81E07 /* CourseScheduleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA6E27748EEF00B81E07 /* CourseScheduleII.swift */; };
+		3DF6DA7127748F3C00B81E07 /* CourseScheduleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA7027748F3C00B81E07 /* CourseScheduleIITests.swift */; };
 		3DF7EA64277120E500B97559 /* PascalsTriangleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */; };
 		3DF7EA66277120FB00B97559 /* PascalsTriangleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */; };
 		3DF7EA682771EA5B00B97559 /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */; };
@@ -775,6 +777,8 @@
 		3DF50D7D275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeDeserializeBinaryTreeTests.swift; sourceTree = "<group>"; };
 		3DF50D7F275A6914000E78E2 /* ReconstructItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItinerary.swift; sourceTree = "<group>"; };
 		3DF50D81275A6A2E000E78E2 /* ReconstructItineraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItineraryTests.swift; sourceTree = "<group>"; };
+		3DF6DA6E27748EEF00B81E07 /* CourseScheduleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleII.swift; sourceTree = "<group>"; };
+		3DF6DA7027748F3C00B81E07 /* CourseScheduleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleIITests.swift; sourceTree = "<group>"; };
 		3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleII.swift; sourceTree = "<group>"; };
 		3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleIITests.swift; sourceTree = "<group>"; };
 		3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
@@ -1018,6 +1022,7 @@
 				3D3E6AB7274C074800CC3893 /* ContainerWithMostWaterTests.swift */,
 				3D3E6AB8274C074800CC3893 /* CopyListWithRandomPointerTests.swift */,
 				3D82A166274E57EF004D6836 /* CountUnivalueSubtreesTests.swift */,
+				3DF6DA7027748F3C00B81E07 /* CourseScheduleIITests.swift */,
 				3D686187276CA585009DF2B2 /* CustomSortStringTests.swift */,
 				3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */,
 				3DCD3715276A272C00F46913 /* DecodeStringTests.swift */,
@@ -1347,6 +1352,7 @@
 				3D54C6FF273ADBEF006A9F67 /* ContainerWithMostWater.swift */,
 				3D34E86C2742FF73006500EB /* CopyListWithRandomPointer.swift */,
 				3D82A164274E574D004D6836 /* CountUnivalueSubtrees.swift */,
+				3DF6DA6E27748EEF00B81E07 /* CourseScheduleII.swift */,
 				3D686189276CA606009DF2B2 /* CustomSortString.swift */,
 				3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */,
 				3DCD3713276A26FD00F46913 /* DecodeString.swift */,
@@ -1662,6 +1668,7 @@
 				3D387A51274BFF6F00537F46 /* LinkedListNode.swift in Sources */,
 				3D3879CE2747ED8A00537F46 /* BinaryTreeNode.swift in Sources */,
 				3D3879F2274AEFC100537F46 /* ReorderList.swift in Sources */,
+				3DF6DA6F27748EEF00B81E07 /* CourseScheduleII.swift in Sources */,
 				3D3879E2274859BD00537F46 /* IntersectionOfTwoArrays.swift in Sources */,
 				3DF7EA742773697400B97559 /* UniqueBinarySearchTrees.swift in Sources */,
 				3D908C6627693C0F0090C077 /* InsertionSort1.swift in Sources */,
@@ -1897,6 +1904,7 @@
 				3D68619C276D3AC5009DF2B2 /* MiniParserTests.swift in Sources */,
 				3D3E6B85274C09B100CC3893 /* MagicSqaureTests.swift in Sources */,
 				3D49F6D327581CE900B996AB /* CloneGraphTests.swift in Sources */,
+				3DF6DA7127748F3C00B81E07 /* CourseScheduleIITests.swift in Sources */,
 				3DF50D7E275A3291000E78E2 /* SerializeDeserializeBinaryTreeTests.swift in Sources */,
 				3D3E6BAA274C09B100CC3893 /* StaircaseTests.swift in Sources */,
 				3D3E6B9F274C09B100CC3893 /* AppleAndOrange.swift in Sources */,
