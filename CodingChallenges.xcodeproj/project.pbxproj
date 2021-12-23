@@ -378,6 +378,8 @@
 		3DF6DA7127748F3C00B81E07 /* CourseScheduleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA7027748F3C00B81E07 /* CourseScheduleIITests.swift */; };
 		3DF6DA732774B96500B81E07 /* ValidWordAbbreviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA722774B96500B81E07 /* ValidWordAbbreviation.swift */; };
 		3DF6DA752774B9D000B81E07 /* ValidWordAbbreviationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA742774B9D000B81E07 /* ValidWordAbbreviationTests.swift */; };
+		3DF6DA772774DDE100B81E07 /* AddStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA762774DDE100B81E07 /* AddStrings.swift */; };
+		3DF6DA792774DE3100B81E07 /* AddStringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA782774DE3100B81E07 /* AddStringsTests.swift */; };
 		3DF7EA64277120E500B97559 /* PascalsTriangleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */; };
 		3DF7EA66277120FB00B97559 /* PascalsTriangleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */; };
 		3DF7EA682771EA5B00B97559 /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */; };
@@ -783,6 +785,8 @@
 		3DF6DA7027748F3C00B81E07 /* CourseScheduleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleIITests.swift; sourceTree = "<group>"; };
 		3DF6DA722774B96500B81E07 /* ValidWordAbbreviation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidWordAbbreviation.swift; sourceTree = "<group>"; };
 		3DF6DA742774B9D000B81E07 /* ValidWordAbbreviationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidWordAbbreviationTests.swift; sourceTree = "<group>"; };
+		3DF6DA762774DDE100B81E07 /* AddStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStrings.swift; sourceTree = "<group>"; };
+		3DF6DA782774DE3100B81E07 /* AddStringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStringsTests.swift; sourceTree = "<group>"; };
 		3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleII.swift; sourceTree = "<group>"; };
 		3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleIITests.swift; sourceTree = "<group>"; };
 		3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
@@ -1008,6 +1012,7 @@
 		3D3E6AB5274C074800CC3893 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				3DF6DA782774DE3100B81E07 /* AddStringsTests.swift */,
 				3D3E6ABA274C074800CC3893 /* AddTwoNumbersTests.swift */,
 				3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */,
 				3D49F6CE2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift */,
@@ -1339,6 +1344,7 @@
 		3DFDC7BA2732F56C0026EBA9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				3DF6DA762774DDE100B81E07 /* AddStrings.swift */,
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
 				3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */,
 				3D49F6CC2757D52B00B996AB /* AllPathsFromSourceToTarget.swift */,
@@ -1449,10 +1455,10 @@
 				3D34E8682742D457006500EB /* ValidPalindrome.swift */,
 				3D54C71C273B1B15006A9F67 /* ValidParentheses.swift */,
 				3D3879D527483B1F00537F46 /* ValidPerfectSquare.swift */,
+				3DF6DA722774B96500B81E07 /* ValidWordAbbreviation.swift */,
 				3D51A04F27668E0E00D70AE5 /* WallsAndGates.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
-				3DF6DA722774B96500B81E07 /* ValidWordAbbreviation.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1758,6 +1764,7 @@
 				3D908C4D27693C0E0090C077 /* BFSShortReach.swift in Sources */,
 				3D908C4727693C0E0090C077 /* BreakingTheRecords.swift in Sources */,
 				3D387A56274BFF6F00537F46 /* MinStack.swift in Sources */,
+				3DF6DA772774DDE100B81E07 /* AddStrings.swift in Sources */,
 				3D908C4227693C0E0090C077 /* MissingNumbers.swift in Sources */,
 				3D387A63274BFF6F00537F46 /* MinimalBinarySearchTreeNode.swift in Sources */,
 				3D908C6F27693C0F0090C077 /* CutTheSticks.swift in Sources */,
@@ -2002,6 +2009,7 @@
 				3D3E6BC8274C0A6E00CC3893 /* StackOfPlatesTests.swift in Sources */,
 				3D3E6B93274C09B100CC3893 /* LibraryFineTests.swift in Sources */,
 				3D3E6BCA274C0A6E00CC3893 /* MinimalBinarySearchTreeTests.swift in Sources */,
+				3DF6DA792774DE3100B81E07 /* AddStringsTests.swift in Sources */,
 				3D3E6BA2274C09B100CC3893 /* BirthdayBarTests.swift in Sources */,
 				3D3E6B7F274C09B100CC3893 /* MigratoryBirdsTests.swift in Sources */,
 				3DCD370E2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift in Sources */,
