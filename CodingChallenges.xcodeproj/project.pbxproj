@@ -376,6 +376,8 @@
 		3DF50D82275A6A2E000E78E2 /* ReconstructItineraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF50D81275A6A2E000E78E2 /* ReconstructItineraryTests.swift */; };
 		3DF6DA6F27748EEF00B81E07 /* CourseScheduleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA6E27748EEF00B81E07 /* CourseScheduleII.swift */; };
 		3DF6DA7127748F3C00B81E07 /* CourseScheduleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA7027748F3C00B81E07 /* CourseScheduleIITests.swift */; };
+		3DF6DA732774B96500B81E07 /* ValidWordAbbreviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA722774B96500B81E07 /* ValidWordAbbreviation.swift */; };
+		3DF6DA752774B9D000B81E07 /* ValidWordAbbreviationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6DA742774B9D000B81E07 /* ValidWordAbbreviationTests.swift */; };
 		3DF7EA64277120E500B97559 /* PascalsTriangleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */; };
 		3DF7EA66277120FB00B97559 /* PascalsTriangleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */; };
 		3DF7EA682771EA5B00B97559 /* FibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */; };
@@ -779,6 +781,8 @@
 		3DF50D81275A6A2E000E78E2 /* ReconstructItineraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItineraryTests.swift; sourceTree = "<group>"; };
 		3DF6DA6E27748EEF00B81E07 /* CourseScheduleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleII.swift; sourceTree = "<group>"; };
 		3DF6DA7027748F3C00B81E07 /* CourseScheduleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleIITests.swift; sourceTree = "<group>"; };
+		3DF6DA722774B96500B81E07 /* ValidWordAbbreviation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidWordAbbreviation.swift; sourceTree = "<group>"; };
+		3DF6DA742774B9D000B81E07 /* ValidWordAbbreviationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidWordAbbreviationTests.swift; sourceTree = "<group>"; };
 		3DF7EA63277120E500B97559 /* PascalsTriangleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleII.swift; sourceTree = "<group>"; };
 		3DF7EA65277120FB00B97559 /* PascalsTriangleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangleIITests.swift; sourceTree = "<group>"; };
 		3DF7EA672771EA5B00B97559 /* FibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumber.swift; sourceTree = "<group>"; };
@@ -1113,6 +1117,7 @@
 				3D3E6AB6274C074800CC3893 /* ValidPalindromeTests.swift */,
 				3D3E6AC4274C074800CC3893 /* ValidParenthesesTests.swift */,
 				3D3E6AE4274C074800CC3893 /* ValidPerfectSquareTests.swift */,
+				3DF6DA742774B9D000B81E07 /* ValidWordAbbreviationTests.swift */,
 				3D51A05127668E7D00D70AE5 /* WallsAndGatesTests.swift */,
 				3D3E6AE0274C074800CC3893 /* ZigzagConversionTests.swift */,
 			);
@@ -1447,6 +1452,7 @@
 				3D51A04F27668E0E00D70AE5 /* WallsAndGates.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
+				3DF6DA722774B96500B81E07 /* ValidWordAbbreviation.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1857,6 +1863,7 @@
 				3D387A5B274BFF6F00537F46 /* OffByOne.swift in Sources */,
 				3D908C5B27693C0E0090C077 /* InsertionSort2.swift in Sources */,
 				3D3879C82746EA1F00537F46 /* FindKClosestElements.swift in Sources */,
+				3DF6DA732774B96500B81E07 /* ValidWordAbbreviation.swift in Sources */,
 				3D387A60274BFF6F00537F46 /* ValidateBST.swift in Sources */,
 				3D908C6427693C0F0090C077 /* SortingIntro.swift in Sources */,
 				3D34E86F2742FF9D006500EB /* ListNodeRandom.swift in Sources */,
@@ -2029,6 +2036,7 @@
 				3D3E6B80274C09B100CC3893 /* CompareTheTripletsTests.swift in Sources */,
 				3D3E6B7D274C09B100CC3893 /* BeastTests.swift in Sources */,
 				3D3E6BD7274C108600CC3893 /* BinaryTreePreorderTraversalTests.swift in Sources */,
+				3DF6DA752774B9D000B81E07 /* ValidWordAbbreviationTests.swift in Sources */,
 				3D3E6B9C274C09B100CC3893 /* DivisibleSumPairsTests.swift in Sources */,
 				3D3E6AFF274C074800CC3893 /* GuessNumberHigherOrLowerTests.swift in Sources */,
 				3D49F6CF2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift in Sources */,
