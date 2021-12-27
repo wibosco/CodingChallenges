@@ -31,3 +31,4 @@ Contains solutions to challenges found in:
 | "Loop/cycle in a linked list"| `Slow and Fast pointers`|
 | "Loop/cycle in a graph" | `Disjoint sets` |
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
+| "Compare neighbors in a string" | `Stack` |
