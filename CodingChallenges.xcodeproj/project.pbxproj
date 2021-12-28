@@ -360,6 +360,8 @@
 		3DA392A22768EC1700AE0A9B /* DailyTemperaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */; };
 		3DB8EAFE277A63050051B93B /* RemoveAllAdjacentDuplicatesInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8EAFD277A63050051B93B /* RemoveAllAdjacentDuplicatesInString.swift */; };
 		3DB8EB00277A63240051B93B /* RemoveAllAdjacentDuplicatesInStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8EAFF277A63240051B93B /* RemoveAllAdjacentDuplicatesInStringTests.swift */; };
+		3DB8EB02277B3AAF0051B93B /* MiddleOfLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8EB01277B3AAF0051B93B /* MiddleOfLinkedList.swift */; };
+		3DB8EB04277B3AF90051B93B /* MiddleOfLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8EB03277B3AF90051B93B /* MiddleOfLinkedListTests.swift */; };
 		3DCD370C2769EE6100F46913 /* EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370B2769EE6100F46913 /* EvaluateReversePolishNotation.swift */; };
 		3DCD370E2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370D2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift */; };
 		3DCD3710276A193B00F46913 /* TargetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370F276A193B00F46913 /* TargetSum.swift */; };
@@ -775,6 +777,8 @@
 		3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperaturesTests.swift; sourceTree = "<group>"; };
 		3DB8EAFD277A63050051B93B /* RemoveAllAdjacentDuplicatesInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAllAdjacentDuplicatesInString.swift; sourceTree = "<group>"; };
 		3DB8EAFF277A63240051B93B /* RemoveAllAdjacentDuplicatesInStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAllAdjacentDuplicatesInStringTests.swift; sourceTree = "<group>"; };
+		3DB8EB01277B3AAF0051B93B /* MiddleOfLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleOfLinkedList.swift; sourceTree = "<group>"; };
+		3DB8EB03277B3AF90051B93B /* MiddleOfLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleOfLinkedListTests.swift; sourceTree = "<group>"; };
 		3DCD370B2769EE6100F46913 /* EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotation.swift; sourceTree = "<group>"; };
 		3DCD370D2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotationTests.swift; sourceTree = "<group>"; };
 		3DCD370F276A193B00F46913 /* TargetSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSum.swift; sourceTree = "<group>"; };
@@ -1088,6 +1092,7 @@
 				3D3E6AB9274C074800CC3893 /* MergeIntervalsTests.swift */,
 				3DF7EA792773CDE100B97559 /* MergeSortedArrayTests.swift */,
 				3D3E6AC5274C074800CC3893 /* MergeTwoSortedListsTests.swift */,
+				3DB8EB03277B3AF90051B93B /* MiddleOfLinkedListTests.swift */,
 				3D3F6A0F27600B5A0011B7A6 /* MinCostToConnectAllPointsTests.swift */,
 				3D3E6AD3274C074800CC3893 /* MinimumValueToGetPositiveTests.swift */,
 				3D68619B276D3AC5009DF2B2 /* MiniParserTests.swift */,
@@ -1483,6 +1488,7 @@
 				3D51A04F27668E0E00D70AE5 /* WallsAndGates.swift */,
 				3D54C6FE273ADBEF006A9F67 /* ZigzagConversion.swift */,
 				3D54C715273ADCA6006A9F67 /* Helpers */,
+				3DB8EB01277B3AAF0051B93B /* MiddleOfLinkedList.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1801,6 +1807,7 @@
 				3D387A55274BFF6F00537F46 /* QueueViaStacks.swift in Sources */,
 				3D3F6A1A2761606E0011B7A6 /* FlattenBinaryTreeToLinkedList.swift in Sources */,
 				3D3879CC2747ED2000537F46 /* ClosestBinarySearchTreeValue.swift in Sources */,
+				3DB8EB02277B3AAF0051B93B /* MiddleOfLinkedList.swift in Sources */,
 				3D3395BE2745A31C002EE4AC /* Sqrt.swift in Sources */,
 				3D908C6927693C0F0090C077 /* TimeConverter.swift in Sources */,
 				3D54C717273ADCB1006A9F67 /* ListNode.swift in Sources */,
@@ -2013,6 +2020,7 @@
 				3D3E6AF1274C074800CC3893 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift in Sources */,
 				3D3E6BD2274C0A6E00CC3893 /* CircularLinkedListTests.swift in Sources */,
 				3D3E6B99274C09B100CC3893 /* BFSShortReachTests.swift in Sources */,
+				3DB8EB04277B3AF90051B93B /* MiddleOfLinkedListTests.swift in Sources */,
 				3DF7EA6A2771EA9600B97559 /* FibonacciNumberTests.swift in Sources */,
 				3D3F6A1027600B5A0011B7A6 /* MinCostToConnectAllPointsTests.swift in Sources */,
 				3D3E6B07274C074800CC3893 /* NextPermutationNumberTests.swift in Sources */,
