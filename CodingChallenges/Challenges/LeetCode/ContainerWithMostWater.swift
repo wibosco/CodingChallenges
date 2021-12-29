@@ -17,8 +17,8 @@ struct ContainerWithMostWater {
     //two pointers
     //
     //Solution Description:
-    //Using two pointers move through the array is a greedy manner to maximise
-    //the area between the heights. In each iteration move the smaller pointer
+    //Using two pointers move through the array is a greedy manner to maximise the area between the heights.
+    //In each iteration move the smaller pointer
     static func maxArea(_ height: [Int]) -> Int {
         var maxArea = 0
         

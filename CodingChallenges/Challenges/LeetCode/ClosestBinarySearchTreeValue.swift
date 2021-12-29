@@ -9,11 +9,18 @@
 import Foundation
 
 //https://leetcode.com/problems/closest-binary-search-tree-value/
-//binary search
 //BST
 struct ClosestBinarySearchTreeValue {
     
     //Time: O(log n)
+    //Space: O(1)
+    //binary search
+    //
+    //Solution Description:
+    //We traverse the tree at each node we calculate the delta between the target and that node. If the delta is
+    //less than (in absolute terms) the current delta then we replace it with that node. We then check if that node
+    //has any children nodes and select which one to search down depending on if that nodes val is less than or
+    //greater than the target
     static func closestValue(_ root: BinaryTreeNode?, _ target: Double) -> Int {
         guard let root = root else {
             return -1
@@ -29,7 +36,7 @@ struct ClosestBinarySearchTreeValue {
                 closetNode = currentNode!
             }
             
-            if Double(currentNode!.val) >= target {
+            if Double(currentNode!.val) >= target { //decide which path to go down
                 currentNode = currentNode!.left
             } else {
                 currentNode = currentNode!.right

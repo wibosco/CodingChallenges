@@ -10,13 +10,16 @@ import Foundation
 
 //https://leetcode.com/problems/binary-tree-inorder-traversal/
 //binary tree
-
 struct BinaryTreeInorderTraversal {
     
     //Time: O(n)
     //Space: O(n)
     //DFS
     //recursion
+    //
+    //Solution Description:
+    //Using recursion we perform a DFS traversal through the tree. As we visited nodes, we add them to the `visited`
+    //array only once we have exhausted all left (lesser) child nodes and before all right (greater) nodes.
     static func inorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
@@ -43,6 +46,11 @@ struct BinaryTreeInorderTraversal {
     //Space: O(n)
     //DFS
     //iterative
+    //
+    //Solution Description:
+    //Using an array as a stack we iteratively perform a DFS traversal through the tree. As we visited nodes, we add
+    //them to the `visited` array only once we have exhausted all left (lesser) child nodes and before all right
+    //(greater) nodes.
     static func inorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []

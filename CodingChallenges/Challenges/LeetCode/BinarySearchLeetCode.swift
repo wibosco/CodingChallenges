@@ -12,13 +12,25 @@ import Foundation
 //binary search
 struct BinarySearchLeetCode {
     
-    //Time: O(log n)
+    //Time: O(log n) where `n` is the number of elements in `nums`
+    //Space: O(1)
+    //sorted
+    //
+    //Solution Description:
+    //Use binary search to find the `target` in `nums`. We do ths by selecting the mid element of `nums` and peformin a
+    //few checks:
+    //
+    //1. is it the target? - return the index
+    //2. is it greater than the target - going forward only search the elements to the left of `mid`
+    //3. is it less than the target - going forward only search the elements to the right of `mid`
+    //
+    //With this approach we are halving the search space with each iteration.
     static func search(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
         
         while right >= left {
-            let mid = left + (right - left) / 2
+            let mid = left + (right - left) / 2 //to avoid overflow
             if nums[mid] == target {
                 return mid
             } else if nums[mid] > target {
