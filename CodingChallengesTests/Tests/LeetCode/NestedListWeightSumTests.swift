@@ -1,8 +1,8 @@
 //
-//  NestedListWeightSumIITests.swift
+//  NestedListWeightSumTests.swift
 //  CodingChallengesTests
 //
-//  Created by William Boles on 17/12/2021.
+//  Created by William Boles on 30/12/2021.
 //  Copyright © 2021 Boles. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CodingChallenges
 
-class NestedListWeightSumIITests: XCTestCase {
+class NestedListWeightSumTests: XCTestCase {
 
     // MARK: - Tests
     
@@ -18,18 +18,17 @@ class NestedListWeightSumIITests: XCTestCase {
         let data = "[[1,1],2,[1,1]]"
         let nestedList = NestedInteger.deserialize(data)
         
-        let sum = NestedListWeightSumII.depthSumInverse([nestedList])
+        let sum = NestedListWeightSum.depthSum([nestedList])
         
-        XCTAssertEqual(sum, 8)
+        XCTAssertEqual(sum, 10)
     }
     
     func test_B() {
         let data = "[1,[4,[6]]]"
         let nestedList = NestedInteger.deserialize(data)
         
-        let sum = NestedListWeightSumII.depthSumInverse([nestedList])
+        let sum = NestedListWeightSum.depthSum([nestedList])
         
-        XCTAssertEqual(sum, 17)
+        XCTAssertEqual(sum, 27)
     }
-
 }
