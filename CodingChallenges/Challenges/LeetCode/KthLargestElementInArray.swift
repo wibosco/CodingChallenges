@@ -14,8 +14,8 @@ struct KthLargestElementInArray {
     
     //Time: O(n) where `n` is the number of elements in `nums`
     //Space: O(1)
-    //quick select
-    //quick sort
+    //quickselect
+    //quicksort
     //inline
     //
     //Solution Description:

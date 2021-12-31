@@ -33,3 +33,4 @@ Contains solutions to challenges found in:
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
 | "Compare neighbors in a string" | `Stack` |
 | "Largest value", "Smallest value"| `Heap` |
+| "kth smallest", "kth largest", "kth most frequent", "kth less frequent" | `QuickSelect` |
