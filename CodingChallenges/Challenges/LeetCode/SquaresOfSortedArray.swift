@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/squares-of-a-sorted-array/
-//arrays
+//array
 struct SquaresOfSortedArray {
     
     //Time: O(n) where is the number of elements in `nums`
