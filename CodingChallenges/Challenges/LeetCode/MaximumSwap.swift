@@ -17,7 +17,7 @@ struct MaximumSwap {
     //
     //Solution Description:
     //Loop through all possible swaps and store the maximum value found.
-    static func maximumSwapBrute(_ num: Int) -> Int {
+    static func maximumSwap(_ num: Int) -> Int {
         var maxNum = num
         
         let digits = String(num).compactMap { Int(String($0)) }
