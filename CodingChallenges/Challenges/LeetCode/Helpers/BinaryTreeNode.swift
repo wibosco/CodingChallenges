@@ -97,6 +97,22 @@ extension BinaryTreeNode {
         
         return Array(values[0...i])
     }
+    
+    static func serializeAsDoublyLinkedList(_ root: BinaryTreeNode?) -> [Int] {
+        guard let root = root else {
+            return [Int]()
+        }
+        
+        var values = [root.val]
+        var node = root
+        
+        while node.right != nil {
+            node = node.right!
+            values.append(node.val)
+        }
+        
+        return values
+    }
 }
 
 extension BinaryTreeNode: Equatable {
