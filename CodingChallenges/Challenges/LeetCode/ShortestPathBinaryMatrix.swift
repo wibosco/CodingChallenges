@@ -104,7 +104,7 @@ struct ShortestPathBinaryMatrix {
     //matrix
     //
     //Solution Description:
-    //Treat the matrix as a graph with each "touching" nodes being a neighbor. "Touching" is defined
+    //Treat the matrix as a graph with each "touching" node being a neighbor. "Touching" is defined
     //by using relative indexing from the [row][column] position that is being checked i.e. all 8
     //nodess around - careful to check for out of bounds and if that nodes is navigatable i.e. 0 value.
     //Gradually build up an adjacent list for all ndoes in the graph, using BFS we then traverse
