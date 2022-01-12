@@ -25,7 +25,7 @@ Contains solutions to challenges found in:
 | "Path may not exist"| `isolated vertices`, `cycles` |
 | "Generate all", "All permutations" | `Backtracking (DFS)` |
 | "Sorted" | `Binary Search`, `Two pointers` |
-| "Next greater element", "Next lesser element" | `Monotonic stack` |
+| "Next greater element", "Next lesser element", "Iterating array comparing elementss" | `Monotonic stack` |
 | "Longest sub...", "Smallest sub...", "Maximum points"| `Sliding window`|
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers`|
@@ -34,4 +34,4 @@ Contains solutions to challenges found in:
 | "Compare neighbors in a string" | `Stack` |
 | "Largest value", "Smallest value"| `Heap` |
 | "kth smallest", "kth largest", "kth frequent", "top k" | `QuickSelect` |
-| "Diagonal" | `r1 + c1 == r2 + c2`|
+| "Matrix diagonal" | `r1 + c1 == r2 + c2`|
