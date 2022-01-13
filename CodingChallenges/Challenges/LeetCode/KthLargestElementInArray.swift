@@ -16,7 +16,7 @@ struct KthLargestElementInArray {
     //Space: O(1)
     //quickselect
     //quicksort
-    //inline
+    //inplace
     //
     //Solution Description:
     //Using `quick select` we sort `nums` around a pivot by gradually partitioning `nums` into a smaller and smaller array.
@@ -25,13 +25,13 @@ struct KthLargestElementInArray {
     //find the largest Kth element we need to invert `k` by counting `k` elements from the end to return the correct
     //value.
     //
-    //N.B. Here we are using Hoare's partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#hoares-partitioning-scheme
+    //N.B. Here we are using Lomutos partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
     static func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
         var nums = nums
         
         let invertedK = nums.count - k
         
-        return quickSelect(&nums, 0, (nums.count - 1), invertedK)
+        return quickSelect(&nums, 0, (nums.count - 1), invertedK) //note the "-1" for right
     }
     
     private static func quickSelect(_ nums: inout [Int], _ left: Int, _ right: Int, _ k: Int) -> Int {
@@ -51,31 +51,19 @@ struct KthLargestElementInArray {
     }
     
     private static func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {
-        let pivotIndex = left // with Hoare's partitioning scheme the pivot index must be the left index
-        let pivot = nums[pivotIndex]
+        let pivot = nums[right] //note that the pivot is set using the right pointer
         
         var i = left
-        var j = right
-        
-        while i < j {
-            while i < nums.count && nums[i] <= pivot {
-                i += 1
-            }
-            
-            while j >= 0 && nums[j] > pivot {
-                j -= 1
-            }
-            
-            if i < j {
-                //everything left of `pivotIndex` should be less than `pivot`
-                //and everything right should be greater
+        for j in left..<right {
+            if nums[j] <= pivot {
                 nums.swapAt(i, j)
+                i += 1
             }
         }
         
-        nums.swapAt(pivotIndex, j)
+        nums.swapAt(i, right)
         
-        return j
+        return i
     }
     
     //Time: O(n log n) where `n` is number of elements in `nums`

@@ -15,7 +15,7 @@ struct TopKFrequentElements {
     //Time: O(n) where `n` is the number of elements in `nums`
     //Space: O(n)
     //quickselect
-    //inline
+    //inplace
     //quicksort
     //
     //Solution Description:
@@ -28,7 +28,7 @@ struct TopKFrequentElements {
     //invert `k` by counting `k` elements from the end to return the correct value. With the `kth` element sorted we return
     //an array containing only `k` to `n - 1` elements.
     //
-    //N.B. Here we are using Hoare's partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#hoares-partitioning-scheme
+    //N.B. Here we are using Lomutos partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
     static func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
         var frequencies = [Int: Int]()
         
@@ -40,7 +40,7 @@ struct TopKFrequentElements {
         
         let invertedK = uniqueNums.count - k
         
-        quickSelect(&uniqueNums, frequencies, 0, (uniqueNums.count - 1), invertedK)
+        quickSelect(&uniqueNums, frequencies, 0, (uniqueNums.count - 1), invertedK) //note the "-1" for right
         
         return Array(uniqueNums[invertedK..<uniqueNums.count])
     }
@@ -62,30 +62,18 @@ struct TopKFrequentElements {
     }
     
     private static func partition(_ nums: inout [Int], _ frequencies: [Int: Int], _ left: Int, _ right: Int) -> Int {
-        let pivotIndex = left // with Hoare's partitioning scheme the pivot index must be the left index
-        let pivot = frequencies[nums[pivotIndex]]!
+        let pivot = frequencies[nums[right]]! //note that the pivot is set using the right pointer
         
         var i = left
-        var j = right
-        
-        while i < j {
-            while i < nums.count && frequencies[nums[i]]! <= pivot {
-                i += 1
-            }
-            
-            while j >= 0 && frequencies[nums[j]]! > pivot {
-                j -= 1
-            }
-            
-            if i < j {
-                //everything left of `pivotIndex` should be less than `pivot`
-                //and everything right should be greater
+        for j in left..<right {
+            if frequencies[nums[j]]! <= pivot {
                 nums.swapAt(i, j)
+                i += 1
             }
         }
         
-        nums.swapAt(pivotIndex, j)
+        nums.swapAt(i, right)
         
-        return j
+        return i
     }
 }

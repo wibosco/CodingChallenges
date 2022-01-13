@@ -16,7 +16,7 @@ struct MergeSortedArray {
     //Space: O(1)
     //sorted
     //two pointers (actually three)
-    //inline
+    //inplace
     //
     //Solution Description:
     //Using three pointers (`p1` at the end of valid items in nums1, `p2` at the end of nums2 and `p` at the end of
