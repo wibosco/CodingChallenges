@@ -10,6 +10,8 @@
 		3D0198B42741B645007B24C1 /* NextPermutationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */; };
 		3D028EFC278F730C00FD65F8 /* MinimumRemoveToMakeValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D028EFB278F730C00FD65F8 /* MinimumRemoveToMakeValidParentheses.swift */; };
 		3D028EFE278F734C00FD65F8 /* MinimumRemoveToMakeValidParenthesesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D028EFD278F734C00FD65F8 /* MinimumRemoveToMakeValidParenthesesTests.swift */; };
+		3D09C3A227918C9700CAAE96 /* CapacityToShipPackagesWithinDDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09C3A127918C9700CAAE96 /* CapacityToShipPackagesWithinDDays.swift */; };
+		3D09C3A427918CC900CAAE96 /* CapacityToShipPackagesWithinDDaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09C3A327918CC900CAAE96 /* CapacityToShipPackagesWithinDDaysTests.swift */; };
 		3D14B779276FD0BD007B1FE1 /* SearchInABinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14B778276FD0BD007B1FE1 /* SearchInABinarySearchTree.swift */; };
 		3D14B77B276FD13E007B1FE1 /* SearchInABinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14B77A276FD13E007B1FE1 /* SearchInABinarySearchTreeTests.swift */; };
 		3D1D93132762A19300CF6A27 /* DiameterOfNAryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */; };
@@ -456,6 +458,8 @@
 		3D0198B32741B645007B24C1 /* NextPermutationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationNumber.swift; sourceTree = "<group>"; };
 		3D028EFB278F730C00FD65F8 /* MinimumRemoveToMakeValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumRemoveToMakeValidParentheses.swift; sourceTree = "<group>"; };
 		3D028EFD278F734C00FD65F8 /* MinimumRemoveToMakeValidParenthesesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumRemoveToMakeValidParenthesesTests.swift; sourceTree = "<group>"; };
+		3D09C3A127918C9700CAAE96 /* CapacityToShipPackagesWithinDDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityToShipPackagesWithinDDays.swift; sourceTree = "<group>"; };
+		3D09C3A327918CC900CAAE96 /* CapacityToShipPackagesWithinDDaysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityToShipPackagesWithinDDaysTests.swift; sourceTree = "<group>"; };
 		3D14B778276FD0BD007B1FE1 /* SearchInABinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInABinarySearchTree.swift; sourceTree = "<group>"; };
 		3D14B77A276FD13E007B1FE1 /* SearchInABinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInABinarySearchTreeTests.swift; sourceTree = "<group>"; };
 		3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiameterOfNAryTree.swift; sourceTree = "<group>"; };
@@ -1105,6 +1109,7 @@
 				3D3F6A892762203A0011B7A6 /* BinaryTreeRightSideViewTests.swift */,
 				3DC1E778277D010500B2FE04 /* BinaryTreeVerticalOrderTraversalTests.swift */,
 				3DD4C8DB278EE8A0006C10E9 /* BuildingsWithOceanViewTests.swift */,
+				3D09C3A327918CC900CAAE96 /* CapacityToShipPackagesWithinDDaysTests.swift */,
 				3DF7EA6D27721FD400B97559 /* ClimbingStairsTests.swift */,
 				3D1D931A27636D5200CF6A27 /* CloneBinaryTreeWithRandomPointerTests.swift */,
 				3D49F6D227581CE900B996AB /* CloneGraphTests.swift */,
@@ -1456,6 +1461,7 @@
 				3D3F6A8727621CAB0011B7A6 /* BinaryTreeRightSideView.swift */,
 				3DC1E776277CFE0600B2FE04 /* BinaryTreeVerticalOrderTraversal.swift */,
 				3DD4C8D9278EE86D006C10E9 /* BuildingsWithOceanView.swift */,
+				3D09C3A127918C9700CAAE96 /* CapacityToShipPackagesWithinDDays.swift */,
 				3DF7EA6B27721FB000B97559 /* ClimbingStairs.swift */,
 				3D1D931627636CD200CF6A27 /* CloneBinaryTreeWithRandomPointer.swift */,
 				3D49F6D027581CD100B996AB /* CloneGraph.swift */,
@@ -1936,6 +1942,7 @@
 				3D3395C22745B1E8002EE4AC /* GuessNumberHigherOrLower.swift in Sources */,
 				3D3395BA2745A155002EE4AC /* BinarySearchLeetCode.swift in Sources */,
 				3DD5B9DD2775F25900ED2237 /* VerifyingAnAlienDictionary.swift in Sources */,
+				3D09C3A227918C9700CAAE96 /* CapacityToShipPackagesWithinDDays.swift in Sources */,
 				3D9F9FCC273EFF9800A9BD72 /* DivideTwoIntegers.swift in Sources */,
 				3D387A6B274BFF6F00537F46 /* RoutePlannerNode.swift in Sources */,
 				3D908C5427693C0E0090C077 /* OrganizingContainersOfBalls.swift in Sources */,
@@ -2118,6 +2125,7 @@
 				3D3E6AF7274C074800CC3893 /* MergeTwoSortedListsTests.swift in Sources */,
 				3DB8EB08277B5B3B0051B93B /* KthLargestElementInArrayTests.swift in Sources */,
 				3D51A05227668E7D00D70AE5 /* WallsAndGatesTests.swift in Sources */,
+				3D09C3A427918CC900CAAE96 /* CapacityToShipPackagesWithinDDaysTests.swift in Sources */,
 				3D3E6BA9274C09B100CC3893 /* KaprekarTests.swift in Sources */,
 				3D3F6A8A2762203A0011B7A6 /* BinaryTreeRightSideViewTests.swift in Sources */,
 				3D3E6B9A274C09B100CC3893 /* SummingTests.swift in Sources */,
