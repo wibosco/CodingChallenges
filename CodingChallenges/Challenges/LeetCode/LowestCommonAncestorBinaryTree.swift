@@ -8,22 +8,25 @@
 
 import Foundation
 
-//https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+//https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/
 //binary tree
-//DFS
 struct LowestCommonAncestorBinaryTree {
     
-    //Time: O(n)
-    //Space: O(log n) - if call stack is counted otherwise O(1)
+    //Time: O(n) where `n` is the number of nodes in the tree
+    //Space: O(log n) where `log n` is the number of levels in the tree
+    //DFS
     //
     //Solution description:
-    //1. Using DFS find the path to `p` and `q` in the same call stack
-    //2. When we have found both `p` and `q` in the same call, return that node as the lca
+    //Traverse the tree using DFS. In order for a node to be a common ancestor it needs 2 of the 3 below:
+    //
+    //1. be either be `p` or `q` itself
+    //2. contain `p` in it's right or left branches
+    //3. contain `q` in it's right or left branch
+    //
+    //As we are only interested in the lowest common ancestor rather than any common ancestor we need to
+    //ensure that we pass back the first node that is true for 2 of the above 3 scenarios. When we find this
+    //node we set it to `lca`
     static func lowestCommonAncestor(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> BinaryTreeNode? {
-        guard let root = root, let p = p, let q = q else {
-            return nil
-        }
-        
         var lca: BinaryTreeNode?
 
         findLowestCommonAncestor(root, p, q, &lca)
