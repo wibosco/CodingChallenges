@@ -298,6 +298,9 @@
 		3D7D2A0627945FE40005CA21 /* LowestCommonAncestorBinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D2A0527945FE40005CA21 /* LowestCommonAncestorBinarySearchTreeTests.swift */; };
 		3D7D2A0827946AC70005CA21 /* LowestCommonAncestorBinaryTreeII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D2A0727946AC70005CA21 /* LowestCommonAncestorBinaryTreeII.swift */; };
 		3D7D2A0A27946B580005CA21 /* LowestCommonAncestorBinaryTreeIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D2A0927946B580005CA21 /* LowestCommonAncestorBinaryTreeIITests.swift */; };
+		3D7D2A0C2794AE180005CA21 /* LowestCommonAncestorBinaryTreeIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D2A0B2794AE180005CA21 /* LowestCommonAncestorBinaryTreeIII.swift */; };
+		3D7D2A0E2794AFCE0005CA21 /* BinaryTreeNodeParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D2A0D2794AFCE0005CA21 /* BinaryTreeNodeParent.swift */; };
+		3D7D2A102794BC2D0005CA21 /* LowestCommonAncestorBinaryTreeIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D2A0F2794BC2D0005CA21 /* LowestCommonAncestorBinaryTreeIIITests.swift */; };
 		3D7F702B278D9618007E223A /* MinimumAddToMakeParenthesesValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F702A278D9618007E223A /* MinimumAddToMakeParenthesesValid.swift */; };
 		3D7F702D278D9645007E223A /* MinimumAddToMakeParenthesesValidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F702C278D9645007E223A /* MinimumAddToMakeParenthesesValidTests.swift */; };
 		3D82A159274D8A34004D6836 /* MaximumDepthBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82A158274D8A34004D6836 /* MaximumDepthBinaryTree.swift */; };
@@ -751,6 +754,9 @@
 		3D7D2A0527945FE40005CA21 /* LowestCommonAncestorBinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorBinarySearchTreeTests.swift; sourceTree = "<group>"; };
 		3D7D2A0727946AC70005CA21 /* LowestCommonAncestorBinaryTreeII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorBinaryTreeII.swift; sourceTree = "<group>"; };
 		3D7D2A0927946B580005CA21 /* LowestCommonAncestorBinaryTreeIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorBinaryTreeIITests.swift; sourceTree = "<group>"; };
+		3D7D2A0B2794AE180005CA21 /* LowestCommonAncestorBinaryTreeIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorBinaryTreeIII.swift; sourceTree = "<group>"; };
+		3D7D2A0D2794AFCE0005CA21 /* BinaryTreeNodeParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeNodeParent.swift; sourceTree = "<group>"; };
+		3D7D2A0F2794BC2D0005CA21 /* LowestCommonAncestorBinaryTreeIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorBinaryTreeIIITests.swift; sourceTree = "<group>"; };
 		3D7F702A278D9618007E223A /* MinimumAddToMakeParenthesesValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAddToMakeParenthesesValid.swift; sourceTree = "<group>"; };
 		3D7F702C278D9645007E223A /* MinimumAddToMakeParenthesesValidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAddToMakeParenthesesValidTests.swift; sourceTree = "<group>"; };
 		3D82A158274D8A34004D6836 /* MaximumDepthBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthBinaryTree.swift; sourceTree = "<group>"; };
@@ -1170,6 +1176,7 @@
 				3D3E6ADE274C074800CC3893 /* LongestPalindromicSubstringTests.swift */,
 				3D3E6AC6274C074800CC3893 /* LongestSubstringTests.swift */,
 				3D7D2A0527945FE40005CA21 /* LowestCommonAncestorBinarySearchTreeTests.swift */,
+				3D7D2A0F2794BC2D0005CA21 /* LowestCommonAncestorBinaryTreeIIITests.swift */,
 				3D7D2A0927946B580005CA21 /* LowestCommonAncestorBinaryTreeIITests.swift */,
 				3D3BFF172752C5570079BBF5 /* LowestCommonAncestorBinaryTreeTests.swift */,
 				3DCD371B276A604300F46913 /* Matrix01Tests.swift */,
@@ -1373,6 +1380,7 @@
 			children = (
 				3D3879CD2747ED8A00537F46 /* BinaryTreeNode.swift */,
 				3D82A1A327503427004D6836 /* BinaryTreeNodeNext.swift */,
+				3D7D2A0D2794AFCE0005CA21 /* BinaryTreeNodeParent.swift */,
 				3D1D931827636CF900CF6A27 /* BinaryTreeNodeRandom.swift */,
 				3D49F6CA2757CC8400B996AB /* GraphVertice.swift */,
 				3D3F6A11276025660011B7A6 /* GraphWeightedEdge.swift */,
@@ -1526,6 +1534,7 @@
 				3D7D2A03279456EC0005CA21 /* LowestCommonAncestorBinarySearchTree.swift */,
 				3D3BFF152752C5380079BBF5 /* LowestCommonAncestorBinaryTree.swift */,
 				3D7D2A0727946AC70005CA21 /* LowestCommonAncestorBinaryTreeII.swift */,
+				3D7D2A0B2794AE180005CA21 /* LowestCommonAncestorBinaryTreeIII.swift */,
 				3DCD371D276A608E00F46913 /* Matrix01.swift */,
 				3D82A158274D8A34004D6836 /* MaximumDepthBinaryTree.swift */,
 				3D2A330227838A9F00909498 /* MaximumSwap.swift */,
@@ -1969,6 +1978,7 @@
 				3D3879DE2748521200537F46 /* FindMinimumRotatedSortedArrayII.swift in Sources */,
 				3D51A05A27675CCA00D70AE5 /* NumberOfIslands.swift in Sources */,
 				3D49F6D127581CD100B996AB /* CloneGraph.swift in Sources */,
+				3D7D2A0E2794AFCE0005CA21 /* BinaryTreeNodeParent.swift in Sources */,
 				3D34E86D2742FF73006500EB /* CopyListWithRandomPointer.swift in Sources */,
 				3D908C7627693EB00090C077 /* FinalPricesWithSpecialDiscount.swift in Sources */,
 				3D54C707273ADBF0006A9F67 /* AddTwoNumbers.swift in Sources */,
@@ -2001,6 +2011,7 @@
 				3D908C5827693C0E0090C077 /* BirthdayCakeCandles.swift in Sources */,
 				3D82A16D274EEDF4004D6836 /* ConstructBinaryTreePreorderInorderTraversal.swift in Sources */,
 				3D3F6A00275E3C420011B7A6 /* ShortestPathBinaryMatrix.swift in Sources */,
+				3D7D2A0C2794AE180005CA21 /* LowestCommonAncestorBinaryTreeIII.swift in Sources */,
 				3D387A5E274BFF6F00537F46 /* ProjectBuildOrder.swift in Sources */,
 				3D1D931927636CF900CF6A27 /* BinaryTreeNodeRandom.swift in Sources */,
 				3DF7EA64277120E500B97559 /* PascalsTriangleII.swift in Sources */,
@@ -2049,6 +2060,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7D2A102794BC2D0005CA21 /* LowestCommonAncestorBinaryTreeIIITests.swift in Sources */,
 				3D51A05E2767BE3A00D70AE5 /* OpenTheLockTests.swift in Sources */,
 				3DF7EA722772853E00B97559 /* KthSymbolInGrammarTests.swift in Sources */,
 				3DCD371C276A604300F46913 /* Matrix01Tests.swift in Sources */,

@@ -87,7 +87,7 @@ extension BinaryTreeNodeRandom {
         return root
     }
     
-    static func extractValuesInLevelOrder(fromBinaryTree root: BinaryTreeNodeRandom?) -> [[Int?]?] {
+    static func serialize(_ root: BinaryTreeNodeRandom?) -> [[Int?]?] {
         guard let root = root else {
             return [[Int?]?]()
         }

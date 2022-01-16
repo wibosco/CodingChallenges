@@ -20,7 +20,7 @@ class PopulatingNextRightPointersTests: XCTestCase {
         
         let node = PopulatingNextRightPointers.connect(root)
         
-        let values = BinaryTreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
+        let values = BinaryTreeNodeNext.serialize(node)
         
         XCTAssertEqual(values, ["1", "#", "2", "3", "#", "4", "5", "6", "7", "#"])
     }
@@ -31,7 +31,7 @@ class PopulatingNextRightPointersTests: XCTestCase {
         
         let node = PopulatingNextRightPointers.connect(root)
         
-        let values = BinaryTreeNodeNext.extractValuesInLevelOrder(fromBinaryTree: node)
+        let values = BinaryTreeNodeNext.serialize(node)
         
         XCTAssertEqual(values, [])
     }

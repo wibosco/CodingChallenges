@@ -17,7 +17,8 @@ struct LowestCommonAncestorBinaryTree {
     //DFS
     //
     //Solution description:
-    //Traverse the tree using DFS. In order for a node to be a common ancestor it needs 2 of the 3 below:
+    //Traverse the tree using DFS. In order for a node to be a common ancestor it needs 2 of the 3 below to
+    //be true:
     //
     //1. be either be `p` or `q` itself
     //2. contain `p` in it's right or left branches
