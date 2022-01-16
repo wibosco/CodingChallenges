@@ -14,7 +14,7 @@ import Foundation
 struct LowestCommonAncestorBinaryTree {
     
     //Time: O(n)
-    //Space: O(n) - if call stack is counted otherwise O(1)
+    //Space: O(log n) - if call stack is counted otherwise O(1)
     //
     //Solution description:
     //1. Using DFS find the path to `p` and `q` in the same call stack
@@ -37,10 +37,10 @@ struct LowestCommonAncestorBinaryTree {
             return false
         }
         
-        let mid = (root.val == p.val) || (root.val == q.val) //is the current node p or q
+        let mid = (root.val == p.val) || (root.val == q.val) //is the current node `p` or `q`
         
         let left = findLowestCommonAncestor(root.left, p, q, &lca)
-        //need two matches for the current node  to be lca
+        //need two matches for the current node to be lca
         if mid && left {
             lca = root
             
