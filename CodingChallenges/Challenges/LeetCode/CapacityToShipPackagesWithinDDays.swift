@@ -15,14 +15,15 @@ struct CapacityToShipPackagesWithinDDays {
     //Time: O(n) where `n` is number of elements in `weights`
     //Space: O(1)
     //sorted
+    //minimum
     //
     //Solution Description:
     //In order for a any ship to ship `weights`, it needs to at a minimum be able to ship the largest weight in `weights` and
-    //at a maximum be able to handle the sum of `weights`. TWe can treat this min..max range as sorted list of possible ship
+    //at a maximum be able to handle the sum of `weights`. We can treat this min..max range as a sorted list of possible ship
     //weights - now we just have to figure out which ship weight in this range will result in the `weights` being delivered
     //in `days` days. Performing a binary search on this range we can find that minimum weight while discarding half of the
     //possible weights at each step. If the delivery takes greater than the required days then we know we have choosen too
-    //small a weight for the ships i.e. the left edge need to come move right; if the delivery can happen within the days
+    //small a weight for the ships i.e. the left edge needs to move right; if the delivery can happen within the days
     //using the current weight we need to ensure that that weight is the minimum so we have to shrink the wieght i.e. the
     //right edge need to move left.
     static func shipWithinDays(_ weights: [Int], _ days: Int) -> Int {
