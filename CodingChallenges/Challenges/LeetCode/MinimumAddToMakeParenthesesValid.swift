@@ -21,11 +21,9 @@ struct MinimumAddToMakeParenthesesValid {
     //`s`. Once we get the end of `s` any elements in the stack don't have a opening/closing bracket in the correct
     //squence so we would need to add that number of opening/closing brackets to balance the exisitng brackets.
     static func minAddToMakeValid(_ s: String) -> Int {
-        let characters = Array(s)
-        
         var stack = [Character]()
         
-        for c in characters {
+        for c in s {
             if c == ")" {                
                 if stack.last == "(" {
                     stack.removeLast()
