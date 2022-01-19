@@ -18,10 +18,11 @@ struct LinkedListCycleII {
     //slow and fast pointers
     //
     //Solution Description:
-    //Using a fast and slow pointers iterate through the list. If they meet we know that we have a cycle; if they don't meet and
-    //the fast pointer reaches the end of the list then we don't have a cycle. If they do meet then we reset the slow pointer back
-    //to the start of the list, this will ensure that the slow and fast pointer are both the same number of nodes away from the
-    //entrance to the cycle. We then move each node by one node until they meet again, at which point we can return either.
+    //Using a fast and slow pointer iterate through the list. If they meet we know that we have a cycle; if they don't meet
+    //and the fast pointer reaches the end of the list then we don't have a cycle. If they do meet then we reset the slow
+    //pointer back to the start of the list, this will ensure that the slow and fast pointer are both the same number of
+    //nodes away from the entrance to the cycle. We then move each node by one node until they meet again, at which point we
+    //can return either.
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
     static func detectCycle(_ head: ListNode?) -> ListNode? {
