@@ -20,6 +20,26 @@ class ListNode {
 }
 
 extension ListNode {
+    static func deserialize(_ array: [Int], _ cycleIndex: Int) -> ListNode? {
+        var prev: ListNode?
+        var tail: ListNode?
+        for (index, value) in array.enumerated().reversed() {
+            let node = ListNode(value)
+            node.next = prev
+            prev = node
+            
+            if tail == nil {
+                tail = node
+            }
+            
+            if index == cycleIndex {
+                tail?.next = node
+            }
+        }
+        
+        return prev
+    }
+    
     static func deserialize(_ array: [Int]) -> ListNode? {
         var prev: ListNode?
         for value in array.reversed() {

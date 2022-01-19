@@ -9,12 +9,20 @@
 import Foundation
 
 //https://leetcode.com/problems/find-the-duplicate-number/
+//array
 struct FindDuplicateNumber {
     
     //Time: O(n)
-    //linked list (think of the array as a linked list)
+    //Space: O(1)
+    //linked list
     //circular dependency
     //two pointers
+    //slow and fast pointers
+    //
+    //Solution Description:
+    //Treating `nums` as a linked list we can use a fast and slow pointer to detect a cycle the entrance of
+    //which will be our duplicate number
+    //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
     static func findDuplicate(_ nums: [Int]) -> Int {
         var slow = nums[0]
