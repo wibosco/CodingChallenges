@@ -389,6 +389,8 @@
 		3D9F9FA9273D643B00A9BD72 /* MinimumValueToGetPositive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */; };
 		3D9F9FAD273D757500A9BD72 /* ImplementStrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */; };
 		3D9F9FCC273EFF9800A9BD72 /* DivideTwoIntegers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */; };
+		3DA22DED2798356E00EDF297 /* DestroyingAsteroids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22DEC2798356E00EDF297 /* DestroyingAsteroids.swift */; };
+		3DA22DEF279835A700EDF297 /* DestroyingAsteroidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA22DEE279835A700EDF297 /* DestroyingAsteroidsTests.swift */; };
 		3DA392A02768EBCE00AE0A9B /* DailyTemperatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */; };
 		3DA392A22768EC1700AE0A9B /* DailyTemperaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */; };
 		3DB8EAFE277A63050051B93B /* RemoveAllAdjacentDuplicatesInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8EAFD277A63050051B93B /* RemoveAllAdjacentDuplicatesInString.swift */; };
@@ -855,6 +857,8 @@
 		3D9F9FA8273D643B00A9BD72 /* MinimumValueToGetPositive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumValueToGetPositive.swift; sourceTree = "<group>"; };
 		3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementStrStr.swift; sourceTree = "<group>"; };
 		3D9F9FCB273EFF9800A9BD72 /* DivideTwoIntegers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideTwoIntegers.swift; sourceTree = "<group>"; };
+		3DA22DEC2798356E00EDF297 /* DestroyingAsteroids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestroyingAsteroids.swift; sourceTree = "<group>"; };
+		3DA22DEE279835A700EDF297 /* DestroyingAsteroidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestroyingAsteroidsTests.swift; sourceTree = "<group>"; };
 		3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperatures.swift; sourceTree = "<group>"; };
 		3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperaturesTests.swift; sourceTree = "<group>"; };
 		3DB8EAFD277A63050051B93B /* RemoveAllAdjacentDuplicatesInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAllAdjacentDuplicatesInString.swift; sourceTree = "<group>"; };
@@ -1162,6 +1166,7 @@
 				3D4375F02795B54500B3A9A4 /* CuttingRibbonsTests.swift */,
 				3DA392A12768EC1700AE0A9B /* DailyTemperaturesTests.swift */,
 				3DCD3715276A272C00F46913 /* DecodeStringTests.swift */,
+				3DA22DEE279835A700EDF297 /* DestroyingAsteroidsTests.swift */,
 				3DF20CA72780E8FE001B73A9 /* DiagonalTraverseTests.swift */,
 				3D3F6A8D276231D70011B7A6 /* DiameterOfBinaryTreeTests.swift */,
 				3D1D93142762A21D00CF6A27 /* DiameterOfNAryTreeTests.swift */,
@@ -1523,6 +1528,7 @@
 				3D4375EE2795B52400B3A9A4 /* CuttingRibbons.swift */,
 				3DA3929F2768EBCE00AE0A9B /* DailyTemperatures.swift */,
 				3DCD3713276A26FD00F46913 /* DecodeString.swift */,
+				3DA22DEC2798356E00EDF297 /* DestroyingAsteroids.swift */,
 				3DF20CA52780E8A0001B73A9 /* DiagonalTraverse.swift */,
 				3D3F6A8B276231610011B7A6 /* DiameterOfBinaryTree.swift */,
 				3D1D93122762A19300CF6A27 /* DiameterOfNAryTree.swift */,
@@ -1999,6 +2005,7 @@
 				3DD5B9DD2775F25900ED2237 /* VerifyingAnAlienDictionary.swift in Sources */,
 				3D09C3A227918C9700CAAE96 /* CapacityToShipPackagesWithinDDays.swift in Sources */,
 				3D9F9FCC273EFF9800A9BD72 /* DivideTwoIntegers.swift in Sources */,
+				3DA22DED2798356E00EDF297 /* DestroyingAsteroids.swift in Sources */,
 				3D387A6B274BFF6F00537F46 /* RoutePlannerNode.swift in Sources */,
 				3D908C5427693C0E0090C077 /* OrganizingContainersOfBalls.swift in Sources */,
 				3D908C4B27693C0E0090C077 /* Kangaroo.swift in Sources */,
@@ -2271,6 +2278,7 @@
 				3D3E6BDB274C133700CC3893 /* BinaryTreePostorderTraversalTests.swift in Sources */,
 				3D2069EE2781A38F001FD888 /* ContinuousSubarraySumTests.swift in Sources */,
 				3D51A0622767E8ED00D70AE5 /* PerfectSquaresTests.swift in Sources */,
+				3DA22DEF279835A700EDF297 /* DestroyingAsteroidsTests.swift in Sources */,
 				3D6E9586279602460039EF02 /* ValidSudokuTests.swift in Sources */,
 				3D3E6AF2274C074800CC3893 /* ReorderListTests.swift in Sources */,
 				3DC25AD62795634C0062AB2F /* MinimumNumberOfSwapsToMakeTheStringBalancedTests.swift in Sources */,
