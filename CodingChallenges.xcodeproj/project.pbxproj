@@ -405,6 +405,8 @@
 		3DC25AD62795634C0062AB2F /* MinimumNumberOfSwapsToMakeTheStringBalancedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25AD52795634C0062AB2F /* MinimumNumberOfSwapsToMakeTheStringBalancedTests.swift */; };
 		3DC809B5279721EB00AD0D69 /* CanPlaceFlowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC809B4279721EB00AD0D69 /* CanPlaceFlowers.swift */; };
 		3DC809B72797221A00AD0D69 /* CanPlaceFlowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC809B62797221A00AD0D69 /* CanPlaceFlowersTests.swift */; };
+		3DC809B9279728AE00AD0D69 /* AsteroidCollision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC809B8279728AE00AD0D69 /* AsteroidCollision.swift */; };
+		3DC809BB279728D900AD0D69 /* AsteroidCollisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC809BA279728D900AD0D69 /* AsteroidCollisionTests.swift */; };
 		3DCD370C2769EE6100F46913 /* EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370B2769EE6100F46913 /* EvaluateReversePolishNotation.swift */; };
 		3DCD370E2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370D2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift */; };
 		3DCD3710276A193B00F46913 /* TargetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD370F276A193B00F46913 /* TargetSum.swift */; };
@@ -869,6 +871,8 @@
 		3DC25AD52795634C0062AB2F /* MinimumNumberOfSwapsToMakeTheStringBalancedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumNumberOfSwapsToMakeTheStringBalancedTests.swift; sourceTree = "<group>"; };
 		3DC809B4279721EB00AD0D69 /* CanPlaceFlowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanPlaceFlowers.swift; sourceTree = "<group>"; };
 		3DC809B62797221A00AD0D69 /* CanPlaceFlowersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanPlaceFlowersTests.swift; sourceTree = "<group>"; };
+		3DC809B8279728AE00AD0D69 /* AsteroidCollision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidCollision.swift; sourceTree = "<group>"; };
+		3DC809BA279728D900AD0D69 /* AsteroidCollisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidCollisionTests.swift; sourceTree = "<group>"; };
 		3DCD370B2769EE6100F46913 /* EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotation.swift; sourceTree = "<group>"; };
 		3DCD370D2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateReversePolishNotationTests.swift; sourceTree = "<group>"; };
 		3DCD370F276A193B00F46913 /* TargetSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSum.swift; sourceTree = "<group>"; };
@@ -1131,6 +1135,7 @@
 				3D3E6ABA274C074800CC3893 /* AddTwoNumbersTests.swift */,
 				3D2A61C9275C00F50024E93C /* AllPathsFromSourceLeadToDestinationTests.swift */,
 				3D49F6CE2757D54F00B996AB /* AllPathsFromSourceToTargetTests.swift */,
+				3DC809BA279728D900AD0D69 /* AsteroidCollisionTests.swift */,
 				3D3E6ADD274C074800CC3893 /* BinarySearchLeetCodeTests.swift */,
 				3D3E6AE6274C074800CC3893 /* BinaryTreeInorderTraversalTests.swift */,
 				3D3E6BDE274C505800CC3893 /* BinaryTreeLevelOrderTraversalTests.swift */,
@@ -1491,6 +1496,7 @@
 				3D54C6FA273ADBEF006A9F67 /* AddTwoNumbers.swift */,
 				3D2A61CB275C01230024E93C /* AllPathsFromSourceLeadToDestination.swift */,
 				3D49F6CC2757D52B00B996AB /* AllPathsFromSourceToTarget.swift */,
+				3DC809B8279728AE00AD0D69 /* AsteroidCollision.swift */,
 				3D3395B92745A155002EE4AC /* BinarySearchLeetCode.swift */,
 				3D3E6AB0274C053700CC3893 /* BinaryTreeInorderTraversal.swift */,
 				3D3E6BDC274C501300CC3893 /* BinaryTreeLevelOrderTraversal.swift */,
@@ -1875,6 +1881,7 @@
 				3D54C712273ADC06006A9F67 /* RotateList.swift in Sources */,
 				3D387A65274BFF6F00537F46 /* BinarySearchTreeDepthLinkedList.swift in Sources */,
 				3D54C705273ADBF0006A9F67 /* LongestSubstring.swift in Sources */,
+				3DC809B9279728AE00AD0D69 /* AsteroidCollision.swift in Sources */,
 				3D9F9FAD273D757500A9BD72 /* ImplementStrStr.swift in Sources */,
 				3D82A1A2275033B0004D6836 /* PopulatingNextRightPointers.swift in Sources */,
 				3D387A5F274BFF6F00537F46 /* ProjectBuildOrderNode.swift in Sources */,
@@ -2201,6 +2208,7 @@
 				3D3E6B8C274C09B100CC3893 /* CutTheSticksTests.swift in Sources */,
 				3D3E6B9D274C09B100CC3893 /* GridSearchTests.swift in Sources */,
 				3D3E6B10274C074800CC3893 /* LongestPalindromicSubstringTests.swift in Sources */,
+				3DC809BB279728D900AD0D69 /* AsteroidCollisionTests.swift in Sources */,
 				3D8E34B62756535300F5F768 /* NumberConnectedComponentsUndirectedGraphTests.swift in Sources */,
 				3D3E6AEB274C074800CC3893 /* MergeIntervalsTests.swift in Sources */,
 				3D3E6B0F274C074800CC3893 /* BinarySearchLeetCodeTests.swift in Sources */,

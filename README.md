@@ -24,14 +24,14 @@ Contains solutions to challenges found in:
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
 | "Path may not exist"| `isolated vertices`, `cycles` |
 | "Generate all", "All permutations" | `Backtracking (DFS)` |
-| "Sorted" | `Binary Search`, `Two pointers` |
+| "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Next greater element", "Next lesser element", "Iterating array comparing elements" | `Monotonic stack` |
 | "Longest sub...", "Smallest sub...", "Maximum points"| `Sliding window`|
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers`|
 | "Loop/cycle in a graph" | `Disjoint sets` |
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
-| "Compare neighbors in a string" | `Stack` |
+| "Compare neighbors in a string", "Comparing right to left elements"| `Stack` |
 | "Largest value", "Smallest value"| `Heap` |
 | "kth smallest", "kth largest", "kth frequent", "top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 + c1 == r2 + c2`|
