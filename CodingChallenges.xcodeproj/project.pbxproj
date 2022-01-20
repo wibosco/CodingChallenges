@@ -328,6 +328,8 @@
 		3D8B5EDF27987F48006CDD3D /* LinkedListCycleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B5EDE27987F48006CDD3D /* LinkedListCycleIITests.swift */; };
 		3D8B5EE12798AAE2006CDD3D /* LinkedListCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B5EE02798AAE2006CDD3D /* LinkedListCycle.swift */; };
 		3D8B5EE32798AB0D006CDD3D /* LinkedListCycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B5EE22798AB0D006CDD3D /* LinkedListCycleTests.swift */; };
+		3D8D44F927995FBE002E9832 /* HappyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D44F827995FBE002E9832 /* HappyNumber.swift */; };
+		3D8D44FB27996062002E9832 /* HappyNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D44FA27996062002E9832 /* HappyNumberTests.swift */; };
 		3D8E34B42756530C00F5F768 /* NumberConnectedComponentsUndirectedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E34B32756530C00F5F768 /* NumberConnectedComponentsUndirectedGraph.swift */; };
 		3D8E34B62756535300F5F768 /* NumberConnectedComponentsUndirectedGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E34B52756535300F5F768 /* NumberConnectedComponentsUndirectedGraphTests.swift */; };
 		3D8E34B8275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E34B7275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift */; };
@@ -800,6 +802,8 @@
 		3D8B5EDE27987F48006CDD3D /* LinkedListCycleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListCycleIITests.swift; sourceTree = "<group>"; };
 		3D8B5EE02798AAE2006CDD3D /* LinkedListCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListCycle.swift; sourceTree = "<group>"; };
 		3D8B5EE22798AB0D006CDD3D /* LinkedListCycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListCycleTests.swift; sourceTree = "<group>"; };
+		3D8D44F827995FBE002E9832 /* HappyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyNumber.swift; sourceTree = "<group>"; };
+		3D8D44FA27996062002E9832 /* HappyNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyNumberTests.swift; sourceTree = "<group>"; };
 		3D8E34B32756530C00F5F768 /* NumberConnectedComponentsUndirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConnectedComponentsUndirectedGraph.swift; sourceTree = "<group>"; };
 		3D8E34B52756535300F5F768 /* NumberConnectedComponentsUndirectedGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConnectedComponentsUndirectedGraphTests.swift; sourceTree = "<group>"; };
 		3D8E34B7275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarliestMomentWhenEveryoneBecomeFriends.swift; sourceTree = "<group>"; };
@@ -1199,6 +1203,7 @@
 				3D3BFF23275579A80079BBF5 /* GraphValidTreeTests.swift */,
 				3DC1E774277C9C5A00B2FE04 /* GroupShiftedStringsTests.swift */,
 				3D3E6ACD274C074800CC3893 /* GuessNumberHigherOrLowerTests.swift */,
+				3D8D44FA27996062002E9832 /* HappyNumberTests.swift */,
 				3D3E6ABE274C074800CC3893 /* ImplementStrStrTests.swift */,
 				3D3E6AC7274C074800CC3893 /* IntegerToRomanTests.swift */,
 				3D3E6ACE274C074800CC3893 /* IntersectionOfTwoArraysIITests.swift */,
@@ -1563,6 +1568,7 @@
 				3D3BFF21275579610079BBF5 /* GraphValidTree.swift */,
 				3DC1E772277C89F800B2FE04 /* GroupShiftedStrings.swift */,
 				3D3395C12745B1E8002EE4AC /* GuessNumberHigherOrLower.swift */,
+				3D8D44F827995FBE002E9832 /* HappyNumber.swift */,
 				3D9F9FAC273D757500A9BD72 /* ImplementStrStr.swift */,
 				3D54C702273ADBEF006A9F67 /* IntegerToRoman.swift */,
 				3D3879E1274859BD00537F46 /* IntersectionOfTwoArrays.swift */,
@@ -1941,6 +1947,7 @@
 				3DF50D7C275A3185000E78E2 /* SerializeDeserializeBinaryTree.swift in Sources */,
 				3D54C725273BEBC9006A9F67 /* GenerateParentheses.swift in Sources */,
 				3DC1E773277C89F800B2FE04 /* GroupShiftedStrings.swift in Sources */,
+				3D8D44F927995FBE002E9832 /* HappyNumber.swift in Sources */,
 				3D908C4127693C0E0090C077 /* GridSearch.swift in Sources */,
 				3D2CAB512789B6BB00286EE5 /* AccountsMerge.swift in Sources */,
 				3D7F702B278D9618007E223A /* MinimumAddToMakeParenthesesValid.swift in Sources */,
@@ -2259,6 +2266,7 @@
 				3DF6DA792774DE3100B81E07 /* AddStringsTests.swift in Sources */,
 				3D2A330127834D8B00909498 /* FindTheTownJudgeTests.swift in Sources */,
 				3D028EFE278F734C00FD65F8 /* MinimumRemoveToMakeValidParenthesesTests.swift in Sources */,
+				3D8D44FB27996062002E9832 /* HappyNumberTests.swift in Sources */,
 				3D3E6BA2274C09B100CC3893 /* BirthdayBarTests.swift in Sources */,
 				3D3E6B7F274C09B100CC3893 /* MigratoryBirdsTests.swift in Sources */,
 				3DCD370E2769EEEC00F46913 /* EvaluateReversePolishNotationTests.swift in Sources */,

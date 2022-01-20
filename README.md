@@ -28,7 +28,7 @@ Contains solutions to challenges found in:
 | "Next greater element", "Next lesser element", "Iterating array comparing elements" | `Monotonic stack` |
 | "Longest sub...", "Smallest sub...", "Maximum points"| `Sliding window`|
 | "In-place" | `Swap`|
-| "Loop/cycle in a linked list"| `Slow and Fast pointers`|
+| "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
 | "Loop/cycle in a graph" | `Disjoint sets` |
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
 | "Compare neighbors in a string", "Comparing right to left elements"| `Stack` |

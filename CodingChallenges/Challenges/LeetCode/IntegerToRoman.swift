@@ -31,7 +31,7 @@ struct IntegerToRoman {
             roman = romanNumerals[position][pop] + roman
             
             position += 1
-            num = num / 10
+            num /= 10
         }
         
         return roman
