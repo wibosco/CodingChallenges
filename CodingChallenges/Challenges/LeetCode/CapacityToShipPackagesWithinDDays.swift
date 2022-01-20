@@ -12,7 +12,7 @@ import Foundation
 //binary search
 struct CapacityToShipPackagesWithinDDays {
     
-    //Time: O(n) where `n` is number of elements in `weights`
+    //O(n log m) where `n` is number of elements in `weights` and `m` the search range
     //Space: O(1)
     //sorted
     //minimum
@@ -49,7 +49,7 @@ struct CapacityToShipPackagesWithinDDays {
             }
             
             if daysNeeded > days { //too many days required at this ship weight
-                left = mid + 1
+                left = mid + 1 //mid is too small, lets increase it
             } else {
                 right = mid // can carry the weight in the days but could the ship be smaller?
             }

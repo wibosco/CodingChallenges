@@ -332,6 +332,8 @@
 		3D8D44FB27996062002E9832 /* HappyNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D44FA27996062002E9832 /* HappyNumberTests.swift */; };
 		3D8D44FD27996F9D002E9832 /* UglyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D44FC27996F9D002E9832 /* UglyNumber.swift */; };
 		3D8D44FF27996FDA002E9832 /* UglyNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D44FE27996FDA002E9832 /* UglyNumberTests.swift */; };
+		3D8D450127997713002E9832 /* KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D450027997713002E9832 /* KokoEatingBananas.swift */; };
+		3D8D45032799773F002E9832 /* KokoEatingBananasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D45022799773F002E9832 /* KokoEatingBananasTests.swift */; };
 		3D8E34B42756530C00F5F768 /* NumberConnectedComponentsUndirectedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E34B32756530C00F5F768 /* NumberConnectedComponentsUndirectedGraph.swift */; };
 		3D8E34B62756535300F5F768 /* NumberConnectedComponentsUndirectedGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E34B52756535300F5F768 /* NumberConnectedComponentsUndirectedGraphTests.swift */; };
 		3D8E34B8275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E34B7275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift */; };
@@ -808,6 +810,8 @@
 		3D8D44FA27996062002E9832 /* HappyNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyNumberTests.swift; sourceTree = "<group>"; };
 		3D8D44FC27996F9D002E9832 /* UglyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UglyNumber.swift; sourceTree = "<group>"; };
 		3D8D44FE27996FDA002E9832 /* UglyNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UglyNumberTests.swift; sourceTree = "<group>"; };
+		3D8D450027997713002E9832 /* KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KokoEatingBananas.swift; sourceTree = "<group>"; };
+		3D8D45022799773F002E9832 /* KokoEatingBananasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KokoEatingBananasTests.swift; sourceTree = "<group>"; };
 		3D8E34B32756530C00F5F768 /* NumberConnectedComponentsUndirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConnectedComponentsUndirectedGraph.swift; sourceTree = "<group>"; };
 		3D8E34B52756535300F5F768 /* NumberConnectedComponentsUndirectedGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConnectedComponentsUndirectedGraphTests.swift; sourceTree = "<group>"; };
 		3D8E34B7275675ED00F5F768 /* EarliestMomentWhenEveryoneBecomeFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarliestMomentWhenEveryoneBecomeFriends.swift; sourceTree = "<group>"; };
@@ -1298,6 +1302,7 @@
 				3DD5B9DE2775F2B000ED2237 /* VerifyingAnAlienDictionaryTests.swift */,
 				3D51A05127668E7D00D70AE5 /* WallsAndGatesTests.swift */,
 				3D3E6AE0274C074800CC3893 /* ZigzagConversionTests.swift */,
+				3D8D45022799773F002E9832 /* KokoEatingBananasTests.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1580,6 +1585,7 @@
 				3D3879E52749911D00537F46 /* IntersectionOfTwoArraysII.swift */,
 				3D52FFCF279034B30075B41B /* KClosestPointsToOrigin.swift */,
 				3DCD371F276A9A5A00F46913 /* KeysAndRooms.swift */,
+				3D8D450027997713002E9832 /* KokoEatingBananas.swift */,
 				3DB8EB05277B4AB30051B93B /* KthLargestElementInArray.swift */,
 				3DF7EA6F2772793900B97559 /* KthSymbolInGrammar.swift */,
 				3D54C6FC273ADBEF006A9F67 /* LetterCombinations.swift */,
@@ -2058,6 +2064,7 @@
 				3DF7EA702772793900B97559 /* KthSymbolInGrammar.swift in Sources */,
 				3D908C4E27693C0E0090C077 /* MigratoryBirds.swift in Sources */,
 				3D8D44FD27996F9D002E9832 /* UglyNumber.swift in Sources */,
+				3D8D450127997713002E9832 /* KokoEatingBananas.swift in Sources */,
 				3D387A59274BFF6F00537F46 /* StackOfPlatesNode.swift in Sources */,
 				3DB8EB06277B4AB30051B93B /* KthLargestElementInArray.swift in Sources */,
 				3DCD370C2769EE6100F46913 /* EvaluateReversePolishNotation.swift in Sources */,
@@ -2180,6 +2187,7 @@
 				3D52FFD2279034EA0075B41B /* KClosestPointsToOriginTests.swift in Sources */,
 				3D3BFF24275579A80079BBF5 /* GraphValidTreeTests.swift in Sources */,
 				3D3E6B12274C074800CC3893 /* ZigzagConversionTests.swift in Sources */,
+				3D8D45032799773F002E9832 /* KokoEatingBananasTests.swift in Sources */,
 				3DA392A22768EC1700AE0A9B /* DailyTemperaturesTests.swift in Sources */,
 				3D3E6AF6274C074800CC3893 /* ValidParenthesesTests.swift in Sources */,
 				3D3E6B8E274C09B100CC3893 /* ManasaAndStonesTests.swift in Sources */,
