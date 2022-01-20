@@ -12,7 +12,7 @@ import Foundation
 //math
 struct HappyNumber {
     
-    //Time: O(m) where `m` is the possible values down to 1 or to loop
+    //Time: O(log n)
     //Space: O(1)
     //linked list
     //modulo
@@ -54,8 +54,8 @@ struct HappyNumber {
         return nextValue
     }
     
-    //Time: O(m) where `m` is the possible values down to 1 or to loop
-    //Space: O(m) where `m` is the possible values down to 1 or to loop
+    //Time: O(log n)
+    //Space: O(log n)
     //dictionary
     //modulo
     //
