@@ -55,6 +55,7 @@ struct TwoSumII {
         
         while left <= right {
             let mid = left + (right - left) / 2
+            
             if numbers[mid] == target {
                 return mid
             } else if numbers[mid] > target {

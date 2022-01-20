@@ -23,6 +23,7 @@ struct Sqrt {
         
         while left <= right {
             let mid = left + (right - left) / 2
+            
             let squared = mid * mid
             if squared == x {
                 return mid

@@ -20,6 +20,7 @@ struct PeakIndexMountainArray {
         
         while left < right {
             let mid = left + (right - left) / 2
+            
             if arr[mid] > arr[mid + 1] {
                 right = mid
             } else {

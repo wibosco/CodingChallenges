@@ -33,7 +33,7 @@ struct GuessNumberHigherOrLower {
         var left = 0
         var right = n
         
-        while right >= left {
+        while left <= right {
             let mid = left + (right - left) / 2
             let outcome = guess(mid)
             if outcome == 0 {

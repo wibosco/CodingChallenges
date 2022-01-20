@@ -28,6 +28,7 @@ struct ValidPerfectSquare {
         
         while left <= right {
             let mid = left + (right - left) / 2
+            
             let squared = mid * mid
             if squared == num {
                 return true

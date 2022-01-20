@@ -12,6 +12,7 @@ import Foundation
 //binary search
 //array
 struct SearchInRotatedSortedArray {
+    
     //Time: O(log n)
     static func searchAlt(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
@@ -20,7 +21,8 @@ struct SearchInRotatedSortedArray {
         //find pivot
         //binary search
         while left <= right {
-            let mid = (right + left) / 2
+            let mid = left + (right - left) / 2
+            
             if nums[mid] > nums[right] {
                 //pivot is to the right of mid
                 left = mid + 1
@@ -48,7 +50,8 @@ struct SearchInRotatedSortedArray {
         
         //binary search
         while left <= right {
-            let mid = (right + left) / 2
+            let mid = left + (right - left) / 2
+            
             if target == nums[mid] {
                 return mid
             } else if target > nums[mid] {
@@ -69,7 +72,8 @@ struct SearchInRotatedSortedArray {
         
         //find pivot and peform search
         while left <= right {
-            let mid = (right + left) / 2
+            let mid = left + (right - left) / 2
+            
             if target == nums[mid] {
                 return mid
             } else if nums[mid] > nums[right] {

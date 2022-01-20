@@ -20,6 +20,7 @@ struct SearchSortedArrayOfUnknownSize {
         
         while left <= right {
             let mid = left + (right - left) / 2
+            
             let val = reader.get(mid)
             if val == target {
                 return mid
