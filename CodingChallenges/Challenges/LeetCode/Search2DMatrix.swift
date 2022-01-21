@@ -15,10 +15,13 @@ struct Search2DMatrix {
     //Time: O(log c + log n) where `c` is the number of rows in `matrix` and `n` the number of elements in a row
     //Space: O(1)
     //matrix
+    //sorted
     //
     //Solution Description:
-    //As the matrix is sorted we can use binary search to first determine which row we should be searching in and then
-    //binary search to search that row for the target.
+    //As the matrix is sorted across both rows and columns we can use binary search to first search for which row we should
+    //search by searching the first column and selecting the row that the target might be in or returning true if we happen
+    //to find the target in that first column. Once we now which row to search we use binary search again to search that row.
+    //If we find the target we return true; if we don't find the target and exhaust the search space we return false
     static func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
         var columnLeft = 0
         var columnRight = matrix.count - 1
@@ -64,17 +67,18 @@ struct Search2DMatrix {
     //matrix
     //
     //Solution Description:
-    //As the matrix is sorted we can merge the rows into a single array and perform a binary search on single array.
+    //As the matrix is sorted we can merge the rows into a single array and perform a binary search on single array. By using
+    //binary search we are able to discard half the search space everytime we don't find the target
     static func searchMatrixMerge(_ matrix: [[Int]], _ target: Int) -> Bool {
         var array = [Int]()
-        for row in matrix {
+        for row in matrix { // O(n)
             array.append(contentsOf: row)
         }
         
         var left = 0
         var right = array.count - 1
         
-        while left <= right {
+        while left <= right { //O(log n)
             let mid = left + (right - left) / 2
             
             if array[mid] == target {
