@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/range-sum-of-bst/
-//BST
+//binary search tree
 struct RangeSumOfBST {
     
     //Time: O(n) where `n` is the number of nodes in the tree

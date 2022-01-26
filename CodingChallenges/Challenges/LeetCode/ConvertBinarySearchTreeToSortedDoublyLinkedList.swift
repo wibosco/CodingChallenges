@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/
-//BST
+//binary search tree
 struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
     
     //Time: O(n) where `n` is the number of nodes in the tree

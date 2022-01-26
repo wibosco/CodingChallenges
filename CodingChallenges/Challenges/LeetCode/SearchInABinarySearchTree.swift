@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/search-in-a-binary-search-tree/
-//BST
+//binary search tree
 struct SearchInABinarySearchTree {
     
     //Time: O(h), where `h` is the tree height - O(log⁡ n) in the average case, and O(n) in the worst case.

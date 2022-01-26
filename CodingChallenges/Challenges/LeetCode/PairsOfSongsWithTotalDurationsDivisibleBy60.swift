@@ -22,6 +22,8 @@ struct PairsOfSongsWithTotalDurationsDivisibleBy60 {
     //when attempting to find that pair we need to not search for the reminder directly but rather search for the difference between
     //60 and that reminder because that difference is what we need to fulfill the requirement that paired songs need to be
     //"(i + j) % 60 == 0"
+    //
+    //Similar to https://leetcode.com/problems/two-sum/
     static func numPairsDivisibleBy60(_ time: [Int]) -> Int {
         var reminders = [Int: Int]()
         var pairs = 0

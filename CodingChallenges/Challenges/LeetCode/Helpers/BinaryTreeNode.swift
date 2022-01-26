@@ -9,7 +9,7 @@
 import Foundation
 
 class BinaryTreeNode {
-    let val: Int
+    var val: Int
     
     var left: BinaryTreeNode?
     var right: BinaryTreeNode?

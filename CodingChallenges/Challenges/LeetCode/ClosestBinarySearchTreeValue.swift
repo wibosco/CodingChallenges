@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/closest-binary-search-tree-value/
-//BST
+//binary search tree
 struct ClosestBinarySearchTreeValue {
     
     //Time: O(log n)

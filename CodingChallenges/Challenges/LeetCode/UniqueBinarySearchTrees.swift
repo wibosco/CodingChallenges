@@ -9,7 +9,7 @@
 import Foundation
 
 //https://leetcode.com/problems/unique-binary-search-trees/
-//BST
+//binary search tree
 struct UniqueBinarySearchTrees {
     
     //Time: O(n^2)
