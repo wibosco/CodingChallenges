@@ -15,7 +15,7 @@ struct RecoverBinarySearchTree {
     //Time: O(n) where `n`  is the number of nodes in the tree
     //Space: O(n) where `n`  is the number of nodes in the tree stored in `inorder` array
     //array
-    //dfs
+    //DFS
     //inorder
     //
     //Solution Description:
@@ -53,13 +53,13 @@ struct RecoverBinarySearchTree {
             }
         }
         
-        guard let first = first, let second = second else {
+        guard let f = first, let s = second else {
             return
         }
         
-        let tmp = first.val
-        first.val = second.val
-        second.val = tmp
+        let tmp = f.val
+        f.val = s.val
+        s.val = tmp
     }
     
     private static func dfs(_ node: BinaryTreeNode?, _ inorder: inout [BinaryTreeNode]) {

@@ -12,25 +12,22 @@ import Foundation
 //graph theory
 struct DiameterOfNAryTree { //DiameterOfN-AryTree
     
-    //Time: O(n log n) where n is the numner of nodes in the tree
-    //Space: O(c) where c is the number of nodes at any level
+    //Time: O(n log n) where `n` is the numner of nodes in the tree
+    //Space: O(c) where `c` is the number of nodes at any level
     //DFS
     //
     //Solution Description:
-    //Remembering that a tree is made up of smaller trees we use DFS to traverse
-    //to the end of each branch of those trees. We are only interested in the two
-    //deepest branch in each subtree. We then compare the diameter of those deepest
-    //branch with the current deepest diameter to determine if we have a new
-    //deepest. Particular attention has to be paid to if a subtree only contains one
-    //initial node, as this is still a valid path and we shouldn't discard its subtree
-    //by insisting on each subtree having at least two children i.e.
+    //Remembering that a tree is made up of smaller trees we use DFS to traverse to the end of each branch of those trees.
+    //We are only interested in the two deepest branch in each subtree. We then compare the diameter of those deepest branch
+    //with the current deepest diameter to determine if we have a new deepest. Particular attention has to be paid to if a
+    //subtree only contains one initial node, as this is still a valid path and we shouldn't discard its subtree by insisting
+    //on each subtree having at least two children i.e.
     //                  1
     //                  2
     //                3   4
     //              5   6
-    //If we insisted on each subtreee needing to have two children we would never get
-    //down to [3, 4, 5, 6] where the longest diameter is to be found
-    //Eventually we get back to the root where we stop.
+    //If we insisted on each subtreee needing to have two children we would never get down to [3, 4, 5, 6] where the longest
+    //diameter is to be found eventually we get back to the root where we stop.
     //
     //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707
     //for difference beteen height and depth

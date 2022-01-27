@@ -15,16 +15,19 @@ struct ValidateBinarySearchTree {
     //Time: O(n)
     //Space: O(n) - stack calls
     //pre-order
+    //
+    //Solution Description:
+    //
     static func isValidBST(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return true
         }
         
-        return preOrderValidate(n: root, lower: Int.min, upper: Int.max)
+        return preOrder(root, Int.min, Int.max)
     }
     
-    private static func preOrderValidate(n: BinaryTreeNode?, lower: Int?, upper: Int?) -> Bool {
-        guard let n = n, let lower = lower, let upper = upper else {
+    private static func preOrder(_ n: BinaryTreeNode?, _ lower: Int, _ upper: Int) -> Bool {
+        guard let n = n else {
             return true
         }
         
@@ -32,32 +35,34 @@ struct ValidateBinarySearchTree {
             return false
         }
         
-        return preOrderValidate(n: n.left, lower: lower, upper: n.val) &&
-            preOrderValidate(n: n.right, lower: n.val, upper: upper) //both need to be valid
+        return preOrder(n.left, lower, n.val) && preOrder(n.right, n.val, upper) //both need to be valid
     }
     
     //Time: O(n), actually O(2n)
     //Space: O(n), actually O(2n) - stack calls and visited array
     //in-order
+    //sorted
+    //
+    //Solution Description:
+    //A binary search tree follows the princple that nodes to the left of root are less and nodes to the right are greater.
+    //This property means that an in-order traversal of a binary tree should result in an ascending sorted array of that
+    //trees nodes if it is a binary search tree. So we perform an in-order traversal of this tree and check if it's nodes
+    //are in ascending order
     static func isValidBSTOrder(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return true
         }
         
         var visited = [Int]()
+        
         inOrder(n: root, visited: &visited) //Time: O(n)
         
-        var i = 1
-        while i < visited.count { //Time: O(n)
-            let v = visited[i]
-            let pre = visited[(i - 1)]
-            if v <= pre {
+        for i in 0..<(visited.count - 1) {
+            if visited[i] > visited[(i + 1)] {
                 return false
             }
-            
-            i += 1
         }
-        
+    
         return true
     }
     

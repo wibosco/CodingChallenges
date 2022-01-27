@@ -16,10 +16,13 @@ struct SymmetricTree {
     //Space: O(log n) - best, O(h) - worse (height of the tree)
     //DFS
     //recursion
+    //matching
     //
     //Solution Description:
     //1. Perform DFS traversal of two opposite branches (left and right or right and left) together
     //2. Compare node at each level to ensure they match
+    //
+    //Similar to https://leetcode.com/problems/subtree-of-another-tree/
     static func isSymmetric(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return false

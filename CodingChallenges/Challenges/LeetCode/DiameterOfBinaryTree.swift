@@ -18,11 +18,9 @@ struct DiameterOfBinaryTree {
     //bottom-up
     //
     //Solution Description:
-    //Remembering that a tree is made up of smaller trees we use DFS to
-    //traverse to the end of each branch of those trees. As the traversal
-    //calls returns we sum the left and right depth of that particular
-    //tree and compare it against the deepest diameter that we current have.
-    //Eventually we get back to the root where we stop.
+    //Remembering that a tree is made up of smaller trees we use DFS to traverse to the end of each branch of those
+    //trees. As the traversal calls returns we sum the left and right depth of that particular tree and compare it
+    //against the deepest diameter that we current have. Eventually we get back to the root where we stop.
     //
     //See https://leetcode.com/problems/maximum-depth-of-binary-tree/ for details
     //on how to calculate the depth of a tree
