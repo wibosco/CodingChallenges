@@ -14,6 +14,7 @@ struct FindSmallestLetterGreaterThanTarget {
     //Time: O(log n)
     //Space: O(1)
     //binary search
+    //divide and conquer
     //
     //Solution Description:
     //As `letters` is sorted, we use binary search to iterate through the array. At the end `left`

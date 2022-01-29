@@ -16,6 +16,7 @@ struct CapacityToShipPackagesWithinDDays {
     //Space: O(1)
     //sorted
     //minimum
+    //divide and conquer
     //
     //Solution Description:
     //In order for a any ship to ship `weights`, it needs to at a minimum be able to ship the largest weight in `weights` and

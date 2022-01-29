@@ -15,6 +15,7 @@ struct ClosestBinarySearchTreeValue {
     //Time: O(log n)
     //Space: O(1)
     //binary search
+    //divide and conquer
     //
     //Solution Description:
     //We traverse the tree at each node we calculate the delta between the target and that node. If the delta is

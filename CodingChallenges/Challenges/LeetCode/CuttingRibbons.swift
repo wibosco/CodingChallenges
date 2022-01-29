@@ -16,6 +16,7 @@ struct CuttingRibbons {
     //Space: O(1)
     //array
     //maximum
+    //divide and conquer
     //
     //Solution Description:
     //The minimum length a ribbbon can be 1 and the maximum length is the maximum  length in `ribbbons`. We can treat

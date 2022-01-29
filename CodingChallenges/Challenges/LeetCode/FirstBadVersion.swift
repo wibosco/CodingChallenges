@@ -28,6 +28,7 @@ struct FirstBadVersion {
     
     //Time: O(log n)
     //Space: O(1)
+    //divide and conquer
     //
     //Solution Description:
     //1. Treating `versions` as an array containing `true` and `false` values

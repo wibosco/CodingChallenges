@@ -10,11 +10,12 @@ import Foundation
 
 //https://leetcode.com/problems/find-k-closest-elements/
 //binary search
-//two pointers
-//sliding window
 struct FindKClosestElements {
     
     //Time: O((log n) + k)
+    //divide and conquer
+    //two pointers
+    //sliding window
     static func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
         guard arr.count > k else {
             return arr

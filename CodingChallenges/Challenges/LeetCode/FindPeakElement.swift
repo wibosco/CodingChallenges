@@ -9,12 +9,13 @@
 import Foundation
 
 //https://leetcode.com/problems/find-peak-element/
-//binary search
 //array
 struct FindPeakElement {
     
     //Time: O(log n)
     //Space: O(1)
+    //binary search
+    //divide and conquer
     //
     //Solution Description:
     //Use binary search to search through sorted array nums. Find peak by comparing

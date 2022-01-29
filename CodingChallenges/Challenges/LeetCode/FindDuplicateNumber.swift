@@ -45,6 +45,7 @@ struct FindDuplicateNumber {
     
     //Time: O(n log n)
     //binary search
+    //divide and conquer
     static func findDuplicateBinarySearch(_ nums: [Int]) -> Int {
         var left = 1
         var right = nums.count - 1

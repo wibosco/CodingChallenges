@@ -15,6 +15,7 @@ struct BinarySearchLeetCode {
     //Time: O(log n) where `n` is the number of elements in `nums`
     //Space: O(1)
     //sorted
+    //divide and conquer
     //
     //Solution Description:
     //Use binary search to find the `target` in `nums`. We do ths by selecting the mid element of `nums` and peformin a
