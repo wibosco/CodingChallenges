@@ -16,10 +16,11 @@ struct MergeTwoSortedLists {
     //Space: O(m+n) recursive call stack, where `m` is the length of l1 and `n` is the length of l2
     //sorting
     //recursive
+    //merge sort
     //
     //Solution Description:
-    //Recursively walk through l1 and l2 choosing the smaller node from each list to add to the `merged` list.
-    //Continue until one list is exhausted and then add the remaining of the other to `merged`
+    //Recursively walk through l1 and l2 choosing the smaller node from each list to add to the `merged` list. Continue until one list is exhausted
+    //and then add the remaining of the other to `merged`
     static func mergeTwoListsRecursive(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         guard l1 != nil else {
             return l2
@@ -62,8 +63,8 @@ struct MergeTwoSortedLists {
     //iterative
     //
     //Solution Description:
-    //Iteratively walk through l1 and l2 choosing the smaller node from each list to add to the `merged` list.
-    //Continue until one list is exhausted and then add the remaining of the other to `merged`
+    //Iteratively walk through l1 and l2 choosing the smaller node from each list to add to the `merged` list. Continue until one list is exhausted
+    //and then add the remaining of the other to `merged`
     static func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         guard l1 != nil else {
             return l2
