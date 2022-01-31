@@ -18,9 +18,27 @@ default_platform(:ios)
 platform :ios do
   desc "Runs unit tests"
   lane :run_unit_tests do
-    scan(
-      scheme: "CodingChallenges",
-      skip_build: true
+    # scan(
+    #   workspace: "CodingChallenges.xcworkspace",
+    #   scheme: "LeetCode",
+    #   build_for_testing: true
+    # )
+    run_tests(
+      workspace: "CodingChallenges.xcworkspace",
+      scheme: "LeetCode"
     )
+    run_tests(
+      workspace: "CodingChallenges.xcworkspace",
+      scheme: "HackerRank"
+    )
+    run_tests(
+      workspace: "CodingChallenges.xcworkspace",
+      scheme: "CrackingTheCodingInterview"
+    )
+    # scan(
+    #   workspace: "CodingChallenges.xcworkspace",
+    #   scheme: "CrackingTheCodingInterview",
+    #   build_for_testing: true
+    # )
   end
 end

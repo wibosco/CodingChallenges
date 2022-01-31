@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D5C8E9227A7F2A30035C399 /* HackerRank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C8E8927A7F2A20035C399 /* HackerRank.framework */; };
+		3D5C8F3E27A7F3A00035C399 /* GridSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F0A27A7F3A00035C399 /* GridSearch.swift */; };
+		3D5C8F3F27A7F3A00035C399 /* CavityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F0B27A7F3A00035C399 /* CavityMap.swift */; };
+		3D5C8F4027A7F3A00035C399 /* Kaprekar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F0C27A7F3A00035C399 /* Kaprekar.swift */; };
+		3D5C8F4127A7F3A00035C399 /* TimeInWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F0D27A7F3A00035C399 /* TimeInWords.swift */; };
+		3D5C8F4227A7F3A00035C399 /* RunningTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F0E27A7F3A00035C399 /* RunningTime.swift */; };
+		3D5C8F4327A7F3A00035C399 /* ACMICPCTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F0F27A7F3A00035C399 /* ACMICPCTeam.swift */; };
+		3D5C8F4427A7F3A00035C399 /* LibraryFine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1027A7F3A00035C399 /* LibraryFine.swift */; };
+		3D5C8F4527A7F3A00035C399 /* MissingNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1127A7F3A00035C399 /* MissingNumbers.swift */; };
+		3D5C8F4627A7F3A00035C399 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1227A7F3A00035C399 /* Beast.swift */; };
+		3D5C8F4727A7F3A00035C399 /* Kangaroo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1327A7F3A00035C399 /* Kangaroo.swift */; };
+		3D5C8F4827A7F3A00035C399 /* BFSShortReach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1427A7F3A00035C399 /* BFSShortReach.swift */; };
+		3D5C8F4927A7F3A00035C399 /* InsertionSort2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1527A7F3A00035C399 /* InsertionSort2.swift */; };
+		3D5C8F4A27A7F3A00035C399 /* Percentages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1627A7F3A00035C399 /* Percentages.swift */; };
+		3D5C8F4B27A7F3A00035C399 /* MigratoryBirds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1727A7F3A00035C399 /* MigratoryBirds.swift */; };
+		3D5C8F4C27A7F3A00035C399 /* DivisibleSumPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1827A7F3A00035C399 /* DivisibleSumPairs.swift */; };
+		3D5C8F4D27A7F3A00035C399 /* SherlockAndArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1927A7F3A00035C399 /* SherlockAndArray.swift */; };
+		3D5C8F4E27A7F3A00035C399 /* CutTheSticks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1A27A7F3A00035C399 /* CutTheSticks.swift */; };
+		3D5C8F4F27A7F3A00035C399 /* GradingStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1B27A7F3A00035C399 /* GradingStudents.swift */; };
+		3D5C8F5027A7F3A00035C399 /* ChocolateFeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1C27A7F3A00035C399 /* ChocolateFeast.swift */; };
+		3D5C8F5127A7F3A00035C399 /* SaveThePrisoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1D27A7F3A00035C399 /* SaveThePrisoner.swift */; };
+		3D5C8F5227A7F3A00035C399 /* InsertionSort1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1E27A7F3A00035C399 /* InsertionSort1.swift */; };
+		3D5C8F5327A7F3A00035C399 /* MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F1F27A7F3A00035C399 /* MaximumSubarray.swift */; };
+		3D5C8F5427A7F3A00035C399 /* IceCreamParlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2027A7F3A00035C399 /* IceCreamParlor.swift */; };
+		3D5C8F5527A7F3A00035C399 /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2127A7F3A00035C399 /* TimeConverter.swift */; };
+		3D5C8F5627A7F3A00035C399 /* BreakingTheRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2227A7F3A00035C399 /* BreakingTheRecords.swift */; };
+		3D5C8F5727A7F3A00035C399 /* OrganizingContainersOfBalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2327A7F3A00035C399 /* OrganizingContainersOfBalls.swift */; };
+		3D5C8F5827A7F3A00035C399 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2427A7F3A00035C399 /* AppleAndOrange.swift */; };
+		3D5C8F5927A7F3A00035C399 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2527A7F3A00035C399 /* Encryption.swift */; };
+		3D5C8F5A27A7F3A00035C399 /* BirthdayCakeCandles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2627A7F3A00035C399 /* BirthdayCakeCandles.swift */; };
+		3D5C8F5B27A7F3A00035C399 /* Staircase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2727A7F3A00035C399 /* Staircase.swift */; };
+		3D5C8F5C27A7F3A00035C399 /* MaximizeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2827A7F3A00035C399 /* MaximizeSum.swift */; };
+		3D5C8F5D27A7F3A00035C399 /* PrimsMST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2927A7F3A00035C399 /* PrimsMST.swift */; };
+		3D5C8F5E27A7F3A00035C399 /* BirthdayBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2A27A7F3A00035C399 /* BirthdayBar.swift */; };
+		3D5C8F5F27A7F3A00035C399 /* NewYearChaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2B27A7F3A00035C399 /* NewYearChaos.swift */; };
+		3D5C8F6027A7F3A00035C399 /* FindDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2C27A7F3A00035C399 /* FindDigits.swift */; };
+		3D5C8F6127A7F3A00035C399 /* CaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2D27A7F3A00035C399 /* CaesarCipher.swift */; };
+		3D5C8F6227A7F3A00035C399 /* SherlockSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2E27A7F3A00035C399 /* SherlockSquares.swift */; };
+		3D5C8F6327A7F3A00035C399 /* UtopianTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F2F27A7F3A00035C399 /* UtopianTree.swift */; };
+		3D5C8F6427A7F3A00035C399 /* MinMaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3027A7F3A00035C399 /* MinMaxSum.swift */; };
+		3D5C8F6527A7F3A00035C399 /* DikshasBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3127A7F3A00035C399 /* DikshasBirthday.swift */; };
+		3D5C8F6627A7F3A00035C399 /* ServiceLane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3227A7F3A00035C399 /* ServiceLane.swift */; };
+		3D5C8F6727A7F3A10035C399 /* ManasaAndStones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3327A7F3A00035C399 /* ManasaAndStones.swift */; };
+		3D5C8F6827A7F3A10035C399 /* Summing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3427A7F3A00035C399 /* Summing.swift */; };
+		3D5C8F6927A7F3A10035C399 /* SortingIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3527A7F3A00035C399 /* SortingIntro.swift */; };
+		3D5C8F6A27A7F3A10035C399 /* AngryProfessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3627A7F3A00035C399 /* AngryProfessor.swift */; };
+		3D5C8F6B27A7F3A10035C399 /* MagicSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3727A7F3A00035C399 /* MagicSquare.swift */; };
+		3D5C8F6C27A7F3A10035C399 /* CompareTheTriplets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3827A7F3A00035C399 /* CompareTheTriplets.swift */; };
+		3D5C8F6D27A7F3A10035C399 /* BiggerIsGreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3927A7F3A00035C399 /* BiggerIsGreater.swift */; };
+		3D5C8F6E27A7F3A10035C399 /* EvenTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3A27A7F3A00035C399 /* EvenTree.swift */; };
+		3D5C8F6F27A7F3A10035C399 /* LarrysArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3B27A7F3A00035C399 /* LarrysArray.swift */; };
+		3D5C8F7027A7F3A10035C399 /* LisasWorkbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3C27A7F3A00035C399 /* LisasWorkbook.swift */; };
+		3D5C8F7127A7F3A10035C399 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F3D27A7F3A00035C399 /* QuickSort.swift */; };
+		3D5C8FA727A7F3B00035C399 /* BeastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7327A7F3B00035C399 /* BeastTests.swift */; };
+		3D5C8FA827A7F3B00035C399 /* OrganizingContainersOfBallsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7427A7F3B00035C399 /* OrganizingContainersOfBallsTests.swift */; };
+		3D5C8FA927A7F3B00035C399 /* MigratoryBirdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7527A7F3B00035C399 /* MigratoryBirdsTests.swift */; };
+		3D5C8FAA27A7F3B00035C399 /* CompareTheTripletsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7627A7F3B00035C399 /* CompareTheTripletsTests.swift */; };
+		3D5C8FAB27A7F3B00035C399 /* FindDigitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7727A7F3B00035C399 /* FindDigitsTests.swift */; };
+		3D5C8FAC27A7F3B00035C399 /* MinMaxSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7827A7F3B00035C399 /* MinMaxSumTests.swift */; };
+		3D5C8FAD27A7F3B00035C399 /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7927A7F3B00035C399 /* QuickSortTests.swift */; };
+		3D5C8FAE27A7F3B00035C399 /* TimeConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7A27A7F3B00035C399 /* TimeConverterTests.swift */; };
+		3D5C8FAF27A7F3B00035C399 /* MagicSqaureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7B27A7F3B00035C399 /* MagicSqaureTests.swift */; };
+		3D5C8FB027A7F3B00035C399 /* AngryProfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7C27A7F3B00035C399 /* AngryProfessorTests.swift */; };
+		3D5C8FB127A7F3B00035C399 /* InsertionSort1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7D27A7F3B00035C399 /* InsertionSort1Tests.swift */; };
+		3D5C8FB227A7F3B00035C399 /* DikshasBirthdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7E27A7F3B00035C399 /* DikshasBirthdayTests.swift */; };
+		3D5C8FB327A7F3B00035C399 /* BreakingTheRecordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F7F27A7F3B00035C399 /* BreakingTheRecordsTests.swift */; };
+		3D5C8FB427A7F3B00035C399 /* MissingNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8027A7F3B00035C399 /* MissingNumbersTests.swift */; };
+		3D5C8FB527A7F3B00035C399 /* CaesarCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8127A7F3B00035C399 /* CaesarCipherTests.swift */; };
+		3D5C8FB627A7F3B00035C399 /* CutTheSticksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8227A7F3B00035C399 /* CutTheSticksTests.swift */; };
+		3D5C8FB727A7F3B00035C399 /* PrimsMSTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8327A7F3B00035C399 /* PrimsMSTTests.swift */; };
+		3D5C8FB827A7F3B00035C399 /* ManasaAndStonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8427A7F3B00035C399 /* ManasaAndStonesTests.swift */; };
+		3D5C8FB927A7F3B10035C399 /* SaveThePrisonerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8527A7F3B00035C399 /* SaveThePrisonerTests.swift */; };
+		3D5C8FBA27A7F3B10035C399 /* BiggerIsGreaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8627A7F3B00035C399 /* BiggerIsGreaterTests.swift */; };
+		3D5C8FBB27A7F3B10035C399 /* ChocolateFeastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8727A7F3B00035C399 /* ChocolateFeastTests.swift */; };
+		3D5C8FBC27A7F3B10035C399 /* SherlockSquaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8827A7F3B00035C399 /* SherlockSquaresTests.swift */; };
+		3D5C8FBD27A7F3B10035C399 /* LibraryFineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8927A7F3B00035C399 /* LibraryFineTests.swift */; };
+		3D5C8FBE27A7F3B10035C399 /* EvenTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8A27A7F3B00035C399 /* EvenTreeTests.swift */; };
+		3D5C8FBF27A7F3B10035C399 /* NewYearChaosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8B27A7F3B00035C399 /* NewYearChaosTests.swift */; };
+		3D5C8FC027A7F3B10035C399 /* ServiceLaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8C27A7F3B00035C399 /* ServiceLaneTests.swift */; };
+		3D5C8FC127A7F3B10035C399 /* SortingIntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8D27A7F3B00035C399 /* SortingIntroTests.swift */; };
+		3D5C8FC227A7F3B10035C399 /* CavityMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8E27A7F3B00035C399 /* CavityMapTests.swift */; };
+		3D5C8FC327A7F3B10035C399 /* BFSShortReachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F8F27A7F3B00035C399 /* BFSShortReachTests.swift */; };
+		3D5C8FC427A7F3B10035C399 /* SummingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9027A7F3B00035C399 /* SummingTests.swift */; };
+		3D5C8FC527A7F3B10035C399 /* SherlockAndArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9127A7F3B00035C399 /* SherlockAndArrayTests.swift */; };
+		3D5C8FC627A7F3B10035C399 /* DivisibleSumPairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9227A7F3B00035C399 /* DivisibleSumPairsTests.swift */; };
+		3D5C8FC727A7F3B10035C399 /* GridSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9327A7F3B00035C399 /* GridSearchTests.swift */; };
+		3D5C8FC827A7F3B10035C399 /* InsertionSort2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9427A7F3B00035C399 /* InsertionSort2Tests.swift */; };
+		3D5C8FC927A7F3B10035C399 /* AppleAndOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9527A7F3B00035C399 /* AppleAndOrange.swift */; };
+		3D5C8FCA27A7F3B10035C399 /* GradingStudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9627A7F3B00035C399 /* GradingStudentsTests.swift */; };
+		3D5C8FCB27A7F3B10035C399 /* KangarooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9727A7F3B00035C399 /* KangarooTests.swift */; };
+		3D5C8FCC27A7F3B10035C399 /* BirthdayBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9827A7F3B00035C399 /* BirthdayBarTests.swift */; };
+		3D5C8FCD27A7F3B10035C399 /* LarrysArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9927A7F3B00035C399 /* LarrysArrayTests.swift */; };
+		3D5C8FCE27A7F3B10035C399 /* MaximumSubarrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9A27A7F3B00035C399 /* MaximumSubarrayTests.swift */; };
+		3D5C8FCF27A7F3B10035C399 /* ACMICPCTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9B27A7F3B00035C399 /* ACMICPCTeamTests.swift */; };
+		3D5C8FD027A7F3B10035C399 /* MaximizeSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9C27A7F3B00035C399 /* MaximizeSumTests.swift */; };
+		3D5C8FD127A7F3B10035C399 /* RunningTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9D27A7F3B00035C399 /* RunningTimeTests.swift */; };
+		3D5C8FD227A7F3B10035C399 /* IceCreamParlorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9E27A7F3B00035C399 /* IceCreamParlorTests.swift */; };
+		3D5C8FD327A7F3B10035C399 /* KaprekarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8F9F27A7F3B00035C399 /* KaprekarTests.swift */; };
+		3D5C8FD427A7F3B10035C399 /* StaircaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8FA027A7F3B00035C399 /* StaircaseTests.swift */; };
+		3D5C8FD527A7F3B10035C399 /* LisasWorkbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8FA127A7F3B00035C399 /* LisasWorkbookTests.swift */; };
+		3D5C8FD627A7F3B10035C399 /* UtopianTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8FA227A7F3B00035C399 /* UtopianTreeTests.swift */; };
+		3D5C8FD727A7F3B10035C399 /* PercentagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8FA327A7F3B00035C399 /* PercentagesTests.swift */; };
+		3D5C8FD827A7F3B10035C399 /* TimeInWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8FA427A7F3B00035C399 /* TimeInWordsTests.swift */; };
+		3D5C8FD927A7F3B10035C399 /* EncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8FA527A7F3B00035C399 /* EncryptionTests.swift */; };
+		3D5C8FDA27A7F3B10035C399 /* BirthdayCakeCandlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C8FA627A7F3B00035C399 /* BirthdayCakeCandlesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D5C8E9327A7F2A30035C399 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D5C8E8027A7F2A20035C399 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D5C8E8827A7F2A20035C399;
+			remoteInfo = HackerRank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D5C8E8927A7F2A20035C399 /* HackerRank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HackerRank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5C8E9127A7F2A30035C399 /* HackerRankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerRankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5C8F0A27A7F3A00035C399 /* GridSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearch.swift; sourceTree = "<group>"; };
+		3D5C8F0B27A7F3A00035C399 /* CavityMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMap.swift; sourceTree = "<group>"; };
+		3D5C8F0C27A7F3A00035C399 /* Kaprekar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kaprekar.swift; sourceTree = "<group>"; };
+		3D5C8F0D27A7F3A00035C399 /* TimeInWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWords.swift; sourceTree = "<group>"; };
+		3D5C8F0E27A7F3A00035C399 /* RunningTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningTime.swift; sourceTree = "<group>"; };
+		3D5C8F0F27A7F3A00035C399 /* ACMICPCTeam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACMICPCTeam.swift; sourceTree = "<group>"; };
+		3D5C8F1027A7F3A00035C399 /* LibraryFine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryFine.swift; sourceTree = "<group>"; };
+		3D5C8F1127A7F3A00035C399 /* MissingNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissingNumbers.swift; sourceTree = "<group>"; };
+		3D5C8F1227A7F3A00035C399 /* Beast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beast.swift; sourceTree = "<group>"; };
+		3D5C8F1327A7F3A00035C399 /* Kangaroo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kangaroo.swift; sourceTree = "<group>"; };
+		3D5C8F1427A7F3A00035C399 /* BFSShortReach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSShortReach.swift; sourceTree = "<group>"; };
+		3D5C8F1527A7F3A00035C399 /* InsertionSort2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort2.swift; sourceTree = "<group>"; };
+		3D5C8F1627A7F3A00035C399 /* Percentages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentages.swift; sourceTree = "<group>"; };
+		3D5C8F1727A7F3A00035C399 /* MigratoryBirds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratoryBirds.swift; sourceTree = "<group>"; };
+		3D5C8F1827A7F3A00035C399 /* DivisibleSumPairs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisibleSumPairs.swift; sourceTree = "<group>"; };
+		3D5C8F1927A7F3A00035C399 /* SherlockAndArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SherlockAndArray.swift; sourceTree = "<group>"; };
+		3D5C8F1A27A7F3A00035C399 /* CutTheSticks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutTheSticks.swift; sourceTree = "<group>"; };
+		3D5C8F1B27A7F3A00035C399 /* GradingStudents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingStudents.swift; sourceTree = "<group>"; };
+		3D5C8F1C27A7F3A00035C399 /* ChocolateFeast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateFeast.swift; sourceTree = "<group>"; };
+		3D5C8F1D27A7F3A00035C399 /* SaveThePrisoner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveThePrisoner.swift; sourceTree = "<group>"; };
+		3D5C8F1E27A7F3A00035C399 /* InsertionSort1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort1.swift; sourceTree = "<group>"; };
+		3D5C8F1F27A7F3A00035C399 /* MaximumSubarray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumSubarray.swift; sourceTree = "<group>"; };
+		3D5C8F2027A7F3A00035C399 /* IceCreamParlor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlor.swift; sourceTree = "<group>"; };
+		3D5C8F2127A7F3A00035C399 /* TimeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
+		3D5C8F2227A7F3A00035C399 /* BreakingTheRecords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakingTheRecords.swift; sourceTree = "<group>"; };
+		3D5C8F2327A7F3A00035C399 /* OrganizingContainersOfBalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizingContainersOfBalls.swift; sourceTree = "<group>"; };
+		3D5C8F2427A7F3A00035C399 /* AppleAndOrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
+		3D5C8F2527A7F3A00035C399 /* Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		3D5C8F2627A7F3A00035C399 /* BirthdayCakeCandles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandles.swift; sourceTree = "<group>"; };
+		3D5C8F2727A7F3A00035C399 /* Staircase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staircase.swift; sourceTree = "<group>"; };
+		3D5C8F2827A7F3A00035C399 /* MaximizeSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximizeSum.swift; sourceTree = "<group>"; };
+		3D5C8F2927A7F3A00035C399 /* PrimsMST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimsMST.swift; sourceTree = "<group>"; };
+		3D5C8F2A27A7F3A00035C399 /* BirthdayBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayBar.swift; sourceTree = "<group>"; };
+		3D5C8F2B27A7F3A00035C399 /* NewYearChaos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaos.swift; sourceTree = "<group>"; };
+		3D5C8F2C27A7F3A00035C399 /* FindDigits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindDigits.swift; sourceTree = "<group>"; };
+		3D5C8F2D27A7F3A00035C399 /* CaesarCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarCipher.swift; sourceTree = "<group>"; };
+		3D5C8F2E27A7F3A00035C399 /* SherlockSquares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SherlockSquares.swift; sourceTree = "<group>"; };
+		3D5C8F2F27A7F3A00035C399 /* UtopianTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtopianTree.swift; sourceTree = "<group>"; };
+		3D5C8F3027A7F3A00035C399 /* MinMaxSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxSum.swift; sourceTree = "<group>"; };
+		3D5C8F3127A7F3A00035C399 /* DikshasBirthday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DikshasBirthday.swift; sourceTree = "<group>"; };
+		3D5C8F3227A7F3A00035C399 /* ServiceLane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLane.swift; sourceTree = "<group>"; };
+		3D5C8F3327A7F3A00035C399 /* ManasaAndStones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManasaAndStones.swift; sourceTree = "<group>"; };
+		3D5C8F3427A7F3A00035C399 /* Summing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summing.swift; sourceTree = "<group>"; };
+		3D5C8F3527A7F3A00035C399 /* SortingIntro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingIntro.swift; sourceTree = "<group>"; };
+		3D5C8F3627A7F3A00035C399 /* AngryProfessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngryProfessor.swift; sourceTree = "<group>"; };
+		3D5C8F3727A7F3A00035C399 /* MagicSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicSquare.swift; sourceTree = "<group>"; };
+		3D5C8F3827A7F3A00035C399 /* CompareTheTriplets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareTheTriplets.swift; sourceTree = "<group>"; };
+		3D5C8F3927A7F3A00035C399 /* BiggerIsGreater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiggerIsGreater.swift; sourceTree = "<group>"; };
+		3D5C8F3A27A7F3A00035C399 /* EvenTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenTree.swift; sourceTree = "<group>"; };
+		3D5C8F3B27A7F3A00035C399 /* LarrysArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LarrysArray.swift; sourceTree = "<group>"; };
+		3D5C8F3C27A7F3A00035C399 /* LisasWorkbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbook.swift; sourceTree = "<group>"; };
+		3D5C8F3D27A7F3A00035C399 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		3D5C8F7327A7F3B00035C399 /* BeastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeastTests.swift; sourceTree = "<group>"; };
+		3D5C8F7427A7F3B00035C399 /* OrganizingContainersOfBallsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizingContainersOfBallsTests.swift; sourceTree = "<group>"; };
+		3D5C8F7527A7F3B00035C399 /* MigratoryBirdsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigratoryBirdsTests.swift; sourceTree = "<group>"; };
+		3D5C8F7627A7F3B00035C399 /* CompareTheTripletsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareTheTripletsTests.swift; sourceTree = "<group>"; };
+		3D5C8F7727A7F3B00035C399 /* FindDigitsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindDigitsTests.swift; sourceTree = "<group>"; };
+		3D5C8F7827A7F3B00035C399 /* MinMaxSumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxSumTests.swift; sourceTree = "<group>"; };
+		3D5C8F7927A7F3B00035C399 /* QuickSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
+		3D5C8F7A27A7F3B00035C399 /* TimeConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConverterTests.swift; sourceTree = "<group>"; };
+		3D5C8F7B27A7F3B00035C399 /* MagicSqaureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicSqaureTests.swift; sourceTree = "<group>"; };
+		3D5C8F7C27A7F3B00035C399 /* AngryProfessorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngryProfessorTests.swift; sourceTree = "<group>"; };
+		3D5C8F7D27A7F3B00035C399 /* InsertionSort1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort1Tests.swift; sourceTree = "<group>"; };
+		3D5C8F7E27A7F3B00035C399 /* DikshasBirthdayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DikshasBirthdayTests.swift; sourceTree = "<group>"; };
+		3D5C8F7F27A7F3B00035C399 /* BreakingTheRecordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakingTheRecordsTests.swift; sourceTree = "<group>"; };
+		3D5C8F8027A7F3B00035C399 /* MissingNumbersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissingNumbersTests.swift; sourceTree = "<group>"; };
+		3D5C8F8127A7F3B00035C399 /* CaesarCipherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarCipherTests.swift; sourceTree = "<group>"; };
+		3D5C8F8227A7F3B00035C399 /* CutTheSticksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutTheSticksTests.swift; sourceTree = "<group>"; };
+		3D5C8F8327A7F3B00035C399 /* PrimsMSTTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimsMSTTests.swift; sourceTree = "<group>"; };
+		3D5C8F8427A7F3B00035C399 /* ManasaAndStonesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManasaAndStonesTests.swift; sourceTree = "<group>"; };
+		3D5C8F8527A7F3B00035C399 /* SaveThePrisonerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveThePrisonerTests.swift; sourceTree = "<group>"; };
+		3D5C8F8627A7F3B00035C399 /* BiggerIsGreaterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiggerIsGreaterTests.swift; sourceTree = "<group>"; };
+		3D5C8F8727A7F3B00035C399 /* ChocolateFeastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateFeastTests.swift; sourceTree = "<group>"; };
+		3D5C8F8827A7F3B00035C399 /* SherlockSquaresTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SherlockSquaresTests.swift; sourceTree = "<group>"; };
+		3D5C8F8927A7F3B00035C399 /* LibraryFineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryFineTests.swift; sourceTree = "<group>"; };
+		3D5C8F8A27A7F3B00035C399 /* EvenTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenTreeTests.swift; sourceTree = "<group>"; };
+		3D5C8F8B27A7F3B00035C399 /* NewYearChaosTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearChaosTests.swift; sourceTree = "<group>"; };
+		3D5C8F8C27A7F3B00035C399 /* ServiceLaneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLaneTests.swift; sourceTree = "<group>"; };
+		3D5C8F8D27A7F3B00035C399 /* SortingIntroTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingIntroTests.swift; sourceTree = "<group>"; };
+		3D5C8F8E27A7F3B00035C399 /* CavityMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavityMapTests.swift; sourceTree = "<group>"; };
+		3D5C8F8F27A7F3B00035C399 /* BFSShortReachTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSShortReachTests.swift; sourceTree = "<group>"; };
+		3D5C8F9027A7F3B00035C399 /* SummingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummingTests.swift; sourceTree = "<group>"; };
+		3D5C8F9127A7F3B00035C399 /* SherlockAndArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SherlockAndArrayTests.swift; sourceTree = "<group>"; };
+		3D5C8F9227A7F3B00035C399 /* DivisibleSumPairsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisibleSumPairsTests.swift; sourceTree = "<group>"; };
+		3D5C8F9327A7F3B00035C399 /* GridSearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSearchTests.swift; sourceTree = "<group>"; };
+		3D5C8F9427A7F3B00035C399 /* InsertionSort2Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort2Tests.swift; sourceTree = "<group>"; };
+		3D5C8F9527A7F3B00035C399 /* AppleAndOrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleAndOrange.swift; sourceTree = "<group>"; };
+		3D5C8F9627A7F3B00035C399 /* GradingStudentsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingStudentsTests.swift; sourceTree = "<group>"; };
+		3D5C8F9727A7F3B00035C399 /* KangarooTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KangarooTests.swift; sourceTree = "<group>"; };
+		3D5C8F9827A7F3B00035C399 /* BirthdayBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayBarTests.swift; sourceTree = "<group>"; };
+		3D5C8F9927A7F3B00035C399 /* LarrysArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LarrysArrayTests.swift; sourceTree = "<group>"; };
+		3D5C8F9A27A7F3B00035C399 /* MaximumSubarrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumSubarrayTests.swift; sourceTree = "<group>"; };
+		3D5C8F9B27A7F3B00035C399 /* ACMICPCTeamTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACMICPCTeamTests.swift; sourceTree = "<group>"; };
+		3D5C8F9C27A7F3B00035C399 /* MaximizeSumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximizeSumTests.swift; sourceTree = "<group>"; };
+		3D5C8F9D27A7F3B00035C399 /* RunningTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningTimeTests.swift; sourceTree = "<group>"; };
+		3D5C8F9E27A7F3B00035C399 /* IceCreamParlorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamParlorTests.swift; sourceTree = "<group>"; };
+		3D5C8F9F27A7F3B00035C399 /* KaprekarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaprekarTests.swift; sourceTree = "<group>"; };
+		3D5C8FA027A7F3B00035C399 /* StaircaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaircaseTests.swift; sourceTree = "<group>"; };
+		3D5C8FA127A7F3B00035C399 /* LisasWorkbookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisasWorkbookTests.swift; sourceTree = "<group>"; };
+		3D5C8FA227A7F3B00035C399 /* UtopianTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtopianTreeTests.swift; sourceTree = "<group>"; };
+		3D5C8FA327A7F3B00035C399 /* PercentagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentagesTests.swift; sourceTree = "<group>"; };
+		3D5C8FA427A7F3B00035C399 /* TimeInWordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInWordsTests.swift; sourceTree = "<group>"; };
+		3D5C8FA527A7F3B00035C399 /* EncryptionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionTests.swift; sourceTree = "<group>"; };
+		3D5C8FA627A7F3B00035C399 /* BirthdayCakeCandlesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayCakeCandlesTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D5C8E8627A7F2A20035C399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5C8E8E27A7F2A30035C399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5C8E9227A7F2A30035C399 /* HackerRank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D5C8E7F27A7F2A20035C399 = {
+			isa = PBXGroup;
+			children = (
+				3D5C8E8B27A7F2A20035C399 /* HackerRank */,
+				3D5C8E9527A7F2A30035C399 /* HackerRankTests */,
+				3D5C8E8A27A7F2A20035C399 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D5C8E8A27A7F2A20035C399 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C8E8927A7F2A20035C399 /* HackerRank.framework */,
+				3D5C8E9127A7F2A30035C399 /* HackerRankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D5C8E8B27A7F2A20035C399 /* HackerRank */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C8F0927A7F3A00035C399 /* Challenges */,
+			);
+			path = HackerRank;
+			sourceTree = "<group>";
+		};
+		3D5C8E9527A7F2A30035C399 /* HackerRankTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C8F7227A7F3B00035C399 /* Tests */,
+			);
+			path = HackerRankTests;
+			sourceTree = "<group>";
+		};
+		3D5C8F0927A7F3A00035C399 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C8F0F27A7F3A00035C399 /* ACMICPCTeam.swift */,
+				3D5C8F3627A7F3A00035C399 /* AngryProfessor.swift */,
+				3D5C8F2427A7F3A00035C399 /* AppleAndOrange.swift */,
+				3D5C8F1227A7F3A00035C399 /* Beast.swift */,
+				3D5C8F1427A7F3A00035C399 /* BFSShortReach.swift */,
+				3D5C8F3927A7F3A00035C399 /* BiggerIsGreater.swift */,
+				3D5C8F2A27A7F3A00035C399 /* BirthdayBar.swift */,
+				3D5C8F2627A7F3A00035C399 /* BirthdayCakeCandles.swift */,
+				3D5C8F2227A7F3A00035C399 /* BreakingTheRecords.swift */,
+				3D5C8F2D27A7F3A00035C399 /* CaesarCipher.swift */,
+				3D5C8F0B27A7F3A00035C399 /* CavityMap.swift */,
+				3D5C8F1C27A7F3A00035C399 /* ChocolateFeast.swift */,
+				3D5C8F3827A7F3A00035C399 /* CompareTheTriplets.swift */,
+				3D5C8F1A27A7F3A00035C399 /* CutTheSticks.swift */,
+				3D5C8F3127A7F3A00035C399 /* DikshasBirthday.swift */,
+				3D5C8F1827A7F3A00035C399 /* DivisibleSumPairs.swift */,
+				3D5C8F2527A7F3A00035C399 /* Encryption.swift */,
+				3D5C8F3A27A7F3A00035C399 /* EvenTree.swift */,
+				3D5C8F2C27A7F3A00035C399 /* FindDigits.swift */,
+				3D5C8F1B27A7F3A00035C399 /* GradingStudents.swift */,
+				3D5C8F0A27A7F3A00035C399 /* GridSearch.swift */,
+				3D5C8F2027A7F3A00035C399 /* IceCreamParlor.swift */,
+				3D5C8F1E27A7F3A00035C399 /* InsertionSort1.swift */,
+				3D5C8F1527A7F3A00035C399 /* InsertionSort2.swift */,
+				3D5C8F1327A7F3A00035C399 /* Kangaroo.swift */,
+				3D5C8F0C27A7F3A00035C399 /* Kaprekar.swift */,
+				3D5C8F3B27A7F3A00035C399 /* LarrysArray.swift */,
+				3D5C8F1027A7F3A00035C399 /* LibraryFine.swift */,
+				3D5C8F3C27A7F3A00035C399 /* LisasWorkbook.swift */,
+				3D5C8F3727A7F3A00035C399 /* MagicSquare.swift */,
+				3D5C8F3327A7F3A00035C399 /* ManasaAndStones.swift */,
+				3D5C8F2827A7F3A00035C399 /* MaximizeSum.swift */,
+				3D5C8F1F27A7F3A00035C399 /* MaximumSubarray.swift */,
+				3D5C8F1727A7F3A00035C399 /* MigratoryBirds.swift */,
+				3D5C8F3027A7F3A00035C399 /* MinMaxSum.swift */,
+				3D5C8F1127A7F3A00035C399 /* MissingNumbers.swift */,
+				3D5C8F2B27A7F3A00035C399 /* NewYearChaos.swift */,
+				3D5C8F2327A7F3A00035C399 /* OrganizingContainersOfBalls.swift */,
+				3D5C8F1627A7F3A00035C399 /* Percentages.swift */,
+				3D5C8F2927A7F3A00035C399 /* PrimsMST.swift */,
+				3D5C8F3D27A7F3A00035C399 /* QuickSort.swift */,
+				3D5C8F0E27A7F3A00035C399 /* RunningTime.swift */,
+				3D5C8F1D27A7F3A00035C399 /* SaveThePrisoner.swift */,
+				3D5C8F3227A7F3A00035C399 /* ServiceLane.swift */,
+				3D5C8F1927A7F3A00035C399 /* SherlockAndArray.swift */,
+				3D5C8F2E27A7F3A00035C399 /* SherlockSquares.swift */,
+				3D5C8F3527A7F3A00035C399 /* SortingIntro.swift */,
+				3D5C8F2727A7F3A00035C399 /* Staircase.swift */,
+				3D5C8F3427A7F3A00035C399 /* Summing.swift */,
+				3D5C8F2127A7F3A00035C399 /* TimeConverter.swift */,
+				3D5C8F0D27A7F3A00035C399 /* TimeInWords.swift */,
+				3D5C8F2F27A7F3A00035C399 /* UtopianTree.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		3D5C8F7227A7F3B00035C399 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C8F9B27A7F3B00035C399 /* ACMICPCTeamTests.swift */,
+				3D5C8F7C27A7F3B00035C399 /* AngryProfessorTests.swift */,
+				3D5C8F9527A7F3B00035C399 /* AppleAndOrange.swift */,
+				3D5C8F7327A7F3B00035C399 /* BeastTests.swift */,
+				3D5C8F8F27A7F3B00035C399 /* BFSShortReachTests.swift */,
+				3D5C8F8627A7F3B00035C399 /* BiggerIsGreaterTests.swift */,
+				3D5C8F9827A7F3B00035C399 /* BirthdayBarTests.swift */,
+				3D5C8FA627A7F3B00035C399 /* BirthdayCakeCandlesTests.swift */,
+				3D5C8F7F27A7F3B00035C399 /* BreakingTheRecordsTests.swift */,
+				3D5C8F8127A7F3B00035C399 /* CaesarCipherTests.swift */,
+				3D5C8F8E27A7F3B00035C399 /* CavityMapTests.swift */,
+				3D5C8F8727A7F3B00035C399 /* ChocolateFeastTests.swift */,
+				3D5C8F7627A7F3B00035C399 /* CompareTheTripletsTests.swift */,
+				3D5C8F8227A7F3B00035C399 /* CutTheSticksTests.swift */,
+				3D5C8F7E27A7F3B00035C399 /* DikshasBirthdayTests.swift */,
+				3D5C8F9227A7F3B00035C399 /* DivisibleSumPairsTests.swift */,
+				3D5C8FA527A7F3B00035C399 /* EncryptionTests.swift */,
+				3D5C8F8A27A7F3B00035C399 /* EvenTreeTests.swift */,
+				3D5C8F7727A7F3B00035C399 /* FindDigitsTests.swift */,
+				3D5C8F9627A7F3B00035C399 /* GradingStudentsTests.swift */,
+				3D5C8F9327A7F3B00035C399 /* GridSearchTests.swift */,
+				3D5C8F9E27A7F3B00035C399 /* IceCreamParlorTests.swift */,
+				3D5C8F7D27A7F3B00035C399 /* InsertionSort1Tests.swift */,
+				3D5C8F9427A7F3B00035C399 /* InsertionSort2Tests.swift */,
+				3D5C8F9727A7F3B00035C399 /* KangarooTests.swift */,
+				3D5C8F9F27A7F3B00035C399 /* KaprekarTests.swift */,
+				3D5C8F9927A7F3B00035C399 /* LarrysArrayTests.swift */,
+				3D5C8F8927A7F3B00035C399 /* LibraryFineTests.swift */,
+				3D5C8FA127A7F3B00035C399 /* LisasWorkbookTests.swift */,
+				3D5C8F7B27A7F3B00035C399 /* MagicSqaureTests.swift */,
+				3D5C8F8427A7F3B00035C399 /* ManasaAndStonesTests.swift */,
+				3D5C8F9C27A7F3B00035C399 /* MaximizeSumTests.swift */,
+				3D5C8F9A27A7F3B00035C399 /* MaximumSubarrayTests.swift */,
+				3D5C8F7527A7F3B00035C399 /* MigratoryBirdsTests.swift */,
+				3D5C8F7827A7F3B00035C399 /* MinMaxSumTests.swift */,
+				3D5C8F8027A7F3B00035C399 /* MissingNumbersTests.swift */,
+				3D5C8F8B27A7F3B00035C399 /* NewYearChaosTests.swift */,
+				3D5C8F7427A7F3B00035C399 /* OrganizingContainersOfBallsTests.swift */,
+				3D5C8FA327A7F3B00035C399 /* PercentagesTests.swift */,
+				3D5C8F8327A7F3B00035C399 /* PrimsMSTTests.swift */,
+				3D5C8F7927A7F3B00035C399 /* QuickSortTests.swift */,
+				3D5C8F9D27A7F3B00035C399 /* RunningTimeTests.swift */,
+				3D5C8F8527A7F3B00035C399 /* SaveThePrisonerTests.swift */,
+				3D5C8F8C27A7F3B00035C399 /* ServiceLaneTests.swift */,
+				3D5C8F9127A7F3B00035C399 /* SherlockAndArrayTests.swift */,
+				3D5C8F8827A7F3B00035C399 /* SherlockSquaresTests.swift */,
+				3D5C8F8D27A7F3B00035C399 /* SortingIntroTests.swift */,
+				3D5C8FA027A7F3B00035C399 /* StaircaseTests.swift */,
+				3D5C8F9027A7F3B00035C399 /* SummingTests.swift */,
+				3D5C8F7A27A7F3B00035C399 /* TimeConverterTests.swift */,
+				3D5C8FA427A7F3B00035C399 /* TimeInWordsTests.swift */,
+				3D5C8FA227A7F3B00035C399 /* UtopianTreeTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D5C8E8427A7F2A20035C399 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D5C8E8827A7F2A20035C399 /* HackerRank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5C8E9B27A7F2A30035C399 /* Build configuration list for PBXNativeTarget "HackerRank" */;
+			buildPhases = (
+				3D5C8E8427A7F2A20035C399 /* Headers */,
+				3D5C8E8527A7F2A20035C399 /* Sources */,
+				3D5C8E8627A7F2A20035C399 /* Frameworks */,
+				3D5C8E8727A7F2A20035C399 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerRank;
+			productName = HackerRank;
+			productReference = 3D5C8E8927A7F2A20035C399 /* HackerRank.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D5C8E9027A7F2A30035C399 /* HackerRankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5C8E9E27A7F2A30035C399 /* Build configuration list for PBXNativeTarget "HackerRankTests" */;
+			buildPhases = (
+				3D5C8E8D27A7F2A30035C399 /* Sources */,
+				3D5C8E8E27A7F2A30035C399 /* Frameworks */,
+				3D5C8E8F27A7F2A30035C399 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D5C8E9427A7F2A30035C399 /* PBXTargetDependency */,
+			);
+			name = HackerRankTests;
+			productName = HackerRankTests;
+			productReference = 3D5C8E9127A7F2A30035C399 /* HackerRankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D5C8E8027A7F2A20035C399 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					3D5C8E8827A7F2A20035C399 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3D5C8E9027A7F2A30035C399 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 3D5C8E8327A7F2A20035C399 /* Build configuration list for PBXProject "HackerRank" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D5C8E7F27A7F2A20035C399;
+			productRefGroup = 3D5C8E8A27A7F2A20035C399 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D5C8E8827A7F2A20035C399 /* HackerRank */,
+				3D5C8E9027A7F2A30035C399 /* HackerRankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D5C8E8727A7F2A20035C399 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5C8E8F27A7F2A30035C399 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D5C8E8527A7F2A20035C399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5C8F5827A7F3A00035C399 /* AppleAndOrange.swift in Sources */,
+				3D5C8F7027A7F3A10035C399 /* LisasWorkbook.swift in Sources */,
+				3D5C8F5C27A7F3A00035C399 /* MaximizeSum.swift in Sources */,
+				3D5C8F5F27A7F3A00035C399 /* NewYearChaos.swift in Sources */,
+				3D5C8F4C27A7F3A00035C399 /* DivisibleSumPairs.swift in Sources */,
+				3D5C8F6327A7F3A00035C399 /* UtopianTree.swift in Sources */,
+				3D5C8F3F27A7F3A00035C399 /* CavityMap.swift in Sources */,
+				3D5C8F6F27A7F3A10035C399 /* LarrysArray.swift in Sources */,
+				3D5C8F6D27A7F3A10035C399 /* BiggerIsGreater.swift in Sources */,
+				3D5C8F6E27A7F3A10035C399 /* EvenTree.swift in Sources */,
+				3D5C8F4B27A7F3A00035C399 /* MigratoryBirds.swift in Sources */,
+				3D5C8F5327A7F3A00035C399 /* MaximumSubarray.swift in Sources */,
+				3D5C8F4727A7F3A00035C399 /* Kangaroo.swift in Sources */,
+				3D5C8F5927A7F3A00035C399 /* Encryption.swift in Sources */,
+				3D5C8F5D27A7F3A00035C399 /* PrimsMST.swift in Sources */,
+				3D5C8F4F27A7F3A00035C399 /* GradingStudents.swift in Sources */,
+				3D5C8F6127A7F3A00035C399 /* CaesarCipher.swift in Sources */,
+				3D5C8F4E27A7F3A00035C399 /* CutTheSticks.swift in Sources */,
+				3D5C8F5B27A7F3A00035C399 /* Staircase.swift in Sources */,
+				3D5C8F4427A7F3A00035C399 /* LibraryFine.swift in Sources */,
+				3D5C8F6027A7F3A00035C399 /* FindDigits.swift in Sources */,
+				3D5C8F4827A7F3A00035C399 /* BFSShortReach.swift in Sources */,
+				3D5C8F6627A7F3A00035C399 /* ServiceLane.swift in Sources */,
+				3D5C8F4A27A7F3A00035C399 /* Percentages.swift in Sources */,
+				3D5C8F4327A7F3A00035C399 /* ACMICPCTeam.swift in Sources */,
+				3D5C8F4127A7F3A00035C399 /* TimeInWords.swift in Sources */,
+				3D5C8F4027A7F3A00035C399 /* Kaprekar.swift in Sources */,
+				3D5C8F5E27A7F3A00035C399 /* BirthdayBar.swift in Sources */,
+				3D5C8F5627A7F3A00035C399 /* BreakingTheRecords.swift in Sources */,
+				3D5C8F4527A7F3A00035C399 /* MissingNumbers.swift in Sources */,
+				3D5C8F5727A7F3A00035C399 /* OrganizingContainersOfBalls.swift in Sources */,
+				3D5C8F4927A7F3A00035C399 /* InsertionSort2.swift in Sources */,
+				3D5C8F6827A7F3A10035C399 /* Summing.swift in Sources */,
+				3D5C8F6A27A7F3A10035C399 /* AngryProfessor.swift in Sources */,
+				3D5C8F5227A7F3A00035C399 /* InsertionSort1.swift in Sources */,
+				3D5C8F6C27A7F3A10035C399 /* CompareTheTriplets.swift in Sources */,
+				3D5C8F5127A7F3A00035C399 /* SaveThePrisoner.swift in Sources */,
+				3D5C8F6927A7F3A10035C399 /* SortingIntro.swift in Sources */,
+				3D5C8F5427A7F3A00035C399 /* IceCreamParlor.swift in Sources */,
+				3D5C8F6527A7F3A00035C399 /* DikshasBirthday.swift in Sources */,
+				3D5C8F6427A7F3A00035C399 /* MinMaxSum.swift in Sources */,
+				3D5C8F4227A7F3A00035C399 /* RunningTime.swift in Sources */,
+				3D5C8F5027A7F3A00035C399 /* ChocolateFeast.swift in Sources */,
+				3D5C8F7127A7F3A10035C399 /* QuickSort.swift in Sources */,
+				3D5C8F6B27A7F3A10035C399 /* MagicSquare.swift in Sources */,
+				3D5C8F3E27A7F3A00035C399 /* GridSearch.swift in Sources */,
+				3D5C8F5A27A7F3A00035C399 /* BirthdayCakeCandles.swift in Sources */,
+				3D5C8F6227A7F3A00035C399 /* SherlockSquares.swift in Sources */,
+				3D5C8F5527A7F3A00035C399 /* TimeConverter.swift in Sources */,
+				3D5C8F4D27A7F3A00035C399 /* SherlockAndArray.swift in Sources */,
+				3D5C8F6727A7F3A10035C399 /* ManasaAndStones.swift in Sources */,
+				3D5C8F4627A7F3A00035C399 /* Beast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5C8E8D27A7F2A30035C399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5C8FBD27A7F3B10035C399 /* LibraryFineTests.swift in Sources */,
+				3D5C8FB827A7F3B00035C399 /* ManasaAndStonesTests.swift in Sources */,
+				3D5C8FCF27A7F3B10035C399 /* ACMICPCTeamTests.swift in Sources */,
+				3D5C8FCA27A7F3B10035C399 /* GradingStudentsTests.swift in Sources */,
+				3D5C8FD627A7F3B10035C399 /* UtopianTreeTests.swift in Sources */,
+				3D5C8FC427A7F3B10035C399 /* SummingTests.swift in Sources */,
+				3D5C8FA727A7F3B00035C399 /* BeastTests.swift in Sources */,
+				3D5C8FBA27A7F3B10035C399 /* BiggerIsGreaterTests.swift in Sources */,
+				3D5C8FAF27A7F3B00035C399 /* MagicSqaureTests.swift in Sources */,
+				3D5C8FC827A7F3B10035C399 /* InsertionSort2Tests.swift in Sources */,
+				3D5C8FA827A7F3B00035C399 /* OrganizingContainersOfBallsTests.swift in Sources */,
+				3D5C8FBC27A7F3B10035C399 /* SherlockSquaresTests.swift in Sources */,
+				3D5C8FC127A7F3B10035C399 /* SortingIntroTests.swift in Sources */,
+				3D5C8FD527A7F3B10035C399 /* LisasWorkbookTests.swift in Sources */,
+				3D5C8FB627A7F3B00035C399 /* CutTheSticksTests.swift in Sources */,
+				3D5C8FAA27A7F3B00035C399 /* CompareTheTripletsTests.swift in Sources */,
+				3D5C8FB527A7F3B00035C399 /* CaesarCipherTests.swift in Sources */,
+				3D5C8FB127A7F3B00035C399 /* InsertionSort1Tests.swift in Sources */,
+				3D5C8FAC27A7F3B00035C399 /* MinMaxSumTests.swift in Sources */,
+				3D5C8FD127A7F3B10035C399 /* RunningTimeTests.swift in Sources */,
+				3D5C8FBF27A7F3B10035C399 /* NewYearChaosTests.swift in Sources */,
+				3D5C8FDA27A7F3B10035C399 /* BirthdayCakeCandlesTests.swift in Sources */,
+				3D5C8FD827A7F3B10035C399 /* TimeInWordsTests.swift in Sources */,
+				3D5C8FAB27A7F3B00035C399 /* FindDigitsTests.swift in Sources */,
+				3D5C8FC527A7F3B10035C399 /* SherlockAndArrayTests.swift in Sources */,
+				3D5C8FD427A7F3B10035C399 /* StaircaseTests.swift in Sources */,
+				3D5C8FAE27A7F3B00035C399 /* TimeConverterTests.swift in Sources */,
+				3D5C8FC227A7F3B10035C399 /* CavityMapTests.swift in Sources */,
+				3D5C8FC927A7F3B10035C399 /* AppleAndOrange.swift in Sources */,
+				3D5C8FD227A7F3B10035C399 /* IceCreamParlorTests.swift in Sources */,
+				3D5C8FCC27A7F3B10035C399 /* BirthdayBarTests.swift in Sources */,
+				3D5C8FD927A7F3B10035C399 /* EncryptionTests.swift in Sources */,
+				3D5C8FCE27A7F3B10035C399 /* MaximumSubarrayTests.swift in Sources */,
+				3D5C8FA927A7F3B00035C399 /* MigratoryBirdsTests.swift in Sources */,
+				3D5C8FBE27A7F3B10035C399 /* EvenTreeTests.swift in Sources */,
+				3D5C8FD027A7F3B10035C399 /* MaximizeSumTests.swift in Sources */,
+				3D5C8FD327A7F3B10035C399 /* KaprekarTests.swift in Sources */,
+				3D5C8FAD27A7F3B00035C399 /* QuickSortTests.swift in Sources */,
+				3D5C8FC327A7F3B10035C399 /* BFSShortReachTests.swift in Sources */,
+				3D5C8FB327A7F3B00035C399 /* BreakingTheRecordsTests.swift in Sources */,
+				3D5C8FB227A7F3B00035C399 /* DikshasBirthdayTests.swift in Sources */,
+				3D5C8FC627A7F3B10035C399 /* DivisibleSumPairsTests.swift in Sources */,
+				3D5C8FB027A7F3B00035C399 /* AngryProfessorTests.swift in Sources */,
+				3D5C8FB727A7F3B00035C399 /* PrimsMSTTests.swift in Sources */,
+				3D5C8FBB27A7F3B10035C399 /* ChocolateFeastTests.swift in Sources */,
+				3D5C8FCB27A7F3B10035C399 /* KangarooTests.swift in Sources */,
+				3D5C8FD727A7F3B10035C399 /* PercentagesTests.swift in Sources */,
+				3D5C8FB927A7F3B10035C399 /* SaveThePrisonerTests.swift in Sources */,
+				3D5C8FB427A7F3B00035C399 /* MissingNumbersTests.swift in Sources */,
+				3D5C8FC027A7F3B10035C399 /* ServiceLaneTests.swift in Sources */,
+				3D5C8FCD27A7F3B10035C399 /* LarrysArrayTests.swift in Sources */,
+				3D5C8FC727A7F3B10035C399 /* GridSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D5C8E9427A7F2A30035C399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D5C8E8827A7F2A20035C399 /* HackerRank */;
+			targetProxy = 3D5C8E9327A7F2A30035C399 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D5C8E9927A7F2A30035C399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D5C8E9A27A7F2A30035C399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D5C8E9C27A7F2A30035C399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.HackerRank;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D5C8E9D27A7F2A30035C399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.HackerRank;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D5C8E9F27A7F2A30035C399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.HackerRankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D5C8EA027A7F2A30035C399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.HackerRankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D5C8E8327A7F2A20035C399 /* Build configuration list for PBXProject "HackerRank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5C8E9927A7F2A30035C399 /* Debug */,
+				3D5C8E9A27A7F2A30035C399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5C8E9B27A7F2A30035C399 /* Build configuration list for PBXNativeTarget "HackerRank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5C8E9C27A7F2A30035C399 /* Debug */,
+				3D5C8E9D27A7F2A30035C399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5C8E9E27A7F2A30035C399 /* Build configuration list for PBXNativeTarget "HackerRankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5C8E9F27A7F2A30035C399 /* Debug */,
+				3D5C8EA027A7F2A30035C399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D5C8E8027A7F2A20035C399 /* Project object */;
+}

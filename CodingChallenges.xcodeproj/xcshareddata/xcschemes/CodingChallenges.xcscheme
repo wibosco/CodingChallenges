@@ -38,6 +38,36 @@
                ReferencedContainer = "container:CodingChallenges.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3D5C8FEC27A7F4850035C399"
+               BuildableName = "CrackingTheCodingInterviewTests.xctest"
+               BlueprintName = "CrackingTheCodingInterviewTests"
+               ReferencedContainer = "container:CrackingTheCodingInterview/CrackingTheCodingInterview.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3D5C8E9027A7F2A30035C399"
+               BuildableName = "HackerRankTests.xctest"
+               BlueprintName = "HackerRankTests"
+               ReferencedContainer = "container:HackerRank/HackerRank.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3D5C907E27A7F6A80035C399"
+               BuildableName = "LeetCodeTests.xctest"
+               BlueprintName = "LeetCodeTests"
+               ReferencedContainer = "container:LeetCode/LeetCode.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
