@@ -351,6 +351,8 @@
 		3D5C933D27A7F76C0035C399 /* TwoSumIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C929727A7F76C0035C399 /* TwoSumIITests.swift */; };
 		3D5C933E27A7F76C0035C399 /* SymmetricTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C929827A7F76C0035C399 /* SymmetricTreeTests.swift */; };
 		3D5C933F27A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C929927A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift */; };
+		3D5C93A127A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C93A027A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift */; };
+		3D5C93A327A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C93A227A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -709,6 +711,8 @@
 		3D5C929727A7F76C0035C399 /* TwoSumIITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoSumIITests.swift; sourceTree = "<group>"; };
 		3D5C929827A7F76C0035C399 /* SymmetricTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymmetricTreeTests.swift; sourceTree = "<group>"; };
 		3D5C929927A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KthSmallestElementInBinarySearchTreeTests.swift; sourceTree = "<group>"; };
+		3D5C93A027A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStock.swift; sourceTree = "<group>"; };
+		3D5C93A227A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStockTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -792,6 +796,7 @@
 				3D5C90B327A7F7620035C399 /* AllPathsFromSourceLeadToDestination.swift */,
 				3D5C90D427A7F7620035C399 /* AllPathsFromSourceToTarget.swift */,
 				3D5C90CC27A7F7620035C399 /* AsteroidCollision.swift */,
+				3D5C93A027A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift */,
 				3D5C90F927A7F7620035C399 /* BinarySearchLeetCode.swift */,
 				3D5C912D27A7F7630035C399 /* BinaryTreeInorderTraversal.swift */,
 				3D5C90DE27A7F7620035C399 /* BinaryTreeLevelOrderTraversal.swift */,
@@ -965,6 +970,7 @@
 				3D5C921B27A7F76B0035C399 /* AllPathsFromSourceLeadToDestinationTests.swift */,
 				3D5C925A27A7F76C0035C399 /* AllPathsFromSourceToTargetTests.swift */,
 				3D5C922627A7F76B0035C399 /* AsteroidCollisionTests.swift */,
+				3D5C93A227A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift */,
 				3D5C927B27A7F76C0035C399 /* BinarySearchLeetCodeTests.swift */,
 				3D5C929427A7F76C0035C399 /* BinaryTreeInorderTraversalTests.swift */,
 				3D5C927D27A7F76C0035C399 /* BinaryTreeLevelOrderTraversalIITests.swift */,
@@ -1406,6 +1412,7 @@
 				3D5C91BC27A7F7630035C399 /* LinkedListCycleII.swift in Sources */,
 				3D5C916E27A7F7630035C399 /* SearchSortedArrayOfUnknownSize.swift in Sources */,
 				3D5C916227A7F7630035C399 /* FindSmallestLetterGreaterThanTarget.swift in Sources */,
+				3D5C93A127A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift in Sources */,
 				3D5C91BA27A7F7630035C399 /* Search2DMatrix.swift in Sources */,
 				3D5C919B27A7F7630035C399 /* PerfectSquares.swift in Sources */,
 				3D5C91C327A7F7630035C399 /* RangeSumOfBST.swift in Sources */,
@@ -1546,6 +1553,7 @@
 				3D5C92AB27A7F76C0035C399 /* LongestCommonPrefixTests.swift in Sources */,
 				3D5C92D027A7F76C0035C399 /* PathSumTests.swift in Sources */,
 				3D5C92BE27A7F76C0035C399 /* PeakIndexMountainArrayTests.swift in Sources */,
+				3D5C93A327A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift in Sources */,
 				3D5C932927A7F76C0035C399 /* ZigzagConversionTests.swift in Sources */,
 				3D5C933127A7F76C0035C399 /* DivideTwoIntegersTests.swift in Sources */,
 				3D5C92D627A7F76C0035C399 /* IntegerToRomanTests.swift in Sources */,
