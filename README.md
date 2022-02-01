@@ -4,9 +4,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-@wibosco-blue.svg?style=flat)](https://twitter.com/wibosco)
 
 # CodingChallenges
-A collection of coding challenges that can come up in interview.
-
-Contains solutions to challenges found in:
+A collection of coding challenges and their solutions from:
 
 - HackerRank
   - https://www.hackerrank.com/
