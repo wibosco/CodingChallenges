@@ -14,7 +14,7 @@ struct SubarraySumEqualsK {
     
     //Time: O(n) where `n` is the number of element in `nums`
     //Space: O(n) where `n` is the number of element in `nums`
-    //prefix
+    //prefix sum
     //dictionary
     //
     //Solution Description:
