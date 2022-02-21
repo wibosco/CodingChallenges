@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D13819E27C3F0DE00E17E5A /* MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */; };
 		3D1381A027C3F12800E17E5A /* MajorityElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */; };
+		3D1381A227C3FC3A00E17E5A /* MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */; };
+		3D1381A427C3FC7500E17E5A /* MajorityElementIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1381A327C3FC7500E17E5A /* MajorityElementIITests.swift */; };
 		3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2617A127B5711200269FA3 /* KDiffPairsInAnArray.swift */; };
 		3D2617A427B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2617A327B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift */; };
 		3D5C908027A7F6A80035C399 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C907727A7F6A70035C399 /* LeetCode.framework */; };
@@ -384,6 +386,8 @@
 /* Begin PBXFileReference section */
 		3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElement.swift; sourceTree = "<group>"; };
 		3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementTests.swift; sourceTree = "<group>"; };
+		3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementII.swift; sourceTree = "<group>"; };
+		3D1381A327C3FC7500E17E5A /* MajorityElementIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementIITests.swift; sourceTree = "<group>"; };
 		3D2617A127B5711200269FA3 /* KDiffPairsInAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDiffPairsInAnArray.swift; sourceTree = "<group>"; };
 		3D2617A327B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDiffPairsInAnArrayTests.swift; sourceTree = "<group>"; };
 		3D5C907727A7F6A70035C399 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -909,6 +913,7 @@
 				3D5C90A127A7F7620035C399 /* LowestCommonAncestorBinaryTreeII.swift */,
 				3D5C909C27A7F7620035C399 /* LowestCommonAncestorBinaryTreeIII.swift */,
 				3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */,
+				3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */,
 				3D5C910627A7F7630035C399 /* Matrix01.swift */,
 				3D5C90BA27A7F7620035C399 /* MaximumDepthBinaryTree.swift */,
 				3D5C90E927A7F7620035C399 /* MaximumSubarray.swift */,
@@ -1090,6 +1095,7 @@
 				3D5C927927A7F76C0035C399 /* LowestCommonAncestorBinaryTreeIIITests.swift */,
 				3D5C922427A7F76B0035C399 /* LowestCommonAncestorBinaryTreeIITests.swift */,
 				3D5C923D27A7F76C0035C399 /* LowestCommonAncestorBinaryTreeTests.swift */,
+				3D1381A327C3FC7500E17E5A /* MajorityElementIITests.swift */,
 				3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */,
 				3D5C921027A7F76B0035C399 /* Matrix01Tests.swift */,
 				3D5C921E27A7F76B0035C399 /* MaximumDepthBinaryTreeTests.swift */,
@@ -1404,6 +1410,7 @@
 				3D5C916B27A7F7630035C399 /* MaximumDepthBinaryTree.swift in Sources */,
 				3D5C91CD27A7F7630035C399 /* ValidParentheses.swift in Sources */,
 				3D5C916A27A7F7630035C399 /* LowestCommonAncestorBinaryTree.swift in Sources */,
+				3D1381A227C3FC3A00E17E5A /* MajorityElementII.swift in Sources */,
 				3D5C917E27A7F7630035C399 /* KokoEatingBananas.swift in Sources */,
 				3D5C916127A7F7630035C399 /* LowestCommonAncestorBinarySearchTree.swift in Sources */,
 				3D5C91EF27A7F7630035C399 /* DivideTwoIntegers.swift in Sources */,
@@ -1601,6 +1608,7 @@
 				3D5C92DC27A7F76C0035C399 /* CourseScheduleIITests.swift in Sources */,
 				3D5C930527A7F76C0035C399 /* GenerateParenthesesTests.swift in Sources */,
 				3D5C92FC27A7F76C0035C399 /* PerfectSquaresTests.swift in Sources */,
+				3D1381A427C3FC7500E17E5A /* MajorityElementIITests.swift in Sources */,
 				3D5C92FF27A7F76C0035C399 /* CanPlaceFlowersTests.swift in Sources */,
 				3D5C92C427A7F76C0035C399 /* MaximumDepthBinaryTreeTests.swift in Sources */,
 				3D2617A427B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift in Sources */,
