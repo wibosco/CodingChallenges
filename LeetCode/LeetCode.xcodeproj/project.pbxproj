@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2617A127B5711200269FA3 /* KDiffPairsInAnArray.swift */; };
+		3D2617A427B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2617A327B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift */; };
 		3D5C908027A7F6A80035C399 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C907727A7F6A70035C399 /* LeetCode.framework */; };
 		3D5C914227A7F7630035C399 /* BinaryTreeNodeParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909027A7F7620035C399 /* BinaryTreeNodeParent.swift */; };
 		3D5C914327A7F7630035C399 /* GraphWeightedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909127A7F7620035C399 /* GraphWeightedEdge.swift */; };
@@ -378,6 +380,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2617A127B5711200269FA3 /* KDiffPairsInAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDiffPairsInAnArray.swift; sourceTree = "<group>"; };
+		3D2617A327B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDiffPairsInAnArrayTests.swift; sourceTree = "<group>"; };
 		3D5C907727A7F6A70035C399 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5C907F27A7F6A80035C399 /* LeetCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5C909027A7F7620035C399 /* BinaryTreeNodeParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTreeNodeParent.swift; sourceTree = "<group>"; };
@@ -884,6 +888,7 @@
 				3D5C90AD27A7F7620035C399 /* IntersectionOfTwoArrays.swift */,
 				3D5C911E27A7F7630035C399 /* IntersectionOfTwoArraysII.swift */,
 				3D5C90A727A7F7620035C399 /* KClosestPointsToOrigin.swift */,
+				3D2617A127B5711200269FA3 /* KDiffPairsInAnArray.swift */,
 				3D5C90BF27A7F7620035C399 /* KeysAndRooms.swift */,
 				3D5C90CD27A7F7620035C399 /* KokoEatingBananas.swift */,
 				3D5C910027A7F7630035C399 /* KthLargestElementInArray.swift */,
@@ -1064,6 +1069,7 @@
 				3D5C924927A7F76C0035C399 /* IntersectionOfTwoArraysIITests.swift */,
 				3D5C926E27A7F76C0035C399 /* IntersectionOfTwoArraysTests.swift */,
 				3D5C924327A7F76C0035C399 /* KClosestPointsToOriginTests.swift */,
+				3D2617A327B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift */,
 				3D5C921127A7F76B0035C399 /* KeysAndRoomsTests.swift */,
 				3D5C921327A7F76B0035C399 /* KokoEatingBananasTests.swift */,
 				3D5C91F527A7F76B0035C399 /* KthLargestElementInArrayTests.swift */,
@@ -1307,6 +1313,7 @@
 				3D5C91E527A7F7630035C399 /* RemoveDuplicates.swift in Sources */,
 				3D5C91E827A7F7630035C399 /* WallsAndGates.swift in Sources */,
 				3D5C91B227A7F7630035C399 /* AccountsMerge.swift in Sources */,
+				3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */,
 				3D5C916F27A7F7630035C399 /* ConstructBinaryTreeInorderPostorderTraversal.swift in Sources */,
 				3D5C919127A7F7630035C399 /* BinaryTreeRightSideView.swift in Sources */,
 				3D5C91CA27A7F7630035C399 /* ReverseLinkedList.swift in Sources */,
@@ -1588,6 +1595,7 @@
 				3D5C92FC27A7F76C0035C399 /* PerfectSquaresTests.swift in Sources */,
 				3D5C92FF27A7F76C0035C399 /* CanPlaceFlowersTests.swift in Sources */,
 				3D5C92C427A7F76C0035C399 /* MaximumDepthBinaryTreeTests.swift in Sources */,
+				3D2617A427B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift in Sources */,
 				3D5C931227A7F76C0035C399 /* RomanToIntegerTests.swift in Sources */,
 				3D5C931527A7F76C0035C399 /* EarliestMomentWhenEveryoneBecomeFriendsTests.swift in Sources */,
 				3D5C92A527A7F76C0035C399 /* BuildingsWithOceanViewTests.swift in Sources */,
