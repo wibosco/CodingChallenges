@@ -60,14 +60,10 @@ struct LetterCombinations {
             var tmp = [String]()
             let letters = keypad[digit]!
             for permutation in permutations {
-//                print("permutation: \(permutation)")
                 for letter in letters {
-//                    print("letter: \(letter)")
                     //Add letter.count number of new permutations to the existing premutation value
                     tmp.append("\(permutation)\(letter)")
                 }
-//                print("tmp: \(tmp)")
-//                print("")
             }
             permutations = tmp //throw away out permutations as newer ones have been generated from new digit
         }
