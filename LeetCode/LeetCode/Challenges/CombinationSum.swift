@@ -15,17 +15,17 @@ struct CombinationSum {
     //Space: O(
     //backtracking
     //DFS
-    //graph theorys
+    //graph theory
     //
     //Solution Description:
     //Treating the possible combinations as a graph. Using a DFS backtracking approach we attempt to produce all possible
     //combinations of `candidates` to reach our `target` value. We do this by taking element in turn from the `candidates`
-    //array and performing a DFS from that element until we either reach the `target` value or overshot (to simplifly
+    //array and performing a DFS from that element until we either reach the `target` value or overshoot (to simplifly
     //things we attempt to get to 0 rather than the target, this means we only need to have one parameter to know if the
     //combination is valid i.e. 0 than the two we would need if we attempt to add up to target). Each level that we go
     //down we build up the `combination` array of candidate values that led us to that point. If we reach 0 then that path
     //of candidate values is a valid combination and we add it to `combinations`; if we go negative then we abandon that
-    //branch, remove the element that caused the overshot and try the next element in the `combinations` array for that
+    //branch, remove the element that caused the overshoot and try the next element in the `combinations` array for that
     //level. We repeat this process until all possible combinations have been tried.
     //
     //NB: To avoid duplicate entries in `combinations` we only search "same or forward" in `candidates` array, never
