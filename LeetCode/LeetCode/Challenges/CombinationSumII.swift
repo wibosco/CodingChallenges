@@ -11,30 +11,32 @@ import Foundation
 //array
 struct CombinationSumII {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(2^n) where `n` is the number of elements in `candidates`
+    //Space: O(n+k) where `n` is the number of elements in our combination and `k` is the number of levels in our tree
     //backtracking
     //DFS
     //sorted
     //graph theory
+    //n-ary tree
     //
     //Solution Description:
-    //Treating the possible combinations as a graph. Using a DFS backtracking approach we attempt to produce all possible
-    //combinations of `candidates` to reach our `target` value. We do this by taking element in turn from the `candidates`
-    //array and performing a DFS from that element until we either reach the `target` value or overshoot (to simplifly
-    //things we attempt to get to 0 rather than the target, this means we only need to have one parameter to know if the
-    //combination is valid i.e. 0 than the two we would need if we attempt to add up to target). Each level that we go
-    //down we build up the `combination` array of candidate values that led us to that point. If we reach 0 then that path
-    //of candidate values is a valid combination and we add it to `combinations`; if we go negative then we abandon that
-    //branch, remove the element that caused the overshoot and try the next element in the `combinations` array for that
-    //level. As `candidates` can contain the same number multiple times but our result should only have unique values we
-    //need to sort `candidatates` and skip any duplicates directly from that levels combinations. It's important to note
-    //that the duplicate combinations will still be checked but only once with this approach so avoiding any duplicate
-    //combinations that are just out-of-order. We repeat this process until all possible combinations have been tried.
+    //Treating the possible combinations as multiple n-ary trees. Using a DFS backtracking approach we attempt to produce
+    //all possible combinations of `candidates` to reach our `target` value. We do this by taking each element in turn
+    //from the `candidates` array and performing a DFS from that element until we either reach the `target` value or
+    //overshoot (to simplifly things we attempt to get to 0 rather than the target, this means we only need to have one
+    //parameter to know if the combination is valid i.e. 0 than the two we would need if we attempt to add up to target).
+    //Each level that we go down we build up the `combination` array of candidate values that led us to that point. If we
+    //reach 0 then that path of candidate values is a valid combination and we add it to `combinations`; if we go negative
+    //then we abandon that branch, remove the element that caused the overshoot and try the next element in the
+    //`combinations` array for that level. As `candidates` can contain the same number multiple times but our result
+    //should only have unique values we need to sort `candidatates` and skip any duplicates directly from that levels
+    //combinations. It's important to note that the duplicate combinations will still be checked but only once with this
+    //approach so avoiding any duplicate combinations that are just out-of-order. We repeat this process until all possible
+    //combinations have been tried.
     //
     //NB: To avoid duplicate entries in `combinations` we only search "same or forward" in `candidates` array, never
-    //"backwards" this avoids us ending up with '[2, 2, 3]' and '[2, 3, 2]' and '[3, 2, 2]' which would be considered
-    //the same and need to be removed.
+    //"backwards" this avoids us ending up with '[2, 2, 3]' and '[2, 3, 2]' and '[3, 2, 2]' which would be considered the
+    //same and need to be removed.
     static func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
         var combinations = [[Int]]()
         var curr = [Int]()

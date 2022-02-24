@@ -11,22 +11,23 @@ import Foundation
 //array
 struct CombinationSum {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(n^k) where `n` is the number of elements in `candidates`, `k` is the number of levels in the tree
+    //Space: O(k) where `k` is the number of levels in the tree
     //backtracking
     //DFS
     //graph theory
+    //n-ary tree
     //
     //Solution Description:
-    //Treating the possible combinations as a graph. Using a DFS backtracking approach we attempt to produce all possible
-    //combinations of `candidates` to reach our `target` value. We do this by taking element in turn from the `candidates`
-    //array and performing a DFS from that element until we either reach the `target` value or overshoot (to simplifly
-    //things we attempt to get to 0 rather than the target, this means we only need to have one parameter to know if the
-    //combination is valid i.e. 0 than the two we would need if we attempt to add up to target). Each level that we go
-    //down we build up the `combination` array of candidate values that led us to that point. If we reach 0 then that path
-    //of candidate values is a valid combination and we add it to `combinations`; if we go negative then we abandon that
-    //branch, remove the element that caused the overshoot and try the next element in the `combinations` array for that
-    //level. We repeat this process until all possible combinations have been tried.
+    //Treating the possible combinations as multiple n-ary trees. Using a DFS backtracking approach we attempt to produce
+    //all possible combinations of `candidates` to reach our `target` value. We do this by taking element in turn from the
+    //`candidates` array and performing a DFS from that element until we either reach the `target` value or overshoot (to
+    //simplifly things we attempt to get to 0 rather than the target, this means we only need to have one parameter to
+    //know if the combination is valid i.e. 0 than the two we would need if we attempt to add up to target). Each level
+    //that we go down we build up the `combination` array of candidate values that led us to that point. If we reach 0
+    //then that path of candidate values is a valid combination and we add it to `combinations`; if we go negative then we
+    //abandon that branch, remove the element that caused the overshoot and try the next element in the `combinations`
+    //array for that level. We repeat this process until all possible combinations have been tried.
     //
     //NB: To avoid duplicate entries in `combinations` we only search "same or forward" in `candidates` array, never
     //"backwards" this avoids us ending up with '[2, 2, 3]' and '[2, 3, 2]' and '[3, 2, 2]' which would be considered
