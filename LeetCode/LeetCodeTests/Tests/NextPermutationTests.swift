@@ -1,5 +1,5 @@
 //
-//  NextPermutationNumberTests.swift
+//  NextPermutationTests.swift
 //  CodingChallengesTests
 //
 //  Created by William Boles on 14/11/2021.
@@ -10,14 +10,14 @@ import XCTest
 
 @testable import LeetCode
 
-class NextPermutationNumberTests: XCTestCase {
+class NextPermutationTests: XCTestCase {
 
    // MARK: - Tests
     
     func test_A() {
         var nums = [1, 2, 3]
         
-        NextPermutationNumber.nextPermutation(&nums)
+        NextPermutation.nextPermutation(&nums)
         
         XCTAssertEqual(nums, [1, 3, 2])
     }
@@ -25,7 +25,7 @@ class NextPermutationNumberTests: XCTestCase {
     func test_B() {
         var nums = [3, 2, 1]
         
-        NextPermutationNumber.nextPermutation(&nums)
+        NextPermutation.nextPermutation(&nums)
         
         XCTAssertEqual(nums, [1, 2, 3])
     }
@@ -33,7 +33,7 @@ class NextPermutationNumberTests: XCTestCase {
     func test_C() {
         var nums = [1]
         
-        NextPermutationNumber.nextPermutation(&nums)
+        NextPermutation.nextPermutation(&nums)
         
         XCTAssertEqual(nums, [1])
     }
@@ -41,7 +41,7 @@ class NextPermutationNumberTests: XCTestCase {
     func test_D() {
         var nums = [1, 3, 2]
         
-        NextPermutationNumber.nextPermutation(&nums)
+        NextPermutation.nextPermutation(&nums)
         
         XCTAssertEqual(nums, [2, 1, 3])
     }

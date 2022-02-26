@@ -12,15 +12,17 @@ import Foundation
 //array
 struct FindPeakElement {
     
-    //Time: O(log n)
+    //Time: O(log n) where `n` is the number of elements in `nums`
     //Space: O(1)
     //binary search
     //divide and conquer
     //
     //Solution Description:
-    //Use binary search to search through sorted array nums. Find peak by comparing
-    //mid against it's neighbout (rather than target) to determine if mid is moving
-    //"downwards"
+    //We can use a twist on binary search to search through `nums` and find the peaks. Rather than comparing the `mid` element
+    //against a target, we instead comapre it against it's right neighbour and attempt to identify a trend in the data i.e. up,
+    //down or flat. Once we know this trend we can move our boundaries accordingly - move left if the right neighbour is lower
+    //(we don't just return as while `mid` is greater, it itself might be part of a downward slope), move right if the right
+    //neighbour is equal or greater than. Eventually we narrow down on an actual peak and can return it as the `left` index.
     static func findPeakElement(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {
             return 0
@@ -29,17 +31,12 @@ struct FindPeakElement {
         var left = 0
         var right = nums.count - 1
         
-        //Notice here that we don't check `right >= left` this is because
-        //we want to check our target `mid` against it's right most
-        //neighbour so we need to ensure that a right neighbour exists
+        //Notice here that we don't check `right >= left` this is because we want to check our target `mid` against
+        //it's right most neighbour so we need to ensure that a right neighbour exists
         while left < right {
             let mid = left + (right - left) / 2
+            
             if nums[mid] > nums[mid + 1] { // only compare with neighbour
-                //we don't just return here as we need to make sure that
-                //this is actually this a peak i.e the previous element is
-                //not greater than it. If the previous element is greater
-                //than it then its not a peak but rather just part of the
-                //slope
                 right = mid
             } else {
                 left = mid + 1
@@ -49,12 +46,11 @@ struct FindPeakElement {
         return left
     }
     
-    //Time: O(n)
+    //Time: O(n) where `n` is the number of elements in `nums`
     //Space: O(1)
     //
     //Solution Description:
-    //Loop through nums comparing previous num with current num and current num with
-    //next num to find the start of a peak
+    //Loop through `nums` comparing previous num with current num and current num with next num to find the start of a peak
     static func findPeakElementLinear(_ nums: [Int]) -> Int {
         var nums = nums
         

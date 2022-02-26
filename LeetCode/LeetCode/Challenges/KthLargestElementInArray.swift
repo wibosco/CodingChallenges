@@ -22,8 +22,7 @@ struct KthLargestElementInArray {
     //Using `quick select` we sort `nums` around a pivot by gradually partitioning `nums` into a smaller and smaller array.
     //As we are not aiming to fully sort `nums`, after each partiton (if we haven't sorted `k` into its final position) we
     //only need to further sort that partition that contains the `k` index. As quick sort will sort in ascending order to
-    //find the largest Kth element we need to invert `k` by counting `k` elements from the end to return the correct
-    //value.
+    //find the largest Kth element we need to invert `k` by counting `k` elements from the end to return the correct value.
     //
     //N.B. Here we are using Lomutos partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
     static func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
@@ -31,14 +30,10 @@ struct KthLargestElementInArray {
         
         let invertedK = nums.count - k
         
-        return quickSelect(&nums, 0, (nums.count - 1), invertedK) //note the "-1" for right
+        return quickSelect(&nums, 0, (nums.count - 1), invertedK) //note the "-1" for right as we index from 0
     }
     
     private static func quickSelect(_ nums: inout [Int], _ left: Int, _ right: Int, _ k: Int) -> Int {
-        guard left < right else {
-            return nums[left]
-        }
-        
         let partitionIndex = partition(&nums, left, right)
         
         if partitionIndex == k {

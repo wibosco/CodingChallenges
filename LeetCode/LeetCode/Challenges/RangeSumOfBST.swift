@@ -55,6 +55,7 @@ struct RangeSumOfBST {
     //Space: O(n)
     //DFS
     //recusive
+    //preorder
     //
     //Solution Description:
     //Using DFS to recusively traverse the tree, compare each node's value to determine if it is between `low` and

@@ -34,7 +34,7 @@ struct KClosestPointsToOrigin {
     }
     
     private static func quickSelect(_ points: inout [[Int]], _ left: Int, _ right: Int, _ k: Int) {
-        guard left < right else {
+        guard left < right else { //needed to ensure that we don't go out of bounds
             return
         }
         

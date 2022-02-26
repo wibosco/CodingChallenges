@@ -12,18 +12,17 @@ import Foundation
 //string
 struct ValidPalindromeII {
     
-    //Time: O(n) where `n` is the numbber of characters in `s`
+    //Time: O(n) where `n` is the number of characters in `s`
     //Space: O(n)
     //two pointers
     //recursive
     //
     //Solution Description:
-    //Using two pointers we compare the outermost characters to determine if they are the same. If they match
-    //we move the pointers along once character towards the middle and recompare. If they don't match we
-    //split `s` into two strings - one without the left mismatch character and one without the right mimatch
-    //character. We then attempt to see if those two altered strings are palindrome, if either are then one
-    //deletion is enough to produce a palindrome, if however neither is a palindrome we can't perform any
-    //more deletions and must return false
+    //Using two pointers we compare the outermost characters to determine if they are the same. If they match we move the
+    //pointers along once character towards the middle and recompare. If they don't match we split `s` into two strings -
+    //one without the left mismatch character and one without the right mimatch character. We then attempt to see if those
+    //two altered strings are palindrome, if either are then one deletion is enough to produce a palindrome, if however
+    //neither is a palindrome we can't perform any more deletions and must return false
     static func validPalindrome(_ s: String) -> Bool {
         return isValidPalindrome(Array(s), true)
     }
@@ -37,7 +36,8 @@ struct ValidPalindromeII {
                 guard canRemove else {
                     return false
                 }
-                
+                //no need to retest the whole string as we know until this point it's valid - just test
+                //the reminder minus one character
                 let leftChars = Array(chars[(left + 1)...right])
                 let rightChars = Array(chars[left..<right])
                 

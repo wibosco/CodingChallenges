@@ -9,32 +9,36 @@
 import Foundation
 
 //https://leetcode.com/problems/next-permutation/
-//two pointers
 //array
-//see https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
-struct NextPermutationNumber {
+//
+//See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
+struct NextPermutation {
     
     //Time: O(n) - Don't be tricked by the for inside a for, notice the breaks
+    //Space: O(1)
+    //two pointers
+    //inline
+    //
+    //Solution Description:
+    //In order to find the next larger permutation we need to the smallest unit index (indexing from the right) where
+    //that a larger value than the index directly to its right - this becomes our pivot index (if this doesn't exist
+    //then we have the highest value premutation and should return the lowest possible permutation i.e. all in
+    //ascending order). We then need to switch out this pivot with the smallest unit index that has a larger value
+    //than the pivots value - please note that we only switch out one index. Finally having switched out the pivot
+    //we then just need to ensure that everything after the pivot is the smallest it can be by sorting it in ascending
+    //order.
     static func nextPermutation(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }
         
-        var pivot = -1
-        //find smallest index where the less-significant index
-        //is larger than the more-significant index as this value
-        //will allow us to create the next permutation. A descending
-        //order sequence e.g '7, 5, 3, 2, 1' means that all that
-        //those numbers are already on their last permutstion.
+        var pivot = -1 //so if no pivot is found the whole array will be sorted in ascending order
+        //ls - less significant index
+        //ms = more significant index i.e. one to the right
         for ls in (1..<nums.count).reversed() {
             let ms = ls - 1
             if nums[ls] > nums[ms] {
                 pivot = ms
-                //We know everything up to the pivot from the end was
-                //in descending order from (right to left) so to swap
-                //the pivot for the first (smallest) value that is
-                //greater than itself we need to reverse the array
-                //and compare
                 let insidePivot = (pivot + 1)
                 for index in (insidePivot..<nums.count).reversed() {
                     if nums[index] > nums[pivot] {
@@ -46,22 +50,17 @@ struct NextPermutationNumber {
             }
         }
         
-        //As we have changed to pivot we now need to calculate
-        //the smallest permutation with that new pivot. Thankfully
-        //this is just an ascending order of those values to the
-        //right of the pivot (opposite process of how we found
-        //the pivot)
         nums[(pivot + 1)...].reverse()
     }
     
     //Time: O(n)
+    //two pointers
     static func nextPermutationAlt(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }
         
-        //find smallest index where the less-significant index
-        //is larger than the more-significant index
+        //find smallest index where the less-significant index is larger than the more-significant index
         var pivot: Int?
         for ls in (1..<nums.count).reversed() {
             let ms = ls - 1
@@ -71,13 +70,10 @@ struct NextPermutationNumber {
             }
         }
         
-        //if we didn't find our pivot, then there is no larger
-        //permutation
+        //if we didn't find our pivot, then there is no larger permutation
         if let pivot = pivot {
-            //sort everything to the right of the pivot (least-
-            //significant) into ascending order and then swap
-            //the pivot for the first (smallest) vslue that is
-            //greater than itself
+            //sort everything to the right of the pivot (least-significant) into ascending order and then swap the
+            //pivot for the first (smallest) vslue that is greater than itself
             let insidePivot = (pivot + 1)
             let sortRange = insidePivot..<nums.count
             let sorted = nums[sortRange].sorted()

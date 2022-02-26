@@ -29,7 +29,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //of the extra levels the slower needs to traverse will have been eaten up by switching the fast pointer to the
     //slower starting position. When they meet we can guarantee that node will be the lowest common ancestor.
     //
-    //See https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len for more details and a graphic showing the above
+    //See: https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len for more details and a graphic showing the above
     //Same solution as https://leetcode.com/problems/intersection-of-two-linked-lists/
     static func lowestCommonAncestor(_ p: BinaryTreeNodeParent?,_ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
         guard let p = p, let q = q else {

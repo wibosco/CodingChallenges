@@ -12,24 +12,31 @@ import Foundation
 //stack
 struct SimplifyPath {
     
-    //Time: O(n)
-    //Space: O(n)
+    //Time: O(n) where `n` is the number of subpaths in `path`
+    //Space: O(n) where `n` is the number of characters in `path`
+    //String
     //
     //Solution Description:
-    //1. Split path using "/"
-    //2. Build stack of path by traversing through split path, if encoutering ".." pop last element from stack
-    //3. Concatenate stack elements together
+    //Split path using "/" into directory-names and/or commands (`..`). Build stack of path by traversing through the split
+    //path and apply thr rules:
+    //
+    //1. If current component is an empty string then skip it
+    //2. If element is `.` - treat as a no-op and skip
+    //3. If current component is '..', pop last component from the `stack`
+    //4. Anything else add to `stack`
+    //
+    //Add a starting "/" and concatenate stack components together using "/"
     static func simplifyPath(_ path: String) -> String {
-        let components = path.split(separator: "/")
+        let components = path.split(separator: "/") //don't try and treat each character independently
         var stack = [String]()
         
         for component in components {
-            guard component != ".", component != "" else {
+            guard component != ".", component != "" else { // no-op
                 continue
             }
             
-            if component == ".." {
-                _ = stack.popLast()
+            if component == ".." { //pop up a directory
+                _ = stack.popLast() //no need to check if the stack has elements when using `popLast()`
             } else {
                 stack.append(String(component))
             }

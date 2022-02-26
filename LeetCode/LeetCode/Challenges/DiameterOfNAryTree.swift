@@ -18,10 +18,10 @@ struct DiameterOfNAryTree { //DiameterOfN-AryTree
     //
     //Solution Description:
     //Remembering that a tree is made up of smaller trees we use DFS to traverse to the end of each branch of those trees.
-    //We are only interested in the two deepest branch in each subtree. We then compare the diameter of those deepest branch
-    //with the current deepest diameter to determine if we have a new deepest. Particular attention has to be paid to if a
-    //subtree only contains one initial node, as this is still a valid path and we shouldn't discard its subtree by insisting
-    //on each subtree having at least two children i.e.
+    //We are only interested in the two deepest branches in each subtree. We then compare the diameter of those deepest
+    //branches with the current deepest diameter to determine if we have a new deepest. Particular attention has to be paid
+    //to if a subtree only contains one initial node, as this is still a valid path and we shouldn't discard its subtree by
+    //insisting on each subtree having at least two children i.e.
     //                  1
     //                  2
     //                3   4
@@ -30,7 +30,7 @@ struct DiameterOfNAryTree { //DiameterOfN-AryTree
     //diameter is to be found eventually we get back to the root where we stop.
     //
     //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707
-    //for difference beteen height and depth
+    //for difference between height and depth
     static func diameter(_ root: NaryTreeNode?) -> Int {
         var longestDiameter = 0
         height(root, &longestDiameter)

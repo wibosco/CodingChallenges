@@ -13,13 +13,18 @@ import Foundation
 struct MergeIntervals {
     
     //Time: O(n log n) where `n` is the number of intervals
-    //Space: O(n) where `n` is the number of intervals
+    //Space: O(n) where `n` is the number of intervals (we copy the `intervals` array to sort it)
     //sorting
     //
     //Solution Description:
-    //Sorting the intervals into ascending order, this way we only need compare any given interval with it's
-    //immediate, already merged predecessor to determine if this inteval is a new distant interval or a
-    //continuation of that predecessor interval
+    //By sorting the intervals into ascending order we can reduce the amount of work required to find an overlapping interval
+    //as any overlapping intervals will be neighbors. As it's possible for multiple intervals to share an overlap it is not
+    //enough to merely compare one neighbour with another neighbour instead we need to compare an interval against the last
+    //alreay merged interval. Where an overlap exists we (potentally - sometime the interval-to-be-mergeds upper is less than
+    //the current merged intervals upper boundary) push out the merged intervals upper boundary to accommodate this new upper
+    //boundary (lower boundary never changes as it is either less than or equal to the interval-to-be-merged lower boundary).
+    //If there isn't an overlap we add the interval to the `mergedIntervals` array. Once all intervals have been compared we
+    //return the `mergedIntervals` array.
     static func merge(_ intervals: [[Int]]) -> [[Int]] {
         guard intervals.count > 1 else {
             return intervals
@@ -28,7 +33,7 @@ struct MergeIntervals {
         var intervals = intervals
         intervals.sort { $0[0] < $1[0] } // n log n
         
-        var mergedIntervals = [intervals[0]]
+        var mergedIntervals = [intervals[0]] //seed with the first interval
         
         for i in 1..<intervals.count {
             let comparisonInterval = intervals[i]

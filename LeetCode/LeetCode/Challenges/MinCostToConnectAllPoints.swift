@@ -125,7 +125,7 @@ struct MinCostToConnectAllPoints {
 }
 
 //Union-by-rank/disjoint set
-//see: https://www.youtube.com/watch?v=wU6udHRIkcc
+//See: https://www.youtube.com/watch?v=wU6udHRIkcc
 //
 //Can only be applied on undirected graphs
 //

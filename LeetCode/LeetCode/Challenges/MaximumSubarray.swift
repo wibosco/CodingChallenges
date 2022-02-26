@@ -29,7 +29,7 @@ struct MaximumSubarray {
     //continue with that subarray sum. We then compare that new subarray sum with the maximum/greatest subarray sum that
     //we have seen so far and keep the larger of the two.
     //
-    //See https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm
+    //See: https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm
     //This is almost a two pointers question but as we only return the value we need to keep the start pointer
     static func maxSubArray(_ nums: [Int]) -> Int {
         var currentSum = nums[0]

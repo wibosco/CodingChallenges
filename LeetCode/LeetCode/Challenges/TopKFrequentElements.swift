@@ -46,9 +46,9 @@ struct TopKFrequentElements {
     }
     
     private static func quickSelect(_ nums: inout [Int], _ frequencies: [Int: Int], _ left: Int, _ right: Int, _ k: Int) {
-        guard left < right else {
-            return
-        }
+//        guard left < right else {
+//            return
+//        }
         
         let partitionIndex = partition(&nums, frequencies, left, right)
         

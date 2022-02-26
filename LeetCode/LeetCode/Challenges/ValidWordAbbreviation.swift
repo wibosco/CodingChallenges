@@ -15,7 +15,7 @@ struct ValidWordAbbreviation {
     //Time: O(n)
     //Space: O(1)
     //array
-    //pointers
+    //two pointers
     //
     //Solution Description:
     //Iterate through both the `abbr` and `word` strings comparing elements to ensure they match. Where needed build a

@@ -59,7 +59,7 @@ struct MergeSortedArray {
     //
     //Solution Description:
     //Iterate through `nums1` and `nums2` and gradually build a third array with the sorted, combined result of the
-    //merge. Usin `nums1` as the primary array, iterate it through, comparing the current element against the current
+    //merge. Using `nums1` as the primary array, iterate it through, comparing the current element against the current
     //element in `nums2` - if we find that the current `nums2` element is smaller than the current `nums1` element we
     //iterate through `nums2` until we find a `nums2` element that is larger or we exhaust `nums2`. If comparing `nums1`
     //against `nums2` we still have values in `nums2` we add these as-is to the end of the `combined` array
@@ -80,7 +80,7 @@ struct MergeSortedArray {
         }
         
         //add any unadded `nums2` elements
-        combined.append(contentsOf: nums2[p2..<n])
+        combined += nums2[p2...]
         
         nums1 = combined
     }

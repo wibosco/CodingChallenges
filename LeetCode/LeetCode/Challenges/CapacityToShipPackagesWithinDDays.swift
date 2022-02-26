@@ -38,6 +38,7 @@ struct CapacityToShipPackagesWithinDDays {
         
         while left < right {
             let mid = left + (right - left) / 2
+            
             var currentDailyCargoWeight = 0
             var daysNeeded = 1
             

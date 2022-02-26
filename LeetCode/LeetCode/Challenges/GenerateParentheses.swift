@@ -24,7 +24,7 @@ struct GenerateParentheses {
         return parentheses
     }
     
-    //See https://www.youtube.com/watch?v=sz1qaKt0KGQ for breakdown
+    //See: https://www.youtube.com/watch?v=sz1qaKt0KGQ for breakdown
     static func backtrack(array: inout [String], value: String, open: Int, close: Int, max: Int) {
         print("array: \(array)")
         

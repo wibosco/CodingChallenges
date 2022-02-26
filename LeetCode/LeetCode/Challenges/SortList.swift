@@ -30,8 +30,8 @@ struct SortList {
     //two lists at each recursive level which then compare against each other and move each node into its sorted position. As we
     //sort the lists at each recursive level we eventually sort the full list and can return it
     //
-    //See https://leetcode.com/problems/merge-two-sorted-lists/ for merging
-    //See https://leetcode.com/problems/middle-of-the-linked-list/ for finding the center of a linked list
+    //See: https://leetcode.com/problems/merge-two-sorted-lists/ for merging
+    //See: https://leetcode.com/problems/middle-of-the-linked-list/ for finding the center of a linked list
     static func sortList(_ head: ListNode?) -> ListNode? {
         guard let head = head, head.next != nil else { //basecase
             return head
