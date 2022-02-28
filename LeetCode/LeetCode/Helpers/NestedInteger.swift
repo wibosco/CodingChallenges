@@ -30,7 +30,7 @@ class NestedInteger {
     
     func add(_ elem: NestedInteger) {
         if list != nil {
-            self.list?.append(elem)
+            list?.append(elem)
         } else {
             list = [elem]
         }

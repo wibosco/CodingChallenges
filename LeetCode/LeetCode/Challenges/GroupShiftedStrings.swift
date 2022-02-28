@@ -19,10 +19,11 @@ struct GroupShiftedStrings {
     //wrapping
     //
     //Solution Description:
-    //For each value in `strings` we calculte the distance between each character in that value - we repeat until we calculate for each character in
-    //that value. We then use that distance as the key for the `groupings` dictionary and the string as the value. If two strings have the same
-    //distance then it means that they have been rotated the same number of times and so match - this matching string is added to the `grouping` dict
-    //under the same key. At the end we extract all values as an array of strings and merged them to form the result
+    //For each string in `strings` we calculte the distance between each character in that string - we repeat until we
+    //calculate the distance for each character in that string. We then use those distances as the key for the `groupings`
+    //dictionary with the string as the value. If two strings have the same distance then it means that they have been
+    //rotated the same number of times and so match - this matching string is added to the `grouping` dict under the same
+    //key. At the end we extract all values as an array of strings and merged them to form the result
     static func groupStrings(_ strings: [String]) -> [[String]] {
         guard strings.count > 1 else {
             return [strings]
@@ -40,19 +41,15 @@ struct GroupShiftedStrings {
                 let first = alphabet[characters[i]]!
                 let second = alphabet[characters[(i + 1)]]!
                 
-                let offset = first > second ? 26 : 0
+                let offset = first > second ? 26 : 0 //wrap characters so that `ba` is treated the same `az`
                 let distance = (second - first) + offset
                 distances.append(distance)
             }
             
+            //if a string only has one character we add it with an empty key
             groupings[distances, default: [String]()].append(string)
         }
-        
-        var result = [[String]]()
-        for value in groupings.values {
-            result.append(value)
-        }
 
-        return result
+        return groupings.values.compactMap { $0 }
     }
 }
