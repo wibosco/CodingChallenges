@@ -41,5 +41,14 @@ class TopKFrequentElementsTests: XCTestCase {
         
         XCTAssertEqual(top, [1])
     }
+    
+    func test_C() {
+        let nums = [-1, -1]
+        let k = 1
+        
+        let top = TopKFrequentElements.topKFrequent(nums, k)
+        
+        XCTAssertEqual(top, [-1])
+    }
 
 }
