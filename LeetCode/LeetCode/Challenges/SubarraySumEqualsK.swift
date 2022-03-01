@@ -24,10 +24,10 @@ struct SubarraySumEqualsK {
     //don't need to directly calculate j...i instead we can use the sum of  0..<j and substitute from 0...i to get j...i
     //- ensursing that we never backtrack the array i.e. linear time. To support this with each iteration we either create a
     //new entry in `map` to store the prefix sum as it is at that index or increase the count of an existing entry. We need
-    //to keep the count as `nums` can contain negative values so a later iterations are not guaranteed to always be larger so
-    //the same sum can appear multiple times - each representing a valid starting index to `i`. We check if the difference
-    //between the `prefixSum` and `k` is already in `map` if it is then we take the count of entry and add it to our
-    //`subarrays` count.
+    //to keep the count as `nums` can contain negative values so a later prefix sum is not guaranteed to be larger than a
+    //previous. This means that the same prefix sum value can appear multiple times - each representing a valid starting index
+    //to `i`. We check if the difference between the `prefixSum` and `k` is already in `map` if it is then we take the count
+    //of entry and add it to the `numberOfSubarrays` count.
     //
     //N.B. We handle the special case where `nums[i] == k` by seeding `map` with `[0, 1]` i.e. a difference of 0
     static func subarraySum(_ nums: [Int], _ k: Int) -> Int {
@@ -35,20 +35,18 @@ struct SubarraySumEqualsK {
         //special case where `nums[i] == k`
         var map = [0: 1] //[sum, count] - we need a count as array can contain negative
                          //                numbers for same sum can appear multiple times
-        var subarrays = 0
+        var numberOfSubarrays = 0
         
         for i in 0..<nums.count {
             prefixSum += nums[i]
             
             let diff = prefixSum - k
                             
-            if let count = map[diff] {
-                subarrays += count
-            }
+            numberOfSubarrays += map[diff] ?? 0
             
             map[prefixSum, default: 0] += 1
         }
         
-        return subarrays
+        return numberOfSubarrays
     }
 }

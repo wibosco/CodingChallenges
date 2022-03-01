@@ -37,7 +37,7 @@ struct ValidPalindromeII {
                     return false
                 }
                 //no need to retest the whole string as we know until this point it's valid - just test
-                //the reminder minus one character
+                //the remainder minus one character
                 let leftChars = Array(chars[(left + 1)...right])
                 let rightChars = Array(chars[left..<right])
                 

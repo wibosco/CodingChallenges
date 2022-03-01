@@ -18,7 +18,7 @@ struct DiagonalTraverse {
     //
     //Solution Description:
     //Walk the diagonals in the matrix, moving between row and column as neccessary.
-    static func findDiagonalOrder(_ mat: [[Int]]) -> [Int] {
+    static func findDiagonalOrderMath(_ mat: [[Int]]) -> [Int] {
         let rowCount = mat.count
         let columnCount = mat[0].count
         
@@ -27,22 +27,22 @@ struct DiagonalTraverse {
         
         var order = Array(repeating: 0, count: (rowCount * columnCount))
         
-        for i in 0..<order.count {
+        for i in 0..<order.count { //ensure that we don't get caught infinitely moving between rows and columns
             order[i] = mat[r][c]
             
             if (r + c).isMultiple(of: 2) { //upwards
-                if c == (columnCount - 1) { //change direction
+                if c == (columnCount - 1) { //change direction - move down onto the next row
                     r += 1 // end of columns, move down onto start of downwards diagonal
-                } else if r == 0 { //change direction
+                } else if r == 0 { //change direction - move right in the columns
                     c += 1
                 } else { //traverse the diagonal
                     r -= 1
                     c += 1
                 }
             } else { // downloads
-                if r == (rowCount - 1) { //change direction
+                if r == (rowCount - 1) { //change direction - move right onto the next column
                     c += 1 // end of rows, move right onto start of upwards diagonal
-                } else if c == 0 { //change direction
+                } else if c == 0 { //change direction - move down into the next row
                     r += 1
                 } else { //traverse the diagonal
                     r += 1
@@ -59,14 +59,14 @@ struct DiagonalTraverse {
     //dictionary
     //
     //Solution Description:
-    //If two elements are on the same diagonal then (r1 - c1) == (r2 - c2). Using this we can iterate through the matrix
-    //and sum the index at each element, that sum can then be the key to our `diagonals` dictionary which will hold
-    //all diagonals for a given key as an array. Once the `diagonals` dictionary is populated we can then iterate through
-    //the keys that we discovered (in order) and if the key is even reverse the order of the diagonal array and add to the
-    //`order` array; if not we just add as is to the `order` array.
-    static func findDiagonalOrderSum(_ mat: [[Int]]) -> [Int] {
+    //If two elements are on the same diagonal then (r1 - c1) == (r2 - c2). Using this we can iterate through the matrix and sum
+    //the index at each element, that sum can then be the key to our `diagonals` dictionary which will hold all diagonals for a
+    //given key as an array. Once the `diagonals` dictionary is populated we can then iterate through the keys that we discovered
+    //(in order) and if the key is even reverse the order of the diagonal array and add to the `order` array; if not we just add
+    //as is to the `order` array.
+    static func findDiagonalOrder(_ mat: [[Int]]) -> [Int] {
         var diagonals = [Int: [Int]]()
-        var keys = [Int]()
+        var keys = [Int]() //`keys` will control the traversal order
         
         for i in 0..<mat.count {
             for j in 0..<mat[i].count {
@@ -74,11 +74,9 @@ struct DiagonalTraverse {
                 let val = mat[i][j]
                 
                 if diagonals[key] == nil {
-                    diagonals[key] = [Int]()
-                    keys.append(key)
+                    keys.append(key) //only add the key once
                 }
-                
-                diagonals[key]?.append(val)
+                diagonals[key, default: [Int]()].append(val)
             }
         }
         
@@ -86,8 +84,8 @@ struct DiagonalTraverse {
         for key in keys {
             if key.isMultiple(of: 2) { //upwards
                 let elements = diagonals[key]!
-                for i in (0..<elements.count).reversed() {
-                    order.append(elements[i])
+                for element in elements.reversed() {
+                    order.append(element)
                 }
             } else { //downloads
                 order.append(contentsOf: diagonals[key]!)
@@ -96,10 +94,4 @@ struct DiagonalTraverse {
             
         return order
     }
-
-//    let upwardRelativeIndexing = [-1, 1] //[row, column]
-//    let downwardRelativeIndexing = [1, -1]
-//    private static func neighbor(_ mat: [[Int]], _ row: Int, _ column: Int) {
-//
-//    }
 }

@@ -23,15 +23,15 @@ struct ReverseInteger {
         var reversed = 0
         
         while tmp != 0 {
-            let reminder = tmp % 10
+            let remainder = tmp % 10
             tmp /= 10
             
-            if willOverFlowIfAdded(a: reversed, b: reminder) ||
-                willUnderFlowIfAdded(a: reversed, b: reminder) {
+            if willOverFlowIfAdded(a: reversed, b: remainder) ||
+                willUnderFlowIfAdded(a: reversed, b: remainder) {
                 return 0
             }
             
-            reversed = (reversed * 10) + reminder
+            reversed = (reversed * 10) + remainder
         }
         
         return reversed

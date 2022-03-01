@@ -58,5 +58,13 @@ class ContinuousSubarraySumTests: XCTestCase {
         
         XCTAssertFalse(contains)
     }
-
+    
+    func test_F() {
+        let nums = [5, 0, 0, 0]
+        let k = 3
+        
+        let contains = ContinuousSubarraySum.checkSubarraySum(nums, k)
+        
+        XCTAssertTrue(contains)
+    }
 }

@@ -37,7 +37,7 @@ struct MiddleOfLinkedList {
     //
     //Solution Description:
     //Iterate through the array, placing all nodes into an array in the order we encounter them in. Once list has been
-    //fully traversed we divide the length of the array by 2 (as this is an int division any reminder is lost) and
+    //fully traversed we divide the length of the array by 2 (as this is an int division any remainder is lost) and
     //return the element at that index
     static func middleNodeArray(_ head: ListNode?) -> ListNode? {
         var array = [ListNode]()
