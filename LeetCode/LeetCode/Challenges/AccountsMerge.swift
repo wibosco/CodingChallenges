@@ -36,7 +36,8 @@ struct AccountsMerge {
         
         //build adjacency list
         for account in accounts {
-            let firstEmail = account[1] //treat the first email as the root of this accounts graph
+            //treat the first email as the root of this accounts graph, we will use this email when searching to tie graph to account
+            let firstEmail = account[1]
             
             for otherEmail in account[2...] {
                 adjList[firstEmail, default: [String]()].append(otherEmail)
@@ -49,11 +50,12 @@ struct AccountsMerge {
         
         var mergedAccounts = [[String]]()
         
+        //as this graph can contain multiple subgraphs we need to loop through all vertices to make sure we try each path
         for account in accounts {
-            var queue = [account[1]]
+            var queue = [account[1]] //using first email of account as root
             var mergedEmails = [String]()
             
-            while !queue.isEmpty {
+            while !queue.isEmpty { //notice no inner "level" loop
                 let email = queue.removeFirst()
                 
                 guard !visited.contains(email) else {
@@ -80,11 +82,11 @@ struct AccountsMerge {
                 continue
             }
             
-            let sortedEmails = mergedEmails.sorted { $0 < $1 } // n log n
+            mergedEmails.sort { $0 < $1 } // n log n
             
             var mergedAccount = [String]()
             mergedAccount.append(account[0]) //name
-            mergedAccount.append(contentsOf: sortedEmails)
+            mergedAccount.append(contentsOf: mergedEmails)
             
             mergedAccounts.append(mergedAccount)
         }
@@ -116,7 +118,8 @@ struct AccountsMerge {
         
         //build adjacency list
         for account in accounts {
-            let firstEmail = account[1] //treat the first email as the root of this accounts graph
+            //treat the first email as the root of this accounts graph, we will use this email when searching to tie graph to account
+            let firstEmail = account[1]
             
             for otherEmail in account[2...] {
                 adjList[firstEmail, default: [String]()].append(otherEmail)
@@ -127,8 +130,10 @@ struct AccountsMerge {
         var visited = Set<String>()
         
         var mergedAccounts = [[String]]()
-        for account in accounts { //as this graph can contain multiple subgraphs we need to loop through all vertices to make sure we try each path
-            let email = account[1]
+        
+        //as this graph can contain multiple subgraphs we need to loop through all vertices to make sure we try each path
+        for account in accounts {
+            let email = account[1] //using first email of account as root
             
             guard !visited.contains(email) else {
                 continue
@@ -138,11 +143,11 @@ struct AccountsMerge {
             
             dfs(&mergedEmails, email, &visited, adjList)
             
-            let sortedEmails = mergedEmails.sorted { $0 < $1 } // n log n
+            mergedEmails.sort { $0 < $1 } // n log n
             
             var mergedAccount = [String]()
             mergedAccount.append(account[0]) //name
-            mergedAccount.append(contentsOf: sortedEmails)
+            mergedAccount.append(contentsOf: mergedEmails)
             
             mergedAccounts.append(mergedAccount)
         }

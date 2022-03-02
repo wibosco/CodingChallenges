@@ -17,10 +17,9 @@ struct GraphValidTree {
     //disjoint set
     //
     //Solution Description:
-    //1. A valid tree has one root (all nodes need to be connected) and no cycles
-    //   by using a disjoint set we can test for both conditions. First a check is
-    //   made to ensure that edges are not too few or too many and then a check is
-    //   that connecting the nodes together does not result in a cycle
+    //A valid tree has one root (all nodes need to be connected) and no cycles by using a disjoint set we can test for both
+    //conditions. First a check is made to ensure that edges are not too few or too many and then a check is that connecting
+    //the nodes together does not result in a cycle
     static func validTree(_ n: Int, _ edges: [[Int]]) -> Bool {
         //For the graph to be a valid tree, it must have exactly `n - 1` edges.
         //Any less, and it can't possibly be fully connected. Any more, and
@@ -47,17 +46,12 @@ struct GraphValidTree {
 //Can only be applied on undirected graphs
 //
 //Solution Description:
-//1. Each vertice is given an initial value of -1 to indicate
-//   that they are their own root
-//2. Perform a union between two vertices by finding the root
-//   of each vertice (this will be a negative number). This root
-//   may not be directly associated with the vertice but instead
-//   require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices
-//   root and select the root with the most nodes i.e. lowest
-//   negative value. Update the smaller root to point at the other
-//   root and update the other roots count to include the count that
-//   the former root had
+//1. Each vertice is given an initial value of -1 to indicate that they are their own root
+//2. Perform a union between two vertices by finding the root of each vertice (this will be a negative number). This root may
+//   not be directly associated with the vertice but instead require multiple steps hence the while loop in `find`
+//3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest
+//   negative value. Update the smaller root to point at the other root and update the other roots count to include the count
+//   that the former root had
 private class UnionFind {
     private(set) var ranks: [Int]
     

@@ -12,14 +12,14 @@ import Foundation
 //string
 struct CustomSortString {
     
-    //Time: O(n + m) where `n` is the number of characters in order and `m` is the number of characters in `s`
+    //Time: O(n + m) where `n` is the number of characters in `order` and `m` is the number of characters in `s`
     //Space: O(m)
     //array
     //sorting
     //counting
     //
     //Solution Description:
-    //We build a dictinary containing the count of each character in `s`. We then go through the characters of`order` and
+    //We build a dictionary containing the count of each character in `s`. We then go through the characters of`order` and
     //when a character of `order` appears in `countings` we add it n-times to our ordered array `orderedS`. Finally any
     //characters that appear in `s` but not in `order` are apended to the end of `orderedS` (careful to add them the
     //number of times they apeear in `s`).
@@ -40,12 +40,12 @@ struct CustomSortString {
             }
             
             orderedS += Array(repeating: c, count: count)
-            countings[c] = nil
+            countings[c] = nil //remove `c` from dictionary to allow us to handle non-ordered chars later on
         }
         
         //remaining characters that are not in the `order` string
         let sortedCountings = countings.sorted { $0.key < $1.key } //only need to do this so unit tests are consistent
-        for keyValue in sortedCountings {
+        for keyValue in countings {
             orderedS += Array(repeating: keyValue.key, count: keyValue.value)
         }
         
