@@ -29,4 +29,12 @@ class MaximumSwapTests: XCTestCase {
         
         XCTAssertEqual(max, 9973)
     }
+    
+    func test_C() {
+        let num = 98368
+
+        let max = MaximumSwap.maximumSwap(num)
+        
+        XCTAssertEqual(max, 98863)
+    }
 }
