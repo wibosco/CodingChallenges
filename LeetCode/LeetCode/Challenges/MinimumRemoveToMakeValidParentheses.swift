@@ -12,15 +12,18 @@ import Foundation
 //string
 struct MinimumRemoveToMakeValidParentheses {
     
-    //Time: O(n)
-    //Space: O(n)
+    //Time: O(n) where `n` is the number of characters in `s`
+    //Space: O(n) where `n` is the number of characters in `s`
+    //array
+    //counting
     //
     //Solution Description:
     //Make two passes through the string. First pass to remove unpaired closing brackets with the assumption that all opening
     //brackets are paired. Second pass in reverse to remove unpaired opening brackets.
     static func minRemoveToMakeValid(_ s: String) -> String {
+        //find unbalanced ")"
         var openingCount = 0
-        var forwardS = [Character]()
+        var forwardS = [Character]() //don't use a String instance here as it's too expensive timewise
         
         for c in s {
             if c == ")" {
@@ -36,6 +39,7 @@ struct MinimumRemoveToMakeValidParentheses {
             }
         }
         
+        //find unbalanced "("
         var closingCount = 0
         var ans = [Character]()
         
@@ -53,6 +57,6 @@ struct MinimumRemoveToMakeValidParentheses {
             }
         }
         
-        return String((ans.reversed()))
+        return String(ans.reversed())
     }
 }

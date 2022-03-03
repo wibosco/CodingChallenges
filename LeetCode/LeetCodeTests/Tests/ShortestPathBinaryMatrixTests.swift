@@ -65,4 +65,16 @@ class ShortestPathBinaryMatrixTests: XCTestCase {
         
         XCTAssertEqual(stepCount, 1)
     }
+    
+    func test_F() {
+        let grid = [[0, 0, 0, 0, 1],
+                    [1, 0, 0, 0, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 0, 0, 1, 1],
+                    [0, 0, 0, 1, 0]]
+        
+        let stepCount = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        
+        XCTAssertEqual(stepCount, -1)
+    }
 }

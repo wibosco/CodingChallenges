@@ -12,19 +12,18 @@ import Foundation
 //graph theory
 struct ShortestPathBinaryMatrix {
     
-    //Time: O(n)
+    //Time: O(n) where `n` is the number of cells in `grid`
     //Space: O(n)
     //BFS
     //relative indexing
     //matrix
     //
     //Solution Description:
-    //Treat the matrix as a graph with each "touching" nodes being a neighbor. "Touching" is defined
-    //by using relative indexing from the [row][column] position that is being checked i.e. all 8
-    //nodess around - careful to check for out of bounds and if that nodes is navigatable i.e. 0 value.
-    //Using BFS we then traverse through the neighbours of each nodes until we either find the
-    //target (bottom right) or we run out of neighbours. To prevent an infinite search, any visited
-    //nodess we insert into a `visited` set.
+    //Treat the matrix as a graph with each "touching" nodes being a neighbor. "Touching" is defined by using relative indexing
+    //from the [row][column] position that is being checked i.e. all 8 nodess around - careful to check for out of bounds and if
+    //that nodes is navigatable i.e. 0 value. Using BFS we then traverse through the neighbours of each nodes until we either
+    //find the target (bottom right) or we run out of neighbours. To prevent an infinite search, any visited nodess we insert
+    //into a `visited` set.
     static func shortestPathBinaryMatrix(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
             return -1
@@ -38,7 +37,7 @@ struct ShortestPathBinaryMatrix {
             return -1
         }
         
-        //start is the end
+        //is start also the end?
         guard (rowsCount - 1) != 0, (columnCount - 1) != 0 else {
             return 1
         }
@@ -47,37 +46,39 @@ struct ShortestPathBinaryMatrix {
                                 [0, -1],          [0, 1],
                                 [1, -1], [1, 0],  [1, 1]]
         
-        var queue = [(rowColumn: [0, 0], count: 1)] //[row, column], count
+        var queue = [[0, 0]] //[row, column]
         var visited = Set<[Int]>()
+        var steps = 1
         
         let target = [(rowsCount - 1), (columnCount - 1)]
         
         while !queue.isEmpty {
-            let dq = queue.removeFirst()
-            let rowColumn = dq.rowColumn
-            let count = dq.count
+            let count = queue.count
             
-            guard !visited.contains(rowColumn) else {
-                continue
-            }
-            
-            visited.insert(rowColumn)
-            
-            let neighbors = validNeighbors(grid: grid, relativeIndexing: relativeIndexing, row: rowColumn[0], column: rowColumn[1])
-            
-            for neighbor in neighbors {
-                guard neighbor != target else {
-                    return count + 1
+            for _ in 0..<count {
+                let rowColumn = queue.removeFirst()
+                
+                guard rowColumn != target else {
+                    return steps
                 }
                 
-                queue.append((neighbor, (count + 1)))
+                guard !visited.contains(rowColumn) else {
+                    continue
+                }
+                
+                visited.insert(rowColumn)
+                
+                let neighbors = validNeighbors(grid, relativeIndexing, rowColumn[0], rowColumn[1])
+                queue.append(contentsOf: neighbors)
             }
+            
+            steps += 1
         }
         
-        return -1
+        return -1 //error state
     }
     
-    private static func validNeighbors(grid: [[Int]], relativeIndexing: [[Int]], row: Int, column: Int) -> [[Int]] {
+    private static func validNeighbors(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]
@@ -104,12 +105,11 @@ struct ShortestPathBinaryMatrix {
     //matrix
     //
     //Solution Description:
-    //Treat the matrix as a graph with each "touching" node being a neighbor. "Touching" is defined
-    //by using relative indexing from the [row][column] position that is being checked i.e. all 8
-    //nodess around - careful to check for out of bounds and if that nodes is navigatable i.e. 0 value.
-    //Gradually build up an adjacent list for all ndoes in the graph, using BFS we then traverse
-    //through the neighbors until we either find the target (bottom right) or we run out of neighbours.
-    //To prevent an infinite search, any visited nodess we insert into a `visited` set.
+    //Treat the matrix as a graph with each "touching" node being a neighbor. "Touching" is defined by using relative indexing
+    //from the [row][column] position that is being checked i.e. all 8 nodess around - careful to check for out of bounds and
+    //if that nodes is navigatable i.e. 0 value. Gradually build up an adjacent list for all ndoes in the graph, using BFS we
+    //then traverse through the neighbors until we either find the target (bottom right) or we run out of neighbours. To prevent
+    //an infinite search, any visited nodess we insert into a `visited` set.
     static func shortestPathBinaryMatrixLongWay(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
             return -1
