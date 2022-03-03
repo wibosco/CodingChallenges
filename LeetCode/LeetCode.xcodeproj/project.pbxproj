@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0619BA27D0DCD900809D74 /* RandomPickWithWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0619B927D0DCD900809D74 /* RandomPickWithWeight.swift */; };
 		3D13819E27C3F0DE00E17E5A /* MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */; };
 		3D1381A027C3F12800E17E5A /* MajorityElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */; };
 		3D1381A227C3FC3A00E17E5A /* MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */; };
@@ -402,6 +403,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D0619B927D0DCD900809D74 /* RandomPickWithWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomPickWithWeight.swift; path = LeetCode/RandomPickWithWeight.swift; sourceTree = SOURCE_ROOT; };
 		3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElement.swift; sourceTree = "<group>"; };
 		3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementTests.swift; sourceTree = "<group>"; };
 		3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementII.swift; sourceTree = "<group>"; };
@@ -992,6 +994,7 @@
 				3D5C90AE27A7F7620035C399 /* PopulatingNextRightPointers.swift */,
 				3D5C912227A7F7630035C399 /* PopulatingNextRightPointersII.swift */,
 				3D5C910727A7F7630035C399 /* Pow.swift */,
+				3D0619B927D0DCD900809D74 /* RandomPickWithWeight.swift */,
 				3D5C911227A7F7630035C399 /* RangeSumOfBST.swift */,
 				3D5C910D27A7F7630035C399 /* ReconstructItinerary.swift */,
 				3D5C90B427A7F7620035C399 /* RecoverBinarySearchTree.swift */,
@@ -1508,6 +1511,7 @@
 				3D5C917D27A7F7630035C399 /* AsteroidCollision.swift in Sources */,
 				3D5C91DF27A7F7630035C399 /* RemoveAllAdjacentDuplicatesInString.swift in Sources */,
 				3D5C917527A7F7630035C399 /* TargetSum.swift in Sources */,
+				3D0619BA27D0DCD900809D74 /* RandomPickWithWeight.swift in Sources */,
 				3D5C91C727A7F7630035C399 /* PascalsTriangleII.swift in Sources */,
 				3D5C91D727A7F7630035C399 /* SubarraySumEqualsK.swift in Sources */,
 				3D5C91F127A7F7630035C399 /* AddStrings.swift in Sources */,

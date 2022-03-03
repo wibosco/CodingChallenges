@@ -45,7 +45,7 @@ struct CustomSortString {
         
         //remaining characters that are not in the `order` string
         let sortedCountings = countings.sorted { $0.key < $1.key } //only need to do this so unit tests are consistent
-        for keyValue in countings {
+        for keyValue in sortedCountings {
             orderedS += Array(repeating: keyValue.key, count: keyValue.value)
         }
         
