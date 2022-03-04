@@ -23,12 +23,12 @@ struct NumberOfIslands {
     //subgraphs
     //
     //Solution Description:
-    //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph
-    //until we find land (cell containing `1`). Once we have found land we need to find all land that is
-    //connected with it. Using DFS we traverse the graph from this land cell and find all connected land using
-    //relative indexing. To ensure that we don't go back over already discovered land we keep track of it using
-    //a `visited` set. Once we have exhasuatd all land connected to this first discovered land we increase the
-    //island count and and try to find unexplored land by continuing to loop through the grid.
+    //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph until we find
+    //land (cell containing `1`). Once we have found land we need to find all land that is connected with it. Using DFS we
+    //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
+    //back over already discovered land we keep track of it using a `visited` set. Once we have exhasuatd all land connected
+    //to this first discovered land we increase the island count and and try to find unexplored land by continuing to loop
+    //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
     static func numIslands(_ grid: [[String]]) -> Int {
@@ -87,12 +87,12 @@ struct NumberOfIslands {
     //subgraphs
     //
     //Solution Description:
-    //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph
-    //until we find land (cell containing `1`). Once we have found land we need to find all land that is
-    //connected with it. Using BFS we traverse the graph from this land cell and find all connected land using
-    //relative indexing. To ensure that we don't go back over already discovered land we keep track of it using
-    //a `visited` set. Once we have exhasuatd all land connected to this first discovered land we increase the
-    //island count and and try to find unexplored land by continuing to loop through the grid.
+    //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph until we find
+    //land (cell containing `1`). Once we have found land we need to find all land that is connected with it. Using BFS we
+    //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
+    //back over already discovered land we keep track of it using a `visited` set. Once we have exhasuatd all land connected
+    //to this first discovered land we increase the island count and and try to find unexplored land by continuing to loop
+    //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple BFSs
     static func numIslandsBFS(_ grid: [[String]]) -> Int {
