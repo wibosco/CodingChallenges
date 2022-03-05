@@ -16,17 +16,13 @@ class ACMICPCTeam {
         var teamsKnowledgeScore = [Int]()
         
         for i in 0..<contestantsTopicKnowledge.count {
-            
             let firstContestantTopicKnowledge = contestantsTopicKnowledge[i]
             
             for j in (i+1)..<contestantsTopicKnowledge.count {
-                
                 let secondContestantTopicKnowledge = contestantsTopicKnowledge[j]
-                
                 let bitWiseOrResult = Int(firstContestantTopicKnowledge, radix: 2)! | Int(secondContestantTopicKnowledge, radix: 2)!
 
                 if bitWiseOrResult > maximum {
-                    
                     maximum = bitWiseOrResult
                 }
                 
@@ -37,21 +33,16 @@ class ACMICPCTeam {
         var teamsWithMaximumScore = 0
         
         teamsKnowledgeScore.forEach { (knowledgeScore) in
-            
             if knowledgeScore == maximum {
-                
                 teamsWithMaximumScore += 1
             }
         }
         
         var maximumTopics = 0
-        
         let binaryMaximum = String(maximum, radix: 2)
         
         for ch in binaryMaximum {
-            
             if ch == Character("1") {
-                
                 maximumTopics += 1
             }
         }
@@ -64,43 +55,34 @@ class ACMICPCTeam {
         var maximum = 0
         var teamsKnowledgeScore = [Int]()
         
-        for i in 0..<contestantsTopicKnowledge.count {
-
+         for i in 0..<contestantsTopicKnowledge.count {
             let firstContestantTopicKnowledge = contestantsTopicKnowledge[i]
             
             for j in (i+1)..<contestantsTopicKnowledge.count {
-                
                 let secondContestantTopicKnowledge = contestantsTopicKnowledge[j]
                 
                 if secondContestantTopicKnowledge != firstContestantTopicKnowledge {
-                    
                     var uniqueTopicsForContestantCombination = 0
                     var numberOfUnknownTopics = 0
                     
                     for characterIndex in secondContestantTopicKnowledge.indices {
-                        
                         let topicKnowledgeA = Int(String(firstContestantTopicKnowledge[characterIndex]))!
                         let topicKnowledgeB = Int(String(secondContestantTopicKnowledge[characterIndex]))!
                         
                         if topicKnowledgeA | topicKnowledgeB == 1 {
-                            
                             uniqueTopicsForContestantCombination += 1
                             
                             continue
-                        }
-                        else {
-                            
+                        } else {
                             numberOfUnknownTopics += 1
                         }
                         
                         if maximum > (secondContestantTopicKnowledge.count - numberOfUnknownTopics) {
-                            
                             break
                         }
                     }
                     
                     if uniqueTopicsForContestantCombination > maximum {
-                        
                         maximum = uniqueTopicsForContestantCombination
                     }
                     
@@ -112,9 +94,7 @@ class ACMICPCTeam {
         var teamsWithMaximumScore = 0
         
         teamsKnowledgeScore.forEach { (knowledgeScore) in
-            
             if knowledgeScore == maximum {
-                
                 teamsWithMaximumScore += 1
             }
         }

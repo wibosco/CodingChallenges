@@ -40,32 +40,6 @@ class MinMaxSumTests: XCTestCase {
         XCTAssertEqual(9271, maxSum)
     }
     
-    // MARK: Alt
-    
-    func test_AltA() {
-        let data: [UInt] = [1, 3, 5, 7, 9]
-        let (minSum, maxSum) = MinMaxSum.minMaxSumAlt(data)
-        
-        XCTAssertEqual(16, minSum)
-        XCTAssertEqual(24, maxSum)
-    }
-    
-    func test_AltB() {
-        let data: [UInt] = [1, 2, 3, 4, 5]
-        let (minSum, maxSum) = MinMaxSum.minMaxSumAlt(data)
-        
-        XCTAssertEqual(10, minSum)
-        XCTAssertEqual(14, maxSum)
-    }
-    
-    func test_AltC() {
-        let data: [UInt] = [7, 69, 2, 221, 8974]
-        let (minSum, maxSum) = MinMaxSum.minMaxSumAlt(data)
-        
-        XCTAssertEqual(299, minSum)
-        XCTAssertEqual(9271, maxSum)
-    }
-    
     // MARK: Performance
     
     func test_performance() {

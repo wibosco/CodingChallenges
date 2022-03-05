@@ -9,28 +9,44 @@
 import Foundation
 
 //https://leetcode.com/problems/zigzag-conversion/
+//string
 struct ZigzagConversion {
     
-    //Time: O(n)
+    //Time: O(n) where `n` is the numbero of characters in `s`
+    //Space: O(n) where `n` is the numbero of characters in `s`
+    //array
+    //
+    //Solution Description:
+    //Rather than think of this as producing one string instead think of it as producing multiple strings for each row. Ignore
+    //diagonals and columns and instead thinking in terms of moving up and down rows. As we iterate through `s` we add each
+    //character we enounter to the end of the string that is at row. When we hit the final row (numRows - 1) we change
+    //direction and start moving back up the rows and when we hit the first row (0) we change direction again and start moving
+    //back down the rows. We repeat this process until we run out of characters, at which point we concatenate the strings at
+    //each row together (in row order) and return it
     static func convert(_ s: String, _ numRows: Int) -> String {
         guard numRows > 1 else {
             return s
         }
 
-        var result = Array(repeating: "", count: numRows)
-        var row = 0
-        var isGoingDown = true
+        //think of the string stored at each row as an array
+        var rows = Array(repeating: "", count: numRows)
+        var rowIndex = 0
+        var goingDown = true
 
         for c in s {
-            result[row] += String(c) // think of the string stored at this index as an array
+            rows[rowIndex] += String(c) //add `c` to this rows string array
 
-            row += isGoingDown ? 1 : -1
-            if row == 0 || row == numRows - 1 {
-                isGoingDown.toggle()
+            //setting up the next row
+            rowIndex += goingDown ? 1 : -1
+            
+            if rowIndex == 0 { //reached the top
+                goingDown = true
+            } else if rowIndex == numRows - 1 { //reach the bottom
+                goingDown = false
             }
         }
 
-        return result.joined()
+        return rows.joined()
     }
     
     //Time: O(3n)

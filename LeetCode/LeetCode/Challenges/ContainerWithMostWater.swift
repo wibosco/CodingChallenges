@@ -17,47 +17,52 @@ struct ContainerWithMostWater {
     //two pointers
     //
     //Solution Description:
-    //Using two pointers move through the array is a greedy manner to maximise the area between the heights.
-    //In each iteration move the smaller pointer
+    //Treating the size of each element in `height` as the vertical edge (height) of a rectangle and the distance between two
+    //elements as the hozitional edge (width) we can calculate the area of water each configuration can contains. Using two
+    //pointers we move through the array and culculate the area at between the two pointers - we choose the smaller of the two
+    //heights to use in the area calcuation. This area is then compared against the largest area we have seen so far and if
+    //larger it replaces it, else we move on. When deciding which pointer to move for the next area calculation we do so in a
+    //greedy manner by only moving the smaller pointer.
     static func maxArea(_ height: [Int]) -> Int {
-        var maxArea = 0
+        var maxContainerArea = 0
         
         var left = 0
         var right = height.count - 1
         
-        while right > left {
-            let leftHeight = height[left]
-            let rightHeight = height[right]
+        while left < right {
+            let h1 = height[left]
+            let h2 = height[right]
             
-            let heightOfContainer = min(leftHeight, rightHeight)
-            let distance = right - left
-
-            maxArea = max(maxArea, (heightOfContainer * distance))
+            let h = min(h1, h2)
+            let l = right - left
             
-            if leftHeight > rightHeight {
+            let containerArea = h * l //area = height * length
+            maxContainerArea = max(maxContainerArea, containerArea)
+            
+            if h1 > h2 {
                 right -= 1
             } else {
                 left += 1
             }
         }
         
-        return maxArea
+        return maxContainerArea
     }
     
     //Time: O(n^2)
     //Space: O(1)
     static func maxAreaBruteForce(_ height: [Int]) -> Int {
-        var maxArea = 0
+        var maxContainerArea = 0
         
         for i in 0..<height.count {
             for j in (i+1)..<height.count {
                 let heightOfContainer = min(height[i], height[j])
                 let distance = j - i
                 
-                maxArea = max(maxArea, (heightOfContainer * distance))
+                maxContainerArea = max(maxContainerArea, (heightOfContainer * distance))
             }
         }
         
-        return maxArea
+        return maxContainerArea
     }
 }

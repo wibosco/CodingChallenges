@@ -9,17 +9,20 @@
 import Foundation
 
 //https://leetcode.com/problems/two-sum/
-//dictionary
+//array
 struct TwoSum {
     
-    //Time: O(n)
-    //Space: O(n)
+    //Time: O(n) where `n` is the number of elements in `nums`
+    //Space: O(n) where `n` is the number of elements in `nums`
+    //dictionary
     //
     //Solution Description:
-    //1. Builds an dictionary containing with the delta as key and index as value
-    //2. Peform lookup of delta to see if it already exists if so return current index and dictionary index
+    //As we iterate through `nums` and check if another `nums` element can be added to it to equal `target`. To avoid having to
+    //nest loops we build a dictionary containing each seen `nums` element and its `index`. This will allow constant access time
+    //to check for if the difference between the current `nums` element and target has already been seen. If that difference is
+    //in `visited` we return the two indexes with the visited index being first (as it came before the current element)
     static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var visted = [Int: Int]()
+        var visted = [Int: Int]() //[num: index]
         
         for (index, num) in nums.enumerated() {
             let delta = target - num
@@ -29,26 +32,26 @@ struct TwoSum {
             visted[num] = index
         }
         
-        return []
+        return [Int]()
     }
     
-    //Time: O(n^2)
+    //Time: O(n^2) where `n` is the number of elements in `nums`
+    //Space: O(1)
+    //nested loops
     //
     //Solution Description:
-    //1. Loop through all possible combinations of `nums` elements
-    static func twoSumAlt(_ nums: [Int], _ target: Int) -> [Int] {
-        var indices = [Int]()
-        outerLoop: for i in 0..<nums.count {
+    //Iterate through `nums` and add every other `nums` element after it to check if the sum equals `target`
+    static func twoSumNestedLoops(_ nums: [Int], _ target: Int) -> [Int] {
+        for i in 0..<nums.count {
             for j in (i+1)..<nums.count {
                 let sum = nums[i] + nums[j]
+                
                 if sum == target {
-                    indices.append(i)
-                    indices.append(j)
-                    break outerLoop
+                    return [i, j]
                 }
             }
         }
         
-        return indices
+        return [Int]()
     }
 }

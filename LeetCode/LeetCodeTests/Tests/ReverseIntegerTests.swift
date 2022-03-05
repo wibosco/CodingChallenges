@@ -53,4 +53,20 @@ class ReverseIntegerTests: XCTestCase {
         
         XCTAssertEqual(reversed, 0)
     }
+    
+    func test_F() {
+        let x = -1463847412
+        
+        let reversed = ReverseInteger.reverse(x)
+        
+        XCTAssertEqual(reversed, -2147483641)
+    }
+    
+    func test_G() {
+        let x = -9463847412
+        
+        let reversed = ReverseInteger.reverse(x)
+        
+        XCTAssertEqual(reversed, 0)
+    }
 }

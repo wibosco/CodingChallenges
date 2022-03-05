@@ -87,7 +87,7 @@
 		3D5C917D27A7F7630035C399 /* AsteroidCollision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90CC27A7F7620035C399 /* AsteroidCollision.swift */; };
 		3D5C917E27A7F7630035C399 /* KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90CD27A7F7620035C399 /* KokoEatingBananas.swift */; };
 		3D5C917F27A7F7630035C399 /* GroupShiftedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90CE27A7F7620035C399 /* GroupShiftedStrings.swift */; };
-		3D5C918027A7F7630035C399 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90CF27A7F7620035C399 /* LongestSubstring.swift */; };
+		3D5C918027A7F7630035C399 /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90CF27A7F7620035C399 /* LongestSubstringWithoutRepeatingCharacters.swift */; };
 		3D5C918127A7F7630035C399 /* ValidateBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90D027A7F7620035C399 /* ValidateBinarySearchTree.swift */; };
 		3D5C918227A7F7630035C399 /* SubtreeOfAnotherTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90D127A7F7620035C399 /* SubtreeOfAnotherTree.swift */; };
 		3D5C918327A7F7630035C399 /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C90D227A7F7620035C399 /* PalindromeNumber.swift */; };
@@ -257,7 +257,7 @@
 		3D5C92CE27A7F76C0035C399 /* ToeplitzMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922827A7F76B0035C399 /* ToeplitzMatrixTests.swift */; };
 		3D5C92CF27A7F76C0035C399 /* DiameterOfBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922927A7F76B0035C399 /* DiameterOfBinaryTreeTests.swift */; };
 		3D5C92D027A7F76C0035C399 /* PathSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922A27A7F76B0035C399 /* PathSumTests.swift */; };
-		3D5C92D127A7F76C0035C399 /* LongestSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922B27A7F76B0035C399 /* LongestSubstringTests.swift */; };
+		3D5C92D127A7F76C0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922B27A7F76B0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift */; };
 		3D5C92D227A7F76C0035C399 /* LowestCommonAncestorBinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922C27A7F76B0035C399 /* LowestCommonAncestorBinarySearchTreeTests.swift */; };
 		3D5C92D327A7F76C0035C399 /* CloneGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922D27A7F76B0035C399 /* CloneGraphTests.swift */; };
 		3D5C92D427A7F76C0035C399 /* NumberOfProvincesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C922E27A7F76B0035C399 /* NumberOfProvincesTests.swift */; };
@@ -488,7 +488,7 @@
 		3D5C90CC27A7F7620035C399 /* AsteroidCollision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidCollision.swift; sourceTree = "<group>"; };
 		3D5C90CD27A7F7620035C399 /* KokoEatingBananas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KokoEatingBananas.swift; sourceTree = "<group>"; };
 		3D5C90CE27A7F7620035C399 /* GroupShiftedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupShiftedStrings.swift; sourceTree = "<group>"; };
-		3D5C90CF27A7F7620035C399 /* LongestSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
+		3D5C90CF27A7F7620035C399 /* LongestSubstringWithoutRepeatingCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestSubstringWithoutRepeatingCharacters.swift; sourceTree = "<group>"; };
 		3D5C90D027A7F7620035C399 /* ValidateBinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateBinarySearchTree.swift; sourceTree = "<group>"; };
 		3D5C90D127A7F7620035C399 /* SubtreeOfAnotherTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtreeOfAnotherTree.swift; sourceTree = "<group>"; };
 		3D5C90D227A7F7620035C399 /* PalindromeNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
@@ -658,7 +658,7 @@
 		3D5C922827A7F76B0035C399 /* ToeplitzMatrixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToeplitzMatrixTests.swift; sourceTree = "<group>"; };
 		3D5C922927A7F76B0035C399 /* DiameterOfBinaryTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiameterOfBinaryTreeTests.swift; sourceTree = "<group>"; };
 		3D5C922A27A7F76B0035C399 /* PathSumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathSumTests.swift; sourceTree = "<group>"; };
-		3D5C922B27A7F76B0035C399 /* LongestSubstringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestSubstringTests.swift; sourceTree = "<group>"; };
+		3D5C922B27A7F76B0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestSubstringWithoutRepeatingCharactersTests.swift; sourceTree = "<group>"; };
 		3D5C922C27A7F76B0035C399 /* LowestCommonAncestorBinarySearchTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorBinarySearchTreeTests.swift; sourceTree = "<group>"; };
 		3D5C922D27A7F76B0035C399 /* CloneGraphTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloneGraphTests.swift; sourceTree = "<group>"; };
 		3D5C922E27A7F76B0035C399 /* NumberOfProvincesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfProvincesTests.swift; sourceTree = "<group>"; };
@@ -960,7 +960,7 @@
 				3D5C910B27A7F7630035C399 /* LinkedListCycleII.swift */,
 				3D5C90E627A7F7620035C399 /* LongestCommonPrefix.swift */,
 				3D5C912A27A7F7630035C399 /* LongestPalindromicSubstring.swift */,
-				3D5C90CF27A7F7620035C399 /* LongestSubstring.swift */,
+				3D5C90CF27A7F7620035C399 /* LongestSubstringWithoutRepeatingCharacters.swift */,
 				3D5C90B027A7F7620035C399 /* LowestCommonAncestorBinarySearchTree.swift */,
 				3D5C90B927A7F7620035C399 /* LowestCommonAncestorBinaryTree.swift */,
 				3D5C90A127A7F7620035C399 /* LowestCommonAncestorBinaryTreeII.swift */,
@@ -1155,7 +1155,7 @@
 				3D5C926127A7F76C0035C399 /* LinkedListCycleTests.swift */,
 				3D5C920527A7F76B0035C399 /* LongestCommonPrefixTests.swift */,
 				3D5C927E27A7F76C0035C399 /* LongestPalindromicSubstringTests.swift */,
-				3D5C922B27A7F76B0035C399 /* LongestSubstringTests.swift */,
+				3D5C922B27A7F76B0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift */,
 				3D5C922C27A7F76B0035C399 /* LowestCommonAncestorBinarySearchTreeTests.swift */,
 				3D5C927927A7F76C0035C399 /* LowestCommonAncestorBinaryTreeIIITests.swift */,
 				3D5C922427A7F76B0035C399 /* LowestCommonAncestorBinaryTreeIITests.swift */,
@@ -1548,7 +1548,7 @@
 				3D5C91B927A7F7630035C399 /* CountUnivalueSubtrees.swift in Sources */,
 				3D5C919E27A7F7630035C399 /* SearchInRotatedSortedArrayII.swift in Sources */,
 				3DB7C5D127CEC56800353EED /* ExclusiveTimeOfFunctions.swift in Sources */,
-				3D5C918027A7F7630035C399 /* LongestSubstring.swift in Sources */,
+				3D5C918027A7F7630035C399 /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 				3D5C91B427A7F7630035C399 /* DailyTemperatures.swift in Sources */,
 				3D30553527C631AE00294BC7 /* CombinationSum.swift in Sources */,
 				3D5C91AB27A7F7630035C399 /* ReverseInteger.swift in Sources */,
@@ -1616,7 +1616,7 @@
 				3D5C929B27A7F76C0035C399 /* KthLargestElementInArrayTests.swift in Sources */,
 				3D5C932F27A7F76C0035C399 /* ReverseLinkedListTests.swift in Sources */,
 				3D5C92CC27A7F76C0035C399 /* AsteroidCollisionTests.swift in Sources */,
-				3D5C92D127A7F76C0035C399 /* LongestSubstringTests.swift in Sources */,
+				3D5C92D127A7F76C0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift in Sources */,
 				3D5C931427A7F76C0035C399 /* IntersectionOfTwoArraysTests.swift in Sources */,
 				3D5C92B527A7F76C0035C399 /* ReorderListTests.swift in Sources */,
 				3D5C933827A7F76C0035C399 /* CuttingRibbonsTests.swift in Sources */,
