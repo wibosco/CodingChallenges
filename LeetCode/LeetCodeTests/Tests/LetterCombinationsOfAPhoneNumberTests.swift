@@ -10,30 +10,30 @@ import XCTest
 
 @testable import LeetCode
 
-class LetterCombinationsTests: XCTestCase {
+class LetterCombinationsOfAPhoneNumberTests: XCTestCase {
 
     // MARK: - Tests
     
     func test_A() {
         let digits = "23"
         
-        let combinations = LetterCombinations.letterCombinations(digits)
+        let combinations = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
         
-        XCTAssertEqual(combinations, ["ad","ae","af","bd","be","bf","cd","ce","cf"])
+        XCTAssertEqual(combinations, ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"])
     }
     
     func test_B() {
         let digits = "2"
         
-        let combinations = LetterCombinations.letterCombinations(digits)
+        let combinations = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
         
-        XCTAssertEqual(combinations, ["a","b","c"])
+        XCTAssertEqual(combinations, ["a", "b", "c"])
     }
     
     func test_C() {
         let digits = ""
         
-        let combinations = LetterCombinations.letterCombinations(digits)
+        let combinations = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
         
         XCTAssertEqual(combinations, [])
     }
@@ -41,7 +41,7 @@ class LetterCombinationsTests: XCTestCase {
     func test_D() {
         let digits = "234"
         
-        let combinations = LetterCombinations.letterCombinations(digits)
+        let combinations = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
         
         XCTAssertEqual(combinations, ["adg", "adh", "adi", "aeg", "aeh", "aei", "afg", "afh", "afi", "bdg", "bdh", "bdi", "beg", "beh", "bei", "bfg", "bfh", "bfi", "cdg", "cdh", "cdi", "ceg", "ceh", "cei", "cfg", "cfh", "cfi"])
     }
