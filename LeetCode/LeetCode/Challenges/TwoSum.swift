@@ -17,7 +17,7 @@ struct TwoSum {
     //dictionary
     //
     //Solution Description:
-    //As we iterate through `nums` and check if another `nums` element can be added to it to equal `target`. To avoid having to
+    //As we iterate through `nums` we check if another `nums` element can be added to it to equal `target`. To avoid having to
     //nest loops we build a dictionary containing each seen `nums` element and its `index`. This will allow constant access time
     //to check for if the difference between the current `nums` element and target has already been seen. If that difference is
     //in `visited` we return the two indexes with the visited index being first (as it came before the current element)

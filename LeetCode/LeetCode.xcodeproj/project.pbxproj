@@ -24,6 +24,8 @@
 		3D30553727C6333400294BC7 /* CombinationSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30553627C6333400294BC7 /* CombinationSumTests.swift */; };
 		3D30553927C6CC9300294BC7 /* CombinationSumII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30553827C6CC9300294BC7 /* CombinationSumII.swift */; };
 		3D30553B27C6CCC000294BC7 /* CombinationSumIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30553A27C6CCC000294BC7 /* CombinationSumIITests.swift */; };
+		3D3B213927D6556B0055C0D1 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B213827D6556B0055C0D1 /* ThreeSum.swift */; };
+		3D3B213B27D655EA0055C0D1 /* ThreeSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B213A27D655EA0055C0D1 /* ThreeSumTests.swift */; };
 		3D5C908027A7F6A80035C399 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C907727A7F6A70035C399 /* LeetCode.framework */; };
 		3D5C914227A7F7630035C399 /* BinaryTreeNodeParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909027A7F7620035C399 /* BinaryTreeNodeParent.swift */; };
 		3D5C914327A7F7630035C399 /* GraphWeightedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909127A7F7620035C399 /* GraphWeightedEdge.swift */; };
@@ -424,6 +426,8 @@
 		3D30553627C6333400294BC7 /* CombinationSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSumTests.swift; sourceTree = "<group>"; };
 		3D30553827C6CC9300294BC7 /* CombinationSumII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSumII.swift; sourceTree = "<group>"; };
 		3D30553A27C6CCC000294BC7 /* CombinationSumIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSumIITests.swift; sourceTree = "<group>"; };
+		3D3B213827D6556B0055C0D1 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
+		3D3B213A27D655EA0055C0D1 /* ThreeSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTests.swift; sourceTree = "<group>"; };
 		3D5C907727A7F6A70035C399 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5C907F27A7F6A80035C399 /* LeetCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5C909027A7F7620035C399 /* BinaryTreeNodeParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTreeNodeParent.swift; sourceTree = "<group>"; };
@@ -1043,6 +1047,7 @@
 				3D5C910427A7F7630035C399 /* SwapNodesInPairs.swift */,
 				3D5C912027A7F7630035C399 /* SymmetricTree.swift */,
 				3D5C90C427A7F7620035C399 /* TargetSum.swift */,
+				3D3B213827D6556B0055C0D1 /* ThreeSum.swift */,
 				3D5C911D27A7F7630035C399 /* ToeplitzMatrix.swift */,
 				3D5C910227A7F7630035C399 /* TopKFrequentElements.swift */,
 				3D5C90D327A7F7620035C399 /* TwoSum.swift */,
@@ -1237,6 +1242,7 @@
 				3D5C923C27A7F76B0035C399 /* SwapNodesInPairsTests.swift */,
 				3D5C929827A7F76C0035C399 /* SymmetricTreeTests.swift */,
 				3D5C920927A7F76B0035C399 /* TargetSumTests.swift */,
+				3D3B213A27D655EA0055C0D1 /* ThreeSumTests.swift */,
 				3D5C922827A7F76B0035C399 /* ToeplitzMatrixTests.swift */,
 				3D5C924C27A7F76C0035C399 /* TopKFrequentElementsTests.swift */,
 				3D5C929727A7F76C0035C399 /* TwoSumIITests.swift */,
@@ -1451,6 +1457,7 @@
 				3D5C91D927A7F7630035C399 /* SearchInsertPosition.swift in Sources */,
 				3D5C914427A7F7630035C399 /* BinaryTreeNodeRandom.swift in Sources */,
 				3D5C91B127A7F7630035C399 /* KthLargestElementInArray.swift in Sources */,
+				3D3B213927D6556B0055C0D1 /* ThreeSum.swift in Sources */,
 				3D5C91BB27A7F7630035C399 /* MiniParser.swift in Sources */,
 				3D5C919427A7F7630035C399 /* BuildingsWithOceanView.swift in Sources */,
 				3D5C917927A7F7630035C399 /* MergeIntervals.swift in Sources */,
@@ -1694,6 +1701,7 @@
 				3D5C92DC27A7F76C0035C399 /* CourseScheduleIITests.swift in Sources */,
 				3D5C930527A7F76C0035C399 /* GenerateParenthesesTests.swift in Sources */,
 				3D5C92FC27A7F76C0035C399 /* PerfectSquaresTests.swift in Sources */,
+				3D3B213B27D655EA0055C0D1 /* ThreeSumTests.swift in Sources */,
 				3DB7C5CB27CD128900353EED /* BasicCalculatorIITests.swift in Sources */,
 				3D1381A427C3FC7500E17E5A /* MajorityElementIITests.swift in Sources */,
 				3D5C92FF27A7F76C0035C399 /* CanPlaceFlowersTests.swift in Sources */,
