@@ -31,7 +31,7 @@ struct ThreeSum { //3Sum
     //`numbers` is sorted so moving the `right` pointer inwards would only reduce the sum value (which is already too low) so
     //our only option is moving the `left` pointer)
     //
-    //NB: Partially built using the same dictionary technique used in https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+    //Partially built using the same two pointers technique used in https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
     static func threeSum(_ nums: [Int]) -> [[Int]] {
         var triplets = Set<[Int]>() //NB: the int arrays are contain values not indexes
         let nums = nums.sorted() //n log n
