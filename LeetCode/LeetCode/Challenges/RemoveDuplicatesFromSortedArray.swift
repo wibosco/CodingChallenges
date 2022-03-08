@@ -18,7 +18,7 @@ struct RemoveDuplicatesFromSortedArray {
     //inline
     //
     //Solution Description:
-    //Using two pointers we orderride duplicates with the next non-duplicate value. As this array is sorted we know that an
+    //Using two pointers we override duplicates with the next non-duplicate value. As this array is sorted we know that an
     //duplicates will come directly after a value. By using two pointers we keep the `slow` pointer on the edge of our
     //non-duplicates array while the `fast` pointers skims over any duplicates. Once a non-duplicate is found we expand our
     //non-duplicates array space by 1 and move that non-duplicate into that space. So if we start with `[1, 1, 2, 2, 3, 3]`
@@ -44,8 +44,7 @@ struct RemoveDuplicatesFromSortedArray {
         
         while fast < nums.count {
             if nums[slow] != nums[fast] {
-                //non-duplicate found so move it to the position after the first index
-                //in the duplicate squence
+                //non-duplicate found so move it to the position after the first index in the duplicate sequence
                 slow += 1
                 //sometimes `slow` and `fast` will be the same but its faster to just always assign than to
                 //check and then assign sometimes

@@ -38,7 +38,7 @@ struct RemoveElement {
     //Similar to https://leetcode.com/problems/remove-duplicates-from-sorted-array/
     static func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
         var slow = 0
-        var fast = 0
+        var fast = 0 //same start as slow
         
         while fast < nums.count {
             if nums[fast] != val {

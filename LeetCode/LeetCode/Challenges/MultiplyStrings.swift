@@ -17,15 +17,16 @@ struct MultiplyStrings {
     //modulo
     //
     //Solution Description:
-    //To avoid overflowing we need to treat each character as an individual numbers rather than as a whole. First we multiple each number
-    //in `num1` against each number of `num2`. We need to be careful about ensuring that we also respect the carry that may be produced
-    //due to that multiplication. In order to correctly perform that multiplication we need to do so from less-significant to
-    //most-significant so that the carry can be applied to the next calucation. To determine the value to add the product we perform an
-    //integer division of 10 against the product of that multiplication and then to determine the carry we perform a modulo of 10 against
-    //that same value. Once we complete the multiplications of each number of `num1` to `num2` we then need to add the products of each
-    //of those calculations together to get the final result. Addition is similar process to multiplication.
+    //To avoid overflowing we need to treat each character as an individual numbers rather than as a whole. First we multiple
+    //each number in `num1` against each number of `num2`. We need to be careful about ensuring that we also respect the carry
+    //that may be produced due to that multiplication. In order to correctly perform that multiplication we need to do so from
+    //less-significant to most-significant so that the carry can be applied to the next calucation. To determine the value to
+    //add the product we perform an integer division of 10 against the product of that multiplication and then to determine the
+    //carry we perform a modulo of 10 against that same value. Once we complete the multiplications of each number of `num1` to
+    //`num2` we then need to add the products of each of those calculations together to get the final result. Addition is similar
+    //process to multiplication.
     //
-    //N.NB see also https://leetcode.com/problems/add-two-numbers/
+    //NB: see also https://leetcode.com/problems/add-two-numbers/
     static func multiply(_ num1: String, _ num2: String) -> String {
         guard num1 != "0", num2 != "0" else {
             return "0"

@@ -19,7 +19,7 @@ class GenerateParenthesesTests: XCTestCase {
         
         let combinations = GenerateParentheses.generateParenthesis(n)
         
-        XCTAssertEqual(combinations, ["((()))","(()())","(())()","()(())","()()()"])
+        XCTAssertEqual(combinations, ["((()))", "(()())", "(())()", "()(())", "()()()"])
     }
     
     func test_B() {

@@ -14,15 +14,48 @@ import UIKit
 struct SwapNodesInPairs {
     
     //Time: O(n) where `n` is the number of nodes in the list
-    //Sapce: O(n) if counting the recusive stack otherwise O(1)
-    //recusive
+    //Sapce: O(1)
+    //iterative
     //
     //Solution Description:
-    //Iterate through the list, swaping the `head` with the `next` node so that `next` -> `head` and
-    //then recusively call swap on the next two nodes. At the end we return the `next` node which is
-    //now the `head` node of the pair, the returned `node` is then used as the next node of the old
-    //`head` so that all nodes are joined to another node (apart from the end node)
+    //Iterate through the list, in order to swap to adjunct nodes we need to keep track of two nodes: `n - 1` and
+    //`n`. First we attach `n + 1` as the next node of `n - 1`, then we set the next property on node `n` to
+    //point to `n + 2`, then we set the next property of node `n + 1` to point to node `n`. All that left to do is
+    //move the the `current` and `previous` node pointers so `previous` is now node `n` and `current` is node
+    //`n + 2`. We repeat this process until we reach the end of the list, we can then return the `next` node of
+    //our dummy holding node.
     static func swapPairs(_ head: ListNode?) -> ListNode? {
+        let dummy = ListNode(-1)
+        var previous: ListNode? = dummy
+        var current = head
+        
+        while current != nil {
+            guard let next = current?.next else {
+                previous?.next = current //edge case for where the list only contains one node
+                break
+            }
+            
+            previous?.next = next
+            current?.next = next.next
+            next.next = current
+            
+            previous = current
+            current = current?.next
+        }
+        
+        return dummy.next
+    }
+    
+    //Time: O(n) where `n` is the number of nodes in the list
+    //Sapce: O(n) if counting the recursive stack otherwise O(1)
+    //recursive
+    //
+    //Solution Description:
+    //Iterate through the list, swapping the `head` with the `next` node so that `next` -> `head` and then recusively call
+    //swap on the next two nodes. At the end we return the `next` node which is now the `head` node of the pair, the
+    //returned `node` is then used as the next node of the old `head` so that all nodes are joined to another node (apart
+    //from the end node)
+    static func swapPairsRecursive(_ head: ListNode?) -> ListNode? {
         return swapPairs(head, head?.next)
     }
     

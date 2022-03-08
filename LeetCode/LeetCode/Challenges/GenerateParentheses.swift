@@ -9,39 +9,52 @@
 import Foundation
 
 //https://leetcode.com/problems/generate-parentheses/
-//backtracking - has three parts Choice, Constraint (optional) and Goal
+//strings
 struct GenerateParentheses {
     
-    //Time: O(
-    //Space: O(n) where n is the number of pairs of parenthesises
+    //Time: O(2^n) where `n` is the depth of the tree and 2 is the branches at each level
+    //Space: O(n) where `n` is the number of pairs of parentheses
     //recursion
+    //backtracking
     //
     //Solution Description:
-    //Using backtracking explore each possible combination of "(" and ")" as a tree. 
+    //Using backtracking we explore each possible combination of "(" and ")". To avoid having to use extra space by
+    //generating an array containg `n` opening brackets and `n` closing brackets we instead use counters for opening
+    //and closing can still be added to an existing combination - as will as saving space this approach also allows
+    //us to easily determine if a brakcet combination is valid but ensuring we never add an unmatched closing bracket.
+    //During the combination generation at level we check if we have any remaining brackets to use. If we don't we
+    //add `current` to our `combinations` array as `current` will have `n` pairs. If we do we check if we have the
+    //opening bracket balance we above 0 and we spend 1 opening bracket, next we check if the closing bracket balance
+    //is greater than the opening bracket balance i.e. we need to match up some opening brackets, if it is greater we
+    //add a closingg bracket; if it isn't we skip over (this happens when the current branch won't result in a valid
+    //bracket combination and that branch should be abandoned).
+    //
+    //See: https://www.youtube.com/watch?v=sz1qaKt0KGQ for more info
     static func generateParenthesis(_ n: Int) -> [String] {
         var parentheses = [String]()
-        backtrack(array: &parentheses, value: "", open: n, close: n, max: n)
+        
+        backtrack(&parentheses, "", n, n)
+        
         return parentheses
     }
     
-    //See: https://www.youtube.com/watch?v=sz1qaKt0KGQ for breakdown
-    static func backtrack(array: inout [String], value: String, open: Int, close: Int, max: Int) {
-        print("array: \(array)")
-        
+    private static func backtrack(_ combinations: inout [String], _ current: String, _ remainingOpenCount: Int, _ remainingClosedCount: Int) {
         //Goal
-        guard value.count != (max * 2) else { // Max is the number of pairs
-            array.append(value)
+        guard remainingOpenCount > 0 || remainingClosedCount > 0 else {
+            combinations.append(current)
             return
         }
         
         //Choice - whether to add an "(" or ")"
-        if open > 0 {
-            backtrack(array: &array, value: value + "(", open: (open - 1), close: close, max: max)
+        
+        //Constraint 1 - can't add more than `n` "("
+        if remainingOpenCount > 0 {
+            backtrack(&combinations, current + "(", (remainingOpenCount - 1), remainingClosedCount)
         }
         
-        //Constraint - can't add a ")" before a "("
-        if close > open {
-            backtrack(array: &array, value: value + ")", open: open, close: (close - 1), max: max)
+        //Constraint 2 - can't add a ")" before a "("
+        if remainingClosedCount > remainingOpenCount {
+            backtrack(&combinations, current + ")", remainingOpenCount, (remainingClosedCount - 1))
         }
     }
 }
