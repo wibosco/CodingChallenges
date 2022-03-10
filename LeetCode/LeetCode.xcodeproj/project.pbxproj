@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D00561C27DA05440086757A /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00561B27DA05440086757A /* Permutations.swift */; };
+		3D00561E27DA1F6E0086757A /* PermutationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00561D27DA1F6E0086757A /* PermutationsTests.swift */; };
 		3D13819E27C3F0DE00E17E5A /* MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */; };
 		3D1381A027C3F12800E17E5A /* MajorityElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */; };
 		3D1381A227C3FC3A00E17E5A /* MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */; };
@@ -413,6 +415,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D00561B27DA05440086757A /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
+		3D00561D27DA1F6E0086757A /* PermutationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsTests.swift; sourceTree = "<group>"; };
 		3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElement.swift; sourceTree = "<group>"; };
 		3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementTests.swift; sourceTree = "<group>"; };
 		3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementII.swift; sourceTree = "<group>"; };
@@ -1013,6 +1017,7 @@
 				3D5C90F827A7F7620035C399 /* PathSum.swift */,
 				3D5C90F627A7F7620035C399 /* PeakIndexMountainArray.swift */,
 				3D5C90EA27A7F7620035C399 /* PerfectSquares.swift */,
+				3D00561B27DA05440086757A /* Permutations.swift */,
 				3D5C90AE27A7F7620035C399 /* PopulatingNextRightPointers.swift */,
 				3D5C912227A7F7630035C399 /* PopulatingNextRightPointersII.swift */,
 				3D5C910727A7F7630035C399 /* Pow.swift */,
@@ -1211,6 +1216,7 @@
 				3D5C922A27A7F76B0035C399 /* PathSumTests.swift */,
 				3D5C921827A7F76B0035C399 /* PeakIndexMountainArrayTests.swift */,
 				3D5C925627A7F76C0035C399 /* PerfectSquaresTests.swift */,
+				3D00561D27DA1F6E0086757A /* PermutationsTests.swift */,
 				3D5C926027A7F76C0035C399 /* PopulatingNextRightPointersIITests.swift */,
 				3D5C927627A7F76C0035C399 /* PopulatingNextRightPointersTests.swift */,
 				3D5C924127A7F76C0035C399 /* PowTests.swift */,
@@ -1578,6 +1584,7 @@
 				3D5C916E27A7F7630035C399 /* SearchSortedArrayOfUnknownSize.swift in Sources */,
 				3D5C916227A7F7630035C399 /* FindSmallestLetterGreaterThanTarget.swift in Sources */,
 				3D5C93A127A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift in Sources */,
+				3D00561C27DA05440086757A /* Permutations.swift in Sources */,
 				3D5C91BA27A7F7630035C399 /* Search2DMatrix.swift in Sources */,
 				3D5C919B27A7F7630035C399 /* PerfectSquares.swift in Sources */,
 				3D5C91C327A7F7630035C399 /* RangeSumOfBST.swift in Sources */,
@@ -1760,6 +1767,7 @@
 				3D5C92FA27A7F76C0035C399 /* BinaryTreeRightSideViewTests.swift in Sources */,
 				3DA6FF0527AA9250009BD7A8 /* FindAllAnagramsInAStringTests.swift in Sources */,
 				3D5C929D27A7F76C0035C399 /* CopyListWithRandomPointerTests.swift in Sources */,
+				3D00561E27DA1F6E0086757A /* PermutationsTests.swift in Sources */,
 				3D5C92D927A7F76C0035C399 /* NestedListWeightSumIITests.swift in Sources */,
 				3D193ABD27C78D9600E49F08 /* CombinationSumIIITests.swift in Sources */,
 				3D5C92E327A7F76C0035C399 /* LowestCommonAncestorBinaryTreeTests.swift in Sources */,
