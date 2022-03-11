@@ -43,7 +43,7 @@ class RotateImageTests: XCTestCase {
     }
     
     func test_D() {
-        var matrix = [[1, 2]
+        var matrix = [[1, 2],
                       [3, 4]]
         
         RotateImage.rotate(&matrix)
