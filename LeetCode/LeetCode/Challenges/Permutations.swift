@@ -18,7 +18,7 @@ struct Permutations {
     //n-ary tree
     //
     //Solution Description:
-    //With permutations order is important so [1, 2, 3] is not the same as [3, 2, 1]. With this in made we can use backtracking
+    //With permutations order is important so [1, 2, 3] is not the same as [3, 2, 1]. With this in mind we can use backtracking
     //to iterate through `nums` and produce every possible permutation of `nums`. As we don't want repeating elements it is
     //important to remove the current elements from `nums` so that it can't be used in the next recursive call.
     static func permute(_ nums: [Int]) -> [[Int]] {
@@ -51,7 +51,7 @@ struct Permutations {
     //n-ary tree
     //
     //Solution Description:
-    //With permutations order is important so [1, 2, 3] is not the same as [3, 2, 1]. With this in made we can use backtracking
+    //With permutations order is important so [1, 2, 3] is not the same as [3, 2, 1]. With this in mind we can use backtracking
     //to iterate through `nums` and produce every possible permutation of `nums`. As we don't want repeating elements it is
     //important to check if the element of current iteration of `nums` is already in the `current` array and skip it.
     static func permuteContains(_ nums: [Int]) -> [[Int]] {
