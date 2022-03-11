@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3D00561C27DA05440086757A /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00561B27DA05440086757A /* Permutations.swift */; };
 		3D00561E27DA1F6E0086757A /* PermutationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00561D27DA1F6E0086757A /* PermutationsTests.swift */; };
+		3D09759327DB5B56007FC11F /* RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09759227DB5B56007FC11F /* RotateImage.swift */; };
+		3D09759527DB5B82007FC11F /* RotateImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09759427DB5B82007FC11F /* RotateImageTests.swift */; };
+		3D09759727DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09759627DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift */; };
+		3D09759927DB628F007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09759827DB628F007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotationTests.swift */; };
 		3D13819E27C3F0DE00E17E5A /* MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */; };
 		3D1381A027C3F12800E17E5A /* MajorityElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */; };
 		3D1381A227C3FC3A00E17E5A /* MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */; };
@@ -419,6 +423,10 @@
 /* Begin PBXFileReference section */
 		3D00561B27DA05440086757A /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 		3D00561D27DA1F6E0086757A /* PermutationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsTests.swift; sourceTree = "<group>"; };
+		3D09759227DB5B56007FC11F /* RotateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImage.swift; sourceTree = "<group>"; };
+		3D09759427DB5B82007FC11F /* RotateImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImageTests.swift; sourceTree = "<group>"; };
+		3D09759627DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineWhetherMatrixCanBeObtainedByRotation.swift; sourceTree = "<group>"; };
+		3D09759827DB628F007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineWhetherMatrixCanBeObtainedByRotationTests.swift; sourceTree = "<group>"; };
 		3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElement.swift; sourceTree = "<group>"; };
 		3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementTests.swift; sourceTree = "<group>"; };
 		3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementII.swift; sourceTree = "<group>"; };
@@ -935,6 +943,7 @@
 				3D5C910327A7F7630035C399 /* DailyTemperatures.swift */,
 				3D5C90BC27A7F7620035C399 /* DecodeString.swift */,
 				3D5C90AA27A7F7620035C399 /* DestroyingAsteroids.swift */,
+				3D09759627DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift */,
 				3D5C90E427A7F7620035C399 /* DiagonalTraverse.swift */,
 				3D5C913F27A7F7630035C399 /* DiameterOfBinaryTree.swift */,
 				3D5C90F527A7F7620035C399 /* DiameterOfNAryTree.swift */,
@@ -1040,6 +1049,7 @@
 				3D5C911927A7F7630035C399 /* ReverseLinkedList.swift */,
 				3D5C90A027A7F7620035C399 /* ReverseString.swift */,
 				3D5C90B727A7F7620035C399 /* RomanToInteger.swift */,
+				3D09759227DB5B56007FC11F /* RotateImage.swift */,
 				3D5C90BB27A7F7620035C399 /* RotateList.swift */,
 				3D5C913227A7F7630035C399 /* RottingOranges.swift */,
 				3D8C787027AD6EF900ADD88A /* RunningSumOf1DArray.swift */,
@@ -1135,6 +1145,7 @@
 				3D5C928E27A7F76C0035C399 /* DailyTemperaturesTests.swift */,
 				3D5C924427A7F76C0035C399 /* DecodeStringTests.swift */,
 				3D5C91F827A7F76B0035C399 /* DestroyingAsteroidsTests.swift */,
+				3D09759827DB628F007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotationTests.swift */,
 				3D5C927827A7F76C0035C399 /* DiagonalTraverseTests.swift */,
 				3D5C922927A7F76B0035C399 /* DiameterOfBinaryTreeTests.swift */,
 				3D5C920027A7F76B0035C399 /* DiameterOfNAryTreeTests.swift */,
@@ -1239,6 +1250,7 @@
 				3D5C928927A7F76C0035C399 /* ReverseLinkedListTests.swift */,
 				3D5C925027A7F76C0035C399 /* ReverseStringTests.swift */,
 				3D5C926C27A7F76C0035C399 /* RomanToIntegerTests.swift */,
+				3D09759427DB5B82007FC11F /* RotateImageTests.swift */,
 				3D5C924E27A7F76C0035C399 /* RotateListTests.swift */,
 				3D5C921427A7F76B0035C399 /* RottingOrangesTests.swift */,
 				3D8C787227AD6F2500ADD88A /* RunningSumOf1DArrayTests.swift */,
@@ -1499,6 +1511,7 @@
 				3D5C91C227A7F7630035C399 /* LetterCombinationsOfAPhoneNumber.swift in Sources */,
 				3D5C918D27A7F7630035C399 /* FinalPricesWithSpecialDiscount.swift in Sources */,
 				3D5C914227A7F7630035C399 /* BinaryTreeNodeParent.swift in Sources */,
+				3D09759727DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift in Sources */,
 				3D5C91DB27A7F7630035C399 /* LongestPalindromicSubstring.swift in Sources */,
 				3D5C91D127A7F7630035C399 /* SymmetricTree.swift in Sources */,
 				3DB7C5CD27CD47AE00353EED /* MovingAverage.swift in Sources */,
@@ -1582,6 +1595,7 @@
 				3D5C919E27A7F7630035C399 /* SearchInRotatedSortedArrayII.swift in Sources */,
 				3DB7C5D127CEC56800353EED /* ExclusiveTimeOfFunctions.swift in Sources */,
 				3D5C918027A7F7630035C399 /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
+				3D09759327DB5B56007FC11F /* RotateImage.swift in Sources */,
 				3D5C91B427A7F7630035C399 /* DailyTemperatures.swift in Sources */,
 				3D30553527C631AE00294BC7 /* CombinationSum.swift in Sources */,
 				3D3B213F27D6B23F0055C0D1 /* ThreeSumClosest.swift in Sources */,
@@ -1696,6 +1710,7 @@
 				3D5C92C927A7F76C0035C399 /* SearchInRotatedSortedArrayIITests.swift in Sources */,
 				3D5C929A27A7F76C0035C399 /* ValidPalindromeTests.swift in Sources */,
 				3D5C92C327A7F76C0035C399 /* Search2DMatrixTests.swift in Sources */,
+				3D09759927DB628F007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotationTests.swift in Sources */,
 				3D5C92C827A7F76C0035C399 /* MergeTwoSortedListsTests.swift in Sources */,
 				3D5C932327A7F76C0035C399 /* BinaryTreeLevelOrderTraversalIITests.swift in Sources */,
 				3D5C92DD27A7F76C0035C399 /* EvaluateReversePolishNotationTests.swift in Sources */,
@@ -1724,6 +1739,7 @@
 				3D5C92E227A7F76C0035C399 /* SwapNodesInPairsTests.swift in Sources */,
 				3D5C932627A7F76C0035C399 /* SubtreeOfAnotherTreeTests.swift in Sources */,
 				3D5C931B27A7F76C0035C399 /* FibonacciNumberTests.swift in Sources */,
+				3D09759527DB5B82007FC11F /* RotateImageTests.swift in Sources */,
 				3D5C933427A7F76C0035C399 /* DailyTemperaturesTests.swift in Sources */,
 				3D5C92D527A7F76C0035C399 /* FindIfPathExistsInGraphTests.swift in Sources */,
 				3D5C92F827A7F76C0035C399 /* OpenTheLockTests.swift in Sources */,
