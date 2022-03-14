@@ -18,7 +18,7 @@ class GroupAnagramsTests: XCTestCase {
         
         let groupings = GroupAnagrams.groupAnagrams(strs)
         
-        let expectedGroupings = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+        let expectedGroupings = [["bat"], ["tan", "nat"], ["eat", "tea", "ate"]]
         var countOfMatches = 0
         
         //order isn't important
