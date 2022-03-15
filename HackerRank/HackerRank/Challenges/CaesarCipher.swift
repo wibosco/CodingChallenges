@@ -12,14 +12,12 @@ import Foundation
 class CaesarCipher {
 
      static func encrypt(originalString: String, rotate: Int) -> String {
-        
         let alphabet = "abcdefghijklmnopqrstuvwxyz"
 
         var uncapitalisedLetters = [Character]()
         var capitalisedLetters = [Character]()
         
         for letter in alphabet {
-            
             uncapitalisedLetters.append(letter)
             capitalisedLetters.append(Character(String(letter).capitalized))
         }
@@ -27,16 +25,12 @@ class CaesarCipher {
         var encryptedString = ""
         
         for character in originalString {
-            
             var encryptedCharacter = character
             
             if uncapitalisedLetters.contains(character) {
-                
-                encryptedCharacter = CaesarCipher.retrieveCharacterAfterRotation(character: character, characterSet: uncapitalisedLetters, rotate: rotate)
-            }
-            else if capitalisedLetters.contains(character) {
-                
-                encryptedCharacter = CaesarCipher.retrieveCharacterAfterRotation(character: character, characterSet: capitalisedLetters, rotate: rotate)
+                encryptedCharacter = retrieveCharacterAfterRotation(character: character, characterSet: uncapitalisedLetters, rotate: rotate)
+            } else if capitalisedLetters.contains(character) {
+                encryptedCharacter = retrieveCharacterAfterRotation(character: character, characterSet: capitalisedLetters, rotate: rotate)
             }
             
             encryptedString += String(encryptedCharacter)
@@ -46,22 +40,18 @@ class CaesarCipher {
     }
     
      static func retrieveCharacterAfterRotation(character: Character, characterSet: [Character], rotate: Int) -> Character {
-        
         let index = characterSet.firstIndex(of: character)!
         let indexAfterRotation = index + rotate
         var indexForEncryptedCharacter = indexAfterRotation
         
         if indexForEncryptedCharacter > (characterSet.count - 1) {
-            
             var withinRange = false
             
             while !withinRange {
-                
                 indexForEncryptedCharacter -= characterSet.count
                 
                 withinRange = !(indexForEncryptedCharacter > (characterSet.count - 1))
             }
-            
         }
         
         return characterSet[indexForEncryptedCharacter]

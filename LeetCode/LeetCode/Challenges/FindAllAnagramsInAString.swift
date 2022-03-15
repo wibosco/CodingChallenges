@@ -12,7 +12,7 @@ import Foundation
 struct FindAllAnagramsInAString {
     
     //Time: O(n) where `n` is the number of characters in `s`
-    //Space: O(1) as `pCount` or `sCount` can only hold a mx of 26 characters (Engglish alphabet)
+    //Space: O(1) as `pCount` or `sCount` can only hold a max of 26 characters (English alphabet)
     //sliding window
     //strings
     //
