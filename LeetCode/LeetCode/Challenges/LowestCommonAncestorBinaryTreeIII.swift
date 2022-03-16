@@ -49,7 +49,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     
     //Time: O(n) where `n` is the number of nodes in the tree
     //Space: O(log n) where `log n` is the number of levels in the tree
-    //dfs
+    //DFS
     //
     //Solution Description:
     //First we need to find the root node for this root. Once we have that root node we traverse the tree using DFS.

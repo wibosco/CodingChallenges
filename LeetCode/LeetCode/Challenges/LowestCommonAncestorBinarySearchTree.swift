@@ -14,7 +14,7 @@ struct LowestCommonAncestorBinarySearchTree {
     
     //Time: O(log n) where `n` is the number of nodes in the tree
     //Space: O(log n) where `n` is the number of nodes in the tree
-    //dfs
+    //DFS
     //stack
     //recursive
     //

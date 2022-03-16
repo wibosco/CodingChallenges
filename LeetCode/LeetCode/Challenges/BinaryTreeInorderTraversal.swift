@@ -12,8 +12,8 @@ import Foundation
 //binary tree
 struct BinaryTreeInorderTraversal {
     
-    //Time: O(n)
-    //Space: O(n)
+    //Time: O(n) where `n` is the number of nodes in the tree
+    //Space: O(n) where `n` is the number of nodes in the tree
     //DFS
     //recursion
     //
@@ -42,8 +42,8 @@ struct BinaryTreeInorderTraversal {
         inorderTraversal(node: node.right, visited: &visited)
     }
     
-    //Time: O(n)
-    //Space: O(n)
+    //Time: O(n) where `n` is the number of nodes in the tree
+    //Space: O(n) where `n` is the number of nodes in the tree
     //DFS
     //iterative
     //

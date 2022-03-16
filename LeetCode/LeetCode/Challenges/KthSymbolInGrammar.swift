@@ -15,7 +15,7 @@ struct KthSymbolInGrammar {
     //Time: O(n) where `n` is the depth of the tree
     //Space: O(n) where `n` is the depth of the recursive stack
     //recusive
-    //dfs
+    //DFS
     //
     //Solution Description:
     //Think of this as a binary tree where we need to find the value of a leaf node.

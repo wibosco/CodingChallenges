@@ -16,7 +16,7 @@ struct ClimbingStairs {
     //Space: O(n)
     //memoization
     //recursive
-    //dfs
+    //DFS
     //
     //Solution Description:
     //Treating climbing stairs as a tree e.g.

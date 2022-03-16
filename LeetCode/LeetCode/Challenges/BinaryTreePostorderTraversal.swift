@@ -13,8 +13,8 @@ import Foundation
 //DFS
 struct BinaryTreePostorderTraversal {
     
-    //Time: O(n)
-    //Space: O(n)
+    //Time: O(n) where `n` is the number of nodes in the tree
+    //Space: O(n) where `n` is the number of nodes in the tree
     //recursion
     static func postorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
@@ -38,8 +38,8 @@ struct BinaryTreePostorderTraversal {
         visited.append(node.val)
     }
     
-    //Time: O(n)
-    //Space: O(n)
+    //Time: O(n) where `n` is the number of nodes in the tree
+    //Space: O(n) where `n` is the number of nodes in the tree
     //iterative
     static func postorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {

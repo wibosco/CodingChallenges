@@ -47,7 +47,7 @@ struct FibonacciNumber {
     //top down
     //memoization
     //recursive
-    //dfs
+    //DFS
     //
     //Solution Description:
     //Using a top-down approach calculate the value for each `n` and add them together. This value is then stored so that there
