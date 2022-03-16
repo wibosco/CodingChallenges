@@ -62,7 +62,7 @@ struct Search2DMatrix {
         return false
     }
     
-    //Time: O(n) where `n` is the number of elements in `matrix`
+    //Time: O(n + log n) where `n` is the number of elements in `matrix`
     //Space: O(n) where `n` is the number of elements in `matrix`
     //matrix
     //
@@ -72,7 +72,7 @@ struct Search2DMatrix {
     static func searchMatrixMerge(_ matrix: [[Int]], _ target: Int) -> Bool {
         var array = [Int]()
         for row in matrix { // O(n)
-            array.append(contentsOf: row)
+            array.append(contentsOf: row) //create one array from all rows
         }
         
         var left = 0
