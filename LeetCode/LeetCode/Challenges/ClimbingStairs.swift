@@ -26,11 +26,11 @@ struct ClimbingStairs {
     //   1      2          1       2
     // 1   2  1   2      1   2   1   2
     //
-    //You end up with paths in different order e.g. 1 -> 2 -> 1 and 2 -> 1 -> 1. At the end of both these paths you have a
-    //total of 4, subsequently all paths from this 4 will result in the same outcome regardless if we got to 4 via
-    //`1 -> 2 -> 1` or `2 -> 1 -> 1` (or any other path). With this in mind we only need to go down the 4 path once and then
-    //any other path that leads to 4 can reuse that work - shortcutting to the answer and reducing the number of recursive
-    //calls. To do this we need to use memooization to store the total number of successful paths from 4 - `memo`. As each
+    //You end up with the same paths in different order e.g. `1 -> 2 -> 1` and `2 -> 1 -> 1`. At the end of both these paths
+    //you have a total of 4, subsequently all paths from this 4 will result in the same outcome regardless if we got to 4 via
+    //`1 -> 2 -> 1` or `2 -> 1 -> 1` (or any other path). With this in mind we only need to go down the `4` path once and then
+    //any other path that leads to `4` can reuse that work - shortcutting to the answer and reducing the number of recursive
+    //calls. To do this we need to use memooization to store the total number of successful paths from `4` - `memo`. As each
     //path returns we eventually get back to 0 which holds the number of valid climbs.
     //
     //N.B. this is a twist on https://leetcode.com/problems/fibonacci-number/
@@ -42,11 +42,11 @@ struct ClimbingStairs {
     
     private static func climbStairs(_ targetTotal: Int, _ climbTotal: Int, _ memo: inout [Int: Int]) -> Int {
         guard climbTotal != targetTotal else {
-            return 1 // valid climb
+            return 1 // another step
         }
         
         guard climbTotal < targetTotal else {
-            return 0 //invalid climb
+            return 0 //too many steps
         }
         
         guard memo[climbTotal] == nil else {
