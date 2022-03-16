@@ -44,6 +44,8 @@
 		3D46241727E1F97200A888C1 /* UniquePathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46241627E1F97200A888C1 /* UniquePathsTests.swift */; };
 		3D46241927E22DBB00A888C1 /* PlusOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46241827E22DBB00A888C1 /* PlusOne.swift */; };
 		3D46241B27E23B0800A888C1 /* PlusOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46241A27E23B0800A888C1 /* PlusOneTests.swift */; };
+		3D46241D27E242C500A888C1 /* AddBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46241C27E242C500A888C1 /* AddBinary.swift */; };
+		3D46241F27E2432B00A888C1 /* AddBinaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46241E27E2432B00A888C1 /* AddBinaryTests.swift */; };
 		3D4E46DF27DA63B500DA050F /* PermutationsII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E46DE27DA63B500DA050F /* PermutationsII.swift */; };
 		3D4E46E127DA63EA00DA050F /* PermutationsIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E46E027DA63EA00DA050F /* PermutationsIITests.swift */; };
 		3D5C908027A7F6A80035C399 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C907727A7F6A70035C399 /* LeetCode.framework */; };
@@ -474,6 +476,8 @@
 		3D46241627E1F97200A888C1 /* UniquePathsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniquePathsTests.swift; sourceTree = "<group>"; };
 		3D46241827E22DBB00A888C1 /* PlusOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusOne.swift; sourceTree = "<group>"; };
 		3D46241A27E23B0800A888C1 /* PlusOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusOneTests.swift; sourceTree = "<group>"; };
+		3D46241C27E242C500A888C1 /* AddBinary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBinary.swift; sourceTree = "<group>"; };
+		3D46241E27E2432B00A888C1 /* AddBinaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBinaryTests.swift; sourceTree = "<group>"; };
 		3D4E46DE27DA63B500DA050F /* PermutationsII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsII.swift; sourceTree = "<group>"; };
 		3D4E46E027DA63EA00DA050F /* PermutationsIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsIITests.swift; sourceTree = "<group>"; };
 		3D5C907727A7F6A70035C399 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -933,6 +937,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5C910127A7F7630035C399 /* AccountsMerge.swift */,
+				3D46241C27E242C500A888C1 /* AddBinary.swift */,
 				3D5C914027A7F7630035C399 /* AddStrings.swift */,
 				3D5C90F727A7F7620035C399 /* AddTwoNumbers.swift */,
 				3D5C90B327A7F7620035C399 /* AllPathsFromSourceLeadToDestination.swift */,
@@ -1143,6 +1148,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5C921627A7F76B0035C399 /* AccountsMergeTests.swift */,
+				3D46241E27E2432B00A888C1 /* AddBinaryTests.swift */,
 				3D5C920327A7F76B0035C399 /* AddStringsTests.swift */,
 				3D5C91FC27A7F76B0035C399 /* AddTwoNumbersTests.swift */,
 				3D5C921B27A7F76B0035C399 /* AllPathsFromSourceLeadToDestinationTests.swift */,
@@ -1488,6 +1494,7 @@
 				3D5C91E827A7F7630035C399 /* WallsAndGates.swift in Sources */,
 				3D5C91B227A7F7630035C399 /* AccountsMerge.swift in Sources */,
 				3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */,
+				3D46241D27E242C500A888C1 /* AddBinary.swift in Sources */,
 				3D5C916F27A7F7630035C399 /* ConstructBinaryTreeInorderPostorderTraversal.swift in Sources */,
 				3D5C919127A7F7630035C399 /* BinaryTreeRightSideView.swift in Sources */,
 				3D5C91CA27A7F7630035C399 /* ReverseLinkedList.swift in Sources */,
@@ -1773,6 +1780,7 @@
 				3D5C932327A7F76C0035C399 /* BinaryTreeLevelOrderTraversalIITests.swift in Sources */,
 				3D5C92DD27A7F76C0035C399 /* EvaluateReversePolishNotationTests.swift in Sources */,
 				3D5C92BA27A7F76C0035C399 /* RottingOrangesTests.swift in Sources */,
+				3D46241F27E2432B00A888C1 /* AddBinaryTests.swift in Sources */,
 				3D5C92D827A7F76C0035C399 /* SimplifyPathTests.swift in Sources */,
 				3D5C933F27A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift in Sources */,
 				3D5C933527A7F76C0035C399 /* FindSmallestLetterGreaterThanTargetTests.swift in Sources */,
