@@ -12,7 +12,7 @@ import Foundation
 struct Combinations {
     
     //Time: O(k^n) where `k` is the number of combinations and `n` is the range
-    //Space: O(k+m) where `k` is the number of combinations and `m` is the number of levels in our tree
+    //Space: O(k+m*n) where `k` is the number of combinations, `m` is the number of levels in our tree and `n` is the range
     //backtracking
     //
     //Solution Description:

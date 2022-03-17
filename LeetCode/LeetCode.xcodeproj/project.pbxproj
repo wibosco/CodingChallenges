@@ -54,6 +54,8 @@
 		3D46242B27E29C1600A888C1 /* RemoveDuplicatesFromSortedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46242A27E29C1600A888C1 /* RemoveDuplicatesFromSortedListTests.swift */; };
 		3D46242D27E359F800A888C1 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46242C27E359F800A888C1 /* Combinations.swift */; };
 		3D46242F27E35A4100A888C1 /* CombinationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46242E27E35A4100A888C1 /* CombinationsTests.swift */; };
+		3D46243127E38EA400A888C1 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46243027E38EA400A888C1 /* Subsets.swift */; };
+		3D46243327E38F5700A888C1 /* SubsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46243227E38F5700A888C1 /* SubsetsTests.swift */; };
 		3D4E46DF27DA63B500DA050F /* PermutationsII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E46DE27DA63B500DA050F /* PermutationsII.swift */; };
 		3D4E46E127DA63EA00DA050F /* PermutationsIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E46E027DA63EA00DA050F /* PermutationsIITests.swift */; };
 		3D5C908027A7F6A80035C399 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C907727A7F6A70035C399 /* LeetCode.framework */; };
@@ -494,6 +496,8 @@
 		3D46242A27E29C1600A888C1 /* RemoveDuplicatesFromSortedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedListTests.swift; sourceTree = "<group>"; };
 		3D46242C27E359F800A888C1 /* Combinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
 		3D46242E27E35A4100A888C1 /* CombinationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationsTests.swift; sourceTree = "<group>"; };
+		3D46243027E38EA400A888C1 /* Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsets.swift; sourceTree = "<group>"; };
+		3D46243227E38F5700A888C1 /* SubsetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsetsTests.swift; sourceTree = "<group>"; };
 		3D4E46DE27DA63B500DA050F /* PermutationsII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsII.swift; sourceTree = "<group>"; };
 		3D4E46E027DA63EA00DA050F /* PermutationsIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsIITests.swift; sourceTree = "<group>"; };
 		3D5C907727A7F6A70035C399 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1135,6 +1139,7 @@
 				3D5C90F027A7F7620035C399 /* SquaresOfSortedArray.swift */,
 				3D5C913927A7F7630035C399 /* StringToInteger.swift */,
 				3D5C912627A7F7630035C399 /* SubarraySumEqualsK.swift */,
+				3D46243027E38EA400A888C1 /* Subsets.swift */,
 				3D5C90D127A7F7620035C399 /* SubtreeOfAnotherTree.swift */,
 				3D8C787427AD725000ADD88A /* SumOfAllOddLengthSubarrays.swift */,
 				3D5C910427A7F7630035C399 /* SwapNodesInPairs.swift */,
@@ -1349,6 +1354,7 @@
 				3D5C924827A7F76C0035C399 /* SquaresOfSortedArrayTests.swift */,
 				3D5C925E27A7F76C0035C399 /* StringToIntegerTests.swift */,
 				3D5C926727A7F76C0035C399 /* SubarraySumEqualsKTests.swift */,
+				3D46243227E38F5700A888C1 /* SubsetsTests.swift */,
 				3D5C928027A7F76C0035C399 /* SubtreeOfAnotherTreeTests.swift */,
 				3D8C787627AD728200ADD88A /* SumOfAllOddLengthSubarraysTests.swift */,
 				3D5C923C27A7F76B0035C399 /* SwapNodesInPairsTests.swift */,
@@ -1647,6 +1653,7 @@
 				3D5C91A727A7F7630035C399 /* PeakIndexMountainArray.swift in Sources */,
 				3D5C91BE27A7F7630035C399 /* ReconstructItinerary.swift in Sources */,
 				3D5C918827A7F7630035C399 /* KthSmallestElementInBinarySearchTree.swift in Sources */,
+				3D46243127E38EA400A888C1 /* Subsets.swift in Sources */,
 				3D5C91C027A7F7630035C399 /* EvaluateReversePolishNotation.swift in Sources */,
 				3D5C91BD27A7F7630035C399 /* SearchInRotatedSortedArray.swift in Sources */,
 				3D5C915027A7F7630035C399 /* Search2DMatrixII.swift in Sources */,
@@ -1801,6 +1808,7 @@
 				3D5C92DB27A7F76C0035C399 /* RemoveDuplicatesFromSortedArrayTests.swift in Sources */,
 				3D5C92F427A7F76C0035C399 /* RotateListTests.swift in Sources */,
 				3D3B214127D6B2720055C0D1 /* ThreeSumClosestTests.swift in Sources */,
+				3D46243327E38F5700A888C1 /* SubsetsTests.swift in Sources */,
 				3D5C92C927A7F76C0035C399 /* SearchInRotatedSortedArrayIITests.swift in Sources */,
 				3D5C929A27A7F76C0035C399 /* ValidPalindromeTests.swift in Sources */,
 				3D5C92C327A7F76C0035C399 /* Search2DMatrixTests.swift in Sources */,
