@@ -12,24 +12,36 @@ import Foundation
 //two pointers
 struct RemoveDuplicatesFromSortedArray {
     
-    //Time: O(n)
+    //Time: O(n) where `n` is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sorted
     //inline
     //
     //Solution Description:
     //Using two pointers we override duplicates with the next non-duplicate value. As this array is sorted we know that an
     //duplicates will come directly after a value. By using two pointers we keep the `slow` pointer on the edge of our
-    //non-duplicates array while the `fast` pointers skims over any duplicates. Once a non-duplicate is found we expand our
-    //non-duplicates array space by 1 and move that non-duplicate into that space. So if we start with `[1, 1, 2, 2, 3, 3]`
-    //usingg this approach we will end up with `[1, 2, 3, 2, 3, 3]` with the `slow` pointer stopping at 2 so our non-duplicate
-    //array is `[1, 2, 3]`. This happens by:
+    //non-duplicates array while the `fast` pointer skims over any duplicates. Once a non-duplicate is found we move that
+    //non-duplicate into the non-duplicates side of the array and move the non-duplicates boundary forward by one. So if we
+    //start with `[1, 1, 2, 2, 3, 3]` using this approach we will end up with `[1, 2, 3, 2, 3, 3]` with the `slow` pointer
+    //stopping at 2 so our non-duplicate array is `[1, 2, 3]`. This happens by:
     //
-    //1. [1, 1, 2, 2, 3, 3] <--- `slow` and `fast` pointing at same value
-    //2. [1, 2, 2, 2, 3, 3] <--- `slow` and `fast` pointing at different values so `left + 1` is set to value of `fast`
-    //3. [1, 2, 2, 2, 3, 3] <--- `slow` and `fast` pointing at same value
-    //4. [1, 2, 3, 2, 3, 3] <--- `slow` and `fast` pointing at different values so `left + 1` is set to value of `fast`
-    //5. [1, 2, 3, 2, 3, 3] <--- `slow` and `fast` pointing at same value
+    //1. [1, 1, 2, 2, 3, 3] <--- `slow` and `fast` pointing at same index (index: 1)
+    //                            `nums[fast] == nums[(fast - 1)]`
+    //                            so increment `fast` and pause `slow`
+    //2. [1, 2, 2, 2, 3, 3] <--- `slow` and `fast` pointing at different indexes (index: 1, index: 2)
+    //                            `nums[fast] != nums[(fast - 1)]`
+    //                            so override `slow` element with `fast` element and increment both
+    //3. [1, 2, 2, 2, 3, 3] <--- `slow` and `fast` pointing at different indexes (index: 2, index: 3)
+    //                            `nums[fast] == nums[(fast - 1)]`
+    //                            so increment `fast` and pause `slow`
+    //4. [1, 2, 3, 2, 3, 3] <--- `slow` and `fast` pointing at different indexes (index: 2, index: 4)
+    //                            `nums[fast] != nums[(fast - 1)]`
+    //                            so override `slow` element with `fast` element and increment both
+    //5. [1, 2, 3, 2, 3, 3] <--- `slow` and `fast` pointing at different indexes (index: 3, index: 5)
+    //                            `nums[fast] == nums[(fast - 1)]`
+    //                            so increment `fast` and pause `slow`
+    //6. Finished
     //
     //(Just 5 iterations as `fast` starts at 1)
     //
@@ -39,21 +51,19 @@ struct RemoveDuplicatesFromSortedArray {
             return nums.count
         }
         
-        var slow = 0
-        var fast = 1
+        var slow = 1
         
-        while fast < nums.count {
-            if nums[slow] != nums[fast] {
-                //non-duplicate found so move it to the position after the first index in the duplicate sequence
-                slow += 1
+        for fast in  1..<nums.count {
+            if nums[fast] != nums[(fast - 1)] {
                 //sometimes `slow` and `fast` will be the same but its faster to just always assign than to
                 //check and then assign sometimes
                 nums[slow] = nums[fast]
+                
+                //non-duplicate found so move it to the position after the first index in the duplicate sequence
+                slow += 1
             }
-            
-            fast += 1
         }
         
-        return slow + 1 //convert index into count by adding 1
+        return slow
     }
 }
