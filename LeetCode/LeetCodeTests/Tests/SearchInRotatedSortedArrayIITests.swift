@@ -33,11 +33,29 @@ class SearchInRotatedSortedArrayIITests: XCTestCase {
     }
     
     func test_C() {
-        let nums = [1,0,1,1,1]
+        let nums = [1, 0, 1, 1, 1]
         let target = 3
         
         let exists = SearchInRotatedSortedArrayII.search(nums, target)
         
         XCTAssertFalse(exists)
+    }
+    
+    func test_D() {
+        let nums = [1, 0, 1, 1, 1]
+        let target = 0
+        
+        let exists = SearchInRotatedSortedArrayII.search(nums, target)
+        
+        XCTAssertTrue(exists)
+    }
+    
+    func test_E() {
+        let nums = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1]
+        let target = 2
+        
+        let exists = SearchInRotatedSortedArrayII.search(nums, target)
+        
+        XCTAssertTrue(exists)
     }
 }
