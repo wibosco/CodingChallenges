@@ -16,6 +16,7 @@ struct SwapNodesInPairs {
     //Time: O(n) where `n` is the number of nodes in the list
     //Sapce: O(1)
     //iterative
+    //sentinel head
     //
     //Solution Description:
     //Iterate through the list, in order to swap to adjunct nodes we need to keep track of two nodes: `n - 1` and
@@ -23,10 +24,10 @@ struct SwapNodesInPairs {
     //point to `n + 2`, then we set the next property of node `n + 1` to point to node `n`. All that left to do is
     //move the the `current` and `previous` node pointers so `previous` is now node `n` and `current` is node
     //`n + 2`. We repeat this process until we reach the end of the list, we can then return the `next` node of
-    //our dummy holding node.
+    //our dummy/sentinel holding node.
     static func swapPairs(_ head: ListNode?) -> ListNode? {
-        let dummy = ListNode(-1)
-        var previous: ListNode? = dummy
+        let sentinel = ListNode(-1)
+        var previous: ListNode? = sentinel
         var current = head
         
         while current != nil {
@@ -43,7 +44,7 @@ struct SwapNodesInPairs {
             current = current?.next
         }
         
-        return dummy.next
+        return sentinel.next
     }
     
     //Time: O(n) where `n` is the number of nodes in the list

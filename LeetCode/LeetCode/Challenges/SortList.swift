@@ -20,6 +20,7 @@ struct SortList {
     //fast and slow pointers
     //merge sort
     //divide and conquer
+    //sentinel head
     //
     //Solution Description:
     //We can use merge sort to sort this linked list. First we need to find the middle node in the linked list which we can
@@ -64,8 +65,8 @@ struct SortList {
     }
     
     private static func merge(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
-        let dummy = ListNode(-1) //so we don't lost the start of the merged list
-        var mergedList = dummy //will be the tail of the list
+        let sentinel = ListNode(-1) //so we don't lose the start of the merged list
+        var mergedList = sentinel //will be the tail of the list
         
         var list1 = list1
         var list2 = list2
@@ -86,7 +87,7 @@ struct SortList {
         
         mergedList.next = (list1 == nil) ? list2 : list1
         
-        return dummy.next
+        return sentinel.next
     }
     
     //Time: O(n log n) where `n` is the number of nodes in the list

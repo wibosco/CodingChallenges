@@ -16,6 +16,7 @@ class AddTwoNumbers {
     //Space: O(n)
     //math
     //modulo
+    //sentinel head
     //
     //Solution Description:
     //Rather than treat each list as containing one number, adding it to the other lists number and then splitting the sum of that
@@ -30,8 +31,8 @@ class AddTwoNumbers {
         var l1: ListNode? = l1
         var l2: ListNode? = l2
         
-        var prev = ListNode(0)
-        let placeholderHead = prev
+        let sentinel = ListNode(0)
+        var prev = sentinel
         
         var carry = 0
         
@@ -52,6 +53,6 @@ class AddTwoNumbers {
             l2 = l2?.next
         }
         
-        return placeholderHead.next
+        return sentinel.next
     }
 }
