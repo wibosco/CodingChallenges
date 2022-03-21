@@ -34,6 +34,7 @@ struct ClimbingStairs {
     //path returns we eventually get back to 0 which holds the number of valid climbs.
     //
     //N.B. this is a twist on https://leetcode.com/problems/fibonacci-number/
+    //Similar to: https://leetcode.com/problems/decode-ways/
     static func climbStairs(_ n: Int) -> Int {
         var memo = [Int: Int]()
         let ways = climbStairs(n, 0, &memo)
