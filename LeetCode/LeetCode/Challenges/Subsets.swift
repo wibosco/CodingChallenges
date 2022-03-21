@@ -14,9 +14,20 @@ struct Subsets {
     //Time: O(2^n) where `n` is the number of elements in `nums`
     //Space: O(k+m*n) where `k` is the number of subsets, `m` is the number of levels in our tree and `n` current subset
     //backtracking
+    //recursive
+    //DFS
+    //graph theory
+    //n-ary tree
     //
     //Solution Description:
+    //To generate every possible subset we need to be always moving "forward" with `nums` and adding each array that we
+    //build to `subsets` (note that unlike combinations or permutations we don't wait to reach "x" before adding the
+    //current to `subset`, we add any length of `current` to subsets). We use backtracking to ensure that all possible
+    //combinations are generated and to ensure we are always moving forward we track the starting index of the previous
+    //iteration and ensure that we only use elements to the right of that index.
     //
+    //Similar to: https://leetcode.com/problems/combination-sum/
+    //Similar to: https://leetcode.com/problems/permutations/
     static func subsets(_ nums: [Int]) -> [[Int]] {
         var subsets = [[Int]]()
         

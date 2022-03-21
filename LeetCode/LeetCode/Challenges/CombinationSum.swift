@@ -32,6 +32,9 @@ struct CombinationSum {
     //NB: To avoid duplicate entries in `combinations` we only search "same or forward" in `candidates` array, never
     //"backwards" this avoids us ending up with '[2, 2, 3]' and '[2, 3, 2]' and '[3, 2, 2]' which would be considered
     //the same and need to be removed.
+    //
+    //Similar to: https://leetcode.com/problems/permutations/
+    //Similar to: https://leetcode.com/problems/subsets/
     static func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
         var combinations = [[Int]]()
         var combination = [Int]()
