@@ -12,17 +12,15 @@ import Foundation
 //binary search tree
 struct UniqueBinarySearchTrees {
     
-    //Time: O(n^2)
+    //Time: O(n^2) where `n` is the number of nodes in the tree
     //Space: O(n)
     //sorted
     //
     //Solution Description:
-    //Iterating through all possible roots (0..n) we split the tree around each root with everything
-    //left of the root being the left branch and everything right of the root being the right branch.
-    //We then combine all those possible left and right branches to form one whole tree with the root
-    //being `i` in `count`.
+    //Iterating through all possible roots (0..n) we split the tree around each root with everything left of the root being
+    //the left branch and everything right of the root being the right branch. We then combine all those possible left and
+    //right branches to form one whole tree with the root being `i` in `count`.
     //
-    //N.B. https://www.youtube.com/watch?v=GgP75HAvrlY
     //N.B. https://www.youtube.com/watch?v=GgP75HAvrlY
     //N.B. https://leetcode.com/problems/unique-binary-search-trees/discuss/1425684/For-those-who-don't-understand-why-Cartesian-product-(Visualization)
     static func numTrees(_ n: Int) -> Int {

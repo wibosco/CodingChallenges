@@ -18,28 +18,28 @@ struct BinaryTreeInorderTraversal {
     //recursion
     //
     //Solution Description:
-    //Using recursion we perform a DFS traversal through the tree. As we visited nodes, we add them to the `visited`
+    //Using recursion we perform a DFS traversal through the tree. As we visit nodes, we add them to the `order`
     //array only once we have exhausted all left (lesser) child nodes and before all right (greater) nodes.
     static func inorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
 
-        var visited = [Int]()
+        var order = [Int]()
 
-        inorderTraversal(node: root, visited: &visited)
+        inorderTraversal(root, &order)
 
-        return visited
+        return order
     }
 
-    private static func inorderTraversal(node: BinaryTreeNode?, visited: inout [Int]) {
+    private static func inorderTraversal(_ node: BinaryTreeNode?, _ order: inout [Int]) {
         guard let node = node else {
             return
         }
 
-        inorderTraversal(node: node.left, visited: &visited)
-        visited.append(node.val)
-        inorderTraversal(node: node.right, visited: &visited)
+        inorderTraversal(node.left, &order)
+        order.append(node.val)
+        inorderTraversal(node.right, &order)
     }
     
     //Time: O(n) where `n` is the number of nodes in the tree
@@ -48,15 +48,15 @@ struct BinaryTreeInorderTraversal {
     //iterative
     //
     //Solution Description:
-    //Using an array as a stack we iteratively perform a DFS traversal through the tree. As we visited nodes, we add
-    //them to the `visited` array only once we have exhausted all left (lesser) child nodes and before all right
+    //Using an array as a stack we iteratively perform a DFS traversal through the tree. As we visit nodes, we add
+    //them to the `order` array only once we have exhausted all left (lesser) child nodes and before all right
     //(greater) nodes.
     static func inorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
         
-        var visited = [Int]()
+        var order = [Int]()
         var stack = [BinaryTreeNode]()
         var current: BinaryTreeNode? = root
         
@@ -66,11 +66,11 @@ struct BinaryTreeInorderTraversal {
                 current = c.left
             } else {
                 let popped = stack.removeLast()
-                visited.append(popped.val)
+                order.append(popped.val)
                 current = popped.right
             }
         }
         
-        return visited
+        return order
     }
 }
