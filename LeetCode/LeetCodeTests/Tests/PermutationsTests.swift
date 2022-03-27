@@ -19,15 +19,13 @@ class PermutationsTests: XCTestCase {
         let permutations = Permutations.permute(nums)
         
         let expectedPermutations = [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
-        var countOfMatches = 0
         
         //order isn't important
         for permutation in permutations {
             XCTAssertTrue(expectedPermutations.contains(permutation))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedPermutations.count)
+        XCTAssertEqual(permutations.count, expectedPermutations.count)
     }
     
     func test_B() {
@@ -36,15 +34,13 @@ class PermutationsTests: XCTestCase {
         let permutations = Permutations.permute(nums)
         
         let expectedPermutations = [[0, 1], [1, 0]]
-        var countOfMatches = 0
         
         //order isn't important
         for permutation in permutations {
             XCTAssertTrue(expectedPermutations.contains(permutation))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedPermutations.count)
+        XCTAssertEqual(permutations.count, expectedPermutations.count)
     }
     
     func test_C() {
@@ -53,14 +49,12 @@ class PermutationsTests: XCTestCase {
         let permutations = Permutations.permute(nums)
         
         let expectedPermutations = [[1]]
-        var countOfMatches = 0
         
         //order isn't important
         for permutation in permutations {
             XCTAssertTrue(expectedPermutations.contains(permutation))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedPermutations.count)
+        XCTAssertEqual(permutations.count, expectedPermutations.count)
     }
 }

@@ -23,15 +23,13 @@ class AllPathsFromSourceToTargetTests: XCTestCase {
         let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 1, 3], [0, 2, 3]]
-        var countOfMatches = 0
         
         //order isn't important
         for path in paths {
             XCTAssertTrue(expectedPaths.contains(path))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedPaths.count)
+        XCTAssertEqual(paths.count, expectedPaths.count)
     }
     
     func test_B() {
@@ -44,15 +42,13 @@ class AllPathsFromSourceToTargetTests: XCTestCase {
         let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 4], [0, 3, 4], [0, 1, 3, 4], [0, 1, 2, 3, 4], [0, 1, 4]]
-        var countOfMatches = 0
         
         //order isn't important
         for path in paths {
             XCTAssertTrue(expectedPaths.contains(path))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedPaths.count)
+        XCTAssertEqual(paths.count, expectedPaths.count)
     }
     
     func test_C() {
@@ -73,15 +69,13 @@ class AllPathsFromSourceToTargetTests: XCTestCase {
         let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 1, 2, 3], [0, 2, 3], [0, 3]]
-        var countOfMatches = 0
         
         //order isn't important
         for path in paths {
             XCTAssertTrue(expectedPaths.contains(path))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedPaths.count)
+        XCTAssertEqual(paths.count, expectedPaths.count)
     }
     
     func test_E() {
@@ -93,14 +87,11 @@ class AllPathsFromSourceToTargetTests: XCTestCase {
         let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 1, 2, 3], [0, 3]]
-        var countOfMatches = 0
         
         //order isn't important
         for path in paths {
             XCTAssertTrue(expectedPaths.contains(path))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedPaths.count)
-    }
+        XCTAssertEqual(paths.count, expectedPaths.count)    }
 }

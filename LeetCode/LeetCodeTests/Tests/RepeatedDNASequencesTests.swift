@@ -19,15 +19,13 @@ class RepeatedDNASequencesTests: XCTestCase {
         let sequences = RepeatedDNASequences.findRepeatedDnaSequences(s)
         
         let expectedMatches = ["AAAAACCCCC", "CCCCCAAAAA"]
-        var countOfMatches = 0
         
         //order isn't important
         for sequence in sequences {
             XCTAssertTrue(expectedMatches.contains(sequence))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedMatches.count)
+        XCTAssertEqual(sequences.count, expectedMatches.count)
     }
     
     func test_B() {
@@ -35,7 +33,14 @@ class RepeatedDNASequencesTests: XCTestCase {
         
         let sequences = RepeatedDNASequences.findRepeatedDnaSequences(s)
         
-        XCTAssertEqual(sequences, ["AAAAAAAAAA"])
+        let expectedMatches = ["AAAAAAAAAA"]
+        
+        //order isn't important
+        for sequence in sequences {
+            XCTAssertTrue(expectedMatches.contains(sequence))
+        }
+        
+        XCTAssertEqual(sequences.count, expectedMatches.count)
     }
     
     func test_C() {

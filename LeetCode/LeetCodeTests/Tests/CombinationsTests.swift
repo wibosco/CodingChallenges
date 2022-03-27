@@ -20,15 +20,13 @@ class CombinationsTests: XCTestCase {
         let combinations = Combinations.combine(n, k)
         
         let expectedCombinations = [[2, 4], [3, 4], [2, 3], [1, 2], [1, 3], [1, 4]]
-        var countOfMatches = 0
         
         //order isn't important
         for combination in combinations {
             XCTAssertTrue(expectedCombinations.contains(combination))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedCombinations.count)
+        XCTAssertEqual(combinations.count, expectedCombinations.count)
     }
     
     func test_B() {
@@ -38,14 +36,12 @@ class CombinationsTests: XCTestCase {
         let combinations = Combinations.combine(n, k)
         
         let expectedCombinations = [[1]]
-        var countOfMatches = 0
         
         //order isn't important
         for combination in combinations {
             XCTAssertTrue(expectedCombinations.contains(combination))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedCombinations.count)
+        XCTAssertEqual(combinations.count, expectedCombinations.count)
     }
 }

@@ -19,15 +19,13 @@ class ThreeSumTests: XCTestCase {
         let triplets = ThreeSum.threeSum(nums)
         
         let expectedTriplets = [[-1, -1, 2], [-1, 0, 1]]
-        var countOfMatches = 0
         
-        //order of subarrays isn't important
+        //order isn't important
         for triplet in triplets {
             XCTAssertTrue(expectedTriplets.contains(triplet))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedTriplets.count)
+        XCTAssertEqual(triplets.count, expectedTriplets.count)
     }
     
     func test_B() {

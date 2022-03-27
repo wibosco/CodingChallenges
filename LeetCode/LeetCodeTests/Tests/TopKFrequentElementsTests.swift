@@ -21,16 +21,13 @@ class TopKFrequentElementsTests: XCTestCase {
         let top = TopKFrequentElements.topKFrequent(nums, k)
         
         let expectedGrouping = [1, 2]
-        var countOfMatches = 0
         
         //order isn't important
         for t in top {
             XCTAssertTrue(expectedGrouping.contains(t))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(expectedGrouping.count, top.count)
-        XCTAssertEqual(countOfMatches, top.count)
+        XCTAssertEqual(top.count, expectedGrouping.count)
     }
     
     func test_B() {
@@ -39,7 +36,14 @@ class TopKFrequentElementsTests: XCTestCase {
         
         let top = TopKFrequentElements.topKFrequent(nums, k)
         
-        XCTAssertEqual(top, [1])
+        let expectedGrouping = [1]
+        
+        //order isn't important
+        for t in top {
+            XCTAssertTrue(expectedGrouping.contains(t))
+        }
+        
+        XCTAssertEqual(top.count, expectedGrouping.count)
     }
     
     func test_C() {
@@ -48,7 +52,13 @@ class TopKFrequentElementsTests: XCTestCase {
         
         let top = TopKFrequentElements.topKFrequent(nums, k)
         
-        XCTAssertEqual(top, [-1])
+        let expectedGrouping = [-1]
+        
+        //order isn't important
+        for t in top {
+            XCTAssertTrue(expectedGrouping.contains(t))
+        }
+        
+        XCTAssertEqual(top.count, expectedGrouping.count)
     }
-
 }

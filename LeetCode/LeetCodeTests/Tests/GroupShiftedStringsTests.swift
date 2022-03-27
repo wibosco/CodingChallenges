@@ -20,16 +20,13 @@ class GroupShiftedStringsTests: XCTestCase {
         let groupings = GroupShiftedStrings.groupStrings(strings)
         
         let expectedGrouping = [["acef"], ["a", "z"], ["abc", "bcd", "xyz"], ["az", "ba"]]
-        var countOfMatches = 0
         
         //order isn't important
         for grouping in groupings {
             XCTAssertTrue(expectedGrouping.contains(grouping))
-            countOfMatches += 1
         }
         
         XCTAssertEqual(expectedGrouping.count, groupings.count)
-        XCTAssertEqual(countOfMatches, groupings.count)
     }
     
     func test_B() {
@@ -46,16 +43,12 @@ class GroupShiftedStringsTests: XCTestCase {
         let groupings = GroupShiftedStrings.groupStrings(strings)
         
         let expectedGrouping = [["az", "ba"]]
-        var countOfMatches = 0
         
         //order isn't important
         for grouping in groupings {
             XCTAssertTrue(expectedGrouping.contains(grouping))
-            countOfMatches += 1
         }
         
         XCTAssertEqual(expectedGrouping.count, groupings.count)
-        XCTAssertEqual(countOfMatches, groupings.count)
     }
-
 }

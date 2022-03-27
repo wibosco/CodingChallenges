@@ -19,15 +19,13 @@ class GroupAnagramsTests: XCTestCase {
         let groupings = GroupAnagrams.groupAnagrams(strs)
         
         let expectedGroupings = [["bat"], ["tan", "nat"], ["eat", "tea", "ate"]]
-        var countOfMatches = 0
         
         //order isn't important
         for grouping in groupings {
             XCTAssertTrue(expectedGroupings.contains(grouping))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedGroupings.count)
+        XCTAssertEqual(groupings.count, expectedGroupings.count)
     }
     
     func test_B() {
@@ -36,15 +34,13 @@ class GroupAnagramsTests: XCTestCase {
         let groupings = GroupAnagrams.groupAnagrams(strs)
         
         let expectedGroupings = [[""]]
-        var countOfMatches = 0
         
         //order isn't important
         for grouping in groupings {
             XCTAssertTrue(expectedGroupings.contains(grouping))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedGroupings.count)
+        XCTAssertEqual(groupings.count, expectedGroupings.count)
     }
     
     func test_C() {
@@ -53,14 +49,12 @@ class GroupAnagramsTests: XCTestCase {
         let groupings = GroupAnagrams.groupAnagrams(strs)
         
         let expectedGroupings = [["a"]]
-        var countOfMatches = 0
         
         //order isn't important
         for grouping in groupings {
             XCTAssertTrue(expectedGroupings.contains(grouping))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedGroupings.count)
+        XCTAssertEqual(groupings.count, expectedGroupings.count)
     }
 }

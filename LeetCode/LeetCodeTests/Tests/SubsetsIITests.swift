@@ -19,15 +19,13 @@ class SubsetsIITests: XCTestCase {
         let subsets = SubsetsII.subsetsWithDup(nums)
         
         let expectedSubsets = [[], [1], [1, 2], [1, 2, 2], [2], [2, 2]]
-        var countOfMatches = 0
         
         //order isn't important
         for subset in subsets {
             XCTAssertTrue(expectedSubsets.contains(subset))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedSubsets.count)
+        XCTAssertEqual(subsets.count, expectedSubsets.count)
     }
     
     func test_B() {
@@ -36,15 +34,13 @@ class SubsetsIITests: XCTestCase {
         let subsets = SubsetsII.subsetsWithDup(nums)
         
         let expectedSubsets = [[], [0]]
-        var countOfMatches = 0
         
         //order isn't important
         for subset in subsets {
             XCTAssertTrue(expectedSubsets.contains(subset))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedSubsets.count)
+        XCTAssertEqual(subsets.count, expectedSubsets.count)
     }
     
     func test_C() {
@@ -53,14 +49,12 @@ class SubsetsIITests: XCTestCase {
         let subsets = SubsetsII.subsetsWithDup(nums)
         
         let expectedSubsets = [[], [1], [1, 4], [1, 4, 4], [1, 4, 4, 4], [1, 4, 4, 4, 4], [4], [4, 4], [4, 4, 4], [4, 4, 4, 4]]
-        var countOfMatches = 0
         
         //order isn't important
         for subset in subsets {
             XCTAssertTrue(expectedSubsets.contains(subset))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedSubsets.count)
+        XCTAssertEqual(subsets.count, expectedSubsets.count)
     }
 }

@@ -20,15 +20,13 @@ class CombinationSumIITests: XCTestCase {
         let combinations = CombinationSumII.combinationSum2(candidates, target)
         
         let expectedCombinations = [[1, 1, 6], [1, 2, 5], [1, 7], [2, 6]]
-        var countOfMatches = 0
         
         //order isn't important
         for combination in combinations {
             XCTAssertTrue(expectedCombinations.contains(combination))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedCombinations.count)
+        XCTAssertEqual(combinations.count, expectedCombinations.count)
     }
     
     func test_B() {
@@ -38,14 +36,12 @@ class CombinationSumIITests: XCTestCase {
         let combinations = CombinationSumII.combinationSum2(candidates, target)
         
         let expectedCombinations = [[1, 2, 2], [5]]
-        var countOfMatches = 0
         
         //order isn't important
         for combination in combinations {
             XCTAssertTrue(expectedCombinations.contains(combination))
-            countOfMatches += 1
         }
         
-        XCTAssertEqual(countOfMatches, expectedCombinations.count)
+        XCTAssertEqual(combinations.count, expectedCombinations.count)
     }
 }
