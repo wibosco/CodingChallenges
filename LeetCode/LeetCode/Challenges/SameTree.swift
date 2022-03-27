@@ -24,11 +24,11 @@ struct SameTree {
     //Similar to https://leetcode.com/problems/symmetric-tree/
     //Similar to https://leetcode.com/problems/subtree-of-another-tree/
     static func isSameTree(_ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> Bool {
-        guard p != nil, q != nil else {
+        guard let p = p, let q = q else {
             return p == nil && q == nil
         }
         
-        guard let p = p, let q = q, p.val == q.val else {
+        guard p.val == q.val else {
             return false
         }
         

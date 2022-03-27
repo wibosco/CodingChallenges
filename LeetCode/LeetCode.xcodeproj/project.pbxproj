@@ -414,6 +414,8 @@
 		3D5C933F27A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C929927A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift */; };
 		3D5C93A127A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C93A027A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift */; };
 		3D5C93A327A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C93A227A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift */; };
+		3D8424D327F106B100B91AAB /* MeetingRoomsII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D227F106B100B91AAB /* MeetingRoomsII.swift */; };
+		3D8424D527F106E400B91AAB /* MeetingRoomsIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D427F106E400B91AAB /* MeetingRoomsIITests.swift */; };
 		3D8C786D27AD415300ADD88A /* ContiguousArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C786C27AD415300ADD88A /* ContiguousArray.swift */; };
 		3D8C786F27AD418100ADD88A /* ContiguousArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C786E27AD418100ADD88A /* ContiguousArrayTests.swift */; };
 		3D8C787127AD6EF900ADD88A /* RunningSumOf1DArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C787027AD6EF900ADD88A /* RunningSumOf1DArray.swift */; };
@@ -873,6 +875,8 @@
 		3D5C929927A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KthSmallestElementInBinarySearchTreeTests.swift; sourceTree = "<group>"; };
 		3D5C93A027A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStock.swift; sourceTree = "<group>"; };
 		3D5C93A227A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStockTests.swift; sourceTree = "<group>"; };
+		3D8424D227F106B100B91AAB /* MeetingRoomsII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomsII.swift; sourceTree = "<group>"; };
+		3D8424D427F106E400B91AAB /* MeetingRoomsIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomsIITests.swift; sourceTree = "<group>"; };
 		3D8C786C27AD415300ADD88A /* ContiguousArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContiguousArray.swift; sourceTree = "<group>"; };
 		3D8C786E27AD418100ADD88A /* ContiguousArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContiguousArrayTests.swift; sourceTree = "<group>"; };
 		3D8C787027AD6EF900ADD88A /* RunningSumOf1DArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningSumOf1DArray.swift; sourceTree = "<group>"; };
@@ -1097,6 +1101,7 @@
 				3D5C90BA27A7F7620035C399 /* MaximumDepthBinaryTree.swift */,
 				3D5C90E927A7F7620035C399 /* MaximumSubarray.swift */,
 				3D5C90AB27A7F7620035C399 /* MaximumSwap.swift */,
+				3D8424D227F106B100B91AAB /* MeetingRoomsII.swift */,
 				3D5C90C827A7F7620035C399 /* MergeIntervals.swift */,
 				3D5C90CB27A7F7620035C399 /* MergeSortedArray.swift */,
 				3D5C90AC27A7F7620035C399 /* MergeTwoSortedLists.swift */,
@@ -1321,6 +1326,7 @@
 				3D5C921E27A7F76B0035C399 /* MaximumDepthBinaryTreeTests.swift */,
 				3D5C926927A7F76C0035C399 /* MaximumSubarrayTests.swift */,
 				3D5C928427A7F76C0035C399 /* MaximumSwapTests.swift */,
+				3D8424D427F106E400B91AAB /* MeetingRoomsIITests.swift */,
 				3D5C91F927A7F76B0035C399 /* MergeIntervalsTests.swift */,
 				3D5C923127A7F76B0035C399 /* MergeSortedArrayTests.swift */,
 				3D5C922227A7F76B0035C399 /* MergeTwoSortedListsTests.swift */,
@@ -1560,6 +1566,7 @@
 				3D1CD88E27D94B9F00D4CA5F /* JumpGameII.swift in Sources */,
 				3D5C914B27A7F7630035C399 /* ListNodeRandom.swift in Sources */,
 				3D5C919927A7F7630035C399 /* SimplifyPath.swift in Sources */,
+				3D8424D327F106B100B91AAB /* MeetingRoomsII.swift in Sources */,
 				3D4E46DF27DA63B500DA050F /* PermutationsII.swift in Sources */,
 				3D5C918F27A7F7630035C399 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
 				3D30553127C51D6A00294BC7 /* RemoveElement.swift in Sources */,
@@ -1986,6 +1993,7 @@
 				3D5C92C627A7F76C0035C399 /* SqrtTests.swift in Sources */,
 				3D5C929F27A7F76C0035C399 /* MergeIntervalsTests.swift in Sources */,
 				3D5C92AA27A7F76C0035C399 /* SameTreeTests.swift in Sources */,
+				3D8424D527F106E400B91AAB /* MeetingRoomsIITests.swift in Sources */,
 				3D5C933627A7F76C0035C399 /* ConstructBinaryTreeInorderPostorderTraversalTests.swift in Sources */,
 				3D5C92C527A7F76C0035C399 /* SearchInABinarySearchTreeTests.swift in Sources */,
 				3D5C92EF27A7F76C0035C399 /* IntersectionOfTwoArraysIITests.swift in Sources */,

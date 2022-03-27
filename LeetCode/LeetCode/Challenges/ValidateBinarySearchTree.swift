@@ -12,12 +12,17 @@ import Foundation
 //binary search tree
 struct ValidateBinarySearchTree {
     
-    //Time: O(n)
+    //Time: O(n) where `n` is the number of nodes in the tree
     //Space: O(n) - stack calls
     //pre-order
+    //recursive
+    //DFS
     //
     //Solution Description:
-    //
+    //In order for a BST to be valid, all nodes on the right of a particular node need to be greater (not just it's
+    //immediate right but the tree to its right) and all nodes on the left are less than (not just it's immediate left
+    //but the tree to its left). So to validate a BST we can't just compare a root node with its left and right nodes
+    //instead we need to also compare it with its predecessors value as well.
     static func isValidBST(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return true
@@ -26,22 +31,24 @@ struct ValidateBinarySearchTree {
         return preOrder(root, Int.min, Int.max)
     }
     
-    private static func preOrder(_ n: BinaryTreeNode?, _ lower: Int, _ upper: Int) -> Bool {
-        guard let n = n else {
+    private static func preOrder(_ node: BinaryTreeNode?, _ lower: Int, _ upper: Int) -> Bool {
+        guard let node = node else {
             return true
         }
         
-        guard n.val > lower && n.val < upper else {
+        guard node.val > lower && node.val < upper else {
             return false
         }
         
-        return preOrder(n.left, lower, n.val) && preOrder(n.right, n.val, upper) //both need to be valid
+        return preOrder(node.left, lower, node.val) && preOrder(node.right, node.val, upper) //both need to be valid
     }
     
-    //Time: O(n), actually O(2n)
-    //Space: O(n), actually O(2n) - stack calls and visited array
+    //Time: O(n) where `n` is the number of nodes in the tree (actually O(2n))
+    //Space: O(n) actually O(2n) - stack calls and visited array
     //in-order
     //sorted
+    //recursive
+    //DFS
     //
     //Solution Description:
     //A binary search tree follows the princple that nodes to the left of root are less and nodes to the right are greater.
@@ -55,10 +62,10 @@ struct ValidateBinarySearchTree {
         
         var visited = [Int]()
         
-        inOrder(n: root, visited: &visited) //Time: O(n)
+        inOrder(root, &visited) //Time: O(n)
         
         for i in 0..<(visited.count - 1) {
-            if visited[i] > visited[(i + 1)] {
+            if visited[i] >= visited[(i + 1)] {
                 return false
             }
         }
@@ -66,13 +73,13 @@ struct ValidateBinarySearchTree {
         return true
     }
     
-    private static func inOrder(n: BinaryTreeNode?, visited: inout [Int]) {
-        guard let n = n else {
+    private static func inOrder(_ node: BinaryTreeNode?, _ visited: inout [Int]) {
+        guard let node = node else {
             return
         }
         
-        inOrder(n: n.left, visited: &visited)
-        visited.append(n.val)
-        inOrder(n: n.right, visited: &visited)
+        inOrder(node.left, &visited)
+        visited.append(node.val)
+        inOrder(node.right, &visited)
     }
 }

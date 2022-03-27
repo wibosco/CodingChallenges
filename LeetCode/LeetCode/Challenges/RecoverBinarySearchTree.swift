@@ -12,15 +12,15 @@ import Foundation
 //binary search tree
 struct RecoverBinarySearchTree {
     
-    //Time: O(n) where `n`  is the number of nodes in the tree
-    //Space: O(n) where `n`  is the number of nodes in the tree stored in `inorder` array
+    //Time: O(n) where `n` is the number of nodes in the tree
+    //Space: O(n) where `n` is the number of nodes in the tree stored in `inorder` array
     //array
     //DFS
     //inorder
     //
     //Solution Description:
-    //Performing an inorder traversal of a binary search tree should result in an array of ordered/sorted nodes. We can this
-    //property to find which nodes are out-of-order in our tree and switch them. There are two possible scenarios for
+    //Performing an inorder traversal of a binary search tree should result in an array of ordered/sorted nodes. We can use
+    //this property to find which nodes are out-of-order in our tree and switch them. There are two possible scenarios for
     //out-of-order nodes:
     //
     //1. Adjacent nodes
@@ -33,8 +33,8 @@ struct RecoverBinarySearchTree {
     //nodes which would involve breaking their existing left and right connections we can instead merely change the `val` of
     //each node to the opposite nodes `val`.
     //
-    //IMPORTANT NOTE: carefully read any data structure you are given as the `TreeNode` had it's `val` property as `var` - hinting
-    //at updating `val` value rather than truly swapping the nodes (connectins and all)
+    //IMPORTANT NOTE: carefully read any data structure you are given as the `TreeNode` had it's `val` property as `var` -
+    //hinting at updating `val` value rather than truly swapping the nodes (connectins and all)
     static func recoverTree(_ root: BinaryTreeNode?) {
         var inorder = [BinaryTreeNode]()
         dfs(root, &inorder)
