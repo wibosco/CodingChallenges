@@ -25,6 +25,8 @@ struct LinkedListCycleII {
     //can return either.
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
+    //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
+    //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
     static func detectCycle(_ head: ListNode?) -> ListNode? {
         var hare: ListNode? = head
         var tortoise: ListNode? = head

@@ -21,8 +21,8 @@ struct SameTree {
     //Solution Description:
     //Using DFS we traverse through both trees at once, checking that each level the nodes have the same value.
     //
-    //Similar to https://leetcode.com/problems/symmetric-tree/
-    //Similar to https://leetcode.com/problems/subtree-of-another-tree/
+    //Similar to: https://leetcode.com/problems/symmetric-tree/
+    //Similar to: https://leetcode.com/problems/subtree-of-another-tree/
     static func isSameTree(_ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> Bool {
         guard let p = p, let q = q else {
             return p == nil && q == nil

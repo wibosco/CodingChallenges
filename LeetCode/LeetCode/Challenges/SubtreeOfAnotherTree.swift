@@ -23,8 +23,8 @@ struct SubtreeOfAnotherTree {
     //traverse deeper down that path checking the values of each subsequent node pairing (from `t1` and `t2`) and ensuring that
     //they match.
     //
-    //Similar to https://leetcode.com/problems/symmetric-tree/
-    //Similar to https://leetcode.com/problems/same-tree/
+    //Similar to: https://leetcode.com/problems/symmetric-tree/
+    //Similar to: https://leetcode.com/problems/same-tree/
     static func isSubtree(_ t1: BinaryTreeNode?, _ t2: BinaryTreeNode?) -> Bool {
         guard let t1 = t1, let t2 = t2 else {
             return false

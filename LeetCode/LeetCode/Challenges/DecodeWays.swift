@@ -28,7 +28,7 @@ struct DecodeWays {
     //paths through `s` are valid so when attempting to decode we need to check if the present character sequence is a
     //valid encoding
     //
-    //Similar to https://leetcode.com/problems/climbing-stairs/
+    //Similar to: https://leetcode.com/problems/climbing-stairs/
     static func numDecodings(_ s: String) -> Int {
         var memo = [Int: Int]()
         

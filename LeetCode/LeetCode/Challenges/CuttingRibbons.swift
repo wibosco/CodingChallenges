@@ -30,7 +30,7 @@ struct CuttingRibbons {
     //
     //NB: we don't need to use each ribbon so our max length (right boundary) should be the maxmimum length not the minimum length
     //
-    //Similar to https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+    //Similar to: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
     static func maxLength(_ ribbons: [Int], _ k: Int) -> Int {
         var left = 1
         var right = ribbons[0]

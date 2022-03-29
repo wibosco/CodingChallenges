@@ -98,7 +98,7 @@ struct RotateImage {
     //the column as the row index and insert the value as the first element of that row. After popluating the new matrix we
     //compare against `target` and if they match we return true else we repeat the process.
     //
-    //Similar to https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
+    //Similar to: https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
     static func rotateExtraStorage(_ matrix: inout [[Int]]) {
         var matrix2 = Array(repeating: [Int](), count: matrix.count)
         

@@ -22,8 +22,8 @@ struct SymmetricTree {
     //Using DFS we traverse the opposite branches i.e. left and right or right and left, comparing the value of each
     //node against its opposite to ensure they match
     //
-    //Similar to https://leetcode.com/problems/subtree-of-another-tree/
-    //Similar to https://leetcode.com/problems/same-tree/
+    //Similar to: https://leetcode.com/problems/subtree-of-another-tree/
+    //Similar to: https://leetcode.com/problems/same-tree/
     static func isSymmetric(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {
             return false

@@ -9,18 +9,20 @@
 import Foundation
 
 //https://leetcode.com/problems/decode-string/
-//stack
+//string
 struct DecodeString {
     
-    //Time: O(
-    //Space: O(
+    //Time: O((k^m) * n) where k maximum value of encoding, m is the number of nested encodings and n is the length of `s`
+    //Space: O((k^m) * n)
+    //stack
+    //array
     //
     //Solution Description:
     //Iterate through `s` and add the values that we find to the `stack` until we find a closing bracket e.g. for 54[ab6[cd]]
     //our stack would be `5, 4, [, a, b, 6, [, c, d`. Once we a closing bracket we pop all the characters from the stack until
     //we find it matching opening bracket i.e. `c, d`. We now have our encoded char array for that bracket pair. We now need to
     //determine how times that encoded char array should be expanded so keep popping from the stack until we have that mulitplier
-    //(`k`) i.e. 5. We now decode that char array by pushing it onto the stack `k` times. Repeat this process until all `[` and
+    //(`k`) i.e. 6. We now decode that char array by pushing it onto the stack `k` times. Repeat this process until all `[` and
     //`]` encoding has been expanded and we have come to the end of our `chars` array.
     static func decodeString(_ s: String) -> String {
         var stack = [Character]()
@@ -40,15 +42,19 @@ struct DecodeString {
                 var k = 0
                 var base = 1
                 while stack.last?.isNumber ?? false {
-                    k += Int(String(stack.removeLast()))! * base
+                    var num = Int(String(stack.removeLast()))!
+                    num *= base
+                    
+                    k += num
                     base *= 10
                 }
                 
+                //reverse to add into the stack in the original order as if the chars where never encoded
+                encodedChars.reverse()
+                
                 //add multiplied string to stack
                 for _ in 0..<k {
-                    for encodedChar in encodedChars.reversed() {
-                        stack.append(encodedChar)
-                    }
+                    stack.append(contentsOf: encodedChars)
                 }
             } else {
                 stack.append(char)

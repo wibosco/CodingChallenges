@@ -16,7 +16,7 @@ struct SubsetsII {
     //backtracking
     //recursive
     //DFS
-    //graph theory
+    //graph theorys
     //n-ary tree
     //
     //Solution Description:
@@ -30,7 +30,7 @@ struct SubsetsII {
     //element is the same as the previous element and if so we skip searching down that branch as this combination will
     //still generated through the DFS call on another branch.
     //
-    //Similar to https://leetcode.com/problems/combination-sum-ii/
+    //Similar to: https://leetcode.com/problems/combination-sum-ii/
     static func subsetsWithDup(_ nums: [Int]) -> [[Int]] {
         var subsets = [[Int]]()
         

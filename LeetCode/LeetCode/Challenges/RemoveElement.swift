@@ -35,7 +35,7 @@ struct RemoveElement {
     //
     //NB: It's important to stress here that we override values and don't swap them
     //
-    //Similar to https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+    //Similar to: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
     static func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
         var slow = 0
         var fast = 0 //same start as slow
