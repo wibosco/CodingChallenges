@@ -53,4 +53,14 @@ class RemoveNthFromListTests: XCTestCase {
         
         XCTAssertEqual(values, [2])
     }
+    
+    func test_E() {
+        let head = ListNode.deserialize([4, 5, 4])
+        let n = 1
+        
+        let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
+        let values = ListNode.serialize(returnedHead)
+        
+        XCTAssertEqual(values, [4, 5])
+    }
 }

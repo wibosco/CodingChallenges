@@ -17,12 +17,13 @@ struct SquaresOfSortedArray {
     //two pointers
     //
     //Solution Description:
-    //Whenever we square a number we always get a positive and if `a^2` > `b^2` then `a` > `b`. With this observation we need
-    //to treat `nums` as a semi sorted array of positive numbers. With two pointer we are able to iterate through `nums` getting
-    //selecting the largest positive number between `left` and `right` pointers and inserting that into the `squared` array in
-    //reverse ordering i.e. (n-1)..0
+    //Whenever we square a number we always get a positive and if `a^2` > `b^2` then `a` > `b`. With these observations we can
+    //treat `nums` as a semi sorted array of numbers (every positive number is already sorted). Using two pointers we iterate
+    //through `nums` from opposite ends comparing the squared values at each pointer (remember a negative number squared
+    //becomes positive). Whichever squared value is greater we insert into our `squared` array (before any already inserted
+    //values as they would be greater).
     static func sortedSquares(_ nums: [Int]) -> [Int] {
-        var squared = Array(repeating: 0, count: nums.count)
+        var squared = Array(repeating: 0, count: nums.count) //avoid having to expand the array with each new append
         
         var left = 0
         var right = nums.count - 1
@@ -32,7 +33,7 @@ struct SquaresOfSortedArray {
             let rightValue = abs(nums[right])
             
             
-            var square = 0
+            let square: Int
             if leftValue > rightValue {
                 square = leftValue * leftValue
                 
