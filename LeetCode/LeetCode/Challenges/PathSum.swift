@@ -12,15 +12,14 @@ import Foundation
 //binary tree
 struct PathSum {
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //DFS
     //substitution
     //
     //Solution Description:
-    //Using DFS move through the tree, substituting the nodes value from the target
-    //at each stage. Once we get to a leaf node, a check if performed to determine
-    //if sum is equal to 0 i.e. the path does indeed equal the target
+    //Using DFS move through the tree, substituting the nodes value from the target at each stage. Once we get to a leaf
+    //node, a check if performed to determine if sum is equal to 0 i.e. the path does indeed equal the target
     //
     //NB. no need for a helper method as zero acts as the target
     static func hasPathSum(_ root: BinaryTreeNode?, _ targetSum: Int) -> Bool {
@@ -37,15 +36,14 @@ struct PathSum {
     }
     
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //DFS
     //addition
     //
     //Solution Description:
-    //Using DFS move through the tree, adding the nodes value together at each stage.
-    //Once we get to a leaf node, a check if performed to determine if sum is equal
-    //to the target
+    //Using DFS move through the tree, adding the nodes value together at each stage. Once we get to a leaf node, a check
+    //if performed to determine if sum is equal to the target
     static func hasPathSumAddition(_ root: BinaryTreeNode?, _ targetSum: Int) -> Bool {
         return hasPathSum(root, 0, targetSum)
     }
