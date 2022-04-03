@@ -426,6 +426,8 @@
 		3D7F318B27F791A600200775 /* UniquePathsIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F318A27F791A600200775 /* UniquePathsIITests.swift */; };
 		3D7F318D27F7B17400200775 /* ConstructBinaryTreeFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F318C27F7B17400200775 /* ConstructBinaryTreeFromString.swift */; };
 		3D7F318F27F7B67300200775 /* ConstructBinaryTreeFromStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F318E27F7B67300200775 /* ConstructBinaryTreeFromStringTests.swift */; };
+		3D7F319127F9E39D00200775 /* IsGraphBipartite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F319027F9E39D00200775 /* IsGraphBipartite.swift */; };
+		3D7F319327F9E7D500200775 /* IsGraphBipartiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F319227F9E7D500200775 /* IsGraphBipartiteTests.swift */; };
 		3D8424D327F106B100B91AAB /* MeetingRoomsII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D227F106B100B91AAB /* MeetingRoomsII.swift */; };
 		3D8424D527F106E400B91AAB /* MeetingRoomsIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D427F106E400B91AAB /* MeetingRoomsIITests.swift */; };
 		3D8424D727F11EC500B91AAB /* SubdomainVisitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D627F11EC500B91AAB /* SubdomainVisitCount.swift */; };
@@ -910,6 +912,8 @@
 		3D7F318A27F791A600200775 /* UniquePathsIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniquePathsIITests.swift; sourceTree = "<group>"; };
 		3D7F318C27F7B17400200775 /* ConstructBinaryTreeFromString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructBinaryTreeFromString.swift; sourceTree = "<group>"; };
 		3D7F318E27F7B67300200775 /* ConstructBinaryTreeFromStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructBinaryTreeFromStringTests.swift; sourceTree = "<group>"; };
+		3D7F319027F9E39D00200775 /* IsGraphBipartite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsGraphBipartite.swift; sourceTree = "<group>"; };
+		3D7F319227F9E7D500200775 /* IsGraphBipartiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsGraphBipartiteTests.swift; sourceTree = "<group>"; };
 		3D8424D227F106B100B91AAB /* MeetingRoomsII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomsII.swift; sourceTree = "<group>"; };
 		3D8424D427F106E400B91AAB /* MeetingRoomsIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomsIITests.swift; sourceTree = "<group>"; };
 		3D8424D627F11EC500B91AAB /* SubdomainVisitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdomainVisitCount.swift; sourceTree = "<group>"; };
@@ -1125,6 +1129,7 @@
 				3DE789B227EC947F00E1D1B9 /* InterleavingString.swift */,
 				3D5C90AD27A7F7620035C399 /* IntersectionOfTwoArrays.swift */,
 				3D5C911E27A7F7630035C399 /* IntersectionOfTwoArraysII.swift */,
+				3D7F319027F9E39D00200775 /* IsGraphBipartite.swift */,
 				3DC8EE1F27DF9A5400F34FA2 /* JumpGame.swift */,
 				3D1CD88D27D94B9F00D4CA5F /* JumpGameII.swift */,
 				3D5C90A727A7F7620035C399 /* KClosestPointsToOrigin.swift */,
@@ -1362,6 +1367,7 @@
 				3DE789B427EC97B900E1D1B9 /* InterleavingStringTests.swift */,
 				3D5C924927A7F76C0035C399 /* IntersectionOfTwoArraysIITests.swift */,
 				3D5C926E27A7F76C0035C399 /* IntersectionOfTwoArraysTests.swift */,
+				3D7F319227F9E7D500200775 /* IsGraphBipartiteTests.swift */,
 				3D1CD88F27D94BEE00D4CA5F /* JumpGameIITests.swift */,
 				3DC8EE2127DF9A8B00F34FA2 /* JumpGameTests.swift */,
 				3D5C924327A7F76C0035C399 /* KClosestPointsToOriginTests.swift */,
@@ -1647,6 +1653,7 @@
 				3D5C914A27A7F7630035C399 /* Heap.swift in Sources */,
 				3D5C91E527A7F7630035C399 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
 				3D8424DB27F1AF1800B91AAB /* MeetingRooms.swift in Sources */,
+				3D7F319127F9E39D00200775 /* IsGraphBipartite.swift in Sources */,
 				3D5C91E827A7F7630035C399 /* WallsAndGates.swift in Sources */,
 				3D5C91B227A7F7630035C399 /* AccountsMerge.swift in Sources */,
 				3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */,
@@ -1975,6 +1982,7 @@
 				3D5C92D827A7F76C0035C399 /* SimplifyPathTests.swift in Sources */,
 				3D5C933F27A7F76C0035C399 /* KthSmallestElementInBinarySearchTreeTests.swift in Sources */,
 				3D5C933527A7F76C0035C399 /* FindSmallestLetterGreaterThanTargetTests.swift in Sources */,
+				3D7F319327F9E7D500200775 /* IsGraphBipartiteTests.swift in Sources */,
 				3D5C92E527A7F76C0035C399 /* MinimumAddToMakeParenthesesValidTests.swift in Sources */,
 				3D5C92A927A7F76C0035C399 /* AddStringsTests.swift in Sources */,
 				3DA6FF0927AC787A009BD7A8 /* RepeatedDNASequencesTests.swift in Sources */,
