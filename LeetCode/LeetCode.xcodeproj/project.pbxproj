@@ -428,6 +428,8 @@
 		3D7F318F27F7B67300200775 /* ConstructBinaryTreeFromStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F318E27F7B67300200775 /* ConstructBinaryTreeFromStringTests.swift */; };
 		3D7F319127F9E39D00200775 /* IsGraphBipartite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F319027F9E39D00200775 /* IsGraphBipartite.swift */; };
 		3D7F319327F9E7D500200775 /* IsGraphBipartiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F319227F9E7D500200775 /* IsGraphBipartiteTests.swift */; };
+		3D7F319527FA4E9C00200775 /* CheapestFlightsWithinKStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F319427FA4E9C00200775 /* CheapestFlightsWithinKStops.swift */; };
+		3D7F319727FA4EC700200775 /* CheapestFlightsWithinKStopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F319627FA4EC700200775 /* CheapestFlightsWithinKStopsTests.swift */; };
 		3D8424D327F106B100B91AAB /* MeetingRoomsII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D227F106B100B91AAB /* MeetingRoomsII.swift */; };
 		3D8424D527F106E400B91AAB /* MeetingRoomsIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D427F106E400B91AAB /* MeetingRoomsIITests.swift */; };
 		3D8424D727F11EC500B91AAB /* SubdomainVisitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8424D627F11EC500B91AAB /* SubdomainVisitCount.swift */; };
@@ -914,6 +916,8 @@
 		3D7F318E27F7B67300200775 /* ConstructBinaryTreeFromStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructBinaryTreeFromStringTests.swift; sourceTree = "<group>"; };
 		3D7F319027F9E39D00200775 /* IsGraphBipartite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsGraphBipartite.swift; sourceTree = "<group>"; };
 		3D7F319227F9E7D500200775 /* IsGraphBipartiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsGraphBipartiteTests.swift; sourceTree = "<group>"; };
+		3D7F319427FA4E9C00200775 /* CheapestFlightsWithinKStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapestFlightsWithinKStops.swift; sourceTree = "<group>"; };
+		3D7F319627FA4EC700200775 /* CheapestFlightsWithinKStopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapestFlightsWithinKStopsTests.swift; sourceTree = "<group>"; };
 		3D8424D227F106B100B91AAB /* MeetingRoomsII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomsII.swift; sourceTree = "<group>"; };
 		3D8424D427F106E400B91AAB /* MeetingRoomsIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomsIITests.swift; sourceTree = "<group>"; };
 		3D8424D627F11EC500B91AAB /* SubdomainVisitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdomainVisitCount.swift; sourceTree = "<group>"; };
@@ -1065,6 +1069,7 @@
 				3D5C90E327A7F7620035C399 /* BuildingsWithOceanView.swift */,
 				3D5C90FF27A7F7630035C399 /* CanPlaceFlowers.swift */,
 				3D5C90DF27A7F7620035C399 /* CapacityToShipPackagesWithinDDays.swift */,
+				3D7F319427FA4E9C00200775 /* CheapestFlightsWithinKStops.swift */,
 				3D5C913627A7F7630035C399 /* ClimbingStairs.swift */,
 				3D5C913A27A7F7630035C399 /* CloneBinaryTreeWithRandomPointer.swift */,
 				3D5C90B827A7F7620035C399 /* CloneGraph.swift */,
@@ -1304,6 +1309,7 @@
 				3D5C91FF27A7F76B0035C399 /* BuildingsWithOceanViewTests.swift */,
 				3D5C925927A7F76C0035C399 /* CanPlaceFlowersTests.swift */,
 				3D5C926627A7F76C0035C399 /* CapacityToShipPackagesWithinDDaysTests.swift */,
+				3D7F319627FA4EC700200775 /* CheapestFlightsWithinKStopsTests.swift */,
 				3D5C920727A7F76B0035C399 /* ClimbingStairsTests.swift */,
 				3D5C928527A7F76C0035C399 /* CloneBinaryTreeWithRandomPointerTests.swift */,
 				3D5C922D27A7F76B0035C399 /* CloneGraphTests.swift */,
@@ -1812,6 +1818,7 @@
 				3D5C917527A7F7630035C399 /* TargetSum.swift in Sources */,
 				3D5C91C727A7F7630035C399 /* PascalsTriangleII.swift in Sources */,
 				3D5C91D727A7F7630035C399 /* SubarraySumEqualsK.swift in Sources */,
+				3D7F319527FA4E9C00200775 /* CheapestFlightsWithinKStops.swift in Sources */,
 				3D5C91F127A7F7630035C399 /* AddStrings.swift in Sources */,
 				3D5C914527A7F7630035C399 /* NestedInteger.swift in Sources */,
 				3D5C91C527A7F7630035C399 /* CustomSortString.swift in Sources */,
@@ -1896,6 +1903,7 @@
 				3D5C92D427A7F76C0035C399 /* NumberOfProvincesTests.swift in Sources */,
 				3D8C787327AD6F2500ADD88A /* RunningSumOf1DArrayTests.swift in Sources */,
 				3D5C933B27A7F76C0035C399 /* SecondMinimumNodeInBinaryTreeTests.swift in Sources */,
+				3D7F319727FA4EC700200775 /* CheapestFlightsWithinKStopsTests.swift in Sources */,
 				3D5C931E27A7F76C0035C399 /* DiagonalTraverseTests.swift in Sources */,
 				3D5C932427A7F76C0035C399 /* LongestPalindromicSubstringTests.swift in Sources */,
 				3D5C930927A7F76C0035C399 /* UglyNumberTests.swift in Sources */,
