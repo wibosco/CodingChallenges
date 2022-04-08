@@ -18,8 +18,9 @@ struct MergeTwoSortedLists {
     //sentinel head
     //
     //Solution Description:
-    //Iteratively walk through `l1` and `l2` choosing the smaller node from each list to add to the merged list. Continue until
-    //one list is exhausted and then add the remaining of the other to merged  list
+    //Iteratively walk through `l1` and `l2` choosing the smaller node from each list to add to the merged list. We continue
+    //until one list is exhausted and then add the remaining of the other to merged  list. To keep access to the head of the
+    //merged list we employ a sentinel head node
     static func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         var l1 = l1
         var l2 = l2
@@ -41,7 +42,7 @@ struct MergeTwoSortedLists {
             tail = tail.next! //move the tail of merged
         }
         
-        tail.next = (l1 == nil) ? l2 : l1 //add the remining nodes as is to the merged list
+        tail.next = (l1 == nil) ? l2 : l1 //add the remaining nodes as is to the merged list
         
         return sentinel.next
     }

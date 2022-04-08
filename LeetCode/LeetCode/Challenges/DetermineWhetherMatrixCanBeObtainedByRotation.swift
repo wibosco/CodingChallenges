@@ -34,7 +34,7 @@ struct DetermineWhetherMatrixCanBeObtainedByRotation {
             for r in 0..<mat.count {
                 for c in 0..<mat[r].count {
                     let val = mat[r][c]
-                    mat2[c].insert(val, at: 0)
+                    mat2[c].insert(val, at: 0) //insert at start to reverse order
                 }
             }
         
