@@ -63,4 +63,14 @@ class WordSearchTests: XCTestCase {
         
         XCTAssertFalse(exists)
     }
+    
+    func test_F() {
+        let board: [[Character]] = [["a", "b"],
+                                    ["c", "d"]]
+        let word = "acdb"
+        
+        let exists = WordSearch.exist(board, word)
+        
+        XCTAssertTrue(exists)
+    }
 }
