@@ -13,9 +13,9 @@ import Foundation
 struct TopKFrequentElements {
     
     //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(n) where `n` is the number of elements in `nums`
+    //Space: O(n + log n) where `n` is the number of elements in `nums` (log n for the recursive stack)
     //quickselect
-    //inplace
+    //in-line
     //quicksort
     //
     //Solution Description:
@@ -50,7 +50,7 @@ struct TopKFrequentElements {
         let partitionIndex = partition(&order, left, right)
         
         if partitionIndex == k {
-            return //everything after k is sorted
+            return
         } else if k < partitionIndex { //we only need to continue sorting one side of the partition
             quickSelect(&order, left, (partitionIndex - 1), k)
         } else {
@@ -62,13 +62,17 @@ struct TopKFrequentElements {
         let pivot = order[right].1 //note that the pivot is set using the right pointer
         
         var i = left
-        for j in left..<right {
+        for j in left..<right { //note how this is left to (right - 1) as the pivot is right
+            //moving the elements that are greater than the pivot to the left of where the pivot will eventually end up
+            //descending ordering
             if order[j].1 > pivot {
                 order.swapAt(i, j)
-                i += 1
+                i += 1 //incrementing the boundary for elements that are greater than the pivot
             }
         }
         
+        //moving the pivot into its final location i.e. all elements to the left are greater, all element to the
+        //right are less
         order.swapAt(i, right)
         
         return i
@@ -79,13 +83,13 @@ struct TopKFrequentElements {
     //bucket sort
     //
     //Solution Description:
-    //We first group the elements in a `frequency` dictionary with the `num` as the key and the occurance of that `num` in `nums`
-    //as the value. Next we transfer the `frequency` dictionary into buckets - we produce enough buckets so that there is one for
-    //each possible frequency value (the upper bounds of this value being the count of `nums`), we more than one `num` can occur
-    //the same amount of times in `nums` each bucket is an array. The outer array in `buckets` is the frequency and the inner
-    //array is the `num` values. Next we iterate through the `buckets` array in reverse ordering and add the contents of each
-    //bucket to our result array - `order`. As a bucket can contain no items we can't just take the top `k` buckets. Once `order`
-    //contains `k` elements we can return it.
+    //We first group the elements in a `frequency` dictionary with the `num` as the key and the occurance of that `num` in
+    //`nums` as the value. Next we transfer the `frequency` dictionary into buckets - we produce enough buckets so that there
+    //is one for each possible frequency value (the upper bounds of this value being the count of `nums`), we more than one
+    //`num` can occur the same amount of times in `nums` each bucket is an array. The outer array in `buckets` is the frequency
+    //and the inner array is the `num` values. Next we iterate through the `buckets` array in reverse ordering and add the
+    //contents of each bucket to our result array - `order`. As a bucket can contain no items we can't just take the top `k`
+    //buckets. Once `order` contains `k` elements we can return it.
     static func topKFrequentBucketSort(_ nums: [Int], _ k: Int) -> [Int] {
         var frequencies = [Int: Int]() //[num, frequency]
         

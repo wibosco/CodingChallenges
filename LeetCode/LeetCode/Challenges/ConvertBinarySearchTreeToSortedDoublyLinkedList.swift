@@ -17,7 +17,7 @@ struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
     //sorting
     //linked list
     //doubly linked list
-    //inplace
+    //in-line
     //
     //Solution Description:
     //Performing an inorder traversal we pass the fake-head node to the bottom of the left tree as the tail of the linked

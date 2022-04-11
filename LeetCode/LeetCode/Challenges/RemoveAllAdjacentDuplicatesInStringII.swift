@@ -17,22 +17,25 @@ struct RemoveAllAdjacentDuplicatesInStringII {
     //counting
     //
     //Solution Description:
-    //
+    //As we iterate through `s` we store the characters that we come across in `stack` alongside their duplicate count
+    //value. We need to store the duplicate count value in the stack as it is possible that when we start removing/popping
+    //duplicates from the stack characters that are the same but not directly beside each other in `s` will come together.
+    //By storing the duplicate value in the stack we make it possible to determine if that coming-together has resulted in
+    //`k` duplicates now being side-by-side without having to recount the stack for the current `s` value. Once we encounter
+    //a `duplicateCount` value that matches `k` we pop those duplicates off the stack.
     static func removeDuplicates(_ s: String, _ k: Int) -> String {
-        var stack = [(Character, Int)]() //character, duplicate-count
+        var stack = [(Character, Int)]() //(character, duplicate-count)
         
         for c in s {
             let duplicateCount: Int
             if stack.last?.0 == c {
                 duplicateCount = (stack.last!.1 + 1)
             } else {
-                duplicateCount = 1
+                duplicateCount = 1 //new character, reset count
             }
             
             if duplicateCount == k {
-                for _ in 0..<(k - 1) { //final duplicate wasn't added to the stack so we need to take one away from `k`
-                    _ = stack.popLast()
-                }
+                stack.removeLast((k - 1)) //final duplicate wasn't added to the stack so we need to take one away from `k`
             } else {
                 stack.append((c, duplicateCount))
             }
@@ -46,7 +49,10 @@ struct RemoveAllAdjacentDuplicatesInStringII {
     //in-line
     //
     //Solution Description:
-    //
+    //Using a `counts` array we keep track of the duplicate count for the character in `s` that is at the `counts` index.
+    //When a `counts` value equals `k` we remove the duplicate characters in `s` until `k` duplicates are gon, we also
+    //remove `k` elements from `counts` to keep them in sync. We repeat this process until all of `s` is processed.
+    //Special must be taken to reset `i` back to a value before `k` elements where removed.
     static func removeDuplicatesInLine(_ s: String, _ k: Int) -> String {
         var characters = Array(s)
         var counts = [Int]()

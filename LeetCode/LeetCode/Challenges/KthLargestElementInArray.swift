@@ -13,10 +13,10 @@ import Foundation
 struct KthLargestElementInArray {
     
     //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(1)
+    //Space: O(n + log n) where `n` is the number of elements in `nums` (log n for the recursive stack)
     //quickselect
     //quicksort
-    //inplace
+    //in-line
     //
     //Solution Description:
     //Using `quick select` we sort `nums` around a pivot by gradually partitioning `nums` into a smaller and smaller array.
@@ -49,13 +49,18 @@ struct KthLargestElementInArray {
         let pivot = nums[right] //note that the pivot is set using the right pointer
         
         var i = left
-        for j in left..<right {
+        for j in left..<right { //note how this is left to (right - 1) as the pivot is right
+            
+            //moving all elements less than the pivot to the left where the pivot will eventually be moved to
+            //ascending ordering
             if nums[j] <= pivot {
                 nums.swapAt(i, j)
-                i += 1
+                i += 1 //incrementing the boundary for elements that are less than or equal to the pivot
             }
         }
         
+        //moving the pivot into its final location with all elements less than it to the left and all elements greater
+        //than it to the right
         nums.swapAt(i, right)
         
         return i

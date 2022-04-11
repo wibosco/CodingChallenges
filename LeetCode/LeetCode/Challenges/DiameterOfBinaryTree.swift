@@ -44,7 +44,9 @@ struct DiameterOfBinaryTree {
 
         longestDiameter = max(longestDiameter, diameterFromCurrentNode)
 
-        return max(leftHeight, rightHeight) + 1 // we add 1 for the current level
+        //only interested in the longest branch here
+        //we add 1 for the current level
+        return max(leftHeight, rightHeight) + 1
     }
 }
 

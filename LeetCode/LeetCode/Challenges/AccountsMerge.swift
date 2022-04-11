@@ -118,7 +118,8 @@ struct AccountsMerge {
         
         //build adjacency list
         for account in accounts {
-            //treat the first email as the root of this accounts graph, we will use this email when searching to tie graph to account
+            //treat the first email as the root of this accounts graph, we will use this email when searching to tie graph
+            //to account
             let firstEmail = account[1]
             
             for otherEmail in account[2...] {
@@ -135,6 +136,8 @@ struct AccountsMerge {
         for account in accounts {
             let email = account[1] //using first email of account as root
             
+            //prevents the an already processed node being reprocessed which would result in a name and empty array being
+            //added to `mergedAccounts`
             guard !visited.contains(email) else {
                 continue
             }
@@ -157,7 +160,6 @@ struct AccountsMerge {
     
     private static func dfs(_ mergedEmails: inout [String], _ email: String, _ visited: inout Set<String>, _ adjList: [String: [String]]) {
         visited.insert(email)
-        
         mergedEmails.append(email)
         
         guard let neighbors = adjList[email] else {

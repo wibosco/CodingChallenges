@@ -13,9 +13,9 @@ import Foundation
 struct KClosestPointsToOrigin {
     
     //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(1)
+    //Space: O(n + log n) where `n` is the number of elements in `nums` (log n for the recursive stack)
     //quickselect
-    //inplace
+    //in-line
     //
     //Solution Description:
     //Using `quick select` we sort `points` around a pivot by gradually partitioning `nums` into a smallers semi-sorted arrays.
@@ -54,13 +54,18 @@ struct KClosestPointsToOrigin {
         
         var i = left // `i` will track the start of the section that is > pivot
         for j in left..<right { //note how this is left to (right - 1) as the pivot is right
+            
+            //moving the elements that are greater than the pivot to the left of where the pivot will eventually end up
+            //descending ordering
             if squaredDistance(points[j]) <= pivot {
                 points.swapAt(i, j)
-                i += 1
+                i += 1 //incrementing the boundary for elements that are less than or equal to the pivot
             }
         }
         
-        points.swapAt(i, right) //put the pivot in place
+        //moving the pivot into its final location with all elements less than or equal to it to the left and all elements
+        //greater than it to the right
+        points.swapAt(i, right)
         
         return i
     }
