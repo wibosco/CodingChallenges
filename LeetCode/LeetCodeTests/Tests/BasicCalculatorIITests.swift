@@ -36,4 +36,20 @@ class BasicCalculatorIITests: XCTestCase {
         
         XCTAssertEqual(value, 5)
     }
+    
+    func test_D() {
+        let s = "1"
+        
+        let value = BasicCalculatorII.calculate(s)
+        
+        XCTAssertEqual(value, 1)
+    }
+    
+    func test_E() {
+        let s = "0-2147483647"
+        
+        let value = BasicCalculatorII.calculate(s)
+        
+        XCTAssertEqual(value, -2147483647)
+    }
 }
