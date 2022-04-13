@@ -21,7 +21,14 @@ class IntersectionOfTwoArraysTests: XCTestCase {
         
         let intersectingValues = IntersectionOfTwoArrays.intersection(nums1, nums2)
         
-        XCTAssertEqual(intersectingValues, [2])
+        let expectedValues = [2]
+        
+        //order isn't important
+        for value in intersectingValues {
+            XCTAssertTrue(expectedValues.contains(value))
+        }
+        
+        XCTAssertEqual(intersectingValues.count, expectedValues.count)
     }
     
     func test_B() {
@@ -30,6 +37,13 @@ class IntersectionOfTwoArraysTests: XCTestCase {
         
         let intersectingValues = IntersectionOfTwoArrays.intersection(nums1, nums2)
         
-        XCTAssertEqual(intersectingValues, [4, 9])
+        let expectedValues = [4, 9]
+        
+        //order isn't important
+        for value in intersectingValues {
+            XCTAssertTrue(expectedValues.contains(value))
+        }
+        
+        XCTAssertEqual(intersectingValues.count, expectedValues.count)
     }
 }

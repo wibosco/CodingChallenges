@@ -12,22 +12,28 @@ import Foundation
 //array
 struct IntersectionOfTwoArrays {
     
-    //Time: O(n log m)
+    //Time: O(m log m + n log m) where n is the number of values in `nums1`, m is the number of values in `nums2`
+    //Space: O(n) (`intersection` array)
     //binary search
+    //sorting
+    //
+    //Solution Description:
+    //By sorting `nums2` we can use binary search to find matching elements between `nums1` and `nums2`.
     static func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
-        var intersectingValues = Set<Int>()
+        var intersection = Set<Int>()
         
-        let sortedNums2 = nums2.sorted()
+        let sortedNums2 = nums2.sorted() //O(m log m)
+        
         for num in nums1 {
-            if search(sortedNums2, for: num) {
-                intersectingValues.insert(num)
+            if binarySearch(sortedNums2, for: num) {
+                intersection.insert(num)
             }
         }
         
-        return Array(intersectingValues).sorted() //sorting is only needed for unit testing
+        return Array(intersection)
     }
     
-    private static func search(_ nums: [Int], for target: Int) -> Bool {
+    private static func binarySearch(_ nums: [Int], for target: Int) -> Bool {
         var left = 0
         var right = nums.count - 1
         
@@ -46,22 +52,24 @@ struct IntersectionOfTwoArrays {
         return false
     }
     
-    //Time: O(n*m)
+    //Time: O(n * m)
+    //Space: O(n) (`intersection` array)
+    //nested loops
+    //
+    //Solution Description:
+    //For each element in `nums2` we iterate through `nums2` until we either find that element of run out of elements in
+    //`nums2`
     static func intersectionLooping(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
-        var intersectingValues = Set<Int>()
+        var intersection = Set<Int>()
         
         for num1 in nums1 {
             for num2 in nums2 {
                 if num1 == num2 {
-                    intersectingValues.insert(num1)
+                    intersection.insert(num1)
                 }
             }
         }
         
-        return Array(intersectingValues).sorted() //sorting is only needed for unit testing
-    }
-    
-    static func intersectionBuiltin(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
-        return Array(Set(nums1).intersection(Set(nums2)))
+        return Array(intersection)
     }
 }
