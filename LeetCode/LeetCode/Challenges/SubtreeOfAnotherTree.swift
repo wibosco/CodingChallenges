@@ -12,16 +12,19 @@ import Foundation
 //binary tree
 struct SubtreeOfAnotherTree {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(n * m) where n is the number of nodes in `t1`, m is the number of nodes in `t2`
+    //Space: O(m)
     //DFS
     //recursion
     //matching
+    //multi-source
     //
     //Solution Description:
-    //Using DFS we search through `t1` attempting to find a node with the same value of the root of `t2`. If we find that node we
-    //traverse deeper down that path checking the values of each subsequent node pairing (from `t1` and `t2`) and ensuring that
-    //they match.
+    //Using DFS we search through `t1` attempting to find a node with the same value of the root of `t2`. If we find that
+    //node we traverse deeper down that path checking the values of each subsequent node pairing (from `t1` and `t2`) and
+    //ensuring that they match. If the subtrees don't match we search again from the original "kickoff" node in t1, going
+    //down the left and right branches - this also ensures that if `t1` has duplicate `t2` root node values we attempt to
+    //match with `t2` on all those duplicates.
     //
     //Similar to: https://leetcode.com/problems/symmetric-tree/
     //Similar to: https://leetcode.com/problems/same-tree/
@@ -38,11 +41,11 @@ struct SubtreeOfAnotherTree {
     }
     
     private static func isMatch(_ n1: BinaryTreeNode?, _ n2: BinaryTreeNode?) -> Bool {
-        guard n1 != nil, n2 != nil else {
+        guard let n1 = n1, let n2 = n2 else {
            return n1 == nil && n2 == nil
         }
         
-        return n1?.val == n2?.val && isMatch(n1?.left, n2?.left) && isMatch(n1?.right, n2?.right)
+        return n1.val == n2.val && isMatch(n1.left, n2.left) && isMatch(n1.right, n2.right)
     }
     
     //Time: O(
@@ -54,9 +57,9 @@ struct SubtreeOfAnotherTree {
     //matching
     //
     //Solution Description:
-    //Using DFS search for all possible nodes in `t1` of the root of `t2`. Then iterate through each possible root checking if from
-    //that point it is match for all of the nodes in `t2`. We do this by comparing the value of each node and ensure that it falls
-    //in the same position (left or right).
+    //Using DFS search for all possible nodes in `t1` of the root of `t2`. Then iterate through each possible root checking
+    //if from that point it is match for all of the nodes in `t2`. We do this by comparing the value of each node and ensure
+    //that it falls in the same position (left or right).
     static func isSubtreeDFSBFS(_ t1: BinaryTreeNode?, _ t2: BinaryTreeNode?) -> Bool {
         guard let t1 = t1, let t2 = t2 else {
             return false
