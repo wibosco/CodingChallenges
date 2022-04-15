@@ -48,8 +48,9 @@ struct SortTheMatrixDiagonally {
         return orderedMat
     }
     
-    //Time: O(n * m * ((log (min(n, m)))) where n is the number of rows in `mat`, m is the number of columns in `mat`
-    //Space: O(n * m + log (min(n, m)))) where `log min(n, m)` is the size of  one diagonal
+    //Time: O((n + m) * ((min(n, m) log (min(n, m)))) where n is the number of rows in `mat`, m is the number
+    //      of columns in `mat`
+    //Space: O(n * m + (min(n, m)))) where `min(n, m)` is the size of one diagonal
     //relative indexing
     //sorting
     //array
@@ -61,26 +62,30 @@ struct SortTheMatrixDiagonally {
     //a different matrix (`orderedMat`). We repeat this process for the first column (skipping the first row cell as
     //this has already been sorted).
     static func diagonalSortRelativeIndexing(_ mat: [[Int]]) -> [[Int]] {
-        var orderedMat = mat
+        var orderedMat = mat //n * m
         
-        //first row
-        for column in 0..<mat[0].count {
-            var values = [Int]()
-            
-            extractDiagonal(mat, 0, column, &values)
-            
-            values.sort { $0 < $1 }
-            
-            insertDiagonal(&orderedMat, 0, column, values, 0)
-        }
+        //m * min(n, m) log min(n, m)
         
         //first column
-        for row in 1..<mat.count {
+        for column in 0..<mat[0].count { //m
+            var values = [Int]()
+            
+            extractDiagonal(mat, 0, column, &values) //min(n, m)
+            
+            values.sort { $0 < $1 } //min(n, m) log min(n, m)
+            
+            insertDiagonal(&orderedMat, 0, column, values, 0) //min(n, m)
+        }
+        
+        //n * min(n, m) log min(n, m)
+        
+        //first row
+        for row in 1..<mat.count { //n
              var values = [Int]()
             
             extractDiagonal(mat, row, 0, &values)
             
-            values.sort { $0 < $1 }
+            values.sort { $0 < $1 } //min(n, m) log min(n, m)
             
             insertDiagonal(&orderedMat, row, 0, values, 0)
         }

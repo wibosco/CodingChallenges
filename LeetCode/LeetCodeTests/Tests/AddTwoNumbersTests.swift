@@ -57,4 +57,15 @@ class AddTwoNumbersTests: XCTestCase {
         
         XCTAssertEqual(values, [7, 0, 4, 0, 1])
     }
+    
+    func test_E() {
+        let l1 = ListNode.deserialize([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+        let l2 = ListNode.deserialize([5, 6, 4])
+        
+        let node = AddTwoNumbers.addTwoNumbers(l1, l2)
+        
+        let values = ListNode.serialize(node)
+        
+        XCTAssertEqual(values, [6, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+    }
 }
