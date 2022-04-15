@@ -26,6 +26,8 @@
 		3D1381A427C3FC7500E17E5A /* MajorityElementIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1381A327C3FC7500E17E5A /* MajorityElementIITests.swift */; };
 		3D1465742809893B00DF647A /* TrimABinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1465732809893B00DF647A /* TrimABinarySearchTree.swift */; };
 		3D146576280989A300DF647A /* TrimABinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D146575280989A300DF647A /* TrimABinarySearchTreeTests.swift */; };
+		3D146578280A10E500DF647A /* NumberOfDaysBetweenTwoDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D146577280A10E500DF647A /* NumberOfDaysBetweenTwoDates.swift */; };
+		3D14657A280A122500DF647A /* NumberOfDaysBetweenTwoDatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D146579280A122500DF647A /* NumberOfDaysBetweenTwoDatesTests.swift */; };
 		3D193ABB27C78D7100E49F08 /* CombinationSumIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D193ABA27C78D7100E49F08 /* CombinationSumIII.swift */; };
 		3D193ABD27C78D9600E49F08 /* CombinationSumIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D193ABC27C78D9600E49F08 /* CombinationSumIIITests.swift */; };
 		3D1A570827E693F00008DDC0 /* RemoveDuplicatesFromSortedListII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A570727E693F00008DDC0 /* RemoveDuplicatesFromSortedListII.swift */; };
@@ -537,6 +539,8 @@
 		3D1381A327C3FC7500E17E5A /* MajorityElementIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElementIITests.swift; sourceTree = "<group>"; };
 		3D1465732809893B00DF647A /* TrimABinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimABinarySearchTree.swift; sourceTree = "<group>"; };
 		3D146575280989A300DF647A /* TrimABinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimABinarySearchTreeTests.swift; sourceTree = "<group>"; };
+		3D146577280A10E500DF647A /* NumberOfDaysBetweenTwoDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDaysBetweenTwoDates.swift; sourceTree = "<group>"; };
+		3D146579280A122500DF647A /* NumberOfDaysBetweenTwoDatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDaysBetweenTwoDatesTests.swift; sourceTree = "<group>"; };
 		3D193ABA27C78D7100E49F08 /* CombinationSumIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSumIII.swift; sourceTree = "<group>"; };
 		3D193ABC27C78D9600E49F08 /* CombinationSumIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSumIIITests.swift; sourceTree = "<group>"; };
 		3D1A570727E693F00008DDC0 /* RemoveDuplicatesFromSortedListII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedListII.swift; sourceTree = "<group>"; };
@@ -1237,6 +1241,7 @@
 				3D5C90F427A7F7620035C399 /* NextPermutation.swift */,
 				3D5C911F27A7F7630035C399 /* NRepeatedElementInSize2NArray.swift */,
 				3D5C90CA27A7F7620035C399 /* NumberConnectedComponentsUndirectedGraph.swift */,
+				3D146577280A10E500DF647A /* NumberOfDaysBetweenTwoDates.swift */,
 				3D5C90C927A7F7620035C399 /* NumberOfIslands.swift */,
 				3D5C911827A7F7630035C399 /* NumberOfProvinces.swift */,
 				3D5C90E527A7F7620035C399 /* OpenTheLock.swift */,
@@ -1488,6 +1493,7 @@
 				3D5C925B27A7F76C0035C399 /* NextPermutationTests.swift */,
 				3D5C923827A7F76B0035C399 /* NRepeatedElementInSize2NArrayTests.swift */,
 				3D5C925C27A7F76C0035C399 /* NumberConnectedComponentsUndirectedGraphTests.swift */,
+				3D146579280A122500DF647A /* NumberOfDaysBetweenTwoDatesTests.swift */,
 				3D5C923E27A7F76C0035C399 /* NumberOfIslandsTests.swift */,
 				3D5C922E27A7F76B0035C399 /* NumberOfProvincesTests.swift */,
 				3D5C925227A7F76C0035C399 /* OpenTheLockTests.swift */,
@@ -1940,6 +1946,7 @@
 				3D42A46927F4F27400687F75 /* ShortestWordDistanceII.swift in Sources */,
 				3D46242527E2921900A888C1 /* SortColors.swift in Sources */,
 				3D8424DF27F23D6100B91AAB /* RandomizedSet.swift in Sources */,
+				3D146578280A10E500DF647A /* NumberOfDaysBetweenTwoDates.swift in Sources */,
 				3D5C916E27A7F7630035C399 /* SearchSortedArrayOfUnknownSize.swift in Sources */,
 				3D1D0C872806DCD4006DA350 /* BuddyStrings.swift in Sources */,
 				3D5C916227A7F7630035C399 /* FindSmallestLetterGreaterThanTarget.swift in Sources */,
@@ -2002,6 +2009,7 @@
 				3D5C92B327A7F76C0035C399 /* RangeSumOfBSTTests.swift in Sources */,
 				3D5C933A27A7F76C0035C399 /* BinaryTreeInorderTraversalTests.swift in Sources */,
 				3D5C92CA27A7F76C0035C399 /* LowestCommonAncestorBinaryTreeIITests.swift in Sources */,
+				3D14657A280A122500DF647A /* NumberOfDaysBetweenTwoDatesTests.swift in Sources */,
 				3D46243F27E544BB00A888C1 /* PartitionListTests.swift in Sources */,
 				3D5C92BD27A7F76C0035C399 /* GroupShiftedStringsTests.swift in Sources */,
 				3D5C92B627A7F76C0035C399 /* Matrix01Tests.swift in Sources */,
