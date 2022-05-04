@@ -19,8 +19,8 @@ struct KthSmallestElementInBinarySearchTree {
     //recursive
     //
     //Solution Description:
-    //An inorder traversal of a binary search tree results in an ascending array of nodes. Using this we can perform
-    //an inorder traversal until we get to the `k`th element in the sorted array, at which point we can return its
+    //An inorder traversal of a binary search tree results in an ordered. ascending array of nodes. Using this we can
+    //perform an inorder traversal until we get to the `k`th element in the sorted array, at which point we can return its
     //value
     static func kthSmallest(_ root: BinaryTreeNode?, _ k: Int) -> Int {
         var k = k

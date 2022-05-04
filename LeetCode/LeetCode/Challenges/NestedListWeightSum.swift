@@ -18,9 +18,9 @@ struct NestedListWeightSum {
     //iterative
     //
     //Solution Description:
-    //Treat `nestedList` as a graph. Using BFS traverse through the `nestedList`, at each level checking if we
-    //have an integer or list. If we have an integer we multiple it against the depth and add it to the total;
-    //if we have a list we add it's elements to the queue.
+    //Treat `nestedList` as a graph. Using BFS traverse through the `nestedList`, at each level checking if we have an integer or
+    //list. If we have an integer we multiple it against the depth and add it to the total; if we have a list we add it's elements
+    //to the queue.
     static func depthSum(_ nestedList: [NestedInteger]) -> Int {
         var total = 0
         var queue = [NestedInteger]()

@@ -20,6 +20,24 @@ class ListNode {
 }
 
 extension ListNode {
+    static func deserializeCircularList(_ array: [Int]) -> ListNode? {
+        var tail: ListNode?
+        var prev: ListNode?
+        for value in array.reversed() {
+            let node = ListNode(value)
+            node.next = prev
+            prev = node
+            
+            if tail == nil {
+                tail = prev
+            }
+        }
+            
+        tail?.next = prev
+        
+        return prev
+    }
+    
     static func deserialize(_ array: [Int], _ cycleIndex: Int) -> ListNode? {
         var prev: ListNode?
         var tail: ListNode?
@@ -53,11 +71,18 @@ extension ListNode {
 
     static func serialize(_ head: ListNode?) -> [Int] {
         var data = [Int]()
+        var visited = Set<ListNode>()
         
         var node = head
         while let n = node {
+            guard !visited.contains(n) else {
+                break
+            }
+            
             data.append(n.val)
             node = n.next
+            
+            visited.insert(n)
         }
         
         return data

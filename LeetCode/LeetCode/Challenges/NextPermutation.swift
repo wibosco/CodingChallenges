@@ -20,8 +20,8 @@ struct NextPermutation {
     //inline
     //
     //Solution Description:
-    //In order to find the next larger permutation we need to the smallest unit index (indexing from the right) where
-    //that a larger value than the index directly to its right - this becomes our pivot index (if this doesn't exist
+    //In order to find the next larger permutation we need to the smallest unit index (indexing from the right) that
+    //has a larger value than the index directly to its right - this becomes our pivot index (if this doesn't exist
     //then we have the highest value premutation and should return the lowest possible permutation i.e. all in
     //ascending order). We then need to switch out this pivot with the smallest unit index that has a larger value
     //than the pivots value - please note that we only switch out one index. Finally having switched out the pivot
@@ -73,7 +73,7 @@ struct NextPermutation {
         //if we didn't find our pivot, then there is no larger permutation
         if let pivot = pivot {
             //sort everything to the right of the pivot (least-significant) into ascending order and then swap the
-            //pivot for the first (smallest) vslue that is greater than itself
+            //pivot for the first (smallest) value that is greater than itself
             let insidePivot = (pivot + 1)
             let sortRange = insidePivot..<nums.count
             let sorted = nums[sortRange].sorted()
