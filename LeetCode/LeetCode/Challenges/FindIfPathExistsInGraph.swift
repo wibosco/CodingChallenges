@@ -18,10 +18,9 @@ struct FindIfPathExistsInGraph {
     //adjacency list
     //
     //Solution Description:
-    //Build an adjacency list containing all the connections from a node/vertice to other
-    //nodes/vertices. Check that both start and end nodes actually have connections. Then
-    //traverse the graph in the BFS manner, stopping only when the `end` is found or there
-    //are no more edges in the graph that contains `start`.
+    //Build an adjacency list containing all the connections from a node/vertice to other nodes/vertices. Check that both start
+    //and end nodes actually have connections. Then traverse the graph in the BFS manner, stopping only when the `end` is found
+    //or there are no more edges in the graph that contains `start`.
     static func validPath(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
@@ -66,10 +65,9 @@ struct FindIfPathExistsInGraph {
     //adjacency list
     //
     //Solution Description:
-    //Build an adjacency list containing all the connections from a node/vertice to other
-    //nodes/vertices. Check that both start and end nodes actually have connections. Then
-    //traverse the graph in the DFS manner, stopping only when the `end` is found or there
-    //are no more edges in the graph that contains `start`.
+    //Build an adjacency list containing all the connections from a node/vertice to other nodes/vertices. Check that both start
+    //and end nodes actually have connections. Then traverse the graph in the DFS manner, stopping only when the `end` is found
+    //or there are no more edges in the graph that contains `start`.
     static func validPathAdjacencyListDFS(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
@@ -113,9 +111,8 @@ struct FindIfPathExistsInGraph {
     //DFS
     //
     //Solution Description:
-    //Build an array of nodes and then connect them using the array index as the edges
-    //index. Then traverse the graph in the DFS manner, stopping only when the `end` is
-    //found or there are no more edges in the graph that contains `start`.
+    //Build an array of nodes and then connect them using the array index as the edges index. Then traverse the graph in the DFS
+    //manner, stopping only when the `end` is found or there are no more edges in the graph that contains `start`.
     static func validPathGraphNodesDFS(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
@@ -162,8 +159,8 @@ struct FindIfPathExistsInGraph {
     //disjoint sets
     //
     //Solution Description:
-    //Using union find connected the nodes into sets. If start and end exist in the same
-    //set then they are connected otherwise they are not
+    //Using union find connected the nodes into sets. If start and end exist in the same set then they are connected otherwise
+    //they are not
     static func validPathDisjointSets(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
@@ -184,17 +181,12 @@ struct FindIfPathExistsInGraph {
 //Can only be applied on undirected graphs
 //
 //Solution Description:
-//1. Each vertice is given an initial value of -1 to indicate
-//   that they are their own root
-//2. Perform a union between two vertices by finding the root
-//   of each vertice (this will be a negative number). This root
-//   may not be directly associated with the vertice but instead
-//   require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices
-//   root and select the root with the most nodes i.e. lowest
-//   negative value. Update the smaller root to point at the other
-//   root and update the other roots count to include the count that
-//   the former root had
+//1. Each vertice is given an initial value of -1 to indicate that they are their own root
+//2. Perform a union between two vertices by finding the root of each vertice (this will be a negative number). This root may not
+//   be directly associated with the vertice but instead require multiple steps hence the while loop in `find`
+//3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest negative
+//   value. Update the smaller root to point at the other root and update the other roots count to include the count that the
+//   former root had
 private class UnionFind {
     private(set) var ranks: [Int]
     

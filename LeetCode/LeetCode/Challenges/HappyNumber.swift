@@ -18,8 +18,9 @@ struct HappyNumber {
     //modulo
     //
     //Solution Description:
-    //Treating the possible sums as a linked list, we can use fast and slow pointers to determine if we have entered a cycle. If the two
-    //pointers meet then we have entered a cycle and can return false, else we contine to check if `hare` is 1 and return true if it does
+    //Treating the possible sums as a linked list, we can use fast and slow pointers to determine if we have entered a cycle. If
+    //the two pointers meet then we have entered a cycle and can return false, else we contine to check if `hare` is 1 and return
+    //true if it does
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
     static func isHappy(_ n: Int) -> Bool {
@@ -60,9 +61,10 @@ struct HappyNumber {
     //modulo
     //
     //Solution Description:
-    //Using a dictionary to store previously seen values we reduce `n` down to its digits, square those digits and sum them together. We then
-    //check if the sum of that sum is 1. If it is 1 then we are done, the loop ends and we then true; if it is not 1 and we haven't seen the
-    //value before we repeat the process. If we ever get a number that we have seen before then we have a loop and can exit by returning false
+    //Using a dictionary to store previously seen values we reduce `n` down to its digits, square those digits and sum them
+    //together. We then check if the sum of that sum is 1. If it is 1 then we are done, the loop ends and we then true; if it is
+    //not 1 and we haven't seen the value before we repeat the process. If we ever get a number that we have seen before then we
+    //have a loop and can exit by returning false
     static func isHappyDictionary(_ n: Int) -> Bool {
         var seenValues = Set<Int>()
         var val = n

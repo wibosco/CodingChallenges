@@ -16,7 +16,8 @@ struct CourseScheduleII {
     //Space: O(n * m)
     //BFS
     //multi-source
-    //in-degree
+    //indegree
+    //outdegree
     //topological order
     //adjacency list
     //
@@ -28,6 +29,8 @@ struct CourseScheduleII {
     //have any outstanding prerequisities. Each course in the queue is added to the `order` array. Once the queue is empty we check
     //if the `order` arrays count is equal to `numCourses` and if so return that order and if not return any empty array as some
     //courses couldn't be taken - dependency cycle
+    //
+    //In graph theory a `*degree` is either the number of incoming (`inDegree`) and outgoing (`outDegree`) edges
     static func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         guard numCourses > 1 else {
             return [0]

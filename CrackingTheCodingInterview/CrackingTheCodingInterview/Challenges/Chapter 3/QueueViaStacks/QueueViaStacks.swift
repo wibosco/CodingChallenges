@@ -10,14 +10,14 @@ import Foundation
 
 //CtCI 3.4
 class QueueViaStacks {
-    var enqueueStack = QueueViaStacksStack()
-    var dequeueStack = QueueViaStacksStack()
+    private var enqueueStack = Stack()
+    private var dequeueStack = Stack()
     
     // MARK: - Transfer
     
-    private func transferContents(sourceStack: QueueViaStacksStack, destinationStack: QueueViaStacksStack) {
-        for _ in 0..<sourceStack.nodes.count {
-            destinationStack.push(value: sourceStack.pop())
+    private func transferContents(sourceStack: Stack, destinationStack: Stack) {
+        while let value = sourceStack.pop() {
+            destinationStack.push(value: value)
         }
     }
     
@@ -31,7 +31,7 @@ class QueueViaStacks {
         enqueueStack.push(value: value)
     }
     
-    func dequeue() -> Int {
+    func dequeue() -> Int? {
         if !enqueueStack.isEmpty() {
             transferContents(sourceStack: enqueueStack, destinationStack: dequeueStack)
         }
@@ -39,7 +39,7 @@ class QueueViaStacks {
         return dequeueStack.pop()
     }
     
-    func peek() -> Int {
+    func peek() -> Int? {
         if !enqueueStack.isEmpty() {
             transferContents(sourceStack: enqueueStack, destinationStack: dequeueStack)
         }
@@ -47,3 +47,31 @@ class QueueViaStacks {
         return dequeueStack.peek()
     }
 }
+
+private class Stack {
+    
+    // MARK: - Nodes
+    
+    private var stack = [Int]()
+    
+    // MARK: - Meta
+    
+    func isEmpty() -> Bool {
+        return stack.isEmpty
+    }
+    
+    // MARK: - Actions
+    
+    func push(value: Int) {
+        stack.append(value)
+    }
+    
+    func pop() -> Int? {
+        return stack.popLast()
+    }
+    
+    func peek() -> Int? {
+        return stack.last
+    }
+}
+

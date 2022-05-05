@@ -24,7 +24,6 @@
 		3D5C901F27A7F5000035C399 /* LinkedListIntersectingNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C901027A7F5000035C399 /* LinkedListIntersectingNodeTests.swift */; };
 		3D5C905027A7F50A0035C399 /* OffByOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C902327A7F50A0035C399 /* OffByOne.swift */; };
 		3D5C905127A7F50A0035C399 /* PalindromePermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C902527A7F50A0035C399 /* PalindromePermutation.swift */; };
-		3D5C905227A7F50A0035C399 /* QueueViaStacksStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C902827A7F50A0035C399 /* QueueViaStacksStack.swift */; };
 		3D5C905327A7F50A0035C399 /* QueueViaStacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C902927A7F50A0035C399 /* QueueViaStacks.swift */; };
 		3D5C905427A7F50A0035C399 /* MinStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C902B27A7F50A0035C399 /* MinStack.swift */; };
 		3D5C905527A7F50A0035C399 /* StackOfPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C902D27A7F50A0035C399 /* StackOfPlates.swift */; };
@@ -80,7 +79,6 @@
 		3D5C901027A7F5000035C399 /* LinkedListIntersectingNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListIntersectingNodeTests.swift; sourceTree = "<group>"; };
 		3D5C902327A7F50A0035C399 /* OffByOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffByOne.swift; sourceTree = "<group>"; };
 		3D5C902527A7F50A0035C399 /* PalindromePermutation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromePermutation.swift; sourceTree = "<group>"; };
-		3D5C902827A7F50A0035C399 /* QueueViaStacksStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueViaStacksStack.swift; sourceTree = "<group>"; };
 		3D5C902927A7F50A0035C399 /* QueueViaStacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueViaStacks.swift; sourceTree = "<group>"; };
 		3D5C902B27A7F50A0035C399 /* MinStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStack.swift; sourceTree = "<group>"; };
 		3D5C902D27A7F50A0035C399 /* StackOfPlates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackOfPlates.swift; sourceTree = "<group>"; };
@@ -252,8 +250,8 @@
 		3D5C902627A7F50A0035C399 /* Chapter 3 */ = {
 			isa = PBXGroup;
 			children = (
-				3D5C902727A7F50A0035C399 /* QueueViaStacks */,
 				3D5C902A27A7F50A0035C399 /* MinStack */,
+				3D5C902727A7F50A0035C399 /* QueueViaStacks */,
 				3D5C902C27A7F50A0035C399 /* StackOfPlates */,
 			);
 			path = "Chapter 3";
@@ -262,7 +260,6 @@
 		3D5C902727A7F50A0035C399 /* QueueViaStacks */ = {
 			isa = PBXGroup;
 			children = (
-				3D5C902827A7F50A0035C399 /* QueueViaStacksStack.swift */,
 				3D5C902927A7F50A0035C399 /* QueueViaStacks.swift */,
 			);
 			path = QueueViaStacks;
@@ -289,14 +286,14 @@
 		3D5C903027A7F50A0035C399 /* Chapter 4 */ = {
 			isa = PBXGroup;
 			children = (
-				3D5C903127A7F50A0035C399 /* SuccessorBST */,
-				3D5C903327A7F50A0035C399 /* BuildOrder */,
-				3D5C903627A7F50A0035C399 /* ValidateBST */,
 				3D5C903827A7F50A0035C399 /* BalancedBST */,
-				3D5C903A27A7F50A0035C399 /* MinimalTree */,
 				3D5C903D27A7F50A0035C399 /* BinarySearchTreeDepth */,
+				3D5C903327A7F50A0035C399 /* BuildOrder */,
 				3D5C904327A7F50A0035C399 /* Helpers */,
+				3D5C903A27A7F50A0035C399 /* MinimalTree */,
 				3D5C904527A7F50A0035C399 /* RoutePlanner */,
+				3D5C903127A7F50A0035C399 /* SuccessorBST */,
+				3D5C903627A7F50A0035C399 /* ValidateBST */,
 			);
 			path = "Chapter 4";
 			sourceTree = "<group>";
@@ -383,8 +380,8 @@
 		3D5C904927A7F50A0035C399 /* Chapter 2 */ = {
 			isa = PBXGroup;
 			children = (
-				3D5C904A27A7F50A0035C399 /* IntersectingNode */,
 				3D5C904E27A7F50A0035C399 /* CircularLinkedList */,
+				3D5C904A27A7F50A0035C399 /* IntersectingNode */,
 			);
 			path = "Chapter 2";
 			sourceTree = "<group>";
@@ -533,7 +530,6 @@
 				3D5C905627A7F50A0035C399 /* StackOfPlatesNode.swift in Sources */,
 				3D5C906A27A7F50A0035C399 /* CircularLinkedList.swift in Sources */,
 				3D5C905727A7F50A0035C399 /* StackOfPlatesStack.swift in Sources */,
-				3D5C905227A7F50A0035C399 /* QueueViaStacksStack.swift in Sources */,
 				3D5C906127A7F50A0035C399 /* BinarySearchTreeDepthLinkedListNode.swift in Sources */,
 				3D5C905E27A7F50A0035C399 /* MinimalBinarySearchTreeNode.swift in Sources */,
 				3D5C906827A7F50A0035C399 /* LinkedListNode.swift in Sources */,
