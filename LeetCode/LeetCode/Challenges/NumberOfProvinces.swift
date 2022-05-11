@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct NumberOfProvinces {
     
-    //Time: O(n ^ 2) where n is the number of elements in `isConnected`
+    //Time: O(n^2) where n is the number of elements in `isConnected`
     //Space: O(n)
     //DFS
     //visited
@@ -60,7 +60,7 @@ struct NumberOfProvinces {
         }
     }
     
-    //Time: O(n ^ 2) where n is the number of elements in `isConnected`
+    //Time: O(n^2) where n is the number of elements in `isConnected`
     //Space: O(n)
     //BFS
     //visited
@@ -110,7 +110,7 @@ struct NumberOfProvinces {
         return count
     }
     
-    //Time: O(n ^ 2) for the disjoint set
+    //Time: O(n^2) for the disjoint set
     //Space: O(n) for the `rank` array in `UnionFind`
     //disjoint set
     //
