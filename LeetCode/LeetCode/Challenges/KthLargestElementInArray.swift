@@ -24,7 +24,8 @@ struct KthLargestElementInArray {
     //only need to further sort that partition that contains the `k` index. As quick sort will sort in ascending order to
     //find the largest Kth element we need to invert `k` by counting `k` elements from the end to return the correct value.
     //
-    //N.B. Here we are using Lomutos partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
+    //N.B. Here we are using Lomutos partitioning scheme, see:
+    //https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
     static func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
         var nums = nums
         

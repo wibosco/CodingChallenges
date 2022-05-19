@@ -23,7 +23,8 @@ struct KClosestPointsToOrigin {
     //check if the elements up to the `kth` index as been sorted if so we can return `points[0..<k]` else we take one half of
     //the semi-sorted array and partition it further.
     //
-    //N.B. Here we are using Lomutos partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
+    //N.B. Here we are using Lomutos partitioning scheme, see:
+    //https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
     static func kClosest(_ points: [[Int]], _ k: Int) -> [[Int]] {
         var points = points
         quickSelect(&points, 0, (points.count - 1), k) //note the "-1" for right
@@ -55,9 +56,8 @@ struct KClosestPointsToOrigin {
         var i = left // `i` will track the start of the section that is > pivot
         for j in left..<right { //note how this is left to (right - 1) as the pivot is right
             
-            //moving the elements that are greater than the pivot to the left of where the pivot will eventually end up
-            //descending ordering
-            if squaredDistance(points[j]) <= pivot {
+            //moving the elements that are less than the pivot to the left of where the pivot will eventually end up
+            if squaredDistance(points[j]) <= pivot { //non-descending ordering
                 points.swapAt(i, j)
                 i += 1 //incrementing the boundary for elements that are less than or equal to the pivot
             }

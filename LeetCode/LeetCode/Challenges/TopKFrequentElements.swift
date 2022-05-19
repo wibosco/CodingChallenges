@@ -27,7 +27,8 @@ struct TopKFrequentElements {
     //index. As we want to find the most frequent elements when partitioning we sort in descending order. With the `kth`
     //element sorted we return an array containing only `k` elements.
     //
-    //N.B. Here we are using Lomutos partitioning scheme, see https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
+    //N.B. Here we are using Lomutos partitioning scheme, see:
+    //https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
     static func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
         var frequencies = [Int: Int]() //[num, frequency]
         

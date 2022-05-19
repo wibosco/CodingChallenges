@@ -19,22 +19,22 @@ struct ThreeSum { //3Sum
     //
     //Solution Description:
     //First we sort the `nums` array this will ensure that we have a consistent orderng of values which when combined with
-    //the `triplets` set will ensure that if duplicate values exist in `nums` there produce the same triplet and so are
+    //the `triplets` set will ensure that if duplicate values exist in `nums` they produce the same triplet and so are
     //omitted from the result. Next we iterate through `nums` and attempt to find two other numbers that when summed are the
     //opposite of the current number (`n1`) - we do this by iterating through the remain `nums` element. As `nums` is sorted
     //we can use two pointers at either end to iterate through the array to find `target`. If the elements at `left` and
     //`right` sum to `target` then we combine those two values together with `n1` into an array and add it to the `triplets`
     //set; if the elements at `left` and `right` sum to greater than `target` then we need to reduce the sum value at `right`
-    //by moving inwards by 1 (remember `numbers` is sorted so moving the `left` pointer inwards would only increase how over
+    //by moving inwards by 1 (remember `nums` is sorted so moving the `left` pointer inwards would only increase how over
     //`target` we are so our only option is moving the `right` pointer); if the elements at `left` and `right` sum to less
     //than `target` then we need to increase the sum value which we can do by moving the `left` pointer inwards (remember
-    //`numbers` is sorted so moving the `right` pointer inwards would only reduce the sum value (which is already too low) so
+    //`nums` is sorted so moving the `right` pointer inwards would only reduce the sum value (which is already too low) so
     //our only option is moving the `left` pointer)
     //
     //Partially built using the same two pointers technique used in https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
     static func threeSum(_ nums: [Int]) -> [[Int]] {
-        var triplets = Set<[Int]>() //NB: the int arrays are contain values not indexes
-        let nums = nums.sorted() //n log n
+        var triplets = Set<[Int]>() //NB: the int arrays contain values not indexes
+        let nums = nums.sorted() //O(n log n)
         
         for (i, n1) in nums.enumerated() {
             guard (i + 1) < nums.count else {

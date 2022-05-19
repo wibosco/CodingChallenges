@@ -12,25 +12,19 @@ import Foundation
 class InsertionSort2 {
 
      static func sort(array: [Int]) -> [[Int]] {
-        
         var sortedSteps = [[Int]]()
         var sortingArray = array
         
         for index in 1..<array.count {
-            
             let value = array[index]
             
             for sortingIndex in (0..<index).reversed() {
-                
                 let comparisonValue = sortingArray[sortingIndex]
                 
                 if comparisonValue > value {
-                    
                     sortingArray[sortingIndex] = value
                     sortingArray[sortingIndex + 1] = comparisonValue
-                }
-                else {
-                    
+                } else {
                     break
                 }
             }
