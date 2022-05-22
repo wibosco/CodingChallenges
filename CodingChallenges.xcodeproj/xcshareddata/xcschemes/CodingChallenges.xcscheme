@@ -68,6 +68,16 @@
                ReferencedContainer = "container:LeetCode/LeetCode.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3DFC2EC7283AC6AB001256EE"
+               BuildableName = "AlgorithmsTests.xctest"
+               BlueprintName = "AlgorithmsTests"
+               ReferencedContainer = "container:Algorithms/Algorithms.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
