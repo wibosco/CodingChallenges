@@ -21,7 +21,7 @@ class GraphVertice {
 }
 
 extension GraphVertice {
-    //undirect graphs
+    //undirected graphs
     static func deserialize(_ edges: [[Int]]) -> GraphVertice? {
         guard !edges.isEmpty else {
             return nil

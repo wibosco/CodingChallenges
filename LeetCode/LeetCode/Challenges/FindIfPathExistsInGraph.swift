@@ -16,6 +16,7 @@ struct FindIfPathExistsInGraph {
     //Space: O(n) where n is the number of nodes
     //BFS
     //adjacency list
+    //undirected graph
     //
     //Solution Description:
     //Build an adjacency list containing all the connections from a node/vertice to other nodes/vertices. Check that both start
@@ -63,6 +64,7 @@ struct FindIfPathExistsInGraph {
     //Space: O(n) where n is the number of nodes
     //DFS
     //adjacency list
+    //undirected graph
     //
     //Solution Description:
     //Build an adjacency list containing all the connections from a node/vertice to other nodes/vertices. Check that both start
@@ -109,6 +111,7 @@ struct FindIfPathExistsInGraph {
     //Time: O(n + e) where n is the number of nodes and e is the number of edges
     //Space: O(n) where n is the number of nodes
     //DFS
+    //undirected graph
     //
     //Solution Description:
     //Build an array of nodes and then connect them using the array index as the edges index. Then traverse the graph in the DFS
@@ -157,6 +160,7 @@ struct FindIfPathExistsInGraph {
     //Time: O(n)
     //Space: O(n) where n is the number of nodes in the `ranks` array
     //disjoint sets
+    //undirected graph
     //
     //Solution Description:
     //Using union find connected the nodes into sets. If start and end exist in the same set then they are connected otherwise

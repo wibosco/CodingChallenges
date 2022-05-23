@@ -26,6 +26,8 @@
 		3DFC2F00283ACB27001256EE /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2EFF283ACB27001256EE /* Heap.swift */; };
 		3DFC2F02283ACB50001256EE /* HeapSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F01283ACB50001256EE /* HeapSortTests.swift */; };
 		3DFC2F04283ACB60001256EE /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F03283ACB60001256EE /* HeapTests.swift */; };
+		3DFC2F06283AD5A8001256EE /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F05283AD5A8001256EE /* Dijkstra.swift */; };
+		3DFC2F08283AE919001256EE /* DijkstraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F07283AE919001256EE /* DijkstraTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		3DFC2EFF283ACB27001256EE /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		3DFC2F01283ACB50001256EE /* HeapSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSortTests.swift; sourceTree = "<group>"; };
 		3DFC2F03283ACB60001256EE /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
+		3DFC2F05283AD5A8001256EE /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		3DFC2F07283AE919001256EE /* DijkstraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			children = (
 				3DFC2EE1283AC720001256EE /* BubbleSort.swift */,
 				3DFC2EF5283ACA5F001256EE /* CountingSort.swift */,
+				3DFC2F05283AD5A8001256EE /* Dijkstra.swift */,
 				3DFC2EFF283ACB27001256EE /* Heap.swift */,
 				3DFC2EFD283ACB10001256EE /* HeapSort.swift */,
 				3DFC2EE9283AC93C001256EE /* InsertionSort.swift */,
@@ -119,6 +124,7 @@
 			children = (
 				3DFC2EE3283AC76C001256EE /* BubbleSortTests.swift */,
 				3DFC2EF7283ACA83001256EE /* CountingSortTests.swift */,
+				3DFC2F07283AE919001256EE /* DijkstraTests.swift */,
 				3DFC2F01283ACB50001256EE /* HeapSortTests.swift */,
 				3DFC2F03283ACB60001256EE /* HeapTests.swift */,
 				3DFC2EEB283AC957001256EE /* InsertionSortTests.swift */,
@@ -249,6 +255,7 @@
 				3DFC2EEE283AC99A001256EE /* MergeSort.swift in Sources */,
 				3DFC2EE2283AC720001256EE /* BubbleSort.swift in Sources */,
 				3DFC2EFE283ACB10001256EE /* HeapSort.swift in Sources */,
+				3DFC2F06283AD5A8001256EE /* Dijkstra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 				3DFC2EFC283ACAE5001256EE /* RadixSortTests.swift in Sources */,
 				3DFC2EF8283ACA83001256EE /* CountingSortTests.swift in Sources */,
 				3DFC2EE8283AC8E3001256EE /* SelectionSortTests.swift in Sources */,
+				3DFC2F08283AE919001256EE /* DijkstraTests.swift in Sources */,
 				3DFC2F04283ACB60001256EE /* HeapTests.swift in Sources */,
 				3DFC2EE4283AC76C001256EE /* BubbleSortTests.swift in Sources */,
 				3DFC2EF0283AC9B1001256EE /* MergeSortTests.swift in Sources */,
