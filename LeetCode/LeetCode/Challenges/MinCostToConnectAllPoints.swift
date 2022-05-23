@@ -54,17 +54,22 @@ struct MinCostToConnectAllPoints {
         
         while edgesToConnect > 0 {
             while !minHeap.isEmpty && visited.contains(minHeap.peek()!.destination) { //avoid adding any cycles
-                minHeap.dequeue()
+                minHeap.remove()
             }
             
-            guard let edge = minHeap.dequeue() else {
+            guard let edge = minHeap.remove() else {
                 break
             }
             
             total += edge.weight
             
             visited.insert(edge.destination)
-            minHeap.enqueue(adjList[edge.destination]) //add new possibble edges to the heap to choose from
+            
+            //add new possible edges to the heap to choose from
+            for neighbor in adjList[edge.destination] {
+                minHeap.insert(neighbor)
+            }
+            
             edgesToConnect -= 1
         }
         

@@ -26,7 +26,7 @@ struct SortAnArray {
         var sorted = [Int]()
         
         while !heap.isEmpty {
-            guard let element = heap.dequeue() else {
+            guard let element = heap.remove() else {
                 break
             }
             

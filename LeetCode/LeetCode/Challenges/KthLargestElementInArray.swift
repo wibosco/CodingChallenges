@@ -80,7 +80,7 @@ struct KthLargestElementInArray {
         
         var element = 0
         for _ in 0..<k {
-            element = heap.dequeue()!
+            element = heap.remove()!
         }
         
         return element

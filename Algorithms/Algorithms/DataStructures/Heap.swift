@@ -1,9 +1,8 @@
 //
 //  Heap.swift
-//  CodingChallenges
+//  Algorithms
 //
-//  Created by William Boles on 08/12/2021.
-//  Copyright © 2021 Boles. All rights reserved.
+//  Created by William Boles on 22/05/2022.
 //
 
 import Foundation
@@ -20,6 +19,8 @@ import Foundation
 //rather than O(n) that would be required for a fully sorted array.
 //
 //N.B. Don’t confuse these heaps with memory heaps - memory heaps are a different concept.
+//
+//N.B. Elements with an index > (heap.count / 2) are leaf nodes
 //
 //See: https://github.com/raywenderlich/swift-algorithm-club/tree/master/Heap
 struct Heap<Element> {
@@ -78,23 +79,12 @@ struct Heap<Element> {
         return priorityFunction(elements[firstIndex], elements[secondIndex])
     }
     
-    private func highestPriorityIndex(of parentIndex: Int, and childIndex: Int) -> Int {
-        guard childIndex < count && isHigherPriority(at: childIndex, than: parentIndex) else {
-            return parentIndex
-        }
-        
-        return childIndex
-    }
-    
-    private func highestPriorityIndex(for parent: Int) -> Int {
-        return highestPriorityIndex(of: highestPriorityIndex(of: parent, and: leftChildIndex(of: parent)), and: rightChildIndex(of: parent))
-    }
-    
     // MARK: - Queuing
     
     mutating func insert(_ element: Element) {
-        //When inserting an element and element we first add it to the end of `elements` and then "sift" it up into it's correct
-        //index. This sifting is controlled by comparing element and ensuring that the higher value element is the parent.
+        //When inserting an element and element we first add it to the end of `elements` and then "sift" it up into
+        //it's correct index. This sifting is controlled by comparing element and ensuring that the higher value
+        //element is the parent.
         elements.append(element)
         siftUp(elementAtIndex: count - 1) //move newer added element to correct index in heap
     }
@@ -120,22 +110,54 @@ struct Heap<Element> {
     // MARK: - Sifting
     
     private mutating func siftUp(elementAtIndex index: Int) {
-        let parentIndex = parentIndex(of: index)
-        guard !isRoot(index), isHigherPriority(at: index, than: parentIndex) else {
+        guard !isRoot(index) else {
             return
         }
         
-        elements.swapAt(index, parentIndex) //move child into parents index
-        siftUp(elementAtIndex: parentIndex) //child is now at parentIndex location, check if child can move higher again
+        let parentIndex = parentIndex(of: index)
+        
+        guard isHigherPriority(at: index, than: parentIndex) else {
+            return
+        }
+        
+        //move child into parents index
+        elements.swapAt(index, parentIndex)
+        
+        //child is now at parentIndex location, check if child can move higher again
+        siftUp(elementAtIndex: parentIndex)
     }
     
-    private mutating func siftDown(elementAtIndex index: Int) {
-        let childIndex = highestPriorityIndex(for: index)
-        guard index != childIndex else { //element is at the right index
+    private mutating func siftDown(elementAtIndex parentIndex: Int) {
+        //check if child indexes have a higher priority value than index (parent) holds
+        let leftChildIndex = leftChildIndex(of: parentIndex)
+        let rightChildIndex = rightChildIndex(of: parentIndex)
+        
+        var highestPriorityIndex = parentIndex
+        
+        //check if the leftChildIndex element is higher priority than parentIndex
+        if leftChildIndex < count && isHigherPriority(at: leftChildIndex, than: parentIndex) {
+            highestPriorityIndex = leftChildIndex
+        }
+        
+        //check if the rightChildIndex element is higher priority than highestPriorityIndex - note here that we are
+        //comparing against highestPriorityIndex rather than parentIndex as parentIndex might not have been higher
+        //priority than leftChildIndex. If that is the case then we know that parentIndex needs to be pushed down
+        //now we are determing which of the left or right child elements to replace it with; if that isn't the case
+        //then we still need to check if the right child element has higher priority than the parent element
+        if rightChildIndex < count && isHigherPriority(at: rightChildIndex, than: highestPriorityIndex) {
+            highestPriorityIndex = rightChildIndex
+        }
+        
+        //parentIndex already has a higher priority than either of child nodes so can't sift down any further
+        guard parentIndex != highestPriorityIndex else {
             return
         }
         
-        elements.swapAt(index, childIndex)  //move parent into childs index
-        siftDown(elementAtIndex: childIndex) //child is now at parentIndex location, check if child can move lower again
+        //move parent into childs index
+        elements.swapAt(parentIndex, highestPriorityIndex)
+        
+        //after the swap highestPriorityIndex now contains the former parentIndex element check if the former
+        //parentIndex element needs to sift down more to maintain the heap property
+        siftDown(elementAtIndex: highestPriorityIndex)
     }
 }
