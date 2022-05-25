@@ -17,10 +17,17 @@ class DijkstraTests: XCTestCase {
     
     func test_distance_straightPath_A() {
         //Graph:
-        //0 --> 1 --> 2
+        //
+        // +---+     +---+     +---+
+        // | 0 +---->| 1 +---->| 2 |
+        // +---+     +---+     +---+
         //
         //Shortest path:
-        //0 --> 1 --> 2
+        //
+        // +---+     +---+     +---+
+        // | 0 +---->| 1 +---->| 2 |
+        // +---+     +---+     +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 4)], [(2, 8)], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 2)
@@ -31,7 +38,10 @@ class DijkstraTests: XCTestCase {
     
     func test_distance_noPath_B() {
         //Graph:
-        //0 --> 1 <-- 2
+        //
+        // +---+    +---+    +---+
+        // | 0 +--->| 1 |<---+ 2 |
+        // +---+    +---+    +---+
         //
         //Shortest path:
         //None
@@ -42,13 +52,23 @@ class DijkstraTests: XCTestCase {
         XCTAssertNil(distance)
     }
     
-    func test_distance_directPath_C() {
+    func test_distance_directPathFromSourceToDestination() {
         //Graph:
-        //0 --> 1 --> 2
-        //0 --> 3 --> 2
+        //
+        // +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 2 |
+        // +-+-+    +---+    +---+
+        //   |                 ^
+        //   |      +---+      |
+        //   +----->| 3 +------+
+        //          +---+
         //
         //Shortest path:
-        //0 --> 1
+        //
+        // +---+    +---+
+        // | 0 +--->| 1 |
+        // +-+-+    +---+
+        //
    
         let adjList: [[(Int, Int)]] = [[(1, 4), (3, 6)], [(2, 6)], [], [(2, 2)]] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 1)
@@ -57,13 +77,29 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 4)
     }
     
-    func test_distance_twoPaths_D() {
+    func test_distance_twoPaths_cheapestPathHasMoreVertices() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2 --> 1 --> 3
+        //
+        // +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 2 --> 1 --> 3
+        //
+        // +---+    +---+    +---+
+        // | 0 |    | 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(3, 3)], [(1, 2)], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 3)
@@ -72,14 +108,32 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 7)
     }
     
-    func test_distance_twoPaths_loop_E() {
+    func test_distance_twoPaths_loop() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2 --> 1 --> 3
-        //0 --> 1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 2 --> 1 --> 3
+        //
+        // +---+    +---+    +---+
+        // | 0 |    | 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(0, 1), (3, 3)], [(1, 2)], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 3)
@@ -88,10 +142,17 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 7)
     }
     
-    func test_distance_sourceHasNoConnections_F() {
+    func test_distance_sourceHasNoConnections() {
         //Graph:
-        //1 --> 3
-        //2 --> 1
+        //
+        // +---+    +---+    +---+
+        // | 0 |    | 1 +--->| 3 |
+        // +---+    +---+    +---+
+        //            ^
+        //            |
+        //          +-+-+
+        //          | 2 |
+        //          +---+
         //
         //Shortest path:
         //None
@@ -102,14 +163,26 @@ class DijkstraTests: XCTestCase {
         XCTAssertNil(distance)
     }
     
-    func test_distance_onePath_loop_G() {
+    func test_distance_onePath_loop() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2
-        //0 --> 1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 1 --> 3
+        //
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(0, 1), (3, 3)], [], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 3)
@@ -118,14 +191,39 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 8)
     }
     
-    func test_distance_nonZeroSource_directPath_H() {
+    func test_distance_nonZeroSource_directPath() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2
-        //0 --> 3
+        //
+        //          +---+
+        //   +----->| 1 +-----+
+        //   |      +---+     |
+        //   |                |
+        //   |                |
+        // +-+-+    +---+     |
+        // | 0 +--->| 2 |     |
+        // +-+-+    +---+     |
+        //   |                |
+        //   |                |
+        //   |      +---+     |
+        //   +----->| 3 |<----+
+        //          +---+
         //
         //Shortest path:
-        //1 --> 3
+        //
+        // +---+
+        // | 1 +-----+
+        // +---+     |
+        //           |
+        //           |
+        //           |
+        //           |
+        //           |
+        //           |
+        //           |
+        // +---+     |
+        // | 3 |<----+
+        // +---+
+        //
 
         let adjList: [[(Int, Int)]] = [[(1, 2), (2, 2), (3, 3)], [(3, 2)], [], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 1, 3)
@@ -134,14 +232,29 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 2)
     }
     
-    func test_distance_nonZeroSource_directPath_nonAscending_I() {
+    func test_distance_nonZeroSource_directPath_nonAscending() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2
-        //0 --> 1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+
+        // | 0 |    | 1 |
+        // +-+-+    +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(0, 1), (3, 3)], [], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 1, 0)
@@ -150,13 +263,29 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 1)
     }
     
-    func test_distance_twoPaths_initialEdgeIsCheaperButPathLonger_J() {
+    func test_distance_twoPaths_initialEdgeIsCheaperButPathLonger() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 3
+        //
+        //   +-----------------+
+        //   |                 |
+        //   |                 v
+        // +-+-+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //
+        //          +-+-+
+        //          | 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 3
+        //
+        //   +-----------------+
+        //   |                 |
+        //   |                 v
+        // +-+-+             +---+
+        // | 0 +             | 3 |
+        // +-+-+             +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 2), (3, 3)], [(3, 2)], [], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 3)
@@ -165,13 +294,29 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 3)
     }
     
-    func test_distance_twoPaths_sharedNodes_K() {
+    func test_distance_twoPaths_sharedNodes() {
         //Graph:
-        //0 --> 1 --> 3 --> 4
-        //0 --> 2 --> 3 --> 4
+        //
+        // +---+    +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 3 +--->| 4 |
+        // +-+-+    +---+    +---+    +---+
+        //   |                 ^
+        //   |                 |
+        //   |      +-+-+      |
+        //   +----->| 2 +------+
+        //          +---+
         //
         //Shortest path:
-        //0 --> 2 --> 3 --> 4
+        //
+        // +---+             +---+    +---+
+        // | 0 +             | 3 +--->| 4 |
+        // +-+-+             +---+    +---+
+        //   |                 ^
+        //   |                 |
+        //   |      +-+-+      |
+        //   +----->| 2 +------+
+        //          +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 3), (2, 4)], [(3, 3)], [(3, 1)], [(4, 2)], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 4)
@@ -180,13 +325,24 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(distance, 7)
     }
     
-    func test_distance_sourceIsDestination_L() {
+    func test_distance_sourceIsDestination() {
         //Graph:
-        //0 --> 1 --> 3 --> 4
-        //0 --> 2 --> 3 --> 4
+        //
+        // +---+    +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 3 +--->| 4 |
+        // +-+-+    +---+    +---+    +---+
+        //   |                 ^
+        //   |                 |
+        //   |      +-+-+      |
+        //   +----->| 2 +------+
+        //          +---+
         //
         //Shortest path:
-        //0
+        //
+        // +---+
+        // | 0 |
+        // +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 3), (2, 4)], [(3, 3)], [(3, 1)], [(4, 2)], []] //(node, distance)
         let distance = Dijkstra.shortestDistance(adjList, 0, 0)
@@ -197,12 +353,19 @@ class DijkstraTests: XCTestCase {
     
     // MARK: Path
     
-    func test_path_straightPath_A() {
+    func test_path_straightPath() {
         //Graph:
-        //0 --> 1 --> 2
+        //
+        // +---+     +---+     +---+
+        // | 0 +---->| 1 +---->| 2 |
+        // +---+     +---+     +---+
         //
         //Shortest path:
-        //0 --> 1 --> 2
+        //
+        // +---+     +---+     +---+
+        // | 0 +---->| 1 +---->| 2 |
+        // +---+     +---+     +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 4)], [(2, 8)], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 2)
@@ -210,9 +373,12 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [0, 1, 2])
     }
     
-    func test_path_noPath_B() {
+    func test_path_noPath() {
         //Graph:
-        //0 --> 1 <-- 2
+        //
+        // +---+    +---+    +---+
+        // | 0 +--->| 1 |<---+ 2 |
+        // +---+    +---+    +---+
         //
         //Shortest path:
         //None
@@ -223,13 +389,23 @@ class DijkstraTests: XCTestCase {
         XCTAssertTrue(path.isEmpty)
     }
     
-    func test_path_directPath_C() {
+    func test_path_directPathFromSourceToDestination() {
         //Graph:
-        //0 --> 1 --> 2
-        //0 --> 3 --> 2
+        //
+        // +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 2 |
+        // +-+-+    +---+    +---+
+        //   |                 ^
+        //   |      +---+      |
+        //   +----->| 3 +------+
+        //          +---+
         //
         //Shortest path:
-        //0 --> 3 --> 2
+        //
+        // +---+    +---+
+        // | 0 +--->| 1 |
+        // +-+-+    +---+
+        //
    
         let adjList: [[(Int, Int)]] = [[(1, 4), (3, 6)], [(2, 6)], [], [(2, 2)]] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 2)
@@ -237,13 +413,29 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [0, 3, 2])
     }
     
-    func test_path_twoPaths_D() {
+    func test_path_twoPaths_cheapestPathHasMoreVertices() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2 --> 1 --> 3
+        //
+        // +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 2 --> 1 --> 3
+        //
+        // +---+    +---+    +---+
+        // | 0 |    | 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(3, 3)], [(1, 2)], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 3)
@@ -251,14 +443,32 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [0, 2, 1, 3])
     }
     
-    func test_path_twoPaths_loop_E() {
+    func test_path_twoPaths_loop() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2 --> 1 --> 3
-        //0 --> 1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 2 --> 1 --> 3
+        //
+        // +---+    +---+    +---+
+        // | 0 |    | 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |        ^
+        //   |        |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(0, 1), (3, 3)], [(1, 2)], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 3)
@@ -266,10 +476,17 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [0, 2, 1, 3])
     }
     
-    func test_path_sourceHasNoConnections_F() {
+    func test_path_sourceHasNoConnections() {
         //Graph:
-        //1 --> 3
-        //2 --> 1
+        //
+        // +---+    +---+    +---+
+        // | 0 |    | 1 +--->| 3 |
+        // +---+    +---+    +---+
+        //            ^
+        //            |
+        //          +-+-+
+        //          | 2 |
+        //          +---+
         //
         //Shortest path:
         //None
@@ -280,14 +497,26 @@ class DijkstraTests: XCTestCase {
         XCTAssertTrue(path.isEmpty)
     }
     
-    func test_path_onePath_loop_G() {
+    func test_path_onePath_loop() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2
-        //0 --> 1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 1 --> 3
+        //
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(0, 1), (3, 3)], [], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 3)
@@ -295,14 +524,39 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [0, 1, 3])
     }
     
-    func test_path_nonZeroSource_directPath_H() {
+    func test_path_nonZeroSource_directPath() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2
-        //0 --> 3
+        //
+        //          +---+
+        //   +----->| 1 +-----+
+        //   |      +---+     |
+        //   |                |
+        //   |                |
+        // +-+-+    +---+     |
+        // | 0 +--->| 2 |     |
+        // +-+-+    +---+     |
+        //   |                |
+        //   |                |
+        //   |      +---+     |
+        //   +----->| 3 |<----+
+        //          +---+
         //
         //Shortest path:
-        //1 --> 3
+        //
+        // +---+
+        // | 1 +-----+
+        // +---+     |
+        //           |
+        //           |
+        //           |
+        //           |
+        //           |
+        //           |
+        //           |
+        // +---+     |
+        // | 3 |<----+
+        // +---+
+        //
 
         let adjList: [[(Int, Int)]] = [[(1, 2), (2, 2), (3, 3)], [(3, 2)], [], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 1, 3)
@@ -310,14 +564,29 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [1, 3])
     }
     
-    func test_path_nonZeroSource_directPath_nonAscending_I() {
+    func test_path_nonZeroSource_directPath_nonAscending() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 2
-        //0 --> 1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //   |
+        //   |      +-+-+
+        //   +----->| 2 |
+        //          +---+
         //
         //Shortest path:
-        //1 --> 0
+        //
+        //   +--------+
+        //   |        |
+        //   v        |
+        // +---+    +-+-+
+        // | 0 |    | 1 |
+        // +-+-+    +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 5), (2, 2)], [(0, 1), (3, 3)], [], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 1, 0)
@@ -325,13 +594,28 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [1, 0])
     }
     
-    func test_path_twoPaths_initialEdgeIsCheaperButPathLonger_J() {
+    func test_path_twoPaths_initialEdgeIsCheaperButPathLonger() {
         //Graph:
-        //0 --> 1 --> 3
-        //0 --> 3
+        //
+        //   +-----------------+
+        //   |                 |
+        //   |                 v
+        // +-+-+    +-+-+    +---+
+        // | 0 +--->| 1 +--->| 3 |
+        // +-+-+    +---+    +---+
+        //
+        //          +-+-+
+        //          | 2 |
+        //          +---+
         //
         //Shortest path:
-        //0 --> 3
+        //
+        //   +-----------------+
+        //   |                 |
+        //   |                 v
+        // +-+-+             +---+
+        // | 0 +             | 3 |
+        // +-+-+             +---+
         
         let adjList: [[(Int, Int)]] = [[(1, 2), (3, 3)], [(3, 2)], [], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 3)
@@ -339,13 +623,29 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [0, 3])
     }
     
-    func test_path_twoPaths_sharedNodes_K() {
+    func test_path_twoPaths_sharedNodes() {
         //Graph:
-        //0 --> 1 --> 3 --> 4
-        //0 --> 2 --> 3 --> 4
+        //
+        // +---+    +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 3 +--->| 4 |
+        // +-+-+    +---+    +---+    +---+
+        //   |                 ^
+        //   |                 |
+        //   |      +-+-+      |
+        //   +----->| 2 +------+
+        //          +---+
         //
         //Shortest path:
-        //0 --> 2 --> 3 --> 4
+        //
+        // +---+             +---+    +---+
+        // | 0 +             | 3 +--->| 4 |
+        // +-+-+             +---+    +---+
+        //   |                 ^
+        //   |                 |
+        //   |      +-+-+      |
+        //   +----->| 2 +------+
+        //          +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 3), (2, 4)], [(3, 3)], [(3, 1)], [(4, 2)], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 4)
@@ -353,13 +653,24 @@ class DijkstraTests: XCTestCase {
         XCTAssertEqual(path, [0, 2, 3, 4])
     }
     
-    func test_path_sourceIsDestination_L() {
+    func test_path_sourceIsDestination() {
         //Graph:
-        //0 --> 1 --> 3 --> 4
-        //0 --> 2 --> 3 --> 4
+        //
+        // +---+    +---+    +---+    +---+
+        // | 0 +--->| 1 +--->| 3 +--->| 4 |
+        // +-+-+    +---+    +---+    +---+
+        //   |                 ^
+        //   |                 |
+        //   |      +-+-+      |
+        //   +----->| 2 +------+
+        //          +---+
         //
         //Shortest path:
-        //0
+        //
+        // +---+
+        // | 0 |
+        // +---+
+        //
         
         let adjList: [[(Int, Int)]] = [[(1, 3), (2, 4)], [(3, 3)], [(3, 1)], [(4, 2)], []] //(node, distance)
         let path = Dijkstra.shortestPath(adjList, 0, 0)
