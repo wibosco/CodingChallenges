@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D03E8A4283E2E9600944AF3 /* TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03E8A3283E2E9600944AF3 /* TopologicalSort.swift */; };
 		3D03E8A6283E384100944AF3 /* TopologicalSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03E8A5283E384100944AF3 /* TopologicalSortTests.swift */; };
+		3D03E8A8283EC69300944AF3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03E8A7283EC69300944AF3 /* BinarySearch.swift */; };
+		3D03E8AA283EC8BB00944AF3 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03E8A9283EC8BB00944AF3 /* BinarySearchTests.swift */; };
 		3DFC2EC9283AC6AB001256EE /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFC2EC0283AC6AA001256EE /* Algorithms.framework */; };
 		3DFC2F17283BE396001256EE /* DijkstraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F0C283BE396001256EE /* DijkstraTests.swift */; };
 		3DFC2F18283BE396001256EE /* RadixSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F0D283BE396001256EE /* RadixSortTests.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		3D03E8A3283E2E9600944AF3 /* TopologicalSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort.swift; sourceTree = "<group>"; };
 		3D03E8A5283E384100944AF3 /* TopologicalSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSortTests.swift; sourceTree = "<group>"; };
+		3D03E8A7283EC69300944AF3 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		3D03E8A9283EC8BB00944AF3 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		3DFC2EC0283AC6AA001256EE /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFC2EC8283AC6AB001256EE /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFC2F0C283BE396001256EE /* DijkstraTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DijkstraTests.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		3DFC2F0B283BE396001256EE /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				3D03E8A9283EC8BB00944AF3 /* BinarySearchTests.swift */,
 				3DFC2F14283BE396001256EE /* BubbleSortTests.swift */,
 				3DFC2F13283BE396001256EE /* CountingSortTests.swift */,
 				3DFC2F0C283BE396001256EE /* DijkstraTests.swift */,
@@ -157,6 +162,7 @@
 		3DFC2F21283BE3A6001256EE /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				3D03E8A7283EC69300944AF3 /* BinarySearch.swift */,
 				3DFC2F23283BE3A6001256EE /* BubbleSort.swift */,
 				3DFC2F26283BE3A6001256EE /* CountingSort.swift */,
 				3DFC2F24283BE3A6001256EE /* Dijkstra.swift */,
@@ -291,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DFC2F2E283BE3A6001256EE /* InsertionSort.swift in Sources */,
+				3D03E8A8283EC69300944AF3 /* BinarySearch.swift in Sources */,
 				3DFC2F2F283BE3A6001256EE /* BubbleSort.swift in Sources */,
 				3DFC2F35283BE3A6001256EE /* MergeSort.swift in Sources */,
 				3DFC2F34283BE3A6001256EE /* SelectionSort.swift in Sources */,
@@ -319,6 +326,7 @@
 				3DFC2F1E283BE396001256EE /* CountingSortTests.swift in Sources */,
 				3DFC2F17283BE396001256EE /* DijkstraTests.swift in Sources */,
 				3DFC2F1B283BE396001256EE /* HeapSortTests.swift in Sources */,
+				3D03E8AA283EC8BB00944AF3 /* BinarySearchTests.swift in Sources */,
 				3DFC2F19283BE396001256EE /* QuickSortTests.swift in Sources */,
 				3DFC2F20283BE396001256EE /* HeapTests.swift in Sources */,
 			);

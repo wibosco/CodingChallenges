@@ -18,8 +18,8 @@ struct BinarySearchLeetCode {
     //divide and conquer
     //
     //Solution Description:
-    //Use binary search to find the `target` in `nums`. We do ths by selecting the mid element of `nums` and peformin a
-    //few checks:
+    //Use binary search to find the `target` in `nums`. We do ths by selecting the mid element of `nums` and performing the
+    //following checks:
     //
     //1. is it the target? - return the index
     //2. is it greater than the target - going forward only search the elements to the left of `mid`

@@ -31,7 +31,9 @@ class TopologicalSortTests: XCTestCase {
     func test_cycle_singleGraph() {
         //Graph:
         //
-        // +---+    +---+    +---+
+        //            +--------+
+        //            |        v
+        // +---+    +-+-+    +---+
         // | 0 +--->| 1 |<---+ 2 |
         // +---+    +---+    +---+
         //
