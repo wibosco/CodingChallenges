@@ -158,6 +158,7 @@ struct Dijkstra {
     //visited
     //dictionary
     //directed graph
+    //weighted graph
     //adjacency list
     //sorting
     //
@@ -238,6 +239,7 @@ struct Dijkstra {
     //visited
     //dictionary
     //directed graph
+    //weighted graph
     //adjacency list
     //sorting
     //

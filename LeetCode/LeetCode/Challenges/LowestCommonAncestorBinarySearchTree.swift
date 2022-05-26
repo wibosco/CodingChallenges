@@ -39,7 +39,7 @@ struct LowestCommonAncestorBinarySearchTree {
     
     //Time: O(log n) where `n` is the number of nodes in the tree
     //Space: O(1) there will only ever be one node in the queue
-    //bfs
+    //BFS
     //queue
     //iterative
     //
