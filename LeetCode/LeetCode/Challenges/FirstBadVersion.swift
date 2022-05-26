@@ -31,8 +31,8 @@ struct FirstBadVersion {
     //divide and conquer
     //
     //Solution Description:
-    //1. Treating `versions` as an array containing `true` and `false` values
-    //2. Binary search over `versions`
+    //By treating `versions` as a sorted array containing `true` and `false` values we are able to perform a binary search
+    //over `versions` to find the first bad version
     func firstBadVersion(_ n: Int) -> Int {
         var left = 1
         var right = n
