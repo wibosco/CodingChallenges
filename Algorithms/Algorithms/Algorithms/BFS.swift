@@ -11,8 +11,8 @@ struct BFS {
     
     // MARK: - Graph
     
-    //Time: O(n) where n is the number of nodes in the tree
-    //Space: O(n)
+    //Time: O(v + e) where v is the number of nodes in the graph, e is the number of edges in the graph
+    //Space: O(v)
     //BFS
     //graph theory
     //unweighted graph
@@ -22,7 +22,7 @@ struct BFS {
     //iterative
     //
     //Solution Description:
-    //Breadth first search involves searching a graph level by level - ensuring all vertices on a level have been searched
+    //Breadth-first search involves searching a graph level by level - ensuring all vertices on a level have been searched
     //before moving onto the next level. A level is all immediate vertices connected to a vertice from the previous level e.g.
     //
     //          +---+      +---+
@@ -43,13 +43,13 @@ struct BFS {
     //
     //Level 1: 0
     //Level 2: 1, 2, 3
-    //Level 3*: 4, 6
+    //Level 3: 4, 6 *
     //Level 4: 5
     //
     // *note that while it is possible to get to 3 from a level 2 vertice, we could get there sooner from level 1 so we omit it
     //
     //In this fashion it is possible to find the shortest path from the `source` to the `target` vertice by systemically
-    //traversing the graph level by level. Starting with the `source` vertice we and place all connected vertices into a queue
+    //traversing the graph level by level. Starting with the `source` vertice we place all connected vertices into a queue
     //(FIFO). As a graph can have multiple paths to get the same vertice we also track the path that got us to this vertice by
     //placing it into the queue as well. We repeat this process for all connected vertices of those original connected vertices
     //so ensuring that all vertices in one level are searched before moving onto the next level. As a graph can contain loops,
@@ -82,8 +82,8 @@ struct BFS {
         return nil
     }
     
-    //Time: O(n) where n is the number of nodes in the tree
-    //Space: O(n)
+    //Time: O(v + e) where v is the number of nodes in the graph, e is the number of edges in the graph
+    //Space: O(v)
     //BFS
     //graph theory
     //unweighted graph
@@ -93,7 +93,7 @@ struct BFS {
     //iterative
     //
     //Solution Description:
-    //Breadth first search involves searching a graph level by level - ensuring all vertices on a level have been searched
+    //Breadth-first search involves searching a graph level by level - ensuring all vertices on a level have been searched
     //before moving onto the next level. A level is all immediate vertices connected to a vertice from the previous level e.g.
     //
     //          +---+      +---+
@@ -120,7 +120,7 @@ struct BFS {
     // *note that while it is possible to get to 3 from a level 2 vertice, we could get there sooner from level 1 so we omit it
     //
     //In this fashion it is possible to find the shortest path from the `source` to the `target` vertice by systemically
-    //traversing the graph level by level. Starting with the `source` vertice we and place all connected vertices into a queue
+    //traversing the graph level by level. Starting with the `source` vertice we place all connected vertices into a queue
     //(FIFO). We repeat this process for all connected vertices of those original connected vertices so ensuring that all
     //vertices in one level are searched before moving onto the next level. After each level we increment the `level` count as we
     //moving further away from `source` - note it doesn't matter how many vertices a level contains we are only interested in the
@@ -171,7 +171,7 @@ struct BFS {
     //iterative
     //
     //Solution Description:
-    //Breadth first search involves searching a graph level by level - ensuring all vertices on a level have been searched
+    //Breadth-first search involves searching a graph level by level - ensuring all vertices on a level have been searched
     //before moving onto the next level. A level is all immediate vertices connected to a vertice from the previous level e.g.
     //
     //                    +---+
@@ -201,7 +201,7 @@ struct BFS {
     //Level 4: 7, 4
     //
     //In this fashion it is possible to find the shortest path from the `source` to the `target` vertice by systemically
-    //traversing the tree level by level. Starting with the `source` vertice we and place all connected vertices into a queue
+    //traversing the tree level by level. Starting with the `source` vertice we place all connected vertices into a queue
     //(FIFO). As we are searching a binary-tree and not a binary-search-tree we can't make any assumptions about value ranges
     //contained within each branch so we need to search each branch for `target`. To keep track of the path we have taken we also
     //put the path into the queue. If at any time we find `target` we return immediately. If after
@@ -243,8 +243,8 @@ struct BFS {
     //iterative
     //
     //Solution Description:
-    //Breadth first search involves searching a graph level by level - ensuring all vertices on a level have been searched
-    //before moving onto the next level. A level is all immediate vertices connected to a vertice from the previous level e.g.
+    //Breadth-first search involves searching a tree level by level - ensuring all nodes on a level have been searched before
+    //moving onto the next level. A level is all immediate nodes connected to a node from the previous level e.g.
     //
     //                    +---+
     //          +---------+ 9 +---------+
@@ -273,7 +273,7 @@ struct BFS {
     //Level 4: 7, 4
     //
     //In this fashion it is possible to find the shortest path from the `source` to the `target` vertice by systemically
-    //traversing the tree level by level. Starting with the `source` vertice we and place all connected vertices into a queue
+    //traversing the tree level by level. Starting with the `source` vertice we place all connected vertices into a queue
     //(FIFO). As we are searching a binary-tree and not a binary-search-tree we can't make any assumptions about value ranges
     //contained within each branch so we need to search each branch for `target`. After each level we increment the `level` count
     //as we moving further away from `source` - note it doesn't matter how many vertices a level contains we are only interested
@@ -325,8 +325,8 @@ struct BFS {
     //iterative
     //
     //Solution Description:
-    //Breadth first search involves searching a graph level by level - ensuring all vertices on a level have been searched
-    //before moving onto the next level. A level is all immediate vertices connected to a vertice from the previous level e.g.
+    //Breadth-first search involves searching a tree level by level - ensuring all nodes on a level have been searched before
+    //moving onto the next level. A level is all immediate node connected to a node from the previous level e.g.
     //
     //                    +---+
     //          +---------+ 4 +---------+
@@ -355,8 +355,8 @@ struct BFS {
     //Level 4: 7, 9
     //
     //In this fashion it is possible to find the shortest path from the `source` to the `target` vertice by systemically
-    //traversing the tree level by level. Starting with the `source` vertice we and place all connected vertices into a queue
-    //(FIFO). As we are searching a this binary-search-tree at each level we choose whether to continue searching the left or
+    //traversing the tree level by level. Starting with the `source` vertice we place all connected vertices into a queue
+    //(FIFO). As we are searching this binary-search-tree at each level we choose whether to continue searching the left or
     //right branch by comparing the current nodes value against `target` - if `target` is less than the current node we continue
     //searching down the left branch only i.e. we put `node.left` into the queue; if `target` is greater than the current node we
     //continue searching down the right branch only i.e. we put `node.right` into the queue. To keep track of the path we have
@@ -400,8 +400,8 @@ struct BFS {
     //iterative
     //
     //Solution Description:
-    //Breadth first search involves searching a graph level by level - ensuring all vertices on a level have been searched
-    //before moving onto the next level. A level is all immediate vertices connected to a vertice from the previous level e.g.
+    //Breadth-first search involves searching a tree level by level - ensuring all node on a level have been searched before
+    //moving onto the next level. A level is all immediate nodes connected to a node from the previous level e.g.
     //
     //                    +---+
     //          +---------+ 4 +---------+
@@ -430,8 +430,8 @@ struct BFS {
     //Level 4: 7, 9
     //
     //In this fashion it is possible to find the shortest path from the `source` to the `target` vertice by systemically
-    //traversing the tree level by level. Starting with the `source` vertice we and place all connected vertices into a queue
-    //(FIFO). As we are searching a this binary-search-tree at each level we choose whether to continue searching the left or
+    //traversing the tree level by level. Starting with the `source` vertice we place all connected vertices into a queue
+    //(FIFO). As we are searching this binary-search-tree at each level we choose whether to continue searching the left or
     //right branch by comparing the current nodes value against `target` - if `target` is less than the current node we continue
     //searching down the left branch only i.e. we put `node.left` into the queue; if `target` is greater than the current node we
     //continue searching down the right branch only i.e. we put `node.right` into the queue. After each level we increment the

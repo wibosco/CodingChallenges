@@ -435,14 +435,14 @@ class BFSTests: XCTestCase {
         //
         //Shortest Path:
         //
-        // +---+      +---+
-        // | 1 +----->| 4 |
-        // +---+      +-+-+
-        //              |
-        //              v
-        //            +---+
-        //            | 5 |
-        //            +---+
+        //          +---+      +---+
+        //   +----->| 1 +----->| 4 |
+        //   |      +---+      +---+
+        //   |
+        //   |
+        // +-+-+
+        // | 0 |
+        // +-+-+
         //
         
         let adjList = [[1, 2, 3], [4], [], [], [5], []]
@@ -488,14 +488,48 @@ class BFSTests: XCTestCase {
         XCTAssertEqual(path, [0, 1, 4])
     }
     
-    func test_graph_path_twoPathExists_loopExists_shorterPathReturned() {
+    func test_graph_path_multiplePathExists_longerPathCheckedFirst_shorterPathReturned() {
+        //Graph:
+        //
+        //          +---+      +---+
+        //   +----->| 1 +----->| 4 +----+
+        //   |      +---+      +---+    |
+        //   |                          |
+        //   |                          |
+        // +-+-+    +---+      +---+    |
+        // | 0 +--->| 2 +----->| 5 |    |
+        // +---+    +-+-+      +---+    |
+        //            |          ^      |
+        //            v          |      |
+        //          +---+      +-+-+    |
+        //          | 3 +----->| 6 |<---+
+        //          +---+      +---+
+        //
+        //Shortest Path:
+        //
+        //
+        // +---+    +---+      +---+
+        // | 0 +--->| 2 +----->| 5 |
+        // +---+    +---+      +---+
+        //
+        
+        let adjList = [[1, 2], [4], [3, 5], [6], [6], [], [5]]
+        
+        let path = BFS.shortestPathGraph(adjList, 0, 5)
+        
+        XCTAssertEqual(path, [0, 2, 5])
+    }
+    
+    func test_graph_path_twoPathExists_loopExists_loopIsSkipped_shorterPathReturned() {
         //Graph:
         //
         //          +---+      +---+
         //   +----->| 1 +----->| 4 |
         //   |      +---+      +-+-+
         //   |                   |
-        //   |                   v
+        //   |        +----------+
+        //   |        |
+        //   |        v
         // +-+-+    +---+      +---+
         // | 0 +--->| 2 |      | 5 |
         // +---+    +-+-+      +---+
@@ -507,33 +541,33 @@ class BFSTests: XCTestCase {
         //
         //Shortest Path:
         //
+        // +-+-+    +---+      +---+
+        // | 0 +--->| 2 |      | 5 |
+        // +---+    +-+-+      +---+
+        //            |          ^
+        //            v          |
+        //          +---+      +-+-+
+        //          | 3 +----->| 6 |
         //          +---+      +---+
-        //   +----->| 1 +----->| 4 |
-        //   |      +---+      +-+-+
-        //   |                   |
-        //   |                   v
-        // +-+-+               +---+
-        // | 0 |               | 5 |
-        // +-+-+               +---+
         //
         
-        let adjList = [[1, 2], [4], [3], [1, 6], [5], [], [5]]
+        let adjList = [[1, 2], [4], [3], [0, 6], [2], [], [5]]
         
         let path = BFS.shortestPathGraph(adjList, 0, 5)
         
-        XCTAssertEqual(path, [0, 1, 4, 5])
+        XCTAssertEqual(path, [0, 2, 3, 6, 5])
     }
     
-    func test_graph_path_twoPathExists_sameNodeVisitedTwice_shorterPathReturned() {
+    func test_graph_path_threePathExists_sameNodeVisitedTwice_shorterPathReturned() {
         //Graph:
         //
-        //          +---+      +---+
-        //   +----->| 1 +----->| 4 |
-        //   |      +---+      +-+-+
-        //   |                   |
-        //   |                   v
-        // +-+-+    +---+      +---+
-        // | 0 +--->| 2 |      | 5 |
+        //          +---+      +---+      +---+
+        //   +----->| 1 +----->| 4 +----->| 7 |
+        //   |      +---+      +-+-+      +-+-+
+        //   |                              |
+        //   |                              |
+        // +-+-+    +---+      +---+        |
+        // | 0 +--->| 2 |      | 5 |<-------+
         // +-+-+    +-+-+      +---+
         //   |        |          ^
         //   |        v          |
@@ -543,24 +577,24 @@ class BFSTests: XCTestCase {
         //
         //Shortest Path:
         //
-        //          +---+      +---+
-        //   +----->| 1 +----->| 4 |
-        //   |      +---+      +-+-+
-        //   |                   |
-        //   |                   V
-        // +-+-+               +---+
+        // +---+               +---+
         // | 0 |               | 5 |
         // +-+-+               +---+
+        //   |                   ^
+        //   |                   |
+        //   |      +---+      +-+-+
+        //   +----->| 3 +----->| 6 |
+        //          +---+      +---+
         //
         
-        let adjList = [[1, 2, 3], [4], [3], [6], [5], [], [5]]
+        let adjList = [[1, 2, 3], [4], [3], [6], [7], [], [5], [7]]
         
         let path = BFS.shortestPathGraph(adjList, 0, 5)
         
-        XCTAssertEqual(path, [0, 1, 4, 5])
+        XCTAssertEqual(path, [0, 3, 6, 5])
     }
     
-    func test_graph_path_noPathExists() {
+    func test_graph_path_nodeDoesNotExist_noPathExists() {
         //Graph:
         //
         //          +---+      +---+
