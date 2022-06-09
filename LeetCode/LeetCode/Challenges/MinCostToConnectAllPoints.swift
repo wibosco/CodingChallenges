@@ -20,14 +20,14 @@ struct MinCostToConnectAllPoints {
     //min heap
     //
     //Solution Description:
-    //First, calculate all possible edges between all points in the graph. The first vertice is then added to the
-    //visited set as a special case - it could have been any vertice in the graph. As this approach uses Prim's
-    //algorithm the adjacent vertices of the visited vertice are added to a min heap. A min heap is used to ensure that
-    //we always select the min edge ("cheapest") between unconnected vertices. As we are building a tree we know that we
-    //will need to add n - 1 edges where n is the number of vertices in the graph - this is what we use for the condition
-    //on the while loop. As we inspect the min edge we need to ensure that using it will not create a cycle in the graph
-    //by inspecting the `visited` set. If the min edge isn't introducing a cycle we add it's weight to the `total`, add it
-    //to the `visited` set and add it's edges to the min heap causes it the potentially reconfig itself.
+    //First, calculate all possible edges between all points in the graph. The first vertice is then added to the visited set as
+    //a special case - it could have been any vertice in the graph. As this approach uses Prim's algorithm the adjacent vertices
+    //of the visited vertice are added to a min heap. A min heap is used to ensure that we always select the min edge ("cheapest")
+    //between unconnected vertices. As we are building a tree we know that we will need to add n - 1 edges where n is the number
+    //of vertices in the graph - this is what we use for the condition on the while loop. As we inspect the min edge we need to
+    //ensure that using it will not create a cycle in the graph by inspecting the `visited` set. If the min edge isn't introducing
+    //a cycle we add it's weight to the `total`, add it to the `visited` set and add it's edges to the min heap causes it the
+    //potentially reconfig itself.
     static func minCostConnectPoints(_ points: [[Int]]) -> Int {
         //sort
         var adjList = Array(repeating: [GraphWeightedEdge](), count: points.count)

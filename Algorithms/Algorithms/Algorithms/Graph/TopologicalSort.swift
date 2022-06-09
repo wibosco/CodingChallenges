@@ -30,14 +30,17 @@ struct TopologicalSort {
     //multiple subgraphs we need to visit each vertice in the graph and (potentally) perform a deep-first search from that
     //vertice to all connected vertices. As DFS goes deep before wide, all of vertices connected vertice `A` will be search
     //before the recursive call to `A` returns (think of it like the balanced brackets problem e.g. [A, [B, [C, C], B], A]), we
-    //can use this property to detect cycles in our graph - if found a node connects to `A` before `A` has returned then we know
-    //that we a cycle, if however `A` has returned and we find another connection to `A` then all that we have found is another
-    //way to get to `A` (and not a cycle). Due to need that we need to detect cycles and also avoid re-searching the same
+    //can use this property to detect cycles in our graph - if we find a node that connects to `A` before `A` has returned then we
+    //know that we have a cycle, if however `A` has returned and we find another connection to `A` then all that we have found is
+    //another way to get to `A` (and not a cycle). Due to need that we need to detect cycles and also avoid re-searching the same
     //subgraph from different starting vertices we need to track two types of `visited` vertices - vertices who's graph has been
     //searched (`visited`) and vertices who's descendants are still being processed (`currentVisited`), once a vetices
-    //descendants have been fully searched we then remove it from `currentVisited`. As the descendants of each vertice as
+    //descendants have been fully searched we then remove it from `currentVisited`. As the descendants of each vertice is 
     //processed we add that vertice to the `ordering` array. Once all vertices have been processed and no cycles found we then
     //reverse `ordering` to get the topological order.
+    //
+    //N.B. There might a number of ways to produce a valid topological sort of a graph as long as all dependencies are completed
+    //first, all those different sorts are valid/correct
     static func sort(_ adjList: [[Int]]) -> [Int]? {
         var visited = Set<Int>() //allows us to avoid searching the same graph but from a different starting vertice
         var ordering = [Int]()
