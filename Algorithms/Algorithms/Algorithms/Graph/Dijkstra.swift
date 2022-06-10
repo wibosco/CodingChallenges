@@ -23,7 +23,7 @@ struct Dijkstra {
     //priority queue
     //
     //Solution Description:
-    //Dijkstra algorithm is an algorithm for finding the shortest path between vertices in a weighted graph. Dijkstra algorithm is
+    //Dijkstra algorithm is an algorithm for finding the cheapest path between vertices in a weighted graph. Dijkstra algorithm is
     //greedy in nature - it always chooses the smallest/cheapest path to traverse. Starting at `source` we add all neighbors to a
     //min priority queue and calculate the distance it would take to travel between between these nodes (taking into account any
     //distance already travelled). We store this distance in the `distances` dictionary with the node to be travelled to
@@ -98,7 +98,7 @@ struct Dijkstra {
     //priority queue
     //
     //Solution Description:
-    //Dijkstra algorithm is an algorithm for finding the shortest path between vertices in a weighted graph. Dijkstra algorithm is
+    //Dijkstra algorithm is an algorithm for finding the cheapest path between vertices in a weighted graph. Dijkstra algorithm is
     //greedy in nature - it always chooses the smallest/cheapest path to traverse. Starting at `source` we add all neighbors to a
     //min priority queue and calculate the distance it would take to travel between between these nodes (taking into account any
     //distance already travelled). We store this distance in the `distances` dictionary with the node to be travelled to
@@ -163,7 +163,7 @@ struct Dijkstra {
     //sorting
     //
     //Solution Description:
-    //Dijkstra algorithm is an algorithm for finding the shortest path between vertices in a weighted graph. Dijkstra algorithm is
+    //Dijkstra algorithm is an algorithm for finding the cheapest path between vertices in a weighted graph. Dijkstra algorithm is
     //greedy in nature - it always chooses the smallest/cheapest path to traverse. Starting at `source` we add all neighbors to a
     //priority queue and calculate the distance it would take to travel between between these nodes (taking into account any
     //distance already travelled). We store this distance in the `distances` dictionary with the node to be travelled to
@@ -244,7 +244,7 @@ struct Dijkstra {
     //sorting
     //
     //Solution Description:
-    //Dijkstra algorithm is an algorithm for finding the shortest path between vertices in a weighted graph. Dijkstra algorithm is
+    //Dijkstra algorithm is an algorithm for finding the cheapest path between vertices in a weighted graph. Dijkstra algorithm is
     //greedy in nature - it always chooses the smallest/cheapest path to traverse. Starting at `source` we add all neighbors to a
     //priority queue and calculate the distance it would take to travel between between these nodes (taking into account any
     //distance already travelled). We store this distance in the `distances` dictionary with the node to be travelled to

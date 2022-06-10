@@ -27,6 +27,9 @@
 		3DD472A82851F4E50008C93D /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD4729B2851F4E50008C93D /* BinarySearch.swift */; };
 		3DD472AA28524D2B0008C93D /* Prim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD472A928524D2B0008C93D /* Prim.swift */; };
 		3DD472AC28524D8B0008C93D /* PrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD472AB28524D8B0008C93D /* PrimTests.swift */; };
+		3DE771A628536613002981DD /* Kruskal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE771A528536613002981DD /* Kruskal.swift */; };
+		3DE771A8285375A3002981DD /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE771A7285375A3002981DD /* UnionFind.swift */; };
+		3DE771AC285388DD002981DD /* KruskalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE771AB285388DD002981DD /* KruskalTests.swift */; };
 		3DFC2EC9283AC6AB001256EE /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFC2EC0283AC6AA001256EE /* Algorithms.framework */; };
 		3DFC2F17283BE396001256EE /* DijkstraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F0C283BE396001256EE /* DijkstraTests.swift */; };
 		3DFC2F18283BE396001256EE /* RadixSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F0D283BE396001256EE /* RadixSortTests.swift */; };
@@ -74,6 +77,9 @@
 		3DD4729B2851F4E50008C93D /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		3DD472A928524D2B0008C93D /* Prim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prim.swift; sourceTree = "<group>"; };
 		3DD472AB28524D8B0008C93D /* PrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimTests.swift; sourceTree = "<group>"; };
+		3DE771A528536613002981DD /* Kruskal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kruskal.swift; sourceTree = "<group>"; };
+		3DE771A7285375A3002981DD /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
+		3DE771AB285388DD002981DD /* KruskalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KruskalTests.swift; sourceTree = "<group>"; };
 		3DFC2EC0283AC6AA001256EE /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFC2EC8283AC6AB001256EE /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFC2F0C283BE396001256EE /* DijkstraTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DijkstraTests.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 				3DD472992851F4E50008C93D /* BFS.swift */,
 				3DD472972851F4E50008C93D /* DFS.swift */,
 				3DD472962851F4E50008C93D /* Dijkstra.swift */,
+				3DE771A528536613002981DD /* Kruskal.swift */,
 				3DD472A928524D2B0008C93D /* Prim.swift */,
 				3DD472982851F4E50008C93D /* TopologicalSort.swift */,
 			);
@@ -201,6 +208,7 @@
 				3DFC2F0C283BE396001256EE /* DijkstraTests.swift */,
 				3DFC2F10283BE396001256EE /* HeapSortTests.swift */,
 				3DFC2F0F283BE396001256EE /* InsertionSortTests.swift */,
+				3DE771AB285388DD002981DD /* KruskalTests.swift */,
 				3DFC2F11283BE396001256EE /* MergeSortTests.swift */,
 				3DD472AB28524D8B0008C93D /* PrimTests.swift */,
 				3DFC2F0E283BE396001256EE /* QuickSortTests.swift */,
@@ -235,6 +243,7 @@
 			children = (
 				3DFC2F2D283BE3A6001256EE /* Heap.swift */,
 				3DFC2F2C283BE3A6001256EE /* PriorityQueue.swift */,
+				3DE771A7285375A3002981DD /* UnionFind.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -355,9 +364,11 @@
 				3DD472A02851F4E50008C93D /* RadixSort.swift in Sources */,
 				3DD4729C2851F4E50008C93D /* InsertionSort.swift in Sources */,
 				3DD472A32851F4E50008C93D /* QuickSort.swift in Sources */,
+				3DE771A8285375A3002981DD /* UnionFind.swift in Sources */,
 				3DD472A42851F4E50008C93D /* Dijkstra.swift in Sources */,
 				3DD472A62851F4E50008C93D /* TopologicalSort.swift in Sources */,
 				3DD472A82851F4E50008C93D /* BinarySearch.swift in Sources */,
+				3DE771A628536613002981DD /* Kruskal.swift in Sources */,
 				3DD472A22851F4E50008C93D /* MergeSort.swift in Sources */,
 				3DD4729F2851F4E50008C93D /* CountingSort.swift in Sources */,
 				3DD4729D2851F4E50008C93D /* BubbleSort.swift in Sources */,
@@ -383,6 +394,7 @@
 				3DFC2F1F283BE396001256EE /* BubbleSortTests.swift in Sources */,
 				3DFC2F1E283BE396001256EE /* CountingSortTests.swift in Sources */,
 				3DFC2F17283BE396001256EE /* DijkstraTests.swift in Sources */,
+				3DE771AC285388DD002981DD /* KruskalTests.swift in Sources */,
 				3DFC2F1B283BE396001256EE /* HeapSortTests.swift in Sources */,
 				3D03E8AA283EC8BB00944AF3 /* BinarySearchTests.swift in Sources */,
 				3DFC2F19283BE396001256EE /* QuickSortTests.swift in Sources */,

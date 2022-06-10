@@ -18,6 +18,8 @@ struct MinCostToConnectAllPoints {
     //greedy
     //Prim's Algorithm - https://en.wikipedia.org/wiki/Prim%27s_algorithm
     //min heap
+    //adjacency list
+    //visited
     //
     //Solution Description:
     //First, calculate all possible edges between all points in the graph. The first vertice is then added to the visited set as
@@ -29,7 +31,7 @@ struct MinCostToConnectAllPoints {
     //a cycle we add it's weight to the `total`, add it to the `visited` set and add it's edges to the min heap causes it the
     //potentially reconfig itself.
     static func minCostConnectPoints(_ points: [[Int]]) -> Int {
-        //sort
+        //convert points to an adjacency list
         var adjList = Array(repeating: [GraphWeightedEdge](), count: points.count)
         for i in 0..<points.count {
             for j in 0..<points.count where i != j {
@@ -39,11 +41,10 @@ struct MinCostToConnectAllPoints {
                 //manhattan distance |xi - xj| + |yi - yj|
                 let weight = (abs((p1[0] - p2[0])) + abs((p1[1] - p2[1])))
                 let edge = GraphWeightedEdge(source: i, destination: j, weight: weight)
-                adjList[i].append(edge)//just append or sort
+                adjList[i].append(edge)
             }
         }
         
-        //greedy
         var visited = Set<Int>()
         visited.insert(0)
         
@@ -52,13 +53,9 @@ struct MinCostToConnectAllPoints {
         var total = 0
         var edgesToConnect = (points.count - 1) //a tree has n - 1 edges where n is the number of vertices
         
-        while edgesToConnect > 0 {
-            while !minHeap.isEmpty && visited.contains(minHeap.peek()!.destination) { //avoid adding any cycles
-                minHeap.remove()
-            }
-            
-            guard let edge = minHeap.remove() else {
-                break
+        while let edge = minHeap.remove() {
+            guard !visited.contains(edge.destination) else {
+                continue
             }
             
             total += edge.weight
@@ -71,6 +68,10 @@ struct MinCostToConnectAllPoints {
             }
             
             edgesToConnect -= 1
+            
+            guard edgesToConnect > 0 else {
+                break
+            }
         }
         
         return total
@@ -80,16 +81,17 @@ struct MinCostToConnectAllPoints {
     //Space: O(n)
     //MST - minimum spanning tree
     //disjoint set
+    //union find
     //greedy
-    //Kruskal’s Algorithm - https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
+    //Kruskal's Algorithm - https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
+    //sorting
     //
     //Solution Description:
-    //First, calculate all possible edges between all points in the graph. These edges in then sorted in ascending order
-    //ensuring the "cheapest" edges will be processed first. As this approach uses Kruskal’s's algorithm we loop through
-    //the sorted edges that we build and use the union-find process (disjoint sets) to connect the vertices. As we are
-    //building a tree we need to ensure that no cycles are being created when we add nodes so for any edge that would
-    //create a cycle we skip over. Finally because a tree has n - 1 edges where n is the number of vertices when we reach
-    //this value we have our MST.
+    //First, calculate all possible edges between all points in the graph. These edges in then sorted in ascending order ensuring
+    //the "cheapest" edges will be processed first. As this approach uses Kruskal's algorithm we loop through the sorted edges
+    //that we built and use the union-find process (disjoint sets) to connect the vertices and detect if connecting those vertices
+    //will introduce a cycle - if connecting would introduce a cycle we skip over counting that edge as part of the MST. Finally
+    //because a tree has n - 1 edges where n is the number of vertices when we reach this value we have our MST.
     static func minCostConnectPointsKruskal(_ points: [[Int]]) -> Int {
         //sort
         var edges = [GraphWeightedEdge]()
@@ -107,7 +109,7 @@ struct MinCostToConnectAllPoints {
             }
         }
         
-        edges.sort{ $0.weight < $1.weight } //O(n log n)
+        edges.sort{ $0.weight < $1.weight } //ensure that we select the cheapest/smallest edges first
         
         //greedy
         var total = 0
@@ -115,11 +117,11 @@ struct MinCostToConnectAllPoints {
         var edgesToConnect = (points.count - 1) //a tree has n - 1 edges where n is the number of vertices
         
         for edge in edges {
-            if unionFind.union(edge.source, edge.destination) {
+            if unionFind.union(edge.source, edge.destination) { //ensure this edge won't introduce a cycle
                 total += edge.weight
                 edgesToConnect -= 1
                 
-                if edgesToConnect == 0 {
+                guard edgesToConnect > 0 else {
                     break
                 }
             }
@@ -135,17 +137,12 @@ struct MinCostToConnectAllPoints {
 //Can only be applied on undirected graphs
 //
 //Solution Description:
-//1. Each vertice is given an initial value of -1 to indicate
-//   that they are their own root
-//2. Perform a union between two vertices by finding the root
-//   of each vertice (this will be a negative number). This root
-//   may not be directly associated with the vertice but instead
-//   require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices
-//   root and select the root with the most nodes i.e. lowest
-//   negative value. Update the smaller root to point at the other
-//   root and update the other roots count to include the count that
-//   the former root had
+//1. Each vertice is given an initial value of -1 to indicate that they are their own root
+//2. Perform a union between two vertices by finding the root of each vertice (this will be a negative number). This root may not
+//   be directly associated with the vertice but instead require multiple steps hence the while loop in `find`
+//3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest negative
+//   value. Update the smaller root to point at the other root and update the other roots count to include the count that the
+//   former root had
 private class UnionFind {
     private(set) var ranks: [Int]
     
@@ -171,8 +168,7 @@ private class UnionFind {
         let yRoot = find(y)
         
         guard xRoot != yRoot else {
-            //x and y are already in the same set, so performing
-            //this union will result in introducing a cycle into
+            //x and y are already in the same set, so performing this union will result in introducing a cycle into
             //this graph.
             return false
         }

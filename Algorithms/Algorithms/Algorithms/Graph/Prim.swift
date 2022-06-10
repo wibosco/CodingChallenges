@@ -17,18 +17,17 @@ struct Prim {
     //Prim's Algorithm
     //adjacency list
     //visited
-    //adjacency list
     //min heap
     //MST - minimum spanning tree
     //
     //Solution Description:
-    //Given an undirected, weight we can construct minimum spanning tree (MST) from its vertices using Prim's algorithm. A MST is a
-    //path through the graph that connected all vertices in that graph with the minimum cost edges between those vertices (avoiding
-    //cycles i.e. a true tree) - note that we don't really traverse down each edge so if we go A -> B then we can choose the
+    //Given an undirected, weighted graph we can construct a minimum spanning tree (MST) from its vertices using Prim's algorithm.
+    //An MST is a subset of edges in the graph that connects all vertices without any cycles and with the minimum possible total
+    //edge weight - note that with an MST we don't really traverse down each edge so if we go A -> B then we can choose the
     //cheapest edge from either A or B i.e. we are not "on" B and so don't need to "pay" to get back to A. To construct a MST we
-    //select any given vertice e.g. A and then find the cheapest edge between that vertice and one of it's neighbors e.g. B, we then
-    //choose the cheapest edge starting at either A or B (that don't introduce a cycle) and connect that neighbor e.g. to our
-    //growing MST e.g.
+    //select any given vertice e.g. A and then find the cheapest edge between that vertice and one of it's neighbors e.g. B, we
+    //then choose the cheapest edge starting at either A or B (that won't introduce a cycle) and connect that neighbor e.g. to
+    //our growing MST e.g.
     //
     //MST after iteration 1:
     //
@@ -71,8 +70,10 @@ struct Prim {
     //introducing cycles we add each vertice that we add the MST also to `visited` set - if the cheapest edge is back an existing
     //vertice in the MST we skip it.
     //
-    //N.B. An MST will have (vertices.count - 1) edges.
+    //N.B. An MST will have `|adjList| - 1` edges.
     //N.B. Where multiple edges have the same (min) weight selecting any is valid
+    //
+    //Similar to Kruskal's Algorithm
     static func minimumSpanningTree(_ adjList: [[(vertice: Int, weight: Int)]]) -> [(source: Int, destination: Int, weight: Int)]? {
         guard !adjList.isEmpty else {
             return nil

@@ -27,7 +27,7 @@ struct RadixSort {
     //
     //N.B. Radix sort is not a comparison sort
     //
-    //N.B. Similar to counting sort in that buckets are used
+    //Similar to counting sort in that buckets are used
     static func sort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
