@@ -51,7 +51,7 @@ struct TopologicalSort {
                 continue
             }
             
-            var currentVisited = Set<Int>() //allows us to detect a cycle
+            var currentVisited = Set<Int>() //allows us to detect a cycle inside this DFS iteration
             currentVisited.insert(source)
             
             dfs(adjList, source, &visited, &currentVisited, &ordering, &cycleDetected)
