@@ -7,8 +7,8 @@
 
 import Foundation
 
-//A "normal" queue that operates on a FIFO basis where each element is considered equal and the ordering is determine solely on
-//when an element was added to the queue. This is not the case with priority queues. In priority queues each element is
+//A "normal" queue that operates on a FIFO basis where each element is considered equal and the ordering is determine solely
+//on when an element was added to the queue. This is not the case with priority queues. In priority queues each element is
 //prioritised against the other elements so that those elements with higher priority are removed first from the queue (note
 //here that a higher priority doesn't mean a higher value - in a min priority queue those elements with a lower value are
 //prioritised higher). Each time an element is added or removed the queue needs to be adjusted so ensure that the next element

@@ -34,3 +34,70 @@ A collection of coding challenges and their solutions from:
 | "Largest value", "Smallest value"| `Heap` |
 | "kth smallest", "kth largest", "kth frequent", "top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
+
+## Data Structure Characteristics
+
+### Binary Tree
+
+1. A tree has one root node
+2. Each node has only one parent node (apart from the root node which has none)
+3. Each node has a maximum of two child nodes - left and right
+4. A node without any child nodes is a leaf node
+5. Any subtree is also a valid independent binary Tree
+6. The depth of a node is the number of edges from the node to the tree's root node - a root node will have a depth of 0
+7. The height of a node is the number of edges on the longest path from the node to a leaf - a leaf node will have a height of 0
+8. Traversal:
+    1. Preorder traversal involves traversing from the root to the left subtree then to the right subtree
+    2. Inorder traversal involves traversing from the left subtree to the root then to the right subtree
+    3. Postorder traversal involves traversing from the left subtree to the right subtree then to the root
+9. Searching:
+    1. Breadth First Search (BFS) - queue based, level by level traversal
+    2. Depth First Search (DFS) - stack based, go as deep as possible then backtrack
+10. A balanced binary tree is a tree in which the height of the left and right subtrees differ by no more than 1
+11. A complete binary tree is a tree in which every level, except possibly the last, is completely filled, and all nodes in the last level are filled left to right
+12. A full/proper binary tree is a tree in which every node has either 0 or 2 children.
+13. A tree is special type of graph
+14. Doesn't contain cycles
+
+### Binary Search Tree
+
+> Inherits the characteristics of a Binary Tree
+
+1. Nodes to the left of the root are less than or equal than that of the root
+2. Nodes to the right of the root are greater than that of the root
+3. Inorder traversal results in a sorted list of the nodes in a BST
+4. Searching takes O(log n) time as at each node it is possible to discard half of the remaining nodes (as being either too small of too large)
+
+### Graph
+
+1. Non-linear data structure consisting of nodes/vertices and edges
+2. Can be weighted or unweighted
+    1. Weighted - each edge has a cost
+    2. Unweighted - each edge is the same i.e. no cost
+3. Can be directed or undirected
+    1. Directed - only allow travel down an edge in a certain direction,
+    2. Undirected - edge can be used for travel both ways
+4. Each node has an `indegree` - this is the number of node connecting into that node   
+5. Each node has n `outdegree` - this is the number of nodes, this node is connecting to
+6. A node can have any number of edges to other nodes
+7. Can contain unconnected nodes
+8. Adjacency list can be used to store the `outdegree` of each node in a graph
+9. A matrix can be used to show edges between Nodes
+    1. Wasteful spacewise
+10. A path is sequence of nodes that it takes to get from A -> Z
+11. Directed Acyclic Graph (DAG) is a directed graph with no directed cycles
+    1. Topological sort only works on DAGs
+12. Searching:
+    1. Breadth First Search (BFS) - queue based, level by level traversal
+    2. Depth First Search (DFS) - stack (of recursive) based, go as deep as possible then backtrack
+13. Can contain cycles
+
+### Matrix
+
+1. Just a disguised graph
+2. Relative indexing allows for moving/search a matrix without going out of bounds by mapping the possible movements and determining if that movement is valid
+3. Visited arrays ensure that when search we don't get caught in an infinite loop
+4. Searching:
+    1. Breadth First Search (BFS) - queue based, level by level traversal
+    2. Depth First Search (DFS) - stack based, go as deep as possible then backtrack
+5. Backtracking involves exhaustively searching down one path before reversing back up that path to search down alternative paths at each branching point

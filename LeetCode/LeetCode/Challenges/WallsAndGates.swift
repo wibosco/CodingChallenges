@@ -21,19 +21,15 @@ struct WallsAndGates {
     //mutating
     //
     //Solution Description:
-    //This is a graph problem. First we determine where (if) the gates are in the
-    //grid. These gates are then used as the starting elements in our BFS queue
-    //(multi-source BFS). As we process the queue we use 4-way relative mapping array
-    //to determine which nodes are neighbors to the current node. From those neighbors
-    //we are only interested in rooms - which we determine by checking if they are of
-    //value greater than `0`. For every room discovered we check if it's count is greater
-    //than our path count (it's possible this room is nearer another gate than the gate we
-    //came from). If it is greater we update it with our path count and add it the queue;
-    //if not greater we skip it.
+    //T his is a graph problem. First we determine where (if) the gates are in thegrid. These gates are then used as the
+    //starting elements in our BFS queue (multi-source BFS). As we process the queue we use 4-way relative mapping array
+    //to determine which nodes are neighbors to the current node. From those neighbors we are only interested in rooms -
+    //which we determine by checking if they are of value greater than `0`. For every room discovered we check if it's
+    //count is greater than our path count (it's possible this room is nearer another gate than the gate we came from).
+    //If it is greater we update it with our path count and add it the queue; if not greater we skip it.
     //
-    //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The
-    //extra loop is to work through the neighbors of a nodes - don't confuse this with the actual
-    //level traversal loop which is the second loop
+    //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The extra loop is to work
+    //through the neighbors of a nodes - don't confuse this with the actual level traversal loop which is the second loop
     static func wallsAndGates(_ rooms: inout [[Int]]) {        
         //-1 - wall, 0 - gate , INF - room
         
