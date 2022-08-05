@@ -49,6 +49,8 @@
 		3D230D0C28004EC80057AF26 /* MergeKSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D230D0B28004EC80057AF26 /* MergeKSortedLists.swift */; };
 		3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2617A127B5711200269FA3 /* KDiffPairsInAnArray.swift */; };
 		3D2617A427B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2617A327B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift */; };
+		3D2A96B3289D683A003B954F /* FindLeavesOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A96B2289D683A003B954F /* FindLeavesOfBinaryTree.swift */; };
+		3D2A96B5289D6891003B954F /* FindLeavesOfBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A96B4289D6891003B954F /* FindLeavesOfBinaryTreeTests.swift */; };
 		3D30552D27C4E39600294BC7 /* ExcelSheetColumnNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30552C27C4E39600294BC7 /* ExcelSheetColumnNumber.swift */; };
 		3D30552F27C4E41500294BC7 /* ExcelSheetColumnNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30552E27C4E41500294BC7 /* ExcelSheetColumnNumberTests.swift */; };
 		3D30553127C51D6A00294BC7 /* RemoveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30553027C51D6A00294BC7 /* RemoveElement.swift */; };
@@ -575,6 +577,8 @@
 		3D230D0B28004EC80057AF26 /* MergeKSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeKSortedLists.swift; sourceTree = "<group>"; };
 		3D2617A127B5711200269FA3 /* KDiffPairsInAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDiffPairsInAnArray.swift; sourceTree = "<group>"; };
 		3D2617A327B5714D00269FA3 /* KDiffPairsInAnArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDiffPairsInAnArrayTests.swift; sourceTree = "<group>"; };
+		3D2A96B2289D683A003B954F /* FindLeavesOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLeavesOfBinaryTree.swift; sourceTree = "<group>"; };
+		3D2A96B4289D6891003B954F /* FindLeavesOfBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLeavesOfBinaryTreeTests.swift; sourceTree = "<group>"; };
 		3D30552C27C4E39600294BC7 /* ExcelSheetColumnNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelSheetColumnNumber.swift; sourceTree = "<group>"; };
 		3D30552E27C4E41500294BC7 /* ExcelSheetColumnNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelSheetColumnNumberTests.swift; sourceTree = "<group>"; };
 		3D30553027C51D6A00294BC7 /* RemoveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveElement.swift; sourceTree = "<group>"; };
@@ -1194,6 +1198,7 @@
 				3D5C90FD27A7F7630035C399 /* FindFirstAndLastPositionOfElementInSortedArray.swift */,
 				3D5C90EE27A7F7620035C399 /* FindIfPathExistsInGraph.swift */,
 				3D5C910E27A7F7630035C399 /* FindKClosestElements.swift */,
+				3D2A96B2289D683A003B954F /* FindLeavesOfBinaryTree.swift */,
 				3D5C90D827A7F7620035C399 /* FindMinimumRotatedSortedArray.swift */,
 				3D5C90FC27A7F7620035C399 /* FindMinimumRotatedSortedArrayII.swift */,
 				3D5C90E727A7F7620035C399 /* FindPeakElement.swift */,
@@ -1452,6 +1457,7 @@
 				3D5C920E27A7F76B0035C399 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */,
 				3D5C922F27A7F76B0035C399 /* FindIfPathExistsInGraphTests.swift */,
 				3D5C924B27A7F76C0035C399 /* FindKClosestElementsTests.swift */,
+				3D2A96B4289D6891003B954F /* FindLeavesOfBinaryTreeTests.swift */,
 				3D5C925D27A7F76C0035C399 /* FindMinimumRotatedSortedArrayIITests.swift */,
 				3D5C921527A7F76B0035C399 /* FindMinimumRotatedSortedArrayTests.swift */,
 				3D5C924A27A7F76C0035C399 /* FindPeakElementTests.swift */,
@@ -1764,6 +1770,7 @@
 				3D5C91AA27A7F7630035C399 /* BinarySearchLeetCode.swift in Sources */,
 				3D1CD88E27D94B9F00D4CA5F /* JumpGameII.swift in Sources */,
 				3D7F318927F7915700200775 /* UniquePathsII.swift in Sources */,
+				3D2A96B3289D683A003B954F /* FindLeavesOfBinaryTree.swift in Sources */,
 				3D5C914B27A7F7630035C399 /* ListNodeRandom.swift in Sources */,
 				3D5C919927A7F7630035C399 /* SimplifyPath.swift in Sources */,
 				3D8424D327F106B100B91AAB /* MeetingRoomsII.swift in Sources */,
@@ -2096,6 +2103,7 @@
 				3D5C92BF27A7F76C0035C399 /* GraphValidTreeTests.swift in Sources */,
 				3D5C931F27A7F76C0035C399 /* LowestCommonAncestorBinaryTreeIIITests.swift in Sources */,
 				3D146580280A285A00DF647A /* LeftmostColumnWithAtLeastAOneTests.swift in Sources */,
+				3D2A96B5289D6891003B954F /* FindLeavesOfBinaryTreeTests.swift in Sources */,
 				3D5C931627A7F76C0035C399 /* NextGreaterElementITests.swift in Sources */,
 				3D5C92E627A7F76C0035C399 /* RemoveNthFromListTests.swift in Sources */,
 				3D5C92AC27A7F76C0035C399 /* ValidSudokuTests.swift in Sources */,
