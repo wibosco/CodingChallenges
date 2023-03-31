@@ -14,6 +14,7 @@ struct SingleNumber {
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //bit manipulation
+    //bitwise
     //
     //Solution Description:
     //Iterating through `nums` we combine the current element using XOR to find the unpair element - treating each number as its

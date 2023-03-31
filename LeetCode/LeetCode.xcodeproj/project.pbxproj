@@ -528,6 +528,8 @@
 		43313BB529D71263005FCF5D /* AddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB429D71263005FCF5D /* AddDigits.swift */; };
 		43313BB729D7231F005FCF5D /* SingleNumber .swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB629D7231F005FCF5D /* SingleNumber .swift */; };
 		43313BB929D72335005FCF5D /* SingleNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB829D72335005FCF5D /* SingleNumberTests.swift */; };
+		43313BBB29D73378005FCF5D /* MissingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BBA29D73378005FCF5D /* MissingNumber.swift */; };
+		43313BBD29D733C9005FCF5D /* MissingNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BBC29D733C9005FCF5D /* MissingNumberTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1063,6 +1065,8 @@
 		43313BB429D71263005FCF5D /* AddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDigits.swift; sourceTree = "<group>"; };
 		43313BB629D7231F005FCF5D /* SingleNumber .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingleNumber .swift"; sourceTree = "<group>"; };
 		43313BB829D72335005FCF5D /* SingleNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumberTests.swift; sourceTree = "<group>"; };
+		43313BBA29D73378005FCF5D /* MissingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingNumber.swift; sourceTree = "<group>"; };
+		43313BBC29D733C9005FCF5D /* MissingNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingNumberTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1281,6 +1285,7 @@
 				3D5C90FB27A7F7620035C399 /* MinimumRemoveToMakeValidParentheses.swift */,
 				3D5C90B227A7F7620035C399 /* MinimumValueToGetPositive.swift */,
 				3D5C910A27A7F7630035C399 /* MiniParser.swift */,
+				43313BBA29D73378005FCF5D /* MissingNumber.swift */,
 				3DB98D77280372FF00A3D2E9 /* MissingRanges.swift */,
 				3D5C912427A7F7630035C399 /* MoveZeroes.swift */,
 				3DB7C5CC27CD47AE00353EED /* MovingAverage.swift */,
@@ -1351,6 +1356,7 @@
 				3D5C913827A7F7630035C399 /* ShortestPathBinaryMatrix.swift */,
 				3D42A46827F4F27400687F75 /* ShortestWordDistanceII.swift */,
 				3D5C90E827A7F7620035C399 /* SimplifyPath.swift */,
+				43313BB629D7231F005FCF5D /* SingleNumber .swift */,
 				3D5C90DD27A7F7620035C399 /* SmallestStringWithSwaps.swift */,
 				3D9B1D2228354619004FCFF8 /* SortAnArray.swift */,
 				3DA8E510280438EB00A23F3C /* SortCharactersByFrequency.swift */,
@@ -1396,7 +1402,6 @@
 				3D5C913727A7F7630035C399 /* WallsAndGates.swift */,
 				3D46243427E497D300A888C1 /* WordSearch.swift */,
 				3D5C90F127A7F7620035C399 /* ZigzagConversion.swift */,
-				43313BB629D7231F005FCF5D /* SingleNumber .swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -1543,6 +1548,7 @@
 				3D5C924227A7F76C0035C399 /* MinimumRemoveToMakeValidParenthesesTests.swift */,
 				3D5C925727A7F76C0035C399 /* MinimumValueToGetPositiveTests.swift */,
 				3D5C920C27A7F76B0035C399 /* MiniParserTests.swift */,
+				43313BBC29D733C9005FCF5D /* MissingNumberTests.swift */,
 				3DB98D79280374D600A3D2E9 /* MissingRangesTests.swift */,
 				3D5C927327A7F76C0035C399 /* MoveZerosTests.swift */,
 				3DB7C5CE27CD480200353EED /* MovingAverageTests.swift */,
@@ -1610,6 +1616,7 @@
 				3D5C926D27A7F76C0035C399 /* ShortestPathBinaryMatrixTests.swift */,
 				3D42A46A27F4F71700687F75 /* ShortestWordDistanceIITests.swift */,
 				3D5C923227A7F76B0035C399 /* SimplifyPathTests.swift */,
+				43313BB829D72335005FCF5D /* SingleNumberTests.swift */,
 				3D5C928727A7F76C0035C399 /* SmallestStringWithSwapsTests.swift */,
 				3D9B1D2428354650004FCFF8 /* SortAnArrayTests.swift */,
 				3DA8E5122804395600A23F3C /* SortCharactersByFrequencyTests.swift */,
@@ -1655,7 +1662,6 @@
 				3D5C91FB27A7F76B0035C399 /* WallsAndGatesTests.swift */,
 				3D46243627E4986C00A888C1 /* WordSearchTests.swift */,
 				3D5C928327A7F76C0035C399 /* ZigzagConversionTests.swift */,
-				43313BB829D72335005FCF5D /* SingleNumberTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1998,6 +2004,7 @@
 				3D5C91CB27A7F7630035C399 /* HappyNumber.swift in Sources */,
 				3D5C918C27A7F7630035C399 /* GuessNumberHigherOrLower.swift in Sources */,
 				3D5C918B27A7F7630035C399 /* MinimumAddToMakeParenthesesValid.swift in Sources */,
+				43313BBB29D73378005FCF5D /* MissingNumber.swift in Sources */,
 				3D5C91A427A7F7630035C399 /* FlattenBinaryTreeToLinkedList.swift in Sources */,
 				3D5C91EE27A7F7630035C399 /* SameTree.swift in Sources */,
 				3D42A47127F5E6C200687F75 /* ContainsDuplicateII.swift in Sources */,
@@ -2100,6 +2107,7 @@
 				3D5C92AD27A7F76C0035C399 /* ClimbingStairsTests.swift in Sources */,
 				3D5C929B27A7F76C0035C399 /* KthLargestElementInArrayTests.swift in Sources */,
 				3D46242727E294E700A888C1 /* SortColorsTests.swift in Sources */,
+				43313BBD29D733C9005FCF5D /* MissingNumberTests.swift in Sources */,
 				3D5C932F27A7F76C0035C399 /* ReverseLinkedListTests.swift in Sources */,
 				3D5C92CC27A7F76C0035C399 /* AsteroidCollisionTests.swift in Sources */,
 				3D5C92D127A7F76C0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift in Sources */,
