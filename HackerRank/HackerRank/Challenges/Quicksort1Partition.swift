@@ -1,6 +1,6 @@
 //
 //  QuickSort.swift
-//  CodingChallenges
+//  HackerRank
 //
 //  Created by William Boles on 16/05/2016.
 //  Copyright © 2016 Boles. All rights reserved.

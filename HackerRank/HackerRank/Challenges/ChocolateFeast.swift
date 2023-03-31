@@ -1,6 +1,6 @@
 //
 //  ChocolateFeast.swift
-//  CodingChallenges
+//  HackerRank
 //
 //  Created by Boles on 08/05/2016.
 //  Copyright © 2016 Boles. All rights reserved.

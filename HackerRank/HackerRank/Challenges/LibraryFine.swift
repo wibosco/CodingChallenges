@@ -1,6 +1,6 @@
 //
 //  LibraryFine.swift
-//  CodingChallenges
+//  HackerRank
 //
 //  Created by William Boles on 10/05/2016.
 //  Copyright © 2016 Boles. All rights reserved.

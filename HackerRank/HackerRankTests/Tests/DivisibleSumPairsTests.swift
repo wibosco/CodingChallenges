@@ -1,6 +1,6 @@
 //
 //  DivisibleSumPairsTests.swift
-//  CodingChallengesTests
+//  HackerRankTests
 //
 //  Created by William Boles on 28/10/2021.
 //  Copyright © 2021 Boles. All rights reserved.

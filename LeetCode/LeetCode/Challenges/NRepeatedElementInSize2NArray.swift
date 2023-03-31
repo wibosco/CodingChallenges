@@ -1,6 +1,6 @@
 //
 //  N-RepeatedElementInSize2NArray.swift
-//  CodingChallenges
+//  LeetCode
 //
 //  Created by William Boles on 22/01/2022.
 //  Copyright © 2022 Boles. All rights reserved.

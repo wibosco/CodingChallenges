@@ -1,6 +1,6 @@
 //
 //  PascalsTriangleII.swift
-//  CodingChallenges
+//  LeetCode
 //
 //  Created by William Boles on 20/12/2021.
 //  Copyright © 2021 Boles. All rights reserved.

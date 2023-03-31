@@ -1,6 +1,6 @@
 //
 //  BinaryTreeVerticalOrderTraversal.swift
-//  CodingChallenges
+//  LeetCode
 //
 //  Created by William Boles on 29/12/2021.
 //  Copyright © 2021 Boles. All rights reserved.

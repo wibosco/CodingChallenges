@@ -1,6 +1,6 @@
 //
 //  SortingIntroTests.swift
-//  CodingChallenges
+//  HackerRankTests
 //
 //  Created by Boles on 15/05/2016.
 //  Copyright © 2016 Boles. All rights reserved.

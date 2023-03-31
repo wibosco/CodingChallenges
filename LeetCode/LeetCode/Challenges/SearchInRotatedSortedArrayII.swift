@@ -1,6 +1,6 @@
 //
 //  SearchInRotatedSortedArrayII.swift
-//  CodingChallenges
+//  LeetCode
 //
 //  Created by William Boles on 21/01/2022.
 //  Copyright © 2022 Boles. All rights reserved.

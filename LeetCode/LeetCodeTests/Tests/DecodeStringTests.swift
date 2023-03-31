@@ -1,6 +1,6 @@
 //
 //  DecodeStringTests.swift
-//  CodingChallengesTests
+//  LeetCodeTests
 //
 //  Created by William Boles on 15/12/2021.
 //  Copyright © 2021 Boles. All rights reserved.

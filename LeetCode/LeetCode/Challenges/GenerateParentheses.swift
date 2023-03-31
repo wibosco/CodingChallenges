@@ -1,6 +1,6 @@
 //
 //  GenerateParentheses.swift
-//  CodingChallenges
+//  LeetCode
 //
 //  Created by William Boles on 10/11/2021.
 //  Copyright © 2021 Boles. All rights reserved.

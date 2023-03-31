@@ -1,6 +1,6 @@
 //
 //  PalindromePermutationTests.swift
-//  CodingChallenges
+//  CrackingTheCodingInterviewTests
 //
 //  Created by William Boles on 30/05/2016.
 //  Copyright © 2016 Boles. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  ContinuousSubarraySumTests.swift
-//  CodingChallengesTests
+//  LeetCodeTests
 //
 //  Created by William Boles on 02/01/2022.
 //  Copyright © 2022 Boles. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  FindDigits.swift
-//  CodingChallenges
+//  HackerRank
 //
 //  Created by Boles on 08/05/2016.
 //  Copyright © 2016 Boles. All rights reserved.
@@ -11,7 +11,7 @@ import Foundation
 //https://www.hackerrank.com/challenges/find-digits
 final class FindDigits {
 
-     static func findCountOFDivisableValuesOfNumberInNumber(number: Int) -> Int {
+     static func findCountOfDivisableValuesOfNumberInNumber(number: Int) -> Int {
         
         var divisables = 0
         

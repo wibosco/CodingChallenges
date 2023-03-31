@@ -1,6 +1,6 @@
 //
 //  LongestSubstring.swift
-//  CodingChallenges
+//  LeetCode
 //
 //  Created by William Boles on 04/11/2021.
 //  Copyright © 2021 Boles. All rights reserved.

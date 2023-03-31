@@ -1,6 +1,6 @@
 //
 //  GradingStudents.swift
-//  CodingChallenges
+//  HackerRank
 //
 //  Created by William Boles on 27/10/2021.
 //  Copyright © 2021 Boles. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  BalancedBST.swift
-//  CodingChallenges
+//  CrackingTheCodingInterview
 //
 //  Created by William Boles on 05/07/2016.
 //  Copyright © 2016 Boles. All rights reserved.

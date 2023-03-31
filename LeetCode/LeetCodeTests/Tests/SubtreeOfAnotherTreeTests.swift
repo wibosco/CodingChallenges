@@ -1,6 +1,6 @@
 //
 //  SubtreeOfAnotherTreeTests.swift
-//  CodingChallengesTests
+//  LeetCodeTests
 //
 //  Created by William Boles on 26/01/2022.
 //  Copyright © 2022 Boles. All rights reserved.
