@@ -22,7 +22,7 @@ struct InsertInterval {
     //without inserting `newInterval` then we know that `newInterval` is greater than all other intervals and we need to add
     //it to the end of `intervals`. Next we need to merge any overlapping intervals. As it's possible for multiple intervals
     //to share an overlap it is not enough to merely compare one neighbour with another neighbour instead we need to compare
-    //an interval against the last alreay merged interval. Where an overlap exists we (potentally - sometime the
+    //an interval against the last already merged interval. Where an overlap exists we (potentally - sometime the
     //interval-to-be-mergeds upper is less than the current merged intervals upper boundary) push out the merged intervals
     //upper boundary to accommodate this new upper boundary (lower boundary never changes as it is either less than or equal
     //to the interval-to-be-merged lower boundary). If there isn't an overlap we add the interval to the `mergedIntervals`

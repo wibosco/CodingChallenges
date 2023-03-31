@@ -20,7 +20,7 @@ struct MergeIntervals {
     //By sorting the intervals into ascending order we can reduce the amount of work required to find an overlapping interval
     //as any overlapping intervals will be neighbors. As it's possible for multiple intervals to share an overlap it is not
     //enough to merely compare one neighbour with another neighbour instead we need to compare an interval against the last
-    //alreay merged interval. Where an overlap exists we (potentally - sometime the interval-to-be-mergeds upper is less than
+    //already merged interval. Where an overlap exists we (potentally - sometime the interval-to-be-mergeds upper is less than
     //the current merged intervals upper boundary) push out the merged intervals upper boundary to accommodate this new upper
     //boundary (lower boundary never changes as it is either less than or equal to the interval-to-be-merged lower boundary).
     //If there isn't an overlap we add the interval to the `mergedIntervals` array. Once all intervals have been compared we

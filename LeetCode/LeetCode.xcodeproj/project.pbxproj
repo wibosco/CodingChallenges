@@ -526,6 +526,8 @@
 		43313BAF29D6F3DF005FCF5D /* BinaryTreePathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BAE29D6F3DF005FCF5D /* BinaryTreePathsTests.swift */; };
 		43313BB329D71237005FCF5D /* AddDigitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB229D71237005FCF5D /* AddDigitsTests.swift */; };
 		43313BB529D71263005FCF5D /* AddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB429D71263005FCF5D /* AddDigits.swift */; };
+		43313BB729D7231F005FCF5D /* SingleNumber .swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB629D7231F005FCF5D /* SingleNumber .swift */; };
+		43313BB929D72335005FCF5D /* SingleNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB829D72335005FCF5D /* SingleNumberTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1059,6 +1061,8 @@
 		43313BAE29D6F3DF005FCF5D /* BinaryTreePathsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePathsTests.swift; sourceTree = "<group>"; };
 		43313BB229D71237005FCF5D /* AddDigitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDigitsTests.swift; sourceTree = "<group>"; };
 		43313BB429D71263005FCF5D /* AddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDigits.swift; sourceTree = "<group>"; };
+		43313BB629D7231F005FCF5D /* SingleNumber .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingleNumber .swift"; sourceTree = "<group>"; };
+		43313BB829D72335005FCF5D /* SingleNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumberTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1392,6 +1396,7 @@
 				3D5C913727A7F7630035C399 /* WallsAndGates.swift */,
 				3D46243427E497D300A888C1 /* WordSearch.swift */,
 				3D5C90F127A7F7620035C399 /* ZigzagConversion.swift */,
+				43313BB629D7231F005FCF5D /* SingleNumber .swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -1650,6 +1655,7 @@
 				3D5C91FB27A7F76B0035C399 /* WallsAndGatesTests.swift */,
 				3D46243627E4986C00A888C1 /* WordSearchTests.swift */,
 				3D5C928327A7F76C0035C399 /* ZigzagConversionTests.swift */,
+				43313BB829D72335005FCF5D /* SingleNumberTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1875,6 +1881,7 @@
 				3D5C91B627A7F7630035C399 /* NestedListWeightSumII.swift in Sources */,
 				3D5C91D327A7F7630035C399 /* PopulatingNextRightPointersII.swift in Sources */,
 				3D5C916527A7F7630035C399 /* RecoverBinarySearchTree.swift in Sources */,
+				43313BB729D7231F005FCF5D /* SingleNumber .swift in Sources */,
 				3D5C914927A7F7630035C399 /* ListNode.swift in Sources */,
 				3D5C91AF27A7F7630035C399 /* ConvertSortedArrayToBinarySearchTree.swift in Sources */,
 				3D5C91C827A7F7630035C399 /* ContinuousSubarraySum.swift in Sources */,
@@ -2208,6 +2215,7 @@
 				3D5C92A527A7F76C0035C399 /* BuildingsWithOceanViewTests.swift in Sources */,
 				3D5C92AF27A7F76C0035C399 /* TargetSumTests.swift in Sources */,
 				3DB98D7E280381EE00A3D2E9 /* RemoveLinkedListElementsTests.swift in Sources */,
+				43313BB929D72335005FCF5D /* SingleNumberTests.swift in Sources */,
 				3D7E30A5282C140C00D7737D /* CountSortedVowelStringsTests.swift in Sources */,
 				3D5C92EA27A7F76C0035C399 /* DecodeStringTests.swift in Sources */,
 				3D5C92ED27A7F76C0035C399 /* MinimumNumberOfSwapsToMakeTheStringBalancedTests.swift in Sources */,

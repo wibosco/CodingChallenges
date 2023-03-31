@@ -93,7 +93,7 @@ struct FindDuplicateNumber {
     //Solution Description:
     //Knowing that `nums` contains values that are less than its count, we can use those values as indexes. So iterating
     //through `nums` we treat the value of each element as an index and then set that indexes value to be negative. If
-    //that second elements value is alreay negative then we know that we have already been here and the original index
+    //that second elements value is already negative then we know that we have already been here and the original index
     //(i) is a duplicate
     static func findDuplicateNegativeMarking(_ nums: [Int]) -> Int {
         var nums = nums
@@ -120,7 +120,7 @@ struct FindDuplicateNumber {
     //
     //Solution Description:
     //Using a set (for O(1) search time) to store `nums` elements that we have already seen, we loop through `nums` and check
-    //if that element is alreay in `count`. If it is we have found our duplicate; if it is not then we add it to `count` and
+    //if that element is already in `count`. If it is we have found our duplicate; if it is not then we add it to `count` and
     //conintue looping
     static func findDuplicateDictionary(_ nums: [Int]) -> Int {
         var count = Set<Int>()
