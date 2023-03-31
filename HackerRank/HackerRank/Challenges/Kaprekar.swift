@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/kaprekar-numbers
-class Kaprekar {
+final class Kaprekar {
 
      static func kaprekarRange(lowerBounds: Int, upperBounds: Int) -> [Int] {
         var kaprekarRange = [Int]()

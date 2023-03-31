@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BinarySearchTreeDepthLinkedList {
+final class BinarySearchTreeDepthLinkedList {
     var head: BinarySearchTreeDepthLinkedListNode?
     
     // MARK: - Action

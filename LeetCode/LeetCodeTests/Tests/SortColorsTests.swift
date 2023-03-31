@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SortColorsTests: XCTestCase {
+final class SortColorsTests: XCTestCase {
 
     // MARK: - Tests
     

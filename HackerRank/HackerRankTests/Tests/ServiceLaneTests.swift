@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class ServiceLaneTests: XCTestCase {
+final class ServiceLaneTests: XCTestCase {
     
     // MARK: Accessors
     

@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/plus-minus
-class Percentages {
+final class Percentages {
 
      static func percentageOfUnqiueSets(array: [Int]) -> (positivePercentage: Double, negativePercentage: Double, zeroPercentage: Double) {
         

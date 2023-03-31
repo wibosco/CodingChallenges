@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class HappyNumberTests: XCTestCase {
+final class HappyNumberTests: XCTestCase {
 
     // MARK: - Tests
     

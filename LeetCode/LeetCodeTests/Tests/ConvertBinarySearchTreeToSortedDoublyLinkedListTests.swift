@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ConvertBinarySearchTreeToSortedDoublyLinkedListTests: XCTestCase {
+final class ConvertBinarySearchTreeToSortedDoublyLinkedListTests: XCTestCase {
     
     // MARK: - Tests
     

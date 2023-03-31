@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/runningtime
-class RunningTime {
+final class RunningTime {
     
      static func numberOfShiftsToSort(array: [Int]) -> Int {
         

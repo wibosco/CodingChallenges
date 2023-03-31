@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class InsertionSort1Tests: XCTestCase {
+final class InsertionSort1Tests: XCTestCase {
     
     // MARK: RightMost
     

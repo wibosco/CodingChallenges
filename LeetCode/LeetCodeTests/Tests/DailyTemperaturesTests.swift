@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class DailyTemperaturesTests: XCTestCase {
+final class DailyTemperaturesTests: XCTestCase {
 
     // MARK: - Tests
     

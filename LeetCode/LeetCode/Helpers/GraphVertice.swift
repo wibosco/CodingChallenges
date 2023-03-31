@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GraphVertice {
+final class GraphVertice {
     let val: Int
     
     var neighbors = [GraphVertice]()

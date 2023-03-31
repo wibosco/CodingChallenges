@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RoutePlannerNode {
+final class RoutePlannerNode {
     var connectedNodes = [RoutePlannerNode]()
     var visited = false
     var previousVisitedNode: RoutePlannerNode?

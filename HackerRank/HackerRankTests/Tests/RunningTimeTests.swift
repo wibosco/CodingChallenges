@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class RunningTimeTests: XCTestCase {
+final class RunningTimeTests: XCTestCase {
     
     func test_A() {
         let numberOfShifts = RunningTime.numberOfShiftsToSort(array: [2, 1, 3, 1, 2])

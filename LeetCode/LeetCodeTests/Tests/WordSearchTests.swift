@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class WordSearchTests: XCTestCase {
+final class WordSearchTests: XCTestCase {
     
     // MARK: - Tests
     

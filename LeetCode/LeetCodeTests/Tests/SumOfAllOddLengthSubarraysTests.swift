@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SumOfAllOddLengthSubarraysTests: XCTestCase {
+final class SumOfAllOddLengthSubarraysTests: XCTestCase {
     
     // MARK: - Tests
     

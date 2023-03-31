@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindIfPathExistsInGraphTests: XCTestCase {
+final class FindIfPathExistsInGraphTests: XCTestCase {
     
     // MARK: - Tests
     

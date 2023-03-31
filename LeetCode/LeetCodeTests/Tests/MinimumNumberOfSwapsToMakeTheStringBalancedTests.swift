@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MinimumNumberOfSwapsToMakeTheStringBalancedTests: XCTestCase {
+final class MinimumNumberOfSwapsToMakeTheStringBalancedTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LongestPalindromicSubstringTests: XCTestCase {
+final class LongestPalindromicSubstringTests: XCTestCase {
 
     // MARK: - Tests
 

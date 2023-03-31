@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CheapestFlightsWithinKStopsTests: XCTestCase {
+final class CheapestFlightsWithinKStopsTests: XCTestCase {
 
     // MARK: - Tests
     

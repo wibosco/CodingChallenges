@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MaximumSubarrayTests: XCTestCase {
+final class MaximumSubarrayTests: XCTestCase {
 
     // MARK: - Tests
     

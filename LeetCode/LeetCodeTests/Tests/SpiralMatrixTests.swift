@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SpiralMatrixTests: XCTestCase {
+final class SpiralMatrixTests: XCTestCase {
 
     // MARK: - Tests
     

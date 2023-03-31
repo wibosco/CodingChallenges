@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MultiplyStringsTests: XCTestCase {
+final class MultiplyStringsTests: XCTestCase {
 
     // MARK: - Tests
     

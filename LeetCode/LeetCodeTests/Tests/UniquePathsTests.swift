@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class UniquePathsTests: XCTestCase {
+final class UniquePathsTests: XCTestCase {
     
     // MARK: - Tests
     

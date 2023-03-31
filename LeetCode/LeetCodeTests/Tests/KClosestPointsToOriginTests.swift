@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class KClosestPointsToOriginTests: XCTestCase {
+final class KClosestPointsToOriginTests: XCTestCase {
 
     // MARK: - Tests
     

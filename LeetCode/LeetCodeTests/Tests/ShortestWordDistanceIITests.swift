@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ShortestWordDistanceIITests: XCTestCase {
+final class ShortestWordDistanceIITests: XCTestCase {
 
     // MARK: - Tests
     

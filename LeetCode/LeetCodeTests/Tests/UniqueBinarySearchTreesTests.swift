@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class UniqueBinarySearchTreesTests: XCTestCase {
+final class UniqueBinarySearchTreesTests: XCTestCase {
 
     // MARK: - Tests
     

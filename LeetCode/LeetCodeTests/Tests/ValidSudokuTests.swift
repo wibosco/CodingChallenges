@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ValidSudokuTests: XCTestCase {
+final class ValidSudokuTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -9,7 +9,7 @@
 
 import Foundation
 
-class Summing {
+final class Summing {
     
     //https://www.hackerrank.com/challenges/simple-array-sum
      static func sum(array: [Int]) -> Int {

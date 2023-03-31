@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StackOfPlatesNode {
+final class StackOfPlatesNode {
     let value: Int
     
     // MARK: - Init

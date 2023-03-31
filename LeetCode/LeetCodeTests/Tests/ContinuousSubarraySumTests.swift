@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ContinuousSubarraySumTests: XCTestCase {
+final class ContinuousSubarraySumTests: XCTestCase {
 
     // MARK: - Tests
     

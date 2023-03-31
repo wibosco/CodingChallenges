@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class BinaryTreeLevelOrderTraversalTests: XCTestCase {
+final class BinaryTreeLevelOrderTraversalTests: XCTestCase {
 
     // MARK: - Tests
     

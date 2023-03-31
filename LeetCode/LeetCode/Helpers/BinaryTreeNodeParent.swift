@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BinaryTreeNodeParent {
+final class BinaryTreeNodeParent {
     let val: Int
     
     var left: BinaryTreeNodeParent?

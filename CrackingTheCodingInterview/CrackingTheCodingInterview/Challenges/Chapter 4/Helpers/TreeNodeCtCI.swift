@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TreeNodeCtCI {
+final class TreeNodeCtCI {
     let value: Int
     
     var parent: TreeNodeCtCI?

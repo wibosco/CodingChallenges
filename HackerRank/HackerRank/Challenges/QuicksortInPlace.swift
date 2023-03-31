@@ -8,7 +8,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/quicksort3
-class QuicksortInPlace {
+final class QuicksortInPlace {
     static func sortInPlace(array: inout [Int], leftIndex: Int, rightIndex: Int) {
         
         //if this isn't true then the array is sorted

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
+final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
 
     // MARK: - Tests
 

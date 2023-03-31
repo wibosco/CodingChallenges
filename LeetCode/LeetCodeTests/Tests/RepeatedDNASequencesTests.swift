@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RepeatedDNASequencesTests: XCTestCase {
+final class RepeatedDNASequencesTests: XCTestCase {
 
     // MARK: - Tests
     

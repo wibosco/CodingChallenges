@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class BFSShortReachTests: XCTestCase {
+final class BFSShortReachTests: XCTestCase {
 
     // MARK: - Tests
     

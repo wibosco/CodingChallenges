@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BinarySearchTreeDepthNode {
+final class BinarySearchTreeDepthNode {
 
     // MARK: Properties
     

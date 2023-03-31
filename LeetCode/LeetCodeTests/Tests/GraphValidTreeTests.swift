@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class GraphValidTreeTests: XCTestCase {
+final class GraphValidTreeTests: XCTestCase {
 
     // MARK: - Tests
 

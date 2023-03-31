@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/the-time-in-words
-class TimeInWords {
+final class TimeInWords {
 
      static func timeInWords(hour: Int, minute: Int) -> String {
         

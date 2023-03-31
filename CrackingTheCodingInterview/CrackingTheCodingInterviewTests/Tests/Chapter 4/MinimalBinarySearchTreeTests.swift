@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class MinimalBinarySearchTreeTests: XCTestCase {
+final class MinimalBinarySearchTreeTests: XCTestCase {
     
     // MARK: - Tests
     

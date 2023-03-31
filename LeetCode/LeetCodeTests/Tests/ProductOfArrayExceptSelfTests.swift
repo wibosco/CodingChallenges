@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ProductOfArrayExceptSelfTests: XCTestCase {
+final class ProductOfArrayExceptSelfTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LongestCommonPrefixTests: XCTestCase {
+final class LongestCommonPrefixTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class DiameterOfNAryTreeTests: XCTestCase {
+final class DiameterOfNAryTreeTests: XCTestCase {
 
     // MARK: - Tests
     

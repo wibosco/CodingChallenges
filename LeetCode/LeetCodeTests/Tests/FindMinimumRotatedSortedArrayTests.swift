@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindMinimumRotatedSortedArrayTests: XCTestCase {
+final class FindMinimumRotatedSortedArrayTests: XCTestCase {
 
     // MARK: - Tests
     

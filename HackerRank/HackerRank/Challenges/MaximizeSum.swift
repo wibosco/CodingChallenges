@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/maximize-sum
-class MaximizeSum {
+final class MaximizeSum {
     
     // MARK: Maximum
     

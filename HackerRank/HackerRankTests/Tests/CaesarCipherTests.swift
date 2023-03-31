@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class CaesarCipherTests: XCTestCase {
+final class CaesarCipherTests: XCTestCase {
     
     // MARK: - Tests
     

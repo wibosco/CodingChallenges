@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ValidWordAbbreviationTests: XCTestCase {
+final class ValidWordAbbreviationTests: XCTestCase {
 
     // MARK: - Tests
     

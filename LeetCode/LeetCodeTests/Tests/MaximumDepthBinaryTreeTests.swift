@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MaximumDepthBinaryTreeTests: XCTestCase {
+final class MaximumDepthBinaryTreeTests: XCTestCase {
     
      // MARK: - Test
     

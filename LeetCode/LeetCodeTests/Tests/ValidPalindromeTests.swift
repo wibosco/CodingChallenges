@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ValidPalindromeTests: XCTestCase {
+final class ValidPalindromeTests: XCTestCase {
 
     // MARK: - Tests
     

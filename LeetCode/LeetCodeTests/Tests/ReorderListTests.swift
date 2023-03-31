@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ReorderListTests: XCTestCase {
+final class ReorderListTests: XCTestCase {
 
     // MARK: - Tests
     

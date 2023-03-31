@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class DotProductOfTwoSparseVectorsTests: XCTestCase {
+final class DotProductOfTwoSparseVectorsTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/sherlock-and-squares
-class SherlockSquares {
+final class SherlockSquares {
 
      static func findCountOfSquaresBetweenARange(lowerBoundary: Int, upperBoundary: Int) -> Int {
 //        

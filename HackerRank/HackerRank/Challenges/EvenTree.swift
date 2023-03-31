@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/even-tree
-class EvenTree {
+final class EvenTree {
     
     // MARK: Edges
     
@@ -66,7 +66,7 @@ class EvenTree {
     }
 }
 
-class EvenTreeNode {
+final class EvenTreeNode {
     var value: Int // to help with debugging
     var parent: EvenTreeNode?
     var children = [EvenTreeNode]()

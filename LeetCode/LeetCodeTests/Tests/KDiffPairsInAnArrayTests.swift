@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class KDiffPairsInAnArrayTests: XCTestCase {
+final class KDiffPairsInAnArrayTests: XCTestCase {
 
     // MARK: - Tests
     

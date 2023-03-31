@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class CavityMapTests: XCTestCase {
+final class CavityMapTests: XCTestCase {
     
     // MARK: - Tests
     

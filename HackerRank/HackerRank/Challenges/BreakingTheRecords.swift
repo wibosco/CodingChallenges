@@ -11,7 +11,7 @@ import Foundation
 //https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 struct BreakingTheRecords {
     static func breakingRecords(scores: [Int]) -> (max: Int, min: Int) {
-        class ScoreUpdateCount {
+        final class ScoreUpdateCount {
             private(set) var score = 0
             private(set) var count = 0
             

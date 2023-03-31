@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class TopKFrequentElementsTests: XCTestCase {
+final class TopKFrequentElementsTests: XCTestCase {
 
     // MARK: - Tests
     

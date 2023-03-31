@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class MergeSortTests: XCTestCase {
+final class MergeSortTests: XCTestCase {
 
     // MARK: - Tests
     

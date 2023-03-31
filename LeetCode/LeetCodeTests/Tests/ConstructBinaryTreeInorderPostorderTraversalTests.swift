@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
+final class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
     
     // MARK: - Tests
     

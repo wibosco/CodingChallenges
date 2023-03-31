@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MinCostToConnectAllPointsTests: XCTestCase {
+final class MinCostToConnectAllPointsTests: XCTestCase {
     
     // MARK: - Tests
     

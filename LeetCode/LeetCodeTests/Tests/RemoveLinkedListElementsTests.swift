@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RemoveLinkedListElementsTests: XCTestCase {
+final class RemoveLinkedListElementsTests: XCTestCase {
 
     // MARK: - Tests
     

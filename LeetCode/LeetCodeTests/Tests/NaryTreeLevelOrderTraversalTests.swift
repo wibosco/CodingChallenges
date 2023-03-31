@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class NaryTreeLevelOrderTraversalTests: XCTestCase {
+final class NaryTreeLevelOrderTraversalTests: XCTestCase {
 
     //MARK: - Tests
     

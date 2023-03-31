@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SerializeDeserializeBinaryTreeTests: XCTestCase {
+final class SerializeDeserializeBinaryTreeTests: XCTestCase {
     
     //MARK: - Deserialize
     

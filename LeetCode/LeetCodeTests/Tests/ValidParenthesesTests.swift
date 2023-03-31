@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ValidParenthesesTests: XCTestCase {
+final class ValidParenthesesTests: XCTestCase {
 
     // MARK: - Tests
 

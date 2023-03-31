@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/acm-icpc-team
-class ACMICPCTeam {
+final class ACMICPCTeam {
 
     static func bestCombination(contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
         var maximum = Int(contestantsTopicKnowledge[0], radix: 2)!

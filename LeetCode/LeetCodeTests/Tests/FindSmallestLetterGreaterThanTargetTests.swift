@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
+final class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
     
     // MARK: - Tests
     

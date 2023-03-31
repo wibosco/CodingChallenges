@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/taum-and-bday
-class DikshasBirthday {
+final class DikshasBirthday {
 
      static func costOfGifts(numberOfBlackGifts: Int, numberOfWhiteGifts: Int, costOfBlackGift: Int, costOfWhiteGift: Int, costOfConvertingAGift: Int) -> Int {
         var costOfGifts = 0

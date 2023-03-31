@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class NRepeatedElementInSize2NArrayTests: XCTestCase {
+final class NRepeatedElementInSize2NArrayTests: XCTestCase {
     
     // MARK: - Tests
     

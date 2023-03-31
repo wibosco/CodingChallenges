@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class DFSTests: XCTestCase {
+final class DFSTests: XCTestCase {
 
     // MARK: - Tests
     

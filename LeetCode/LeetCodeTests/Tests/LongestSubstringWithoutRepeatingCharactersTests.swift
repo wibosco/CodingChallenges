@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
+final class LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
 
     // MARK: - Tests
     

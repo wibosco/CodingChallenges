@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 4.2
-class MinimalBinarySearchTree {
+final class MinimalBinarySearchTree {
     var root: MinimalBinarySearchTreeNode?
     
     // MARK: Construct

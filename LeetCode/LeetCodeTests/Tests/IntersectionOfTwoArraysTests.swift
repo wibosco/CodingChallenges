@@ -11,7 +11,7 @@ import XCTest
 @testable import LeetCode
 
 
-class IntersectionOfTwoArraysTests: XCTestCase {
+final class IntersectionOfTwoArraysTests: XCTestCase {
     
     // MARK: - Tests
     

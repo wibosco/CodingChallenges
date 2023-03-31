@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class EarliestMomentWhenEveryoneBecomeFriendsTests: XCTestCase {
+final class EarliestMomentWhenEveryoneBecomeFriendsTests: XCTestCase {
     
     // MARK: - Tests
     

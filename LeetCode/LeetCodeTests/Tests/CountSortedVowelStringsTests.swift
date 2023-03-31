@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CountSortedVowelStringsTests: XCTestCase {
+final class CountSortedVowelStringsTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/caesar-cipher-1
-class CaesarCipher {
+final class CaesarCipher {
 
      static func encrypt(originalString: String, rotate: Int) -> String {
         let alphabet = "abcdefghijklmnopqrstuvwxyz"

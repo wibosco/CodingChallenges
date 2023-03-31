@@ -54,7 +54,7 @@ struct EarliestMomentWhenEveryoneBecomeFriends {
 //   negative value. Update the smaller root to point at the other
 //   root and update the other roots count to include the count that
 //   the former root had
-private class UnionFindCounting {
+private final class UnionFindCounting {
     var ranks: [Int]
     var distinctSetsCount: Int
     

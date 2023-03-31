@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/icecream-parlor
-class IceCreamParlor {
+final class IceCreamParlor {
 
      static func chosenIceCreams(money: Int, iceCreamChoices: [Int]) -> (firstIceCream: Int?, secondIceCream: Int?) {
         for i in 0..<(iceCreamChoices.count-1) {

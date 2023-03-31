@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ProjectBuildOrderNode {
+final class ProjectBuildOrderNode {
     var value: String
     
     var visited = false

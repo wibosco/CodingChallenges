@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class TrimABinarySearchTreeTests: XCTestCase {
+final class TrimABinarySearchTreeTests: XCTestCase {
 
     // MARK: - Tests
     

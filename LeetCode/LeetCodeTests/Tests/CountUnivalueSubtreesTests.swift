@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CountUnivalueSubtreesTests: XCTestCase {
+final class CountUnivalueSubtreesTests: XCTestCase {
     
     // MARK: - Tests
     

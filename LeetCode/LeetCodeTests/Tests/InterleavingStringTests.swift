@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class InterleavingStringTests: XCTestCase {
+final class InterleavingStringTests: XCTestCase {
 
     // MARK: - Tests
     

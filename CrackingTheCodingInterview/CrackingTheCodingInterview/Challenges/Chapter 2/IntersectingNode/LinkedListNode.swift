@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LinkedListNode {
+final class LinkedListNode {
     var value: Int
     var next: LinkedListNode?
     

@@ -35,7 +35,7 @@ struct SearchSortedArrayOfUnknownSize {
     }
 }
 
-class ArrayReader {
+final class ArrayReader {
     let secret: [Int]
     
     // MARK: - Init

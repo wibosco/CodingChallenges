@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ListNodeRandom {
+final class ListNodeRandom {
     var val: Int
     var next: ListNodeRandom?
     var random: ListNodeRandom?

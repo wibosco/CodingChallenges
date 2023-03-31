@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 2.7
-class LinkedListIntersectingNode {
+final class LinkedListIntersectingNode {
      static func areIntersecting(linkedListA: SingleLinkedList, linkedListB: SingleLinkedList) -> Bool {
         var linkedListANode = linkedListA.head
         

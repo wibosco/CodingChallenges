@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MergeIntervalsTests: XCTestCase {
+final class MergeIntervalsTests: XCTestCase {
 
     // MARK: - Tests
 

@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 4.3
-class BinarySearchTreeDepth {
+final class BinarySearchTreeDepth {
     
     var root: BinarySearchTreeDepthNode?
     

@@ -12,7 +12,7 @@ import Foundation
 //
 //Time: O(n) where `n` is the window size
 //Space: O(1)
-class MovingAverage {
+final class MovingAverage {
     private let size: Int
     private var values = [Int]()
     private var sum = 0

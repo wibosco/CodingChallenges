@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BinaryTreeNodeRandom {
+final class BinaryTreeNodeRandom {
     let val: Int
     
     var left: BinaryTreeNodeRandom?

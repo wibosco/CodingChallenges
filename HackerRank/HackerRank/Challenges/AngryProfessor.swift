@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/angry-professor
-class AngryProfessor {
+final class AngryProfessor {
     
      static func shouldCancelClass(studentArrivalTimes: [Int], cancellationThreshold: Int) -> Bool {
         

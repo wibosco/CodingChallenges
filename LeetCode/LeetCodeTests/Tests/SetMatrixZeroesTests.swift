@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SetMatrixZeroesTests: XCTestCase {
+final class SetMatrixZeroesTests: XCTestCase {
 
     // MARK: - Tests
     

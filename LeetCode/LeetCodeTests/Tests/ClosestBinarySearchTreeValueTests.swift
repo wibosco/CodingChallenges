@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ClosestBinarySearchTreeValueTests: XCTestCase {
+final class ClosestBinarySearchTreeValueTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NestedInteger {
+final class NestedInteger {
     private var value: Int?
     private var list: [NestedInteger]?
     

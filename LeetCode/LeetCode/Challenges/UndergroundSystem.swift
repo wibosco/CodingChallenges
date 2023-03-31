@@ -17,7 +17,7 @@ import Foundation
 //Using two dictionaries we track both the current active journeys and the total time it has taken to travel betweent two
 //stations. At the end of each journey we update the record in `times` for that station pair. When finding the average we
 //take the total time between a station pair and divide it by the total number of journeys that make up that time.
-class UndergroundSystem {
+final class UndergroundSystem {
     private var journeys = [Int: (String, Int)]() //id, sn, t
     private var times = [String: (Int, Int)]() //sn+en, total, number
     

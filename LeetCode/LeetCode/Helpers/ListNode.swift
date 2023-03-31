@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ListNode {
+final class ListNode {
     var val: Int
     var next: ListNode?
     

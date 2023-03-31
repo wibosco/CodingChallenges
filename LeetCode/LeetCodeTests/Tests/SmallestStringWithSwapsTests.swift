@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SmallestStringWithSwapsTests: XCTestCase {
+final class SmallestStringWithSwapsTests: XCTestCase {
 
     // MARK: - Tests
     

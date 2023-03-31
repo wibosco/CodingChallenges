@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class SherlockSquaresTests: XCTestCase {
+final class SherlockSquaresTests: XCTestCase {
     
     // MARK: - Tests
     

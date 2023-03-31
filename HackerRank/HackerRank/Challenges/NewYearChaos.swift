@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/new-year-chaos
-class NewYearChaos {
+final class NewYearChaos {
 
      static func numberOfBribesToAchieveQueue(queue: [Int]) -> Int {
         

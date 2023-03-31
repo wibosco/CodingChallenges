@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class GuessNumberHigherOrLowerTests: XCTestCase {
+final class GuessNumberHigherOrLowerTests: XCTestCase {
     
     // MARK: - Tests
     

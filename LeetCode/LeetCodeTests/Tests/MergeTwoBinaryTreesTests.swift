@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MergeTwoBinaryTreesTests: XCTestCase {
+final class MergeTwoBinaryTreesTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ContainerWithMostWaterTests: XCTestCase {
+final class ContainerWithMostWaterTests: XCTestCase {
     
     // MARK: - Tests
     

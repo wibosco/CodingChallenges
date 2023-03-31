@@ -21,7 +21,7 @@ import Foundation
 //nodes on branch, again only until we reach the left most element. If the node has no `right` node then the next element is
 //the stack is now the top - this is why sometimes this operation is O(1) and sometimes O(n). As we gradually run out of
 //`right` nodes we pop more and more elements off the `stack` until we have no more to pop
-class BSTIterator {
+final class BSTIterator {
     private var stack = [BinaryTreeNode]() //Space: O(n)
     
     init(_ root: BinaryTreeNode?) {
@@ -64,7 +64,7 @@ class BSTIterator {
 //Solution Description:
 //Using an array we store an inorder traversal of the tree. We then iterate through that array whenever `next` is called,
 //storing our current position in the array using `index`.
-class BSTIteratorArray {
+final class BSTIteratorArray {
     private var order = [Int]() //Space: O(n)
     private var index = 0
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MinimalBinarySearchTreeNode {
+final class MinimalBinarySearchTreeNode {
 
     // MARK: Properties
     

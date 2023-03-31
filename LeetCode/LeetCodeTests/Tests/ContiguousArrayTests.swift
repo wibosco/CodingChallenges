@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ContiguousArrayTests: XCTestCase {
+final class ContiguousArrayTests: XCTestCase {
 
     // MARK: - Tests
     

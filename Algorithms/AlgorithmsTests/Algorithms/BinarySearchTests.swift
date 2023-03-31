@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class BinarySearchTests: XCTestCase {
+final class BinarySearchTests: XCTestCase {
 
     // MARK: - Tests
     

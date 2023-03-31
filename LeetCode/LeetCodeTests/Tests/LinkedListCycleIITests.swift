@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LinkedListCycleIITests: XCTestCase {
+final class LinkedListCycleIITests: XCTestCase {
 
     // MARK: - Tests
     

@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/apple-and-orange/problem
-class AppleAndOrange {
+final class AppleAndOrange {
     static func countAppleAndOrangesHittingHouse(houseStart: Int, houseEnd: Int, appleTree: Int, orangeTree: Int, apples: [Int], oranges: [Int]) -> (Int, Int) {
         let houseRange = (houseStart...houseEnd)
         let appleHits = apples.reduce(0) { houseRange.contains(appleTree + $1) ? $0 + 1 : $0 }

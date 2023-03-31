@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SearchSortedArrayOfUnknownSizeTests: XCTestCase {
+final class SearchSortedArrayOfUnknownSizeTests: XCTestCase {
     
     // MARK: - Tests
     

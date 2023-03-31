@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/find-digits
-class FindDigits {
+final class FindDigits {
 
      static func findCountOFDivisableValuesOfNumberInNumber(number: Int) -> Int {
         

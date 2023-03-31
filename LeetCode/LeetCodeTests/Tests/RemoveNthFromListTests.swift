@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RemoveNthFromListTests: XCTestCase {
+final class RemoveNthFromListTests: XCTestCase {
     
     // MARK: - Tests
     

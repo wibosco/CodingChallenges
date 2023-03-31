@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CopyListWithRandomPointerTests: XCTestCase {
+final class CopyListWithRandomPointerTests: XCTestCase {
 
     // MARK: - Tests
     

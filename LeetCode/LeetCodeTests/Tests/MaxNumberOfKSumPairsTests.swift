@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MaxNumberOfKSumPairsTests: XCTestCase {
+final class MaxNumberOfKSumPairsTests: XCTestCase {
 
     // MARK: - Tests
     

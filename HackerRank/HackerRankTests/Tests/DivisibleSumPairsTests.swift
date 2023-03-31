@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class DivisibleSumPairsTests: XCTestCase {
+final class DivisibleSumPairsTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class Search2DMatrixTests: XCTestCase {
+final class Search2DMatrixTests: XCTestCase {
 
     // MARK: - Tests
     

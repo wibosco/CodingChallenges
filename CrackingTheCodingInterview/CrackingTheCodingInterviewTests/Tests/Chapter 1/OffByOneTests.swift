@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class OffByOneTests: XCTestCase {
+final class OffByOneTests: XCTestCase {
     
     // MARK: - Tests
     

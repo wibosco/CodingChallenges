@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 1.4
-class PalindromePermutation {
+final class PalindromePermutation {
     
     static func premutationCanBePalindrome(original: String) -> Bool {
         let spacesRemovedOriginal = original.replacingOccurrences(of: " ", with: "").lowercased()

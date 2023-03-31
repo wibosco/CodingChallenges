@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SortCharactersByFrequencyTests: XCTestCase {
+final class SortCharactersByFrequencyTests: XCTestCase {
 
     // MARK: - Tests
     

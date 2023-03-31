@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class BeastTests: XCTestCase {
+final class BeastTests: XCTestCase {
     
     // MARK: Test
     

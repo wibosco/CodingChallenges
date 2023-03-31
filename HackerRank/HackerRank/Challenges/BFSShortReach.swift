@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/bfsshortreach
-class BFSShortReach {
+final class BFSShortReach {
     
     // MARK: Distance
     
@@ -51,7 +51,7 @@ class BFSShortReach {
     }
 }
 
-class BFSSearchReachNode {
+final class BFSSearchReachNode {
     var distanceFromSource = -1
     var visted = false
     

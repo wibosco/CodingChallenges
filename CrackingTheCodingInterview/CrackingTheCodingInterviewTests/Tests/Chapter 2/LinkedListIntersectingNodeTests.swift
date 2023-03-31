@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class LinkedListIntersectingNodeTests: XCTestCase {
+final class LinkedListIntersectingNodeTests: XCTestCase {
     
     // MARK: - Tests
     

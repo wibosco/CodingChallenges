@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindDuplicateNumberTests: XCTestCase {
+final class FindDuplicateNumberTests: XCTestCase {
     
     // MARK: - Tests
     

@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 3.4
-class QueueViaStacks {
+final class QueueViaStacks {
     private var enqueueStack = Stack()
     private var dequeueStack = Stack()
     
@@ -48,7 +48,7 @@ class QueueViaStacks {
     }
 }
 
-private class Stack {
+private final class Stack {
     
     // MARK: - Nodes
     

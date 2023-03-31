@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/utopian-tree
-class UtopianTree {
+final class UtopianTree {
 
      static func heightOfTree(cycles: Int) -> Int {
     

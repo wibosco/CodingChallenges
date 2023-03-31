@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StackOfPlatesStack {
+final class StackOfPlatesStack {
     var nodes = [StackOfPlatesNode]()
     var capacity: Int
     

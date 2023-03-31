@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/manasa-and-stones/problem
-class ManasaAndStones {
+final class ManasaAndStones {
 
      static func possibleValuesForFinalStone(numberOfStones: Int, gapValueA: Int, gapValueB: Int) -> Set<Int> {
 

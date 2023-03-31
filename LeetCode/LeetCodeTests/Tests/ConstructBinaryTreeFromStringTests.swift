@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ConstructBinaryTreeFromStringTests: XCTestCase {
+final class ConstructBinaryTreeFromStringTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class SuccessorBSTTests: XCTestCase {
+final class SuccessorBSTTests: XCTestCase {
     var relationships: [[Int]]!
     var root: TreeNodeCtCI!
     

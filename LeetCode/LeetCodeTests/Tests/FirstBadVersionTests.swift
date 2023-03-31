@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FirstBadVersionTests: XCTestCase {
+final class FirstBadVersionTests: XCTestCase {
 
     // MARK: - Tests
 

@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class PriorityQueueTests: XCTestCase {
+final class PriorityQueueTests: XCTestCase {
 
     // MARK: - Tests
     

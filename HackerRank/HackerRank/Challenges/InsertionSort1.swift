@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/insertionsort1
-class InsertionSort1 {
+final class InsertionSort1 {
     
      static func sortRightMostElementIntoCorrectPosition(array: [Int]) -> [[Int]] {
         var intermediateSteps = [[Int]]()

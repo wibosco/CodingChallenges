@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class NumberOfDaysBetweenTwoDatesTests: XCTestCase {
+final class NumberOfDaysBetweenTwoDatesTests: XCTestCase {
 
     // MARK: - Tests
     

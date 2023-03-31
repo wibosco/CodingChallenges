@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RemoveAllAdjacentDuplicatesInStringTests: XCTestCase {
+final class RemoveAllAdjacentDuplicatesInStringTests: XCTestCase {
     
     // MARK: - Tests
     

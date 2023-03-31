@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class BestTimeToBuyAndSellStockTests: XCTestCase {
+final class BestTimeToBuyAndSellStockTests: XCTestCase {
 
     // MARK: - Tests
     

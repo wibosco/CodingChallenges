@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class DijkstraTests: XCTestCase {
+final class DijkstraTests: XCTestCase {
 
     // MARK: - Tests
     

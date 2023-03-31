@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 1.5
-class OffByOne {
+final class OffByOne {
     
     /**
      Can transform one string into another one with only one change: inserting new charatcer, removing existing character or transforming existing character.

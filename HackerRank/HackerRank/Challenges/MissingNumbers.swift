@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/missing-numbers/problem
-class MissingNumbers {
+final class MissingNumbers {
     
     // MARK: Missing
     

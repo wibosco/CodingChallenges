@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/larrys-array
-class LarrysArray {
+final class LarrysArray {
     
     enum Sequence: Int {
         case BCA

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CapacityToShipPackagesWithinDDaysTests: XCTestCase {
+final class CapacityToShipPackagesWithinDDaysTests: XCTestCase {
 
     // MARK: - Tests
     

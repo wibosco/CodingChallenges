@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class BasicCalculatorIITests: XCTestCase {
+final class BasicCalculatorIITests: XCTestCase {
     
     // MARK: - Tests
     

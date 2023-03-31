@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class RoutePlannerTests: XCTestCase {
+final class RoutePlannerTests: XCTestCase {
     
     // MARK: PathExists
     

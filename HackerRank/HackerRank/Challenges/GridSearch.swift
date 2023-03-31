@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/the-grid-search
-class GridSearch {
+final class GridSearch {
 
      static func gridContainsPattern(grid: [String], pattern: [String]) -> Bool {
      

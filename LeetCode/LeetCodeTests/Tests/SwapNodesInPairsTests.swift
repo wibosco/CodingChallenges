@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SwapNodesInPairsTests: XCTestCase {
+final class SwapNodesInPairsTests: XCTestCase {
 
     // MARK: - Tests
     

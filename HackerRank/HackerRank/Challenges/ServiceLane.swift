@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/service-lane
-class ServiceLane {
+final class ServiceLane {
 
      static func largestVechile(servicelane: [Int], entrance: Int, exit: Int) -> Int {
         

@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/mini-max-sum/problem
-class MinMaxSum {
+final class MinMaxSum {
     
     static func minMaxSum(_ arr: [UInt]) -> (UInt, UInt) {
         guard arr.count == 5 else {

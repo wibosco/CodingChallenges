@@ -20,7 +20,7 @@ import Foundation
 //find the shortest distance between the available indexes. As the indexes will be sorted we can use this property to avoid
 //nested loops instead as we are attempting to find the shortest distance we can increment the lesser of the two indexes (`p1`
 //or `p2`) to potentally shorten the current distance and save on iterations.
-class ShortestWordDistanceII {
+final class ShortestWordDistanceII {
     private var words = [String: [Int]]()
 
     //Time: O(n) where n is the number of elements in `wordsDict`

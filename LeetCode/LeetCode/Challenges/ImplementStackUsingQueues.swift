@@ -11,7 +11,7 @@ import Foundation
 //design
 //queue
 //stack
-class ImplementStackUsingQueues {
+final class ImplementStackUsingQueues {
     private var queue = [Int]()
     private var last: Int? //Time: O(1) for accessing the last element in stack
     

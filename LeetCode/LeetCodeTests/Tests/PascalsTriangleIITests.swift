@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class PascalsTriangleIITests: XCTestCase {
+final class PascalsTriangleIITests: XCTestCase {
 
     // MARK: - Tests
     

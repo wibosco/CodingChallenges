@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SquaresOfSortedArrayTests: XCTestCase {
+final class SquaresOfSortedArrayTests: XCTestCase {
 
     // MARK: - Tests
 

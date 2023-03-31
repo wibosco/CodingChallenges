@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
+final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
     
     // MARK: - Tests
     

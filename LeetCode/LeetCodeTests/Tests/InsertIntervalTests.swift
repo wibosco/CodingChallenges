@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class InsertIntervalTests: XCTestCase {
+final class InsertIntervalTests: XCTestCase {
 
     // MARK: - Tests
     

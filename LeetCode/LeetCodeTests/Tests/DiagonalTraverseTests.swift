@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class DiagonalTraverseTests: XCTestCase {
+final class DiagonalTraverseTests: XCTestCase {
 
     // MARK: - Tests
     

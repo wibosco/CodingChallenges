@@ -22,7 +22,7 @@ import Foundation
 //element so we first move the to-be-removed element to the end of the array (so there are no elements needed to be
 //shuffled), update the map for the swapped elements new index and remove the to-be-removed element from both data
 //structures
-class RandomizedSet {
+final class RandomizedSet {
     private var map = [Int: Int]()
     private var list = [Int]()
     

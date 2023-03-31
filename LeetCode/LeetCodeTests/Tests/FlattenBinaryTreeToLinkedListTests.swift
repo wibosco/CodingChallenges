@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FlattenBinaryTreeToLinkedListTests: XCTestCase {
+final class FlattenBinaryTreeToLinkedListTests: XCTestCase {
 
     // MARK: - Tests
     

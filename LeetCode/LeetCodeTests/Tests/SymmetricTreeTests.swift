@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SymmetricTreeTests: XCTestCase {
+final class SymmetricTreeTests: XCTestCase {
 
     // MARK: - Tests
     

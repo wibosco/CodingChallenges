@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class GroupAnagramsTests: XCTestCase {
+final class GroupAnagramsTests: XCTestCase {
 
     // MARK: - Tests
     

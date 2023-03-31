@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class TimeConverterTests: XCTestCase {
+final class TimeConverterTests: XCTestCase {
     
     // MARK: - Tests
     

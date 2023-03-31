@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class DivideTwoIntegersTests: XCTestCase {
+final class DivideTwoIntegersTests: XCTestCase {
     
     // MARK: - Tests
     

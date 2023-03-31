@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class CountingSortTests: XCTestCase {
+final class CountingSortTests: XCTestCase {
 
     // MARK: - Tests
     

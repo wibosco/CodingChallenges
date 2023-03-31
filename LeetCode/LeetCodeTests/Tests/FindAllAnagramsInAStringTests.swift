@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindAllAnagramsInAStringTests: XCTestCase {
+final class FindAllAnagramsInAStringTests: XCTestCase {
 
     // MARK: - Tests
     

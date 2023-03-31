@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class NextGreaterElementITests: XCTestCase {
+final class NextGreaterElementITests: XCTestCase {
 
     // MARK: - Tests
     

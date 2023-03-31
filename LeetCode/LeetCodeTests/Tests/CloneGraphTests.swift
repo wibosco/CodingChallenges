@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CloneGraphTests: XCTestCase {
+final class CloneGraphTests: XCTestCase {
     
     // MARK: - Tests
     

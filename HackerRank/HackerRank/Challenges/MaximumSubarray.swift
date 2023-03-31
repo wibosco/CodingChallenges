@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/maxsubarray/problem
-class MaximumSubarray {
+final class MaximumSubarray {
 
      static func maximumTotals(array: [Int]) -> (contiguousTotal: Int, nonContiguousTotal: Int) {
         let contiguousTotal = MaximumSubarray.maximumContiguous(array: array)

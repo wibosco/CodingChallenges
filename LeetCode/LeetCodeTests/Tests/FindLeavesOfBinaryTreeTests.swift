@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindLeavesOfBinaryTreeTests: XCTestCase {
+final class FindLeavesOfBinaryTreeTests: XCTestCase {
 
     // MARK: - Tests
     

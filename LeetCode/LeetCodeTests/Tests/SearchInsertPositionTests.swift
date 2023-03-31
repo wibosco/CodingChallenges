@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SearchInsertPositionTests: XCTestCase {
+final class SearchInsertPositionTests: XCTestCase {
 
     // MARK: - Tests
     

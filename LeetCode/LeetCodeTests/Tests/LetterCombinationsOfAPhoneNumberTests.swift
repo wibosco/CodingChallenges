@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LetterCombinationsOfAPhoneNumberTests: XCTestCase {
+final class LetterCombinationsOfAPhoneNumberTests: XCTestCase {
 
     // MARK: - Tests
     

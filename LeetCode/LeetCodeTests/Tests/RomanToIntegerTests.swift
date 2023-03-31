@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RomanToIntegerTests: XCTestCase {
+final class RomanToIntegerTests: XCTestCase {
 
     // MARK: - Tests
     

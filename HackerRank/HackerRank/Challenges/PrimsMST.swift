@@ -11,7 +11,7 @@ import Foundation
 //https://www.hackerrank.com/challenges/primsmstsub
 //MST
 //Prim's Algorithm - https://en.wikipedia.org/wiki/Prim%27s_algorithm
-class PrimsMST {
+final class PrimsMST {
 
     // MARK: Distance
     
@@ -76,7 +76,7 @@ class PrimsMST {
     }
 }
 
-class PrimsMSTNode {
+final class PrimsMSTNode {
     var value: Int
     var connected = false
     var edges = [PrimsMSTNode: PrimsMSTEdge]()
@@ -116,7 +116,7 @@ extension PrimsMSTNode: Hashable {
 }
 
 
-class PrimsMSTEdge {
+final class PrimsMSTEdge {
 
     // MARK: Properties
     
@@ -145,7 +145,7 @@ extension PrimsMSTEdge: Hashable {
     }
 }
 
-class PrimsMinHeap {
+final class PrimsMinHeap {
 
     // MARK: Construct
     

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class PeakIndexMountainArrayTests: XCTestCase {
+final class PeakIndexMountainArrayTests: XCTestCase {
 
    // MARK: - Tests
 

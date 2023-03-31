@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class KthSymbolInGrammarTests: XCTestCase {
+final class KthSymbolInGrammarTests: XCTestCase {
 
     // MARK: - Tests
     

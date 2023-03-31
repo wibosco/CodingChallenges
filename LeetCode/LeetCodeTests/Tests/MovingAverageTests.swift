@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MovingAverageTests: XCTestCase {
+final class MovingAverageTests: XCTestCase {
     
     // MARK: - Tests
     

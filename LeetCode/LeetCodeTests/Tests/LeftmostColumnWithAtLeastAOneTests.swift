@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LeftmostColumnWithAtLeastAOneTests: XCTestCase {
+final class LeftmostColumnWithAtLeastAOneTests: XCTestCase {
 
     // MARK: - Tests
     

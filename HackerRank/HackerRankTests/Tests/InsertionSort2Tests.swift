@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class InsertionSort2Tests: XCTestCase {
+final class InsertionSort2Tests: XCTestCase {
     
     func test_A() {
         

@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 3.2
-class MinStack {
+final class MinStack {
     var nodes = [MinStackNode]()
     
     // MARK: Actions
@@ -55,7 +55,7 @@ class MinStack {
     }
 }
 
-class MinStackNode {
+final class MinStackNode {
     let value: Int
     var lowerNodeMinNode: MinStackNode?
     

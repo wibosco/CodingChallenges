@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class ValidateBSTTests: XCTestCase {
+final class ValidateBSTTests: XCTestCase {
     
     // MARK: InOrder
     

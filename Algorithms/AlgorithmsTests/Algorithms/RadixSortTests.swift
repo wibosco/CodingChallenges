@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class RadixSortTests: XCTestCase {
+final class RadixSortTests: XCTestCase {
 
     // MARK: - Tests
     

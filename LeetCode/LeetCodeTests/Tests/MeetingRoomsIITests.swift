@@ -8,7 +8,7 @@
 import XCTest
 @testable import LeetCode
 
-class MeetingRoomsIITests: XCTestCase {
+final class MeetingRoomsIITests: XCTestCase {
 
     // MARK: - Tests
     

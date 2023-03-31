@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class PartitionListTests: XCTestCase {
+final class PartitionListTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/sherlock-and-array/problem
-class SherlockAndArray {
+final class SherlockAndArray {
 
      static func leftRightEqualityPossible(array: [Int]) -> Bool {
         if array.count < 3 {

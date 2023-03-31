@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 4.1
-class RoutePlanner {
+final class RoutePlanner {
     var nodes: [RoutePlannerNode]?
     
     // MARK: - Nodes

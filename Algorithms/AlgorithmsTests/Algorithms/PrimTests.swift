@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class PrimTests: XCTestCase {
+final class PrimTests: XCTestCase {
     
     // MARK: - Tests
     

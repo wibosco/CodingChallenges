@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RottingOrangesTests: XCTestCase {
+final class RottingOrangesTests: XCTestCase {
 
     // MARK: - Tests
     

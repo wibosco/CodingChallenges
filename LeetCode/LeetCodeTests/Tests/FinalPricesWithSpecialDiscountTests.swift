@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FinalPricesWithSpecialDiscountTests: XCTestCase {
+final class FinalPricesWithSpecialDiscountTests: XCTestCase {
 
     // MARK: - Tests
 

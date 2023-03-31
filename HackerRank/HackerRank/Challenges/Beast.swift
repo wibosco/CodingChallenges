@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/sherlock-and-the-beast
-class Beast {
+final class Beast {
 
     /*
      A Decent Number has the following properties:

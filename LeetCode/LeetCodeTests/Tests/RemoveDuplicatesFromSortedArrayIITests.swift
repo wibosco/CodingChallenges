@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RemoveDuplicatesFromSortedArrayIITests: XCTestCase {
+final class RemoveDuplicatesFromSortedArrayIITests: XCTestCase {
 
     // MARK: - Tests
     

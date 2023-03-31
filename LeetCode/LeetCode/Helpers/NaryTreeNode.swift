@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NaryTreeNode {
+final class NaryTreeNode {
     let val: Int
     
     var children = [NaryTreeNode]()

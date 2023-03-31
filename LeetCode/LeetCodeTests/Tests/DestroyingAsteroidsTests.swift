@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class DestroyingAsteroidsTests: XCTestCase {
+final class DestroyingAsteroidsTests: XCTestCase {
 
     // MARK: - Tests
     

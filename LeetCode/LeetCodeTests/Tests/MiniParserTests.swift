@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MiniParserTests: XCTestCase {
+final class MiniParserTests: XCTestCase {
     
     // MARK: - Tests
     

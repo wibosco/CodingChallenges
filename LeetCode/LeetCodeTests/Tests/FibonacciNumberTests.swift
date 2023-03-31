@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FibonacciNumberTests: XCTestCase {
+final class FibonacciNumberTests: XCTestCase {
 
     // MARK: - Tests
     

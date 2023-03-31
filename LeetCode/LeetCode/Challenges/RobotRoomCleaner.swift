@@ -12,7 +12,7 @@ import Foundation
 struct RobotRoomCleaner {
     
     //Dummy implementation only used so solution will build
-    class Robot {
+    final class Robot {
         // Returns true if the cell in front is open and robot moves into the cell.
         // Returns false if the cell in front is blocked and robot stays in the current cell.
         @discardableResult

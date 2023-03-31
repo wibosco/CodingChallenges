@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class DetermineWhetherMatrixCanBeObtainedByRotationTests: XCTestCase {
+final class DetermineWhetherMatrixCanBeObtainedByRotationTests: XCTestCase {
 
     // MARK: - Tests
     

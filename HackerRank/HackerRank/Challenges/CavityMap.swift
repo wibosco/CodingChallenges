@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/cavity-map
-class CavityMap {
+final class CavityMap {
     
      static func generateCavityMap(map: [String]) -> [String] {
         let cavity = "X"

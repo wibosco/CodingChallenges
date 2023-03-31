@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/time-conversion
-class TimeConverter {
+final class TimeConverter {
     
      static func convertFrom12HourTo24HourUsingDateManipulation(time: String) -> String {
         let dateFormatter = DateFormatter()

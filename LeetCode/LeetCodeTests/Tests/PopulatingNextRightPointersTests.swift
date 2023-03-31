@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class PopulatingNextRightPointersTests: XCTestCase {
+final class PopulatingNextRightPointersTests: XCTestCase {
     
     // MARK: - Tests
     

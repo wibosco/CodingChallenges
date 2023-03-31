@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MaximumSwapTests: XCTestCase {
+final class MaximumSwapTests: XCTestCase {
 
     // MARK: - Tests
     

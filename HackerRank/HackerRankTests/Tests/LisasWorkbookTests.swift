@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class LisasWorkbookTests: XCTestCase {
+final class LisasWorkbookTests: XCTestCase {
     
     // MARK: - Tests
     

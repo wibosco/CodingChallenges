@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/quicksort1
-class Quicksort1Partition {
+final class Quicksort1Partition {
     
     // MARK: - Sort
     

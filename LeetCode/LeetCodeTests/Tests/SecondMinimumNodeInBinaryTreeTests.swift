@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SecondMinimumNodeInBinaryTreeTests: XCTestCase {
+final class SecondMinimumNodeInBinaryTreeTests: XCTestCase {
 
     // MARK: - Tests
     

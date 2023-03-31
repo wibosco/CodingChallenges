@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/bear-and-workbook
-class LisasWorkbook {
+final class LisasWorkbook {
 
      static func specialProblemsInBook(problemsPerChapter: [Int], problemsPerPage: Int) -> Int {
         

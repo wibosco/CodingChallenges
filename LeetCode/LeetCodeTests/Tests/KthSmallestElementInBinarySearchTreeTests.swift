@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class KthSmallestElementInBinarySearchTreeTests: XCTestCase {
+final class KthSmallestElementInBinarySearchTreeTests: XCTestCase {
 
     // MARK: - Tests
     

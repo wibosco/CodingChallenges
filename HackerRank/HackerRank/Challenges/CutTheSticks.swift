@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/cut-the-sticks
-class CutTheSticks {
+final class CutTheSticks {
 
      static func cutUntilDone(sticks: [Int]) -> [Int] {
         

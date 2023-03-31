@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ImplementStackUsingQueuesTests: XCTestCase {
+final class ImplementStackUsingQueuesTests: XCTestCase {
 
     // MARK: - Tests
     

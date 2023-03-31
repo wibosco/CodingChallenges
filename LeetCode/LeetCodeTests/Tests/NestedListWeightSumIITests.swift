@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class NestedListWeightSumIITests: XCTestCase {
+final class NestedListWeightSumIITests: XCTestCase {
 
     // MARK: - Tests
     

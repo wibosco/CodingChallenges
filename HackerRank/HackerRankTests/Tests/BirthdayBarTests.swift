@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class BirthdayBarTests: XCTestCase {
+final class BirthdayBarTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {

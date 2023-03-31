@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class KthLargestElementInArrayTests: XCTestCase {
+final class KthLargestElementInArrayTests: XCTestCase {
 
     // MARK: - Tests
     

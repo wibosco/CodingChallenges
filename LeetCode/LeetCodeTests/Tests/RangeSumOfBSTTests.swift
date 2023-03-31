@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RangeSumOfBSTTests: XCTestCase {
+final class RangeSumOfBSTTests: XCTestCase {
 
     // MARK: - Tests
     

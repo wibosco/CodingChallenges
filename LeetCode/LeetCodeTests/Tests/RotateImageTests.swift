@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RotateImageTests: XCTestCase {
+final class RotateImageTests: XCTestCase {
     
     // MARK: - Tests
     

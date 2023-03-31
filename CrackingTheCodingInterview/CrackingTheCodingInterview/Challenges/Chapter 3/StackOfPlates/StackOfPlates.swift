@@ -9,7 +9,7 @@
 import Foundation
 
 //CtCI 3.3
-class StackOfPlates {
+final class StackOfPlates {
     private let stackCapacity = 2
     
     var stacks = [StackOfPlatesStack]()

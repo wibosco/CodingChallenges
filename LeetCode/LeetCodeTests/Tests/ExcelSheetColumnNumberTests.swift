@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ExcelSheetColumnNumberTests: XCTestCase {
+final class ExcelSheetColumnNumberTests: XCTestCase {
 
     // MARK: - Tests
     

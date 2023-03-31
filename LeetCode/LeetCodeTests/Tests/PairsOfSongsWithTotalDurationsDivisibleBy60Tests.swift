@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class PairsOfSongsWithTotalDurationsDivisibleBy60Tests: XCTestCase {
+final class PairsOfSongsWithTotalDurationsDivisibleBy60Tests: XCTestCase {
 
     // MARK: - Tests
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BinaryMatrix {
+final class BinaryMatrix {
     let matrix: [[Int]]
     
     init(_ matrix: [[Int]]) {

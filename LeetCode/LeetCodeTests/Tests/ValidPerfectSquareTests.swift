@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ValidPerfectSquareTests: XCTestCase {
+final class ValidPerfectSquareTests: XCTestCase {
 
     // MARK: - Tests
     

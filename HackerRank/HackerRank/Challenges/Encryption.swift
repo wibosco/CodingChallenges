@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/encryption
-class Encryption {
+final class Encryption {
 
      static func encrypt(originalString: String) -> String {
         var rowsCount = Int(floor(sqrt(Double(originalString.count))))

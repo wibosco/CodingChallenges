@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindPeakElementTests: XCTestCase {
+final class FindPeakElementTests: XCTestCase {
 
     // MARK: - Tests
     

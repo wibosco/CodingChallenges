@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CombinationsTests: XCTestCase {
+final class CombinationsTests: XCTestCase {
 
     // MARK: - Tests
     

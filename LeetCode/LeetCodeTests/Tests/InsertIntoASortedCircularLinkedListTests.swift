@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class InsertIntoASortedCircularLinkedListTests: XCTestCase {
+final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
 
     // MARK: - Tests
     

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ShortestPathBinaryMatrixTests: XCTestCase {
+final class ShortestPathBinaryMatrixTests: XCTestCase {
     
     // MARK: - Tests
     

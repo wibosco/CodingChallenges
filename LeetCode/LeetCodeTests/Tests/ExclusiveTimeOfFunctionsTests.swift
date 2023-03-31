@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ExclusiveTimeOfFunctionsTests: XCTestCase {
+final class ExclusiveTimeOfFunctionsTests: XCTestCase {
 
     // MARK: - Tests
     

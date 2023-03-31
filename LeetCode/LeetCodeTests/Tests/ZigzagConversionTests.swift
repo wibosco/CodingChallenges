@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ZigzagConversionTests: XCTestCase {
+final class ZigzagConversionTests: XCTestCase {
     
     // MARK: - Tests
     

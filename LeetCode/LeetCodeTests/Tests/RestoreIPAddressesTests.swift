@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class RestoreIPAddressesTests: XCTestCase {
+final class RestoreIPAddressesTests: XCTestCase {
 
     // MARK: - Tests
     

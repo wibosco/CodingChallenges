@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class IsGraphBipartiteTests: XCTestCase {
+final class IsGraphBipartiteTests: XCTestCase {
 
     // MARK: - Tests
     

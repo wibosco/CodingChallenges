@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class AllPathsFromSourceToTargetTests: XCTestCase {
+final class AllPathsFromSourceToTargetTests: XCTestCase {
     
     // MARK: - Tests
     

@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class AddBinaryTests: XCTestCase {
+final class AddBinaryTests: XCTestCase {
 
     // MARK: - Tests
     

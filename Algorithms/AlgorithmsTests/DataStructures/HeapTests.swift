@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class HeapTests: XCTestCase {
+final class HeapTests: XCTestCase {
 
     // MARK: - Tests
     

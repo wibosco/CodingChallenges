@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/kangaroo/problem
-class Kangaroo {
+final class Kangaroo {
     /**
       Think of it as line intersection.
         

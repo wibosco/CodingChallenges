@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class CircularLinkedListTests: XCTestCase {
+final class CircularLinkedListTests: XCTestCase {
     
     // MARK: Circular
     

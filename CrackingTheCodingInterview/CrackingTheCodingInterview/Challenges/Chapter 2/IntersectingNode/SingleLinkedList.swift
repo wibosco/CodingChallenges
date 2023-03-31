@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SingleLinkedList {
+final class SingleLinkedList {
     var head: LinkedListNode?
     
     // MARK: - Add

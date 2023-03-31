@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class MagicSqaureTests: XCTestCase {
+final class MagicSqaureTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {

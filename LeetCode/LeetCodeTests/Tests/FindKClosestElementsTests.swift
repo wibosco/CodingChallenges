@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindKClosestElementsTests: XCTestCase {
+final class FindKClosestElementsTests: XCTestCase {
 
     // MARK: - Tests
     

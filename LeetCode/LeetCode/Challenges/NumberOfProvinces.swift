@@ -145,7 +145,7 @@ struct NumberOfProvinces {
 //3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest negative
 //   value. Update the smaller root to point at the other root and update the other roots count to include the count that the
 //   former root had
-private class UnionFindCounting {
+private final class UnionFindCounting {
     var ranks: [Int]
     var distinctSetsCount: Int
     

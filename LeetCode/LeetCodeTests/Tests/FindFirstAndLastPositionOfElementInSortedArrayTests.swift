@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
+final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
 
     // MARK: - Tests
     

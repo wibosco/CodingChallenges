@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class BuddyStringsTests: XCTestCase {
+final class BuddyStringsTests: XCTestCase {
 
     // MARK: - Tests
     

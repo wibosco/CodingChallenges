@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CrackingTheCodingInterview
 
-class PalindromePermutationTests: XCTestCase {
+final class PalindromePermutationTests: XCTestCase {
     
     // MARK: - Tests
     

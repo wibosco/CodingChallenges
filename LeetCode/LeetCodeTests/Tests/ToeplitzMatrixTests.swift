@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ToeplitzMatrixTests: XCTestCase {
+final class ToeplitzMatrixTests: XCTestCase {
 
     // MARK: - Tests
     

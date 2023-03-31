@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ConvertSortedArrayToBinarySearchTreeTests: XCTestCase {
+final class ConvertSortedArrayToBinarySearchTreeTests: XCTestCase {
 
     // MARK: - Tests
     

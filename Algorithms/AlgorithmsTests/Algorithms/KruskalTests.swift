@@ -9,7 +9,7 @@ import XCTest
 
 @testable import Algorithms
 
-class KruskalTests: XCTestCase {
+final class KruskalTests: XCTestCase {
 
     // MARK: - Tests
     

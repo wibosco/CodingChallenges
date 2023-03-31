@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class MergeKSortedListsTests: XCTestCase {
+final class MergeKSortedListsTests: XCTestCase {
 
     // MARK: - Tests
     

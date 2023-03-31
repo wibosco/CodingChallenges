@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
+final class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
 
     // MARK: - Tests
     

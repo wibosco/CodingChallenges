@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class BuildingsWithOceanViewTests: XCTestCase {
+final class BuildingsWithOceanViewTests: XCTestCase {
 
     // MARK: - Tests
     

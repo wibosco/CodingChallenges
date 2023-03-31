@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/staircase
-class Staircase {
+final class Staircase {
 
      static func staircase(height: Int) -> String {
         

@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ReverseIntegerTests: XCTestCase {
+final class ReverseIntegerTests: XCTestCase {
 
     // MARK: - Tests
     

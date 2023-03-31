@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RoutePlannerQueue {
+final class RoutePlannerQueue {
     lazy var nodes = [RoutePlannerNode]()
     
     // MARK: - Meta

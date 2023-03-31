@@ -10,7 +10,7 @@ import XCTest
 
 @testable import HackerRank
 
-class KaprekarTests: XCTestCase {
+final class KaprekarTests: XCTestCase {
     
     // MARK: - Tests
     

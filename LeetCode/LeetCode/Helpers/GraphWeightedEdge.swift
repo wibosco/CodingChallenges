@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GraphWeightedEdge {
+final class GraphWeightedEdge {
     let source: Int
     let destination: Int
     let weight: Int

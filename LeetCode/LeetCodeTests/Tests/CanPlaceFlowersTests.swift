@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class CanPlaceFlowersTests: XCTestCase {
+final class CanPlaceFlowersTests: XCTestCase {
 
     // MARK: - Tests
     

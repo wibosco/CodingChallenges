@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class ReconstructItineraryTests: XCTestCase {
+final class ReconstructItineraryTests: XCTestCase {
 
     //MARK: - Tests
     

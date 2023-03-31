@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/chocolate-feast
-class ChocolateFeast {
+final class ChocolateFeast {
     
      static func countOfEatenChocolates(dollarsInPocket: Int, chocolatePrice: Int, wrapperExchangeTheshold: Int) -> Int {
         

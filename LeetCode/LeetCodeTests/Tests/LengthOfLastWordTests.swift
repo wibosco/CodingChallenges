@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-class LengthOfLastWordTests: XCTestCase {
+final class LengthOfLastWordTests: XCTestCase {
 
     // MARK: - Tests
     

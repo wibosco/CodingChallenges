@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class UglyNumberTests: XCTestCase {
+final class UglyNumberTests: XCTestCase {
 
     // MARK: - Tests
     

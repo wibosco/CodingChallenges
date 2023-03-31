@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SqrtTests: XCTestCase {
+final class SqrtTests: XCTestCase {
 
     //MARK: - Tests
     

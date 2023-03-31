@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class WallsAndGatesTests: XCTestCase {
+final class WallsAndGatesTests: XCTestCase {
     
     // MARK: - Tests
     

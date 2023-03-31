@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/library-fine
-class LibraryFine {
+final class LibraryFine {
 
      static func calculateFine(dueDate: String, expectedDueDate: String) -> Int {
         let dateFormatter = DateFormatter()

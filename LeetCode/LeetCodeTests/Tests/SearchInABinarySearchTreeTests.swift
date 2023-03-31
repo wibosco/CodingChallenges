@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-class SearchInABinarySearchTreeTests: XCTestCase {
+final class SearchInABinarySearchTreeTests: XCTestCase {
 
     // MARK: - Tests
     
