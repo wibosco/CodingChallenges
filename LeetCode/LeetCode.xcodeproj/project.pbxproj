@@ -530,6 +530,8 @@
 		43313BB929D72335005FCF5D /* SingleNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BB829D72335005FCF5D /* SingleNumberTests.swift */; };
 		43313BBB29D73378005FCF5D /* MissingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BBA29D73378005FCF5D /* MissingNumber.swift */; };
 		43313BBD29D733C9005FCF5D /* MissingNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BBC29D733C9005FCF5D /* MissingNumberTests.swift */; };
+		43313BBF29D8DA2B005FCF5D /* WordPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BBE29D8DA2B005FCF5D /* WordPattern.swift */; };
+		43313BC129D8DA5E005FCF5D /* WordPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BC029D8DA5E005FCF5D /* WordPatternTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1067,6 +1069,8 @@
 		43313BB829D72335005FCF5D /* SingleNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumberTests.swift; sourceTree = "<group>"; };
 		43313BBA29D73378005FCF5D /* MissingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingNumber.swift; sourceTree = "<group>"; };
 		43313BBC29D733C9005FCF5D /* MissingNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingNumberTests.swift; sourceTree = "<group>"; };
+		43313BBE29D8DA2B005FCF5D /* WordPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPattern.swift; sourceTree = "<group>"; };
+		43313BC029D8DA5E005FCF5D /* WordPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPatternTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1402,6 +1406,7 @@
 				3D5C913727A7F7630035C399 /* WallsAndGates.swift */,
 				3D46243427E497D300A888C1 /* WordSearch.swift */,
 				3D5C90F127A7F7620035C399 /* ZigzagConversion.swift */,
+				43313BBE29D8DA2B005FCF5D /* WordPattern.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -1662,6 +1667,7 @@
 				3D5C91FB27A7F76B0035C399 /* WallsAndGatesTests.swift */,
 				3D46243627E4986C00A888C1 /* WordSearchTests.swift */,
 				3D5C928327A7F76C0035C399 /* ZigzagConversionTests.swift */,
+				43313BC029D8DA5E005FCF5D /* WordPatternTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1901,6 +1907,7 @@
 				3D5C918D27A7F7630035C399 /* FinalPricesWithSpecialDiscount.swift in Sources */,
 				3D46241527E1F93C00A888C1 /* UniquePaths.swift in Sources */,
 				3D5C914227A7F7630035C399 /* BinaryTreeNodeParent.swift in Sources */,
+				43313BBF29D8DA2B005FCF5D /* WordPattern.swift in Sources */,
 				3D09759727DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift in Sources */,
 				3D5C91DB27A7F7630035C399 /* LongestPalindromicSubstring.swift in Sources */,
 				3D5C91D127A7F7630035C399 /* SymmetricTree.swift in Sources */,
@@ -2166,6 +2173,7 @@
 				3D5C929A27A7F76C0035C399 /* ValidPalindromeTests.swift in Sources */,
 				3D5C92C327A7F76C0035C399 /* Search2DMatrixTests.swift in Sources */,
 				3D09759927DB628F007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotationTests.swift in Sources */,
+				43313BC129D8DA5E005FCF5D /* WordPatternTests.swift in Sources */,
 				3D5C92C827A7F76C0035C399 /* MergeTwoSortedListsTests.swift in Sources */,
 				3D5C932327A7F76C0035C399 /* BinaryTreeLevelOrderTraversalIITests.swift in Sources */,
 				3D5C92DD27A7F76C0035C399 /* EvaluateReversePolishNotationTests.swift in Sources */,
