@@ -25,7 +25,7 @@ A collection of coding challenges and their solutions from:
 | "Next Permutation" | `pivot & sorting` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Next greater element", "Next lesser element", "Iterating array comparing elements" | `Monotonic stack` |
-| "Longest sub...", "Smallest sub...", "Maximum points"| `Sliding window`|
+| "Longest subsequence", "Smallest subsequence", "Maximum points"| `Sliding window`|
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
 | "Loop/cycle in a graph" | `Disjoint sets` |
@@ -34,6 +34,7 @@ A collection of coding challenges and their solutions from:
 | "Largest value", "Smallest value"| `Heap` |
 | "kth smallest", "kth largest", "kth frequent", "top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
+| "Repeating same path through graph", "Subsequence" | `Memoization`, `DFS` |
 
 ## Data Structure Characteristics
 

@@ -13,7 +13,7 @@ final class BullsAndCowsTest: XCTestCase {
     
     //MARK: - Tests
     
-    func testA() {
+    func test_A() {
         let secret = "1807"
         let guess = "7810"
         
@@ -22,7 +22,7 @@ final class BullsAndCowsTest: XCTestCase {
         XCTAssertEqual(hint, "1A3B")
     }
     
-    func testB() {
+    func test_B() {
         let secret = "1123"
         let guess = "0111"
         

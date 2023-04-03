@@ -534,6 +534,8 @@
 		43313BC129D8DA5E005FCF5D /* WordPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BC029D8DA5E005FCF5D /* WordPatternTests.swift */; };
 		43313BC329D8E844005FCF5D /* BullsAndCows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BC229D8E844005FCF5D /* BullsAndCows.swift */; };
 		43313BC529D8EBAB005FCF5D /* BullsAndCowsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43313BC429D8EBAB005FCF5D /* BullsAndCowsTest.swift */; };
+		43ABE96429DA2868009B2F1B /* LongestIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABE96329DA2868009B2F1B /* LongestIncreasingSubsequence.swift */; };
+		43ABE96629DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABE96529DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1075,6 +1077,8 @@
 		43313BC029D8DA5E005FCF5D /* WordPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPatternTests.swift; sourceTree = "<group>"; };
 		43313BC229D8E844005FCF5D /* BullsAndCows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsAndCows.swift; sourceTree = "<group>"; };
 		43313BC429D8EBAB005FCF5D /* BullsAndCowsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsAndCowsTest.swift; sourceTree = "<group>"; };
+		43ABE96329DA2868009B2F1B /* LongestIncreasingSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestIncreasingSubsequence.swift; sourceTree = "<group>"; };
+		43ABE96529DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestIncreasingSubsequenceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1267,6 +1271,7 @@
 				3D5C90A927A7F7620035C399 /* LinkedListCycle.swift */,
 				3D5C910B27A7F7630035C399 /* LinkedListCycleII.swift */,
 				3D5C90E627A7F7620035C399 /* LongestCommonPrefix.swift */,
+				43ABE96329DA2868009B2F1B /* LongestIncreasingSubsequence.swift */,
 				3D5C912A27A7F7630035C399 /* LongestPalindromicSubstring.swift */,
 				3D5C90CF27A7F7620035C399 /* LongestSubstringWithoutRepeatingCharacters.swift */,
 				3D5C90B027A7F7620035C399 /* LowestCommonAncestorBinarySearchTree.swift */,
@@ -1532,6 +1537,7 @@
 				3D5C920B27A7F76B0035C399 /* LinkedListCycleIITests.swift */,
 				3D5C926127A7F76C0035C399 /* LinkedListCycleTests.swift */,
 				3D5C920527A7F76B0035C399 /* LongestCommonPrefixTests.swift */,
+				43ABE96529DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift */,
 				3D5C927E27A7F76C0035C399 /* LongestPalindromicSubstringTests.swift */,
 				3D5C922B27A7F76B0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift */,
 				3D5C922C27A7F76B0035C399 /* LowestCommonAncestorBinarySearchTreeTests.swift */,
@@ -2037,6 +2043,7 @@
 				3D3B213F27D6B23F0055C0D1 /* ThreeSumClosest.swift in Sources */,
 				3D5C91AB27A7F7630035C399 /* ReverseInteger.swift in Sources */,
 				3D5C91E027A7F7630035C399 /* SearchInABinarySearchTree.swift in Sources */,
+				43ABE96429DA2868009B2F1B /* LongestIncreasingSubsequence.swift in Sources */,
 				3D5C91BC27A7F7630035C399 /* LinkedListCycleII.swift in Sources */,
 				3D42A46927F4F27400687F75 /* ShortestWordDistanceII.swift in Sources */,
 				3D46242527E2921900A888C1 /* SortColors.swift in Sources */,
@@ -2183,6 +2190,7 @@
 				43313BC129D8DA5E005FCF5D /* WordPatternTests.swift in Sources */,
 				3D5C92C827A7F76C0035C399 /* MergeTwoSortedListsTests.swift in Sources */,
 				3D5C932327A7F76C0035C399 /* BinaryTreeLevelOrderTraversalIITests.swift in Sources */,
+				43ABE96629DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift in Sources */,
 				3D5C92DD27A7F76C0035C399 /* EvaluateReversePolishNotationTests.swift in Sources */,
 				3D5C92BA27A7F76C0035C399 /* RottingOrangesTests.swift in Sources */,
 				3D46241F27E2432B00A888C1 /* AddBinaryTests.swift in Sources */,
