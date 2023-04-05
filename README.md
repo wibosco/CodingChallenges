@@ -16,7 +16,7 @@ A collection of coding challenges and their solutions from:
 ## Hints for how to solve:
 
 | Keywords | Techniques |
-| ----------- | ----------- |
+| -------- | ---------- |
 | "Shortest path", "Level-by-level" | `BFS` |
 | "All paths" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
@@ -26,6 +26,7 @@ A collection of coding challenges and their solutions from:
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Next greater element", "Next lesser element", "Iterating array comparing elements" | `Monotonic stack` |
 | "Longest subsequence", "Smallest subsequence", "Maximum points"| `Sliding window`|
+| "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
 | "Loop/cycle in a graph" | `Disjoint sets` |
@@ -34,7 +35,13 @@ A collection of coding challenges and their solutions from:
 | "Largest value", "Smallest value"| `Heap` |
 | "kth smallest", "kth largest", "kth frequent", "top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
-| "Repeating same path through graph", "Subsequence" | `Memoization`, `DFS` |
+
+## Need Tips
+
+| Need to... | Technique | Example |
+| ---------- | --------- | ------- |
+| Optimise graph traversal | `Memoization`  | `LongestIncreasingSubsequence` |
+| Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
 
 ## Data Structure Characteristics
 
