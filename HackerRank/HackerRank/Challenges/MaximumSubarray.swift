@@ -29,8 +29,7 @@ final class MaximumSubarray {
                 if nonContiguousTotal > 0 {
                     
                     nonContiguousTotal = max(nonContiguousTotal, (nonContiguousTotal + value))
-                }
-                else {
+                } else {
                     
                     nonContiguousTotal = max(nonContiguousTotal, value)
                 }

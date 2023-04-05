@@ -1,0 +1,28 @@
+# By default, SwiftLint uses a set of sensible default rules you can adjust:
+disabled_rules: # rule identifiers turned on by default to exclude from running
+ - trailing_whitespace
+ - identifier_name
+ - comment_spacing
+ - function_body_length
+ - type_name
+ - file_length
+ - for_where
+ - function_parameter_count
+ - large_tuple
+ - cyclomatic_complexity
+ - type_body_length
+
+excluded:
+ - CodingChallengesTests/
+ - Algorithms/AlgorithmsTests/
+ - CrackingTheCodingInterview/CrackingTheCodingInterviewTests/
+ - HackerRank/HackerRankTests/
+ - LeetCode/LeetCodeTests/
+ 
+line_length:
+  warning: 140
+  ignores_function_declarations: true
+  ignores_comments: false
+  ignores_interpolated_strings: true
+  ignores_urls: true
+

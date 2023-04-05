@@ -48,7 +48,7 @@ struct ValidNumber {
             } else if c == "+" || c == "-" {
                 if foundExponent && !foundSign && !foundNumber {
                     foundSign = true
-                }  else {
+                } else {
                     return false
                 }
             } else {

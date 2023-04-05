@@ -10,13 +10,12 @@ import Foundation
 
 //https://leetcode.com/problems/binary-tree-level-order-traversal/
 //binary tree
-//BFS
 struct BinaryTreeLevelOrderTraversal {
     
-    //Time: O(n)
+    //Time: O(n) where `n` is the number of nodes in the tree
     //Space: O(n) worst/average (O(1) for best)
     //iterative
-    //queue - use queue count as level count
+    //BFS
     static func levelOrder(_ root: BinaryTreeNode?) -> [[Int]] {
         guard let root = root else {
             return []

@@ -70,7 +70,7 @@ extension GraphVertice {
         
         var adjList = [[Int]]()
         for n in orderedNodes {
-            adjList.append(n.neighbors.map { $0.val }.sorted { $0 < $1 } )
+            adjList.append(n.neighbors.map { $0.val }.sorted { $0 < $1 })
         }
         
         return adjList

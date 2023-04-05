@@ -50,7 +50,7 @@ final class Encryption {
             for rowIndex in 0..<rowsCount {
                 let row = grid[rowIndex]
 
-                if row.count > columnIndex{
+                if row.count > columnIndex {
                     encryptString += grid[rowIndex][columnIndex]
                 }
             }

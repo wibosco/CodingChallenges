@@ -28,9 +28,9 @@ final class CaesarCipher {
             var encryptedCharacter = character
             
             if uncapitalisedLetters.contains(character) {
-                encryptedCharacter = retrieveCharacterAfterRotation(character: character, characterSet: uncapitalisedLetters, rotate: rotate)
+                encryptedCharacter = retrieveCharacterAfterRotation(character, uncapitalisedLetters, rotate)
             } else if capitalisedLetters.contains(character) {
-                encryptedCharacter = retrieveCharacterAfterRotation(character: character, characterSet: capitalisedLetters, rotate: rotate)
+                encryptedCharacter = retrieveCharacterAfterRotation(character, capitalisedLetters, rotate)
             }
             
             encryptedString += String(encryptedCharacter)
@@ -39,7 +39,7 @@ final class CaesarCipher {
         return encryptedString
     }
     
-     static func retrieveCharacterAfterRotation(character: Character, characterSet: [Character], rotate: Int) -> Character {
+     static func retrieveCharacterAfterRotation(_ character: Character, _ characterSet: [Character], _ rotate: Int) -> Character {
         let index = characterSet.firstIndex(of: character)!
         let indexAfterRotation = index + rotate
         var indexForEncryptedCharacter = indexAfterRotation

@@ -19,7 +19,7 @@ final class UniqueBinarySearchTreesTests: XCTestCase {
         
         let count = UniqueBinarySearchTrees.numTrees(n)
         
-        XCTAssertEqual(count,  5)
+        XCTAssertEqual(count, 5)
     }
     
     func test_B() {
@@ -27,7 +27,7 @@ final class UniqueBinarySearchTreesTests: XCTestCase {
         
         let count = UniqueBinarySearchTrees.numTrees(n)
         
-        XCTAssertEqual(count,  1)
+        XCTAssertEqual(count, 1)
     }
     
     func test_C() {
@@ -35,7 +35,7 @@ final class UniqueBinarySearchTreesTests: XCTestCase {
         
         let count = UniqueBinarySearchTrees.numTrees(n)
         
-        XCTAssertEqual(count,  2)
+        XCTAssertEqual(count, 2)
     }
     
     func test_D() {
@@ -43,6 +43,6 @@ final class UniqueBinarySearchTreesTests: XCTestCase {
         
         let count = UniqueBinarySearchTrees.numTrees(n)
         
-        XCTAssertEqual(count,  429)
+        XCTAssertEqual(count, 429)
     }
 }

@@ -12,27 +12,25 @@ import Foundation
 final class ChocolateFeast {
     
      static func countOfEatenChocolates(dollarsInPocket: Int, chocolatePrice: Int, wrapperExchangeTheshold: Int) -> Int {
-        
         let chocolatesBrought = dollarsInPocket/chocolatePrice
-        let chocolatesExchanged = ChocolateFeast.exchangeWrappersForChocolate(wrappers: chocolatesBrought, wrapperExchangeTheshold: wrapperExchangeTheshold)
+        let chocolatesExchanged = exchangeWrappersForChocolate(chocolatesBrought,
+                                                               wrapperExchangeTheshold)
         
         return chocolatesBrought + chocolatesExchanged
     }
     
-     static func exchangeWrappersForChocolate(wrappers: Int, wrapperExchangeTheshold: Int) -> Int {
-        
+     static func exchangeWrappersForChocolate(_ wrappers: Int, _ wrapperExchangeTheshold: Int) -> Int {
         var chocolatesFromExchange = wrappers/wrapperExchangeTheshold
         
         if chocolatesFromExchange > 0 {
-            
             let leftOverWrappersCount = wrappers % wrapperExchangeTheshold
             
             let furtherChocolateExchange = chocolatesFromExchange + leftOverWrappersCount
             
-            let potentialFurtherChocolateInExchange = ChocolateFeast.exchangeWrappersForChocolate(wrappers: furtherChocolateExchange, wrapperExchangeTheshold: wrapperExchangeTheshold)
+            let potentialFurtherChocolateInExchange = exchangeWrappersForChocolate(furtherChocolateExchange,
+                                                                                   wrapperExchangeTheshold)
             
             if potentialFurtherChocolateInExchange > 0 {
-                
                 chocolatesFromExchange += potentialFurtherChocolateInExchange
             }
         }

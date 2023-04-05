@@ -29,7 +29,7 @@ struct ReverseLinkedList {
             return nil
         }
         
-        var prev: ListNode? = nil
+        var prev: ListNode?
         var cur: ListNode? = head
         
         while cur != nil { //Time: O(n/2)

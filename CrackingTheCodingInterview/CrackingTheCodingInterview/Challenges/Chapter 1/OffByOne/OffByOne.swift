@@ -11,9 +11,9 @@ import Foundation
 //CtCI 1.5
 final class OffByOne {
     
-    /**
-     Can transform one string into another one with only one change: inserting new charatcer, removing existing character or transforming existing character.
-     */
+    //Solution Description:
+    //Can transform one string into another one with only one change: inserting new charatcer, removing existing
+    //character or transforming existing character.
     static func canTransformSourceStringIntoDestinationStringWithOneChange(source: String, destination: String) -> Bool {
         if abs(source.count - destination.count) > 1 {
             return false

@@ -11,7 +11,7 @@ import Foundation
 //https://www.hackerrank.com/challenges/taum-and-bday
 final class DikshasBirthday {
 
-     static func costOfGifts(numberOfBlackGifts: Int, numberOfWhiteGifts: Int, costOfBlackGift: Int, costOfWhiteGift: Int, costOfConvertingAGift: Int) -> Int {
+     static func costOfGifts(_ numberOfBlackGifts: Int, _ numberOfWhiteGifts: Int, _ costOfBlackGift: Int, _ costOfWhiteGift: Int, _ costOfConvertingAGift: Int) -> Int {
         var costOfGifts = 0
         
         if costOfBlackGift == costOfWhiteGift {

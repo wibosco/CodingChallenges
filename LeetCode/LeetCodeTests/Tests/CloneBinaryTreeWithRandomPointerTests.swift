@@ -15,7 +15,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
     // MARK: - Tests
 
     func test_A() {
-        let data = [[1, nil], nil, [4, 3], [7,0]]
+        let data = [[1, nil], nil, [4, 3], [7, 0]]
         
         let root = BinaryTreeNodeRandom.deserialize(data)
         
@@ -27,7 +27,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
     }
     
     func test_B() {
-        let data = [[1, 4], nil, [1,0], nil, [1, 5], [1, 5]]
+        let data = [[1, 4], nil, [1, 0], nil, [1, 5], [1, 5]]
         
         let root = BinaryTreeNodeRandom.deserialize(data)
         
@@ -39,7 +39,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
     }
     
     func test_C() {
-        let data = [[1, 6], [2, 5], [3, 4], [4, 3], [5, 2], [6, 1], [7,0]]
+        let data = [[1, 6], [2, 5], [3, 4], [4, 3], [5, 2], [6, 1], [7, 0]]
         
         let root = BinaryTreeNodeRandom.deserialize(data)
         

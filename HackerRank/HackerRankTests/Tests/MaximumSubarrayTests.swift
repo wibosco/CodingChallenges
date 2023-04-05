@@ -15,7 +15,7 @@ final class MaximumSubarrayTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let array = [1,2,3,4]
+        let array = [1, 2, 3, 4]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
         
@@ -24,7 +24,7 @@ final class MaximumSubarrayTests: XCTestCase {
     }
     
     func test_B() {
-        let array = [2,-1,2,3,4,-5]
+        let array = [2, -1, 2, 3, 4, -5]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
         
@@ -42,7 +42,7 @@ final class MaximumSubarrayTests: XCTestCase {
     }
     
     func test_D() {
-        let array = [-1,-2,-3,-4,-5,-6]
+        let array = [-1, -2, -3, -4, -5, -6]
         
         let maximums = MaximumSubarray.maximumTotals(array: array)
         

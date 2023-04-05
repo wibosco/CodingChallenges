@@ -33,7 +33,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //Similar to: https://leetcode.com/problems/intersection-of-two-linked-lists/
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
     //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
-    static func lowestCommonAncestor(_ p: BinaryTreeNodeParent?,_ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
+    static func lowestCommonAncestor(_ p: BinaryTreeNodeParent?, _ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
         guard let p = p, let q = q else {
             return nil
         }
@@ -63,7 +63,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //
     //As we are only interested in the lowest common ancestor rather than any common ancestor we need to ensure that we pass
     //back the first node that is true for 2 of the above 3 scenarios. When we find this node we set it to `lca`
-    static func lowestCommonAncestorLong(_ p: BinaryTreeNodeParent?,_ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
+    static func lowestCommonAncestorLong(_ p: BinaryTreeNodeParent?, _ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
         guard let p = p, let q = q else {
             return nil
         }
@@ -81,11 +81,10 @@ struct LowestCommonAncestorBinaryTreeIII {
     }
     
     @discardableResult
-    private static func dfs(_ root: BinaryTreeNodeParent?, _ p: BinaryTreeNodeParent,_ q: BinaryTreeNodeParent, _ lca: inout BinaryTreeNodeParent?) -> Bool {
+    private static func dfs(_ root: BinaryTreeNodeParent?, _ p: BinaryTreeNodeParent, _ q: BinaryTreeNodeParent, _ lca: inout BinaryTreeNodeParent?) -> Bool {
         guard let root = root, lca == nil else {
             return false
         }
-
         
         let isRootPOrQ = (root.val == p.val) || (root.val == q.val)
         

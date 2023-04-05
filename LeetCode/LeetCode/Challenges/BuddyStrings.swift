@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 //https://leetcode.com/problems/buddy-strings/
 //string
 struct BuddyStrings {
@@ -20,7 +19,7 @@ struct BuddyStrings {
     //Solution Description:
     //In order for `s` to be a buddy of `goal`, both strings need to be the same length, contain the same characters and
     //at most have 2 mismatched characters. We determine this by iterating through `s` and `goal` and compare the
-    //characters found at each index to see if they match. If the characters don't match we increment `mismatches` , if
+    //characters found at each index to see if they match. If the characters don't match we increment `mismatches`, if
     //`mismatches` ever gets above 2 then we have too many mismatches for a single character switch to resolve so
     //`mismatches` ever becomes >= 3 we can return earlier. As well as comparing mismatches we also track which characters
     //are in each string and how frequently those characters appear. After iterating through `s` and `goal` we iterate

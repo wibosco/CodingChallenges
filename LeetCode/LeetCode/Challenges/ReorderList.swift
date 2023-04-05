@@ -33,7 +33,7 @@ struct ReorderList {
         }
         
         //reverse
-        var prev: ListNode? = nil
+        var prev: ListNode?
         var cur: ListNode? = slow
         
         while cur != nil { //Time: O(n/2)

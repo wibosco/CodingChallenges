@@ -16,4 +16,4 @@ jobs:
     - name: Install Bundle
       run: bundle install
     - name: Run tests
-      run: bundle exec fastlane run_unit_tests --verbose
+      run: bundle exec fastlane run_all_tests --verbose

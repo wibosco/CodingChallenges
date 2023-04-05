@@ -25,14 +25,12 @@ final class NewYearChaos {
             if (actualValueAtIndex - maxmimumQueueJump) > expectedValueAtIndex {
                 
                 return -1
-            }
-            else {
+            } else {
                 
                 if actualValueAtIndex > expectedValueAtIndex {
                     
                     numberOfBribesToAchieveQueue += actualValueAtIndex - expectedValueAtIndex
-                }
-                else {
+                } else {
                     
                     for nextIndex in index+1..<queue.count {
                         
@@ -78,8 +76,7 @@ final class NewYearChaos {
             }
             
             return inversions
-        }
-        else {
+        } else {
             
             return -1
         }

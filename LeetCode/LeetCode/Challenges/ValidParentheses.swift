@@ -11,9 +11,9 @@ import Foundation
 //https://leetcode.com/problems/valid-parentheses/
 //string
 struct ValidParentheses {
-    static let mapping: [Character: Character] = ["(" : ")",
-                                                  "{" : "}",
-                                                  "[" : "]"]
+    static let mapping: [Character: Character] = ["(": ")",
+                                                  "{": "}",
+                                                  "[": "]"]
     
     //Time: O(n)
     //Space: O(n)

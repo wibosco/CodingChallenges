@@ -15,7 +15,7 @@ final class IceCreamParlorTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let iceCreamChoices = [1,4,5,3,2]
+        let iceCreamChoices = [1, 4, 5, 3, 2]
         let money = 4
         
         let chosenIceCreams = IceCreamParlor.chosenIceCreams(money: money, iceCreamChoices: iceCreamChoices)
@@ -25,7 +25,7 @@ final class IceCreamParlorTests: XCTestCase {
     }
     
     func test_B() {
-        let iceCreamChoices = [2,2,4,3]
+        let iceCreamChoices = [2, 2, 4, 3]
         let money = 4
         
         let chosenIceCreams = IceCreamParlor.chosenIceCreams(money: money, iceCreamChoices: iceCreamChoices)

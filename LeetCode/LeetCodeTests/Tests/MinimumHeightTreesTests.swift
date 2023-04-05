@@ -11,7 +11,7 @@ import XCTest
 
 final class MinimumHeightTreesTests: XCTestCase {
 
-    //MARK: - Tests
+    // MARK: - Tests
     
     func test_A() {
         let n = 4

@@ -24,8 +24,8 @@ struct GameOfLife {
         var nextBoard = Array(repeating: Array(repeating: 0, count: board[0].count), count: board.count)
         
         let relativeIndexing = [[-1, -1], [-1, 0], [-1, 1],
-                                [0, -1],           [0, 1],
-                                [1, -1],  [1, 0],  [1, 1]]
+                                [0, -1], [0, 1],
+                                [1, -1], [1, 0], [1, 1]]
         
         for row in 0..<board.count {
             for column in 0..<board[row].count {

@@ -65,7 +65,7 @@ struct LongestPalindromicSubstring {
     //Time: O(n^3)
     static func longestPalindromeSlow(_ s: String) -> String {
         let characters = Array(s)
-        var longestPalindrome = Array(arrayLiteral: characters[0])
+        var longestPalindrome = Array(characters[...0])
 
         var left = 0
         while left < characters.count {

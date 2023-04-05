@@ -18,14 +18,14 @@ final class CavityMapTests: XCTestCase {
         let map = ["1112",
                    "1912",
                    "1892",
-                   "1234",]
+                   "1234"]
         
         let cavityMap = CavityMap.generateCavityMap(map: map)
         
         let expectedCavityMap = ["1112",
                                  "1X12",
                                  "18X2",
-                                 "1234",]
+                                 "1234"]
         
         XCTAssertEqual(expectedCavityMap, cavityMap)
     }

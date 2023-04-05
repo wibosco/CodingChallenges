@@ -58,7 +58,7 @@ struct RemoveAllAdjacentDuplicatesInString {
         var p = 0
         var result = Array(s)
         
-        while p < (result.count - 1)  {
+        while p < (result.count - 1) {
             if result[p] == result[(p + 1)] {
                 result.remove(at: (p + 1)) //O(n) operation
                 result.remove(at: p) //O(n) operation

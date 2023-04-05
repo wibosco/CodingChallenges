@@ -20,7 +20,8 @@ final class PalindromePermutation {
         
         //Not sure if we need this shortcut?
         if spacesRemovedOriginal.count == 2 {
-            if spacesRemovedOriginal[spacesRemovedOriginal.startIndex] == spacesRemovedOriginal[spacesRemovedOriginal.index(spacesRemovedOriginal.endIndex, offsetBy: -1)] {
+            if spacesRemovedOriginal[spacesRemovedOriginal.startIndex] ==
+                spacesRemovedOriginal[spacesRemovedOriginal.index(spacesRemovedOriginal.endIndex, offsetBy: -1)] {
                 return true
             } else {
                 return false
@@ -44,8 +45,8 @@ final class PalindromePermutation {
         return true
     }
     
-    static func countOccurrencesOfCharacters(original: String) -> [String : Int] {
-        var occurrences = [String : Int]()
+    static func countOccurrencesOfCharacters(original: String) -> [String: Int] {
+        var occurrences = [String: Int]()
         
         for character in original {
             if occurrences[String(character)] != nil {

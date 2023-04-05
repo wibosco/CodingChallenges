@@ -49,7 +49,6 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
         let words = ["kuvp",
                      "q"]
         let order = "ngxlkthsjuoqcpavbfdermiywz"
-
         
         let isSorted = VerifyingAnAlienDictionary.isAlienSorted(words, order)
         

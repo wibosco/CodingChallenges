@@ -12,7 +12,7 @@ import XCTest
 
 final class AddStringsTests: XCTestCase {
 
-    // MARK:  - Tests
+    // MARK: - Tests
     
     func test_A() {
         let num1 = "11"

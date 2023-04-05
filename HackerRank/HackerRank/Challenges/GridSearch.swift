@@ -23,8 +23,8 @@ final class GridSearch {
                     
                     let rangesOfFirstPattern = GridSearch.rangeOfAllOccurrancesOfPatternInRow(row: row, pattern: pattern[0])
                     
-                    let newPattern = pattern[1..<pattern.count].map{$0}
-                    let newGrid = grid[(index+1)..<grid.count].map{$0}
+                    let newPattern = pattern[1..<pattern.count].map {$0}
+                    let newGrid = grid[(index+1)..<grid.count].map {$0}
                     
                     for range in rangesOfFirstPattern {
                         
@@ -45,14 +45,13 @@ final class GridSearch {
         
         if patternRange != nil {
             
-            let newPattern = pattern[1..<pattern.count].map{$0}
-            let newGrid = grid[1..<grid.count].map{$0}
+            let newPattern = pattern[1..<pattern.count].map {$0}
+            let newGrid = grid[1..<grid.count].map {$0}
             
             if newPattern.count > 0 {
             
                 return GridSearch.doesContainPatternMatchingRange(grid: newGrid, pattern: newPattern, range: range)
-            }
-            else {
+            } else {
                 
                 return true
             }
@@ -74,7 +73,7 @@ final class GridSearch {
                 }
                 
                 let range = index..<upperLimit
-                let patternRange = row.range(of: pattern, options: .caseInsensitive, range:range, locale: nil)
+                let patternRange = row.range(of: pattern, options: .caseInsensitive, range: range, locale: nil)
 
                 if let patternRange = patternRange {
                     occurrances.append(patternRange)

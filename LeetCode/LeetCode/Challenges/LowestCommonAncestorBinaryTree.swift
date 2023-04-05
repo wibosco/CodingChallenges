@@ -100,7 +100,7 @@ struct LowestCommonAncestorBinaryTree {
     }
     
     @discardableResult
-    private static func findPath(to node: BinaryTreeNode, from root: BinaryTreeNode?,  path: inout [BinaryTreeNode]) -> Bool {
+    private static func findPath(to node: BinaryTreeNode, from root: BinaryTreeNode?, path: inout [BinaryTreeNode]) -> Bool {
         guard let root = root else {
             return false
         }

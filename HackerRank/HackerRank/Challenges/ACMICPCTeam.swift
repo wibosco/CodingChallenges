@@ -10,8 +10,8 @@ import Foundation
 
 //https://www.hackerrank.com/challenges/acm-icpc-team
 final class ACMICPCTeam {
-
-    static func bestCombination(contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
+    
+    static func bestCombination(_ contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
         var maximum = Int(contestantsTopicKnowledge[0], radix: 2)!
         var teamsKnowledgeScore = [Int]()
         
@@ -47,11 +47,10 @@ final class ACMICPCTeam {
             }
         }
         
-        
         return (maximumTopics, teamsWithMaximumScore)
     }
     
-     static func bestCombinationAlt(contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
+     static func bestCombinationAlt(_ contestantsTopicKnowledge: [String]) -> (maximumTopicsKnown: Int, teamsThatCanAchieveThis: Int) {
         var maximum = 0
         var teamsKnowledgeScore = [Int]()
         

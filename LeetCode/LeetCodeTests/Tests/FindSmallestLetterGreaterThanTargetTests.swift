@@ -24,7 +24,7 @@ final class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
     }
     
     func test_B() {
-        let letters: [Character] = ["c","f","j"]
+        let letters: [Character] = ["c", "f", "j"]
         let target: Character = "c"
         
         let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
@@ -33,7 +33,7 @@ final class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
     }
     
     func test_C() {
-        let letters: [Character] = ["c","f","j"]
+        let letters: [Character] = ["c", "f", "j"]
         let target: Character = "d"
         
         let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
@@ -42,7 +42,7 @@ final class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
     }
     
     func test_D() {
-        let letters: [Character] = ["c","f","j"]
+        let letters: [Character] = ["c", "f", "j"]
         let target: Character = "g"
         
         let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
@@ -51,7 +51,7 @@ final class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
     }
     
     func test_E() {
-        let letters: [Character] = ["c","f","j"]
+        let letters: [Character] = ["c", "f", "j"]
         let target: Character = "j"
         
         let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
@@ -60,7 +60,7 @@ final class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
     }
     
     func test_F() {
-        let letters: [Character] = ["c","f","j"]
+        let letters: [Character] = ["c", "f", "j"]
         let target: Character = "z"
         
         let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)

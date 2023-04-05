@@ -72,14 +72,14 @@ struct ProductOfArrayExceptSelf {
     static func productExceptSelfProducts(_ nums: [Int]) -> [Int] {
         var productsFromTheLeft = Array(repeating: 1, count: nums.count)
         var leftProduct = 1
-        for i in 0..<nums.count{
+        for i in 0..<nums.count {
             productsFromTheLeft[i] = leftProduct
             leftProduct = nums[i] * leftProduct //we only apply `nums[i]` after we assign `left` to `i` that way we exclude `nums[i]`
         }
         
         var productsFromTheRight = Array(repeating: 1, count: nums.count)
         var rightProduct = 1
-        for i in (0..<nums.count).reversed(){
+        for i in (0..<nums.count).reversed() {
             productsFromTheRight[i] = rightProduct
             rightProduct = nums[i] * rightProduct //we only apply `nums[i]` after we assign `right` to `i` that way we exclude `nums[i]`
         }

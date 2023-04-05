@@ -74,4 +74,3 @@ private final class Stack {
         return stack.last
     }
 }
-

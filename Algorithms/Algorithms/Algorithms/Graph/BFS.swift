@@ -277,8 +277,8 @@ struct BFS {
     //(FIFO). As we are searching a binary-tree and not a binary-search-tree we can't make any assumptions about value ranges
     //contained within each branch so we need to search each branch for `target`. After each level we increment the `level` count
     //as we moving further away from `source` - note it doesn't matter how many vertices a level contains we are only interested
-    //in the number of levels as the measure of distance. If at any time we find `target` we return immediately. If after searching all of the tree we
-    //haven't found `target` we return nil
+    //in the number of levels as the measure of distance. If at any time we find `target` we return immediately. If after searching
+    //all of the tree we haven't found `target` we return nil
     static func shortestDistanceBinaryTree(_ root: BinaryTreeNode?, _ target: Int) -> Int? {
         guard let root = root else {
             return nil

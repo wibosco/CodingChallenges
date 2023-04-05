@@ -12,7 +12,7 @@ import XCTest
 
 final class SqrtTests: XCTestCase {
 
-    //MARK: - Tests
+    // MARK: - Tests
     
     func test_A() {
         let x = 4

@@ -48,7 +48,8 @@ struct SymmetricTree {
     //
     //Solution Description:
     //1. Perform a level traversal
-    //2. At each level perform a comparison that levels outer most elements and then move inwards (repeat until no more elements to compare)
+    //2. At each level perform a comparison that levels outer most elements and then move inwards (repeat until
+    //   no more elements to compare)
     //3. Ensure that parent element is the same for any subtree
     static func isSymmetricComplex(_ root: BinaryTreeNode?) -> Bool {
         guard let root = root else {

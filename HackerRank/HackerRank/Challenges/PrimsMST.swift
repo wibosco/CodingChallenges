@@ -115,7 +115,6 @@ extension PrimsMSTNode: Hashable {
     }
 }
 
-
 final class PrimsMSTEdge {
 
     // MARK: Properties
@@ -206,7 +205,7 @@ final class PrimsMinHeap {
     
     // MARK: Exchange
     
-     static func exchange<T>(heap: inout [T], i:Int, j:Int) {
+     static func exchange<T>(heap: inout [T], i: Int, j: Int) {
         let temp: T = heap[i]
         heap[i] = heap[j]
         heap[j] = temp
@@ -230,4 +229,3 @@ final class PrimsMinHeap {
         return (heap.count - 1)
     }
 }
-

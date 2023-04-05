@@ -31,7 +31,7 @@ struct MaxNumberOfKSumPairs {
         for num in nums {
             let diff = (k - num)
             
-            if let count = differences[diff], count > 0  {
+            if let count = differences[diff], count > 0 {
                 differences[diff] = (count - 1)
                 
                 operations += 1

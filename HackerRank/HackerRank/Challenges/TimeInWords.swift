@@ -22,22 +22,18 @@ final class TimeInWords {
             if minute == 0 {
                 
                 timeInWords = "\(hourAsWord) o' clock"
-            }
-            else if minute == 15 {
+            } else if minute == 15 {
                 
                 timeInWords = "quarter past \(hourAsWord)"
-            }
-            else if minute == 30 {
+            } else if minute == 30 {
                 
                 timeInWords = "half past \(hourAsWord)"
-            }
-            else {
+            } else {
                 
                 if minute == 1 {
                     
                     timeInWords = "one minute past \(hourAsWord)"
-                }
-                else {
+                } else {
                     
                     let minuteAsWord = TimeInWords.numericUnitToWordUnit(unit: minute)
                     
@@ -45,22 +41,19 @@ final class TimeInWords {
                 }
 
             }
-        }
-        else {
+        } else {
             
             let nextHourAsWord = TimeInWords.numericUnitToWordUnit(unit: TimeInWords.nextHour(hour: hour))
             
             if minute == 45 {
                 
                 timeInWords = "quarter to \(nextHourAsWord)"
-            }
-            else {
+            } else {
                 
                 if minute == 59 {
                     
                     timeInWords = "one minute to \(nextHourAsWord)"
-                }
-                else {
+                } else {
                     
                     let minuteToValue = 60 - minute
                     

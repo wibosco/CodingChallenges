@@ -13,7 +13,7 @@ final class BinarySearchTests: XCTestCase {
 
     // MARK: - Tests
     
-    //MARK: FindAny
+    // MARK: FindAny
     
     func test_findIndex_valueIsFirstMid_targetFound() {
         let values = [1, 2, 3, 4, 5]

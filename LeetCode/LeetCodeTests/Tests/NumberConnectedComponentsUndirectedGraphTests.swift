@@ -756,4 +756,3 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
         XCTAssertEqual(count, 35)
     }
 }
-

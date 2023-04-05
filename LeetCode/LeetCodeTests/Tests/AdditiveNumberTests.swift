@@ -11,7 +11,7 @@ import XCTest
 
 final class AdditiveNumberTests: XCTestCase {
 
-    //MARK: - Tests
+    // MARK: - Tests
     
     func test_A() {
         let num = "112358" // 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8

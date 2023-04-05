@@ -40,6 +40,5 @@ final class SherlockSquaresTests: XCTestCase {
         
         XCTAssertEqual(16518, count)
     }
-
     
 }

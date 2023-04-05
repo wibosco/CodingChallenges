@@ -109,4 +109,3 @@ extension BinaryTreeNode: Hashable {
         hasher.combine(ObjectIdentifier(self))
     }
 }
-

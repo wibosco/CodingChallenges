@@ -14,7 +14,7 @@ final class IntersectionOfThreeSortedArraysTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let arr1 = [1, 2, 3, 4 ,5]
+        let arr1 = [1, 2, 3, 4, 5]
         let arr2 = [1, 2, 5, 7, 9]
         let arr3 = [1, 3, 4, 5, 8]
         

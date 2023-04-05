@@ -44,7 +44,8 @@ struct ConstructBinaryTreeInorderPostorderTraversal {
             return root
         }
         
-        let inorderRootIndex = inorderMapping[rootVal]! //this index will be used to split the inorder array into left and right subtrees
+        //this index will be used to split the inorder array into left and right subtrees
+        let inorderRootIndex = inorderMapping[rootVal]!
         
         // as postorder is being used as a guide, we must build the right branch first
         root.right = buildTree(inorderMapping, (inorderRootIndex + 1), inorderEnd, postorder, &postorderIndex)

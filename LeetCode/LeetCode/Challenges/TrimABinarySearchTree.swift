@@ -65,7 +65,7 @@ struct TrimABinarySearchTree {
         var newRoot: BinaryTreeNode? = root
        
         //find a root with a value that is within range
-        while let nr = newRoot, nr.val < low || nr.val > high  {
+        while let nr = newRoot, nr.val < low || nr.val > high {
             if nr.val < low {
                 newRoot = nr.right
             } else if nr.val > high {

@@ -15,7 +15,7 @@ final class LongestCommonPrefixTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let strs = ["flower","flow","flight"]
+        let strs = ["flower", "flow", "flight"]
         
         let prefix = LongestCommonPrefix.longestCommonPrefix(strs)
         
@@ -23,7 +23,7 @@ final class LongestCommonPrefixTests: XCTestCase {
     }
     
     func test_B() {
-        let strs = ["dog","racecar","car"]
+        let strs = ["dog", "racecar", "car"]
         
         let prefix = LongestCommonPrefix.longestCommonPrefix(strs)
         

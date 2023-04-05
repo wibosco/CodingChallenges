@@ -70,7 +70,7 @@ struct ImplementStrStr {
         var n = 0
         
         while h < haystack.count && n < needle.count {
-            if (haystack[h] == needle[n]) {
+            if haystack[h] == needle[n] {
                 n += 1
             } else {
                 h -= n

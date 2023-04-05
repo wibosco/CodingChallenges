@@ -34,6 +34,6 @@ final class PlusOneTests: XCTestCase {
         
         let sum = PlusOne.plusOne(digits)
         
-        XCTAssertEqual(sum, [1,0])
+        XCTAssertEqual(sum, [1, 0])
     }
 }

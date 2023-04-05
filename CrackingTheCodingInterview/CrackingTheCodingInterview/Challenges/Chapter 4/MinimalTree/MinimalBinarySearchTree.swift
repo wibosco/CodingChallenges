@@ -41,7 +41,7 @@ final class MinimalBinarySearchTree {
         constructBinarySearchTreeFromSortedArray(sortedArray: rightSortedArray, root: node)
     }
     
-    // MARK:  - Traversal
+    // MARK: - Traversal
     
     func preOrderTraversal() {
         preOrderTraversal(node: root)

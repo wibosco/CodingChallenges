@@ -12,19 +12,15 @@ import Foundation
 final class CutTheSticks {
 
      static func cutUntilDone(sticks: [Int]) -> [Int] {
-        
         var sticksRemainingAtEachCut = [Int]()
-        
         var sticksToBeCut = sticks
         
-        while (sticksToBeCut.filter{$0 > 0}.count) > 0 {
+        while (sticksToBeCut.filter {$0 > 0}.count) > 0 {
+            sticksRemainingAtEachCut.append(sticksToBeCut.filter {$0 > 0}.count)
             
-            sticksRemainingAtEachCut.append(sticksToBeCut.filter{$0 > 0}.count)
-            
-            let minStickLength = sticksToBeCut.filter{$0 > 0}.min()!
+            let minStickLength = sticksToBeCut.filter {$0 > 0}.min()!
             
             for index in 0..<sticksToBeCut.count {
-                
                 let stick = sticksToBeCut[index]
                 
                 let newStickLength = stick - minStickLength

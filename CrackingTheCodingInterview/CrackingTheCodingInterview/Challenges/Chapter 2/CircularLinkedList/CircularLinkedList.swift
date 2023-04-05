@@ -33,7 +33,7 @@ struct CircularLinkedList {
         var nodesVisited = [LinkedListNode: Bool]()
         
         while node != nil {
-            if nodesVisited[node!] != nil  {
+            if nodesVisited[node!] != nil {
                 return node
             } else {
                 nodesVisited[node!] = true
@@ -52,10 +52,9 @@ struct CircularLinkedList {
         var nodesVisited = [LinkedListNode: Bool]()
 
         while advanced != nil {
-            if nodesVisited[advanced!] != nil  {
+            if nodesVisited[advanced!] != nil {
                 return followUp
-            }
-            else {
+            } else {
                 nodesVisited[advanced!] = true
             }
 

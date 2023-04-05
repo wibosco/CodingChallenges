@@ -56,7 +56,7 @@ struct MajorityElement {
         for num in nums {
             frequencies[num, default: 0] += 1
             
-            if frequencies[num]! > threshold{
+            if frequencies[num]! > threshold {
                 majority = num
                 break
             }

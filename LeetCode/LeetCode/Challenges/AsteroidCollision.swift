@@ -19,10 +19,10 @@ struct AsteroidCollision {
     //Solution Description:
     //Iterate through `asteroids` and compare the current asteroid with it's predecessors which is stored in a stack. If those
     //asteroids are moving away from each other then add that current asteroid to the stack; if they are moving towards each other
-    //check the absolute sizes of those asteroids. If they are the same size, remove the last asteroid from the stack and discard it
-    //along with the current asteroid; if the current asteroid is larger then discard the stack asteroid and compare the current
-    //asteroid with the next stack asteroid; if the current asteroid is smaller then discard it. Finally once all asteroids have been
-    //processed, return the stack
+    //check the absolute sizes of those asteroids. If they are the same size, remove the last asteroid from the stack and discard
+    //it along with the current asteroid; if the current asteroid is larger then discard the stack asteroid and compare the current
+    //asteroid with the next stack asteroid; if the current asteroid is smaller then discard it. Finally once all asteroids have
+    //been processed, return the stack
     static func asteroidCollision(_ asteroids: [Int]) -> [Int] {
         var stack = [asteroids[0]]
         
@@ -61,10 +61,10 @@ struct AsteroidCollision {
     //Space: O(1)
     //
     //Solution Description:
-    //Iterate through `asteroids` and find neighboring asteroids moving towards each other. When we do, check the absolute sizes of
-    //those asteroids, if one is larger then the other then remove the smaller from the array; if both are the same size then remove
-    //both. Reset the pointer `i` to allow for further comparisons. Finally once all asteroids have been processed and no more
-    //asteroids are to be removed - return the remaining asteroids
+    //Iterate through `asteroids` and find neighboring asteroids moving towards each other. When we do, check the absolute sizes
+    //of those asteroids, if one is larger then the other then remove the smaller from the array; if both are the same size then
+    //remove both. Reset the pointer `i` to allow for further comparisons. Finally once all asteroids have been processed and no
+    //more asteroids are to be removed - return the remaining asteroids.
     static func asteroidCollisionRemoving(_ asteroids: [Int]) -> [Int] {
         var asteroids = asteroids
         

@@ -94,7 +94,6 @@ final class CuttingRibbonsTests: XCTestCase {
                        100000]
         let k = 49
         
-        
         let length = CuttingRibbons.maxLength(ribbons, k)
         
         XCTAssertEqual(length, 100000)

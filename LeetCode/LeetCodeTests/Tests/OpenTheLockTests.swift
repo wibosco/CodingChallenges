@@ -37,7 +37,7 @@ final class OpenTheLockTests: XCTestCase {
     }
     
     func test_C() {
-        let deadends = ["8887","8889","8878","8898","8788","8988","7888","9888"]
+        let deadends = ["8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"]
         let target = "8888"
         
         let rotations = OpenTheLock.openLock(deadends, target)

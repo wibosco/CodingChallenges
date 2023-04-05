@@ -14,19 +14,19 @@ final class SuccessorBSTTests: XCTestCase {
     var relationships: [[Int]]!
     var root: TreeNodeCtCI!
     
-    // MARK - SetUp
+    // MARK: - SetUp
     
     override func setUp() {
         super.setUp()
         
-        relationships = [[0,1],
-                         [0,2],
-                         [1,3],
-                         [1,4],
-                         [2,5],
-                         [2,6],
-                         [5,7],
-                         [5,8]]
+        relationships = [[0, 1],
+                         [0, 2],
+                         [1, 3],
+                         [1, 4],
+                         [2, 5],
+                         [2, 6],
+                         [5, 7],
+                         [5, 8]]
         
         root = TreeNodeCtCI.createBinaryTree(fromRelationships: relationships)
     }

@@ -24,8 +24,6 @@ struct FindMinimumRotatedSortedArrayII {
             
             if nums[mid] > nums[right] {
                 left = mid + 1
-            } else if nums[mid] > nums[right] {
-                right = mid - 1
             } else { // equal
                 right -= 1 // move right to prevent an infinite loop
             }

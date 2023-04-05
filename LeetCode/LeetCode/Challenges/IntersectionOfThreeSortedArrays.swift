@@ -40,7 +40,7 @@ struct IntersectionOfThreeSortedArrays {
                 p3 += 1
             } else if arr1[p1] > arr2[p2] {
                 p2 += 1
-            } else if arr1[p1] > arr3[p3]  {
+            } else if arr1[p1] > arr3[p3] {
                 p3 += 1
             } else {
                 p1 += 1

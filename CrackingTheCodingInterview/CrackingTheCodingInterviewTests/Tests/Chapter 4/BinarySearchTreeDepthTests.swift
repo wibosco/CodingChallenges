@@ -17,7 +17,7 @@ final class BinarySearchTreeDepthTests: XCTestCase {
     func test_A() {
         let tree = BinarySearchTreeDepth()
         
-        let values = [5,4,2,3,7,1,6,8,10]
+        let values = [5, 4, 2, 3, 7, 1, 6, 8, 10]
         
         for value in values {
             tree.addValue(value: value)
@@ -31,7 +31,7 @@ final class BinarySearchTreeDepthTests: XCTestCase {
     func test_B() {
         let tree = BinarySearchTreeDepth()
         
-        let values = [5,4,2,3,7,1,6,8,10]
+        let values = [5, 4, 2, 3, 7, 1, 6, 8, 10]
         
         for value in values {
             tree.addValue(value: value)

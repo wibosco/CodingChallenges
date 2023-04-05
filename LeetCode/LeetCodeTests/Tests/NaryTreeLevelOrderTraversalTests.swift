@@ -12,7 +12,7 @@ import XCTest
 
 final class NaryTreeLevelOrderTraversalTests: XCTestCase {
 
-    //MARK: - Tests
+    // MARK: - Tests
     
     func test_A() {
         let data = [1, nil, 3, 2, 4, nil, 5, 6]

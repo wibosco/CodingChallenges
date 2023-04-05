@@ -99,7 +99,6 @@ struct ClimbingStairs {
         return ways.count
     }
     
-    
     private static func climbStairs(_ targetTotal: Int, _ climb: [Int], _ climbTotal: Int, _ ways: inout Set<[Int]>) {
         guard climbTotal != targetTotal else {
             ways.insert(climb)

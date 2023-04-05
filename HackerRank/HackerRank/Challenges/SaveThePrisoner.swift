@@ -11,7 +11,7 @@ import Foundation
 //https://www.hackerrank.com/challenges/save-the-prisoner/problem
 struct SaveThePrisoner {
     
-    static func poisonedPrisoner(numberOfPrisoners: Int, numberOfSweets: Int, startingPrisonerIndex: Int) -> Int {
+    static func poisonedPrisoner(_ numberOfPrisoners: Int, _ numberOfSweets: Int, _ startingPrisonerIndex: Int) -> Int {
         // `numberOfSweets` and `startingPrisonerIndex` use a numbering system that starts at 1 whereas
         // the % operation expects the numbering system to start from 0. We need to adjust
         // `numberOfSweets` and `startingPrisonerIndex` by substracting 1 to perform the % operation

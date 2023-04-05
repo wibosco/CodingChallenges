@@ -74,7 +74,7 @@ struct DFS {
             return nil
         }
         
-        var targetPath: [Int]? = nil
+        var targetPath: [Int]?
         var currentPath = [Int]()
         
         dfsBinarySearchTree(root, target, &currentPath, &targetPath)
@@ -82,7 +82,7 @@ struct DFS {
         return targetPath
     }
     
-    private static func dfsBinarySearchTree(_ node: BinaryTreeNode, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?)  {
+    private static func dfsBinarySearchTree(_ node: BinaryTreeNode, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?) {
         guard targetPath == nil else {
             return
         }
@@ -165,7 +165,7 @@ struct DFS {
             return nil
         }
         
-        var targetPath: [Int]? = nil
+        var targetPath: [Int]?
         var currentPath = [Int]()
         
         dfsBinaryTree(root, target, &currentPath, &targetPath)
@@ -173,7 +173,7 @@ struct DFS {
         return targetPath
     }
     
-    private static func dfsBinaryTree(_ node: BinaryTreeNode, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?)  {
+    private static func dfsBinaryTree(_ node: BinaryTreeNode, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?) {
         guard targetPath == nil else {
             return
         }
@@ -251,7 +251,7 @@ struct DFS {
     //we return nil
     static func pathGraph(_ adjList: [[Int]], _ source: Int, _ target: Int) -> [Int]? {
         var visited = Set<Int>()
-        var targetPath: [Int]? = nil
+        var targetPath: [Int]?
         var currentPath = [Int]()
         
         dfsGraph(adjList, source, target, &visited, &currentPath, &targetPath)
@@ -259,7 +259,7 @@ struct DFS {
         return targetPath
     }
     
-    private static func dfsGraph(_ adjList: [[Int]], _ source: Int, _ target: Int, _ visited: inout Set<Int>, _ currentPath: inout [Int], _ targetPath: inout [Int]?)  {
+    private static func dfsGraph(_ adjList: [[Int]], _ source: Int, _ target: Int, _ visited: inout Set<Int>, _ currentPath: inout [Int], _ targetPath: inout [Int]?) {
         guard targetPath == nil else { //basecase
             return
         }

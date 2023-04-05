@@ -17,10 +17,9 @@ struct AddBinary {
     //
     //Solution Description:
     //By reversing `a` and `b` we are able to iterate through both and ensure that we are adding the correct units from both
-    //together. As binary uses base 2 we need to handle the scenario where adding two values results in a value greater than
-    //1 to handle this we add the modulo 2 of the sum as the `ith` element in `sum` and hold any remainder as a carry value
-    //to be applied to the next unit. We continue iterating until we have exhausted both `a` and `b` and have a carry value
-    //of 0
+    //together. As binary uses base 2 we need to handle the scenario where adding two values results in a value greater than 1 to
+    //handle this we add the modulo 2 of the sum as the `ith` element in `sum` and hold any remainder as a carry value to be
+    //applied to the next unit. We continue iterating until we have exhausted both `a` and `b` and have a carry value of 0.
     static func addBinary(_ a: String, _ b: String) -> String {
         var sum = ""
         

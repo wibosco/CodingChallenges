@@ -68,7 +68,6 @@ struct SearchInABinarySearchTree {
         return node
     }
     
-    
     //Time: O(h), where `h` is the tree height - O(log⁡ n) in the average case, and O(n) in the worst case.
     //Space: O(h) where `h` is the tree height - O(log⁡ n) in the average case, and O(n) in the worst case.
     //DFS

@@ -30,8 +30,7 @@ final class RunningTime {
                     sortingArray[sortingIndex + 1] = comparisonValue
                     
                     numberOfShiftsToSort += 1
-                }
-                else {
+                } else {
                     
                     break
                 }

@@ -35,7 +35,8 @@ struct ReconstructItinerary {
         
         var route = [String]()
         
-        dfs(adjList, tickets.count + 1, "JFK", &route) //JFK is always the starting aiport, route is always 1 greater than number of tickets
+        //JFK is always the starting aiport, route is always 1 greater than number of tickets
+        dfs(adjList, tickets.count + 1, "JFK", &route)
         
         return route
     }

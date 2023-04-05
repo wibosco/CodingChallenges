@@ -24,7 +24,7 @@ struct MinimumValueToGetPositive {
         var minValue = 0
         var runningTotal = 0
         for num in nums {
-            runningTotal = runningTotal + num // `nums` can contain negative values
+            runningTotal += num // `nums` can contain negative values
             minValue = min(minValue, runningTotal)
         }
         
@@ -48,7 +48,7 @@ struct MinimumValueToGetPositive {
             let middle = (left + right)/2
             var runningTotal = middle
             for num in nums {
-                runningTotal = runningTotal + num
+                runningTotal += num
                 if runningTotal <= 0 {
                     break //too small
                 }
@@ -76,7 +76,7 @@ struct MinimumValueToGetPositive {
     outerloop: while i < Int.max {
         var runningTotal = i
         for num in nums {
-            runningTotal = runningTotal + num
+            runningTotal += num
             if runningTotal <= 0 {
                 i += 1
                 continue outerloop

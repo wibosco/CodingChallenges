@@ -41,7 +41,7 @@ struct Matrix01 {
         }
         
         let relativeIndexing = [      [-1, 0],
-                                [0, -1],    [0, 1],
+                                [0, -1], [0, 1],
                                       [1, 0]] //[row, column]
         
         var level = 1
@@ -73,7 +73,7 @@ struct Matrix01 {
         return distances
     }
 
-    private static func visitableNeighbors(_ mat: [[Int]], _ row: Int, _ column: Int, _ visited: Set<[Int]>, _ relativeIndexing: [[Int]]) -> [[Int]]{
+    private static func visitableNeighbors(_ mat: [[Int]], _ row: Int, _ column: Int, _ visited: Set<[Int]>, _ relativeIndexing: [[Int]]) -> [[Int]] {
         var neighbors = [[Int]]()
         
         for relativeIndex in relativeIndexing {

@@ -18,11 +18,12 @@ struct BinaryTreeVerticalOrderTraversal {
     //dictionary
     //
     //Solution Description:
-    //Using BFS we traverse the tree level by level storing each node we encounter in a dictionary with the column as the key and
-    //the node val as an element in the value array. Starting with the root node at column 0 when we move left we subtract 1
-    //and when we move right we add 1 to to the column value. As we are traversing level by level, when we add a node it will
-    //already be in the correct order - top to bottom then column by column. To avoid having to sort the dictionary keys we track
-    //the min and max column value which then allows to quickly extract the already sorted value arrays from the dictionary.
+    //Using BFS we traverse the tree level by level storing each node we encounter in a dictionary with the column as the key
+    //and the node val as an element in the value array. Starting with the root node at column 0 when we move left we subtract
+    //1 and when we move right we add 1 to to the column value. As we are traversing level by level, when we add a node it
+    //will already be in the correct order - top to bottom then column by column. To avoid having to sort the dictionary keys
+    //we track the min and max column value which then allows to quickly extract the already sorted value arrays from the
+    //dictionary.
     static func verticalOrder(_ root: BinaryTreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()
@@ -65,13 +66,14 @@ struct BinaryTreeVerticalOrderTraversal {
     //DFS
     //
     //Solution Description:
-    //Using BFS we traverse the tree level by level storing each node we encounter in a dictionary with the column as the key and
-    //the node val as an element in the value array. Starting with at `column` the root node as 0 when we move left we subtract 1
-    //and when we move right we add 1 to to the column value. To avoid having to sort the dictionary keys we track the min and max
-    //column value which then allows to quickly extracted to already sorted value arrays from the dictionary. As we are traversing
-    //the tree depth first, it is possible that we will encounter nodes with the same column value at "deeper" in the tree than
-    //other nodes with that same column value - this means that our value arrays will not be in the correct order (top to bottom
-    //then column by column) so will require further sorting before being added to the result array.
+    //Using BFS we traverse the tree level by level storing each node we encounter in a dictionary with the column as the key
+    //and the node val as an element in the value array. Starting with at `column` the root node as 0 when we move left we
+    //subtract 1 and when we move right we add 1 to to the column value. To avoid having to sort the dictionary keys we track
+    //the min and max column value which then allows to quickly extracted to already sorted value arrays from the dictionary.
+    //As we are traversing the tree depth first, it is possible that we will encounter nodes with the same column value at
+    //"deeper" in the tree than other nodes with that same column value - this means that our value arrays will not be in the
+    //correct order (top to bottom then column by column) so will require further sorting before being added to the result
+    //array.
     static func verticalOrderDFS(_ root: BinaryTreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()

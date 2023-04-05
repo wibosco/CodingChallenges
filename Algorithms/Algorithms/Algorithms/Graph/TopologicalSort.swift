@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct TopologicalSort {
     
     //Time: O(n + e) where n is the number of vertices in the graph, e is the number of edges in the graph

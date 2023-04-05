@@ -24,7 +24,7 @@ struct OrganizingContainersOfBalls {
         for (index, container) in containers.enumerated() {
             containersCapacity[index] = container.reduce(0, +)
             
-            for (index, typeCount) in container.enumerated()  {
+            for (index, typeCount) in container.enumerated() {
                 typesCount[index, default: 0] += typeCount
             }
         }

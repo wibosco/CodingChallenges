@@ -35,7 +35,6 @@ struct PathSum {
         return hasPathSum(root.left, sum) || hasPathSum(root.right, sum)
     }
     
-    
     //Time: O(n) where `n` is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //DFS
@@ -55,7 +54,7 @@ struct PathSum {
         
         let updatedRunningTotal = runningTotal + root.val
     
-        if (root.left == nil && root.right == nil) { //only leaf nodes should be checked
+        if root.left == nil && root.right == nil { //only leaf nodes should be checked
             return updatedRunningTotal == targetSum
         }
         

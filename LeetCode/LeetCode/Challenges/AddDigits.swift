@@ -18,9 +18,8 @@ struct AddDigits {
     //modulo
     //
     //Solution Description:
-    //"Digital root" is the term used to desbribe the the value you get when recursively summing the digits in a
-    //number until you get to one digit. Rather than recursively summing we are able use the modulo operation to
-    //jump straight to the digital root.
+    //"Digital root" is the term used to desbribe the the value you get when recursively summing the digits in a number until you
+    //get to one digit. Rather than recursively summing we are able use the modulo operation to jump straight to the digital root.
     //
     //N.B. https://en.wikipedia.org/wiki/Digital_root
     static func addDigits(_ num: Int) -> Int {

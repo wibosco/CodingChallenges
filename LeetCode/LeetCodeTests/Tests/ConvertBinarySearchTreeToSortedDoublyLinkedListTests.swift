@@ -26,7 +26,7 @@ final class ConvertBinarySearchTreeToSortedDoublyLinkedListTests: XCTestCase {
     }
     
     func test_B() {
-        let data = [2,1,3]
+        let data = [2, 1, 3]
         let root = BinaryTreeNode.deserialize(data)
         
         let head = ConvertBinarySearchTreeToSortedDoublyLinkedList.treeToDoublyList(root)

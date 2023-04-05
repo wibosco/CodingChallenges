@@ -12,7 +12,7 @@ import XCTest
 
 final class SerializeDeserializeBinaryTreeTests: XCTestCase {
     
-    //MARK: - Deserialize
+    // MARK: - Deserialize
     
     func test_A() {
         let data = [1, 2, 3, nil, nil, 4, 5]

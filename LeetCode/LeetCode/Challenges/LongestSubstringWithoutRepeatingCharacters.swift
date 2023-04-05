@@ -32,7 +32,7 @@ struct LongestSubstringWithoutRepeatingCharacters {
         var map = [Character: Int]() //[char: index]
         
         for (i, c) in s.enumerated() {
-            if let j = map[c], j >= currentStartIndex  {
+            if let j = map[c], j >= currentStartIndex {
                 currentStartIndex = j + 1
             }
             
@@ -44,7 +44,6 @@ struct LongestSubstringWithoutRepeatingCharacters {
         
         return longestLength
     }
-    
     
     //Time: O(n) where n is the characters in `s`
     //Space: O(n) where n is the characters in `s`

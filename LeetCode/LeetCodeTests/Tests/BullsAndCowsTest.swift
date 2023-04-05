@@ -11,7 +11,7 @@ import XCTest
 
 final class BullsAndCowsTest: XCTestCase {
     
-    //MARK: - Tests
+    // MARK: - Tests
     
     func test_A() {
         let secret = "1807"

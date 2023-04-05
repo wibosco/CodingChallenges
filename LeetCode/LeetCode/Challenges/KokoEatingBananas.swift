@@ -51,7 +51,9 @@ struct KokoEatingBananas {
             if hoursEating > h { //is koko eating too few bananas?
                 left = mid + 1 //as we tested mid we know it's too slow so set left to be 1 greater than that speed
             } else {
-                right = mid //we know that mid is fast enough to eat all bananas within the time but we want to min so set right to mid and search again
+                //we know that mid is fast enough to eat all bananas within the time but we want to min so set right
+                //to mid and search again
+                right = mid
             }
         }
         

@@ -40,7 +40,7 @@ struct DivideTwoIntegers {
             dividend -= divisor << leftShift
         }
         
-        quotient = quotient * sign
+        quotient *= sign
         
         quotient = min(quotient, Int(Int32.max))
         quotient = max(quotient, Int(Int32.min))

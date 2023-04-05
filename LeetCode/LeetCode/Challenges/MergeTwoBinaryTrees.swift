@@ -32,7 +32,7 @@ struct MergeTwoBinaryTrees {
             node.right = mergeTrees(root1.right, root2.right)
             
             return node
-        }  else if let root1 = root1 {
+        } else if let root1 = root1 {
             return root1
         } else if let root2 = root2 {
             return root2

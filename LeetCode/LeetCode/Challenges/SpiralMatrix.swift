@@ -53,26 +53,26 @@ struct SpiralMatrix {
         return order
     }
     
-    private static func nextMove(_ matrix: [[Int]], _ row: Int, _ column: Int, _ direction: inout Direction,  _ visited: Set<[Int]>) -> [Int] {
+    private static func nextMove(_ matrix: [[Int]], _ row: Int, _ column: Int, _ direction: inout Direction, _ visited: Set<[Int]>) -> [Int] {
         switch direction {
         case .right:
-                let nextIndex = [row, (column + 1)]
-                if visited.contains(nextIndex) || nextIndex[1] >= matrix[row].count {
-                    //change direction
-                    direction = .down
-                    return nextMove(matrix, row, column, &direction, visited)
-                } else {
-                    return nextIndex
-                }
-            case .down:
-                let nextIndex = [(row + 1), column]
-                if visited.contains(nextIndex) || nextIndex[0] >= matrix.count {
-                    //change direction
-                    direction = .left
-                    return nextMove(matrix, row, column, &direction, visited)
-                } else {
-                    return nextIndex
-                }
+            let nextIndex = [row, (column + 1)]
+            if visited.contains(nextIndex) || nextIndex[1] >= matrix[row].count {
+                //change direction
+                direction = .down
+                return nextMove(matrix, row, column, &direction, visited)
+            } else {
+                return nextIndex
+            }
+        case .down:
+            let nextIndex = [(row + 1), column]
+            if visited.contains(nextIndex) || nextIndex[0] >= matrix.count {
+                //change direction
+                direction = .left
+                return nextMove(matrix, row, column, &direction, visited)
+            } else {
+                return nextIndex
+            }
         case .left:
             let nextIndex = [row, (column - 1)]
             if visited.contains(nextIndex) || nextIndex[1] < 0 {

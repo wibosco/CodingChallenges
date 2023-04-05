@@ -33,7 +33,6 @@ extension NaryTreeNode {
         var queue: [NaryTreeNode?] = [root]
         var i = 2
         
-        
         while !queue.isEmpty {
             var levelCount = queue.count
             var node = queue.removeFirst()

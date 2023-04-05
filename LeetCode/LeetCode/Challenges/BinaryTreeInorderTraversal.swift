@@ -18,8 +18,8 @@ struct BinaryTreeInorderTraversal {
     //recursion
     //
     //Solution Description:
-    //Using recursion we perform a DFS traversal through the tree. As we visit nodes, we add them to the `order`
-    //array only once we have exhausted all left (lesser) child nodes and before all right (greater) nodes.
+    //Using recursion we perform a DFS traversal through the tree. As we visit nodes, we add them to the `order` array
+    //only once we have exhausted all left (lesser) child nodes and before all right (greater) nodes.
     static func inorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []
@@ -48,9 +48,8 @@ struct BinaryTreeInorderTraversal {
     //iterative
     //
     //Solution Description:
-    //Using an array as a stack we iteratively perform a DFS traversal through the tree. As we visit nodes, we add
-    //them to the `order` array only once we have exhausted all left (lesser) child nodes and before all right
-    //(greater) nodes.
+    //Using an array as a stack we iteratively perform a DFS traversal through the tree. As we visit nodes, we add them
+    //to the `order` array only once we have exhausted all left (lesser) child nodes and before all right (greater) nodes.
     static func inorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []

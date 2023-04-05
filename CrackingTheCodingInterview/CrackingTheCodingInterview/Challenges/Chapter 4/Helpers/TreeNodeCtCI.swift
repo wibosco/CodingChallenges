@@ -22,7 +22,7 @@ final class TreeNodeCtCI {
         self.value = value
     }
     
-    // MARK:  - Nodes
+    // MARK: - Nodes
     
     func addNodeAsChild(node: TreeNodeCtCI) {
         if left == nil {

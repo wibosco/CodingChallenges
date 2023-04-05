@@ -17,7 +17,7 @@ final class LarrysArray {
         
         static let count: Int = {
             var max: Int = 0
-            while let _ = Sequence(rawValue: max) {
+            while Sequence(rawValue: max) != nil {
                 max += 1
             }
             
@@ -32,7 +32,7 @@ final class LarrysArray {
             valuesAfterRotation = LarrysArray.attemptToMoveValueIntoPosition(values: valuesAfterRotation, valueToMove: (index + 1))
             
             if index > 0 {
-                if valuesAfterRotation[(index - 1)] > valuesAfterRotation[index]  {
+                if valuesAfterRotation[(index - 1)] > valuesAfterRotation[index] {
                     return false
                 }
             }

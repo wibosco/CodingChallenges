@@ -38,7 +38,8 @@ struct KthSymbolInGrammar {
             return 0
         }
         
-        let parent = kthGrammar((n - 1), ((k / 2) + (k % 2))) // need to translate the current index into its parents index on the previous level
+        // need to translate the current index into its parents index on the previous level
+        let parent = kthGrammar((n - 1), ((k / 2) + (k % 2)))
         let isOdd = !k.isMultiple(of: 2) //remember 1-indexing
         
         if parent == 0 {

@@ -19,7 +19,7 @@ final class MergeIntervalsTests: XCTestCase {
         
         let merged = MergeIntervals.merge(intervals)
         
-        XCTAssertEqual(merged, [[1, 6],[8, 10],[15, 18]])
+        XCTAssertEqual(merged, [[1, 6], [8, 10], [15, 18]])
     }
     
     func test_B() {

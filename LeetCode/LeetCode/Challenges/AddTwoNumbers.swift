@@ -20,12 +20,12 @@ final class AddTwoNumbers {
     //overflow
     //
     //Solution Description:
-    //Rather than treat each list as containing one number, adding it to the other lists number and then splitting the sum
-    //of that addition into nodes in a new list - which could result in an overflow if either the original numbers contained
-    //in the list are too large or the sum is too large. We instead treat the lists as what they are - a collection of
-    //numbers and we add that collection together individually - being careful to ensure that any carry from those additions
-    //is also applied. This removes the possibility of overflow occuring during the addition. We make use of a dummy node
-    //`placeholderHead` to ensure that even as the new list progresses we never lose the head of that list.
+    //Rather than treat each list as containing one number, adding it to the other lists number and then splitting the sum of that
+    //addition into nodes in a new list - which could result in an overflow if either the original numbers contained in the list
+    //are too large or the sum is too large. We instead treat the lists as what they are - a collection of numbers and we add that
+    //collection together individually - being careful to ensure that any carry from those additions is also applied. This removes
+    //the possibility of overflow occuring during the addition. We make use of a dummy node `placeholderHead` to ensure that even
+    //as the new list progresses we never lose the head of that list.
     //
     //Similar to: https://leetcode.com/problems/add-strings/
     static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {

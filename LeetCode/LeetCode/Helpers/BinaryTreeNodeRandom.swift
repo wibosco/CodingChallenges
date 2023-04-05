@@ -106,7 +106,7 @@ extension BinaryTreeNodeRandom {
                     values.append(nil)
                     continue
                 }
-                var indexOfRandom: Int? = nil
+                var indexOfRandom: Int?
                 if let random = node.random {
                     indexOfRandom = levelOrder.firstIndex(of: random)
                 }

@@ -10,7 +10,6 @@ import XCTest
 
 @testable import LeetCode
 
-
 final class IntersectionOfTwoArraysTests: XCTestCase {
     
     // MARK: - Tests

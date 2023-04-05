@@ -43,7 +43,6 @@ struct LongestCommonPrefix {
             prefix.append(c) //`c` is found in all `chrs` elements
         }
         
-        
         return String(prefix)
     }
 }

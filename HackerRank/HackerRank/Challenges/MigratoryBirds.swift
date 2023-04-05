@@ -17,7 +17,7 @@ struct MigratoryBirds {
         for bird in arr.suffix(from: 1) {
             countedBirds[bird, default: 0] += 1
             
-            if (countedBirds[bird]! > countedBirds[mostFrequentBird]!) {
+            if countedBirds[bird]! > countedBirds[mostFrequentBird]! {
                 mostFrequentBird = bird
             } else if (countedBirds[bird]! == countedBirds[mostFrequentBird]!) && (bird < mostFrequentBird) {
                 mostFrequentBird = bird

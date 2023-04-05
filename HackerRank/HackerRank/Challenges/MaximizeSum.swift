@@ -21,7 +21,7 @@ final class MaximizeSum {
             prefix.append(current)
         }
         
-        var ret = prefix[0];
+        var ret = prefix[0]
         for i in 1..<values.count {
             for j in (0...(i-1)).reversed() {
                 ret = max(ret, (prefix[i] - prefix[j] + modulo) % modulo)

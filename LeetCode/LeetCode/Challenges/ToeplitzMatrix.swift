@@ -58,7 +58,7 @@ struct ToeplitzMatrix {
             for j in 0..<matrix[i].count {
                 let currVal = matrix[i][j]
                
-                if let prevVal = groups[(i - j)]  {
+                if let prevVal = groups[(i - j)] {
                     if prevVal != currVal {
                         return false
                     }

@@ -109,7 +109,7 @@ struct MinCostToConnectAllPoints {
             }
         }
         
-        edges.sort{ $0.weight < $1.weight } //ensure that we select the cheapest/smallest edges first
+        edges.sort { $0.weight < $1.weight } //ensure that we select the cheapest/smallest edges first
         
         //greedy
         var total = 0

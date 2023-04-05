@@ -20,10 +20,10 @@ struct AddStrings {
     //modulo
     //
     //Solution Description:
-    //Rather than treating `num1` and `num2` as two single numbers instead we split them into single units and add those
-    //units together, being to hold on to add carry values that result from that addition. By treating as individual unit
-    //we avoid any possibility of overflow as the number ranges are 0-9 for both numbers. The result of each addition is
-    //then add to the front of our ongoing `result` string
+    //Rather than treating `num1` and `num2` as two single numbers instead we split them into single units and add those units
+    //together, being to hold on to add carry values that result from that addition. By treating as individual unit we avoid any
+    //possibility of overflow as the number ranges are 0-9 for both numbers. The result of each addition is then add to the front
+    //of our ongoing `result` string
     //
     //Similar to: https://leetcode.com/problems/add-two-numbers/
     static func addStrings(_ num1: String, _ num2: String) -> String {

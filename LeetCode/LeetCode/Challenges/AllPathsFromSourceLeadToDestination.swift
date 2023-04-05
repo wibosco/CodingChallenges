@@ -19,18 +19,16 @@ struct AllPathsFromSourceLeadToDestination {
     //adjacency list
     //
     //Solution Description:
-    //Build an adjacency list containing all edges. Using DFS we then traverse the graph. As we
-    //visit each node we build up a `visited` set which will us to detect a cycle (which makes this
-    //graph invalid) if we see that `visited` already contain the node we want to add. As we need
-    //to explore all paths we use backtracking allow this to happen. Finally as the destination needs
-    //to be a leaf node (and can be the only leaf node) when we encounter a node that has no neighbors
-    //we check if it is the `target` and act accordingly.
+    //Build an adjacency list containing all edges. Using DFS we then traverse the graph. As we visit each node we build up a
+    //`visited` set which will us to detect a cycle (which makes this graph invalid) if we see that `visited` already contain the
+    //node we want to add. As we need to explore all paths we use backtracking allow this to happen. Finally as the destination
+    //needs to be a leaf node (and can be the only leaf node) when we encounter a node that has no neighbors we check if it is
+    //the `target` and act accordingly.
     //
-    //N.B. As we only populate `adjList` with nodes that appear in the `edges` array (and even then only
-    //source edges) our `adjList` will not be full. As such when traversing the graph any leaf nodes that
-    //we encounter won't be in `adjList` so extra care must be taken here. When a leaf node is found we
-    //need to to check if it is the target (as only the target can be a leaf node for this graph to be
-    //"valid" - see problem description for details)
+    //N.B. As we only populate `adjList` with nodes that appear in the `edges` array (and even then only source edges) our
+    //`adjList` will not be full. As such when traversing the graph any leaf nodes that we encounter won't be in `adjList` so
+    //extra care must be taken here. When a leaf node is found we need to to check if it is the target (as only the target can be
+    //a leaf node for this graph to be "valid" - see problem description for details)
     static func leadsToDestination(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
         var adjList = [Int: [Int]]()
     
@@ -73,16 +71,13 @@ struct AllPathsFromSourceLeadToDestination {
     //adjacency list
     //
     //Solution Description:
-    //Build an adjacency list containing all nodes and edges. As the `destination` needs to be a
-    //leaf node - check that condition. Then using DFS traverse the graph. As we visit each node
-    //we build up a `visited` set which will us to detect a cycle (which makes this graph invalid)
-    //if we see that `visited` already contain the node we want to add. As we need to explore all
-    //paths we use backtracking allow this to happen. As we need to explore all paths we use
-    //backtracking allow this to happen.
+    //Build an adjacency list containing all nodes and edges. As the `destination` needs to be a leaf node - check that condition.
+    //Then using DFS traverse the graph. As we visit each node we build up a `visited` set which will us to detect a cycle (which
+    //makes this graph invalid) if we see that `visited` already contain the node we want to add. As we need to explore all paths
+    //we use backtracking allow this to happen. As we need to explore all paths we use backtracking allow this to happen.
     //
-    //N.B. as we build a full adjacency list (containing all nodes) we can quickly determine if the
-    //destination node is part of a "valid" (see problem description) tree by check it's a leaf node
-    //before undertaking a DFS traversal
+    //N.B. as we build a full adjacency list (containing all nodes) we can quickly determine if the destination node is part of a
+    //"valid" (see problem description) tree by check it's a leaf node before undertaking a DFS traversal.
     static func leadsToDestinationQuickCheck(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
         var adjList = Array(repeating: [Int](), count: n)
 

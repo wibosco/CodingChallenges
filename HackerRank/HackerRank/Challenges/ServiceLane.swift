@@ -19,7 +19,7 @@ final class ServiceLane {
             
             let width = servicelane[index]
             
-            if width < smallestWidth  {
+            if width < smallestWidth {
                 
                 smallestWidth = width
             }

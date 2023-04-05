@@ -26,8 +26,7 @@ final class Staircase {
                 if element >= row {
                     
                     elementString = "#"
-                }
-                else {
+                } else {
                     
                     elementString = " "
                 }
@@ -38,8 +37,7 @@ final class Staircase {
             if staircaseString.count > 0 {
                 
                 staircaseString = "\(staircaseString)\n\(rowString)"
-            }
-            else {
+            } else {
                 
                 staircaseString = "\(rowString)"
                 

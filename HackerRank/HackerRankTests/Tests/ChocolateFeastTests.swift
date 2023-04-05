@@ -38,5 +38,3 @@ final class ChocolateFeastTests: XCTestCase {
         XCTAssertEqual(899, chocolatesEaten)
     }
 }
-
-

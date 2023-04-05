@@ -36,7 +36,8 @@ struct AccountsMerge {
         
         //build adjacency list
         for account in accounts {
-            //treat the first email as the root of this accounts graph, we will use this email when searching to tie graph to account
+            //treat the first email as the root of this accounts graph, we will use this email when searching
+            //to tie graph to account
             let firstEmail = account[1]
             
             for otherEmail in account[2...] {
@@ -44,7 +45,6 @@ struct AccountsMerge {
                 adjList[otherEmail, default: [String]()].append(firstEmail)
             }
         }
-        
         
         var visited = Set<String>()
         
@@ -208,7 +208,8 @@ struct AccountsMerge {
         
         var mergedAccounts = [Int: [String]]()
         for (key, value) in map { //[Email: Index]
-            //find the root for each unique email (even through the email only appears once, it may be associated with other emails that appear multiple times)
+            //find the root for each unique email (even through the email only appears once, it may be associated with other
+            //emails that appear multiple times)
             let root = uf.find(value)
             mergedAccounts[root, default: [String]()].append(key)
         }
@@ -283,7 +284,7 @@ private final class UnionFind {
         
         //join the smaller graph with larger. If both are the same
         //size then favour `x`
-        if ranks[rootX] <= ranks[rootY] { //careful with the comparison here as the larger root has a smaller value (due to being negative)
+        if ranks[rootX] <= ranks[rootY] { //careful with the comparison as the larger root has a smaller value (due to being negative)
             let tmp = ranks[rootY] //tmp will be a negative
             ranks[rootY] = rootX
             ranks[rootX] += tmp //increasing the value as this index, increases the rank of that root

@@ -17,7 +17,6 @@ final class CavityMap {
         var cavityMap = map
         
         if map.count > 2 {
-
             for rowIndex in 1..<(cavityMap.count - 1) {
                 let row = cavityMap[rowIndex]
                 var cavityRow = row
@@ -35,8 +34,15 @@ final class CavityMap {
                         let cellInPreviousRow = String(previousRow[cellIndex])
                         let cellInNextRow = String(nextRow[cellIndex])
 
-                        if !(cell == cavity || previousCellInRow == cavity || nextCellInRow == cavity || cellInPreviousRow == cavity || cellInNextRow == cavity) {
-                            if Int(cell)! > Int(previousCellInRow)! && Int(cell)! > Int(nextCellInRow)! && Int(cell)! > Int(cellInPreviousRow)! && Int(cell)! > Int(cellInNextRow)! {
+                        if !(cell == cavity ||
+                             previousCellInRow == cavity ||
+                             nextCellInRow == cavity ||
+                             cellInPreviousRow == cavity ||
+                             cellInNextRow == cavity) {
+                            if Int(cell)! > Int(previousCellInRow)! &&
+                                Int(cell)! > Int(nextCellInRow)! &&
+                                Int(cell)! > Int(cellInPreviousRow)! &&
+                                Int(cell)! > Int(cellInNextRow)! {
                                 let range = cellIndex..<cavityRow.index(cellIndex, offsetBy: 1)
                                 cavityRow.replaceSubrange(range, with: cavity)
                             }
@@ -46,7 +52,6 @@ final class CavityMap {
 
                 cavityMap[rowIndex] = cavityRow
             }
-
         }
         
         return cavityMap

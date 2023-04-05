@@ -98,4 +98,3 @@ extension EvenTreeNode: Equatable {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
-

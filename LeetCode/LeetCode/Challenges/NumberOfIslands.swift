@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct NumberOfIslands {
     static let relativeIndexing = [     [-1, 0],
-                                   [0, -1],  [0, 1],
+                                   [0, -1], [0, 1],
                                         [1, 0]]
     
     //Time: O(m*n) where `m` is the number of rows in grid and `n` is the number of columns
@@ -48,7 +48,7 @@ struct NumberOfIslands {
         return islandCount
     }
     
-    private static func dfs(grid: [[String]], root: [Int], visited: inout Set<[Int]>)  {
+    private static func dfs(grid: [[String]], root: [Int], visited: inout Set<[Int]>) {
         let neighbors = unvisitedLandNeighbors(grid, root[0], root[1], relativeIndexing, visited)
         for neighbor in neighbors {
             guard !visited.contains(neighbor) else {
@@ -121,7 +121,8 @@ struct NumberOfIslands {
             for _ in 0..<queueCount {
                 let vertice = queue.removeFirst()
                 
-                guard !visited.contains(vertice) else { //check that since adding this vertice to the queue we haven't already processed it
+                //check that since adding this vertice to the queue we haven't already processed it
+                guard !visited.contains(vertice) else {
                     continue
                 }
                 visited.insert(vertice)

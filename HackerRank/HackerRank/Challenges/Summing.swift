@@ -1,4 +1,3 @@
-
 //
 //  Summing.swift
 //  HackerRank
@@ -13,12 +12,10 @@ final class Summing {
     
     //https://www.hackerrank.com/challenges/simple-array-sum
      static func sum(array: [Int]) -> Int {
-        
         var sum = 0
         
         for value in array {
-            
-            sum = sum + value
+            sum += value
         }
         
         return sum
@@ -26,12 +23,11 @@ final class Summing {
     
     //https://www.hackerrank.com/challenges/a-very-big-sum
      static func sumLargeValue(array: [Double]) -> Double {
-        
         var sum: Double = 0
         
         for value in array {
             
-            sum = sum + value
+            sum += value
         }
         
         return sum
@@ -39,21 +35,19 @@ final class Summing {
     
     //https://www.hackerrank.com/challenges/diagonal-difference
      static func sumMatrixDiagonals(matrix: [[Int]]) -> Int {
-        
         var sumOfRightDiagonal = 0
         var sumOfLeftDiagonal = 0
         
         let finalElementIndex = (matrix.count - 1)
         
         for index in 0..<matrix.count {
-            
             let row = matrix[index]
             
             let rightDiagonalElement = row[index]
-            sumOfRightDiagonal = sumOfRightDiagonal + rightDiagonalElement
+            sumOfRightDiagonal += rightDiagonalElement
             
             let leftDiagonalelement = row[(finalElementIndex - index)]
-            sumOfLeftDiagonal = sumOfLeftDiagonal + leftDiagonalelement
+            sumOfLeftDiagonal += leftDiagonalelement
         }
         
         return abs(sumOfRightDiagonal - sumOfLeftDiagonal)

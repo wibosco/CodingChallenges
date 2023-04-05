@@ -29,7 +29,6 @@ struct ValidPalindrome {
             right -= 1
         }
         
-        
         return true
     }
 }

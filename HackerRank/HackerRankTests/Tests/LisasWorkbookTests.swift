@@ -16,14 +16,16 @@ final class LisasWorkbookTests: XCTestCase {
     
     func test_A() {
     
-        let specialProblems = LisasWorkbook.specialProblemsInBook(problemsPerChapter: [4, 2, 6, 1, 10], problemsPerPage: 3)
+        let specialProblems = LisasWorkbook.specialProblemsInBook([4, 2, 6, 1, 10],
+                                                                  3)
         
         XCTAssertEqual(4, specialProblems)
     }
     
     func test_B() {
         
-        let specialProblems = LisasWorkbook.specialProblemsInBook(problemsPerChapter: [1, 8, 19, 15, 2, 29, 3, 2, 25, 2, 19, 26, 17, 33, 22], problemsPerPage: 20)
+        let specialProblems = LisasWorkbook.specialProblemsInBook([1, 8, 19, 15, 2, 29, 3, 2, 25, 2, 19, 26, 17, 33, 22],
+                                                                  20)
         
         XCTAssertEqual(11, specialProblems)
     }

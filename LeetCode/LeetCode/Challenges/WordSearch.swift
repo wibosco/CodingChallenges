@@ -11,7 +11,7 @@ import Foundation
 //matrix
 struct WordSearch {
     static let relativeIndexing = [      [-1, 0],
-                                   [0, -1],     [0, 1],
+                                   [0, -1], [0, 1],
                                          [1, 0]
                                   ]
     

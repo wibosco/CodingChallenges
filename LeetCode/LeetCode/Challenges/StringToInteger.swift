@@ -45,7 +45,7 @@ struct StringToInteger {
         }
         
         //determine if sign exists
-        if (index < characters.count && (characters[index] == "+" || characters[index] == "-")) { //NB: index out of range check
+        if index < characters.count && (characters[index] == "+" || characters[index] == "-") { //NB: index out of range check
             if characters[index] == "-" {
                 sign = -1
             }

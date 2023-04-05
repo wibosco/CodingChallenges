@@ -44,7 +44,7 @@ struct CombinationSum {
         return combinations
     }
     
-    private static func dfs(_ candidates: [Int], _ remaining: Int, _ startIndex: Int,  _ combination: inout [Int], _ combinations: inout [[Int]]) {
+    private static func dfs(_ candidates: [Int], _ remaining: Int, _ startIndex: Int, _ combination: inout [Int], _ combinations: inout [[Int]]) {
         //constraint
         guard remaining >= 0 else {
             return

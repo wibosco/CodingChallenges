@@ -12,7 +12,7 @@ import XCTest
 
 final class ReconstructItineraryTests: XCTestCase {
 
-    //MARK: - Tests
+    // MARK: - Tests
     
     func test_A() {
         let tickets = [["MUC", "LHR"],

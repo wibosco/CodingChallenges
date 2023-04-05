@@ -20,8 +20,7 @@ final class UtopianTree {
             if cycle % 2 == 0 {
                 
                 heightOfTree *= 2
-            }
-            else {
+            } else {
                 
                 heightOfTree += 1
             }

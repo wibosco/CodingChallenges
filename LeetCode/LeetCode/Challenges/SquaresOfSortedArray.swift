@@ -32,7 +32,6 @@ struct SquaresOfSortedArray {
             let leftValue = abs(nums[left])
             let rightValue = abs(nums[right])
             
-            
             let square: Int
             if leftValue > rightValue {
                 square = leftValue * leftValue

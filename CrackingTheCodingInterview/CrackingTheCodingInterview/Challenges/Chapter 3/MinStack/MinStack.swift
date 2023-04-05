@@ -65,4 +65,3 @@ final class MinStackNode {
         self.value = value
     }
 }
-

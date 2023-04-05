@@ -11,7 +11,7 @@ import XCTest
 
 final class LongestIncreasingSubsequenceTests: XCTestCase {
 
-    //MARK: - Tests
+    // MARK: - Tests
     
     func test_A() {
         let nums = [10, 9, 2, 5, 3, 7, 101, 18]

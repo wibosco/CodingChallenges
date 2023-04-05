@@ -18,11 +18,13 @@ struct BinaryTreePaths {
     //backtracking
     //
     //Solution Description:
-    //Using DFS, we recursively traverse the tree adding the current (non-nil) node to the `path` array. If the current node is
-    //a leaf node we combine the `path` elements into a string and add that combined value to `paths`; if the node has child nodes
-    //we traverse those nodes. Once all child nodes have been explored we remove the current node from `paths`.
+    //Using DFS, we recursively traverse the tree adding the current (non-nil) node to the `path` array. If the current
+    //node is a leaf node we combine the `path` elements into a string and add that combined value to `paths`; if the
+    //node has child nodes we traverse those nodes. Once all child nodes have been explored we remove the current node
+    //from `paths`.
     //
-    //N.B. A node is only considered a leaf node if it has no children nodes - a node with only one child is not a leaf node.
+    //N.B. A node is only considered a leaf node if it has no children nodes - a node with only one child is not a leaf
+    //node.
     static func binaryTreePaths(_ root: BinaryTreeNode?) -> [String] {
         guard let root = root else {
             return []

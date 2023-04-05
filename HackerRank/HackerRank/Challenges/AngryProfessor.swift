@@ -11,15 +11,12 @@ import Foundation
 //https://www.hackerrank.com/challenges/angry-professor
 final class AngryProfessor {
     
-     static func shouldCancelClass(studentArrivalTimes: [Int], cancellationThreshold: Int) -> Bool {
-        
+     static func shouldCancelClass(_ studentArrivalTimes: [Int], _ cancellationThreshold: Int) -> Bool {
         var lateStudents = 0
         
-        for arrivalTime in studentArrivalTimes {
-            
+         for arrivalTime in studentArrivalTimes {
             if arrivalTime > 0 {
-                
-                lateStudents = lateStudents + 1
+                lateStudents += 1
             }
         }
         

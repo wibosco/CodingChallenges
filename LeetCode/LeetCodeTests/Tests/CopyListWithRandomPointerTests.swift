@@ -25,7 +25,7 @@ final class CopyListWithRandomPointerTests: XCTestCase {
     }
     
     func test_B() {
-        let list = ListNodeRandom.deserialize([[1, 1],[2, 1]])
+        let list = ListNodeRandom.deserialize([[1, 1], [2, 1]])
         
         let copy = CopyListWithRandomPointer.copyRandomList(list)
         

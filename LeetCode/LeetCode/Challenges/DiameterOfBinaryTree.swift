@@ -49,4 +49,3 @@ struct DiameterOfBinaryTree {
         return max(leftHeight, rightHeight) + 1
     }
 }
-

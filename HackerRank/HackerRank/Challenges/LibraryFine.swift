@@ -28,14 +28,12 @@ final class LibraryFine {
             if dueDateAsDateComponents.year != expectedDateAsDateComponents.year {
 
                 fine = 10000
-            }
-            else if dueDateAsDateComponents.month != expectedDateAsDateComponents.month {
+            } else if dueDateAsDateComponents.month != expectedDateAsDateComponents.month {
 
                 let difference = dueDateAsDateComponents.month! - expectedDateAsDateComponents.month!
 
                 fine = 500 * difference
-            }
-            else {
+            } else {
 
                 let difference = dueDateAsDateComponents.day! - expectedDateAsDateComponents.day!
 

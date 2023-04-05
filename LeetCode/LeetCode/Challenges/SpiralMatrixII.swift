@@ -37,50 +37,50 @@ struct SpiralMatrixII {
         
         while visited < totalCells {
             switch direction {
-                case .right:
-                    let nextRow = index[0]
-                    let nextColumn = (index[1] + 1)
-                    
-                    if (nextColumn < n) && (matrix[nextRow][nextColumn] == 0) {
-                        visited += 1
-                        matrix[nextRow][nextColumn] = visited
-                        index = [nextRow, nextColumn]
-                    } else {
-                        direction = .down
-                    }
-                case .down:
-                    let nextRow = (index[0] + 1)
-                    let nextColumn = index[1]
-                    
-                    if (nextRow < n) && (matrix[nextRow][nextColumn] == 0) {
-                        visited += 1
-                        matrix[nextRow][nextColumn] = visited
-                        index = [nextRow, nextColumn]
-                    } else {
-                        direction = .left
-                    }
-                case .left:
-                    let nextRow = index[0]
-                    let nextColumn = (index[1] - 1)
-                    
-                    if (nextColumn >= 0) && (matrix[nextRow][nextColumn] == 0) {
-                        visited += 1
-                        matrix[nextRow][nextColumn] = visited
-                        index = [nextRow, nextColumn]
-                    } else {
-                        direction = .up
-                    }
-                case .up:
-                    let nextRow = (index[0] - 1)
-                    let nextColumn = index[1]
-                    
-                    if (nextRow >= 0) && (matrix[nextRow][nextColumn] == 0) {
-                        visited += 1
-                        matrix[nextRow][nextColumn] = visited
-                        index = [nextRow, nextColumn]
-                    } else {
-                        direction = .right
-                    }
+            case .right:
+                let nextRow = index[0]
+                let nextColumn = (index[1] + 1)
+                
+                if (nextColumn < n) && (matrix[nextRow][nextColumn] == 0) {
+                    visited += 1
+                    matrix[nextRow][nextColumn] = visited
+                    index = [nextRow, nextColumn]
+                } else {
+                    direction = .down
+                }
+            case .down:
+                let nextRow = (index[0] + 1)
+                let nextColumn = index[1]
+                
+                if (nextRow < n) && (matrix[nextRow][nextColumn] == 0) {
+                    visited += 1
+                    matrix[nextRow][nextColumn] = visited
+                    index = [nextRow, nextColumn]
+                } else {
+                    direction = .left
+                }
+            case .left:
+                let nextRow = index[0]
+                let nextColumn = (index[1] - 1)
+                
+                if (nextColumn >= 0) && (matrix[nextRow][nextColumn] == 0) {
+                    visited += 1
+                    matrix[nextRow][nextColumn] = visited
+                    index = [nextRow, nextColumn]
+                } else {
+                    direction = .up
+                }
+            case .up:
+                let nextRow = (index[0] - 1)
+                let nextColumn = index[1]
+                
+                if (nextRow >= 0) && (matrix[nextRow][nextColumn] == 0) {
+                    visited += 1
+                    matrix[nextRow][nextColumn] = visited
+                    index = [nextRow, nextColumn]
+                } else {
+                    direction = .right
+                }
             }
         }
         

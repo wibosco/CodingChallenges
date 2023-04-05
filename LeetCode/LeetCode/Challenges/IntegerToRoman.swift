@@ -37,4 +37,3 @@ struct IntegerToRoman {
         return roman
     }
 }
-

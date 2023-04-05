@@ -18,7 +18,7 @@ import Foundation
 struct PriorityQueue<Element: Equatable> {
     private var heap: Heap<Element>
     
-    //MARK: - Init
+    // MARK: - Init
     
     init(elements: [Element] = [], priorityFunction: @escaping (Element, Element) -> Bool) {
         heap = Heap(elements: elements, priorityFunction: priorityFunction)

@@ -24,8 +24,8 @@ import Foundation
 //
 //See: https://github.com/raywenderlich/swift-algorithm-club/tree/master/Heap
 struct Heap<Element> {
-    private var elements : [Element]
-    private let priorityFunction : (Element, Element) -> Bool
+    private var elements: [Element]
+    private let priorityFunction: (Element, Element) -> Bool
     
     // MARK: - Init
     
@@ -43,11 +43,11 @@ struct Heap<Element> {
     
     // MARK: - Helpers
     
-    var isEmpty : Bool {
+    var isEmpty: Bool {
         return elements.isEmpty
     }
     
-    var count : Int {
+    var count: Int {
         return elements.count
     }
     

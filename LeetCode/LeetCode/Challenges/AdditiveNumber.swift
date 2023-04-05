@@ -9,7 +9,7 @@ import Foundation
 
 //https://leetcode.com/problems/additive-number/
 //string
-struct AdditiveNumber{
+struct AdditiveNumber {
     
     // MARK: - Pointers
     
@@ -22,15 +22,15 @@ struct AdditiveNumber{
     //recursive
     //
     //Solution Description:
-    //Treating `nums` as graph, we build each possible starting permutation of `n1` + `n2` = `result` and then perform a DFS search
-    //from those starting positions. To begin with we attempt to find is `num` is additive by using the fewest possible elements in
-    //`nums` i.e. nums[0] and nums[1] and checking if the next 1 or 2 elements (the sum of two digits can be either 1 or 2 elements
-    //in length i.e. 1+1=2 or 9+5=14) in `nums` match the sum of nums[0] and nums[1]. If `sum` and `result` match then we move the
-    //search deeper on that branch by moving `n2` into `n1`s position, `result` into `n2`position and the start of the next result
-    //to `resultEndIndex`; if `sum` and `result` don't match then we know the starting positions of this branch where not valid and
-    //we exit the recursion and create a new permutation by increasing the number of elements in either `n1` or `n2`. If we reach
-    //the end of `nums` and have found at least one additive number during the searcg then we know that `nums` is additive and can
-    //return true.
+    //Treating `nums` as graph, we build each possible starting permutation of `n1` + `n2` = `result` and then perform a
+    //DFS search from those starting positions. To begin with we attempt to find is `num` is additive by using the fewest
+    //possible elements in `nums` i.e. nums[0] and nums[1] and checking if the next 1 or 2 elements (the sum of two
+    //digits can be either 1 or 2 elements in length i.e. 1+1=2 or 9+5=14) in `nums` match the sum of nums[0] and nums[1].
+    //If `sum` and `result` match then we move the search deeper on that branch by moving `n2` into `n1`s position,
+    //`result` into `n2`position and the start of the next result to `resultEndIndex`; if `sum` and `result` don't match
+    //then we know the starting positions of this branch where not valid and we exit the recursion and create a new
+    //permutation by increasing the number of elements in either `n1` or `n2`. If we reach the end of `nums` and have
+    //found at least one additive number during the searcg then we know that `nums` is additive and can return true.
     //
     //N.B. The permutataions will look like:
     //
@@ -97,7 +97,8 @@ struct AdditiveNumber{
         let result = String(nums[resultStartIndex..<resultEndIndex])
         
         if sum == result {
-            return isAdditiveNumber(nums, n2StartIndex, resultStartIndex, resultEndIndex, true) //move everything forward and check the next combinations
+            //move everything forward and check the next combinations
+            return isAdditiveNumber(nums, n2StartIndex, resultStartIndex, resultEndIndex, true)
         }
         
         return false
@@ -114,15 +115,15 @@ struct AdditiveNumber{
     //recursive
     //
     //Solution Description:
-    //Treating `nums` as graph, we build each possible starting permutation of `n1` + `n2` = `result` and then perform a DFS search
-    //from those starting positions. To begin with we attempt to find is `num` is additive by using the fewest possible elements in
-    //`nums` i.e. nums[0] and nums[1] and checking if the next 1 or 2 elements (the sum of two digits can be either 1 or 2 elements
-    //in length i.e. 1+1=2 or 9+5=14) in `nums` match the sum of nums[0] and nums[1]. If `sum` and `result` match then we move the
-    //search deeper on that branch by moving `n2` into `n1`s position, `result` into `n2`position and the start of the next result
-    //to `resultEndIndex`; if `sum` and `result` don't match then we know the starting positions of this branch where not valid and
-    //we exit the recursion and create a new permutation by increasing the number of elements in either `n1` or `n2`. If we reach
-    //the end of `nums` and have found at least one additive number during the searcg then we know that `nums` is additive and can
-    //return true.
+    //Treating `nums` as graph, we build each possible starting permutation of `n1` + `n2` = `result` and then perform a
+    //DFS search from those starting positions. To begin with we attempt to find is `num` is additive by using the fewest
+    //possible elements in `nums` i.e. nums[0] and nums[1] and checking if the next 1 or 2 elements (the sum of two digits
+    //can be either 1 or 2 elements in length i.e. 1+1=2 or 9+5=14) in `nums` match the sum of nums[0] and nums[1]. If `sum`
+    //and `result` match then we move the search deeper on that branch by moving `n2` into `n1`s position, `result` into `n2`
+    //position and the start of the next result to `resultEndIndex`; if `sum` and `result` don't match then we know the
+    //starting positions of this branch where not valid and we exit the recursion and create a new permutation by increasing
+    //the number of elements in either `n1` or `n2`. If we reach the end of `nums` and have found at least one additive
+    //number during the searcg then we know that `nums` is additive and can return true.
     //
     //N.B. The permutataions will look like:
     //

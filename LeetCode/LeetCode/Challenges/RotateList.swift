@@ -90,4 +90,3 @@ struct RotateList {
         return nodes[newHeadIndex]
     }
 }
-

@@ -18,18 +18,12 @@ final class Percentages {
         var zerosCount = 0
         
         for value in array {
-            
             if  value < 0 {
-                
-                negativesCount = negativesCount + 1
-            }
-            else if value > 0 {
-                
-                postivesCount = postivesCount + 1
-            }
-            else {
-                
-                zerosCount = zerosCount + 1
+                negativesCount += 1
+            } else if value > 0 {
+                postivesCount += 1
+            } else {
+                zerosCount += 1
             }
         }
         

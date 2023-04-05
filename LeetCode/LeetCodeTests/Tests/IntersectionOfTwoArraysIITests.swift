@@ -20,7 +20,7 @@ final class IntersectionOfTwoArraysIITests: XCTestCase {
         
         let intersectingValues = IntersectionOfTwoArraysII.intersect(nums1, nums2)
         
-        XCTAssertEqual(intersectingValues, [2,2])
+        XCTAssertEqual(intersectingValues, [2, 2])
     }
     
     func test_B() {

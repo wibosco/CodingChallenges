@@ -40,7 +40,6 @@ final class ShortestWordDistanceII {
         var p2 = 0
         var shortestDistance = Int.max
         
-        
         while p1 < word1Indexes.count && p2 < word2Indexes.count {
             let word1Index = word1Indexes[p1]
             let word2Index = word2Indexes[p2]

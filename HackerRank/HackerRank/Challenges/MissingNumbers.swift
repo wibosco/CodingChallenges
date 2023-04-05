@@ -13,7 +13,7 @@ final class MissingNumbers {
     
     // MARK: Missing
     
-    static func missingNumbers(arr: [Int], brr: [Int]) -> [Int] {
+    static func missingNumbers(_ arr: [Int], _ brr: [Int]) -> [Int] {
         var arrOccurrences = [Int: Int]()
         var brrOccurrences = [Int: Int]()
         
@@ -43,7 +43,7 @@ final class MissingNumbers {
         return missing.sorted(by: <)
     }
     
-    static func missingNumbersAlt(arr: [Int], brr: [Int]) -> [Int] {
+    static func missingNumbersAlt(_ arr: [Int], _ brr: [Int]) -> [Int] {
         var occurrences = [Int: Int]()
         for value in brr {
             occurrences[value] = (nil == occurrences[value]) ? 1 : occurrences[value]! + 1
@@ -59,4 +59,3 @@ final class MissingNumbers {
         return occurrences.keys.sorted(by: <)
     }
 }
-

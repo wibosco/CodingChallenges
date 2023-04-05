@@ -42,9 +42,9 @@ struct ShortestPathBinaryMatrix {
             return 1
         }
         
-        let relativeIndexing = [[-1,-1], [-1, 0], [-1, 1],
-                                [0, -1],          [0, 1],
-                                [1, -1], [1, 0],  [1, 1]]
+        let relativeIndexing = [[-1, -1], [-1, 0], [-1, 1],
+                                [0, -1], [0, 1],
+                                [1, -1], [1, 0], [1, 1]]
         
         var queue = [[0, 0]] //[row, column]
         var visited = Set<[Int]>()
@@ -164,7 +164,6 @@ struct ShortestPathBinaryMatrix {
                         adjList[nodeIndex].append((previousRowOffset + i))
                     }
                     
-                    
                     if (i + 1) < currentRow.count {
                         if previousRow[(i + 1)] == 0 {
                             adjList[nodeIndex].append((previousRowOffset + (i + 1)))
@@ -195,7 +194,6 @@ struct ShortestPathBinaryMatrix {
                     if nextRow[i] == 0 {
                         adjList[nodeIndex].append((nextRowOffset + i))
                     }
-                    
                     
                     if (i + 1) < currentRow.count {
                         if nextRow[(i + 1)] == 0 {

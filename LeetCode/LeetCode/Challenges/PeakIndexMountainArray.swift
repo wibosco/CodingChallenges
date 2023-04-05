@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 //https://leetcode.com/problems/peak-index-in-a-mountain-array/
 struct PeakIndexMountainArray {
     

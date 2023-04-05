@@ -69,7 +69,7 @@ struct RottingOranges {
         var visited = [[Int]]() //can be thought of as containing all the rotten fruits (once processed)
         
         let relativeIndexing = [        [-1, 0],
-                                [0, -1],       [0, 1],
+                                [0, -1], [0, 1],
                                         [1, 0]] //[row, column]
         
         while !queue.isEmpty {
@@ -174,7 +174,7 @@ struct RottingOranges {
         var mGrid = grid
         
         let relativeIndexing = [        [-1, 0],
-                                [0, -1],       [0, 1],
+                                [0, -1], [0, 1],
                                         [1, 0]] //[row, column]
         
         while !queue.isEmpty {

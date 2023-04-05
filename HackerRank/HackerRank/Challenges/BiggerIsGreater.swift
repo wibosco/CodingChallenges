@@ -14,7 +14,7 @@ import Foundation
 
 //Both of these solutions are too slow to pass this test
 struct BiggerIsGreater {
-    static func biggerIsGreater(w: String) -> String {
+    static func biggerIsGreater(_ w: String) -> String {
         var chars = Array(w)
 
         //find smallest index where the less-significant index
@@ -56,7 +56,7 @@ struct BiggerIsGreater {
         return "no answer"
     }
     
-    static func biggerIsGreaterAlt(w: String) -> String {
+    static func biggerIsGreaterAlt(_ w: String) -> String {
         var pivot: (String.Index, Character)?
         for lsc in w.indices.reversed() {
             guard lsc != w.startIndex else {
