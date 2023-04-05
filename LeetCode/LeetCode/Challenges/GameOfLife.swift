@@ -11,7 +11,7 @@ import Foundation
 //matrix
 struct GameOfLife {
     
-    //Time: O(n * m) where n is the number of rows, m is the the number of columns
+    //Time: O(n * m) where `n` is the number of rows, m is the the number of columns
     //Space: O(n * m)
     //relative indexing
     //multi-source

@@ -23,7 +23,7 @@ final class ImplementStackUsingQueues {
         last = x
     }
     
-    //Time: O(n) where n is the number of elements in `queue`
+    //Time: O(n) where `n` is the number of elements in `queue`
     //
     //Using two queues when popping we move all elements in `queue` to `transferQueue` apart from the last element in the queue
     //which we return. We then assign `transferQueue` to `queue` so we can repeat the process

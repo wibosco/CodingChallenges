@@ -11,7 +11,7 @@ import Foundation
 //design
 //stack
 //
-//Time: average: O(1) and worse: O(n) where n is the number of nodes in the tree
+//Time: average: O(1) and worse: O(n) where `n` is the number of nodes in the tree
 //Space: O(n)
 //
 //Solution Description:
@@ -58,7 +58,7 @@ final class BSTIterator {
 //design
 //array
 //
-//Time: O(n) where n is the number of nodes in the tree
+//Time: O(n) where `n` is the number of nodes in the tree
 //Space: O(h) where h is the height of the tree
 //
 //Solution Description:

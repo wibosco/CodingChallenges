@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct EarliestMomentWhenEveryoneBecomeFriends {
     
-    //Time: O(n log n) where n is the number of logs
-    //Space: O(n + l) where n is the number of nodes/vertices and l is the number of logs
+    //Time: O(n log n) where `n` is the number of logs
+    //Space: O(n + l) where `n` is the number of nodes/vertices and l is the number of logs
     //disjoint set
     //
     //Solution Description

@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct RottingOranges {
     
-    //Time: O(m * n) where m is the number of rows and n is the number of columns
+    //Time: O(m * n) where `m` is the number of rows and n is the number of columns
     //Space: O(m * n) for `visited`
     //BFS
     //multi-source
@@ -118,7 +118,7 @@ struct RottingOranges {
         return neighbors
     }
     
-    //Time: O(m * n) where m is the number of rows and n is the number of columns
+    //Time: O(m * n) where `m` is the number of rows and n is the number of columns
     //Space: O(m * n) worse case if the queue is full as the grid only contains rotten oranges
     //BFS
     //multi-source

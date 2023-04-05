@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/intersection-of-two-arrays-ii/
 struct IntersectionOfTwoArraysII {
     
-    //Time: O(n log n + m log m + min(n, m)) where n is the number of values in `nums1`, m is the number of values in `nums2`
+    //Time: O(n log n + m log m + min(n, m)) where `n` is the number of values in `nums1`, `m` is the number of values in `nums2`
     //Space: O(n) (intersection)
     //two pointers
     //sorting
@@ -46,7 +46,7 @@ struct IntersectionOfTwoArraysII {
         return intersection
     }
     
-    //Time: O(n + m) where n is the number of values in `nums1`, m is the number of values in `nums2`
+    //Time: O(n + m) where `n` is the number of values in `nums1`, `m` is the number of values in `nums2`
     //Space: O(n + m)
     //dictionary
     //
@@ -74,7 +74,7 @@ struct IntersectionOfTwoArraysII {
         return intersection
     }
     
-    //Time: O(m log m + n log m) where n is the number of values in `nums1`, m is the number of values in `nums2`
+    //Time: O(m log m + n log m) where `n` is the number of values in `nums1`, `m` is the number of values in `nums2`
     //Space: O(n) (intersection)
     //binary search
     //sorting

@@ -11,7 +11,7 @@ import Foundation
 //binary search tree
 struct TrimABinarySearchTree {
     
-    //Time: O(n) where n is the number of nodes in the tree
+    //Time: O(n) where `n` is the number of nodes in the tree
     //Space: O(h) where h is the number of levels in the tree
     //DFS
     //recursive
@@ -45,7 +45,7 @@ struct TrimABinarySearchTree {
         return root
     }
     
-    //Time: O(n) where n is the number of nodes in the tree
+    //Time: O(n) where `n` is the number of nodes in the tree
     //Space: O(h) where h is the number of levels in the tree
     //DFS
     //recursive

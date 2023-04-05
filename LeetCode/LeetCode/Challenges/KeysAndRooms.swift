@@ -51,7 +51,7 @@ struct KeysAndRooms {
     //Space: O(n) where `n` is the number of rooms
     //DFS
     //adjacency list
-    //recusive
+    //recursive
     //
     //Solution Description:
     //Treat the rooms and keys as an adjacency list, we can traverse the rooms using DFS. Starting at room 0

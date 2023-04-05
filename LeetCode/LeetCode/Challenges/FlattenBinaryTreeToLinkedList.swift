@@ -13,8 +13,8 @@ import Foundation
 //linked list
 struct FlattenBinaryTreeToLinkedList {
 
-    //Time: O(n) where n is the number of nodes
-    //Space: O(n) where n is the number of nodes
+    //Time: O(n) where `n` is the number of nodes
+    //Space: O(n) where `n` is the number of nodes
     //array
     //DFS
     //

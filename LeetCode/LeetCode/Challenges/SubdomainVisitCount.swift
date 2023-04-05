@@ -11,7 +11,7 @@ import Foundation
 //string
 struct SubdomainVisitCount {
     
-    //Time: O(n * k) where n is the number of elements in `cpdomains`, k is the max domains inside each `cpdomains` element
+    //Time: O(n * k) where `n` is the number of elements in `cpdomains`, k is the max domains inside each `cpdomains` element
     //Space: O(n * k)
     //array
     //counting

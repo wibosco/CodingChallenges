@@ -25,7 +25,7 @@ struct MinCostToConnectAllPoints {
     //First, calculate all possible edges between all points in the graph. The first vertice is then added to the visited set as
     //a special case - it could have been any vertice in the graph. As this approach uses Prim's algorithm the adjacent vertices
     //of the visited vertice are added to a min heap. A min heap is used to ensure that we always select the min edge ("cheapest")
-    //between unconnected vertices. As we are building a tree we know that we will need to add n - 1 edges where n is the number
+    //between unconnected vertices. As we are building a tree we know that we will need to add n - 1 edges where `n` is the number
     //of vertices in the graph - this is what we use for the condition on the while loop. As we inspect the min edge we need to
     //ensure that using it will not create a cycle in the graph by inspecting the `visited` set. If the min edge isn't introducing
     //a cycle we add it's weight to the `total`, add it to the `visited` set and add it's edges to the min heap causes it the
@@ -51,7 +51,7 @@ struct MinCostToConnectAllPoints {
         var minHeap = Heap(elements: adjList[0]) { $0.weight < $1.weight }
         
         var total = 0
-        var edgesToConnect = (points.count - 1) //a tree has n - 1 edges where n is the number of vertices
+        var edgesToConnect = (points.count - 1) //a tree has n - 1 edges where `n` is the number of vertices
         
         while let edge = minHeap.remove() {
             guard !visited.contains(edge.destination) else {
@@ -91,7 +91,7 @@ struct MinCostToConnectAllPoints {
     //the "cheapest" edges will be processed first. As this approach uses Kruskal's algorithm we loop through the sorted edges
     //that we built and use the union-find process (disjoint sets) to connect the vertices and detect if connecting those vertices
     //will introduce a cycle - if connecting would introduce a cycle we skip over counting that edge as part of the MST. Finally
-    //because a tree has n - 1 edges where n is the number of vertices when we reach this value we have our MST.
+    //because a tree has n - 1 edges where `n` is the number of vertices when we reach this value we have our MST.
     static func minCostConnectPointsKruskal(_ points: [[Int]]) -> Int {
         //sort
         var edges = [GraphWeightedEdge]()
@@ -114,7 +114,7 @@ struct MinCostToConnectAllPoints {
         //greedy
         var total = 0
         let unionFind = UnionFind(count: points.count)
-        var edgesToConnect = (points.count - 1) //a tree has n - 1 edges where n is the number of vertices
+        var edgesToConnect = (points.count - 1) //a tree has n - 1 edges where `n` is the number of vertices
         
         for edge in edges {
             if unionFind.union(edge.source, edge.destination) { //ensure this edge won't introduce a cycle

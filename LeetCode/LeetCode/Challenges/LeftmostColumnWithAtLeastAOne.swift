@@ -11,7 +11,7 @@ import Foundation
 //matrix
 struct LeftmostColumnWithAtLeastAOne {
     
-    //Time: O(n log m) where n is the number of rows in `binaryMatrix`, m is the number of columns i n `binaryMatrix`
+    //Time: O(n log m) where `n` is the number of rows in `binaryMatrix`, `m` is the number of columns i n `binaryMatrix`
     //Space: O(1)
     //binary search
     //

@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct GraphValidTree {
     
-    //Time: O(n + e) where n is the number of nodes, e is the number of edges
+    //Time: O(n + e) where `n` is the number of nodes, e is the number of edges
     //Space: O(n + e)
     //DFS
     //recursive
@@ -99,12 +99,12 @@ struct GraphValidTree {
         }
     }
     
-    //Time: O(n + e) where n is the number of nodes, e is the number of edges
-    //Space: O(n + e)
+    //Time: O(n+e) where `n` is the number of nodes, e is the number of edges
+    //Space: O(n+e)
     //BFS
     //visited
     //adjacency list
-    //undirected
+    //undirected graph
     //
     //Solution Description:
     //A valid tree has one root (all nodes need to be connected) and no cycles. First a check is made to ensure that edges are
@@ -173,7 +173,7 @@ struct GraphValidTree {
     }
     
     //Time: O(e) where e is the number of edges
-    //Space: O(n) where n is the number of nodes
+    //Space: O(n) where `n` is the number of nodes
     //disjoint set
     //
     //Solution Description:

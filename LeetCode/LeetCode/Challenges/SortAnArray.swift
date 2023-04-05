@@ -11,7 +11,7 @@ import Foundation
 //array
 struct SortAnArray {
     
-    //Time: O(n log n) where n is the number of elements in `nums`
+    //Time: O(n log n) where `n` is the number of elements in `nums`
     //Space: O(n)
     //sorting
     //heap sort
@@ -36,7 +36,7 @@ struct SortAnArray {
         return sorted
     }
     
-    //Time: O(n * k) where n is the number of elements in `nums`, k is the number of digits of the largest number
+    //Time: O(n * k) where `n` is the number of elements in `nums`, k is the number of digits of the largest number
     //Space: O(n) two buckets
     //sorting
     //radix sort (LSD)
@@ -97,7 +97,7 @@ struct SortAnArray {
         return nums
     }
     
-    //Time: O(n + k) where n is the number of elements in `nums`, k is the unique elements in `nums`
+    //Time: O(n + k) where `n` is the number of elements in `nums`, k is the unique elements in `nums`
     //Space: O(k)
     //sorting
     //counting sort
@@ -142,7 +142,7 @@ struct SortAnArray {
         return sorted
     }
     
-    //Time: O(n log n) where n is the number of elements in `nums`
+    //Time: O(n log n) where `n` is the number of elements in `nums`
     //Space: O(log n) recursive stack
     //sorting
     //quicksort
@@ -205,7 +205,7 @@ struct SortAnArray {
         return i
     }
     
-    //Time: O(n log n) where n is the number of elements in `nums`
+    //Time: O(n log n) where `n` is the number of elements in `nums`
     //Space: O(n) merged array
     //sorting
     //merge sort
@@ -290,7 +290,7 @@ struct SortAnArray {
         return merged
     }
     
-    //Time: O(n^2) where n is the number of elements in `nums`
+    //Time: O(n^2) where `n` is the number of elements in `nums`
     //Space: O(1)
     //sorting
     //insertion sort
@@ -324,7 +324,7 @@ struct SortAnArray {
         return nums
     }
     
-    //Time: O(n^2) where n is the number of elements in `nums`
+    //Time: O(n^2) where `n` is the number of elements in `nums`
     //Space: O(1)
     //sorting
     //selection sort
@@ -355,7 +355,7 @@ struct SortAnArray {
         return nums
     }
     
-    //Time: O(n^2) where n is the number of elements in `nums`
+    //Time: O(n^2) where `n` is the number of elements in `nums`
     //Space: O(1)
     //sorting
     //bubble sort

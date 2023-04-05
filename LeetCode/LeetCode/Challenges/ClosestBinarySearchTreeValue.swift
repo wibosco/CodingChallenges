@@ -12,7 +12,7 @@ import Foundation
 //binary search tree
 struct ClosestBinarySearchTreeValue {
     
-    //Time: O(log n) where n is the number of nodes in the tree
+    //Time: O(log n) where `n` is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //DFS
     //recursive
@@ -47,7 +47,7 @@ struct ClosestBinarySearchTreeValue {
         }
     }
     
-    //Time: O(log n) where n is the number of nodes in the tree
+    //Time: O(log n) where `n` is the number of nodes in the tree
     //Space: O(1)
     //DFS
     //iterative

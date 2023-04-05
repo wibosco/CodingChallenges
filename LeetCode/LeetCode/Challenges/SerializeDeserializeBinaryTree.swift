@@ -12,7 +12,7 @@ import Foundation
 //binary tree
 struct SerializeDeserializeBinaryTree {
     
-    //Time: O(n) where n is the number of elements in data
+    //Time: O(n) where `n` is the number of elements in data
     //Space: O(n) where n is the nodes in the tree
     //BFS
     //level traversal
@@ -58,7 +58,7 @@ struct SerializeDeserializeBinaryTree {
         return Array(values[0...i])
     }
     
-    //Time: O(n) where n is the number of elements in data
+    //Time: O(n) where `n` is the number of elements in data
     //Space: O(n) where n is the nodes in the tree
     //BFS
     //level traversal

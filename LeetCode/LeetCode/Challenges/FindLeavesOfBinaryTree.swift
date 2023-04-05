@@ -11,7 +11,7 @@ import Foundation
 //binary tree
 struct FindLeavesOfBinaryTree {
     
-    //Time: O(n) where n is the number of nodes in the tree
+    //Time: O(n) where `n` is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //DFS
     //recursive

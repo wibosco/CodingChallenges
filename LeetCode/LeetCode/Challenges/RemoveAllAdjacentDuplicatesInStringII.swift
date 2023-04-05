@@ -11,7 +11,7 @@ import Foundation
 //string
 struct RemoveAllAdjacentDuplicatesInStringII {
     
-    //Time: O(n) where n is the number of characters in `s`
+    //Time: O(n) where `n` is the number of characters in `s`
     //Space: O(n)
     //stack
     //counting
@@ -44,7 +44,7 @@ struct RemoveAllAdjacentDuplicatesInStringII {
         return String(stack.map { $0.0 })
     }
     
-    //Time: O(n^2) where n is the number of characters in `s`
+    //Time: O(n^2) where `n` is the number of characters in `s`
     //Space: O(n)
     //in-line
     //

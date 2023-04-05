@@ -12,8 +12,8 @@ import Foundation
 //binary tree
 struct CloneBinaryTreeWithRandomPointer {
     
-    //Time: O(n) where n is the number of nodes
-    //Space: O(n) where n is the number of copied nodes
+    //Time: O(n) where `n` is the number of nodes
+    //Space: O(n) where `n` is the number of copied nodes
     //DFS
     //dictionary
     //
@@ -44,8 +44,8 @@ struct CloneBinaryTreeWithRandomPointer {
         return copiedNode
     }
     
-    //Time: O(n) where n is the number of nodes
-    //Space: O(n) where n is the number of copied nodes
+    //Time: O(n) where `n` is the number of nodes
+    //Space: O(n) where `n` is the number of copied nodes
     //BFS
     //dictionary
     //
