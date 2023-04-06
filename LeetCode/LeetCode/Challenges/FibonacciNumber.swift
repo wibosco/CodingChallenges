@@ -46,6 +46,7 @@ struct FibonacciNumber {
     //Space: O(n) for both the stack and `memo` size
     //top down
     //memoization
+    //dynamic programming
     //recursive
     //DFS
     //
@@ -55,6 +56,9 @@ struct FibonacciNumber {
     //`8, 5, 3, 2, 1, 1, 0` contains `5, 3, 2, 1, 1, 0` so there than recalculating `5, 3, 2, 1, 1, 0` we just store it away
     //as the value we get for a fib squence of `5` and if we need get the fib squence of `5` we returned it directly from
     //that store.
+    //
+    //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
+    //the cached result when the same computation is needed again.
     static func fibTopDown(_ n: Int) -> Int {
         guard n > 0 else {
             return 0
@@ -65,8 +69,9 @@ struct FibonacciNumber {
     }
     
     private static func fib(_ n: Int, _ memo: inout [Int: Int]) -> Int {
-        if let val = memo[n] {
-            return val
+        //check if we have already went down the `n` branch and can just return the result of the previous effort
+        guard memo[n] == nil else {
+            return memo[n]!
         }
         
         var val = 0

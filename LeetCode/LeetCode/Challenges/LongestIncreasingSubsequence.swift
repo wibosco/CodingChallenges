@@ -43,12 +43,16 @@ struct LongestIncreasingSubsequence {
     //DFS
     //recursive
     //memoization
+    //dynamic programming
     //
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
     //each node of that graph from every possible path in DFS manner. To avoid traversing paths that we have already travelled
     //down we use memoization to store the maxmimum incrementing subsequence from that node - due to traversing using DFS you
     //know that if a node as a memoization entry, that entry is the maximum.
+    //
+    //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
+    //the cached result when the same computation is needed again.
     static func lengthOfLISMemoization(_ nums: [Int]) -> Int {
         var longest = 0
         var memo = [Int: Int]()
@@ -66,6 +70,7 @@ struct LongestIncreasingSubsequence {
             return 0
         }
         
+        //check if we have already went down the `currentIndex` branch and can just return the result of the previous effort
         guard memo[currentIndex] == nil else {
             return memo[currentIndex]!
         }

@@ -43,6 +43,7 @@ A collection of coding challenges and their solutions from:
 | ---------- | --------- | ------- |
 | Optimise graph traversal | `Memoization`  | `LongestIncreasingSubsequence` |
 | Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
+| Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChangesa` |
 
 ## Data Structure Characteristics
 
@@ -110,3 +111,19 @@ A collection of coding challenges and their solutions from:
     1. Breadth First Search (BFS) - queue based, level by level traversal
     2. Depth First Search (DFS) - stack based, go as deep as possible then backtrack
 5. Backtracking involves exhaustively searching down one path before reversing back up that path to search down alternative paths at each branching point
+
+## Techniques
+
+### What is Dynamic Programming?
+
+Dynamic programming is a technique for solving problems of recursive nature, iteratively and is applicable when the computations of the subproblems overlap.
+
+Dynamic programming is typically implemented using tabulation, but can also be implemented using memoization. So as you can see, neither one is a "subset" of the other.
+
+When you solve a dynamic programming problem using tabulation you solve the problem "bottom up", i.e., by solving all related sub-problems first, typically by filling up an n-dimensional table. Based on the results in the table, the solution to the "top" / original problem is then computed.
+
+If you use memoization to solve the problem you do it by maintaining a map of already solved sub problems. You do it "top down" in the sense that you solve the "top" problem first (which typically recurses down to solve the sub-problems).
+
+Top-down - First you say I will take over the world. How will you do that? You say I will take over Asia first. How will you do that? I will take over India first. I will become the Chief Minister of Delhi, etc.
+
+Bottom-up - You say I will become the Chief Minister of Delhi. Then I will take over India, then all other countries in Asia and finally I will take over the world. 

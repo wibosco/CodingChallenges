@@ -15,6 +15,7 @@ struct ClimbingStairs {
     //Time: O(n)
     //Space: O(n)
     //memoization
+    //dynamic programming
     //recursive
     //DFS
     //
@@ -35,6 +36,9 @@ struct ClimbingStairs {
     //
     //N.B. this is a twist on https://leetcode.com/problems/fibonacci-number/
     //Similar to: https://leetcode.com/problems/decode-ways/
+    //
+    //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
+    //the cached result when the same computation is needed again.
     static func climbStairs(_ n: Int) -> Int {
         var memo = [Int: Int]()
         let ways = climbStairs(n, 0, &memo)
@@ -50,6 +54,7 @@ struct ClimbingStairs {
             return 0 //too many steps
         }
         
+        //check if we have already went down the `climbTotal` branch and can just return the result of the previous effort
         guard memo[climbTotal] == nil else {
             return memo[climbTotal]!// 0 means that no paths from here result in climbTotal == n
         }

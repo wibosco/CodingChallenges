@@ -15,6 +15,7 @@ struct InterleavingString {
     //Space: O(n+m)
     //set
     //memoization
+    //dynamic programming
     //recursive
     //DFS
     //binary tree
@@ -27,6 +28,9 @@ struct InterleavingString {
     //both `s1` and `s2` match then we take both - first `s1` then `s2`. To speed up the process (from `2^n+m` to `n+m`) we
     //use memoization (`memo`) so that we don't take paths that have already been taken with the `s1Index` and `s2Index` as
     //keys. If we are able to match all the characters of `s1` and `s2` we exit and return true.
+    //
+    //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
+    //the cached result when the same computation is needed again.
     static func isInterleave(_ s1: String, _ s2: String, _ s3: String) -> Bool {
         guard (s1.count + s2.count) == s3.count else {
             return false
@@ -40,11 +44,12 @@ struct InterleavingString {
         return found
     }
     
-    private static func interleave (_ s1: [Character], _ s1Index: Int, _ s2: [Character], _ s2Index: Int, _ s3: [Character], _ s3Index: Int, _ found: inout Bool, _ memo: inout Set<[Int]>) {
+    private static func interleave(_ s1: [Character], _ s1Index: Int, _ s2: [Character], _ s2Index: Int, _ s3: [Character], _ s3Index: Int, _ found: inout Bool, _ memo: inout Set<[Int]>) {
         guard found != true else {
             return
         }
         
+        //check if we have already went down the `[s1Index, s2Index]` branch and can just abort
         guard !memo.contains([s1Index, s2Index]) else {
             return
         }
