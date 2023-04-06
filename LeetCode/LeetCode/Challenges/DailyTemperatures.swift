@@ -13,7 +13,7 @@ import Foundation
 struct DailyTemperatures {
     
     //Time: O(n) where `n` is the number of temperatures (technically O(2n) because of the inner while - whats
-    //important to note here is that `stack` will only ever hold a total of `n` elements)
+    //           important to note here is that `stack` will only ever hold a total of `n` elements)
     //Space: O(n) where `n` is the number of temperatures
     //stack
     //monotonic decreasing stack
@@ -25,6 +25,14 @@ struct DailyTemperatures {
     //temperatures and store this in the "wait" array. We repeat this until the current temperature is smaller than the
     //top of the stack or the stack is empty.
     //
+    //Background:
+    //Monotonic = It is a word for mathematics functions. A function y = f(x) is monotonically increasing or decreasing
+    //when it follows the below conditions:
+    //
+    //As x increases, y also increases always, then it’s a monotonically increasing function.
+    //As x increases, y decreases always, then it’s a monotonically decreasing function.
+    //
+    //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
     //See: https://www.youtube.com/watch?v=cTBiBSnjO3c
     static func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
         var wait = Array(repeating: 0, count: temperatures.count)

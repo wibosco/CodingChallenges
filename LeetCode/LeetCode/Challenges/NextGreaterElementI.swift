@@ -28,7 +28,16 @@ struct NextGreaterElementI {
     //we will just "jump" straight to that "next greater element" (if it exists) in the `greaterThan` dictionary. It's
     //important to note that as `nums1` is a subset of `nums2` we know that the first greater value of a `nums2` element is
     //also the first greater value of that same element in `nums1`. Once we are finished populating `greaterThan` we iterate
-    //through `nums1` and populate `result` with the values from `greaterThan` in the order of `nums1`
+    //through `nums1` and populate `result` with the values from `greaterThan` in the order of `nums1`.
+    //
+    //Background:
+    //Monotonic = It is a word for mathematics functions. A function y = f(x) is monotonically increasing or decreasing
+    //when it follows the below conditions:
+    //
+    //As x increases, y also increases always, then it’s a monotonically increasing function.
+    //As x increases, y decreases always, then it’s a monotonically decreasing function.
+    //
+    //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
     static func nextGreaterElement(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var stack = [Int]()
         

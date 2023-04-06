@@ -24,7 +24,8 @@ A collection of coding challenges and their solutions from:
 | "Generate all", "All permutations", "All combinations" | `Backtracking (DFS)` |
 | "Next Permutation" | `pivot & sorting` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
-| "Next greater element", "Next lesser element", "Iterating array comparing elements" | `Monotonic stack` |
+| "Iterating array comparing elements" | `Stack` |
+| "Next greater element", "Next lesser element" | `Monotonic stack` |
 | "Longest subsequence", "Smallest subsequence", "Maximum points"| `Sliding window`|
 | "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
