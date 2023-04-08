@@ -19,9 +19,9 @@ final class Matrix01Tests: XCTestCase {
                    [0, 1, 0],
                    [0, 0, 0]]
         
-        let distances = Matrix01.updateMatrix(mat)
+        let result = Matrix01.updateMatrix(mat)
         
-        XCTAssertEqual(distances, [[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+        XCTAssertEqual(result, [[0, 0, 0], [0, 1, 0], [0, 0, 0]])
     }
     
     func test_B() {
@@ -29,8 +29,8 @@ final class Matrix01Tests: XCTestCase {
                    [0, 1, 0],
                    [1, 1, 1]]
         
-        let distances = Matrix01.updateMatrix(mat)
+        let result = Matrix01.updateMatrix(mat)
         
-        XCTAssertEqual(distances, [[0, 0, 0], [0, 1, 0], [1, 2, 1]])
+        XCTAssertEqual(result, [[0, 0, 0], [0, 1, 0], [1, 2, 1]])
     }
 }

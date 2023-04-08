@@ -17,33 +17,33 @@ final class ContainerWithMostWaterTests: XCTestCase {
     func test_A() {
         let height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
         
-        let area = ContainerWithMostWater.maxArea(height)
+        let result = ContainerWithMostWater.maxArea(height)
         
-        XCTAssertEqual(area, 49)
+        XCTAssertEqual(result, 49)
     }
     
     func test_B() {
         let height = [1, 1]
         
-        let area = ContainerWithMostWater.maxArea(height)
+        let result = ContainerWithMostWater.maxArea(height)
         
-        XCTAssertEqual(area, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let height = [4, 3, 2, 1, 4]
         
-        let area = ContainerWithMostWater.maxArea(height)
+        let result = ContainerWithMostWater.maxArea(height)
         
-        XCTAssertEqual(area, 16)
+        XCTAssertEqual(result, 16)
     }
     
     func test_D() {
         let height = [1, 2, 1]
         
-        let area = ContainerWithMostWater.maxArea(height)
+        let result = ContainerWithMostWater.maxArea(height)
         
-        XCTAssertEqual(area, 2)
+        XCTAssertEqual(result, 2)
     }
     
 }

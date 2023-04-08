@@ -18,35 +18,35 @@ final class PowTests: XCTestCase {
         let x = 2.00000
         let n = 10
         
-        let pow = Pow.myPow(x, n)
+        let result = Pow.myPow(x, n)
         
-        XCTAssertEqual(pow, 1024.0, accuracy: 0.001)
+        XCTAssertEqual(result, 1024.0, accuracy: 0.001)
     }
     
     func test_B() {
         let x = 2.10000
         let n = 3
         
-        let pow = Pow.myPow(x, n)
+        let result = Pow.myPow(x, n)
         
-        XCTAssertEqual(pow, 9.26100, accuracy: 0.001)
+        XCTAssertEqual(result, 9.26100, accuracy: 0.001)
     }
     
     func test_C() {
         let x = 2.00000
         let n = -2
         
-        let pow = Pow.myPow(x, n)
+        let result = Pow.myPow(x, n)
         
-        XCTAssertEqual(pow, 0.25000, accuracy: 0.001)
+        XCTAssertEqual(result, 0.25000, accuracy: 0.001)
     }
     
     func test_D() {
         let x = 1.00000
         let n = -2147483648
         
-        let pow = Pow.myPow(x, n)
+        let result = Pow.myPow(x, n)
         
-        XCTAssertEqual(pow, 1, accuracy: 0.001)
+        XCTAssertEqual(result, 1, accuracy: 0.001)
     }
 }

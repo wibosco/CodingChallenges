@@ -19,9 +19,9 @@ final class ReorderListTests: XCTestCase {
         
         ReorderList.reorderList(list)
         
-        let values = ListNode.serialize(list)
+        let result = ListNode.serialize(list)
         
-        XCTAssertEqual(values, [1, 4, 2, 3])
+        XCTAssertEqual(result, [1, 4, 2, 3])
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class ReorderListTests: XCTestCase {
         
         ReorderList.reorderList(list)
         
-        let values = ListNode.serialize(list)
+        let result = ListNode.serialize(list)
         
-        XCTAssertEqual(values, [1, 5, 2, 4, 3])
+        XCTAssertEqual(result, [1, 5, 2, 4, 3])
     }
     
     func test_C() {
@@ -39,8 +39,8 @@ final class ReorderListTests: XCTestCase {
         
         ReorderList.reorderList(list)
         
-        let values = ListNode.serialize(list)
+        let result = ListNode.serialize(list)
         
-        XCTAssertEqual(values, [1, 2])
+        XCTAssertEqual(result, [1, 2])
     }
 }

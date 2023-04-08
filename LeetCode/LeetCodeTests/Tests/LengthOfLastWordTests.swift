@@ -16,24 +16,24 @@ final class LengthOfLastWordTests: XCTestCase {
     func test_A() {
         let s = "Hello World"
         
-        let length = LengthOfLastWord.lengthOfLastWord(s)
+        let result = LengthOfLastWord.lengthOfLastWord(s)
         
-        XCTAssertEqual(length, 5)
+        XCTAssertEqual(result, 5)
     }
     
     func test_B() {
         let s = "   fly me   to   the moon  "
         
-        let length = LengthOfLastWord.lengthOfLastWord(s)
+        let result = LengthOfLastWord.lengthOfLastWord(s)
         
-        XCTAssertEqual(length, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_C() {
         let s = "luffy is still joyboy"
         
-        let length = LengthOfLastWord.lengthOfLastWord(s)
+        let result = LengthOfLastWord.lengthOfLastWord(s)
         
-        XCTAssertEqual(length, 6)
+        XCTAssertEqual(result, 6)
     }
 }

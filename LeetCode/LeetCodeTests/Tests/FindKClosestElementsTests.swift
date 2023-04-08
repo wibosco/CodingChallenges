@@ -19,9 +19,9 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 4
         let x = 3
         
-        let closet = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements.findClosestElements(arr, k, x)
         
-        XCTAssertEqual(closet, [1, 2, 3, 4])
+        XCTAssertEqual(result, [1, 2, 3, 4])
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 4
         let x = -1
         
-        let closet = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements.findClosestElements(arr, k, x)
         
-        XCTAssertEqual(closet, [1, 2, 3, 4])
+        XCTAssertEqual(result, [1, 2, 3, 4])
     }
     
     func test_C() {
@@ -39,9 +39,9 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 1
         let x = 9
         
-        let closet = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements.findClosestElements(arr, k, x)
         
-        XCTAssertEqual(closet, [10])
+        XCTAssertEqual(result, [10])
     }
     
     func test_D() {
@@ -49,9 +49,9 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 2
         let x = 2
         
-        let closet = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements.findClosestElements(arr, k, x)
         
-        XCTAssertEqual(closet, [1, 3])
+        XCTAssertEqual(result, [1, 3])
     }
     
     func test_E() {
@@ -59,8 +59,8 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 3
         let x = 5
         
-        let closet = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements.findClosestElements(arr, k, x)
         
-        XCTAssertEqual(closet, [3, 3, 4])
+        XCTAssertEqual(result, [3, 3, 4])
     }
 }

@@ -21,19 +21,19 @@ struct OddEvenLinkedList {
     //with ever iteration we don't we are able to perform the same operation each time. When all nodes are move we effectively have an odd
     //list and an even list so we reattched the even nodes to the end of the odd list.
     static func oddEvenList(_ head: ListNode?) -> ListNode? {
-        var odd = head
+        var oddTail = head
         let evenHead = head?.next //a pointer holding a reference to the start of the even nodes
-        var even = head?.next
+        var evenTail = head?.next
         
-        while even?.next != nil {
-            odd?.next = even?.next //skip over the even node and attach the two odd nodes together
-            odd = odd?.next
+        while evenTail?.next != nil {
+            oddTail?.next = evenTail?.next //skip over the even node and attach the two odd nodes together
+            oddTail = oddTail?.next
             
-            even?.next = odd?.next
-            even = even?.next
+            evenTail?.next = oddTail?.next
+            evenTail = evenTail?.next
         }
         
-        odd?.next = evenHead
+        oddTail?.next = evenHead
         
         return head
     }

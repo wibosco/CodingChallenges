@@ -21,9 +21,9 @@ final class GraphValidTreeTests: XCTestCase {
                      [0, 3],
                      [1, 4]]
         
-        let isValid = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree.validTree(n, edges)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -34,9 +34,9 @@ final class GraphValidTreeTests: XCTestCase {
                      [1, 3],
                      [1, 4]]
         
-        let isValid = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree.validTree(n, edges)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -45,9 +45,9 @@ final class GraphValidTreeTests: XCTestCase {
                      [1, 2],
                      [3, 4]]
         
-        let isValid = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree.validTree(n, edges)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
@@ -55,18 +55,18 @@ final class GraphValidTreeTests: XCTestCase {
         let edges = [[0, 1],
                      [1, 2]]
         
-        let isValid = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree.validTree(n, edges)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
         let n = 2
         let edges = [[1, 0]]
         
-        let isValid = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree.validTree(n, edges)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_F() {
@@ -76,8 +76,8 @@ final class GraphValidTreeTests: XCTestCase {
                      [1, 4],
                      [2, 3]]
         
-        let isValid = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree.validTree(n, edges)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
 }
