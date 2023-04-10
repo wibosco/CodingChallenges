@@ -17,10 +17,10 @@ struct GroupAnagrams {
     //dictionary
     //
     //Solution Description:
-    //If one string is an anagram of another it will contain the exact same characters just in a differnt order. Rather go
-    //through each `strs` element and compare against each other one, we instead sort each element and use that sorted
-    //string as the key of a dictionary. This way if two strings are anagrams they will be sorted to the same string and we
-    //can add them to the dictionary as elements of the value array.
+    //If one string is an anagram of another it will contain the exact same characters just in a differnt order. Rather go through each
+    //`strs` element and compare against each other one, we instead sort each element and use that sorted string as the key of a
+    //dictionary. This way if two strings are anagrams they will be sorted to the same string and we can add them to the dictionary as
+    //elements of the value array.
     static func groupAnagrams(_ strs: [String]) -> [[String]] {
         guard strs.count > 1 else {
             return [strs]
