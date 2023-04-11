@@ -11,7 +11,7 @@ import Foundation
 //matrix
 struct RotateImage {
     
-    //Time: O(n) where `n` is the elements in the matrix
+    //Time: O(n) `n` is the elements in the matrix
     //Space: O(1)
     //array
     //
@@ -63,7 +63,7 @@ struct RotateImage {
         }
     }
     
-    //Time: O(n) where `n` is the elements in the matrix
+    //Time: O(n) `n` is the elements in the matrix
     //Space: O(1)
     //array
     //math
@@ -86,8 +86,8 @@ struct RotateImage {
         }
     }
     
-    //Time: O(n * m) where `n` is the number of rows in `mat` and `m` is the number of columns
-    //Space: O(n * m) where `n` is the number of rows in `mat` and `m` is the number of columns
+    //Time: O(n * m) `n` is the number of rows in `mat` and `m` is the number of columns
+    //Space: O(n * m) `n` is the number of rows in `mat` and `m` is the number of columns
     //array
     //
     //Solution Description:

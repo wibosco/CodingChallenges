@@ -12,8 +12,8 @@ import Foundation
 //array
 struct BuildingsWithOceanView {
     
-    //Time: O(n) where `n` is the number of heights
-    //Space: O(n) where `n` is the number of heights
+    //Time: O(n) `n` is the number of heights
+    //Space: O(n) `n` is the number of heights
     //
     //Solution Description:
     //Coming from right to left (ocean inwards) we track the tallest building that have so far, if a builting is taller
@@ -32,8 +32,8 @@ struct BuildingsWithOceanView {
         return oceanViews.reversed()
     }
     
-    //Time: O(n) where `n` is the number of heights
-    //Space: O(n) where `n` is the number of heights
+    //Time: O(n) `n` is the number of heights
+    //Space: O(n) `n` is the number of heights
     //stack
     //monotonic decreasing stack
     //

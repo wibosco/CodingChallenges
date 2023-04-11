@@ -77,7 +77,7 @@ struct MinCostToConnectAllPoints {
         return total
     }
     
-    //Time: O(n^2) where `n` is the number of points
+    //Time: O(n^2) `n` is the number of points
     //Space: O(n)
     //MST - minimum spanning tree
     //disjoint set

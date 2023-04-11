@@ -11,8 +11,8 @@ import Foundation
 //array
 struct BasicCalculatorII {
     
-    //Time: O(n) where `n` is the number of characters in `s`
-    //Space: O(n) where `n` is the number of characters in `s`
+    //Time: O(n) `n` is the number of characters in `s`
+    //Space: O(n) `n` is the number of characters in `s`
     //stack
     //string
     //

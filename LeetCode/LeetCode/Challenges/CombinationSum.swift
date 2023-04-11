@@ -11,7 +11,7 @@ import Foundation
 //array
 struct CombinationSum {
     
-    //Time: O(n^k) where `n` is the number of elements in `candidates`, `k` is the number of levels in the tree
+    //Time: O(n^k) `n` is the number of elements in `candidates`, `k` is the number of levels in the tree
     //Space: O(k) where `k` is the number of levels in the tree
     //backtracking
     //DFS

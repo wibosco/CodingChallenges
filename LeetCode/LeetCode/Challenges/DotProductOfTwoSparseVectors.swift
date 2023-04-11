@@ -23,7 +23,7 @@ struct SparseVector {
     //Space: O(k) where `k` is the number of non-zero elements in `nums`
     let nonZeroMap: [Int: Int] //[index: value]
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     init(_ nums: [Int]) {
         var nonZeroMap = [Int: Int]()
         for (i, num) in nums.enumerated() where num != 0 {
@@ -53,7 +53,7 @@ struct SparseVector {
 //Store the `nums` array as a property and in `dotProduct` iterate through both arrays, multiple the values at the same index
 //together to get the final product value.
 struct SparseVectorStoreWhole {
-    //Space: O(n) where `n` is the number of elements in `nums`
+    //Space: O(n) `n` is the number of elements in `nums`
     let nums: [Int]
     
     init(_ nums: [Int]) {

@@ -11,7 +11,7 @@ import Foundation
 //matrix
 struct SortTheMatrixDiagonally {
     
-    //Time: O(n * m * ((log (min(n, m)))) where `n` is the number of rows in `mat`, `m` is the number of columns in `mat`
+    //Time: O(n * m * ((log (min(n, m)))) `n` is the number of rows in `mat`, `m` is the number of columns in `mat`
     //Space: O(n * m + log (min(n, m)))) where `log min(n, m)` is the size of  one diagonal
     //sorting
     //dictionary
@@ -48,7 +48,7 @@ struct SortTheMatrixDiagonally {
         return orderedMat
     }
     
-    //Time: O((n + m) * ((min(n, m) log (min(n, m)))) where `n` is the number of rows in `mat`, m is the number
+    //Time: O((n + m) * ((min(n, m) log (min(n, m)))) `n` is the number of rows in `mat`, m is the number
     //      of columns in `mat`
     //Space: O(n * m + (min(n, m)))) where `min(n, m)` is the size of one diagonal
     //relative indexing

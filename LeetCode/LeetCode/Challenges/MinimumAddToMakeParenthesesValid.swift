@@ -12,7 +12,7 @@ import Foundation
 //string
 struct MinimumAddToMakeParenthesesValid {
     
-    //Time: O(n) where `n` is the number of characters in `s`
+    //Time: O(n) `n` is the number of characters in `s`
     //Space: O(1)
     //counting
     //
@@ -44,8 +44,8 @@ struct MinimumAddToMakeParenthesesValid {
         return unpairedOpeningBracket + unpairedClosingBracket
     }
     
-    //Time: O(n) where `n` is the number of characters in `s`
-    //Space: O(n) where `n` is the number of characters in `s`
+    //Time: O(n) `n` is the number of characters in `s`
+    //Space: O(n) `n` is the number of characters in `s`
     //stack
     //
     //Solution Description:

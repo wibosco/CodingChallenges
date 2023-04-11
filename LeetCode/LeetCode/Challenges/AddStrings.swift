@@ -12,7 +12,7 @@ import Foundation
 //string
 struct AddStrings {
     
-    //Time: O(n) where `n` is the greater of `num1` and `num2`
+    //Time: O(n) `n` is the greater of `num1` and `num2`
     //Space: O(n)
     //array
     //overflow

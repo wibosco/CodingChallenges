@@ -12,8 +12,8 @@ import Foundation
 //array
 struct KthLargestElementInArray {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(n + log n) where `n` is the number of elements in `nums` (log n for the recursive stack)
+    //Time: O(n) `n` is the number of elements in `nums`
+    //Space: O(n + log n) `n` is the number of elements in `nums` (log n for the recursive stack)
     //quickselect
     //quicksort
     //in-line
@@ -67,7 +67,7 @@ struct KthLargestElementInArray {
         return i
     }
     
-    //Time: O(n log n) where `n` is number of elements in `nums`
+    //Time: O(n log n) `n` is number of elements in `nums`
     //Space: O(n)
     //max heap
     //

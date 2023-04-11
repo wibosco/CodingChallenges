@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct RemoveNthFromList {
     
-    //Time: O(n) where `n` is the number of nodes in the list
+    //Time: O(n) `n` is the number of nodes in the list
     //Space: O(1)
     //two pointers
     //
@@ -46,7 +46,7 @@ struct RemoveNthFromList {
         return dummy.next
     }
     
-    //Time: O(n) where `n` is the number of nodes in the list
+    //Time: O(n) `n` is the number of nodes in the list
     //Space: O(1)
     //2 passes
     //
@@ -87,8 +87,8 @@ struct RemoveNthFromList {
         return head
     }
     
-    //Time: O(n) where `n` is the number of nodes in the list
-    //Space: O(n) where `n` is the number of nodes in the list
+    //Time: O(n) `n` is the number of nodes in the list
+    //Space: O(n) `n` is the number of nodes in the list
     //array
     //
     //Solution Description:

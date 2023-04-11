@@ -11,8 +11,8 @@ import Foundation
 //string
 struct WordPattern {
     
-    //Time: O(n) where `n` is the number of elements in a `pattern`/`s`
-    //Space: O(m+n) where `n` is the number of elements in a `pattern`/`s` and `m` is the number of elements in `s`
+    //Time: O(n) `n` is the number of elements in a `pattern`/`s`
+    //Space: O(m+n) `n` is the number of elements in a `pattern`/`s` and `m` is the number of elements in `s`
     //dictionary
     //array
     //

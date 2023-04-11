@@ -11,8 +11,8 @@ import Foundation
 //array
 struct ThreeSumClosest {
     
-    //Time: O(n^2) where `n` is the number of nodes in `nums`
-    //Space: O(n) where `n` is the number of nodes in `nums`
+    //Time: O(n^2) `n` is the number of nodes in `nums`
+    //Space: O(n) `n` is the number of nodes in `nums`
     //two pointers
     //sorting
     //nested loops

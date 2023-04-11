@@ -11,7 +11,7 @@ import Foundation
 //linked list
 struct RemoveDuplicatesFromSortedList {
     
-    //Time: O(n) where `n` is the number of elements in the list
+    //Time: O(n) `n` is the number of elements in the list
     //Space: O(1)
     //two pointers
     //

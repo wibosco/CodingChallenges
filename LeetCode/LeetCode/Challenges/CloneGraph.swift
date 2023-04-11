@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct CloneGraph {
     
-    //Time: O(n + e) where `n` is the number of vertice and `e` is the number of edges
-    //Space: O(n) where `n` is the number stored in the `vertices` and `visited`
+    //Time: O(n + e) `n` is the number of vertice and `e` is the number of edges
+    //Space: O(n) `n` is the number stored in the `vertices` and `visited`
     //BFS
     //dictionary
     //
@@ -54,8 +54,8 @@ struct CloneGraph {
         return copiedVertices[vertice]
     }
     
-    //Time: O(n + e) where `n` is the number of vertice and `e` is the number of edges
-    //Space: O(n) where `n` is the number stored in the `vertices` and `visited`
+    //Time: O(n + e) `n` is the number of vertice and `e` is the number of edges
+    //Space: O(n) `n` is the number stored in the `vertices` and `visited`
     //BFS
     //dictionary
     //
@@ -104,7 +104,7 @@ struct CloneGraph {
         return copiedVertices[vertice]
     }
     
-    //Time: O(n + e) where `n` is the number of vertices and `e` is the number of edges
+    //Time: O(n + e) `n` is the number of vertices and `e` is the number of edges
     //Space: O(n)
     //DFS
     //recursive
@@ -140,8 +140,8 @@ struct CloneGraph {
         return copy
     }
     
-    //Time: O(n + e) where `n` is the number of vertice and `e` is the number of edges
-    //Space: O(n) where `n` is the number stored in the `vertices` and `visited`
+    //Time: O(n + e) `n` is the number of vertice and `e` is the number of edges
+    //Space: O(n) `n` is the number stored in the `vertices` and `visited`
     //DFS
     //recursive
     //dictionary

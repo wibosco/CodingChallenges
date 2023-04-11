@@ -11,7 +11,7 @@ import Foundation
 //array
 struct MeetingRooms {
     
-    //Time: O(n log n) where `n` is the number of elements in `intervals`
+    //Time: O(n log n) `n` is the number of elements in `intervals`
     //Space: O(n)
     //sorting
     //

@@ -11,7 +11,7 @@ import Foundation
 //array
 struct LongestIncreasingSubsequence {
     
-    //Time: O(n^2) where `n` is the number of elements in `nums` (nested for loops)
+    //Time: O(n^2) `n` is the number of elements in `nums` (nested for loops)
     //Space: O(n)
     //graph theory
     //dynamic programming
@@ -37,7 +37,7 @@ struct LongestIncreasingSubsequence {
         return lis.max() ?? 0
     }
     
-    //Time: O(n^2) where `n` is the number of elements in `nums` (nested for loops)
+    //Time: O(n^2) `n` is the number of elements in `nums` (nested for loops)
     //Space: O(n)
     //graph theory
     //DFS
@@ -90,7 +90,7 @@ struct LongestIncreasingSubsequence {
         return longestFromCurrentIndex
     }
     
-    //Time: O(2^n) where `n` is the number of elements in `nums` (at each index we can choose to add that value to our count or not)
+    //Time: O(2^n) `n` is the number of elements in `nums` (at each index we can choose to add that value to our count or not)
     //Space: O(n)
     //graph theory
     //DFS

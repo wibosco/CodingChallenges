@@ -12,7 +12,7 @@ import Foundation
 //array
 struct CanPlaceFlowers {
     
-    //Time: O(n) where `n` is the number of elements in flowerbed
+    //Time: O(n) `n` is the number of elements in flowerbed
     //Space: O(1)
     //greedy
     //

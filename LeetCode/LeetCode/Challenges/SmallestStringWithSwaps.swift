@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct SmallestStringWithSwaps {
     
-    //Time: O(n log n) where `n` is the number of pairs
-    //Space: O(n) where `n` is the number of pairs
+    //Time: O(n log n) `n` is the number of pairs
+    //Space: O(n) `n` is the number of pairs
     //disjoint set
     //
     //Solution Description:

@@ -62,8 +62,8 @@ struct Search2DMatrix {
         return false
     }
     
-    //Time: O(n + log n) where `n` is the number of elements in `matrix`
-    //Space: O(n) where `n` is the number of elements in `matrix`
+    //Time: O(n + log n) `n` is the number of elements in `matrix`
+    //Space: O(n) `n` is the number of elements in `matrix`
     //matrix
     //
     //Solution Description:

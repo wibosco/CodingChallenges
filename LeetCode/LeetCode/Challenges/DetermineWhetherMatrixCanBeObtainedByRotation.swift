@@ -11,8 +11,8 @@ import Foundation
 //matrix
 struct DetermineWhetherMatrixCanBeObtainedByRotation {
     
-    //Time: O(n * m) where `n` is the number of rows in `mat` and `m` is the number of columns (ignore outer loop - constant)
-    //Space: O(n * m) where `n` is the number of rows in `mat` and `m` is the number of columns
+    //Time: O(n * m) `n` is the number of rows in `mat` and `m` is the number of columns (ignore outer loop - constant)
+    //Space: O(n * m) `n` is the number of rows in `mat` and `m` is the number of columns
     //array
     //
     //Solution Description:

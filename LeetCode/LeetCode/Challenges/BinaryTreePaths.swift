@@ -11,7 +11,7 @@ import Foundation
 //binary tree
 struct BinaryTreePaths {
     
-    //Time: O(n) where `n` is the number of nodes in the tree
+    //Time: O(n) `n` is the number of nodes in the tree
     //Space: O(d) where d is the depth of the tree
     //DFS
     //recursive

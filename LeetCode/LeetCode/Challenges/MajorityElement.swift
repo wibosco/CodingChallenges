@@ -11,7 +11,7 @@ import Foundation
 //array
 struct MajorityElement {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(1)
     //counting
     //Boyer-Moore Voting Algorithm
@@ -39,8 +39,8 @@ struct MajorityElement {
         return majority
     }
     
-    //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
+    //Space: O(n) `n` is the number of elements in `nums`
     //dictionary
     //frequency
     //

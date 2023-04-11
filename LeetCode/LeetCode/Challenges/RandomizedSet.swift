@@ -12,7 +12,7 @@ import Foundation
 //array
 //dictionary
 //
-//Time: O(n) where `n` is the window size
+//Time: O(n) `n` is the window size
 //Space: O(1)
 //
 //Solution Description:

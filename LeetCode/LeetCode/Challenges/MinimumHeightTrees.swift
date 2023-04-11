@@ -11,8 +11,8 @@ import Foundation
 //n-ary tree
 struct MinimumHeightTrees {
     
-    //Time: O(n+e) where `n` is the number of nodes, `e` is the number of edges
-    //Space: O(n+e) where `n` is the number of nodes, `e` is the number of edges
+    //Time: O(n+e) `n` is the number of nodes, `e` is the number of edges
+    //Space: O(n+e) `n` is the number of nodes, `e` is the number of edges
     //graph theory
     //adjacency list
     //visited
@@ -70,8 +70,8 @@ struct MinimumHeightTrees {
         return leafNodes
     }
     
-    //Time: O(n^2 + e) where `n` is the number of nodes, `e` is the number of edges
-    //Space: O(n+e) where `n` is the number of nodes, `e` is the number of edges
+    //Time: O(n^2 + e) `n` is the number of nodes, `e` is the number of edges
+    //Space: O(n+e) `n` is the number of nodes, `e` is the number of edges
     //graph theory
     //BFS
     //adjacency list

@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct AccountsMerge {
     
-    //Time: O(m * (n log n)) where `n` is the number of unique accounts and `m` the number of unique email addresses
-    //Space: O(n * m) where `n` is the number of unique accounts and `m` the number of email addresses
+    //Time: O(m * (n log n)) `n` is the number of unique accounts and `m` the number of unique email addresses
+    //Space: O(n * m) `n` is the number of unique accounts and `m` the number of email addresses
     //BFS
     //multi-source
     //visited
@@ -94,8 +94,8 @@ struct AccountsMerge {
         return mergedAccounts
     }
     
-    //Time: O(m * (n log n)) where `n` is the number of unique accounts and `m` the number of unique email addresses
-    //Space: O(n * m) where `n` is the number of unique accounts and `m` the number of email addresses
+    //Time: O(m * (n log n)) `n` is the number of unique accounts and `m` the number of unique email addresses
+    //Space: O(n * m) `n` is the number of unique accounts and `m` the number of email addresses
     //DFS
     //multi-source
     //visited
@@ -175,8 +175,8 @@ struct AccountsMerge {
         }
     }
     
-    //Time: O(m * (n log n)) where `n` is the number of unique accounts and `m` the number of unique email addresses
-    //Space: O(n * m) where `n` is the number of unique accounts and `m` the number of unique email addresses
+    //Time: O(m * (n log n)) `n` is the number of unique accounts and `m` the number of unique email addresses
+    //Space: O(n * m) `n` is the number of unique accounts and `m` the number of unique email addresses
     //disjoint set
     //array
     //dictionary

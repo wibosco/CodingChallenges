@@ -11,7 +11,7 @@ import Foundation
 //array
 struct JumpGameII {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(k) where `k` is the size of the largest level
     //n-ary tree
     //BFS

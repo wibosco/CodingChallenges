@@ -12,8 +12,8 @@ import Foundation
 //binary search
 struct SearchInRotatedSortedArrayII {
     
-    //Average Time: O(log n) where `n` is the number of elements in `nums`
-    //Worse Time: O(n) where `n` is the number of elements in `nums`
+    //Average Time: O(log n) `n` is the number of elements in `nums`
+    //Worse Time: O(n) `n` is the number of elements in `nums`
     //Space: O(1)
     //array
     //

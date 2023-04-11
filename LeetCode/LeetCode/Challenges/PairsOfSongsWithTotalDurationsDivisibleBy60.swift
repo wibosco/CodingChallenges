@@ -12,7 +12,7 @@ import Foundation
 //array
 struct PairsOfSongsWithTotalDurationsDivisibleBy60 {
     
-    //Time: O(n) where `n` is the number of elements in `time`
+    //Time: O(n) `n` is the number of elements in `time`
     //Space: O(1) remainders will contain a maximum of 60 entries
     //dictionary
     //

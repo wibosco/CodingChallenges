@@ -11,7 +11,7 @@ import Foundation
 //linked list
 struct ReverseLinkedListII {
     
-    //Time: O(n+k) where `n` is number of nodes in the list, `k` is the difference between left and right
+    //Time: O(n+k) `n` is number of nodes in the list, `k` is the difference between left and right
     //Space: O(k)
     //array
     //two pointers
@@ -59,7 +59,7 @@ struct ReverseLinkedListII {
         return left == 1 ? nodes[0] : head
     }
     
-    //Time: O(n) where `n` is number of nodes in the list
+    //Time: O(n) `n` is number of nodes in the list
     //Space: O(n) - recursion stack
     //array
     //two pointers

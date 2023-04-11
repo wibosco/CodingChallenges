@@ -12,9 +12,9 @@ import Foundation
 //array
 struct DailyTemperatures {
     
-    //Time: O(n) where `n` is the number of temperatures (technically O(2n) because of the inner while - whats
+    //Time: O(n) `n` is the number of temperatures (technically O(2n) because of the inner while - whats
     //           important to note here is that `stack` will only ever hold a total of `n` elements)
-    //Space: O(n) where `n` is the number of temperatures
+    //Space: O(n) `n` is the number of temperatures
     //stack
     //monotonic decreasing stack
     //
@@ -53,7 +53,7 @@ struct DailyTemperatures {
         return wait
     }
     
-    //Time: O(n^2) where `n` is the number of temperatures
+    //Time: O(n^2) `n` is the number of temperatures
     //Space: O(n) where n is the numer of temperatures
     //
     //Solution Description:

@@ -11,7 +11,7 @@ import Foundation
 //string
 struct RemoveDuplicateLetters {
     
-    //Time: O(n) where `n` is the number of elements in `s`
+    //Time: O(n) `n` is the number of elements in `s`
     //Space: O(n)
     //monotonic increasing stack
     //dictionary

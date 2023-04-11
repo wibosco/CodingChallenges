@@ -12,7 +12,7 @@ import Foundation
 //stack
 struct NextGreaterElementI {
     
-    //Time: O(n + m) where `n` is the numbers of elements in `nums1`, `m` is the number of elements in `nums2`
+    //Time: O(n + m) `n` is the numbers of elements in `nums1`, `m` is the number of elements in `nums2`
     //Space: O(n) where n is the the number of elements in `nums1`
     //monotonic decreasing stack
     //dictionary
@@ -67,7 +67,7 @@ struct NextGreaterElementI {
         return result
     }
     
-    //Time: O(n * m) where `n` is the numbers of elements in `nums1`, `m` is the number of elements in `nums2`
+    //Time: O(n * m) `n` is the numbers of elements in `nums1`, `m` is the number of elements in `nums2`
     //Space: O(n + m)
     //dictionary
     //

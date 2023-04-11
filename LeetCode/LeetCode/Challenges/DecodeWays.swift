@@ -37,7 +37,7 @@ struct DecodeWays {
                                    "25": "y",
                                    "26": "z"]
     
-    //Time: O(n) where `n` is the number of nodes in the tree
+    //Time: O(n) `n` is the number of nodes in the tree
     //Space: O(n)
     //memoization
     //dynamic programming

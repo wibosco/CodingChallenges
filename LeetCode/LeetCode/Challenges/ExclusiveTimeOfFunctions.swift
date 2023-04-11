@@ -11,8 +11,8 @@ import Foundation
 //array
 struct ExclusiveTimeOfFunctions {
     
-    //Time: O(n) where `n` is the number of elements in `logs`
-    //Space: O(n) where `n` is the number of elements in `logs` (actually O(n/2))
+    //Time: O(n) `n` is the number of elements in `logs`
+    //Space: O(n) `n` is the number of elements in `logs` (actually O(n/2))
     //stack
     //
     //Solution Description:

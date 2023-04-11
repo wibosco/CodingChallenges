@@ -12,7 +12,7 @@ import Foundation
 //binary tree
 struct LowestCommonAncestorBinaryTreeIII {
     
-    //Time: O(n * m) where `n` is the level of `p` and `m` is the level of `q`
+    //Time: O(n * m) `n` is the level of `p` and `m` is the level of `q`
     //Space: O(1)
     //two pointers
     //
@@ -49,7 +49,7 @@ struct LowestCommonAncestorBinaryTreeIII {
         return p1 //could have used p2
     }
     
-    //Time: O(n) where `n` is the number of nodes in the tree
+    //Time: O(n) `n` is the number of nodes in the tree
     //Space: O(log n) where `log n` is the number of levels in the tree
     //DFS
     //

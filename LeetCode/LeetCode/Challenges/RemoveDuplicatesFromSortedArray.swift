@@ -12,7 +12,7 @@ import Foundation
 //two pointers
 struct RemoveDuplicatesFromSortedArray {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(1)
     //array
     //sorted

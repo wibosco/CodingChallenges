@@ -12,7 +12,7 @@ import Foundation
 //binary tree
 struct LowestCommonAncestorBinaryTreeII {
     
-    //Time: O(n) where `n` is the number of nodes in the tree
+    //Time: O(n) `n` is the number of nodes in the tree
     //Space: O(log n) where `log n` is the number of levels in the tree
     //DFS
     //

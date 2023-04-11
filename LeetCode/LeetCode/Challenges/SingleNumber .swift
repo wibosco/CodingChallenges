@@ -11,7 +11,7 @@ import Foundation
 //array
 struct SingleNumber {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(1)
     //bit manipulation
     //bitwise
@@ -35,7 +35,7 @@ struct SingleNumber {
         return result
     }
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(n)
     //set
     //

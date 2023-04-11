@@ -12,7 +12,7 @@ import Foundation
 //string
 struct StringToInteger {
     
-    //Time: O(n) where `n` is the number of characters in `s`
+    //Time: O(n) `n` is the number of characters in `s`
     //Space: O(1)
     //overflow
     //underflow

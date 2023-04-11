@@ -11,8 +11,8 @@ import Foundation
 //binary tree
 struct VerticalOrderTraversalOfABinaryTree {
  
-    //Time: O(n log n) where `n` is the number of nodes in the tree (due to the sorting)
-    //Space: O(n) where `n` is the number of nodes in the tree
+    //Time: O(n log n) `n` is the number of nodes in the tree (due to the sorting)
+    //Space: O(n) `n` is the number of nodes in the tree
     //BFS
     //array
     //dictionary

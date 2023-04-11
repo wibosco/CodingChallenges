@@ -11,7 +11,7 @@ import Foundation
 //string
 struct BuddyStrings {
     
-    //Time: O(n) where `n` is the number of characters in `s`/`goal`
+    //Time: O(n) `n` is the number of characters in `s`/`goal`
     //Space: O(n)
     //dictionary
     //sorting

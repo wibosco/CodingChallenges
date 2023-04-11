@@ -12,8 +12,8 @@ import Foundation
 //array
 struct SubarraySumEqualsK {
     
-    //Time: O(n) where `n` is the number of element in `nums`
-    //Space: O(n) where `n` is the number of element in `nums`
+    //Time: O(n) `n` is the number of element in `nums`
+    //Space: O(n) `n` is the number of element in `nums`
     //prefix sum
     //dictionary
     //
@@ -51,7 +51,7 @@ struct SubarraySumEqualsK {
         return count
     }
     
-    //Time: O(n^2) where `n` is the number of element in `nums`
+    //Time: O(n^2) `n` is the number of element in `nums`
     //Space: O(1)
     //nested loops
     //

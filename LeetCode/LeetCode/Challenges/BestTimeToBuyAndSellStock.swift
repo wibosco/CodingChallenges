@@ -11,7 +11,7 @@ import Foundation
 //array
 struct BestTimeToBuyAndSellStock {
     
-    //Time: O(n) where `n` is the number of elements in `prices`
+    //Time: O(n) `n` is the number of elements in `prices`
     //Space: O(1)
     //counting
     //greedy

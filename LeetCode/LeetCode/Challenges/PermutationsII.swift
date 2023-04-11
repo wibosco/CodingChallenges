@@ -11,7 +11,7 @@ import Foundation
 //array
 struct PermutationsII {
     
-    //Time: O(n*n!) where `n` is the number of elements in `nums`
+    //Time: O(n*n!) `n` is the number of elements in `nums`
     //Space: O(n)
     //DFS
     //backtracking
@@ -61,7 +61,7 @@ struct PermutationsII {
         }
     }
     
-    //Time: O(n*n!) where `n` is the number of elements in `nums`
+    //Time: O(n*n!) `n` is the number of elements in `nums`
     //Space: O(n) stack frames
     //DFS
     //backtracking

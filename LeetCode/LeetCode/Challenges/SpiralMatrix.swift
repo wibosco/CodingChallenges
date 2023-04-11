@@ -17,8 +17,8 @@ struct SpiralMatrix {
         case right
     }
     
-    //Time: O(n * m) where `n` is the number of rows in `matrix,` `m` is the number of columns in `matrix`
-    //Space: O(n * m) where `n` is the number of rows in `matrix,` `m` is the number of columns in `matrix`
+    //Time: O(n * m) `n` is the number of rows in `matrix,` `m` is the number of columns in `matrix`
+    //Space: O(n * m) `n` is the number of rows in `matrix,` `m` is the number of columns in `matrix`
     //graph
     //visited
     //relative indexing

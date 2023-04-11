@@ -12,8 +12,8 @@ import Foundation
 //stack
 struct EvaluateReversePolishNotation {
     
-    //Time: O(n) where `n` is number of tokens
-    //Space: O(n) where `n` is number of tokens
+    //Time: O(n) `n` is number of tokens
+    //Space: O(n) `n` is number of tokens
     //
     //Solution Description:
     //Using a stack we add elements until we come to an operator, at which point we pop two elements from the stack

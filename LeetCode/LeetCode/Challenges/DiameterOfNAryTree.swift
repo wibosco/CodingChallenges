@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct DiameterOfNAryTree { //DiameterOfN-AryTree
     
-    //Time: O(n log n) where `n` is the numner of nodes in the tree
+    //Time: O(n log n) `n` is the numner of nodes in the tree
     //Space: O(c) where `c` is the number of nodes at any level
     //DFS
     //

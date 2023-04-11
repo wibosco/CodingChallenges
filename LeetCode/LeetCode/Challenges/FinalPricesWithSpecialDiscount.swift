@@ -12,8 +12,8 @@ import Foundation
 //stack
 struct FinalPricesWithSpecialDiscount {
     
-    //Time: O(n) where `n` is the prices
-    //Space: O(n) where `n` is the final prices
+    //Time: O(n) `n` is the prices
+    //Space: O(n) `n` is the final prices
     //monotonic ascending stack
     //
     //Solution Description:

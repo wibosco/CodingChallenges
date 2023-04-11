@@ -12,7 +12,7 @@ import Foundation
 //array
 struct DestroyingAsteroids {
     
-    //Time: O(n log n) where `n` is the elements in `asteroids`
+    //Time: O(n log n) `n` is the elements in `asteroids`
     //Space: O(n) sorted asteroids array
     //sorted
     //greedy

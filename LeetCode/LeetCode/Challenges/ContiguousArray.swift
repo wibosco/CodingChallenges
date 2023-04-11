@@ -11,8 +11,8 @@ import Foundation
 //array
 struct ContiguousArray {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(n) where `n` is the number of elements in `counts`
+    //Time: O(n) `n` is the number of elements in `nums`
+    //Space: O(n) `n` is the number of elements in `counts`
     //prefix sum
     //dictionary
     //

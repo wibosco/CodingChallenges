@@ -11,7 +11,7 @@ import Foundation
 //array
 struct ContainsDuplicate {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(n)
     //set
     //

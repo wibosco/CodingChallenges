@@ -11,8 +11,8 @@ import Foundation
 //string
 struct GroupAnagrams {
     
-    //Time: O(n m log m) where `n` is the number of elements in `strs` and `m` is max character length
-    //Space: O(n) where `n` is the number of elements in `strs`
+    //Time: O(n m log m) `n` is the number of elements in `strs` and `m` is max character length
+    //Space: O(n) `n` is the number of elements in `strs`
     //sorting
     //dictionary
     //

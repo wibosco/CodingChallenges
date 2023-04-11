@@ -17,7 +17,7 @@ struct SpiralMatrixII {
         case up
     }
     
-    //Time: O(n^2) where `n` is the number of cells in the matrix
+    //Time: O(n^2) `n` is the number of cells in the matrix
     //Space: O(n^2)
     //
     //Solution Description:

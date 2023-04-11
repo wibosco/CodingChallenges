@@ -12,7 +12,7 @@ import Foundation
 //string
 struct CustomSortString {
     
-    //Time: O(n + m) where `n` is the number of characters in `order` and `m` is the number of characters in `s`
+    //Time: O(n + m) `n` is the number of characters in `order` and `m` is the number of characters in `s`
     //Space: O(m)
     //array
     //sorting
@@ -52,7 +52,7 @@ struct CustomSortString {
         return String(orderedS)
     }
     
-    //Time: O(n * m^2) where `n` is the number of characters in order and `m` is the number of characters in `s`
+    //Time: O(n * m^2) `n` is the number of characters in order and `m` is the number of characters in `s`
     //Space: O(n + m)
     //array
     //sorting

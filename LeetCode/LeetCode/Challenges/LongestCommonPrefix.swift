@@ -12,7 +12,7 @@ import Foundation
 //string
 struct LongestCommonPrefix {
     
-    //Time: O(n^2) where `n` is the number of characters in `strs`
+    //Time: O(n^2) `n` is the number of characters in `strs`
     //Space: O(c) where `c` is the number of characters in the smallest element in `strs`
     //array
     //vertical scanning

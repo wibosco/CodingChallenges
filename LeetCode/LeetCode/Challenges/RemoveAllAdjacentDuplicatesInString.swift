@@ -12,8 +12,8 @@ import Foundation
 //string
 struct RemoveAllAdjacentDuplicatesInString {
     
-    //Time: O(n) where `n` is the number of characters in `s`
-    //Space: O(n - d) where `n` is the number of characters in `s` and `d` are number of duplicates
+    //Time: O(n) `n` is the number of characters in `s`
+    //Space: O(n - d) `n` is the number of characters in `s` and `d` are number of duplicates
     //stack
     //
     //Solution Description:
@@ -42,7 +42,7 @@ struct RemoveAllAdjacentDuplicatesInString {
         return String(stack)
     }
     
-    //Time: O(n^2) where `n` is the number of characters in `s`
+    //Time: O(n^2) `n` is the number of characters in `s`
     //Space: O(1)
     //array
     //two pointers

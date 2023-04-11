@@ -12,7 +12,7 @@ import Foundation
 //array
 struct FindDuplicateNumber {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(1)
     //linked list
     //circular dependency
@@ -47,7 +47,7 @@ struct FindDuplicateNumber {
         return slow
     }
     
-    //Time: O(n log n) where `n` is the number of elements in `nums`
+    //Time: O(n log n) `n` is the number of elements in `nums`
     //Space: O(1)
     //binary search
     //divide and conquer
@@ -86,7 +86,7 @@ struct FindDuplicateNumber {
         return dup
     }
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(n) making a copy of `nums`
     //negative marking
     //
@@ -114,7 +114,7 @@ struct FindDuplicateNumber {
         return -1
     }
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(n)
     //set
     //
@@ -135,7 +135,7 @@ struct FindDuplicateNumber {
         return -1
     }
     
-    //Time: O(n log n) where `n` is the number of elements in `nums`
+    //Time: O(n log n) `n` is the number of elements in `nums`
     //Space: O(n)
     //sorting
     //
@@ -154,7 +154,7 @@ struct FindDuplicateNumber {
         return -1
     }
     
-    //Time: O(n^2) where `n` is the number of elements in `nums`
+    //Time: O(n^2) `n` is the number of elements in `nums`
     //Space: O(1)
     //nested loops
     //

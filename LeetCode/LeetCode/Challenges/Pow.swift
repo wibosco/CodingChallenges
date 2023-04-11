@@ -13,7 +13,7 @@ import Foundation
 //See: https://www.youtube.com/watch?v=snOaKR2xgZg
 struct Pow {
     
-    //Time: O(log n) where `n` is value of `n`. As we only perform half the calculation we only need half the steps (`n`)
+    //Time: O(log n) `n` is value of `n`. As we only perform half the calculation we only need half the steps (`n`)
     //Space: O(1)
     //divide and conquer
     //recursive

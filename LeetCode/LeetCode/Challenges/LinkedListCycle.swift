@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct LinkedListCycle {
     
-    //Time: O(n) where `n` is the number of nodes in the list
+    //Time: O(n) `n` is the number of nodes in the list
     //Space: O(1)
     //two pointers
     //slow and fast pointers

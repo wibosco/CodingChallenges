@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct NaryTreeLevelOrderTraversal { //N-aryTreeLevelOrderTraversal
     
-    //Time: O(n) where `n` is the number of nodes in the tree
-    //Space: O(n) where `n` is the number of nodes in the tree
+    //Time: O(n) `n` is the number of nodes in the tree
+    //Space: O(n) `n` is the number of nodes in the tree
     //BFS
     //
     //Solution Description:

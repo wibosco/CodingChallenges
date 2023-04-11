@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct ReverseLinkedList {
     
-    //Time: O(n) where `n` is the number of nodes in the list.
+    //Time: O(n) `n` is the number of nodes in the list.
     //Space: O(1)
     //two pointers
     //
@@ -43,7 +43,7 @@ struct ReverseLinkedList {
         return prev
     }
     
-    //Time: O(n) where `n` is the number of nodes in the list.
+    //Time: O(n) `n` is the number of nodes in the list.
     //Space: O(n) call stack
     //recursive
     //
@@ -69,7 +69,7 @@ struct ReverseLinkedList {
                             //it's the new head/former tail from the base case
     }
     
-    //Time: O(n) where `n` is the number of nodes in the list.
+    //Time: O(n) `n` is the number of nodes in the list.
     //Space: O(1)
     //two pointers
     //
@@ -99,8 +99,8 @@ struct ReverseLinkedList {
         return tail
     }
     
-    //Time: O(n) where `n` is the number of nodes in the list.
-    //Space: O(n) where `n` is the number of nodes in the list.
+    //Time: O(n) `n` is the number of nodes in the list.
+    //Space: O(n) `n` is the number of nodes in the list.
     //
     //Solution Description:
     //Iterate througgh the list placing each array in order into an array. Once we have all nodes in the array iterate

@@ -522,6 +522,8 @@
 		3DEFAAB827D2683A00DB0E9D /* VerticalOrderTraversalOfABinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAB727D2683A00DB0E9D /* VerticalOrderTraversalOfABinaryTreeTests.swift */; };
 		3DF8DF0627A94E120034F83B /* BestTimeToBuyAndSellStockII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8DF0527A94E120034F83B /* BestTimeToBuyAndSellStockII.swift */; };
 		3DF8DF0827A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8DF0727A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift */; };
+		4300FF8829E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF8729E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift */; };
+		4300FF8A29E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF8929E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift */; };
 		430515C729DF7506007F59B0 /* PowerOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430515C629DF7506007F59B0 /* PowerOfThree.swift */; };
 		430515C929DF76A7007F59B0 /* PowerOfThreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430515C829DF76A7007F59B0 /* PowerOfThreeTests.swift */; };
 		4323713D29DB28EF005A2F04 /* AdditiveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323713C29DB28EF005A2F04 /* AdditiveNumber.swift */; };
@@ -1085,6 +1087,8 @@
 		3DEFAAB727D2683A00DB0E9D /* VerticalOrderTraversalOfABinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalOrderTraversalOfABinaryTreeTests.swift; sourceTree = "<group>"; };
 		3DF8DF0527A94E120034F83B /* BestTimeToBuyAndSellStockII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStockII.swift; sourceTree = "<group>"; };
 		3DF8DF0727A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStockIITests.swift; sourceTree = "<group>"; };
+		4300FF8729E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestRepeatingCharacterReplacement.swift; sourceTree = "<group>"; };
+		4300FF8929E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestRepeatingCharacterReplacementTests.swift; sourceTree = "<group>"; };
 		430515C629DF7506007F59B0 /* PowerOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfThree.swift; sourceTree = "<group>"; };
 		430515C829DF76A7007F59B0 /* PowerOfThreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfThreeTests.swift; sourceTree = "<group>"; };
 		4323713C29DB28EF005A2F04 /* AdditiveNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditiveNumber.swift; sourceTree = "<group>"; };
@@ -1318,6 +1322,7 @@
 				433BBFC429E4B1BD00A9A21E /* LongestConsecutiveSequence.swift */,
 				43ABE96329DA2868009B2F1B /* LongestIncreasingSubsequence.swift */,
 				3D5C912A27A7F7630035C399 /* LongestPalindromicSubstring.swift */,
+				4300FF8729E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift */,
 				3D5C90CF27A7F7620035C399 /* LongestSubstringWithoutRepeatingCharacters.swift */,
 				3D5C90B027A7F7620035C399 /* LowestCommonAncestorBinarySearchTree.swift */,
 				3D5C90B927A7F7620035C399 /* LowestCommonAncestorBinaryTree.swift */,
@@ -1594,6 +1599,7 @@
 				433BBFC629E4B20F00A9A21E /* LongestConsecutiveSequenceTests.swift */,
 				43ABE96529DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift */,
 				3D5C927E27A7F76C0035C399 /* LongestPalindromicSubstringTests.swift */,
+				4300FF8929E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift */,
 				3D5C922B27A7F76B0035C399 /* LongestSubstringWithoutRepeatingCharactersTests.swift */,
 				3D5C922C27A7F76B0035C399 /* LowestCommonAncestorBinarySearchTreeTests.swift */,
 				3D5C927927A7F76C0035C399 /* LowestCommonAncestorBinaryTreeIIITests.swift */,
@@ -2098,6 +2104,7 @@
 				3D5C91EE27A7F7630035C399 /* SameTree.swift in Sources */,
 				3D42A47127F5E6C200687F75 /* ContainsDuplicateII.swift in Sources */,
 				3D5C919227A7F7630035C399 /* UglyNumber.swift in Sources */,
+				4300FF8829E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift in Sources */,
 				3D5C91B927A7F7630035C399 /* CountUnivalueSubtrees.swift in Sources */,
 				3D5C919E27A7F7630035C399 /* SearchInRotatedSortedArrayII.swift in Sources */,
 				3D12F49F27E936A000A4D2C3 /* DecodeWays.swift in Sources */,
@@ -2210,6 +2217,7 @@
 				3D5C933827A7F76C0035C399 /* CuttingRibbonsTests.swift in Sources */,
 				3DF8DF0827A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift in Sources */,
 				3D8D277C2810A63E001C692F /* InsertIntoASortedCircularLinkedListTests.swift in Sources */,
+				4300FF8A29E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift in Sources */,
 				3D5C931127A7F76C0035C399 /* ValidPalindromeIITests.swift in Sources */,
 				3D5C92E827A7F76C0035C399 /* MinimumRemoveToMakeValidParenthesesTests.swift in Sources */,
 				3D5C933D27A7F76C0035C399 /* TwoSumIITests.swift in Sources */,

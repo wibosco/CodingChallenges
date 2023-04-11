@@ -11,7 +11,7 @@ import Foundation
 //array
 struct PlusOne {
     
-    //Time: O(n) where `n` is the number of elements in `digits`
+    //Time: O(n) `n` is the number of elements in `digits`
     //Space: O(n)
     //modulo
     //

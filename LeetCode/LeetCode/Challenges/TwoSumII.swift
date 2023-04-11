@@ -12,7 +12,7 @@ import Foundation
 //array
 struct TwoSumII {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
     //Space: O(1)
     //two pointers
     //sorted
@@ -45,7 +45,7 @@ struct TwoSumII {
         return [Int]()
     }
     
-    //Time: O(n log n) where `n` is the number of elements in `nums`
+    //Time: O(n log n) `n` is the number of elements in `nums`
     //Space: O(1)
     //binary search
     //sorted
@@ -80,7 +80,7 @@ struct TwoSumII {
         return [Int]()
     }
     
-    //Time: O(n^2) where `n` is the number of elements in `nums`
+    //Time: O(n^2) `n` is the number of elements in `nums`
     //Space: O(1)
     //nested loops
     //sorted

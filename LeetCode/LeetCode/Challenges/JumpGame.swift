@@ -11,8 +11,8 @@ import Foundation
 //array
 struct JumpGame {
     
-    //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
+    //Space: O(n) `n` is the number of elements in `nums`
     //n-ary tree
     //DFS
     //recursive
@@ -68,8 +68,8 @@ struct JumpGame {
         }
     }
     
-    //Time: O(n) where `n` is the number of elements in `nums`
-    //Space: O(n) where `n` is the number of elements in `nums`
+    //Time: O(n) `n` is the number of elements in `nums`
+    //Space: O(n) `n` is the number of elements in `nums`
     //n-ary tree
     //BFS
     //

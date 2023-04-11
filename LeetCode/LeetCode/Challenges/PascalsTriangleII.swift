@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct PascalsTriangleII {
     
-    //Time: O(n^2) where `n` is the row index
+    //Time: O(n^2) `n` is the row index
     //Space: O(l) where `l` is the number of items at row index
     //iterative
     //in-line
@@ -42,7 +42,7 @@ struct PascalsTriangleII {
         return row
     }
     
-    //Time: O(n^2) where `n` is the row index
+    //Time: O(n^2) `n` is the row index
     //Space: O(l) where `l` is the number of items at row index
     //recursive
     //memoization

@@ -11,15 +11,15 @@ import Foundation
 //linked list
 struct OddEvenLinkedList {
     
-    //Time: O(n) where `n` is the number of nodes in the list
+    //Time: O(n) `n` is the number of nodes in the list
     //Space: O(1)
     //three pointers
     //
     //Solution Description:
-    //Using three pointer we split the even nodes off into a different list (kind of) and gradually add node to that even list. When removing
-    //nodes from the original list we reattach the previous node to the next node as both these nodes are/where odd. Due to us moving nodes
-    //with ever iteration we don't we are able to perform the same operation each time. When all nodes are move we effectively have an odd
-    //list and an even list so we reattched the even nodes to the end of the odd list.
+    //Using three pointer we split the even nodes off into a different list (kind of) and gradually add node to that even list. When
+    //removing nodes from the original list we reattach the previous node to the next node as both these nodes are/where odd. Due to us
+    //moving nodes with ever iteration we don't we are able to perform the same operation each time. When all nodes are move we effectively
+    //have an odd list and an even list so we reattched the even nodes to the end of the odd list.
     static func oddEvenList(_ head: ListNode?) -> ListNode? {
         var oddTail = head
         let evenHead = head?.next //a pointer holding a reference to the start of the even nodes
@@ -38,14 +38,14 @@ struct OddEvenLinkedList {
         return head
     }
     
-    //Time: O(n) where `n` is the number of nodes in the list
+    //Time: O(n) `n` is the number of nodes in the list
     //Space: O(1)
     //three pointers
     //
     //Solution Description:
-    //First we find the tail of the list. Using three pointers (`tail`, `odd` and `even`) we iterate through the list and move the even nodes
-    //to the end of the list so that when we move `odd` onto the `tail` node we can exit the loop with all the odd nodes coming before the even
-    //nodes.
+    //First we find the tail of the list. Using three pointers (`tail`, `odd` and `even`) we iterate through the list and move the even
+    //nodes to the end of the list so that when we move `odd` onto the `tail` node we can exit the loop with all the odd nodes coming
+    //before the even nodes.
     static func oddEvenListTail(_ head: ListNode?) -> ListNode? {
         var tail = head
         

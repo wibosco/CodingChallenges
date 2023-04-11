@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct SortList {
     
-    //Time: O(n log n) where `n` is the number of ndoes in the list
+    //Time: O(n log n) `n` is the number of ndoes in the list
     //Space: O(1)
     //sorted
     //recursion
@@ -90,8 +90,8 @@ struct SortList {
         return sentinel.next
     }
     
-    //Time: O(n log n) where `n` is the number of nodes in the list
-    //Space: O(n) where `n` is the number of nodes in the list
+    //Time: O(n log n) `n` is the number of nodes in the list
+    //Space: O(n) `n` is the number of nodes in the list
     //sorted
     //array
     //

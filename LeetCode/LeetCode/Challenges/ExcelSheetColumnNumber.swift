@@ -11,7 +11,7 @@ import Foundation
 //string
 struct ExcelSheetColumnNumber {
     
-    //Time: O(n) where `n` is number of characters in `columnTitle`
+    //Time: O(n) `n` is number of characters in `columnTitle`
     //Space: O(1)
     //dictionary
     //encoding
@@ -61,7 +61,7 @@ struct ExcelSheetColumnNumber {
         return num
     }
     
-    //Time: O(n) where `n` is number of characters in `columnTitle`
+    //Time: O(n) `n` is number of characters in `columnTitle`
     //Space: O(1)
     //ASCII
     //encoding

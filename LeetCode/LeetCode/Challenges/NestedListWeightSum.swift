@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct NestedListWeightSum {
     
-    //Time: O(n) where `n` is the number of `NestedInteger` elements
+    //Time: O(n) `n` is the number of `NestedInteger` elements
     //Space: O(n)
     //BFS
     //iterative
@@ -53,8 +53,8 @@ struct NestedListWeightSum {
         return total
     }
     
-    //Time: O(n) where `n` is the number of `NestedInteger` elements
-    //Space: O(n) where `n` is the recursive stack
+    //Time: O(n) `n` is the number of `NestedInteger` elements
+    //Space: O(n) `n` is the recursive stack
     //DFS
     //recursive
     //

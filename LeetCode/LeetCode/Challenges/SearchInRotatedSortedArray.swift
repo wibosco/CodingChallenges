@@ -12,7 +12,7 @@ import Foundation
 //binary search
 struct SearchInRotatedSortedArray {
     
-    //Time: O(log n) where `n` is the number of elements in `nums`
+    //Time: O(log n) `n` is the number of elements in `nums`
     //Space: O(1)
     //array
     //
@@ -72,7 +72,7 @@ struct SearchInRotatedSortedArray {
         return -1
     }
     
-    //Time: O(log n) where `n` is the number of elements in `nums`
+    //Time: O(log n) `n` is the number of elements in `nums`
     //Space: O(1)
     //array
     //

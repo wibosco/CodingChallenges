@@ -12,7 +12,7 @@ import Foundation
 //binary search tree
 struct ValidateBinarySearchTree {
     
-    //Time: O(n) where `n` is the number of nodes in the tree
+    //Time: O(n) `n` is the number of nodes in the tree
     //Space: O(n) - stack calls
     //pre-order
     //recursive
@@ -43,7 +43,7 @@ struct ValidateBinarySearchTree {
         return preOrder(node.left, lower, node.val) && preOrder(node.right, node.val, upper) //both need to be valid
     }
     
-    //Time: O(n) where `n` is the number of nodes in the tree (actually O(2n))
+    //Time: O(n) `n` is the number of nodes in the tree (actually O(2n))
     //Space: O(n) actually O(2n) - stack calls and visited array
     //in-order
     //sorted

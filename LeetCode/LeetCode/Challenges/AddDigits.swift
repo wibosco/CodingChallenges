@@ -32,7 +32,7 @@ struct AddDigits {
         }
     }
     
-    //Time: O(n) where `n` is the number of digits in `num`
+    //Time: O(n) `n` is the number of digits in `num`
     //Space: O(s) where `s` is the number of sums from `num`
     //array
     //recursive

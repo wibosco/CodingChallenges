@@ -12,8 +12,8 @@ import Foundation
 //binary tree
 struct BinaryTreeZigzagLevelOrderTraversal {
     
-    //Time: O(n) where `n` is the number of nodes in the tree
-    //Space: O(n) where `n` is the number of nodes in the tree (`levels` array)
+    //Time: O(n) `n` is the number of nodes in the tree
+    //Space: O(n) `n` is the number of nodes in the tree (`levels` array)
     //BFS
     //array
     //

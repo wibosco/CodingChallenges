@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct FindIfPathExistsInGraph {
     
-    //Time: O(n + e) where `n` is the number of nodes and e is the number of edges
-    //Space: O(n) where `n` is the number of nodes
+    //Time: O(n + e) `n` is the number of nodes and e is the number of edges
+    //Space: O(n) `n` is the number of nodes
     //BFS
     //adjacency list
     //undirected graph
@@ -60,8 +60,8 @@ struct FindIfPathExistsInGraph {
         return false
     }
     
-    //Time: O(n + e) where `n` is the number of nodes and e is the number of edges
-    //Space: O(n) where `n` is the number of nodes
+    //Time: O(n + e) `n` is the number of nodes and e is the number of edges
+    //Space: O(n) `n` is the number of nodes
     //DFS
     //adjacency list
     //undirected graph
@@ -108,8 +108,8 @@ struct FindIfPathExistsInGraph {
         return false
     }
     
-    //Time: O(n + e) where `n` is the number of nodes and e is the number of edges
-    //Space: O(n) where `n` is the number of nodes
+    //Time: O(n + e) `n` is the number of nodes and e is the number of edges
+    //Space: O(n) `n` is the number of nodes
     //DFS
     //undirected graph
     //
@@ -158,7 +158,7 @@ struct FindIfPathExistsInGraph {
     }
     
     //Time: O(n)
-    //Space: O(n) where `n` is the number of nodes in the `ranks` array
+    //Space: O(n) `n` is the number of nodes in the `ranks` array
     //disjoint sets
     //undirected graph
     //
