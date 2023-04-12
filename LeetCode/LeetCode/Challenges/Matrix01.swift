@@ -40,9 +40,11 @@ struct Matrix01 {
             }
         }
         
+        // swiftlint:disable comma
         let relativeIndexing = [      [-1, 0],
-                                [0, -1], [0, 1],
+                                [0, -1],    [0, 1],
                                       [1, 0]] //[row, column]
+        // swiftlint:enable comma
         
         var level = 1
         

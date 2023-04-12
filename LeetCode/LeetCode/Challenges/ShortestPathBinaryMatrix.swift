@@ -42,9 +42,11 @@ struct ShortestPathBinaryMatrix {
             return 1
         }
         
+        // swiftlint:disable comma
         let relativeIndexing = [[-1, -1], [-1, 0], [-1, 1],
-                                [0, -1], [0, 1],
+                                [0, -1],           [0, 1],
                                 [1, -1], [1, 0], [1, 1]]
+        // swiftlint:enable comma
         
         var queue = [[0, 0]] //[row, column]
         var visited = Set<[Int]>()

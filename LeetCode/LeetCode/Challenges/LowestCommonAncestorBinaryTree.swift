@@ -17,16 +17,14 @@ struct LowestCommonAncestorBinaryTree {
     //DFS
     //
     //Solution description:
-    //Traverse the tree using DFS. In order for a node to be a common ancestor it needs 2 of the 3 below to
-    //be true:
+    //Traverse the tree using DFS. In order for a node to be a common ancestor it needs 2 of the 3 below to be true:
     //
     //1. be either be `p` or `q` itself
     //2. contain `p` in it's right or left branches
     //3. contain `q` in it's right or left branch
     //
-    //As we are only interested in the lowest common ancestor rather than any common ancestor we need to
-    //ensure that we pass back the first node that is true for 2 of the above 3 scenarios. When we find this
-    //node we set it to `lca`
+    //As we are only interested in the lowest common ancestor rather than any common ancestor we need to ensure that we
+    //pass back the first node that is true for 2 of the above 3 scenarios. When we find this node we set it to `lca`.
     static func lowestCommonAncestor(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> BinaryTreeNode? {
         var lca: BinaryTreeNode?
 
@@ -70,13 +68,13 @@ struct LowestCommonAncestorBinaryTree {
         return mid || left || right
     }
     
-    //Time: O(n^2)
+    //Time: O(n^2) `n` is the number of nodes in the tree
     //Space: O(n)
     //array
     //
     //Solution description:
-    //1. Using DFS find the path to `p` and `q`
-    //2. Compare paths and return first common node
+    //Using DFS we can track the path to both `p` and `q` nodes - storing this each path in an array. We then iterate through
+    //those paths and when we find the same node in both paths we return that node.
     static func lowestCommonAncestorArray(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> BinaryTreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil

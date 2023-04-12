@@ -43,9 +43,11 @@ struct WallsAndGates {
             }
         }
         
+        // swiftlint:disable comma
         let relativeIndexing = [       [-1, 0],
-                                [0, -1], [0, 1],
+                                [0, -1],     [0, 1],
                                        [1, 0]]
+        // swiftlint:enable comma
         
         //update rooms
         while !queue.isEmpty {

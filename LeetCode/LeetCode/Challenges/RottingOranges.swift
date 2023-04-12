@@ -68,9 +68,11 @@ struct RottingOranges {
         var spreadTime = 0
         var visited = [[Int]]() //can be thought of as containing all the rotten fruits (once processed)
         
+        // swiftlint:disable comma
         let relativeIndexing = [        [-1, 0],
-                                [0, -1], [0, 1],
+                                [0, -1],      [0, 1],
                                         [1, 0]] //[row, column]
+        // swiftlint:enable comma
         
         while !queue.isEmpty {
             let count = queue.count
@@ -173,9 +175,11 @@ struct RottingOranges {
         var spreadTime = 0
         var mGrid = grid
         
+        // swiftlint:disable comma
         let relativeIndexing = [        [-1, 0],
-                                [0, -1], [0, 1],
+                                [0, -1],      [0, 1],
                                         [1, 0]] //[row, column]
+        // swiftlint:enable comma
         
         while !queue.isEmpty {
             let count = queue.count

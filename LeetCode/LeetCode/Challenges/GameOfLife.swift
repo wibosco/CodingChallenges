@@ -23,9 +23,11 @@ struct GameOfLife {
     static func gameOfLife(_ board: inout [[Int]]) {
         var nextBoard = Array(repeating: Array(repeating: 0, count: board[0].count), count: board.count)
         
+        // swiftlint:disable comma
         let relativeIndexing = [[-1, -1], [-1, 0], [-1, 1],
-                                [0, -1], [0, 1],
+                                [0, -1],           [0, 1],
                                 [1, -1], [1, 0], [1, 1]]
+        // swiftlint:enable comma
         
         for row in 0..<board.count {
             for column in 0..<board[row].count {
