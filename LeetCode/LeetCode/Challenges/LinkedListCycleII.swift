@@ -18,11 +18,10 @@ struct LinkedListCycleII {
     //slow and fast pointers
     //
     //Solution Description:
-    //Using a fast and slow pointer iterate through the list. If they meet we know that we have a cycle; if they don't meet
-    //and the fast pointer reaches the end of the list then we don't have a cycle. If they do meet then we reset the slow
-    //pointer back to the start of the list, this will ensure that the slow and fast pointer are both the same number of
-    //nodes away from the entrance to the cycle. We then move each node by one node until they meet again, at which point we
-    //can return either.
+    //Using a fast and slow pointer iterate through the list. If they meet we know that we have a cycle; if they don't meet and the
+    //fast pointer reaches the end of the list then we don't have a cycle. If they do meet then we reset the slow pointer back to
+    //the start of the list, this will ensure that the slow and fast pointer are both the same number of nodes away from the
+    //entrance to the cycle. We then move each node by one node until they meet again, at which point we can return either.
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
@@ -55,9 +54,9 @@ struct LinkedListCycleII {
     //set
     //
     //Solution Description:
-    //Iterate through the list, inserting each unique node that we come across into the `list` set. If the set already
-    //contains the node then we have a cycle and can return that node as the start; if we get to the end of the list we
-    //know that the list doesn't contain a cycle and can return nil
+    //Iterate through the list, inserting each unique node that we come across into the `list` set. If the set already contains the
+    //node then we have a cycle and can return that node as the start; if we get to the end of the list we know that the list
+    //doesn't contain a cycle and can return nil
     static func detectCycleSet(_ head: ListNode?) -> ListNode? {
         var list = Set<ListNode>()
         var node = head

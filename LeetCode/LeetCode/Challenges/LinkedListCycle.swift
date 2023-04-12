@@ -18,8 +18,8 @@ struct LinkedListCycle {
     //slow and fast pointers
     //
     //Solution Description:
-    //Using a fast and slow pointer iterate through the list. If they meet we know that we have a cycle; if they don't meet
-    //and the fast pointer reaches the end of the list then we don't have a cycle.
+    //Using a fast and slow pointer iterate through the list. If they meet we know that we have a cycle; if they don't meet and the
+    //fast pointer reaches the end of the list then we don't have a cycle.
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
     static func hasCycle(_ head: ListNode?) -> Bool {

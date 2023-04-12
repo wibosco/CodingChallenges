@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-final class RemoveNthFromListTests: XCTestCase {
+final class RemoveNthNodeFromEndOfListTests: XCTestCase {
     
     // MARK: - Tests
     
@@ -18,8 +18,8 @@ final class RemoveNthFromListTests: XCTestCase {
         let head = ListNode.deserialize([1, 2, 3, 4, 5])
         let n = 2
         
-        let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.serialize(returnedHead)
+        let result = RemoveNthNodeFromEndOfList.removeNthFromEnd(head, n)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [1, 2, 3, 5])
     }
@@ -28,8 +28,8 @@ final class RemoveNthFromListTests: XCTestCase {
         let head = ListNode.deserialize([1])
         let n = 1
         
-        let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.serialize(returnedHead)
+        let result = RemoveNthNodeFromEndOfList.removeNthFromEnd(head, n)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [])
     }
@@ -38,8 +38,8 @@ final class RemoveNthFromListTests: XCTestCase {
         let head = ListNode.deserialize([1, 2])
         let n = 1
         
-        let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.serialize(returnedHead)
+        let result = RemoveNthNodeFromEndOfList.removeNthFromEnd(head, n)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [1])
     }
@@ -48,8 +48,8 @@ final class RemoveNthFromListTests: XCTestCase {
         let head = ListNode.deserialize([1, 2])
         let n = 2
         
-        let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.serialize(returnedHead)
+        let result = RemoveNthNodeFromEndOfList.removeNthFromEnd(head, n)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [2])
     }
@@ -58,8 +58,8 @@ final class RemoveNthFromListTests: XCTestCase {
         let head = ListNode.deserialize([4, 5, 4])
         let n = 1
         
-        let returnedHead = RemoveNthFromList.removeNthFromEnd(head, n)
-        let values = ListNode.serialize(returnedHead)
+        let result = RemoveNthNodeFromEndOfList.removeNthFromEnd(head, n)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [4, 5])
     }
