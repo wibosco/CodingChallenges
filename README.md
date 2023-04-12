@@ -30,7 +30,7 @@ A collection of coding challenges and their solutions from:
 | "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
-| "Loop/cycle in a graph" | `Disjoint sets` |
+| "Loop/cycle in a graph" | `Disjoint sets`, `Topological sort` |
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
 | "Compare neighbors in a string", "Comparing right to left elements"| `Stack` |
 | "Largest value", "Smallest value"| `Heap` |

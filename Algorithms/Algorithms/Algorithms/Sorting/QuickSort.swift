@@ -17,11 +17,12 @@ struct QuickSort {
     //recursive
     //
     //Solution Description:
-    //Using quicksort we recursively sort `nums` around a "pivot". The pivot is and element of `nums` that we move into its
+    //Using quicksort we recursively sort `nums` around a "pivot". The pivot is an element of `nums` that we move into its
     //sorted index by ensuring that all elements before the pivot index are less than or equal to (in value) the pivot and all
     //elements after the pivot index are greater than the pivot. We recursively sort those two subarrays
-    //(`left..<(pivotIndex - 1)` and `(pivotIndex + 1)..right` - ensuring to exclude the pivots index as it is already sorted)
-    //until the left edge to be sorted is greater than or equal the right edge - this recursive branch has been sorted.
+    //(`left..<(pivotIndex - 1)` and `(pivotIndex + 1)..right` - ensuring to exclude the pivot index as it is already sorted.
+    //We repeat this process until the left edge to be sorted is greater than or equal the right edge, at which point the array
+    //should be sorted.
     //
     //N.B. if `nums` was sorted, time drops to O(n^2), space drops to O(n)
     //

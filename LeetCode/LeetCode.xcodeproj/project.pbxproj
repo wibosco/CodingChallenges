@@ -528,6 +528,8 @@
 		4300FF8E29E6B4F100299C39 /* InvertBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF8D29E6B4F100299C39 /* InvertBinaryTreeTests.swift */; };
 		4300FF9029E6C08400299C39 /* PacificAtlanticWaterFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF8F29E6C08400299C39 /* PacificAtlanticWaterFlow.swift */; };
 		4300FF9229E6C0C400299C39 /* PacificAtlanticWaterFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF9129E6C0C400299C39 /* PacificAtlanticWaterFlowTests.swift */; };
+		4300FF9429E7097E00299C39 /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF9329E7097E00299C39 /* CourseSchedule.swift */; };
+		4300FF9629E709C900299C39 /* CourseScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF9529E709C900299C39 /* CourseScheduleTests.swift */; };
 		430515C729DF7506007F59B0 /* PowerOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430515C629DF7506007F59B0 /* PowerOfThree.swift */; };
 		430515C929DF76A7007F59B0 /* PowerOfThreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430515C829DF76A7007F59B0 /* PowerOfThreeTests.swift */; };
 		4323713D29DB28EF005A2F04 /* AdditiveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323713C29DB28EF005A2F04 /* AdditiveNumber.swift */; };
@@ -1097,6 +1099,8 @@
 		4300FF8D29E6B4F100299C39 /* InvertBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertBinaryTreeTests.swift; sourceTree = "<group>"; };
 		4300FF8F29E6C08400299C39 /* PacificAtlanticWaterFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacificAtlanticWaterFlow.swift; sourceTree = "<group>"; };
 		4300FF9129E6C0C400299C39 /* PacificAtlanticWaterFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacificAtlanticWaterFlowTests.swift; sourceTree = "<group>"; };
+		4300FF9329E7097E00299C39 /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
+		4300FF9529E709C900299C39 /* CourseScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleTests.swift; sourceTree = "<group>"; };
 		430515C629DF7506007F59B0 /* PowerOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfThree.swift; sourceTree = "<group>"; };
 		430515C829DF76A7007F59B0 /* PowerOfThreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfThreeTests.swift; sourceTree = "<group>"; };
 		4323713C29DB28EF005A2F04 /* AdditiveNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditiveNumber.swift; sourceTree = "<group>"; };
@@ -1260,6 +1264,7 @@
 				3D5C913327A7F7630035C399 /* CopyListWithRandomPointer.swift */,
 				3D7E30A2282C137000D7737D /* CountSortedVowelStrings.swift */,
 				3D5C910827A7F7630035C399 /* CountUnivalueSubtrees.swift */,
+				4300FF9329E7097E00299C39 /* CourseSchedule.swift */,
 				3D5C912B27A7F7630035C399 /* CourseScheduleII.swift */,
 				3D5C911427A7F7630035C399 /* CustomSortString.swift */,
 				3D5C90A627A7F7620035C399 /* CuttingRibbons.swift */,
@@ -1489,6 +1494,7 @@
 		3D5C91F327A7F76B0035C399 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4300FF9529E709C900299C39 /* CourseScheduleTests.swift */,
 				3D5C921627A7F76B0035C399 /* AccountsMergeTests.swift */,
 				3D46241E27E2432B00A888C1 /* AddBinaryTests.swift */,
 				43313BB229D71237005FCF5D /* AddDigitsTests.swift */,
@@ -1933,6 +1939,7 @@
 				3D5C91E727A7F7630035C399 /* ClimbingStairs.swift in Sources */,
 				3D5C918427A7F7630035C399 /* TwoSum.swift in Sources */,
 				3D0E127827E139EE006B4B83 /* SpiralMatrixII.swift in Sources */,
+				4300FF9429E7097E00299C39 /* CourseSchedule.swift in Sources */,
 				3D5C914C27A7F7630035C399 /* BinaryTreeNode.swift in Sources */,
 				3D5C917B27A7F7630035C399 /* NumberConnectedComponentsUndirectedGraph.swift in Sources */,
 				3DEFAAB627D267CF00DB0E9D /* VerticalOrderTraversalOfABinaryTree.swift in Sources */,
@@ -2347,6 +2354,7 @@
 				3D5C931527A7F76C0035C399 /* EarliestMomentWhenEveryoneBecomeFriendsTests.swift in Sources */,
 				3D5C92A527A7F76C0035C399 /* BuildingsWithOceanViewTests.swift in Sources */,
 				3D5C92AF27A7F76C0035C399 /* TargetSumTests.swift in Sources */,
+				4300FF9629E709C900299C39 /* CourseScheduleTests.swift in Sources */,
 				3DB98D7E280381EE00A3D2E9 /* RemoveLinkedListElementsTests.swift in Sources */,
 				43313BB929D72335005FCF5D /* SingleNumberTests.swift in Sources */,
 				3D7E30A5282C140C00D7737D /* CountSortedVowelStringsTests.swift in Sources */,
