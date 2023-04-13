@@ -14,7 +14,7 @@ struct LongestIncreasingSubsequence {
     //Time: O(n^2) `n` is the number of elements in `nums` (nested for loops)
     //Space: O(n)
     //graph theory
-    //dynamic programming
+    //dynamic programming (bottom-up)
     //
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
@@ -23,6 +23,8 @@ struct LongestIncreasingSubsequence {
     //count and then once we get to an index we take advantage of previously calculations to to loop forward through all possible
     //indexes that can be visited and extract the longest value - we add to this as the current node need is added to the
     //count.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     static func lengthOfLIS(_ nums: [Int]) -> Int {
         var lis = Array(repeating: 1, count: nums.count)
         
@@ -43,7 +45,7 @@ struct LongestIncreasingSubsequence {
     //DFS
     //recursive
     //memoization
-    //dynamic programming
+    //dynamic programming (top down)
     //
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
@@ -53,6 +55,8 @@ struct LongestIncreasingSubsequence {
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
     //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     static func lengthOfLISMemoization(_ nums: [Int]) -> Int {
         var longest = 0
         var memo = [Int: Int]()

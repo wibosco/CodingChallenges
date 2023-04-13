@@ -32,6 +32,8 @@ struct CheapestFlightsWithinKStops {
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
     //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     static func findCheapestPrice(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ k: Int) -> Int {
         var cities = Array(repeating: [(Int, Double)](), count: n)
         

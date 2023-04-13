@@ -28,6 +28,8 @@ struct CoinChange {
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
     //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     static func coinChange(_ coins: [Int], _ amount: Int) -> Int {
         guard amount > 0 else {
             return 0

@@ -31,6 +31,8 @@ struct InterleavingString {
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
     //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     static func isInterleave(_ s1: String, _ s2: String, _ s3: String) -> Bool {
         guard (s1.count + s2.count) == s3.count else {
             return false

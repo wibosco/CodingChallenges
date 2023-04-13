@@ -8,7 +8,7 @@
 
 import Foundation
 
-//
+//https://leetcode.com/problems/target-sum/
 //graph theory
 struct TargetSum {
     
@@ -17,7 +17,7 @@ struct TargetSum {
     //DFS
     //dynamic vertices
     //
-    //Solution Description
+    //Solution Description:
     static func findTargetSumWays(_ nums: [Int], _ target: Int) -> Int {
         var count = 0
         

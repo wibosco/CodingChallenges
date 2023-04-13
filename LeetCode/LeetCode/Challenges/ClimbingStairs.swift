@@ -39,6 +39,8 @@ struct ClimbingStairs {
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
     //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     static func climbStairs(_ n: Int) -> Int {
         var memo = [Int: Int]()
         let ways = climbStairs(n, 0, &memo)

@@ -59,6 +59,8 @@ struct FibonacciNumber {
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
     //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     static func fibTopDown(_ n: Int) -> Int {
         guard n > 0 else {
             return 0
