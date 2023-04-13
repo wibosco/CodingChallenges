@@ -25,7 +25,7 @@ struct HouseRobber {
     //movement within the graph is that we can not move from one node to it's immediate `nums` array neighbor so a graph
     //neighbor needs to be at least 2 array neighbors away. It's important to point out that it can more than 2 neighbors
     //away. So using the DFS we start at either of our starting positions index 0 or index 1 and form every possible
-    //premutation of `nums`, taking the maximum value at each node. The speed up the process we use memoization to store the
+    //premutation of `nums`, taking the maximum value at each node. To speed up the process we use memoization to store the
     //maximum value from a given node to the end of `nums` - this way we can avoid performing repeated work.
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
