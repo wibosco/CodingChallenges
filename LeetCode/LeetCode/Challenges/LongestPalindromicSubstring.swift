@@ -19,14 +19,25 @@ struct LongestPalindromicSubstring {
     //Solution Description:
     //It's important to note that we are checking for the longest palindrome in this string and not just that this string is
     //palindrome. This means that a palindrome might be from 0..2 or 9..15 or anything in between so when searching a
-    //palindrome we need to do so from all indexes. Palindromes also come in two flavours: odd and even i.e. "aba" or "aa"
-    //which we also need to cater for. Below we iterate through `s` and from each index is part of a palindrome (odd or even).
-    //We check for a palindrome but comparing the `left` and `right` elements and gradually moving out from there until we
-    //either encounter non-matching elements or hit the start/end of `characters`. For each vaild palindrome that we find we
-    //compare its length against the longest we have encountered so far. If it larger we replace the longest with the current.
+    //palindrome we need to do so from all indexes. Palindromes come in two flavours: odd and even i.e. "aba" or "aa" which we
+    //also need to cater for. Rather than checking if a string is a palindrome by going outside-in we are going to instead go
+    //inside-out - this will allow us to count only valid palindromes rather than thinking that we have a palindrome only to
+    //discover as we ggget deeper into the substring that it isn't actually a palindrome. Now going inside-out does not mean
+    //that we need to start at the center of `s`, inside we start at the start of `s` and gradually move that starting position
+    //right. Within each starting position we then attempt to expand out two characters at a time (one character left and one
+    //character right), checking we still have characters in `s` to check and that if we do those new characters still form a
+    //palindrome - it's important to note here that we only need to check those new characters and not the whole substring
+    //again as that substring has already been shown to be a palindrome. With each new palindrome that we encounter we
+    //increment `palindromes`. Once we have check each starting position we return the count.
     //
-    //NB: `a` is considered a palindrome so the belwwo solution accounts for that
+    //N.B. `a` is considered a palindrome so the below solution accounts for that.
+    //
+    //Similar to: https://leetcode.com/problems/palindromic-substrings/
     static func longestPalindrome(_ s: String) -> String {
+        guard s.count > 1 else {
+            return s
+        }
+        
         var longest = [Character]()
         let characters = Array(s)
 
@@ -47,8 +58,8 @@ struct LongestPalindromicSubstring {
                 break
             }
             
-            //each loop through we expand left and right so to be here `left + 1` and `right - 1` must have been check in
-            //a previous iteration been a palindrome
+            //each loop through we expand left and right so to be here the previous version iteration of `left` and `right` i.e
+            //`left + 1` and `right - 1` must have already been checked and been determine to be a palindrome.
             let palindrome = characters[left...right]
             
             if palindrome.count > longest.count {
@@ -62,8 +73,13 @@ struct LongestPalindromicSubstring {
     
     // MARK: - Slow
     
-    //Time: O(n^3)
-    static func longestPalindromeSlow(_ s: String) -> String {
+    //Time: O(n^3) where n is the number of characters in `s`. n to check if a string is a palindrome and n^2 to generate all combinations
+    //
+    //Solution Description:
+    //Brute force generate all possible in-order combinations of the characters in `s` by iterating through `s` forwards and comparing it
+    //against all characters that come after in reverse order. If we find a palindrome we check it's length against the longest we've
+    //found so far and store it if it is longger.
+    static func longestPalindromeBruteForce(_ s: String) -> String {
         let characters = Array(s)
         var longestPalindrome = Array(characters[...0])
 
