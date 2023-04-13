@@ -12,7 +12,7 @@ import Foundation
 //string
 struct LongestPalindromicSubstring {
     
-    //Time: O(n^2) `n` is the number of characters in `s`
+    //Time: O(n^2) where n is the number of characters in `s`
     //Space: O(n)
     //two pointers
     //

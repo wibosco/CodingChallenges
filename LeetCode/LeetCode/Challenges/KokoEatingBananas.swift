@@ -12,7 +12,7 @@ import Foundation
 //binary search
 struct KokoEatingBananas {
     
-    //Time: O(n log m) `n` is number of elements in `piles` and `m` the search range
+    //Time: O(n log m) where n is number of elements in `piles` and m the search range
     //Space: O(1)
     //minimum
     //sorted

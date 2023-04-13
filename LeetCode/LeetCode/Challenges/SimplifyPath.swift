@@ -12,8 +12,8 @@ import Foundation
 //stack
 struct SimplifyPath {
     
-    //Time: O(n) `n` is the number of subpaths in `path`
-    //Space: O(n) `n` is the number of characters in `path`
+    //Time: O(n) where n is the number of subpaths in `path`
+    //Space: O(n) where n is the number of characters in `path`
     //String
     //
     //Solution Description:

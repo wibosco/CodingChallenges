@@ -12,8 +12,8 @@ import Foundation
 //binary search tree
 struct LowestCommonAncestorBinarySearchTree {
     
-    //Time: O(log n) `n` is the number of nodes in the tree
-    //Space: O(log n) `n` is the number of nodes in the tree
+    //Time: O(log n) where n is the number of nodes in the tree
+    //Space: O(log n) where n is the number of nodes in the tree
     //DFS
     //stack
     //recursive
@@ -37,7 +37,7 @@ struct LowestCommonAncestorBinarySearchTree {
         return root
     }
     
-    //Time: O(log n) `n` is the number of nodes in the tree
+    //Time: O(log n) where n is the number of nodes in the tree
     //Space: O(1) there will only ever be one node in the queue
     //BFS
     //queue

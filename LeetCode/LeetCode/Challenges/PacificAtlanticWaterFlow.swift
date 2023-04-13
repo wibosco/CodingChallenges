@@ -11,7 +11,7 @@ import Foundation
 //graph theory
 struct PacificAtlanticWaterFlow {
     
-    //Time: O(n*m) `n` is the number of rows in `heights`, `m` is the number of columnds in `heights`
+    //Time: O(n*m) where n is the number of rows in `heights`, m is the number of columnds in `heights`
     //Space: O(n+m)
     //visited
     //DFS
@@ -103,7 +103,7 @@ struct PacificAtlanticWaterFlow {
         return neighbors
     }
     
-    //Time: O(n*m)^2 `n` is the number of rows in `heights`, `m` is the number of columnds in `heights`
+    //Time: O(n*m)^2 where n is the number of rows in `heights`, m is the number of columnds in `heights`
     //Space: O(n*m)
     //visited
     //DFS

@@ -13,14 +13,14 @@ import Foundation
 //See: https://www.youtube.com/watch?v=snOaKR2xgZg
 struct Pow {
     
-    //Time: O(log n) `n` is value of `n`. As we only perform half the calculation we only need half the steps (`n`)
+    //Time: O(log n) where n is value of n. As we only perform half the calculation we only need half the steps (n)
     //Space: O(1)
     //divide and conquer
     //recursive
     //
     //Solution Description:
     //2^4 is shorthand for `2 * 2 * 2 * 2` so when we have a positive exponent value then we simply multiple `x` by
-    //itself `n` times. 2^-4 is shorthand for `1 / (2 * 2 * 2 * 2)` so when we have a negative exponent value then we
+    //itself n times. 2^-4 is shorthand for `1 / (2 * 2 * 2 * 2)` so when we have a negative exponent value then we
     //need to turn `x` into a fraction e.g. dividend = 2, divisor = 4 so `2 / 4 = 0.5` can also be expressed as `2 * 0.25`
     //or `2 * (1 / 4)` as you can see with turn the divisor into a fraction. So whenever we get a negative `n` rather than
     //attempting to divide it, we turn it into a faction to simplify our calculations.

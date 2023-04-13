@@ -12,7 +12,7 @@ import Foundation
 //modulo
 struct ReverseInteger {
     
-    //Time: O(n) `n` is the number of digits in `x`
+    //Time: O(n) where n is the number of digits in `x`
     //Space: O(1)
     //overflow
     //underflow

@@ -11,7 +11,7 @@ import Foundation
 //array
 struct GasStation {
     
-    //Time: O(n) `n` is the number of elements in either `gas`
+    //Time: O(n) where n is the number of elements in either `gas`
     //Space: O(1)
     //counting
     //greedy
@@ -45,7 +45,7 @@ struct GasStation {
         return totalGasCostDelta >= 0 ? startingStation : -1
     }
     
-    //Time: O(n^2) `n` is the number of elements in either `gas` or `cost`
+    //Time: O(n^2) where n is the number of elements in either `gas` or `cost`
     //Space: O(1)
     //nested loops
     //modulo

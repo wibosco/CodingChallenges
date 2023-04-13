@@ -26,7 +26,7 @@ struct RandomPickWithWeight {
     private let prefixSums: [Int]
     private let total: Int
     
-    //Time: O(n) `n` is the number of elements in `w`
+    //Time: O(n) where n is the number of elements in `w`
     init(_ w: [Int]) {
         var prefixSum = 0
         var prefixSums = [Int]()
@@ -40,7 +40,7 @@ struct RandomPickWithWeight {
         self.total = prefixSum
     }
     
-    //Time: O(log n) `n` is the number of elements in `prefixSums`
+    //Time: O(log n) where n is the number of elements in `prefixSums`
     func pickIndex() -> Int {
         let target = Int.random(in: 0..<total)
         
@@ -80,7 +80,7 @@ struct RandomPickWithWeightLinear {
     private let prefixSums: [Int]
     private let total: Int
     
-    //Time: O(n) `n` is the number of elements in `w`
+    //Time: O(n) where n is the number of elements in `w`
     init(_ w: [Int]) {
         var prefixSum = 0
         var prefixSums = [Int]()
@@ -94,7 +94,7 @@ struct RandomPickWithWeightLinear {
         self.total = prefixSum
     }
     
-    //Time: O(n) `n` is the number of elements in `prefixSums` (which is the same as `w`)
+    //Time: O(n) where n is the number of elements in `prefixSums` (which is the same as `w`)
     func pickIndex() -> Int {
         let target = Int.random(in: 0..<total)
         

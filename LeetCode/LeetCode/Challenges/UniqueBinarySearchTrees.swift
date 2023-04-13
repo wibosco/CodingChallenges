@@ -12,7 +12,7 @@ import Foundation
 //binary search tree
 struct UniqueBinarySearchTrees {
     
-    //Time: O(n^2) `n` is the number of nodes in the tree
+    //Time: O(n^2) where n is the number of nodes in the tree
     //Space: O(n)
     //sorted
     //

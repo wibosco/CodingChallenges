@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct LinkedListCycleII {
     
-    //Time: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
     //two pointers
     //slow and fast pointers
@@ -49,8 +49,8 @@ struct LinkedListCycleII {
         return hare //could be tortoise here instead
     }
     
-    //Time: O(n) `n` is the number of nodes in the list
-    //Space: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
+    //Space: O(n) where n is the number of nodes in the list
     //set
     //
     //Solution Description:

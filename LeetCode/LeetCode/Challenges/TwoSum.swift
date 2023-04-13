@@ -12,8 +12,8 @@ import Foundation
 //array
 struct TwoSum {
     
-    //Time: O(n) `n` is the number of elements in `nums`
-    //Space: O(n) `n` is the number of elements in `nums`
+    //Time: O(n) where n is the number of elements in `nums`
+    //Space: O(n) where n is the number of elements in `nums`
     //dictionary
     //
     //Solution Description:
@@ -35,7 +35,7 @@ struct TwoSum {
         return [Int]()
     }
     
-    //Time: O(n^2) `n` is the number of elements in `nums`
+    //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(1)
     //nested loops
     //

@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct MergeTwoSortedLists {
     
-    //Time: O(m+n) where `m` is the length of `l1` and `n` is the length of `l2`
+    //Time: O(m+n) where m is the length of `l1` and n is the length of `l2`
     //Space: O(1)
     //iterative
     //sentinel head
@@ -47,8 +47,8 @@ struct MergeTwoSortedLists {
         return sentinel.next
     }
     
-    //Time: O(m+n) where `m` is the length of `l1` and `n` is the length of `l2`
-    //Space: O(m+n) recursive call stack, where `m` is the length of `l1` and `n` is the length of `l2`
+    //Time: O(m+n) where m is the length of `l1` and n is the length of `l2`
+    //Space: O(m+n) recursive call stack, where m is the length of `l1` and n is the length of `l2`
     //recursive
     //merge sort
     //sentinel head

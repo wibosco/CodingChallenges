@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct FindTheTownJudge {
     
-    //Time: O(n) `n` is the number of elements in `trust`
-    //Space: O(m) where `m` is the number of townfolk (`n`)
+    //Time: O(n) where n is the number of elements in `trust`
+    //Space: O(m) where m is the number of townfolk (n)
     //array
     //indegree
     //outdegree

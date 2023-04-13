@@ -11,8 +11,8 @@ import Foundation
 //array
 struct MajorityElementII {
     
-    //Time: O(n) `n` is the number of elements in `nums`
-    //Space: O(n) `n` is the number of elements in `nums`
+    //Time: O(n) where n is the number of elements in `nums`
+    //Space: O(n) where n is the number of elements in `nums`
     //dictionary
     //
     //Solution Description:

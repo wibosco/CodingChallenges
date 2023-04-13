@@ -12,7 +12,7 @@ import Foundation
 //matrix
 struct DiagonalTraverse {
     
-    //Time: O(m * n) where `m` is number of rows and `n` the number of columns
+    //Time: O(m * n) where m is number of rows and n the number of columns
     //Space: O(1)
     //path finding
     //
@@ -54,8 +54,8 @@ struct DiagonalTraverse {
         return order
     }
     
-    //Time: O(m * n) where `m` is number of rows and `n` the number of columns
-    //Space: O(m * n) where `m` is number of rows and `n` the number of columns
+    //Time: O(m * n) where m is number of rows and n the number of columns
+    //Space: O(m * n) where m is number of rows and n the number of columns
     //dictionary
     //
     //Solution Description:

@@ -12,8 +12,8 @@ import Foundation
 //array
 struct AsteroidCollision {
     
-    //Time: O(n) `n` is the number of elements in `asteroids`
-    //Space: O(n) `n` is the number of elements in `asteroids`
+    //Time: O(n) where n is the number of elements in `asteroids`
+    //Space: O(n) where n is the number of elements in `asteroids`
     //stack
     //
     //Solution Description:
@@ -57,7 +57,7 @@ struct AsteroidCollision {
         return stack
     }
     
-    //Time: O(n) `n` is the number of elements in asteroids
+    //Time: O(n) where n is the number of elements in asteroids
     //Space: O(1)
     //
     //Solution Description:

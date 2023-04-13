@@ -11,7 +11,7 @@ import Foundation
 //array
 struct SortColors {
     
-    //Time: O(n) `n` is the number of elements in `nums`
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //sorting
     //counting sort
@@ -48,7 +48,7 @@ struct SortColors {
         }
     }
     
-    //Time: O(n) `n` is the number of elements in `nums`
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //sorting
     //two pointers

@@ -12,8 +12,8 @@ import Foundation
 //binary tree
 struct BinaryTreeRightSideView {
     
-    //Time: O(n) `n` is the number of nodes in the tree
-    //Space: O(n) `n` is the number of nodes in the tree
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n) where n is the number of nodes in the tree
     //BFS
     //array
     //

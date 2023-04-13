@@ -12,7 +12,7 @@ import Foundation
 //array
 struct SearchInsertPosition {
     
-    //Time: O(log n) `n` is the number of elements in `nums`
+    //Time: O(log n) where n is the number of elements in `nums`
     //Space: O(1)
     //binary search
     //sorted

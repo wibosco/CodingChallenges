@@ -12,7 +12,7 @@ import Foundation
 //string
 struct DecodeString {
     
-    //Time: O((k^m) * n) where k maximum value of encoding, `m` is the number of nested encodings and n is the length of `s`
+    //Time: O((k^m) * n) where k maximum value of encoding, m is the number of nested encodings and n is the length of `s`
     //Space: O((k^m) * n)
     //stack
     //array

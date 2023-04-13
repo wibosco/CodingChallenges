@@ -12,8 +12,8 @@ import Foundation
 //string
 struct ZigzagConversion {
     
-    //Time: O(n) `n` is the numbero of characters in `s`
-    //Space: O(n) `n` is the numbero of characters in `s`
+    //Time: O(n) where n is the numbero of characters in `s`
+    //Space: O(n) where n is the numbero of characters in `s`
     //array
     //
     //Solution Description:

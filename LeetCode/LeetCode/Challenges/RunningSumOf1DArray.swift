@@ -11,7 +11,7 @@ import Foundation
 //prefix sum
 struct RunningSumOf1DArray {
     
-    //Time: O(n) `n` is the number of elements in `nums`
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
     //array
     //

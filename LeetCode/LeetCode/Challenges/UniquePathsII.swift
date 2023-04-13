@@ -11,8 +11,8 @@ import Foundation
 //matrix
 struct UniquePathsII {
     
-    //Time: O(n * m) where `m` is the rows and `n` is the columns
-    //Space: O(n * m) where `m` is the rows and `n` is the columns
+    //Time: O(n * m) where m is the rows and n is the columns
+    //Space: O(n * m) where m is the rows and n is the columns
     //dynamic programming
     //
     //Solution Description:
@@ -54,7 +54,7 @@ struct UniquePathsII {
         return obstacleGrid[rowsCount - 1][columnCount - 1]
     }
     
-    //Time: O(2^(n)) `n` is the number of cells in the grid
+    //Time: O(2^(n)) where n is the number of cells in the grid
     //Space: O(n)
     //DFS
     //backtracking

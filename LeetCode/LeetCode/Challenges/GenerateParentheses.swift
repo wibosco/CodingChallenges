@@ -12,8 +12,8 @@ import Foundation
 //strings
 struct GenerateParentheses {
     
-    //Time: O(2^n) `n` is the depth of the tree and 2 is the branches at each level
-    //Space: O(n) `n` is the number of pairs of parentheses
+    //Time: O(2^n) where n is the depth of the tree and 2 is the branches at each level
+    //Space: O(n) where n is the number of pairs of parentheses
     //recursion
     //backtracking
     //

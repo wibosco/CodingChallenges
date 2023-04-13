@@ -10,7 +10,7 @@ import Foundation
 //https://leetcode.com/problems/moving-average-from-data-stream/
 //design
 //
-//Time: O(n) `n` is the window size
+//Time: O(n) where n is the window size
 //Space: O(1)
 final class MovingAverage {
     private let size: Int

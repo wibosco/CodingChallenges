@@ -11,7 +11,7 @@ import Foundation
 //binary tree
 struct InvertBinaryTree {
     
-    //Time: O(n) `n` is nodes in the tree
+    //Time: O(n) where n is nodes in the tree
     //Space: O(h) `h` is the height of the tree
     //recursive
     //

@@ -12,7 +12,7 @@ import Foundation
 //binary tree
 struct BinaryTreeLevelOrderTraversal {
     
-    //Time: O(n) `n` is the number of nodes in the tree
+    //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) worst/average (O(1) for best)
     //iterative
     //BFS

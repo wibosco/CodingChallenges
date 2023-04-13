@@ -51,7 +51,7 @@ struct MinCostToConnectAllPoints {
         var minHeap = Heap(elements: adjList[0]) { $0.weight < $1.weight }
         
         var total = 0
-        var edgesToConnect = (points.count - 1) //a tree has n - 1 edges where `n` is the number of vertices
+        var edgesToConnect = (points.count - 1) //a tree has `n - 1` edges where `n` is the number of vertices
         
         while let edge = minHeap.remove() {
             guard !visited.contains(edge.destination) else {
@@ -77,7 +77,7 @@ struct MinCostToConnectAllPoints {
         return total
     }
     
-    //Time: O(n^2) `n` is the number of points
+    //Time: O(n^2) where n is the number of points
     //Space: O(n)
     //MST - minimum spanning tree
     //disjoint set

@@ -107,7 +107,7 @@ struct CourseScheduleII {
         ordering.append(source)
     }
     
-    //Time: O(n * m) `n` is number of courses and `m` is number of prerequisites
+    //Time: O(n * m) where n is number of courses and m is number of prerequisites
     //Space: O(n * m)
     //BFS
     //multi-source

@@ -12,7 +12,7 @@ import Foundation
 //two pointers
 struct ReverseString {
     
-    //Time: O(n) `n` is the count of the elements in `s`
+    //Time: O(n) where n is the count of the elements in `s`
     //Space: O(1)
     //iterative
     //
@@ -36,7 +36,7 @@ struct ReverseString {
         }
     }
     
-    //Time: O(n) `n` is the count of the elements in `s`
+    //Time: O(n) where n is the count of the elements in `s`
     //Space: O(n) if counting the recusive stack otherwise O(1)
     //recursive
     //

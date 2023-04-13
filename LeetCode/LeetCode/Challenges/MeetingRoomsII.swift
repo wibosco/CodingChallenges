@@ -11,7 +11,7 @@ import Foundation
 //array
 struct MeetingRoomsII {
     
-    //Time: O(n log n) `n` is the number of elements in intervals
+    //Time: O(n log n) where n is the number of elements in intervals
     //Space: O(n) two arrays for the start and end times
     //sorted
     //two pointers

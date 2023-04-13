@@ -11,7 +11,7 @@ import Foundation
 //string
 struct MultiplyStrings {
     
-    //Time: O(n * m) `n` is the number of characters in `num1` and `m` is the number of characters in `num2`
+    //Time: O(n * m) where n is the number of characters in `num1` and m is the number of characters in `num2`
     //Space: O(
     //math
     //modulo

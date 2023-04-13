@@ -12,7 +12,7 @@ import Foundation
 //binary search
 struct Search2DMatrixII {
     
-    //Time: O(n log n) `n` is the number of columns
+    //Time: O(n log n) where n is the number of columns
     //Space: O(1)
     //matrix
     //sorted
@@ -43,7 +43,7 @@ struct Search2DMatrixII {
         return false
     }
     
-    //Time: O(n log n where `n` is the number of rows
+    //Time: O(n log n where n is the number of rows
     //Space: O(1)
     //matrix
     //sorted

@@ -11,8 +11,8 @@ import Foundation
 //sliding window
 struct RepeatedDNASequences {
     
-    //Time: O(n) `n` is number of elements in `s`
-    //Space: O(n) `n` is the number of elements in `s`
+    //Time: O(n) where n is number of elements in `s`
+    //Space: O(n) where n is the number of elements in `s`
     //dictionary
     //
     //Solution Description:

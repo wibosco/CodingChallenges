@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct GraphValidTree {
     
-    //Time: O(n + e) `n` is the number of nodes, e is the number of edges
+    //Time: O(n + e) where n is the number of nodes, e is the number of edges
     //Space: O(n + e)
     //DFS
     //recursive
@@ -99,7 +99,7 @@ struct GraphValidTree {
         }
     }
     
-    //Time: O(n+e) `n` is the number of nodes, e is the number of edges
+    //Time: O(n+e) where n is the number of nodes, e is the number of edges
     //Space: O(n+e)
     //BFS
     //visited
@@ -173,7 +173,7 @@ struct GraphValidTree {
     }
     
     //Time: O(e) where e is the number of edges
-    //Space: O(n) `n` is the number of nodes
+    //Space: O(n) where n is the number of nodes
     //disjoint set
     //
     //Solution Description:

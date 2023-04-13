@@ -11,7 +11,7 @@ import Foundation
 //string
 struct ValidAnagram {
     
-    //Time: O(n+m) `n` is the number of characters in `s`, `m` is the number of characters in `t`
+    //Time: O(n+m) where n is the number of characters in `s`, m is the number of characters in `t`
     //Space: O(n+m)
     //dictionary
     //
@@ -37,7 +37,7 @@ struct ValidAnagram {
         return tFrequency == sFrequency
     }
     
-    //Time: O(n+m) `n` is the number of characters in `s`, `m` is the number of characters in `t`
+    //Time: O(n+m) where n is the number of characters in `s`, m is the number of characters in `t`
     //Space: O(n+m)
     //dictionary
     //

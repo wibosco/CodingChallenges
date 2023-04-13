@@ -12,8 +12,8 @@ import Foundation
 //binary search tree
 struct RangeSumOfBST {
     
-    //Time: O(n) `n` is the number of nodes in the tree
-    //Space: O(n) `n` is the size of the largest level
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n) where n is the size of the largest level
     //BFS
     //
     //Solution Description:
@@ -51,7 +51,7 @@ struct RangeSumOfBST {
         return sum
     }
     
-    //Time: O(n) `n` is the number of nodes in the tree
+    //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
     //DFS
     //recusive
@@ -81,7 +81,7 @@ struct RangeSumOfBST {
         dfs(root.right, low, high, &sum)
     }
     
-    //Time: O(n) `n` is the number of nodes in the tree
+    //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
     //DFS
     //iterative

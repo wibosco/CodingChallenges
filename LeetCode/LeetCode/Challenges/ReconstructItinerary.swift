@@ -13,7 +13,7 @@ import Foundation
 struct ReconstructItinerary {
 
     //Time: O(d^e) where `d` is the maximum number of flights from an airport and `e` is the number of total flights
-    //Space: O(n + e) `n` is the number of airports and e` is the number of total flights
+    //Space: O(n + e) where n is the number of airports and e` is the number of total flights
     //backtracking
     //DFS
     //greedy

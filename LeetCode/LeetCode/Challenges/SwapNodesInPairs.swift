@@ -13,7 +13,7 @@ import UIKit
 //linked list
 struct SwapNodesInPairs {
     
-    //Time: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
     //Sapce: O(1)
     //iterative
     //sentinel head
@@ -47,7 +47,7 @@ struct SwapNodesInPairs {
         return sentinel.next
     }
     
-    //Time: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
     //Sapce: O(n) if counting the recursive stack otherwise O(1)
     //recursive
     //

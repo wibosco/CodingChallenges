@@ -29,7 +29,7 @@ struct RobotRoomCleaner {
         func clean() {}
     }
     
-    //Time: O(4(n - m) where n is the size of the grid and `m` is the number of obstacles
+    //Time: O(4(n - m) where n is the size of the grid and m is the number of obstacles
     //Space: O(n - m)
     //relative indexing
     //DFS

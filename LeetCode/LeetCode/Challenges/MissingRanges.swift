@@ -11,7 +11,7 @@ import Foundation
 //array
 struct MissingRanges {
     
-    //Time: O(n) `n` is the number of elements in `num`
+    //Time: O(n) where n is the number of elements in `num`
     //Space: O(1)
     //two pointers
     //
@@ -59,7 +59,7 @@ struct MissingRanges {
         return missingRanges
     }
     
-    //Time: O(n) `n` is the number of elements in `num`, plus the lower and upper bounds
+    //Time: O(n) where n is the number of elements in `num`, plus the lower and upper bounds
     //Space: O(n)
     //two pointers
     //

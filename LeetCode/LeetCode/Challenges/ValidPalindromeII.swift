@@ -12,7 +12,7 @@ import Foundation
 //string
 struct ValidPalindromeII {
     
-    //Time: O(n) `n` is the number of characters in `s`
+    //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
     //two pointers
     //recursive
@@ -43,7 +43,7 @@ struct ValidPalindromeII {
         return false
     }
     
-    //Time: O(n) `n` is the number of characters in `s`
+    //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
     //two pointers
     //recursive
@@ -80,7 +80,7 @@ struct ValidPalindromeII {
         }
     }
     
-    //Time: O(n) `n` is the number of characters in `s`
+    //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
     //two pointers
     //recursive

@@ -12,7 +12,7 @@ import Foundation
 //string
 struct VerifyingAnAlienDictionary {
     
-    //Time: O(n) `n` is the total number of characters in the `words` array
+    //Time: O(n) where n is the total number of characters in the `words` array
     //Space: O(1) order always contains 26 characters
     //array
     //dictionary
@@ -24,7 +24,7 @@ struct VerifyingAnAlienDictionary {
     //letters in one the words. If having reached the end of one of the words without finding a difference we compare the lengths
     //with the shorter word needing to come first
     //
-    //N.B. Time complexity could also be described as O(m * n) where `m` is the length of `words` and `n` the characters per word
+    //N.B. Time complexity could also be described as O(m * n) where m is the length of `words` and n the characters per word
     static func isAlienSorted(_ words: [String], _ order: String) -> Bool {
         guard words.count > 1 else {
             return true

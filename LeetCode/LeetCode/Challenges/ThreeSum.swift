@@ -11,8 +11,8 @@ import Foundation
 //array
 struct ThreeSum { //3Sum
     
-    //Time: O(n^2) `n` is the number of elements in `nums`
-    //Space: O(n) `n` is the number of elements in `nums`
+    //Time: O(n^2) where n is the number of elements in `nums`
+    //Space: O(n) where n is the number of elements in `nums`
     //two pointers
     //sorted
     //nested loop
@@ -66,8 +66,8 @@ struct ThreeSum { //3Sum
         return Array(triplets)
     }
     
-    //Time: O(n^2) `n` is the number of elements in `num`
-    //Space: O(n) `n` is the number of elements in `num`
+    //Time: O(n^2) where n is the number of elements in `num`
+    //Space: O(n) where n is the number of elements in `num`
     //dictionary
     //sorted
     //nested loop

@@ -13,7 +13,7 @@ struct AdditiveNumber {
     
     // MARK: - Pointers
     
-    //Time: O(n^2) `n` is the number of elements in `num`
+    //Time: O(n^2) where n is the number of elements in `num`
     //Space: O(n)
     //array
     //three pointers
@@ -106,7 +106,7 @@ struct AdditiveNumber {
     
     // MARK: - Array
     
-    //Time: O(n^2) `n` is the number of elements in `num`
+    //Time: O(n^2) where n is the number of elements in `num`
     //Space: O(n)
     //array
     //three pointers

@@ -11,7 +11,7 @@ import Foundation
 //linked list
 struct OddEvenLinkedList {
     
-    //Time: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
     //three pointers
     //
@@ -38,7 +38,7 @@ struct OddEvenLinkedList {
         return head
     }
     
-    //Time: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
     //three pointers
     //

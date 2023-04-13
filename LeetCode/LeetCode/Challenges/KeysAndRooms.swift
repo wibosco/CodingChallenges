@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct KeysAndRooms {
     
-    //Time: O(n + e) `n` is the number of rooms and `e` the number of keys
-    //Space: O(n) `n` is the number of rooms
+    //Time: O(n + e) where n is the number of rooms and `e` the number of keys
+    //Space: O(n) where n is the number of rooms
     //BFS
     //adjacency list
     //
@@ -47,8 +47,8 @@ struct KeysAndRooms {
         return visited.count == rooms.count
     }
     
-    //Time: O(n + e) `n` is the number of rooms and `e` the number of keys
-    //Space: O(n) `n` is the number of rooms
+    //Time: O(n + e) where n is the number of rooms and `e` the number of keys
+    //Space: O(n) where n is the number of rooms
     //DFS
     //adjacency list
     //recursive
@@ -77,8 +77,8 @@ struct KeysAndRooms {
         }
     }
     
-    //Time: O(n + e) `n` is the number of rooms and `e` the number of keys
-    //Space: O(n) `n` is the number of rooms
+    //Time: O(n + e) where n is the number of rooms and `e` the number of keys
+    //Space: O(n) where n is the number of rooms
     //DFS
     //adjacency list
     //iterative

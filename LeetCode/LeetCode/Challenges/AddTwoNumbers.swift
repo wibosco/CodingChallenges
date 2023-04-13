@@ -12,7 +12,7 @@ import Foundation
 //linked list
 final class AddTwoNumbers {
     
-    //Time: O(n) `n` is the list of greater between `l1` and `l2`
+    //Time: O(n) where n is the list of greater between `l1` and `l2`
     //Space: O(n)
     //math
     //modulo

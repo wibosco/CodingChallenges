@@ -20,8 +20,8 @@ struct LetterCombinationsOfAPhoneNumber {
                                               "8": "tuv",
                                               "9": "wxyz"]
     
-    //Time: O(4^n * n) `n` is the number of values in `digits` (4 is the max letters)
-    //Space: O(n) `n` is the number of values in `digits` (recursive stack calls)
+    //Time: O(4^n * n) where n is the number of values in `digits` (4 is the max letters)
+    //Space: O(n) where n is the number of values in `digits` (recursive stack calls)
     //dictionary
     //backtracking (DFS)
     //recursive

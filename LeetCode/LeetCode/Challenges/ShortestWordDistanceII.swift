@@ -11,7 +11,7 @@ import Foundation
 //design
 //array
 //
-//Time: O(n) `n` is number of words in `wordsDict`
+//Time: O(n) where n is number of words in `wordsDict`
 //Space: O(n)
 //
 //Solution Description:
@@ -23,7 +23,7 @@ import Foundation
 final class ShortestWordDistanceII {
     private var words = [String: [Int]]()
 
-    //Time: O(n) `n` is the number of elements in `wordsDict`
+    //Time: O(n) where n is the number of elements in `wordsDict`
     init(_ wordsDict: [String]) {
         for i in 0..<wordsDict.count {
             let word = wordsDict[i]

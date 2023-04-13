@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct TargetSum {
     
-    //Time: O(2^n) `n` is the number of elements in `nums`
+    //Time: O(2^n) where n is the number of elements in `nums`
     //Space: O(n)
     //DFS
     //dynamic vertices

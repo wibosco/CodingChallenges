@@ -12,8 +12,8 @@ import Foundation
 //array
 struct MaximumSwap {
     
-    //Time: O(n) `n` is the number of digits in `nums` (inner for is constant size 9 so we drop it)
-    //Space: O(n) `n` is the number of digits in `nums` (digits)
+    //Time: O(n) where n is the number of digits in `nums` (inner for is constant size 9 so we drop it)
+    //Space: O(n) where n is the number of digits in `nums` (digits)
     //dictionary
     //greedy
     //
@@ -54,8 +54,8 @@ struct MaximumSwap {
         return num
     }
     
-    //Time: O(n^2) `n` is the number of digits in `nums`
-    //Space: O(n) `n` is the number of digits in `nums` (digits)
+    //Time: O(n^2) where n is the number of digits in `nums`
+    //Space: O(n) where n is the number of digits in `nums` (digits)
     //
     //Solution Description:
     //Loop through all possible swaps and store the maximum value found.

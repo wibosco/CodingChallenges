@@ -11,8 +11,8 @@ import Foundation
 //array
 struct CombinationSumII {
     
-    //Time: O(2^n) `n` is the number of elements in `candidates`
-    //Space: O(n+k) `n` is the number of elements in our combination and `k` is the number of levels in our tree
+    //Time: O(2^n) where n is the number of elements in `candidates`
+    //Space: O(n+k) where n is the number of elements in our combination and `k` is the number of levels in our tree
     //backtracking
     //DFS
     //sorted

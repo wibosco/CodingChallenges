@@ -11,7 +11,7 @@ import Foundation
 //array
 struct IntersectionOfThreeSortedArrays {
     
-    //Time: O(n) `n` is the smallest of `arr1`, `arr2`, `arr3`
+    //Time: O(n) where n is the smallest of `arr1`, `arr2`, `arr3`
     //Space: O(n) (`intersection` array)
     //three pointers
     //

@@ -11,7 +11,7 @@ import Foundation
 //string
 struct LongestRepeatingCharacterReplacement {
     
-    //Time: O(n*m) `n` is the number of elements in `s`, `m` is the maximum window size
+    //Time: O(n*m) where n is the number of elements in `s`, m is the maximum window size
     //Space: O(n)
     //sliding window
     //dictionary

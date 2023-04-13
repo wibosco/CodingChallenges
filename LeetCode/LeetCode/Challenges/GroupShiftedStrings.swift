@@ -12,7 +12,7 @@ import Foundation
 //string
 struct GroupShiftedStrings {
     
-    //Time: O(m) where `m` is the number of characters contains in all `stings` elements
+    //Time: O(m) where m is the number of characters contains in all `stings` elements
     //Space: O(m)
     //dictionary
     //array

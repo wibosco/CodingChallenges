@@ -11,7 +11,7 @@ import Foundation
 //string
 struct BullsAndCows {
     
-    //Time: O(n) `n` is the number of elements in `secret`/`guess` (both should match)
+    //Time: O(n) where n is the number of elements in `secret`/`guess` (both should match)
     //Space: O(n)
     //dictionary
     //

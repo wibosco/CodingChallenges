@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct ToeplitzMatrix {
     
-    //Time: O(m * n) where `m` is the number of rows and `n` is the number of columns
+    //Time: O(m * n) where m is the number of rows and n is the number of columns
     //Space: O(1)
     //relative indexing
     //matrix
@@ -41,7 +41,7 @@ struct ToeplitzMatrix {
         return true
     }
     
-    //Time: O(m * n) where `m` is the number of rows and `n` is the number of columns
+    //Time: O(m * n) where m is the number of rows and n is the number of columns
     //Space: O(m + n)
     //matrix
     //dictionary

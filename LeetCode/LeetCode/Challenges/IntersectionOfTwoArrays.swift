@@ -12,7 +12,7 @@ import Foundation
 //array
 struct IntersectionOfTwoArrays {
     
-    //Time: O(m log m + n log m) `n` is the number of values in `nums1`, `m` is the number of values in `nums2`
+    //Time: O(m log m + n log m) where n is the number of values in `nums1`, m is the number of values in `nums2`
     //Space: O(n) (`intersection` array)
     //binary search
     //sorting

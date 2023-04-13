@@ -12,8 +12,8 @@ import Foundation
 //graph theory
 struct FloodFill {
     
-    //Time: O(m*n) where `m` is the number of rows and `n` the number of columns
-    //Space: O(m*n) where `m` is the number of rows and `n` the number of columns
+    //Time: O(m*n) where m is the number of rows and n the number of columns
+    //Space: O(m*n) where m is the number of rows and n the number of columns
     //BFS
     //relative indexing
     //matrix
@@ -54,8 +54,8 @@ struct FloodFill {
         return newImage
     }
     
-    //Time: O(m*n) where `m` is the number of rows and `n` the number of columns
-    //Space: O(m*n) where `m` is the number of rows and `n` the number of columns
+    //Time: O(m*n) where m is the number of rows and n the number of columns
+    //Space: O(m*n) where m is the number of rows and n the number of columns
     //DFS
     //relative indexing
     //matrix

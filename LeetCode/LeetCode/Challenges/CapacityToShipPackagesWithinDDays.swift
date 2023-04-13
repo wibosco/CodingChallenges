@@ -12,7 +12,7 @@ import Foundation
 //binary search
 struct CapacityToShipPackagesWithinDDays {
     
-    //O(n log m) `n` is number of elements in `weights` and `m` the search range
+    //O(n log m) where n is number of elements in `weights` and m the search range
     //Space: O(1)
     //sorted
     //minimum

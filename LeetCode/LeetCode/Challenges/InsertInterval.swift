@@ -11,8 +11,8 @@ import Foundation
 //array
 struct InsertInterval {
     
-    //Time: O(m) where `m` is the new `intervals` array containing `newInterval`
-    //Space: O(m + k) where `m` is the new `intervals` array containing `newInterval`, `k` is the merged intervals array
+    //Time: O(m) where m is the new `intervals` array containing `newInterval`
+    //Space: O(m + k) where m is the new `intervals` array containing `newInterval`, `k` is the merged intervals array
     //sorted
     //
     //Solution Description:

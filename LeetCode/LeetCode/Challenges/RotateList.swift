@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct RotateList {
     
-    //Time: O(n) `n` ia the number of nodes in the list
+    //Time: O(n) where n ia the number of nodes in the list
     //Space: O(1)
     //two pointers
     //modulo
@@ -56,7 +56,7 @@ struct RotateList {
         return newHead
     }
     
-    //Time: O(n) `n` ia the number of nodes in the list
+    //Time: O(n) where n ia the number of nodes in the list
     //Space: O(n)
     //array
     //modulo

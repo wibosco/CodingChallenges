@@ -12,8 +12,8 @@ import Foundation
 //binary search tree
 struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
     
-    //Time: O(n) `n` is the number of nodes in the tree
-    //Space: O(n) `n` is the recursion stack
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n) where n is the recursion stack
     //sorting
     //linked list
     //doubly linked list

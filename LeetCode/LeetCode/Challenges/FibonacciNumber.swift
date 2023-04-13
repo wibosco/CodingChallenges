@@ -12,7 +12,7 @@ import Foundation
 //binary tree
 struct FibonacciNumber {
     
-    //Time: O(n) `n` is each number in the squence n - 0
+    //Time: O(n) where n is each number in the squence n - 0
     //Space: O(1)
     //bottom up
     //iterative
@@ -42,7 +42,7 @@ struct FibonacciNumber {
         return curr
     }
     
-    //Time: O(n) `n` is each number in the squence n - 0
+    //Time: O(n) where n is each number in the squence n - 0
     //Space: O(n) for both the stack and `memo` size
     //top down
     //memoization

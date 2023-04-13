@@ -11,7 +11,7 @@ import Foundation
 //string
 struct AddBinary {
     
-    //Time: O(n + m) `n` is the number of character in `a`, `m` is the number of characters in `b`
+    //Time: O(n + m) where n is the number of character in `a`, m is the number of characters in `b`
     //Space: O(n + m)
     //array
     //

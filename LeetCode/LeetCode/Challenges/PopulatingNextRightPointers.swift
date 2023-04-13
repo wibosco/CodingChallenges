@@ -49,7 +49,7 @@ struct PopulatingNextRightPointers {
     }
     
     //Time: O(n)
-    //Space: O(n) `n` is number of nodes at the last level (as it's a perfect tree)
+    //Space: O(n) where n is number of nodes at the last level (as it's a perfect tree)
     //queue - use queue count as level count
     //pointer
     //

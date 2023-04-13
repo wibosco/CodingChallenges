@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct MiddleOfLinkedList {
     
-    //Time: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
     //two pointers
     //
@@ -31,8 +31,8 @@ struct MiddleOfLinkedList {
         return slow
     }
     
-    //Time: O(n) `n` is the number of nodes in the list
-    //Space: O(n) `n` is the number of nodes in the list
+    //Time: O(n) where n is the number of nodes in the list
+    //Space: O(n) where n is the number of nodes in the list
     //array
     //
     //Solution Description:

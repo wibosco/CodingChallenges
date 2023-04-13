@@ -11,7 +11,7 @@ import Foundation
 //array
 struct SumOfAllOddLengthSubarrays {
     
-    //Time: O(n^3) `n` is the number of elements in `arr`
+    //Time: O(n^3) where n is the number of elements in `arr`
     //Space: O(1)
     //
     //Solution Description:

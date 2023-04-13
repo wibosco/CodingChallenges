@@ -12,8 +12,8 @@ import Foundation
 //binary tree
 struct KthSymbolInGrammar {
     
-    //Time: O(n) `n` is the depth of the tree
-    //Space: O(n) `n` is the depth of the recursive stack
+    //Time: O(n) where n is the depth of the tree
+    //Space: O(n) where n is the depth of the recursive stack
     //recusive
     //DFS
     //
@@ -49,8 +49,8 @@ struct KthSymbolInGrammar {
         }
     }
     
-    //Time: O(2^n) `n` is the depth of the tree
-    //Space: O(n) `n` is the depth of the recursive stack
+    //Time: O(2^n) where n is the depth of the tree
+    //Space: O(n) where n is the depth of the recursive stack
     //recusive
     //
     //Solution Description:

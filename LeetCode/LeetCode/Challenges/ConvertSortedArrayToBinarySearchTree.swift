@@ -12,8 +12,8 @@ import Foundation
 //binary search tree
 struct ConvertSortedArrayToBinarySearchTree {
     
-    //Time: O(n) `n` is the number of nodes in the tree
-    //Space: O(log n) `n` is the number of nodes in the tree
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(log n) where n is the number of nodes in the tree
     //DFS
     //recursive
     //divide and conquer

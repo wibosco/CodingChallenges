@@ -11,7 +11,7 @@ import Foundation
 //two pointers
 struct RemoveElement {
     
-    //Time: O(n) `n` is the number of elements in `num`
+    //Time: O(n) where n is the number of elements in `num`
     //Space: O(1)
     //inline
     //

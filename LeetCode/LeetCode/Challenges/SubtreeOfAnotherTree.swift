@@ -12,7 +12,7 @@ import Foundation
 //binary tree
 struct SubtreeOfAnotherTree {
     
-    //Time: O(n * m) `n` is the number of nodes in `t1`, `m` is the number of nodes in `t2`
+    //Time: O(n * m) where n is the number of nodes in `t1`, m is the number of nodes in `t2`
     //Space: O(m)
     //DFS
     //recursion

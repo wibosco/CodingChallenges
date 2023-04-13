@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct ShortestPathBinaryMatrix {
     
-    //Time: O(n) `n` is the number of cells in `grid`
+    //Time: O(n) where n is the number of cells in `grid`
     //Space: O(n)
     //BFS
     //relative indexing

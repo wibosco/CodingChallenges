@@ -12,8 +12,8 @@ import Foundation
 //binary tree
 struct BinaryTreePreorderTraversal {
     
-    //Time: O(n) `n` is the number of nodes in the tree
-    //Space: O(n) `n` is the number of nodes in the tree
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n) where n is the number of nodes in the tree
     //DFS
     //recursion
     static func preorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
@@ -38,8 +38,8 @@ struct BinaryTreePreorderTraversal {
         preorderTraversal(node: node.right, visited: &visited)
     }
     
-    //Time: O(n) `n` is the number of nodes in the tree
-    //Space: O(n) `n` is the number of nodes in the tree
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n) where n is the number of nodes in the tree
     //DFS
     //iterative
     static func preorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {
