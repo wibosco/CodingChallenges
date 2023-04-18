@@ -20,7 +20,10 @@ import Foundation
 //
 //N.B. Don’t confuse these heaps with memory heaps - memory heaps are a different concept.
 //
-//N.B. Elements with an index > (heap.count / 2) are leaf nodes
+//N.B. Elements with an index > (heap.count / 2) are leaf nodes.
+//
+//N.B. A complete binary tree is one where all the levels of the binary tree are completely filled except (possibly) the last
+//level, which is filled from left side.
 //
 //See: https://github.com/raywenderlich/swift-algorithm-club/tree/master/Heap
 struct Heap<Element> {

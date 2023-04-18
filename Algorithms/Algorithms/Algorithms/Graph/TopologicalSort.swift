@@ -88,6 +88,7 @@ struct TopologicalSort {
         //and shouldn't be treated as a cycle
         currentVisited.remove(source)
         
+        //needs to come after we have added all this vertices descendents/neighbors
         ordering.append(source)
     }
 }

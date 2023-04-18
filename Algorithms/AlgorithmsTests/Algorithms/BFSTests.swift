@@ -133,7 +133,7 @@ final class BFSTests: XCTestCase {
         //        +---+
         //
         
-        let data = [4, 1, 6, nil, 2]
+        let data = [4, 1, nil, nil, 2]
         
         let tree = BinaryTreeNode.deserialize(data)
         

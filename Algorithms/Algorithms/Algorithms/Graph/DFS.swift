@@ -69,7 +69,7 @@ struct DFS {
     //
     //N.B. By selecting only one branch to traverse we eliminate approx half of all remaining nodes to be search giving this
     //search a time of O(log n)
-    static func pathBinarySearchTree(_ root: BinaryTreeNode?, _ target: Int) -> [Int]? {
+    static func pathBinarySearchTree(_ root: BinaryTreeNode<Int>?, _ target: Int) -> [Int]? {
         guard let root = root else {
             return nil
         }
@@ -82,7 +82,7 @@ struct DFS {
         return targetPath
     }
     
-    private static func dfsBinarySearchTree(_ node: BinaryTreeNode, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?) {
+    private static func dfsBinarySearchTree(_ node: BinaryTreeNode<Int>, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?) {
         guard targetPath == nil else {
             return
         }
@@ -160,7 +160,7 @@ struct DFS {
     //find `target` we return immediately. If after having completed a branch of the tree and we haven't found `target` we
     //backtrack one level to the parent/previous node and select the next node (if it exists else we backtrack further) to repeat
     //the process. If after searching all of the tree we haven't found `target` we return nil.
-    static func pathBinaryTree(_ root: BinaryTreeNode?, _ target: Int) -> [Int]? {
+    static func pathBinaryTree(_ root: BinaryTreeNode<Int>?, _ target: Int) -> [Int]? {
         guard let root = root else {
             return nil
         }
@@ -173,7 +173,7 @@ struct DFS {
         return targetPath
     }
     
-    private static func dfsBinaryTree(_ node: BinaryTreeNode, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?) {
+    private static func dfsBinaryTree(_ node: BinaryTreeNode<Int>, _ target: Int, _ currentPath: inout [Int], _ targetPath: inout [Int]?) {
         guard targetPath == nil else {
             return
         }

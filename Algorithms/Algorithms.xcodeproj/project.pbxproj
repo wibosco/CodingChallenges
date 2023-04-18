@@ -44,6 +44,8 @@
 		3DFC2F37283BE3A6001256EE /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F2C283BE3A6001256EE /* PriorityQueue.swift */; };
 		3DFC2F38283BE3A6001256EE /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F2D283BE3A6001256EE /* Heap.swift */; };
 		3DFC2F3A283BE3CE001256EE /* PriorityQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F39283BE3CE001256EE /* PriorityQueueTests.swift */; };
+		4379F49529EC9B23003BA6F9 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F49429EC9B23003BA6F9 /* BinarySearchTree.swift */; };
+		4379F49729EC9F41003BA6F9 /* BinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F49629EC9F41003BA6F9 /* BinarySearchTreeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		3DFC2F2C283BE3A6001256EE /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		3DFC2F2D283BE3A6001256EE /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		3DFC2F39283BE3CE001256EE /* PriorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTests.swift; sourceTree = "<group>"; };
+		4379F49429EC9B23003BA6F9 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		4379F49629EC9F41003BA6F9 /* BinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +228,7 @@
 			children = (
 				3DFC2F16283BE396001256EE /* HeapTests.swift */,
 				3DFC2F39283BE3CE001256EE /* PriorityQueueTests.swift */,
+				4379F49629EC9F41003BA6F9 /* BinarySearchTreeTests.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 		3DFC2F2B283BE3A6001256EE /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				4379F49429EC9B23003BA6F9 /* BinarySearchTree.swift */,
 				3DFC2F2D283BE3A6001256EE /* Heap.swift */,
 				3DFC2F2C283BE3A6001256EE /* PriorityQueue.swift */,
 				3DE771A7285375A3002981DD /* UnionFind.swift */,
@@ -363,6 +369,7 @@
 				3DD4729E2851F4E50008C93D /* HeapSort.swift in Sources */,
 				3DD472A02851F4E50008C93D /* RadixSort.swift in Sources */,
 				3DD4729C2851F4E50008C93D /* InsertionSort.swift in Sources */,
+				4379F49529EC9B23003BA6F9 /* BinarySearchTree.swift in Sources */,
 				3DD472A32851F4E50008C93D /* QuickSort.swift in Sources */,
 				3DE771A8285375A3002981DD /* UnionFind.swift in Sources */,
 				3DD472A42851F4E50008C93D /* Dijkstra.swift in Sources */,
@@ -390,6 +397,7 @@
 				3DFC2F18283BE396001256EE /* RadixSortTests.swift in Sources */,
 				3DFC2F1A283BE396001256EE /* InsertionSortTests.swift in Sources */,
 				3DD472AC28524D8B0008C93D /* PrimTests.swift in Sources */,
+				4379F49729EC9F41003BA6F9 /* BinarySearchTreeTests.swift in Sources */,
 				3D03E8A6283E384100944AF3 /* TopologicalSortTests.swift in Sources */,
 				3DFC2F1F283BE396001256EE /* BubbleSortTests.swift in Sources */,
 				3DFC2F1E283BE396001256EE /* CountingSortTests.swift in Sources */,

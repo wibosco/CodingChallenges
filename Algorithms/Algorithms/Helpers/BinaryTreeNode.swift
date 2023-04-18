@@ -7,20 +7,22 @@
 
 import Foundation
 
-final class BinaryTreeNode {
-    var val: Int
+final class BinaryTreeNode<Element: Comparable> {
+    var val: Element
+    
+    var parent: BinaryTreeNode?
     
     var left: BinaryTreeNode?
     var right: BinaryTreeNode?
     
     // MARK: - Init
     
-    init(_ val: Int) {
+    init(_ val: Element) {
         self.val = val
     }
 }
 
-extension BinaryTreeNode {
+extension BinaryTreeNode where Element == Int {
     //level order
     static func deserialize(_ array: [Int?]) -> BinaryTreeNode? {
         guard !array.isEmpty, array[0] != nil else {
@@ -37,6 +39,7 @@ extension BinaryTreeNode {
             if let leftValue = array[i] {
                 let left = BinaryTreeNode(leftValue)
                 node.left = left
+                left.parent = node
                 
                 queue.append(left)
             }
@@ -50,6 +53,7 @@ extension BinaryTreeNode {
             if let rightValue = array[i] {
                 let right = BinaryTreeNode(rightValue)
                 node.right = right
+                right.parent = node
                 
                 queue.append(right)
             }

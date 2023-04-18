@@ -43,7 +43,7 @@ A collection of coding challenges and their solutions from:
 | ---------- | --------- | ------- |
 | Optimise graph traversal | `Memoization`  | `LongestIncreasingSubsequence` |
 | Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
-| Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChangesa` |
+| Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
 
 ## Data Structure Characteristics
 

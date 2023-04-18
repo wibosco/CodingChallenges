@@ -19,12 +19,11 @@ struct MinimumHeightTrees {
     //undirected graph
     //
     //Solution Description:
-    //First we convert the edges into an adjacency list to allows for O(1) access time. Rather than selecting
-    //multiple roots and working down the tree to determine which is the minimum we instead flip it and
-    //work up the tree from the leaf nodes. Bootom-up ensures that we graudally prune the tree of nodes in a
-    //level by level fashion and as a new leaf node can only be created from a pruned node we are able to
-    //easily generate the next leaf nodes at each level. Eventually we end up with either 1 or 2 nodes at the
-    //top that are the roots for the minimum tree.
+    //First we convert the edges into an adjacency list to allows for O(1) access time. Rather than selectingvmultiple roots and
+    //working down the tree to determine which is the minimum we instead flip it and work up the tree from the leaf nodes.
+    //Bootom-up ensures that we gradually prune the tree of nodes in a level by level fashion and as a new leaf node can only be
+    //created from a pruned node we are able to easily generate the next leaf nodes at each level. Eventually we end up with
+    //either 1 or 2 nodes at the top that are the roots for the minimum tree.
     static func findMinHeightTrees(_ n: Int, _ edges: [[Int]]) -> [Int] {
         guard n > 1 else {
             return [0]

@@ -206,7 +206,7 @@ struct BFS {
     //contained within each branch so we need to search each branch for `target`. To keep track of the path we have taken we also
     //put the path into the queue. If at any time we find `target` we return immediately. If after
     //searching all of the tree we haven't found `target` we return nil
-    static func shortestPathBinaryTree(_ root: BinaryTreeNode?, _ target: Int) -> [Int]? {
+    static func shortestPathBinaryTree(_ root: BinaryTreeNode<Int>?, _ target: Int) -> [Int]? {
         guard let root = root else {
             return nil
         }
@@ -279,7 +279,7 @@ struct BFS {
     //as we moving further away from `source` - note it doesn't matter how many vertices a level contains we are only interested
     //in the number of levels as the measure of distance. If at any time we find `target` we return immediately. If after searching
     //all of the tree we haven't found `target` we return nil
-    static func shortestDistanceBinaryTree(_ root: BinaryTreeNode?, _ target: Int) -> Int? {
+    static func shortestDistanceBinaryTree(_ root: BinaryTreeNode<Int>?, _ target: Int) -> Int? {
         guard let root = root else {
             return nil
         }
@@ -365,7 +365,7 @@ struct BFS {
     //
     //N.B. By selecting only one branch to traverse we eliminate approx half of all remaining nodes to be search giving this
     //search a time of O(log n)
-    static func shortestPathBinarySearchTree(_ root: BinaryTreeNode?, _ target: Int) -> [Int]? {
+    static func shortestPathBinarySearchTree(_ root: BinaryTreeNode<Int>?, _ target: Int) -> [Int]? {
         guard let root = root else {
             return nil
         }
@@ -441,7 +441,7 @@ struct BFS {
     //
     //N.B. By selecting only one branch to traverse we eliminate approx half of all remaining nodes to be search giving this
     //search a time of O(log n)
-    static func shortestDistanceBinarySearchTree(_ root: BinaryTreeNode?, _ target: Int) -> Int? {
+    static func shortestDistanceBinarySearchTree(_ root: BinaryTreeNode<Int>?, _ target: Int) -> Int? {
         guard let root = root else {
             return nil
         }
