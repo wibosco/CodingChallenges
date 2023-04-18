@@ -49,11 +49,9 @@ struct Matrix01 {
         var level = 1
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [[Int]]()
             
-            for _ in 0..<count {
-                let coords = queue.removeFirst()
-                
+            for coords in queue {
                 let neighbors = visitableNeighbors(mat, coords[0], coords[1], visited, relativeIndexing)
                 for neighbor in neighbors {
                     guard !visited.contains(neighbor) else {
@@ -65,9 +63,11 @@ struct Matrix01 {
                     }
                     
                     visited.insert(neighbor)
-                    queue.append(neighbor)
+                    newQueueItems.append(neighbor)
                 }
             }
+            
+            queue = newQueueItems
             
             level += 1
         }

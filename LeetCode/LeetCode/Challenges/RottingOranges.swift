@@ -21,20 +21,17 @@ struct RottingOranges {
     //matrix
     //
     //Solution Description:
-    //This is a graph problem. First we determine where (if) the rotten oranges are in the
-    //grid and how many fresh oranges we have. The rotten orangges are then used as the starting
-    //elements in our BFS queue. As we process the queue we use 4-way relative mapping array to
-    //determine which nodes are neighbors to the current node. From those neighbors we are only
-    //interested in the fresh ones - which we determine by checking if they are of value `1` and
-    //also that we are not in the `visited` array. The `visited` array contains the rotten nodes.
-    //For every fresh orange discovered we add it to the `visited` array and reduce the `freshFruit`
-    //count. Each top level iteration of the loop is one level completed or a "minute". Finally we
-    //check if all of the fresh oranges are rotten, if so we return the level count otherwise we
-    //return -1
+    //This is a graph problem. First we determine where (if) the rotten oranges are in the grid and how many fresh oranges
+    //we have. The rotten orangges are then used as the starting elements in our BFS queue. As we process the queue we use
+    //4-way relative mapping array to determine which nodes are neighbors to the current node. From those neighbors we are
+    //only interested in the fresh ones - which we determine by checking if they are of value `1` and also that we are not
+    //in the `visited` array. The `visited` array contains the rotten nodes. For every fresh orange discovered we add it to
+    //the `visited` array and reduce the `freshFruit' count. Each top level iteration of the loop is one level completed or
+    //a "minute". Finally we check if all of the fresh oranges are rotten, if so we return the level count otherwise we
+    //return -1.
     //
-    //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The
-    //extra loop is to work through the neighbors of a nodes - don't confuse this with the actual
-    //level traversal loop which is the second loop
+    //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The extra loop is to work
+    //through the neighbors of a nodes - don't confuse this with the actual level traversal loop which is the second loop.
     static func orangesRotting(_ grid: [[Int]]) -> Int {
         //0 - empty, 1 - fresh, 2 - rotten
         var queue = [[Int]]()
@@ -75,20 +72,20 @@ struct RottingOranges {
         // swiftlint:enable comma
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [[Int]]()
             
-            for _ in 0..<count {
-                let node = queue.removeFirst()
-                
+            for node in queue {
                 let neighbors = navigatableNeighbours(grid, relativeIndexing, node[0], node[1], visited: visited)
                 
                 for neighbor in neighbors {
                     visited.append(neighbor)
                     
                     freshFruit -= 1
-                    queue.append(neighbor)
+                    newQueueItems.append(neighbor)
                 }
             }
+            
+            queue = newQueueItems
             
             spreadTime += 1
         }
@@ -182,19 +179,19 @@ struct RottingOranges {
         // swiftlint:enable comma
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [[Int]]()
             
-            for _ in 0..<count {
-                let node = queue.removeFirst()
-                
+            for node in queue {
                 let neighbors = navigatableFreshNeighboursMuting(mGrid, relativeIndexing, node[0], node[1])
                 
                 for neighbor in neighbors {
                     mGrid[neighbor[0]][neighbor[1]] = 2 //mutate to rotten
                     freshFruit -= 1
-                    queue.append(neighbor)
+                    newQueueItems.append(neighbor)
                 }
             }
+            
+            queue = newQueueItems
             
             spreadTime += 1
         }

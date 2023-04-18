@@ -88,20 +88,24 @@ struct NumberOfProvinces {
             queue.append(i)
             
             while !queue.isEmpty {
-                let src = queue.removeFirst()
+                var newQueueItems = [Int]()
                 
-                for dst in 0..<isConnected[src].count {
-                    guard isConnected[src][dst] == 1 else { //`1` indicates that there is an edge between these two vertices
-                        continue
+                for src in queue {
+                    for dst in 0..<isConnected[src].count {
+                        guard isConnected[src][dst] == 1 else { //`1` indicates that there is an edge between these two vertices
+                            continue
+                        }
+                        
+                        guard !visited.contains(dst) else {
+                            continue
+                        }
+                        
+                        visited.insert(dst) //as this matrix is square, `src` and `dst` are interchangable
+                        newQueueItems.append(dst)
                     }
-                    
-                    guard !visited.contains(dst) else {
-                        continue
-                    }
-                    
-                    visited.insert(dst) //as this matrix is square, `src` and `dst` are interchangable
-                    queue.append(dst)
                 }
+                
+                queue = newQueueItems
             }
             
             count += 1

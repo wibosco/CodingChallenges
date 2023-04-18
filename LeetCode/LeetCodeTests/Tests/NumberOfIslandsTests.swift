@@ -75,5 +75,4 @@ final class NumberOfIslandsTests: XCTestCase {
         
         XCTAssertEqual(numberOfIslands, 1)
     }
-    
 }

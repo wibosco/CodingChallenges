@@ -55,11 +55,9 @@ struct ShortestPathBinaryMatrix {
         let target = [(rowsCount - 1), (columnCount - 1)]
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [[Int]]()
             
-            for _ in 0..<count {
-                let rowColumn = queue.removeFirst()
-                
+            for rowColumn in queue {
                 guard rowColumn != target else {
                     return steps
                 }
@@ -71,8 +69,10 @@ struct ShortestPathBinaryMatrix {
                 visited.insert(rowColumn)
                 
                 let neighbors = validNeighbors(grid, relativeIndexing, rowColumn[0], rowColumn[1])
-                queue.append(contentsOf: neighbors)
+                newQueueItems.append(contentsOf: neighbors)
             }
+            
+            queue = newQueueItems
             
             steps += 1
         }
@@ -217,22 +217,26 @@ struct ShortestPathBinaryMatrix {
         var visited = Set<[Int]>(arrayLiteral: [0, 0])
         
         while !queue.isEmpty {
-            let (curr, count) = queue.removeFirst()
+            var newQueueItems = [(Int, Int)]()
             
-            if curr == target {
-                return count
-            }
-            
-            for neighbor in adjList[curr] {
-                let path = [curr, neighbor]
-                if visited.contains(path) {
-                    continue
+            for (curr, count) in queue {
+                if curr == target {
+                    return count
                 }
                 
-                visited.insert(path)
-                
-                queue.append((neighbor, (count + 1)))
+                for neighbor in adjList[curr] {
+                    let path = [curr, neighbor]
+                    if visited.contains(path) {
+                        continue
+                    }
+                    
+                    visited.insert(path)
+                    
+                    newQueueItems.append((neighbor, (count + 1)))
+                }
             }
+            
+            queue = newQueueItems
         }
         
         return -1

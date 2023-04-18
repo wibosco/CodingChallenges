@@ -46,12 +46,10 @@ struct PerfectSquares {
             //as we are iterating a set we can't add items to the end of the queue
             //as we build up the next level and  have them not interfere with the
             //current level. Instead each level needs its own queue to add to.
-            var newQueue = Set<Int>()
+            var newQueueItems = Set<Int>()
             level += 1
             
-            while !queue.isEmpty {
-                let total = queue.removeFirst()
-                
+            for total in queue {
                 for square in squares {
                     let newTotal = total + square
                     
@@ -63,11 +61,11 @@ struct PerfectSquares {
                         continue
                     }
                     
-                    newQueue.insert(newTotal)
+                    newQueueItems.insert(newTotal)
                 }
             }
             
-            queue = newQueue
+            queue = newQueueItems
         }
         
         return level

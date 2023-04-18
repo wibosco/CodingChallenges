@@ -40,18 +40,23 @@ struct IsGraphBipartite {
                 nodes[i] = true
                 
                 while !queue.isEmpty { //BFS
-                    let node = queue.removeFirst()
-                    let color = nodes[node]!
+                    var newQueueItems = [Int]()
                     
-                    for neighbor in graph[node] {
-                        if nodes[neighbor] == nil {
-                            queue.append(neighbor)
-                            nodes[neighbor] = !color //each level alternates color
-                        } else if nodes[neighbor] == color {
-                            return false
+                    for node in queue {
+                        let color = nodes[node]!
+                        
+                        for neighbor in graph[node] {
+                            if nodes[neighbor] == nil {
+                                newQueueItems.append(neighbor)
+                                nodes[neighbor] = !color //each level alternates color
+                            } else if nodes[neighbor] == color {
+                                return false
+                            }
+                             
                         }
-                         
                     }
+                    
+                    queue = newQueueItems
                 }
             }
         }

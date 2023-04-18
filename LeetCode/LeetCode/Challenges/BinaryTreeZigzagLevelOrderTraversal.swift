@@ -32,22 +32,22 @@ struct BinaryTreeZigzagLevelOrderTraversal {
         var leftToRight = true
         
         while !queue.isEmpty {
-            let count = queue.count
             var level = [Int]()
+            var newQueueItems = [BinaryTreeNode]()
             
-            for _ in 0..<count {
-                let node = queue.removeFirst()
-                
+            for node in queue {
                 level.append(node.val)
                 
                 if let left = node.left {
-                    queue.append(left)
+                    newQueueItems.append(left)
                 }
                 
                 if let right = node.right {
-                    queue.append(right)
+                    newQueueItems.append(right)
                 }
             }
+            
+            queue = newQueueItems
             
             if !leftToRight {
                 level.reverse()

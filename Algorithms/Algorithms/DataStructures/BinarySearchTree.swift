@@ -170,7 +170,7 @@ final class BinarySearchTree<Element: Comparable> {
         var height = 0
         
         while !queue.isEmpty {
-            var levelQueue = [BinaryTreeNode<Element>]()
+            var newQueueItems = [BinaryTreeNode<Element>]()
             
             for n in queue {
                 if n == node {
@@ -178,15 +178,15 @@ final class BinarySearchTree<Element: Comparable> {
                 }
                 
                 if let left = n.left {
-                    levelQueue.append(left)
+                    newQueueItems.append(left)
                 }
                 
                 if let right = n.right {
-                    levelQueue.append(right)
+                    newQueueItems.append(right)
                 }
             }
             
-            queue = levelQueue
+            queue = newQueueItems
             height += 1
         }
         

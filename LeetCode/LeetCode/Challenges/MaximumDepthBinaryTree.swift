@@ -80,19 +80,19 @@ struct MaximumDepthBinaryTree {
         var depth = 0
         
         while !queue.isEmpty {
-            let levelCount = queue.count
+            var newQueueItems = [BinaryTreeNode]()
             
-            for _ in 0..<levelCount {
-                let node = queue.removeFirst()
-                
+            for node in queue {
                 if let left = node.left {
-                    queue.append(left)
+                    newQueueItems.append(left)
                 }
                 
                 if let right = node.right {
-                    queue.append(right)
+                    newQueueItems.append(right)
                 }
             }
+            
+            queue = newQueueItems
             
             depth += 1
         }

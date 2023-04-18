@@ -30,24 +30,23 @@ struct BinaryTreeLevelOrderTraversalII {
         var levels = [[Int]]()
         
         while !queue.isEmpty {
-            let count = queue.count
             var level = [Int]()
+            var newQueueItems = [BinaryTreeNode]()
             
-            for _ in 0..<count {
-                let node = queue.removeFirst()
-                
+            for node in queue {
                 level.append(node.val)
                 
                 if let left = node.left {
-                    queue.append(left)
+                    newQueueItems.append(left)
                 }
                 
                 if let right = node.right {
-                    queue.append(right)
+                    newQueueItems.append(right)
                 }
             }
             
             levels.insert(level, at: 0)
+            queue = newQueueItems
         }
         
         return levels

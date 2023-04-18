@@ -107,7 +107,7 @@ struct MinimumHeightTrees {
             var level = 0
             
             while !queue.isEmpty {
-                var nextQueue = [Int]()
+                var newQueueItems = [Int]()
                 for node in queue {
                     let neighbors = adjList[node]
                     
@@ -117,7 +117,7 @@ struct MinimumHeightTrees {
                         }
                         
                         visited.insert(neighbor)
-                        nextQueue.append(neighbor)
+                        newQueueItems.append(neighbor)
                     }
                 }
 
@@ -127,7 +127,7 @@ struct MinimumHeightTrees {
                     break
                 }
                 
-                queue = nextQueue
+                queue = newQueueItems
             }
             
             treeHeights[level, default: []].append(source)

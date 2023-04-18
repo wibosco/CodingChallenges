@@ -12,13 +12,14 @@ import Foundation
 //graph theory
 struct AllPathsFromSourceToTarget {
 
-    //Time: O(
-    //Space: O(
+    //Time: O(n) where n is the number of nodes in `graph`
+    //Space: O(n)
     //BFS
+    //DAG
     //
     //Solution Description:
     //Using BFS traverse through the graph. As we want to find all paths to the target (rather than just the shortest), the queue
-    //used contains not just the node to visit but also the path that lead to that point. If the dequeued node is the target, add
+    //used contains not just the node to visit but also the path that led to that point. If the dequeued node is the target, add
     //the path that got us here to the `paths` array and contine until the queue is empty i.e. all nodes have been visited.
     static func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {
         let target = graph.count - 1
@@ -26,27 +27,31 @@ struct AllPathsFromSourceToTarget {
 
         var queue = [(0, [0])] //(node, path)
         while !queue.isEmpty {
-            let item = queue.removeFirst()
-            let node  = item.0
-            let path = item.1
-            
-            guard node != target else {
-                paths.append(path)
-                continue
+            var newQueueItems = [(Int, [Int])]()
+            for item in queue {
+                let node  = item.0
+                let path = item.1
+                
+                guard node != target else {
+                    paths.append(path)
+                    continue
+                }
+                
+                for neighbor in graph[node] {
+                    newQueueItems.append((neighbor, path + [neighbor]))
+                }
             }
-            
-            for neighbor in graph[node] {
-                queue.append((neighbor, path + [neighbor]))
-            }
+            queue = newQueueItems
         }
         
         return paths
     }
     
-    //Time: O(2^N * N)
-    //Space: O(2^N * N)
+    //Time: O(2^n * n) where n is the number of nodes in `graph`
+    //Space: O(2^n * n)
     //DFS
     //backtracking
+    //DAG
     //
     //Solution Description:
     //Perform a recusive DFS search through the graph, keeping track of the current path. If we find the target then that `path`

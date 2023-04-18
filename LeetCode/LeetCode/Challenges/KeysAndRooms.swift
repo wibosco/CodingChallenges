@@ -27,11 +27,9 @@ struct KeysAndRooms {
         var visited = Set<Int>(arrayLiteral: 0)
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [Int]()
             
-            for _ in 0..<count {
-                let index = queue.removeFirst()
-                
+            for index in queue {
                 let neighbors = rooms[index]
                 for neighbor in neighbors {
                     guard !visited.contains(neighbor) else {
@@ -39,9 +37,11 @@ struct KeysAndRooms {
                     }
                     
                     visited.insert(neighbor)
-                    queue.append(neighbor)
+                    newQueueItems.append(neighbor)
                 }
             }
+            
+            queue = newQueueItems
         }
         
         return visited.count == rooms.count

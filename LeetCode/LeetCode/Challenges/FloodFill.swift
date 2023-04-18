@@ -27,7 +27,10 @@ struct FloodFill {
     //to the queue and eventually convert it's color. Once the queue is empty we have traversed all possibile vertices
     //from `sr, sc` and can return the updated image.
     static func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
-        let relativeIndexing = [[-1, 0], [0, -1], [0, 1], [1, 0]] //[row, column]
+        let relativeIndexing = [    [-1, 0],
+                                [0, -1], [0, 1],
+                                     [1, 0]
+                                ] //[row, column]
         
         let oldColor = image[sr][sc]
         var newImage = image
@@ -36,19 +39,19 @@ struct FloodFill {
         var visited = Set<[Int]>(arrayLiteral: [sr, sc])
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [[Int]]()
             
-            for _ in 0..<count {
-                let coords = queue.removeFirst()
-                
+            for coords in queue {
                 newImage[coords[0]][coords[1]] = newColor
                 
                 let neighbors = visitableNeighbors(image, coords[0], coords[1], oldColor, relativeIndexing, visited)
                 for neighbor in neighbors {
                     visited.insert(neighbor)
-                    queue.append(neighbor)
+                    newQueueItems.append(neighbor)
                 }
             }
+            
+            queue = newQueueItems
         }
         
         return newImage

@@ -56,19 +56,23 @@ struct LowestCommonAncestorBinarySearchTree {
         var queue = [root]
         
         while !queue.isEmpty {
-            let node = queue.removeFirst()
+            var newQueueItems = [BinaryTreeNode]()
             
-            if node.val > p.val && node.val > q.val { // node is greater than p & q so search left
-                if let left = node.left {
-                    queue.append(left)
+            for node in queue {
+                if node.val > p.val && node.val > q.val { // node is greater than p & q so search left
+                    if let left = node.left {
+                        newQueueItems.append(left)
+                    }
+                } else if node.val < p.val && node.val < q.val { // node is less than p & q so search right
+                    if let right = node.right {
+                        newQueueItems.append(right)
+                    }
+                } else {
+                    return node
                 }
-            } else if node.val < p.val && node.val < q.val { // node is less than p & q so search right
-                if let right = node.right {
-                    queue.append(right)
-                }
-            } else {
-                return node
             }
+            
+            queue = newQueueItems
         }
     
         return nil

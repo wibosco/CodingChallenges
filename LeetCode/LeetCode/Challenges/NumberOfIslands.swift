@@ -118,11 +118,9 @@ struct NumberOfIslands {
         var queue = [root]
         
         while !queue.isEmpty {
-            let queueCount = queue.count
+            var newQueueItems = [[Int]]()
             
-            for _ in 0..<queueCount {
-                let vertice = queue.removeFirst()
-                
+            for vertice in queue {
                 //check that since adding this vertice to the queue we haven't already processed it
                 guard !visited.contains(vertice) else {
                     continue
@@ -131,9 +129,11 @@ struct NumberOfIslands {
                 
                 let neighbors = unvisitedLandNeighbors(grid, vertice[0], vertice[1], relativeIndexing, visited)
                 for neighbor in neighbors {
-                    queue.append(neighbor)
+                    newQueueItems.append(neighbor)
                 }
             }
+            
+            queue = newQueueItems
         }
     }
     

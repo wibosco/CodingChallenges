@@ -89,18 +89,20 @@ struct SymmetricTree {
                 right -= 1
             }
             
+            var newQueueItems = [(node: BinaryTreeNode, parent: BinaryTreeNode, side: Int)]()
+            
             //add child nodes for next iteration
-            for _ in 0..<levelCount {
-                let queued = queue.removeFirst()
-                
+            for queued in queue {
                 if let left = queued.node.left {
-                    queue.append((node: left, parent: queued.node, side: 0))
+                    newQueueItems.append((node: left, parent: queued.node, side: 0))
                 }
                 
                 if let right = queued.node.right {
-                    queue.append((node: right, parent: queued.node, side: 1))
+                    newQueueItems.append((node: right, parent: queued.node, side: 1))
                 }
             }
+            
+            queue = newQueueItems
         }
         
         return true

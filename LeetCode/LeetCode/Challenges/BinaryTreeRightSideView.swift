@@ -8,7 +8,7 @@
 
 import Foundation
 
-//https://leetcode.com/problems/binary-tree-right-side-view/s
+//https://leetcode.com/problems/binary-tree-right-side-view/
 //binary tree
 struct BinaryTreeRightSideView {
     
@@ -28,21 +28,21 @@ struct BinaryTreeRightSideView {
         var queue = [root]
         
         while !queue.isEmpty {
-            let levelCount = queue.count
-            
             rightSideView.append(queue.last!.val)
             
-            for _ in 0..<levelCount {
-                let node = queue.removeFirst()
-                
+            var newQueueItems = [BinaryTreeNode]()
+            
+            for node in queue {                
                 if let left = node.left {
-                    queue.append(left)
+                    newQueueItems.append(left)
                 }
                 
                 if let right = node.right {
-                    queue.append(right)
+                    newQueueItems.append(right)
                 }
             }
+            
+            queue = newQueueItems
         }
         
         return rightSideView

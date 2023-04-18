@@ -51,11 +51,9 @@ struct WallsAndGates {
         
         //update rooms
         while !queue.isEmpty {
-            let levelCount = queue.count
+            var newQueueItems = [[Int]]()
             
-            for _ in 0..<levelCount {
-                let room = queue.removeFirst()
-                
+            for room in queue {
                 //as a gate has the value of 0 (and any rooms after will be 0 + n)
                 //we can just use the value of the room without needing to introduce
                 //a new count
@@ -66,10 +64,12 @@ struct WallsAndGates {
                 for neighbor in neighbors {
                     if rooms[neighbor[0]][neighbor[1]] > newDistance {
                         rooms[neighbor[0]][neighbor[1]] = newDistance
-                        queue.append([neighbor[0], neighbor[1]])
+                        newQueueItems.append([neighbor[0], neighbor[1]])
                     }
                 }
             }
+            
+            queue = newQueueItems
         }
     }
     

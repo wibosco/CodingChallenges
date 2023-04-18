@@ -147,26 +147,30 @@ struct GraphValidTree {
         var paths = Set<Set<Int>>() //A set within a set will allow us to treat A -> B the same as B -> A
         
         while !queue.isEmpty {
-            let node  = queue.removeFirst()
+            var newQueueItems = [Int]()
             
-            for neighbor in adjList[node] {
-                var path = Set<Int>()
-                path.insert(neighbor)
-                path.insert(node)
-                
-                guard !paths.contains(path) else { //skip "simple" loops i.e. A -> B and B -> A
-                    continue
+            for node in queue {
+                for neighbor in adjList[node] {
+                    var path = Set<Int>()
+                    path.insert(neighbor)
+                    path.insert(node)
+                    
+                    guard !paths.contains(path) else { //skip "simple" loops i.e. A -> B and B -> A
+                        continue
+                    }
+                    
+                    paths.insert(path)
+                    
+                    guard !visited.contains(neighbor) else { //check for "complex" loops
+                        return false
+                    }
+                    
+                    visited.insert(neighbor)
+                    newQueueItems.append(neighbor)
                 }
-                
-                paths.insert(path)
-                
-                guard !visited.contains(neighbor) else { //check for "complex" loops
-                    return false
-                }
-                
-                visited.insert(neighbor)
-                queue.append(neighbor)
             }
+            
+            queue = newQueueItems
         }
         
         return visited.count == n //check for isolated nodes

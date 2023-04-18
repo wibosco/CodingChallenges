@@ -44,17 +44,22 @@ struct FindIfPathExistsInGraph {
         var queue = startNode
         
         while !queue.isEmpty {
-            let node = queue.removeFirst() //O(n)
-            guard !visited.contains(node) else {
-                continue
+            var newQueueItems = [Int]()
+            
+            for node in queue {
+                guard !visited.contains(node) else {
+                    continue
+                }
+                
+                guard node != end else {
+                    return true
+                }
+                
+                visited.insert(node)
+                newQueueItems.append(contentsOf: adjList[node])
             }
             
-            guard node != end else {
-                return true
-            }
-            
-            visited.insert(node)
-            queue.append(contentsOf: adjList[node])
+            queue = newQueueItems
         }
         
         return false

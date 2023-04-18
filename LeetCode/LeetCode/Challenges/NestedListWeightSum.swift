@@ -32,20 +32,21 @@ struct NestedListWeightSum {
         var depth = 0 //on the leetcode website this 0 for depth needs to be 1 to pass - strange
         
         while !queue.isEmpty {
-            let count = queue.count
-                        
-            for _ in 0..<count {
-                let nestedInteger = queue.removeFirst()
+            var newQueueItems = [NestedInteger]()
+            
+            for nestedInteger in queue {
                 if nestedInteger.isInteger() {
                     let value = nestedInteger.getInteger()
                     total += value * depth
                 } else {
                     let list = nestedInteger.getList()
                     for ni in list {
-                        queue.append(ni)
+                        newQueueItems.append(ni)
                     }
                 }
             }
+            
+            queue = newQueueItems
             
             depth += 1
         }

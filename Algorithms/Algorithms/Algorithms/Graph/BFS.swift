@@ -134,10 +134,9 @@ struct BFS {
         var level = 0
         
         while !queue.isEmpty {
-            let levelCount = queue.count
+            var newQueueItems = [(Int, [Int])]()
             
-            for _ in 0..<levelCount { //we need to track when a level is "complete"
-                let (node, pathToHere) = queue.removeFirst()
+            for (node, pathToHere) in queue { //we need to track when a level is "complete"
                 let currentPath = pathToHere + [node]
                 
                 guard node != target else {
@@ -151,9 +150,11 @@ struct BFS {
                         continue
                     }
                     
-                    queue.append((neighbor, currentPath))
+                    newQueueItems.append((neighbor, currentPath))
                 }
             }
+            
+            queue = newQueueItems
             
             level += 1
         }
@@ -214,22 +215,27 @@ struct BFS {
         var queue = [(root, [Int]())]
         
         while !queue.isEmpty {
-            let (node, pathToHere) = queue.removeFirst()
-            let currentPath = pathToHere + [node.val]
+            var newQueueItems = [(BinaryTreeNode<Int>, [Int])]()
             
-            guard node.val != target else {
-                return currentPath
+            for (node, pathToHere) in queue {
+                let currentPath = pathToHere + [node.val]
+                
+                guard node.val != target else {
+                    return currentPath
+                }
+                
+                //as a binary tree isn't ordered we need to check every node
+                if let left = node.left {
+                    newQueueItems.append((left, currentPath))
+                }
+                
+                //as a binary tree isn't ordered we need to check every node
+                if let right = node.right {
+                    newQueueItems.append((right, currentPath))
+                }
             }
             
-            //as a binary tree isn't ordered we need to check every node
-            if let left = node.left {
-                queue.append((left, currentPath))
-            }
-            
-            //as a binary tree isn't ordered we need to check every node
-            if let right = node.right {
-                queue.append((right, currentPath))
-            }
+            queue = newQueueItems
         }
         
         return nil
@@ -288,10 +294,9 @@ struct BFS {
         var level = 0
         
         while !queue.isEmpty {
-            let levelCount = queue.count
+            var newQueueItems = [(BinaryTreeNode<Int>, [Int])]()
             
-            for _ in 0..<levelCount { //we need to track when a level is "complete"
-                let (node, pathToHere) = queue.removeFirst()
+            for (node, pathToHere) in queue { //we need to track when a level is "complete"
                 let currentPath = pathToHere + [node.val]
                 
                 guard node.val != target else {
@@ -300,14 +305,16 @@ struct BFS {
                 
                 //as a binary tree isn't ordered we need to check every node
                 if let left = node.left {
-                    queue.append((left, currentPath))
+                    newQueueItems.append((left, currentPath))
                 }
                 
                 //as a binary tree isn't ordered we need to check every node
                 if let right = node.right {
-                    queue.append((right, currentPath))
+                    newQueueItems.append((right, currentPath))
                 }
             }
+            
+            queue = newQueueItems
             
             level += 1
         }
@@ -373,26 +380,31 @@ struct BFS {
         var queue = [(root, [Int]())]
         
         while !queue.isEmpty {
-            let (node, pathToHere) = queue.removeFirst()
-            let currentPath = pathToHere + [node.val]
+            var newQueueItems = [(BinaryTreeNode<Int>, [Int])]()
             
-            if node.val == target {
-                return currentPath
-            } else if target < node.val { //important to note that here we compare against node not node.left
-                if let left = node.left {
-                    queue.append((left, currentPath))
-                }
-            } else if target > node.val { //important to note that here we compare against node not node.right
-                if let right = node.right {
-                    queue.append((right, currentPath))
+            for (node, pathToHere) in queue {
+                let currentPath = pathToHere + [node.val]
+                
+                if node.val == target {
+                    return currentPath
+                } else if target < node.val { //important to note that here we compare against node not node.left
+                    if let left = node.left {
+                        newQueueItems.append((left, currentPath))
+                    }
+                } else if target > node.val { //important to note that here we compare against node not node.right
+                    if let right = node.right {
+                        newQueueItems.append((right, currentPath))
+                    }
                 }
             }
+            
+            queue = newQueueItems
         }
         
         return nil
     }
-    
-    //Time: O(log n) where n is the number of nodes in the tree
+     
+    //Time: O(n) where n is the number of nodes in the tree (O(log n) for a balanced BST)
     //Space: O(max(l) * log n) where l is the number of nodes at the largest level, n is the number of nodes in the tree
     //BFS
     //binary search tree
@@ -439,8 +451,8 @@ struct BFS {
     //only interested in the number of levels as the measure of distance. If at any time we find `target` we return immediately.
     //If after searching all of the tree we haven't found `target` we return nil
     //
-    //N.B. By selecting only one branch to traverse we eliminate approx half of all remaining nodes to be search giving this
-    //search a time of O(log n)
+    //N.B. With a balanced BST by selecting only one branch to traverse we eliminate approx half of all remaining nodes to be
+    //search giving this search a time of O(log n)
     static func shortestDistanceBinarySearchTree(_ root: BinaryTreeNode<Int>?, _ target: Int) -> Int? {
         guard let root = root else {
             return nil
@@ -450,24 +462,25 @@ struct BFS {
         var level = 0
         
         while !queue.isEmpty {
-            let levelCount = queue.count
-            
-            for _ in 0..<levelCount { //we need to track when a level is "complete"
-                let (node, pathToHere) = queue.removeFirst()
+            var newQueueItems = [(BinaryTreeNode<Int>, [Int])]()
+
+            for (node, pathToHere) in queue { //we need to track when a level is "complete"
                 let currentPath = pathToHere + [node.val]
                 
                 if node.val == target {
                     return (level + 1)
                 } else if target < node.val { //important to note that here we compare against node not node.left
                     if let left = node.left {
-                        queue.append((left, currentPath))
+                        newQueueItems.append((left, currentPath))
                     }
                 } else if target > node.val { //important to note that here we compare against node not node.right
                     if let right = node.right {
-                        queue.append((right, currentPath))
+                        newQueueItems.append((right, currentPath))
                     }
                 }
             }
+            
+            queue = newQueueItems
             
             level += 1
         }

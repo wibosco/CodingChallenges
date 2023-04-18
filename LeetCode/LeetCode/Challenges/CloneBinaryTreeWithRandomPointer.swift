@@ -62,26 +62,27 @@ struct CloneBinaryTreeWithRandomPointer {
         var queue = [root]
         
         while !queue.isEmpty {
-            let levelCount = queue.count
+            var newQueueItems = [BinaryTreeNodeRandom]()
             
-            for _ in 0..<levelCount {
-                let node = queue.removeFirst()
+            for node in queue {
                 let copiedNode = copiedNodes[node]!
                 
                 if let left = node.left {
                     copiedNode.left = copiedNodes[left]
-                    queue.append(left)
+                    newQueueItems.append(left)
                 }
                 
                 if let right = node.right {
                     copiedNode.right = copiedNodes[right]
-                    queue.append(right)
+                    newQueueItems.append(right)
                 }
                 
                 if let random = node.random {
                     copiedNode.random = copiedNodes[random]
                 }
             }
+            
+            queue = newQueueItems
         }
         
         return copiedNodes[root]

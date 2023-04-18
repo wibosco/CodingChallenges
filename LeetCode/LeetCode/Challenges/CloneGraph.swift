@@ -20,8 +20,8 @@ struct CloneGraph {
     //Solution Description:
     //Traverse the graph using BFS to make a copy all of the vertices, storing those copies in the `copiedVertices`
     //dictionary. During this traversal we also associate all copied vertices with their neighbors.
-    static func cloneGraph(_ vertice: GraphVertice?) -> GraphVertice? {
-        guard let vertice = vertice else {
+    static func cloneGraph(_ node: GraphVertice?) -> GraphVertice? {
+        guard let vertice = node else {
             return nil
         }
         
@@ -31,10 +31,9 @@ struct CloneGraph {
         var queue = [vertice]
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [GraphVertice]()
             
-            for _ in 0..<count {
-                let v = queue.removeFirst()
+            for v in queue {
                 let copy = copiedVertices[v]
                 
                 for neighbor in v.neighbors {
@@ -45,9 +44,11 @@ struct CloneGraph {
                         copiedVertices[neighbor] = copiedNeighbor
                         copy?.neighbors.append(copiedNeighbor)
                         
-                        queue.append(neighbor)
+                        newQueueItems.append(neighbor)
                     }
                 }
+                
+                queue = newQueueItems
             }
         }
         
@@ -63,8 +64,8 @@ struct CloneGraph {
     //Traverse the graph using BFS to make an initial copy all of the vertices and store those copies in the `copiedVertices`
     //dictionary - this pass doesn't include connecting vertices together. A second pass is then made that associates the
     //vertices with their neighbors.
-    static func cloneGraphBFS(_ vertice: GraphVertice?) -> GraphVertice? {
-        guard let vertice = vertice else {
+    static func cloneGraphBFS(_ node: GraphVertice?) -> GraphVertice? {
+        guard let vertice = node else {
             return nil
         }
         
@@ -76,11 +77,9 @@ struct CloneGraph {
         visited.insert(vertice)
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [GraphVertice]()
             
-            for _ in 0..<count {
-                let v = queue.removeFirst()
-                
+            for v in queue {
                 for neighbor in v.neighbors {
                     guard !visited.contains(neighbor) else {
                         continue
@@ -88,10 +87,12 @@ struct CloneGraph {
 
                     copiedVertices[neighbor] = GraphVertice(neighbor.val)
                     
-                    queue.append(neighbor)
+                    newQueueItems.append(neighbor)
                     visited.insert(neighbor)
                 }
             }
+            
+            queue = newQueueItems
         }
         
         for v in copiedVertices.keys {
@@ -113,8 +114,8 @@ struct CloneGraph {
     //Perform a recusive DFS search through the graph, making a copy when we encounter an unvisited vertice and using the
     //original vertice to build that copies neighbor list. If we have already copied a vertice that we encounter (i.e. a
     //later vertice that has been previously copied vertice as a neighbor) then we return it straight away.
-    static func cloneGraphDFS(_ vertice: GraphVertice?) -> GraphVertice? {
-        guard let vertice = vertice else {
+    static func cloneGraphDFS(_ node: GraphVertice?) -> GraphVertice? {
+        guard let vertice = node else {
             return nil
         }
 
@@ -150,8 +151,8 @@ struct CloneGraph {
     //Traverse the graph using DFS to make an initial copy all of the vertices and store those copies in the `copiedVertices`
     //dictionary - this pass doesn't include connecting vertices together. A second pass is then made that associates the
     //vertices with their neighbors.
-    static func cloneGraphMultiplePasses(_ vertice: GraphVertice?) -> GraphVertice? {
-        guard let vertice = vertice else {
+    static func cloneGraphMultiplePasses(_ node: GraphVertice?) -> GraphVertice? {
+        guard let vertice = node else {
             return nil
         }
         

@@ -150,18 +150,22 @@ struct CourseScheduleII {
         var order = [Int]()
         
         while !queue.isEmpty {
-            let node = queue.removeFirst()
+            var newQueueItems = [Int]()
             
-            order.append(node)
-            
-            for n in adjList[node] {
-                inDegrees[n] -= 1
-                guard inDegrees[n] == 0 else { //use inDegrees as a kind-of visited set
-                    continue
-                }
+            for node in queue {
+                order.append(node)
                 
-                queue.append(n)
+                for n in adjList[node] {
+                    inDegrees[n] -= 1
+                    guard inDegrees[n] == 0 else { //use inDegrees as a kind-of visited set
+                        continue
+                    }
+                    
+                    newQueueItems.append(n)
+                }
             }
+            
+            queue = newQueueItems
         }
         
         if order.count == numCourses { //check if graph contains a dependency cycle between courses i.e. A -> B -> A

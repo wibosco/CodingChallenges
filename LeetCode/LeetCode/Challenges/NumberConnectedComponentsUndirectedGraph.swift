@@ -106,16 +106,20 @@ struct NumberConnectedComponentsUndirectedGraph {
             visited.insert(i)
             
             while !queue.isEmpty {
-                let node = queue.removeFirst()
+                var newQueueItems = [Int]()
                 
-                for neighbor in adjList[node] {
-                    guard !visited.contains(neighbor) else {
-                        continue
+                for node in queue {                    
+                    for neighbor in adjList[node] {
+                        guard !visited.contains(neighbor) else {
+                            continue
+                        }
+                        
+                        visited.insert(neighbor)
+                        newQueueItems.append(neighbor)
                     }
-                    
-                    visited.insert(neighbor)
-                    queue.append(neighbor)
                 }
+                
+                queue = newQueueItems
             }
             
             count += 1

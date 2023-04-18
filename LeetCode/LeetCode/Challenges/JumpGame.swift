@@ -89,11 +89,9 @@ struct JumpGame {
         var queue = [0]
         
         while !queue.isEmpty {
-            let count = queue.count
+            var newQueueItems = [Int]()
             
-            for _ in 0..<count {
-                let index = queue.removeFirst()
-                
+            for index in queue {
                 let possibleJumps = nums[index]
                 
                 guard possibleJumps > 0 else {
@@ -111,9 +109,11 @@ struct JumpGame {
                     }
                     
                     visited.insert(index)
-                    queue.append(jumpIndex)
+                    newQueueItems.append(jumpIndex)
                 }
             }
+            
+            queue = newQueueItems
         }
         
         return false

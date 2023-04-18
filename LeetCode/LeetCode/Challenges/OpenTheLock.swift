@@ -34,11 +34,9 @@ struct OpenTheLock {
         var queue = [start]
         var level = 0
         while !queue.isEmpty {
-            let levelCount = queue.count
+            var newQueueItems = [String]()
             
-            for _ in 0..<levelCount {
-                let combination = queue.removeFirst()
-                
+            for combination in queue {
                 guard combination != target else {
                     return level
                 }
@@ -52,7 +50,7 @@ struct OpenTheLock {
                     
                     if !visited.contains(strCharsUp) {
                         visited.insert(strCharsUp)
-                        queue.append(strCharsUp)
+                        newQueueItems.append(strCharsUp)
                     }
                     
                     let rotateDown = char == "0" ? 9 : char.wholeNumberValue! - 1
@@ -62,10 +60,12 @@ struct OpenTheLock {
                     
                     if !visited.contains(strCharsDown) {
                         visited.insert(strCharsDown)
-                        queue.append(strCharsDown)
+                        newQueueItems.append(strCharsDown)
                     }
                 }
             }
+            
+            queue = newQueueItems
             
             level += 1
         }

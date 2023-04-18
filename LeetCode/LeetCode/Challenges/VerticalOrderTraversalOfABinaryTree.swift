@@ -45,24 +45,24 @@ struct VerticalOrderTraversalOfABinaryTree {
        var level = 0
        
        while !queue.isEmpty {
-           let count = queue.count
+           var newQueueItems = [(Int, BinaryTreeNode)]()
            
-           for _ in 0..<count {
-               let (column, node) = queue.removeFirst()
-           
+           for (column, node) in queue {
                ordering[column, default: [(Int, Int)]()].append((level, node.val))
 
                minColumn = min(minColumn, column)
                maxColumn = max(maxColumn, column)
 
                if let left = node.left {
-                   queue.append(((column - 1), left))
+                   newQueueItems.append(((column - 1), left))
                }
 
                if let right = node.right {
-                   queue.append(((column + 1), right))
+                   newQueueItems.append(((column + 1), right))
                }
            }
+           
+           queue = newQueueItems
            
            level += 1
        }
