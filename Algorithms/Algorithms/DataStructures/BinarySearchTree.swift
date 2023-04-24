@@ -7,10 +7,12 @@
 
 import Foundation
 
-//A binary search tree (BST) is a type of binary tree where the left tree is less than the root and the right tree is greater
-//than the root. Each node in the tree is the root of it's own subtree. As a BST has an ordered order, it allows us to
-//use binary search when searching/inserting/deleting an element which can be completed in O(log n) time (for a balanced
-//tree).
+//A binary search tree (BST) or Set Binary Tree is a type of binary tree where the left tree is less than the root and the
+//right tree is greater than the root. Each node in the tree is the root of it's own subtree. As a BST has an ascending order,
+//it allows us to use binary search when searching/inserting/deleting an element which can be completed in O(h) time (in an
+//unbalanced tree this might be as much as O(n) and in a balance tree as little as O(log n).
+//
+//N.B. A BST also known as Set Binary Tree.
 final class BinarySearchTree<Element: Comparable> {
     private(set) var root: BinaryTreeNode<Element>?
     
