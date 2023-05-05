@@ -56,9 +56,10 @@ struct WordBreak {
         for j in (startIndex + 1)...chars.count { //our substring creation will ensure that we don't go over count
             let word = String(chars[startIndex..<j])
             
-            //check if `word` is a match and then recursively search for other words starting from the end of `word`
-            //if `word` doesn't result in a fully successful search then we add another character to `word` incase
-            //`word` is part of another element in `wordSet` i.e. "cat" and "cats"
+            //keep adding characters to `word` until we get a match with an element in `wordSet`. Once we have that
+            //match, recursively search for the next word starting from the end of `word` - `j`. If searching from
+            //`word` doesn't result in a full successful search then we add another character to `word` incase
+            //`word` is part of another element in `wordSet` e.g. "cat" then becomes "cats" and repeat the process
             if wordSet.contains(word) && dfs(chars, wordSet, j, &memo) {
                 return true
             }
