@@ -1,5 +1,5 @@
 //
-//  BinarySearchLeetCodeTests.swift
+//  BinarySearchTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 17/11/2021.
@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-final class BinarySearchLeetCodeTests: XCTestCase {
+final class BinarySearchTests: XCTestCase {
     
     // MARK: - Tests
     
@@ -18,35 +18,35 @@ final class BinarySearchLeetCodeTests: XCTestCase {
         let nums = [-1, 0, 3, 5, 9, 12]
         let target = 9
         
-        let index = BinarySearchLeetCode.search(nums, target)
+        let result = BinarySearch.search(nums, target)
         
-        XCTAssertEqual(index, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_B() {
         let nums = [-1, 0, 3, 5, 9, 12]
         let target = 2
         
-        let index = BinarySearchLeetCode.search(nums, target)
+        let result = BinarySearch.search(nums, target)
         
-        XCTAssertEqual(index, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_C() {
         let nums = [5]
         let target = 5
         
-        let index = BinarySearchLeetCode.search(nums, target)
+        let result = BinarySearch.search(nums, target)
         
-        XCTAssertEqual(index, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
         let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         let target = 6
         
-        let index = BinarySearchLeetCode.search(nums, target)
+        let result = BinarySearch.search(nums, target)
         
-        XCTAssertEqual(index, 5)
+        XCTAssertEqual(result, 5)
     }
 }

@@ -15,7 +15,7 @@ struct BinaryTreePreorderTraversal {
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
     //DFS
-    //recursion
+    //recursive
     static func preorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
         guard let root = root else {
             return []

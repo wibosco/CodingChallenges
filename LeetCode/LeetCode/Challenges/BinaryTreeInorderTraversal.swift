@@ -15,7 +15,7 @@ struct BinaryTreeInorderTraversal {
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
     //DFS
-    //recursion
+    //recursive
     //
     //Solution Description:
     //Using recursion we perform a DFS traversal through the tree. As we visit nodes, we add them to the `order` array

@@ -15,7 +15,7 @@ struct SymmetricTree {
     //Time: O(n)
     //Space: O(log n) - best, O(h) - worse (height of the tree)
     //DFS
-    //recursion
+    //recursive
     //matching
     //
     //Solution Description:

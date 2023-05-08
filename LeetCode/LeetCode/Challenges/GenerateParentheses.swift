@@ -14,7 +14,7 @@ struct GenerateParentheses {
     
     //Time: O(2^n) where n is the depth of the tree and 2 is the branches at each level
     //Space: O(n) where n is the number of pairs of parentheses
-    //recursion
+    //recursive
     //backtracking
     //
     //Solution Description:

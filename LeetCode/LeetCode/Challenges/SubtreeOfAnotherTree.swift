@@ -15,7 +15,7 @@ struct SubtreeOfAnotherTree {
     //Time: O(n * m) where n is the number of nodes in `t1`, m is the number of nodes in `t2`
     //Space: O(m)
     //DFS
-    //recursion
+    //recursive
     //matching
     //multi-source
     //
@@ -51,7 +51,7 @@ struct SubtreeOfAnotherTree {
     //Time: O(
     //Space: O(
     //DFS
-    //recursion
+    //recursive
     //BFS
     //iterative
     //matching
