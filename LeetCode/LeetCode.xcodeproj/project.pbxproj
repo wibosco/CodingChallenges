@@ -566,6 +566,8 @@
 		434BCB0E2A08F73F0026A985 /* BalancedBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BCB0D2A08F73F0026A985 /* BalancedBinaryTreeTests.swift */; };
 		434BCB102A090F750026A985 /* CountGoodNodesInBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BCB0F2A090F750026A985 /* CountGoodNodesInBinaryTree.swift */; };
 		434BCB122A090FB40026A985 /* CountGoodNodesInBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BCB112A090FB40026A985 /* CountGoodNodesInBinaryTreeTests.swift */; };
+		435F019B2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */; };
+		435F019D2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */; };
 		4379F48929E802D6003BA6F9 /* HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F48829E802D6003BA6F9 /* HouseRobber.swift */; };
 		4379F48B29E802E8003BA6F9 /* HouseRobberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F48A29E802E8003BA6F9 /* HouseRobberTests.swift */; };
 		4379F48D29E820C0003BA6F9 /* HouseRobberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F48C29E820C0003BA6F9 /* HouseRobberII.swift */; };
@@ -1155,6 +1157,8 @@
 		434BCB0D2A08F73F0026A985 /* BalancedBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancedBinaryTreeTests.swift; sourceTree = "<group>"; };
 		434BCB0F2A090F750026A985 /* CountGoodNodesInBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountGoodNodesInBinaryTree.swift; sourceTree = "<group>"; };
 		434BCB112A090FB40026A985 /* CountGoodNodesInBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountGoodNodesInBinaryTreeTests.swift; sourceTree = "<group>"; };
+		435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaOfIsland.swift; sourceTree = "<group>"; };
+		435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaOfIslandTests.swift; sourceTree = "<group>"; };
 		4379F48829E802D6003BA6F9 /* HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobber.swift; sourceTree = "<group>"; };
 		4379F48A29E802E8003BA6F9 /* HouseRobberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberTests.swift; sourceTree = "<group>"; };
 		4379F48C29E820C0003BA6F9 /* HouseRobberII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberII.swift; sourceTree = "<group>"; };
@@ -1386,6 +1390,7 @@
 				3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */,
 				3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */,
 				3D5C910627A7F7630035C399 /* Matrix01.swift */,
+				435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */,
 				3D5C90BA27A7F7620035C399 /* MaximumDepthBinaryTree.swift */,
 				43A692A529F69FD50043B5D0 /* MaximumProductSubarray.swift */,
 				3D5C90E927A7F7620035C399 /* MaximumSubarray.swift */,
@@ -1675,6 +1680,7 @@
 				3D1381A327C3FC7500E17E5A /* MajorityElementIITests.swift */,
 				3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */,
 				3D5C921027A7F76B0035C399 /* Matrix01Tests.swift */,
+				435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */,
 				3D5C921E27A7F76B0035C399 /* MaximumDepthBinaryTreeTests.swift */,
 				43A692A729F69FFD0043B5D0 /* MaximumProductSubarrayTests.swift */,
 				3D5C926927A7F76C0035C399 /* MaximumSubarrayTests.swift */,
@@ -1985,6 +1991,7 @@
 				3D5C918527A7F7630035C399 /* AllPathsFromSourceToTarget.swift in Sources */,
 				3D5C919827A7F7630035C399 /* FindPeakElement.swift in Sources */,
 				3D5C91A227A7F7630035C399 /* ZigzagConversion.swift in Sources */,
+				435F019B2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift in Sources */,
 				3D5C917227A7F7630035C399 /* SortList.swift in Sources */,
 				3D5C919327A7F7630035C399 /* ClosestBinarySearchTreeValue.swift in Sources */,
 				3D5C91E927A7F7630035C399 /* ShortestPathBinaryMatrix.swift in Sources */,
@@ -2439,6 +2446,7 @@
 				3D5C92AB27A7F76C0035C399 /* LongestCommonPrefixTests.swift in Sources */,
 				3D4E46E127DA63EA00DA050F /* PermutationsIITests.swift in Sources */,
 				3D5C92D027A7F76C0035C399 /* PathSumTests.swift in Sources */,
+				435F019D2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift in Sources */,
 				3D5C92BE27A7F76C0035C399 /* PeakIndexMountainArrayTests.swift in Sources */,
 				3DB7C5CF27CD480200353EED /* MovingAverageTests.swift in Sources */,
 				43313BC529D8EBAB005FCF5D /* BullsAndCowsTest.swift in Sources */,
