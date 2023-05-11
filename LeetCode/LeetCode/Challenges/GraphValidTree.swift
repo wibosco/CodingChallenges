@@ -178,7 +178,9 @@ struct GraphValidTree {
     
     //Time: O(e) where e is the number of edges
     //Space: O(n) where n is the number of nodes
+    //union find
     //disjoint set
+    //undirected graph
     //
     //Solution Description:
     //A valid tree has one root (all nodes need to be connected) and no cycles by using a disjoint set we can test for both

@@ -82,6 +82,7 @@ struct MinCostToConnectAllPoints {
     //MST - minimum spanning tree
     //disjoint set
     //union find
+    //undirected graph
     //greedy
     //Kruskal's Algorithm - https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
     //sorting

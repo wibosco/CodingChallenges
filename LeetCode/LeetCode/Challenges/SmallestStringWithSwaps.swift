@@ -14,7 +14,9 @@ struct SmallestStringWithSwaps {
     
     //Time: O(n log n) where n is the number of pairs
     //Space: O(n) where n is the number of pairs
+    //union find
     //disjoint set
+    //undirectied graph
     //
     //Solution Description:
     //Using a disjoint set we build up a set of possible values for any of `s` indexes. This is needed because the swaps that

@@ -164,6 +164,7 @@ struct FindIfPathExistsInGraph {
     
     //Time: O(n)
     //Space: O(n) where n is the number of nodes in the `ranks` array
+    //union find
     //disjoint sets
     //undirected graph
     //

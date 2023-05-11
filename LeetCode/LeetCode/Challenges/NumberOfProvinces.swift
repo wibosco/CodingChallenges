@@ -116,10 +116,12 @@ struct NumberOfProvinces {
     
     //Time: O(n^2) for the disjoint set
     //Space: O(n) for the `rank` array in `UnionFind`
+    //union find
     //disjoint set
+    //undirected graph
     //
     //Solution Description:
-    //A valid tree has one root and no cycles by using a disjoint set we can test for both conditions
+    //A valid tree has one root and no cycles by using a disjoint set we can test for both conditions.
     static func findCircleNumDisjointSet(_ isConnected: [[Int]]) -> Int {
         guard !isConnected.isEmpty else {
             return 0

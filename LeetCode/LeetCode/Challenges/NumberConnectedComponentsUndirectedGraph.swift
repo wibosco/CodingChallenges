@@ -131,7 +131,7 @@ struct NumberConnectedComponentsUndirectedGraph {
     //Time: O(e) where e is the number of edges
     //Space: O(v) where v is the number of vertices in the graph
     //disjoint set
-    //undirected
+    //undirected graph
     //
     //Solution Description:
     //Using disjoint sets combine the nodes together using the edges array and count how many distinct sets there are

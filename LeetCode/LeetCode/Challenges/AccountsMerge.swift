@@ -177,6 +177,7 @@ struct AccountsMerge {
     
     //Time: O(m * (n log n)) where n is the number of unique accounts and m the number of unique email addresses
     //Space: O(n * m) where n is the number of unique accounts and m the number of unique email addresses
+    //union find
     //disjoint set
     //array
     //dictionary
