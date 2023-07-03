@@ -21,7 +21,7 @@ A collection of coding challenges and their solutions from:
 | "All paths" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
 | "Path may not exist"| `isolated vertices`, `cycles` |
-| "Generate all", "All permutations", "All combinations" | `Backtracking (DFS)` |
+| "Generate all", "All permutations", "All combinations", "All possible" | `Backtracking (DFS)` |
 | "Next Permutation" | `pivot & sorting` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Iterating array comparing elements" | `Stack` |

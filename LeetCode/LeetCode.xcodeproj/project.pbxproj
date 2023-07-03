@@ -586,6 +586,8 @@
 		43A692AE29F6D75E0043B5D0 /* WordBreakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A692AB29F6D7300043B5D0 /* WordBreakTests.swift */; };
 		43ABE96429DA2868009B2F1B /* LongestIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABE96329DA2868009B2F1B /* LongestIncreasingSubsequence.swift */; };
 		43ABE96629DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ABE96529DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift */; };
+		43AFF6F02A51640000EFC288 /* PalindromePartitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AFF6EF2A51640000EFC288 /* PalindromePartitioning.swift */; };
+		43AFF6F22A51646300EFC288 /* PalindromePartitioningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AFF6F12A51646300EFC288 /* PalindromePartitioningTests.swift */; };
 		43F3DF3929E0B61600EDEB1C /* OddEvenLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */; };
 		43F3DF3B29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */; };
 /* End PBXBuildFile section */
@@ -1181,6 +1183,8 @@
 		43A692AB29F6D7300043B5D0 /* WordBreakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBreakTests.swift; sourceTree = "<group>"; };
 		43ABE96329DA2868009B2F1B /* LongestIncreasingSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestIncreasingSubsequence.swift; sourceTree = "<group>"; };
 		43ABE96529DA287A009B2F1B /* LongestIncreasingSubsequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestIncreasingSubsequenceTests.swift; sourceTree = "<group>"; };
+		43AFF6EF2A51640000EFC288 /* PalindromePartitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromePartitioning.swift; sourceTree = "<group>"; };
+		43AFF6F12A51646300EFC288 /* PalindromePartitioningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromePartitioningTests.swift; sourceTree = "<group>"; };
 		43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedList.swift; sourceTree = "<group>"; };
 		43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1439,6 +1443,7 @@
 				4300FF8F29E6C08400299C39 /* PacificAtlanticWaterFlow.swift */,
 				3D5C90B627A7F7620035C399 /* PairsOfSongsWithTotalDurationsDivisibleBy60.swift */,
 				3D5C90D227A7F7620035C399 /* PalindromeNumber.swift */,
+				43AFF6EF2A51640000EFC288 /* PalindromePartitioning.swift */,
 				4379F49029E84FFB003BA6F9 /* PalindromicSubstrings.swift */,
 				3D46243C27E542CE00A888C1 /* PartitionList.swift */,
 				3D5C911627A7F7630035C399 /* PascalsTriangleII.swift */,
@@ -1731,6 +1736,7 @@
 				4300FF9129E6C0C400299C39 /* PacificAtlanticWaterFlowTests.swift */,
 				3D5C91FD27A7F76B0035C399 /* PairsOfSongsWithTotalDurationsDivisibleBy60Tests.swift */,
 				3D5C928227A7F76C0035C399 /* PalindromeNumberTests.swift */,
+				43AFF6F12A51646300EFC288 /* PalindromePartitioningTests.swift */,
 				4379F49229E8504E003BA6F9 /* PalindromicSubstringsTests.swift */,
 				3D46243E27E544BB00A888C1 /* PartitionListTests.swift */,
 				3D5C925327A7F76C0035C399 /* PascalsTriangleIITests.swift */,
@@ -2028,6 +2034,7 @@
 				3D5C915727A7F7630035C399 /* CuttingRibbons.swift in Sources */,
 				3D5C916D27A7F7630035C399 /* DecodeString.swift in Sources */,
 				3D5C91EB27A7F7630035C399 /* CloneBinaryTreeWithRandomPointer.swift in Sources */,
+				43AFF6F02A51640000EFC288 /* PalindromePartitioning.swift in Sources */,
 				3D5C91A127A7F7630035C399 /* SquaresOfSortedArray.swift in Sources */,
 				3D5C915927A7F7630035C399 /* MinimumNumberOfSwapsToMakeTheStringBalanced.swift in Sources */,
 				3D5C91BF27A7F7630035C399 /* FindKClosestElements.swift in Sources */,
@@ -2253,6 +2260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43AFF6F22A51646300EFC288 /* PalindromePartitioningTests.swift in Sources */,
 				3D5C92FB27A7F76C0035C399 /* BinaryTreePreorderTraversalTests.swift in Sources */,
 				3DE789B527EC97B900E1D1B9 /* InterleavingStringTests.swift in Sources */,
 				3D9B1D2528354650004FCFF8 /* SortAnArrayTests.swift in Sources */,
