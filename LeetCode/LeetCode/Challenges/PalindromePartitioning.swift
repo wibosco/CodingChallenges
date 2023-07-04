@@ -46,7 +46,6 @@ struct PalindromePartitioning {
             return
         }
         
-
         if isPalindrome(characters, start, end) { //constraint
             let newPalindromes = palindromes + [String(characters[start...end])]
             let newIndex = end + 1

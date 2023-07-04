@@ -11,8 +11,8 @@ import Foundation
 //graph theory
 struct NetworkDelayTime {
     
-    //Time: O(
-    //Space: O(
+    //Time: O((n + e) * (n log n)) where n is the number of vertices in the graph, e is the number of edges
+    //Space: O(n)
     //greedy
     //Dijkstra
     //visited
@@ -108,8 +108,8 @@ struct NetworkDelayTime {
         return distances
     }
     
-    //Time: O(
-    //Space: O(
+    //Time: O((n + e) * (n log n)) where n is the number of vertices in the graph, e is the number of edges
+    //Space: O(n)
     //greedy
     //Dijkstra
     //visited

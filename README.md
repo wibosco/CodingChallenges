@@ -37,6 +37,7 @@ A collection of coding challenges and their solutions from:
 | "Largest value", "Smallest value"| `Heap` |
 | "kth smallest", "kth largest", "kth frequent", "top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
+| "consecutive" | `sort` |
 
 ## Need Tips
 
