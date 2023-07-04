@@ -594,6 +594,8 @@
 		43C8CB512A54270A00FAA411 /* HandOfStraightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8CB502A54270A00FAA411 /* HandOfStraightsTests.swift */; };
 		43EE0BD22A546240003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BD12A546240003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbers.swift */; };
 		43EE0BD42A546270003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BD32A546270003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbersTests.swift */; };
+		43EE0BD62A54762F003D23E0 /* MergeTripletsToFormTargetTriplet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BD52A54762F003D23E0 /* MergeTripletsToFormTargetTriplet.swift */; };
+		43EE0BD82A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BD72A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift */; };
 		43F3DF3929E0B61600EDEB1C /* OddEvenLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */; };
 		43F3DF3B29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */; };
 /* End PBXBuildFile section */
@@ -1197,6 +1199,8 @@
 		43C8CB502A54270A00FAA411 /* HandOfStraightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOfStraightsTests.swift; sourceTree = "<group>"; };
 		43EE0BD12A546240003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideArrayInSetsOfKConsecutiveNumbers.swift; sourceTree = "<group>"; };
 		43EE0BD32A546270003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideArrayInSetsOfKConsecutiveNumbersTests.swift; sourceTree = "<group>"; };
+		43EE0BD52A54762F003D23E0 /* MergeTripletsToFormTargetTriplet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTripletsToFormTargetTriplet.swift; sourceTree = "<group>"; };
+		43EE0BD72A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTripletsToFormTargetTripletTests.swift; sourceTree = "<group>"; };
 		43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedList.swift; sourceTree = "<group>"; };
 		43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1343,6 +1347,7 @@
 				3D5C90E427A7F7620035C399 /* DiagonalTraverse.swift */,
 				3D5C913F27A7F7630035C399 /* DiameterOfBinaryTree.swift */,
 				3D5C90F527A7F7620035C399 /* DiameterOfNAryTree.swift */,
+				43EE0BD12A546240003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbers.swift */,
 				3D5C913E27A7F7630035C399 /* DivideTwoIntegers.swift */,
 				3DEFAAB127D21CDC00DB0E9D /* DotProductOfTwoSparseVectors.swift */,
 				3D5C90EB27A7F7620035C399 /* EarliestMomentWhenEveryoneBecomeFriends.swift */,
@@ -1426,6 +1431,7 @@
 				3D5C90C827A7F7620035C399 /* MergeIntervals.swift */,
 				3D230D0B28004EC80057AF26 /* MergeKSortedLists.swift */,
 				3D5C90CB27A7F7620035C399 /* MergeSortedArray.swift */,
+				43EE0BD52A54762F003D23E0 /* MergeTripletsToFormTargetTriplet.swift */,
 				3DA8E5142804604400A23F3C /* MergeTwoBinaryTrees.swift */,
 				3D5C90AC27A7F7620035C399 /* MergeTwoSortedLists.swift */,
 				3D5C90A227A7F7620035C399 /* MiddleOfLinkedList.swift */,
@@ -1566,7 +1572,6 @@
 				43313BBE29D8DA2B005FCF5D /* WordPattern.swift */,
 				3D46243427E497D300A888C1 /* WordSearch.swift */,
 				3D5C90F127A7F7620035C399 /* ZigzagConversion.swift */,
-				43EE0BD12A546240003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbers.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -1723,6 +1728,7 @@
 				3D5C91F927A7F76B0035C399 /* MergeIntervalsTests.swift */,
 				3D47EA672800EC0C00407F75 /* MergeKSortedListsTests.swift */,
 				3D5C923127A7F76B0035C399 /* MergeSortedArrayTests.swift */,
+				43EE0BD72A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift */,
 				3DA8E5162804615800A23F3C /* MergeTwoBinaryTreesTests.swift */,
 				3D5C922227A7F76B0035C399 /* MergeTwoSortedListsTests.swift */,
 				3D5C924F27A7F76C0035C399 /* MiddleOfLinkedListTests.swift */,
@@ -2254,6 +2260,7 @@
 				3D5C91E027A7F7630035C399 /* SearchInABinarySearchTree.swift in Sources */,
 				43ABE96429DA2868009B2F1B /* LongestIncreasingSubsequence.swift in Sources */,
 				3D5C91BC27A7F7630035C399 /* LinkedListCycleII.swift in Sources */,
+				43EE0BD62A54762F003D23E0 /* MergeTripletsToFormTargetTriplet.swift in Sources */,
 				3D42A46927F4F27400687F75 /* ShortestWordDistanceII.swift in Sources */,
 				435F019F2A0CF0BB00F6B50F /* SurroundedRegions.swift in Sources */,
 				3D46242527E2921900A888C1 /* SortColors.swift in Sources */,
@@ -2457,6 +2464,7 @@
 				3D5C933427A7F76C0035C399 /* DailyTemperaturesTests.swift in Sources */,
 				433E55C229DF14D600974B73 /* CoinChangeTests.swift in Sources */,
 				3D46241B27E23B0800A888C1 /* PlusOneTests.swift in Sources */,
+				43EE0BD82A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift in Sources */,
 				3D5C92D527A7F76C0035C399 /* FindIfPathExistsInGraphTests.swift in Sources */,
 				4347A1C229E2116F00501CEE /* IncreasingTripletSubsequenceTests.swift in Sources */,
 				3D5C92F827A7F76C0035C399 /* OpenTheLockTests.swift in Sources */,
