@@ -18,44 +18,44 @@ final class DivideTwoIntegersTests: XCTestCase {
         let dividend = 10
         let divisor = 3
         
-        let value = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers.divide(dividend, divisor)
         
-        XCTAssertEqual(value, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_B() {
         let dividend = 7
         let divisor = -3
         
-        let value = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers.divide(dividend, divisor)
         
-        XCTAssertEqual(value, -2)
+        XCTAssertEqual(result, -2)
     }
     
     func test_C() {
         let dividend = 0
         let divisor = 1
         
-        let value = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers.divide(dividend, divisor)
         
-        XCTAssertEqual(value, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
         let dividend = 1
         let divisor = 1
         
-        let value = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers.divide(dividend, divisor)
         
-        XCTAssertEqual(value, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_E() {
         let dividend = -2147483648
         let divisor = -1
         
-        let value = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers.divide(dividend, divisor)
         
-        XCTAssertEqual(value, 2147483647)
+        XCTAssertEqual(result, 2147483647)
     }
 }

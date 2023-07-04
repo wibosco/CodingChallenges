@@ -17,17 +17,17 @@ final class GenerateParenthesesTests: XCTestCase {
     func test_A() {
         let n = 3
         
-        let combinations = GenerateParentheses.generateParenthesis(n)
+        let result = GenerateParentheses.generateParenthesis(n)
         
-        XCTAssertEqual(combinations, ["((()))", "(()())", "(())()", "()(())", "()()()"])
+        XCTAssertEqual(result, ["((()))", "(()())", "(())()", "()(())", "()()()"])
     }
     
     func test_B() {
         let n = 1
         
-        let combinations = GenerateParentheses.generateParenthesis(n)
+        let result = GenerateParentheses.generateParenthesis(n)
         
-        XCTAssertEqual(combinations, ["()"])
+        XCTAssertEqual(result, ["()"])
     }
     
 }

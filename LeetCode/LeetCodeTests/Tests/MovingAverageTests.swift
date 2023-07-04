@@ -15,6 +15,7 @@ final class MovingAverageTests: XCTestCase {
     
     func test_A() {
         let sut = MovingAverage(3)
+        
         XCTAssertEqual(sut.next(1), 1.0, accuracy: 0.1)
         XCTAssertEqual(sut.next(10), 5.5, accuracy: 0.1)
         XCTAssertEqual(sut.next(3), 4.6, accuracy: 0.1)

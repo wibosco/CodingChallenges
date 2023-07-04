@@ -20,9 +20,9 @@ final class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
         
         let root = ConstructBinaryTreeInorderPostorderTraversal.buildTree(inorder, postorder)
         
-        let levelOrder = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(levelOrder, [3, 9, 20, nil, nil, 15, 7])
+        XCTAssertEqual(result, [3, 9, 20, nil, nil, 15, 7])
     }
     
     func test_B() {
@@ -31,9 +31,9 @@ final class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
         
         let root = ConstructBinaryTreeInorderPostorderTraversal.buildTree(inorder, postorder)
         
-        let levelOrder = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(levelOrder, [-1])
+        XCTAssertEqual(result, [-1])
     }
     
     func test_C() {
@@ -42,8 +42,8 @@ final class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
         
         let root = ConstructBinaryTreeInorderPostorderTraversal.buildTree(inorder, postorder)
         
-        let levelOrder = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(levelOrder, [1, nil, 2]) 
+        XCTAssertEqual(result, [1, nil, 2]) 
     }
 }

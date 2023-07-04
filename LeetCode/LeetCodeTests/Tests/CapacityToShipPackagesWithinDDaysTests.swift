@@ -1,5 +1,5 @@
 //
-//  CapacityToShipPackagesWithinDDaysTests.swift
+//  resultToShipPackagesWithinDDaysTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 14/01/2022.
@@ -18,26 +18,26 @@ final class CapacityToShipPackagesWithinDDaysTests: XCTestCase {
         let weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         let days = 5
         
-        let capacity = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
+        let result = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
         
-        XCTAssertEqual(capacity, 15)
+        XCTAssertEqual(result, 15)
     }
     
     func test_B() {
         let weights = [3, 2, 2, 4, 1, 4]
         let days = 3
         
-        let capacity = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
+        let result = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
         
-        XCTAssertEqual(capacity, 6)
+        XCTAssertEqual(result, 6)
     }
     
     func test_C() {
         let weights = [1, 2, 3, 1, 1]
         let days = 4
         
-        let capacity = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
+        let result = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
         
-        XCTAssertEqual(capacity, 3)
+        XCTAssertEqual(result, 3)
     }
 }

@@ -18,18 +18,18 @@ final class NestedListWeightSumIITests: XCTestCase {
         let data = "[[1,1],2,[1,1]]"
         let nestedList = NestedInteger.deserialize(data)
         
-        let sum = NestedListWeightSumII.depthSumInverse([nestedList])
+        let result = NestedListWeightSumII.depthSumInverse([nestedList])
         
-        XCTAssertEqual(sum, 8)
+        XCTAssertEqual(result, 8)
     }
     
     func test_B() {
         let data = "[1,[4,[6]]]"
         let nestedList = NestedInteger.deserialize(data)
         
-        let sum = NestedListWeightSumII.depthSumInverse([nestedList])
+        let result = NestedListWeightSumII.depthSumInverse([nestedList])
         
-        XCTAssertEqual(sum, 17)
+        XCTAssertEqual(result, 17)
     }
 
 }

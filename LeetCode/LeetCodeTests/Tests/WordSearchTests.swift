@@ -19,9 +19,9 @@ final class WordSearchTests: XCTestCase {
                                     ["A", "D", "E", "E"]]
         let word = "ABCCED"
         
-        let exists = WordSearch.exist(board, word)
+        let result = WordSearch.exist(board, word)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -30,9 +30,9 @@ final class WordSearchTests: XCTestCase {
                                     ["A", "D", "E", "E"]]
         let word = "SEE"
         
-        let exists = WordSearch.exist(board, word)
+        let result = WordSearch.exist(board, word)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
     
     func test_C() {
@@ -41,27 +41,27 @@ final class WordSearchTests: XCTestCase {
                                     ["A", "D", "E", "E"]]
         let word = "ABCB"
         
-        let exists = WordSearch.exist(board, word)
+        let result = WordSearch.exist(board, word)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
         let board: [[Character]] = [["A", "B"]]
         let word = "BA"
         
-        let exists = WordSearch.exist(board, word)
+        let result = WordSearch.exist(board, word)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
     
     func test_E() {
         let board: [[Character]] = [["A", "A"]]
         let word = "AAA"
         
-        let exists = WordSearch.exist(board, word)
+        let result = WordSearch.exist(board, word)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
     
     func test_F() {
@@ -69,8 +69,8 @@ final class WordSearchTests: XCTestCase {
                                     ["c", "d"]]
         let word = "acdb"
         
-        let exists = WordSearch.exist(board, word)
+        let result = WordSearch.exist(board, word)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
 }

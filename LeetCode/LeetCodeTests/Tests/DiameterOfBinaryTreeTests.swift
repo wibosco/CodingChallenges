@@ -19,9 +19,9 @@ final class DiameterOfBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let diameter = DiameterOfBinaryTree.diameterOfBinaryTree(root)
+        let result = DiameterOfBinaryTree.diameterOfBinaryTree(root)
         
-        XCTAssertEqual(diameter, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_Bs() {
@@ -29,9 +29,9 @@ final class DiameterOfBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let diameter = DiameterOfBinaryTree.diameterOfBinaryTree(root)
+        let result = DiameterOfBinaryTree.diameterOfBinaryTree(root)
         
-        XCTAssertEqual(diameter, 1)
+        XCTAssertEqual(result, 1)
     }
 
 }

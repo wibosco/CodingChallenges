@@ -19,9 +19,9 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let isSymmetric = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree.isSymmetric(root)
         
-        XCTAssertTrue(isSymmetric)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let isSymmetric = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree.isSymmetric(root)
         
-        XCTAssertFalse(isSymmetric)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -39,9 +39,9 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let isSymmetric = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree.isSymmetric(root)
         
-        XCTAssertTrue(isSymmetric)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
@@ -49,8 +49,8 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let isSymmetric = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree.isSymmetric(root)
         
-        XCTAssertFalse(isSymmetric)
+        XCTAssertFalse(result)
     }
 }

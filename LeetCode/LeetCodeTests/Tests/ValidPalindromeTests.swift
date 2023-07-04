@@ -17,40 +17,40 @@ final class ValidPalindromeTests: XCTestCase {
     func test_A() {
         let s = "A man, a plan, a canal: Panama"
         
-        let isPalindrome = ValidPalindrome.isPalindrome(s)
+        let result = ValidPalindrome.isPalindrome(s)
         
-        XCTAssertTrue(isPalindrome)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let s = "race a car"
         
-        let isPalindrome = ValidPalindrome.isPalindrome(s)
+        let result = ValidPalindrome.isPalindrome(s)
         
-        XCTAssertFalse(isPalindrome)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let s = " "
         
-        let isPalindrome = ValidPalindrome.isPalindrome(s)
+        let result = ValidPalindrome.isPalindrome(s)
         
-        XCTAssertTrue(isPalindrome)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
         let s = "race car"
         
-        let isPalindrome = ValidPalindrome.isPalindrome(s)
+        let result = ValidPalindrome.isPalindrome(s)
         
-        XCTAssertTrue(isPalindrome)
+        XCTAssertTrue(result)
     }
     
     func test_E() {
         let s = "saas"
         
-        let isPalindrome = ValidPalindrome.isPalindrome(s)
+        let result = ValidPalindrome.isPalindrome(s)
         
-        XCTAssertTrue(isPalindrome)
+        XCTAssertTrue(result)
     }
 }

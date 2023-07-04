@@ -20,9 +20,9 @@ final class RecoverBinarySearchTreeTests: XCTestCase {
         
         RecoverBinarySearchTree.recoverTree(root)
         
-        let values = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(values, [3, 1, nil, nil, 2])
+        XCTAssertEqual(result, [3, 1, nil, nil, 2])
     }
     
     func test_B() {
@@ -31,8 +31,8 @@ final class RecoverBinarySearchTreeTests: XCTestCase {
         
         RecoverBinarySearchTree.recoverTree(root)
         
-        let values = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(values, [2, 1, 4, nil, nil, 3])
+        XCTAssertEqual(result, [2, 1, 4, nil, nil, 3])
     }
 }

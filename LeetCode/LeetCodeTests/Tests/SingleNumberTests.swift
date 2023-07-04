@@ -16,32 +16,32 @@ final class SingleNumberTests: XCTestCase {
     func test_A() {
         let nums = [2, 2, 1]
         
-        let single = SingleNumber.singleNumber(nums)
+        let result = SingleNumber.singleNumber(nums)
         
-        XCTAssertEqual(single, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
         let nums = [4, 1, 2, 1, 2]
         
-        let single = SingleNumber.singleNumber(nums)
+        let result = SingleNumber.singleNumber(nums)
         
-        XCTAssertEqual(single, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_C() {
         let nums = [1]
         
-        let single = SingleNumber.singleNumber(nums)
+        let result = SingleNumber.singleNumber(nums)
         
-        XCTAssertEqual(single, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_D() {
         let nums = [2, 1, -2, 1, -2]
         
-        let single = SingleNumber.singleNumber(nums)
+        let result = SingleNumber.singleNumber(nums)
         
-        XCTAssertEqual(single, 2)
+        XCTAssertEqual(result, 2)
     }
 }

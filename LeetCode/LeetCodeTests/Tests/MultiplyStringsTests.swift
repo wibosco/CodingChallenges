@@ -17,26 +17,26 @@ final class MultiplyStringsTests: XCTestCase {
         let num1 = "2"
         let num2 = "3"
         
-        let str = MultiplyStrings.multiply(num1, num2)
+        let result = MultiplyStrings.multiply(num1, num2)
         
-        XCTAssertEqual(str, "6")
+        XCTAssertEqual(result, "6")
     }
     
     func test_B() {
         let num1 = "123"
         let num2 = "456"
         
-        let str = MultiplyStrings.multiply(num1, num2)
+        let result = MultiplyStrings.multiply(num1, num2)
         
-        XCTAssertEqual(str, "56088")
+        XCTAssertEqual(result, "56088")
     }
     
     func test_C() {
         let num1 = "9133"
         let num2 = "0"
         
-        let str = MultiplyStrings.multiply(num1, num2)
+        let result = MultiplyStrings.multiply(num1, num2)
         
-        XCTAssertEqual(str, "0")
+        XCTAssertEqual(result, "0")
     }
 }

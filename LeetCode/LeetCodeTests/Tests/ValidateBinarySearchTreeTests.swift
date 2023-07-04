@@ -19,9 +19,9 @@ final class ValidateBinarySearchTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let isValid = ValidateBinarySearchTree.isValidBST(root)
+        let result = ValidateBinarySearchTree.isValidBST(root)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class ValidateBinarySearchTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let isValid = ValidateBinarySearchTree.isValidBST(root)
+        let result = ValidateBinarySearchTree.isValidBST(root)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -39,8 +39,8 @@ final class ValidateBinarySearchTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let isValid = ValidateBinarySearchTree.isValidBST(root)
+        let result = ValidateBinarySearchTree.isValidBST(root)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
 }

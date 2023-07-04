@@ -20,11 +20,11 @@ final class ReverseLinkedListIITests: XCTestCase {
         let left = 2
         let right = 4
         
-        let reversedList = ReverseLinkedListII.reverseBetween(list, left, right)
+        let result = ReverseLinkedListII.reverseBetween(list, left, right)
         
-        let array = ListNode.serialize(reversedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1, 4, 3, 2, 5])
+        XCTAssertEqual(values, [1, 4, 3, 2, 5])
     }
     
     func test_B() {
@@ -34,11 +34,11 @@ final class ReverseLinkedListIITests: XCTestCase {
         let left = 1
         let right = 1
         
-        let reversedList = ReverseLinkedListII.reverseBetween(list, left, right)
+        let result = ReverseLinkedListII.reverseBetween(list, left, right)
         
-        let array = ListNode.serialize(reversedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [5])
+        XCTAssertEqual(values, [5])
     }
     
     func test_C() {
@@ -48,10 +48,10 @@ final class ReverseLinkedListIITests: XCTestCase {
         let left = 1
         let right = 2
         
-        let reversedList = ReverseLinkedListII.reverseBetween(list, left, right)
+        let result = ReverseLinkedListII.reverseBetween(list, left, right)
         
-        let array = ListNode.serialize(reversedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [4, 5])
+        XCTAssertEqual(values, [4, 5])
     }
 }

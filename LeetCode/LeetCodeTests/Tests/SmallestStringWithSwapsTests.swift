@@ -19,9 +19,9 @@ final class SmallestStringWithSwapsTests: XCTestCase {
         let pairs = [[0, 3],
                      [1, 2]]
         
-        let smallest = SmallestStringWithSwaps.smallestStringWithSwaps(s, pairs)
+        let result = SmallestStringWithSwaps.smallestStringWithSwaps(s, pairs)
         
-        XCTAssertEqual(smallest, "bacd")
+        XCTAssertEqual(result, "bacd")
     }
     
     func test_B() {
@@ -30,9 +30,9 @@ final class SmallestStringWithSwapsTests: XCTestCase {
                      [1, 2],
                      [0, 2]]
         
-        let smallest = SmallestStringWithSwaps.smallestStringWithSwaps(s, pairs)
+        let result = SmallestStringWithSwaps.smallestStringWithSwaps(s, pairs)
         
-        XCTAssertEqual(smallest, "abcd")
+        XCTAssertEqual(result, "abcd")
     }
     
     func test_C() {
@@ -40,8 +40,8 @@ final class SmallestStringWithSwapsTests: XCTestCase {
         let pairs = [[0, 1],
                      [1, 2]]
         
-        let smallest = SmallestStringWithSwaps.smallestStringWithSwaps(s, pairs)
+        let result = SmallestStringWithSwaps.smallestStringWithSwaps(s, pairs)
         
-        XCTAssertEqual(smallest, "abc")
+        XCTAssertEqual(result, "abc")
     }
 }

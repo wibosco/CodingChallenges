@@ -17,17 +17,17 @@ final class InsertIntervalTests: XCTestCase {
         let intervals = [[1, 3], [6, 9]]
         let newInterval = [2, 5]
         
-        let mergedIntervals = InsertInterval.insert(intervals, newInterval)
+        let result = InsertInterval.insert(intervals, newInterval)
         
-        XCTAssertEqual(mergedIntervals, [[1, 5], [6, 9]])
+        XCTAssertEqual(result, [[1, 5], [6, 9]])
     }
     
     func test_B() {
         let intervals = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
         let newInterval = [4, 8]
         
-        let mergedIntervals = InsertInterval.insert(intervals, newInterval)
+        let result = InsertInterval.insert(intervals, newInterval)
         
-        XCTAssertEqual(mergedIntervals, [[1, 2], [3, 10], [12, 16]])
+        XCTAssertEqual(result, [[1, 2], [3, 10], [12, 16]])
     }
 }

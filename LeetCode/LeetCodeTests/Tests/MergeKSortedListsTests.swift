@@ -20,11 +20,11 @@ final class MergeKSortedListsTests: XCTestCase {
         
         let lists = [list1, list2, list3]
         
-        let mergedList = MergeKSortedLists.mergeKLists(lists)
+        let result = MergeKSortedLists.mergeKLists(lists)
         
-        let array = ListNode.serialize(mergedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1, 1, 2, 3, 4, 4, 5, 6])
+        XCTAssertEqual(values, [1, 1, 2, 3, 4, 4, 5, 6])
     }
     
     func test_B() {
@@ -32,10 +32,10 @@ final class MergeKSortedListsTests: XCTestCase {
         
         let lists = [list1]
         
-        let mergedList = MergeKSortedLists.mergeKLists(lists)
+        let result = MergeKSortedLists.mergeKLists(lists)
         
-        let array = ListNode.serialize(mergedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [Int]())
+        XCTAssertEqual(values, [Int]())
     }
 }

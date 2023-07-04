@@ -17,48 +17,48 @@ final class FindPeakElementTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3, 1]
         
-        let index = FindPeakElement.findPeakElement(nums)
+        let result = FindPeakElement.findPeakElement(nums)
         
-        XCTAssertEqual(index, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let nums = [1, 2, 1, 3, 5, 6, 4]
         
-        let index = FindPeakElement.findPeakElement(nums)
+        let result = FindPeakElement.findPeakElement(nums)
         
-        XCTAssertEqual(index, 5) // other peak is at 1
+        XCTAssertEqual(result, 5) // other peak is at 1
     }
     
     func test_C() {
         let nums = [1]
         
-        let index = FindPeakElement.findPeakElement(nums)
+        let result = FindPeakElement.findPeakElement(nums)
         
-        XCTAssertEqual(index, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
         let nums = [1, 2]
         
-        let index = FindPeakElement.findPeakElement(nums)
+        let result = FindPeakElement.findPeakElement(nums)
         
-        XCTAssertEqual(index, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_E() {
         let nums = [1, 2, 3]
         
-        let index = FindPeakElement.findPeakElement(nums)
+        let result = FindPeakElement.findPeakElement(nums)
         
-        XCTAssertEqual(index, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_F() {
         let nums = [6, 5, 4, 3, 2, 3, 2]
         
-        let index = FindPeakElement.findPeakElement(nums)
+        let result = FindPeakElement.findPeakElement(nums)
         
-        XCTAssertEqual(index, 0)
+        XCTAssertEqual(result, 0)
     }
 }

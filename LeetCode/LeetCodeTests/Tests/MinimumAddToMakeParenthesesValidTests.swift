@@ -17,24 +17,24 @@ final class MinimumAddToMakeParenthesesValidTests: XCTestCase {
     func test_A() {
         let s = "())"
         
-        let min = MinimumAddToMakeParenthesesValid.minAddToMakeValid(s)
+        let result = MinimumAddToMakeParenthesesValid.minAddToMakeValid(s)
         
-        XCTAssertEqual(min, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
         let s = "((("
         
-        let min = MinimumAddToMakeParenthesesValid.minAddToMakeValid(s)
+        let result = MinimumAddToMakeParenthesesValid.minAddToMakeValid(s)
         
-        XCTAssertEqual(min, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_C() {
         let s = "()))(("
         
-        let min = MinimumAddToMakeParenthesesValid.minAddToMakeValid(s)
+        let result = MinimumAddToMakeParenthesesValid.minAddToMakeValid(s)
         
-        XCTAssertEqual(min, 4)
+        XCTAssertEqual(result, 4)
     }
 }

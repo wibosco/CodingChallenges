@@ -18,9 +18,9 @@ final class FindLeavesOfBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let leaves = FindLeavesOfBinaryTree.findLeaves(root)
+        let result = FindLeavesOfBinaryTree.findLeaves(root)
         
-        XCTAssertEqual(leaves, [[4, 5, 3], [2], [1]])
+        XCTAssertEqual(result, [[4, 5, 3], [2], [1]])
     }
     
     func test_B() {
@@ -28,8 +28,8 @@ final class FindLeavesOfBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let leaves = FindLeavesOfBinaryTree.findLeaves(root)
+        let result = FindLeavesOfBinaryTree.findLeaves(root)
         
-        XCTAssertEqual(leaves, [[1]])
+        XCTAssertEqual(result, [[1]])
     }
 }

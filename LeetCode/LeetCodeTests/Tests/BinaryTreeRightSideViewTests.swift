@@ -19,9 +19,9 @@ final class BinaryTreeRightSideViewTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let view = BinaryTreeRightSideView.rightSideView(root)
+        let result = BinaryTreeRightSideView.rightSideView(root)
         
-        XCTAssertEqual(view, [1, 3, 4])
+        XCTAssertEqual(result, [1, 3, 4])
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class BinaryTreeRightSideViewTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let view = BinaryTreeRightSideView.rightSideView(root)
+        let result = BinaryTreeRightSideView.rightSideView(root)
         
-        XCTAssertEqual(view, [1, 3])
+        XCTAssertEqual(result, [1, 3])
     }
     
     func test_C() {
@@ -39,9 +39,9 @@ final class BinaryTreeRightSideViewTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let view = BinaryTreeRightSideView.rightSideView(root)
+        let result = BinaryTreeRightSideView.rightSideView(root)
         
-        XCTAssertEqual(view, [])
+        XCTAssertEqual(result, [])
     }
 
 }

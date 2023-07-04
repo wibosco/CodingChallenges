@@ -23,9 +23,9 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 2
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertFalse(all)
+        XCTAssertFalse(result)
     }
     
     func test_B() {
@@ -37,9 +37,9 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 3
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertFalse(all)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -51,9 +51,9 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 3
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertTrue(all)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
@@ -64,9 +64,9 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 2
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertFalse(all)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
@@ -76,9 +76,9 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 1
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertFalse(all)
+        XCTAssertFalse(result)
     }
     
     func test_F() {
@@ -90,9 +90,9 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 1
         let destination = 3
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertFalse(all)
+        XCTAssertFalse(result)
     }
     
     func test_G() {
@@ -250,9 +250,9 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 15
         let destination = 33
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertTrue(all)
+        XCTAssertTrue(result)
     }
     
     func test_H() {
@@ -270,8 +270,8 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 4
         
-        let all = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
         
-        XCTAssertTrue(all)
+        XCTAssertTrue(result)
     }
 }

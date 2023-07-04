@@ -18,9 +18,9 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
         let grid = [[0, 1],
                     [1, 0]]
         
-        let stepCount = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
         
-        XCTAssertEqual(stepCount, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
@@ -28,9 +28,9 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [1, 1, 0],
                     [1, 1, 0]]
         
-        let stepCount = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
         
-        XCTAssertEqual(stepCount, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_C() {
@@ -38,9 +38,9 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [1, 1, 0],
                     [1, 1, 0]]
         
-        let stepCount = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
         
-        XCTAssertEqual(stepCount, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_D() {
@@ -53,17 +53,17 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [0, 0, 0, 0, 0, 1, 1, 0],
                     [1, 0, 0, 0, 0, 1, 1, 0]]
         
-        let stepCount = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
         
-        XCTAssertEqual(stepCount, 10)
+        XCTAssertEqual(result, 10)
     }
     
     func test_E() {
         let grid = [[0]]
         
-        let stepCount = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
         
-        XCTAssertEqual(stepCount, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_F() {
@@ -73,8 +73,8 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [0, 0, 0, 1, 1],
                     [0, 0, 0, 1, 0]]
         
-        let stepCount = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
         
-        XCTAssertEqual(stepCount, -1)
+        XCTAssertEqual(result, -1)
     }
 }

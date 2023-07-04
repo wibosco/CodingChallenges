@@ -18,9 +18,9 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "dbbca"
         let s3 = "aadbbcbcac"
         
-        let interleaving = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString.isInterleave(s1, s2, s3)
         
-        XCTAssertTrue(interleaving)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -28,9 +28,9 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "dbbca"
         let s3 = "aadbbbaccc"
         
-        let interleaving = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString.isInterleave(s1, s2, s3)
         
-        XCTAssertFalse(interleaving)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -38,9 +38,9 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = ""
         let s3 = ""
         
-        let interleaving = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString.isInterleave(s1, s2, s3)
         
-        XCTAssertTrue(interleaving)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
@@ -48,9 +48,9 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = ""
         let s3 = "c"
         
-        let interleaving = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString.isInterleave(s1, s2, s3)
         
-        XCTAssertFalse(interleaving)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
@@ -58,9 +58,9 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "babababababababababababababababababababababababababababababababababababababababababababababababaaaba"
         let s3 = "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababbb"
         
-        let interleaving = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString.isInterleave(s1, s2, s3)
         
-        XCTAssertFalse(interleaving)
+        XCTAssertFalse(result)
     }
     
     func test_F() {
@@ -68,8 +68,8 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "babababab"
         let s3 = "ababababababa"
         
-        let interleaving = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString.isInterleave(s1, s2, s3)
         
-        XCTAssertFalse(interleaving)
+        XCTAssertFalse(result)
     }
 }

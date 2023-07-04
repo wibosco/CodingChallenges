@@ -20,9 +20,9 @@ final class GuessNumberHigherOrLowerTests: XCTestCase {
         
         let sut = GuessNumberHigherOrLower(picked: pick)
         
-        let output = sut.guessNumber(n)
+        let result = sut.guessNumber(n)
         
-        XCTAssertEqual(output, pick)
+        XCTAssertEqual(result, pick)
     }
     
     func test_B() {
@@ -31,9 +31,9 @@ final class GuessNumberHigherOrLowerTests: XCTestCase {
         
         let sut = GuessNumberHigherOrLower(picked: pick)
         
-        let output = sut.guessNumber(n)
+        let result = sut.guessNumber(n)
         
-        XCTAssertEqual(output, pick)
+        XCTAssertEqual(result, pick)
     }
     
     func test_C() {
@@ -42,9 +42,9 @@ final class GuessNumberHigherOrLowerTests: XCTestCase {
         
         let sut = GuessNumberHigherOrLower(picked: pick)
         
-        let output = sut.guessNumber(n)
+        let result = sut.guessNumber(n)
         
-        XCTAssertEqual(output, pick)
+        XCTAssertEqual(result, pick)
     }
     
     func test_D() {
@@ -53,8 +53,8 @@ final class GuessNumberHigherOrLowerTests: XCTestCase {
         
         let sut = GuessNumberHigherOrLower(picked: pick)
         
-        let output = sut.guessNumber(n)
+        let result = sut.guessNumber(n)
         
-        XCTAssertEqual(output, pick)
+        XCTAssertEqual(result, pick)
     }
 }

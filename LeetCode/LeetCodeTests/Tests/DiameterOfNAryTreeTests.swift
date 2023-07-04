@@ -19,9 +19,9 @@ final class DiameterOfNAryTreeTests: XCTestCase {
         
         let root = NaryTreeNode.deserialize(data)
         
-        let diameter = DiameterOfNAryTree.diameter(root)
+        let result = DiameterOfNAryTree.diameter(root)
         
-        XCTAssertEqual(diameter, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class DiameterOfNAryTreeTests: XCTestCase {
         
         let root = NaryTreeNode.deserialize(data)
         
-        let diameter = DiameterOfNAryTree.diameter(root)
+        let result = DiameterOfNAryTree.diameter(root)
         
-        XCTAssertEqual(diameter, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_C() {
@@ -39,8 +39,8 @@ final class DiameterOfNAryTreeTests: XCTestCase {
         
         let root = NaryTreeNode.deserialize(data)
         
-        let diameter = DiameterOfNAryTree.diameter(root)
+        let result = DiameterOfNAryTree.diameter(root)
         
-        XCTAssertEqual(diameter, 7)
+        XCTAssertEqual(result, 7)
     }
 }

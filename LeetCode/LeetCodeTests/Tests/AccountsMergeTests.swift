@@ -20,9 +20,9 @@ final class AccountsMergeTests: XCTestCase {
                         ["Mary", "mary@mail.com"],
                         ["John", "johnnybravo@mail.com"]]
         
-        let merged = AccountsMerge.accountsMerge(accounts)
+        let result = AccountsMerge.accountsMerge(accounts)
         
-        XCTAssertEqual(merged, [["John", "john00@mail.com", "john_newyork@mail.com", "johnsmith@mail.com"],
+        XCTAssertEqual(result, [["John", "john00@mail.com", "john_newyork@mail.com", "johnsmith@mail.com"],
                                 ["Mary", "mary@mail.com"],
                                 ["John", "johnnybravo@mail.com"]])
     }
@@ -34,9 +34,9 @@ final class AccountsMergeTests: XCTestCase {
                         ["Hanzo", "Hanzo3@m.co", "Hanzo1@m.co", "Hanzo0@m.co"],
                         ["Fern", "Fern5@m.co", "Fern1@m.co", "Fern0@m.co"]]
         
-        let merged = AccountsMerge.accountsMerge(accounts)
+        let result = AccountsMerge.accountsMerge(accounts)
         
-        XCTAssertEqual(merged, [["Gabe", "Gabe0@m.co", "Gabe1@m.co", "Gabe3@m.co"],
+        XCTAssertEqual(result, [["Gabe", "Gabe0@m.co", "Gabe1@m.co", "Gabe3@m.co"],
                                 ["Kevin", "Kevin0@m.co", "Kevin3@m.co", "Kevin5@m.co"],
                                 ["Ethan", "Ethan0@m.co", "Ethan4@m.co", "Ethan5@m.co"],
                                 ["Hanzo", "Hanzo0@m.co", "Hanzo1@m.co", "Hanzo3@m.co"],

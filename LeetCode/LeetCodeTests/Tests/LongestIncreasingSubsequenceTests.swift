@@ -16,32 +16,32 @@ final class LongestIncreasingSubsequenceTests: XCTestCase {
     func test_A() {
         let nums = [10, 9, 2, 5, 3, 7, 101, 18]
             
-        let length = LongestIncreasingSubsequence.lengthOfLIS(nums)
+        let result = LongestIncreasingSubsequence.lengthOfLIS(nums)
         
-        XCTAssertEqual(length, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_B() {
         let nums = [0, 1, 0, 3, 2, 3]
             
-        let length = LongestIncreasingSubsequence.lengthOfLIS(nums)
+        let result = LongestIncreasingSubsequence.lengthOfLIS(nums)
         
-        XCTAssertEqual(length, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_C() {
         let nums = [7, 7, 7, 7, 7, 7, 7]
             
-        let length = LongestIncreasingSubsequence.lengthOfLIS(nums)
+        let result = LongestIncreasingSubsequence.lengthOfLIS(nums)
         
-        XCTAssertEqual(length, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_D() {
         let nums = [3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12]
             
-        let length = LongestIncreasingSubsequence.lengthOfLIS(nums)
+        let result = LongestIncreasingSubsequence.lengthOfLIS(nums)
         
-        XCTAssertEqual(length, 6)
+        XCTAssertEqual(result, 6)
     }
 }

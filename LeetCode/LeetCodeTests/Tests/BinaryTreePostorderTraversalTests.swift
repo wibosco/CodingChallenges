@@ -19,9 +19,9 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let traversal = BinaryTreePostorderTraversal.postorderTraversal(root)
+        let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
-        XCTAssertEqual(traversal, [3, 2, 1])
+        XCTAssertEqual(result, [3, 2, 1])
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let traversal = BinaryTreePostorderTraversal.postorderTraversal(root)
+        let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
-        XCTAssertEqual(traversal, [Int]())
+        XCTAssertEqual(result, [Int]())
     }
     
     func test_C() {
@@ -39,9 +39,9 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let traversal = BinaryTreePostorderTraversal.postorderTraversal(root)
+        let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
-        XCTAssertEqual(traversal, [1])
+        XCTAssertEqual(result, [1])
     }
     
     func test_D() {
@@ -49,9 +49,9 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let traversal = BinaryTreePostorderTraversal.postorderTraversal(root)
+        let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
-        XCTAssertEqual(traversal, [2, 1])
+        XCTAssertEqual(result, [2, 1])
     }
     
     func test_E() {
@@ -59,8 +59,8 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let traversal = BinaryTreePostorderTraversal.postorderTraversal(root)
+        let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
-        XCTAssertEqual(traversal, [2, 1])
+        XCTAssertEqual(result, [2, 1])
     }
 }

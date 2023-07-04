@@ -19,11 +19,11 @@ final class RemoveLinkedListElementsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let list = RemoveLinkedListElements.removeElements(head, val)
+        let result = RemoveLinkedListElements.removeElements(head, val)
         
-        let array = ListNode.serialize(list)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1, 2, 3, 4, 5])
+        XCTAssertEqual(values, [1, 2, 3, 4, 5])
     }
     
     func test_B() {
@@ -32,11 +32,11 @@ final class RemoveLinkedListElementsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let list = RemoveLinkedListElements.removeElements(head, val)
+        let result = RemoveLinkedListElements.removeElements(head, val)
         
-        let array = ListNode.serialize(list)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [])
+        XCTAssertEqual(values, [])
     }
     
     func test_C() {
@@ -45,10 +45,10 @@ final class RemoveLinkedListElementsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let list = RemoveLinkedListElements.removeElements(head, val)
+        let result = RemoveLinkedListElements.removeElements(head, val)
         
-        let array = ListNode.serialize(list)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [])
+        XCTAssertEqual(values, [])
     }
 }

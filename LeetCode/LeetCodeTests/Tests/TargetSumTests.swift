@@ -18,17 +18,17 @@ final class TargetSumTests: XCTestCase {
         let nums = [1, 1, 1, 1, 1]
         let target = 3
         
-        let paths = TargetSum.findTargetSumWays(nums, target)
+        let result = TargetSum.findTargetSumWays(nums, target)
         
-        XCTAssertEqual(paths, 5)
+        XCTAssertEqual(result, 5)
     }
     
     func test_B() {
         let nums = [1]
         let target = 1
         
-        let paths = TargetSum.findTargetSumWays(nums, target)
+        let result = TargetSum.findTargetSumWays(nums, target)
         
-        XCTAssertEqual(paths, 1)
+        XCTAssertEqual(result, 1)
     }
 }

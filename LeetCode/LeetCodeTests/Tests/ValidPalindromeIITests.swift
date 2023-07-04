@@ -17,25 +17,25 @@ final class ValidPalindromeIITests: XCTestCase {
     func test_A() {
         let s = "aba"
         
-        let isValid = ValidPalindromeII.validPalindrome(s)
+        let result = ValidPalindromeII.validPalindrome(s)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let s = "abca"
         
-        let isValid = ValidPalindromeII.validPalindrome(s)
+        let result = ValidPalindromeII.validPalindrome(s)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_C() {
         let s = "abc"
         
-        let isValid = ValidPalindromeII.validPalindrome(s)
+        let result = ValidPalindromeII.validPalindrome(s)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
 
 }

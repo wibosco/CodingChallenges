@@ -19,18 +19,18 @@ final class ToeplitzMatrixTests: XCTestCase {
                       [5, 1, 2, 3],
                       [9, 5, 1, 2]]
         
-        let isToeplitz = ToeplitzMatrix.isToeplitzMatrix(matrix)
+        let result = ToeplitzMatrix.isToeplitzMatrix(matrix)
         
-        XCTAssertTrue(isToeplitz)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let matrix = [[1, 2],
                       [2, 2]]
         
-        let isToeplitz = ToeplitzMatrix.isToeplitzMatrix(matrix)
+        let result = ToeplitzMatrix.isToeplitzMatrix(matrix)
         
-        XCTAssertFalse(isToeplitz)
+        XCTAssertFalse(result)
     }
 
 }

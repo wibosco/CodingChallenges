@@ -18,26 +18,26 @@ final class SubarraySumEqualsKTests: XCTestCase {
         let nums = [1, 1, 1]
         let k = 2
         
-        let continuousSubarrays = SubarraySumEqualsK.subarraySum(nums, k)
+        let result = SubarraySumEqualsK.subarraySum(nums, k)
         
-        XCTAssertEqual(continuousSubarrays, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let nums = [1, 2, 3]
         let k = 3
         
-        let continuousSubarrays = SubarraySumEqualsK.subarraySum(nums, k)
+        let result = SubarraySumEqualsK.subarraySum(nums, k)
         
-        XCTAssertEqual(continuousSubarrays, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_C() {
         let nums = [1, -1, 0]
         let k = 0
         
-        let continuousSubarrays = SubarraySumEqualsK.subarraySum(nums, k)
+        let result = SubarraySumEqualsK.subarraySum(nums, k)
         
-        XCTAssertEqual(continuousSubarrays, 3)
+        XCTAssertEqual(result, 3)
     }
 }

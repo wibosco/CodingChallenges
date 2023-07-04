@@ -17,17 +17,17 @@ final class AddBinaryTests: XCTestCase {
         let a = "11"
         let b = "1"
         
-        let sum = AddBinary.addBinary(a, b)
+        let result = AddBinary.addBinary(a, b)
         
-        XCTAssertEqual(sum, "100")
+        XCTAssertEqual(result, "100")
     }
     
     func test_B() {
         let a = "1010"
         let b = "1011"
         
-        let sum = AddBinary.addBinary(a, b)
+        let result = AddBinary.addBinary(a, b)
         
-        XCTAssertEqual(sum, "10101")
+        XCTAssertEqual(result, "10101")
     }
 }

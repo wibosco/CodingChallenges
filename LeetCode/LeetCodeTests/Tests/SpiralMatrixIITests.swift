@@ -16,16 +16,16 @@ final class SpiralMatrixIITests: XCTestCase {
     func test_A() {
         let n = 3
         
-        let matrix = SpiralMatrixII.generateMatrix(n)
+        let result = SpiralMatrixII.generateMatrix(n)
         
-        XCTAssertEqual(matrix, [[1, 2, 3], [8, 9, 4], [7, 6, 5]])
+        XCTAssertEqual(result, [[1, 2, 3], [8, 9, 4], [7, 6, 5]])
     }
     
     func test_B() {
         let n = 1
         
-        let matrix = SpiralMatrixII.generateMatrix(n)
+        let result = SpiralMatrixII.generateMatrix(n)
         
-        XCTAssertEqual(matrix, [[1]])
+        XCTAssertEqual(result, [[1]])
     }
 }

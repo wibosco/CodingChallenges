@@ -21,9 +21,9 @@ final class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
         let p = BinaryTreeNode(5)
         let q = BinaryTreeNode(1)
         
-        let lca = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
+        let result = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
         
-        XCTAssertEqual(lca?.val, 3)
+        XCTAssertEqual(result?.val, 3)
     }
     
     func test_B() {
@@ -33,9 +33,9 @@ final class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
         let p = BinaryTreeNode(5)
         let q = BinaryTreeNode(4)
         
-        let lca = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
+        let result = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
         
-        XCTAssertEqual(lca?.val, 5)
+        XCTAssertEqual(result?.val, 5)
     }
     
     func test_C() {
@@ -45,8 +45,8 @@ final class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
         let p = BinaryTreeNode(5)
         let q = BinaryTreeNode(10)
         
-        let lca = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
+        let result = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
         
-        XCTAssertNil(lca)
+        XCTAssertNil(result)
     }
 }

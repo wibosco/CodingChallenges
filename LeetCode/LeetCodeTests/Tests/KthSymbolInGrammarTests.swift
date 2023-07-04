@@ -18,44 +18,44 @@ final class KthSymbolInGrammarTests: XCTestCase {
         let n = 1
         let k = 1
         
-        let symbol = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar.kthGrammar(n, k)
         
-        XCTAssertEqual(symbol, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_B() {
         let n = 2
         let k = 1
         
-        let symbol = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar.kthGrammar(n, k)
         
-        XCTAssertEqual(symbol, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_C() {
         let n = 2
         let k = 2
         
-        let symbol = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar.kthGrammar(n, k)
         
-        XCTAssertEqual(symbol, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_D() {
         let n = 3
         let k = 1
         
-        let symbol = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar.kthGrammar(n, k)
         
-        XCTAssertEqual(symbol, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_E() {
         let n = 4
         let k = 5
         
-        let symbol = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar.kthGrammar(n, k)
         
-        XCTAssertEqual(symbol, 1)
+        XCTAssertEqual(result, 1)
     }
 }

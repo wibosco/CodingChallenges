@@ -17,49 +17,49 @@ final class IntegerToRomanTests: XCTestCase {
     func test_A() {
         let num = 3
         
-        let roman = IntegerToRoman.intToRoman(num)
+        let result = IntegerToRoman.intToRoman(num)
         
-        XCTAssertEqual(roman, "III")
+        XCTAssertEqual(result, "III")
     }
     
     func test_B() {
         let num = 4
         
-        let roman = IntegerToRoman.intToRoman(num)
+        let result = IntegerToRoman.intToRoman(num)
         
-        XCTAssertEqual(roman, "IV")
+        XCTAssertEqual(result, "IV")
     }
     
     func test_C() {
         let num = 58
         
-        let roman = IntegerToRoman.intToRoman(num)
+        let result = IntegerToRoman.intToRoman(num)
         
-        XCTAssertEqual(roman, "LVIII")
+        XCTAssertEqual(result, "LVIII")
     }
     
     func test_D() {
         let num = 1994
         
-        let roman = IntegerToRoman.intToRoman(num)
+        let result = IntegerToRoman.intToRoman(num)
         
-        XCTAssertEqual(roman, "MCMXCIV")
+        XCTAssertEqual(result, "MCMXCIV")
     }
     
     func test_E() {
         let num = 300
         
-        let roman = IntegerToRoman.intToRoman(num)
+        let result = IntegerToRoman.intToRoman(num)
         
-        XCTAssertEqual(roman, "CCC")
+        XCTAssertEqual(result, "CCC")
     }
     
     func test_F() {
         let num = 3897
         
-        let roman = IntegerToRoman.intToRoman(num)
+        let result = IntegerToRoman.intToRoman(num)
         
-        XCTAssertEqual(roman, "MMMDCCCXCVII")
+        XCTAssertEqual(result, "MMMDCCCXCVII")
     }
 
 }

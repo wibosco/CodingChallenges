@@ -22,9 +22,9 @@ final class CloneGraphTests: XCTestCase {
         
         let graph = GraphVertice.deserialize(adjList)
         
-        let deepCopy = CloneGraph.cloneGraph(graph)
+        let result = CloneGraph.cloneGraph(graph)
         
-        let values = GraphVertice.extractValuesIntoAdjList(fromGraph: deepCopy)
+        let values = GraphVertice.extractValuesIntoAdjList(fromGraph: result)
         
         XCTAssertEqual(values, [[2, 4], [1, 3], [2, 4], [1, 3]])
     }
@@ -35,9 +35,9 @@ final class CloneGraphTests: XCTestCase {
         
         let graph = GraphVertice.deserialize(adjList)
         
-        let deepCopy = CloneGraph.cloneGraph(graph)
+        let result = CloneGraph.cloneGraph(graph)
         
-        let values = GraphVertice.extractValuesIntoAdjList(fromGraph: deepCopy)
+        let values = GraphVertice.extractValuesIntoAdjList(fromGraph: result)
         
         XCTAssertEqual(values, [[2], [1]])
     }
@@ -54,9 +54,9 @@ final class CloneGraphTests: XCTestCase {
         
         let graph = GraphVertice.deserialize(adjList)
         
-        let deepCopy = CloneGraph.cloneGraph(graph)
+        let result = CloneGraph.cloneGraph(graph)
         
-        let values = GraphVertice.extractValuesIntoAdjList(fromGraph: deepCopy)
+        let values = GraphVertice.extractValuesIntoAdjList(fromGraph: result)
         
         XCTAssertEqual(values, [[2, 3, 4], [1, 7], [1], [1, 5, 6, 8], [4], [4], [2], [4]])
     }

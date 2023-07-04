@@ -20,11 +20,11 @@ final class TrimABinarySearchTreeTests: XCTestCase {
         let low = 1
         let high = 2
         
-        let trimmedTree = TrimABinarySearchTree.trimBST(tree, low, high)
+        let result = TrimABinarySearchTree.trimBST(tree, low, high)
         
-        let array = BinaryTreeNode.serialize(trimmedTree)
+        let values = BinaryTreeNode.serialize(result)
         
-        XCTAssertEqual(array, [1, nil, 2])
+        XCTAssertEqual(values, [1, nil, 2])
     }
     
     func test_B() {
@@ -34,11 +34,11 @@ final class TrimABinarySearchTreeTests: XCTestCase {
         let low = 1
         let high = 3
         
-        let trimmedTree = TrimABinarySearchTree.trimBST(tree, low, high)
+        let result = TrimABinarySearchTree.trimBST(tree, low, high)
         
-        let array = BinaryTreeNode.serialize(trimmedTree)
+        let values = BinaryTreeNode.serialize(result)
         
-        XCTAssertEqual(array, [3, 2, nil, 1])
+        XCTAssertEqual(values, [3, 2, nil, 1])
     }
     
     func test_C() {
@@ -48,10 +48,10 @@ final class TrimABinarySearchTreeTests: XCTestCase {
         let low = 3
         let high = 4
         
-        let trimmedTree = TrimABinarySearchTree.trimBST(tree, low, high)
+        let result = TrimABinarySearchTree.trimBST(tree, low, high)
         
-        let array = BinaryTreeNode.serialize(trimmedTree)
+        let values = BinaryTreeNode.serialize(result)
         
-        XCTAssertEqual(array, [3, nil, 4 ])
+        XCTAssertEqual(values, [3, nil, 4 ])
     }
 }

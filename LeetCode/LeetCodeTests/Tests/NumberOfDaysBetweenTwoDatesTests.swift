@@ -17,26 +17,26 @@ final class NumberOfDaysBetweenTwoDatesTests: XCTestCase {
         let date1 = "2019-06-29"
         let date2 = "2019-06-30"
         
-        let days = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
+        let result = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
         
-        XCTAssertEqual(days, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
         let date1 = "2020-01-15"
         let date2 = "2019-12-31"
         
-        let days = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
+        let result = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
         
-        XCTAssertEqual(days, 15)
+        XCTAssertEqual(result, 15)
     }
     
     func test_C() {
         let date1 = "1971-06-29"
         let date2 = "2010-09-23"
         
-        let days = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
+        let result = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
         
-        XCTAssertEqual(days, 14331)
+        XCTAssertEqual(result, 14331)
     }
 }

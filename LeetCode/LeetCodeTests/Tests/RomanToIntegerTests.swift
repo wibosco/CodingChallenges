@@ -17,41 +17,40 @@ final class RomanToIntegerTests: XCTestCase {
     func test_A() {
         let s = "III"
         
-        let arabic = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger.romanToInt(s)
         
-        XCTAssertEqual(arabic, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_B() {
         let s = "IV"
         
-        let arabic = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger.romanToInt(s)
         
-        XCTAssertEqual(arabic, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_C() {
         let s = "IX"
         
-        let arabic = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger.romanToInt(s)
         
-        XCTAssertEqual(arabic, 9)
+        XCTAssertEqual(result, 9)
     }
     
     func test_D() {
         let s = "LVIII"
         
-        let arabic = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger.romanToInt(s)
         
-        XCTAssertEqual(arabic, 58)
+        XCTAssertEqual(result, 58)
     }
     
     func test_E() {
         let s = "MCMXCIV"
         
-        let arabic = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger.romanToInt(s)
         
-        XCTAssertEqual(arabic, 1994)
+        XCTAssertEqual(result, 1994)
     }
-
 }

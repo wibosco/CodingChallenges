@@ -17,17 +17,17 @@ final class ThreeSumClosestTests: XCTestCase {
         let nums = [-1, 2, 1, -4]
         let target = 1
         
-        let closet = ThreeSumClosest.threeSumClosest(nums, target)
+        let result = ThreeSumClosest.threeSumClosest(nums, target)
         
-        XCTAssertEqual(closet, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let nums = [0, 0, 0]
         let target = 1
         
-        let closet = ThreeSumClosest.threeSumClosest(nums, target)
+        let result = ThreeSumClosest.threeSumClosest(nums, target)
         
-        XCTAssertEqual(closet, 0)
+        XCTAssertEqual(result, 0)
     }
 }

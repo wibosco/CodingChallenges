@@ -18,9 +18,9 @@ final class MiddleOfLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5]
         let head = ListNode.deserialize(data)
         
-        let middle = MiddleOfLinkedList.middleNode(head)
+        let result = MiddleOfLinkedList.middleNode(head)
         
-        let values = ListNode.serialize(middle)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [3, 4, 5])
     }
@@ -29,9 +29,9 @@ final class MiddleOfLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5, 6]
         let head = ListNode.deserialize(data)
         
-        let middle = MiddleOfLinkedList.middleNode(head)
+        let result = MiddleOfLinkedList.middleNode(head)
         
-        let values = ListNode.serialize(middle)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [4, 5, 6])
     }

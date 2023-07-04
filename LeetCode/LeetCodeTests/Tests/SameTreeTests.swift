@@ -21,9 +21,9 @@ final class SameTreeTests: XCTestCase {
         let pRoot = BinaryTreeNode.deserialize(p)
         let qRoot = BinaryTreeNode.deserialize(q)
         
-        let same = SameTree.isSameTree(pRoot, qRoot)
+        let result = SameTree.isSameTree(pRoot, qRoot)
         
-        XCTAssertTrue(same)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -33,9 +33,9 @@ final class SameTreeTests: XCTestCase {
         let pRoot = BinaryTreeNode.deserialize(p)
         let qRoot = BinaryTreeNode.deserialize(q)
         
-        let same = SameTree.isSameTree(pRoot, qRoot)
+        let result = SameTree.isSameTree(pRoot, qRoot)
         
-        XCTAssertFalse(same)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -45,8 +45,8 @@ final class SameTreeTests: XCTestCase {
         let pRoot = BinaryTreeNode.deserialize(p)
         let qRoot = BinaryTreeNode.deserialize(q)
         
-        let same = SameTree.isSameTree(pRoot, qRoot)
+        let result = SameTree.isSameTree(pRoot, qRoot)
         
-        XCTAssertFalse(same)
+        XCTAssertFalse(result)
     }
 }

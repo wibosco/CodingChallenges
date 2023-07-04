@@ -16,24 +16,24 @@ final class CountSortedVowelStringsTests: XCTestCase {
     func test_A() {
         let n = 1
         
-        let count = CountSortedVowelStrings.countVowelStrings(n)
+        let result = CountSortedVowelStrings.countVowelStrings(n)
         
-        XCTAssertEqual(count, 5)
+        XCTAssertEqual(result, 5)
     }
     
     func test_B() {
         let n = 2
         
-        let count = CountSortedVowelStrings.countVowelStrings(n)
+        let result = CountSortedVowelStrings.countVowelStrings(n)
         
-        XCTAssertEqual(count, 15)
+        XCTAssertEqual(result, 15)
     }
     
     func test_C() {
         let n = 33
         
-        let count = CountSortedVowelStrings.countVowelStrings(n)
+        let result = CountSortedVowelStrings.countVowelStrings(n)
         
-        XCTAssertEqual(count, 66045)
+        XCTAssertEqual(result, 66045)
     }
 }

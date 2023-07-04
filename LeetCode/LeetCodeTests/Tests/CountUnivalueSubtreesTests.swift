@@ -19,9 +19,9 @@ final class CountUnivalueSubtreesTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let count = CountUnivalueSubtrees.countUnivalSubtrees(root)
+        let result = CountUnivalueSubtrees.countUnivalSubtrees(root)
         
-        XCTAssertEqual(count, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class CountUnivalueSubtreesTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let count = CountUnivalueSubtrees.countUnivalSubtrees(root)
+        let result = CountUnivalueSubtrees.countUnivalSubtrees(root)
         
-        XCTAssertEqual(count, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_C() {
@@ -39,8 +39,8 @@ final class CountUnivalueSubtreesTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let count = CountUnivalueSubtrees.countUnivalSubtrees(root)
+        let result = CountUnivalueSubtrees.countUnivalSubtrees(root)
         
-        XCTAssertEqual(count, 6)
+        XCTAssertEqual(result, 6)
     }
 }

@@ -20,9 +20,9 @@ final class PathSumTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let exists = PathSum.hasPathSum(root, targetSum)
+        let result = PathSum.hasPathSum(root, targetSum)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -31,9 +31,9 @@ final class PathSumTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let exists = PathSum.hasPathSum(root, targetSum)
+        let result = PathSum.hasPathSum(root, targetSum)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -42,8 +42,8 @@ final class PathSumTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let exists = PathSum.hasPathSum(root, targetSum)
+        let result = PathSum.hasPathSum(root, targetSum)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
 }

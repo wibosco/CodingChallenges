@@ -19,9 +19,9 @@ final class RottingOrangesTests: XCTestCase {
                     [1, 1, 0],
                     [0, 1, 1]]
         
-        let time = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges.orangesRotting(grid)
         
-        XCTAssertEqual(time, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_B() {
@@ -29,41 +29,41 @@ final class RottingOrangesTests: XCTestCase {
                     [0, 1, 1],
                     [1, 0, 1]]
         
-        let time = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges.orangesRotting(grid)
         
-        XCTAssertEqual(time, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_C() {
         let grid = [[0, 2]]
         
-        let time = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges.orangesRotting(grid)
         
-        XCTAssertEqual(time, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
         let grid = [[0]]
         
-        let time = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges.orangesRotting(grid)
         
-        XCTAssertEqual(time, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_E() {
         let grid = [[1]]
         
-        let time = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges.orangesRotting(grid)
         
-        XCTAssertEqual(time, -1)
+        XCTAssertEqual(result, -1)
     }
 
     func test_F() {
         let grid = [[0, 1]]
         
-        let time = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges.orangesRotting(grid)
         
-        XCTAssertEqual(time, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_G() {
@@ -72,9 +72,8 @@ final class RottingOrangesTests: XCTestCase {
                     [0, 0],
                     [2, 0]]
         
-        let time = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges.orangesRotting(grid)
         
-        XCTAssertEqual(time, 1)
+        XCTAssertEqual(result, 1)
     }
-    
 }

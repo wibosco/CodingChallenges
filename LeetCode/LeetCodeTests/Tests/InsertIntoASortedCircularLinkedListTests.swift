@@ -19,11 +19,11 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 2
         
-        let insertedList = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
         
-        let array = ListNode.serialize(insertedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [3, 4, 1, 2])
+        XCTAssertEqual(values, [3, 4, 1, 2])
     }
     
     func test_B() {
@@ -32,11 +32,11 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 1
         
-        let insertedList = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
         
-        let array = ListNode.serialize(insertedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1])
+        XCTAssertEqual(values, [1])
     }
     
     func test_C() {
@@ -45,11 +45,11 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 0
         
-        let insertedList = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
         
-        let array = ListNode.serialize(insertedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1, 0])
+        XCTAssertEqual(values, [1, 0])
     }
     
     func test_D() {
@@ -58,11 +58,11 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 0
         
-        let insertedList = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
         
-        let array = ListNode.serialize(insertedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [3, 3, 3, 0])
+        XCTAssertEqual(values, [3, 3, 3, 0])
     }
     
     func test_E() {
@@ -71,10 +71,10 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 1
         
-        let insertedList = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
         
-        let array = ListNode.serialize(insertedList)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1, 1, 3, 5])
+        XCTAssertEqual(values, [1, 1, 3, 5])
     }
 }

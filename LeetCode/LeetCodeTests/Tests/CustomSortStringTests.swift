@@ -18,27 +18,27 @@ final class CustomSortStringTests: XCTestCase {
         let order = "cba"
         let s = "abcd"
         
-        let sortedString = CustomSortString.customSortString(order, s)
+        let result = CustomSortString.customSortString(order, s)
         
-        XCTAssertEqual(sortedString, "cbad")
+        XCTAssertEqual(result, "cbad")
     }
     
     func test_B() {
         let order = "cbafg"
         let s = "abcd"
         
-        let sortedString = CustomSortString.customSortString(order, s)
+        let result = CustomSortString.customSortString(order, s)
         
-        XCTAssertEqual(sortedString, "cbad")
+        XCTAssertEqual(result, "cbad")
     }
     
     func test_C() {
         let order =  "hucw"
         let s = "utzoampdgkalexslxoqfkdjoczajxtuhqyxvlfatmptqdsochtdzgypsfkgqwbgqbcamdqnqztaqhqanirikahtmalzqjjxtqfnh"
         
-        let sortedString = CustomSortString.customSortString(order, s)
+        let result = CustomSortString.customSortString(order, s)
         
-        XCTAssertEqual(sortedString, "hhhhhuucccwaaaaaaaaabbdddddeffffggggiijjjjkkkkllllmmmmnnnoooopppqqqqqqqqqqqrsssttttttttvxxxxxyyzzzzz")
+        XCTAssertEqual(result, "hhhhhuucccwaaaaaaaaabbdddddeffffggggiijjjjkkkkllllmmmmnnnoooopppqqqqqqqqqqqrsssttttttttvxxxxxyyzzzzz")
     }
 
 }

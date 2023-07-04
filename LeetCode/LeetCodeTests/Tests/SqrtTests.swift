@@ -17,40 +17,40 @@ final class SqrtTests: XCTestCase {
     func test_A() {
         let x = 4
         
-        let sqrt = Sqrt.mySqrt(x)
+        let result = Sqrt.mySqrt(x)
         
-        XCTAssertEqual(sqrt, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let x = 8
         
-        let sqrt = Sqrt.mySqrt(x)
+        let result = Sqrt.mySqrt(x)
         
-        XCTAssertEqual(sqrt, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_C() {
         let x = 0
         
-        let sqrt = Sqrt.mySqrt(x)
+        let result = Sqrt.mySqrt(x)
         
-        XCTAssertEqual(sqrt, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
         let x = 1
         
-        let sqrt = Sqrt.mySqrt(x)
+        let result = Sqrt.mySqrt(x)
         
-        XCTAssertEqual(sqrt, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_E() {
         let x = 2
         
-        let sqrt = Sqrt.mySqrt(x)
+        let result = Sqrt.mySqrt(x)
         
-        XCTAssertEqual(sqrt, 1)
+        XCTAssertEqual(result, 1)
     }
 }

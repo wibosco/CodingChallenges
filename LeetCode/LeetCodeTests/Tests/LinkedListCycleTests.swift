@@ -19,9 +19,9 @@ final class LinkedListCycleTests: XCTestCase {
         let pos = 1
         let head = ListNode.deserialize(data, pos)
         
-        let containsCycle = LinkedListCycle.hasCycle(head)
+        let result = LinkedListCycle.hasCycle(head)
         
-        XCTAssertTrue(containsCycle)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class LinkedListCycleTests: XCTestCase {
         let pos = 0
         let head = ListNode.deserialize(data, pos)
         
-        let containsCycle = LinkedListCycle.hasCycle(head)
+        let result = LinkedListCycle.hasCycle(head)
         
-        XCTAssertTrue(containsCycle)
+        XCTAssertTrue(result)
     }
     
     func test_C() {
@@ -39,8 +39,8 @@ final class LinkedListCycleTests: XCTestCase {
         let pos = -1
         let head = ListNode.deserialize(data, pos)
         
-        let containsCycle = LinkedListCycle.hasCycle(head)
+        let result = LinkedListCycle.hasCycle(head)
         
-        XCTAssertFalse(containsCycle)
+        XCTAssertFalse(result)
     }
 }

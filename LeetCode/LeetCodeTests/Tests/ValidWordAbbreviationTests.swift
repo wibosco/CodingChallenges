@@ -18,116 +18,116 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "internationalization"
         let abbr = "i12iz4n"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let word = "apple"
         let abbr = "a2e"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let word = "substitution"
         let abbr = "s10n"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
         let word = "substitution"
         let abbr = "sub4u4"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_E() {
         let word = "substitution"
         let abbr = "12"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_F() {
         let word = "substitution"
         let abbr = "su3i1u2on"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_G() {
         let word = "substitution"
         let abbr = "substitution"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_H() {
         let word = "substitution"
         let abbr = "s55n"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_I() {
         let word = "substitution"
         let abbr = "s010n"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_J() {
         let word = "substitution"
         let abbr = "s0ubstitution"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_K() {
         let word = "word"
         let abbr = "3e"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_L() {
         let word = "hi"
         let abbr = "2i"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_M() {
         let word = "hi"
         let abbr = "1"
         
-        let isValid = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
 }

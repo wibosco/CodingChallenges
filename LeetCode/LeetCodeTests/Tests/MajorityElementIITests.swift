@@ -16,24 +16,24 @@ final class MajorityElementIITests: XCTestCase {
     func test_A() {
         let nums = [3, 2, 3]
         
-        let elements = MajorityElementII.majorityElement(nums)
+        let result = MajorityElementII.majorityElement(nums)
         
-        XCTAssertEqual(elements, [3])
+        XCTAssertEqual(result, [3])
     }
     
     func test_B() {
         let nums = [1]
         
-        let elements = MajorityElementII.majorityElement(nums)
+        let result = MajorityElementII.majorityElement(nums)
         
-        XCTAssertEqual(elements, [1])
+        XCTAssertEqual(result, [1])
     }
     
     func test_C() {
         let nums = [1, 2]
         
-        let elements = MajorityElementII.majorityElement(nums)
+        let result = MajorityElementII.majorityElement(nums)
         
-        XCTAssertEqual(elements, [1, 2])
+        XCTAssertEqual(result, [1, 2])
     }
 }

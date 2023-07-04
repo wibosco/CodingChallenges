@@ -18,9 +18,9 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([2, 4, 3])
         let l2 = ListNode.deserialize([5, 6, 4])
         
-        let node = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        let values = ListNode.serialize(node)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [7, 0, 8])
     }
@@ -29,9 +29,9 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([0])
         let l2 = ListNode.deserialize([0])
         
-        let node = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        let values = ListNode.serialize(node)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [0])
     }
@@ -40,9 +40,9 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([9, 9, 9, 9, 9, 9, 9])
         let l2 = ListNode.deserialize([9, 9, 9, 9])
         
-        let node = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        let values = ListNode.serialize(node)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [8, 9, 9, 9, 0, 0, 0, 1])
     }
@@ -51,9 +51,9 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([2, 4, 9])
         let l2 = ListNode.deserialize([5, 6, 4, 9])
         
-        let node = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        let values = ListNode.serialize(node)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [7, 0, 4, 0, 1])
     }
@@ -62,9 +62,9 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
         let l2 = ListNode.deserialize([5, 6, 4])
         
-        let node = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
         
-        let values = ListNode.serialize(node)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [6, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
     }

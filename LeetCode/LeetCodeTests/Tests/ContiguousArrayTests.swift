@@ -16,32 +16,32 @@ final class ContiguousArrayTests: XCTestCase {
     func test_A() {
         let nums = [0, 1]
         
-        let length = ContiguousArray.findMaxLength(nums)
+        let result = ContiguousArray.findMaxLength(nums)
         
-        XCTAssertEqual(length, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let nums = [0, 1, 0]
         
-        let length = ContiguousArray.findMaxLength(nums)
+        let result = ContiguousArray.findMaxLength(nums)
         
-        XCTAssertEqual(length, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_C() {
         let nums = [0, 1, 0, 1]
         
-        let length = ContiguousArray.findMaxLength(nums)
+        let result = ContiguousArray.findMaxLength(nums)
         
-        XCTAssertEqual(length, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_D() {
         let nums = [0, 0, 1, 0, 0, 0, 1, 1]
         
-        let length = ContiguousArray.findMaxLength(nums)
+        let result = ContiguousArray.findMaxLength(nums)
         
-        XCTAssertEqual(length, 6)
+        XCTAssertEqual(result, 6)
     }
 }

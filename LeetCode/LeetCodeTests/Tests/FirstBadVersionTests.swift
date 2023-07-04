@@ -19,9 +19,9 @@ final class FirstBadVersionTests: XCTestCase {
         let bad = 4
         
         let sut = FirstBadVersion(badVersion: bad)
-        let v = sut.firstBadVersion(n)
+        let result = sut.firstBadVersion(n)
         
-        XCTAssertEqual(v, bad)
+        XCTAssertEqual(result, bad)
     }
     
     func test_B() {
@@ -29,8 +29,8 @@ final class FirstBadVersionTests: XCTestCase {
         let bad = 1
         
         let sut = FirstBadVersion(badVersion: bad)
-        let v = sut.firstBadVersion(n)
+        let result = sut.firstBadVersion(n)
         
-        XCTAssertEqual(v, bad)
+        XCTAssertEqual(result, bad)
     }
 }

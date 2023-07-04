@@ -17,26 +17,26 @@ final class FindAllAnagramsInAStringTests: XCTestCase {
         let s = "cbaebabacd"
         let p = "abc"
         
-        let indexes = FindAllAnagramsInAString.findAnagrams(s, p)
+        let result = FindAllAnagramsInAString.findAnagrams(s, p)
         
-        XCTAssertEqual(indexes, [0, 6])
+        XCTAssertEqual(result, [0, 6])
     }
     
     func test_B() {
         let s = "abab"
         let p = "ab"
         
-        let indexes = FindAllAnagramsInAString.findAnagrams(s, p)
+        let result = FindAllAnagramsInAString.findAnagrams(s, p)
         
-        XCTAssertEqual(indexes, [0, 1, 2])
+        XCTAssertEqual(result, [0, 1, 2])
     }
     
     func test_C() {
         let s = "aaaaaaaaaa"
         let p = "aaaaaaaaaaaaa"
         
-        let indexes = FindAllAnagramsInAString.findAnagrams(s, p)
+        let result = FindAllAnagramsInAString.findAnagrams(s, p)
         
-        XCTAssertEqual(indexes, [Int]())
+        XCTAssertEqual(result, [Int]())
     }
 }

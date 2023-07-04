@@ -17,21 +17,21 @@ final class RemoveDuplicatesFromSortedListTests: XCTestCase {
         let data = [1, 1, 2]
         let head = ListNode.deserialize(data)
         
-        let duplicatesFreeHead = RemoveDuplicatesFromSortedList.deleteDuplicates(head)
+        let result = RemoveDuplicatesFromSortedList.deleteDuplicates(head)
         
-        let array = ListNode.serialize(duplicatesFreeHead)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1, 2])
+        XCTAssertEqual(values, [1, 2])
     }
     
     func test_B() {
         let data = [1, 1, 2, 3, 3]
         let head = ListNode.deserialize(data)
         
-        let duplicatesFreeHead = RemoveDuplicatesFromSortedList.deleteDuplicates(head)
+        let result = RemoveDuplicatesFromSortedList.deleteDuplicates(head)
         
-        let array = ListNode.serialize(duplicatesFreeHead)
+        let values = ListNode.serialize(result)
         
-        XCTAssertEqual(array, [1, 2, 3])
+        XCTAssertEqual(values, [1, 2, 3])
     }
 }

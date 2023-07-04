@@ -1,5 +1,5 @@
 //
-//  CanPlaceFlowersTests.swift
+//  resultFlowersTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 18/01/2022.
@@ -18,44 +18,44 @@ final class CanPlaceFlowersTests: XCTestCase {
         let flowerbed = [1, 0, 0, 0, 1]
         let n = 1
         
-        let canPlace = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
         
-        XCTAssertTrue(canPlace)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let flowerbed = [1, 0, 0, 0, 1]
         let n = 2
         
-        let canPlace = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
         
-        XCTAssertFalse(canPlace)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let flowerbed = [1, 0, 1, 0, 0]
         let n = 1
         
-        let canPlace = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
         
-        XCTAssertTrue(canPlace)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
         let flowerbed = [0, 0, 1, 1, 0]
         let n = 1
         
-        let canPlace = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
         
-        XCTAssertTrue(canPlace)
+        XCTAssertTrue(result)
     }
     
     func test_E() {
         let flowerbed = [1]
         let n = 1
         
-        let canPlace = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
         
-        XCTAssertFalse(canPlace)
+        XCTAssertFalse(result)
     }
 }

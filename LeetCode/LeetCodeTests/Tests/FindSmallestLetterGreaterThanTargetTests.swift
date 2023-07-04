@@ -18,62 +18,62 @@ final class FindSmallestLetterGreaterThanTargetTests: XCTestCase {
         let letters: [Character] = ["c", "f", "j"]
         let target: Character = "a"
         
-        let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
+        let result = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
         
-        XCTAssertEqual(next, "c")
+        XCTAssertEqual(result, "c")
     }
     
     func test_B() {
         let letters: [Character] = ["c", "f", "j"]
         let target: Character = "c"
         
-        let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
+        let result = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
         
-        XCTAssertEqual(next, "f")
+        XCTAssertEqual(result, "f")
     }
     
     func test_C() {
         let letters: [Character] = ["c", "f", "j"]
         let target: Character = "d"
         
-        let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
+        let result = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
         
-        XCTAssertEqual(next, "f")
+        XCTAssertEqual(result, "f")
     }
     
     func test_D() {
         let letters: [Character] = ["c", "f", "j"]
         let target: Character = "g"
         
-        let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
+        let result = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
         
-        XCTAssertEqual(next, "j")
+        XCTAssertEqual(result, "j")
     }
     
     func test_E() {
         let letters: [Character] = ["c", "f", "j"]
         let target: Character = "j"
         
-        let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
+        let result = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
         
-        XCTAssertEqual(next, "c")
+        XCTAssertEqual(result, "c")
     }
     
     func test_F() {
         let letters: [Character] = ["c", "f", "j"]
         let target: Character = "z"
         
-        let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
+        let result = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
         
-        XCTAssertEqual(next, "c")
+        XCTAssertEqual(result, "c")
     }
     
     func test_G() {
         let letters: [Character] = ["e", "e", "e", "e", "e", "e", "n", "n", "n", "n"]
         let target: Character = "n"
         
-        let next = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
+        let result = FindSmallestLetterGreaterThanTarget.nextGreatestLetter(letters, target)
         
-        XCTAssertEqual(next, "e")
+        XCTAssertEqual(result, "e")
     }
 }

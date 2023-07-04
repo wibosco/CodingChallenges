@@ -17,24 +17,24 @@ final class UglyNumberTests: XCTestCase {
     func test_A() {
         let n = 6
         
-        let isUgly = UglyNumber.isUgly(n)
+        let result = UglyNumber.isUgly(n)
         
-        XCTAssertTrue(isUgly)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let n = 1
         
-        let isUgly = UglyNumber.isUgly(n)
+        let result = UglyNumber.isUgly(n)
         
-        XCTAssertTrue(isUgly)
+        XCTAssertTrue(result)
     }
     
     func test_C() {
         let n = 14
         
-        let isUgly = UglyNumber.isUgly(n)
+        let result = UglyNumber.isUgly(n)
         
-        XCTAssertFalse(isUgly)
+        XCTAssertFalse(result)
     }
 }

@@ -17,44 +17,44 @@ final class WordPatternTests: XCTestCase {
         let pattern = "abba"
         let str = "dog cat cat dog"
         
-        let match = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern.wordPattern(pattern, str)
         
-        XCTAssertTrue(match)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let pattern = "abba"
         let str = "dog cat cat fish"
         
-        let match = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern.wordPattern(pattern, str)
         
-        XCTAssertFalse(match)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let pattern = "aaaa"
         let str = "dog cat cat dog"
         
-        let match = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern.wordPattern(pattern, str)
         
-        XCTAssertFalse(match)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
         let pattern = "abba"
         let str = "dog dog dog dog"
         
-        let match = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern.wordPattern(pattern, str)
         
-        XCTAssertFalse(match)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
         let pattern = "aaa"
         let str = "aa aa aa aa"
         
-        let match = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern.wordPattern(pattern, str)
         
-        XCTAssertFalse(match)
+        XCTAssertFalse(result)
     }
 }

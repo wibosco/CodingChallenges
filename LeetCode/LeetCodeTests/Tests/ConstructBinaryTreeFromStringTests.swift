@@ -18,9 +18,9 @@ final class ConstructBinaryTreeFromStringTests: XCTestCase {
         
         let root = ConstructBinaryTreeFromString.str2tree(s)
         
-        let array = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(array, [4, 2, 6, 3, 1, 5])
+        XCTAssertEqual(result, [4, 2, 6, 3, 1, 5])
     }
     
     func test_B() {
@@ -28,9 +28,9 @@ final class ConstructBinaryTreeFromStringTests: XCTestCase {
         
         let root = ConstructBinaryTreeFromString.str2tree(s)
         
-        let array = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(array, [4, 2, 6, 3, 1, 5, 7])
+        XCTAssertEqual(result, [4, 2, 6, 3, 1, 5, 7])
     }
     
     func test_C() {
@@ -38,8 +38,8 @@ final class ConstructBinaryTreeFromStringTests: XCTestCase {
         
         let root = ConstructBinaryTreeFromString.str2tree(s)
         
-        let array = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(array, [-4, 2, 6, 3, 1, 5, 7])
+        XCTAssertEqual(result, [-4, 2, 6, 3, 1, 5, 7])
     }
 }

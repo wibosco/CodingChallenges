@@ -24,9 +24,9 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 3
         let k = 1
         
-        let cheapestFlight = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
         
-        XCTAssertEqual(cheapestFlight, 700)
+        XCTAssertEqual(result, 700)
     }
     
     func test_B() {
@@ -38,9 +38,9 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 1
         
-        let cheapestFlight = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
         
-        XCTAssertEqual(cheapestFlight, 200)
+        XCTAssertEqual(result, 200)
     }
     
     func test_C() {
@@ -52,9 +52,9 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 0
         
-        let cheapestFlight = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
         
-        XCTAssertEqual(cheapestFlight, 500)
+        XCTAssertEqual(result, 500)
     }
     
     func test_D() {
@@ -87,9 +87,9 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 0
         let k = 7
         
-        let cheapestFlight = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
         
-        XCTAssertEqual(cheapestFlight, 14)
+        XCTAssertEqual(result, 14)
     }
     
     func test_E() {
@@ -179,9 +179,9 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 6
         
-        let cheapestFlight = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
         
-        XCTAssertEqual(cheapestFlight, 169)
+        XCTAssertEqual(result, 169)
     }
     
     func test_F() {
@@ -192,8 +192,8 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 0
         
-        let cheapestFlight = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
         
-        XCTAssertEqual(cheapestFlight, -1)
+        XCTAssertEqual(result, -1)
     }
 }

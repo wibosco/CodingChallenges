@@ -19,9 +19,9 @@ final class PartitionListTests: XCTestCase {
         
         let x = 3
         
-        let partitionedList = PartitionList.partition(list, x)
+        let result = PartitionList.partition(list, x)
         
-        let values = ListNode.serialize(partitionedList)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [1, 2, 2, 4, 3, 5])
     }
@@ -32,9 +32,9 @@ final class PartitionListTests: XCTestCase {
         
         let x = 2
         
-        let partitionedList = PartitionList.partition(list, x)
+        let result = PartitionList.partition(list, x)
         
-        let values = ListNode.serialize(partitionedList)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [1, 2])
     }

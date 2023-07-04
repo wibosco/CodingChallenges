@@ -18,9 +18,9 @@ final class SpiralMatrixTests: XCTestCase {
                       [4, 5, 6],
                       [7, 8, 9]]
         
-        let path = SpiralMatrix.spiralOrder(matrix)
+        let result = SpiralMatrix.spiralOrder(matrix)
         
-        XCTAssertEqual(path, [1, 2, 3, 6, 9, 8, 7, 4, 5])
+        XCTAssertEqual(result, [1, 2, 3, 6, 9, 8, 7, 4, 5])
     }
     
     func test_B() {
@@ -28,9 +28,9 @@ final class SpiralMatrixTests: XCTestCase {
                       [5, 6, 7, 8],
                       [9, 10, 11, 12]]
         
-        let path = SpiralMatrix.spiralOrder(matrix)
+        let result = SpiralMatrix.spiralOrder(matrix)
         
-        XCTAssertEqual(path, [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7])
+        XCTAssertEqual(result, [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7])
     }
     
     func test_C() {
@@ -39,7 +39,7 @@ final class SpiralMatrixTests: XCTestCase {
                       [9, 10, 11, 12],
                       [13, 14, 15, 16]]
         
-        let path = SpiralMatrix.spiralOrder(matrix)
-        XCTAssertEqual(path, [1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10])
+        let result = SpiralMatrix.spiralOrder(matrix)
+        XCTAssertEqual(result, [1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10])
     }
 }

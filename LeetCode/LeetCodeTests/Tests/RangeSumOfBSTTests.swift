@@ -20,9 +20,9 @@ final class RangeSumOfBSTTests: XCTestCase {
         let low = 7
         let high = 15
         
-        let sum = RangeSumOfBST.rangeSumBST(root, low, high)
+        let result = RangeSumOfBST.rangeSumBST(root, low, high)
         
-        XCTAssertEqual(sum, 32)
+        XCTAssertEqual(result, 32)
     }
     
     func test_B() {
@@ -31,9 +31,9 @@ final class RangeSumOfBSTTests: XCTestCase {
         let low = 6
         let high = 10
         
-        let sum = RangeSumOfBST.rangeSumBST(root, low, high)
+        let result = RangeSumOfBST.rangeSumBST(root, low, high)
         
-        XCTAssertEqual(sum, 23)
+        XCTAssertEqual(result, 23)
     }
 
 }

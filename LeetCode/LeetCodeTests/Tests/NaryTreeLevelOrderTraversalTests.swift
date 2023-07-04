@@ -19,9 +19,9 @@ final class NaryTreeLevelOrderTraversalTests: XCTestCase {
         
         let root = NaryTreeNode.deserialize(data)
         
-        let traversal = NaryTreeLevelOrderTraversal.levelOrder(root)
+        let result = NaryTreeLevelOrderTraversal.levelOrder(root)
         
-        XCTAssertEqual(traversal, [[1], [3, 2, 4], [5, 6]])
+        XCTAssertEqual(result, [[1], [3, 2, 4], [5, 6]])
     }
     
     func test_B() {
@@ -29,8 +29,8 @@ final class NaryTreeLevelOrderTraversalTests: XCTestCase {
         
         let root = NaryTreeNode.deserialize(data)
         
-        let traversal = NaryTreeLevelOrderTraversal.levelOrder(root)
+        let result = NaryTreeLevelOrderTraversal.levelOrder(root)
         
-        XCTAssertEqual(traversal, [[1], [2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13], [14]])
+        XCTAssertEqual(result, [[1], [2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13], [14]])
     }
 }

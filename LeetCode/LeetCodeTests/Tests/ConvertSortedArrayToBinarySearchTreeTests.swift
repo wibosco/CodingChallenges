@@ -19,9 +19,9 @@ final class ConvertSortedArrayToBinarySearchTreeTests: XCTestCase {
         
         let root = ConvertSortedArrayToBinarySearchTree.sortedArrayToBST(nums)
         
-        let values = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(values, [0, -3, 9, -10, nil, 5])
+        XCTAssertEqual(result, [0, -3, 9, -10, nil, 5])
     }
     
     func test_B() {
@@ -29,8 +29,8 @@ final class ConvertSortedArrayToBinarySearchTreeTests: XCTestCase {
         
         let root = ConvertSortedArrayToBinarySearchTree.sortedArrayToBST(nums)
         
-        let values = BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(values, [3, 1])
+        XCTAssertEqual(result, [3, 1])
     }
 }

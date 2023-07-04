@@ -17,64 +17,64 @@ final class PalindromeNumberTests: XCTestCase {
     func test_A() {
         let x = 121
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertTrue(isPalindrome)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let x = -121
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertFalse(isPalindrome)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let x = 10
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertFalse(isPalindrome)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
         let x = -101
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertFalse(isPalindrome)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
         let x = 1234
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertFalse(isPalindrome)
+        XCTAssertFalse(result)
     }
     
     func test_F() {
         let x = 0
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertTrue(isPalindrome)
+        XCTAssertTrue(result)
     }
     
     func test_G() {
         let x = 20
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertFalse(isPalindrome)
+        XCTAssertFalse(result)
     }
     
     func test_H() {
         let x = 12021
         
-        let isPalindrome = PalindromeNumber.isPalindrome(x)
+        let result = PalindromeNumber.isPalindrome(x)
         
-        XCTAssertTrue(isPalindrome)
+        XCTAssertTrue(result)
     }
 }

@@ -18,9 +18,9 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let paths = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths.binaryTreePaths(root)
         
-        XCTAssertEqual(paths, ["1->2->5", "1->3"])
+        XCTAssertEqual(result, ["1->2->5", "1->3"])
     }
     
     func test_B() {
@@ -28,9 +28,9 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let paths = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths.binaryTreePaths(root)
         
-        XCTAssertEqual(paths, ["1"])
+        XCTAssertEqual(result, ["1"])
     }
     
     func test_C() {
@@ -38,9 +38,9 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let paths = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths.binaryTreePaths(root)
         
-        XCTAssertEqual(paths, ["1->2", "1->3"])
+        XCTAssertEqual(result, ["1->2", "1->3"])
     }
     
     func test_D() {
@@ -48,8 +48,8 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let paths = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths.binaryTreePaths(root)
         
-        XCTAssertEqual(paths, ["1->2->3"])
+        XCTAssertEqual(result, ["1->2->3"])
     }
 }

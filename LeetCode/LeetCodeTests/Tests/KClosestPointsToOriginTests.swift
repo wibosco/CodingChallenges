@@ -19,9 +19,9 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-2, 2]]
         let k = 1
         
-        let closestPoints = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin.kClosest(points, k)
         
-        XCTAssertEqual(closestPoints, [[-2, 2]])
+        XCTAssertEqual(result, [[-2, 2]])
     }
     
     func test_B() {
@@ -30,9 +30,9 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-2, 4]]
         let k = 2
         
-        let closestPoints = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin.kClosest(points, k)
         
-        XCTAssertEqual(closestPoints, [[3, 3], [-2, 4]])
+        XCTAssertEqual(result, [[3, 3], [-2, 4]])
     }
     
     func test_C() {
@@ -40,9 +40,9 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [1, 0]]
         let k = 2
         
-        let closestPoints = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin.kClosest(points, k)
         
-        XCTAssertEqual(closestPoints, [[0, 1], [1, 0]])
+        XCTAssertEqual(result, [[0, 1], [1, 0]])
     }
     
     func test_D() {
@@ -52,9 +52,9 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-4, -7]]
         let k = 3
 
-        let closestPoints = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin.kClosest(points, k)
         
-        XCTAssertEqual(closestPoints, [[-4, -7], [-4, -8], [-2, 10]])
+        XCTAssertEqual(result, [[-4, -7], [-4, -8], [-2, 10]])
     }
     
     func test_E() {
@@ -70,8 +70,8 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-57, -67]]
         let k = 5
 
-        let closestPoints = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin.kClosest(points, k)
         
-        XCTAssertEqual(closestPoints, [[2, 31], [-27, -38], [-55, -39], [-57, -67], [34, -84]])
+        XCTAssertEqual(result, [[2, 31], [-27, -38], [-55, -39], [-57, -67], [34, -84]])
     }
 }

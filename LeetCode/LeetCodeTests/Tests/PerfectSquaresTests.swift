@@ -17,24 +17,24 @@ final class PerfectSquaresTests: XCTestCase {
     func test_A() {
         let n = 12
         
-        let number = PerfectSquares.numSquares(n)
+        let result = PerfectSquares.numSquares(n)
         
-        XCTAssertEqual(number, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_B() {
         let n = 13
         
-        let number = PerfectSquares.numSquares(n)
+        let result = PerfectSquares.numSquares(n)
         
-        XCTAssertEqual(number, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_C() {
         let n = 7168
         
-        let number = PerfectSquares.numSquares(n)
+        let result = PerfectSquares.numSquares(n)
         
-        XCTAssertEqual(number, 4)
+        XCTAssertEqual(result, 4)
     }
 }

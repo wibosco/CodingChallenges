@@ -17,32 +17,32 @@ final class FibonacciNumberTests: XCTestCase {
     func test_A() {
         let n = 2
         
-        let value = FibonacciNumber.fib(n)
+        let result = FibonacciNumber.fib(n)
         
-        XCTAssertEqual(value, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
         let n = 3
         
-        let value = FibonacciNumber.fib(n)
+        let result = FibonacciNumber.fib(n)
         
-        XCTAssertEqual(value, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_C() {
         let n = 4
         
-        let value = FibonacciNumber.fib(n)
+        let result = FibonacciNumber.fib(n)
         
-        XCTAssertEqual(value, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_D() {
         let n = 0
         
-        let value = FibonacciNumber.fib(n)
+        let result = FibonacciNumber.fib(n)
         
-        XCTAssertEqual(value, 0)
+        XCTAssertEqual(result, 0)
     }
 }

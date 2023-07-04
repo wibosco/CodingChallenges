@@ -17,24 +17,24 @@ final class MinimumValueToGetPositiveTests: XCTestCase {
     func test_A() {
         let nums = [-3, 2, -3, 4, 2]
         
-        let minValue = MinimumValueToGetPositive.minStartValue(nums)
+        let result = MinimumValueToGetPositive.minStartValue(nums)
         
-        XCTAssertEqual(minValue, 5)
+        XCTAssertEqual(result, 5)
     }
     
     func test_B() {
         let nums = [1, 2]
         
-        let minValue = MinimumValueToGetPositive.minStartValue(nums)
+        let result = MinimumValueToGetPositive.minStartValue(nums)
         
-        XCTAssertEqual(minValue, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let nums = [1, -2, -3]
         
-        let minValue = MinimumValueToGetPositive.minStartValue(nums)
+        let result = MinimumValueToGetPositive.minStartValue(nums)
         
-        XCTAssertEqual(minValue, 5)
+        XCTAssertEqual(result, 5)
     }
 }

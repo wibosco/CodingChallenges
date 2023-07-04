@@ -16,40 +16,40 @@ final class BasicCalculatorIITests: XCTestCase {
     func test_A() {
         let s = "3+2*2"
         
-        let value = BasicCalculatorII.calculate(s)
+        let result = BasicCalculatorII.calculate(s)
         
-        XCTAssertEqual(value, 7)
+        XCTAssertEqual(result, 7)
     }
     
     func test_B() {
         let s = " 3/2 "
         
-        let value = BasicCalculatorII.calculate(s)
+        let result = BasicCalculatorII.calculate(s)
         
-        XCTAssertEqual(value, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let s = " 3+5 / 2 "
         
-        let value = BasicCalculatorII.calculate(s)
+        let result = BasicCalculatorII.calculate(s)
         
-        XCTAssertEqual(value, 5)
+        XCTAssertEqual(result, 5)
     }
     
     func test_D() {
         let s = "1"
         
-        let value = BasicCalculatorII.calculate(s)
+        let result = BasicCalculatorII.calculate(s)
         
-        XCTAssertEqual(value, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_E() {
         let s = "0-2147483647"
         
-        let value = BasicCalculatorII.calculate(s)
+        let result = BasicCalculatorII.calculate(s)
         
-        XCTAssertEqual(value, -2147483647)
+        XCTAssertEqual(result, -2147483647)
     }
 }

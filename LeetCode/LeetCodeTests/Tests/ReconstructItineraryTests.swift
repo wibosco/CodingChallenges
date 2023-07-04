@@ -20,9 +20,9 @@ final class ReconstructItineraryTests: XCTestCase {
                        ["SFO", "SJC"],
                        ["LHR", "SFO"]]
         
-        let itinerary = ReconstructItinerary.findItinerary(tickets)
+        let result = ReconstructItinerary.findItinerary(tickets)
         
-        XCTAssertEqual(itinerary, ["JFK", "MUC", "LHR", "SFO", "SJC"])
+        XCTAssertEqual(result, ["JFK", "MUC", "LHR", "SFO", "SJC"])
     }
 
     func test_B() {
@@ -32,9 +32,9 @@ final class ReconstructItineraryTests: XCTestCase {
                        ["ATL", "JFK"],
                        ["ATL", "SFO"]]
         
-        let itinerary = ReconstructItinerary.findItinerary(tickets)
+        let result = ReconstructItinerary.findItinerary(tickets)
         
-        XCTAssertEqual(itinerary, ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"])
+        XCTAssertEqual(result, ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"])
     }
     
     func test_C() {
@@ -42,8 +42,8 @@ final class ReconstructItineraryTests: XCTestCase {
                        ["JFK", "NRT"],
                        ["NRT", "JFK"]]
         
-        let itinerary = ReconstructItinerary.findItinerary(tickets)
+        let result = ReconstructItinerary.findItinerary(tickets)
         
-        XCTAssertEqual(itinerary, ["JFK", "NRT", "JFK", "KUL"])
+        XCTAssertEqual(result, ["JFK", "NRT", "JFK", "KUL"])
     }
 }

@@ -17,24 +17,24 @@ final class ClimbingStairsTests: XCTestCase {
     func test_A() {
         let n = 2
         
-        let ways = ClimbingStairs.climbStairs(n)
+        let result = ClimbingStairs.climbStairs(n)
         
-        XCTAssertEqual(ways, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let n = 3
         
-        let ways = ClimbingStairs.climbStairs(n)
+        let result = ClimbingStairs.climbStairs(n)
         
-        XCTAssertEqual(ways, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_C() {
         let n = 35
         
-        let ways = ClimbingStairs.climbStairs(n)
+        let result = ClimbingStairs.climbStairs(n)
         
-        XCTAssertEqual(ways, 14930352)
+        XCTAssertEqual(result, 14930352)
     }
 }

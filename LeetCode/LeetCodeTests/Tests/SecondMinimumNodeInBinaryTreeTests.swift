@@ -18,17 +18,17 @@ final class SecondMinimumNodeInBinaryTreeTests: XCTestCase {
         let data = [2, 2, 5, nil, nil, 5, 7]
         let root = BinaryTreeNode.deserialize(data)
         
-        let secondMin = SecondMinimumNodeInBinaryTree.findSecondMinimumValue(root)
+        let result = SecondMinimumNodeInBinaryTree.findSecondMinimumValue(root)
         
-        XCTAssertEqual(secondMin, 5)
+        XCTAssertEqual(result, 5)
     }
     
     func test_B() {
         let data = [2, 2, 2]
         let root = BinaryTreeNode.deserialize(data)
         
-        let secondMin = SecondMinimumNodeInBinaryTree.findSecondMinimumValue(root)
+        let result = SecondMinimumNodeInBinaryTree.findSecondMinimumValue(root)
         
-        XCTAssertEqual(secondMin, -1)
+        XCTAssertEqual(result, -1)
     }
 }

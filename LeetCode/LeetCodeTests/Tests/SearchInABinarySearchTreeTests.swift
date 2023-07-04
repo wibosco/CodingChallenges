@@ -19,9 +19,9 @@ final class SearchInABinarySearchTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let val = 2
         
-        let node = SearchInABinarySearchTree.searchBST(root, val)
+        let result = SearchInABinarySearchTree.searchBST(root, val)
         
-        let values = BinaryTreeNode.serialize(node)
+        let values = BinaryTreeNode.serialize(result)
         
         XCTAssertEqual(values, [2, 1, 3])
     }
@@ -31,11 +31,10 @@ final class SearchInABinarySearchTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let val = 5
         
-        let node = SearchInABinarySearchTree.searchBST(root, val)
+        let result = SearchInABinarySearchTree.searchBST(root, val)
         
-        let values = BinaryTreeNode.serialize(node)
+        let values = BinaryTreeNode.serialize(result)
         
         XCTAssertEqual(values, [Int]())
     }
-
 }

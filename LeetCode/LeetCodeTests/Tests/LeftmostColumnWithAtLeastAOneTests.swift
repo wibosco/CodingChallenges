@@ -17,26 +17,26 @@ final class LeftmostColumnWithAtLeastAOneTests: XCTestCase {
         let mat = [[0, 0], [1, 1]]
         let binaryMatrix = BinaryMatrix(mat)
         
-        let leftMostColumn = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
+        let result = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
         
-        XCTAssertEqual(leftMostColumn, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_B() {
         let mat = [[0, 0], [0, 1]]
         let binaryMatrix = BinaryMatrix(mat)
         
-        let leftMostColumn = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
+        let result = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
         
-        XCTAssertEqual(leftMostColumn, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let mat = [[0, 0], [0, 0]]
         let binaryMatrix = BinaryMatrix(mat)
         
-        let leftMostColumn = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
+        let result = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
         
-        XCTAssertEqual(leftMostColumn, -1)
+        XCTAssertEqual(result, -1)
     }
 }

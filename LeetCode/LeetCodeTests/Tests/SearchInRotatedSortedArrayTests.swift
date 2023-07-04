@@ -18,35 +18,35 @@ final class SearchInRotatedSortedArrayTests: XCTestCase {
         let nums = [4, 5, 6, 7, 0, 1, 2]
         let target = 0
         
-        let index = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray.search(nums, target)
         
-        XCTAssertEqual(index, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_B() {
         let nums = [4, 5, 6, 7, 0, 1, 2]
         let target = 3
         
-        let index = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray.search(nums, target)
         
-        XCTAssertEqual(index, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_C() {
         let nums = [1]
         let target = 0
         
-        let index = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray.search(nums, target)
         
-        XCTAssertEqual(index, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_D() {
         let nums = [3, 1]
         let target = 3
         
-        let index = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray.search(nums, target)
         
-        XCTAssertEqual(index, 0)
+        XCTAssertEqual(result, 0)
     }
 }

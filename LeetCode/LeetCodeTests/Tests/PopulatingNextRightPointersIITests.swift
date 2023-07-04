@@ -20,9 +20,9 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = BinaryTreeNodeNext.serialize(node)
+        let result = BinaryTreeNodeNext.serialize(node)
         
-        XCTAssertEqual(values, ["1", "#", "2", "3", "#", "4", "5", "7", "#"])
+        XCTAssertEqual(result, ["1", "#", "2", "3", "#", "4", "5", "7", "#"])
     }
     
     func test_B() {
@@ -31,9 +31,9 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = BinaryTreeNodeNext.serialize(node)
+        let result = BinaryTreeNodeNext.serialize(node)
         
-        XCTAssertEqual(values, [])
+        XCTAssertEqual(result, [])
     }
     
     func test_C() {
@@ -42,9 +42,9 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = BinaryTreeNodeNext.serialize(node)
+        let result = BinaryTreeNodeNext.serialize(node)
         
-        XCTAssertEqual(values, ["1", "#", "2", "3", "#", "4", "5", "6", "#", "7", "8", "#"])
+        XCTAssertEqual(result, ["1", "#", "2", "3", "#", "4", "5", "6", "#", "7", "8", "#"])
     }
     
     func test_D() {
@@ -53,8 +53,8 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         
         let node = PopulatingNextRightPointersII.connect(root)
         
-        let values = BinaryTreeNodeNext.serialize(node)
+        let result = BinaryTreeNodeNext.serialize(node)
         
-        XCTAssertEqual(values, ["-1", "#", "-7", "9", "#", "-1", "-7", "#", "8", "-9", "#"])
+        XCTAssertEqual(result, ["-1", "#", "-7", "9", "#", "-1", "-7", "#", "8", "-9", "#"])
     }
 }

@@ -16,24 +16,24 @@ final class UniquePathsIITests: XCTestCase {
     func test_A() {
         let obstacleGrid = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
         
-        let paths = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
+        let result = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
         
-        XCTAssertEqual(paths, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let obstacleGrid = [[0, 1], [0, 0]]
         
-        let paths = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
+        let result = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
         
-        XCTAssertEqual(paths, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let obstacleGrid = [[1, 1], [0, 0]]
         
-        let paths = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
+        let result = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
         
-        XCTAssertEqual(paths, 0)
+        XCTAssertEqual(result, 0)
     }
 }

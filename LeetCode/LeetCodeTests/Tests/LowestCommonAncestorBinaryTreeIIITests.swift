@@ -21,9 +21,9 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
         
         let (p, q) = BinaryTreeNodeParent.deserialize(data, 5, 1)
         
-        let lca = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
+        let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
         
-        XCTAssertEqual(lca?.val, 3)
+        XCTAssertEqual(result?.val, 3)
     }
     
     func test_B() {
@@ -31,9 +31,9 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
         
         let (p, q) = BinaryTreeNodeParent.deserialize(data, 5, 4)
         
-        let lca = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
+        let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
         
-        XCTAssertEqual(lca?.val, 5)
+        XCTAssertEqual(result?.val, 5)
     }
     
     func test_C() {
@@ -41,8 +41,8 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
         
         let (p, q) = BinaryTreeNodeParent.deserialize(data, 1, 2)
         
-        let lca = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
+        let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
         
-        XCTAssertEqual(lca?.val, 1)
+        XCTAssertEqual(result?.val, 1)
     }
 }

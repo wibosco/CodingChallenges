@@ -19,9 +19,9 @@ final class NumberOfProvincesTests: XCTestCase {
                            [1, 1, 0],
                            [0, 0, 1]]
         
-        let provinces = NumberOfProvinces.findCircleNum(isConnected)
+        let result = NumberOfProvinces.findCircleNum(isConnected)
         
-        XCTAssertEqual(provinces, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class NumberOfProvincesTests: XCTestCase {
                            [0, 1, 0],
                            [0, 0, 1]]
         
-        let provinces = NumberOfProvinces.findCircleNum(isConnected)
+        let result = NumberOfProvinces.findCircleNum(isConnected)
         
-        XCTAssertEqual(provinces, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_C() {
@@ -54,9 +54,9 @@ final class NumberOfProvincesTests: XCTestCase {
          [0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0], //13
          [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1]] //14
         
-        let provinces = NumberOfProvinces.findCircleNum(isConnected)
+        let result = NumberOfProvinces.findCircleNum(isConnected)
         
-        XCTAssertEqual(provinces, 3)
+        XCTAssertEqual(result, 3)
     }
     
 }

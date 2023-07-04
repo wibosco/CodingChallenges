@@ -19,9 +19,9 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let maxDepth = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree.maxDepth(root)
         
-        XCTAssertEqual(maxDepth, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_B() {
@@ -29,9 +29,9 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let maxDepth = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree.maxDepth(root)
         
-        XCTAssertEqual(maxDepth, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_C() {
@@ -39,9 +39,9 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let maxDepth = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree.maxDepth(root)
         
-        XCTAssertEqual(maxDepth, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
@@ -49,9 +49,8 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = BinaryTreeNode.deserialize(data)
         
-        let maxDepth = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree.maxDepth(root)
         
-        XCTAssertEqual(maxDepth, 1)
+        XCTAssertEqual(result, 1)
     }
-    
 }

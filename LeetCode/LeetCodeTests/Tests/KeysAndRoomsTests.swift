@@ -17,24 +17,24 @@ final class KeysAndRoomsTests: XCTestCase {
     func test_A() {
         let rooms = [[1], [2], [3], []]
         
-        let canVisitAll = KeysAndRooms.canVisitAllRooms(rooms)
+        let result = KeysAndRooms.canVisitAllRooms(rooms)
         
-        XCTAssertTrue(canVisitAll)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let rooms = [[1, 3], [3, 0, 1], [2], [0]]
         
-        let canVisitAll = KeysAndRooms.canVisitAllRooms(rooms)
+        let result = KeysAndRooms.canVisitAllRooms(rooms)
         
-        XCTAssertFalse(canVisitAll)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let rooms = [[1], [], [0, 3], [1]]
         
-        let canVisitAll = KeysAndRooms.canVisitAllRooms(rooms)
+        let result = KeysAndRooms.canVisitAllRooms(rooms)
         
-        XCTAssertFalse(canVisitAll)
+        XCTAssertFalse(result)
     }
 }

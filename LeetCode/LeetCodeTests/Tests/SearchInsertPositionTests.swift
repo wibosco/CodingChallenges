@@ -18,35 +18,35 @@ final class SearchInsertPositionTests: XCTestCase {
         let nums = [1, 3, 5, 6]
         let target = 5
         
-        let index = SearchInsertPosition.searchInsert(nums, target)
+        let result = SearchInsertPosition.searchInsert(nums, target)
         
-        XCTAssertEqual(index, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let nums = [1, 3, 5, 6]
         let target = 2
         
-        let index = SearchInsertPosition.searchInsert(nums, target)
+        let result = SearchInsertPosition.searchInsert(nums, target)
         
-        XCTAssertEqual(index, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let nums = [1, 3, 5, 6]
         let target = 7
         
-        let index = SearchInsertPosition.searchInsert(nums, target)
+        let result = SearchInsertPosition.searchInsert(nums, target)
         
-        XCTAssertEqual(index, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_D() {
         let nums = [1]
         let target = 1
         
-        let index = SearchInsertPosition.searchInsert(nums, target)
+        let result = SearchInsertPosition.searchInsert(nums, target)
         
-        XCTAssertEqual(index, 0)
+        XCTAssertEqual(result, 0)
     }
 }

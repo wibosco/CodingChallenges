@@ -18,26 +18,26 @@ final class BinaryTreeLevelOrderTraversalIITests: XCTestCase {
         let data = [3, 9, 20, nil, nil, 15, 7]
         let root = BinaryTreeNode.deserialize(data)
         
-        let order = BinaryTreeLevelOrderTraversalII.levelOrderBottom(root)
+        let result = BinaryTreeLevelOrderTraversalII.levelOrderBottom(root)
         
-        XCTAssertEqual(order, [[15, 7], [9, 20], [3]])
+        XCTAssertEqual(result, [[15, 7], [9, 20], [3]])
     }
     
     func test_B() {
         let data = [1]
         let root = BinaryTreeNode.deserialize(data)
         
-        let order = BinaryTreeLevelOrderTraversalII.levelOrderBottom(root)
+        let result = BinaryTreeLevelOrderTraversalII.levelOrderBottom(root)
         
-        XCTAssertEqual(order, [[1]])
+        XCTAssertEqual(result, [[1]])
     }
     
     func test_C() {
         let data = [Int]()
         let root = BinaryTreeNode.deserialize(data)
         
-        let order = BinaryTreeLevelOrderTraversalII.levelOrderBottom(root)
+        let result = BinaryTreeLevelOrderTraversalII.levelOrderBottom(root)
         
-        XCTAssertEqual(order, [[Int]]())
+        XCTAssertEqual(result, [[Int]]())
     }
 }

@@ -17,40 +17,40 @@ final class PeakIndexMountainArrayTests: XCTestCase {
     func test_A() {
         let arr = [0, 1, 0]
         
-        let peak = PeakIndexMountainArray.peakIndexInMountainArray(arr)
+        let result = PeakIndexMountainArray.peakIndexInMountainArray(arr)
         
-        XCTAssertEqual(peak, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
         let arr = [0, 2, 1, 0]
         
-        let peak = PeakIndexMountainArray.peakIndexInMountainArray(arr)
+        let result = PeakIndexMountainArray.peakIndexInMountainArray(arr)
         
-        XCTAssertEqual(peak, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let arr = [0, 10, 5, 2]
         
-        let peak = PeakIndexMountainArray.peakIndexInMountainArray(arr)
+        let result = PeakIndexMountainArray.peakIndexInMountainArray(arr)
         
-        XCTAssertEqual(peak, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_D() {
         let arr = [3, 4, 5, 1]
         
-        let peak = PeakIndexMountainArray.peakIndexInMountainArray(arr)
+        let result = PeakIndexMountainArray.peakIndexInMountainArray(arr)
         
-        XCTAssertEqual(peak, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_E() {
         let arr = [24, 69, 100, 99, 79, 78, 67, 36, 26, 19]
         
-        let peak = PeakIndexMountainArray.peakIndexInMountainArray(arr)
+        let result = PeakIndexMountainArray.peakIndexInMountainArray(arr)
         
-        XCTAssertEqual(peak, 2)
+        XCTAssertEqual(result, 2)
     }
 }

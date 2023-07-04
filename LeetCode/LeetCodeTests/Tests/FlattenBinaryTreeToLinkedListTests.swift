@@ -21,9 +21,9 @@ final class FlattenBinaryTreeToLinkedListTests: XCTestCase {
         
         FlattenBinaryTreeToLinkedList.flatten(root)
         
-        let values =  BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(values, [1, nil, 2, nil, 3, nil, 4, nil, 5, nil, 6])
+        XCTAssertEqual(result, [1, nil, 2, nil, 3, nil, 4, nil, 5, nil, 6])
     }
     
     func test_B() {
@@ -33,9 +33,9 @@ final class FlattenBinaryTreeToLinkedListTests: XCTestCase {
         
         FlattenBinaryTreeToLinkedList.flatten(root)
         
-        let values =  BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(values, [])
+        XCTAssertEqual(result, [])
     }
     
     func test_C() {
@@ -45,8 +45,8 @@ final class FlattenBinaryTreeToLinkedListTests: XCTestCase {
         
         FlattenBinaryTreeToLinkedList.flatten(root)
         
-        let values =  BinaryTreeNode.serialize(root)
+        let result = BinaryTreeNode.serialize(root)
         
-        XCTAssertEqual(values, [0])
+        XCTAssertEqual(result, [0])
     }
 }

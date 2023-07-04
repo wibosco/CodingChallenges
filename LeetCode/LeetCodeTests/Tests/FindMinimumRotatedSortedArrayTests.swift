@@ -17,24 +17,24 @@ final class FindMinimumRotatedSortedArrayTests: XCTestCase {
     func test_A() {
         let nums = [3, 4, 5, 1, 2]
         
-        let min = FindMinimumRotatedSortedArray.findMin(nums)
+        let result = FindMinimumRotatedSortedArray.findMin(nums)
         
-        XCTAssertEqual(min, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
         let nums = [4, 5, 6, 7, 0, 1, 2]
         
-        let min = FindMinimumRotatedSortedArray.findMin(nums)
+        let result = FindMinimumRotatedSortedArray.findMin(nums)
         
-        XCTAssertEqual(min, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_C() {
         let nums = [11, 13, 15, 17]
         
-        let min = FindMinimumRotatedSortedArray.findMin(nums)
+        let result = FindMinimumRotatedSortedArray.findMin(nums)
         
-        XCTAssertEqual(min, 11)
+        XCTAssertEqual(result, 11)
     }
 }

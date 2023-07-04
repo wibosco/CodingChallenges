@@ -18,9 +18,9 @@ final class SortListTests: XCTestCase {
         let data = [4, 2, 1, 3]
         let head = ListNode.deserialize(data)
         
-        let sorted = SortList.sortList(head)
+        let result = SortList.sortList(head)
         
-        let values = ListNode.serialize(sorted)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [1, 2, 3, 4])
     }
@@ -29,9 +29,9 @@ final class SortListTests: XCTestCase {
         let data = [-1, 5, 3, 4, 0]
         let head = ListNode.deserialize(data)
         
-        let sorted = SortList.sortList(head)
+        let result = SortList.sortList(head)
         
-        let values = ListNode.serialize(sorted)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [-1, 0, 3, 4, 5])
     }
@@ -40,9 +40,9 @@ final class SortListTests: XCTestCase {
         let data = [Int]()
         let head = ListNode.deserialize(data)
         
-        let sorted = SortList.sortList(head)
+        let result = SortList.sortList(head)
         
-        let values = ListNode.serialize(sorted)
+        let values = ListNode.serialize(result)
         
         XCTAssertEqual(values, [Int]())
     }

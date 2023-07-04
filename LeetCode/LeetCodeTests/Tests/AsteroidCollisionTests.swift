@@ -17,24 +17,24 @@ final class AsteroidCollisionTests: XCTestCase {
     func test_A() {
         let asteroids = [5, 10, -5]
         
-        let outcome = AsteroidCollision.asteroidCollision(asteroids)
+        let result = AsteroidCollision.asteroidCollision(asteroids)
         
-        XCTAssertEqual(outcome, [5, 10])
+        XCTAssertEqual(result, [5, 10])
     }
     
     func test_B() {
         let asteroids = [8, -8]
         
-        let outcome = AsteroidCollision.asteroidCollision(asteroids)
+        let result = AsteroidCollision.asteroidCollision(asteroids)
         
-        XCTAssertEqual(outcome, [])
+        XCTAssertEqual(result, [])
     }
     
     func test_C() {
         let asteroids = [10, 2, -5]
         
-        let outcome = AsteroidCollision.asteroidCollision(asteroids)
+        let result = AsteroidCollision.asteroidCollision(asteroids)
         
-        XCTAssertEqual(outcome, [10])
+        XCTAssertEqual(result, [10])
     }
 }

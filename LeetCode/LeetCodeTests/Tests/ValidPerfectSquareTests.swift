@@ -17,32 +17,32 @@ final class ValidPerfectSquareTests: XCTestCase {
     func test_A() {
         let num = 16
         
-        let perfectSquare = ValidPerfectSquare.isPerfectSquare(num)
+        let result = ValidPerfectSquare.isPerfectSquare(num)
         
-        XCTAssertTrue(perfectSquare)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let num = 14
         
-        let perfectSquare = ValidPerfectSquare.isPerfectSquare(num)
+        let result = ValidPerfectSquare.isPerfectSquare(num)
         
-        XCTAssertFalse(perfectSquare)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let num = 4
         
-        let perfectSquare = ValidPerfectSquare.isPerfectSquare(num)
+        let result = ValidPerfectSquare.isPerfectSquare(num)
         
-        XCTAssertTrue(perfectSquare)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
         let num = 1
         
-        let perfectSquare = ValidPerfectSquare.isPerfectSquare(num)
+        let result = ValidPerfectSquare.isPerfectSquare(num)
         
-        XCTAssertTrue(perfectSquare)
+        XCTAssertTrue(result)
     }
 }

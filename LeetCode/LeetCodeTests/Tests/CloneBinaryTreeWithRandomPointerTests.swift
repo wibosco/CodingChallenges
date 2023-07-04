@@ -21,9 +21,9 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
         
-        let values = BinaryTreeNodeRandom.serialize(clone)
+        let result = BinaryTreeNodeRandom.serialize(clone)
         
-        XCTAssertEqual(values, data)
+        XCTAssertEqual(result, data)
     }
     
     func test_B() {
@@ -33,9 +33,9 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
         
-        let values = BinaryTreeNodeRandom.serialize(clone)
+        let result = BinaryTreeNodeRandom.serialize(clone)
         
-        XCTAssertEqual(values, data)
+        XCTAssertEqual(result, data)
     }
     
     func test_C() {
@@ -45,9 +45,9 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
         
-        let values = BinaryTreeNodeRandom.serialize(clone)
+        let result = BinaryTreeNodeRandom.serialize(clone)
         
-        XCTAssertEqual(values, data)
+        XCTAssertEqual(result, data)
     }
     
     func test_D() {
@@ -57,9 +57,9 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
         
-        let values = BinaryTreeNodeRandom.serialize(clone)
+        let result = BinaryTreeNodeRandom.serialize(clone)
         
-        XCTAssertEqual(values, data)
+        XCTAssertEqual(result, data)
     }
     
     func test_E() {
@@ -69,8 +69,8 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
         
-        let values = BinaryTreeNodeRandom.serialize(clone)
+        let result = BinaryTreeNodeRandom.serialize(clone)
         
-        XCTAssertEqual(values, data)
+        XCTAssertEqual(result, data)
     }
 }

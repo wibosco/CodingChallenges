@@ -15,6 +15,7 @@ final class RandomizedSetTests: XCTestCase {
     
     func test_A() {
         let set = RandomizedSet()
+        
         XCTAssertTrue(set.insert(0))
         XCTAssertTrue(set.insert(1))
         XCTAssertTrue(set.remove(0))

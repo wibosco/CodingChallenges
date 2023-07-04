@@ -20,9 +20,9 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [1, 2],
                      [3, 4]]
         
-        let count = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
+        let result = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
         
-        XCTAssertEqual(count, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
@@ -32,9 +32,9 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [2, 3],
                      [3, 4]]
         
-        let count = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
+        let result = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
         
-        XCTAssertEqual(count, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
@@ -43,9 +43,9 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [1, 2],
                      [1, 3]]
         
-        let count = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
+        let result = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
         
-        XCTAssertEqual(count, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_D() {
@@ -751,8 +751,8 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [161, 440],
                      [351, 100]]
         
-        let count = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
+        let result = NumberConnectedComponentsUndirectedGraph.countComponents(n, edges)
         
-        XCTAssertEqual(count, 35)
+        XCTAssertEqual(result, 35)
     }
 }

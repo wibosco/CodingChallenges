@@ -16,24 +16,24 @@ final class ExcelSheetColumnNumberTests: XCTestCase {
     func test_A() {
         let columnTitle = "A"
         
-        let num = ExcelSheetColumnNumber.titleToNumber(columnTitle)
+        let result = ExcelSheetColumnNumber.titleToNumber(columnTitle)
         
-        XCTAssertEqual(num, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
         let columnTitle = "AB"
         
-        let num = ExcelSheetColumnNumber.titleToNumber(columnTitle)
+        let result = ExcelSheetColumnNumber.titleToNumber(columnTitle)
         
-        XCTAssertEqual(num, 28)
+        XCTAssertEqual(result, 28)
     }
     
     func test_C() {
         let columnTitle = "ZY"
         
-        let num = ExcelSheetColumnNumber.titleToNumber(columnTitle)
+        let result = ExcelSheetColumnNumber.titleToNumber(columnTitle)
         
-        XCTAssertEqual(num, 701)
+        XCTAssertEqual(result, 701)
     }
 }

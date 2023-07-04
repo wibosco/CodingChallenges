@@ -18,26 +18,26 @@ final class ClosestBinarySearchTreeValueTests: XCTestCase {
         let target = 3.714286
         let root = BinaryTreeNode.deserialize([4, 2, 5, 1, 3])
         
-        let closet = ClosestBinarySearchTreeValue.closestValue(root, target)
+        let result = ClosestBinarySearchTreeValue.closestValue(root, target)
         
-        XCTAssertEqual(closet, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_B() {
         let target = 4.428571
         let root = BinaryTreeNode.deserialize([1])
         
-        let closet = ClosestBinarySearchTreeValue.closestValue(root, target)
+        let result = ClosestBinarySearchTreeValue.closestValue(root, target)
         
-        XCTAssertEqual(closet, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_C() {
         let target = 3.428571
         let root = BinaryTreeNode.deserialize([1, nil, 3])
         
-        let closet = ClosestBinarySearchTreeValue.closestValue(root, target)
+        let result = ClosestBinarySearchTreeValue.closestValue(root, target)
         
-        XCTAssertEqual(closet, 3)
+        XCTAssertEqual(result, 3)
     }
 }

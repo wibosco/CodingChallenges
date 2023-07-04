@@ -19,9 +19,9 @@ final class KthSmallestElementInBinarySearchTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let k = 1
         
-        let kthSmallest = KthSmallestElementInBinarySearchTree.kthSmallest(root, k)
+        let result = KthSmallestElementInBinarySearchTree.kthSmallest(root, k)
         
-        XCTAssertEqual(kthSmallest, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_B() {
@@ -29,8 +29,8 @@ final class KthSmallestElementInBinarySearchTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let k = 3
         
-        let kthSmallest = KthSmallestElementInBinarySearchTree.kthSmallest(root, k)
+        let result = KthSmallestElementInBinarySearchTree.kthSmallest(root, k)
         
-        XCTAssertEqual(kthSmallest, 3)
+        XCTAssertEqual(result, 3)
     }
 }

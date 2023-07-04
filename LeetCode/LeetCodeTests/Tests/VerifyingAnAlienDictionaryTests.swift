@@ -19,9 +19,9 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "leetcode"]
         let order = "hlabcdefgijkmnopqrstuvwxyz"
         
-        let isSorted = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
         
-        XCTAssertTrue(isSorted)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -30,9 +30,9 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "row"]
         let order = "worldabcefghijkmnpqstuvxyz"
         
-        let isSorted = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
         
-        XCTAssertFalse(isSorted)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -40,9 +40,9 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "app"]
         let order = "abcdefghijklmnopqrstuvwxyz"
         
-        let isSorted = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
         
-        XCTAssertFalse(isSorted)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
@@ -50,8 +50,8 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "q"]
         let order = "ngxlkthsjuoqcpavbfdermiywz"
         
-        let isSorted = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
         
-        XCTAssertTrue(isSorted)
+        XCTAssertTrue(result)
     }
 }

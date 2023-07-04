@@ -16,16 +16,16 @@ final class ProductOfArrayExceptSelfTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3, 4]
         
-        let product = ProductOfArrayExceptSelf.productExceptSelf(nums)
+        let result = ProductOfArrayExceptSelf.productExceptSelf(nums)
         
-        XCTAssertEqual(product, [24, 12, 8, 6])
+        XCTAssertEqual(result, [24, 12, 8, 6])
     }
     
     func test_B() {
         let nums = [-1, 1, 0, -3, 3]
         
-        let product = ProductOfArrayExceptSelf.productExceptSelf(nums)
+        let result = ProductOfArrayExceptSelf.productExceptSelf(nums)
         
-        XCTAssertEqual(product, [0, 0, 9, 0, 0])
+        XCTAssertEqual(result, [0, 0, 9, 0, 0])
     }
 }

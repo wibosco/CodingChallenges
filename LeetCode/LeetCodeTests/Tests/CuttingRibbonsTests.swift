@@ -18,27 +18,27 @@ final class CuttingRibbonsTests: XCTestCase {
         let ribbons = [9, 7, 5]
         let k = 3
         
-        let length = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons.maxLength(ribbons, k)
         
-        XCTAssertEqual(length, 5)
+        XCTAssertEqual(result, 5)
     }
     
     func test_B() {
         let ribbons = [7, 5, 9]
         let k = 4
         
-        let length = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons.maxLength(ribbons, k)
         
-        XCTAssertEqual(length, 4)
+        XCTAssertEqual(result, 4)
     }
     
     func test_C() {
         let ribbons = [5, 7, 9]
         let k = 22
         
-        let length = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons.maxLength(ribbons, k)
         
-        XCTAssertEqual(length, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
@@ -94,8 +94,8 @@ final class CuttingRibbonsTests: XCTestCase {
                        100000]
         let k = 49
         
-        let length = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons.maxLength(ribbons, k)
         
-        XCTAssertEqual(length, 100000)
+        XCTAssertEqual(result, 100000)
     }
 }

@@ -21,9 +21,9 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let subRoot = BinaryTreeNode.deserialize(subData)
         
-        let isSubtree = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
-        XCTAssertTrue(isSubtree)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -33,9 +33,9 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let subRoot = BinaryTreeNode.deserialize(subData)
         
-        let isSubtree = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
-        XCTAssertFalse(isSubtree)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -45,9 +45,9 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let subRoot = BinaryTreeNode.deserialize(subData)
         
-        let isSubtree = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
-        XCTAssertTrue(isSubtree)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
@@ -57,9 +57,9 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let subRoot = BinaryTreeNode.deserialize(subData)
         
-        let isSubtree = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
-        XCTAssertFalse(isSubtree)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
@@ -69,8 +69,8 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         let subRoot = BinaryTreeNode.deserialize(subData)
         
-        let isSubtree = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
-        XCTAssertFalse(isSubtree)
+        XCTAssertFalse(result)
     }
 }

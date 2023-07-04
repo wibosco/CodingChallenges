@@ -16,24 +16,24 @@ final class RunningSumOf1DArrayTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3, 4]
         
-        let array = RunningSumOf1DArray.runningSum(nums)
+        let result = RunningSumOf1DArray.runningSum(nums)
         
-        XCTAssertEqual(array, [1, 3, 6, 10])
+        XCTAssertEqual(result, [1, 3, 6, 10])
     }
     
     func test_B() {
         let nums = [1, 1, 1, 1, 1]
         
-        let array = RunningSumOf1DArray.runningSum(nums)
+        let result = RunningSumOf1DArray.runningSum(nums)
         
-        XCTAssertEqual(array, [1, 2, 3, 4, 5])
+        XCTAssertEqual(result, [1, 2, 3, 4, 5])
     }
     
     func test_C() {
         let nums = [3, 1, 2, 10, 1]
         
-        let array = RunningSumOf1DArray.runningSum(nums)
+        let result = RunningSumOf1DArray.runningSum(nums)
         
-        XCTAssertEqual(array, [3, 4, 6, 16, 17])
+        XCTAssertEqual(result, [3, 4, 6, 16, 17])
     }
 }

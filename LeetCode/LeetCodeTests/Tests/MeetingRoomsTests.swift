@@ -16,32 +16,32 @@ final class MeetingRoomsTests: XCTestCase {
     func test_A() {
         let intervals = [[0, 30], [5, 10], [15, 20]]
         
-        let attendAll = MeetingRooms.canAttendMeetings(intervals)
+        let result = MeetingRooms.canAttendMeetings(intervals)
         
-        XCTAssertFalse(attendAll)
+        XCTAssertFalse(result)
     }
     
     func test_B() {
         let intervals = [[7, 10], [2, 4]]
         
-        let attendAll = MeetingRooms.canAttendMeetings(intervals)
+        let result = MeetingRooms.canAttendMeetings(intervals)
         
-        XCTAssertTrue(attendAll)
+        XCTAssertTrue(result)
     }
     
     func test_C() {
         let intervals = [[Int]]()
         
-        let attendAll = MeetingRooms.canAttendMeetings(intervals)
+        let result = MeetingRooms.canAttendMeetings(intervals)
         
-        XCTAssertTrue(attendAll)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
         let intervals = [[7, 10]]
         
-        let attendAll = MeetingRooms.canAttendMeetings(intervals)
+        let result = MeetingRooms.canAttendMeetings(intervals)
         
-        XCTAssertTrue(attendAll)
+        XCTAssertTrue(result)
     }
 }

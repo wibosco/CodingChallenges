@@ -17,32 +17,32 @@ final class FindDuplicateNumberTests: XCTestCase {
     func test_A() {
         let nums = [1, 3, 4, 2, 2]
         
-        let dup = FindDuplicateNumber.findDuplicate(nums)
+        let result = FindDuplicateNumber.findDuplicate(nums)
         
-        XCTAssertEqual(dup, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let nums = [3, 1, 3, 4, 2]
         
-        let dup = FindDuplicateNumber.findDuplicate(nums)
+        let result = FindDuplicateNumber.findDuplicate(nums)
         
-        XCTAssertEqual(dup, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_C() {
         let nums = [1, 1]
         
-        let dup = FindDuplicateNumber.findDuplicate(nums)
+        let result = FindDuplicateNumber.findDuplicate(nums)
         
-        XCTAssertEqual(dup, 1)
+        XCTAssertEqual(result, 1)
     }
     
     func test_D() {
         let nums = [1, 1, 2]
         
-        let dup = FindDuplicateNumber.findDuplicate(nums)
+        let result = FindDuplicateNumber.findDuplicate(nums)
         
-        XCTAssertEqual(dup, 1)
+        XCTAssertEqual(result, 1)
     }
 }

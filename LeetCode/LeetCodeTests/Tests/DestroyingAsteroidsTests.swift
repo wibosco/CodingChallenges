@@ -18,26 +18,26 @@ final class DestroyingAsteroidsTests: XCTestCase {
         let mass = 10
         let asteroids = [3, 9, 19, 5, 21]
         
-        let destroyed = DestroyingAsteroids.asteroidsDestroyed(mass, asteroids)
+        let result = DestroyingAsteroids.asteroidsDestroyed(mass, asteroids)
         
-        XCTAssertTrue(destroyed)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let mass = 5
         let asteroids = [4, 9, 23, 4]
         
-        let destroyed = DestroyingAsteroids.asteroidsDestroyed(mass, asteroids)
+        let result = DestroyingAsteroids.asteroidsDestroyed(mass, asteroids)
         
-        XCTAssertFalse(destroyed)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let mass = 1
         let asteroids = [1]
         
-        let destroyed = DestroyingAsteroids.asteroidsDestroyed(mass, asteroids)
+        let result = DestroyingAsteroids.asteroidsDestroyed(mass, asteroids)
         
-        XCTAssertTrue(destroyed)
+        XCTAssertTrue(result)
     }
 }

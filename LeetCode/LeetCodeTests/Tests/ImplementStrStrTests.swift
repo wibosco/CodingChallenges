@@ -18,71 +18,71 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "hello"
         let needle = "ll"
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_B() {
         let haystack = "aaaaa"
         let needle = "bba"
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_C() {
         let haystack = ""
         let needle = ""
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_D() {
         let haystack = "plllol"
         let needle = "llol"
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_E() {
         let haystack = ""
         let needle = "a"
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_F() {
         let haystack = "a"
         let needle = ""
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_G() {
         let haystack = "aaa"
         let needle = "aaaa"
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_H() {
         let haystack = "mississippi"
         let needle = "issipi"
         
-        let pos = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr.strStr(haystack, needle)
         
-        XCTAssertEqual(pos, -1)
+        XCTAssertEqual(result, -1)
     }
 }

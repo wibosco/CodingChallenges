@@ -17,32 +17,32 @@ final class SimplifyPathTests: XCTestCase {
     func test_A() {
         let path = "/home/"
         
-        let simplifiedPath = SimplifyPath.simplifyPath(path)
+        let result = SimplifyPath.simplifyPath(path)
         
-        XCTAssertEqual(simplifiedPath, "/home")
+        XCTAssertEqual(result, "/home")
     }
     
     func test_B() {
         let path = "/../"
         
-        let simplifiedPath = SimplifyPath.simplifyPath(path)
+        let result = SimplifyPath.simplifyPath(path)
         
-        XCTAssertEqual(simplifiedPath, "/")
+        XCTAssertEqual(result, "/")
     }
     
     func test_C() {
         let path = "/home//foo/"
         
-        let simplifiedPath = SimplifyPath.simplifyPath(path)
+        let result = SimplifyPath.simplifyPath(path)
         
-        XCTAssertEqual(simplifiedPath, "/home/foo")
+        XCTAssertEqual(result, "/home/foo")
     }
     
     func test_D() {
         let path = "/a/./b/../../c/"
         
-        let simplifiedPath = SimplifyPath.simplifyPath(path)
+        let result = SimplifyPath.simplifyPath(path)
         
-        XCTAssertEqual(simplifiedPath, "/c")
+        XCTAssertEqual(result, "/c")
     }
 }

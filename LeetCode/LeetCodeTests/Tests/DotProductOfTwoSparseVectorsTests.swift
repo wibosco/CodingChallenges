@@ -20,9 +20,9 @@ final class DotProductOfTwoSparseVectorsTests: XCTestCase {
         let vector1 = SparseVector(nums1)
         let vector2 = SparseVector(nums2)
         
-        let product = vector1.dotProduct(vector2)
+        let result = vector1.dotProduct(vector2)
 
-        XCTAssertEqual(product, 8)
+        XCTAssertEqual(result, 8)
     }
     
     func test_B() {
@@ -32,9 +32,9 @@ final class DotProductOfTwoSparseVectorsTests: XCTestCase {
         let vector1 = SparseVector(nums1)
         let vector2 = SparseVector(nums2)
         
-        let product = vector1.dotProduct(vector2)
+        let result = vector1.dotProduct(vector2)
 
-        XCTAssertEqual(product, 0)
+        XCTAssertEqual(result, 0)
     }
     
     func test_C() {
@@ -44,8 +44,8 @@ final class DotProductOfTwoSparseVectorsTests: XCTestCase {
         let vector1 = SparseVector(nums1)
         let vector2 = SparseVector(nums2)
         
-        let product = vector1.dotProduct(vector2)
+        let result = vector1.dotProduct(vector2)
 
-        XCTAssertEqual(product, 6)
+        XCTAssertEqual(result, 6)
     }
 }

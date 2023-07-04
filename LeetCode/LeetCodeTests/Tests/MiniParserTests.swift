@@ -19,9 +19,9 @@ final class MiniParserTests: XCTestCase {
         
         let ni = MiniParser.deserialize(s)
         
-        let value = NestedInteger.serialize(ni)
+        let result = NestedInteger.serialize(ni)
         
-        XCTAssertEqual(value, s)
+        XCTAssertEqual(result, s)
     }
     
     func test_B() {
@@ -29,8 +29,8 @@ final class MiniParserTests: XCTestCase {
         
         let ni = MiniParser.deserialize(s)
         
-        let value = NestedInteger.serialize(ni)
+        let result = NestedInteger.serialize(ni)
         
-        XCTAssertEqual(value, s)
+        XCTAssertEqual(result, s)
     }
 }

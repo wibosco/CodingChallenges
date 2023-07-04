@@ -17,26 +17,26 @@ final class MinimumHeightTreesTests: XCTestCase {
         let n = 4
         let edges = [[1, 0], [1, 2], [1, 3]]
         
-        let trees = MinimumHeightTrees.findMinHeightTrees(n, edges)
+        let result = MinimumHeightTrees.findMinHeightTrees(n, edges)
         
-        XCTAssertEqual(trees, [1])
+        XCTAssertEqual(result, [1])
     }
     
     func test_B() {
         let n = 6
         let edges = [[3, 0], [3, 1], [3, 2], [3, 4], [5, 4]]
         
-        let trees = MinimumHeightTrees.findMinHeightTrees(n, edges)
+        let result = MinimumHeightTrees.findMinHeightTrees(n, edges)
         
-        XCTAssertEqual(trees, [3, 4])
+        XCTAssertEqual(result, [3, 4])
     }
     
     func test_C() {
         let n = 1
         let edges = [[Int]]()
         
-        let trees = MinimumHeightTrees.findMinHeightTrees(n, edges)
+        let result = MinimumHeightTrees.findMinHeightTrees(n, edges)
         
-        XCTAssertEqual(trees, [0])
+        XCTAssertEqual(result, [0])
     }
 }

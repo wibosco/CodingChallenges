@@ -18,44 +18,44 @@ final class SearchInRotatedSortedArrayIITests: XCTestCase {
         let nums = [2, 5, 6, 0, 1, 2]
         let target = 0
         
-        let exists = SearchInRotatedSortedArrayII.search(nums, target)
+        let result = SearchInRotatedSortedArrayII.search(nums, target)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let nums = [2, 5, 6, 0, 0, 1, 2]
         let target = 3
         
-        let exists = SearchInRotatedSortedArrayII.search(nums, target)
+        let result = SearchInRotatedSortedArrayII.search(nums, target)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let nums = [1, 0, 1, 1, 1]
         let target = 3
         
-        let exists = SearchInRotatedSortedArrayII.search(nums, target)
+        let result = SearchInRotatedSortedArrayII.search(nums, target)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
         let nums = [1, 0, 1, 1, 1]
         let target = 0
         
-        let exists = SearchInRotatedSortedArrayII.search(nums, target)
+        let result = SearchInRotatedSortedArrayII.search(nums, target)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
     
     func test_E() {
         let nums = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1]
         let target = 2
         
-        let exists = SearchInRotatedSortedArrayII.search(nums, target)
+        let result = SearchInRotatedSortedArrayII.search(nums, target)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
 }

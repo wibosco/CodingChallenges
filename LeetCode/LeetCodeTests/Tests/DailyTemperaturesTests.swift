@@ -17,24 +17,24 @@ final class DailyTemperaturesTests: XCTestCase {
     func test_A() {
         let temperatures = [73, 74, 75, 71, 69, 72, 76, 73]
         
-        let wait = DailyTemperatures.dailyTemperatures(temperatures)
+        let result = DailyTemperatures.dailyTemperatures(temperatures)
         
-        XCTAssertEqual(wait, [1, 1, 4, 2, 1, 1, 0, 0])
+        XCTAssertEqual(result, [1, 1, 4, 2, 1, 1, 0, 0])
     }
     
     func test_B() {
         let temperatures = [30, 40, 50, 60]
         
-        let wait = DailyTemperatures.dailyTemperatures(temperatures)
+        let result = DailyTemperatures.dailyTemperatures(temperatures)
         
-        XCTAssertEqual(wait, [1, 1, 1, 0])
+        XCTAssertEqual(result, [1, 1, 1, 0])
     }
     
     func test_C() {
         let temperatures = [30, 60, 90]
         
-        let wait = DailyTemperatures.dailyTemperatures(temperatures)
+        let result = DailyTemperatures.dailyTemperatures(temperatures)
         
-        XCTAssertEqual(wait, [1, 1, 0])
+        XCTAssertEqual(result, [1, 1, 0])
     }
 }

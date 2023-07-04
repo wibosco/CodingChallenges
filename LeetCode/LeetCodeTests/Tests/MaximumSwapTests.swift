@@ -17,24 +17,24 @@ final class MaximumSwapTests: XCTestCase {
     func test_A() {
         let num = 2736
         
-        let max = MaximumSwap.maximumSwap(num)
+        let result = MaximumSwap.maximumSwap(num)
         
-        XCTAssertEqual(max, 7236)
+        XCTAssertEqual(result, 7236)
     }
     
     func test_B() {
         let num = 9973
         
-        let max = MaximumSwap.maximumSwap(num)
+        let result = MaximumSwap.maximumSwap(num)
         
-        XCTAssertEqual(max, 9973)
+        XCTAssertEqual(result, 9973)
     }
     
     func test_C() {
         let num = 98368
 
-        let max = MaximumSwap.maximumSwap(num)
+        let result = MaximumSwap.maximumSwap(num)
         
-        XCTAssertEqual(max, 98863)
+        XCTAssertEqual(result, 98863)
     }
 }

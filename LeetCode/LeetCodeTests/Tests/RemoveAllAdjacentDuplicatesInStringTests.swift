@@ -17,33 +17,32 @@ final class RemoveAllAdjacentDuplicatesInStringTests: XCTestCase {
     func test_A() {
         let s = "abbaca"
         
-        let removed = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
+        let result = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
         
-        XCTAssertEqual(removed, "ca")
+        XCTAssertEqual(result, "ca")
     }
     
     func test_B() {
         let s = "azxxzy"
         
-        let removed = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
+        let result = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
         
-        XCTAssertEqual(removed, "ay")
+        XCTAssertEqual(result, "ay")
     }
     
     func test_C() {
         let s = "aabc"
         
-        let removed = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
+        let result = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
         
-        XCTAssertEqual(removed, "bc")
+        XCTAssertEqual(result, "bc")
     }
     
     func test_D() {
         let s = "bcaa"
         
-        let removed = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
+        let result = RemoveAllAdjacentDuplicatesInString.removeDuplicates(s)
         
-        XCTAssertEqual(removed, "bc")
+        XCTAssertEqual(result, "bc")
     }
-    
 }

@@ -17,44 +17,44 @@ final class BuddyStringsTests: XCTestCase {
         let s = "ab"
         let goal = "ba"
         
-        let isBuddy = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings.buddyStrings(s, goal)
         
-        XCTAssertTrue(isBuddy)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let s = "ab"
         let goal = "ab"
         
-        let isBuddy = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings.buddyStrings(s, goal)
         
-        XCTAssertFalse(isBuddy)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
         let s = "aa"
         let goal = "aa"
         
-        let isBuddy = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings.buddyStrings(s, goal)
         
-        XCTAssertTrue(isBuddy)
+        XCTAssertTrue(result)
     }
     
     func test_D() {
         let s = "aabdd"
         let goal = "aabcc"
         
-        let isBuddy = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings.buddyStrings(s, goal)
         
-        XCTAssertFalse(isBuddy)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
         let s = "aabcc"
         let goal = "aabc"
         
-        let isBuddy = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings.buddyStrings(s, goal)
         
-        XCTAssertFalse(isBuddy)
+        XCTAssertFalse(result)
     }
 }

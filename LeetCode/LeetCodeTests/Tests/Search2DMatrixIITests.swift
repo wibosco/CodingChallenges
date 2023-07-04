@@ -22,9 +22,9 @@ final class Search2DMatrixIITests: XCTestCase {
                       [18, 21, 23, 26, 30]]
         let target = 5
         
-        let exists = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII.searchMatrix(matrix, target)
         
-        XCTAssertTrue(exists)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
@@ -35,9 +35,9 @@ final class Search2DMatrixIITests: XCTestCase {
                       [18, 21, 23, 26, 30]]
         let target = 20
         
-        let exists = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII.searchMatrix(matrix, target)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
     
     func test_C() {
@@ -45,17 +45,17 @@ final class Search2DMatrixIITests: XCTestCase {
                       [-1]]
         let target = 0
         
-        let exists = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII.searchMatrix(matrix, target)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
         let matrix = [[1, 1]]
         let target = 0
         
-        let exists = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII.searchMatrix(matrix, target)
         
-        XCTAssertFalse(exists)
+        XCTAssertFalse(result)
     }
 }

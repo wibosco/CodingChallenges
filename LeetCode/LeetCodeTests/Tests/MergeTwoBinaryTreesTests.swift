@@ -22,9 +22,9 @@ final class MergeTwoBinaryTreesTests: XCTestCase {
         
         let mergedTree = MergeTwoBinaryTrees.mergeTrees(tree1, tree2)
         
-        let array = BinaryTreeNode.serialize(mergedTree)
+        let result = BinaryTreeNode.serialize(mergedTree)
         
-        XCTAssertEqual(array, [3, 4, 5, 5, 4, nil, 7])
+        XCTAssertEqual(result, [3, 4, 5, 5, 4, nil, 7])
     }
     
     func test_B() {
@@ -36,8 +36,8 @@ final class MergeTwoBinaryTreesTests: XCTestCase {
         
         let mergedTree = MergeTwoBinaryTrees.mergeTrees(tree1, tree2)
         
-        let array = BinaryTreeNode.serialize(mergedTree)
+        let result = BinaryTreeNode.serialize(mergedTree)
         
-        XCTAssertEqual(array, [2, 2])
+        XCTAssertEqual(result, [2, 2])
     }
 }

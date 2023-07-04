@@ -17,64 +17,64 @@ final class ValidParenthesesTests: XCTestCase {
     func test_A() {
         let s = "()"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_B() {
         let s = "()[]{}"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_C() {
         let s = "(]"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_D() {
         let s = "([)]"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_E() {
         let s = "{[]}"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_F() {
         let s = "(([]){})"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertTrue(isValid)
+        XCTAssertTrue(result)
     }
     
     func test_G() {
         let s = "){"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
     
     func test_H() {
         let s = "))"
         
-        let isValid = ValidParentheses.isValid(s)
+        let result = ValidParentheses.isValid(s)
         
-        XCTAssertFalse(isValid)
+        XCTAssertFalse(result)
     }
 }

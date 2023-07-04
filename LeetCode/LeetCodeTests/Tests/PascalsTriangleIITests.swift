@@ -17,25 +17,25 @@ final class PascalsTriangleIITests: XCTestCase {
     func test_A() {
         let rowIndex = 3
         
-        let level = PascalsTriangleII.getRow(rowIndex)
+        let result = PascalsTriangleII.getRow(rowIndex)
         
-        XCTAssertEqual(level, [1, 3, 3, 1])
+        XCTAssertEqual(result, [1, 3, 3, 1])
     }
     
     func test_B() {
         let rowIndex = 0
         
-        let level = PascalsTriangleII.getRow(rowIndex)
+        let result = PascalsTriangleII.getRow(rowIndex)
         
-        XCTAssertEqual(level, [1])
+        XCTAssertEqual(result, [1])
     }
     
     func test_C() {
         let rowIndex = 1
         
-        let level = PascalsTriangleII.getRow(rowIndex)
+        let result = PascalsTriangleII.getRow(rowIndex)
         
-        XCTAssertEqual(level, [1, 1])
+        XCTAssertEqual(result, [1, 1])
     }
 
 }

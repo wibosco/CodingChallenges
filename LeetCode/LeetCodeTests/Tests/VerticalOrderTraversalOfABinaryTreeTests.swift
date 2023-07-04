@@ -17,26 +17,26 @@ final class VerticalOrderTraversalOfABinaryTreeTests: XCTestCase {
         let data = [3, 9, 20, nil, nil, 15, 7]
         let root = BinaryTreeNode.deserialize(data)
         
-        let values = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
+        let result = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
         
-        XCTAssertEqual(values, [[9], [3, 15], [20], [7]])
+        XCTAssertEqual(result, [[9], [3, 15], [20], [7]])
     }
     
     func test_B() {
         let data = [1, 2, 3, 4, 5, 6, 7]
         let root = BinaryTreeNode.deserialize(data)
         
-        let values = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
+        let result = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
         
-        XCTAssertEqual(values, [[4], [2], [1, 5, 6], [3], [7]])
+        XCTAssertEqual(result, [[4], [2], [1, 5, 6], [3], [7]])
     }
     
     func test_C() {
         let data = [1, 2, 3, 4, 6, 5, 7]
         let root = BinaryTreeNode.deserialize(data)
         
-        let values = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
+        let result = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
         
-        XCTAssertEqual(values, [[4], [2], [1, 5, 6], [3], [7]])
+        XCTAssertEqual(result, [[4], [2], [1, 5, 6], [3], [7]])
     }
 }

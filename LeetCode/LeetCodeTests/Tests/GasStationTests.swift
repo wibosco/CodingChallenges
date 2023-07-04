@@ -17,26 +17,26 @@ final class GasStationTests: XCTestCase {
         let gas = [1, 2, 3, 4, 5]
         let cost = [3, 4, 5, 1, 2]
         
-        let station = GasStation.canCompleteCircuit(gas, cost)
+        let result = GasStation.canCompleteCircuit(gas, cost)
         
-        XCTAssertEqual(station, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_B() {
         let gas = [2, 3, 4]
         let cost = [3, 4, 3]
         
-        let station = GasStation.canCompleteCircuit(gas, cost)
+        let result = GasStation.canCompleteCircuit(gas, cost)
         
-        XCTAssertEqual(station, -1)
+        XCTAssertEqual(result, -1)
     }
     
     func test_C() {
         let gas = [4]
         let cost = [5]
         
-        let station = GasStation.canCompleteCircuit(gas, cost)
+        let result = GasStation.canCompleteCircuit(gas, cost)
         
-        XCTAssertEqual(station, -1)
+        XCTAssertEqual(result, -1)
     }
 }

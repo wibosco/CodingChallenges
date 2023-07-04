@@ -17,24 +17,24 @@ final class NRepeatedElementInSize2NArrayTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3, 3]
         
-        let repeatedElement = NRepeatedElementInSize2NArray.repeatedNTimes(nums)
+        let result = NRepeatedElementInSize2NArray.repeatedNTimes(nums)
         
-        XCTAssertEqual(repeatedElement, 3)
+        XCTAssertEqual(result, 3)
     }
     
     func test_B() {
         let nums = [2, 1, 2, 5, 3, 2]
         
-        let repeatedElement = NRepeatedElementInSize2NArray.repeatedNTimes(nums)
+        let result = NRepeatedElementInSize2NArray.repeatedNTimes(nums)
         
-        XCTAssertEqual(repeatedElement, 2)
+        XCTAssertEqual(result, 2)
     }
     
     func test_C() {
         let nums = [5, 1, 5, 2, 5, 3, 5, 4]
         
-        let repeatedElement = NRepeatedElementInSize2NArray.repeatedNTimes(nums)
+        let result = NRepeatedElementInSize2NArray.repeatedNTimes(nums)
         
-        XCTAssertEqual(repeatedElement, 5)
+        XCTAssertEqual(result, 5)
     }
 }
