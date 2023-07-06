@@ -598,6 +598,8 @@
 		43EE0BD82A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BD72A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift */; };
 		43EE0BDA2A55A5CD003D23E0 /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BD92A55A5CD003D23E0 /* PartitionLabels.swift */; };
 		43EE0BDC2A55A60C003D23E0 /* PartitionLabelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BDB2A55A60C003D23E0 /* PartitionLabelsTests.swift */; };
+		43EE0BDE2A5617C0003D23E0 /* ValidParenthesisString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BDD2A5617C0003D23E0 /* ValidParenthesisString.swift */; };
+		43EE0BE02A56180B003D23E0 /* ValidParenthesisStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0BDF2A56180B003D23E0 /* ValidParenthesisStringTests.swift */; };
 		43F3DF3929E0B61600EDEB1C /* OddEvenLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */; };
 		43F3DF3B29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */; };
 /* End PBXBuildFile section */
@@ -1205,6 +1207,8 @@
 		43EE0BD72A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTripletsToFormTargetTripletTests.swift; sourceTree = "<group>"; };
 		43EE0BD92A55A5CD003D23E0 /* PartitionLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
 		43EE0BDB2A55A60C003D23E0 /* PartitionLabelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabelsTests.swift; sourceTree = "<group>"; };
+		43EE0BDD2A5617C0003D23E0 /* ValidParenthesisString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParenthesisString.swift; sourceTree = "<group>"; };
+		43EE0BDF2A56180B003D23E0 /* ValidParenthesisStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParenthesisStringTests.swift; sourceTree = "<group>"; };
 		43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedList.swift; sourceTree = "<group>"; };
 		43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1567,6 +1571,7 @@
 				3D5C90D527A7F7620035C399 /* ValidPalindrome.swift */,
 				3D5C912C27A7F7630035C399 /* ValidPalindromeII.swift */,
 				3D5C911C27A7F7630035C399 /* ValidParentheses.swift */,
+				43EE0BDD2A5617C0003D23E0 /* ValidParenthesisString.swift */,
 				3D5C90D627A7F7620035C399 /* ValidPerfectSquare.swift */,
 				3D5C90C527A7F7620035C399 /* ValidSudoku.swift */,
 				3D5C90C627A7F7620035C399 /* ValidWordAbbreviation.swift */,
@@ -1862,6 +1867,7 @@
 				3D5C926B27A7F76C0035C399 /* ValidPalindromeIITests.swift */,
 				3D5C91F427A7F76B0035C399 /* ValidPalindromeTests.swift */,
 				3D5C922127A7F76B0035C399 /* ValidParenthesesTests.swift */,
+				43EE0BDF2A56180B003D23E0 /* ValidParenthesisStringTests.swift */,
 				3D5C928C27A7F76C0035C399 /* ValidPerfectSquareTests.swift */,
 				3D5C920627A7F76B0035C399 /* ValidSudokuTests.swift */,
 				3D5C927127A7F76C0035C399 /* ValidWordAbbreviationTests.swift */,
@@ -2288,6 +2294,7 @@
 				3D5C914827A7F7630035C399 /* GraphVertice.swift in Sources */,
 				3D5C919027A7F7630035C399 /* CapacityToShipPackagesWithinDDays.swift in Sources */,
 				3D5C91DE27A7F7630035C399 /* BinaryTreeInorderTraversal.swift in Sources */,
+				43EE0BDE2A5617C0003D23E0 /* ValidParenthesisString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2470,6 +2477,7 @@
 				3D09759527DB5B82007FC11F /* RotateImageTests.swift in Sources */,
 				3D5C933427A7F76C0035C399 /* DailyTemperaturesTests.swift in Sources */,
 				433E55C229DF14D600974B73 /* CoinChangeTests.swift in Sources */,
+				43EE0BE02A56180B003D23E0 /* ValidParenthesisStringTests.swift in Sources */,
 				3D46241B27E23B0800A888C1 /* PlusOneTests.swift in Sources */,
 				43EE0BD82A54766A003D23E0 /* MergeTripletsToFormTargetTripletTests.swift in Sources */,
 				3D5C92D527A7F76C0035C399 /* FindIfPathExistsInGraphTests.swift in Sources */,

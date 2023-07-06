@@ -19,10 +19,10 @@ A collection of coding challenges and their solutions from:
 | -------- | ---------- |
 | "Shortest path" | `BFS`, `Dijkstra` | 
 | "Level-by-level" | `BFS` |
-| "All paths" | `BFS`, `DFS` |
+| "All paths", "Choices", "Branching" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
 | "Path may not exist"| `isolated vertices`, `cycles` |
-| "Generate all", "All permutations", "All combinations", "All possible" | `Backtracking (DFS)` |
+| "Generate all", "All permutations", "All combinations", "All possible", "Choices", "Branching" | `Backtracking (DFS)` |
 | "Next Permutation" | `pivot & sorting` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Iterating array comparing elements" | `Stack` |
@@ -35,9 +35,10 @@ A collection of coding challenges and their solutions from:
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
 | "Compare neighbors in a string", "Comparing right to left elements"| `Stack` |
 | "Largest value", "Smallest value"| `Heap` |
-| "kth smallest", "kth largest", "kth frequent", "top k", "k closet" | `QuickSelect` |
+| "kth smallest", "kth largest", "kth frequent", "Top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
-| "consecutive" | `sort` |
+| "Consecutive" | `sort` |
+| "Merge", "Intervals" | `sort` |
 
 ## Need Tips
 
@@ -46,6 +47,9 @@ A collection of coding challenges and their solutions from:
 | Optimise graph traversal | `Memoization`  | `LongestIncreasingSubsequence` |
 | Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
 | Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
+| Explore possible values for a given element in an array | `DFS`, `Memoization` | ValidParenthesisString |
+
+**A string can be treated of as an array. That array can be treated as a graph, with each element a node. Eanbling you to be able to use all graph techniques.**
 
 ## Data Structure Characteristics
 
