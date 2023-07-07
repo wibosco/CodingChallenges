@@ -16,11 +16,10 @@ struct PartitionList {
     //two pointers
     //
     //Solution Description:
-    //Set up to lists: `list1` to store the less than `x` nodes and `list2` to store the greater than or equal to
-    //`x` nodes. Iterate through the list and assign each node we encounter to either list. Once we have iterated
-    //through the original list we break any cycle that may have been introduced between `list1` and `list2` by
-    //assigning the tail of `list2` to point at nil. We then combine the two lists and using the dummy node for
-    //`list1` return the head of `list1`
+    //Set up to lists: `list1` to store the less than `x` nodes and `list2` to store the greater than or equal to `x` nodes.
+    //Iterate through the list and assign each node we encounter to either list. Once we have iterated through the original list
+    //we break any cycle that may have been introduced between `list1` and `list2` by assigning the tail of `list2` to point at
+    //nil. We then combine the two lists and using the dummy node for `list1` return the head of `list1`
     static func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
         var list1: ListNode? = ListNode(-1) //less than list
         let dummy1 = list1 //needed to hold onto the head of list1

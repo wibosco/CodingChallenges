@@ -18,9 +18,9 @@ struct PascalsTriangleII {
     //in-line
     //
     //Solution Description:
-    //Starting from 0 iteratively build up the triangle until we reach the target index - `rowIndex`. At each step we
-    //append 1 to the previous row to calculate the next by going through the previous rows indexes in reverse and
-    //adding neighbours together the the current rows values
+    //Starting from 0 iteratively build up the triangle until we reach the target index - `rowIndex`. At each step we append 1 to
+    //the previous row to calculate the next by going through the previous rows indexes in reverse and adding neighbours together
+    //the the current rows values
     static func getRow(_ rowIndex: Int) -> [Int] {
         guard rowIndex != 0 else {
             return [1]
@@ -48,8 +48,8 @@ struct PascalsTriangleII {
     //memoization
     //
     //Solution Description:
-    //Starting from 0 recursively build up the triangle until we reach the target index - `rowIndex`. At each step we
-    //use the previous row to calculate the next (note, we only hold onto that previous row and no other)
+    //Starting from 0 recursively build up the triangle until we reach the target index - `rowIndex`. At each step we use the
+    //previous row to calculate the next (note, we only hold onto that previous row and no other)
     static func getRowRecusive(_ rowIndex: Int) -> [Int] {
         return getRow(0, rowIndex, [])
     }
