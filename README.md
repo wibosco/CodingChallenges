@@ -47,7 +47,8 @@ A collection of coding challenges and their solutions from:
 | Optimise graph traversal | `Memoization`  | `LongestIncreasingSubsequence` |
 | Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
 | Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
-| Explore possible values for a given element in an array | `DFS`, `Memoization` | ValidParenthesisString |
+| Explore possible values for a given element in an array | `DFS`, `Memoization` | `ValidParenthesisString` |
+| Can't use additional memeory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
 
 **A string can be treated of as an array. That array can be treated as a graph, with each element a node. Eanbling you to be able to use all graph techniques.**
 
