@@ -588,6 +588,8 @@
 		434BCB0E2A08F73F0026A985 /* BalancedBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BCB0D2A08F73F0026A985 /* BalancedBinaryTreeTests.swift */; };
 		434BCB102A090F750026A985 /* CountGoodNodesInBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BCB0F2A090F750026A985 /* CountGoodNodesInBinaryTree.swift */; };
 		434BCB122A090FB40026A985 /* CountGoodNodesInBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BCB112A090FB40026A985 /* CountGoodNodesInBinaryTreeTests.swift */; };
+		435AFB932A5BFBB100721B88 /* BrickWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AFB922A5BFBB100721B88 /* BrickWall.swift */; };
+		435AFB952A5BFC1200721B88 /* BrickWallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AFB942A5BFC1200721B88 /* BrickWallTests.swift */; };
 		435F019B2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */; };
 		435F019D2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */; };
 		435F019F2A0CF0BB00F6B50F /* SurroundedRegions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019E2A0CF0BB00F6B50F /* SurroundedRegions.swift */; };
@@ -1219,6 +1221,8 @@
 		434BCB0D2A08F73F0026A985 /* BalancedBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancedBinaryTreeTests.swift; sourceTree = "<group>"; };
 		434BCB0F2A090F750026A985 /* CountGoodNodesInBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountGoodNodesInBinaryTree.swift; sourceTree = "<group>"; };
 		434BCB112A090FB40026A985 /* CountGoodNodesInBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountGoodNodesInBinaryTreeTests.swift; sourceTree = "<group>"; };
+		435AFB922A5BFBB100721B88 /* BrickWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickWall.swift; sourceTree = "<group>"; };
+		435AFB942A5BFC1200721B88 /* BrickWallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickWallTests.swift; sourceTree = "<group>"; };
 		435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaOfIsland.swift; sourceTree = "<group>"; };
 		435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaOfIslandTests.swift; sourceTree = "<group>"; };
 		435F019E2A0CF0BB00F6B50F /* SurroundedRegions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurroundedRegions.swift; sourceTree = "<group>"; };
@@ -1356,6 +1360,7 @@
 				3D5C90E027A7F7620035C399 /* BinaryTreeRightSideView.swift */,
 				3D5C914127A7F7630035C399 /* BinaryTreeVerticalOrderTraversal.swift */,
 				3D5C912127A7F7630035C399 /* BinaryTreeZigzagLevelOrderTraversal.swift */,
+				435AFB922A5BFBB100721B88 /* BrickWall.swift */,
 				3D42A46C27F5AE2400687F75 /* BSTIterator.swift */,
 				3D1D0C862806DCD4006DA350 /* BuddyStrings.swift */,
 				3D5C90E327A7F7620035C399 /* BuildingsWithOceanView.swift */,
@@ -1667,6 +1672,7 @@
 				3D5C925427A7F76C0035C399 /* BinaryTreeRightSideViewTests.swift */,
 				3D5C925127A7F76C0035C399 /* BinaryTreeVerticalOrderTraversalTests.swift */,
 				3D5C923927A7F76B0035C399 /* BinaryTreeZigzagLevelOrderTraversalTests.swift */,
+				435AFB942A5BFC1200721B88 /* BrickWallTests.swift */,
 				3D42A46E27F5E1FE00687F75 /* BSTIteratorTests.swift */,
 				3D1D0C882806DD29006DA350 /* BuddyStringsTests.swift */,
 				3D5C91FF27A7F76B0035C399 /* BuildingsWithOceanViewTests.swift */,
@@ -2187,6 +2193,7 @@
 				3D5C91B627A7F7630035C399 /* NestedListWeightSumII.swift in Sources */,
 				3D5C91D327A7F7630035C399 /* PopulatingNextRightPointersII.swift in Sources */,
 				3D5C916527A7F7630035C399 /* RecoverBinarySearchTree.swift in Sources */,
+				435AFB932A5BFBB100721B88 /* BrickWall.swift in Sources */,
 				43313BB729D7231F005FCF5D /* SingleNumber .swift in Sources */,
 				3D5C914927A7F7630035C399 /* ListNode.swift in Sources */,
 				3D5C91AF27A7F7630035C399 /* ConvertSortedArrayToBinarySearchTree.swift in Sources */,
@@ -2552,6 +2559,7 @@
 				3DB7C5D327CEC58B00353EED /* ExclusiveTimeOfFunctionsTests.swift in Sources */,
 				3D5C92E227A7F76C0035C399 /* SwapNodesInPairsTests.swift in Sources */,
 				3D47EA682800EC0C00407F75 /* MergeKSortedListsTests.swift in Sources */,
+				435AFB952A5BFC1200721B88 /* BrickWallTests.swift in Sources */,
 				3D5C932627A7F76C0035C399 /* SubtreeOfAnotherTreeTests.swift in Sources */,
 				433E55B829DD840400974B73 /* MinimumHeightTreesTests.swift in Sources */,
 				3D5C931B27A7F76C0035C399 /* FibonacciNumberTests.swift in Sources */,
