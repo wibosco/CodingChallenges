@@ -20,7 +20,7 @@ struct BestTimeToBuyAndSellStockII {
     //Solution Description:
     //To generate profit we need to buy low and sell high. We can do this by always comparing the current price with
     //the next price. If the next price is higher we don't buy and if it lower we do buy and sell that next day. The
-    //profit is then banked and we continuing on looking for the next profitable buy/sell combination. We are not
+    //profit is then banked and we continue on looking for the next profitable buy/sell combination. We are not
     //trying to find the greatest positive difference instead we are using a greedy approach and taking any positive
     //difference
     static func maxProfit(_ prices: [Int]) -> Int {
