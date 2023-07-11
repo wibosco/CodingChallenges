@@ -247,6 +247,7 @@ struct BFS {
     //binary tree
     //queue
     //iterative
+    //level-by-level
     //
     //Solution Description:
     //Breadth-first search involves searching a tree level by level - ensuring all nodes on a level have been searched before
@@ -410,6 +411,7 @@ struct BFS {
     //binary search tree
     //queue
     //iterative
+    //level-by-level
     //
     //Solution Description:
     //Breadth-first search involves searching a tree level by level - ensuring all node on a level have been searched before

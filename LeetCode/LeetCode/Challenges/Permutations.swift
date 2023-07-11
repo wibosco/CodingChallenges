@@ -16,6 +16,7 @@ struct Permutations {
     //backtracking
     //DFS
     //n-ary tree
+    //recursive
     //
     //Solution Description:
     //With permutations order is important so [1, 2, 3] is not the same as [3, 2, 1]. With this in mind we can use backtracking

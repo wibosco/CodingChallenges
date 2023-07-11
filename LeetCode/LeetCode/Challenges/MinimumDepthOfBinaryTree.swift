@@ -15,6 +15,8 @@ struct MinimumDepthOfBinaryTree {
     //Space: O(h) where h is the height of the tree
     //BFS
     //queue
+    //iterative
+    //level-by-level
     //
     //Solution Description:
     //Using BFS we traverse down the tree in a level-by-level fashion - tracking the level change as we do with `depth`.
@@ -61,7 +63,7 @@ struct MinimumDepthOfBinaryTree {
             depth += 1
             var newQueue = [BinaryTreeNode]()
             
-            for node in queue { //level-by-level
+            for node in queue {
                 guard node.left != nil || node.right != nil else { //check if leaf node
                     return depth
                 }

@@ -19,7 +19,7 @@ struct LongestIncreasingSubsequence {
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
     //each node of that graph from every possible path backwards. By going backwards we ensure that the value at a given index in
-    //`lis` is the largest subsquence count (from that index). So first we loop backwards to ensure that quickest route to that
+    //`lis` is the largest subsequence count (from that index). So first we loop backwards to ensure that quickest route to that
     //count and then once we get to an index we take advantage of previously calculations to to loop forward through all possible
     //indexes that can be visited and extract the longest value - we add to this as the current node need is added to the
     //count.
