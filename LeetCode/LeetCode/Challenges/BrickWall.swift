@@ -12,7 +12,7 @@ import Foundation
 struct BrickWall {
     
     //Time: O(n * m) where n is the number of elements in `wall`, m is the number of elements in each row
-    //Space: O(n * m)
+    //Space: O(m)
     //counting
     //nested loops
     //
@@ -33,7 +33,7 @@ struct BrickWall {
         var gapsBetweenBricks = [Int: Int]() //[row-index: gap-count]
 
         for bricks in wall {
-            var gapOffset = 0 //index offset in this row of bricks where each gap is
+            var gapOffset = 0 //index offset in this row of bricks where each gap is i.e. column
             for brick in bricks[0..<(bricks.count - 1)] { //don't count row right gap
                 gapOffset += brick //add bricks width straight away to avoid counting row left gap
                 
