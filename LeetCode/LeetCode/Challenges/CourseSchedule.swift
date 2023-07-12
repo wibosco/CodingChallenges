@@ -21,6 +21,7 @@ struct CourseSchedule {
     //directed graph
     //multi-source
     //adjacency list
+    //topological sort
     //
     //Solution Description:
     //Treating `numCourses` as the vertices in a graph and each `prerequisites` element as an edge between two vertices we
