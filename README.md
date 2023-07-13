@@ -49,6 +49,7 @@ A collection of coding challenges and their solutions from:
 | Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
 | Explore possible replacement values for a given element in an array/stringg | `DFS`, `Memoization` | `ValidParenthesisString` |
 | Can't use additional memeory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
+| Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
 
 A lot of problems can be treated as graph problems.
 
