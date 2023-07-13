@@ -85,4 +85,22 @@ final class ImplementStrStrTests: XCTestCase {
         
         XCTAssertEqual(result, -1)
     }
+    
+    func test_I() {
+        let haystack = "ABCTTBGGABTTCGGA"
+        let needle = "ABCBGGABCGGA"
+        
+        let result = ImplementStrStr.strStr(haystack, needle)
+        
+        XCTAssertEqual(result, -1)
+    }
+    
+    func test_J() {
+        let haystack = "ABABCABCABABABD"
+        let needle = "ABABD"
+        
+        let result = ImplementStrStr.strStr(haystack, needle)
+        
+        XCTAssertEqual(result, 10)
+    }
 }

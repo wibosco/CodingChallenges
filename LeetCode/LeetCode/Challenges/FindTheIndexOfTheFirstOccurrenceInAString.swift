@@ -1,17 +1,15 @@
 //
-//  ImplementStrStr.swift
+//  FindTheIndexOfTheFirstOccurrenceInAString.swift
 //  LeetCode
 //
-//  Created by William Boles on 11/11/2021.
-//  Copyright © 2021 Boles. All rights reserved.
+//  Created by William Boles on 12/07/2023.
 //
 
 import Foundation
 
-//https://leetcode.com/problems/implement-strstr/
-//URL has been changed to https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
-//string
-struct ImplementStrStr {
+//https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+//array
+struct FindTheIndexOfTheFirstOccurrenceInAString {
     
     //Time: O(n + m) where n is the number fo elements in `haystack`, m is the number of elements in `needle`
     //Space: O(n + m)
@@ -43,7 +41,6 @@ struct ImplementStrStr {
     //the `lps-table` back to the start of `needle`.
     //
     //As you can see, using an `lps` table can save us a lot of effort by avoiding duplicate work.
-    //
     //
     //See: https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
     //See: https://www.youtube.com/watch?v=V5-7GzOfADQ
@@ -106,33 +103,51 @@ struct ImplementStrStr {
         return -1
     }
     
-    //Time: O(n * m) where n is the number fo elements in `haystack`, m is the number of elements in `needle`
+    //Time: O(n * m) where n is the number of elements in `haystack`, m is the number of elements in `needle`
     //Space: O(1)
+    //nested loops
     //two pointers
-    //array
     //
     //Solution Description:
-    //Using two pointers we traverse through both `haystack` and `needle` and compare the characters of `haystick` against the relevent
-    //character of `needle` i.e. if we have previously matched the first character of `needle` we compare the next character of `haystack`
-    //against the second character of `needle`. If at any time we get a mismatch we reset `n` to 0.
+    //Using nested loop and two pointers (really three pointers but two are the same - `i` and `p2` ) we are able to traverse
+    //through `characters` and at each index check (`i`) if it is the start of `target`. When performing the check we use two
+    //pointers `p1` and `p2` to access `characters` and `target` at the relevent indexes. If the characters at those indexes
+    //match we continue on by incrementing both pointers and repeat the process; If the characters at those indexes don't
+    //match we return and the outer loops moves onto the next index of `characters`. If we reach the end of `characters`
+    //without finding `target` then we return -1.
     static func strStrNestedLoops(_ haystack: String, _ needle: String) -> Int {
-        let haystack = Array(haystack)
-        let needle = Array(needle)
-            
-        var h = 0
-        var n = 0
+        let characters = Array(haystack)
+        let target = Array(needle)
         
-        while h < haystack.count && n < needle.count {
-            if haystack[h] == needle[n] {
-                n += 1
-            } else {
-                h -= n //reset h to before we had any matches with n
-                n = 0
-            }
-            
-            h += 1
+        guard characters.count >= target.count else {
+            return -1
         }
         
-        return (n == needle.count) ? (h - n) : -1
+        //no point in comparing if the number of elements left in `characters` is less than in `target`
+        let upperBounds = (characters.count - target.count)
+        
+        for i in 0...upperBounds {
+            if same(characters, target: target, i) {
+                return i
+            }
+        }
+        
+        return -1
+    }
+    
+    private static func same(_ characters: [Character], target: [Character], _ start: Int) -> Bool {
+        var p1 = 0
+        var p2 = start
+        
+        while p1 < target.count && p2 < characters.count {
+            guard characters[p2] == target[p1] else {
+                return false
+            }
+            
+            p1 += 1
+            p2 += 1
+        }
+        
+        return true
     }
 }

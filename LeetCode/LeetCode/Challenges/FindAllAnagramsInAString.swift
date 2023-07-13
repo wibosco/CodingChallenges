@@ -17,14 +17,13 @@ struct FindAllAnagramsInAString {
     //strings
     //
     //Solution Description:
-    //Using a sliding window approach we are able to iterate through the `s` string checking if any squence of
-    //characters of length `p` are anagrams of `p`. A sliding window works by moving through the array in a
-    //linear fashion and having elements move into our inspection window from the right and move out of our
-    //inspection window from the left. Below we use a window dictionary `sCount` to compare the elements in
-    //the current window against our static `pCount` dictionary. These dictionaries contain both the characters
-    //and the frequency with which they occurred. If both dictionaries match then it means that we have anagram
-    //in that window and we add the left most element's index to the `indexes` array. Once we have iterated
-    //through all characters in `s` we return the indexes that we have founds
+    //Using a sliding window approach we are able to iterate through the `s` string checking if any squence ofcharacters of
+    //length `p` are anagrams of `p`. A sliding window works by moving through the array in a linear fashion and having elements
+    //move into our inspection window from the right and move out of our inspection window from the left. Below we use a window
+    //dictionary `sCount` to compare the elements in the current window against our static `pCount` dictionary. These
+    //dictionaries contain both the characters and the frequency with which they occurred. If both dictionaries match then it
+    //means that we have anagram in that window and we add the left most element's index to the `indexes` array. Once we have
+    //iterated through all characters in `s` we return the indexes that we have founds.
     static func findAnagrams(_ s: String, _ p: String) -> [Int] {
         let ns = s.count //calling `count` is an O(n) operation so pulling it out to speed things up
         let np = p.count

@@ -606,6 +606,8 @@
 		435F01A52A0D249000F6B50F /* RedundantConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F01A42A0D249000F6B50F /* RedundantConnectionTests.swift */; };
 		437119442A5EEE6B000E0EE5 /* GridGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119432A5EEE6B000E0EE5 /* GridGame.swift */; };
 		437119462A5EEEA1000E0EE5 /* GridGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119452A5EEEA1000E0EE5 /* GridGameTests.swift */; };
+		437119482A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */; };
+		4371194A2A5F528C000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119492A5F528C000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAStringTests.swift */; };
 		4379F48929E802D6003BA6F9 /* HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F48829E802D6003BA6F9 /* HouseRobber.swift */; };
 		4379F48B29E802E8003BA6F9 /* HouseRobberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F48A29E802E8003BA6F9 /* HouseRobberTests.swift */; };
 		4379F48D29E820C0003BA6F9 /* HouseRobberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F48C29E820C0003BA6F9 /* HouseRobberII.swift */; };
@@ -1253,6 +1255,8 @@
 		435F01A42A0D249000F6B50F /* RedundantConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedundantConnectionTests.swift; sourceTree = "<group>"; };
 		437119432A5EEE6B000E0EE5 /* GridGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGame.swift; sourceTree = "<group>"; };
 		437119452A5EEEA1000E0EE5 /* GridGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGameTests.swift; sourceTree = "<group>"; };
+		437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheIndexOfTheFirstOccurrenceInAString.swift; sourceTree = "<group>"; };
+		437119492A5F528C000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheIndexOfTheFirstOccurrenceInAStringTests.swift; sourceTree = "<group>"; };
 		4379F48829E802D6003BA6F9 /* HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobber.swift; sourceTree = "<group>"; };
 		4379F48A29E802E8003BA6F9 /* HouseRobberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberTests.swift; sourceTree = "<group>"; };
 		4379F48C29E820C0003BA6F9 /* HouseRobberII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberII.swift; sourceTree = "<group>"; };
@@ -1456,6 +1460,7 @@
 				3D5C90E727A7F7620035C399 /* FindPeakElement.swift */,
 				4311BC732A58668100137AED /* FindPivotIndex.swift */,
 				3D5C90B127A7F7620035C399 /* FindSmallestLetterGreaterThanTarget.swift */,
+				437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */,
 				3D5C911027A7F7630035C399 /* FindTheTownJudge.swift */,
 				3D5C911527A7F7630035C399 /* FirstBadVersion.swift */,
 				3D5C90F327A7F7620035C399 /* FlattenBinaryTreeToLinkedList.swift */,
@@ -1464,6 +1469,7 @@
 				3DC6176D27F394330019DDD1 /* GasStation.swift */,
 				3D5C90A427A7F7620035C399 /* GenerateParentheses.swift */,
 				3D5C90C027A7F7620035C399 /* GraphValidTree.swift */,
+				437119432A5EEE6B000E0EE5 /* GridGame.swift */,
 				3D09759A27DB9D75007FC11F /* GroupAnagrams.swift */,
 				3D5C90CE27A7F7620035C399 /* GroupShiftedStrings.swift */,
 				3D5C90DB27A7F7620035C399 /* GuessNumberHigherOrLower.swift */,
@@ -1676,7 +1682,6 @@
 				43313BBE29D8DA2B005FCF5D /* WordPattern.swift */,
 				3D46243427E497D300A888C1 /* WordSearch.swift */,
 				3D5C90F127A7F7620035C399 /* ZigzagConversion.swift */,
-				437119432A5EEE6B000E0EE5 /* GridGame.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -1684,7 +1689,6 @@
 		3D5C91F327A7F76B0035C399 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				437119452A5EEEA1000E0EE5 /* GridGameTests.swift */,
 				3D5C921627A7F76B0035C399 /* AccountsMergeTests.swift */,
 				3D46241E27E2432B00A888C1 /* AddBinaryTests.swift */,
 				43313BB229D71237005FCF5D /* AddDigitsTests.swift */,
@@ -1775,6 +1779,7 @@
 				3D5C924A27A7F76C0035C399 /* FindPeakElementTests.swift */,
 				4311BC752A5866CB00137AED /* FindPivotIndexTests.swift */,
 				3D5C928F27A7F76C0035C399 /* FindSmallestLetterGreaterThanTargetTests.swift */,
+				437119492A5F528C000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAStringTests.swift */,
 				3D5C924527A7F76C0035C399 /* FindTheTownJudgeTests.swift */,
 				3D5C91FE27A7F76B0035C399 /* FirstBadVersionTests.swift */,
 				3D5C923A27A7F76B0035C399 /* FlattenBinaryTreeToLinkedListTests.swift */,
@@ -1783,6 +1788,7 @@
 				3DC6176F27F3946B0019DDD1 /* GasStationTests.swift */,
 				3D5C925F27A7F76C0035C399 /* GenerateParenthesesTests.swift */,
 				3D5C921927A7F76B0035C399 /* GraphValidTreeTests.swift */,
+				437119452A5EEEA1000E0EE5 /* GridGameTests.swift */,
 				3D09759C27DB9DA2007FC11F /* GroupAnagramsTests.swift */,
 				3D5C921727A7F76B0035C399 /* GroupShiftedStringsTests.swift */,
 				3D5C924627A7F76C0035C399 /* GuessNumberHigherOrLowerTests.swift */,
@@ -2301,6 +2307,7 @@
 				430515C729DF7506007F59B0 /* PowerOfThree.swift in Sources */,
 				3D1465742809893B00DF647A /* TrimABinarySearchTree.swift in Sources */,
 				3D5C91F027A7F7630035C399 /* DiameterOfBinaryTree.swift in Sources */,
+				437119482A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift in Sources */,
 				3D5C91D627A7F7630035C399 /* TwoSumII.swift in Sources */,
 				3D5C91B027A7F7630035C399 /* CanPlaceFlowers.swift in Sources */,
 				3D5C916027A7F7630035C399 /* FindDuplicateNumber.swift in Sources */,
@@ -2604,6 +2611,7 @@
 				435AFB992A5C163100721B88 /* UniqueLength3PalindromicSubsequencesTests.swift in Sources */,
 				3D30553327C51DD100294BC7 /* RemoveElementTests.swift in Sources */,
 				3D5C931327A7F76C0035C399 /* ShortestPathBinaryMatrixTests.swift in Sources */,
+				4371194A2A5F528C000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAStringTests.swift in Sources */,
 				3D5C930B27A7F76C0035C399 /* RecoverBinarySearchTreeTests.swift in Sources */,
 				3D5C932A27A7F76C0035C399 /* MaximumSwapTests.swift in Sources */,
 				3D1CD89027D94BEE00D4CA5F /* JumpGameIITests.swift in Sources */,
