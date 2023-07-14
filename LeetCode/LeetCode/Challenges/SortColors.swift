@@ -19,7 +19,7 @@ struct SortColors {
     //Solution Description:
     //We can count the number of 0s and 1s (no need to count 2s as an difference between `zeroCount` + `oneCount` and `nums`
     //is the 2 count) in `nums`. We then iterate through `nums` to replace the indexes we encounter with 0s until we exhaust
-    //that count, move onto 1s and exhaust that count and finally move onto 2s for the reminder of the elements.
+    //that count, move onto 1s and exhaust that count and finally move onto 2s for the remainder of the elements.
     //
     //See: https://en.wikipedia.org/wiki/Counting_sort
     static func sortColors(_ nums: inout [Int]) {

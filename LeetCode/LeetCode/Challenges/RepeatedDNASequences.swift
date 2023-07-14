@@ -8,12 +8,13 @@
 import Foundation
 
 //https://leetcode.com/problems/repeated-dna-sequences/
-//sliding window
+//array
 struct RepeatedDNASequences {
     
     //Time: O(n) where n is number of elements in `s`
     //Space: O(n) where n is the number of elements in `s`
     //dictionary
+    //sliding window
     //
     //Solution Description:
     //Using a sliding window approach we set the window size (10 characters - 0...9) and move through `s` storing each

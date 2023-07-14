@@ -179,7 +179,7 @@ struct SortAnArray {
         
         let sortedIndex = partition(&nums, left, right)
         
-        //as the `sortedIndex` is now in its final location we need to sort the reminder of `nums`
+        //as the `sortedIndex` is now in its final location we need to sort the remainder of `nums`
         quickSort(&nums, left, (sortedIndex - 1)) //partiton/sort those elements to the left of the pivot
         quickSort(&nums, (sortedIndex + 1), right) //partiton/sort those elements to the right of the pivot
     }
@@ -280,7 +280,7 @@ struct SortAnArray {
             }
         }
         
-        //merge the reminder of either array into `merged`
+        //merge the remainder of either array into `merged`
         if p1 < left.count {
             merged.append(contentsOf: left[p1...])
         } else if p2 < right.count {

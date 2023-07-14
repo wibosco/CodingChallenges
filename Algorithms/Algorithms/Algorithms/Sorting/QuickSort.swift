@@ -47,7 +47,7 @@ struct QuickSort {
         
         let sortedIndex = partition(&nums, left, right)
         
-        //as the `sortedIndex` is now in its final location we need to sort the reminder of `nums`
+        //as the `sortedIndex` is now in its final location we need to sort the remainder of `nums`
         quickSort(&nums, left, (sortedIndex - 1)) //partiton/sort those elements to the left of the pivot
         quickSort(&nums, (sortedIndex + 1), right) //partiton/sort those elements to the right of the pivot
     }

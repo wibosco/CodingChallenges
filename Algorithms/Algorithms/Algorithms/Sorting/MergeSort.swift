@@ -84,7 +84,7 @@ struct MergeSort {
             }
         }
         
-        //merge the reminder of either array into `merged`
+        //merge the remainder of either array into `merged`
         if p1 < left.count {
             merged.append(contentsOf: left[p1...])
         } else if p2 < right.count {
