@@ -50,6 +50,7 @@ A collection of coding challenges and their solutions from:
 | Explore possible replacement values for a given element in an array/stringg | `DFS`, `Memoization` | `ValidParenthesisString` |
 | Can't use additional memeory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
 | Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
+| Simulate time passing or different rounds | Batch up changes either using a `Queue` or caching state between rounds | `PushDominoes` |
 
 A lot of problems can be treated as graph problems.
 
