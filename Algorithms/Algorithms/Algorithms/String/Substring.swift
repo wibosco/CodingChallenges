@@ -49,7 +49,7 @@ struct Substring {
         
         return substrings
     }
-    
+        
     private static func dfs(_ characters: [Character], _ index: Int, _ substring: [Character], _ substrings: inout Set<String>) {
         guard index < characters.count else {
             return

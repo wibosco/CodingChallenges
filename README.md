@@ -51,6 +51,7 @@ A collection of coding challenges and their solutions from:
 | Can't use additional memeory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
 | Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
 | Simulate time passing or different rounds | Batch up changes either using a `Queue` or caching state between rounds | `PushDominoes` |
+| Need to count possible substrings | `characterCount * (characterCount + 1) / 2` | `NumberOfZeroFilledSubarrays` |
 
 A lot of problems can be treated as graph problems.
 
