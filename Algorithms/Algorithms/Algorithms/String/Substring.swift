@@ -14,6 +14,7 @@ struct Substring {
     //DFS
     //recrusive
     //array
+    //subarray
     //string
     //set
     //multi-source
@@ -39,6 +40,9 @@ struct Substring {
     //    bcd
     //    abcd
     //
+    //This forumla calculates the number of possible substrings:
+    //
+    //characterCount * (characterCount + 1) / 2
     static func generateSubstrings(_ s: String) -> Set<String> {
         var substrings = Set<String>()
         let characters = Array(s)

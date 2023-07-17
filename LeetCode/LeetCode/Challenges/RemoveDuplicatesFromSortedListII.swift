@@ -18,7 +18,7 @@ struct RemoveDuplicatesFromSortedListII {
     //
     //Solution Description:
     //Using two pointers we iterate through the list comparing the `current` node with its next node. If their values don't
-    //match then we know current isn't a duplicate and we move `previous` onto `current` and `current` onto `current.next`;
+    //match then we know `current` isn't a duplicate and we move `previous` onto `current` and `current` onto `current.next`;
     //if they do match then we know we have at least two duplicates and using a nested loop we iterate through the list
     //until we reach the end of the duplicates and update `current` to beyond the duplicates. We repeat this process until
     //we reach the end of the list. At the end we set the `next` property on the tail node (`previous`) to nil to avoid the

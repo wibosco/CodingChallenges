@@ -12,16 +12,17 @@ import Foundation
 //array
 struct MoveZeros {
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //two pointers
+    //sorting
+    //pivot
     //
     //Solution Description:
-    //Using a fast and slow pointer move through the array. The slow pointer
-    //is used to identify zero value; the fast pointer used to identify
-    //non-zero values. With the slow pointer on a zero value and the fast
-    //pointer on a non-zero value - the values are swapped This will result
-    //in the zeros moving gradually moved to the end of the array
+    //Using a fast and slow pointer move through the array. The slow pointer is used to identify zero value; the fast pointer
+    //used to identify non-zero values. With the slow pointer on a zero value and the fast pointer on a non-zero value, the
+    //values are swapped - the ordering of the zeros isn't important so swapping the first zero is fine. This will result in
+    //the zeros moving gradually moved to the end of the array as we partition the array.
     static func moveZeroes(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
@@ -43,14 +44,13 @@ struct MoveZeros {
         }
     }
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //removal
     //
     //Solution Description:
-    //Remove zeros from `nums` as this are found while keeping a count of
-    //how many have been removed. Once all zeros have been removed, add
-    //them to the end of the arrayx
+    //Remove zeros from `nums` as this are found while keeping a count of how many have been removed. Once all zeros have been
+    //removed, add them to the end of the arrayx
     static func moveZeroesAppending(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return

@@ -51,7 +51,10 @@ A collection of coding challenges and their solutions from:
 | Can't use additional memeory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
 | Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
 | Simulate time passing or different rounds | Batch up changes either using a `Queue` or caching state between rounds | `PushDominoes` |
-| Need to count possible substrings | `characterCount * (characterCount + 1) / 2` | `NumberOfZeroFilledSubarrays` |
+| Count possible substrings | `characterCount * (characterCount + 1) / 2` | `NumberOfZeroFilledSubarrays` |
+| Count possible subsequences | `2 ^ characterCount` | `NumberOfSubsequencesThatSatisfyTheGivenSumCondition` |
+| Repeatedly find the min and max value in subarrays| Sort the overall array and take the first and last element in the subarray | `MinimumDifferenceBetweenHighestAndLowestOfKScore` |
+| Find the end of duplicates in an array | Nest a while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
 
 A lot of problems can be treated as graph problems.
 

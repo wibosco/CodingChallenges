@@ -9,7 +9,7 @@ import Foundation
 
 struct Subsequence {
     
-    //Time: O(n^2) where n is the number of elements in `s`
+    //Time: O(2^n) where n is the number of elements in `s`
     //Space: O(n)
     //DFS
     //recrusive
@@ -44,6 +44,9 @@ struct Subsequence {
     //    bcd
     //    abcd
     //
+    //This forumla calculates the number of possible subsequences:
+    //
+    //2 ^ characterCount
     static func generateSubsequences(_ s: String) -> Set<String> {
         var subsequences = Set<String>()
         var subsequence = [Character]()
