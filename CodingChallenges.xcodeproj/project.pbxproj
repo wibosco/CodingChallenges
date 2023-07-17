@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43147ED42A641B5400802598 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 43147ED32A641B5400802598 /* README.md */; };
 		432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A51CDCA129005B1E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432685981CDCA129005B1E61 /* Assets.xcassets */; };
 		432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4326859A1CDCA129005B1E61 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		3D4E3FD42729712200DE491D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43147ED32A641B5400802598 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		432685981CDCA129005B1E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4326859B1CDCA129005B1E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432685A31CDCA129005B1E61 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		4353DA331CDB868200A07167 = {
 			isa = PBXGroup;
 			children = (
+				43147ED32A641B5400802598 /* README.md */,
 				4353DA3E1CDB868200A07167 /* CodingChallenges */,
 				4353DA551CDB868200A07167 /* CodingChallengesTests */,
 				4353DA3D1CDB868200A07167 /* Products */,
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43147ED42A641B5400802598 /* README.md in Resources */,
 				432685A41CDCA129005B1E61 /* Assets.xcassets in Resources */,
 				432685A61CDCA129005B1E61 /* LaunchScreen.storyboard in Resources */,
 			);

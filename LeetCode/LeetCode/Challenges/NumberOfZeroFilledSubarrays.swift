@@ -74,30 +74,30 @@ struct NumberOfZeroFilledSubarrays {
         
         var total = 0
         for i in zeros {
-            let substrings = generateSubArrays(i)
+            let substrings = generateSubarrays(i)
             total += substrings.count
         }
         
         return total
     }
     
-    private static func generateSubArrays(_ zeros: [Int]) -> [[Int]] {
-        var subArrays = [[Int]]()
+    private static func generateSubarrays(_ zeros: [Int]) -> [[Int]] {
+        var subarrays = [[Int]]()
         
         for i in 0..<zeros.count {
-            dfs(zeros, i, [], &subArrays)
+            dfs(zeros, i, [], &subarrays)
         }
         
-        return subArrays
+        return subarrays
     }
     
-    private static func dfs(_ zeros: [Int], _ index: Int, _ subArray: [Int], _ subArrays: inout [[Int]]) {
+    private static func dfs(_ zeros: [Int], _ index: Int, _ subarray: [Int], _ subarrays: inout [[Int]]) {
         guard index < zeros.count else {
             return
         }
     
-        let nextSubArray = subArray + [zeros[index]]
-        subArrays.append(nextSubArray)
-        dfs(zeros, (index + 1), nextSubArray, &subArrays)
+        let nextSubArray = subarray + [zeros[index]]
+        subarrays.append(nextSubArray)
+        dfs(zeros, (index + 1), nextSubArray, &subarrays)
     }
 }
