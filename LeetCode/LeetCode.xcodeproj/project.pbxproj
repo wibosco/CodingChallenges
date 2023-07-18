@@ -620,6 +620,8 @@
 		435F01A12A0CF12D00F6B50F /* SurroundedRegionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F01A02A0CF12D00F6B50F /* SurroundedRegionsTests.swift */; };
 		435F01A32A0D23C000F6B50F /* RedundantConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F01A22A0D23C000F6B50F /* RedundantConnection.swift */; };
 		435F01A52A0D249000F6B50F /* RedundantConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F01A42A0D249000F6B50F /* RedundantConnectionTests.swift */; };
+		436890842A658CB6002736F6 /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436890832A658CB6002736F6 /* RotateArray.swift */; };
+		436890862A658CEC002736F6 /* RotateArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436890852A658CEC002736F6 /* RotateArrayTests.swift */; };
 		437119442A5EEE6B000E0EE5 /* GridGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119432A5EEE6B000E0EE5 /* GridGame.swift */; };
 		437119462A5EEEA1000E0EE5 /* GridGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119452A5EEEA1000E0EE5 /* GridGameTests.swift */; };
 		437119482A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */; };
@@ -1293,6 +1295,8 @@
 		435F01A02A0CF12D00F6B50F /* SurroundedRegionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurroundedRegionsTests.swift; sourceTree = "<group>"; };
 		435F01A22A0D23C000F6B50F /* RedundantConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedundantConnection.swift; sourceTree = "<group>"; };
 		435F01A42A0D249000F6B50F /* RedundantConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedundantConnectionTests.swift; sourceTree = "<group>"; };
+		436890832A658CB6002736F6 /* RotateArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
+		436890852A658CEC002736F6 /* RotateArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateArrayTests.swift; sourceTree = "<group>"; };
 		437119432A5EEE6B000E0EE5 /* GridGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGame.swift; sourceTree = "<group>"; };
 		437119452A5EEEA1000E0EE5 /* GridGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGameTests.swift; sourceTree = "<group>"; };
 		437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheIndexOfTheFirstOccurrenceInAString.swift; sourceTree = "<group>"; };
@@ -1670,6 +1674,7 @@
 				3D5C90A027A7F7620035C399 /* ReverseString.swift */,
 				3DA65F3A27F70D1800AAB26A /* RobotRoomCleaner.swift */,
 				3D5C90B727A7F7620035C399 /* RomanToInteger.swift */,
+				436890832A658CB6002736F6 /* RotateArray.swift */,
 				3D09759227DB5B56007FC11F /* RotateImage.swift */,
 				3D5C90BB27A7F7620035C399 /* RotateList.swift */,
 				3D5C913227A7F7630035C399 /* RottingOranges.swift */,
@@ -1998,6 +2003,7 @@
 				3D5C928927A7F76C0035C399 /* ReverseLinkedListTests.swift */,
 				3D5C925027A7F76C0035C399 /* ReverseStringTests.swift */,
 				3D5C926C27A7F76C0035C399 /* RomanToIntegerTests.swift */,
+				436890852A658CEC002736F6 /* RotateArrayTests.swift */,
 				3D09759427DB5B82007FC11F /* RotateImageTests.swift */,
 				3D5C924E27A7F76C0035C399 /* RotateListTests.swift */,
 				3D5C921427A7F76B0035C399 /* RottingOrangesTests.swift */,
@@ -2480,6 +2486,7 @@
 				3D12F49F27E936A000A4D2C3 /* DecodeWays.swift in Sources */,
 				3DB7C5D127CEC56800353EED /* ExclusiveTimeOfFunctions.swift in Sources */,
 				3D5C918027A7F7630035C399 /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
+				436890842A658CB6002736F6 /* RotateArray.swift in Sources */,
 				4379F48D29E820C0003BA6F9 /* HouseRobberII.swift in Sources */,
 				3D09759327DB5B56007FC11F /* RotateImage.swift in Sources */,
 				3D46243D27E542CE00A888C1 /* PartitionList.swift in Sources */,
@@ -2724,6 +2731,7 @@
 				3D5C92D527A7F76C0035C399 /* FindIfPathExistsInGraphTests.swift in Sources */,
 				4347A1C229E2116F00501CEE /* IncreasingTripletSubsequenceTests.swift in Sources */,
 				3D5C92F827A7F76C0035C399 /* OpenTheLockTests.swift in Sources */,
+				436890862A658CEC002736F6 /* RotateArrayTests.swift in Sources */,
 				3D5C929C27A7F76C0035C399 /* ContainerWithMostWaterTests.swift in Sources */,
 				3D5C92DC27A7F76C0035C399 /* CourseScheduleIITests.swift in Sources */,
 				3D5C930527A7F76C0035C399 /* GenerateParenthesesTests.swift in Sources */,

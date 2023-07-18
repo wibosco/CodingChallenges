@@ -9,6 +9,8 @@ import Foundation
 
 struct Subsequence {
     
+    // MARK: - Generation
+    
     //Time: O(2^n) where n is the number of elements in `s`
     //Space: O(n)
     //DFS
@@ -43,10 +45,6 @@ struct Subsequence {
     //    acd
     //    bcd
     //    abcd
-    //
-    //This forumla calculates the number of possible subsequences:
-    //
-    //2 ^ characterCount
     static func generateSubsequences(_ s: String) -> Set<String> {
         var subsequences = Set<String>()
         var subsequence = [Character]()
@@ -67,5 +65,17 @@ struct Subsequence {
             dfs(characters, (i + 1), &subsequence, &subsequences)
             subsequence.removeLast()
         }
+    }
+    
+    // MARK: - Count
+    
+    //Time: O(1)
+    //Space: O(1)
+    //math
+    //
+    //Solution Description:
+    //Use a formula to work out the count.
+    static func countSubsequences(_ s: String) -> Int {
+        return Int(pow(Double(2), Double(s.count))) - 1 //-1 removes the empty subsequence
     }
 }

@@ -13,7 +13,9 @@ final class SubstringTests: XCTestCase {
 
     //MARK: - Tests
     
-    func test_A() {
+    // MARK: Generation
+    
+    func test_generation_A() {
         let s = "ab"
         
         let result = Substring.generateSubstrings(s)
@@ -25,7 +27,7 @@ final class SubstringTests: XCTestCase {
         XCTAssertTrue(result.contains("ab"))
     }
     
-    func test_B() {
+    func test_generation_B() {
         let s = "abcd"
         
         let result = Substring.generateSubstrings(s)
@@ -42,5 +44,23 @@ final class SubstringTests: XCTestCase {
         XCTAssertTrue(result.contains("abc"))
         XCTAssertTrue(result.contains("bcd"))
         XCTAssertTrue(result.contains("abcd"))
+    }
+    
+    // MARK: Count
+    
+    func test_count_A() {
+        let s = "ab"
+        
+        let result = Substring.countSubstrings(s)
+        
+        XCTAssertEqual(result, 3)
+    }
+    
+    func test_count_B() {
+        let s = "abcd"
+        
+        let result = Substring.countSubstrings(s)
+        
+        XCTAssertEqual(result, 10)
     }
 }

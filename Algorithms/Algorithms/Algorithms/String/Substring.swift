@@ -9,6 +9,8 @@ import Foundation
 
 struct Substring {
     
+    // MARK: - Generation
+    
     //Time: O(n^2) where n is the number of characters in `s`
     //Space: O(n)
     //DFS
@@ -39,10 +41,6 @@ struct Substring {
     //    abc
     //    bcd
     //    abcd
-    //
-    //This forumla calculates the number of possible substrings:
-    //
-    //characterCount * (characterCount + 1) / 2
     static func generateSubstrings(_ s: String) -> Set<String> {
         var substrings = Set<String>()
         let characters = Array(s)
@@ -62,5 +60,19 @@ struct Substring {
         let nextSubstring = substring + [characters[index]]
         substrings.insert(String(nextSubstring))
         dfs(characters, (index + 1), nextSubstring, &substrings)
+    }
+    
+    // MARK: - Count
+    
+    //Time: O(1)
+    //Space: O(1)
+    //math
+    //
+    //Solution Description:
+    //Use a formula to work out the count.
+    static func countSubstrings(_ s: String) -> Int {
+        let characterCount = s.count
+        
+        return characterCount * (characterCount + 1) / 2
     }
 }

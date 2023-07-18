@@ -13,7 +13,9 @@ final class SubsequenceTests: XCTestCase {
 
     //MARK: - Tests
     
-    func test_A() {
+    // MARK: Generation
+    
+    func test_generation_A() {
         let s = "ab"
         
         let result = Subsequence.generateSubsequences(s)
@@ -25,7 +27,7 @@ final class SubsequenceTests: XCTestCase {
         XCTAssertTrue(result.contains("ab"))
     }
     
-    func test_B() {
+    func test_generation_B() {
         let s = "abcd"
         
         let result = Subsequence.generateSubsequences(s)
@@ -47,5 +49,23 @@ final class SubsequenceTests: XCTestCase {
         XCTAssertTrue(result.contains("acd"))
         XCTAssertTrue(result.contains("bcd"))
         XCTAssertTrue(result.contains("abcd"))
+    }
+    
+    // MARK: Count
+    
+    func test_count_A() {
+        let s = "ab"
+        
+        let result = Subsequence.countSubsequences(s)
+        
+        XCTAssertEqual(result, 3)
+    }
+    
+    func test_count_B() {
+        let s = "abcd"
+        
+        let result = Subsequence.countSubsequences(s)
+        
+        XCTAssertEqual(result, 15)
     }
 }

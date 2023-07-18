@@ -39,6 +39,7 @@ A collection of coding challenges and their solutions from:
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
 | "Consecutive" | `sort` |
 | "Merge", "Intervals" | `sort` |
+| "Rotate by k" | `(i + k) % array.count` |
 
 ## Need Tips
 
@@ -51,8 +52,8 @@ A collection of coding challenges and their solutions from:
 | Can't use additional memeory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
 | Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
 | Simulate time passing or different rounds | Batch up changes either using a `Queue` or caching state between rounds | `PushDominoes` |
-| Count possible substrings | `characterCount * (characterCount + 1) / 2` | `NumberOfZeroFilledSubarrays` |
-| Count possible subsequences | `2 ^ characterCount` | `NumberOfSubsequencesThatSatisfyTheGivenSumCondition` |
+| Count possible substrings | `count * (count + 1) / 2` | `Substring` |
+| Count possible subsequences | `(2 ^ count) - 1` | `Subsequence` |
 | Repeatedly find the min and max value in subarrays| Sort the overall array and take the first and last element in the subarray | `MinimumDifferenceBetweenHighestAndLowestOfKScore` |
 | Find the end of duplicates in an array | Nest a while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
 
