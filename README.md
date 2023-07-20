@@ -27,7 +27,7 @@ A collection of coding challenges and their solutions from:
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Iterating array comparing elements" | `Stack` |
 | "Next greater element", "Next lesser element" | `Monotonic stack` |
-| "Longest subsequence", "Smallest subsequence", "Maximum points"| `Sliding window`|
+| "Longest subsequence", "Smallest subsequence", "Maximum points", "Neighbors"| `Sliding window`|
 | "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
@@ -38,7 +38,7 @@ A collection of coding challenges and their solutions from:
 | "kth smallest", "kth largest", "kth frequent", "Top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
 | "Consecutive" | `sort` |
-| "Merge", "Intervals" | `sort` |
+| "Merge", "Intervals", "Neighbors" | `sort` |
 | "Rotate by k" | `(i + k) % array.count` |
 
 ## Need Tips
