@@ -10,8 +10,8 @@ import Foundation
 //https://leetcode.com/problems/fruit-into-baskets/
 struct FruitIntoBaskets {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(n) where n is the number of elements in `fruits`
+    //Space: O(1)
     //array
     //sliding window
     //dictionary
