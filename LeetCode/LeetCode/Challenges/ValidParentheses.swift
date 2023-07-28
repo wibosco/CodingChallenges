@@ -15,7 +15,7 @@ struct ValidParentheses {
                                                   "{": "}",
                                                   "[": "]"]
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
     //dictionary
     //stack

@@ -7,8 +7,7 @@
 
 import Foundation
 
-//
-//
+//https://leetcode.com/problems/valid-number/
 struct ValidNumber {
     
     //Time: O(
