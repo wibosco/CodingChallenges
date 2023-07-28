@@ -1,5 +1,5 @@
 //
-//  AARemovingStarsFromAStringTests.swift
+//  RemovingStarsFromAStringTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 28/07/2023.
@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-final class AARemovingStarsFromAStringTests: XCTestCase {
+final class RemovingStarsFromAStringTests: XCTestCase {
 
     //MARK: - Tests
     
