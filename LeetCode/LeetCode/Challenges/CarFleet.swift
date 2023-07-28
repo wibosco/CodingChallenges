@@ -14,6 +14,7 @@ struct CarFleet {
     //Time: O(n log n) where n is either the `position` elements or `speed` elements
     //Space: O(n)
     //sorting
+    //stack
     //monotonic decreasing stack
     //
     //Solution Description:

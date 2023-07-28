@@ -14,6 +14,7 @@ struct FinalPricesWithSpecialDiscount {
     
     //Time: O(n) where n is the prices
     //Space: O(n) where n is the final prices
+    //stack
     //monotonic ascending stack
     //
     //Solution Description:
