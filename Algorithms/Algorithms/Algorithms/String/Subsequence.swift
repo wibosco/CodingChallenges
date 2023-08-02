@@ -21,6 +21,7 @@ struct Subsequence {
     //set
     //multi-source
     //n-ary tree
+    //subsequence
     //
     //Solution Description:
     //A subsequence is a non-contiguous slice of `s` i.e. while order is preserved some characters can be skipped over. Therefore
@@ -72,10 +73,51 @@ struct Subsequence {
     //Time: O(1)
     //Space: O(1)
     //math
+    //subsequence
     //
     //Solution Description:
     //Use a formula to work out the count.
     static func countSubsequences(_ s: String) -> Int {
         return Int(pow(Double(2), Double(s.count))) - 1 //-1 removes the empty subsequence
+    }
+    
+    // MARK: - Check
+    
+    //Time: O(max(n, m)) where n is the number of elements in `a`, m is the number fo elements in `b`
+    //Space: O(1)
+    //subsequence
+    //nested loops
+    //two pointers
+    //
+    //Solution Description:
+    //Using nested loops we iterate through `sub` and attempt for find a match for each character (in order) in `full`. Using two
+    //pointers we are able to loop through both strings at different rates - remember a subsequence only needs to keep the relative
+    //order of the elements the same, it can omit any elements in between. The outer loop iterates through the elements in `sub` and
+    //the inner loop through `full`. If there is a match between `sub` and `full`, then we move onto the next element in `sub` and
+    //attempt to find it in `full` - note that `fIndex` isn't reset upon finding a match. If we find all of `sub` in `full` then
+    //`sIndex` will be equal to `sub.count` otherwise it won't be so we can use this to return true or false respectively.
+    static func isSubsequence(_ sub: String, of full: String) -> Bool {
+        let sub = Array(sub)
+        let full = Array(full)
+        
+        var sIndex = 0
+        var fIndex = 0
+        
+        while sIndex < sub.count {
+            var match = false
+            
+            while fIndex < full.count && !match {
+                match = (full[fIndex] == sub[sIndex])
+                fIndex += 1
+            }
+            
+            if !match {
+                break
+            }
+            
+            sIndex += 1
+        }
+        
+        return sIndex == sub.count
     }
 }

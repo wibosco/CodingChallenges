@@ -68,4 +68,60 @@ final class SubsequenceTests: XCTestCase {
         
         XCTAssertEqual(result, 15)
     }
+    
+    // MARK: - Check
+    
+    func test_check_A() {
+        let a = "abcd"
+        let b = "abc"
+        
+        let result = Subsequence.isSubsequence(b, of: a)
+        
+        XCTAssertTrue(result)
+    }
+    
+    func test_check_B() {
+        let a = "abcd"
+        let b = "ac"
+        
+        let result = Subsequence.isSubsequence(b, of: a)
+        
+        XCTAssertTrue(result)
+    }
+    
+    func test_check_C() {
+        let a = "abcd"
+        let b = "bd"
+        
+        let result = Subsequence.isSubsequence(b, of: a)
+        
+        XCTAssertTrue(result)
+    }
+    
+    func test_check_D() {
+        let a = "abcd"
+        let b = "zn"
+        
+        let result = Subsequence.isSubsequence(b, of: a)
+        
+        XCTAssertFalse(result)
+    }
+    
+    func test_check_E() {
+        let a = "abcd"
+        let b = "abcn"
+        
+        let result = Subsequence.isSubsequence(b, of: a)
+        
+        XCTAssertFalse(result)
+    }
+    
+    func test_check_F() {
+        let a = "abcd"
+        let b = "abcde"
+        
+        let result = Subsequence.isSubsequence(b, of: a)
+        
+        XCTAssertFalse(result)
+    }
 }
