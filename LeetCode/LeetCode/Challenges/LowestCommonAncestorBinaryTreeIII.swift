@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
-//binary tree
 struct LowestCommonAncestorBinaryTreeIII {
     
-    //Time: O(n * m) where n is the level of `p` and m is the level of `q`
+    //Time: O(n + m) where n is the level of `p` and m is the level of `q`
     //Space: O(1)
+    //binary tree
     //two pointers
     //
     //Solution Description:
@@ -23,7 +23,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //4 then this approach will result in the ancestor being declared as the root when it may be level 3. To overcome this
     //limitation, we need a way to overcome any difference in levels - we can do this with two pointers. First we start both
     //pointers at the levels for `p` and `q` we then navigate up the tree until one of the pointers hits the root at which
-    //we reset it to the starting position of the slower pointer, we continue to process the ndoes until the other pointer
+    //we reset it to the starting position of the slower pointer, we continue to process the nodes until the other pointer
     //also hits root at which point it is reset to the quicker pointers starting position. Both pointers will now be at the
     //same level as the difference will of the extra levels the slower needs to traverse will have been eaten up by switching
     //the fast pointer to the slower starting position. When they meet we can guarantee that node will be the lowest common
@@ -32,7 +32,6 @@ struct LowestCommonAncestorBinaryTreeIII {
     //See: https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len for more details and a graphic showing the above
     //Similar to: https://leetcode.com/problems/intersection-of-two-linked-lists/
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
-    //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
     static func lowestCommonAncestor(_ p: BinaryTreeNodeParent?, _ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
         guard let p = p, let q = q else {
             return nil
@@ -50,7 +49,8 @@ struct LowestCommonAncestorBinaryTreeIII {
     }
     
     //Time: O(n) where n is the number of nodes in the tree
-    //Space: O(log n) where `log n` is the number of levels in the tree
+    //Space: O(h) where `h` is the number of levels in the tree
+    //binary tree
     //DFS
     //
     //Solution Description:

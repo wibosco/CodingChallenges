@@ -12,7 +12,7 @@ import Foundation
 //linked list
 struct SortList {
     
-    //Time: O(n log n) where n is the number of ndoes in the list
+    //Time: O(n log n) where n is the number of nodes in the list
     //Space: O(1)
     //sorted
     //recursion

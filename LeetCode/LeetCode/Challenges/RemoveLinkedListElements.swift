@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-linked-list-elements/
-//linked list
 struct RemoveLinkedListElements {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
+    //linked list
     //sentinel head
     //
     //Solution Description:
@@ -26,8 +26,7 @@ struct RemoveLinkedListElements {
         while let c = current {
             if c.val != val {
                 tail?.next = c
-                
-                tail = tail?.next
+                tail = c
             }
             
             current = c.next
