@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/pascals-triangle-ii/
-//graph theory
 struct PascalsTriangleII {
     
     //Time: O(n^2) where n is the row index
     //Space: O(l) where `l` is the number of items at row index
+    //graph theory
     //iterative
     //in-line
     //
@@ -44,6 +44,7 @@ struct PascalsTriangleII {
     
     //Time: O(n^2) where n is the row index
     //Space: O(l) where `l` is the number of items at row index
+    //graph theory
     //recursive
     //memoization
     //

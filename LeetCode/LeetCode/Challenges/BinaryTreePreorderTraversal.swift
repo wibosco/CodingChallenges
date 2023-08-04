@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-tree-preorder-traversal/
-//binary tree
 struct BinaryTreePreorderTraversal {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //DFS
     //recursive
     static func preorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
@@ -40,6 +40,7 @@ struct BinaryTreePreorderTraversal {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //DFS
     //iterative
     static func preorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {

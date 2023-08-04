@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/top-k-frequent-elements/
-//array
 struct TopKFrequentElements {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n + log n) where n is the number of elements in `nums` (log n for the recursive stack)
+    //array
     //quickselect
     //in-line
     //quicksort
@@ -80,7 +80,8 @@ struct TopKFrequentElements {
     }
     
     //Time: O(n) where n is the number of elements in `nums`
-    //Space: O(n) where n is the number of elements in `nums`
+    //Space: O(n) 
+    //array
     //bucket sort
     //
     //Solution Description:

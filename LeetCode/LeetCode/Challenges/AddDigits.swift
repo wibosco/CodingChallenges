@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/add-digits/
-//string
 struct AddDigits {
     
     //Time: O(1)
     //Space: O(1)
+    //string
     //math
     //digital root
     //modulo

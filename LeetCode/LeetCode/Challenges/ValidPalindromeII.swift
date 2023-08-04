@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/valid-palindrome-ii/
-//string
 struct ValidPalindromeII {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //two pointers
     //recursive
     //
@@ -45,6 +45,7 @@ struct ValidPalindromeII {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //two pointers
     //recursive
     //
@@ -82,6 +83,7 @@ struct ValidPalindromeII {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //two pointers
     //recursive
     //

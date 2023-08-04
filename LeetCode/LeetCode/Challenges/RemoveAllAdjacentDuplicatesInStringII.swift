@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/
-//string
 struct RemoveAllAdjacentDuplicatesInStringII {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //stack
     //counting
     //
@@ -46,6 +46,7 @@ struct RemoveAllAdjacentDuplicatesInStringII {
     
     //Time: O(n^2) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //in-line
     //
     //Solution Description:

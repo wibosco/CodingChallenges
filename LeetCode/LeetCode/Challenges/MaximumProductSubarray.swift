@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/maximum-product-subarray/
-//array
 struct MaximumProductSubarray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //
     //Solution Description:
     //As `nums` can contain negative numbers we need to track not just the maximum product but also the minimum product as

@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/find-the-town-judge/
-//graph theory
 struct FindTheTownJudge {
     
     //Time: O(n) where n is the number of elements in `trust`
     //Space: O(m) where m is the number of townfolk (n)
+    //graph theory
     //array
     //indegree
     //outdegree

@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/hand-of-straights/
-//array
 struct HandOfStraights {
     
     //Time: O(n log n) where n is the number of elements in `hand`
     //Space: O(n)
+    //array
     //dictionary
     //sorting
     //greedy

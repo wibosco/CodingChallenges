@@ -8,11 +8,13 @@
 import Foundation
 
 //https://leetcode.com/problems/unique-length-3-palindromic-subsequences/
-//array
+
 struct UniqueLength3PalindromicSubsequences {
     
-    //Time: O(26*n) where n is the number of elements in `s`, 26 is the size of the English alphabet which is the max `leftEdgeOptions` hold
+    //Time: O(26*n) where n is the number of elements in `s`, 26 is the size of the English alphabet which is the max
+    //              `leftEdgeOptions` hold
     //Space: O(n)
+    //array
     //set
     //dictionary
     //frequency
@@ -66,6 +68,7 @@ struct UniqueLength3PalindromicSubsequences {
     
     //Time: O(n^2) where n is the number of elements in `s`
     //Space: O(n)
+    //array
     //set
     //dictionary
     //nested loops

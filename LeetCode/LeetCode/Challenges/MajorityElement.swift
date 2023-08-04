@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/majority-element/
-//array
 struct MajorityElement {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //counting
     //Boyer-Moore Voting Algorithm
     //
@@ -40,7 +40,8 @@ struct MajorityElement {
     }
     
     //Time: O(n) where n is the number of elements in `nums`
-    //Space: O(n) where n is the number of elements in `nums`
+    //Space: O(n)
+    //array
     //dictionary
     //frequency
     //

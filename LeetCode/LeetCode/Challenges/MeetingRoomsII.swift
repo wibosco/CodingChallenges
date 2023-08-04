@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/meeting-rooms-ii/
-//array
 struct MeetingRoomsII {
     
     //Time: O(n log n) where n is the number of elements in intervals
     //Space: O(n) two arrays for the start and end times
+    //array
     //sorted
     //two pointers
     //

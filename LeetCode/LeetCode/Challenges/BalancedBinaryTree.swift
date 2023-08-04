@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/balanced-binary-tree/
-//binary tree
 struct BalancedBinaryTree {
     
     //Time: O(n) where n is the number of noes in the tree
     //Space: O(h) where h is the height of the tree
+    //binary tree
     //DFS
     //recursive
     //

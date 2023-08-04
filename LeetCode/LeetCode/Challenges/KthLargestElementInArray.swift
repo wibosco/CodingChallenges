@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/kth-largest-element-in-an-array/
-//array
 struct KthLargestElementInArray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n + log n) where n is the number of elements in `nums` (log n for the recursive stack)
+    //array
     //quickselect
     //quicksort
     //in-line

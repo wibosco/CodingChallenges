@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-tree-postorder-traversal/
-//binary tree
+
 struct BinaryTreePostorderTraversal {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //DFS
     //recursive
     static func postorderTraversal(_ root: BinaryTreeNode?) -> [Int] {
@@ -40,6 +41,7 @@ struct BinaryTreePostorderTraversal {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //DFS
     //iterative
     static func postorderTraversalIterative(_ root: BinaryTreeNode?) -> [Int] {

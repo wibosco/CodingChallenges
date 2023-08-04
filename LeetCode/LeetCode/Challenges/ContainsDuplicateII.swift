@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/contains-duplicate-ii/
-//array
 struct ContainsDuplicateII {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //dictionary
     //sliding window
     //sorted

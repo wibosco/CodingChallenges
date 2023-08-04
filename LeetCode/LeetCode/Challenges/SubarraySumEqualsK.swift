@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/subarray-sum-equals-k/
-//array
 struct SubarraySumEqualsK {
     
     //Time: O(n) where n is the number of element in `nums`
-    //Space: O(n) where n is the number of element in `nums`
+    //Space: O(n)
+    //array
     //prefix sum
     //dictionary
     //
@@ -53,6 +53,7 @@ struct SubarraySumEqualsK {
     
     //Time: O(n^2) where n is the number of element in `nums`
     //Space: O(1)
+    //array
     //nested loops
     //
     //Solution Description:

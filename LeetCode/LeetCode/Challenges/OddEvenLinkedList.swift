@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/odd-even-linked-list/
-//linked list
 struct OddEvenLinkedList {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
+    //linked list
     //three pointers
     //
     //Solution Description:
@@ -40,6 +40,7 @@ struct OddEvenLinkedList {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
+    //linked list
     //three pointers
     //
     //Solution Description:

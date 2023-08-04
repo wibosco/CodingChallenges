@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/perfect-squares/
-//graph theory
 struct PerfectSquares {
     
     //Time: O()
     //Space: O()
+    //graph theory
     //BFS
     //Set
     //

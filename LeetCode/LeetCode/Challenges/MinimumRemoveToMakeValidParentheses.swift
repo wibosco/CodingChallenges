@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
-//string
 struct MinimumRemoveToMakeValidParentheses {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n) where n is the number of characters in `s`
+    //string
     //array
     //counting
     //

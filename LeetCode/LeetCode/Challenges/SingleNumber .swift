@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/single-number
-//array
 struct SingleNumber {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //bit manipulation
     //bitwise
     //
@@ -37,6 +37,7 @@ struct SingleNumber {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //set
     //
     //Solution Description:

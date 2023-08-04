@@ -9,11 +9,13 @@
 import Foundation
 
 //https://leetcode.com/problems/flood-fill/
-//graph theory
+
 struct FloodFill {
     
-    //Time: O(m*n) where m is the number of rows and n the number of columns
-    //Space: O(m*n) where m is the number of rows and n the number of columns
+    //Time: O(m * n) where m is the number of rows
+    //               where n the number of columns
+    //Space: O(m * n)
+    //graph theory
     //BFS
     //relative indexing
     //matrix
@@ -57,8 +59,10 @@ struct FloodFill {
         return newImage
     }
     
-    //Time: O(m*n) where m is the number of rows and n the number of columns
-    //Space: O(m*n) where m is the number of rows and n the number of columns
+    //Time: O(m * n) where m is the number of rows
+    //               where n the number of columns
+    //Space: O(m * n)
+    //graph theory
     //DFS
     //relative indexing
     //matrix

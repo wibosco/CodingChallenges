@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-days-between-two-dates/
-//string
 struct NumberOfDaysBetweenTwoDates {
     
-    //Time: O(n + m) where n is the difference between 1971 and date year, m is the difference between January and date month
+    //Time: O(n + m) where n is the difference between 1971 and date year
+    //               where m is the difference between January and date month
     //Space: O(1)
+    //string
     //math
     //dates
     //

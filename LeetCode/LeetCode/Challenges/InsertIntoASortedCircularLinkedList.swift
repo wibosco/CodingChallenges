@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/
-//linked list
 struct InsertIntoASortedCircularLinkedList {
     
     //Time: O(n)
     //Space: O(1)
+    //linked list
     //two pointers
     //
     //Solution Description:

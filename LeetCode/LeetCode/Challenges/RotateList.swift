@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/rotate-list/
-//linked list
 struct RotateList {
     
     //Time: O(n) where n ia the number of nodes in the list
     //Space: O(1)
+    //linked list
     //two pointers
     //modulo
     //
@@ -58,6 +58,7 @@ struct RotateList {
     
     //Time: O(n) where n ia the number of nodes in the list
     //Space: O(n)
+    //linked list
     //array
     //modulo
     //

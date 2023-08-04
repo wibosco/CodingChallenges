@@ -8,12 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
-//array
 struct LongestArithmeticSubsequenceOfGivenDifference {
     
     //Time: O(
     //Space: O(
     //subsequence
+    //array
     //
     static func longestSubsequence(_ arr: [Int], _ difference: Int) -> Int {
         var dp = [Int: Int]()
@@ -33,6 +33,7 @@ struct LongestArithmeticSubsequenceOfGivenDifference {
     
     //Time: O(
     //Space: O(
+    //array
     //subsequence
     //memoization
     //dynamic programming

@@ -9,12 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/simplify-path/
-//stack
 struct SimplifyPath {
     
     //Time: O(n) where n is the number of subpaths in `path`
     //Space: O(n) where n is the number of characters in `path`
-    //String
+    //stack
+    //string
     //
     //Solution Description:
     //Split path using "/" into directory-names and/or commands (`..`). Build stack of path by traversing through the split

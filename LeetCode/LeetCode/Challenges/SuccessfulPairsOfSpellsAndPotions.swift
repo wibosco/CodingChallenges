@@ -10,7 +10,8 @@ import Foundation
 //https://leetcode.com/problems/successful-pairs-of-spells-and-potions/
 struct SuccessfulPairsOfSpellsAndPotions {
     
-    //Time: O(n log n + m log n) where n is the number of elements in `spells`, m is the number of elements in `potions`
+    //Time: O(n log n + m log n) where n is the number of elements in `spells`
+    //                           where m is the number of elements in `potions`
     //Space: O(m) don't count the output array
     //array
     //sorting
@@ -49,7 +50,8 @@ struct SuccessfulPairsOfSpellsAndPotions {
         return pairs
     }
     
-    //Time: O(n log n + (n * m)) where n is the number of elements in `spells`, m is the number of elements in `potions`
+    //Time: O(n log n + (n * m)) where n is the number of elements in `spells`
+    //                           where m is the number of elements in `potions`
     //Space: O(m) don't count the output array
     //array
     //sorting

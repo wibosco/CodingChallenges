@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
-//array
 struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //sliding window
     //sorting
     //
@@ -48,6 +48,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
     
     //Time: O(n^2) where n is the number of elements in `s`
     //Space: O(n)
+    //array
     //subsequence
     //DFS
     //recrusive
@@ -102,6 +103,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
     
     //Time: O(n^2) where n is the number of elements in `s`
     //Space: O(n)
+    //array
     //subsequence
     //DFS
     //recrusive

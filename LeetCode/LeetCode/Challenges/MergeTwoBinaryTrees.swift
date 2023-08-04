@@ -8,12 +8,13 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-two-binary-trees/
-//binary tree
 struct MergeTwoBinaryTrees {
     
-    //Time: O(n + m) where n is the number of nodes in `root1`, m is the number of nodes in `root2`
+    //Time: O(n + m) where n is the number of nodes in `root1`
+    //               where m is the number of nodes in `root2`
     //Space: O(log n + log m)
     //Alternative space: O(d) where d is the maximum depth of `root1` or `root2`
+    //binary tree
     //DFS
     //recursive
     //

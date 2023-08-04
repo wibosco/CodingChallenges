@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/accounts-merge/
-//graph theory
 struct AccountsMerge {
     
-    //Time: O(m * (n log n)) where n is the number of unique accounts and m the number of unique email addresses
-    //Space: O(n * m) where n is the number of unique accounts and m the number of email addresses
+    //Time: O(m * (n log n)) where n is the number of unique accounts
+    //                       where m the number of unique email addresses
+    //Space: O(n * m)
+    //graph theory
     //BFS
     //multi-source
     //visited
@@ -94,8 +95,10 @@ struct AccountsMerge {
         return mergedAccounts
     }
     
-    //Time: O(m * (n log n)) where n is the number of unique accounts and m the number of unique email addresses
-    //Space: O(n * m) where n is the number of unique accounts and m the number of email addresses
+    //Time: O(m * (n log n)) where n is the number of unique accounts
+    //                       where m the number of unique email addresses
+    //Space: O(n * m)
+    //graph theory
     //DFS
     //multi-source
     //visited
@@ -175,8 +178,10 @@ struct AccountsMerge {
         }
     }
     
-    //Time: O(m * (n log n)) where n is the number of unique accounts and m the number of unique email addresses
-    //Space: O(n * m) where n is the number of unique accounts and m the number of unique email addresses
+    //Time: O(m * (n log n)) where n is the number of unique accounts
+    //                       where m the number of unique email addresses
+    //Space: O(n * m)
+    //graph theory
     //union find
     //disjoint set
     //array

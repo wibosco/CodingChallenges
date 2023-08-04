@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/missing-number/
-//array
 struct MissingNumber {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //maths
     //
     //Solution Description:

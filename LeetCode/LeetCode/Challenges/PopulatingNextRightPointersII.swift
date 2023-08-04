@@ -9,12 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
-//binary tree - not perfect
-//BFS
 struct PopulatingNextRightPointersII {
     
     //Time: O(
     //Space: O(1)
+    //binary tree - not perfect
+    //BFS
     //linked list
     //
     //Solution Description:
@@ -67,6 +67,8 @@ struct PopulatingNextRightPointersII {
     
     //Time: O(n)
     //Space: O(n)
+    //binary tree - not perfect
+    //BFS
     //queue - use queue count as level count
     //pointer
     //

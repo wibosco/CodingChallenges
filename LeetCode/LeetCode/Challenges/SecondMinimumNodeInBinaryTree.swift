@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
-//binary tree
 struct SecondMinimumNodeInBinaryTree {
     
     //Time: O(n log n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //DFS
     //recursion
     //sorted

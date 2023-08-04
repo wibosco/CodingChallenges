@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/valid-parenthesis-string/
-//string
 struct ValidParenthesisString {
     
     //Time: O(n^3) where n is the number of characters in `s`
     //Space: O(n^2)
+    //string
     //array
     //graph theory
     //DFS
@@ -76,6 +76,7 @@ struct ValidParenthesisString {
     
     //Time: O(n * 3^n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //array
     //graph theory
     //DFS

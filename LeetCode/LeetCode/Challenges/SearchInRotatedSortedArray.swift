@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/search-in-rotated-sorted-array/
-//binary search
 struct SearchInRotatedSortedArray {
     
     //Time: O(log n) where n is the number of elements in `nums`
     //Space: O(1)
+    //binary search
     //array
     //
     //Solution Description:
@@ -74,6 +74,7 @@ struct SearchInRotatedSortedArray {
     
     //Time: O(log n) where n is the number of elements in `nums`
     //Space: O(1)
+    //binary search
     //array
     //
     //Solution Description:

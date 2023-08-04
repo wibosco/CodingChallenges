@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/keys-and-rooms/
-//graph theory
 struct KeysAndRooms {
     
-    //Time: O(n + e) where n is the number of rooms and `e` the number of keys
+    //Time: O(n + e) where n is the number of rooms
+    //               where e the number of keys
     //Space: O(n) where n is the number of rooms
+    //graph theory
     //BFS
     //adjacency list
     //
@@ -47,8 +48,10 @@ struct KeysAndRooms {
         return visited.count == rooms.count
     }
     
-    //Time: O(n + e) where n is the number of rooms and `e` the number of keys
+    //Time: O(n + e) where n is the number of rooms
+    //               where e the number of keys
     //Space: O(n) where n is the number of rooms
+    //graph theory
     //DFS
     //adjacency list
     //recursive
@@ -77,8 +80,10 @@ struct KeysAndRooms {
         }
     }
     
-    //Time: O(n + e) where n is the number of rooms and `e` the number of keys
+    //Time: O(n + e) where n is the number of rooms
+    //               where e the number of keys
     //Space: O(n) where n is the number of rooms
+    //graph theory
     //DFS
     //adjacency list
     //iterative

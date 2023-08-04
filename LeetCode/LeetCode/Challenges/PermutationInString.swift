@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/permutation-in-string/
-//string
 struct PermutationInString {
     
-    //Time: O(n+m) where n is the number of characters in `s1`, m is the number of characters in `s2`
+    //Time: O(n + m) where n is the number of characters in `s1`
+    //               where m is the number of characters in `s2`
     //Space: O(1)
+    //string
     //sliding window
     //two pointers
     //dictionary

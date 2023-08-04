@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/construct-binary-tree-from-string/
-//string
 struct ConstructBinaryTreeFromString {
     
     //Time: O(
     //Space: O(
+    //string
     //binary tree
     //DFS
     //recursive

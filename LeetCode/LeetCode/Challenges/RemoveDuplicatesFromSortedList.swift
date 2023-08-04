@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-duplicates-from-sorted-list/
-//linked list
 struct RemoveDuplicatesFromSortedList {
     
     //Time: O(n) where n is the number of elements in the list
     //Space: O(1)
+    //linked list
     //two pointers
     //
     //Solution Description:

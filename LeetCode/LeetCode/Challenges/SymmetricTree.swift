@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/symmetric-tree/
-//binary tree
 struct SymmetricTree {
     
     //Time: O(n)
     //Space: O(log n) - best, O(h) - worse (height of the tree)
+    //binary tree
     //DFS
     //recursive
     //matching
@@ -42,6 +42,7 @@ struct SymmetricTree {
     
     //Time: O(n)
     //Space: O(log n) - best, O(h) - worse
+    //binary tree
     //BFS
     //two pointers
     //iterative

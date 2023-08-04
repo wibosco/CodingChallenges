@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/grid-game/
-//array
 struct GridGame {
     
     //Time: O(n) where n is the number of elements in `grid`
     //Space: O(n)
+    //array
     //prefix sum
     //
     //Solution Description:
@@ -57,59 +57,4 @@ struct GridGame {
         
         return minPointsAvailable
     }
-    
-//    private static func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ currentValue: Int, _ maxValue: inout Int) {
-//        if row == (grid.count - 1) && column == (grid[0].count - 1) { //bottom-right cell
-//            maxValue = max(maxValue, currentValue)
-//
-//            return
-//        }
-//
-//        let neighbors = navigatableNeighbors(grid, row, column)
-//        for neighbor in neighbors {
-//            let val = grid[neighbor[0]][neighbor[1]]
-//            dfs(grid, neighbor[0], neighbor[1], (currentValue + val), &maxValue)
-//        }
-//    }
-//
-//    private static func dfs(_ grid: inout [[Int]], _ row: Int, _ column: Int, _ grids: inout [[[Int]]]) {
-//        if row == (grid.count - 1) && column == (grid[0].count - 1) { //bottom-right cell
-//            grids.append(grid)
-//
-//            return
-//        }
-//
-//        let neighbors = navigatableNeighbors(grid, row, column)
-//        for neighbor in neighbors {
-//            let val = grid[neighbor[0]][neighbor[1]]
-//            grid[neighbor[0]][neighbor[1]] = 0
-//
-//            dfs(&grid, neighbor[0], neighbor[1], &grids)
-//
-//            grid[neighbor[0]][neighbor[1]] = val
-//        }
-//    }
-//
-//    private static func navigatableNeighbors(_ grid: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
-//        let relativeIndexing = [[1, 0], [0, 1]] //[down, right]
-//
-//        var neighbors = [[Int]]()
-//
-//        for index in relativeIndexing {
-//            let newRow = row + index[0]
-//            let newColumn = column + index[1]
-//
-//            guard newRow < grid.count else {
-//                continue
-//            }
-//
-//            guard newColumn < grid[0].count else {
-//                continue
-//            }
-//
-//            neighbors.append([newRow, newColumn])
-//        }
-//
-//        return neighbors
-//    }
 }

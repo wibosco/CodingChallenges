@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/all-paths-from-source-lead-to-destination/
-//graph theory
 struct AllPathsFromSourceLeadToDestination {
     
-    //Time: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
-    //Space: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
+    //Time: O(v + e) where v is the numbers of vertices/nodes
+    //               where e is the number of edges
+    //Space: O(v + e)
+    //graph theory
     //DFS
     //backtracking
     //adjacency list
@@ -64,8 +65,10 @@ struct AllPathsFromSourceLeadToDestination {
         return neighbors.count == 0 ? curr == target : true
     }
     
-    //Time: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
-    //Space: O(v + e) where `v` is the numbers of vertices/nodes and `e` is the number of edges
+    //Time: O(v + e) where v is the numbers of vertices/nodes
+    //               where e is the number of edges
+    //Space: O(v + e)
+    //graph theory
     //DFS
     //backtracking
     //adjacency list

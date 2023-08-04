@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-k-sorted-lists/
-//linked list
 struct MergeKSortedLists {
     
-    //Time: O(n log k) where n is the total number of nodes in `lists`, k is the number of elements in `lists`
-    //Space: O(n log k) where k is the number of elements in `lists`, n is the total number of nodes in `lists`
+    //Time: O(n log k) where n is the total number of nodes in `lists`
+    //                 where k is the number of elements in `lists`
+    //Space: O(n log k)
+    //linked list`
     //array
     //recursive
     //merge sort
@@ -82,9 +83,11 @@ struct MergeKSortedLists {
         return sentinel.next
     }
     
-    //Time: O(k * max(a, b)) where k is the number of elements in `lists`, a is the size of `mergedList`, b is the size of
-    //                       the current element of `lists`
+    //Time: O(k * max(a, b)) where k is the number of elements in `lists`,
+    //                       where a is the size of `mergedList`
+    //                       where b is the size of the current element of `lists`
     //Space: O(n) where n is the total number of nodes in `lists`
+    //linked list
     //array
     //sentinel head
     //

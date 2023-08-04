@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/cheapest-flights-within-k-stops/
-//graph
 struct CheapestFlightsWithinKStops {
     
-    //Time: O(v * k) where v is the number of cities in `flights`, k is the number of possible steps
+    //Time: O(v * k) where v is the number of cities in `flights`
+    //               where k is the number of possible steps
     //Space: O(v * min(v, k))
+    //graph theory
     //adjacency list
     //memoization
     //dynamic programming
@@ -86,8 +87,10 @@ struct CheapestFlightsWithinKStops {
         return cheapestCost
     }
     
-    //Time: O(v * e) where v is the number of cities in `flights`, e is the number of connections between cities
+    //Time: O(v * e) where v is the number of cities in `flights`
+    //               where e is the number of connections between cities
     //Space: O(v * min(v, k)) (technically 3v for `cities`, `visited` and the recursive stack)
+    //graph theory
     //visited
     //adjacency list
     //backtracking

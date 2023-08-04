@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/valid-perfect-square/
-//binary search
 struct ValidPerfectSquare {
     
     //Time: O(log n)
     //Space: O(1)
+    //binary search
     //
     //Solution Description:
     //1. Note that any ascending number squence is sorted by definition

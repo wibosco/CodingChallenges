@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/walls-and-gates/
-//graph theory
 struct WallsAndGates {
     
-    //Time: O(n*m) where n is number for rooms (rows * columns)
-    //Space: O(n*m) where n is number for rooms (rows * columns)
+    //Time: O(n * m) where n is number for rooms (rows * columns)
+    //Space: O(n * m) where n is number for rooms (rows * columns)
+    //graph theory
     //BFS
     //multi-source
     //relative indexing

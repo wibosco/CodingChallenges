@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/restore-ip-addresses/
-//string
 struct RestoreIPAddresses {
     
     //Time: O(3^n) where n is the number of elements in `s`, 3 as each element has 3 possible configurations
     //Space: O(3^n)
+    //string
     //backtracking
     //array
     //

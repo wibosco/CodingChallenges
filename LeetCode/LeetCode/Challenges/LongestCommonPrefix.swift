@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/longest-common-prefix/
-//string
 struct LongestCommonPrefix {
     
     //Time: O(n^2) where n is the number of characters in `strs`
     //Space: O(c) where `c` is the number of characters in the smallest element in `strs`
+    //string
     //array
     //vertical scanning
     //

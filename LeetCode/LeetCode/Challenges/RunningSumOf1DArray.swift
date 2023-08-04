@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/running-sum-of-1d-array/
-//prefix sum
 struct RunningSumOf1DArray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //prefix sum
     //array
     //
     //Solution Description:

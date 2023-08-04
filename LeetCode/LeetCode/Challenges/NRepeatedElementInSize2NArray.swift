@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
-//array
 struct NRepeatedElementInSize2NArray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //dictionary
     //
     //Solution Description:

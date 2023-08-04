@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/happy-number/
-//math
 struct HappyNumber {
     
     //Time: O(log n)
     //Space: O(1)
+    //math
     //linked list
     //modulo
     //

@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
-//binary search
 struct CapacityToShipPackagesWithinDDays {
     
-    //O(n log m) where n is number of elements in `weights` and m the search range
+    //O(n log m) where n is number of elements in `weights`
+    //           where m the search range
     //Space: O(1)
+    //binary search
     //sorted
     //minimum
     //greedy

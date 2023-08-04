@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/search-insert-position/
-//array
 struct SearchInsertPosition {
     
     //Time: O(log n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //binary search
     //sorted
     //

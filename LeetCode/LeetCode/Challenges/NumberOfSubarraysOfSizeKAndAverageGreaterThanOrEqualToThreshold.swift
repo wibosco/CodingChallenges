@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/
-//array
 struct NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold {
     
     //Time: O(n) where n is the number of elements in `arr`
     //Space: O(1)
+    //array
     //sliding window
     //
     //Solution Description:

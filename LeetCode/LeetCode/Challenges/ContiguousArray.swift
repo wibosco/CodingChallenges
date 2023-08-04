@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/contiguous-array/
-//array
 struct ContiguousArray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n) where n is the number of elements in `counts`
+    //array
     //prefix sum
     //dictionary
     //

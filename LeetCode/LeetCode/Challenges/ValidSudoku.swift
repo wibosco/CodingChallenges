@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/valid-sudoku/
-//array
 struct ValidSudoku {
     
     //Time: O(1) sudoku boards always contain the same number of squares (otherwise O(n^2))
     //Space: O(1) sudoku boards always contain the same number of squares (otherwise O(n^2))
+    //array
     //matrix
     //nested loops
     //

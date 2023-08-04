@@ -9,11 +9,13 @@
 import Foundation
 
 //https://leetcode.com/problems/reconstruct-itinerary/
-//graph theory
 struct ReconstructItinerary {
 
-    //Time: O(d^e) where `d` is the maximum number of flights from an airport and `e` is the number of total flights
-    //Space: O(n + e) where n is the number of airports and e` is the number of total flights
+    //Time: O(d^e) where d is the maximum number of flights from an airport
+    //             where e is the number of total flights
+    //Space: O(n + e) where n is the number of airports
+    //                where e is the number of total flights
+    //graph theory
     //backtracking
     //DFS
     //greedy

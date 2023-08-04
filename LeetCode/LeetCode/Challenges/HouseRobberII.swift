@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/house-robber-ii/
-//array
 struct HouseRobberII {
     
     //Time: O(n) n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //graph theory
     //memoization
     //dynamic programming (top down)

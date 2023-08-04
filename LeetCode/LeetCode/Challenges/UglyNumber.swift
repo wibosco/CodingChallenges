@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/ugly-number/
-//prime numbers
 struct UglyNumber {
     
     //Time: O(
     //Space: O(1)
+    //prime numbers
     //modulo
     //
     //Solution Description:

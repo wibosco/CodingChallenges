@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/group-shifted-strings/
-//string
 struct GroupShiftedStrings {
     
     //Time: O(m) where m is the number of characters contains in all `stings` elements
     //Space: O(m)
+    //string
     //dictionary
     //array
     //wrapping

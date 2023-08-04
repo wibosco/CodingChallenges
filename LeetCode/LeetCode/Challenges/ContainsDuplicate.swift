@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/contains-duplicate/
-//array
 struct ContainsDuplicate {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //set
     //
     //Solution Description:

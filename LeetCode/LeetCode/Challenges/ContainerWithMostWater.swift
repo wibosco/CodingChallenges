@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/container-with-most-water/
-//greedy
 struct ContainerWithMostWater {
     
     //Time: O(n)
     //Space: O(1)
+    //greedy
     //two pointers
     //
     //Solution Description:

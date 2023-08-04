@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/open-the-lock/
-//graph theory
 struct OpenTheLock {
     
     //Time: O(
     //Space: O(
+    //graph theory
     //BFS
     //dynamic vertices
     //

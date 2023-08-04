@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/gas-station/
-//array
 struct GasStation {
     
-    //Time: O(n) where n is the number of elements in either `gas`
+    //Time: O(n) where n is the number of elements in `gas`
     //Space: O(1)
+    //array
     //counting
     //greedy
     //
@@ -47,6 +47,7 @@ struct GasStation {
     
     //Time: O(n^2) where n is the number of elements in either `gas` or `cost`
     //Space: O(1)
+    //array
     //nested loops
     //modulo
     //

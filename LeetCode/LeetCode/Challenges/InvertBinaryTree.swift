@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/invert-binary-tree/
-//binary tree
 struct InvertBinaryTree {
     
     //Time: O(n) where n is nodes in the tree
     //Space: O(h) `h` is the height of the tree
+    //binary tree
     //recursive
     //
     //Solution Description:

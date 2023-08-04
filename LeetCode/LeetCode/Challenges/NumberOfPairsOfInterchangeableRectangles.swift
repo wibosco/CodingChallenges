@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/
-//array
 struct NumberOfPairsOfInterchangeableRectangles {
     
     //Time: O(n) where n is the number of elements in `rectangles`
     //Space: O(n)
+    //array
     //dictionary
     //combinations
     //maths
@@ -44,6 +44,7 @@ struct NumberOfPairsOfInterchangeableRectangles {
     
     //Time: O(n) where n is the number of elements in `rectangles`
     //Space: O(n)
+    //array
     //dictionary
     //combinations
     //

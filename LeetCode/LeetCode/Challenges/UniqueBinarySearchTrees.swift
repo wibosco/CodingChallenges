@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/unique-binary-search-trees/
-//binary search tree
 struct UniqueBinarySearchTrees {
     
     //Time: O(n^2) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary search tree
     //sorted
     //
     //Solution Description:

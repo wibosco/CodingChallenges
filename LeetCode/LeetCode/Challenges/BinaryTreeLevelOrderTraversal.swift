@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-tree-level-order-traversal/
-//binary tree
 struct BinaryTreeLevelOrderTraversal {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) worst/average (O(1) for best)
+    //binary tree
     //iterative
     //BFS
     //

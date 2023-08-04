@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-duplicate-letters/
-//string
 struct RemoveDuplicateLetters {
     
     //Time: O(n) where n is the number of elements in `s`
     //Space: O(n)
+    //string
     //stack
     //monotonic increasing stack
     //dictionary

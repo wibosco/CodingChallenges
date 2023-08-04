@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/recover-binary-search-tree/
-//binary search tree
 struct RecoverBinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree stored in `inorder` array
+    //binary search tree
     //array
     //DFS
     //inorder

@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/reorder-list/
-//linked list
 struct ReorderList {
     
     //Time: O(n)
     //Space: O(1)
+    //linked list
     //no additional space
     //
     //Solution Description:
@@ -64,6 +64,7 @@ struct ReorderList {
     
     //Time: O(n)
     //Space: O(n)
+    //linked list
     //two pointers
     //array
     //

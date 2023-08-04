@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/rotting-oranges/
-//graph theory
 struct RottingOranges {
     
-    //Time: O(m * n) where m is the number of rows and n is the number of columns
+    //Time: O(m * n) where m is the number of rows
+    //               where n is the number of columns
     //Space: O(m * n) for `visited`
+    //graph theory
     //BFS
     //multi-source
     //visited
@@ -117,8 +118,10 @@ struct RottingOranges {
         return neighbors
     }
     
-    //Time: O(m * n) where m is the number of rows and n is the number of columns
+    //Time: O(m * n) where m is the number of rows
+    //               where n is the number of columns
     //Space: O(m * n) worse case if the queue is full as the grid only contains rotten oranges
+    //graph theory
     //BFS
     //multi-source
     //mutating

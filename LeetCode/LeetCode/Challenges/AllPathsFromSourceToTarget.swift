@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/all-paths-from-source-to-target/
-//graph theory
 struct AllPathsFromSourceToTarget {
 
     //Time: O(n) where n is the number of nodes in `graph`
     //Space: O(n)
+    //graph theory
     //BFS
     //DAG
     //
@@ -49,6 +49,7 @@ struct AllPathsFromSourceToTarget {
     
     //Time: O(2^n * n) where n is the number of nodes in `graph`
     //Space: O(2^n * n)
+    //graph theory
     //DFS
     //backtracking
     //DAG

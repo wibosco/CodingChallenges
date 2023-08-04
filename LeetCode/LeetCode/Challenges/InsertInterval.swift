@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/insert-interval/
-//array
 struct InsertInterval {
     
     //Time: O(m) where m is the new `intervals` array containing `newInterval`
-    //Space: O(m + k) where m is the new `intervals` array containing `newInterval`, `k` is the merged intervals array
+    //Space: O(m + k) where m is the new `intervals` array containing `newInterval`
+    //                where k is the merged intervals array
+    //array
     //sorted
     //
     //Solution Description:

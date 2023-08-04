@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/valid-anagram/
-//string
 struct ValidAnagram {
     
-    //Time: O(n+m) where n is the number of characters in `s`, m is the number of characters in `t`
-    //Space: O(n+m)
+    //Time: O(n + m) where n is the number of characters in `s`
+    //               where m is the number of characters in `t`
+    //Space: O(n + m)
+    //string
     //dictionary
     //
     //Solution Description:
@@ -37,8 +38,10 @@ struct ValidAnagram {
         return tFrequency == sFrequency
     }
     
-    //Time: O(n+m) where n is the number of characters in `s`, m is the number of characters in `t`
-    //Space: O(n+m)
+    //Time: O(n + m) where n is the number of characters in `s`
+    //               where m is the number of characters in `t`
+    //Space: O(n + m)
+    //string
     //dictionary
     //
     //Solution Description:

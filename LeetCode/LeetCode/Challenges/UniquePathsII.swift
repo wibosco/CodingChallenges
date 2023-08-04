@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/unique-paths-ii/
-//matrix
 struct UniquePathsII {
     
-    //Time: O(n * m) where m is the rows and n is the columns
-    //Space: O(n * m) where m is the rows and n is the columns
+    //Time: O(n * m) where m is the rows
+    //               where n is the columns
+    //Space: O(n * m)
+    //matrix
     //dynamic programming
     //
     //Solution Description:
@@ -56,6 +57,7 @@ struct UniquePathsII {
     
     //Time: O(2^(n)) where n is the number of cells in the grid
     //Space: O(n)
+    //matrix
     //DFS
     //backtracking
     //relative indexing

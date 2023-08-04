@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/asteroid-collision/
-//array
 struct AsteroidCollision {
     
     //Time: O(n) where n is the number of elements in `asteroids`
     //Space: O(n) where n is the number of elements in `asteroids`
+    //array
     //stack
     //
     //Solution Description:
@@ -59,6 +59,7 @@ struct AsteroidCollision {
     
     //Time: O(n) where n is the number of elements in asteroids
     //Space: O(1)
+    //array
     //
     //Solution Description:
     //Iterate through `asteroids` and find neighboring asteroids moving towards each other. When we do, check the absolute sizes

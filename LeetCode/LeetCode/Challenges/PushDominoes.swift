@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/push-dominoes/
-//array
 struct PushDominoes {
     
     //Time: O(n) where n is the number of elements in `dominoes`
     //Space: O(n)
+    //array
     //string
     //caching
     //batching
@@ -80,6 +80,7 @@ struct PushDominoes {
     
     //Time: O(n) where n is the number of elements in `dominoes`
     //Space: O(n)
+    //array
     //string
     //queue
     //batching

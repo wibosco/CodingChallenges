@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/buildings-with-an-ocean-view/
-//array
 struct BuildingsWithOceanView {
     
     //Time: O(n) where n is the number of heights
     //Space: O(n) where n is the number of heights
+    //array
     //
     //Solution Description:
     //Coming from right to left (ocean inwards) we track the tallest building that have so far, if a builting is taller than it
@@ -34,6 +34,7 @@ struct BuildingsWithOceanView {
     
     //Time: O(n) where n is the number of heights
     //Space: O(n) where n is the number of heights
+    //array
     //stack
     //monotonic decreasing stack
     //

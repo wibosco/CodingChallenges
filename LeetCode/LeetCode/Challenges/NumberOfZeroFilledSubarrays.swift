@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-zero-filled-subarrays/
-//array
 struct NumberOfZeroFilledSubarrays {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(log n)
+    //array
     //substring
     //maths
     //
@@ -47,6 +47,7 @@ struct NumberOfZeroFilledSubarrays {
     
     //Time: O(
     //Space: O(
+    //array
     //substring
     //DFS
     //recursive

@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/network-delay-time/
-//graph theory
 struct NetworkDelayTime {
     
-    //Time: O((n + e) * (n log n)) where n is the number of vertices in the graph, e is the number of edges
+    //Time: O((n + e) * (n log n)) where n is the number of vertices in the graph
+    //                             where e is the number of edges
     //Space: O(n)
+    //graph theory
     //greedy
     //Dijkstra
     //visited
@@ -108,8 +109,10 @@ struct NetworkDelayTime {
         return distances
     }
     
-    //Time: O((n + e) * (n log n)) where n is the number of vertices in the graph, e is the number of edges
+    //Time: O((n + e) * (n log n)) where n is the number of vertices in the graph
+    //                             where e is the number of edges
     //Space: O(n)
+    //graph theory
     //greedy
     //Dijkstra
     //visited

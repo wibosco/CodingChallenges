@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/verifying-an-alien-dictionary/
-//string
 struct VerifyingAnAlienDictionary {
     
     //Time: O(n) where n is the total number of characters in the `words` array
     //Space: O(1) order always contains 26 characters
+    //string
     //array
     //dictionary
     //

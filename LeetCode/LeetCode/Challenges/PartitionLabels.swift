@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/partition-labels/
-//string
 struct PartitionLabels {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n) where n is the `characters` array
+    //string
     //dictionary
     //array
     //
@@ -63,6 +63,7 @@ struct PartitionLabels {
     
     //Time: O(n log n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //dictionary
     //array
     //

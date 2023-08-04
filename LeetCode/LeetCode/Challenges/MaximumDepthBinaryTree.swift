@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/maximum-depth-of-binary-tree/
-//binary tree
 struct MaximumDepthBinaryTree {
     
     //Time: O(n)
     //Space: O(log n) - best, O(n) - worse
+    //binary tree
     //DFS
     //recursive
     //
@@ -64,6 +64,7 @@ struct MaximumDepthBinaryTree {
     
     //Time: O(n)
     //Space: O(n) worst/average (O(1) for best)
+    //binary tree
     //BFS
     //iterative
     //queue

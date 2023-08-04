@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-//array
 struct TwoSumII {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //two pointers
     //sorted
     //
@@ -47,6 +47,7 @@ struct TwoSumII {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //binary search
     //sorted
     //
@@ -82,6 +83,7 @@ struct TwoSumII {
     
     //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //nested loops
     //sorted
     //

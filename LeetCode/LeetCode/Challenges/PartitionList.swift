@@ -8,42 +8,44 @@
 import Foundation
 
 //https://leetcode.com/problems/partition-list/
-//linked list
 struct PartitionList {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1) we merely reassign the existing nodes
+    //linked list
     //two pointers
+    //sentinel head
     //
     //Solution Description:
-    //Set up to lists: `list1` to store the less than `x` nodes and `list2` to store the greater than or equal to `x` nodes.
-    //Iterate through the list and assign each node we encounter to either list. Once we have iterated through the original list
-    //we break any cycle that may have been introduced between `list1` and `list2` by assigning the tail of `list2` to point at
-    //nil. We then combine the two lists and using the dummy node for `list1` return the head of `list1`
+    //Set up to lists: `lessThanList` to store the less than `x` nodes and `greaterThanList` to store the greater than or equal to
+    //`x` nodes. Iterate through the list and assign each node we encounter to either list. Once we have iterated through the
+    //original list we break any cycle that may have been introduced between `lessThanList` and `greaterThanList` by assigning the
+    //tail of `greaterThanList` to point at nil. We then combine the two lists and using the dummy node for `lessThanList` return
+    //the head of `lessThanList`.
     static func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
-        var list1: ListNode? = ListNode(-1) //less than list
-        let dummy1 = list1 //needed to hold onto the head of list1
+        var lessThanList: ListNode? = ListNode(-1)
+        let sentinelLess = lessThanList //needed to hold onto the head of lessThanList
         
-        var list2: ListNode? = ListNode(-1) //greater than list
-        let dummy2 = list2 //needed to hold onto the head of list2
+        var greaterThanList: ListNode? = ListNode(-1)
+        let sentinelGreater = greaterThanList //needed to hold onto the head of greaterThanList
         
         var current = head
         
         while let c = current {
             if x > c.val {
-                list1?.next = c
-                list1 = list1?.next
+                lessThanList?.next = c
+                lessThanList = lessThanList?.next
             } else {
-                list2?.next = c
-                list2 = list2?.next
+                greaterThanList?.next = c
+                greaterThanList = greaterThanList?.next
             }
             
             current = c.next
         }
         
-        list2?.next = nil //break any cycle between list1 and list2
-        list1?.next = dummy2?.next
+        greaterThanList?.next = nil //break any cycle between lessThanList and greaterThanList
+        lessThanList?.next = sentinelGreater?.next
         
-        return dummy1?.next
+        return sentinelLess?.next
     }
 }

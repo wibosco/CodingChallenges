@@ -8,11 +8,13 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-height-trees/
-//n-ary tree
 struct MinimumHeightTrees {
     
-    //Time: O(n+e) where n is the number of nodes, `e` is the number of edges
-    //Space: O(n+e) where n is the number of nodes, `e` is the number of edges
+    //Time: O(n+e) where n is the number of nodes
+    //             where e is the number of edges
+    //Space: O(n+e) where n is the number of nodes
+    //              where e is the number of edges
+    //n-ary tree
     //graph theory
     //adjacency list
     //visited
@@ -69,8 +71,11 @@ struct MinimumHeightTrees {
         return leafNodes
     }
     
-    //Time: O(n^2 + e) where n is the number of nodes, `e` is the number of edges
-    //Space: O(n+e) where n is the number of nodes, `e` is the number of edges
+    //Time: O(n^2 + e) where n is the number of nodes
+    //                 where e is the number of edges
+    //Space: O(n+e) where n is the number of nodes
+    //              where e is the number of edges
+    //n-ary tree
     //graph theory
     //BFS
     //adjacency list

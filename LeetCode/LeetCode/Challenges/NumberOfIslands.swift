@@ -9,7 +9,6 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-islands/
-//graph theory
 struct NumberOfIslands {
     // swiftlint:disable comma
     static let relativeIndexing = [      [-1, 0],
@@ -17,8 +16,10 @@ struct NumberOfIslands {
                                          [1, 0]]
     // swiftlint:enable comma
     
-    //Time: O(m*n) where m is the number of rows in grid and n is the number of columns
-    //Space: O(m*n) where m is the number of rows in grid and n is the number of columns
+    //Time: O(m*n) where m is the number of rows in grid
+    //             where n is the number of columns
+    //Space: O(m*n)
+    //graph theory
     //DFS
     //relative indexing
     //matrix
@@ -81,8 +82,10 @@ struct NumberOfIslands {
         }
     }
     
-    //Time: O(m*n) where m is the number of rows in grid and n is the number of columns
-    //Space: O(m*n) where m is the number of rows in grid and n is the number of columns
+    //Time: O(m * n) where m is the number of rows in grid
+    //               where n is the number of columns
+    //Space: O(m * n)
+    //graph theory
     //BFS
     //relative indexing
     //matrix

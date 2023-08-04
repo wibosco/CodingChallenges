@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/unique-email-addresses/
-//array
 struct UniqueEmailAddresses {
     
-    //Time: O(n * m) where n is the elements in `emails`, m is the number of characters in each email
+    //Time: O(n * m) where n is the elements in `emails`
+    //               where m is the number of characters in each email
     //Space: O(n)
+    //array
     //nested loops
     //set
     //
@@ -52,8 +53,10 @@ struct UniqueEmailAddresses {
         return uniqueEmails.count
     }
     
-    //Time: O(n * m) where n is the elements in `emails`, m is the number of characters in each email
+    //Time: O(n * m) where n is the elements in `emails`
+    //               where m is the number of characters in each email
     //Space: O(n)
+    //array
     //nested loops
     //set
     //

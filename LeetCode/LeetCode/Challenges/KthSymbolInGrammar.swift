@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/k-th-symbol-in-grammar/
-//binary tree
 struct KthSymbolInGrammar {
     
     //Time: O(n) where n is the depth of the tree
     //Space: O(n) where n is the depth of the recursive stack
+    //binary tree
     //recusive
     //DFS
     //
@@ -51,6 +51,7 @@ struct KthSymbolInGrammar {
     
     //Time: O(2^n) where n is the depth of the tree
     //Space: O(n) where n is the depth of the recursive stack
+    //binary tree
     //recusive
     //
     //Solution Description:

@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 //https://leetcode.com/problems/swap-nodes-in-pairs/
-//linked list
 struct SwapNodesInPairs {
     
     //Time: O(n) where n is the number of nodes in the list
     //Sapce: O(1)
+    //linked list
     //iterative
     //sentinel head
     //
@@ -49,6 +49,7 @@ struct SwapNodesInPairs {
     
     //Time: O(n) where n is the number of nodes in the list
     //Sapce: O(n) if counting the recursive stack otherwise O(1)
+    //linked list
     //recursive
     //
     //Solution Description:

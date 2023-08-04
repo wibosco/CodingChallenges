@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
-//array
 struct BestTimeToBuyAndSellStockII {
     
     //Time: O(n) where n is the number of elements in `prices`
     //Space: O(1)
+    //array
     //counting
     //greedy
     //Kadanes algorithm

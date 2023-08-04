@@ -8,13 +8,13 @@
 import Foundation
 
 //https://leetcode.com/problems/additive-number/
-//string
 struct AdditiveNumber {
     
     // MARK: - Pointers
     
     //Time: O(n^2) where n is the number of elements in `num`
     //Space: O(n)
+    //string
     //array
     //three pointers
     //graph theory
@@ -108,6 +108,7 @@ struct AdditiveNumber {
     
     //Time: O(n^2) where n is the number of elements in `num`
     //Space: O(n)
+    //string
     //array
     //three pointers
     //graph theory

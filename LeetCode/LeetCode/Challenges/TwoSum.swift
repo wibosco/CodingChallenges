@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/two-sum/
-//array
 struct TwoSum {
     
     //Time: O(n) where n is the number of elements in `nums`
-    //Space: O(n) where n is the number of elements in `nums`
+    //Space: O(n)
+    //array
     //dictionary
     //
     //Solution Description:
@@ -37,6 +37,7 @@ struct TwoSum {
     
     //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //nested loops
     //
     //Solution Description:

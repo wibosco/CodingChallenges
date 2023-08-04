@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/clone-graph/
-//graph theory
 struct CloneGraph {
     
-    //Time: O(n + e) where n is the number of vertice and `e` is the number of edges
+    //Time: O(n + e) where n is the number of vertice
+    //               where e is the number of edges
     //Space: O(n) where n is the number stored in the `vertices` and `visited`
+    //graph theory
     //BFS
     //dictionary
     //
@@ -55,8 +56,10 @@ struct CloneGraph {
         return copiedVertices[vertice]
     }
     
-    //Time: O(n + e) where n is the number of vertice and `e` is the number of edges
+    //Time: O(n + e) where n is the number of vertice
+    //               where e is the number of edges
     //Space: O(n) where n is the number stored in the `vertices` and `visited`
+    //graph theory
     //BFS
     //dictionary
     //
@@ -105,8 +108,10 @@ struct CloneGraph {
         return copiedVertices[vertice]
     }
     
-    //Time: O(n + e) where n is the number of vertices and `e` is the number of edges
+    //Time: O(n + e) where n is the number of vertices
+    //               where e is the number of edges
     //Space: O(n)
+    //graph theory
     //DFS
     //recursive
     //
@@ -141,8 +146,10 @@ struct CloneGraph {
         return copy
     }
     
-    //Time: O(n + e) where n is the number of vertice and `e` is the number of edges
+    //Time: O(n + e) where n is the number of vertice
+    //               where e is the number of edges
     //Space: O(n) where n is the number stored in the `vertices` and `visited`
+    //graph theory
     //DFS
     //recursive
     //dictionary

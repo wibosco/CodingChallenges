@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-size-subarray-sum/
-//array
 struct MinimumSizeSubarraySum {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sliding window
     //prefix sum
     //nested loop

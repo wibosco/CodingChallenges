@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/non-overlapping-intervals/
-//array
 struct NonOverlappingIntervals {
     
     //Time: O(n log n) where n is the number of elements in `intervals`
     //Space: O(n)
+    //array
     //sorting
     //
     //Solution Description:

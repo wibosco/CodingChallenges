@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/leftmost-column-with-at-least-a-one/
-//matrix
 struct LeftmostColumnWithAtLeastAOne {
     
     //Time: O(n log m) where n is the number of rows in `binaryMatrix`, m is the number of columns i n `binaryMatrix`
     //Space: O(1)
+    //matrix
     //binary search
     //
     //Solution Description:

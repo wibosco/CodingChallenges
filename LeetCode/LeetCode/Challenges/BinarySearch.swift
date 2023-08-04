@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-search/
-//binary search
 struct BinarySearch {
     
     //Time: O(log n) where n is the number of elements in `nums`
     //Space: O(1)
+    //binary search
     //sorted
     //divide and conquer
     //

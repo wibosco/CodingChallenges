@@ -8,7 +8,6 @@
 import Foundation
 
 //https://leetcode.com/problems/spiral-matrix/
-//matrix
 struct SpiralMatrix {
     private enum Direction {
         case up
@@ -17,8 +16,10 @@ struct SpiralMatrix {
         case right
     }
     
-    //Time: O(n * m) where n is the number of rows in `matrix,` m is the number of columns in `matrix`
-    //Space: O(n * m) where n is the number of rows in `matrix,` m is the number of columns in `matrix`
+    //Time: O(n * m) where n is the number of rows in `matrix`
+    //               where m is the number of columns in `matrix`
+    //Space: O(n * m)
+    //matrix
     //graph
     //visited
     //relative indexing

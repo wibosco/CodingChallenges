@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/intersection-of-three-sorted-arrays/
-//array
 struct IntersectionOfThreeSortedArrays {
     
     //Time: O(n) where n is the smallest of `arr1`, `arr2`, `arr3`
     //Space: O(n) (`intersection` array)
+    //array
     //three pointers
     //
     //Solution Description:

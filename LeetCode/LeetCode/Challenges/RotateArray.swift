@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/rotate-array/
-//array
 struct RotateArray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //modulo
     //two pointers
     //
@@ -58,6 +58,7 @@ struct RotateArray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //modulo
     //
     //Solution Description:

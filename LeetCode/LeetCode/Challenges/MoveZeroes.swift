@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/move-zeroes/
-//array
 struct MoveZeros {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //two pointers
     //sorting
     //pivot
@@ -46,6 +46,7 @@ struct MoveZeros {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //removal
     //
     //Solution Description:

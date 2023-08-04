@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/add-strings/
-//string
 struct AddStrings {
     
     //Time: O(n) where n is the greater of `num1` and `num2`
     //Space: O(n)
+    //string
     //array
     //overflow
     //math

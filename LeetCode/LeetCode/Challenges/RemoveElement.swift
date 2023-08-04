@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-element/
-//two pointers
 struct RemoveElement {
     
     //Time: O(n) where n is the number of elements in `num`
     //Space: O(1)
+    //two pointers
     //inline
     //
     //Solution Description:

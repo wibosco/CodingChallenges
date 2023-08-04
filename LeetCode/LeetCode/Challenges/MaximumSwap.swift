@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/maximum-swap/
-//array
 struct MaximumSwap {
     
     //Time: O(n) where n is the number of digits in `nums` (inner for is constant size 9 so we drop it)
     //Space: O(n) where n is the number of digits in `nums` (digits)
+    //array
     //dictionary
     //greedy
     //

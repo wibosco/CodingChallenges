@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/maximum-number-of-balloons/
-//array
 struct MaximumNumberOfBalloons {
     
     //Time: O(n) where n is the number of characters in `text`
     //Space: O(n)
+    //array
     //dictionary
     //
     //Solution Description:

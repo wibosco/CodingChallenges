@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/buddy-strings/
-//string
 struct BuddyStrings {
     
     //Time: O(n) where n is the number of characters in `s`/`goal`
     //Space: O(n)
+    //string
     //dictionary
     //sorting
     //

@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/mini-parser/
-//stack
 struct MiniParser {
     
     //Time: O(n) where n is the number for characters in `s`
     //Space: O(e) where `e` is the number of `NestedInteger`s in the stack
+    //stack
     //
     //Solution Description:
     //Iterate through `s` using two stacks - `num` and `stack`. `NestedInteger` list instances are created whenever we

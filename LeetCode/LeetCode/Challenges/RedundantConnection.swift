@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/redundant-connection
-//graph theory
 struct RedundantConnection {
     
     //Time: O(n^2) where n is the number of nodes in the graph
     //Space: O(n)
+    //graph theory
     //DFS
     //cycle detection
     //undirect graph

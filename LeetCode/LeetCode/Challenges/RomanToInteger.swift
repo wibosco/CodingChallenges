@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/roman-to-integer/
-//string
 struct RomanToInteger {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //dictionary
     //
     //Solution Description:

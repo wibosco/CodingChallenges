@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/missing-ranges/
-//array
 struct MissingRanges {
     
     //Time: O(n) where n is the number of elements in `num`
     //Space: O(1)
+    //array
     //two pointers
     //
     //Solution Description:
@@ -61,6 +61,7 @@ struct MissingRanges {
     
     //Time: O(n) where n is the number of elements in `num`, plus the lower and upper bounds
     //Space: O(n)
+    //array
     //two pointers
     //
     //Solution Description:

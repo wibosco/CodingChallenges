@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-tree-right-side-view/
-//binary tree
 struct BinaryTreeRightSideView {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //BFS
     //array
     //

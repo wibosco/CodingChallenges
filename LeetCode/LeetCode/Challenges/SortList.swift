@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/sort-list/
-//linked list
 struct SortList {
     
     //Time: O(n log n) where n is the number of nodes in the list
     //Space: O(1)
+    //linked list
     //sorted
     //recursion
     //three pointers
@@ -92,6 +92,7 @@ struct SortList {
     
     //Time: O(n log n) where n is the number of nodes in the list
     //Space: O(n) where n is the number of nodes in the list
+    //linked list
     //sorted
     //array
     //

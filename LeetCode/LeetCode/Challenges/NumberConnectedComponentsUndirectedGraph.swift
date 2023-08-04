@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
-//graph theory
 struct NumberConnectedComponentsUndirectedGraph {
     
-    //Time: O(v + e) where v is the number of vertices in the graph, e is the number of edges
+    //Time: O(v + e) where v is the number of vertices in the graph
+    //               where e is the number of edges
     //Space: O(v + e)
+    //graph theory
     //
     //Solution Description:
     //First we convert `edges` into an adjacency list to allow for quickier lookup time determing which vertices are visitable
@@ -64,8 +65,10 @@ struct NumberConnectedComponentsUndirectedGraph {
         }
     }
     
-    //Time: O(v + e) where v is the number of vertices in the graph, e is the number of edges
+    //Time: O(v + e) where v is the number of vertices in the graph
+    //               where e is the number of edges
     //Space: O(v + e)
+    //graph theory
     //BFS
     //multi-source
     //visited
@@ -130,6 +133,7 @@ struct NumberConnectedComponentsUndirectedGraph {
     
     //Time: O(e) where e is the number of edges
     //Space: O(v) where v is the number of vertices in the graph
+    //graph theory
     //disjoint set
     //undirected graph
     //

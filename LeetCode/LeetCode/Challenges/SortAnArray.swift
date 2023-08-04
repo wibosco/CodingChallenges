@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/sort-an-array/
-//array
 struct SortAnArray {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //sorting
     //heap sort
     //max heap
@@ -36,8 +36,10 @@ struct SortAnArray {
         return sorted
     }
     
-    //Time: O(n * k) where n is the number of elements in `nums`, k is the number of digits of the largest number
+    //Time: O(n * k) where n is the number of elements in `nums`
+    //               where k is the number of digits of the largest number
     //Space: O(n) two buckets
+    //array
     //sorting
     //radix sort (LSD)
     //
@@ -97,8 +99,10 @@ struct SortAnArray {
         return nums
     }
     
-    //Time: O(n + k) where n is the number of elements in `nums`, k is the unique elements in `nums`
+    //Time: O(n + k) where n is the number of elements in `nums`
+    //               where k is the unique elements in `nums`
     //Space: O(k)
+    //array
     //sorting
     //counting sort
     //dictionary
@@ -144,6 +148,7 @@ struct SortAnArray {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(log n) recursive stack
+    //array
     //sorting
     //quicksort
     //divide and conquer
@@ -207,6 +212,7 @@ struct SortAnArray {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(n) merged array
+    //array
     //sorting
     //merge sort
     //divide and conquer
@@ -292,6 +298,7 @@ struct SortAnArray {
     
     //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sorting
     //insertion sort
     //
@@ -326,6 +333,7 @@ struct SortAnArray {
     
     //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sorting
     //selection sort
     //
@@ -357,6 +365,7 @@ struct SortAnArray {
     
     //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sorting
     //bubble sort
     //

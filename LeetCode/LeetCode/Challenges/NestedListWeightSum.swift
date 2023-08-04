@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/nested-list-weight-sum/
-//graph theory
 struct NestedListWeightSum {
     
     //Time: O(n) where n is the number of `NestedInteger` elements
     //Space: O(n)
+    //graph theory
     //BFS
     //iterative
     //
@@ -56,6 +56,7 @@ struct NestedListWeightSum {
     
     //Time: O(n) where n is the number of `NestedInteger` elements
     //Space: O(n) where n is the recursive stack
+    //graph theory
     //DFS
     //recursive
     //

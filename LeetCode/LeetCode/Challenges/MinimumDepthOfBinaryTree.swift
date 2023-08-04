@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-depth-of-binary-tree/
-//binary tree
 struct MinimumDepthOfBinaryTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
+    //binary tree
     //BFS
     //queue
     //iterative

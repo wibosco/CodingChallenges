@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/koko-eating-bananas/
-//binary search
 struct KokoEatingBananas {
     
     //Time: O(n log m) where n is number of elements in `piles` and m the search range
     //Space: O(1)
+    //binary search
     //minimum
     //sorted
     //modulo

@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/plus-one/
-//array
 struct PlusOne {
     
     //Time: O(n) where n is the number of elements in `digits`
     //Space: O(n)
+    //array
     //modulo
     //
     //Solution Description:

@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/pacific-atlantic-water-flow/
-//graph theory
 struct PacificAtlanticWaterFlow {
     
-    //Time: O(n*m) where n is the number of rows in `heights`, m is the number of columnds in `heights`
+    //Time: O(n*m) where n is the number of rows in `heights`
+    //             where m is the number of columnds in `heights`
     //Space: O(n+m)
+    //graph theory
     //visited
     //DFS
     //relative indexing

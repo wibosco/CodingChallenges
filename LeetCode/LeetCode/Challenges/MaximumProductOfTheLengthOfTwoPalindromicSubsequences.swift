@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/
-//array
 struct MaximumProductOfTheLengthOfTwoPalindromicSubsequences {
     
     //Time: O(
     //Space: O(
+    //array
     //DFS
     //recursive
     //backtracking

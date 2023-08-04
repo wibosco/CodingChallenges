@@ -8,7 +8,6 @@
 import Foundation
 
 //https://leetcode.com/problems/isomorphic-strings/
-//string
 struct IsomorphicStrings {
     
     //Time: O(n) where n is length of either `s` or `t`

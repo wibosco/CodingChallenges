@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
-//string
 struct MinimumAddToMakeParenthesesValid {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(1)
+    //string
     //counting
     //
     //Solution Description:
@@ -45,7 +45,8 @@ struct MinimumAddToMakeParenthesesValid {
     }
     
     //Time: O(n) where n is the number of characters in `s`
-    //Space: O(n) where n is the number of characters in `s`
+    //Space: O(n)
+    //string
     //stack
     //
     //Solution Description:

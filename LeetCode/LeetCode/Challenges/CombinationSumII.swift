@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/combination-sum-ii/
-//array
 struct CombinationSumII {
     
     //Time: O(2^n) where n is the number of elements in `candidates`
-    //Space: O(n+k) where n is the number of elements in our combination and `k` is the number of levels in our tree
+    //Space: O(n+k) where n is the number of elements in our combination
+    //              where k is the number of levels in our tree
+    //array
     //backtracking
     //DFS
     //sorted

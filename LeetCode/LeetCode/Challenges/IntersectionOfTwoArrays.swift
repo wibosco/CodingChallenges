@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/intersection-of-two-arrays/
-//array
 struct IntersectionOfTwoArrays {
     
-    //Time: O(m log m + n log m) where n is the number of values in `nums1`, m is the number of values in `nums2`
+    //Time: O(m log m + n log m) where n is the number of values in `nums1`
+    //                           where m is the number of values in `nums2`
     //Space: O(n) (`intersection` array)
+    //array
     //binary search
     //sorting
     //
@@ -52,8 +53,10 @@ struct IntersectionOfTwoArrays {
         return false
     }
     
-    //Time: O(n * m)
+    //Time: O(n * m) where n is the number of values in `nums1`
+    //               where m is the number of values in `nums2`
     //Space: O(n) (`intersection` array)
+    //array
     //nested loops
     //
     //Solution Description:

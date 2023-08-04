@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/squares-of-a-sorted-array/
-//array
 struct SquaresOfSortedArray {
     
     //Time: O(n) where is the number of elements in `nums`
     //Space: O(n)
+    //array
     //two pointers
     //
     //Solution Description:
@@ -51,6 +51,7 @@ struct SquaresOfSortedArray {
     
     //Time: O(n log n) where is the number of elements in `nums`
     //Space: O(n)
+    //array
     //sorting
     //
     //Solution Description:

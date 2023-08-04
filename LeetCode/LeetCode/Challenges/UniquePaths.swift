@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/unique-paths/
-//matrix
 struct UniquePaths {
     
-    //Time: O(n * m) where m is the rows and n is the columns
-    //Space: O(n * m) where m is the rows and n is the columns
+    //Time: O(n * m) where m is the rows
+    //               where n is the columns
+    //Space: O(n * m)
+    //matrix
     //dynamic programming
     //
     //Solution Description:
@@ -32,8 +33,10 @@ struct UniquePaths {
         return matrix[(m - 1)][(n - 1)]
     }
     
-    //Time: O(2^(m * n)) where m is the rows and n is the columns
+    //Time: O(2^(m * n)) where m is the rows
+    //                   where n is the columns
     //Space: O(n * m)
+    //matrix
     //DFS
     //backtracking
     //relative indexing

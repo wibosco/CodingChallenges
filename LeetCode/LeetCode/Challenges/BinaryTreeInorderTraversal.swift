@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-tree-inorder-traversal/
-//binary tree
 struct BinaryTreeInorderTraversal {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //DFS
     //recursive
     //

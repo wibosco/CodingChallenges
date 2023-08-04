@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/add-two-numbers/
-//linked list
 final class AddTwoNumbers {
     
     //Time: O(n) where n is the list of greater between `l1` and `l2`
     //Space: O(n)
+    //linked list
     //math
     //modulo
     //sentinel head

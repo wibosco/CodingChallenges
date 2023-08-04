@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/can-place-flowers/
-//array
 struct CanPlaceFlowers {
     
     //Time: O(n) where n is the number of elements in flowerbed
     //Space: O(1)
+    //array
     //greedy
     //
     //Solution Description:

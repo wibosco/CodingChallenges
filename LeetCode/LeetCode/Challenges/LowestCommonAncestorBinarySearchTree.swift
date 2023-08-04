@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
-//binary search tree
 struct LowestCommonAncestorBinarySearchTree {
     
     //Time: O(log n) where n is the number of nodes in the tree
-    //Space: O(log n) where n is the number of nodes in the tree
+    //Space: O(log n)
+    //binary search tree
     //DFS
     //stack
     //recursive
@@ -39,6 +39,7 @@ struct LowestCommonAncestorBinarySearchTree {
     
     //Time: O(log n) where n is the number of nodes in the tree
     //Space: O(1) there will only ever be one node in the queue
+    //binary search tree
     //BFS
     //queue
     //iterative

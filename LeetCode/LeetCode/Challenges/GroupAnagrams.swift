@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/group-anagrams/
-//string
 struct GroupAnagrams {
     
-    //Time: O(n m log m) where n is the number of elements in `strs` and m is max character length
+    //Time: O(n m log m) where n is the number of elements in `strs`
+    //                   where m is max character length
     //Space: O(n) where n is the number of elements in `strs`
+    //string
     //sorting
     //dictionary
     //

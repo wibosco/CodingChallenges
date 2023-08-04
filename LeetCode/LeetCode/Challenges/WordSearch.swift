@@ -8,7 +8,6 @@
 import Foundation
 
 //https://leetcode.com/problems/word-search/
-//matrix
 struct WordSearch {
     // swiftlint:disable comma
     static let relativeIndexing = [      [-1, 0],
@@ -17,9 +16,11 @@ struct WordSearch {
                                   ]
     // swiftlint:enable comma
     
-    //Time: O((m*n)*3^l) where m is number of rows, n is the number of columns and `l` is the length of `word` (there
-    //                   are 3 possible indexes off the current index)
-    //Space: O(l) where `l` is the length of `word` and represents the depth of the recursive stack and `visited`
+    //Time: O((m*n)*3^l) where m is number of rows
+    //                   where n is the number of columns
+    //                   where l is the length of `word` (there are 3 possible indexes off the current index)
+    //Space: O(l) where l is the length of `word` and represents the depth of the recursive stack and `visited`
+    //matrix
     //backtracking
     //relative indexing
     //recursive

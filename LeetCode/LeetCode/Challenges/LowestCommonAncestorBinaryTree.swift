@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/
-//binary tree
 struct LowestCommonAncestorBinaryTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(log n) where `log n` is the number of levels in the tree
+    //binary tree
     //DFS
     //
     //Solution description:
@@ -70,6 +70,7 @@ struct LowestCommonAncestorBinaryTree {
     
     //Time: O(n^2) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary tree
     //array
     //
     //Solution description:

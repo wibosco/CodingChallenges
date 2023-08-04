@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/largest-number/
-//array
 struct LargestNumber {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //greedy
     //string
     //sorting

@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/non-decreasing-array/
-//array
 struct NonDecreasingArray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //three pointers
     //
     //Solution Description:

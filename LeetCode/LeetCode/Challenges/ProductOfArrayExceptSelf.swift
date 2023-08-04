@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/product-of-array-except-self/
-//array
 struct ProductOfArrayExceptSelf {
     
     //Time: O(n)
     //Space: O(1)
+    //array
     //
     //Solution Description:
     //If we have the total value of `nums` then to exclude any value will be as if we took that total and divided it by the
@@ -54,6 +54,7 @@ struct ProductOfArrayExceptSelf {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //reversing
     //
     //Solution Description:

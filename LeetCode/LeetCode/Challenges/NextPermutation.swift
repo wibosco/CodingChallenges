@@ -9,13 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/next-permutation/
-//array
-//
-//See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
 struct NextPermutation {
     
     //Time: O(n) - Don't be tricked by the for inside a for, notice the breaks
     //Space: O(1)
+    //array
     //two pointers
     //inline
     //
@@ -27,6 +25,8 @@ struct NextPermutation {
     //than the pivots value - please note that we only switch out one index. Finally having switched out the pivot
     //we then just need to ensure that everything after the pivot is the smallest it can be by sorting it in ascending
     //order.
+    //
+    //See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
     static func nextPermutation(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
@@ -55,6 +55,9 @@ struct NextPermutation {
     
     //Time: O(n)
     //two pointers
+    //array
+    //
+    //See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
     static func nextPermutationAlt(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return

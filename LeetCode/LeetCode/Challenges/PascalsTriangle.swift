@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/pascals-triangle/
-//array
 struct PascalsTriangle {
     
     //Time: O(n^2) where n is `numRows`
     //Space: O(n^2)
+    //array
     //two pointers
     //
     //Solution Description:

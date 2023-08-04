@@ -708,6 +708,8 @@
 		43F372112A78093F0000BF78 /* SingleElementInASortedArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F372102A78093F0000BF78 /* SingleElementInASortedArrayTests.swift */; };
 		43F3DF3929E0B61600EDEB1C /* OddEvenLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */; };
 		43F3DF3B29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */; };
+		43F7AF442A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */; };
+		43F7AF462A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1423,6 +1425,8 @@
 		43F372102A78093F0000BF78 /* SingleElementInASortedArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleElementInASortedArrayTests.swift; sourceTree = "<group>"; };
 		43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedList.swift; sourceTree = "<group>"; };
 		43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedListTests.swift; sourceTree = "<group>"; };
+		43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingNodesInALinkedList.swift; sourceTree = "<group>"; };
+		43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingNodesInALinkedListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1813,6 +1817,7 @@
 				3D8C787427AD725000ADD88A /* SumOfAllOddLengthSubarrays.swift */,
 				435F019E2A0CF0BB00F6B50F /* SurroundedRegions.swift */,
 				3D5C910427A7F7630035C399 /* SwapNodesInPairs.swift */,
+				43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */,
 				3D5C912027A7F7630035C399 /* SymmetricTree.swift */,
 				3D5C90C427A7F7620035C399 /* TargetSum.swift */,
 				3D3B213827D6556B0055C0D1 /* ThreeSum.swift */,
@@ -2162,6 +2167,7 @@
 				3D8C787627AD728200ADD88A /* SumOfAllOddLengthSubarraysTests.swift */,
 				435F01A02A0CF12D00F6B50F /* SurroundedRegionsTests.swift */,
 				3D5C923C27A7F76B0035C399 /* SwapNodesInPairsTests.swift */,
+				43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */,
 				3D5C929827A7F76C0035C399 /* SymmetricTreeTests.swift */,
 				3D5C920927A7F76B0035C399 /* TargetSumTests.swift */,
 				3D3B214027D6B2720055C0D1 /* ThreeSumClosestTests.swift */,
@@ -2319,6 +2325,7 @@
 				3D5C919F27A7F7630035C399 /* FindIfPathExistsInGraph.swift in Sources */,
 				3D5C91E627A7F7630035C399 /* BinaryTreeLevelOrderTraversalII.swift in Sources */,
 				3DA8E5152804604400A23F3C /* MergeTwoBinaryTrees.swift in Sources */,
+				43F7AF442A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift in Sources */,
 				3D5C918327A7F7630035C399 /* PalindromeNumber.swift in Sources */,
 				4347A1C429E2158300501CEE /* ContainsDuplicate.swift in Sources */,
 				43EE0BDA2A55A5CD003D23E0 /* PartitionLabels.swift in Sources */,
@@ -2786,6 +2793,7 @@
 				3D5C92E627A7F76C0035C399 /* RemoveNthNodeFromEndOfListTests.swift in Sources */,
 				3D5C92AC27A7F76C0035C399 /* ValidSudokuTests.swift in Sources */,
 				3D30553727C6333400294BC7 /* CombinationSumTests.swift in Sources */,
+				43F7AF462A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift in Sources */,
 				3D5C932227A7F76C0035C399 /* ContinuousSubarraySumTests.swift in Sources */,
 				3D5C92B727A7F76C0035C399 /* KeysAndRoomsTests.swift in Sources */,
 				3D30552F27C4E41500294BC7 /* ExcelSheetColumnNumberTests.swift in Sources */,

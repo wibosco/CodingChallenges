@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-//array
 struct FindFirstAndLastPositionOfElementInSortedArray {
     
     //Time: O(log n)
     //Space: O(1)
+    //array
     //binary search
     //
     //Solution Description:

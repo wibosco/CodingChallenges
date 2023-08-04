@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/basic-calculator-ii/
-//array
+
 struct BasicCalculatorII {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n) where n is the number of characters in `s`
+    //array
     //stack
     //string
     //

@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/brick-wall/
-//array
 struct BrickWall {
     
-    //Time: O(n * m) where n is the number of elements in `wall`, m is the number of elements in each row
+    //Time: O(n * m) where n is the number of elements in `wall`
+    //               where m is the number of elements in each row
     //Space: O(m)
+    //array
     //counting
     //nested loops
     //

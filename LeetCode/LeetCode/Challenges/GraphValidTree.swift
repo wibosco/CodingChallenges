@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/graph-valid-tree/
-//graph theory
 struct GraphValidTree {
     
-    //Time: O(n + e) where n is the number of nodes, e is the number of edges
+    //Time: O(n + e) where n is the number of nodes
+    //               where e is the number of edges
     //Space: O(n + e)
+    //graph theory
     //DFS
     //recursive
     //adjacency list
@@ -100,8 +101,10 @@ struct GraphValidTree {
         }
     }
     
-    //Time: O(n+e) where n is the number of nodes, e is the number of edges
-    //Space: O(n+e)
+    //Time: O(n + e) where n is the number of nodes
+    //               where e is the number of edges
+    //Space: O(n + e)
+    //graph theory
     //BFS
     //visited
     //adjacency list
@@ -179,6 +182,7 @@ struct GraphValidTree {
     
     //Time: O(e) where e is the number of edges
     //Space: O(n) where n is the number of nodes
+    //graph theory
     //union find
     //disjoint set
     //undirected graph

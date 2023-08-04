@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/3sum-closest/
-//array
 struct ThreeSumClosest {
     
     //Time: O(n^2) where n is the number of nodes in `nums`
-    //Space: O(n) where n is the number of nodes in `nums`
+    //Space: O(n) 
+    //array
     //two pointers
     //sorting
     //nested loops

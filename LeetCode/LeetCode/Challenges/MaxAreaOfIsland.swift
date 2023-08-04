@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/max-area-of-island/
-//graph theory
 struct MaxAreaOfIsland {
     
-    //Time: O(n*m) where n is the number for row in grid, where m is the number for columns in grid
-    //Space: O(n*m)
+    //Time: O(n * m) where n is the number for row in grid
+    //               where m is the number for columns in grid
+    //Space: O(n * m)
+    //graph theory
     //DFS
     //relative indexing
     //matrix
@@ -65,8 +66,10 @@ struct MaxAreaOfIsland {
         search(&grid, row, column - 1, &current)
     }
     
-    //Time: O(n*m) where n is the number for row in grid, where m is the number for columns in grid
-    //Space: O(n*m)
+    //Time: O(n * m) where n is the number for row in grid
+    //               where m is the number for columns in grid
+    //Space: O(n * m)
+    //graph theory
     //DFS
     //relative indexing
     //matrix

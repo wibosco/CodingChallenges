@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/palindromic-substrings/
-//string
 struct PalindromicSubstrings {
         
     //Time: O(n^2) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //two pointers
     //
     //Solution Description:

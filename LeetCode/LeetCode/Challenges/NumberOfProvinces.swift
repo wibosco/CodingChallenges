@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-provinces/
-//graph theory
 struct NumberOfProvinces {
     
     //Time: O(n^2) where n is the number of elements in `isConnected`
     //Space: O(n)
+    //graph theory
     //DFS
     //visited
     //adjacency matrix
@@ -62,6 +62,7 @@ struct NumberOfProvinces {
     
     //Time: O(n^2) where n is the number of elements in `isConnected`
     //Space: O(n)
+    //graph theory
     //BFS
     //visited
     //adjacency matrix
@@ -116,6 +117,7 @@ struct NumberOfProvinces {
     
     //Time: O(n^2) for the disjoint set
     //Space: O(n) for the `rank` array in `UnionFind`
+    //graph theory
     //union find
     //disjoint set
     //undirected graph

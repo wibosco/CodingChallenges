@@ -8,11 +8,91 @@
 import Foundation
 
 //https://leetcode.com/problems/reverse-linked-list-ii/
-//linked list
 struct ReverseLinkedListII {
     
-    //Time: O(n+k) where n is number of nodes in the list, `k` is the difference between left and right
+    //Time: O(n + k) where n is number of nodes in the list
+    //               where k is the difference between left and right
+    //Space: O(1)
+    //linked list
+    //multiple pointers
+    //
+    //Solution Description:
+    //Treating the linked list as 3 lists - before left, between left and right and after right. We can then take the `between
+    //left and right` and reverse the elements in position. After this we then rejoin the three lists together and return the
+    //new head.
+    static func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
+        var list1Head: ListNode?
+        var list1Tail: ListNode?
+        
+        var list2Head: ListNode?
+        var list2Tail: ListNode?
+        
+        var list3Head: ListNode?
+        var list3Tail: ListNode?
+        
+        var i = 1
+        var current = head
+        
+        while let c = current {
+            if i < left {
+                if list1Head == nil {
+                    list1Head = c
+                    list1Tail = c
+                } else {
+                    list1Tail?.next = c
+                    list1Tail = c
+                }
+            } else if i > right {
+                if list3Head == nil {
+                    list3Head = c
+                    list3Tail = c
+                } else {
+                    list3Tail?.next = c
+                    list3Tail = c
+                }
+            } else {
+                if list2Head == nil {
+                    list2Head = c
+                    list2Tail = c
+                } else {
+                    list2Tail?.next = c
+                    list2Tail = c
+                }
+            }
+            
+            i += 1
+            current = c.next
+        }
+        
+        list2Tail?.next = nil
+        
+        current = list2Head
+        var prev: ListNode?
+        
+        while let c = current {
+            let tmpNext = c.next
+            c.next = prev
+            
+            prev = c
+            current = tmpNext
+        }
+        
+        if let list1Head = list1Head {
+            list1Tail?.next = prev
+            list2Head?.next = list3Head
+            
+            return list1Head
+        } else {
+            list2Head?.next = list3Head
+            
+            return prev
+        }
+    }
+    
+    //Time: O(n + k) where n is number of nodes in the list
+    //               where k is the difference between left and right
     //Space: O(k)
+    //linked list
     //array
     //two pointers
     //
@@ -20,8 +100,8 @@ struct ReverseLinkedListII {
     //First we iterate through the list and place any nodes found between `left` and `right` (inclusive) into an array -
     //`nodes`. Then using two pointers we move through `nodes` from opposite sides and swap over the values of nodes at
     //`p0` and `p1` (note that we don't attempt to rewire the nodes `next` properties - we only swap over the values).
-    //Once `p0` and `p1` cross we exit and return the head of the swapped linked list
-    static func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
+    //Once `p0` and `p1` cross we exit and return the head of the swapped linked list.
+    static func reverseBetweenArray(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
         guard left != right else {
             return head
         }
@@ -61,6 +141,7 @@ struct ReverseLinkedListII {
     
     //Time: O(n) where n is number of nodes in the list
     //Space: O(n) - recursion stack
+    //linked list
     //array
     //two pointers
     //recursive

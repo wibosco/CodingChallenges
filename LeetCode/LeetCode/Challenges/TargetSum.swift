@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/target-sum/
-//graph theory
 struct TargetSum {
     
     //Time: O(2^n) where n is the number of elements in `nums`
     //Space: O(n)
+    //graph theory
     //DFS
     //dynamic vertices
     //

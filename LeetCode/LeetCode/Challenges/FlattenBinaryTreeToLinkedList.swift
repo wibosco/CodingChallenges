@@ -9,12 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
-//binary tree
-//linked list
 struct FlattenBinaryTreeToLinkedList {
 
     //Time: O(n) where n is the number of nodes
     //Space: O(n) where n is the number of nodes
+    //binary tree
+    //linked list
     //array
     //DFS
     //

@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/k-diff-pairs-in-an-array/
-//array
 struct KDiffPairsInAnArray {
     
     //Time: O(n) where n is the numeber of elements in `nums`
     //Space: O(n) as we use a set we could store n/2 elements which will be n as we drop the constant
+    //array
     //dictionary
     //frequency
     //

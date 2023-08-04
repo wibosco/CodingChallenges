@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/reverse-integer/
-//modulo
 struct ReverseInteger {
     
     //Time: O(n) where n is the number of digits in `x`
     //Space: O(1)
+    //modulo
     //overflow
     //underflow
     //math

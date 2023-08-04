@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
-//binary tree
 struct AllNodesDistanceKInBinaryTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary tree
     //DFS
     //recursive
     //BFS

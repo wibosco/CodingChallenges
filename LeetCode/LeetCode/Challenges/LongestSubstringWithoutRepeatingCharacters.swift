@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/longest-substring-without-repeating-characters/
-//string
 struct LongestSubstringWithoutRepeatingCharacters {
     
     //Time: O(n) where n is the characters in `s`
     //Space: O(n) where n is the characters in `s`
+    //string
     //sliding window
     //
     //Solution Description:
@@ -47,7 +47,9 @@ struct LongestSubstringWithoutRepeatingCharacters {
     
     //Time: O(n) where n is the characters in `s`
     //Space: O(n) where n is the characters in `s`
+    //string
     //
+    //Solution Description:
     //N.B. This solution is sufficiently slower due to `let char = s[s.index(s.startIndex, offsetBy: index)]`
     static func lengthOfLongestSubstringAlt(_ s: String) -> Int {
         var visited = [Character: Int]()

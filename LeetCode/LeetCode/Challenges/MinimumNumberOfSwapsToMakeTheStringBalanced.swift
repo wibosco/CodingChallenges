@@ -10,11 +10,11 @@ import Foundation
 import CoreText
 
 //https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/
-//string
 struct MinimumNumberOfSwapsToMakeTheStringBalanced {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //stack
     //
     //Solution Description:
@@ -50,6 +50,7 @@ struct MinimumNumberOfSwapsToMakeTheStringBalanced {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(1)
+    //string
     //counting
     //
     //Solution Description:

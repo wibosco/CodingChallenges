@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
-//array
 struct PairsOfSongsWithTotalDurationsDivisibleBy60 {
     
     //Time: O(n) where n is the number of elements in `time`
     //Space: O(1) remainders will contain a maximum of 60 entries
+    //array
     //dictionary
     //
     //Solution Description:

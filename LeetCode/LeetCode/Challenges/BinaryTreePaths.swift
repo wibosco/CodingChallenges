@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-tree-paths/
-//binary tree
 struct BinaryTreePaths {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(d) where d is the depth of the tree
+    //binary tree
     //DFS
     //recursive
     //backtracking

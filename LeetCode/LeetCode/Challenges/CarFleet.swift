@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/car-fleet/
-//array
 struct CarFleet {
     
     //Time: O(n log n) where n is either the `position` elements or `speed` elements
     //Space: O(n)
+    //array
     //sorting
     //stack
     //monotonic decreasing stack

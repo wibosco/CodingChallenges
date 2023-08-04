@@ -9,13 +9,14 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-two-sorted-lists/
-//linked list
 struct MergeTwoSortedLists {
     
-    //Time: O(m+n) where m is the length of `l1` and n is the length of `l2`
+    //Time: O(m+n) where m is the length of `l1`
+    //             where n is the length of `l2`
     //Space: O(1)
     //iterative
     //sentinel head
+    //linked list
     //
     //Solution Description:
     //Iteratively walk through `l1` and `l2` choosing the smaller node from each list to add to the merged list. We continue
@@ -47,8 +48,11 @@ struct MergeTwoSortedLists {
         return sentinel.next
     }
     
-    //Time: O(m+n) where m is the length of `l1` and n is the length of `l2`
-    //Space: O(m+n) recursive call stack, where m is the length of `l1` and n is the length of `l2`
+    //Time: O(m+n) where m is the length of `l1`
+    //             where n is the length of `l2`
+    //Space: O(m+n) recursive call stack, where m is the length of `l1`
+    //                                    where n is the length of `l2`
+    //linked list
     //recursive
     //merge sort
     //sentinel head

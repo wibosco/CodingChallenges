@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/range-sum-of-bst/
-//binary search tree
 struct RangeSumOfBST {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the size of the largest level
+    //binary search tree
     //BFS
     //
     //Solution Description:
@@ -53,6 +53,7 @@ struct RangeSumOfBST {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary search tree
     //DFS
     //recusive
     //preorder
@@ -83,6 +84,7 @@ struct RangeSumOfBST {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary search tree
     //DFS
     //iterative
     //

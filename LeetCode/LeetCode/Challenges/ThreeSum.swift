@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/3sum/
-//array
 struct ThreeSum { //3Sum
     
     //Time: O(n^2) where n is the number of elements in `nums`
-    //Space: O(n) where n is the number of elements in `nums`
+    //Space: O(n)
+    //array
     //two pointers
     //sorted
     //nested loop
@@ -67,7 +67,8 @@ struct ThreeSum { //3Sum
     }
     
     //Time: O(n^2) where n is the number of elements in `num`
-    //Space: O(n) where n is the number of elements in `num`
+    //Space: O(n)
+    //array
     //dictionary
     //sorted
     //nested loop

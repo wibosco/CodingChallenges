@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
-//array
 struct ReplaceElementsWithGreatestElementOnRightSide {
     
     //Time: O(n) where n is the number of elements in `arr`
     //Space: O(n)
+    //array
     //
     //Solution Description:
     //Going right-to-left we iterate through `arr` and hold onto the highest/biggest value that we have seen so far - `rightMax`.

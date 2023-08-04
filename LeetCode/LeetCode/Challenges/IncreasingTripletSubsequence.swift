@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/increasing-triplet-subsequence
-//array
 struct IncreasingTripletSubsequence {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //greedy
     //
     //Solution Description:

@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-//linked list
 struct RemoveNthNodeFromEndOfList {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
+    //linked list
     //two pointers
     //sentinel head
     //
@@ -49,6 +49,7 @@ struct RemoveNthNodeFromEndOfList {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
+    //linked list
     //2 passes
     //
     //Solution Description:
@@ -89,7 +90,8 @@ struct RemoveNthNodeFromEndOfList {
     }
     
     //Time: O(n) where n is the number of nodes in the list
-    //Space: O(n) where n is the number of nodes in the list
+    //Space: O(n) 
+    //linked list
     //array
     //
     //Solution Description:

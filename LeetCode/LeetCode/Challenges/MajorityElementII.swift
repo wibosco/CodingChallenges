@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/majority-element-ii/
-//array
 struct MajorityElementII {
     
     //Time: O(n) where n is the number of elements in `nums`
-    //Space: O(n) where n is the number of elements in `nums`
+    //Space: O(n)
+    //array
     //dictionary
     //
     //Solution Description:

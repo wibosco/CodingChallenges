@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/longest-repeating-character-replacement/
-//string
 struct LongestRepeatingCharacterReplacement {
     
     //Time: O(n*m) where n is the number of elements in `s`, m is the maximum window size
     //Space: O(n)
+    //string
     //sliding window
     //dictionary
     //

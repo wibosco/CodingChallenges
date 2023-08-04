@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/string-to-integer-atoi/
-//string
 struct StringToInteger {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(1)
+    //string
     //overflow
     //underflow
     //array

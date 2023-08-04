@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
-//array
 struct RemoveDuplicatesFromSortedArrayII {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sorted
     //two pointers
     //

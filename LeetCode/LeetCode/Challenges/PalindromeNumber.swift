@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/palindrome-number/
-//modulo
 struct PalindromeNumber {
     
     //Time: O(n)
     //Space: O(1)
+    //modulo
     //math
     //
     //Solution description:

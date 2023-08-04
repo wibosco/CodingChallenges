@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/search-a-2d-matrix-ii/
-//binary search
 struct Search2DMatrixII {
     
     //Time: O(n log n) where n is the number of columns
     //Space: O(1)
+    //binary search
     //matrix
     //sorted
     //
@@ -45,6 +45,7 @@ struct Search2DMatrixII {
     
     //Time: O(n log n where n is the number of rows
     //Space: O(1)
+    //binary search
     //matrix
     //sorted
     //

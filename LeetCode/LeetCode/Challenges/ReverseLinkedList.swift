@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/reverse-linked-list/
-//linked list
 struct ReverseLinkedList {
     
     //Time: O(n) where n is the number of nodes in the list.
     //Space: O(1)
+    //linked list
     //two pointers
     //
     //Solution Description:
@@ -51,6 +51,7 @@ struct ReverseLinkedList {
     
     //Time: O(n) where n is the number of nodes in the list.
     //Space: O(n) call stack
+    //linked list
     //recursive
     //
     //Solution Description:
@@ -77,6 +78,7 @@ struct ReverseLinkedList {
     
     //Time: O(n) where n is the number of nodes in the list.
     //Space: O(1)
+    //linked list
     //two pointers
     //
     //Solution Description:
@@ -106,7 +108,8 @@ struct ReverseLinkedList {
     }
     
     //Time: O(n) where n is the number of nodes in the list.
-    //Space: O(n) where n is the number of nodes in the list.
+    //Space: O(n) 
+    //linked list
     //
     //Solution Description:
     //Iterate througgh the list placing each array in order into an array. Once we have all nodes in the array iterate

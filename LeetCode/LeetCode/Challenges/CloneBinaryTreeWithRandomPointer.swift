@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/clone-binary-tree-with-random-pointer/
-//binary tree
 struct CloneBinaryTreeWithRandomPointer {
     
     //Time: O(n) where n is the number of nodes
     //Space: O(n) where n is the number of copied nodes
+    //binary tree
     //DFS
     //dictionary
     //
@@ -46,6 +46,7 @@ struct CloneBinaryTreeWithRandomPointer {
     
     //Time: O(n) where n is the number of nodes
     //Space: O(n) where n is the number of copied nodes
+    //binary tree
     //BFS
     //dictionary
     //

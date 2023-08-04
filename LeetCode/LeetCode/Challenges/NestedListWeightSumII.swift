@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/nested-list-weight-sum-ii/
-//graph theory
 struct NestedListWeightSumII {
     
     //Time: O(n)
     //Space O(n)
+    //graph theory
     //DFS
     //recursive
     //

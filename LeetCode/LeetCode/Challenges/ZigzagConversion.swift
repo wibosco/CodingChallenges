@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/zigzag-conversion/
-//string
 struct ZigzagConversion {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(n) where n is the number of characters in `s`
+    //string
     //array
     //
     //Solution Description:
@@ -50,6 +50,7 @@ struct ZigzagConversion {
     }
     
     //Time: O(3n)
+    //string
     static func convertSlow(_ s: String, _ numRows: Int) -> String {
         guard numRows > 1 else {
             return s

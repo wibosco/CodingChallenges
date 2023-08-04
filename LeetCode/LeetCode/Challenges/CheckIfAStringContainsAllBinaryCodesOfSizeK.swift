@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
-//array
 struct CheckIfAStringContainsAllBinaryCodesOfSizeK {
     
-    //Time: O(n * k) where n is the number of characters in `s`, k is the size of the substring
+    //Time: O(n * k) where n is the number of characters in `s`
+    //               where k is the size of the substring
     //Space: O(n)
+    //array
     //two pointers
     //sliding window
     //set

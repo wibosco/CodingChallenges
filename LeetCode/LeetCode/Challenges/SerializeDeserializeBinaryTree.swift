@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
-//binary tree
 struct SerializeDeserializeBinaryTree {
     
     //Time: O(n) where n is the number of elements in data
     //Space: O(n) where n is the nodes in the tree
+    //binary tree
     //BFS
     //level traversal
     //
@@ -61,6 +61,7 @@ struct SerializeDeserializeBinaryTree {
     
     //Time: O(n) where n is the number of elements in data
     //Space: O(n) where n is the nodes in the tree
+    //binary tree
     //BFS
     //level traversal
     //

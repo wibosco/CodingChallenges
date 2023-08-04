@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/longest-palindromic-substring/
-//string
 struct LongestPalindromicSubstring {
     
     //Time: O(n^2) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //two pointers
     //
     //Solution Description:
@@ -74,6 +74,7 @@ struct LongestPalindromicSubstring {
     // MARK: - Slow
     
     //Time: O(n^3) where n is the number of characters in `s`. n to check if a string is a palindrome and n^2 to generate all combinations
+    //string
     //
     //Solution Description:
     //Brute force generate all possible in-order combinations of the characters in `s` by iterating through `s` forwards and comparing it

@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
-//array
 struct SumOfAllOddLengthSubarrays {
     
     //Time: O(n^3) where n is the number of elements in `arr`
     //Space: O(1)
+    //array
     //
     //Solution Description:
     //By performing two inner loops we all possible subarrays in `arr` from each possible starting position. If that subarray will

@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/boats-to-save-people/
-//array
 struct BoatsToSavePeople {
     
     //Time: O(n log n) where n is the number of elements in `people`
     //Space: O(n)
+    //array
     //sorting
     //greedy
     //two pointers

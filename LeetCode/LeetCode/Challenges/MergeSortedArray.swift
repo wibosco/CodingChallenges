@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-sorted-array/
-//array
 struct MergeSortedArray {
     
     //Time: O(m + n)
     //Space: O(1)
+    //array
     //sorted
     //two pointers (actually three)
     //in-line
@@ -54,6 +54,7 @@ struct MergeSortedArray {
     
     //Time: O(m + n)
     //Space: O(m + n)
+    //array
     //sorted
     //extra storage
     //

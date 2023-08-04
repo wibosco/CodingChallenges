@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/sort-colors/
-//array
 struct SortColors {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sorting
     //counting sort
     //
@@ -50,6 +50,7 @@ struct SortColors {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //sorting
     //two pointers
     //

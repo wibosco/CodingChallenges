@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/optimal-partition-of-string/
-//array
 struct OptimalPartitionOfString {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(1) `partitionSeen` will only every contain at most 26 elements (English Alphabet)
+    //array
     //greedy
     //
     //Solution Description:

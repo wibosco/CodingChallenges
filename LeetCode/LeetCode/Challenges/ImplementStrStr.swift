@@ -10,11 +10,12 @@ import Foundation
 
 //https://leetcode.com/problems/implement-strstr/
 //URL has been changed to https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
-//string
 struct ImplementStrStr {
     
-    //Time: O(n + m) where n is the number fo elements in `haystack`, m is the number of elements in `needle`
+    //Time: O(n + m) where n is the number fo elements in `haystack`
+    //               where m is the number of elements in `needle`
     //Space: O(n + m)
+    //string
     //array
     //KMP
     //Knuth–Morris–Pratt algorithm
@@ -106,8 +107,10 @@ struct ImplementStrStr {
         return -1
     }
     
-    //Time: O(n * m) where n is the number fo elements in `haystack`, m is the number of elements in `needle`
+    //Time: O(n * m) where n is the number fo elements in `haystack`,
+    //               where m is the number of elements in `needle`
     //Space: O(1)
+    //string
     //two pointers
     //array
     //

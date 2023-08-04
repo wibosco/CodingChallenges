@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/is-subsequence/
-//array
 struct IsSubsequence {
     
     //Time: O(n) where n is the larger of `s` or `t`
     //Space: O(n)
+    //array
     //two pointers
     //
     //Solution Description:

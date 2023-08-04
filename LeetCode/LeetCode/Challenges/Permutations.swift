@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/permutations/
-//array
 struct Permutations {
     
-    //Time: O(n*n!) where n is the number of elements in `nums`
+    //Time: O(n * n!) where n is the number of elements in `nums`
     //Space: O(n!) stack frames
+    //array
     //backtracking
     //DFS
     //n-ary tree
@@ -48,8 +48,9 @@ struct Permutations {
         }
     }
     
-    //Time: O(n*n!) where n is the number of elements in `nums`
+    //Time: O(n * n!) where n is the number of elements in `nums`
     //Space: O(n!) stack frames
+    //array
     //backtracking
     //DFS
     //n-ary tree

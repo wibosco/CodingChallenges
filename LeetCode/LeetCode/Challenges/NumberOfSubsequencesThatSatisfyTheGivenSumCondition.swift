@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
-//array
 struct NumberOfSubsequencesThatSatisfyTheGivenSumCondition {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //two pointers
     //sorting
     //maths

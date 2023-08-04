@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/sort-characters-by-frequency/
-//string
 struct SortCharactersByFrequency {
     
-    //Time: O(k + n) where k is the number of unique characters in `s`, n is the number of characters in `s`
+    //Time: O(k + n) where k is the number of unique characters in `s`
+    //               where n is the number of characters in `s`
     //Space: O(k + n)
+    //string
     //dictionary
     //sorting
     //bucket sort
@@ -49,8 +50,10 @@ struct SortCharactersByFrequency {
         return String(result)
     }
     
-    //Time: O(n + k log k) where k is the number of unique characters in `s`, n is the number of characters in `s`
+    //Time: O(n + k log k) where k is the number of unique characters in `s`
+    //                     where n is the number of characters in `s`
     //Space: O(k + n)
+    //string
     //dictionary
     //sorting
     //

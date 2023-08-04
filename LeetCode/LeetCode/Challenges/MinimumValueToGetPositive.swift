@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/
-//array
 struct MinimumValueToGetPositive {
     
     //Time: O(n)
     //Space: O(1)
+    //array
     //prefix sum
     //
     //Solution Description:
@@ -33,7 +33,8 @@ struct MinimumValueToGetPositive {
     
     //Time: O(n log n)
     //Space: O(1)
-    //The index is sorted
+    //array
+    //sorting
     //binary search
     //
     //Solution Description:

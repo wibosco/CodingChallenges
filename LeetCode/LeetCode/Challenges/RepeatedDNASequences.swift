@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/repeated-dna-sequences/
-//array
 struct RepeatedDNASequences {
     
     //Time: O(n) where n is number of elements in `s`
     //Space: O(n) where n is the number of elements in `s`
+    //array
     //dictionary
     //sliding window
     //

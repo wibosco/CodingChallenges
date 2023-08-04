@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-intervals/
-//array
 struct MergeIntervals {
     
     //Time: O(n log n) where n is the number of intervals
     //Space: O(n) where n is the number of intervals (we copy the `intervals` array to sort it)
+    //array
     //sorting
     //
     //Solution Description:

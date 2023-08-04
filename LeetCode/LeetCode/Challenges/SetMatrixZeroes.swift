@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/set-matrix-zeroes/
-//matrix
 struct SetMatrixZeroes {
     
-    //Time: O(n * m) where n is the number of rows and m is the number of columns
+    //Time: O(n * m) where n is the number of rows
+    //               where m is the number of columns
     //Space: O(k) where `k` is the number of zero indexes
+    //matrix
     //array
     //nested loops
     //

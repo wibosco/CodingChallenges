@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/n-ary-tree-level-order-traversal/
-//graph theory
 struct NaryTreeLevelOrderTraversal { //N-aryTreeLevelOrderTraversal
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree
+    //graph theory
     //BFS
     //
     //Solution Description:

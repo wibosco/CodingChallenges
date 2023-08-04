@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
-//string
 struct RemoveAllAdjacentDuplicatesInString {
     
     //Time: O(n) where n is the number of characters in `s`
-    //Space: O(n - d) where n is the number of characters in `s` and `d` are number of duplicates
+    //Space: O(n - d) where n is the number of characters in `s`
+    //                where d are number of duplicates
+    //string
     //stack
     //
     //Solution Description:
@@ -44,6 +45,7 @@ struct RemoveAllAdjacentDuplicatesInString {
     
     //Time: O(n^2) where n is the number of characters in `s`
     //Space: O(1)
+    //string
     //array
     //two pointers
     //

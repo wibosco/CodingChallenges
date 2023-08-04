@@ -8,11 +8,13 @@
 import Foundation
 
 //https://leetcode.com/problems/game-of-life/
-//matrix
+
 struct GameOfLife {
     
-    //Time: O(n * m) where n is the number of rows, m is the the number of columns
+    //Time: O(n * m) where n is the number of rows
+    //               where m is the the number of columns
     //Space: O(n * m)
+    //matrix
     //relative indexing
     //multi-source
     //

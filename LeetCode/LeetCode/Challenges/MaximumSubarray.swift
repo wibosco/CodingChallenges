@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/maximum-subarray/
-//array
 struct MaximumSubarray {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //counting
     //greedy
     //Kadanes algorithm

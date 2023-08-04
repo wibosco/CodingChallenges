@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
-//binary tree
 struct VerticalOrderTraversalOfABinaryTree {
  
     //Time: O(n log n) where n is the number of nodes in the tree (due to the sorting)
     //Space: O(n) where n is the number of nodes in the tree
+    //binary tree
     //BFS
     //array
     //dictionary

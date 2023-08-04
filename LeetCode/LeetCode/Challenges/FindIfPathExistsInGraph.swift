@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/find-if-path-exists-in-graph/
-//graph theory
 struct FindIfPathExistsInGraph {
     
-    //Time: O(n + e) where n is the number of nodes and e is the number of edges
+    //Time: O(n + e) where n is the number of nodes
+    //               where e is the number of edges
     //Space: O(n) where n is the number of nodes
+    //graph theory
     //BFS
     //adjacency list
     //undirected graph
@@ -65,8 +66,10 @@ struct FindIfPathExistsInGraph {
         return false
     }
     
-    //Time: O(n + e) where n is the number of nodes and e is the number of edges
+    //Time: O(n + e) where n is the number of nodes
+    //               where e is the number of edges
     //Space: O(n) where n is the number of nodes
+    //graph theory
     //DFS
     //adjacency list
     //undirected graph
@@ -113,8 +116,10 @@ struct FindIfPathExistsInGraph {
         return false
     }
     
-    //Time: O(n + e) where n is the number of nodes and e is the number of edges
+    //Time: O(n + e) where n is the number of nodes
+    //               where e is the number of edges
     //Space: O(n) where n is the number of nodes
+    //graph theory
     //DFS
     //undirected graph
     //
@@ -164,6 +169,7 @@ struct FindIfPathExistsInGraph {
     
     //Time: O(n)
     //Space: O(n) where n is the number of nodes in the `ranks` array
+    //graph theory
     //union find
     //disjoint sets
     //undirected graph

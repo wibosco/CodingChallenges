@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/longest-increasing-subsequence
-//array
 struct LongestIncreasingSubsequence {
     
     //Time: O(n^2) where n is the number of elements in `nums` (nested for loops)
     //Space: O(n)
+    //array
     //graph theory
     //dynamic programming (bottom-up)
     //
@@ -41,6 +41,7 @@ struct LongestIncreasingSubsequence {
     
     //Time: O(n^2) where n is the number of elements in `nums` (nested for loops)
     //Space: O(n)
+    //array
     //graph theory
     //DFS
     //recursive
@@ -96,6 +97,7 @@ struct LongestIncreasingSubsequence {
     
     //Time: O(2^n) where n is the number of elements in `nums` (at each index we can choose to add that value to our count or not)
     //Space: O(n)
+    //array
     //graph theory
     //DFS
     //recursive

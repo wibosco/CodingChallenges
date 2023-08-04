@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/climbing-stairs/
-//binary tree
 struct ClimbingStairs {
     
     //Time: O(n)
     //Space: O(n)
+    //binary tree
     //memoization
     //dynamic programming
     //recursive
@@ -68,6 +68,7 @@ struct ClimbingStairs {
     
     //Time: O(2^n)
     //Space: O(n) depth of the tree
+    //binary tree
     //recursive
     //
     //Solution Description:
@@ -92,6 +93,7 @@ struct ClimbingStairs {
     
     //Time: O(2^n)
     //Space: O(n) depth of the tree
+    //binary tree
     //recursive
     //set
     //

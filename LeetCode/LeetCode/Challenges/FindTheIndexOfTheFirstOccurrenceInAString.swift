@@ -8,10 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
-//array
+
 struct FindTheIndexOfTheFirstOccurrenceInAString {
     
-    //Time: O(n + m) where n is the number fo elements in `haystack`, m is the number of elements in `needle`
+    //Time: O(n + m) where n is the number fo elements in `haystack`
+    //               where m is the number of elements in `needle`
     //Space: O(n + m)
     //array
     //KMP
@@ -103,8 +104,10 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
         return -1
     }
     
-    //Time: O(n * m) where n is the number of elements in `haystack`, m is the number of elements in `needle`
+    //Time: O(n * m) where n is the number of elements in `haystack`
+    //               where m is the number of elements in `needle`
     //Space: O(1)
+    //array
     //nested loops
     //two pointers
     //

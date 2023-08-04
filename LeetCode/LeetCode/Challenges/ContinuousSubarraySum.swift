@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/continuous-subarray-sum/
-//array
 struct ContinuousSubarraySum {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //modulo
     //prefix sum
     //dictionary
@@ -60,6 +60,7 @@ struct ContinuousSubarraySum {
     
     //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //modulo
     //
     //Solution Description:

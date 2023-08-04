@@ -8,7 +8,6 @@
 import Foundation
 
 //https://leetcode.com/problems/sign-of-the-product-of-an-array/
-//array
 struct SignOfTheProductOfAnArray {
     
     //Time: O(n) where n is the number of characters in `nums`

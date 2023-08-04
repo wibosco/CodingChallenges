@@ -9,10 +9,10 @@
 import Foundation
 
 //https://leetcode.com/problems/next-greater-element-i/
-//stack
 struct NextGreaterElementI {
     
-    //Time: O(n + m) where n is the numbers of elements in `nums1`, m is the number of elements in `nums2`
+    //Time: O(n + m) where n is the numbers of elements in `nums1`
+    //               where m is the number of elements in `nums2`
     //Space: O(n) where n is the the number of elements in `nums1`
     //stack
     //monotonic decreasing stack
@@ -68,8 +68,10 @@ struct NextGreaterElementI {
         return result
     }
     
-    //Time: O(n * m) where n is the numbers of elements in `nums1`, m is the number of elements in `nums2`
+    //Time: O(n * m) where n is the numbers of elements in `nums1`
+    //               where m is the number of elements in `nums2`
     //Space: O(n + m)
+    //stack
     //dictionary
     //
     //Solution Description:

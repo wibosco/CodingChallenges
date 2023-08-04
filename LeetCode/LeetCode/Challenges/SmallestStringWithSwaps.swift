@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/smallest-string-with-swaps/
-//graph theory
 struct SmallestStringWithSwaps {
     
     //Time: O(n log n) where n is the number of pairs
     //Space: O(n) where n is the number of pairs
+    //graph theory
     //union find
     //disjoint set
     //undirectied graph

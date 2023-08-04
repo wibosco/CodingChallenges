@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/subtree-of-another-tree/
-//binary tree
 struct SubtreeOfAnotherTree {
     
-    //Time: O(n * m) where n is the number of nodes in `t1`, m is the number of nodes in `t2`
+    //Time: O(n * m) where n is the number of nodes in `t1`
+    //               where m is the number of nodes in `t2`
     //Space: O(m)
+    //binary tree
     //DFS
     //recursive
     //matching
@@ -50,6 +51,7 @@ struct SubtreeOfAnotherTree {
     
     //Time: O(
     //Space: O(
+    //binary tree
     //DFS
     //recursive
     //BFS

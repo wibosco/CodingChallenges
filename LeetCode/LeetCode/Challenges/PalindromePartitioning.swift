@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/palindrome-partitioning/
-//string
 struct PalindromePartitioning {
     
-    //Time: O(n*2^n) where n is the number of characters in `s`
+    //Time: O(n * 2^n) where n is the number of characters in `s`
     //Space: O(n)
+    //string
     //array
     //DFS
     //backtracking

@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/subdomain-visit-count/
-//string
 struct SubdomainVisitCount {
     
-    //Time: O(n * k) where n is the number of elements in `cpdomains`, k is the max domains inside each `cpdomains` element
+    //Time: O(n * k) where n is the number of elements in `cpdomains`
+    //               where k is the max domains inside each `cpdomains` element
     //Space: O(n * k)
+    //string
     //array
     //counting
     //dictionary

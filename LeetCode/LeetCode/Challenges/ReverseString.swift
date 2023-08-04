@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/reverse-string/
-//two pointers
 struct ReverseString {
     
     //Time: O(n) where n is the count of the elements in `s`
     //Space: O(1)
+    //two pointers
     //iterative
     //
     //Solution Description:
@@ -38,6 +38,7 @@ struct ReverseString {
     
     //Time: O(n) where n is the count of the elements in `s`
     //Space: O(n) if counting the recusive stack otherwise O(1)
+    //two pointers
     //recursive
     //
     //Solution Description:

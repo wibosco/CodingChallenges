@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/01-matrix/
-//graoh theory
 struct Matrix01 {
     
-    //Time: O(m*n)
-    //Space: O(m*n)
+    //Time: O(m * n)
+    //Space: O(m * n)
+    //graoh theory
     //BFS
     //relative indexing
     //matrix

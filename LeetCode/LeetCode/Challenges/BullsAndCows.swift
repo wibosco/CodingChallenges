@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/bulls-and-cows/
-//string
 struct BullsAndCows {
     
     //Time: O(n) where n is the number of elements in `secret`/`guess` (both should match)
     //Space: O(n)
+    //string
     //dictionary
     //
     //Solution Description:

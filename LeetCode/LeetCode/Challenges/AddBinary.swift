@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/add-binary/
-//string
 struct AddBinary {
     
-    //Time: O(n + m) where n is the number of character in `a`, m is the number of characters in `b`
+    //Time: O(n + m) where n is the number of character in `a`
+    //               where m is the number of characters in `b`
     //Space: O(n + m)
+    //string
     //array
     //
     //Solution Description:

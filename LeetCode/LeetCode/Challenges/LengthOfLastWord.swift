@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/length-of-last-word/
-//string
 struct LengthOfLastWord {
     
     //Time: O(n) where n is the number of characters in `s`
     //Space: O(1)
+    //string
     //
     //Solution Description:
     //Iterating `s` in reverse we first filter out any space characters (" ") that we encounter until we hit our first

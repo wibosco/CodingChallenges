@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/min-cost-to-connect-all-points/
-//graph theory
 struct MinCostToConnectAllPoints {
     
     //Time: O(n^2)
     //Space: O(n) for the min heap
+    //graph theory
     //MST - minimum spanning tree
     //greedy
     //Prim's Algorithm - https://en.wikipedia.org/wiki/Prim%27s_algorithm
@@ -79,6 +79,7 @@ struct MinCostToConnectAllPoints {
     
     //Time: O(n^2) where n is the number of points
     //Space: O(n)
+    //graph theory
     //MST - minimum spanning tree
     //disjoint set
     //union find

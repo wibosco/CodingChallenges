@@ -9,7 +9,6 @@
 import Foundation
 
 //https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-//string
 struct LetterCombinationsOfAPhoneNumber {
     static let keypad: [Character: String] = ["2": "abc",
                                               "3": "def",
@@ -22,6 +21,7 @@ struct LetterCombinationsOfAPhoneNumber {
     
     //Time: O(4^n * n) where n is the number of values in `digits` (4 is the max letters)
     //Space: O(n) where n is the number of values in `digits` (recursive stack calls)
+    //string
     //dictionary
     //backtracking (DFS)
     //recursive
@@ -64,6 +64,7 @@ struct LetterCombinationsOfAPhoneNumber {
     }
     
     //Time: O(n^3)
+    //string
     static func letterCombinationsAlt(_ digits: String) -> [String] {
         guard !digits.isEmpty else {
             return []

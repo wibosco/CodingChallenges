@@ -8,7 +8,6 @@
 import Foundation
 
 //https://leetcode.com/problems/spiral-matrix-ii/
-//matrix
 struct SpiralMatrixII {
     private enum Direction {
         case right
@@ -19,6 +18,7 @@ struct SpiralMatrixII {
     
     //Time: O(n^2) where n is the number of cells in the matrix
     //Space: O(n^2)
+    //matrix
     //
     //Solution Description:
     //By squaring `n` we know how many cells the matrix will contain so we can create an empty matrix of that size. We then

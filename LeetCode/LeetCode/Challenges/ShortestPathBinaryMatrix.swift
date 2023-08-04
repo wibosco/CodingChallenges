@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/shortest-path-in-binary-matrix/
-//graph theory
 struct ShortestPathBinaryMatrix {
     
     //Time: O(n) where n is the number of cells in `grid`
     //Space: O(n)
+    //graph theory
     //BFS
     //relative indexing
     //matrix
@@ -102,6 +102,7 @@ struct ShortestPathBinaryMatrix {
     
     //Time: O(n)
     //Space: O(n)
+    //graph theory
     //BFS
     //adjacent list
     //matrix

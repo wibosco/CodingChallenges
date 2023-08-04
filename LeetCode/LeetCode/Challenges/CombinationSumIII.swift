@@ -8,13 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/combination-sum-iii/
-//array
 struct CombinationSumIII {
     
     //Time: O(
     //Space: O(
-    //
-    //Solution Description:
+    //array
     //backtracking
     //DFS
     //sorted

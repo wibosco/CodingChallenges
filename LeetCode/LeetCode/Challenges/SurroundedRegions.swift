@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/surrounded-regions/
-//graph theory
 struct SurroundedRegions {
     
-    //Time: O(n*m) where n is the number of rows in board, m is the number of columns in board
-    //Space: O(n*m)
+    //Time: O(n * m) where n is the number of rows in board
+    //               where m is the number of columns in board
+    //Space: O(n * m)
+    //graph theory
     //DFS
     //relative indexing
     //matrix
@@ -68,10 +69,10 @@ struct SurroundedRegions {
         searchIsland(&board, row, column + 1)
     }
     
-    //Time: O(n*m) where n is the number of rows in board, m is the number of columns in board
+    //Time: O(n * m) where n is the number of rows in board
+    //               where m is the number of columns in board
     //Space: O(n*m)
-    //
-    //Solution Description:
+    //graph theory
     //DFS
     //relative indexing
     //matrix

@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/max-number-of-k-sum-pairs/
-//array
 struct MaxNumberOfKSumPairs {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n)
+    //array
     //dictionary
     //
     //Solution Description:

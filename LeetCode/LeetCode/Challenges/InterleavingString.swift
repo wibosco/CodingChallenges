@@ -8,11 +8,12 @@
 import Foundation
 
 //https://leetcode.com/problems/interleaving-string/
-//string
 struct InterleavingString {
     
-    //Time: O(n+m) where n is the characters in `s1` and m is the characters in `s2`
+    //Time: O(n+m) where n is the characters in `s1`
+    //             where m is the characters in `s2`
     //Space: O(n+m)
+    //string
     //set
     //memoization
     //dynamic programming

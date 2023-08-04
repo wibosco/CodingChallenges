@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/
-//array
 struct ArrayWithElementsNotEqualToAverageOfNeighbors {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //greedy
     //sorting
     //

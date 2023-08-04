@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-strings-alternately/
-//array
 struct MergeStringsAlternately {
     
     //Time: O(n) where n is the larger of either `word1` or `word2`
     //Space: O(1)
+    //array
     //two pointers
     //string
     //

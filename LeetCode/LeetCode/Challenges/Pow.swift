@@ -9,12 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/powx-n/
-//math
-//See: https://www.youtube.com/watch?v=snOaKR2xgZg
 struct Pow {
     
     //Time: O(log n) where n is value of n. As we only perform half the calculation we only need half the steps (n)
     //Space: O(1)
+    //math
     //divide and conquer
     //recursive
     //
@@ -35,6 +34,8 @@ struct Pow {
     //to generate the current levels result. The gotcha here is if our exponent is an odd number as this doesn't divide in
     //half nicely instead we need to multiple the squared result by `x` to ensure that the `x` has been raised to the
     //correct exponent.
+    //
+    //See: https://www.youtube.com/watch?v=snOaKR2xgZg
     static func myPow(_ x: Double, _ n: Int) -> Double {
         guard x != 0 else {
             return 0
@@ -65,6 +66,7 @@ struct Pow {
     
     //Time: O(n)
     //Space: O(1)
+    //math
     //
     //Solution Description:
     //2^4 is shorthand for `2 * 2 * 2 * 2` so when we have a positive exponent value then we simply multiple `x` by
@@ -72,6 +74,8 @@ struct Pow {
     //need to turn `x` into a fraction e.g. dividend = 2, divisor = 4 so `2 / 4 = 0.5` can also be expressed as `2 * 0.25`
     //or `2 * (1 / 4)` as you can see with turn the divisor into a fraction. So whenever we get a negative `n` rather than
     //attempting to divide it, we turn it into a faction to simplify our calculations.
+    //
+    //See: https://www.youtube.com/watch?v=snOaKR2xgZg
     static func myPowBruteForce(_ x: Double, _ n: Int) -> Double {
         var x = x
    

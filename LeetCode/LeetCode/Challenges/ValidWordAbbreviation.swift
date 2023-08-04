@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/valid-word-abbreviation/
-//string
 struct ValidWordAbbreviation {
     
     //Time: O(n)
     //Space: O(1)
+    //string
     //array
     //two pointers
     //

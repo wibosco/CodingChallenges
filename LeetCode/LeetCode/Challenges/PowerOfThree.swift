@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/power-of-three
-//maths
 struct PowerOfThree {
     
     //Time: O(log n)
     //Space: O(log n)
+    //maths
     //recursive
     //modulo
     //

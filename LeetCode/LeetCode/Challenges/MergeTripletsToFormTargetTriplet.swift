@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/merge-triplets-to-form-target-triplet/
-//array
 struct MergeTripletsToFormTargetTriplet {
     
     //Time: O(n) where n is the number of elements in `triplets`
     //Space: O(1)
+    //array
     //greedy
     //
     //Solution Description:

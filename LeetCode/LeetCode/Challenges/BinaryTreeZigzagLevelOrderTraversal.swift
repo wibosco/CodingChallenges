@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-//binary tree
 struct BinaryTreeZigzagLevelOrderTraversal {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree (`levels` array)
+    //binary tree
     //BFS
     //array
     //
