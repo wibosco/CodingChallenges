@@ -17,12 +17,18 @@ struct ReverseLinkedList {
     //two pointers
     //
     //Solution Description:
-    //Iterate through swapping nodes around so that for a list of: [1 -> 2 -> 3 -> 4 -> 5], the step are
+    //Using two pointers we iterate through the list and update the `cur` node's next pointer to point to the previous
+    //node (or nil if the current node is the head of the list), we then update the `cur` to be the "old" next node `tmp`
+    //and repeat the process until all nodes have been visited and updated. `prev` is now the head of the reversed list.
+    //The reversal happens like:
+    //
+    //[1 -> 2 -> 3 -> 4 -> 5]
     //[2 -> 3 -> 4 -> 5] [1]
     //[3 -> 4 -> 5] [2 -> 1]
     //[4 -> 5] [3 -> 2 -> 1]
     //[5] [4 -> 3 -> 2 -> 1]
     //[5 -> 4 -> 3 -> 2 -> 1]
+    //
     //As you can see as we swap nodes, we are effectively move them from one list to another
     static func reverseList(_ head: ListNode?) -> ListNode? {
         guard let head = head else {
@@ -61,7 +67,7 @@ struct ReverseLinkedList {
             return head
         }
         
-        let reversedHead = reverseList(next)
+        let reversedHead = reverseListRecursive(next)
         next.next = head // reverse the pointer so that next now points at head
         head.next = nil // now that next points at head, we don't want head pointing at next as this would be a cycle
         

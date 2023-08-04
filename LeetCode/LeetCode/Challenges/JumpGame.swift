@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/jump-game/
-//array
 struct JumpGame {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n) where n is the number of elements in `nums`
+    //array
     //n-ary tree
     //DFS
     //recursive
@@ -70,6 +70,7 @@ struct JumpGame {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n) where n is the number of elements in `nums`
+    //array
     //n-ary tree
     //BFS
     //

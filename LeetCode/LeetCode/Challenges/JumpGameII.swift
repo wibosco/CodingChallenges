@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/jump-game-ii/
-//array
 struct JumpGameII {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(k) where `k` is the size of the largest level
+    //array
     //n-ary tree
     //BFS
     //

@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/linked-list-cycle-ii/
-//linked list
 struct LinkedListCycleII {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
+    //linked list
     //two pointers
     //slow and fast pointers
     //
@@ -24,6 +24,7 @@ struct LinkedListCycleII {
     //entrance to the cycle. We then move each node by one node until they meet again, at which point we can return either.
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
+    //Similar to: https://leetcode.com/problems/linked-list-cycle/
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
     //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
     static func detectCycle(_ head: ListNode?) -> ListNode? {
@@ -50,7 +51,8 @@ struct LinkedListCycleII {
     }
     
     //Time: O(n) where n is the number of nodes in the list
-    //Space: O(n) where n is the number of nodes in the list
+    //Space: O(n)
+    //linked list
     //set
     //
     //Solution Description:

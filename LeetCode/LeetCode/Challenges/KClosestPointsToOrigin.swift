@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/k-closest-points-to-origin/
-//array
 struct KClosestPointsToOrigin {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n + log n) where n is the number of elements in `nums` (log n for the recursive stack)
+    //array
     //quickselect
     //in-line
     //

@@ -56,4 +56,38 @@ struct IntersectionOfTwoLinkedLists {
         
         return p1 === p2 ? p1 : nil //could have been p2
     }
+    
+    //Time: O(n+ m) where n is the number of nodes in `headA` list
+    //              where m is the number of nodes in `headB` list
+    //Space: O(n)
+    //linked list
+    //set
+    //
+    //Solution Description:
+    //First we iterate through the `headA` list and store each node that we encounter into a set. We then iterate
+    //through the `headB` list and attempt to find each we encounter in that set, if we find a node then we know that
+    //that node is the first intersection node and so we return it immediately. If having iterated through all nodes
+    //in the `headB` list and we haven't found the same node in the set then we know that there is no intersection
+    //node and can return nil.
+    static func getIntersectionNodeSet(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+        var nodesInA = Set<ListNode>()
+        var currentA = headA
+        
+        while let c = currentA {
+            nodesInA.insert(c)
+            currentA = c.next
+        }
+        
+        var currentB = headB
+        
+        while let c = currentB {
+            if nodesInA.contains(c) {
+                return c
+            }
+            
+            currentB = c.next
+        }
+        
+        return nil
+    }
 }
