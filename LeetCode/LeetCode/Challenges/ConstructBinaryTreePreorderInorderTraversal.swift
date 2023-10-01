@@ -9,10 +9,6 @@
 import Foundation
 
 //https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-//binary tree
-//divide and conquer
-//DFS
-//array
 struct ConstructBinaryTreePreorderInorderTraversal {
     //preorder = root, left, right
     //inorder = left, root, right
@@ -20,6 +16,10 @@ struct ConstructBinaryTreePreorderInorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //pointers
+    //binary tree
+    //divide and conquer
+    //DFS
+    //array
     static func buildTree(_ preorder: [Int], _ inorder: [Int]) -> BinaryTreeNode? {
         var preorderIndex = 0 //preorder so we go from start to end
         
@@ -59,6 +59,10 @@ struct ConstructBinaryTreePreorderInorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //removal
+    //binary tree
+    //divide and conquer
+    //DFS
+    //array
     static func buildTreeRemoval(_ preorder: [Int], _ inorder: [Int]) -> BinaryTreeNode? {
         var preorder = preorder
         return buildTreeRemoval(&preorder, inorder)

@@ -9,10 +9,6 @@
 import Foundation
 
 //https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-//binary tree
-//divide and conquer
-//DFS
-//array
 struct ConstructBinaryTreeInorderPostorderTraversal {
     //postorder = left, right, root
     //inorder = left, root, right
@@ -20,6 +16,10 @@ struct ConstructBinaryTreeInorderPostorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //pointers
+    //binary tree
+    //divide and conquer
+    //DFS
+    //array
     static func buildTree(_ inorder: [Int], _ postorder: [Int]) -> BinaryTreeNode? {
         var postorderIndex = (postorder.count - 1) //postorder so we go from end to start
         
@@ -57,6 +57,10 @@ struct ConstructBinaryTreeInorderPostorderTraversal {
     //Time: O(n)
     //Space: O(n)
     //removal
+    //binary tree
+    //divide and conquer
+    //DFS
+    //array
     static func buildTreeRemoval(_ inorder: [Int], _ postorder: [Int]) -> BinaryTreeNode? {
         var postorder = postorder
         return buildTreeRemoval(inorder, &postorder)
