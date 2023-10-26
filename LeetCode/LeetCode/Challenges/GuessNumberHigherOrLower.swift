@@ -11,12 +11,6 @@ import Foundation
 struct GuessNumberHigherOrLower {
     let picked: Int
     
-    // MARK: Init
-    
-    init(picked: Int) {
-        self.picked = picked
-    }
-    
     // MARK: - Guess
     
     private func guess(_ num: Int) -> Int {
