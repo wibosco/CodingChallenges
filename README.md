@@ -17,8 +17,8 @@ A collection of coding challenges and their solutions from:
 
 | Keywords | Techniques |
 | -------- | ---------- |
-| "Shortest path" | `BFS`, `Dijkstra` | 
-| "Level-by-level" | `BFS` |
+| "Shortest path", "Minimum" | `BFS`, `Dijkstra` | 
+| "Level-by-level", "Least number of moves", "Batch" | `BFS` |
 | "All paths", "Choices", "Branching" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
 | "Path may not exist"| `isolated vertices`, `cycles` |
@@ -112,8 +112,8 @@ A lot of problems can be treated as graph problems.
 11. Directed Acyclic Graph (DAG) is a directed graph with no directed cycles
     1. Topological sort only works on DAGs
 12. Searching:
-    1. Breadth First Search (BFS) - queue based, level by level traversal
-    2. Depth First Search (DFS) - stack (of recursive) based, go as deep as possible then backtrack
+    1. Breadth First Search (BFS) - queue based, level-by-level traversal
+    2. Depth First Search (DFS) - stack (recursive) based, go as deep as possible then backtrack
 13. Can contain cycles
 
 ### Matrix

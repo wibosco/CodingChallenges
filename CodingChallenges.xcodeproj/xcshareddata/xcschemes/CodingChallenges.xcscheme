@@ -34,6 +34,18 @@
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3D5C907E27A7F6A80035C399"
+               BuildableName = "LeetCodeTests.xctest"
+               BlueprintName = "LeetCodeTests"
+               ReferencedContainer = "container:LeetCode/LeetCode.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "4353DA511CDB868200A07167"
                BuildableName = "CodingChallengesTests.xctest"
                BlueprintName = "CodingChallengesTests"
@@ -62,18 +74,6 @@
                BuildableName = "HackerRankTests.xctest"
                BlueprintName = "HackerRankTests"
                ReferencedContainer = "container:HackerRank/HackerRank.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3D5C907E27A7F6A80035C399"
-               BuildableName = "LeetCodeTests.xctest"
-               BlueprintName = "LeetCodeTests"
-               ReferencedContainer = "container:LeetCode/LeetCode.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
