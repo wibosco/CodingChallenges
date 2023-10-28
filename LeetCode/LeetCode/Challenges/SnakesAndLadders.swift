@@ -20,6 +20,7 @@ struct SnakesAndLadders {
     //iterative
     //batching
     //level traversal
+    //matrix
     //
     //Solution Description:
     //Treating `board` as a graph we can perform a BFS in order to determine the fewest moves required in order to each the end of

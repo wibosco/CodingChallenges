@@ -12,9 +12,9 @@ struct Combinations {
     
     //Time: O(k^n) where k is the number of combinations
     //             where n is the range
-    //Space: O(k+m*n) where k is the number of combinations
-    //                where m is the number of levels in our tree
-    //                where n is the range
+    //Space: O(k + m * n) where k is the number of combinations
+    //                    where m is the number of levels in our tree
+    //                    where n is the range
     //array
     //backtracking
     //

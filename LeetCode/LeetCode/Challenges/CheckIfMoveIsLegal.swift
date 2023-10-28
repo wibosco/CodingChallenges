@@ -16,6 +16,7 @@ struct CheckIfMoveIsLegal {
     //DFS
     //recursive
     //relative indexing
+    //matrix
     //
     //Solution Description:
     //We "color" the square we are given, and then, using relative indexing, we sequentially search all possible lines from

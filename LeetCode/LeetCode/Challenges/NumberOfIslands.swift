@@ -16,9 +16,9 @@ struct NumberOfIslands {
                                          [1, 0]]
     // swiftlint:enable comma
     
-    //Time: O(m*n) where m is the number of rows in grid
+    //Time: O(m * n) where m is the number of rows in grid
     //             where n is the number of columns
-    //Space: O(m*n)
+    //Space: O(m * n)
     //graph theory
     //DFS
     //relative indexing
