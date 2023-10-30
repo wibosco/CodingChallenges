@@ -56,6 +56,7 @@ A collection of coding challenges and their solutions from:
 | Count possible subsequences | `(2 ^ count) - 1` | `Subsequence` |
 | Repeatedly find the min and max value in subarrays| Sort the overall array and take the first and last element in the subarray | `MinimumDifferenceBetweenHighestAndLowestOfKScore` |
 | Find the end of duplicates in an array | Nest a while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
+| Find the minimum distance from one element to multiple elements in a graph | Multi-source BFS | `AsFarFromLandAsPossible` |
 
 A lot of problems can be treated as graph problems.
 
