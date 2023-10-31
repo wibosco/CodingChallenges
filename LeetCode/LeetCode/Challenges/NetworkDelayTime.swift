@@ -121,6 +121,8 @@ struct NetworkDelayTime {
     //adjacency list
     //sorting
     //shortest path
+    //disconnected graph
+    //forest
     //
     //Solution Description:
     //Using Dijkstra's algorithm we calculate the cheapest/shortest path from `k` to all connected nodes. Dijkstra algorithm is

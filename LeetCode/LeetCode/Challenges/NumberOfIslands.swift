@@ -24,6 +24,8 @@ struct NumberOfIslands {
     //relative indexing
     //matrix
     //subgraphs
+    //forest
+    //disconnected
     //
     //Solution Description:
     //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph until we find
@@ -90,6 +92,8 @@ struct NumberOfIslands {
     //relative indexing
     //matrix
     //subgraphs
+    //forest
+    //disconnected
     //
     //Solution Description:
     //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph until we find
