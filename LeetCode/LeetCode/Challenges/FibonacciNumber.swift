@@ -19,7 +19,7 @@ struct FibonacciNumber {
     //
     //Solution Description:
     //Using a bottom-up approach we only need to hold onto the previous steps value to enable us to calculate the next steps value
-    //- this enables to use space when working out fib(n)
+    //- this enables to use space when working out fib(n).
     static func fib(_ n: Int) -> Int {
         guard n > 0 else {
             return 0
