@@ -738,6 +738,8 @@
 		43F3DF3B29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */; };
 		43F7AF442A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */; };
 		43F7AF462A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */; };
+		43FB69902AF3D28E00438457 /* NumberOfEnclaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB698F2AF3D28E00438457 /* NumberOfEnclaves.swift */; };
+		43FB69922AF3D2B400438457 /* NumberOfEnclavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB69912AF3D2B400438457 /* NumberOfEnclavesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1483,6 +1485,8 @@
 		43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedListTests.swift; sourceTree = "<group>"; };
 		43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingNodesInALinkedList.swift; sourceTree = "<group>"; };
 		43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingNodesInALinkedListTests.swift; sourceTree = "<group>"; };
+		43FB698F2AF3D28E00438457 /* NumberOfEnclaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfEnclaves.swift; sourceTree = "<group>"; };
+		43FB69912AF3D2B400438457 /* NumberOfEnclavesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfEnclavesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1779,6 +1783,7 @@
 				3D5C90CA27A7F7620035C399 /* NumberConnectedComponentsUndirectedGraph.swift */,
 				431E35702AF159DD0019BB1F /* NumberOfClosedIslands.swift */,
 				3D146577280A10E500DF647A /* NumberOfDaysBetweenTwoDates.swift */,
+				43FB698F2AF3D28E00438457 /* NumberOfEnclaves.swift */,
 				3D5C90C927A7F7620035C399 /* NumberOfIslands.swift */,
 				435AFB9A2A5C5D8C00721B88 /* NumberOfPairsOfInterchangeableRectangles.swift */,
 				3D5C911827A7F7630035C399 /* NumberOfProvinces.swift */,
@@ -2146,6 +2151,7 @@
 				3D5C925C27A7F76C0035C399 /* NumberConnectedComponentsUndirectedGraphTests.swift */,
 				431E35722AF15A1F0019BB1F /* NumberOfClosedIslandsTests.swift */,
 				3D146579280A122500DF647A /* NumberOfDaysBetweenTwoDatesTests.swift */,
+				43FB69912AF3D2B400438457 /* NumberOfEnclavesTests.swift */,
 				3D5C923E27A7F76C0035C399 /* NumberOfIslandsTests.swift */,
 				435AFB9C2A5C5DD200721B88 /* NumberOfPairsOfInterchangeableRectanglesTests.swift */,
 				3D5C922E27A7F76B0035C399 /* NumberOfProvincesTests.swift */,
@@ -2756,6 +2762,7 @@
 				3DE789AB27E9E91200E1D1B9 /* ReverseLinkedListII.swift in Sources */,
 				4302D0812A73C287001D5375 /* BaseballGame.swift in Sources */,
 				3D5C93A127A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift in Sources */,
+				43FB69902AF3D28E00438457 /* NumberOfEnclaves.swift in Sources */,
 				3D00561C27DA05440086757A /* Permutations.swift in Sources */,
 				3D5C91BA27A7F7630035C399 /* Search2DMatrix.swift in Sources */,
 				3D42A46D27F5AE2400687F75 /* BSTIterator.swift in Sources */,
@@ -3088,6 +3095,7 @@
 				433BBFC329E3F5B100A9A21E /* ValidAnagramTests.swift in Sources */,
 				3D5C92A627A7F76C0035C399 /* DiameterOfNAryTreeTests.swift in Sources */,
 				43EE0BDC2A55A60C003D23E0 /* PartitionLabelsTests.swift in Sources */,
+				43FB69922AF3D2B400438457 /* NumberOfEnclavesTests.swift in Sources */,
 				3DE789AD27E9EA9D00E1D1B9 /* ReverseLinkedListIITests.swift in Sources */,
 				3D5C92FA27A7F76C0035C399 /* BinaryTreeRightSideViewTests.swift in Sources */,
 				3DA6FF0527AA9250009BD7A8 /* FindAllAnagramsInAStringTests.swift in Sources */,
