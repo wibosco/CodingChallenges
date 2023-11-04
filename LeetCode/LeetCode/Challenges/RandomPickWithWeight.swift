@@ -10,7 +10,7 @@ import Foundation
 //https://leetcode.com/problems/random-pick-with-weight/
 
 //array
-//prefixSum
+//prefix sum
 //sorted
 //binary search
 //
@@ -64,7 +64,7 @@ struct RandomPickWithWeight {
 }
 
 //array
-//prefixSum
+//prefix sum
 //sorted
 //
 //Solution Description:
