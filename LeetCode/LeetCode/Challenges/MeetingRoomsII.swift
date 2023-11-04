@@ -15,6 +15,7 @@ struct MeetingRoomsII {
     //array
     //sorted
     //two pointers
+    //intervals
     //
     //Solution Description:
     //What's important to understand is that a room is only free once the "current time" is greater than or equal to

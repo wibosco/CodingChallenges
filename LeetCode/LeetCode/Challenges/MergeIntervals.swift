@@ -15,6 +15,7 @@ struct MergeIntervals {
     //Space: O(n) where n is the number of intervals (we copy the `intervals` array to sort it)
     //array
     //sorting
+    //intervals
     //
     //Solution Description:
     //By sorting the intervals into ascending order we can reduce the amount of work required to find an overlapping interval

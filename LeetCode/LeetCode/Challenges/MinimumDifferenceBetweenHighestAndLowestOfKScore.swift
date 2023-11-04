@@ -15,6 +15,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
     //array
     //sliding window
     //sorting
+    //intervals
     //
     //Solution Description:
     //Treating this as an intervals problem we first sort the array so that one of the neighbors of an element is the smallest

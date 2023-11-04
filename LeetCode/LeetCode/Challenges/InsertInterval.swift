@@ -15,6 +15,7 @@ struct InsertInterval {
     //                where k is the merged intervals array
     //array
     //sorted
+    //intervals
     //
     //Solution Description:
     //First we insert `newInteval` into our mutable `intervals` copy. We do this by finding the first index that has a larger

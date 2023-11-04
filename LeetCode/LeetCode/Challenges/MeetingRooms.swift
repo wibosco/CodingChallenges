@@ -14,6 +14,7 @@ struct MeetingRooms {
     //Space: O(n)
     //array
     //sorting
+    //intervals
     //
     //Solution Description:
     //First we sort `intervals` by ascending start time and then iterate through that sorted array comparing the start

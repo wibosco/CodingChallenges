@@ -636,6 +636,8 @@
 		4354347D2AF50394002B996E /* MinimumNumberOfVerticesToReachAllNodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354347C2AF50394002B996E /* MinimumNumberOfVerticesToReachAllNodesTests.swift */; };
 		4354347F2AF5336A002B996E /* DetonateTheMaximumBombs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354347E2AF5336A002B996E /* DetonateTheMaximumBombs.swift */; };
 		435434812AF53391002B996E /* DetonateTheMaximumBombsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435434802AF53390002B996E /* DetonateTheMaximumBombsTests.swift */; };
+		435434832AF554CF002B996E /* RemoveCoveredIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435434822AF554CF002B996E /* RemoveCoveredIntervals.swift */; };
+		435434852AF5550D002B996E /* RemoveCoveredIntervalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435434842AF5550D002B996E /* RemoveCoveredIntervalsTests.swift */; };
 		435AFB932A5BFBB100721B88 /* BrickWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AFB922A5BFBB100721B88 /* BrickWall.swift */; };
 		435AFB952A5BFC1200721B88 /* BrickWallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AFB942A5BFC1200721B88 /* BrickWallTests.swift */; };
 		435AFB972A5C162400721B88 /* UniqueLength3PalindromicSubsequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AFB962A5C162400721B88 /* UniqueLength3PalindromicSubsequences.swift */; };
@@ -1387,6 +1389,8 @@
 		4354347C2AF50394002B996E /* MinimumNumberOfVerticesToReachAllNodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumNumberOfVerticesToReachAllNodesTests.swift; sourceTree = "<group>"; };
 		4354347E2AF5336A002B996E /* DetonateTheMaximumBombs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetonateTheMaximumBombs.swift; sourceTree = "<group>"; };
 		435434802AF53390002B996E /* DetonateTheMaximumBombsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetonateTheMaximumBombsTests.swift; sourceTree = "<group>"; };
+		435434822AF554CF002B996E /* RemoveCoveredIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCoveredIntervals.swift; sourceTree = "<group>"; };
+		435434842AF5550D002B996E /* RemoveCoveredIntervalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCoveredIntervalsTests.swift; sourceTree = "<group>"; };
 		435AFB922A5BFBB100721B88 /* BrickWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickWall.swift; sourceTree = "<group>"; };
 		435AFB942A5BFC1200721B88 /* BrickWallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickWallTests.swift; sourceTree = "<group>"; };
 		435AFB962A5C162400721B88 /* UniqueLength3PalindromicSubsequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueLength3PalindromicSubsequences.swift; sourceTree = "<group>"; };
@@ -1835,6 +1839,7 @@
 				435F01A22A0D23C000F6B50F /* RedundantConnection.swift */,
 				3D5C912E27A7F7630035C399 /* RemoveAllAdjacentDuplicatesInString.swift */,
 				3D3C1ECC27FE3306004FB321 /* RemoveAllAdjacentDuplicatesInStringII.swift */,
+				435434822AF554CF002B996E /* RemoveCoveredIntervals.swift */,
 				433E55BB29DEDE5200974B73 /* RemoveDuplicateLetters.swift */,
 				3D5C913427A7F7630035C399 /* RemoveDuplicatesFromSortedArray.swift */,
 				3D46243827E4DED100A888C1 /* RemoveDuplicatesFromSortedArrayII.swift */,
@@ -2204,6 +2209,7 @@
 				435F01A42A0D249000F6B50F /* RedundantConnectionTests.swift */,
 				3D3C1ECE27FE357E004FB321 /* RemoveAllAdjacentDuplicatesInStringIITests.swift */,
 				3D5C921C27A7F76B0035C399 /* RemoveAllAdjacentDuplicatesInStringTests.swift */,
+				435434842AF5550D002B996E /* RemoveCoveredIntervalsTests.swift */,
 				433E55BD29DEDEC600974B73 /* RemoveDuplicateLettersTests.swift */,
 				3D46243A27E4DF0000A888C1 /* RemoveDuplicatesFromSortedArrayIITests.swift */,
 				3D5C923527A7F76B0035C399 /* RemoveDuplicatesFromSortedArrayTests.swift */,
@@ -2365,7 +2371,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					3D5C907627A7F6A70035C399 = {
 						CreatedOnToolsVersion = 13.0;
@@ -2699,6 +2705,7 @@
 				4347A1C029E20D9800501CEE /* IncreasingTripletSubsequence.swift in Sources */,
 				3D5C917527A7F7630035C399 /* TargetSum.swift in Sources */,
 				3D5C91C727A7F7630035C399 /* PascalsTriangleII.swift in Sources */,
+				435434832AF554CF002B996E /* RemoveCoveredIntervals.swift in Sources */,
 				3D5C91D727A7F7630035C399 /* SubarraySumEqualsK.swift in Sources */,
 				4302D08D2A73F4E3001D5375 /* RemoveKDigits.swift in Sources */,
 				43313BB529D71263005FCF5D /* AddDigits.swift in Sources */,
@@ -2809,6 +2816,7 @@
 				3D5C92F227A7F76C0035C399 /* TopKFrequentElementsTests.swift in Sources */,
 				3D5C930D27A7F76C0035C399 /* SubarraySumEqualsKTests.swift in Sources */,
 				3D3C1ECF27FE357E004FB321 /* RemoveAllAdjacentDuplicatesInStringIITests.swift in Sources */,
+				435434852AF5550D002B996E /* RemoveCoveredIntervalsTests.swift in Sources */,
 				3D42A47727F6342C00687F75 /* ProductOfArrayExceptSelfTests.swift in Sources */,
 				3D5C92E727A7F76C0035C399 /* PowTests.swift in Sources */,
 				3D5C930427A7F76C0035C399 /* StringToIntegerTests.swift in Sources */,
@@ -3211,6 +3219,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -3225,7 +3234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3275,6 +3284,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -3283,7 +3293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
