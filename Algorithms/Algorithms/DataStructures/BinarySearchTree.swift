@@ -52,7 +52,7 @@ final class BinarySearchTree<Element: Comparable> {
         return findMin(root)
     }
     
-    private func findMin(_ node: BinaryTreeNode<Element>) -> BinaryTreeNode<Element>? {
+    private func findMin(_ node: BinaryTreeNode<Element>) -> BinaryTreeNode<Element> {
         if let left = node.left {
             return findMin(left)
         }
@@ -239,7 +239,7 @@ final class BinarySearchTree<Element: Comparable> {
     //2. Node with only one child - return the other child subtree in it's place i.e. parent now points directly to the child
     //3. Node with two children - find the node-to-be-deleted successor (the next node in an in-order traversal - this will
     //                            always be in the node's right subtree) and replace the current node with it's successor. This
-    //                            result in a duplicate node in the tree (the successor it's new position and orginal position).
+    //                            results in a duplicate node in the tree (the successor it's new position and original position).
     //                            We delete the original successor node by recursively calling delete with the successor as the
     //                            new search node. As the successor by definition is the left most node of the node-to-be-deleted
     //                            right subtree we know that this extra deletion won't result in any other recursive deletions as
@@ -275,7 +275,7 @@ final class BinarySearchTree<Element: Comparable> {
                 //node has both a left and right child so we need to find the in-order successor to this node to replace it with
                 
                 //we know that node.right exists and if it exists then their must be a successor so we can force unwrap here
-                let successor = findMin(node.right!)!
+                let successor = findMin(node.right!)
                 
                 //replace the value of the current node with the successor value - N.B. we don't replace the node itself just
                 //the value
@@ -317,7 +317,7 @@ final class BinarySearchTree<Element: Comparable> {
             }
         } else {
             //successor is the smallest node that ia after node using in-order traversal
-            let successor = findMin(node.right!)!
+            let successor = findMin(node.right!)
             
             if successor == node.right {
                 //successor is a direct child of node so just replace node with successor
