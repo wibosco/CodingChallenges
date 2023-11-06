@@ -22,6 +22,7 @@ struct AsFarFromLandAsPossible {
     //array
     //level traversal
     //relative indexing
+    //inverted thinking
     //
     //Solution Description:
     //Rather than starting with water and attempting to find land, we can flip the problem and instead start with land. Starting

@@ -27,7 +27,7 @@ A collection of coding challenges and their solutions from:
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Iterating array comparing elements" | `Stack` |
 | "Next greater element", "Next lesser element" | `Monotonic stack` |
-| "Longest subsequence", "Smallest subsequence", "Maximum points", "Neighbors"| `Sliding window`|
+| "Longest subsequence", "Smallest subsequence", "Maximum", "Minimum", "Neighbors"| `Sliding window`|
 | "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
