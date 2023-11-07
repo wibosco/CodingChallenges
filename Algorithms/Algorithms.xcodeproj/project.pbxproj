@@ -249,9 +249,9 @@
 		3DFC2F15283BE396001256EE /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				4379F49629EC9F41003BA6F9 /* BinarySearchTreeTests.swift */,
 				3DFC2F16283BE396001256EE /* HeapTests.swift */,
 				3DFC2F39283BE3CE001256EE /* PriorityQueueTests.swift */,
-				4379F49629EC9F41003BA6F9 /* BinarySearchTreeTests.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";

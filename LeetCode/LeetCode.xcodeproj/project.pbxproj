@@ -674,6 +674,8 @@
 		4379F48F29E820F0003BA6F9 /* HouseRobberIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F48E29E820F0003BA6F9 /* HouseRobberIITests.swift */; };
 		4379F49129E84FFB003BA6F9 /* PalindromicSubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F49029E84FFB003BA6F9 /* PalindromicSubstrings.swift */; };
 		4379F49329E8504E003BA6F9 /* PalindromicSubstringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F49229E8504E003BA6F9 /* PalindromicSubstringsTests.swift */; };
+		437B65C72AFADC3A009A0594 /* EliminateMaximumNumberOfMonsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B65C62AFADC3A009A0594 /* EliminateMaximumNumberOfMonsters.swift */; };
+		437B65C92AFADC6B009A0594 /* EliminateMaximumNumberOfMonstersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437B65C82AFADC6B009A0594 /* EliminateMaximumNumberOfMonstersTests.swift */; };
 		437F39442AEDB4B9002275CF /* IslandPerimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437F39432AEDB4B8002275CF /* IslandPerimeter.swift */; };
 		437F39462AEDB51D002275CF /* IslandPerimeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437F39452AEDB51D002275CF /* IslandPerimeterTests.swift */; };
 		437F39482AEEDF5E002275CF /* ShortestBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437F39472AEEDF5E002275CF /* ShortestBridge.swift */; };
@@ -1435,6 +1437,8 @@
 		4379F48E29E820F0003BA6F9 /* HouseRobberIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberIITests.swift; sourceTree = "<group>"; };
 		4379F49029E84FFB003BA6F9 /* PalindromicSubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromicSubstrings.swift; sourceTree = "<group>"; };
 		4379F49229E8504E003BA6F9 /* PalindromicSubstringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromicSubstringsTests.swift; sourceTree = "<group>"; };
+		437B65C62AFADC3A009A0594 /* EliminateMaximumNumberOfMonsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliminateMaximumNumberOfMonsters.swift; sourceTree = "<group>"; };
+		437B65C82AFADC6B009A0594 /* EliminateMaximumNumberOfMonstersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliminateMaximumNumberOfMonstersTests.swift; sourceTree = "<group>"; };
 		437F39432AEDB4B8002275CF /* IslandPerimeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandPerimeter.swift; sourceTree = "<group>"; };
 		437F39452AEDB51D002275CF /* IslandPerimeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandPerimeterTests.swift; sourceTree = "<group>"; };
 		437F39472AEEDF5E002275CF /* ShortestBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestBridge.swift; sourceTree = "<group>"; };
@@ -1678,6 +1682,7 @@
 				3D5C913E27A7F7630035C399 /* DivideTwoIntegers.swift */,
 				3DEFAAB127D21CDC00DB0E9D /* DotProductOfTwoSparseVectors.swift */,
 				3D5C90EB27A7F7620035C399 /* EarliestMomentWhenEveryoneBecomeFriends.swift */,
+				437B65C62AFADC3A009A0594 /* EliminateMaximumNumberOfMonsters.swift */,
 				3D5C910F27A7F7630035C399 /* EvaluateReversePolishNotation.swift */,
 				3D30552C27C4E39600294BC7 /* ExcelSheetColumnNumber.swift */,
 				3DB7C5D027CEC56800353EED /* ExclusiveTimeOfFunctions.swift */,
@@ -2053,6 +2058,7 @@
 				3D5C928B27A7F76C0035C399 /* DivideTwoIntegersTests.swift */,
 				3DEFAAB327D21DB700DB0E9D /* DotProductOfTwoSparseVectorsTests.swift */,
 				3D5C926F27A7F76C0035C399 /* EarliestMomentWhenEveryoneBecomeFriendsTests.swift */,
+				437B65C82AFADC6B009A0594 /* EliminateMaximumNumberOfMonstersTests.swift */,
 				3D5C923727A7F76B0035C399 /* EvaluateReversePolishNotationTests.swift */,
 				3D30552E27C4E41500294BC7 /* ExcelSheetColumnNumberTests.swift */,
 				3DB7C5D227CEC58B00353EED /* ExclusiveTimeOfFunctionsTests.swift */,
@@ -2764,6 +2770,7 @@
 				43313BBB29D73378005FCF5D /* MissingNumber.swift in Sources */,
 				43E175ED2A701BB200798BE4 /* FruitIntoBaskets.swift in Sources */,
 				3D5C91A427A7F7630035C399 /* FlattenBinaryTreeToLinkedList.swift in Sources */,
+				437B65C72AFADC3A009A0594 /* EliminateMaximumNumberOfMonsters.swift in Sources */,
 				3D5C91EE27A7F7630035C399 /* SameTree.swift in Sources */,
 				3D42A47127F5E6C200687F75 /* ContainsDuplicateII.swift in Sources */,
 				3D5C919227A7F7630035C399 /* UglyNumber.swift in Sources */,
@@ -3086,6 +3093,7 @@
 				3D5C931227A7F76C0035C399 /* RomanToIntegerTests.swift in Sources */,
 				3D5C931527A7F76C0035C399 /* EarliestMomentWhenEveryoneBecomeFriendsTests.swift in Sources */,
 				4311BC662A5838ED00137AED /* IsSubsequenceTests.swift in Sources */,
+				437B65C92AFADC6B009A0594 /* EliminateMaximumNumberOfMonstersTests.swift in Sources */,
 				4379F48F29E820F0003BA6F9 /* HouseRobberIITests.swift in Sources */,
 				4302D0872A73DE71001D5375 /* RemovingStarsFromAStringTests.swift in Sources */,
 				3D5C92A527A7F76C0035C399 /* BuildingsWithOceanViewTests.swift in Sources */,

@@ -351,7 +351,7 @@ final class BinarySearchTree<Element: Comparable> {
     }
     
     private func balance(_ nodes: [BinaryTreeNode<Element>], _ start: Int, _ end: Int) -> BinaryTreeNode<Element>? {
-        guard end >= start else {
+        guard end >= start else { //>= important otherwise you will miss indexes
             return nil
         }
         
