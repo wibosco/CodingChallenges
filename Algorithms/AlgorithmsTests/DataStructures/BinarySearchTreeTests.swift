@@ -1304,7 +1304,7 @@ final class BinarySearchTreeTests: XCTestCase {
         //
         
         let data = [10, 7, 14, 5, 8, 12, nil, 3, 6, nil, 9]
-            
+        
         let root = BinaryTreeNode.deserialize(data)
         
         let sut = BinarySearchTree(root: root)
@@ -1355,7 +1355,7 @@ final class BinarySearchTreeTests: XCTestCase {
         //
         
         let data = [1, nil, 2, nil, 3, nil,4]
-            
+        
         let root = BinaryTreeNode.deserialize(data)
         
         let sut = BinarySearchTree(root: root)
@@ -1404,9 +1404,9 @@ final class BinarySearchTreeTests: XCTestCase {
         //                         | 4 |
         //                         +---+
         //
-
+        
         let data = [4, 3, nil, 2, nil, 1]
-            
+        
         let root = BinaryTreeNode.deserialize(data)
         
         let sut = BinarySearchTree(root: root)
@@ -1418,7 +1418,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(result, [2, 1, 3, nil, nil, nil, 4])
     }
     
-    func test_givenAMultiLevelBalancedTreeWhereAllNodesAreAlreadyBalance_whenIBalanceTheTree_thenNoNodesShouldBeMoved() {
+    func test_givenAMultiLevelBalancedTree_whenIBalanceTheTree_thenNoNodesShouldBeMoved() {
         //Initial Tree:
         //
         //         +---+
@@ -1444,7 +1444,7 @@ final class BinarySearchTreeTests: XCTestCase {
         //
         
         let data = [8, 4, 9]
-            
+        
         let root = BinaryTreeNode.deserialize(data)
         
         let sut = BinarySearchTree(root: root)
@@ -1456,7 +1456,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(result, [8, 4, 9])
     }
     
-    func test_givenASingleLevelBalancedTreeWhereAllNodesAreAlreadyBalance_whenIBalanceTheTree_thenNoNodesShouldBeMoved() {
+    func test_givenASingleLevelBalancedTree_whenIBalanceTheTree_thenNoNodesShouldBeMoved() {
         //Initial Tree:
         //
         // +---+
@@ -1472,7 +1472,7 @@ final class BinarySearchTreeTests: XCTestCase {
         //
         
         let data = [8]
-            
+        
         let root = BinaryTreeNode.deserialize(data)
         
         let sut = BinarySearchTree(root: root)
@@ -1482,5 +1482,65 @@ final class BinarySearchTreeTests: XCTestCase {
         let result = BinaryTreeNode.serialize(sut.root)
         
         XCTAssertEqual(result, [8])
+    }
+    
+    // MARK: HeightBalance
+    
+    func test_givenAMultiLevelBalancedTree_thenIsHeightBalanceReturnsTrue() {
+        //Tree:
+        //
+        //         +---+
+        //   +-----+ 8 +-----+
+        //   |     +---+     |
+        //   |               |
+        //   v               v
+        // +---+           +---+
+        // | 4 |           | 9 |
+        // +---+           +---+
+        //
+        
+        let data = [8, 4, 9]
+        
+        let root = BinaryTreeNode.deserialize(data)
+        
+        let sut = BinarySearchTree(root: root)
+        
+        let result = sut.isHeightBalance()
+        
+        XCTAssertTrue(result)
+    }
+    
+    func test_givenAMultiLevelUnbalancedTree_thenIsHeightBalanceReturnsFalse() {
+        //Tree:
+        //
+        //                          +---+
+        //                    +-----+ 1 |
+        //                    |     +---+
+        //                    |
+        //                    v
+        //                  +---+
+        //            +-----+ 2 |
+        //            |     +---+
+        //            |
+        //            v
+        //          +---+
+        //    +-----+ 3 |
+        //    |     +---+
+        //    |
+        //    v
+        //  +---+
+        //  | 4 |
+        //  +---+
+        //
+        
+        let data = [4, 3, nil, 2, nil, 1]
+        
+        let root = BinaryTreeNode.deserialize(data)
+        
+        let sut = BinarySearchTree(root: root)
+        
+        let result = sut.isHeightBalance()
+        
+        XCTAssertFalse(result)
     }
 }

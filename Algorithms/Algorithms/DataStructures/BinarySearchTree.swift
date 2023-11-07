@@ -364,4 +364,33 @@ final class BinarySearchTree<Element: Comparable> {
         
         return root
     }
+    
+    func isHeightBalance() -> Bool {
+        let balanced = isHeightBalance(root)
+        
+        return balanced != -1
+    }
+    
+    private func isHeightBalance(_ node: BinaryTreeNode<Element>?) -> Int {
+        guard let node = node else {
+            return 0 //leaf node
+        }
+        
+        let leftHeight = isHeightBalance(node.left)
+        let rightHeight = isHeightBalance(node.right)
+        
+        guard leftHeight != -1, rightHeight != -1 else {
+            return -1
+        }
+        
+        let heightDifference = abs((leftHeight - rightHeight))
+        
+        guard heightDifference < 2 else {
+            return -1
+        }
+        
+        let heightFromHere = max(leftHeight, rightHeight) + 1 //+1 for current node
+        
+        return heightFromHere
+    }
 }
