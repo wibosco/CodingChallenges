@@ -184,7 +184,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(result?.val, 9)
     }
     
-    func test_findMax_root() {
+    func test_givenAMultiLevelTree_whenIWantToFindTheMax_andTheMaxIsTheRoot_thenMaxShouldBeReturned() {
         //Tree:
         //
         //             +---+
@@ -214,7 +214,7 @@ final class BinarySearchTreeTests: XCTestCase {
     
     // MARK: Traversal
     
-    func test_givenAMultiLevelTree_whenIWantToFindTheMax_andTheMaxIsTheRoot_thenMaxShouldBeReturned() {
+    func test_givenAMultiLevelTree_whenIPerformAInorderTraversal_thenElementsShouldBeInCorrectOrder() {
         //Tree:
         //
         //                    +---+
@@ -442,7 +442,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(result, 0)
     }
     
-    // MARK: - Depth
+    // MARK: Depth
     
     func test_givenAnSingleNodeTree_whenIWantTheDepthOfTheRoot_thenCorrectHeightIsReturned() {
         //Initial Tree:
@@ -1255,5 +1255,232 @@ final class BinarySearchTreeTests: XCTestCase {
         let serializedThird = BinaryTreeNode.serialize(sut.root)
         
         XCTAssertEqual(serializedThird, [2, 1, 8, 0, nil, 5, 9])
+    }
+    
+    // MARK: Balance
+    
+    func test_givenAMultiLevelUnbalancedTree_whenIBalanceTheTree_thenNoNodesShouldBeMoved() {
+        //Initial Tree:
+        //
+        //                                                 +---+
+        //                       +-------------------------+10 +-------------------------+
+        //                       |                         +---+                         |
+        //                       |                                                       |
+        //                       v                                                       v
+        //                     +---+                                                   +---+
+        //          +----------+ 7 +----------+                             +----------+14 |
+        //          |          +---+          |                             |          +---+
+        //          |                         |                             |
+        //          v                         v                             v
+        //        +---+                     +---+                         +---+
+        //   +----+ 5 +----+                | 8 +----+                    |12 |
+        //   |    +---+    |                +---+    |                    +---+
+        //   |             |                         |
+        //   v             v                         v
+        // +---+         +---+                     +---+
+        // | 3 |         | 6 |                     | 9 |
+        // +---+         +---+                     +---+
+        //
+        //After Balancing
+        //
+        //                                          +---+
+        //                +-------------------------+ 8 +------------------------+
+        //                |                         +---+                        |
+        //                |                                                      |
+        //                v                                                      v
+        //              +---+                                                  +---+
+        //   +----------+ 5 +----------+                            +----------+10 +----------+
+        //   |          +---+          |                            |          +---+          |
+        //   |                         |                            |                         |
+        //   v                         v                            v                         v
+        // +---+                     +---+                        +---+                     +---+
+        // | 3 |                     | 6 +----+                   | 9 |                     |12 +----+
+        // +---+                     +---+    |                   +---+                     +---+    |
+        //                                    |                                                      |
+        //                                    v                                                      v
+        //                                  +---+                                                  +---+
+        //                                  | 7 |                                                  |14 |
+        //                                  +---+                                                  +---+
+        //
+        
+        let data = [10, 7, 14, 5, 8, 12, nil, 3, 6, nil, 9]
+            
+        let root = BinaryTreeNode.deserialize(data)
+        
+        let sut = BinarySearchTree(root: root)
+        
+        sut.balance()
+        
+        let result = BinaryTreeNode.serialize(sut.root)
+        
+        XCTAssertEqual(result, [8, 5, 10, 3, 6, 9, 12, nil, nil, nil, 7, nil, nil, nil, 14])
+    }
+    
+    func test_givenAMultiLevelUnbalancedTreeWhereAllNodesAreToTheRightOfRoot_whenIBalanceTheTree_thenNodesShouldBeBetterSpread() {
+        //Initial Tree:
+        //
+        // +---+
+        // | 1 +------+
+        // +---+      |
+        //            |
+        //            v
+        //          +---+
+        //          | 2 +------+
+        //          +---+      |
+        //                     |
+        //                     v
+        //                   +---+
+        //                   | 3 +-----+
+        //                   +---+     |
+        //                             |
+        //                             v
+        //                           +---+
+        //                           | 4 |
+        //                           +---+
+        //
+        //After Balancing:
+        //
+        //         +---+
+        //   +-----+ 2 +------+
+        //   |     +---+      |
+        //   |                |
+        //   v                v
+        // +---+            +---+
+        // | 1 |            | 3 +------+
+        // +---+            +---+      |
+        //                             |
+        //                           +---+
+        //                           | 4 |
+        //                           +---+
+        //
+        
+        let data = [1, nil, 2, nil, 3, nil,4]
+            
+        let root = BinaryTreeNode.deserialize(data)
+        
+        let sut = BinarySearchTree(root: root)
+        
+        sut.balance()
+        
+        let result = BinaryTreeNode.serialize(sut.root)
+        
+        XCTAssertEqual(result, [2, 1, 3, nil, nil, nil, 4])
+    }
+    
+    func test_givenAMultiLevelUnbalancedTreeWhereAllNodesAreToTheLeftOfRoot_whenIBalanceTheTree_thenNodesShouldBeBetterSpread() {
+        //Initial Tree:
+        //
+        //                          +---+
+        //                    +-----+ 1 |
+        //                    |     +---+
+        //                    |
+        //                    v
+        //                  +---+
+        //            +-----+ 2 |
+        //            |     +---+
+        //            |
+        //            v
+        //          +---+
+        //    +-----+ 3 |
+        //    |     +---+
+        //    |
+        //    v
+        //  +---+
+        //  | 4 |
+        //  +---+
+        //
+        //After Balancing:
+        //
+        //         +---+
+        //   +-----+ 2 +-----+
+        //   |     +---+     |
+        //   |               |
+        //   v               v
+        // +---+           +---+
+        // | 1 |           | 3 +-----+
+        // +---+           +---+     |
+        //                           |
+        //                         +---+
+        //                         | 4 |
+        //                         +---+
+        //
+
+        let data = [4, 3, nil, 2, nil, 1]
+            
+        let root = BinaryTreeNode.deserialize(data)
+        
+        let sut = BinarySearchTree(root: root)
+        
+        sut.balance()
+        
+        let result = BinaryTreeNode.serialize(sut.root)
+        
+        XCTAssertEqual(result, [2, 1, 3, nil, nil, nil, 4])
+    }
+    
+    func test_givenAMultiLevelBalancedTreeWhereAllNodesAreAlreadyBalance_whenIBalanceTheTree_thenNoNodesShouldBeMoved() {
+        //Initial Tree:
+        //
+        //         +---+
+        //   +-----+ 8 +-----+
+        //   |     +---+     |
+        //   |               |
+        //   v               v
+        // +---+           +---+
+        // | 4 |           | 9 |
+        // +---+           +---+
+        //
+        //
+        //After Balancing:
+        //
+        //         +---+
+        //   +-----+ 8 +-----+
+        //   |     +---+     |
+        //   |               |
+        //   v               v
+        // +---+           +---+
+        // | 4 |           | 9 |
+        // +---+           +---+
+        //
+        
+        let data = [8, 4, 9]
+            
+        let root = BinaryTreeNode.deserialize(data)
+        
+        let sut = BinarySearchTree(root: root)
+        
+        sut.balance()
+        
+        let result = BinaryTreeNode.serialize(sut.root)
+        
+        XCTAssertEqual(result, [8, 4, 9])
+    }
+    
+    func test_givenASingleLevelBalancedTreeWhereAllNodesAreAlreadyBalance_whenIBalanceTheTree_thenNoNodesShouldBeMoved() {
+        //Initial Tree:
+        //
+        // +---+
+        // | 8 |
+        // +---+
+        //
+        //
+        //After Balancing:
+        //
+        // +---+
+        // | 8 |
+        // +---+
+        //
+        
+        let data = [8]
+            
+        let root = BinaryTreeNode.deserialize(data)
+        
+        let sut = BinarySearchTree(root: root)
+        
+        sut.balance()
+        
+        let result = BinaryTreeNode.serialize(sut.root)
+        
+        XCTAssertEqual(result, [8])
     }
 }

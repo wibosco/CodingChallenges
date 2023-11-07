@@ -339,4 +339,29 @@ final class BinarySearchTree<Element: Comparable> {
             }
         }
     }
+    
+    // MARK: - Balance
+    
+    func balance() {
+        let inorder = inorderTraversal()
+        
+        let root = balance(inorder, 0, (inorder.count - 1))
+        
+        self.root = root
+    }
+    
+    private func balance(_ nodes: [BinaryTreeNode<Element>], _ start: Int, _ end: Int) -> BinaryTreeNode<Element>? {
+        guard end >= start else {
+            return nil
+        }
+        
+        let mid = (start + end) / 2
+        
+        let root = nodes[mid]
+        
+        root.left = balance(nodes, start, (mid - 1))
+        root.right = balance(nodes, (mid + 1), end)
+        
+        return root
+    }
 }

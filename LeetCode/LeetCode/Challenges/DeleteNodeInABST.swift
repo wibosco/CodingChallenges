@@ -12,7 +12,7 @@ struct DeleteNodeInABST {
     
     //Time: O(h) where h is the height of the tree
     //Space: O(h)
-    //BST
+    //binary search tree
     //in-order
     //recursive
     //
