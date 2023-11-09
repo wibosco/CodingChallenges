@@ -16,6 +16,9 @@ struct NumberOfSubsequencesThatSatisfyTheGivenSumCondition {
     //two pointers
     //sorting
     //maths
+    //modulo
+    //large numbers
+    //scale down
     //
     //Solution Description:
     //We need to calculate subsequences of `nums` that are equal to or less than `target` but we only care about the minimum and
@@ -34,7 +37,7 @@ struct NumberOfSubsequencesThatSatisfyTheGivenSumCondition {
     //N.B. The possible subsequence count formula is `2 ^ subsequence-element-count`
     static func numSubseq(_ nums: [Int], _ target: Int) -> Int {
         let nums = nums.sorted()
-        let mod = 1000000007 //modulo operation as required
+        let mod = 1000000007 //modulo operation is required
        
         //precompute the value of 2 to the power of each value.
         var powers = [Int]()
