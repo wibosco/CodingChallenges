@@ -22,6 +22,7 @@ struct CourseSchedule {
     //multi-source
     //adjacency list
     //topological sort
+    //inout
     //
     //Solution Description:
     //Treating `numCourses` as the vertices in a graph and each `prerequisites` element as an edge between two vertices we

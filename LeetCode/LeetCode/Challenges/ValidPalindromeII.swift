@@ -48,6 +48,7 @@ struct ValidPalindromeII {
     //string
     //two pointers
     //recursive
+    //inout
     //
     //Solution Description:
     //Using two pointers we compare the outermost characters of `s` to determine if they are the same. If they match we move

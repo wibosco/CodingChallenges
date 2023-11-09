@@ -10,9 +10,9 @@ import Foundation
 //https://leetcode.com/problems/interleaving-string/
 struct InterleavingString {
     
-    //Time: O(n+m) where n is the characters in `s1`
-    //             where m is the characters in `s2`
-    //Space: O(n+m)
+    //Time: O(n + m) where n is the characters in `s1`
+    //               where m is the characters in `s2`
+    //Space: O(n + m)
     //string
     //set
     //memoization
@@ -20,6 +20,7 @@ struct InterleavingString {
     //recursive
     //DFS
     //binary tree
+    //inout
     //
     //Solution Description:
     //We compare each character of `s1` and `s2` to `s3` in order, in a DFS, recusive manner. If the `s1` character matches

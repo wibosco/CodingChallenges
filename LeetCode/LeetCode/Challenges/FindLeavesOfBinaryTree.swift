@@ -16,6 +16,7 @@ struct FindLeavesOfBinaryTree {
     //DFS
     //recursive
     //stack
+    //inout
     //
     //Solution Description:
     //Uses DFS we traverse the tree until we reach the end of each branch, as we recursively return back up the tree we use

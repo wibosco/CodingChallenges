@@ -71,7 +71,7 @@ struct SurroundedRegions {
     
     //Time: O(n * m) where n is the number of rows in board
     //               where m is the number of columns in board
-    //Space: O(n*m)
+    //Space: O(n * m)
     //graph theory
     //DFS
     //relative indexing

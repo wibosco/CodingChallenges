@@ -16,6 +16,7 @@ struct CountGoodNodesInBinaryTree {
     //DFS
     //pre-order
     //recursive
+    //inout
     //
     //Solution Description:
     //Using a DFS pre-order traversal of the tree, we pass the largest/max value we have seen for that branch down to

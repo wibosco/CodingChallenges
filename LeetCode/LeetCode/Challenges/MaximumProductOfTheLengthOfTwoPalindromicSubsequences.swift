@@ -19,6 +19,7 @@ struct MaximumProductOfTheLengthOfTwoPalindromicSubsequences {
     //n-arry tree
     //set
     //two pointers
+    //inout
     //
     //Solution Description:
     //To find the max product we need to first generate all possible subsequences of `s` using DFS and backtrackingg. Each

@@ -10,7 +10,8 @@ import Foundation
 //https://leetcode.com/problems/longest-repeating-character-replacement/
 struct LongestRepeatingCharacterReplacement {
     
-    //Time: O(n*m) where n is the number of elements in `s`, m is the maximum window size
+    //Time: O(n * m) where n is the number of elements in `s`
+    //               where m is the maximum window size
     //Space: O(n)
     //string
     //sliding window

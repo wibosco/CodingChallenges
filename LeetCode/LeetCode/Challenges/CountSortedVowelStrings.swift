@@ -17,6 +17,7 @@ struct CountSortedVowelStrings {
     //recursive
     //backtracking
     //sorted
+    //inout
     //
     //Solution Description:
     //Using DFS we and a sorted array `vowels`, we create all possible non-descending combinations of vowels for the given

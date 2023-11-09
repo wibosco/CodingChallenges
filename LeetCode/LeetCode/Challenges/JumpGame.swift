@@ -16,6 +16,7 @@ struct JumpGame {
     //n-ary tree
     //DFS
     //recursive
+    //inout
     //
     //Solution Description:
     //Treating `nums` as an n-ary tree with the possible movements from each `nums` element as edges. We can traverse

@@ -17,6 +17,7 @@ struct MinimumFuelCostToReportToTheCapital {
     //adjacency list
     //DFS
     //recursive
+    //inout
     //
     //Solution Description:
     //First we convery our edges array `roads` into an adjacency list - as this graoh forms a tree we know that we know we

@@ -16,6 +16,7 @@ struct BinaryTreePaths {
     //DFS
     //recursive
     //backtracking
+    //inout
     //
     //Solution Description:
     //Using DFS, we recursively traverse the tree adding the current (non-nil) node to the `path` array. If the current

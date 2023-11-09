@@ -12,11 +12,12 @@ import Foundation
 struct KthSmallestElementInBinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
-    //Space: O(h) where `h` is the height of the tree
+    //Space: O(h) where h is the height of the tree
     //binary search tree
     //DFS
     //inorder
     //recursive
+    //inout
     //
     //Solution Description:
     //An inorder traversal of a binary search tree results in an ordered ascending array of nodes. Using this we can

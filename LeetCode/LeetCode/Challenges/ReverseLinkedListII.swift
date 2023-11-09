@@ -145,6 +145,7 @@ struct ReverseLinkedListII {
     //array
     //two pointers
     //recursive
+    //inout
     //
     //Solution Description:
     //Using recursion we iterate through the list until we find the nodes at both `left` and `right`. As the nodes don't

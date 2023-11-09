@@ -20,6 +20,7 @@ struct GraphValidTree {
     //adjacency list
     //undirected
     //cycle detection
+    //inout
     //
     //Solution Description:
     //A valid tree has one root (all nodes need to be connected) and no cycles. First a check is made to ensure that edges are

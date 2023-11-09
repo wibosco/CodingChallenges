@@ -39,11 +39,11 @@ struct DecodeWays {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary tree
     //memoization
     //dynamic programming
     //recursive
     //DFS
-    //binary tree
     //
     //Solution Description:
     //Treating `s` and the possible ways of decoding it as a binary tree we can perform a DFS through the tree. As this

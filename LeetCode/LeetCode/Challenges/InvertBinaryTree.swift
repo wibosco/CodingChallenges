@@ -11,13 +11,17 @@ import Foundation
 struct InvertBinaryTree {
     
     //Time: O(n) where n is nodes in the tree
-    //Space: O(h) `h` is the height of the tree
+    //Space: O(h) where h is the height of the tree
     //binary tree
+    //DFS
     //recursive
     //
     //Solution Description:
-    //Starting we traverse down the tree until we encounter the left nodes and then as we recurse back, we being to invert
-    //any child nodes.
+    //Using DFS, we first traverse fully down the right subtree (could have been the left subtree first) and assign those
+    //right child to the nodes left property. We repeat this process for the left subtree.
+    //
+    //N.B. We need to traverse both subtrees without making any changes so as not to override one of the branches before we
+    //can traverse it.
     static func invertTree(_ root: BinaryTreeNode?) -> BinaryTreeNode? {
         guard let root = root else {
             return nil

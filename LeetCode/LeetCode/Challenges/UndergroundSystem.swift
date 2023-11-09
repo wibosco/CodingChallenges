@@ -11,7 +11,8 @@ import Foundation
 //design
 //
 //Time: O(1)
-//Space: O(n+m) where n is the number of active journeys and m is the number of station pairs
+//Space: O(n + m) where n is the number of active journeys
+//                where m is the number of station pairs
 //
 //Solution Description:
 //Using two dictionaries we track both the current active journeys and the total time it has taken to travel betweent two

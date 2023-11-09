@@ -20,6 +20,7 @@ struct MaxAreaOfIsland {
     //visited
     //recursive
     //multi-source
+    //inout
     //
     //Solution Description:
     //We traverse through `grid` checking if each index contains land (1). If that index is land then we perform a DFS

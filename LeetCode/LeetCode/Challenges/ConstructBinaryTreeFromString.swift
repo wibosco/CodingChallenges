@@ -16,6 +16,7 @@ struct ConstructBinaryTreeFromString {
     //binary tree
     //DFS
     //recursive
+    //inout
     //
     //Solution Description:
     //A binary tree is made up of smaller binary trees. When parsing `s`, a number (or collection of numbers) indicates the

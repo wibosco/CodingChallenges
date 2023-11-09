@@ -11,7 +11,8 @@ import Foundation
 //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
 struct LowestCommonAncestorBinaryTreeIII {
     
-    //Time: O(n + m) where n is the level of `p` and m is the level of `q`
+    //Time: O(n + m) where n is the level of `p`
+    //               where m is the level of `q`
     //Space: O(1)
     //binary tree
     //two pointers
@@ -49,7 +50,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     }
     
     //Time: O(n) where n is the number of nodes in the tree
-    //Space: O(h) where `h` is the number of levels in the tree
+    //Space: O(h) where h is the height of the tree
     //binary tree
     //DFS
     //

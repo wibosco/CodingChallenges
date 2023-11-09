@@ -10,9 +10,9 @@ import Foundation
 //https://leetcode.com/problems/pacific-atlantic-water-flow/
 struct PacificAtlanticWaterFlow {
     
-    //Time: O(n*m) where n is the number of rows in `heights`
-    //             where m is the number of columnds in `heights`
-    //Space: O(n+m)
+    //Time: O(n * m) where n is the number of rows in `heights`
+    //               where m is the number of columns in `heights`
+    //Space: O(n + m)
     //graph theory
     //visited
     //DFS
@@ -20,6 +20,7 @@ struct PacificAtlanticWaterFlow {
     //matrix
     //recursive
     //multi-source
+    //inout
     //
     //Solution Description:
     //Rather than determine if every cell can reach the oceans, we can instead reverse it and see how far the oceans can
@@ -104,14 +105,16 @@ struct PacificAtlanticWaterFlow {
         return neighbors
     }
     
-    //Time: O(n*m)^2 where n is the number of rows in `heights`, m is the number of columnds in `heights`
-    //Space: O(n*m)
+    //Time: O(n * m)^2 where n is the number of rows in `heights`
+    //                 where m is the number of columnds in `heights`
+    //Space: O(n * m)
     //visited
     //DFS
     //relative indexing
     //matrix
     //recursive
     //multi-source
+    //inout
     //
     //Solution Description:
     //We perform a DFS from every cell in `heights`, checking if that cell can reach both the Pacific and Atlantic oceans.

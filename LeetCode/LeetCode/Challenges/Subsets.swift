@@ -20,6 +20,7 @@ struct Subsets {
     //DFS
     //graph theory
     //n-ary tree
+    //inout
     //
     //Solution Description:
     //To generate every possible subset we need to be always moving "forward" with `nums` and adding each array that we

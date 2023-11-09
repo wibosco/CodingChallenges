@@ -51,6 +51,7 @@ struct NumberOfZeroFilledSubarrays {
     //substring
     //DFS
     //recursive
+    //inout
     //
     //Solution Description:
     //First we find all the subarrays containing only zeros in `nums` and store them in the `zeros` array. Then we generate all

@@ -19,9 +19,9 @@ final class InvertBinaryTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         
         let result = InvertBinaryTree.invertTree(root)
-        let value = BinaryTreeNode.serialize(result)
+        let values = BinaryTreeNode.serialize(result)
         
-        XCTAssertEqual(value, [4, 7, 2, 9, 6, 3, 1])
+        XCTAssertEqual(values, [4, 7, 2, 9, 6, 3, 1])
     }
     
     func test_B() {
@@ -30,9 +30,9 @@ final class InvertBinaryTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         
         let result = InvertBinaryTree.invertTree(root)
-        let value = BinaryTreeNode.serialize(result)
+        let values = BinaryTreeNode.serialize(result)
         
-        XCTAssertEqual(value, [2, 3, 1])
+        XCTAssertEqual(values, [2, 3, 1])
     }
     
     func test_C() {
@@ -41,8 +41,8 @@ final class InvertBinaryTreeTests: XCTestCase {
         let root = BinaryTreeNode.deserialize(data)
         
         let result = InvertBinaryTree.invertTree(root)
-        let value = BinaryTreeNode.serialize(result)
+        let values = BinaryTreeNode.serialize(result)
         
-        XCTAssertEqual(value, [])
+        XCTAssertEqual(values, [])
     }
 }

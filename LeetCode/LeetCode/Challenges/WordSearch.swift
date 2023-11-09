@@ -26,6 +26,7 @@ struct WordSearch {
     //recursive
     //multi-source
     //visited
+    //inout
     //
     //Solution Description:
     //Using a backtracking approach we loop through all possible starting indexes in `board` and attempt to find `word` from

@@ -24,6 +24,7 @@ struct CourseScheduleII {
     //multi-source
     //adjacency list
     //topological sort
+    //inout
     //
     //Solution Description:
     //Topological sort allow us to order a graphs vertices so that all vertices e.g. `v1`, `v2` and `v3` that have an indegree

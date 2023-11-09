@@ -12,7 +12,7 @@ import Foundation
 struct SameTree {
     
     //Time: O(n) where n is the number of nodes in a matching tree
-    //Space: O(h) where `h` is the number of levels in a matching tree
+    //Space: O(h) where h is the number of levels in a matching tree
     //binary tree
     //DFS
     //recursive

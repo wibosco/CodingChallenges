@@ -65,7 +65,8 @@ struct BinaryTreeVerticalOrderTraversal {
         return result
     }
     
-    //Time: O(w * h log h) where `w` is the width of the tree and `h` the height
+    //Time: O(w * h log h) where w is the width of the tree
+    //                     where h is the height of the tree
     //Space: O(n) where n is the number of nodes in the tree
     //binary tree
     //DFS

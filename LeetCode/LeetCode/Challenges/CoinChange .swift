@@ -17,7 +17,7 @@ struct CoinChange {
     //memoization
     //dynamic programming
     //recursive
-    //graph thory
+    //graph theory
     //
     //Solution Description:
     //Treating the `coins` array as a graph, we can perform a DFS through all the different permutations attempting to find

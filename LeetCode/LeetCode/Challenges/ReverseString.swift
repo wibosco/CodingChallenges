@@ -40,6 +40,7 @@ struct ReverseString {
     //Space: O(n) if counting the recusive stack otherwise O(1)
     //two pointers
     //recursive
+    //inout
     //
     //Solution Description:
     //Using two pointers - `left` at the start of `s` and `right` at the end of `s`, swap the elements at those two

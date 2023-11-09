@@ -9,14 +9,15 @@
 import Foundation
 
 //https://leetcode.com/problems/diameter-of-binary-tree/
-//binary tree
 struct DiameterOfBinaryTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(1)
+    //binary tree
     //DFS
     //bottom-up
     //recursive
+    //inout
     //
     //Solution Description:
     //Remembering that a tree is made up of smaller trees we use DFS to traverse to the end of each branch of those

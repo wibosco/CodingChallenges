@@ -11,8 +11,8 @@ import Foundation
 struct WordBreak {
     
     //Time: O(n^2) where n is the number of elements in `s`
-    //Space: O(n+m) where n is the number of elements in `s`
-    //              where m is the elements in `wordDict`
+    //Space: O(n + m) where n is the number of elements in `s`
+    //                where m is the elements in `wordDict`
     //string
     //memoization
     //dynamic programming

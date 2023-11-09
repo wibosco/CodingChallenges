@@ -11,8 +11,9 @@ import Foundation
 //https://leetcode.com/problems/walls-and-gates/
 struct WallsAndGates {
     
-    //Time: O(n * m) where n is number for rooms (rows * columns)
-    //Space: O(n * m) where n is number for rooms (rows * columns)
+    //Time: O(n * m) where n is number for row in `rooms`
+    //               where m is the number of columns in `rooms`
+    //Space: O(n * m)
     //graph theory
     //BFS
     //multi-source
@@ -35,7 +36,7 @@ struct WallsAndGates {
         
         var queue = [[Int]]()
         //find gates
-        for i in 0..<rooms.count { //n*m
+        for i in 0..<rooms.count { //n * m
             for j in 0..<rooms[i].count {
                 if rooms[i][j] == 0 {
                     queue.append([i, j])

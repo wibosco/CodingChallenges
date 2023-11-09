@@ -82,6 +82,7 @@ struct ValidParenthesisString {
     //DFS
     //recursive
     //n-ary tree
+    //inout
     //
     //Solution Description:
     //In order for parentheses to balance, a left parenthesis must come before a right parenthesis i.e. we can recover from any

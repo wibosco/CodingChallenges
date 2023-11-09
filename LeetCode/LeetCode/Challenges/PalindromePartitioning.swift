@@ -20,6 +20,7 @@ struct PalindromePartitioning {
     //recursive
     //multi-source
     //two pointers
+    //inout
     //
     //Solution Description:
     //Treating `s` as a graph/tree we can use backtracking (DFS) to find palindromes from all possible substrings of `s`
