@@ -19,7 +19,7 @@ struct ArrangingCoins {
     //
     //Solution Description:
     //As each row is one element greater in size than the previous row and we know that the upper bounds of possible rows is `n`. We
-    //can treat the possible rows as a sorted ascending array and so can use binary search to calculate the maxmimum number of rows
+    //can treat the possible rows as a sorted ascending array and so can use binary search to calculate the maximum number of rows
     //needed to fully hold `n` coins - remember a row is only added if it is occupied. As with any binary search, we take the
     //midpoint between `left` and `right` to determine if we have found our target, overshot it or undershot it. We can use `Gauss
     //Summation` formula to calculate how many coins we would need for any given number of rows.

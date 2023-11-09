@@ -25,7 +25,7 @@ struct SpiralMatrixII {
     //iterate through that empty matrix filling any empty cells (with a value of `0`) that we encounter with the next matrix
     //value. As we want to iterate in a spiral fashion for the outer cells we can use the matrix boundaries themselves to
     //know when to change direction then as we move from the outer cells to internal cells we can use the cells value to
-    //know when to change direction i.e. value > 0 we change. Evntually we will have filled in all the cells in the matrix
+    //know when to change direction i.e. value > 0 we change. Eventually we will have filled in all the cells in the matrix
     //and can return it
     static func generateMatrix(_ n: Int) -> [[Int]] {
         var matrix = Array(repeating: Array(repeating: 0, count: n), count: n)

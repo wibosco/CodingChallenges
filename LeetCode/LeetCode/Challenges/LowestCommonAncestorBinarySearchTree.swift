@@ -20,9 +20,9 @@ struct LowestCommonAncestorBinarySearchTree {
     //
     //Solution Description:
     //Using DFS traverse the tree. Compare the `val` of `root` against that of `p` and `q`; if the root value is greater than both
-    //then continue search down left branch only; if the root value is less than both then contine search down the right branch
+    //then continue search down left branch only; if the root value is less than both then continue search down the right branch
     //only; else we have found the lowest common ancestor as one of p and q is in the left branch and one in the right branch or
-    //one is infact the root itself.
+    //one is in fact the root itself.
     static func lowestCommonAncestor(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> BinaryTreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil
@@ -46,9 +46,9 @@ struct LowestCommonAncestorBinarySearchTree {
     //
     //Solution Description:
     //Using BFS traverse the tree. Compare the `val` of `root` against that of `p` and `q`; if the root value is greater than both
-    //then continue search down left branch only; if the root value is less than both then contine search down the right branch
+    //then continue search down left branch only; if the root value is less than both then continue search down the right branch
     //only; else we have found the lowest common ancestor as one of p and q is in the left branch and one in the right branch or
-    //one is infact the root itself.
+    //one is in fact the root itself.
     static func lowestCommonAncestorBFS(_ root: BinaryTreeNode?, _ p: BinaryTreeNode?, _ q: BinaryTreeNode?) -> BinaryTreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil

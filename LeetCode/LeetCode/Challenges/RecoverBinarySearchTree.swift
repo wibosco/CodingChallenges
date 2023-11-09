@@ -34,7 +34,7 @@ struct RecoverBinarySearchTree {
     //each node to the opposite nodes `val`.
     //
     //IMPORTANT NOTE: carefully read any data structure you are given as the `TreeNode` had it's `val` property as `var` -
-    //hinting at updating `val` value rather than truly swapping the nodes (connectins and all)
+    //hinting at updating `val` value rather than truly swapping the nodes (connections and all)
     static func recoverTree(_ root: BinaryTreeNode?) {
         var inorder = [BinaryTreeNode]()
         dfs(root, &inorder)

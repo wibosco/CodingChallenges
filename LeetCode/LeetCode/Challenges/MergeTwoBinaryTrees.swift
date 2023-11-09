@@ -19,10 +19,10 @@ struct MergeTwoBinaryTrees {
     //recursive
     //
     //Solution Description:
-    //Travesing DFS through `root1` and `root2` if both trees at the current level are non-nil we merge their values and
+    //Traversing DFS through `root1` and `root2` if both trees at the current level are non-nil we merge their values and
     //create a new node - this new node is returned as the result of the of merge. We then attempt to traverse deeper in
     //both trees by selecting the same branch in both and recursively calling `mergeTrees`. If only one tree at the current
-    //level is non-nil we take that tree and subplant it into our merged tree. If both trees at that level are nil then we
+    //level is non-nil we take that tree and supplant it into our merged tree. If both trees at that level are nil then we
     //have reach the end of that branch and return nil as the result of the merge.
     static func mergeTrees(_ root1: BinaryTreeNode?, _ root2: BinaryTreeNode?) -> BinaryTreeNode? {
         if let root1 = root1, let root2 = root2 {

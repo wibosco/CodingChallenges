@@ -47,7 +47,7 @@ final class TopologicalSortTests: XCTestCase {
         XCTAssertNil(sorted)
     }
     
-    func test_sort_cycle_selfReferal_singleGraph() {
+    func test_sort_cycle_selfReferral_singleGraph() {
         //Graph:
         //
         //            +-----+
@@ -172,7 +172,7 @@ final class TopologicalSortTests: XCTestCase {
         XCTAssertFalse(result)
     }
     
-    func test_isDAG_cycle_selfReferal_singleGraph() {
+    func test_isDAG_cycle_selfReferral_singleGraph() {
         //Graph:
         //
         //            +-----+

@@ -237,12 +237,12 @@ struct DFS {
     //Path 6: 0, 3, 6, 5
     //
     // *note for both come before different paths leading from 0 as we exhaust all paths from each vertices before returning
-    //  (or backtrackng) to any other vertices that the parent vertice is connected to.
+    //  (or backtracking) to any other vertices that the parent vertice is connected to.
     //
     //In this fashion it is possible to find a path (not necessary the shortest path) from the `source` to the `target` vertice
     //by traversing fully each branch of the graph. Starting with the `source` vertice we place the first connected vertice into
     //a stack (LIFO) - in the recursive this stack is the call stack. As a graph can have multiple paths to get the same vertice
-    //we also track the path that got us to this vertice by placing it into the stack as well. We then immediatelt move on this
+    //we also track the path that got us to this vertice by placing it into the stack as well. We then immediately move on this
     //neighbor vertice and repeat the process. As a graph can contain loops, to avoid searching the same vertice multiple times
     //we place each vertice we encounter into the `visited` set - before searching a vertices we check if it already exists in
     //`visited` and skip it if it does. If at any time we find `target` we return immediately. If after having completed a branch

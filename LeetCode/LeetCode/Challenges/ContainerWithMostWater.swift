@@ -18,9 +18,9 @@ struct ContainerWithMostWater {
     //
     //Solution Description:
     //Treating the size of each element in `height` as the vertical edge (height) of a rectangle and the distance between two
-    //elements as the hozitional edge (width) we can calculate the area of water each configuration can contains. Using two
-    //pointers we move through the array and culculate the area at between the two pointers - we choose the smaller of the two
-    //heights to use in the area calcuation. This area is then compared against the largest area we have seen so far and if
+    //elements as the horizontal edge (width) we can calculate the area of water each configuration can contains. Using two
+    //pointers we move through the array and calculate the area at between the two pointers - we choose the smaller of the two
+    //heights to use in the area calculation. This area is then compared against the largest area we have seen so far and if
     //larger it replaces it, else we move on. When deciding which pointer to move for the next area calculation we do so in a
     //greedy manner by only moving the smaller pointer.
     static func maxArea(_ height: [Int]) -> Int {

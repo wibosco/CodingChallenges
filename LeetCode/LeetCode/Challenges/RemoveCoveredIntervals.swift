@@ -18,16 +18,16 @@ struct RemoveCoveredIntervals {
     //multi-property sorting
     //
     //Solution Description:
-    //First we sort `intervals` so that any potentally "covered" intervals are now neighbors allowing for a linear
+    //First we sort `intervals` so that any potentially "covered" intervals are now neighbors allowing for a linear
     //traversal and "closing". Sorting happens in two stages, first we attempt to sort by ascending left-most value, if
     //two intervals have the same left-most value we then sort by descending right-most value - this way we ensure that
-    //the largest intervallet-most intervals come first in `sortedIntervals` which will allow that larger interval to
-    //"close" the smaller overlapping intervals. Next we iterate through `intervals` and compare the current interval
-    //(`interval`) with the most rightward interval (`lastInterval`) we have seen so far. If the current interval in
-    //within the range of the rightward interval we can cover that interval - note we don't actually cover the interval
-    // instead we just increment `count` which is used to mimic the covering action; if the current interval is not
-    //within the range of the rightward interval we replace `lastInterval` with `interval`. We the subtract the count
-    //value from the starting interval to determine how many intervals are left.
+    //the largest intervals come first in `sortedIntervals` which will allow that larger interval to "close" the smaller
+    //overlapping intervals. Next we iterate through `intervals` and compare the current interval (`interval`) with the
+    //most rightward interval (`lastInterval`) we have seen so far. If the current interval in within the range of the
+    //rightward interval we can cover that interval - note we don't actually cover the interval instead we just increment
+    //`count` which is used to mimic the covering action; if the current interval is not within the range of the
+    //rightward interval we replace `lastInterval` with `interval`. We the subtract the count value from the starting
+    //interval to determine how many intervals are left.
     static func removeCoveredIntervals(_ intervals: [[Int]]) -> Int {
         //sort so that the left-most starting value is first and if they are equal, sort by the right-most ending
         //value so the "longer" interval is first

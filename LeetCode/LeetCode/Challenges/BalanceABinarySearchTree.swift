@@ -18,7 +18,7 @@ struct BalanceABinarySearchTree {
     //
     //Solution Description:
     //Binary search trees (BST) by nature are sorted, all nodes to the left of a given node are less than that given node, all nodes 
-    //to the right of a given are greater than that given node. We use this characteristic to rebalance a tree. First we convert the
+    //to the right of a given are greater than that given node. We use this characteristic to re-balance a tree. First we convert the
     //tree into an in-order array (nodes are ascending in value), then we sort that array back into a tree. We take the mid element
     //of that array and use that as the (sub)root of the other nodes in the tree - all nodes to the left of that mid element are less
     //than and all nodes to the right are greater than. We recursively repeat this sorting process on a smaller and smaller set of

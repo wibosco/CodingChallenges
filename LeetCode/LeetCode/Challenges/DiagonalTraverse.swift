@@ -17,7 +17,7 @@ struct DiagonalTraverse {
     //path finding
     //
     //Solution Description:
-    //Walk the diagonals in the matrix, moving between row and column as neccessary.
+    //Walk the diagonals in the matrix, moving between row and column as necessary.
     static func findDiagonalOrderMath(_ mat: [[Int]]) -> [Int] {
         let rowCount = mat.count
         let columnCount = mat[0].count

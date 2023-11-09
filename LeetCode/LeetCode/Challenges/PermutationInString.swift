@@ -21,7 +21,7 @@ struct PermutationInString {
     //
     //Solution Description:
     //For `s2` to contain a permutation of `s1` means that a contiguous subarray of `s2` must contain all the characters in `s1`. So
-    //first we convery `s1` into a frequency dictionary that tracks how many times a character appears in `s1`. We can then iterate
+    //first we convert `s1` into a frequency dictionary that tracks how many times a character appears in `s1`. We can then iterate
     //through `s2` and using a sliding window compare the elements in that current window into `s2` against `s1`. We know that the
     //window required to product a permutation will be exactly the size of `s1` so until we hit that window size we only push `p2`
     //rightwards, once that window size has been reached we then need to also push `p1` rightwards. When pushing `p2` rightwards if
@@ -30,7 +30,7 @@ struct PermutationInString {
     //character in the window as even through it matches we don't count it as a match because of that. If we are also moving `p1`
     //rightwards we check if the character dropping out the window has affected the `c1Frequency`. If it has affected `c1Frequency`
     //we increase that characters count by 1 and where that count has now become greater than 0 we also reduce `matches` by 1 (this
-    //check ensures that we don't under count a character just because it appear multiple times in that window). If at anypoint
+    //check ensures that we don't under count a character just because it appear multiple times in that window). If at any point
     //`matches` is equal to `windowSize` meaning that all the characters in `s1` are present in that window we return true.
     static func checkInclusion(_ s1: String, _ s2: String) -> Bool {
         var c1Frequency = [Character: Int]()

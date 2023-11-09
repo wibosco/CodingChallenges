@@ -22,7 +22,7 @@ struct LongestPalindromicSubstring {
     //palindrome we need to do so from all indexes. Palindromes come in two flavours: odd and even i.e. "aba" or "aa" which we
     //also need to cater for. Rather than checking if a string is a palindrome by going outside-in we are going to instead go
     //inside-out - this will allow us to count only valid palindromes rather than thinking that we have a palindrome only to
-    //discover as we ggget deeper into the substring that it isn't actually a palindrome. Now going inside-out does not mean
+    //discover as we get deeper into the substring that it isn't actually a palindrome. Now going inside-out does not mean
     //that we need to start at the center of `s`, inside we start at the start of `s` and gradually move that starting position
     //right. Within each starting position we then attempt to expand out two characters at a time (one character left and one
     //character right), checking we still have characters in `s` to check and that if we do those new characters still form a
@@ -79,7 +79,7 @@ struct LongestPalindromicSubstring {
     //Solution Description:
     //Brute force generate all possible in-order combinations of the characters in `s` by iterating through `s` forwards and comparing it
     //against all characters that come after in reverse order. If we find a palindrome we check it's length against the longest we've
-    //found so far and store it if it is longger.
+    //found so far and store it if it is longer.
     static func longestPalindromeBruteForce(_ s: String) -> String {
         let characters = Array(s)
         var longestPalindrome = Array(characters[...0])

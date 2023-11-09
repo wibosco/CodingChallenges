@@ -13,7 +13,7 @@ struct Matrix01 {
     
     //Time: O(m * n)
     //Space: O(m * n)
-    //graoh theory
+    //graph theory
     //BFS
     //relative indexing
     //matrix
@@ -21,10 +21,10 @@ struct Matrix01 {
     //
     //Solution Description:
     //Treating `mat` as a graph where each vertice is connected to the vertices immediately above, below, left and
-    //right. We first find where all the `0`s are in the graph, adding them to both `queue` and `visted`. We traverse
+    //right. We first find where all the `0`s are in the graph, adding them to both `queue` and `visited`. We traverse
     //the graph in a BFS manner, checking each neighbor to see if it has a value of `1`, if it does we update that value
     //with the current `level` value and add it to both `queue` and `visited`. Once the queue is empty we have traversed
-    //all possibile vertices and can return the updated distance array.
+    //all possible vertices and can return the updated distance array.
     static func updateMatrix(_ mat: [[Int]]) -> [[Int]] {
         var distances = mat
         

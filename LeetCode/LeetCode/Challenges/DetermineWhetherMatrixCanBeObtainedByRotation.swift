@@ -20,7 +20,7 @@ struct DetermineWhetherMatrixCanBeObtainedByRotation {
     //there are 3 possible rotations of 90 degrees we need to rotate the matrix 3 times to exhaust all possible configurations.
     //On each rotation we populate a new matrix - `mat2` to then compare against target. In order to rotate wwe iterate first
     //through each row and then the columns in that. As each column will become a row in the rotated matrix we use the index of
-    //the column as the row index and insert the value as the first element of that row. After popluating the new matrix we
+    //the column as the row index and insert the value as the first element of that row. After populating the new matrix we
     //compare against `target` and if they match we return true else we repeat the process.
     static func findRotation(_ mat: [[Int]], _ target: [[Int]]) -> Bool {
         guard mat != target else {

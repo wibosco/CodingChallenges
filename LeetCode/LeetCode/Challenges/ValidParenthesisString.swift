@@ -29,8 +29,8 @@ struct ValidParenthesisString {
     //Treating `s` as a graph we can explore/generate all possible values of `*` to determine if any lead to a valid string.
     //Using DFS we can then search each of these branches ("", "(", ")") and determine if any lead to `leftCount` being `0` once
     //the `s` has been fully iterated. There is no need for us to update `characters` with the choice we are making for any
-    //given `*` instead we simiply update `leftCount` to behave as if we had encountered one of the 3 possible choices for that
-    //`*`. To save effort on travesing the graph we can store the result of completed branches in `memo`. The key to each `memo`
+    //given `*` instead we simply update `leftCount` to behave as if we had encountered one of the 3 possible choices for that
+    //`*`. To save effort on traversing the graph we can store the result of completed branches in `memo`. The key to each `memo`
     //result being the current index and the left count - we don't need to care about the path we have taken only what we have
     //at that moment as all possible paths that got as to that same value of index and left count will be treated the same for
     //any forward choices.
@@ -92,7 +92,7 @@ struct ValidParenthesisString {
     //Treating `s` as a graph we can explore/generate all possible values of `*` to determine if any lead to a valid string.
     //Using DFS we can then search each of these branches ("", "(", ")") and determine if any lead to `leftCount` being `0` once
     //the `s` has been fully iterated. There is no need for us to update `characters` with the choice we are making for any
-    //given `*` instead we simiply update `leftCount` to behave as if we had encountered one of the 3 possible choices for that
+    //given `*` instead we simply update `leftCount` to behave as if we had encountered one of the 3 possible choices for that
     //`*`.
     static func checkValidStringBruteForce(_ s: String) -> Bool {
         var isValid = false

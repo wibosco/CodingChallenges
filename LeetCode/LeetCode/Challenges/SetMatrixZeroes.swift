@@ -20,9 +20,9 @@ struct SetMatrixZeroes {
     //Solution Description:
     //First we iterate through the matrix and store the row and column index of any zeros that we come across. As we want
     //to set the full row or column to zero we don't store this index as one value but instead as to separate entires in
-    //`zeroRows` and `zeroColumns` respectively this ensures that should a row have mulitple zeros it will only be counted
+    //`zeroRows` and `zeroColumns` respectively this ensures that should a row have multiple zeros it will only be counted
     //once. Once we have found all the original zeros in `matrix` we iterate back through again and set the value of any
-    //cell to zero where thet cells row or column is in either `zeroRows` or `zeroColumns`.
+    //cell to zero where that cells row or column is in either `zeroRows` or `zeroColumns`.
     static func setZeroes(_ matrix: inout [[Int]]) {
         var zeroRows = Set<Int>()
         var zeroColumns = Set<Int>()

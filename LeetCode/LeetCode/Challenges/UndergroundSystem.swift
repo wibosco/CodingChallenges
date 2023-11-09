@@ -15,7 +15,7 @@ import Foundation
 //                where m is the number of station pairs
 //
 //Solution Description:
-//Using two dictionaries we track both the current active journeys and the total time it has taken to travel betweent two
+//Using two dictionaries we track both the current active journeys and the total time it has taken to travel between two
 //stations. At the end of each journey we update the record in `times` for that station pair. When finding the average we
 //take the total time between a station pair and divide it by the total number of journeys that make up that time.
 final class UndergroundSystem {

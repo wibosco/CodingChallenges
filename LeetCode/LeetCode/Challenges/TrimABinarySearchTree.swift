@@ -17,8 +17,8 @@ struct TrimABinarySearchTree {
     //recursive
     //
     //Solution Description:
-    //Using DFS we recusively traverse the tree checking that each node is within the range low...high. If we encounter
-    //a node that is too low then we (potentally) replace that node with its `right` node and then check that that right
+    //Using DFS we recursively traverse the tree checking that each node is within the range low...high. If we encounter
+    //a node that is too low then we (potentially) replace that node with its `right` node and then check that that right
     //node is within the range. We repeat this process but for `high` but this time we place the node with its `left`
     //node.
     
@@ -52,7 +52,7 @@ struct TrimABinarySearchTree {
     //recursive
     //
     //Solution Description:
-    //First we need to make sure that our `root` is within the low...high range. If it isn't we travrse the tree until we
+    //First we need to make sure that our `root` is within the low...high range. If it isn't we traverse the tree until we
     //find that node (or nil out). With a valid `root` we then traverse the nodes of the tree, checking each nodes `left`
     //and `right` nodes are within the low...high range. If a node is lower than `low` we trim it from the tree and set its
     //higher `right` node in its place for us to then check if that node is within the range. If the current node has a
@@ -86,7 +86,7 @@ struct TrimABinarySearchTree {
         
         if let left = node.left {
             if left.val < low {
-                //left node too low replace with potentally higher left.right nodes
+                //left node too low replace with potentially higher left.right nodes
                 node.left = left.right
                 trim(node, low, high)
             } else {
@@ -96,7 +96,7 @@ struct TrimABinarySearchTree {
         
         if let right = node.right {
             if right.val > high {
-                //right node too high replace with potentally lower right.left nodes
+                //right node too high replace with potentially lower right.left nodes
                 node.right = right.left
                 trim(node, low, high)
             } else {

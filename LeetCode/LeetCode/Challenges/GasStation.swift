@@ -54,7 +54,7 @@ struct GasStation {
     //Solution Description:
     //First we select an element from `gas` and then using `cost` attempt to get back to that `gas` element. If at any
     //point `tank` drops below 0 then we know that it isn't possible to get back to our `gas` element and we move onto
-    //the next `gas` element. As the final both `gas` and `cost` wrap round from end..start we need to performa modulo
+    //the next `gas` element. As the final both `gas` and `cost` wrap round from end..start we need to perform a modulo
     //operation on the inner loop variable - `j`
     static func canCompleteCircuitNestedLoops(_ gas: [Int], _ cost: [Int]) -> Int {
         for i in 0..<gas.count {

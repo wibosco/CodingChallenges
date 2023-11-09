@@ -18,7 +18,7 @@ struct KClosestPointsToOrigin {
     //in-line
     //
     //Solution Description:
-    //Using `quick select` we sort `points` around a pivot by gradually partitioning `nums` into a smallers semi-sorted arrays.
+    //Using `quick select` we sort `points` around a pivot by gradually partitioning `nums` into a smaller semi-sorted arrays.
     //We do not need to fully sort `points`, instead we only need to sort up to the `kth` index so after each partitioning we
     //check if the elements up to the `kth` index as been sorted if so we can return `points[0..<k]` else we take one half of
     //the semi-sorted array and partition it further.
@@ -74,6 +74,6 @@ struct KClosestPointsToOrigin {
         let xValue = pow(Double(point[0]), Double(2))
         let yValue = pow(Double(point[1]), Double(2))
         
-        return Int((xValue + yValue)) // no need for sqaure root
+        return Int((xValue + yValue)) // no need for square root
     }
 }

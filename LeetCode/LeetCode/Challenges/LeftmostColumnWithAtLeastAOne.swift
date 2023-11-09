@@ -18,7 +18,7 @@ struct LeftmostColumnWithAtLeastAOne {
     //Solution Description:
     //Using the dimensions of the binary matrix, we iterate through each row and perform a binary search on that rows
     //sorted values to determine in which column the first `1` appears. We track the lowest column that contains a `1`
-    //and for each additional row we search we compare that rows lowest column with the matrixs overall lowest column.
+    //and for each additional row we search we compare that rows lowest column with the matrix overall lowest column.
     //If that rows lowest column value is lower than the current matrix we replace it. If no row contains a column with
     //a `1` then `leftMostColumn` is never updated and we return `-1`.
     static func leftMostColumnWithOne(_ binaryMatrix: BinaryMatrix) -> Int {

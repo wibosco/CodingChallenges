@@ -29,7 +29,7 @@ struct CourseSchedule {
     //first build a adjacency list to allow for easy access to each vertice. A course prerequisite is by it's very nature a
     //a direct edge so a valid prerequisites needs to be acyclic which means that in order for the `prerequisites` to be valid
     //we need to determine if `adjList` contains a DAG. Using DFS topological sort (without the sorting) we can iterate over
-    //all verrices in the graph (there is no guarantee that all vertices are connected) and look for any cycles. In order to
+    //all vertices in the graph (there is no guarantee that all vertices are connected) and look for any cycles. In order to
     //detect a cycle we need to track the vertices visited in this iteration of the DFS, if we encounter the same vertice
     //twice in our DFS iteration then our graph has a cycle (in a DAG we should be able to search all the descendants of a
     //vertice before we can encounter it again). `currentVisited` allows us to know not just if there is a cycle between

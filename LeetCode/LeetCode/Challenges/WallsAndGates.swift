@@ -22,7 +22,7 @@ struct WallsAndGates {
     //mutating
     //
     //Solution Description:
-    //T his is a graph problem. First we determine where (if) the gates are in thegrid. These gates are then used as the
+    //T his is a graph problem. First we determine where (if) the gates are in the grid. These gates are then used as the
     //starting elements in our BFS queue (multi-source BFS). As we process the queue we use 4-way relative mapping array
     //to determine which nodes are neighbors to the current node. From those neighbors we are only interested in rooms -
     //which we determine by checking if they are of value greater than `0`. For every room discovered we check if it's
@@ -60,7 +60,7 @@ struct WallsAndGates {
                 //a new count
                 let newDistance = rooms[room[0]][room[1]] + 1
                 
-                let neighbors = navigatableNeighbours(rooms, room[0], room[1], relativeIndexing)
+                let neighbors = navigatableNeighbors(rooms, room[0], room[1], relativeIndexing)
                 
                 for neighbor in neighbors {
                     if rooms[neighbor[0]][neighbor[1]] > newDistance {
@@ -74,7 +74,7 @@ struct WallsAndGates {
         }
     }
     
-    private static func navigatableNeighbours(_ rooms: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]]) -> [[Int]] {
+    private static func navigatableNeighbors(_ rooms: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]]) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]

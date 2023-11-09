@@ -23,7 +23,7 @@ struct RottingOranges {
     //
     //Solution Description:
     //This is a graph problem. First we determine where (if) the rotten oranges are in the grid and how many fresh oranges
-    //we have. The rotten orangges are then used as the starting elements in our BFS queue. As we process the queue we use
+    //we have. The rotten oranges are then used as the starting elements in our BFS queue. As we process the queue we use
     //4-way relative mapping array to determine which nodes are neighbors to the current node. From those neighbors we are
     //only interested in the fresh ones - which we determine by checking if they are of value `1` and also that we are not
     //in the `visited` array. The `visited` array contains the rotten nodes. For every fresh orange discovered we add it to
@@ -50,7 +50,7 @@ struct RottingOranges {
             }
         }
         
-        //contains no fresh fruit as we got past the prevoius
+        //contains no fresh fruit as we got past the previous
         //guard we know it contains at least no rotting
         //fruit
         guard freshFruit != 0 else {
@@ -76,7 +76,7 @@ struct RottingOranges {
             var newQueueItems = [[Int]]()
             
             for node in queue {
-                let neighbors = navigatableNeighbours(grid, relativeIndexing, node[0], node[1], visited: visited)
+                let neighbors = navigatableNeighbors(grid, relativeIndexing, node[0], node[1], visited: visited)
                 
                 for neighbor in neighbors {
                     visited.append(neighbor)
@@ -94,7 +94,7 @@ struct RottingOranges {
         return freshFruit > 0 ? -1 : (spreadTime - 1)
     }
     
-    private static func navigatableNeighbours(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int, visited: [[Int]]) -> [[Int]] {
+    private static func navigatableNeighbors(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int, visited: [[Int]]) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]
@@ -159,7 +159,7 @@ struct RottingOranges {
             }
         }
         
-        //contains no fresh fruit as we got past the prevoius
+        //contains no fresh fruit as we got past the previous
         //guard we know it contains at least no rotting
         //fruit
         guard freshFruit != 0 else {
@@ -185,7 +185,7 @@ struct RottingOranges {
             var newQueueItems = [[Int]]()
             
             for node in queue {
-                let neighbors = navigatableFreshNeighboursMuting(mGrid, relativeIndexing, node[0], node[1])
+                let neighbors = navigatableFreshNeighborsMuting(mGrid, relativeIndexing, node[0], node[1])
                 
                 for neighbor in neighbors {
                     mGrid[neighbor[0]][neighbor[1]] = 2 //mutate to rotten
@@ -202,7 +202,7 @@ struct RottingOranges {
         return freshFruit > 0 ? -1 : (spreadTime - 1)
     }
     
-    private static func navigatableFreshNeighboursMuting(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
+    private static func navigatableFreshNeighborsMuting(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]

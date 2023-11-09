@@ -18,7 +18,7 @@ struct ThreeSum { //3Sum
     //nested loop
     //
     //Solution Description:
-    //First we sort the `nums` array this will ensure that we have a consistent orderng of values which when combined with
+    //First we sort the `nums` array this will ensure that we have a consistent ordering of values which when combined with
     //the `triplets` set will ensure that if duplicate values exist in `nums` they produce the same triplet and so are
     //omitted from the result. Next we iterate through `nums` and attempt to find two other numbers that when summed are the
     //opposite of the current number (`n1`) - we do this by iterating through the remain `nums` element. As `nums` is sorted
@@ -74,7 +74,7 @@ struct ThreeSum { //3Sum
     //nested loop
     //
     //Solution Description:
-    //First we sort the `nums` array this will ensure that we have a consistent orderng of values which when combined with
+    //First we sort the `nums` array this will ensure that we have a consistent ordering of values which when combined with
     //the `triplets` set will ensure that if duplicate values exist in `nums` there produce the same triplet and so are
     //omitted from the result. Next we iterate through `nums` and attempt to find two other numbers that when summed are the
     //opposite of the current number (`n1`) - we do this by iterating through the remain `nums` element. As we iterate through
@@ -82,7 +82,7 @@ struct ThreeSum { //3Sum
     //another nested loop we build a dictionary containing each seen `nums` element and its `index`. This will allow constant
     //access time to check for if the difference between the current `nums` element and target has already been seen. If that
     //difference is in `map` we combine those two values together with `n1` into an array and add it to the `triplets` set. We
-    //then see if there are any more triplets for `n1`. Once we have exhasuted all possible triplets for `n1` (exiting the
+    //then see if there are any more triplets for `n1`. Once we have exhausted all possible triplets for `n1` (exiting the
     //inner loop), we repeat the process for next element in `nums`. Finally we convert `triplets` into an array and return it.
     //
     //NB: Partially built using the same dictionary technique used in https://leetcode.com/problems/two-sum/

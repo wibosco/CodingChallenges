@@ -28,10 +28,10 @@ struct NumberOfIslands {
     //disconnected
     //
     //Solution Description:
-    //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph until we find
+    //Treat the grid as graph, potentially containing multiple unconnected subgraphs. Iterate through the graph until we find
     //land (cell containing `1`). Once we have found land we need to find all land that is connected with it. Using DFS we
     //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
-    //back over already discovered land we keep track of it using a `visited` set. Once we have exhasuatd all land connected
+    //back over already discovered land we keep track of it using a `visited` set. Once we have exhausted all land connected
     //to this first discovered land we increase the island count and and try to find unexplored land by continuing to loop
     //through the grid.
     //
@@ -96,10 +96,10 @@ struct NumberOfIslands {
     //disconnected
     //
     //Solution Description:
-    //Treat the grid as graph, potentally containing multiple unconnected subgraphs. Iterate through the graph until we find
+    //Treat the grid as graph, potentially containing multiple unconnected subgraphs. Iterate through the graph until we find
     //land (cell containing `1`). Once we have found land we need to find all land that is connected with it. Using BFS we
     //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
-    //back over already discovered land we keep track of it using a `visited` set. Once we have exhasuatd all land connected
+    //back over already discovered land we keep track of it using a `visited` set. Once we have exhausted all land connected
     //to this first discovered land we increase the island count and and try to find unexplored land by continuing to loop
     //through the grid.
     //

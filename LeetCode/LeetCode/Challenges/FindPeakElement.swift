@@ -19,7 +19,7 @@ struct FindPeakElement {
     //
     //Solution Description:
     //We can use a twist on binary search to search through `nums` and find the peaks. Rather than comparing the `mid` element
-    //against a target, we instead comapre it against it's right neighbour and attempt to identify a trend in the data i.e. up,
+    //against a target, we instead compare it against it's right neighbour and attempt to identify a trend in the data i.e. up,
     //down or flat. Once we know this trend we can move our boundaries accordingly - move left if the right neighbour is lower
     //(we don't just return as while `mid` is greater, it itself might be part of a downward slope), move right if the right
     //neighbour is equal or greater than. Eventually we narrow down on an actual peak and can return it as the `left` index.

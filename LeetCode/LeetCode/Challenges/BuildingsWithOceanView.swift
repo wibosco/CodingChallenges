@@ -16,7 +16,7 @@ struct BuildingsWithOceanView {
     //array
     //
     //Solution Description:
-    //Coming from right to left (ocean inwards) we track the tallest building that have so far, if a builting is taller than it
+    //Coming from right to left (ocean inwards) we track the tallest building that have so far, if a building is taller than it
     //then it has an ocean view if not then it doesn't.
     static func findBuildings(_ heights: [Int]) -> [Int] {
         var currentTallest = heights.last!

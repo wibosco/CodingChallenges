@@ -20,7 +20,7 @@ struct PairsOfSongsWithTotalDurationsDivisibleBy60 {
     //Store the remainder of each `time % 60` in a dictionary as the key and how many times have that remainder as the value.
     //This allows O(1) access time when checking if that remainder exists when attempting to find a pair for a future song.
     //The trick here is that when attempting to find that pair we need to not search for the remainder directly but rather
-    //search for the difference between 60 and that remainder because that difference is what we need to fulfill the
+    //search for the difference between 60 and that remainder because that difference is what we need to fulfil the
     //requirement that paired songs need to be "(i + j) % 60 == 0"
     //
     //Similar to: https://leetcode.com/problems/two-sum/

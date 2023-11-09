@@ -30,7 +30,7 @@ struct VerticalOrderTraversalOfABinaryTree {
     //and when we move right we add 1 to to the column value. After each level traversal we increment the level/row counter. To avoid
     //having to sort the dictionary keys we track the min and max column value which then allows to quickly extract each columns in
     //the correct order (i.e. columns are ordered correctly). Next we need to sort each columns data: we sort in ascending
-    //order by level/row value, where two elements have the same level/row value we then further sort by value (agains in ascending)
+    //order by level/row value, where two elements have the same level/row value we then further sort by value (against in ascending)
     //order. Finally we then stripped the level/row information from the column and store the value-only array our `result` array.
     static func verticalTraversal(_ root: BinaryTreeNode?) -> [[Int]] {
         guard let root = root else {

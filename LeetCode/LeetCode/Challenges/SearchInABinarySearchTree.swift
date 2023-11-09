@@ -77,13 +77,13 @@ struct SearchInABinarySearchTree {
     //Space: O(h) where h is the tree height - O(log⁡ n) in the average case, and O(n) in the worst case.
     //binary search tree
     //DFS
-    //recusive
+    //recursive
     //
     //Solution Description:
     //Using DFS traverse the tree, whenever we encounter a node we check if it is equal to `val` and if so return that node,
-    //else we compare `node.val` against `val` to determine whether to reclusively take the left or right node as our next root
+    //else we compare `node.val` against `val` to determine whether to recursively take the left or right node as our next root
     //in the search
-    static func searchBSTDFSRecusive(_ root: BinaryTreeNode?, _ val: Int) -> BinaryTreeNode? {
+    static func searchBSTDFSRecursive(_ root: BinaryTreeNode?, _ val: Int) -> BinaryTreeNode? {
         guard let root = root else {
             return nil
         }

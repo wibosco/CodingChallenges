@@ -57,7 +57,7 @@ struct CountSubIslands {
         
         var isSubIsland = grid1[row][column] == 1
         
-        //careful here as in swift if the first condtion in the AND is false, the second condtion isn't executed
+        //careful here as in swift if the first condition in the AND is false, the second condition isn't executed
         isSubIsland = dfs(grid1, &grid2, (row - 1), column) && isSubIsland //above
         isSubIsland = dfs(grid1, &grid2, (row + 1), column) && isSubIsland //below
         isSubIsland = dfs(grid1, &grid2, row, (column - 1)) && isSubIsland //left
@@ -123,7 +123,7 @@ struct CountSubIslands {
             
             visited.insert(neighbor)
             
-            //careful here as in swift if the first condtion in the AND is false, the second condtion isn't executed
+            //careful here as in swift if the first condition in the AND is false, the second condition isn't executed
             isSubIsland = dfsVisited(grid1, grid2, neighbor[0], neighbor[1], &visited) && isSubIsland
         }
         
@@ -131,7 +131,7 @@ struct CountSubIslands {
     }
     
     private static func landNeighbors(_ grid: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
-        var neighbours = [[Int]]()
+        var neighbors = [[Int]]()
         
         let relativeIndexing = [[-1, 0], [0, -1], [0, 1], [1, 0]] //[row, column]
         
@@ -147,9 +147,9 @@ struct CountSubIslands {
                 continue
             }
             
-            neighbours.append([newRow, newColumn])
+            neighbors.append([newRow, newColumn])
         }
         
-        return neighbours
+        return neighbors
     }
 }

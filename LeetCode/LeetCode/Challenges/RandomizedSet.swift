@@ -18,7 +18,7 @@ import Foundation
 //Solution Description:
 //Using a dictionary and array we are able to take advantage of the O(1) access, searching and inserting of the dictionary
 //while still having O(1) for retrieving a random element. We do this by inserting and removing any `val` value from both
-//the dictionary and array. When removing an element from an array we must be careful not to triggger a O(n) shuffle of
+//the dictionary and array. When removing an element from an array we must be careful not to trigger a O(n) shuffle of
 //element so we first move the to-be-removed element to the end of the array (so there are no elements needed to be
 //shuffled), update the map for the swapped elements new index and remove the to-be-removed element from both data
 //structures

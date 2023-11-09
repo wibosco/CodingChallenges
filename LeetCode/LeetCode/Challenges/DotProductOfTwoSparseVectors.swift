@@ -17,7 +17,7 @@ import Foundation
 //and so save on space. Below we build out a dictionary (`nonZeroMap`) to hold those non-zero values in the form of `index: value`.
 //This way when we attempt to produce a dot product of two vectors we can iterate through the keys on one vectors and check if the
 //other vector has that same key. If it does we multiple them and add them to our ongoing product value else we know that the second
-//vector has a zero for that index and we skip it (multipling by zero results in the product being zero). Once we iterate through
+//vector has a zero for that index and we skip it (multiplying by zero results in the product being zero). Once we iterate through
 //on vectors non-zero indexes we can return the product
 struct SparseVector {
     //Space: O(k) where `k` is the number of non-zero elements in `nums`

@@ -39,7 +39,7 @@ struct NetworkDelayTime {
     //to get to that node to `totalTime` - if we encounter `Int.max` as a value then we treat that as there being no path
     //between `k` and that node and so immediately return `-1`. Once we have summed all times, we return `totalTime`.
     //
-    //N.B. I've omitted using a MinHeap as this isn't a data structure included with standard Swift and won't be fessible to
+    //N.B. I've omitted using a MinHeap as this isn't a data structure included with standard Swift and won't be feasible to
     //code it in a coding challenge.
     static func networkDelayTime(_ times: [[Int]], _ n: Int, _ k: Int) -> Int {
         var adjList = Array(repeating: [(Int, Int)](), count: n)
@@ -131,14 +131,14 @@ struct NetworkDelayTime {
     //distance it would take to travel between between these nodes (taking into account any distance already travelled). We
     //store this distance priority queue - it's important to note again, that the distance is the total distance to travel
     //to that node not just the immediate distance between the two nodes (`node` and `neighbor`). If that `neighbor` node has
-    //already been reached via a different path but hasn't yet been searched from we add that alernative path to
+    //already been reached via a different path but hasn't yet been searched from we add that alternative path to
     //`priorityQueue`. Once all neighbors have been checked we re-sort the queue so that the smallest/cheapest next node to
     //travel to is at the end. As we traverse the graph, we build up the `totalTime` to determine how long it takes to
     //communicate with all connected nodes from `k`. When all connected nodes have been visited we compare the count of
     //`visited` and `n` - if they match then we know all nodes are reachable from `k` and can return `totalTime`, else we know
-    //that we have a disconnected graph and can retun `-1`.
+    //that we have a disconnected graph and can return `-1`.
     //
-    //N.B. I've omitted using a MinHeap as this isn't a data structure included with standard Swift and won't be fessible to
+    //N.B. I've omitted using a MinHeap as this isn't a data structure included with standard Swift and won't be feasible to
     //code it in a coding challenge.
     static func networkDelayTimeOptimised(_ times: [[Int]], _ n: Int, _ k: Int) -> Int {
         var adjList = Array(repeating: [(Int, Int)](), count: n)

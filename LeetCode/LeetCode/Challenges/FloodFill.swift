@@ -26,7 +26,7 @@ struct FloodFill {
     //Treating `image` as a graph where each vertice is connected to the vertices immediately above, below, left and
     //right. We traverse the graph from the starting position of `sr, sc` in a BFS manner, checking each neighbor to
     //test if it can be filled i.e. is the same color as `sr, sc` and hasn't visited before. If that neighbor we add it
-    //to the queue and eventually convert it's color. Once the queue is empty we have traversed all possibile vertices
+    //to the queue and eventually convert it's color. Once the queue is empty we have traversed all possible vertices
     //from `sr, sc` and can return the updated image.
     static func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
         let relativeIndexing = [    [-1, 0],
@@ -73,7 +73,7 @@ struct FloodFill {
     //Treating `image` as a graph where each vertice is connected to the vertices immediately above, below, left and
     //right. We traverse the graph from the starting position of `sr, sc` in a DFS manner, checking each neighbor to
     //test if it can be filled i.e. is the same color as `sr, sc` and hasn't visited before. If that neighbor we add it
-    //to the queue and eventually convert it's color. Once the queue is empty we have traversed all possibile vertices
+    //to the queue and eventually convert it's color. Once the queue is empty we have traversed all possible vertices
     //from `sr, sc` and can return the updated image.
     static func floodFillDFS(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
         let oldColor = image[sr][sc]

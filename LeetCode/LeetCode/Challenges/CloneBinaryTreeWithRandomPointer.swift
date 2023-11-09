@@ -18,8 +18,8 @@ struct CloneBinaryTreeWithRandomPointer {
     //dictionary
     //
     //Solution Description:
-    //Using DFS, traverse the tree making copies of the nodes that we encouter when a copy does not already exist and associating the copies
-    //together.
+    //Using DFS, traverse the tree making copies of the nodes that we encounter when a copy does not already exist and associating the
+    //copies together.
     static func copyRandomBinaryTree(_ root: BinaryTreeNodeRandom?) -> BinaryTreeNodeRandom? {
         var copies = [BinaryTreeNodeRandom: BinaryTreeNodeRandom]()
         return copyRandomBinaryTree(root, &copies)

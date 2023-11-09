@@ -116,7 +116,7 @@ struct CloneGraph {
     //recursive
     //
     //Solution Description:
-    //Perform a recusive DFS search through the graph, making a copy when we encounter an unvisited vertice and using the
+    //Perform a recursive DFS search through the graph, making a copy when we encounter an unvisited vertice and using the
     //original vertice to build that copies neighbor list. If we have already copied a vertice that we encounter (i.e. a
     //later vertice that has been previously copied vertice as a neighbor) then we return it straight away.
     static func cloneGraphDFS(_ node: GraphVertice?) -> GraphVertice? {

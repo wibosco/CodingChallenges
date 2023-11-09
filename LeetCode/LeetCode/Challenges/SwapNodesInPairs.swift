@@ -13,7 +13,7 @@ import UIKit
 struct SwapNodesInPairs {
     
     //Time: O(n) where n is the number of nodes in the list
-    //Sapce: O(1)
+    //Space: O(1)
     //linked list
     //iterative
     //sentinel head
@@ -48,12 +48,12 @@ struct SwapNodesInPairs {
     }
     
     //Time: O(n) where n is the number of nodes in the list
-    //Sapce: O(n) if counting the recursive stack otherwise O(1)
+    //Space: O(n) if counting the recursive stack otherwise O(1)
     //linked list
     //recursive
     //
     //Solution Description:
-    //Iterate through the list, swapping the `head` with the `next` node so that `next` -> `head` and then recusively call
+    //Iterate through the list, swapping the `head` with the `next` node so that `next` -> `head` and then recursively call
     //swap on the next two nodes. At the end we return the `next` node which is now the `head` node of the pair, the
     //returned `node` is then used as the next node of the old `head` so that all nodes are joined to another node (apart
     //from the end node)

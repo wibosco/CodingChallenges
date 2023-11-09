@@ -29,7 +29,7 @@ struct MinCostToConnectAllPoints {
     //of vertices in the graph - this is what we use for the condition on the while loop. As we inspect the min edge we need to
     //ensure that using it will not create a cycle in the graph by inspecting the `visited` set. If the min edge isn't introducing
     //a cycle we add it's weight to the `total`, add it to the `visited` set and add it's edges to the min heap causes it the
-    //potentially reconfig itself.
+    //potentially reconfigure itself.
     static func minCostConnectPoints(_ points: [[Int]]) -> Int {
         //convert points to an adjacency list
         var adjList = Array(repeating: [GraphWeightedEdge](), count: points.count)
@@ -142,7 +142,7 @@ struct MinCostToConnectAllPoints {
 //1. Each vertice is given an initial value of -1 to indicate that they are their own root
 //2. Perform a union between two vertices by finding the root of each vertice (this will be a negative number). This root may not
 //   be directly associated with the vertice but instead require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest negative
+//3. Compare the size of the nodes associated with each vertices root and select the root with the most nodes i.e. lowest negative
 //   value. Update the smaller root to point at the other root and update the other roots count to include the count that the
 //   former root had
 private final class UnionFind {

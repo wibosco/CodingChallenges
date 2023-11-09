@@ -91,9 +91,9 @@ struct MinimumNumberOfFlipsToMakeTheBinaryStringAlternating {
     //iterate through each version of `s` and compare each element against it's immediate neighbors using three pointers. We know
     //that an alternating pattern should be "101" or "010" so if we find a pattern that does not match either of those we update
     //the appropriate element by flipping it. As we are going left-right we can only safely update the `mid` or `right` elements
-    //as updating the `left` element will result in a previous alternating pattern being chnaged. When a flip is made we track
+    //as updating the `left` element will result in a previous alternating pattern being changed. When a flip is made we track
     //that flip and add it to an ongoing total of flips. Once all elements in that version of `s` have been checked, we compare
-    //the number of flips required to make an alternating pattern against the minmum flips required for any version of `s`. To
+    //the number of flips required to make an alternating pattern against the minimum flips required for any version of `s`. To
     //reduce the amount of work required we use memoization. Once all version of `s` have been checked we return the minimum.
     static func minFlipsMemo(_ s: String) -> Int {
         var characters = Array(s)

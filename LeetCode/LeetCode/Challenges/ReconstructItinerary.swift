@@ -32,12 +32,12 @@ struct ReconstructItinerary {
         }
         
         for key in adjList.keys {
-            adjList[key] = adjList[key]?.sorted() //sort to improve efficency by bringing greedy
+            adjList[key] = adjList[key]?.sorted() //sort to improve efficiency by bringing greedy
         }
         
         var route = [String]()
         
-        //JFK is always the starting aiport, route is always 1 greater than number of tickets
+        //JFK is always the starting airport, route is always 1 greater than number of tickets
         dfs(adjList, tickets.count + 1, "JFK", &route)
         
         return route

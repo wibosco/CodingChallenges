@@ -30,7 +30,7 @@ struct TopologicalSort {
     //to `u` are ordered before `u` i.e. [v1, v2, v3, u]. It is useful to think of this as jobs that have dependencies so in
     //the above example `v1`, `v2` and `v3` are dependencies of `u` i.e. for `u` to complete `v1`, `v2` and `v3` need to
     //complete first. Topological sort is only possible on graphs that do not contain cycles i.e. DAGs. As any graph can contain
-    //multiple subgraphs we need to visit each vertice in the graph and (potentally) perform a deep-first search from that
+    //multiple subgraphs we need to visit each vertice in the graph and (potentially) perform a deep-first search from that
     //vertice to all connected vertices. As DFS goes deep before wide, all of vertices connected to vertice e.g. `A` will be
     //searched before the recursive call to `A` returns (think of it like the balanced brackets problem e.g. [A, [B, [C, C], B],
     //A]), we can use this property to detect cycles in our graph - if we find a vertice has an edge to `A` before `A` has
@@ -112,7 +112,7 @@ struct TopologicalSort {
     //topological sort
     //
     //Solution Description:
-    //A key component of topological sort is that as it's sorting it can it can detect cycles in graph. Here we have stipped away
+    //A key component of topological sort is that as it's sorting it can it can detect cycles in graph. Here we have stripped away
     //the sorting part of topological sort and just kept the cycle detection part. Detecting a cycle in a graph is a little more
     //involved that just tracking the vertices that we have visited, as it is possible to revisit a vertices a number of times in
     //a graph without that revisiting being cycle - different starting vertices connect to that already visited vertice. Rather a

@@ -23,7 +23,7 @@ struct WordBreak {
     //Using DFS we iterate through `s` attempting to find a match for an element in `wordDict`. Once we find a match we then
     //recursively search for another match from `s[matchEndIndex...]` and we repeat this process until we run out of
     //characters in `s` to search. If immediately before running of character we found a match then we know that we can
-    //successfully break `s` up into the elements of `wordDict` - we can determine this by checkung if `startIndex` is outside
+    //successfully break `s` up into the elements of `wordDict` - we can determine this by checking if `startIndex` is outside
     //of `s.count`; if run out of characters without ending on a match then we know that `s` can not be broken up. As it is
     //possible for a sequence of characters to exist in `wordDict` as both a whole element and the prefix of an element e.g.
     //"cat" and "cats" - when searching if a recursive call comes back as false we don't abandon that search space until we
@@ -59,7 +59,7 @@ struct WordBreak {
             
             //keep adding characters to `word` until we get a match with an element in `wordSet`. Once we have that
             //match, recursively search for the next word starting from the end of `word` - `j`. If searching from
-            //`word` doesn't result in a full successful search then we add another character to `word` incase
+            //`word` doesn't result in a full successful search then we add another character to `word` in case
             //`word` is part of another element in `wordSet` e.g. "cat" then becomes "cats" and repeat the process
             if wordSet.contains(word) && dfs(chars, wordSet, j, &memo) {
                 return true

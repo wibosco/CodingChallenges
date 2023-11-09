@@ -19,7 +19,7 @@ struct OddEvenLinkedList {
     //Using three pointer we split the even nodes off into a different list (kind of) and gradually add node to that even list. When
     //removing nodes from the original list we reattach the previous node to the next node as both these nodes are/where odd. Due to us
     //moving nodes with ever iteration we don't we are able to perform the same operation each time. When all nodes are move we effectively
-    //have an odd list and an even list so we reattched the even nodes to the end of the odd list.
+    //have an odd list and an even list so we reattached the even nodes to the end of the odd list.
     static func oddEvenList(_ head: ListNode?) -> ListNode? {
         var oddTail = head
         let evenHead = head?.next //a pointer holding a reference to the start of the even nodes

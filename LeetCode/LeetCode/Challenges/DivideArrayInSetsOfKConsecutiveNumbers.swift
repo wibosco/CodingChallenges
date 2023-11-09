@@ -26,7 +26,7 @@ struct DivideArrayInSetsOfKConsecutiveNumbers {
     //`nums` in ascending order (with any duplicates). We then attempt to group `nums` elements into that are consecutive in
     //nature i.e. the next element is 1 value bigger. If at any point the next value isn't bigger we return false. If we run
     //out of unique `nums` elements before we build a group we return false. If having iterated through all elements we have
-    //satisified all conditions we return true.
+    //satisfied all conditions we return true.
     static func isPossibleDivide(_ nums: [Int], _ k: Int) -> Bool {
         guard nums.count % k == 0 else {
             return false

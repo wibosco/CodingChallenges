@@ -20,7 +20,7 @@ struct JumpGameII {
     //Treating `nums` as an n-ary tree with the possible movements from each `nums` element as edges. We can find the
     //shortest path by traversing the tree in a BFS manner with level being 1 jump. At level we can determine if it is
     //possible to jump directly to the `nums` end index i.e. `target`. If we can we return `jumps + 1` (as it is the
-    //next jump where we would reach `target`); if not we build the possible neighbours, check that we have't already
+    //next jump where we would reach `target`); if not we build the possible neighbors, check that we have't already
     //visited them and add each unvisited neighbour to `queue`. At the end of each level we increment `jumps` and
     //repeat the process.
     static func jump(_ nums: [Int]) -> Int {
@@ -51,7 +51,7 @@ struct JumpGameII {
                 
                 for i in 1...possibleJumps { //at this stage we know that `possibleJumps` will not be out of `nums` range
                     let nextIndex = index + i
-                    //checking visited here is signifcantly quicker that adding the index and checking on the next iteration
+                    //checking visited here is significantly quicker that adding the index and checking on the next iteration
                     guard !visited.contains(nextIndex) else {
                         continue
                     }

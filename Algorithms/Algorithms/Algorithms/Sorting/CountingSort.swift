@@ -18,7 +18,7 @@ struct CountingSort {
     //Solution Description:
     //Using counting sort we iterate through all elements in `nums` and store how often they appear in the dictionary `countMap`
     //i.e. the element is keys and the frequency is the value. We also keep track of the lowest and highest element that we
-    //seen to allow for performat retrieve of those frequency values. After counting all frequencies we then iterate from `low`
+    //seen to allow for performant retrieve of those frequency values. After counting all frequencies we then iterate from `low`
     //to `high` and check if that value has an entry in the dictionary. If it does have an entry then we add the value of the
     //current iteration `i` to the `sorted` array `count` times; if it doesn't we skip it. As we are going from low to high we
     //will be adding those values in non-descending order.

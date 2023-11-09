@@ -55,7 +55,7 @@ struct SquaresOfSortedArray {
     //sorting
     //
     //Solution Description:
-    //Sqaure all the nums and add them to the `sqaured` array in the order of `nums`. Then sort the squared array in ascending
+    //Square all the nums and add them to the `squared` array in the order of `nums`. Then sort the squared array in ascending
     //order
     static func sortedSquaresSorting(_ nums: [Int]) -> [Int] {
         var squared = [Int]()

@@ -31,7 +31,7 @@ struct LetterCombinationsOfAPhoneNumber {
     //First we map the keypad digits to letters using a dictionary - `keypad`. Then treating this problem as multiple tree
     //problems we use backtracking to iterate through all possible combinations of letters in a recursive DFS manner gradually
     //building each possible letter combination for the given number. We know that we've reached the end of combination when
-    //there are no more digits to process. Eventually the recusive backtracking call will return and we can return the
+    //there are no more digits to process. Eventually the recursive backtracking call will return and we can return the
     //`combinations` array
     //
     //NB: don't the `key` in space complexity as it is constant

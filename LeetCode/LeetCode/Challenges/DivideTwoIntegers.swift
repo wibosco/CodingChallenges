@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/divide-two-integers/
-//bit shifting
 struct DivideTwoIntegers {
     
-    //https://www.youtube.com/watch?v=htX69j1jf5U
-    //Time: O(logn)
+    //Time: O(log n)
+    //bit shifting
+    //
+    //N.B. https://www.youtube.com/watch?v=htX69j1jf5U
     static func divide(_ dividend: Int, _ divisor: Int) -> Int {
         guard dividend != 0 else {
             return 0
@@ -25,11 +26,11 @@ struct DivideTwoIntegers {
         let divisor = abs(divisor)
         var quotient = 0
         
-        //To divide without dividing we need to substract.
+        //To divide without dividing we need to subtract.
         //However straight forward subtraction is too slow.
         //Instead we left the divisor until it's larger than
         //the dividend then we add the number of shifts to the
-        //running `quotient` and substract that shifted divisor
+        //running `quotient` and subtract that shifted divisor
         //value from the dividend and perform the loop again
         while (dividend - divisor) >= 0 {
             var leftShift = 0 // 2^0 = 1

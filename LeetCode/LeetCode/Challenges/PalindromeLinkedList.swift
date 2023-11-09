@@ -19,7 +19,7 @@ struct PalindromeLinkedList {
     //Solution Description:
     //Using a fast and slow pointer we iterate through the list, leaving the slow pointer in the "middle" (or as near as possible
     //for an evenly numbered list). Treating the nodes up from `head` to just before `slow` as one list and from `slow` to the
-    //tail as another list. We reverse the first list so that all nodes now point to their original predeccesors and the original
+    //tail as another list. We reverse the first list so that all nodes now point to their original predecessors and the original
     //head of that sub list is now its tail. As it's possible for a palindrome to be either contain an odd or even number of
     //elements we check if we are dealing with an odd palindrome and move the `slow` pointer (which is the head of the second
     //list) rightwards by one node. Next we iterate through both lists and compare the values of each node against its

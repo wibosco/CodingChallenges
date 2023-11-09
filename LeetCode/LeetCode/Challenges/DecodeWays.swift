@@ -89,7 +89,7 @@ struct DecodeWays {
                 continue
             }
                 
-            decodings += dfs(characters, (right + 1), &memo) //this index has been used so move the nect iteration should move on
+            decodings += dfs(characters, (right + 1), &memo) //this index has been used so move the next iteration should move on
         }
         
         memo[left] = decodings

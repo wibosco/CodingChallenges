@@ -23,7 +23,7 @@ struct CombinationSum {
     //Treating the possible combinations as multiple n-ary trees. Using a DFS backtracking approach we attempt to produce
     //all possible combinations of `candidates` to reach our `target` value. We do this by taking element in turn from the
     //`candidates` array and performing a DFS from that element until we either reach the `target` value or overshoot (to
-    //simplifly things we attempt to get to 0 rather than the target, this means we only need to have one parameter to
+    //simplify things we attempt to get to 0 rather than the target, this means we only need to have one parameter to
     //know if the combination is valid i.e. 0 than the two we would need if we attempt to add up to target). Each level
     //that we go down we build up the `combination` array of candidate values that led us to that point. If we reach 0
     //then that path of candidate values is a valid combination and we add it to `combinations`; if we go negative then we

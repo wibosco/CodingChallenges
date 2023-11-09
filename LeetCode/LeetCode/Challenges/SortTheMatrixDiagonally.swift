@@ -22,8 +22,8 @@ struct SortTheMatrixDiagonally {
     //Cells that are on the same diagonal share the same value for `row + column` so we can traverse `mat` by rows
     //and store all cells with the same `row + column` in the `diagonals` dictionary. We then sort these diagonals in
     //descending order so that when we populate `orderedMat`, we pop the last item from that diagonal array - this
-    //means that we don't need to keep a seperate index for each diagonal to know which item to pop or remove items
-    //from the start of that array which is a O(n) operation (popping is a O(1) operation). We then retraverse `mat`
+    //means that we don't need to keep a separate index for each diagonal to know which item to pop or remove items
+    //from the start of that array which is a O(n) operation (popping is a O(1) operation). We then re-traverse `mat`
     //and extract the value at each location from `diagonals`
     static func diagonalSort(_ mat: [[Int]]) -> [[Int]] {
         var orderedMat = mat

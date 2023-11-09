@@ -20,9 +20,9 @@ struct RemoveDuplicatesFromSortedArrayII {
     //Using two pointers (`slow` and `fast`) we iterate through `nums` and keep track of the number of duplicates
     //that we find. The `slow` pointer will keep track of the edge (on the outside) of the "valid" array (elements
     //that contain a maximum of two duplicates), the `fast` pointer keeps track of the latest element to be checked
-    //for duplciation. If the `fast` pointer encounters an element that we have seen zero or only once before we
+    //for duplication. If the `fast` pointer encounters an element that we have seen zero or only once before we
     //move that element to the "valid" side of the array. If we encounter the same element more than twice we
-    //"pause" the slow pointer until we enounter a non-duplicate - the space between `slow` and `fast` can now be
+    //"pause" the slow pointer until we encounter a non-duplicate - the space between `slow` and `fast` can now be
     //thought of as "overridable", eventually that space will be at the end of the array and we can return `slow`
     //as the upper boundary of the "valid" array.
     //

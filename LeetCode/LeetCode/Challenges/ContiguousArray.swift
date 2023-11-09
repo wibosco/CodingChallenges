@@ -30,7 +30,7 @@ struct ContiguousArray {
     //for count having a value of zero we want to look for count have a value that we already seen as this shows that from that
     //previous seen index to the current index the `0`s and `1`s are balanced. We can do this by storing the index for that
     //count in a dictionary (N.B. we only show the first index with count as this will result in the longest contiguous
-    //balanced array for that count) and then substracting the current index value away from that stored index
+    //balanced array for that count) and then subtracting the current index value away from that stored index
     static func findMaxLength(_ nums: [Int]) -> Int {
         var count = 0
         var counts = [Int: Int]()

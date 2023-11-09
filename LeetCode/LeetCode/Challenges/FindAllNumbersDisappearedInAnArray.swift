@@ -21,15 +21,15 @@ struct FindAllNumbersDisappearedInAnArray {
     //index of the element that we want to "mark". We use the absolute value as it's possible the value at any given
     //index has already been marked so we need to be careful not to undo that. After the first iteration we then iterate
     //again and add any indexes that have a positive value to `disappearedNumbers` as that index isn't included as a
-    //value of `nums`. Please note that as our output is expected to start at 1 we need to add or subtrate 1 when
+    //value of `nums`. Please note that as our output is expected to start at 1 we need to add or subtract 1 when
     //required.
     static func findDisappearedNumbers(_ nums: [Int]) -> [Int] {
         var disappearedNumbers = [Int]()
         var nums = nums
         
         for num in nums {
-            //use the absolute value incase this index has already been "marked"
-            let absNum = (abs(num) - 1) //as indexing starts at 1 to get the "true" index we subtrate 1
+            //use the absolute value in case this index has already been "marked"
+            let absNum = (abs(num) - 1) //as indexing starts at 1 to get the "true" index we subtract 1
             if absNum < nums.count {
                 nums[absNum] = abs(nums[absNum]) * -1
             }

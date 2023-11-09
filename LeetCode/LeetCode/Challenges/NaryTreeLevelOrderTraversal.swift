@@ -17,7 +17,7 @@ struct NaryTreeLevelOrderTraversal { //N-aryTreeLevelOrderTraversal
     //BFS
     //
     //Solution Description:
-    //Traverse the tree using BFS, storing the nodes at each level in an arry before adding them to a tree wide levels array.
+    //Traverse the tree using BFS, storing the nodes at each level in an array before adding them to a tree wide levels array.
     //
     //NB: As this is an N-ary tree rather than a binary tree, the BFS contains 3 loops rather than 2. The extra loop is to
     //work through the neighbors of a nodes - don't confuse this with the actual level traversal loop which is the second loop.

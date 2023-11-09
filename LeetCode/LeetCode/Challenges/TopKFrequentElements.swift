@@ -22,7 +22,7 @@ struct TopKFrequentElements {
     //Using `quick select` we sort `nums` (using the frequency the `num` appears to determine if it's larger or smaller - this
     //is stored in `frequencies`) around a pivot by gradually partitioning `nums` into a smaller and smaller array. Also as we
     //only want to return the top `k` unique elements we remove the duplicates from our `nums` array by converting the
-    //`frequencies` into an array of tuples - (key, frequency). As we are not aiming to fully sort `nums`, after each partiton
+    //`frequencies` into an array of tuples - (key, frequency). As we are not aiming to fully sort `nums`, after each partition
     //(if we haven't sorted `k` into its final position) we only need to further sort that partition that contains the `k`
     //index. As we want to find the most frequent elements when partitioning we sort in descending order. With the `kth`
     //element sorted we return an array containing only `k` elements.
@@ -85,7 +85,7 @@ struct TopKFrequentElements {
     //bucket sort
     //
     //Solution Description:
-    //We first group the elements in a `frequency` dictionary with the `num` as the key and the occurance of that `num` in
+    //We first group the elements in a `frequency` dictionary with the `num` as the key and the occurrence of that `num` in
     //`nums` as the value. Next we transfer the `frequency` dictionary into buckets - we produce enough buckets so that there
     //is one for each possible frequency value (the upper bounds of this value being the count of `nums`), we more than one
     //`num` can occur the same amount of times in `nums` each bucket is an array. The outer array in `buckets` is the frequency
@@ -108,7 +108,7 @@ struct TopKFrequentElements {
         var order = [Int]()
         
         for bucket in buckets.reversed() { //go in reverse to ensure that we add the more frequent elements to `order` first
-            order += bucket //some `bucket` arrays will be empty as no element occured at that frequency
+            order += bucket //some `bucket` arrays will be empty as no element occurred at that frequency
             
             if order.count == k {
                 return order

@@ -19,7 +19,7 @@ struct IntersectionOfTwoArraysII {
     //Solution Description:
     //First we sort `nums1` and `nums2`, this allows us to use two pointer to iterate through both arrays. When the elements
     //that `p1` and `p2` are pointing match then we add that value to `intersectingValues`; if they don't match and the value
-    //of `p1` is greather `p2` then we increment `p2` to increase its value; if `p2` is greater we increment `p1`. We continue
+    //of `p1` is greater `p2` then we increment `p2` to increase its value; if `p2` is greater we increment `p1`. We continue
     //this either `p1` or `p2` reaches the end of its array
     static func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         let nums1 = nums1.sorted() //O(n log n)

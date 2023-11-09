@@ -19,7 +19,7 @@ struct MinimumOperationsToReduceXToZero {
     //Solution Description:
     //Rather than attempting to find the `x` by removing edge elements from either end of `nums` we instead attempt to find
     //`nums-total - x` as this is the value that will required for the edge elements to equal `x`. This approach allows us to use
-    //a sliding window to calculate the inverted-x (`windowTaregt`) value and so execute in O(n) time as anything not in the
+    //a sliding window to calculate the inverted-x (`windowTarget`) value and so execute in O(n) time as anything not in the
     //window must at either edge. Ee want to maximise the number of elements in the window to minimise the number of elements left
     //on the edges. First we calculate the sum of all the elements in `nums` and subtract `x` to get our target. Then starting at
     //index 0 we iterate through `nums` rightwards. With each rightward iteration we add the value of the element at index `right`

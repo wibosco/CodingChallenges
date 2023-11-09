@@ -37,7 +37,7 @@ struct ReverseString {
     }
     
     //Time: O(n) where n is the count of the elements in `s`
-    //Space: O(n) if counting the recusive stack otherwise O(1)
+    //Space: O(n) if counting the recursive stack otherwise O(1)
     //two pointers
     //recursive
     //inout

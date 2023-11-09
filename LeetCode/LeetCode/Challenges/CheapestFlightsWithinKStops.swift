@@ -24,12 +24,12 @@ struct CheapestFlightsWithinKStops {
     //First we convert `flights` into an adjacency list containing as the index each city and as the value an array
     //containing the connected city and the flight cost. Using this adjacency list we preform a DFS of this graph attempting
     //to find the cheapest route from `src` to `dst` (NB. there may be many routes but we want the cheapest). We have two
-    //bases for our DFS - finding `dst` and running out of stops - `k`. To avoid having to travel the same route mulitple
+    //bases for our DFS - finding `dst` and running out of stops - `k`. To avoid having to travel the same route multiple
     //times we can use memoization to store the cost (if possible) from any given city to `dst` - `memo`. It's important to
     //store the city and remaining `k` value as the key of `memo` as the `k` stops remaining may mean it's possible to go
-    //from the current city to `dst` only some of the time i.e. somtimes `k` is too small as we arrived at the current city
+    //from the current city to `dst` only some of the time i.e. sometimes `k` is too small as we arrived at the current city
     //from a more stop-expensive path. We use `Int.max` as our "no path possible" value - this also appears for easy
-    //comparision when we find the first path from the current city to `dst`.
+    //comparison when we find the first path from the current city to `dst`.
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
     //the cached result when the same computation is needed again.

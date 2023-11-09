@@ -19,7 +19,7 @@ struct InsertIntoASortedCircularLinkedList {
     //Iterating through the list we attempt find the position that the new node (`insertVal`) should be inserted. Using two
     //pointers we move through the list comparing `insertVal` against both the current node (`t`) and the next node (`n`) in the
     //list. If `insertVal` is between those two nodes values then we insert the new node there. Special care needs to be taken
-    //when we reach the "end" of the ascending values as it is possible for `insertVal` to actuall be the smallest or largest
+    //when we reach the "end" of the ascending values as it is possible for `insertVal` to actually be the smallest or largest
     //value in the list so it won't actually fall between any two nodes and should be added at the end (or start). Another
     //special case is where having iterated through the list we still haven't found a "spot" for the new node - this can occur
     //when the list contains duplicate node values, in this case we need to insert the new node before the `head` node.

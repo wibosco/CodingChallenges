@@ -43,7 +43,7 @@ struct GraphValidTree {
     //
     //N.B. In the BFS solution we use a `visited` set and a `paths` set (with sets inside) we could have taken this approach
     //here (or the BFS could have taken this approach) however by using the `paths` dictionary we are able to consolidate both
-    //`visited` and `paths` sets into the one data structure. If the "parent" node already exists in the visted `paths`
+    //`visited` and `paths` sets into the one data structure. If the "parent" node already exists in the visited `paths`
     //dictionary we check if it has `neighbor` i.e. in the past have we travelled `node -> neighbor` and are now trying to
     //travel `neighbor -> node`. If `neighbor` exists in the set of `node` then we skip, if not we check if `neighbor` exists
     //as a key in `paths`. If `neighbor` is a key, we have a loop.
@@ -221,7 +221,7 @@ struct GraphValidTree {
 //1. Each vertice is given an initial value of -1 to indicate that they are their own root
 //2. Perform a union between two vertices by finding the root of each vertice (this will be a negative number). This root may
 //   not be directly associated with the vertice but instead require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest
+//3. Compare the size of the nodes associated with each vertices root and select the root with the most nodes i.e. lowest
 //   negative value. Update the smaller root to point at the other root and update the other roots count to include the count
 //   that the former root had
 private final class UnionFind {

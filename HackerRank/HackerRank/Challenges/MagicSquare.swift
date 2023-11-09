@@ -9,7 +9,7 @@
 import Foundation
 
 //https://www.hackerrank.com/challenges/magic-square-forming/problem
-struct MagicSqaure {
+struct MagicSquare {
     static func formingMagicSquare(s: [[Int]]) -> Int {
         let allPossible3x3MagicSquares = [[[8, 1, 6], [3, 5, 7], [4, 9, 2]],
                                           [[6, 1, 8], [7, 5, 3], [2, 9, 4]],

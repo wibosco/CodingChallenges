@@ -15,7 +15,7 @@ struct RedundantConnection {
     //graph theory
     //DFS
     //cycle detection
-    //undirect graph
+    //undirected graph
     //
     //Solution Description:
     //We gradually build up the graph by adding edges to it. Before adding an edge to the graph we first check if there already
@@ -28,7 +28,7 @@ struct RedundantConnection {
     //
     //N.B. How we only build the graph enough to be able to find the cycle.
     //
-    //N.B. This is similiar to detecting a cycle in topological sort.
+    //N.B. This is similar to detecting a cycle in topological sort.
     static func findRedundantConnection(_ edges: [[Int]]) -> [Int] {
         var adjList = Array(repeating: [Int](), count: (edges.count + 1))
         

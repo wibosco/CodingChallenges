@@ -19,16 +19,16 @@ struct CuttingRibbons {
     //divide and conquer
     //
     //Solution Description:
-    //The minimum length a ribbbon can be 1 and the maximum length is the maximum length in `ribbbons`. We can treat this
+    //The minimum length a ribbon can be 1 and the maximum length is the maximum length in `ribbons`. We can treat this
     //min..max range as a sorted list of possible lengths. Performing a binary search on this range we can find that
     //maximum length while discarding half of the possible lengths at each step. If the total ribbon for a given length is
-    //equal or greater than `k` then we know that we are potentally cutting the ribbons too short and need to increase the
+    //equal or greater than `k` then we know that we are potentially cutting the ribbons too short and need to increase the
     //length of each cut i.e. the left edge needs to move right; if the total ribbons are less than `k` then we know that we
     //are cutting each ribbon too long and need to shorten the cut i.e. the right edge needs to move left. Once the right
     //edge is smaller or equal than the left edge, then we should have found the maximum length (if it exists) and can
     //return `right` as that value.
     //
-    //NB: we don't need to use each ribbon so our max length (right boundary) should be the maxmimum length not the minimum length
+    //NB: we don't need to use each ribbon so our max length (right boundary) should be the maximum length not the minimum length
     //
     //Similar to: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
     static func maxLength(_ ribbons: [Int], _ k: Int) -> Int {

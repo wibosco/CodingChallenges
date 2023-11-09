@@ -25,7 +25,7 @@ struct ImplementStrStr {
     //two pointers
     //
     //Solution Description:
-    //Using KMP we are to traverse through `haystack` and determine if `needle` is present in a more efficent way when compared
+    //Using KMP we are to traverse through `haystack` and determine if `needle` is present in a more efficient way when compared
     //to nested loops. We do this by examining `needle` and determining, if any prefixes in `needle` are repeated later on in
     //`needle` which can be used to avoid having to go back to the start of `needle` when comparing against `haystack` instead
     //we can go back to the end of the start of that matching prefix. This prefix knowledge is stored in an `lps-table`
@@ -95,7 +95,7 @@ struct ImplementStrStr {
                     return h
                 }
             } else {
-                //move n back to a position where the comparsion between `haystack` and `needle` matched - this might have not been
+                //move n back to a position where the comparison between `haystack` and `needle` matched - this might have not been
                 //the case so n is set to 0
                 let lastMatchingIndex = max(0, (n - 1))
                 let resetIndex = lps[lastMatchingIndex]
@@ -115,7 +115,7 @@ struct ImplementStrStr {
     //array
     //
     //Solution Description:
-    //Using two pointers we traverse through both `haystack` and `needle` and compare the characters of `haystick` against the relevent
+    //Using two pointers we traverse through both `haystack` and `needle` and compare the characters of `haystack` against the relevant
     //character of `needle` i.e. if we have previously matched the first character of `needle` we compare the next character of `haystack`
     //against the second character of `needle`. If at any time we get a mismatch we reset `n` to 0.
     static func strStrNestedLoops(_ haystack: String, _ needle: String) -> Int {

@@ -58,8 +58,8 @@ struct FindDuplicateNumber {
     //elements that are less than it so if our array has duplicates then [1, 2, 2, 3, 4, 5, 6] then here 3 has 3 element
     //less than it so the duplicate must be less than 3. We can use this property and a twist on binary search to narrow
     //down our search space. Using binary search we select the mid element in our search space we then check how many
-    //elements in `nums` is less than or equal to (incase we have selected the duplicate) `mid` (remember the range is
-    //always [1, n]). If that count is greater than expected then we know that potentally we have duplicate and that further
+    //elements in `nums` is less than or equal to (in case we have selected the duplicate) `mid` (remember the range is
+    //always [1, n]). If that count is greater than expected then we know that potentially we have duplicate and that further
     //searching only needs to happen to the left of `mid` and we move the right boundary left; if count is as expected less
     //than or equal to mid then we know that the duplicate must be to the right of mid and we move the left boundary right.
     static func findDuplicateBinarySearch(_ nums: [Int]) -> Int {
@@ -121,7 +121,7 @@ struct FindDuplicateNumber {
     //Solution Description:
     //Using a set (for O(1) search time) to store `nums` elements that we have already seen, we loop through `nums` and check
     //if that element is already in `count`. If it is we have found our duplicate; if it is not then we add it to `count` and
-    //conintue looping
+    //continue looping
     static func findDuplicateDictionary(_ nums: [Int]) -> Int {
         var count = Set<Int>()
         for num in nums {

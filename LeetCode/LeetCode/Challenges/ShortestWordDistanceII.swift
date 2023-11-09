@@ -19,7 +19,7 @@ import Foundation
 //key and the index(es) of that word being the value. In `shortest` we find the indexes of `word1` and `word2` and attempt to
 //find the shortest distance between the available indexes. As the indexes will be sorted we can use this property to avoid
 //nested loops instead as we are attempting to find the shortest distance we can increment the lesser of the two indexes (`p1`
-//or `p2`) to potentally shorten the current distance and save on iterations.
+//or `p2`) to potentially shorten the current distance and save on iterations.
 final class ShortestWordDistanceII {
     private var words = [String: [Int]]()
 
@@ -49,11 +49,11 @@ final class ShortestWordDistanceII {
             
             if word1Index > word2Index {
                 //as word1Index is greater than word2Index, incrementing p1 (word1Index) would only increase the distance
-                //between the next word1Index and word2Index instead we can potentally narrow it by incrementing p2
+                //between the next word1Index and word2Index instead we can potentially narrow it by incrementing p2
                 p2 += 1
             } else {
                 //as word2Index is greater than or equal to word1Index, incrementing p2 (word2Index) would only increase
-                //the distance between the next word1Index and word2Index instead we can potentally narrow it by
+                //the distance between the next word1Index and word2Index instead we can potentially narrow it by
                 //incrementing p1
                 p1 += 1
             }

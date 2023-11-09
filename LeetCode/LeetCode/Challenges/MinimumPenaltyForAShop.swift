@@ -18,8 +18,8 @@ struct MinimumPenaltyForAShop {
     //postfix sum
     //
     //Solution Description:
-    //First we iterate through all elements in cutomers and determine what the penalty would be if the never opened. This
-    //value is a postfix sum and will allows us to avoid O(n^2) work when determing the penalty for closing at any time.
+    //First we iterate through all elements in customers and determine what the penalty would be if the never opened. This
+    //value is a postfix sum and will allows us to avoid O(n^2) work when determining the penalty for closing at any time.
     //We then loop back through `customers` and either increment or decrement `penalityForClosing` as we close the shop
     //from that hour. We track the minimum penalty value found, alongside the index where that minimum was first found.
     //At the end of the second `customers` iteration we return the index for the minimum.

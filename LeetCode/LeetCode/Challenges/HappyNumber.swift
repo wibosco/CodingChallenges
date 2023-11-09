@@ -19,7 +19,7 @@ struct HappyNumber {
     //
     //Solution Description:
     //Treating the possible sums as a linked list, we can use fast and slow pointers to determine if we have entered a cycle. If
-    //the two pointers meet then we have entered a cycle and can return false, else we contine to check if `hare` is 1 and return
+    //the two pointers meet then we have entered a cycle and can return false, else we continue to check if `hare` is 1 and return
     //true if it does
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare

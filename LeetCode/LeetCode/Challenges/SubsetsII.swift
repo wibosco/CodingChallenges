@@ -18,7 +18,7 @@ struct SubsetsII {
     //backtracking
     //recursive
     //DFS
-    //graph theorys
+    //graph theory
     //n-ary tree
     //inout
     //
@@ -55,7 +55,7 @@ struct SubsetsII {
             if i != left && nums[i] == nums[i - 1] {
                 //skip duplicates of the same number here
                 //we will catch them on through the next DFS call i.e. the next startingIndex will be the duplicate index
-                //(hence the first conditon of `i > startingIndex`) so for [2, 2, 2, 5] curr will eventually be `[2, 2, 2]`
+                //(hence the first condition of `i > startingIndex`) so for [2, 2, 2, 5] curr will eventually be `[2, 2, 2]`
                 //through the DFS call so no need to build that here as well
                 continue
             }

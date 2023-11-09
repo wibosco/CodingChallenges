@@ -14,7 +14,7 @@ struct Substring {
     //Time: O(n^2) where n is the number of characters in `s`
     //Space: O(n)
     //DFS
-    //recrusive
+    //recursive
     //array
     //subarray
     //string

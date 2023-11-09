@@ -41,16 +41,16 @@ final class BinarySearchTreeDepth {
     
     // MARK: - Visit
     
-    private func visited(node: BinarySearchTreeDepthNode, nodesVisted: inout [BinarySearchTreeDepthLinkedList]) {
+    private func visited(node: BinarySearchTreeDepthNode, nodesVisited: inout [BinarySearchTreeDepthLinkedList]) {
         let depth = node.depth
         
         var list: BinarySearchTreeDepthLinkedList
         
-        if depth > (nodesVisted.count - 1) {
+        if depth > (nodesVisited.count - 1) {
             list = BinarySearchTreeDepthLinkedList()
-            nodesVisted.append(list)
+            nodesVisited.append(list)
         } else {
-            list = nodesVisted[node.depth]
+            list = nodesVisited[node.depth]
         }
         
         list.addNode(binarySearchNode: node)
@@ -61,19 +61,19 @@ final class BinarySearchTreeDepth {
     func nodesInDepth() -> [BinarySearchTreeDepthLinkedList] {
         var nodesVisited = [BinarySearchTreeDepthLinkedList]()
         
-        nodesInDepth(root: root, nodesVisted: &nodesVisited)
+        nodesInDepth(root: root, nodesVisited: &nodesVisited)
         
         return nodesVisited
     }
     
-    private func nodesInDepth(root: BinarySearchTreeDepthNode?, nodesVisted: inout [BinarySearchTreeDepthLinkedList]) {
+    private func nodesInDepth(root: BinarySearchTreeDepthNode?, nodesVisited: inout [BinarySearchTreeDepthLinkedList]) {
         guard let root = root else {
             return
         }
         
-        visited(node: root, nodesVisted: &nodesVisted)
+        visited(node: root, nodesVisited: &nodesVisited)
         
-        nodesInDepth(root: root.left, nodesVisted: &nodesVisted)
-        nodesInDepth(root: root.right, nodesVisted: &nodesVisted)
+        nodesInDepth(root: root.left, nodesVisited: &nodesVisited)
+        nodesInDepth(root: root.right, nodesVisited: &nodesVisited)
     }
 }

@@ -55,8 +55,8 @@ struct ReverseLinkedList {
     //recursive
     //
     //Solution Description:
-    //Recusively iterate through the list, shrinking the list by one with each call until we get to the tail (base case) i.e.
-    //node with no `next`. We return the tail back up the call stack. With each return we take the head at thay level and
+    //Recursively iterate through the list, shrinking the list by one with each call until we get to the tail (base case) i.e.
+    //node with no `next`. We return the tail back up the call stack. With each return we take the head at that level and
     //reverse the pointer relationship with its next node i.e. from `head -> next` to `next -> head` (remembering to set the
     //next of head to nil to avoid introducing a cycle). We continue this until all nodes in the list have been swapped.
     static func reverseListRecursive(_ head: ListNode?) -> ListNode? {
@@ -98,10 +98,10 @@ struct ReverseLinkedList {
         var left = head
         
         while tail != left {
-            let tailDetacted = tail.next
+            let tailDetached = tail.next
             tail.next = left
             left = left.next!
-            tail.next?.next = tailDetacted
+            tail.next?.next = tailDetached
         }
         
         return tail
@@ -112,7 +112,7 @@ struct ReverseLinkedList {
     //linked list
     //
     //Solution Description:
-    //Iterate througgh the list placing each array in order into an array. Once we have all nodes in the array iterate
+    //Iterate through the list placing each array in order into an array. Once we have all nodes in the array iterate
     //through the array in reverse order in pairs, swapping the order of the pair around and reattaching the swap nodes
     //with the surrounding nodes.
     static func reverseListArray(_ head: ListNode?) -> ListNode? {

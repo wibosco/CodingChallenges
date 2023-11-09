@@ -20,12 +20,12 @@ struct MinimumFuelCostToReportToTheCapital {
     //inout
     //
     //Solution Description:
-    //First we convery our edges array `roads` into an adjacency list - as this graoh forms a tree we know that we know we
+    //First we convert our edges array `roads` into an adjacency list - as this graph forms a tree we know that we know we
     //don't have any loops or isolated nodes however the `roads` elements are not in parent->child ordering so we need to
-    //add two edges for each `roads` element. Next starting from the root node we perform a DFS traversal by recusively
+    //add two edges for each `roads` element. Next starting from the root node we perform a DFS traversal by recursively
     //iterating through the tree until we reach the leaf nodes and then returning the number of passengers that meet at
-    //each parent node back up the tree. With each upward step we track the number of passengers arrivng at the current
-    //node and calculate how many cars where involved in that final step (from neightbor/child-node to current-node). Note
+    //each parent node back up the tree. With each upward step we track the number of passengers arriving at the current
+    //node and calculate how many cars where involved in that final step (from neighbor/child-node to current-node). Note
     //that mismatch there between calculating how many passengers are here vs how many care it came to get here. Once we
     //have iterated through all neighbor (excluding the parent relationship) we return the total number of passengers at
     //this node so that it's parent node can calculate how many cars will be required.

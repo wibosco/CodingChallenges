@@ -19,8 +19,8 @@ struct VerifyingAnAlienDictionary {
     //
     //Solution Description:
     //Store the `order` in a dictionary to allow constant look up time when comparing two letters. Take each word and compare it
-    //with its right neighbor by comparng each letter against the letter at the same position of the neighbor. If the if left
-    //neighbor is ever greater then this ordering is incorrect and we can return false. We contine this until we run out of
+    //with its right neighbor by comparing each letter against the letter at the same position of the neighbor. If the if left
+    //neighbor is ever greater then this ordering is incorrect and we can return false. We continue this until we run out of
     //letters in one the words. If having reached the end of one of the words without finding a difference we compare the lengths
     //with the shorter word needing to come first
     //

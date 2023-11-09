@@ -12,7 +12,7 @@ import Foundation
 //binary tree
 struct FibonacciNumber {
     
-    //Time: O(n) where n is each number in the squence n - 0
+    //Time: O(n) where n is each number in the sequence n - 0
     //Space: O(1)
     //bottom up
     //iterative
@@ -42,7 +42,7 @@ struct FibonacciNumber {
         return curr
     }
     
-    //Time: O(n) where n is each number in the squence n - 0
+    //Time: O(n) where n is each number in the sequence n - 0
     //Space: O(n) for both the stack and `memo` size
     //top down
     //memoization
@@ -54,7 +54,7 @@ struct FibonacciNumber {
     //Using a top-down approach calculate the value for each `n` and add them together. This value is then stored so that there
     //is no need to re-calculate (and so prevent the same recursive stack being built multiple times e.g. notice how
     //`8, 5, 3, 2, 1, 1, 0` contains `5, 3, 2, 1, 1, 0` so there than recalculating `5, 3, 2, 1, 1, 0` we just store it away
-    //as the value we get for a fib squence of `5` and if we need get the fib squence of `5` we returned it directly from
+    //as the value we get for a fib sequence of `5` and if we need get the fib sequence of `5` we returned it directly from
     //that store.
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return

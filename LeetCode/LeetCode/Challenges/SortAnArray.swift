@@ -20,7 +20,7 @@ struct SortAnArray {
     //Solution Description:
     //Using min-heap we are able sort `nums` using heap sort. First we fill the heap with the contents of `nums` and then
     //gradually the top element from the heap - each removal causes the heap to re-arrange itself and ensure that the next
-    //smaleest value in that heap is now at the top. As we empty to heap we fill the `sorted` array.
+    //smallest value in that heap is now at the top. As we empty to heap we fill the `sorted` array.
     static func sortArray(_ nums: [Int]) -> [Int] {
         var heap = Heap(elements: nums) { $0 < $1 }
         var sorted = [Int]()
@@ -110,7 +110,7 @@ struct SortAnArray {
     //Solution Description:
     //Using counting sort we iterate through all elements in `nums` and store how often they appear in the dictionary `countMap`
     //i.e. the element is keys and the frequency is the value. We also keep track of the lowest and highest element that we
-    //seen to allow for performat retrieve of those frequency values. After counting all frequencies we then iterate from `low`
+    //seen to allow for performant retrieve of those frequency values. After counting all frequencies we then iterate from `low`
     //to `high` and check if that value has an entry in the dictionary. If it does have an entry then we add the value of the
     //current iteration `i` to the `sorted` array `count` times; if it doesn't we skip it. As we are going from low to high we
     //will be adding those values in non-descending order.
@@ -185,8 +185,8 @@ struct SortAnArray {
         let sortedIndex = partition(&nums, left, right)
         
         //as the `sortedIndex` is now in its final location we need to sort the remainder of `nums`
-        quickSort(&nums, left, (sortedIndex - 1)) //partiton/sort those elements to the left of the pivot
-        quickSort(&nums, (sortedIndex + 1), right) //partiton/sort those elements to the right of the pivot
+        quickSort(&nums, left, (sortedIndex - 1)) //partition/sort those elements to the left of the pivot
+        quickSort(&nums, (sortedIndex + 1), right) //partition/sort those elements to the right of the pivot
     }
     
     private static func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {

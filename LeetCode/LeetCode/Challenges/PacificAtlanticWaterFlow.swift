@@ -106,7 +106,7 @@ struct PacificAtlanticWaterFlow {
     }
     
     //Time: O(n * m)^2 where n is the number of rows in `heights`
-    //                 where m is the number of columnds in `heights`
+    //                 where m is the number of columns in `heights`
     //Space: O(n * m)
     //visited
     //DFS
@@ -120,7 +120,7 @@ struct PacificAtlanticWaterFlow {
     //We perform a DFS from every cell in `heights`, checking if that cell can reach both the Pacific and Atlantic oceans.
     //As the pacific ocean is above and to the left of the matrix, if our DFS reaches the first row or column then we mark
     //that cell as "Pacific ocean reachable"; as the Atlantic ocean is below and to the right of the matrix, if our DFS
-    //reach the final row or coumn then we mark that as "Atlantic ocean reachable". We don't exit upon finding an ocean
+    //reach the final row or column then we mark that as "Atlantic ocean reachable". We don't exit upon finding an ocean
     //as it's possible the the matrix might require traversing one border to reach the other ocean. We use relative
     //indexing to determine which cells we can move to. To avoid an infinite loop we use a `visited` set so that we don't
     //visited the same cell twice in that DFS iteration. If both oceans are reachable from a cell we add it to `reachBoth`.

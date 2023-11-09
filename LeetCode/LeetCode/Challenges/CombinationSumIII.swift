@@ -23,14 +23,14 @@ struct CombinationSumIII {
     //Treating the possible combinations as multiple n-ary trees and treating the possible values as an array. Using a
     //DFS backtracking approach we attempt to produce all possible combinations of `candidates` to reach our `target`
     //value. We do this by taking each element in turn from the `candidates` array and performing a DFS from that
-    //element until we either reach the `target` value, overshoot or exceed the limit on number of values (to simplifly
+    //element until we either reach the `target` value, overshoot or exceed the limit on number of values (to simplify
     //things we attempt to get to 0 rather than the target, this means we only need to have one parameter to know if the
     //combination is valid i.e. 0 than the two we would need if we attempt to add up to target). Each level that we go
     //down we build up the `combination` array of candidate values that led us to that point. If we reach 0 and have the
     //required number of values then that branch produces a valid combination and we add it to `combinations`; if we go
     //negative or exceed the number of values limit then we abandon that branch, remove the element that caused the
     //overshoot and try the next element in the `combinations` array for that level. As `candidates` can contain the same
-    //number multiple times but our result should only have unique values we need to sort `candidatates` and skip any
+    //number multiple times but our result should only have unique values we need to sort `candidates` and skip any
     //duplicates directly from that levels combinations. It's important to note that the duplicate combinations will still
     //be checked but only once with this approach so avoiding any duplicate combinations that are just out-of-order.
     //We repeat this process until all possible combinations have been tried.

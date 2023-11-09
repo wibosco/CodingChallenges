@@ -18,7 +18,7 @@ struct NumberOfSubsequencesThatSatisfyTheGivenSumCondition {
     //maths
     //
     //Solution Description:
-    //We need to calculate sunsqeuences of `nums` that are equal to or less than `target` but we only care about the minimum and
+    //We need to calculate subsequences of `nums` that are equal to or less than `target` but we only care about the minimum and
     //maximum values in those subsequences. So by sorting the `nums` we are able to use two pointers to iterate through `nums`
     //and calculate those sums without missing any subsequences. We do by controlling with pointers we move:
     //
@@ -28,10 +28,10 @@ struct NumberOfSubsequencesThatSatisfyTheGivenSumCondition {
     //We can then calculate the number of possible subsequences between `left` and `right` with maths rather than with a DFS
     //operation. We repeat this process until `left` crosses `right`.
     //
-    //N.B. the modulo operations are only here to satisify the leetcode question, if `nums` contained small enough values there
+    //N.B. the modulo operations are only here to satisfy the leetcode question, if `nums` contained small enough values there
     //would be no need for them.
     //
-    //N.B. The possible subsqeuence count formula is `2 ^ subsequence-element-count`
+    //N.B. The possible subsequence count formula is `2 ^ subsequence-element-count`
     static func numSubseq(_ nums: [Int], _ target: Int) -> Int {
         let nums = nums.sorted()
         let mod = 1000000007 //modulo operation as required

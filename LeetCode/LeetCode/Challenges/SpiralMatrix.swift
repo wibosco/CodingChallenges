@@ -26,8 +26,8 @@ struct SpiralMatrix {
     //
     //Solution Description:
     //A spiral will go right -> down -> left -> up, until all cells have been visited, this means that if we hit a boundary
-    //we move onto the next direction e.g. from traveling `right` to `down`. There are two types of boundaries: the edges of
-    //the matrix and hitting an already visited cell. So we have astate machine that will change direction when needed and we
+    //we move onto the next direction e.g. from travelling `right` to `down`. There are two types of boundaries: the edges of
+    //the matrix and hitting an already visited cell. So we have a state machine that will change direction when needed and we
     //know the maximum number of possible moves (the number of cells in `matrix`) so all that is left so for us to track the
     //cells that have been visited in `visited`, append the current cells value to `order` and decrement `possibleMoves` until
     //all cells have been visited.

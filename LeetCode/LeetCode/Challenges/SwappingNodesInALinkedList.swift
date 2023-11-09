@@ -57,7 +57,7 @@ struct SwappingNodesInALinkedList {
     //linked list
     //
     //Solution Description:
-    //We itereate through the linked list twice. The first time to determine the size of the linked list and the second time
+    //We iterate through the linked list twice. The first time to determine the size of the linked list and the second time
     //to capture the nodes that will be swapped using that count to help determine which node is the second/right node. We
     //then exchange their `val` values - note that there is not need to actually move the node itself just the value it
     //represents.
@@ -107,7 +107,7 @@ struct SwappingNodesInALinkedList {
     //
     //Solution Description:
     //We move through the linked list and store each node that we encounter into an array. We then take the two we are interested
-    //in swapping and exhange their `val` values - note that there is not need to actually move the node itself just the value it
+    //in swapping and exchange their `val` values - note that there is not need to actually move the node itself just the value it
     //represents.
     static func swapNodesArray(_ head: ListNode?, _ k: Int) -> ListNode? {
         var array = [ListNode]()

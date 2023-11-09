@@ -22,14 +22,14 @@ struct TwoSum {
     //to check for if the difference between the current `nums` element and target has already been seen. If that difference is
     //in `visited` we return the two indexes with the visited index being first (as it came before the current element)
     static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var visted = [Int: Int]() //[num: index]
+        var visited = [Int: Int]() //[num: index]
         
         for (index, num) in nums.enumerated() {
             let delta = target - num
-            if let partner = visted[delta] {
+            if let partner = visited[delta] {
                 return [partner, index]
             }
-            visted[num] = index
+            visited[num] = index
         }
         
         return [Int]()

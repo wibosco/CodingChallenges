@@ -19,7 +19,7 @@ struct NonDecreasingArray {
     //Using three pointers we iterate through `nums` comparing the elements found at `center` and `right` to determine if that pair
     //is non-descending. If they are non-descending with increment the pointers and check the next pair; if they are descending we
     //need to determine which element to update `center` or `right`. We can't just assume that we can update `center` as it's
-    //possible thay doing so will result in `center` now being non-descending with `left`. Instead we need to determine which of
+    //possible that doing so will result in `center` now being non-descending with `left`. Instead we need to determine which of
     //`center` and `right` to update by comparing `right` against `left`. If `right` has a value that is non-descending then we can
     //update `center` with the value at `right` - we take value at `right` which is the smallest change we know we can make; if
     //`right` is descending from `left` then we update `right` to be `center` - we know that `center` will be non-descending in

@@ -20,7 +20,7 @@ struct KthLargestElementInArray {
     //
     //Solution Description:
     //Using `quick select` we sort `nums` around a pivot by gradually partitioning `nums` into a smaller and smaller array.
-    //As we are not aiming to fully sort `nums`, after each partiton (if we haven't sorted `k` into its final position) we
+    //As we are not aiming to fully sort `nums`, after each partition (if we haven't sorted `k` into its final position) we
     //only need to further sort that partition that contains the `k` index. As quick sort will sort in ascending order to
     //find the largest Kth element we need to invert `k` by counting `k` elements from the end to return the correct value.
     //

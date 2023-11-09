@@ -21,10 +21,10 @@ struct KokoEatingBananas {
     //Solution Description:
     //Koko can eat at a minimum 1 banana an hour and at a maximum Koko can one pile i.e. the largest pile. We can treat this
     //min..max range as a sorted list of possible bananas eaten per hour. Performing a binary search on this range will allow
-    //us to find the minimum eating speed by dscarding half the speeds after each step until we run out of range. If the eating
+    //us to find the minimum eating speed by discarding half the speeds after each step until we run out of range. If the eating
     //speed is too small to eat all bananas in `h` time then we increase the speed by moving the left boundary right so to limit
     //our search range to faster speeds; if we are able to eat all bananas with `h` time then we know what going any quicker
-    //will also result in all bananas so we can discard those speeds as we want the minimum eating speeed i.e move the right
+    //will also result in all bananas so we can discard those speeds as we want the minimum eating speed i.e move the right
     //boundary left so to limit our search range to slower speeds.
     static func minEatingSpeed(_ piles: [Int], _ h: Int) -> Int {
         var left = 1 //slowest eating speed

@@ -26,7 +26,7 @@ struct MaximumSubarray {
     //accept them into the current subarray sum. To do we need to be "greedy" - if adding a value to the current subarray
     //sum takes us below the value that was added then that value was more valuable on its own (e.g. [-1, 4] if we start
     //the subarray sum from index 0 then the it would be 3 however if we start it from index 1 then it would be 4) and we
-    //need to start a new subbarray sum; if adding a value to the current subarray sum takes us above the value that was
+    //need to start a new subarray sum; if adding a value to the current subarray sum takes us above the value that was
     //added then we continue with that subarray sum. We then compare that new subarray sum with the maximum/greatest
     //subarray sum that we have seen so far and keep the larger of the two.
     //

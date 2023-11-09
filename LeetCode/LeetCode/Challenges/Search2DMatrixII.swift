@@ -20,7 +20,7 @@ struct Search2DMatrixII {
     //Solution Description:
     //We can use the fact that each column and row is sorted (exclusive to each other) to search for the `target` using
     //binary search on either row and column. By using binary search we are able to discard half the search space (row or
-    //column) everytime we don't find the target. Below we are search columns.
+    //column) every time we don't find the target. Below we are search columns.
     static func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
         //search columns
         for i in 0..<matrix[0].count {
@@ -52,7 +52,7 @@ struct Search2DMatrixII {
     //Solution Description:
     //We can use the fact that each column and row is sorted (exclusive to each other) to search for the `target` using
     //binary search on either row and column. By using binary search we are able to discard half the search space (row or
-    //column) everytime we don't find the target. Below we are search row.
+    //column) every time we don't find the target. Below we are search row.
     static func searchMatrixRows(_ matrix: [[Int]], _ target: Int) -> Bool {
         //search rows
         for row in matrix {

@@ -20,7 +20,7 @@ struct NumberOfPairsOfInterchangeableRectangles {
     //Solution Description:
     //First we iterate through `rectangles` and calculate the ratio for each triangle which is then stored in a `frequency`
     //dictionary with the same ratio resulting in the value of the dictionary being incremented. Next we loop through
-    //`ratios` and build up the `interchangeable` value by using the `(n * (n - 1)) / 2` formula of determing the number
+    //`ratios` and build up the `interchangeable` value by using the `(n * (n - 1)) / 2` formula of determining the number
     //of unique combinations from the possible permutations.
     static func interchangeableRectangles(_ rectangles: [[Int]]) -> Int {
         var frequency = [Double: Int]() //[ratio: count]

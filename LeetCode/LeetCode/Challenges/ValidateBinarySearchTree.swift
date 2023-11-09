@@ -52,7 +52,7 @@ struct ValidateBinarySearchTree {
     //DFS
     //
     //Solution Description:
-    //A binary search tree follows the princple that nodes to the left of root are less and nodes to the right are greater.
+    //A binary search tree follows the principle that nodes to the left of root are less and nodes to the right are greater.
     //This property means that an in-order traversal of a binary tree should result in an ascending sorted array of that
     //trees nodes if it is a binary search tree. So we perform an in-order traversal of this tree and check if it's nodes
     //are in ascending order

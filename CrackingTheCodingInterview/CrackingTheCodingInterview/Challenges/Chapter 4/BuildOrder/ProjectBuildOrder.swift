@@ -25,21 +25,21 @@ struct ProjectBuildOrder {
     
         for node in nodes {
             if !node.pathVisited {
-                buildOrder(rootNode: node, vistedNodes: &orderedNodes)
+                buildOrder(rootNode: node, visitedNodes: &orderedNodes)
             }
         }
         
         return orderedNodes
     }
     
-    private  static func buildOrder(rootNode: ProjectBuildOrderNode, vistedNodes: inout [ProjectBuildOrderNode]) {
+    private  static func buildOrder(rootNode: ProjectBuildOrderNode, visitedNodes: inout [ProjectBuildOrderNode]) {
         for dependency in rootNode.dependencies {
             if !dependency.pathVisited {
-                buildOrder(rootNode: dependency, vistedNodes: &vistedNodes)
+                buildOrder(rootNode: dependency, visitedNodes: &visitedNodes)
             }
         }
         
-        vistedNodes.append(rootNode)
+        visitedNodes.append(rootNode)
         rootNode.pathVisited = true
     }
     

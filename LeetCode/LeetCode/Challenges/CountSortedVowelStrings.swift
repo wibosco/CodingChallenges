@@ -11,7 +11,7 @@ import Foundation
 //string
 struct CountSortedVowelStrings {
     
-    //Time: O(n^5) where n is the lenght of the generated string, 5 is the number of possible choices at each index
+    //Time: O(n^5) where n is the length of the generated string, 5 is the number of possible choices at each index
     //Space: O(1)
     //DFS
     //recursive
@@ -21,7 +21,7 @@ struct CountSortedVowelStrings {
     //
     //Solution Description:
     //Using DFS we and a sorted array `vowels`, we create all possible non-descending combinations of vowels for the given
-    //length `n`. At each recusive call we start extracting elements from `vowels` at the `currentIndex` value which is the
+    //length `n`. At each recursive call we start extracting elements from `vowels` at the `currentIndex` value which is the
     //previous calls index - this ensures that the combination that we are constructing is non-descending.
     static func countVowelStrings(_ n: Int) -> Int {
         let vowels = ["a", "e", "i", "o", "u"]

@@ -43,15 +43,15 @@ struct PopulatingNextRightPointersII {
                 }
                 
                 head?.left?.next = head?.right ?? (nextHead?.left ?? nextHead?.right)
-                //don't need to concerned here about double assigning either nexthead
-                //node as any nexthead node is only assigned if right was nil so
+                //don't need to concerned here about double assigning either `nextHead`
+                //node as any `nextHead` node is only assigned if right was nil so
                 //turning this into a no-op
                 head?.right?.next = nextHead?.left ?? nextHead?.right
                 
                 head = head?.next
             }
             
-            var nextLeftMostNode = leftMostNode //find next node to be leftmost - it isn[t neccesaary the next left node
+            var nextLeftMostNode = leftMostNode //find next node to be leftmost - it isn[t necessary the next left node
             while nextLeftMostNode != nil {
                 if nextLeftMostNode?.left != nil || nextLeftMostNode?.right != nil {
                     break

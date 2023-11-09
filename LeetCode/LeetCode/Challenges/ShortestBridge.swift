@@ -25,7 +25,7 @@ struct ShortestBridge {
     //
     //Solution Description:
     //First we use DFS to find and fully search one of the two islands using DFS and relative indexing. We then use that
-    //island's indexes as the queue for usingg BFS to find the other island. Using BFS allows us to search in a
+    //island's indexes as the queue for using BFS to find the other island. Using BFS allows us to search in a
     //level-by-level fashion and so ensure that minimum number of steps are used to bridge the two islands.
     //
     //N.B. A set is used for the queue in the BFS section to minimise memory usage.

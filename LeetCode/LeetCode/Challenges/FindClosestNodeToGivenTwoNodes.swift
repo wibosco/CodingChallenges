@@ -12,7 +12,7 @@ struct FindClosestNodeToGivenTwoNodes {
     
     //Time: O(n) where n is number of nodes in `edges`
     //Space: O(n)
-    //graph thoery
+    //graph theory
     //DFS
     //dictionary
     //visited

@@ -17,10 +17,10 @@ struct BullsAndCows {
     //
     //Solution Description:
     //First we iterate through both `secret` and `guess` and compare each character at the same position against each other. If
-    //the characters match then we have found a `bull` and can increment `bullCount`; if they don't match we have potentnally
+    //the characters match then we have found a `bull` and can increment `bullCount`; if they don't match we have potentially
     //found `cows` and we add each to `nonMatchingSecret` and `nonMatchingGuess`. Once all bulls have been found, we use the
     //keys of `nonMatchingGuess` to find at `cow` characters. As each `cow` character must be paired between `nonMatchingSecret`
-    //and `nonMatchingGuess` we take the min of the counts that we collected as this will only include the pairing reguardless
+    //and `nonMatchingGuess` we take the min of the counts that we collected as this will only include the pairing regardless
     //of which dictionary holds the smaller count. Finally we format and return the counts.
     static func getHint(_ secret: String, _ guess: String) -> String {
         var bullCount = 0

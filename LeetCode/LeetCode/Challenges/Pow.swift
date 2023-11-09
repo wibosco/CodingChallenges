@@ -28,7 +28,7 @@ struct Pow {
     //`2 * 2 * 2 * 2` - the way multiplication works this is work can be halved i.e. if we know `2 * 2` then we know that
     //we can square that to get the same result as `2 * 2 * 2 * 2`. We don't have to perform the all individual steps,
     //instead we take we make `n / 2` calculations and then one more calculation i.e. `4 * 4` so we went from 4 steps to
-    //3 steps. We can reduce the number of steps until eventually we get an expontent value of 0 which will result in `1`
+    //3 steps. We can reduce the number of steps until eventually we get an exponent value of 0 which will result in `1`
     //being returned regardless of the value of `x`. So if we take the exponent and gradually reduce it it down to zero
     //we can then recursively come back through those calculations using the result of the previous calculation squared
     //to generate the current levels result. The gotcha here is if our exponent is an odd number as this doesn't divide in

@@ -22,7 +22,7 @@ struct RotateImage {
     //2. Reverse each row
     //
     //In the first step we iterate through the array and swap corresponding elements around the left-to-right central diagonal.
-    //It's important to note that each inner iteration we are only swapping two elments and that the central diagonal itself
+    //It's important to note that each inner iteration we are only swapping two elements and that the central diagonal itself
     //is never swapped e.g
     //
     //[1,   2,  3,  4,  5]
@@ -70,7 +70,7 @@ struct RotateImage {
     //math
     //
     //Solution Description:
-    //When rotating a matrix by 90 degress we are really rotating 4 cells together i.e. A moves to B, B moves to C, C moves
+    //When rotating a matrix by 90 degrees we are really rotating 4 cells together i.e. A moves to B, B moves to C, C moves
     //to D and D moves to A. So in order to rotate we need to group cells into 4 and rotate each cell onto the other cells
     //current location.
     static func rotateMath(_ matrix: inout [[Int]]) {
@@ -98,7 +98,7 @@ struct RotateImage {
     //there are 3 possible rotations of 90 degrees we need to rotate the matrix 3 times to exhaust all possible configurations.
     //On each rotation we populate a new matrix - `mat2` to then compare against target. In order to rotate wwe iterate first
     //through each row and then the columns in that. As each column will become a row in the rotated matrix we use the index of
-    //the column as the row index and insert the value as the first element of that row. After popluating the new matrix we
+    //the column as the row index and insert the value as the first element of that row. After populating the new matrix we
     //compare against `target` and if they match we return true else we repeat the process.
     //
     //Similar to: https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/

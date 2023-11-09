@@ -18,7 +18,7 @@ struct ConstructStringFromBinaryTree {
     //recursive
     //
     //Solution Description:
-    //Using a pre-order traversal of the tree, we gradually build up the string representation of treem in a recursive
+    //Using a pre-order traversal of the tree, we gradually build up the string representation of the tree in a recursive
     //manner. Care must be taken when a node doesn't have a left or right child.
     static func tree2str(_ root: BinaryTreeNode?) -> String {
         guard let str = preorder(root) else {

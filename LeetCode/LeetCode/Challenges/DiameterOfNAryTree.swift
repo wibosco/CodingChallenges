@@ -12,7 +12,7 @@ import Foundation
 //graph theory
 struct DiameterOfNAryTree { //DiameterOfN-AryTree
     
-    //Time: O(n log n) where n is the numner of nodes in the tree
+    //Time: O(n log n) where n is the number of nodes in the tree
     //Space: O(c) where `c` is the number of nodes at any level
     //DFS
     //
@@ -26,7 +26,7 @@ struct DiameterOfNAryTree { //DiameterOfN-AryTree
     //                  2
     //                3   4
     //              5   6
-    //If we insisted on each subtreee needing to have two children we would never get down to [3, 4, 5, 6] where the longest
+    //If we insisted on each subtree needing to have two children we would never get down to [3, 4, 5, 6] where the longest
     //diameter is to be found eventually we get back to the root where we stop.
     //
     //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707

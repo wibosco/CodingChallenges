@@ -23,7 +23,7 @@ struct IsGraphBipartite {
     //Solution Description:
     //A bipartite graph is a graph where the vertices/nodes can be split into sets where the nodes within each set don't
     //connect to each other but do connect to nodes in the other set (NB. not necessary for each node in set A to connect
-    //to all nodes in set B but must conect to at least one node). Treating the index of the elements in `graph` as a node
+    //to all nodes in set B but must connect to at least one node). Treating the index of the elements in `graph` as a node
     //we use BFS to traverse from that node to all other connected nodes, in order to split the nodes into different sets
     //we "color" each level of nodes by placing that node in a dictionary (`nodes`) with the node being the key and the
     //"color" being the value. As we iterate through each level of nodes we alternate the "color" for that level. If we
@@ -76,7 +76,7 @@ struct IsGraphBipartite {
     //Solution Description:
     //A bipartite graph is a graph where the vertices/nodes can be split into sets where the nodes within each set don't
     //connect to each other but do connect to nodes in the other set (NB. not necessary for each node in set A to connect
-    //to all nodes in set B but must conect to at least one node). Treating the index of the elements in `graph` as a node
+    //to all nodes in set B but must connect to at least one node). Treating the index of the elements in `graph` as a node
     //we use DFS to traverse from that node to all other connected nodes, in order to split the nodes into different sets
     //we "color" each level of nodes by placing that node in a dictionary (`nodes`) with the node being the key and the
     //"color" being the value. As we iterate through each level of nodes we alternate the "color" for that level. If we

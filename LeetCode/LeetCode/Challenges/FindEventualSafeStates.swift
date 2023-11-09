@@ -25,7 +25,7 @@ struct FindEventualSafeStates {
     //topological sort
     //
     //Solution Description:
-    //A key component of topological sort is that as it's sorting it can it can detect cycles in graph. Here we have stipped away
+    //A key component of topological sort is that as it's sorting it can it can detect cycles in graph. Here we have stripped away
     //the sorting part of topological sort and just kept the cycle detection part. Detecting a cycle in a graph is a little more
     //involved that just tracking the vertices that we have visited, as it is possible to revisit a vertices a number of times in
     //a graph without that revisiting being cycle - different starting vertices connect to that already visited vertice. Rather a
@@ -40,10 +40,10 @@ struct FindEventualSafeStates {
         var visited = [Int: Bool]()
 
         for i in 0..<graph.count {
-            var currentVisitied = Set<Int>()
+            var currentVisited = Set<Int>()
             var detectedCycle = false
 
-            dfs(graph, i, &visited, &currentVisitied, &detectedCycle)
+            dfs(graph, i, &visited, &currentVisited, &detectedCycle)
 
             if !detectedCycle {
                 safeNodes.append(i)
@@ -97,7 +97,7 @@ struct FindEventualSafeStates {
     //topological sort
     //
     //Solution Description:
-    //A key component of topological sort is that as it's sorting it can it can detect cycles in graph. Here we have stipped away
+    //A key component of topological sort is that as it's sorting it can it can detect cycles in graph. Here we have stripped away
     //the sorting part of topological sort and just kept the cycle detection part. Detecting a cycle in a graph is a little more
     //involved that just tracking the vertices that we have visited, as it is possible to revisit a vertices a number of times in
     //a graph without that revisiting being cycle - different starting vertices connect to that already visited vertice. Rather a
@@ -112,9 +112,9 @@ struct FindEventualSafeStates {
         var visited = [Int: Bool]()
         
         for i in 0..<graph.count {
-            var currentVisitied = Set<Int>()
+            var currentVisited = Set<Int>()
 
-            guard !dfsReturnResult(graph, i, &visited, &currentVisitied) else {
+            guard !dfsReturnResult(graph, i, &visited, &currentVisited) else {
                 continue
             }
             

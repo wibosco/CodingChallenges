@@ -20,8 +20,8 @@ struct FindTheTownJudge {
     //
     //Solution Description:
     //Treat this as a graph problem with the `trust` array representing the edges between two vertices. A judge is someone who has
-    //`n - 1` indegree connections and 0 outdegree conections. We first create in intial array to represent all the townfolk, with
-    //the index being the identifier of that person and the value being difference between indegree and outdegree conections i.e.
+    //`n - 1` indegree connections and 0 outdegree connections. We first create in initial array to represent all the townfolk, with
+    //the index being the identifier of that person and the value being difference between indegree and outdegree connections i.e.
     //add 1 for each indegree connection and remove 1 for each outdegree connection. Once all edges have been processed we then
     //iterate through the `townFolk` and check if an element has a value of `n - 1` i.e. trust by all but trusting no one. If there
     //is such an element we have our judge; if not the town doesn't have a judge.

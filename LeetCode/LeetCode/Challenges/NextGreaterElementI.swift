@@ -23,7 +23,7 @@ struct NextGreaterElementI {
     //array. We do this by placing each element we come across in the stack - `stack`. We then check if the current element
     //is greater than the last stack item - if it is greater then we have just found the "next greater element" to that last
     //stack element which we can then add to the `greaterThan` dictionary with the lesser element being the key and the
-    //greater element the value - this used stack element is popped from the stack so it can't be resused; if the last stack
+    //greater element the value - this used stack element is popped from the stack so it can't be reused; if the last stack
     //element is greater than the current element then we just add that current element to the stack and continue iterating.
     //By doing this we won't have to iterate through `nums2` when looking for greater elements in the `nums1` loop instead
     //we will just "jump" straight to that "next greater element" (if it exists) in the `greaterThan` dictionary. It's

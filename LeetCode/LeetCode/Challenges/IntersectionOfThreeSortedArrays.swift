@@ -17,7 +17,7 @@ struct IntersectionOfThreeSortedArrays {
     //
     //Solution Description:
     //Using three pointers we iterate through all three arrays. Where the three pointers values match we add that value to
-    //`insection` and increment all three pointers, if they don't match we increment one of pointers:
+    //`intersection` and increment all three pointers, if they don't match we increment one of pointers:
     //
     //1. p2 if it is less than p1
     //2. p3 if it is less than p1

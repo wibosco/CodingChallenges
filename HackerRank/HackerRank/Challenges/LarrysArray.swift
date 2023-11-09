@@ -75,20 +75,20 @@ final class LarrysArray {
         switch sequence {
         case .BCA:
             let indexOfAAfterRotation = startingIndex + 2
-            let indexOfBAftereRotation = startingIndex
+            let indexOfBAfterRotation = startingIndex
             let indexOfCAfterRotation = startingIndex + 1
             
             rotatedValues[indexOfAAfterRotation] = values[indexOfABeforeRotation]
-            rotatedValues[indexOfBAftereRotation] = values[indexOfBBeforeRotation]
+            rotatedValues[indexOfBAfterRotation] = values[indexOfBBeforeRotation]
             rotatedValues[indexOfCAfterRotation] = values[indexOfCBeforeRotation]
             
         case .CAB:
             let indexOfAAfterRotation = startingIndex + 1
-            let indexOfBAftereRotation = startingIndex + 2
+            let indexOfBAfterRotation = startingIndex + 2
             let indexOfCAfterRotation = startingIndex
             
             rotatedValues[indexOfAAfterRotation] = values[indexOfABeforeRotation]
-            rotatedValues[indexOfBAftereRotation] = values[indexOfBBeforeRotation]
+            rotatedValues[indexOfBAfterRotation] = values[indexOfBBeforeRotation]
             rotatedValues[indexOfCAfterRotation] = values[indexOfCBeforeRotation]
         }
         

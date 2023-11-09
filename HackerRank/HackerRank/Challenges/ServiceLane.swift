@@ -11,7 +11,7 @@ import Foundation
 //https://www.hackerrank.com/challenges/service-lane
 final class ServiceLane {
 
-     static func largestVechile(servicelane: [Int], entrance: Int, exit: Int) -> Int {
+     static func largestVehicle(servicelane: [Int], entrance: Int, exit: Int) -> Int {
         
         var smallestWidth = 5
         

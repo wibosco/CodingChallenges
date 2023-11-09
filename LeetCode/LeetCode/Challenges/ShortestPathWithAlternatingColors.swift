@@ -27,7 +27,7 @@ struct ShortestPathWithAlternatingColors {
     //to determine the distance from node 0. In order to do this we only add neighbor nodes to `queue` if that edge has a
     //different color than the edge we used to get there, this means tha the `queue` holds the current node and the color of the
     //edge that got us to the current node. As this graph might have loops we store the path we have taken in the `visited` set.
-    //As this graph can have multiple paths to get to that node and those other pathes might be the quickest way to get to that
+    //As this graph can have multiple paths to get to that node and those other paths might be the quickest way to get to that
     //node via a different color edge, when we insert into `visited` we insert both the node itself and the edge color that got
     //us here. As some nodes won't be reachable we default the `distances` array to `-1`. After all paths from node 0 have been
     //search we return `distances`.

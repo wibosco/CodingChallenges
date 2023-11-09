@@ -49,7 +49,7 @@ struct UniqueLength3PalindromicSubsequences {
         var leftEdgeOptions = Set<Character>()
                 
         for mid in s {
-            //remove mid from possible characters that can be choosen as the right chrarcter of a palindrome
+            //remove mid from possible characters that can be chosen as the right character of a palindrome
             rightEdgeOptions[mid, default: 0] -= 1
             
             for l in leftEdgeOptions { //regardless of the distance between the palindrome edges, this inner will only run 26 times
@@ -59,7 +59,7 @@ struct UniqueLength3PalindromicSubsequences {
                 }
             }
             
-            //move mid into the possible characters that can be choosen at as the left character of a palindrome
+            //move mid into the possible characters that can be chosen at as the left character of a palindrome
             leftEdgeOptions.insert(mid)
         }
         
@@ -75,8 +75,8 @@ struct UniqueLength3PalindromicSubsequences {
     //
     //Solution Description:
     //First we iterate through `s` to determine the start and end indexes of all matching characters - we are only interested
-    //in the start and end indexes as matches inbetween will result in the same palindrome (matching palindromes are
-    //discarded). We then itereate through those characters that occur at least twice in `s` and add each charcter that falls
+    //in the start and end indexes as matches in-between will result in the same palindrome (matching palindromes are
+    //discarded). We then iterate through those characters that occur at least twice in `s` and add each character that falls
     //between the start and end index to the `palindromes` set. At the end of each pairing we add the count of unique
     //palindromes to `count`.
     static func countPalindromicSubsequenceNested(_ s: String) -> Int {

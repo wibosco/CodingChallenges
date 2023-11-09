@@ -15,14 +15,14 @@ final class NewYearChaos {
         
         var numberOfBribesToAchieveQueue = 0
         
-        let maxmimumQueueJump = 2
+        let maximumQueueJump = 2
         
         for index in 0..<queue.count {
             
             let expectedValueAtIndex = (index + 1)
             let actualValueAtIndex = queue[index]
             
-            if (actualValueAtIndex - maxmimumQueueJump) > expectedValueAtIndex {
+            if (actualValueAtIndex - maximumQueueJump) > expectedValueAtIndex {
                 
                 return -1
             } else {
@@ -84,14 +84,14 @@ final class NewYearChaos {
     
      static func isValidQueue(queue: [Int]) -> Bool {
     
-        let maxmimumQueueJump = 2
+        let maximumQueueJump = 2
         
         for index in 0..<queue.count {
             
             let expectedValueAtIndex = (index + 1)
             let actualValueAtIndex = queue[index]
             
-            if (actualValueAtIndex - maxmimumQueueJump) > expectedValueAtIndex {
+            if (actualValueAtIndex - maximumQueueJump) > expectedValueAtIndex {
                 
                 return false
             }

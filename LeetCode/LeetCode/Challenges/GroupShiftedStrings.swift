@@ -19,7 +19,7 @@ struct GroupShiftedStrings {
     //wrapping
     //
     //Solution Description:
-    //For each string in `strings` we calculte the distance between each character in that string - we repeat until we
+    //For each string in `strings` we calculate the distance between each character in that string - we repeat until we
     //calculate the distance for each character in that string. We then use those distances as the key for the `groupings`
     //dictionary with the string as the value. If two strings have the same distance then it means that they have been
     //rotated the same number of times and so match - this matching string is added to the `grouping` dict under the same

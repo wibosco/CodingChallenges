@@ -17,11 +17,11 @@ struct RotateArray {
     //two pointers
     //
     //Solution Description:
-    //To avoid having to use extra memory we can think of the rotatated `nums` as having two partitions - the right-shifted
+    //To avoid having to use extra memory we can think of the rotated `nums` as having two partitions - the right-shifted
     //partition and the wrapped-around partition. In the final rotated array the right-shifted partition will start from `k`
-    //to `nums.count -1`; the wrapped-around parition will start from 0 to `k - 1`. The first step to creating these
+    //to `nums.count -1`; the wrapped-around partition will start from 0 to `k - 1`. The first step to creating these
     //rotated partitions is to reverse the elements in `nums` so that the elements of `nums` are in the right partition -
-    //albeit not at the right indexes. Next treating `k` as the pivot point we reverse the order of each parition which
+    //albeit not at the right indexes. Next treating `k` as the pivot point we reverse the order of each partition which
     //shifts each element into it's correct index.
     //
     //N.B. If `k` is actually larger than `nums.count` by performing a modulo operation we will actually "scope" `k` to the

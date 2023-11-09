@@ -17,7 +17,7 @@ struct FindPivotIndex {
     //
     //Solution Description:
     //First we calculate the total sum of all elements in `nums` and store that in `rightSum`. We then iterate through `nums`
-    //again this time substracting the current `num` value from `rightSum` and then comparing that update `rightSum` against
+    //again this time subtracting the current `num` value from `rightSum` and then comparing that update `rightSum` against
     //`leftSum` - note that we don't yet add `num` to `leftSum`. If those two value are equal then we have found the pivot
     //index and can return `i`; if they are not equal we add `num` to `leftSum` and continue iterating. If have iterated
     //through all elements in `nums` we haven't found the pivot index we return `-1`.

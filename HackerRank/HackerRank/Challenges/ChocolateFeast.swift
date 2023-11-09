@@ -11,24 +11,24 @@ import Foundation
 //https://www.hackerrank.com/challenges/chocolate-feast
 final class ChocolateFeast {
     
-     static func countOfEatenChocolates(dollarsInPocket: Int, chocolatePrice: Int, wrapperExchangeTheshold: Int) -> Int {
+     static func countOfEatenChocolates(dollarsInPocket: Int, chocolatePrice: Int, wrapperExchangeThreshold: Int) -> Int {
         let chocolatesBrought = dollarsInPocket/chocolatePrice
         let chocolatesExchanged = exchangeWrappersForChocolate(chocolatesBrought,
-                                                               wrapperExchangeTheshold)
+                                                               wrapperExchangeThreshold)
         
         return chocolatesBrought + chocolatesExchanged
     }
     
-     static func exchangeWrappersForChocolate(_ wrappers: Int, _ wrapperExchangeTheshold: Int) -> Int {
-        var chocolatesFromExchange = wrappers/wrapperExchangeTheshold
+     static func exchangeWrappersForChocolate(_ wrappers: Int, _ wrapperExchangeThreshold: Int) -> Int {
+        var chocolatesFromExchange = wrappers/wrapperExchangeThreshold
         
         if chocolatesFromExchange > 0 {
-            let leftOverWrappersCount = wrappers % wrapperExchangeTheshold
+            let leftOverWrappersCount = wrappers % wrapperExchangeThreshold
             
             let furtherChocolateExchange = chocolatesFromExchange + leftOverWrappersCount
             
             let potentialFurtherChocolateInExchange = exchangeWrappersForChocolate(furtherChocolateExchange,
-                                                                                   wrapperExchangeTheshold)
+                                                                                   wrapperExchangeThreshold)
             
             if potentialFurtherChocolateInExchange > 0 {
                 chocolatesFromExchange += potentialFurtherChocolateInExchange

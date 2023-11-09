@@ -20,7 +20,7 @@ struct RemoveDuplicateLetters {
     //visited
     //
     //Solution Description:
-    //Using an increasing montonic stack we are able to build the lexicographical ordered version of s. As characters can
+    //Using an increasing monotonic stack we are able to build the lexicographical ordered version of s. As characters can
     //appear multiple times in `s`, we build a frequency table of how often a character appears. Next we iterate through
     //`s`. During iteration we use the monotonic stack to determine if `c` should be added. If we have previously added
     //`c` we skip it; else we compare `c` against the last element in `stack`. If `c` is less than `last` and `last`

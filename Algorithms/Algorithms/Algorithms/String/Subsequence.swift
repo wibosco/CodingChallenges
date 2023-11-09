@@ -14,7 +14,7 @@ struct Subsequence {
     //Time: O(2^n) where n is the number of elements in `s`
     //Space: O(n)
     //DFS
-    //recrusive
+    //recursive
     //backtracking
     //array
     //string
@@ -26,7 +26,7 @@ struct Subsequence {
     //Solution Description:
     //A subsequence is a non-contiguous slice of `s` i.e. while order is preserved some characters can be skipped over. Therefore
     //to generate all subsequences we need to iterate through `s` from every possible position to every possible other position -
-    //in a forwards direction. To this we itereate in a DFS manner using backtracking to selected different "next" indexes from
+    //in a forwards direction. To this we iterate in a DFS manner using backtracking to selected different "next" indexes from
     //the current index. We do this until every possible start position has been fully explored.
     //
     //Subsequences of `abcd`

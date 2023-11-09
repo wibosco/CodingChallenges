@@ -25,9 +25,9 @@ struct DetonateTheMaximumBombs {
     //
     //Solution Description:
     //If we treat the bombs as nodes on a graph, we can treat the blast radius of each bomb as a potential weight edge between
-    //those nodes. Determing where the blast radius reaches isn't as simple as comparing `x` and `y` as the blast radius is a
+    //those nodes. Determining where the blast radius reaches isn't as simple as comparing `x` and `y` as the blast radius is a
     //circle instead we need to use `distance = √((x1 - x2)^2 + (y1 - y2)^2)` to determine how fall apart two bombs are. So
-    //using that forumla we can build an adjacency list of graph - if a bomb falls inside the blast radius of a another bomb
+    //using that formula we can build an adjacency list of graph - if a bomb falls inside the blast radius of a another bomb
     //they are connected, this relationship needs to be check both ways as different bombs have different blast radius i.e. our
     //graph is a directed graph. While we can think of our graph as a weighted graph once we have our edges in place we don't
     //need to care about the weighting of the edge so can drop that detail. Once we have our adjacency list we perform a DFS

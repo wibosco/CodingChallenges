@@ -20,7 +20,7 @@ struct ValidPalindromeII {
     //Solution Description:
     //Using two pointers we compare the outermost characters of `s` to determine if they are the same. If they match we move
     //the pointers along once character towards the middle and recompare. If the characters don't match we move the the `left`
-    //and `right` pointers along (seperately) and attempt to validate the slightly shorter version of `s`. If any further
+    //and `right` pointers along (separately) and attempt to validate the slightly shorter version of `s`. If any further
     //mismatches are found then we stop comparing and return false; if no other mismatches are found and we reach the end of
     //our comparisons then that one deletion was enough and we return true.
     static func validPalindrome(_ s: String) -> Bool {
@@ -53,7 +53,7 @@ struct ValidPalindromeII {
     //Solution Description:
     //Using two pointers we compare the outermost characters of `s` to determine if they are the same. If they match we move
     //the pointers along once character towards the middle and recompare. If the characters don't match we move the the `left`
-    //and `right` pointers along (seperately) and attempt to validate the slightly shorter version of `s`. If any further
+    //and `right` pointers along (separately) and attempt to validate the slightly shorter version of `s`. If any further
     //mismatches are found then we stop comparing and return false; if no other mismatches are found and we reach the end of
     //our comparisons then that one deletion was enough and we return true.
     static func validPalindromeInout(_ s: String) -> Bool {

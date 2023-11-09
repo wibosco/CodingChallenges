@@ -16,14 +16,14 @@ struct MissingRanges {
     //two pointers
     //
     //Solution Description:
-    //There are potentally two missing values from `nums` to allow us to determine all the missings ranges - `lower` and
+    //There are potentially two missing values from `nums` to allow us to determine all the missing ranges - `lower` and
     //`upper`. To avoid having to copy and alter `nums` to include these values we "virtually" insert them into the
     //iteration of `nums` by setting the first neighbor to be compared against as being `lower` (`-1` as an missing range
     //should include `lower` as a missing ranges lower bounds whereas actual `nums` neighbors would set the lower bounds to
     //"inside" that `nums` neighbors value i.e. `neighbor + 1` so the `-1` ensures that no special logic is required for the
     //artificial `nums` entry - `lower`) and setting the last neighbor to be `upper` (`+1` same reason as lower `-1`). To
     //accommodate this when comparing neighbors we don't directly access the previous element in `nums` i.e (`i - 1`) instead
-    //we store the `previous` neighbor outside of the loop (initally set to `lower - 1`) and update it once an iteration is
+    //we store the `previous` neighbor outside of the loop (initially set to `lower - 1`) and update it once an iteration is
     //complete with the `current` value; equally we iterate beyond the count of `nums` to allow us to include the `upper`
     //bounds. When iterating through `nums` if we find at least a value difference of 2 between neighbors we know that we
     //have a missing range. If that range is only 2 then there is only one number between the neighbors and we can include
@@ -65,7 +65,7 @@ struct MissingRanges {
     //two pointers
     //
     //Solution Description:
-    //There are potentally two missing values from `nums` to allow us to determine all the missings ranges - `lower` (`-1` as
+    //There are potentially two missing values from `nums` to allow us to determine all the missing ranges - `lower` (`-1` as
     //an missing range should include `lower` as a missing ranges lower bounds whereas actual `nums` neighbors would set the
     //lower bounds to "inside" that `nums` neighbors value i.e. `neighbor + 1` so the `-1` ensures that no special logic is
     //required for the artificial `nums` entry - `lower`) and `upper` (`+1` same reason as lower `-1`). By adding these two

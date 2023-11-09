@@ -10,7 +10,7 @@ import Foundation
 //https://leetcode.com/problems/search-suggestions-system/
 struct SearchSuggestionsSystem {
     
-    //Time: O(n log n + m * n) where n is the numeber of elements in `products`
+    //Time: O(n log n + m * n) where n is the number of elements in `products`
     //                         where m is the number of characters in `searchWord`
     //Space: O(n + m)
     //array
@@ -21,7 +21,7 @@ struct SearchSuggestionsSystem {
     //Solution Description:
     //Suggestions are expected to be in lexicographical order so first we sort `products` to ensure that is always the case. Then
     //we iterate through each character in `searchWord` and find matches for that character at that index in `products`, any
-    //elements that don't match we discard so each iteration of through `searchWord` potentally results in fewer `products`
+    //elements that don't match we discard so each iteration of through `searchWord` potentially results in fewer `products`
     //iterations. if more than 3 products match that iterations criteria is only add the first 3 to `suggestions`.
     static func suggestedProducts(_ products: [String], _ searchWord: String) -> [[String]] {
         var products = products.sorted()

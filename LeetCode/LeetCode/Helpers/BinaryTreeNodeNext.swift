@@ -40,7 +40,7 @@ extension BinaryTreeNodeNext {
                 let root = queue.removeFirst()
                 
                 //left
-                if !mArray.isEmpty { //check needed incase these are leaf nodes
+                if !mArray.isEmpty { //check needed in case these are leaf nodes
                     if let val = mArray.removeFirst() {
                         let node = BinaryTreeNodeNext(val)
                         root.left = node

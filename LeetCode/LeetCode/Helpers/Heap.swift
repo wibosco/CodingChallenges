@@ -12,9 +12,9 @@ import Foundation
 //parent/child pointers. A heap is sorted based on the "heap property" that determines the order of the nodes in the tree. There
 //are two kinds of heaps: a max-heap and a min-heap which are different by the order in which they store the tree nodes. In a
 //max-heap, parent nodes have a greater value than each of their children. In a min-heap, every parent node has a smaller value
-//than its child nodes. Just like in any binary tree, a heap can be split into mulitple subtrees where the relationship between
+//than its child nodes. Just like in any binary tree, a heap can be split into multiple subtrees where the relationship between
 //parent and child nodes needs to the same e.g. parent is larger or equal to any child nodes - this relationship in a heap is
-//called the "heap propery". A max-heap always stores the largest element at the root of the tree; a min-heap, always store the
+//called the "heap property". A max-heap always stores the largest element at the root of the tree; a min-heap, always store the
 //smallest item at the root of the tree. The root of the heap has the maximum or minimum element, but the sort order of other
 //elements are not predictable. This partially sorted nature allows for insertions and removals to operate in O(log n) time
 //rather than O(n) that would be required for a fully sorted array.
@@ -137,7 +137,7 @@ struct Heap<Element> {
             return
         }
         
-        elements.swapAt(index, childIndex)  //move parent into childs index
+        elements.swapAt(index, childIndex)  //move parent into child's index
         siftDown(elementAtIndex: childIndex) //child is now at parentIndex location, check if child can move lower again
     }
 }

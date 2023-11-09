@@ -17,10 +17,10 @@ struct OptimalPartitionOfString {
     //
     //Solution Description:
     //Taking a greedy approach to find partitions we iterate through `s` storing each character we encounter in the `partitionSeen`
-    //set. If that character already exists in `partitionSeen` then we have encounted another partition and we increment
+    //set. If that character already exists in `partitionSeen` then we have encountered another partition and we increment
     //`partitions`. We repeat this process until all characters of `s` have been processed.
     //
-    //N.B. `paritions` starts at 1 to ensure that we count the final partition without having to add conditional into or after the
+    //N.B. `partitions` starts at 1 to ensure that we count the final partition without having to add conditional into or after the
     //loop.
     static func partitionString(_ s: String) -> Int {
         var partitionSeen = Set<Character>()

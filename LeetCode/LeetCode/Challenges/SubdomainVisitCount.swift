@@ -20,7 +20,7 @@ struct SubdomainVisitCount {
     //
     //Solution Description:
     //Iterate through all `cpdomains` and split the `count` from the `domains`. Then split the `domains` and iterate
-    //througgh them in reverse order, gradually building up `currentDomain` with each new element. `currentDomain` can then
+    //through them in reverse order, gradually building up `currentDomain` with each new element. `currentDomain` can then
     //be used as a key for `domainsCount`. `domainsCount` allows us to combine domain counts across multiple `cpdomains`
     //that share at least a subdomain. Once all `cpdomains` elements have been iterated we combine the key and value
     //combinations `domainsCount` into the expected string array format and return that array.

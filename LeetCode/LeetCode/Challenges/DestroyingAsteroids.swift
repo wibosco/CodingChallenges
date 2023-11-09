@@ -19,7 +19,7 @@ struct DestroyingAsteroids {
     //
     //Solution Description:
     //First sort the `asteroids` array into ascending order and iterate through that sorted array comparing the asteroid size
-    //with `mass`. If `mass` is equal or larger then the asteroid then it is abosrbed into `mass`; if the asteroid is larger
+    //with `mass`. If `mass` is equal or larger then the asteroid then it is absorbed into `mass`; if the asteroid is larger
     //then we exit early and return false. Finally after we have iterated through all the asteroids we return true as the
     //planet has survived
     static func asteroidsDestroyed(_ mass: Int, _ asteroids: [Int]) -> Bool {

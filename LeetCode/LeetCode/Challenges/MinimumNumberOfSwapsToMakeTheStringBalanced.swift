@@ -58,8 +58,8 @@ struct MinimumNumberOfSwapsToMakeTheStringBalanced {
     //will need to be swapped with a mismatched opening bracket inorder for `s` to be balanced - as `s` is guaranteed to
     //have the same number of `[` as `]`, we can't just track the mismatched `]` as this will also reduce down to 0 instead
     //we need to track what it was at it's maximum. Once we know the maximum we know that for every swap we solve not one
-    //but two mismatched brackets so we divide the max by 2. We add 1 to ensure that we et the correct answer for both odd
-    //and even maxs.
+    //but two mismatched brackets so we divide the max by 2. We add 1 to ensure that we get the correct answer for both odd
+    //and even maxes.
     static func minSwapsCounting(_ s: String) -> Int {
         var currentExtraClosing = 0
         var maxExtraClosing = 0

@@ -10,7 +10,7 @@ import Foundation
 //https://leetcode.com/problems/k-diff-pairs-in-an-array/
 struct KDiffPairsInAnArray {
     
-    //Time: O(n) where n is the numeber of elements in `nums`
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(n) as we use a set we could store n/2 elements which will be n as we drop the constant
     //array
     //dictionary
@@ -23,7 +23,7 @@ struct KDiffPairsInAnArray {
     //`k` to `num` this is because a pair is `num` - `complement`. Once we have that complement we check that it exists
     //in `frequencies`, is at least 1 and isn't itself `num` (we can't reuse the same instance of `num` for both values
     //in the pair). If the above conditions are true then we insert that pair in `pairs` and reduce the count of
-    //`complement` in the `frequencies` dictionary to show that it has alreadyd be used in a pair. As we are only
+    //`complement` in the `frequencies` dictionary to show that it has already be used in a pair. As we are only
     //interested in unique pairs, we use a set to store them (`pairs`) as any duplicates will be omitted. Finally we
     //return count of `pairs`.
     static func findPairs(_ nums: [Int], _ k: Int) -> Int {

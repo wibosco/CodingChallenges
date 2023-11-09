@@ -65,12 +65,12 @@ struct BinarySearch {
             
             if values[mid] <= target {
                 //values[mid] is either too small or matches the target.
-                //To makes sure that we either find target or find the last instance of target we need to esnure ensure a later
-                //index is choosen next time so move the left boundary of the search space right
+                //To makes sure that we either find target or find the last instance of target we need to ensure ensure a later
+                //index is chosen next time so move the left boundary of the search space right
                 left = mid + 1
    
             } else {
-                //values[mid] is too large to ensure a smaller value is choosen next time we need to move the right boundary of
+                //values[mid] is too large to ensure a smaller value is chosen next time we need to move the right boundary of
                 //the search space left
                 right = mid - 1
             }
@@ -135,12 +135,12 @@ struct BinarySearch {
             let mid = left + (right - left) / 2 //to avoid overflow
             
             if values[mid] >= target {
-                //values[mid] is either too large so lets ensure a smaller value is choosen next time by selecting from the
+                //values[mid] is either too large so lets ensure a smaller value is chosen next time by selecting from the
                 //smaller side of the possible values or values[mid] is equal to target but we don't know if it is the first
                 //instance of target so we need to keep searching
                 right = mid
             } else {
-                //values[mid] is too small lets ensure a larger value is choosen next time by selecting from the larger side
+                //values[mid] is too small lets ensure a larger value is chosen next time by selecting from the larger side
                 //of the possible values
                 left = mid + 1
             }
@@ -184,11 +184,11 @@ struct BinarySearch {
             if values[mid] == target {
                 return mid
             } else if values[mid] > target {
-                //values[mid] is too large lets ensure a smaller value is choosen next time by selecting from the smaller side
+                //values[mid] is too large lets ensure a smaller value is chosen next time by selecting from the smaller side
                 //of the possible values
                 right = mid - 1
             } else {
-                //values[mid] is too small lets ensure a larger value is choosen next time by selecting from the larger side
+                //values[mid] is too small lets ensure a larger value is chosen next time by selecting from the larger side
                 //of the possible values
                 left = mid + 1
             }

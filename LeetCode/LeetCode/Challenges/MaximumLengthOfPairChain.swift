@@ -52,12 +52,12 @@ struct MaximumLengthOfPairChain {
     //multi-source
     //
     //Solution Description:
-    //Treating `pairs` as a graph we can peform a DFS to generate all possible chains. First we sort `pairs` this will as to more
+    //Treating `pairs` as a graph we can perform a DFS to generate all possible chains. First we sort `pairs` this will as to more
     //know which elements/nodes in the graph have already been check for incursion in the current chain by ensuring that our
     //traversal of `pairs` is forward only. Next we iterate through all possible next elements/nodes and check if
     //`pair[0] > lastPair[1]` is true. If `pair[0] > lastPair[1]` is true we include `pair` in our chain and attempt to search
     //deeper from that element/node; else we skip over it to the next element/node. We repeat this process until all possible
-    //valid subsequences of `pairs` has been created and take the maxmimum size of the created chains as the longest chain which
+    //valid subsequences of `pairs` has been created and take the maximum size of the created chains as the longest chain which
     //is then returned. As our DFS can result the same we use memoization to cache the maximum chain size we find for each
     //element/node work and so allow us to save on work if a later DFS recursion attempts to find maximum chain size from that
     //same element/node.
@@ -116,12 +116,12 @@ struct MaximumLengthOfPairChain {
     //multi-source
     //
     //Solution Description:
-    //Treating `pairs` as a graph we can peform a DFS to generate all possible chains. First we sort `pairs` this will as to more
+    //Treating `pairs` as a graph we can perform a DFS to generate all possible chains. First we sort `pairs` this will as to more
     //know which elements/nodes in the graph have already been check for incursion in the current chain by ensuring that our
     //traversal of `pairs` is forward only. Next we iterate through all possible next elements/nodes and check if
     //`pair[0] > lastPair[1]` is true. If `pair[0] > lastPair[1]` is true we include `pair` in our chain and attempt to search
     //deeper from that element/node; else we skip over it to the next element/node. We repeat this process until all possible
-    //valid subsequences of `pairs` has been created and take the maxmimum size of the created chains as the longest chain which
+    //valid subsequences of `pairs` has been created and take the maximum size of the created chains as the longest chain which
     //is then returned.
     static func findLongestChainDFS(_ pairs: [[Int]]) -> Int {
         let pairs = pairs.sorted { $0[0] < $1[0]  }

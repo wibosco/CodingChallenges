@@ -17,9 +17,9 @@ struct MajorityElement {
     //Boyer-Moore Voting Algorithm
     //
     //Solution Description:
-    //Iterating through `nums` we assume that the first element is the majority element. Everytime we see that element we add 1 to
-    //count and everytime we see a different element we subtract 1, if we get to a count of 0 we take the current element as the new
-    //majority candidate and start counting until we exhuast all elements in `nums`. 
+    //Iterating through `nums` we assume that the first element is the majority element. Every time we see that element we add 1 to
+    //count and every time we see a different element we subtract 1, if we get to a count of 0 we take the current element as the new
+    //majority candidate and start counting until we exhaust all elements in `nums`. 
     static func majorityElement(_ nums: [Int]) -> Int {
         var count = 0
         var majority = nums[0] //will be overwritten first time through the loop

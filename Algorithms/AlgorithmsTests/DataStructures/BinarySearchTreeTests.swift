@@ -48,7 +48,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(result?.val, 8)
     }
     
-    func test_givenAMultiLevelTree_whenISearchForAnElement_andThatElementDoesnotExist_thenNilShouldBeReturned() {
+    func test_givenAMultiLevelTree_whenISearchForAnElement_andThatElementDoesNotExist_thenNilShouldBeReturned() {
         //Tree:
         //
         //                    +---+
@@ -461,7 +461,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(result, 0)
     }
     
-    func test_givenAMultiLevelTree_whenIWantTheDepthtOfAMidTreeNode_thenCorrectDepthIsReturned() {
+    func test_givenAMultiLevelTree_whenIWantTheDepthOfAMidTreeNode_thenCorrectDepthIsReturned() {
         //Tree:
         //
         //             +---+
@@ -493,7 +493,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(result, 2)
     }
     
-    func test_givenAMultiLevelTree_whenIWantTheDepthtOfALeafNode_thenCorrectDepthIsReturned() {
+    func test_givenAMultiLevelTree_whenIWantTheDepthOfALeafNode_thenCorrectDepthIsReturned() {
         //Tree:
         //
         //             +---+
@@ -549,7 +549,7 @@ final class BinarySearchTreeTests: XCTestCase {
         //                         | 7 |
         //                         +---+
         //
-        //After insertation:
+        //After insertion:
         //             +---+
         //   +---------+ 4 +---------+
         //   |         +---+         |
@@ -603,7 +603,7 @@ final class BinarySearchTreeTests: XCTestCase {
         //                         | 7 |
         //                         +---+
         //
-        //After insertation:
+        //After insertion:
         //
         //                    +---+
         //          +---------+ 4 +---------+
@@ -1029,7 +1029,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(serialized, [4, 1, 7, 0, 2, 5, 8, nil, nil, nil, nil, nil, nil, nil, 9])
     }
     
-    func test_givenATreeWhereTheRootHasBothMultilevelLeftAndRightSubtrees_whenIDeleteAMidTreeNode_andItsImmediateRightNodeIsItsSuccessor_andThatSuccessorHasARightChild_thenSuccessorIsMovedUpToDeletedNodesPosition_andRightSubtreeIsPerserved() {
+    func test_givenATreeWhereTheRootHasBothMultilevelLeftAndRightSubtrees_whenIDeleteAMidTreeNode_andItsImmediateRightNodeIsItsSuccessor_andThatSuccessorHasARightChild_thenSuccessorIsMovedUpToDeletedNodesPosition_andRightSubtreeIsPreserved() {
         //Initial Tree:
         //
         //                    +---+
@@ -1082,7 +1082,7 @@ final class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual(serialized, [4, 1, 8, 0, 2, 5, 9])
     }
     
-    func test_givenATreeWhereTheRootHasBothMultilevelLeftAndRightSubtrees_whenIDeleteAMidTreeNode_andItsSuccessorIsMultiLevelsDown_andThatSuccessorHasARightChild_thenSuccessorIsMovedUpToDeletedNodesPosition_andRightSubtreeIsPerserved() {
+    func test_givenATreeWhereTheRootHasBothMultilevelLeftAndRightSubtrees_whenIDeleteAMidTreeNode_andItsSuccessorIsMultiLevelsDown_andThatSuccessorHasARightChild_thenSuccessorIsMovedUpToDeletedNodesPosition_andRightSubtreeIsPreserved() {
         //Initial Tree:
         //
         //                       +---+

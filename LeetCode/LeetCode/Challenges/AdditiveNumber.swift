@@ -30,9 +30,9 @@ struct AdditiveNumber {
     //`result` into `n2`position and the start of the next result to `resultEndIndex`; if `sum` and `result` don't match
     //then we know the starting positions of this branch where not valid and we exit the recursion and create a new
     //permutation by increasing the number of elements in either `n1` or `n2`. If we reach the end of `nums` and have
-    //found at least one additive number during the searcg then we know that `nums` is additive and can return true.
+    //found at least one additive number during the search then we know that `nums` is additive and can return true.
     //
-    //N.B. The permutataions will look like:
+    //N.B. The permutations will look like:
     //
     //num = "1899117"
     // [1] [8] [99117]
@@ -124,9 +124,9 @@ struct AdditiveNumber {
     //position and the start of the next result to `resultEndIndex`; if `sum` and `result` don't match then we know the
     //starting positions of this branch where not valid and we exit the recursion and create a new permutation by increasing
     //the number of elements in either `n1` or `n2`. If we reach the end of `nums` and have found at least one additive
-    //number during the searcg then we know that `nums` is additive and can return true.
+    //number during the search then we know that `nums` is additive and can return true.
     //
-    //N.B. The permutataions will look like:
+    //N.B. The permutations will look like:
     //
     //num = "1899117"
     // [1] [8] [99117]

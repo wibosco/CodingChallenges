@@ -26,7 +26,7 @@ struct NumberOfClosedIslands {
     //then this island is not closed. We use relative indexing to determine in which direction we can move. To avoid
     //re-searching a previously searched square we store each land square we encounter in `visited`. When we encounter
     //the border of the graph we don't end our DFS,  instead we allow it to continue to find the full extent of the
-    //island so that all those squares can be elimated from any future searches (via the `visited` set).
+    //island so that all those squares can be eliminated from any future searches (via the `visited` set).
     static func closedIsland(_ grid: [[Int]]) -> Int {
         var closedCount = 0
         var visited = Set<[Int]>()

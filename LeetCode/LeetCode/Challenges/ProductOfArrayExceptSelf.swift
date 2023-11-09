@@ -17,7 +17,7 @@ struct ProductOfArrayExceptSelf {
     //Solution Description:
     //If we have the total value of `nums` then to exclude any value will be as if we took that total and divided it by the
     //value. What makes this trickier is that `nums` can contain zeros. If `nums` contains one zero then the only element in
-    //the `result` array that won't be zero is that zero element. If `nums` contains multuple zeros then all elements in
+    //the `result` array that won't be zero is that zero element. If `nums` contains multiple zeros then all elements in
     //`result` will be zero
     static func productExceptSelf(_ nums: [Int]) -> [Int] {
         var zeroCount = 0

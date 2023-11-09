@@ -20,7 +20,7 @@ struct AllPathsFromSourceToTarget {
     //Solution Description:
     //Using BFS traverse through the graph. As we want to find all paths to the target (rather than just the shortest), the queue
     //used contains not just the node to visit but also the path that led to that point. If the dequeued node is the target, add
-    //the path that got us here to the `paths` array and contine until the queue is empty i.e. all nodes have been visited.
+    //the path that got us here to the `paths` array and continue until the queue is empty i.e. all nodes have been visited.
     static func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {
         let target = graph.count - 1
         var paths = [[Int]]()
@@ -55,8 +55,8 @@ struct AllPathsFromSourceToTarget {
     //DAG
     //
     //Solution Description:
-    //Perform a recusive DFS search through the graph, keeping track of the current path. If we find the target then that `path`
-    //is added to the `paths` array. As we move back up the recusive call stack we remove the current node from the `path` array.
+    //Perform a recursive DFS search through the graph, keeping track of the current path. If we find the target then that `path`
+    //is added to the `paths` array. As we move back up the recursive call stack we remove the current node from the `path` array.
     static func allPathsSourceTargetDFS(_ graph: [[Int]]) -> [[Int]] {
         let target = graph.count - 1
         var paths = [[Int]]()

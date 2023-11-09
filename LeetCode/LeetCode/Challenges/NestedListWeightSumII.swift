@@ -21,7 +21,7 @@ struct NestedListWeightSumII {
     //Solution Description:
     //Treat `nestedList` as a graph. Using DFS traverse through the `nestedList`, at each level checking if we
     //have an integer or list. If we have an integer we add it and the depth to the `values` array; if we have
-    //a list we go deeper. We also track the max depth as we traverse. When our DFS traveral ends we calulate
+    //a list we go deeper. We also track the max depth as we traverse. When our DFS traversal ends we calculate
     //the sum and return it
     static func depthSumInverse(_ nestedList: [NestedInteger]) -> Int {
         var values = [(integer: Int, depth: Int)]()

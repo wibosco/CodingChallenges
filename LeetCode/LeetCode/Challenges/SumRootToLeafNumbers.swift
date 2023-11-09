@@ -19,7 +19,7 @@ struct SumRootToLeafNumbers {
     //Solution Description:
     //Using DFS, we traverse our tree to each leaf node, at which point we know the full `value` and can return that value. We then
     //unwind our call stack and sum up the left and right branches of each node that we unwind to until eventually getting to the root
-    //node wehere we can return the total sum.
+    //node where we can return the total sum.
     static func sumNumbers(_ root: BinaryTreeNode?) -> Int {
         guard let root = root else {
             return 0
@@ -56,7 +56,7 @@ struct SumRootToLeafNumbers {
     //Using DFS, we traverse our tree to each leaf node, at which point we know the full `value` for that branch and can add to our
     //ongoing `sum` value. Once all nodes have been searched we return `sum` as the final value.
     //
-    //N.B. we have to be careful not to accidently count each leaf nodes value twice by letting our DFS method take an optional node
+    //N.B. we have to be careful not to accidentally count each leaf nodes value twice by letting our DFS method take an optional node
     //and return `newValue` inside a guard checking for `nil` (as I did the first time I wrote the DFS method).
     static func sumNumbersInOut(_ root: BinaryTreeNode?) -> Int {
         guard let root = root else {

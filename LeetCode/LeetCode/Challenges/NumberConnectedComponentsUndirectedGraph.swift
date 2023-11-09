@@ -17,7 +17,7 @@ struct NumberConnectedComponentsUndirectedGraph {
     //graph theory
     //
     //Solution Description:
-    //First we convert `edges` into an adjacency list to allow for quickier lookup time determing which vertices are visitable
+    //First we convert `edges` into an adjacency list to allow for quicker lookup time determining which vertices are visitable
     //from the current vertice. As this graph can be made up of multiple subgraphs we need to visit each vertice and visit all
     //connected vertices from it to ensure that we visit all possible subgraphs. We are using DFS to traverse each graph and
     //place all visited vertices in `visited` to ensure that we don't get caught in an infinite loop or we don't count the same
@@ -76,7 +76,7 @@ struct NumberConnectedComponentsUndirectedGraph {
     //undirected
     //
     //Solution Description:
-    //First we convert `edges` into an adjacency list to allow for quickier lookup time determing which vertices are visitable
+    //First we convert `edges` into an adjacency list to allow for quicker lookup time determining which vertices are visitable
     //from the current vertice. As this graph can be made up of multiple subgraphs we need to visit each vertice and visit all
     //connected vertices from it to ensure that we visit all possible subgraphs. We are using BFS to traverse each graph and
     //place all visited vertices in `visited` to ensure that we don't get caught in an infinite loop or we don't count the same
@@ -162,7 +162,7 @@ struct NumberConnectedComponentsUndirectedGraph {
 //1. Each vertice is given an initial value of -1 to indicate that they are their own root
 //2. Perform a union between two vertices by finding the root of each vertice (this will be a negative number). This root may not
 //   be directly associated with the vertice but instead require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest negative
+//3. Compare the size of the nodes associated with each vertices root and select the root with the most nodes i.e. lowest negative
 //   value. Update the smaller root to point at the other root and update the other roots count to include the count that the
 //   former root had
 private final class UnionFindCounting {

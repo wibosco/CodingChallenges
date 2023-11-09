@@ -61,7 +61,7 @@ struct CopyListWithRandomPointer {
     //Solution Description:
     //We iterate through the linked list storing a copy each node into a dictionary with the original node being used as the
     //key, if this isn't the first time through we add `originalCopy` as the `next` property of the previous copy, if the
-    //orignal node has a random node then we also create this node and add it to the dictionary. Once all copies have been
+    //original node has a random node then we also create this node and add it to the dictionary. Once all copies have been
     //made we use the `head` node to return its copy
     static func copyRandomListDictionary(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
@@ -101,7 +101,7 @@ struct CopyListWithRandomPointer {
     //as the key (without attempting to set the `next` or `random` properties). Next we iterate through the original list
     //again, this time setting the `next` and `random` properties. Once all copies have been made we use the `head` node to
     //return its copy
-    static func copyRandomListDictionaryMutiplePass(_ head: ListNodeRandom?) -> ListNodeRandom? {
+    static func copyRandomListDictionaryMultiplePass(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil
         }

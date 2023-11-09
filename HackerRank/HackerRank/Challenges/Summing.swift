@@ -46,8 +46,8 @@ final class Summing {
             let rightDiagonalElement = row[index]
             sumOfRightDiagonal += rightDiagonalElement
             
-            let leftDiagonalelement = row[(finalElementIndex - index)]
-            sumOfLeftDiagonal += leftDiagonalelement
+            let leftDiagonalElement = row[(finalElementIndex - index)]
+            sumOfLeftDiagonal += leftDiagonalElement
         }
         
         return abs(sumOfRightDiagonal - sumOfLeftDiagonal)

@@ -51,7 +51,7 @@ struct MoveZeros {
     //
     //Solution Description:
     //Remove zeros from `nums` as this are found while keeping a count of how many have been removed. Once all zeros have been
-    //removed, add them to the end of the arrayx
+    //removed, add them to the end of the array.
     static func moveZeroesAppending(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return

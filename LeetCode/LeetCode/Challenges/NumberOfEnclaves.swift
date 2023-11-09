@@ -22,9 +22,9 @@ struct NumberOfEnclaves {
     //relative indexing
     //
     //Solution Description:
-    //Using DFS we search from each land square/element that we find using relative indexing to determin which direction(s)
+    //Using DFS we search from each land square/element that we find using relative indexing to determine which direction(s)
     //to search in. To avoid re-searching the same island from multiple starting squares we using a `visited` set to abort
-    //any attempt to do so. As we are interested in the number of sqaures we use a seperate `dfsVisited` for each
+    //any attempt to do so. As we are interested in the number of squares we use a separate `dfsVisited` for each
     //non-visited island - the count of this set is then added to `count`. As we are only interest in enclaves, if any
     //square of an island "touches" the border of `grid` we don't include that island in our count but we do continue
     //searching it to so we can eliminate that whole island from any future searches. At the end of each search we merge

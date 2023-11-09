@@ -52,7 +52,7 @@ struct MinimumAddToMakeParenthesesValid {
     //Solution Description:
     //Using a stack, traverse `s` attempting to match brackets i.e. for "(" there must be a closing ")" later in the `s`.
     //Once we get the end of `s` any elements in the stack don't have a opening/closing bracket in the correct sequence
-    //so we would need to add that number of opening/closing brackets to balance the exisitng brackets.
+    //so we would need to add that number of opening/closing brackets to balance the existing brackets.
     static func minAddToMakeValidStack(_ s: String) -> Int {
         var stack = [Character]()
         

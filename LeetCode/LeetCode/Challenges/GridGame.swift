@@ -29,7 +29,7 @@ struct GridGame {
     //compare that greater against `minPointsAvailable` and keep track of the overall minimum points available for the second
     //robot - this minimum is across all maximum points available i.e. if the first robot made the optimal downwards turn to
     //minimise the available points for the second robot and that second robot then choose the maximum available points.
-    //Finally after itereating through each possible downward turning point, we return the minimum-maximum points that the
+    //Finally after iterating through each possible downward turning point, we return the minimum-maximum points that the
     //second can get.
     //
     //N.B. it really helps to think of the two robots as actually competing.

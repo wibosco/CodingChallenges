@@ -54,7 +54,7 @@ struct DailyTemperatures {
     }
     
     //Time: O(n^2) where n is the number of temperatures
-    //Space: O(n) where n is the numer of temperatures
+    //Space: O(n) where n is the number of temperatures
     //
     //Solution Description:
     //The outer loop, loops through each temperature in order with the inner loop lopping through the temperatures after

@@ -22,9 +22,9 @@ struct IslandPerimeter {
     //Solution Description:
     //We loop through the elements in `grid` until we find land (1). Upon finding land we perform a DFS to find all connected
     //land using relative indexing. Land has a perimeter if it borders the edge of `grid` or is connected to water (0), where
-    //either of these conditions are met (base case), we return 1 to represent that this element of land has 1 perimter in
+    //either of these conditions are met (base case), we return 1 to represent that this element of land has 1 perimeter in
     //the given direction. We continue DFS until all possible connected land elements have been search and return the
-    //accumulated perimeter count. As `grid` only has one island we reutn that count straight away.
+    //accumulated perimeter count. As `grid` only has one island we return that count straight away.
     static func islandPerimeter(_ grid: [[Int]]) -> Int {
         var landVisited = Set<[Int]>()
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] //up, down, left, right

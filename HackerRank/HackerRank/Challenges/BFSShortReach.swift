@@ -29,7 +29,7 @@ final class BFSShortReach {
         
         let startingNode = nodes[(startingIndex - 1)]
         startingNode.distanceFromSource = 0
-        startingNode.visted = true
+        startingNode.visited = true
         
         var queue = [BFSSearchReachNode]()
         queue.append(startingNode)
@@ -38,8 +38,8 @@ final class BFSShortReach {
             let node = queue.removeFirst()
             
             for connectedNode in node.nodes {
-                if !connectedNode.visted {
-                    connectedNode.visted = true
+                if !connectedNode.visited {
+                    connectedNode.visited = true
                     connectedNode.distanceFromSource = (node.distanceFromSource + 6)
                     
                     queue.append(connectedNode)
@@ -53,7 +53,7 @@ final class BFSShortReach {
 
 final class BFSSearchReachNode {
     var distanceFromSource = -1
-    var visted = false
+    var visited = false
     
     var nodes = Set<BFSSearchReachNode>()
     

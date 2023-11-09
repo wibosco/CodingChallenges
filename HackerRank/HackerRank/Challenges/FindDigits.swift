@@ -11,9 +11,9 @@ import Foundation
 //https://www.hackerrank.com/challenges/find-digits
 final class FindDigits {
 
-     static func findCountOfDivisableValuesOfNumberInNumber(number: Int) -> Int {
+     static func findCountOfDivisibleValuesOfNumberInNumber(number: Int) -> Int {
         
-        var divisables = 0
+        var divisibles = 0
         
         let stringNumber = String(number)
         
@@ -24,13 +24,13 @@ final class FindDigits {
                     
                     if number % digit == 0 {
                         
-                        divisables += 1
+                        divisibles += 1
                     }
                     
                 }
             }
         }
         
-        return divisables
+        return divisibles
     }
 }

@@ -22,7 +22,7 @@ struct ContainsDuplicateII {
     //know in O(1) time if that element has occurred before and be able to compare if the absolute difference between the
     //current elements index and the previous elements index is less than or equal to `k`. As the indexes are an ascending,
     //sorted array i.e. 0 -> 1 -> 2 -> ...., if a calculation between two indexes doesn't result in a value less than or equal
-    //to `k` then we don't need to keep the smaller of the two indexes and no subsquenet calculation using that index will
+    //to `k` then we don't need to keep the smaller of the two indexes and no subsequent calculation using that index will
     //result in a value less than or equal to `k` as the other index will only be larger than the current index so whenever a
     //calculation fails we replace the previous index with the current index for that element on `nums` in the `map` dictionary.
     static func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {

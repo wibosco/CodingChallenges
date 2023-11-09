@@ -30,8 +30,8 @@ struct StringToInteger {
     //greater than `Int32.max / 10` then any shift by 10 will result in an overflow. We need to be careful on the edge where
     //`result` is equal to `Int32.max / 10` as we can shift by 10 without an overflow but adding certain `num` values will
     //still result in an overflow - if adding `digit` would overflow. We repeat this process for `Int32.min` but checking for
-    //underflow. If both checkes pass we shift `result` by 10 an add `num`. We repeat this process until we reach the end of
-    //`s` or we enounter a non-number `c`.
+    //underflow. If both checks pass we shift `result` by 10 an add `num`. We repeat this process until we reach the end of
+    //`s` or we encounter a non-number `c`.
     static func myAtoi(_ s: String) -> Int {
         var result = 0
         var sign = 1 //positive is the default

@@ -20,10 +20,10 @@ struct ContinuousSubarraySum {
     //
     //Solution Description:
     //If `k` or a multiple of `k` exists then it will have a remainder value of 0. So using modulo we can quickly determine if
-    //we have found our value from 0...i by using a prefix sum to graudally sum the the elements in the array that came before
-    //`i`. However it's possible that the continous subarray might start at a later index than 0. If we are trying to find the
+    //we have found our value from 0...i by using a prefix sum to gradually sum the the elements in the array that came before
+    //`i`. However it's possible that the continuous subarray might start at a later index than 0. If we are trying to find the
     //sum of j...i then we don't need to directly calculate j...i instead we can use the sum of  0..<j and substitute from
-    //0...i to get j...i - ensursing that we never backtrack the array. Now rather than directly storing the prefix sum for each
+    //0...i to get j...i - ensuring that we never backtrack the array. Now rather than directly storing the prefix sum for each
     //index we instead store the remainder as we are trying to find `k` or any multiple of `k`. With this of we get a match for
     //`prefixSum % k` in the `map` dictionary then we have match from (j + 1)...i. Really important to note that it's `j + 1` and
     //not `j`

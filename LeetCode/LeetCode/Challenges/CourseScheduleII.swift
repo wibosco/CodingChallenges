@@ -31,7 +31,7 @@ struct CourseScheduleII {
     //to `u` are ordered before `u` i.e. [v1, v2, v3, u]. It is useful to think of this as jobs that have dependencies so in
     //the above example `v1`, `v2` and `v3` are dependencies of `u` i.e. for `u` to complete `v1`, `v2` and `v3` need to
     //complete first. Topological sort is only possible on graphs that do not contain cycles i.e. DAGs. As any graph can contain
-    //multiple subgraphs we need to visit each vertice in the graph and (potentally) perform a deep-first search from that
+    //multiple subgraphs we need to visit each vertice in the graph and (potentially) perform a deep-first search from that
     //vertice to all connected vertices. As DFS goes deep before wide, all of vertices connected to vertice e.g. `A` will be
     //searched before the recursive call to `A` returns (think of it like the balanced brackets problem e.g. [A, [B, [C, C], B],
     //A]), we can use this property to detect cycles in our graph - if we find a node has an edge to `A` before `A` has
@@ -121,9 +121,9 @@ struct CourseScheduleII {
     //Solution Description:
     //Using an adjacency list build up the out-going edges for each course to then use during BFS traversal. Also build up a count
     //of the in-degree for each course - in order for a course to be taken, all prerequisite course must have been taken first,
-    //the `inDegrees` array will ensure this. As we can have multiple starting courses (courses with no prerequisities i.e
+    //the `inDegrees` array will ensure this. As we can have multiple starting courses (courses with no prerequisites i.e
     //in-degree == 0) we add these first to the queue. Using BFS we then traverse the graph adding new courses to the queue when
-    //they no longer have any outstanding prerequisities. Each course in the queue is added to the `order` array. Once the queue
+    //they no longer have any outstanding prerequisites. Each course in the queue is added to the `order` array. Once the queue
     //is empty we check if the `order` arrays count is equal to `numCourses` and if so return that order and if not return any
     //empty array as some courses couldn't be taken - dependency cycle.
     //

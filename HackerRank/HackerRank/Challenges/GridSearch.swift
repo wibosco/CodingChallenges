@@ -21,7 +21,7 @@ final class GridSearch {
                 
                 if row.contains(pattern[0]) {
                     
-                    let rangesOfFirstPattern = GridSearch.rangeOfAllOccurrancesOfPatternInRow(row: row, pattern: pattern[0])
+                    let rangesOfFirstPattern = GridSearch.rangeOfAllOccurrencesOfPatternInRow(row: row, pattern: pattern[0])
                     
                     let newPattern = pattern[1..<pattern.count].map {$0}
                     let newGrid = grid[(index+1)..<grid.count].map {$0}
@@ -60,9 +60,9 @@ final class GridSearch {
         return false
     }
     
-     static func rangeOfAllOccurrancesOfPatternInRow(row: String, pattern: String) -> [Range<String.Index>] {
+     static func rangeOfAllOccurrencesOfPatternInRow(row: String, pattern: String) -> [Range<String.Index>] {
         
-        var occurrances = [Range<String.Index>]()
+        var occurrences = [Range<String.Index>]()
         
         if row.contains(pattern) {
             let patternCharacterCount = pattern.count
@@ -76,11 +76,11 @@ final class GridSearch {
                 let patternRange = row.range(of: pattern, options: .caseInsensitive, range: range, locale: nil)
 
                 if let patternRange = patternRange {
-                    occurrances.append(patternRange)
+                    occurrences.append(patternRange)
                 }
             }
         }
 
-        return occurrances
+        return occurrences
     }
 }

@@ -22,7 +22,7 @@ struct LongestConsecutiveSequence {
     //of a sequence is the left/lowest value in that sequence. If `num - 1` exists then we know that we don't have the start of a sequence
     //and that a longer sequence could be formed so we move to the next element in `nums`; if `num - 1` doesn't not exist we have found
     //the start of a sequence now need to find the end, as we are looking for a consecutive sequence we know the next value needs to be
-    //`num + 1` so we search for that value and so on until we reach the end. Once the lenght of a sequence is found we compare it against
+    //`num + 1` so we search for that value and so on until we reach the end. Once the length of a sequence is found we compare it against
     //`longest` and take the higher value. With all elements check we return `longest`.
     static func longestConsecutive(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {

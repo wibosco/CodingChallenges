@@ -79,7 +79,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 4)
     }
     
-    func test_findIndex_mulitpleIterations_targetFound() {
+    func test_findIndex_multipleIterations_targetFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findIndex(of: 34, in: values)
@@ -87,7 +87,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 12)
     }
     
-    func test_findIndex_mulitpleIterations_negativeTarget_targetFound() {
+    func test_findIndex_multipleIterations_negativeTarget_targetFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findIndex(of: -9, in: values)
@@ -95,7 +95,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 1)
     }
     
-    func test_findIndex_mulitpleIterations_valueNotFound() {
+    func test_findIndex_multipleIterations_valueNotFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findIndex(of: 56, in: values)
@@ -137,7 +137,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 2)
     }
     
-    func test_findFirstIndex_firstValueIsntFirstMid_targetFound() {
+    func test_findFirstIndex_firstValueIsNotFirstMid_targetFound() {
         let values = [1, 4, 4, 5, 5]
         
         let index = BinarySearch.findFirstIndex(of: 4, in: values)
@@ -145,7 +145,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 1)
     }
     
-    func test_findFirstIndex_mulitpleIterations_targetFound() {
+    func test_findFirstIndex_multipleIterations_targetFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 11, 13, 16, 20, 22, 34, 34, 34, 34, 78]
         
         let index = BinarySearch.findFirstIndex(of: 34, in: values)
@@ -185,7 +185,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 4)
     }
     
-    func test_findFirstIndex_mulitpleIterations_negativeTarget_targetFound() {
+    func test_findFirstIndex_multipleIterations_negativeTarget_targetFound() {
         let values = [-17, -17, -9, -9, 0, 2, 3, 5, 7, 11, 13, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findFirstIndex(of: -9, in: values)
@@ -193,7 +193,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 2)
     }
     
-    func test_findFirstIndex_mulitpleIterations_valueNotFound() {
+    func test_findFirstIndex_multipleIterations_valueNotFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findFirstIndex(of: 56, in: values)
@@ -235,7 +235,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 2)
     }
     
-    func test_findLastIndex_firstValueIsntFirstMid_targetFound() {
+    func test_findLastIndex_firstValueIsNotFirstMid_targetFound() {
         let values = [1, 4, 4, 5, 5]
         
         let index = BinarySearch.findLastIndex(of: 4, in: values)
@@ -243,7 +243,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 2)
     }
     
-    func test_findLastIndex_mulitpleIterations_targetFound() {
+    func test_findLastIndex_multipleIterations_targetFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 11, 13, 16, 20, 22, 34, 34, 34, 34, 78]
         
         let index = BinarySearch.findLastIndex(of: 34, in: values)
@@ -283,7 +283,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 5)
     }
     
-    func test_findLastIndex_mulitpleIterations_negativeTarget_targetFound() {
+    func test_findLastIndex_multipleIterations_negativeTarget_targetFound() {
         let values = [-17, -17, -9, -9, 0, 2, 3, 5, 7, 11, 13, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findLastIndex(of: -9, in: values)
@@ -291,7 +291,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 3)
     }
     
-    func test_findLastIndex_mulitpleIterations_valueNotFound() {
+    func test_findLastIndex_multipleIterations_valueNotFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findLastIndex(of: 56, in: values)

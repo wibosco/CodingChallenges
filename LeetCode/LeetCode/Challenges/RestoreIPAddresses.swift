@@ -18,8 +18,8 @@ struct RestoreIPAddresses {
     //
     //Solution Description:
     //IPv4 address contains a maximum of 12 digits so if `s` is greater than 12 we know it's invalid and exit early. With a
-    //valid number of digits we know need to seperate them into all their possible combinations i.e. each section can contain
-    //between 1 and 3 digits. Using backtracking we seperate each combination and we place them into an ongoing array
+    //valid number of digits we know need to separate them into all their possible combinations i.e. each section can contain
+    //between 1 and 3 digits. Using backtracking we separate each combination and we place them into an ongoing array
     //`current` if at any time that array contains more than 4 elements we know that the IP address is invalid and we exit
     //that branch. If we use all digits in `s` and `current` equals 4 then we have a valid IP address and add it `addresses`
     static func restoreIpAddresses(_ s: String) -> [String] {

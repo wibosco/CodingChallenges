@@ -19,7 +19,7 @@ struct OneThreeTwoPattern {
     //Solution Description:
     //In the 132 pattern element[1] < element[3] < element[2] so we need to find a subsequence such as `-1, 5, 3`. We increase the chances
     //of finding this pattern is element[1] is the smallest it can be and element[2] is the largest it can be. Using a decreasing
-    //montonic stack that stores both the element[1] and element[3] elements (first and second) we ensure that we don't fall into the trap
+    //monotonic stack that stores both the element[1] and element[3] elements (first and second) we ensure that we don't fall into the trap
     //of taking a greedy approach that would prevent us from finding element[2]. When iterating through `nums`, we first attempt to maximise
     //element[3], by removing any smaller elements from the stack, we then check if the `num` is greater than element[1] and if it is we
     //return true as we have found all 3 elements of the 132 pattern, else we add `(minVal, num)` as a possible candidate to the stack and

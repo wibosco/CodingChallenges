@@ -19,12 +19,12 @@ struct MaximumSwap {
     //
     //Solution Description:
     //In order to get the maximum `num` value we want to the swap the left element with a higher value right i.e swap low value
-    //more-significant element with high value less-significant value. To enable to efficently search the digits in `num` for
+    //more-significant element with high value less-significant value. To enable to efficiently search the digits in `num` for
     //that higher value element we first convert `num` into an array of individual digits and then store those individual digits
     //in a dictionary. As we want to swap a higher value element that is as right as possible, if an element is repeated we only
     //store it's last index (right most). Next we iterate through the digits of `num` and attempt to find that replacement. We
     //have to be careful that any replacement we find is larger than the current element and from later in the digits array. If
-    //we find that element we swap the current element with it and return as that is guranteed to be the largest configuration
+    //we find that element we swap the current element with it and return as that is guaranteed to be the largest configuration
     //of `num`. If we can't find a replacement for any of the digits in `num` i.e. `num` is in descending or equal order then we
     //simply return `num`
     static func maximumSwap(_ num: Int) -> Int {

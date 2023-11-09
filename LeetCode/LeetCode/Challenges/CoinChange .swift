@@ -22,7 +22,7 @@ struct CoinChange {
     //Solution Description:
     //Treating the `coins` array as a graph, we can perform a DFS through all the different permutations attempting to find
     //those that equal `amount`. As we have an infinite number of each coin, at each level of the DFS we are able to use all
-    //coins, this means that our "brake" needs to be the `amount`. As this DFS generates the same branches from mulitple
+    //coins, this means that our "brake" needs to be the `amount`. As this DFS generates the same branches from multiple
     //approaches to avoid duplication of work we use memoization to store the quickest/minimum route from a given `remaining`
     //value to 0 (or burst).
     //

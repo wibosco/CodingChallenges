@@ -17,7 +17,7 @@ struct PascalsTriangle {
     //
     //Solution Description:
     //Once we have our first row we can build all subsequent rows by taking the previous row, iterating through it left to right
-    //and summing each set of neighbours that we come across and adding that to the current rows array. As we know that for each
+    //and summing each set of neighbors that we come across and adding that to the current rows array. As we know that for each
     //row the element at start and end index has a value of `1` when building the current row we can add those in without having
     //to use the previous row.
     static func generate(_ numRows: Int) -> [[Int]] {

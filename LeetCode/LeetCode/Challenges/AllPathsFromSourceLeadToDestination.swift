@@ -55,7 +55,7 @@ struct AllPathsFromSourceLeadToDestination {
             
             for neighbor in neighbors { //choice
                 if !dfs(adjList, neighbor, target, &visited) {
-                    return false //one of the recusive calls has returned false so we do here
+                    return false //one of the recursive calls has returned false so we do here
                 }
             }
             
@@ -116,7 +116,7 @@ struct AllPathsFromSourceLeadToDestination {
 
         for neighbor in neighbors { //choice
             if !dfsQuickCheck(adjList, neighbor, target, &visited) {
-                return false //one of the recusive calls has returned false so we do here
+                return false //one of the recursive calls has returned false so we do here
             }
         }
 

@@ -22,7 +22,7 @@ struct MeetingRoomsII {
     //that meetings end time. The current time is defined by the position we are at in the `intervals` array. As
     //meeting can start and end within the duration of an earlier meeting we can't simply sort the `intervals` array
     //and compare neighbors. Instead we need to split out the start (`startTimes`) and end times (`endTimes`) into
-    //seperate, sorted arrays and then iterate through `startTimes` and compare it against `endTimes` to determine
+    //separate, sorted arrays and then iterate through `startTimes` and compare it against `endTimes` to determine
     //how many rooms are in use at any given time - `roomsInUse`. To do this we keep two pointers `startPointer` and
     //`endPointer` which we can increment at different rates. If the current meeting start time is less than the
     //current end time then we need another room (increment `roomsInUse`); if the start time is greater than or equal

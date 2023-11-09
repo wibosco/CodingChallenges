@@ -20,7 +20,7 @@ struct OpenTheLock {
     //Solution Description:
     //Treating each possible lock combination as vertices in a graph, we are able to perform a BFS through the graph to find the
     //shortest path. Rather than build the 10_000 possible vertices before initiating the BFS we can instead create the neighbors
-    //of any given combination on demand. We are also able to conbine the `deadends` with the `visited` set to determine whether
+    //of any given combination on demand. We are also able to combine the `deadends` with the `visited` set to determine whether
     //to continue do that branch or not. After each loop of the BFS we create increment the `level` as we move farther away from
     //"0000"
     static func openLock(_ deadends: [String], _ target: String) -> Int {

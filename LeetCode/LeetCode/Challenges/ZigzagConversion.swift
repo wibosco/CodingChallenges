@@ -19,7 +19,7 @@ struct ZigzagConversion {
     //Solution Description:
     //Rather than think of this as producing one string instead think of it as producing multiple strings for each row. Ignore
     //diagonals and columns and instead thinking in terms of moving up and down rows. As we iterate through `s` we add each
-    //character we enounter to the end of the string that is at row. When we hit the final row (numRows - 1) we change
+    //character we encounter to the end of the string that is at row. When we hit the final row (numRows - 1) we change
     //direction and start moving back up the rows and when we hit the first row (0) we change direction again and start moving
     //back down the rows. We repeat this process until we run out of characters, at which point we concatenate the strings at
     //each row together (in row order) and return it

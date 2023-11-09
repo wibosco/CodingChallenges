@@ -16,7 +16,7 @@ struct RemoveLinkedListElements {
     //sentinel head
     //
     //Solution Description:
-    //Using a sentinel head node incase `head.val` == `val` we iterate through all the elements in the list and where an
+    //Using a sentinel head node in case `head.val` == `val` we iterate through all the elements in the list and where an
     //element != `val` we add it as the `next` node of `tail`; where an element == `val` we skip it.
     static func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
         let sentinel = ListNode(-1)
@@ -32,7 +32,7 @@ struct RemoveLinkedListElements {
             current = c.next
         }
         
-        tail?.next = nil //special care incase the last element(s) are `val` elements
+        tail?.next = nil //special care in case the last element(s) are `val` elements
         
         return sentinel.next
     }

@@ -15,7 +15,7 @@ struct OrganizingContainersOfBalls {
          Each type needs to end up in a container by itself,
          as a container can not change its capacity (swaps
          happen equally between containers) then for each
-         type to have it's own container, capcity needs to
+         type to have it's own container, capacity needs to
          match type count.
          */
         var containersCapacity = [Int: Int]()

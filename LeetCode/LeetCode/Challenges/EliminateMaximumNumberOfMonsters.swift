@@ -19,16 +19,16 @@ struct EliminateMaximumNumberOfMonsters {
     //
     //Solution Description:
     //Rather than attempt to "move" the monsters toward the city we instead determine how long it would take each monster to reach
-    //the city without attempting elimate any and store those values in `arrivalTimes`. We sort `arrivalTimes` in ascending order
-    //to allow us to elimate the most pressing monsters first in a greedy manner. As we can only eliminate one monster at a time
+    //the city without attempting eliminate any and store those values in `arrivalTimes`. We sort `arrivalTimes` in ascending order
+    //to allow us to eliminate the most pressing monsters first in a greedy manner. As we can only eliminate one monster at a time
     //we can treat each iteration of `arrivalTimes` as a move forward in time. If at any point `timeToArrive` is less than
-    //`currentTime` then that monster was able to reach the city before it could be elimated and we immediately return with the
-    //current index as the result; if however `timeToArrive` is always equal to or greater than `shots` then we can elimate all
+    //`currentTime` then that monster was able to reach the city before it could be eliminated and we immediately return with the
+    //current index as the result; if however `timeToArrive` is always equal to or greater than `shots` then we can eliminate all
     //monsters before they reach the city.
     //
     //N.B. this is kind of like a BFS level-by-level approach however because the monsters don't interfere with each other and we
-    //need to elimate the monsters that reach the city first rather than just the nearer monsters, we are able to calculate the
-    //monsters moves and elimate them in a greedy manner which is much simpler/efficient than the alternative BFS approach.
+    //need to eliminate the monsters that reach the city first rather than just the nearer monsters, we are able to calculate the
+    //monsters moves and eliminate them in a greedy manner which is much simpler/efficient than the alternative BFS approach.
     static func eliminateMaximum(_ dist: [Int], _ speed: [Int]) -> Int {
         let monsters = dist.count
         var arrivalTimes = [Int]()

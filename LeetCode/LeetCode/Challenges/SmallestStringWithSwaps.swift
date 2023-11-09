@@ -16,12 +16,12 @@ struct SmallestStringWithSwaps {
     //graph theory
     //union find
     //disjoint set
-    //undirectied graph
+    //undirected graph
     //
     //Solution Description:
     //Using a disjoint set we build up a set of possible values for any of `s` indexes. This is needed because the swaps that
     //can occur can interact with each other. We then assign the actual character value to each of those groups. We then sort
-    //each group to enusre that the smallest value character is first. Finally we iterate through `s` changing the character at
+    //each group to ensure that the smallest value character is first. Finally we iterate through `s` changing the character at
     //any given index for the smallest in the group (for that index)
     static func smallestStringWithSwaps(_ s: String, _ pairs: [[Int]]) -> String {
         guard s.count != 1 else {
@@ -39,7 +39,7 @@ struct SmallestStringWithSwaps {
         var groups = [Int: [Character]]()
         for (i, character) in characters.enumerated() {
             //important to note that we only care about the root of i so `groups` can end up
-            //being siggnifcantly smaller than s.count
+            //being significantly smaller than s.count
             let root = unionFind.find(i)
             groups[root, default: [Character]()].append(character)
         }
@@ -71,7 +71,7 @@ struct SmallestStringWithSwaps {
 //1. Each vertice is given an initial value of -1 to indicate that they are their own root
 //2. Perform a union between two vertices by finding the root of each vertice (this will be a negative number). This root may not
 //   be directly associated with the vertice but instead require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices root and select the root with the most nodes i.e. lowest negative
+//3. Compare the size of the nodes associated with each vertices root and select the root with the most nodes i.e. lowest negative
 //   value. Update the smaller root to point at the other root and update the other roots count to include the count that the
 //   former root had
 private final class UnionFind {

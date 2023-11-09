@@ -51,7 +51,7 @@ struct LongestIncreasingSubsequence {
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
     //each node of that graph from every possible path in DFS manner. To avoid traversing paths that we have already travelled
-    //down we use memoization to store the maxmimum incrementing subsequence from that node - due to traversing using DFS you
+    //down we use memoization to store the maximum incrementing subsequence from that node - due to traversing using DFS you
     //know that if a node as a memoization entry, that entry is the maximum.
     //
     //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return

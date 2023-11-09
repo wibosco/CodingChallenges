@@ -22,7 +22,7 @@ struct IsomorphicStrings {
     //encountered those characters we add them to `mappingSToT` and `mappingTToS` with the correct key and value
     //configuration; if we have previously encountered either of those characters we check to make sure it was in the
     //presence of both the characters, if either mapping is to a different character we return false. After iterating
-    //throught both strings we return true.
+    //through both strings we return true.
     static func isIsomorphic(_ s: String, _ t: String) -> Bool {
         guard s.count == t.count else {
             return false

@@ -34,8 +34,8 @@ struct Dijkstra {
     //current path is smaller/cheaper than the existing path and only if it is do we update `distances` with the current paths
     //distances (all paths start out as infinite distance i.e `distances` does not contain the key) - a process known as
     //relaxation. If neighbor hasn't already been visited we add it to `priorityQueue` which will trigger that queue to re-sort
-    //itself. After traversing the graph if any path(s) exists between `source` and `destination` we buld the path between them
-    //by travesing and appending predecessor nodes from in `distances` from `destination` to `source`.
+    //itself. After traversing the graph if any path(s) exists between `source` and `destination` we build the path between them
+    //by traversing and appending predecessor nodes from in `distances` from `destination` to `source`.
     //
     //N.B. if `source` changes we need to recalculate all paths
     static func shortestPath(_ adjList: [[(Int, Int)]], _ source: Int, _ destination: Int) -> [Int] {
@@ -178,7 +178,7 @@ struct Dijkstra {
     //paths start out as infinite distance i.e `distances` does not contain the key) - a process known as relaxation. If neighbor
     //hasn't already been visited we add it to `priorityQueue`. Once all neighbors have been checked we re-sort the queue so that
     //the cheapest/smallest next node to travel to is at the end. After traversing the graph if any path(s) exists between
-    //`source` and `destination` we buld the path between them by travesing and appending predecessor nodes from in `distances`
+    //`source` and `destination` we build the path between them by traversing and appending predecessor nodes from in `distances`
     //from `destination` to `source`.
     //
     //N.B. if `source` changes we need to recalculate all paths

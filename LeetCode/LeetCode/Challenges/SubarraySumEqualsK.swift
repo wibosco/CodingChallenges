@@ -22,7 +22,7 @@ struct SubarraySumEqualsK {
     //0...i by using a prefix sum to gradually sum the the elements in the array that came before `i`. However it's possible
     //that the contiguous subarray might start at a later index than 0. If we are trying to find the sum of j...i then we
     //don't need to directly calculate j...i instead we can use the sum of  0..<j and substitute from 0...i to get j...i
-    //- ensursing that we never backtrack the array i.e. linear time. To support this with each iteration we either create a
+    //- ensuring that we never backtrack the array i.e. linear time. To support this with each iteration we either create a
     //new entry in `map` to store the prefix sum as it is at that index or increase the count of an existing entry. We need
     //to keep the count as `nums` can contain negative values so a later prefix sum is not guaranteed to be larger than a
     //previous. This means that the same prefix sum value can appear multiple times - each representing a valid starting index
@@ -59,7 +59,7 @@ struct SubarraySumEqualsK {
     //Solution Description:
     //Looping through all possible contiguous subarray combinations we build up a sum of the values from i...j and compare
     //that sum to `k`. Where `sum` == `k` we increment `count` as we have found a contiguous subarray combination that
-    //results in `k`. As `nums` can contain negative values upon matching `k` we keep going incase there are other matches
+    //results in `k`. As `nums` can contain negative values upon matching `k` we keep going in case there are other matches
     func subarraySumRecursive(_ nums: [Int], _ k: Int) -> Int {
         var count = 0
                 

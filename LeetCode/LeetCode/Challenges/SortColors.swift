@@ -61,7 +61,7 @@ struct SortColors {
     //boundary (outside) of the 2 subarray so when we encounter any 2s we can place them there. So when we encounter
     //a 0 we swap that 0 with the element at p0 and push p0 out so that the zero is now part of the 0 subarray. If we
     //a 2 we swap that 2 with the element at p2 and push p2 out so that the two is not of the 2 subarray. If we
-    //encounter a one we just increment `current` as the 1 is already in the 1 subbarray.
+    //encounter a one we just increment `current` as the 1 is already in the 1 subarray.
     //
     //See: https://en.wikipedia.org/wiki/Dutch_national_flag_problem
     static func sortColorsDutch(_ nums: inout [Int]) {

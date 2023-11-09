@@ -14,7 +14,7 @@ struct KthSymbolInGrammar {
     //Time: O(n) where n is the depth of the tree
     //Space: O(n) where n is the depth of the recursive stack
     //binary tree
-    //recusive
+    //recursive
     //DFS
     //
     //Solution Description:
@@ -26,11 +26,11 @@ struct KthSymbolInGrammar {
     //     0    1     1   0         1    0         0    1
     //
     //Rather than build every level of that tree instead we need to only build the path from root to leaf. Using recursion we back
-    //up the leaf, determing the `k` index for each level (i.e. the path) until we get to the root where we know that value will
+    //up the leaf, determining the `k` index for each level (i.e. the path) until we get to the root where we know that value will
     //always be 0. From root we begin to move back down the tree using the `k` index that we calculated for that level to know if
     //that index will hold a `0` or `1`. Using the parents value we know that its children will either be `0 1` or `1 0` i.e. a
     //parent of `0` will always produce children of `0 1` in that order so if the `k` index is odd then the children on our path
-    //will always be `0` (remember we are indexing from 1) - the opposite approach is taken if the parent is `1` as it's childern
+    //will always be `0` (remember we are indexing from 1) - the opposite approach is taken if the parent is `1` as it's children
     //will be `1 0`. We repeat this process until eventually the recursive call stack is empty and the leaf nodes value has been
     //found
     static func kthGrammar(_ n: Int, _ k: Int) -> Int {
@@ -52,7 +52,7 @@ struct KthSymbolInGrammar {
     //Time: O(2^n) where n is the depth of the tree
     //Space: O(n) where n is the depth of the recursive stack
     //binary tree
-    //recusive
+    //recursive
     //
     //Solution Description:
     //Build the full tree - all levels fully populated. Once we reach the `n`th level, return the `k`th value.

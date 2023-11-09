@@ -70,12 +70,12 @@ struct AccountsMerge {
                     continue
                 }
                 
-                for neigbor in neighbors {
-                    guard !visited.contains(neigbor) else {
+                for neighbor in neighbors {
+                    guard !visited.contains(neighbor) else {
                         continue
                     }
                     
-                    queue.append(neigbor)
+                    queue.append(neighbor)
                 }
             }
             
@@ -247,7 +247,7 @@ struct AccountsMerge {
 //2. Perform a union between two vertices by finding the root of each vertice (this will be a
 //   negative number). This root may not be directly associated with the vertice but instead
 //   require multiple steps hence the while loop in `find`
-//3. Compare the size of the nodes assoicated with each vertices root and select the root with
+//3. Compare the size of the nodes associated with each vertices root and select the root with
 //   the most nodes i.e. lowest negative value. Update the smaller root to point at the other
 //   root and update the other roots count to include the count that the former root had
 private final class UnionFind {

@@ -17,8 +17,8 @@ import Foundation
 //Solution Description:
 //To transform `w` into a weighted array we use a prefixSum array to handle the range of possible values that would give you
 //that give you a proportional chance of "landing" on that index randomly e.g. for `[1, 3, 5, 7, 9]` you effectively have
-//`[1, 3, 3, 3, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 7, 7, 9, 9, 9, 9, 9, 9, 9, 9, 9]`. Rather than constucting an array like the
-//example above(which potentally might be very expensive space-wise) we can instead work with ranges. In order to get these
+//`[1, 3, 3, 3, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 7, 7, 9, 9, 9, 9, 9, 9, 9, 9, 9]`. Rather than constructing an array like the
+//example above(which potentially might be very expensive space-wise) we can instead work with ranges. In order to get these
 //ranges we build an array containing prefix sum values, with the value being the upper bounds for that range. As `w` can
 //only contain positive values, `prefixSums` will end up being sorted in ascending order. We can use `prefixSums` nature to
 //perform a binary search to find the random value - `target`.
@@ -70,8 +70,8 @@ struct RandomPickWithWeight {
 //Solution Description:
 //To transform `w` into a weighted array we use a prefixSum array to handle the range of possible values that would give you
 //that give you a proportional chance of "landing" on that index randomly e.g. for `[1, 3, 5, 7, 9]` you effectively have
-//`[1, 3, 3, 3, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 7, 7, 9, 9, 9, 9, 9, 9, 9, 9, 9]`. Rather than constucting an array like the
-//example above(which potentally might be very expensive space-wise) we can instead work with ranges. In order to get these
+//`[1, 3, 3, 3, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 7, 7, 9, 9, 9, 9, 9, 9, 9, 9, 9]`. Rather than constructing an array like the
+//example above(which potentially might be very expensive space-wise) we can instead work with ranges. In order to get these
 //ranges we build an array containing prefix sum values, with the value being the upper bounds for that range. Once we have
 //our random value we can then iterate through `prefixSums` and determine if the random value would land in that range. As
 //`prefixSums` is a sorted array (in ascending order) we have treat the previous iterates upper bounds as this iterations

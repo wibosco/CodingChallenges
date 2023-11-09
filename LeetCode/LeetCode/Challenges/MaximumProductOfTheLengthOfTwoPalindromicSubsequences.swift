@@ -16,13 +16,13 @@ struct MaximumProductOfTheLengthOfTwoPalindromicSubsequences {
     //DFS
     //recursive
     //backtracking
-    //n-arry tree
+    //n-ary tree
     //set
     //two pointers
     //inout
     //
     //Solution Description:
-    //To find the max product we need to first generate all possible subsequences of `s` using DFS and backtrackingg. Each
+    //To find the max product we need to first generate all possible subsequences of `s` using DFS and backtracking. Each
     //subsequence is then checked to determine if it a palindrome or not using two pointers. If that subsequence is a
     //palindrome then we check if it overlaps with any other palindrome subsequences using a set to ensure O(1) retrieval.
     //If two subsequences don't overlap we calculate the product and compare it against our the max product, replacing if

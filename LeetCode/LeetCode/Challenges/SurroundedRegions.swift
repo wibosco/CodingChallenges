@@ -21,12 +21,12 @@ struct SurroundedRegions {
     //multi-source
     //
     //Solution Description:
-    //An `O` element is only "safe" if it either on the edge of the board or connected to a squence of `O` elements that
+    //An `O` element is only "safe" if it either on the edge of the board or connected to a sequence of `O` elements that
     //eventually are on the edge of the board. So rather than checking each `O` element on the board instead we only
     //need to check those that are on the edge of the board and find all other `O` elements connected to that one. So
     //using DFS we search the first and last elements on each row (left and right edge) and when we encounter a `O`
     //element we update it to be `S` to mark it as staying an `O`. Setting the `O` element to `S` has the effect of
-    //marking this index as visited. Using relative indexing we then search that elements neighbours for other `O`
+    //marking this index as visited. Using relative indexing we then search that elements neighbors for other `O`
     //elements. We then perform the same search for the first and last element of each column (top and bottom edge).
     //Once we've search for `O` elements from all edges we then iterate through all elements on the board and when we
     //encounter an `S` we transform it into `O`, if we encounter an `X` or `O` we set it to `X`.
@@ -81,7 +81,7 @@ struct SurroundedRegions {
     //visited
     //
     //Solution Description:
-    //An `O` element is only "safe" if it either on the edge of the board or connected to a squence of `O` elements that
+    //An `O` element is only "safe" if it either on the edge of the board or connected to a sequence of `O` elements that
     //eventually are on the edge of the board. So we iterate through the board and when we encounter an `O` element we
     //perform a DFS from that element to find all connected `O` elements. If any of those `O` elements are on an edge
     //we set `flip` to false as we know this `O` island should not be flipped. Once our DFS is finished and if `flip` is

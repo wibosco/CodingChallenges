@@ -41,7 +41,7 @@ struct CountUnivalueSubtrees {
         }
         
         if let right = root.right {
-            //`isUnival` must come second otherwise the swift runtime will skip some recusive calls
+            //`isUnival` must come second otherwise the swift runtime will skip some recursive calls
             //i.e. one condition of the && being false mean there is no need to check the other conditions
             isUnivalue = isUnivalueTree(right, &count) && isUnivalue && root.val == right.val
         }

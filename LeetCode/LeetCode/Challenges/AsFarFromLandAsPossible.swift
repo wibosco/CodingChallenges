@@ -27,7 +27,7 @@ struct AsFarFromLandAsPossible {
     //Solution Description:
     //Rather than starting with water and attempting to find land, we can flip the problem and instead start with land. Starting
     //with land will allow us to build in previous iterations of our BFS and so only perform one BFS (starting with water means
-    //we need to perform a full BFS for each water square/element). As we are peforming a BFS we know that any square previously
+    //we need to perform a full BFS for each water square/element). As we are performing a BFS we know that any square previously
     //unsearched square we encountered is shortest/minimum path we could have taken from land to get there. First we add all
     //land squares to `queue` and `visited`. We then check for edge cases of no water and no land - if either are true we return
     //-1. Next we perform the BFS using relative indexing to determine where we can move to. By using a level-by-level BFS
@@ -36,7 +36,7 @@ struct AsFarFromLandAsPossible {
     //BFS we return `distance`.
     //
     //N.B Manhattan distance (|xi - xj| + |yi - yj|) is the distance between two squares as measured in vertical and/or
-    //hozitional moves.
+    //horizontal moves.
     static func maxDistance(_ grid: [[Int]]) -> Int {
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] //[up down left right]
         
@@ -107,12 +107,12 @@ struct AsFarFromLandAsPossible {
     //
     //Solution Description:
     //We find each water square/element in `grid` and perform a BFS from square to all connected squares until we encounter
-    //a land square. As we are peforming a BFS we know that when we enconter land it is shortest/minimum path between those
+    //a land square. As we are performing a BFS we know that when we encounter land it is shortest/minimum path between those
     //two squares. We repeat this process for all water elements and store the most distant water square in `maxDistance`.
-    //After searching performin a BFS from each water square we return `maxDistance`.
+    //After searching performing a BFS from each water square we return `maxDistance`.
     //
     //N.B Manhattan distance (|xi - xj| + |yi - yj|) is the distance between two squares as measured in vertical and/or 
-    //hozitional moves.
+    //horizontal moves.
     static func maxDistanceFromWater(_ grid: [[Int]]) -> Int {
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] //[up down left right]
         

@@ -16,16 +16,16 @@ final class FindDigitsTests: XCTestCase {
     
     func test_A() {
         
-        let divisables = FindDigits.findCountOfDivisableValuesOfNumberInNumber(number: 12)
+        let divisibles = FindDigits.findCountOfDivisibleValuesOfNumberInNumber(number: 12)
         
-        XCTAssertEqual(2, divisables)
+        XCTAssertEqual(2, divisibles)
     }
     
     func test_B() {
         
-        let divisables = FindDigits.findCountOfDivisableValuesOfNumberInNumber(number: 1012)
+        let divisibles = FindDigits.findCountOfDivisibleValuesOfNumberInNumber(number: 1012)
         
-        XCTAssertEqual(3, divisables)
+        XCTAssertEqual(3, divisibles)
     }
     
 }

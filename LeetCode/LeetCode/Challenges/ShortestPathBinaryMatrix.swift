@@ -20,9 +20,9 @@ struct ShortestPathBinaryMatrix {
     //
     //Solution Description:
     //Treat the matrix as a graph with each "touching" nodes being a neighbor. "Touching" is defined by using relative indexing
-    //from the [row][column] position that is being checked i.e. all 8 nodess around - careful to check for out of bounds and if
-    //that nodes is navigatable i.e. 0 value. Using BFS we then traverse through the neighbours of each nodes until we either
-    //find the target (bottom right) or we run out of neighbours. To prevent an infinite search, any visited nodess we insert
+    //from the [row][column] position that is being checked i.e. all 8 nodes around - careful to check for out of bounds and if
+    //that nodes is navigatable i.e. 0 value. Using BFS we then traverse through the neighbors of each nodes until we either
+    //find the target (bottom right) or we run out of neighbors. To prevent an infinite search, any visited nodes we insert
     //into a `visited` set.
     static func shortestPathBinaryMatrix(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
@@ -109,10 +109,10 @@ struct ShortestPathBinaryMatrix {
     //
     //Solution Description:
     //Treat the matrix as a graph with each "touching" node being a neighbor. "Touching" is defined by using relative indexing
-    //from the [row][column] position that is being checked i.e. all 8 nodess around - careful to check for out of bounds and
+    //from the [row][column] position that is being checked i.e. all 8 nodes around - careful to check for out of bounds and
     //if that nodes is navigatable i.e. 0 value. Gradually build up an adjacent list for all nodes in the graph, using BFS we
-    //then traverse through the neighbors until we either find the target (bottom right) or we run out of neighbours. To prevent
-    //an infinite search, any visited nodess we insert into a `visited` set.
+    //then traverse through the neighbors until we either find the target (bottom right) or we run out of neighbors. To prevent
+    //an infinite search, any visited nodes we insert into a `visited` set.
     static func shortestPathBinaryMatrixLongWay(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
             return -1

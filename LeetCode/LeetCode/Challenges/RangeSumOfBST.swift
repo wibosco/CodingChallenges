@@ -55,14 +55,14 @@ struct RangeSumOfBST {
     //Space: O(n)
     //binary search tree
     //DFS
-    //recusive
+    //recursive
     //preorder
     //
     //Solution Description:
-    //Using DFS to recusively traverse the tree, compare each node's value to determine if it is between `low` and
+    //Using DFS to recursively traverse the tree, compare each node's value to determine if it is between `low` and
     //`high`. If it is then add the value to the `result`. Then add the nodes left and right nodes to the queue
     //and repeat.
-    static func rangeSumBSTDFSRecusive(_ root: BinaryTreeNode?, _ low: Int, _ high: Int) -> Int {
+    static func rangeSumBSTDFSRecursive(_ root: BinaryTreeNode?, _ low: Int, _ high: Int) -> Int {
         var sum = 0
         dfs(root, low, high, &sum)
         return sum

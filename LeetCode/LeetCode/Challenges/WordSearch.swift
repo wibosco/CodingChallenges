@@ -33,7 +33,7 @@ struct WordSearch {
     //there. Using relative indexing we check if any of th neighbor cells to the current cell are valid for where we are in
     //our search for `word`. If a neighbor is valid we move onto that cell and repeat the process for the next letter in
     //`word` (using DFS). As we search we fill up `visited` with the path we have taken whenever we abandon a branch we
-    //remove entries from visited until we either find an alternatve branch or run out of cells. This backtracking of
+    //remove entries from visited until we either find an alternative branch or run out of cells. This backtracking of
     //`visited` is needed to ensure that we don't block off any new branches because we visited that cell in an older,
     //invalid branch.
     static func exist(_ board: [[Character]], _ word: String) -> Bool {

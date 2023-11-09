@@ -23,7 +23,7 @@ struct PushDominoes {
     //As all dominoes move at the same time meaning that each affects (or not) it's neighbor at the same time we need to process
     //changes in state in batches. To do this we need two arrays of dominoes - `liveDominoes` and `cachedDominoes`. `liveDominoes`
     //array holds the state of dominoes at that exact moment which can be during a batch, `cachedDominoes` holds the state of
-    //dominoes inbetween batches. This allows us to update `liveDominoes` with the latest batch changes without those current
+    //dominoes in-between batches. This allows us to update `liveDominoes` with the latest batch changes without those current
     //state changes affecting the states of further dominoes during that batch change - remember during a batch change all
     //dominoes are meant to be updated at the same time. At the end of a batch change we update `liveDominoes` with the latest
     //changes. We repeat this process until there are no changes made during a batch. The changes themself center around finding
@@ -92,7 +92,7 @@ struct PushDominoes {
     //work through the queue left to right. When we encounter an `R`, we check what the next index holds - if it's an "." we know
     //it has the potential to be changed but before we can change the change we need to check if the `.` elements right neighbor is
     //an `L`, it is then the `.` stays the way it is as the two neighbors balance it out; if it isn't we change it to an `R` and
-    //add that new changable state to our queue. It's important to note here that if the `.` elements other neighbor is an `L` then
+    //add that new changeable state to our queue. It's important to note here that if the `.` elements other neighbor is an `L` then
     //we increment the queue index as we have effectively processed that next item in the queue as well which has the added benefit
     //of simplifying how we process `L` elements. When we encounter an `L` element in the queue and we have a left `.` element
     //neighbor we go ahead and update that neighbor to `L` as any other previous-previous neighbors will have already been processed

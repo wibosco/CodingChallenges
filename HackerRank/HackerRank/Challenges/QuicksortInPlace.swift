@@ -34,7 +34,7 @@ final class QuicksortInPlace {
             }
         }
         
-        //Move pivot into positon behind partition
+        //Move pivot into position behind partition
         array.swapAt(partitionIndex, rightIndex)
         
         return partitionIndex

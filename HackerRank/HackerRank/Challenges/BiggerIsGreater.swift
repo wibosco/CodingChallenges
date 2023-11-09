@@ -36,7 +36,7 @@ struct BiggerIsGreater {
         if let pivot = pivot {
             //sort everything to the right of the pivot (least-
             //significant) into ascending order and then swap
-            //the pivot for the first (smallest) vslue that is
+            //the pivot for the first (smallest) value that is
             //greater than itself
             let insidePivot = (pivot + 1)
             let sortRange = insidePivot..<chars.count

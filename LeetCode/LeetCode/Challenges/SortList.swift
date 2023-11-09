@@ -98,7 +98,7 @@ struct SortList {
     //
     //Solution Description:
     //Go through the list and store each node into an array. Sort that array by the `val` property of each node. Link each
-    //node with the node directly succeeding it so the new order is represented in the list strucutre
+    //node with the node directly succeeding it so the new order is represented in the list structure
     static func sortListArray(_ head: ListNode?) -> ListNode? {
         guard let head = head else {
             return nil

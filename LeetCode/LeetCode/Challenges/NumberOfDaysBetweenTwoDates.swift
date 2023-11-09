@@ -18,8 +18,8 @@ struct NumberOfDaysBetweenTwoDates {
     //dates
     //
     //Solution Description:
-    //The tricky part here is knowing when a year is a leap year. A year is leap year if it is a mulitple of 4, unless it is
-    //also a mulitple of 100 unless (again) it is always a multiple of 400. Give that another read - it might be sense the
+    //The tricky part here is knowing when a year is a leap year. A year is leap year if it is a multiple of 4, unless it is
+    //also a multiple of 100 unless (again) it is always a multiple of 400. Give that another read - it might be sense the
     //second time. Knowing which year is a leap year means that all that we need to do if work of the number of days from
     //1971-01-01 to the given date for both dates and then get the absolute difference between the days.
     static func daysBetweenDates(_ date1: String, _ date2: String) -> Int {

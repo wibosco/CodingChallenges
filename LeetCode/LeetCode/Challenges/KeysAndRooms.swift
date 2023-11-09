@@ -59,7 +59,7 @@ struct KeysAndRooms {
     //Solution Description:
     //Treat the rooms and keys as an adjacency list, we can traverse the rooms using DFS. Starting at room 0
     //we add the room to `visited`. We then get the keys for room 0, we check that they don't open a room we
-    //have already visited and we perform a recusive key with the new keys. When the recursive DFS call finishes
+    //have already visited and we perform a recursive key with the new keys. When the recursive DFS call finishes
     //we compare the rooms visited with the total rooms.
     static func canVisitAllRoomsDFSRecursive(_ rooms: [[Int]]) -> Bool {
         var visited = Set<Int>(arrayLiteral: 0)

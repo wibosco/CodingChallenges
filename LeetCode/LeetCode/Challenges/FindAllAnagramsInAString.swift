@@ -17,7 +17,7 @@ struct FindAllAnagramsInAString {
     //strings
     //
     //Solution Description:
-    //Using a sliding window approach we are able to iterate through the `s` string checking if any squence ofcharacters of
+    //Using a sliding window approach we are able to iterate through the `s` string checking if any sequence of characters of
     //length `p` are anagrams of `p`. A sliding window works by moving through the array in a linear fashion and having elements
     //move into our inspection window from the right and move out of our inspection window from the left. Below we use a window
     //dictionary `sCount` to compare the elements in the current window against our static `pCount` dictionary. These

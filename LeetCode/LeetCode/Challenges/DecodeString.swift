@@ -21,7 +21,7 @@ struct DecodeString {
     //Iterate through `s` and add the values that we find to the `stack` until we find a closing bracket e.g. for 54[ab6[cd]]
     //our stack would be `5, 4, [, a, b, 6, [, c, d`. Once we a closing bracket we pop all the characters from the stack until
     //we find it matching opening bracket i.e. `c, d`. We now have our encoded char array for that bracket pair. We now need to
-    //determine how times that encoded char array should be expanded so keep popping from the stack until we have that mulitplier
+    //determine how times that encoded char array should be expanded so keep popping from the stack until we have that multiplier
     //(`k`) i.e. 6. We now decode that char array by pushing it onto the stack `k` times. Repeat this process until all `[` and
     //`]` encoding has been expanded and we have come to the end of our `chars` array.
     static func decodeString(_ s: String) -> String {

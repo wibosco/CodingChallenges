@@ -27,7 +27,7 @@ struct DetermineIfACellIsReachableAtAGivenTime {
         let width = abs(sx - fx)
         let height = abs(sy - fy)
         
-        if width == 0 && height == 0 && t == 1 { //start and finish are the same sqaure
+        if width == 0 && height == 0 && t == 1 { //start and finish are the same square
             return false
         }
         
@@ -47,7 +47,7 @@ struct DetermineIfACellIsReachableAtAGivenTime {
     //have a grid, we are not bounded and so don't need to check our relative indexing is inside that grid.
     //
     //N.B. we have used a relative `(sx, sy)` and `(fx, fy)` i.e. set `(sx, sy)` to `(0, 0)` and adjust `(fx, fy)` according,
-    //to help reduce the number of branches by enclosing those points in a grid however the improvemets are small compared to
+    //to help reduce the number of branches by enclosing those points in a grid however the improvements are small compared to
     //the complexity added.
     //
     //N.B. this solution does not scale well.

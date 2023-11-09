@@ -50,10 +50,10 @@ struct RobotRoomCleaner {
     //As we around the matrix we use these row and column changes to determine the matrix location we are at like you would
     //do on a graph with [0, 0] being the origin and positive and negative spaces existing. With this consistent coordinate
     //system we can now track where the robot is going so that we don't end up repeating movements using the `visited` set.
-    //Using backtracking we are able to move in all univsited/obstructed directions, ensuring that we cover the full matrix.
-    //For each cell (row, column combination) we attempt to move in all directons in a DFS manner. As we are moving if we
-    //encounter an obstalce or have no unvisited cell to move into we backtrack the robot. We do this by performing a 180
-    //turn, move and then perform another 180 to face the original directon ready to choose a different direction.
+    //Using backtracking we are able to move in all unvisited/obstructed directions, ensuring that we cover the full matrix.
+    //For each cell (row, column combination) we attempt to move in all directions in a DFS manner. As we are moving if we
+    //encounter an obstacle or have no unvisited cell to move into we backtrack the robot. We do this by performing a 180
+    //turn, move and then perform another 180 to face the original direction ready to choose a different direction.
     static func cleanRoom(_ robot: Robot) {
         // going clockwise : 0: 'up', 1: 'right', 2: 'down', 3: 'left'
         let relativeIndexing = [[-1, 0], [0, 1], [1, 0], [0, -1]]

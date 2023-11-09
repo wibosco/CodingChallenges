@@ -19,7 +19,7 @@ struct SerializeDeserializeBinaryTree {
     //
     //Solution Description:
     //Traverse the tree level-by-level (BFS) adding the value (or lack of value) of each node encountered to an array. At the end
-    //of the traveral remove any trailing `nil` values.
+    //of the traversal remove any trailing `nil` values.
     static func serialize(_ root: BinaryTreeNode?) -> [Int?] {
         guard let root = root else {
             return [Int?]()

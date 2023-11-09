@@ -14,15 +14,15 @@ final class UndergroundSystemTests: XCTestCase {
     // MARK: - Tests
     
     func test_A() {
-        let undergrounsSystem = UndergroundSystem()
-        undergrounsSystem.checkIn(45, "Leyton", 3)
-        undergrounsSystem.checkIn(32, "Paradise", 8)
-        undergrounsSystem.checkIn(27, "Leyton", 10)
-        undergrounsSystem.checkOut(45, "Waterloo", 15)
-        undergrounsSystem.checkOut(27, "Waterloo", 20)
-        undergrounsSystem.checkOut(32, "Cambridge", 22)
+        let undergroundSystem = UndergroundSystem()
+        undergroundSystem.checkIn(45, "Leyton", 3)
+        undergroundSystem.checkIn(32, "Paradise", 8)
+        undergroundSystem.checkIn(27, "Leyton", 10)
+        undergroundSystem.checkOut(45, "Waterloo", 15)
+        undergroundSystem.checkOut(27, "Waterloo", 20)
+        undergroundSystem.checkOut(32, "Cambridge", 22)
         
-        XCTAssertEqual(undergrounsSystem.getAverageTime("Paradise", "Cambridge"), 14.000, accuracy: 0.1)
-        XCTAssertEqual(undergrounsSystem.getAverageTime("Leyton", "Waterloo"), 11.000, accuracy: 0.1)
+        XCTAssertEqual(undergroundSystem.getAverageTime("Paradise", "Cambridge"), 14.000, accuracy: 0.1)
+        XCTAssertEqual(undergroundSystem.getAverageTime("Leyton", "Waterloo"), 11.000, accuracy: 0.1)
     }
 }

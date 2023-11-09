@@ -19,14 +19,14 @@ struct GenerateParentheses {
     //
     //Solution Description:
     //Using backtracking we explore each possible combination of "(" and ")". To avoid having to use extra space by
-    //generating an array containg `n` opening brackets and `n` closing brackets we instead use counters for opening
+    //generating an array containing `n` opening brackets and `n` closing brackets we instead use counters for opening
     //and closing can still be added to an existing combination - as will as saving space this approach also allows
-    //us to easily determine if a brakcet combination is valid but ensuring we never add an unmatched closing bracket.
+    //us to easily determine if a bracket combination is valid but ensuring we never add an unmatched closing bracket.
     //During the combination generation at level we check if we have any remaining brackets to use. If we don't we
     //add `current` to our `combinations` array as `current` will have `n` pairs. If we do we check if we have the
     //opening bracket balance we above 0 and we spend 1 opening bracket, next we check if the closing bracket balance
     //is greater than the opening bracket balance i.e. we need to match up some opening brackets, if it is greater we
-    //add a closingg bracket; if it isn't we skip over (this happens when the current branch won't result in a valid
+    //add a closing bracket; if it isn't we skip over (this happens when the current branch won't result in a valid
     //bracket combination and that branch should be abandoned).
     //
     //See: https://www.youtube.com/watch?v=sz1qaKt0KGQ for more info

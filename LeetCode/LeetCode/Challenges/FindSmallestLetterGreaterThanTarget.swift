@@ -44,7 +44,7 @@ struct FindSmallestLetterGreaterThanTarget {
     //Space: O(1)
     //
     //Solution Description:
-    //Loop throught the letters, checking in each iteration if it is greater than the target
+    //Loop through the letters, checking in each iteration if it is greater than the target
     static func nextGreatestLetterLinear(_ letters: [Character], _ target: Character) -> Character {
         for letter in letters {
             //no need to check if target is greater than (letter - 1)

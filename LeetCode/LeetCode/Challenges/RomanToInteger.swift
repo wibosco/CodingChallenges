@@ -23,7 +23,7 @@ struct RomanToInteger {
     //in this context on its own but instead needs to be combined with the "V" to give us "4" rather than "15".
     //
     //So we can use this property of roman numerals to iterate through `s` from left-to-right and convert each character
-    //into the decuimal system. This converted decimal value we can then just add directly to our running total - `total`.
+    //into the decimal system. This converted decimal value we can then just add directly to our running total - `total`.
     //If we discover on the next conversion that actually the previous conversion is of a lesser value then we remove the
     //lesser value from `total` twice - once to remove the false addition and the next removal to remove it from the current
     //decimal conversion value e.g. for "IV" we first added 1 to `total` then we encountered the "V" so we need to remove
@@ -50,7 +50,7 @@ struct RomanToInteger {
             
             if currentValue > previousValue {
                 // Need to remove the previous falsely added value and then the current values substitution
-                // Think about IX (9), we prevously added 1 and now we have a current value of X (10) in
+                // Think about IX (9), we previously added 1 and now we have a current value of X (10) in
                 // order to get the correct value of 9 we need to remove 1 twice
                 total -= (2 * previousValue)
             }

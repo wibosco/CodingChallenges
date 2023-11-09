@@ -70,7 +70,7 @@ struct Search2DMatrix {
     //
     //Solution Description:
     //As the matrix is sorted we can merge the rows into a single array and perform a binary search on single array. By using
-    //binary search we are able to discard half the search space everytime we don't find the target
+    //binary search we are able to discard half the search space every time we don't find the target
     static func searchMatrixMerge(_ matrix: [[Int]], _ target: Int) -> Bool {
         var array = [Int]()
         for row in matrix { // O(n)
