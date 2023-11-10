@@ -15,6 +15,7 @@ struct TwoSum {
     //Space: O(n)
     //array
     //dictionary
+    //inverted thinking
     //
     //Solution Description:
     //As we iterate through `nums` we check if another `nums` element can be added to it to equal `target`. To avoid having to
