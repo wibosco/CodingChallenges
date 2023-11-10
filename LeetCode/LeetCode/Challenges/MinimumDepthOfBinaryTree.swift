@@ -16,7 +16,7 @@ struct MinimumDepthOfBinaryTree {
     //BFS
     //queue
     //iterative
-    //level-by-level
+    //level traversal
     //
     //Solution Description:
     //Using BFS we traverse down the tree in a level-by-level fashion - tracking the level change as we do with `depth`.

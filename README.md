@@ -6,10 +6,10 @@
 # CodingChallenges
 A collection of coding challenges and their solutions from:
 
-- HackerRank
-  - https://www.hackerrank.com/
 - LeetCode
   - https://leetcode.com/
+- HackerRank
+  - https://www.hackerrank.com/
 - Cracking the Coding Interview
   - https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/
 
@@ -41,7 +41,7 @@ A collection of coding challenges and their solutions from:
 | "Merge", "Intervals", "Neighbors" | `sort` |
 | "Rotate by k" | `(i + k) % array.count` |
 
-## Need Tips
+## Need to... Tips
 
 | Need to... | Technique | Example |
 | ---------- | --------- | ------- |
