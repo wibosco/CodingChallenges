@@ -18,7 +18,7 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
         
         let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
         
-        //root can change and that is still valid
+        //start node can change with end node and that is still valid
         if result[0] == 1 {
             XCTAssertEqual(result, [1,2,3,4])
         } else {
@@ -31,7 +31,7 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
         
         let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
         
-        //root can change and that is still valid
+        //start node can change with end node and that is still valid
         if result[0] == -2 {
             XCTAssertEqual(result, [-2,4,1,-3])
         } else {
@@ -44,6 +44,11 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
         
         let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
         
-        XCTAssertEqual(result, [100000,-100000])
+        //start node can change with end node and that is still valid
+        if result[0] == 100000 {
+            XCTAssertEqual(result, [100000,-100000])
+        } else {
+            XCTAssertEqual(result, [-100000, 100000])
+        }
     }
 }
