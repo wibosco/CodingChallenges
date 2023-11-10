@@ -13,6 +13,7 @@ struct ValidateBinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) - stack calls
+    //binary tree
     //binary search tree
     //pre-order
     //recursive
@@ -45,6 +46,7 @@ struct ValidateBinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree (actually O(2n))
     //Space: O(n) actually O(2n) - stack calls and visited array
+    //binary tree
     //binary search tree
     //in-order
     //sorted

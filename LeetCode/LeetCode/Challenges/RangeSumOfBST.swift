@@ -13,6 +13,7 @@ struct RangeSumOfBST {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the size of the largest level
+    //binary tree
     //binary search tree
     //BFS
     //
@@ -53,10 +54,11 @@ struct RangeSumOfBST {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary tree
     //binary search tree
     //DFS
     //recursive
-    //preorder
+    //pre-order
     //
     //Solution Description:
     //Using DFS to recursively traverse the tree, compare each node's value to determine if it is between `low` and
@@ -84,6 +86,7 @@ struct RangeSumOfBST {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary tree
     //binary search tree
     //DFS
     //iterative

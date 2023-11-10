@@ -16,7 +16,7 @@ struct MinimumAbsoluteDifferenceInBST {
     //binary search tree
     //DFS
     //recursive
-    //inorder
+    //in-order
     //
     //Solution Description:
     //Traversing the tree in-order results in an array that is in ascending order - `order`. This sorted array means that when

@@ -13,6 +13,7 @@ struct UniqueBinarySearchTrees {
     
     //Time: O(n^2) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary tree
     //binary search tree
     //sorted
     //

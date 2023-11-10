@@ -15,7 +15,7 @@ struct FindModeInBinarySearchTree {
     //binary tree
     //DFS
     //recursive
-    //inorder
+    //in-order
     //
     //Solution Description:
     //As we have a binary search tree, we know that the nodes are already ordered so if perform a inorder traversal of the

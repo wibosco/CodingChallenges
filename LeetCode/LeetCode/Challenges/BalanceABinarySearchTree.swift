@@ -12,6 +12,7 @@ struct BalanceABinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n)
+    //binary tree
     //binary search tree
     //in-order
     //recursive

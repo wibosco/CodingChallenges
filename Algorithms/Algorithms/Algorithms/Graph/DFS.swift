@@ -15,6 +15,7 @@ struct DFS {
     //Space: O(max(l) * log n) where l is the number of nodes at the largest level, n is the number of nodes in the tree
     //DFS
     //graph theory
+    //binary tree
     //binary search tree
     //visited
     //stack

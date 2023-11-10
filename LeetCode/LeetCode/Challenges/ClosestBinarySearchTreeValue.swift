@@ -13,6 +13,7 @@ struct ClosestBinarySearchTreeValue {
     
     //Time: O(log n) where n is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
+    //binary tree
     //binary search tree
     //DFS
     //recursive
@@ -49,6 +50,7 @@ struct ClosestBinarySearchTreeValue {
     
     //Time: O(log n) where n is the number of nodes in the tree
     //Space: O(1)
+    //binary tree
     //binary search tree
     //DFS
     //iterative

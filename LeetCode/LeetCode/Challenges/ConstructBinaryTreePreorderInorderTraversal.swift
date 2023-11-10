@@ -10,8 +10,8 @@ import Foundation
 
 //https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 struct ConstructBinaryTreePreorderInorderTraversal {
-    //preorder = root, left, right
-    //inorder = left, root, right
+    //pre-order = root, left, right
+    //in-order = left, root, right
     
     //Time: O(n)
     //Space: O(n)

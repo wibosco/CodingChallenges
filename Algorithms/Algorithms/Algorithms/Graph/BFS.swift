@@ -328,6 +328,7 @@ struct BFS {
     //Time: O(log n) where n is the number of nodes in the tree
     //Space: O(max(l) * log n) where l is the number of nodes at the largest level, n is the number of nodes in the tree
     //BFS
+    //binary tree
     //binary search tree
     //queue
     //iterative
@@ -408,6 +409,7 @@ struct BFS {
     //Time: O(n) where n is the number of nodes in the tree (O(log n) for a balanced BST)
     //Space: O(max(l) * log n) where l is the number of nodes at the largest level, n is the number of nodes in the tree
     //BFS
+    //binary tree
     //binary search tree
     //queue
     //iterative

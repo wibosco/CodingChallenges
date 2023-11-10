@@ -12,6 +12,7 @@ struct TrimABinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the number of levels in the tree
+    //binary tree
     //binary search tree
     //DFS
     //recursive
@@ -47,6 +48,7 @@ struct TrimABinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the number of levels in the tree
+    //binary tree
     //binary search tree
     //DFS
     //recursive

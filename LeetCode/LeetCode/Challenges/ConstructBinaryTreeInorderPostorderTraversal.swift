@@ -10,8 +10,8 @@ import Foundation
 
 //https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 struct ConstructBinaryTreeInorderPostorderTraversal {
-    //postorder = left, right, root
-    //inorder = left, root, right
+    //post-order = left, right, root
+    //in-order = left, root, right
     
     //Time: O(n)
     //Space: O(n)

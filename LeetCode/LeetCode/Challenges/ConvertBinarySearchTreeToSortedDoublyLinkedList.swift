@@ -13,6 +13,7 @@ struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the recursion stack
+    //binary tree
     //binary search tree
     //sorting
     //linked list

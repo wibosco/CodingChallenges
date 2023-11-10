@@ -13,6 +13,7 @@ struct LowestCommonAncestorBinarySearchTree {
     
     //Time: O(log n) where n is the number of nodes in the tree
     //Space: O(log n)
+    //binary tree
     //binary search tree
     //DFS
     //stack
@@ -39,6 +40,7 @@ struct LowestCommonAncestorBinarySearchTree {
     
     //Time: O(log n) where n is the number of nodes in the tree
     //Space: O(1) there will only ever be one node in the queue
+    //binary tree
     //binary search tree
     //BFS
     //queue

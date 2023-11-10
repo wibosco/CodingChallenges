@@ -18,7 +18,12 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
         
         let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
         
-        XCTAssertEqual(result, [1,2,3,4])
+        //root can change and that is still valid
+        if result[0] == 1 {
+            XCTAssertEqual(result, [1,2,3,4])
+        } else {
+            XCTAssertEqual(result, [4,3,2,1])
+        }
     }
     
     func test_B() {
@@ -26,7 +31,12 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
         
         let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
         
-        XCTAssertEqual(result, [-2,4,1,-3])
+        //root can change and that is still valid
+        if result[0] == -2 {
+            XCTAssertEqual(result, [-2,4,1,-3])
+        } else {
+            XCTAssertEqual(result, [-3,1,4,-2])
+        }
     }
     
     func test_C() {

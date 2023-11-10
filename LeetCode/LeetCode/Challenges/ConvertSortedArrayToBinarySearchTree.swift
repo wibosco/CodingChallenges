@@ -9,11 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-//binary search tree
 struct ConvertSortedArrayToBinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(log n) where n is the number of nodes in the tree
+    //binary tree
+    //binary search tree
     //DFS
     //recursive
     //divide and conquer

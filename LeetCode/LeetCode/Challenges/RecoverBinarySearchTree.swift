@@ -13,10 +13,11 @@ struct RecoverBinarySearchTree {
     
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(n) where n is the number of nodes in the tree stored in `inorder` array
+    //binary tree
     //binary search tree
     //array
     //DFS
-    //inorder
+    //in-order
     //
     //Solution Description:
     //Performing an inorder traversal of a binary search tree should result in an array of ordered/sorted nodes. We can use
