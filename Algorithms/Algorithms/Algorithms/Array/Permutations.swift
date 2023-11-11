@@ -23,7 +23,7 @@ struct Permutations {
     //With permutations order is important so [1, 2, 3] is not the same as [3, 2, 1]. With this in mind we can use backtracking
     //to iterate through `nums` and produce every possible permutation of `nums`. Care has to be given so as not to reuse an
     //already used element so whenever we use an element we add it to the `usedIndexes` set so that it can be skipped over on
-    //any deeper recursive calls. We then back it and the permutation change when that recursive call returns.
+    //any deeper recursive calls. We then backtrack and the permutation changes when that recursive call returns.
     //
     //Permutations of 123:
     //

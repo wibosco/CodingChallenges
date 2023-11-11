@@ -44,7 +44,7 @@ struct MaximumTwinSumOfALinkedList {
     //Time: O(n) where n is the number of nodes in the linked list
     //Space: O(1)
     //linked list
-    //fast and slow
+    //fast and slow pointers
     //two pointers
     //
     //Solution Description:
