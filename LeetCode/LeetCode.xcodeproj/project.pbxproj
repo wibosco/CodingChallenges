@@ -522,6 +522,8 @@
 		3DEFAAB827D2683A00DB0E9D /* VerticalOrderTraversalOfABinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAB727D2683A00DB0E9D /* VerticalOrderTraversalOfABinaryTreeTests.swift */; };
 		3DF8DF0627A94E120034F83B /* BestTimeToBuyAndSellStockII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8DF0527A94E120034F83B /* BestTimeToBuyAndSellStockII.swift */; };
 		3DF8DF0827A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8DF0727A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift */; };
+		430094CA2B0278D700650F1E /* PathSumII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430094C92B0278D700650F1E /* PathSumII.swift */; };
+		430094CC2B02790F00650F1E /* PathSumIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430094CB2B02790F00650F1E /* PathSumIITests.swift */; };
 		4300FF8829E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF8729E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift */; };
 		4300FF8A29E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF8929E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift */; };
 		4300FF8C29E6B4B600299C39 /* InvertBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300FF8B29E6B4B600299C39 /* InvertBinaryTree.swift */; };
@@ -1329,6 +1331,8 @@
 		3DEFAAB727D2683A00DB0E9D /* VerticalOrderTraversalOfABinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalOrderTraversalOfABinaryTreeTests.swift; sourceTree = "<group>"; };
 		3DF8DF0527A94E120034F83B /* BestTimeToBuyAndSellStockII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStockII.swift; sourceTree = "<group>"; };
 		3DF8DF0727A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStockIITests.swift; sourceTree = "<group>"; };
+		430094C92B0278D700650F1E /* PathSumII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSumII.swift; sourceTree = "<group>"; };
+		430094CB2B02790F00650F1E /* PathSumIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSumIITests.swift; sourceTree = "<group>"; };
 		4300FF8729E5A9C900299C39 /* LongestRepeatingCharacterReplacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestRepeatingCharacterReplacement.swift; sourceTree = "<group>"; };
 		4300FF8929E5AA0000299C39 /* LongestRepeatingCharacterReplacementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestRepeatingCharacterReplacementTests.swift; sourceTree = "<group>"; };
 		4300FF8B29E6B4B600299C39 /* InvertBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertBinaryTree.swift; sourceTree = "<group>"; };
@@ -1947,6 +1951,7 @@
 				4311BC672A5849FE00137AED /* PascalsTriangle.swift */,
 				3D5C911627A7F7630035C399 /* PascalsTriangleII.swift */,
 				3D5C90F827A7F7620035C399 /* PathSum.swift */,
+				430094C92B0278D700650F1E /* PathSumII.swift */,
 				3D5C90F627A7F7620035C399 /* PeakIndexMountainArray.swift */,
 				3D5C90EA27A7F7620035C399 /* PerfectSquares.swift */,
 				43A423C72A0544DD005AFB34 /* PermutationInString.swift */,
@@ -2344,6 +2349,7 @@
 				3D46243E27E544BB00A888C1 /* PartitionListTests.swift */,
 				3D5C925327A7F76C0035C399 /* PascalsTriangleIITests.swift */,
 				4311BC692A584A3600137AED /* PascalsTriangleTests.swift */,
+				430094CB2B02790F00650F1E /* PathSumIITests.swift */,
 				3D5C922A27A7F76B0035C399 /* PathSumTests.swift */,
 				3D5C921827A7F76B0035C399 /* PeakIndexMountainArrayTests.swift */,
 				3D5C925627A7F76C0035C399 /* PerfectSquaresTests.swift */,
@@ -2634,6 +2640,7 @@
 				3D5C91E527A7F7630035C399 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
 				3D8424DB27F1AF1800B91AAB /* MeetingRooms.swift in Sources */,
 				3D7F319127F9E39D00200775 /* IsGraphBipartite.swift in Sources */,
+				430094CA2B0278D700650F1E /* PathSumII.swift in Sources */,
 				3D5C91E827A7F7630035C399 /* WallsAndGates.swift in Sources */,
 				3D5C91B227A7F7630035C399 /* AccountsMerge.swift in Sources */,
 				3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */,
@@ -3263,6 +3270,7 @@
 				3D5C92A527A7F76C0035C399 /* BuildingsWithOceanViewTests.swift in Sources */,
 				434D464F2A7C016C008F80C9 /* MaximumTwinSumOfALinkedListTests.swift in Sources */,
 				3D5C92AF27A7F76C0035C399 /* TargetSumTests.swift in Sources */,
+				430094CC2B02790F00650F1E /* PathSumIITests.swift in Sources */,
 				4300FF9629E709C900299C39 /* CourseScheduleTests.swift in Sources */,
 				43BD45902AFD7317006216F0 /* CountNumberOfHomogenousSubstringsTests.swift in Sources */,
 				435AFBA12A5C9BFE00721B88 /* MinimumDepthOfBinaryTreeTests.swift in Sources */,
