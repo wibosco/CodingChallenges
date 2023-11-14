@@ -46,7 +46,6 @@ struct PascalsTriangleII {
     //Space: O(l) where `l` is the number of items at row index
     //graph theory
     //recursive
-    //memoization
     //
     //Solution Description:
     //Starting from 0 recursively build up the triangle until we reach the target index - `rowIndex`. At each step we use the

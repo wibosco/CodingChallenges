@@ -550,6 +550,8 @@
 		4302D0932A74061C001D5375 /* OneThreeTwoPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302D0922A74061C001D5375 /* OneThreeTwoPatternTests.swift */; };
 		430515C729DF7506007F59B0 /* PowerOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430515C629DF7506007F59B0 /* PowerOfThree.swift */; };
 		430515C929DF76A7007F59B0 /* PowerOfThreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430515C829DF76A7007F59B0 /* PowerOfThreeTests.swift */; };
+		430BD7C72B02CB770036A03F /* HouseRobberIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BD7C62B02CB770036A03F /* HouseRobberIII.swift */; };
+		430BD7C92B02CBB50036A03F /* HouseRobberIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BD7C82B02CBB50036A03F /* HouseRobberIIITests.swift */; };
 		4311BC642A5838AC00137AED /* IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC632A5838AC00137AED /* IsSubsequence.swift */; };
 		4311BC662A5838ED00137AED /* IsSubsequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC652A5838ED00137AED /* IsSubsequenceTests.swift */; };
 		4311BC682A5849FE00137AED /* PascalsTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC672A5849FE00137AED /* PascalsTriangle.swift */; };
@@ -1361,6 +1363,8 @@
 		4302D0922A74061C001D5375 /* OneThreeTwoPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneThreeTwoPatternTests.swift; sourceTree = "<group>"; };
 		430515C629DF7506007F59B0 /* PowerOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfThree.swift; sourceTree = "<group>"; };
 		430515C829DF76A7007F59B0 /* PowerOfThreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfThreeTests.swift; sourceTree = "<group>"; };
+		430BD7C62B02CB770036A03F /* HouseRobberIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberIII.swift; sourceTree = "<group>"; };
+		430BD7C82B02CBB50036A03F /* HouseRobberIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberIIITests.swift; sourceTree = "<group>"; };
 		4311BC632A5838AC00137AED /* IsSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSubsequence.swift; sourceTree = "<group>"; };
 		4311BC652A5838ED00137AED /* IsSubsequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSubsequenceTests.swift; sourceTree = "<group>"; };
 		4311BC672A5849FE00137AED /* PascalsTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangle.swift; sourceTree = "<group>"; };
@@ -1830,6 +1834,7 @@
 				3D5C911A27A7F7630035C399 /* HappyNumber.swift */,
 				4379F48829E802D6003BA6F9 /* HouseRobber.swift */,
 				4379F48C29E820C0003BA6F9 /* HouseRobberII.swift */,
+				430BD7C62B02CB770036A03F /* HouseRobberIII.swift */,
 				3D9283062823E4EA0059ACDD /* ImplementStackUsingQueues.swift */,
 				3D5C909E27A7F7620035C399 /* ImplementStrStr.swift */,
 				436634972AFE5C320087F13F /* IncreasingOrderSearchTree.swift */,
@@ -2228,6 +2233,7 @@
 				3D5C924627A7F76C0035C399 /* GuessNumberHigherOrLowerTests.swift */,
 				43C8CB502A54270A00FAA411 /* HandOfStraightsTests.swift */,
 				3D5C91FA27A7F76B0035C399 /* HappyNumberTests.swift */,
+				430BD7C82B02CBB50036A03F /* HouseRobberIIITests.swift */,
 				4379F48E29E820F0003BA6F9 /* HouseRobberIITests.swift */,
 				4379F48A29E802E8003BA6F9 /* HouseRobberTests.swift */,
 				3D9283082823E5840059ACDD /* ImplementStackUsingQueuesTests.swift */,
@@ -2599,6 +2605,7 @@
 				3D5C919A27A7F7630035C399 /* MaximumSubarray.swift in Sources */,
 				3DA6FF0727AC784D009BD7A8 /* RepeatedDNASequences.swift in Sources */,
 				3D5C91AE27A7F7630035C399 /* FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */,
+				430BD7C72B02CB770036A03F /* HouseRobberIII.swift in Sources */,
 				3D5C917427A7F7630035C399 /* IntegerToRoman.swift in Sources */,
 				437F39482AEEDF5E002275CF /* ShortestBridge.swift in Sources */,
 				3D5C91A527A7F7630035C399 /* NextPermutation.swift in Sources */,
@@ -3032,6 +3039,7 @@
 				435434812AF53391002B996E /* DetonateTheMaximumBombsTests.swift in Sources */,
 				3DA8E5132804395600A23F3C /* SortCharactersByFrequencyTests.swift in Sources */,
 				43F3720D2A77AFB80000BF78 /* ArrangingCoinsTests.swift in Sources */,
+				430BD7C92B02CBB50036A03F /* HouseRobberIIITests.swift in Sources */,
 				434679542A56D9B900A1D225 /* ReplaceElementsWithGreatestElementOnRightSideTests.swift in Sources */,
 				3D5C92AE27A7F76C0035C399 /* ImplementStrStrTests.swift in Sources */,
 				3D5C932D27A7F76C0035C399 /* SmallestStringWithSwapsTests.swift in Sources */,

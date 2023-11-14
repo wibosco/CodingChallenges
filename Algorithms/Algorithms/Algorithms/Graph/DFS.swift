@@ -22,8 +22,8 @@ struct DFS {
     //recursive
     //
     //Solution Description:
-    //Depth-first search involves searching by searching fully down one path until we either find `target` or go beyond the left
-    //vertices e.g.
+    //Depth-first search involves searching by fully exploring one path from root until we either find `target` or run out of vertices
+    //before exploring the other vertices associated with the root e.g:
     //
     //                    +---+
     //          +---------+ 4 +---------+
@@ -117,8 +117,8 @@ struct DFS {
     //backtracking
     //
     //Solution Description:
-    //Depth-first search involves searching by searching fully down one path until we either find `target` or go beyond the left
-    //vertices e.g.
+    //Depth-first search involves searching by fully exploring one path from root until we either find `target` or run out of vertices
+    //before exploring the other vertices associated with the root e.g:
     //
     //                    +---+
     //          +---------+ 4 +---------+
@@ -211,8 +211,8 @@ struct DFS {
     //backtracking
     //
     //Solution Description:
-    //Depth-first search involves searching by searching fully down one path until we either find `target` or go beyond the left
-    //vertices e.g.
+    //Depth-first search involves searching by fully exploring one path from root until we either find `target` or run out of vertices
+    //before exploring the other vertices associated with the root e.g:
     //
     //          +---+      +---+        +---+
     //   +----->| 1 +----->| 4 +---+--->| 7 |

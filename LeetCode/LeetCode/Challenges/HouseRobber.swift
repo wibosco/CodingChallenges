@@ -15,7 +15,8 @@ struct HouseRobber {
     //array
     //graph theory
     //memoization
-    //dynamic programming (top down)
+    //top-down
+    //dynamic programming
     //DFS
     //recursive
     //dynamic vertices

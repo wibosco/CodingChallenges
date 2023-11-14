@@ -15,6 +15,7 @@ struct ClimbingStairs {
     //Space: O(n)
     //binary tree
     //memoization
+    //top-down
     //dynamic programming
     //recursive
     //DFS

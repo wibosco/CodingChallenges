@@ -14,7 +14,8 @@ struct LongestIncreasingSubsequence {
     //Space: O(n)
     //array
     //graph theory
-    //dynamic programming (bottom-up)
+    //dynamic programming
+    //bottom-up
     //
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
@@ -46,7 +47,8 @@ struct LongestIncreasingSubsequence {
     //DFS
     //recursive
     //memoization
-    //dynamic programming (top down)
+    //top-down
+    //dynamic programming
     //
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting

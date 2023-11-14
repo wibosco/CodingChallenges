@@ -41,6 +41,7 @@ struct DecodeWays {
     //Space: O(n)
     //binary tree
     //memoization
+    //top-down
     //dynamic programming
     //recursive
     //DFS

@@ -44,6 +44,7 @@ struct MaximumLengthOfPairChain {
     //array
     //sorting
     //memoization
+    //top-down
     //dynamic programming
     //recursive
     //subsequence
@@ -107,8 +108,6 @@ struct MaximumLengthOfPairChain {
     //Space: O(n)
     //array
     //sorting
-    //memoization
-    //dynamic programming
     //recursive
     //subsequence
     //DFS

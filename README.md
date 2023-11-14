@@ -13,6 +13,19 @@ A collection of coding challenges and their solutions from:
 - Cracking the Coding Interview
   - https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/
 
+## Big O
+
+| Complexity | Name |
+| ---------- | ---- |
+| O(1) | Constant |
+| O(log n) | Logarithmic |
+| O(n) | Linear |
+| O(n log n) | Linear-logarithmic |
+| O(n ^ 2) | Quadratic |
+| O(n ^ c) | Polynomial |
+| O(2 ^ n) | Exponential |
+| O(n!) | Factorial |
+
 ## Hints for how to solve:
 
 | Keywords | Techniques |
@@ -59,6 +72,15 @@ A collection of coding challenges and their solutions from:
 | Find the minimum distance from one element to multiple elements in a graph | Multi-source BFS | `AsFarFromLandAsPossible` |
 
 A lot of problems can be treated as graph problems.
+
+## Techniques
+
+| Technique | What is it? | Example |
+| --------- | ----------- | ------- |
+| BFS | Breadth-first search involves searching a graph level by level - ensuring all vertices on a level have been searched before moving onto the next level. A level is all immediate vertices connected to a vertice from the previous level. | `BFS` |
+| DFS | Depth-first search involves searching a graph by fully exploring one path from root before searching any other other vertices from root. | `DFS` |
+| Binary search | Binary search works by selecting the middle index in the sorted array `values` and comparing its value against `target`. If `values[mid]` matches `target` then we have found our target and can return; if  `values[mid]` does not match `target` then we half the search space by moving either `left` to the right (if `values[mid]` was smaller than `target`) or moving `right` to the left (if `values[mid]` was larger than `target`). We can reduce the search space like this because `values` sorted so we know that if `values[mid]` was smaller than `target` then any index less than `mid` will contain an even smaller value than `values[mid]` so searching those other indexes would be pointless (the opposite is true for reducing the search space to the right of `mid`). | `BinarySearch` |
+|Dynamic Programming | Dynamic programming is a technique for solving problems of recursive nature where we re-use work to speed up the process of solving the problem. It can look like dynamic programming solutions are brute force in nature. <br /><br /> Dynamic programming can be implemented **bottom-up** or **top-down**: <br /><br /> - **Bottom-up** is when we solve the easiest sub-problem first and use that solution directly to solve a "higher" problem. <br /><br /> - **Top-down** is when we cache the solutions to sub-problems in the course of solving a "higher" problem. We can then access those cached solutions when attempting to solve other similar "higher" problems (not the original "higher problem"). | `HouseRobberIII` |
 
 ## Data Structure Characteristics
 
@@ -126,19 +148,3 @@ A lot of problems can be treated as graph problems.
     1. Breadth First Search (BFS) - queue based, level by level traversal
     2. Depth First Search (DFS) - stack based, go as deep as possible then backtrack
 5. Backtracking involves exhaustively searching down one path before reversing back up that path to search down alternative paths at each branching point
-
-## Techniques
-
-### What is Dynamic Programming?
-
-Dynamic programming is a technique for solving problems of recursive nature, iteratively and is applicable when the computations of the subproblems overlap.
-
-Dynamic programming is typically implemented using tabulation, but can also be implemented using memoization. So as you can see, neither one is a "subset" of the other.
-
-When you solve a dynamic programming problem using tabulation you solve the problem "bottom up", i.e., by solving all related sub-problems first, typically by filling up an n-dimensional table. Based on the results in the table, the solution to the "top" / original problem is then computed.
-
-If you use memoization to solve the problem you do it by maintaining a map of already solved sub problems. You do it "top down" in the sense that you solve the "top" problem first (which typically recurses down to solve the sub-problems).
-
-Top-down - First you say I will take over the world. How will you do that? You say I will take over Asia first. How will you do that? I will take over India first. I will become the Chief Minister of Delhi, etc.
-
-Bottom-up - You say I will become the Chief Minister of Delhi. Then I will take over India, then all other countries in Asia and finally I will take over the world. 
