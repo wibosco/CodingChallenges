@@ -21,7 +21,7 @@ struct PopulatingNextRightPointers {
     //1. BFS traversal
     //2. Treat each level as a linked list
     //3. Set N + 1 `next` property from level N
-    static func connect(_ root: BinaryTreeNodeNext?) -> BinaryTreeNodeNext? {
+    static func connect(_ root: TreeNodeNext?) -> TreeNodeNext? {
         guard let root = root else {
             return nil
         }
@@ -59,7 +59,7 @@ struct PopulatingNextRightPointers {
     //1. BFS traversal
     //2. Queue nodes
     //3. Use a `prev` to set the N - 1 nodes next property to the N node
-    static func connectQueue(_ root: BinaryTreeNodeNext?) -> BinaryTreeNodeNext? {
+    static func connectQueue(_ root: TreeNodeNext?) -> TreeNodeNext? {
         guard let root = root else {
             return nil
         }
@@ -68,7 +68,7 @@ struct PopulatingNextRightPointers {
         
         while !queue.isEmpty {
             let count = queue.count //how many nodes are in this level
-            var prev: BinaryTreeNodeNext?
+            var prev: TreeNodeNext?
             
             for _ in 0..<count { //need to know how many times we remove from the queue for this level
                 let node = queue.removeFirst() //O(n)

@@ -15,7 +15,7 @@ final class UnivaluedBinaryTreeTests: XCTestCase {
     
     func test_A() {
         let data = [1,1,1,1,1,nil,1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = UnivaluedBinaryTree.isUnivalTree(root)
         
@@ -24,7 +24,7 @@ final class UnivaluedBinaryTreeTests: XCTestCase {
     
     func test_B() {
         let data = [2,2,2,5,2]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = UnivaluedBinaryTree.isUnivalTree(root)
         

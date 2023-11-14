@@ -36,12 +36,12 @@ struct RecoverBinarySearchTree {
     //
     //IMPORTANT NOTE: carefully read any data structure you are given as the `TreeNode` had it's `val` property as `var` -
     //hinting at updating `val` value rather than truly swapping the nodes (connections and all)
-    static func recoverTree(_ root: BinaryTreeNode?) {
-        var inorder = [BinaryTreeNode]()
+    static func recoverTree(_ root: TreeNode?) {
+        var inorder = [TreeNode]()
         dfs(root, &inorder)
         
-        var first: BinaryTreeNode?
-        var second: BinaryTreeNode?
+        var first: TreeNode?
+        var second: TreeNode?
         
         for i in 0..<(inorder.count - 1) {
             if inorder[i].val > inorder[(i + 1)].val {
@@ -63,7 +63,7 @@ struct RecoverBinarySearchTree {
         s.val = tmp
     }
     
-    private static func dfs(_ node: BinaryTreeNode?, _ inorder: inout [BinaryTreeNode]) {
+    private static func dfs(_ node: TreeNode?, _ inorder: inout [TreeNode]) {
         guard let node = node else {
             return
         }

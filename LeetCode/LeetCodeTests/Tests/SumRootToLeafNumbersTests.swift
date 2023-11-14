@@ -15,7 +15,7 @@ final class SumRootToLeafNumbersTests: XCTestCase {
     
     func test_A() {
         let data = [1,2,3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = SumRootToLeafNumbers.sumNumbers(root)
         
@@ -24,7 +24,7 @@ final class SumRootToLeafNumbersTests: XCTestCase {
     
     func test_B() {
         let data = [4,9,0,5,1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = SumRootToLeafNumbers.sumNumbers(root)
         
@@ -33,7 +33,7 @@ final class SumRootToLeafNumbersTests: XCTestCase {
     
     func test_C() {
         let data = [4]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = SumRootToLeafNumbers.sumNumbers(root)
         

@@ -18,8 +18,8 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let data = [3, 4, 5, 1, 2]
         let subData = [4, 1, 2]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let subRoot = BinaryTreeNode.deserialize(subData)
+        let root = TreeNode.deserialize(data)
+        let subRoot = TreeNode.deserialize(subData)
         
         let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
@@ -30,8 +30,8 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let data = [3, 4, 5, 1, 2, nil, nil, nil, nil, 0]
         let subData = [4, 1, 2]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let subRoot = BinaryTreeNode.deserialize(subData)
+        let root = TreeNode.deserialize(data)
+        let subRoot = TreeNode.deserialize(subData)
         
         let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
@@ -42,8 +42,8 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let data = [1, 1]
         let subData = [1]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let subRoot = BinaryTreeNode.deserialize(subData)
+        let root = TreeNode.deserialize(data)
+        let subRoot = TreeNode.deserialize(subData)
         
         let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
@@ -54,8 +54,8 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let data = [-1, -4, 8, -6, -2, 3, 9, nil, -5, nil, nil, 0, 7]
         let subData = [3, 0, 5848]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let subRoot = BinaryTreeNode.deserialize(subData)
+        let root = TreeNode.deserialize(data)
+        let subRoot = TreeNode.deserialize(subData)
         
         let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         
@@ -66,8 +66,8 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let data = [3, 4, 5, 1, 2]
         let subData = [4, 1, nil, nil, 2]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let subRoot = BinaryTreeNode.deserialize(subData)
+        let root = TreeNode.deserialize(data)
+        let subRoot = TreeNode.deserialize(subData)
         
         let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
         

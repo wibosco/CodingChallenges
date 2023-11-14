@@ -15,22 +15,22 @@ final class BalanceABinarySearchTreeTests: XCTestCase {
     
     func test_A() {
         let data = [1,nil,2,nil,3,nil,4,nil,nil]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BalanceABinarySearchTree.balanceBST(root)
         
-        let values = BinaryTreeNode.serialize(result)
+        let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [2,1,3,nil,nil,nil,4])
     }
     
     func test_B() {
         let data = [2,1,3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BalanceABinarySearchTree.balanceBST(root)
         
-        let values = BinaryTreeNode.serialize(result)
+        let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [2,1,3])
     }

@@ -15,7 +15,7 @@ final class RootEqualsSumOfChildrenTests: XCTestCase {
     
     func test_A() {
         let data = [10,4,6]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = RootEqualsSumOfChildren.checkTree(root)
         
@@ -24,7 +24,7 @@ final class RootEqualsSumOfChildrenTests: XCTestCase {
     
     func test_B() {
         let data = [5,3,1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = RootEqualsSumOfChildren.checkTree(root)
         

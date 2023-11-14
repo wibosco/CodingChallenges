@@ -28,12 +28,12 @@ struct AllNodesDistanceKInBinaryTree {
     //movements by 1. We need to be careful to avoid re-searching the branch we just came from so we use a blocker node to cut
     //that branch off - blocker acts like a single entry `visited` set. We repeat the upwards movement and then downwards
     //searching until `k` is 0.
-    static func distanceK(_ root: BinaryTreeNode?, _ target: BinaryTreeNode?, _ k: Int) -> [Int] {
+    static func distanceK(_ root: TreeNode?, _ target: TreeNode?, _ k: Int) -> [Int] {
         guard let root = root, let target = target else {
             return []
         }
         
-        var parents = [Int: BinaryTreeNode]()
+        var parents = [Int: TreeNode]()
         
         buildParentRelationships(root, target, &parents)
         
@@ -55,7 +55,7 @@ struct AllNodesDistanceKInBinaryTree {
         return values
     }
     
-    private static func buildParentRelationships(_ node: BinaryTreeNode, _ target: BinaryTreeNode, _ parents: inout [Int: BinaryTreeNode]) {
+    private static func buildParentRelationships(_ node: TreeNode, _ target: TreeNode, _ parents: inout [Int: TreeNode]) {
         guard node.val != target.val else {
             return
         }
@@ -71,12 +71,12 @@ struct AllNodesDistanceKInBinaryTree {
         }
     }
     
-    private static func bfs(_ node: BinaryTreeNode, _ blocker: BinaryTreeNode, _ k: Int, _ values: inout [Int]) {
+    private static func bfs(_ node: TreeNode, _ blocker: TreeNode, _ k: Int, _ values: inout [Int]) {
         var queue = [node]
         var k = k
         
         while !queue.isEmpty && k >= 0 {
-            var newQueue = [BinaryTreeNode]()
+            var newQueue = [TreeNode]()
             
             for node in queue {
                 guard k > 0 else {

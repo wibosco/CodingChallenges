@@ -19,7 +19,7 @@ struct BinaryTreeRightSideView {
     //
     //Solution description:
     //Traverse through the tree using BFS. At each level get the right-most node and add it to the `rightSideView` array.
-    static func rightSideView(_ root: BinaryTreeNode?) -> [Int] {
+    static func rightSideView(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return [Int]()
         }
@@ -30,7 +30,7 @@ struct BinaryTreeRightSideView {
         while !queue.isEmpty {
             rightSideView.append(queue.last!.val)
             
-            var newQueueItems = [BinaryTreeNode]()
+            var newQueueItems = [TreeNode]()
             
             for node in queue {                
                 if let left = node.left {

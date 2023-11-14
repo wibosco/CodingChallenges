@@ -16,7 +16,7 @@ final class BinaryTreePathsTests: XCTestCase {
     func test_A() {
         let data = [1, 2, 3, nil, 5]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePaths.binaryTreePaths(root)
         
@@ -26,7 +26,7 @@ final class BinaryTreePathsTests: XCTestCase {
     func test_B() {
         let data = [1]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePaths.binaryTreePaths(root)
         
@@ -36,7 +36,7 @@ final class BinaryTreePathsTests: XCTestCase {
     func test_C() {
         let data = [1, 2, 3]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePaths.binaryTreePaths(root)
         
@@ -46,7 +46,7 @@ final class BinaryTreePathsTests: XCTestCase {
     func test_D() {
         let data = [1, 2, nil, 3]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePaths.binaryTreePaths(root)
         

@@ -21,7 +21,7 @@ struct BinaryTreeLevelOrderTraversalII {
     //Using BFS we traverse through the tree level-by-level, adding the value of each node we encounter an array for that level.
     //After iterating through each node at level we add the `level` array to the front of the `levels` array. Finally after
     //iterating through the full tree we turn the `levels` array.
-    static func levelOrderBottom(_ root: BinaryTreeNode?) -> [[Int]] {
+    static func levelOrderBottom(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()
         }
@@ -31,7 +31,7 @@ struct BinaryTreeLevelOrderTraversalII {
         
         while !queue.isEmpty {
             var level = [Int]()
-            var newQueueItems = [BinaryTreeNode]()
+            var newQueueItems = [TreeNode]()
             
             for node in queue {
                 level.append(node.val)

@@ -24,16 +24,16 @@ struct CousinsInBinaryTree {
     //also store the parent of that node in the queue. This way at the end of levels iteration we check if either `x` or `y`
     //was found and if and only if they where found if they share a parent. We repeat this process until we find either or both
     //`x` and `y` or we run out of nodes to search.
-    static func isCousins(_ root: BinaryTreeNode?, _ x: Int, _ y: Int) -> Bool {
+    static func isCousins(_ root: TreeNode?, _ x: Int, _ y: Int) -> Bool {
         guard let root = root else {
             return false
         }
         
-        var queue = [(Int, BinaryTreeNode)]() //parent, child
+        var queue = [(Int, TreeNode)]() //parent, child
         queue.append((-1, root)) //-1 means no parent
         
         while !queue.isEmpty {
-            var nextIteration = [(Int, BinaryTreeNode)]()
+            var nextIteration = [(Int, TreeNode)]()
             
             var foundX = -1
             var foundY = -1

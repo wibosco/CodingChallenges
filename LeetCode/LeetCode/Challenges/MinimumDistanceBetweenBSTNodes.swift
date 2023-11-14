@@ -22,7 +22,7 @@ struct MinimumDistanceBetweenBSTNodes {
     //Solution Description:
     //By performing an in-order traversal of a binary search tree we get an ascending ordered list of the nodes in that tree. We can
     //then iterate through that list and compare neighbors with each to find the smallest difference in the tree.
-    static func minDiffInBST(_ root: BinaryTreeNode?) -> Int {
+    static func minDiffInBST(_ root: TreeNode?) -> Int {
         var order = [Int]()
         inorder(root, &order)
         
@@ -36,7 +36,7 @@ struct MinimumDistanceBetweenBSTNodes {
         return minDiff
     }
     
-    private static func inorder(_ node: BinaryTreeNode?, _ order: inout [Int]) {
+    private static func inorder(_ node: TreeNode?, _ order: inout [Int]) {
         guard let node = node else {
             return
         }

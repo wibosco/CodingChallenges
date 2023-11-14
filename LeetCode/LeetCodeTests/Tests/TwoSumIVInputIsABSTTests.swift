@@ -16,7 +16,7 @@ final class TwoSumIVInputIsABSTTests: XCTestCase {
     func test_A() {
         let k = 9
         let data = [5,3,6,2,4,nil,7]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = TwoSumIVInputIsABST.findTarget(root, k)
         
@@ -26,7 +26,7 @@ final class TwoSumIVInputIsABSTTests: XCTestCase {
     func test_B() {
         let k = 28
         let data = [5,3,6,2,4,nil,7]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = TwoSumIVInputIsABST.findTarget(root, k)
         
@@ -36,7 +36,7 @@ final class TwoSumIVInputIsABSTTests: XCTestCase {
     func test_C() {
         let k = 1
         let data = [1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = TwoSumIVInputIsABST.findTarget(root, k)
         

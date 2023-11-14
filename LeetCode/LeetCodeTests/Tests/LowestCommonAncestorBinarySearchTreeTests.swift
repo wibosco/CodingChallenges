@@ -17,9 +17,9 @@ final class LowestCommonAncestorBinarySearchTreeTests: XCTestCase {
     func test_A() {
         let data = [6, 2, 8, 0, 4, 7, 9, nil, nil, 3, 5]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let p = BinaryTreeNode(2)
-        let q = BinaryTreeNode(8)
+        let root = TreeNode.deserialize(data)
+        let p = TreeNode(2)
+        let q = TreeNode(8)
         
         let result = LowestCommonAncestorBinaryTree.lowestCommonAncestor(root, p, q)
         
@@ -29,9 +29,9 @@ final class LowestCommonAncestorBinarySearchTreeTests: XCTestCase {
     func test_B() {
         let data = [6, 2, 8, 0, 4, 7, 9, nil, nil, 3, 5]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let p = BinaryTreeNode(2)
-        let q = BinaryTreeNode(4)
+        let root = TreeNode.deserialize(data)
+        let p = TreeNode(2)
+        let q = TreeNode(4)
         
         let result = LowestCommonAncestorBinaryTree.lowestCommonAncestor(root, p, q)
         
@@ -41,9 +41,9 @@ final class LowestCommonAncestorBinarySearchTreeTests: XCTestCase {
     func test_C() {
         let data = [2, 1]
         
-        let root = BinaryTreeNode.deserialize(data)
-        let p = BinaryTreeNode(2)
-        let q = BinaryTreeNode(1)
+        let root = TreeNode.deserialize(data)
+        let p = TreeNode(2)
+        let q = TreeNode(1)
         
         let result = LowestCommonAncestorBinaryTree.lowestCommonAncestor(root, p, q)
         

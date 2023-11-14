@@ -20,17 +20,17 @@ struct SerializeDeserializeBinaryTree {
     //Solution Description:
     //Traverse the tree level-by-level (BFS) adding the value (or lack of value) of each node encountered to an array. At the end
     //of the traversal remove any trailing `nil` values.
-    static func serialize(_ root: BinaryTreeNode?) -> [Int?] {
+    static func serialize(_ root: TreeNode?) -> [Int?] {
         guard let root = root else {
             return [Int?]()
         }
         
-        var queue = [BinaryTreeNode?]()
+        var queue = [TreeNode?]()
         queue.append(root)
         var values = [Int?]()
         
         while !queue.isEmpty {
-            var newQueueItem = [BinaryTreeNode?]()
+            var newQueueItem = [TreeNode?]()
             
             for node in queue {
                 guard let node = node else {
@@ -67,12 +67,12 @@ struct SerializeDeserializeBinaryTree {
     //
     //Solution Description:
     //Iterate through the array using BFS, taking the elements in pairs as the left and right of the first tree node of the queue
-    static func deserialize(_ data: [Int?]) -> BinaryTreeNode? {
+    static func deserialize(_ data: [Int?]) -> TreeNode? {
         guard !data.isEmpty, data[0] != nil else {
             return nil
         }
         
-        let root = BinaryTreeNode(data[0]!)
+        let root = TreeNode(data[0]!)
         var queue = [root]
         var i = 1
         
@@ -80,7 +80,7 @@ struct SerializeDeserializeBinaryTree {
             let node = queue.removeFirst()
             
             if let leftValue = data[i] {
-                let left = BinaryTreeNode(leftValue)
+                let left = TreeNode(leftValue)
                 node.left = left
                 
                 queue.append(left)
@@ -93,7 +93,7 @@ struct SerializeDeserializeBinaryTree {
             }
             
             if let rightValue = data[i] {
-                let right = BinaryTreeNode(rightValue)
+                let right = TreeNode(rightValue)
                 node.right = right
                 
                 queue.append(right)

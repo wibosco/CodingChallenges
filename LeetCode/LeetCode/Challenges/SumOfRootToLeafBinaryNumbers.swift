@@ -23,7 +23,7 @@ struct SumOfRootToLeafBinaryNumbers {
     //return the completed value. As the call stack unwinds we sum the values of the left and right child together and pass
     //that summed value up to the next level. We repeat this process until all we are back at the root at which point we
     //that final summed value.
-    static func sumRootToLeaf(_ root: BinaryTreeNode?) -> Int {
+    static func sumRootToLeaf(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -31,7 +31,7 @@ struct SumOfRootToLeafBinaryNumbers {
         return dfs(root, 0)
     }
     
-    private static func dfs(_ node: BinaryTreeNode, _ value: Int) -> Int {
+    private static func dfs(_ node: TreeNode, _ value: Int) -> Int {
         let nextValue = value << 1 + node.val //bit shift
         
         if node.left == nil && node.right == nil { //leaf node

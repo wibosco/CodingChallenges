@@ -30,7 +30,7 @@ struct ConstructBinaryTreeFromString {
     //rest of the nodes before parsing a subtree we move `index` forward to omit the "(" from that levels version of `s`
     //(root doesn't have a "("). At the end of each level we also increment `index` to move past the closing bracket for that
     //level ")"
-    static func str2tree(_ s: String) -> BinaryTreeNode? {
+    static func str2tree(_ s: String) -> TreeNode? {
         guard !s.isEmpty else {
             return nil
         }
@@ -43,13 +43,13 @@ struct ConstructBinaryTreeFromString {
         return root
     }
     
-    private static func dfs(_ characters: [Character], _ index: inout Int) -> BinaryTreeNode? {
+    private static func dfs(_ characters: [Character], _ index: inout Int) -> TreeNode? {
         guard index < characters.count else {
             return nil
         }
         
         let num = extractNum(characters, &index)
-        let node = BinaryTreeNode(num)
+        let node = TreeNode(num)
         
         if index < characters.count && characters[index] == "(" {
             index += 1 //omit "(" from the next DFS call

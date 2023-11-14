@@ -24,9 +24,9 @@ struct KthSmallestElementInBinarySearchTree {
     //An inorder traversal of a binary search tree results in an ordered ascending array of nodes. Using this we can
     //perform an inorder traversal until we get to the `k`th element in the sorted array, at which point we can return its
     //value
-    static func kthSmallest(_ root: BinaryTreeNode?, _ k: Int) -> Int {
+    static func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int {
         var k = k
-        var kthSmallestNode: BinaryTreeNode?
+        var kthSmallestNode: TreeNode?
         
         dfs(root, &k, &kthSmallestNode)
         
@@ -37,7 +37,7 @@ struct KthSmallestElementInBinarySearchTree {
         return kthSmallestNode.val
     }
     
-    private static func dfs(_ root: BinaryTreeNode?, _ k: inout Int, _ kthSmallestNode: inout BinaryTreeNode?) {
+    private static func dfs(_ root: TreeNode?, _ k: inout Int, _ kthSmallestNode: inout TreeNode?) {
         guard let root = root, kthSmallestNode == nil else {
             return
         }

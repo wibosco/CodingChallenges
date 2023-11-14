@@ -1,5 +1,5 @@
 //
-//  BinaryTreeNodeRandom.swift
+//  TreeNodeRandom.swift
 //  LeetCode
 //
 //  Created by William Boles on 10/12/2021.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-final class BinaryTreeNodeRandom {
+final class TreeNodeRandom {
     let val: Int
     
-    var left: BinaryTreeNodeRandom?
-    var right: BinaryTreeNodeRandom?
-    var random: BinaryTreeNodeRandom?
+    var left: TreeNodeRandom?
+    var right: TreeNodeRandom?
+    var random: TreeNodeRandom?
     
     // MARK: - Init
     
@@ -22,20 +22,20 @@ final class BinaryTreeNodeRandom {
     }
 }
 
-extension BinaryTreeNodeRandom {
+extension TreeNodeRandom {
     //level order
-    static func deserialize(_ array: [[Int?]?]) -> BinaryTreeNodeRandom? {
+    static func deserialize(_ array: [[Int?]?]) -> TreeNodeRandom? {
         guard !array.isEmpty else {
             return nil
         }
         
-        var nodeArray = [BinaryTreeNodeRandom?]()
+        var nodeArray = [TreeNodeRandom?]()
         for nodeDetails in array {
             guard let nodeDetails = nodeDetails else {
                 nodeArray.append(nil)
                 continue
             }
-            let node = BinaryTreeNodeRandom(nodeDetails[0]!)
+            let node = TreeNodeRandom(nodeDetails[0]!)
             nodeArray.append(node)
         }
         
@@ -87,14 +87,14 @@ extension BinaryTreeNodeRandom {
         return root
     }
     
-    static func serialize(_ root: BinaryTreeNodeRandom?) -> [[Int?]?] {
+    static func serialize(_ root: TreeNodeRandom?) -> [[Int?]?] {
         guard let root = root else {
             return [[Int?]?]()
         }
         
         let levelOrder = levelOrderTraversal(fromBinaryTree: root)
     
-        var queue = [BinaryTreeNodeRandom?]()
+        var queue = [TreeNodeRandom?]()
         queue.append(root)
         var values = [[Int?]?]()
 
@@ -130,10 +130,10 @@ extension BinaryTreeNodeRandom {
         return Array(values[0...i])
     }
     
-    private static func levelOrderTraversal(fromBinaryTree root: BinaryTreeNodeRandom?) -> [BinaryTreeNodeRandom?] {
-        var queue = [BinaryTreeNodeRandom?]()
+    private static func levelOrderTraversal(fromBinaryTree root: TreeNodeRandom?) -> [TreeNodeRandom?] {
+        var queue = [TreeNodeRandom?]()
         queue.append(root)
-        var levelOrder = [BinaryTreeNodeRandom?]()
+        var levelOrder = [TreeNodeRandom?]()
         
         while !queue.isEmpty {
             let levelCount = queue.count
@@ -155,13 +155,13 @@ extension BinaryTreeNodeRandom {
     }
 }
 
-extension BinaryTreeNodeRandom: Equatable {
-    static func == (lhs: BinaryTreeNodeRandom, rhs: BinaryTreeNodeRandom) -> Bool {
+extension TreeNodeRandom: Equatable {
+    static func == (lhs: TreeNodeRandom, rhs: TreeNodeRandom) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
 
-extension BinaryTreeNodeRandom: Hashable {
+extension TreeNodeRandom: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }

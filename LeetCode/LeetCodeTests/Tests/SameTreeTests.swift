@@ -18,8 +18,8 @@ final class SameTreeTests: XCTestCase {
         let p = [1, 2, 3]
         let q = [1, 2, 3]
         
-        let pRoot = BinaryTreeNode.deserialize(p)
-        let qRoot = BinaryTreeNode.deserialize(q)
+        let pRoot = TreeNode.deserialize(p)
+        let qRoot = TreeNode.deserialize(q)
         
         let result = SameTree.isSameTree(pRoot, qRoot)
         
@@ -30,8 +30,8 @@ final class SameTreeTests: XCTestCase {
         let p = [1, 2]
         let q = [1, nil, 2]
         
-        let pRoot = BinaryTreeNode.deserialize(p)
-        let qRoot = BinaryTreeNode.deserialize(q)
+        let pRoot = TreeNode.deserialize(p)
+        let qRoot = TreeNode.deserialize(q)
         
         let result = SameTree.isSameTree(pRoot, qRoot)
         
@@ -42,8 +42,8 @@ final class SameTreeTests: XCTestCase {
         let p = [1, 2, 1]
         let q = [1, 1, 2]
         
-        let pRoot = BinaryTreeNode.deserialize(p)
-        let qRoot = BinaryTreeNode.deserialize(q)
+        let pRoot = TreeNode.deserialize(p)
+        let qRoot = TreeNode.deserialize(q)
         
         let result = SameTree.isSameTree(pRoot, qRoot)
         

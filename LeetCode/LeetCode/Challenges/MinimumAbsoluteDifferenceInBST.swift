@@ -23,7 +23,7 @@ struct MinimumAbsoluteDifferenceInBST {
     //attempting to find the minimum difference we only need to compare an element with it's immediate neighbors and then
     //compare that local difference against the minimum overall difference. Once all differences have been calculated we return
     //`minDiff`.
-    static func getMinimumDifference(_ root: BinaryTreeNode?) -> Int {
+    static func getMinimumDifference(_ root: TreeNode?) -> Int {
         var order = [Int]()
         inorder(root, &order)
         
@@ -36,7 +36,7 @@ struct MinimumAbsoluteDifferenceInBST {
         return minDiff
     }
     
-    private static func inorder(_ node: BinaryTreeNode?, _ order: inout [Int]) {
+    private static func inorder(_ node: TreeNode?, _ order: inout [Int]) {
         guard let node = node else {
             return
         }

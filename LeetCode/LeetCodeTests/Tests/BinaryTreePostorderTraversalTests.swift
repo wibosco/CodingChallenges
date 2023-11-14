@@ -17,7 +17,7 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
     func test_A() {
         let data = [1, nil, 2, 3]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
@@ -27,7 +27,7 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
     func test_B() {
         let data = [Int]()
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
@@ -37,7 +37,7 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
     func test_C() {
         let data = [1]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
@@ -47,7 +47,7 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
     func test_D() {
         let data = [1, 2]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         
@@ -57,7 +57,7 @@ final class BinaryTreePostorderTraversalTests: XCTestCase {
     func test_E() {
         let data = [1, nil, 2]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreePostorderTraversal.postorderTraversal(root)
         

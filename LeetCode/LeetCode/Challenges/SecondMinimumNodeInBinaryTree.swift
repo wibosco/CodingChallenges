@@ -21,7 +21,7 @@ struct SecondMinimumNodeInBinaryTree {
     //Solution Description:
     //Traverse the tree using DFS and insert every node into the `values` set, then sort that set and return the
     //second element (if it exists else return -1)
-    static func findSecondMinimumValue(_ root: BinaryTreeNode?) -> Int {
+    static func findSecondMinimumValue(_ root: TreeNode?) -> Int {
         var values = Set<Int>()
         
         dfs(root, &values)
@@ -35,7 +35,7 @@ struct SecondMinimumNodeInBinaryTree {
         return sorted[1]
     }
     
-    private static func dfs(_ root: BinaryTreeNode?, _ values: inout Set<Int>) {
+    private static func dfs(_ root: TreeNode?, _ values: inout Set<Int>) {
         guard let root = root else {
             return
         }

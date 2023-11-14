@@ -16,7 +16,7 @@ final class FindLeavesOfBinaryTreeTests: XCTestCase {
     func test_A() {
         let data = [1, 2, 3, 4, 5]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = FindLeavesOfBinaryTree.findLeaves(root)
         
@@ -26,7 +26,7 @@ final class FindLeavesOfBinaryTreeTests: XCTestCase {
     func test_B() {
         let data = [1]
         
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = FindLeavesOfBinaryTree.findLeaves(root)
         

@@ -19,7 +19,7 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
     func test_A() {
         let data = [3, 5, 1, 6, 2, 0, 8, nil, nil, 7, 4]
         
-        let (p, q) = BinaryTreeNodeParent.deserialize(data, 5, 1)
+        let (p, q) = TreeNodeParent.deserialize(data, 5, 1)
         
         let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
         
@@ -29,7 +29,7 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
     func test_B() {
         let data = [3, 5, 1, 6, 2, 0, 8, nil, nil, 7, 4]
         
-        let (p, q) = BinaryTreeNodeParent.deserialize(data, 5, 4)
+        let (p, q) = TreeNodeParent.deserialize(data, 5, 4)
         
         let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
         
@@ -39,7 +39,7 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
     func test_C() {
         let data = [1, 2]
         
-        let (p, q) = BinaryTreeNodeParent.deserialize(data, 1, 2)
+        let (p, q) = TreeNodeParent.deserialize(data, 1, 2)
         
         let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
         

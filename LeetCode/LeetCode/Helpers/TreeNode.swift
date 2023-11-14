@@ -8,11 +8,11 @@
 
 import Foundation
 
-final class BinaryTreeNode {
+final class TreeNode {
     var val: Int
     
-    var left: BinaryTreeNode?
-    var right: BinaryTreeNode?
+    var left: TreeNode?
+    var right: TreeNode?
     
     // MARK: - Init
     
@@ -21,14 +21,14 @@ final class BinaryTreeNode {
     }
 }
 
-extension BinaryTreeNode {
+extension TreeNode {
     //level order
-    static func deserialize(_ array: [Int?]) -> BinaryTreeNode? {
+    static func deserialize(_ array: [Int?]) -> TreeNode? {
         guard !array.isEmpty, array[0] != nil else {
             return nil
         }
         
-        let root = BinaryTreeNode(array[0]!)
+        let root = TreeNode(array[0]!)
         var queue = [root]
         var i = 1
         
@@ -36,7 +36,7 @@ extension BinaryTreeNode {
             let node = queue.removeFirst()
             
             if let leftValue = array[i] {
-                let left = BinaryTreeNode(leftValue)
+                let left = TreeNode(leftValue)
                 node.left = left
                 
                 queue.append(left)
@@ -49,7 +49,7 @@ extension BinaryTreeNode {
             }
             
             if let rightValue = array[i] {
-                let right = BinaryTreeNode(rightValue)
+                let right = TreeNode(rightValue)
                 node.right = right
                 
                 queue.append(right)
@@ -61,12 +61,12 @@ extension BinaryTreeNode {
         return root
     }
     
-    static func serialize(_ root: BinaryTreeNode?) -> [Int?] {
+    static func serialize(_ root: TreeNode?) -> [Int?] {
         guard let root = root else {
             return [Int?]()
         }
         
-        var queue = [BinaryTreeNode?]()
+        var queue = [TreeNode?]()
         queue.append(root)
         var values = [Int?]()
         
@@ -98,7 +98,7 @@ extension BinaryTreeNode {
         return Array(values[0...i])
     }
     
-    static func serializeAsDoublyLinkedList(_ root: BinaryTreeNode?) -> [Int] {
+    static func serializeAsDoublyLinkedList(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return [Int]()
         }
@@ -115,13 +115,13 @@ extension BinaryTreeNode {
     }
 }
 
-extension BinaryTreeNode: Equatable {
-    static func == (lhs: BinaryTreeNode, rhs: BinaryTreeNode) -> Bool {
+extension TreeNode: Equatable {
+    static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
 
-extension BinaryTreeNode: Hashable {
+extension TreeNode: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }

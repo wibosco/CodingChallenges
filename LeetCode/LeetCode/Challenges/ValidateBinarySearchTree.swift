@@ -24,7 +24,7 @@ struct ValidateBinarySearchTree {
     //immediate right but the tree to its right) and all nodes on the left are less than (not just it's immediate left
     //but the tree to its left). So to validate a BST we can't just compare a root node with its left and right nodes
     //instead we need to also compare it with its predecessors value as well.
-    static func isValidBST(_ root: BinaryTreeNode?) -> Bool {
+    static func isValidBST(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return true
         }
@@ -32,7 +32,7 @@ struct ValidateBinarySearchTree {
         return preOrder(root, Int.min, Int.max)
     }
     
-    private static func preOrder(_ node: BinaryTreeNode?, _ lower: Int, _ upper: Int) -> Bool {
+    private static func preOrder(_ node: TreeNode?, _ lower: Int, _ upper: Int) -> Bool {
         guard let node = node else {
             return true
         }
@@ -58,7 +58,7 @@ struct ValidateBinarySearchTree {
     //This property means that an in-order traversal of a binary tree should result in an ascending sorted array of that
     //trees nodes if it is a binary search tree. So we perform an in-order traversal of this tree and check if it's nodes
     //are in ascending order
-    static func isValidBSTOrder(_ root: BinaryTreeNode?) -> Bool {
+    static func isValidBSTOrder(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return true
         }
@@ -76,7 +76,7 @@ struct ValidateBinarySearchTree {
         return true
     }
     
-    private static func inOrder(_ node: BinaryTreeNode?, _ visited: inout [Int]) {
+    private static func inOrder(_ node: TreeNode?, _ visited: inout [Int]) {
         guard let node = node else {
             return
         }

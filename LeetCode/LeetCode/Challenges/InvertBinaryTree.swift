@@ -22,7 +22,7 @@ struct InvertBinaryTree {
     //
     //N.B. We need to traverse both subtrees without making any changes so as not to override one of the branches before we
     //can traverse it.
-    static func invertTree(_ root: BinaryTreeNode?) -> BinaryTreeNode? {
+    static func invertTree(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else {
             return nil
         }

@@ -15,7 +15,7 @@ final class BinaryTreeTiltTests: XCTestCase {
     
     func test_A() {
         let data = [1,2,3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreeTilt.findTilt(root)
         
@@ -24,7 +24,7 @@ final class BinaryTreeTiltTests: XCTestCase {
     
     func test_B() {
         let data = [4,2,9,3,5,nil,7]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreeTilt.findTilt(root)
         
@@ -33,7 +33,7 @@ final class BinaryTreeTiltTests: XCTestCase {
     
     func test_C() {
         let data = [21,7,14,1,1,2,2,3,3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BinaryTreeTilt.findTilt(root)
         

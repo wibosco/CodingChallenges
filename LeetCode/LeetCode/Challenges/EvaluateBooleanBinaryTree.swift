@@ -20,7 +20,7 @@ struct EvaluateBooleanBinaryTree {
     //Solution Description:
     //Using DFS we traverse the tree until we get to the leaf nodes then we begin to unwind the call stack passing a boolean
     //value of the evaluation which is then used in next higher evaluation.
-    static func evaluateTree(_ root: BinaryTreeNode?) -> Bool {
+    static func evaluateTree(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
         }
@@ -28,7 +28,7 @@ struct EvaluateBooleanBinaryTree {
         return dfs(root)
     }
     
-    private static func dfs(_ node: BinaryTreeNode) -> Bool {
+    private static func dfs(_ node: TreeNode) -> Bool {
         //Values:
         //0 - false
         //1 - true

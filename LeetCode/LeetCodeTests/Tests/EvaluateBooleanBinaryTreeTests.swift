@@ -15,7 +15,7 @@ final class EvaluateBooleanBinaryTreeTests: XCTestCase {
     
     func test_A() {
         let data = [2,1,3,nil,nil,0,1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = EvaluateBooleanBinaryTree.evaluateTree(root)
         
@@ -24,7 +24,7 @@ final class EvaluateBooleanBinaryTreeTests: XCTestCase {
     
     func test_B() {
         let data = [0]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = EvaluateBooleanBinaryTree.evaluateTree(root)
         

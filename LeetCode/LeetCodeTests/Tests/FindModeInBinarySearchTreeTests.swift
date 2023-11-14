@@ -15,7 +15,7 @@ final class FindModeInBinarySearchTreeTests: XCTestCase {
     
     func test_A() {
         let data = [1,nil,2,2]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = FindModeInBinarySearchTree.findMode(root)
         
@@ -24,7 +24,7 @@ final class FindModeInBinarySearchTreeTests: XCTestCase {
     
     func test_B() {
         let data = [0]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = FindModeInBinarySearchTree.findMode(root)
         
@@ -33,7 +33,7 @@ final class FindModeInBinarySearchTreeTests: XCTestCase {
     
     func test_C() {
         let data = [1,nil,2]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = FindModeInBinarySearchTree.findMode(root)
         

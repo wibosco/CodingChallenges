@@ -22,14 +22,14 @@ import Foundation
 //the stack is now the top - this is why sometimes this operation is O(1) and sometimes O(n). As we gradually run out of
 //`right` nodes we pop more and more elements off the `stack` until we have no more to pop
 final class BSTIterator {
-    private var stack = [BinaryTreeNode]() //Space: O(n)
+    private var stack = [TreeNode]() //Space: O(n)
     
-    init(_ root: BinaryTreeNode?) {
+    init(_ root: TreeNode?) {
         leftMostInorder(root)
     }
     
     //Time: average: O(h), worse: O(n)
-    private func leftMostInorder(_ node: BinaryTreeNode?) {
+    private func leftMostInorder(_ node: TreeNode?) {
         var node = node
         while let n = node {
             stack.append(n)
@@ -69,12 +69,12 @@ final class BSTIteratorArray {
     private var index = 0
     
     //Time: O(n)
-    init(_ root: BinaryTreeNode?) {
+    init(_ root: TreeNode?) {
         inorder(root, &order)
     }
     
     //Space: O(h)
-    private func inorder(_ node: BinaryTreeNode?, _ order: inout [Int]) {
+    private func inorder(_ node: TreeNode?, _ order: inout [Int]) {
         guard let node = node else {
             return
         }

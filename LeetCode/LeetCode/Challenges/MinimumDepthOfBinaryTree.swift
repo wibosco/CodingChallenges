@@ -51,7 +51,7 @@ struct MinimumDepthOfBinaryTree {
     //   | h = 0 |
     //   +-------+
     //
-    static func minDepth(_ root: BinaryTreeNode?) -> Int {
+    static func minDepth(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -61,7 +61,7 @@ struct MinimumDepthOfBinaryTree {
         
         while !queue.isEmpty {
             depth += 1
-            var newQueue = [BinaryTreeNode]()
+            var newQueue = [TreeNode]()
             
             for node in queue {
                 guard node.left != nil || node.right != nil else { //check if leaf node

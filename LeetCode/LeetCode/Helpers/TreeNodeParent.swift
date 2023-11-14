@@ -1,5 +1,5 @@
 //
-//  BinaryTreeNodeParent.swift
+//  TreeNodeParent.swift
 //  LeetCode
 //
 //  Created by William Boles on 16/01/2022.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-final class BinaryTreeNodeParent {
+final class TreeNodeParent {
     let val: Int
     
-    var left: BinaryTreeNodeParent?
-    var right: BinaryTreeNodeParent?
-    var parent: BinaryTreeNodeParent?
+    var left: TreeNodeParent?
+    var right: TreeNodeParent?
+    var parent: TreeNodeParent?
     
     // MARK: - Init
     
@@ -22,14 +22,14 @@ final class BinaryTreeNodeParent {
     }
 }
 
-extension BinaryTreeNodeParent {
+extension TreeNodeParent {
     //level order
-    static func deserialize(_ array: [Int?], _ pVal: Int, _ qVal: Int) -> (BinaryTreeNodeParent?, BinaryTreeNodeParent?) {
+    static func deserialize(_ array: [Int?], _ pVal: Int, _ qVal: Int) -> (TreeNodeParent?, TreeNodeParent?) {
         guard !array.isEmpty, array[0] != nil else {
             return (nil, nil)
         }
         
-        var queue = [BinaryTreeNodeParent(array[0]!)]
+        var queue = [TreeNodeParent(array[0]!)]
         var i = 1
         var nodes = queue
         
@@ -37,7 +37,7 @@ extension BinaryTreeNodeParent {
             let node = queue.removeFirst()
             
             if let leftValue = array[i] {
-                let left = BinaryTreeNodeParent(leftValue)
+                let left = TreeNodeParent(leftValue)
                 node.left = left
                 left.parent = node
                 
@@ -52,7 +52,7 @@ extension BinaryTreeNodeParent {
             }
             
             if let rightValue = array[i] {
-                let right = BinaryTreeNodeParent(rightValue)
+                let right = TreeNodeParent(rightValue)
                 node.right = right
                 right.parent = node
                 
@@ -63,8 +63,8 @@ extension BinaryTreeNodeParent {
             i += 1
         }
         
-        var p: BinaryTreeNodeParent?
-        var q: BinaryTreeNodeParent?
+        var p: TreeNodeParent?
+        var q: TreeNodeParent?
         
         for node in nodes {
             if node.val == pVal {
@@ -78,13 +78,13 @@ extension BinaryTreeNodeParent {
     }
 }
 
-extension BinaryTreeNodeParent: Equatable {
-    static func == (lhs: BinaryTreeNodeParent, rhs: BinaryTreeNodeParent) -> Bool {
+extension TreeNodeParent: Equatable {
+    static func == (lhs: TreeNodeParent, rhs: TreeNodeParent) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
 
-extension BinaryTreeNodeParent: Hashable {
+extension TreeNodeParent: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }

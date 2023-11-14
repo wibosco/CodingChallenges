@@ -15,7 +15,7 @@ final class AllNodesDistanceKInBinaryTreeTests: XCTestCase {
     
     func test_A() {
         let data = [3, 5, 1, 6, 2, 0, 8, nil, nil, 7, 4]
-        let root = BinaryTreeNode.deserialize(data)!
+        let root = TreeNode.deserialize(data)!
         let targetValue = 5
         let target = dfs(root, targetValue)
         let k = 2
@@ -28,7 +28,7 @@ final class AllNodesDistanceKInBinaryTreeTests: XCTestCase {
     
     func test_B() {
         let data = [1]
-        let root = BinaryTreeNode.deserialize(data)!
+        let root = TreeNode.deserialize(data)!
         let targetValue = 1
         let target = dfs(root, targetValue)
         let k = 3
@@ -41,7 +41,7 @@ final class AllNodesDistanceKInBinaryTreeTests: XCTestCase {
     
     func test_C() {
         let data = [0, 2, 1, nil, nil, 3]
-        let root = BinaryTreeNode.deserialize(data)!
+        let root = TreeNode.deserialize(data)!
         let targetValue = 3
         let target = dfs(root, targetValue)
         let k = 3
@@ -55,7 +55,7 @@ final class AllNodesDistanceKInBinaryTreeTests: XCTestCase {
 
 extension AllNodesDistanceKInBinaryTreeTests {
     
-    func dfs(_ node: BinaryTreeNode?, _ value: Int) -> BinaryTreeNode? {
+    func dfs(_ node: TreeNode?, _ value: Int) -> TreeNode? {
         guard let node = node else {
             return nil
         }

@@ -17,12 +17,12 @@ final class MergeTwoBinaryTreesTests: XCTestCase {
         let data1 = [1, 3, 2, 5]
         let data2 = [2, 1, 3, nil, 4, nil, 7]
         
-        let tree1 = BinaryTreeNode.deserialize(data1)
-        let tree2 = BinaryTreeNode.deserialize(data2)
+        let tree1 = TreeNode.deserialize(data1)
+        let tree2 = TreeNode.deserialize(data2)
         
         let mergedTree = MergeTwoBinaryTrees.mergeTrees(tree1, tree2)
         
-        let result = BinaryTreeNode.serialize(mergedTree)
+        let result = TreeNode.serialize(mergedTree)
         
         XCTAssertEqual(result, [3, 4, 5, 5, 4, nil, 7])
     }
@@ -31,12 +31,12 @@ final class MergeTwoBinaryTreesTests: XCTestCase {
         let data1 = [1]
         let data2 = [1, 2]
         
-        let tree1 = BinaryTreeNode.deserialize(data1)
-        let tree2 = BinaryTreeNode.deserialize(data2)
+        let tree1 = TreeNode.deserialize(data1)
+        let tree2 = TreeNode.deserialize(data2)
         
         let mergedTree = MergeTwoBinaryTrees.mergeTrees(tree1, tree2)
         
-        let result = BinaryTreeNode.serialize(mergedTree)
+        let result = TreeNode.serialize(mergedTree)
         
         XCTAssertEqual(result, [2, 2])
     }

@@ -26,8 +26,8 @@ struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
     //the left-most node's left value to point at the tail node and the tails right value to the node. We then update the
     //tail to be the node we just processed and traversal the right tree. We repeat this process until all the nodes have
     //been processed, at which point we take the right value of the fake-head and return it as the head of the linked list
-    static func treeToDoublyList(_ root: BinaryTreeNode?) -> BinaryTreeNode? {
-        let head = BinaryTreeNode(0)
+    static func treeToDoublyList(_ root: TreeNode?) -> TreeNode? {
+        let head = TreeNode(0)
         var tail = head
         
         dfs(root, &tail)
@@ -35,7 +35,7 @@ struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
         return head.right
     }
     
-    private static func dfs(_ root: BinaryTreeNode?, _ tail: inout BinaryTreeNode) {
+    private static func dfs(_ root: TreeNode?, _ tail: inout TreeNode) {
         guard let root = root else {
             return
         }

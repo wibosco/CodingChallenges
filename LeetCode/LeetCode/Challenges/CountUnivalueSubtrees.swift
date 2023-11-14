@@ -14,7 +14,7 @@ struct CountUnivalueSubtrees {
     //Time: O(n)
     //Space: O(h) where h is the height of the tree
     //DFS
-    static func countUnivalSubtrees(_ root: BinaryTreeNode?) -> Int {
+    static func countUnivalSubtrees(_ root: TreeNode?) -> Int {
         var count = 0
         isUnivalueTree(root, &count)
         
@@ -22,7 +22,7 @@ struct CountUnivalueSubtrees {
     }
     
     @discardableResult
-    private static func isUnivalueTree(_ root: BinaryTreeNode?, _ count: inout Int) -> Bool {
+    private static func isUnivalueTree(_ root: TreeNode?, _ count: inout Int) -> Bool {
         guard let root = root else {
             return false
         }
@@ -58,7 +58,7 @@ struct CountUnivalueSubtrees {
     //Time: O(n)
     //Space: O(h) where h is the height of the tree
     //DFS
-    static func countUnivalSubtreesPushParentValueDown(_ root: BinaryTreeNode?) -> Int {
+    static func countUnivalSubtreesPushParentValueDown(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -70,7 +70,7 @@ struct CountUnivalueSubtrees {
     }
     
     @discardableResult
-    private static func isUnivalueTreePushParentValueDown(_ root: BinaryTreeNode?, _ parentVal: Int, _ count: inout Int) -> Bool {
+    private static func isUnivalueTreePushParentValueDown(_ root: TreeNode?, _ parentVal: Int, _ count: inout Int) -> Bool {
         guard let root = root else {
             return true // no need to count here as the "upper" call will do the counting for leaf nodes
         }
@@ -91,7 +91,7 @@ struct CountUnivalueSubtrees {
     //Time: O(n)
     //Space: O(h) where h is the height of the tree
     //DFS
-    static func countUnivalSubtreesPushChildValueUp(_ root: BinaryTreeNode?) -> Int {
+    static func countUnivalSubtreesPushChildValueUp(_ root: TreeNode?) -> Int {
         var count = 0
         countUnivalSubtreesPushChildValueUp(root, &count)
         
@@ -99,7 +99,7 @@ struct CountUnivalueSubtrees {
     }
     
     @discardableResult
-    private static func countUnivalSubtreesPushChildValueUp(_ root: BinaryTreeNode?, _ count: inout Int) -> Int? {
+    private static func countUnivalSubtreesPushChildValueUp(_ root: TreeNode?, _ count: inout Int) -> Int? {
         guard let root = root else {
             return nil
         }

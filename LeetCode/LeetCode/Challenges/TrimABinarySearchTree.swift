@@ -25,7 +25,7 @@ struct TrimABinarySearchTree {
     
     //It's important to note that the guard statements also handle the case where the true tree root is outside of
     //low...high
-    static func trimBST(_ root: BinaryTreeNode?, _ low: Int, _ high: Int) -> BinaryTreeNode? {
+    static func trimBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }
@@ -60,12 +60,12 @@ struct TrimABinarySearchTree {
     //higher `right` node in its place for us to then check if that node is within the range. If the current node has a
     //higher value than `low` then /we continue searching down its `left` branch so any that are lower. We repeat this
     //process for checking that nodes are within the upper bounds of the range.
-    static func trimBSTTwoMethods(_ root: BinaryTreeNode?, _ low: Int, _ high: Int) -> BinaryTreeNode? {
+    static func trimBSTTwoMethods(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }
         
-        var newRoot: BinaryTreeNode? = root
+        var newRoot: TreeNode? = root
        
         //find a root with a value that is within range
         while let nr = newRoot, nr.val < low || nr.val > high {
@@ -81,7 +81,7 @@ struct TrimABinarySearchTree {
         return newRoot
     }
     
-    private static func trim(_ node: BinaryTreeNode?, _ low: Int, _ high: Int) {
+    private static func trim(_ node: TreeNode?, _ low: Int, _ high: Int) {
         guard let node = node else {
             return
         }

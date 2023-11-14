@@ -16,7 +16,7 @@ final class SecondMinimumNodeInBinaryTreeTests: XCTestCase {
     
     func test_A() {
         let data = [2, 2, 5, nil, nil, 5, 7]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = SecondMinimumNodeInBinaryTree.findSecondMinimumValue(root)
         
@@ -25,7 +25,7 @@ final class SecondMinimumNodeInBinaryTreeTests: XCTestCase {
     
     func test_B() {
         let data = [2, 2, 2]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = SecondMinimumNodeInBinaryTree.findSecondMinimumValue(root)
         

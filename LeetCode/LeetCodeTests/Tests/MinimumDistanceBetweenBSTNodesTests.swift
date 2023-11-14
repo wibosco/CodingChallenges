@@ -15,7 +15,7 @@ final class MinimumDistanceBetweenBSTNodesTests: XCTestCase {
     
     func test_A() {
         let data = [4,2,6,1,3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = MinimumDistanceBetweenBSTNodes.minDiffInBST(root)
         
@@ -24,7 +24,7 @@ final class MinimumDistanceBetweenBSTNodesTests: XCTestCase {
     
     func test_B() {
         let data = [1,0,48,nil,nil,12,49]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = MinimumDistanceBetweenBSTNodes.minDiffInBST(root)
         

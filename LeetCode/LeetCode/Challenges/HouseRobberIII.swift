@@ -26,13 +26,13 @@ struct HouseRobberIII {
     //only do so using the "non-robbed" childs value however if we don't rob the current node we are free to choose to rob
     //the child node or not (it might be more valuable to skip multiple nodes). When eventually we get to the top of the
     //tree we return the maximum of either branch.
-    static func rob(_ root: BinaryTreeNode?) -> Int {
+    static func rob(_ root: TreeNode?) -> Int {
         let (left, right) = dfs(root)
         
         return max(left, right)
     }
     
-    private static func dfs(_ node: BinaryTreeNode?) -> (Int, Int) { //(withRobbingCurrentNode, withoutRobbingCurrentNode)
+    private static func dfs(_ node: TreeNode?) -> (Int, Int) { //(withRobbingCurrentNode, withoutRobbingCurrentNode)
         guard let node = node else { //beyond leaf
             return (0, 0) //basecase
         }
@@ -63,14 +63,14 @@ struct HouseRobberIII {
     //work of a completed step so as to avoid having the re-calculate it. As the recursive calls unwind we return the
     //maximum value of whether we should rob the current node or node until we arrive back at the root, at which point
     //we have the maximum and can return it.
-    static func robMemo(_ root: BinaryTreeNode?) -> Int {
+    static func robMemo(_ root: TreeNode?) -> Int {
         var memo = [Int: Int]()
         let max = dfsMemo(root, true, &memo)
         
         return max
     }
     
-    private static func dfsMemo(_ node: BinaryTreeNode?, _ canRob: Bool, _ memo: inout [Int: Int]) -> Int {
+    private static func dfsMemo(_ node: TreeNode?, _ canRob: Bool, _ memo: inout [Int: Int]) -> Int {
         guard let node = node else { //beyond leaf
             return 0 //basecase
         }
@@ -110,11 +110,11 @@ struct HouseRobberIII {
     //Using DFS to traverse the tree we determine the maximum value possible from any given node where that node has
     //either been robbed or not. As the recursive calls unwind we return the maximum value of whether we should rob the
     //current node or node until we arrive back at the root. , at which point we have the maximum and can return it.
-    static func robNonDP(_ root: BinaryTreeNode?) -> Int {
+    static func robNonDP(_ root: TreeNode?) -> Int {
         return dfsNonDP(root, true)
     }
     
-    private static func dfsNonDP(_ node: BinaryTreeNode?, _ canRob: Bool) -> Int {
+    private static func dfsNonDP(_ node: TreeNode?, _ canRob: Bool) -> Int {
         guard let node = node else {
             return 0
         }

@@ -15,7 +15,7 @@ final class BSTIteratorTests: XCTestCase {
     
     func test_A() {
         let data = [7, 3, 15, nil, nil, 9, 20]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         let iterator = BSTIterator(root)
         
         XCTAssertEqual(iterator.next(), 3)

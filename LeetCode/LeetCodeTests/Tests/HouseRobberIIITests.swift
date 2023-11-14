@@ -16,7 +16,7 @@ final class HouseRobberIIITests: XCTestCase {
     
     func test_A() {
         let data = [3,2,3,nil,3,nil,1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = HouseRobberIII.rob(root)
         
@@ -25,7 +25,7 @@ final class HouseRobberIIITests: XCTestCase {
     
     func test_B() {
         let data = [3,4,5,1,3,nil,1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = HouseRobberIII.rob(root)
         

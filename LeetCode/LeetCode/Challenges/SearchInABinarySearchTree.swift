@@ -22,7 +22,7 @@ struct SearchInABinarySearchTree {
     //Solution Description:
     //Using BFS we traverse the tree, whenever we encounter a node we check if it is equal to `val` and if so we return it, else
     //we compare `node.val` against `val` to determine whether to take the left or right node as our next search node.
-    static func searchBST(_ root: BinaryTreeNode?, _ val: Int) -> BinaryTreeNode? {
+    static func searchBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }
@@ -30,7 +30,7 @@ struct SearchInABinarySearchTree {
         var queue = [root]
         
         while !queue.isEmpty {
-            var newQueueItems = [BinaryTreeNode]()
+            var newQueueItems = [TreeNode]()
             
             for node in queue {
                 if node.val == val {
@@ -62,7 +62,7 @@ struct SearchInABinarySearchTree {
     //Solution Description:
     //Using DFS traverse the tree, whenever we encounter a node we check if it is equal to `val` and if so break out of the loop,
     //else we compare `node.val` against `val` to determine whether to take the left or right node as our next search node.
-    static func searchBSTDFSIterative(_ root: BinaryTreeNode?, _ val: Int) -> BinaryTreeNode? {
+    static func searchBSTDFSIterative(_ root: TreeNode?, _ val: Int) -> TreeNode? {
         var node = root
         while node != nil && node?.val != val {
             if val <= node!.val { //note that we compare against node not node.left
@@ -86,7 +86,7 @@ struct SearchInABinarySearchTree {
     //Using DFS traverse the tree, whenever we encounter a node we check if it is equal to `val` and if so return that node,
     //else we compare `node.val` against `val` to determine whether to recursively take the left or right node as our next root
     //in the search
-    static func searchBSTDFSRecursive(_ root: BinaryTreeNode?, _ val: Int) -> BinaryTreeNode? {
+    static func searchBSTDFSRecursive(_ root: TreeNode?, _ val: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }

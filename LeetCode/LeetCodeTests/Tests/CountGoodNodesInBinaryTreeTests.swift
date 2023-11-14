@@ -15,7 +15,7 @@ final class CountGoodNodesInBinaryTreeTests: XCTestCase {
     
     func test_A() {
         let data = [3, 1, 4, 3, nil, 1, 5]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountGoodNodesInBinaryTree.goodNodes(root)
         
@@ -24,7 +24,7 @@ final class CountGoodNodesInBinaryTreeTests: XCTestCase {
     
     func test_B() {
         let data = [3, 3, nil, 4, 2]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountGoodNodesInBinaryTree.goodNodes(root)
         
@@ -33,7 +33,7 @@ final class CountGoodNodesInBinaryTreeTests: XCTestCase {
     
     func test_C() {
         let data = [1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountGoodNodesInBinaryTree.goodNodes(root)
         

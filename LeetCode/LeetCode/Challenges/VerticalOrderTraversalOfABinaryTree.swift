@@ -32,7 +32,7 @@ struct VerticalOrderTraversalOfABinaryTree {
     //the correct order (i.e. columns are ordered correctly). Next we need to sort each columns data: we sort in ascending
     //order by level/row value, where two elements have the same level/row value we then further sort by value (against in ascending)
     //order. Finally we then stripped the level/row information from the column and store the value-only array our `result` array.
-    static func verticalTraversal(_ root: BinaryTreeNode?) -> [[Int]] {
+    static func verticalTraversal(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
            return [[Int]]()
        }
@@ -45,7 +45,7 @@ struct VerticalOrderTraversalOfABinaryTree {
        var level = 0
        
        while !queue.isEmpty {
-           var newQueueItems = [(Int, BinaryTreeNode)]()
+           var newQueueItems = [(Int, TreeNode)]()
            
            for (column, node) in queue {
                ordering[column, default: [(Int, Int)]()].append((level, node.val))

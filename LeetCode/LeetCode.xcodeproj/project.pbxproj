@@ -100,17 +100,17 @@
 		3D4E46DF27DA63B500DA050F /* PermutationsII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E46DE27DA63B500DA050F /* PermutationsII.swift */; };
 		3D4E46E127DA63EA00DA050F /* PermutationsIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E46E027DA63EA00DA050F /* PermutationsIITests.swift */; };
 		3D5C908027A7F6A80035C399 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5C907727A7F6A70035C399 /* LeetCode.framework */; };
-		3D5C914227A7F7630035C399 /* BinaryTreeNodeParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909027A7F7620035C399 /* BinaryTreeNodeParent.swift */; };
+		3D5C914227A7F7630035C399 /* TreeNodeParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909027A7F7620035C399 /* TreeNodeParent.swift */; };
 		3D5C914327A7F7630035C399 /* GraphWeightedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909127A7F7620035C399 /* GraphWeightedEdge.swift */; };
-		3D5C914427A7F7630035C399 /* BinaryTreeNodeRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909227A7F7620035C399 /* BinaryTreeNodeRandom.swift */; };
+		3D5C914427A7F7630035C399 /* TreeNodeRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909227A7F7620035C399 /* TreeNodeRandom.swift */; };
 		3D5C914527A7F7630035C399 /* NestedInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909327A7F7620035C399 /* NestedInteger.swift */; };
 		3D5C914627A7F7630035C399 /* NaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909427A7F7620035C399 /* NaryTreeNode.swift */; };
-		3D5C914727A7F7630035C399 /* BinaryTreeNodeNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909527A7F7620035C399 /* BinaryTreeNodeNext.swift */; };
+		3D5C914727A7F7630035C399 /* TreeNodeNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909527A7F7620035C399 /* TreeNodeNext.swift */; };
 		3D5C914827A7F7630035C399 /* GraphVertice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909627A7F7620035C399 /* GraphVertice.swift */; };
 		3D5C914927A7F7630035C399 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909727A7F7620035C399 /* ListNode.swift */; };
 		3D5C914A27A7F7630035C399 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909827A7F7620035C399 /* Heap.swift */; };
 		3D5C914B27A7F7630035C399 /* ListNodeRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909927A7F7620035C399 /* ListNodeRandom.swift */; };
-		3D5C914C27A7F7630035C399 /* BinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909A27A7F7620035C399 /* BinaryTreeNode.swift */; };
+		3D5C914C27A7F7630035C399 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909A27A7F7620035C399 /* TreeNode.swift */; };
 		3D5C914D27A7F7630035C399 /* LowestCommonAncestorBinaryTreeIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909C27A7F7620035C399 /* LowestCommonAncestorBinaryTreeIII.swift */; };
 		3D5C914E27A7F7630035C399 /* VerifyingAnAlienDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909D27A7F7620035C399 /* VerifyingAnAlienDictionary.swift */; };
 		3D5C914F27A7F7630035C399 /* ImplementStrStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C909E27A7F7620035C399 /* ImplementStrStr.swift */; };
@@ -913,17 +913,17 @@
 		3D4E46E027DA63EA00DA050F /* PermutationsIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsIITests.swift; sourceTree = "<group>"; };
 		3D5C907727A7F6A70035C399 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5C907F27A7F6A80035C399 /* LeetCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5C909027A7F7620035C399 /* BinaryTreeNodeParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTreeNodeParent.swift; sourceTree = "<group>"; };
+		3D5C909027A7F7620035C399 /* TreeNodeParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeParent.swift; sourceTree = "<group>"; };
 		3D5C909127A7F7620035C399 /* GraphWeightedEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeightedEdge.swift; sourceTree = "<group>"; };
-		3D5C909227A7F7620035C399 /* BinaryTreeNodeRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTreeNodeRandom.swift; sourceTree = "<group>"; };
+		3D5C909227A7F7620035C399 /* TreeNodeRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeRandom.swift; sourceTree = "<group>"; };
 		3D5C909327A7F7620035C399 /* NestedInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedInteger.swift; sourceTree = "<group>"; };
 		3D5C909427A7F7620035C399 /* NaryTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaryTreeNode.swift; sourceTree = "<group>"; };
-		3D5C909527A7F7620035C399 /* BinaryTreeNodeNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTreeNodeNext.swift; sourceTree = "<group>"; };
+		3D5C909527A7F7620035C399 /* TreeNodeNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeNext.swift; sourceTree = "<group>"; };
 		3D5C909627A7F7620035C399 /* GraphVertice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphVertice.swift; sourceTree = "<group>"; };
 		3D5C909727A7F7620035C399 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		3D5C909827A7F7620035C399 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		3D5C909927A7F7620035C399 /* ListNodeRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNodeRandom.swift; sourceTree = "<group>"; };
-		3D5C909A27A7F7620035C399 /* BinaryTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTreeNode.swift; sourceTree = "<group>"; };
+		3D5C909A27A7F7620035C399 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		3D5C909C27A7F7620035C399 /* LowestCommonAncestorBinaryTreeIII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorBinaryTreeIII.swift; sourceTree = "<group>"; };
 		3D5C909D27A7F7620035C399 /* VerifyingAnAlienDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyingAnAlienDictionary.swift; sourceTree = "<group>"; };
 		3D5C909E27A7F7620035C399 /* ImplementStrStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImplementStrStr.swift; sourceTree = "<group>"; };
@@ -1679,10 +1679,6 @@
 			isa = PBXGroup;
 			children = (
 				3D14657D280A279A00DF647A /* BinaryMatrix.swift */,
-				3D5C909A27A7F7620035C399 /* BinaryTreeNode.swift */,
-				3D5C909527A7F7620035C399 /* BinaryTreeNodeNext.swift */,
-				3D5C909027A7F7620035C399 /* BinaryTreeNodeParent.swift */,
-				3D5C909227A7F7620035C399 /* BinaryTreeNodeRandom.swift */,
 				3D5C909627A7F7620035C399 /* GraphVertice.swift */,
 				3D5C909127A7F7620035C399 /* GraphWeightedEdge.swift */,
 				3D5C909827A7F7620035C399 /* Heap.swift */,
@@ -1690,6 +1686,10 @@
 				3D5C909927A7F7620035C399 /* ListNodeRandom.swift */,
 				3D5C909427A7F7620035C399 /* NaryTreeNode.swift */,
 				3D5C909327A7F7620035C399 /* NestedInteger.swift */,
+				3D5C909A27A7F7620035C399 /* TreeNode.swift */,
+				3D5C909527A7F7620035C399 /* TreeNodeNext.swift */,
+				3D5C909027A7F7620035C399 /* TreeNodeParent.swift */,
+				3D5C909227A7F7620035C399 /* TreeNodeRandom.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -2700,7 +2700,7 @@
 				437142F02AE8169E00E65D11 /* CountSubIslands.swift in Sources */,
 				439563CE2A5DF452004ACCE6 /* AllNodesDistanceKInBinaryTree.swift in Sources */,
 				436634AC2AFE81050087F13F /* TwoSumIVInputIsABST.swift in Sources */,
-				3D5C914C27A7F7630035C399 /* BinaryTreeNode.swift in Sources */,
+				3D5C914C27A7F7630035C399 /* TreeNode.swift in Sources */,
 				4346794E2A56C8A500A1D225 /* ConcatenationOfArray.swift in Sources */,
 				434BCB102A090F750026A985 /* CountGoodNodesInBinaryTree.swift in Sources */,
 				3D5C917B27A7F7630035C399 /* NumberConnectedComponentsUndirectedGraph.swift in Sources */,
@@ -2745,7 +2745,7 @@
 				3D5C915227A7F7630035C399 /* LowestCommonAncestorBinaryTreeII.swift in Sources */,
 				3D9B1D2328354619004FCFF8 /* SortAnArray.swift in Sources */,
 				43EE0BD22A546240003D23E0 /* DivideArrayInSetsOfKConsecutiveNumbers.swift in Sources */,
-				3D5C914727A7F7630035C399 /* BinaryTreeNodeNext.swift in Sources */,
+				3D5C914727A7F7630035C399 /* TreeNodeNext.swift in Sources */,
 				3D5C918727A7F7630035C399 /* ValidPerfectSquare.swift in Sources */,
 				3DC827F827C7CD600092ACDC /* MultiplyStrings.swift in Sources */,
 				3D5C91E327A7F7630035C399 /* RottingOranges.swift in Sources */,
@@ -2757,7 +2757,7 @@
 				43A692AA29F6D7030043B5D0 /* WordBreak.swift in Sources */,
 				3D5C91B527A7F7630035C399 /* SwapNodesInPairs.swift in Sources */,
 				3D5C91D927A7F7630035C399 /* SearchInsertPosition.swift in Sources */,
-				3D5C914427A7F7630035C399 /* BinaryTreeNodeRandom.swift in Sources */,
+				3D5C914427A7F7630035C399 /* TreeNodeRandom.swift in Sources */,
 				3DA65F3B27F70D1800AAB26A /* RobotRoomCleaner.swift in Sources */,
 				3D5C91B127A7F7630035C399 /* KthLargestElementInArray.swift in Sources */,
 				3D3B213927D6556B0055C0D1 /* ThreeSum.swift in Sources */,
@@ -2789,7 +2789,7 @@
 				3D5C91C227A7F7630035C399 /* LetterCombinationsOfAPhoneNumber.swift in Sources */,
 				3D5C918D27A7F7630035C399 /* FinalPricesWithSpecialDiscount.swift in Sources */,
 				3D46241527E1F93C00A888C1 /* UniquePaths.swift in Sources */,
-				3D5C914227A7F7630035C399 /* BinaryTreeNodeParent.swift in Sources */,
+				3D5C914227A7F7630035C399 /* TreeNodeParent.swift in Sources */,
 				43313BBF29D8DA2B005FCF5D /* WordPattern.swift in Sources */,
 				3D09759727DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift in Sources */,
 				431E35712AF159DD0019BB1F /* NumberOfClosedIslands.swift in Sources */,

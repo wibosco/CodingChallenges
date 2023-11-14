@@ -22,7 +22,7 @@ struct ClosestBinarySearchTreeValue {
     //We traverse the tree in a DFS manner, at each level we compare the delta of that levels node value with the `target`.
     //If that delta is less than `closet` then that nodes delta becomes the closet. As this is BST we then choose which
     //node to traverse next (left or right)
-    static func closestValue(_ root: BinaryTreeNode?, _ target: Double) -> Int {
+    static func closestValue(_ root: TreeNode?, _ target: Double) -> Int {
         var closet = (-1, Double(Int.max))
         
         dfs(root, target, &closet)
@@ -30,7 +30,7 @@ struct ClosestBinarySearchTreeValue {
         return closet.0
     }
     
-    private static func dfs(_ node: BinaryTreeNode?, _ target: Double, _ closet: inout (Int, Double)) {
+    private static func dfs(_ node: TreeNode?, _ target: Double, _ closet: inout (Int, Double)) {
         guard let node = node else {
             return
         }
@@ -60,13 +60,13 @@ struct ClosestBinarySearchTreeValue {
     //less than (in absolute terms) the current delta then we replace it with that node. We then check if that node has
     //any children nodes and select which one to search down depending on if that nodes val is less than or
     //greater than the target
-    static func closestValueIterative(_ root: BinaryTreeNode?, _ target: Double) -> Int {
+    static func closestValueIterative(_ root: TreeNode?, _ target: Double) -> Int {
         guard let root = root else {
             return -1
         }
         
         var closetNode = root
-        var currentNode: BinaryTreeNode? = root
+        var currentNode: TreeNode? = root
         while currentNode != nil {
             let currentDelta = abs(Double(currentNode!.val) - target)
             let closetDelta = abs(Double(closetNode.val) - target)

@@ -15,7 +15,7 @@ final class MinimumAbsoluteDifferenceInBSTTests: XCTestCase {
     
     func test_A() {
         let data = [4,2,6,1,3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = MinimumAbsoluteDifferenceInBST.getMinimumDifference(root)
         
@@ -24,7 +24,7 @@ final class MinimumAbsoluteDifferenceInBSTTests: XCTestCase {
     
     func test_B() {
         let data = [1,0,48,nil,nil,12,49]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = MinimumAbsoluteDifferenceInBST.getMinimumDifference(root)
         
@@ -33,7 +33,7 @@ final class MinimumAbsoluteDifferenceInBSTTests: XCTestCase {
     
     func test_C() {
         let data = [236,104,701,nil,227,nil,911]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = MinimumAbsoluteDifferenceInBST.getMinimumDifference(root)
         

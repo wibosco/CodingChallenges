@@ -8,12 +8,12 @@
 
 import Foundation
 
-final class BinaryTreeNodeNext {
+final class TreeNodeNext {
     let val: Int
     
-    var left: BinaryTreeNodeNext?
-    var right: BinaryTreeNodeNext?
-    var next: BinaryTreeNodeNext?
+    var left: TreeNodeNext?
+    var right: TreeNodeNext?
+    var next: TreeNodeNext?
     
     // MARK: - Init
     
@@ -22,15 +22,15 @@ final class BinaryTreeNodeNext {
     }
 }
 
-extension BinaryTreeNodeNext {
+extension TreeNodeNext {
     //level order
-    static func deserialize(_ array: [Int?]) -> BinaryTreeNodeNext? {
+    static func deserialize(_ array: [Int?]) -> TreeNodeNext? {
         guard !array.isEmpty else {
             return nil
         }
         
         var mArray = array
-        let root = BinaryTreeNodeNext(mArray.removeFirst()!)
+        let root = TreeNodeNext(mArray.removeFirst()!)
         var queue = [root]
         
         while !queue.isEmpty {
@@ -42,7 +42,7 @@ extension BinaryTreeNodeNext {
                 //left
                 if !mArray.isEmpty { //check needed in case these are leaf nodes
                     if let val = mArray.removeFirst() {
-                        let node = BinaryTreeNodeNext(val)
+                        let node = TreeNodeNext(val)
                         root.left = node
 
                         queue.append(node)
@@ -52,7 +52,7 @@ extension BinaryTreeNodeNext {
                 //right
                 if !mArray.isEmpty {
                     if let val = mArray.removeFirst() {
-                        let node = BinaryTreeNodeNext(val)
+                        let node = TreeNodeNext(val)
                         root.right = node
                         
                         queue.append(node)
@@ -64,7 +64,7 @@ extension BinaryTreeNodeNext {
         return root
     }
     
-    static func serialize(_ root: BinaryTreeNodeNext?) -> [String] {
+    static func serialize(_ root: TreeNodeNext?) -> [String] {
         guard let root = root else {
             return []
         }
@@ -94,8 +94,8 @@ extension BinaryTreeNodeNext {
     }
 }
 
-extension BinaryTreeNodeNext: Equatable {
-    static func == (lhs: BinaryTreeNodeNext, rhs: BinaryTreeNodeNext) -> Bool {
+extension TreeNodeNext: Equatable {
+    static func == (lhs: TreeNodeNext, rhs: TreeNodeNext) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }

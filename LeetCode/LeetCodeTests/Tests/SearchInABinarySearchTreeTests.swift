@@ -16,24 +16,24 @@ final class SearchInABinarySearchTreeTests: XCTestCase {
     
     func test_A() {
         let data = [4, 2, 7, 1, 3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         let val = 2
         
         let result = SearchInABinarySearchTree.searchBST(root, val)
         
-        let values = BinaryTreeNode.serialize(result)
+        let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [2, 1, 3])
     }
     
     func test_B() {
         let data = [4, 2, 7, 1, 3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         let val = 5
         
         let result = SearchInABinarySearchTree.searchBST(root, val)
         
-        let values = BinaryTreeNode.serialize(result)
+        let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [Int]())
     }

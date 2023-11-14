@@ -15,7 +15,7 @@ final class AverageOfLevelsInBinaryTreeTests: XCTestCase {
     
     func test_A() {
         let data = [3,9,20,nil,nil,15,7]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = AverageOfLevelsInBinaryTree.averageOfLevels(root)
         
@@ -33,7 +33,7 @@ final class AverageOfLevelsInBinaryTreeTests: XCTestCase {
     
     func test_B() {
         let data = [3,9,20,15,7]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = AverageOfLevelsInBinaryTree.averageOfLevels(root)
         

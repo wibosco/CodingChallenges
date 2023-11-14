@@ -20,7 +20,7 @@ struct LeafSimilarTrees {
     //
     //Solution Description:
     //
-    static func leafSimilar(_ root1: BinaryTreeNode?, _ root2: BinaryTreeNode?) -> Bool {
+    static func leafSimilar(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
         var order1 = [Int]()
         dfs(root1, &order1)
         
@@ -30,7 +30,7 @@ struct LeafSimilarTrees {
         return order1 == order2
     }
     
-    private static func dfs(_ node: BinaryTreeNode?, _ order: inout [Int]) {
+    private static func dfs(_ node: TreeNode?, _ order: inout [Int]) {
         guard let node = node else {
             return
         }

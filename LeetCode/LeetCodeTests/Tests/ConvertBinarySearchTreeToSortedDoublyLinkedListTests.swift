@@ -16,22 +16,22 @@ final class ConvertBinarySearchTreeToSortedDoublyLinkedListTests: XCTestCase {
     
     func test_A() {
         let data = [4, 2, 5, 1, 3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let head = ConvertBinarySearchTreeToSortedDoublyLinkedList.treeToDoublyList(root)
         
-        let result = BinaryTreeNode.serializeAsDoublyLinkedList(head)
+        let result = TreeNode.serializeAsDoublyLinkedList(head)
         
         XCTAssertEqual(result, [1, 2, 3, 4, 5])
     }
     
     func test_B() {
         let data = [2, 1, 3]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let head = ConvertBinarySearchTreeToSortedDoublyLinkedList.treeToDoublyList(root)
         
-        let result = BinaryTreeNode.serializeAsDoublyLinkedList(head)
+        let result = TreeNode.serializeAsDoublyLinkedList(head)
         
         XCTAssertEqual(result, [1, 2, 3])
     }

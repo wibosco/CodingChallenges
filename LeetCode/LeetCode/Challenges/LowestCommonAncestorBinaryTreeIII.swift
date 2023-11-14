@@ -33,7 +33,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //See: https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len for more details and a graphic showing the above
     //Similar to: https://leetcode.com/problems/intersection-of-two-linked-lists/
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
-    static func lowestCommonAncestor(_ p: BinaryTreeNodeParent?, _ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
+    static func lowestCommonAncestor(_ p: TreeNodeParent?, _ q: TreeNodeParent?) -> TreeNodeParent? {
         guard let p = p, let q = q else {
             return nil
         }
@@ -64,7 +64,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //
     //As we are only interested in the lowest common ancestor rather than any common ancestor we need to ensure that we pass
     //back the first node that is true for 2 of the above 3 scenarios. When we find this node we set it to `lca`
-    static func lowestCommonAncestorLong(_ p: BinaryTreeNodeParent?, _ q: BinaryTreeNodeParent?) -> BinaryTreeNodeParent? {
+    static func lowestCommonAncestorLong(_ p: TreeNodeParent?, _ q: TreeNodeParent?) -> TreeNodeParent? {
         guard let p = p, let q = q else {
             return nil
         }
@@ -74,7 +74,7 @@ struct LowestCommonAncestorBinaryTreeIII {
             root = root.parent!
         }
         
-        var lca: BinaryTreeNodeParent?
+        var lca: TreeNodeParent?
         
         dfs(root, p, q, &lca)
         
@@ -82,7 +82,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     }
     
     @discardableResult
-    private static func dfs(_ root: BinaryTreeNodeParent?, _ p: BinaryTreeNodeParent, _ q: BinaryTreeNodeParent, _ lca: inout BinaryTreeNodeParent?) -> Bool {
+    private static func dfs(_ root: TreeNodeParent?, _ p: TreeNodeParent, _ q: TreeNodeParent, _ lca: inout TreeNodeParent?) -> Bool {
         guard let root = root, lca == nil else {
             return false
         }

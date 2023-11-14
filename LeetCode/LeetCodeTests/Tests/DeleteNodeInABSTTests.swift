@@ -16,11 +16,11 @@ final class DeleteNodeInABSTTests: XCTestCase {
     func test_A() {
         let data = [5,3,6,2,4,nil,7]
         let key = 3
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = DeleteNodeInABST.deleteNode(root, key)
             
-        let values = BinaryTreeNode.serialize(result)
+        let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [5,4,6,2,nil,nil,7])
     }
@@ -28,11 +28,11 @@ final class DeleteNodeInABSTTests: XCTestCase {
     func test_B() {
         let data = [5,3,6,2,4,nil,7]
         let key = 0
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = DeleteNodeInABST.deleteNode(root, key)
             
-        let values = BinaryTreeNode.serialize(result)
+        let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [5,3,6,2,4,nil,7])
     }
@@ -40,7 +40,7 @@ final class DeleteNodeInABSTTests: XCTestCase {
     func test_C() {
         let data = [Int]()
         let key = 0
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = DeleteNodeInABST.deleteNode(root, key)
             

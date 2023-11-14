@@ -15,7 +15,7 @@ final class CountNodesEqualToAverageOfSubtreeTests: XCTestCase {
     
     func test_A() {
         let data = [4,8,5,0,1,nil,6]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountNodesEqualToAverageOfSubtree.averageOfSubtree(root)
         
@@ -24,7 +24,7 @@ final class CountNodesEqualToAverageOfSubtreeTests: XCTestCase {
     
     func test_B() {
         let data = [1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountNodesEqualToAverageOfSubtree.averageOfSubtree(root)
         

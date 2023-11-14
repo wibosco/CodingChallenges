@@ -15,7 +15,7 @@ final class BalancedBinaryTreeTests: XCTestCase {
     
     func test_A() {
         let data = [3, 9, 20, nil, nil, 15, 7]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
             
         let result = BalancedBinaryTree.isBalanced(root)
         
@@ -24,7 +24,7 @@ final class BalancedBinaryTreeTests: XCTestCase {
     
     func test_B() {
         let data = [1, 2, 2, 3, 3, nil, nil, 4, 4]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
             
         let result = BalancedBinaryTree.isBalanced(root)
         
@@ -39,7 +39,7 @@ final class BalancedBinaryTreeTests: XCTestCase {
     
     func test_D() {
         let data = [1, 2, 2, 3, nil, nil, 3, 4, nil, nil, 4]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = BalancedBinaryTree.isBalanced(root)
         

@@ -15,7 +15,7 @@ final class CountCompleteTreeNodesTests: XCTestCase {
     
     func test_A() {
         let data = [1,2,3,4,5,6]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountCompleteTreeNodes.countNodes(root)
         
@@ -24,7 +24,7 @@ final class CountCompleteTreeNodesTests: XCTestCase {
     
     func test_B() {
         let data = [Int]()
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountCompleteTreeNodes.countNodes(root)
         
@@ -33,7 +33,7 @@ final class CountCompleteTreeNodesTests: XCTestCase {
     
     func test_C() {
         let data = [1]
-        let root = BinaryTreeNode.deserialize(data)
+        let root = TreeNode.deserialize(data)
         
         let result = CountCompleteTreeNodes.countNodes(root)
         

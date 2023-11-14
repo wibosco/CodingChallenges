@@ -22,7 +22,7 @@ struct BinaryTreeZigzagLevelOrderTraversal {
     //ordering of that level and if it is meant to be right-to-left we reverse the `level` array before adding to the `levels`;
     //if the ordering is left-to-right we just add the `level` array without reversing. At the end of our traversal, `levels`
     //should contain all the nodes in the tree sorted in zigzag fashion
-    static func zigzagLevelOrder(_ root: BinaryTreeNode?) -> [[Int]] {
+    static func zigzagLevelOrder(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()
         }
@@ -33,7 +33,7 @@ struct BinaryTreeZigzagLevelOrderTraversal {
         
         while !queue.isEmpty {
             var level = [Int]()
-            var newQueueItems = [BinaryTreeNode]()
+            var newQueueItems = [TreeNode]()
             
             for node in queue {
                 level.append(node.val)
