@@ -17,6 +17,7 @@ struct BinarySearchTreeToGreaterSumTree {
     //DFS
     //recursive
     //inout
+    //bottom-up
     //
     //Solution Description:
     //As we have a BST we know that all nodes to the right of the `root` are greater than it in value and all nodes to the
