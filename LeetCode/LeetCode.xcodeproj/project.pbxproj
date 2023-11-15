@@ -666,6 +666,8 @@
 		435B709A2B04CBC5003D51CA /* MostFrequentSubtreeSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B70992B04CBC5003D51CA /* MostFrequentSubtreeSumTests.swift */; };
 		435B709C2B04DB95003D51CA /* FindBottomLeftTreeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B709B2B04DB95003D51CA /* FindBottomLeftTreeValue.swift */; };
 		435B709E2B04DBC3003D51CA /* FindBottomLeftTreeValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B709D2B04DBC3003D51CA /* FindBottomLeftTreeValueTests.swift */; };
+		435B70A02B04E441003D51CA /* FindLargestValueInEachTreeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B709F2B04E441003D51CA /* FindLargestValueInEachTreeRow.swift */; };
+		435B70A22B04E469003D51CA /* FindLargestValueInEachTreeRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B70A12B04E469003D51CA /* FindLargestValueInEachTreeRowTests.swift */; };
 		435BFD7D2A5E9DB700D1F14A /* FindEventualSafeStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFD7C2A5E9DB700D1F14A /* FindEventualSafeStates.swift */; };
 		435BFD7F2A5E9DFA00D1F14A /* FindEventualSafeStatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFD7E2A5E9DFA00D1F14A /* FindEventualSafeStatesTests.swift */; };
 		435F019B2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */; };
@@ -1489,6 +1491,8 @@
 		435B70992B04CBC5003D51CA /* MostFrequentSubtreeSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostFrequentSubtreeSumTests.swift; sourceTree = "<group>"; };
 		435B709B2B04DB95003D51CA /* FindBottomLeftTreeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBottomLeftTreeValue.swift; sourceTree = "<group>"; };
 		435B709D2B04DBC3003D51CA /* FindBottomLeftTreeValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBottomLeftTreeValueTests.swift; sourceTree = "<group>"; };
+		435B709F2B04E441003D51CA /* FindLargestValueInEachTreeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLargestValueInEachTreeRow.swift; sourceTree = "<group>"; };
+		435B70A12B04E469003D51CA /* FindLargestValueInEachTreeRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLargestValueInEachTreeRowTests.swift; sourceTree = "<group>"; };
 		435BFD7C2A5E9DB700D1F14A /* FindEventualSafeStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindEventualSafeStates.swift; sourceTree = "<group>"; };
 		435BFD7E2A5E9DFA00D1F14A /* FindEventualSafeStatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindEventualSafeStatesTests.swift; sourceTree = "<group>"; };
 		435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaOfIsland.swift; sourceTree = "<group>"; };
@@ -1829,6 +1833,7 @@
 				3D5C90FD27A7F7630035C399 /* FindFirstAndLastPositionOfElementInSortedArray.swift */,
 				3D5C90EE27A7F7620035C399 /* FindIfPathExistsInGraph.swift */,
 				3D5C910E27A7F7630035C399 /* FindKClosestElements.swift */,
+				435B709F2B04E441003D51CA /* FindLargestValueInEachTreeRow.swift */,
 				3D2A96B2289D683A003B954F /* FindLeavesOfBinaryTree.swift */,
 				3D5C90D827A7F7620035C399 /* FindMinimumRotatedSortedArray.swift */,
 				3D5C90FC27A7F7620035C399 /* FindMinimumRotatedSortedArrayII.swift */,
@@ -2235,6 +2240,7 @@
 				3D5C920E27A7F76B0035C399 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */,
 				3D5C922F27A7F76B0035C399 /* FindIfPathExistsInGraphTests.swift */,
 				3D5C924B27A7F76C0035C399 /* FindKClosestElementsTests.swift */,
+				435B70A12B04E469003D51CA /* FindLargestValueInEachTreeRowTests.swift */,
 				3D2A96B4289D6891003B954F /* FindLeavesOfBinaryTreeTests.swift */,
 				3D5C925D27A7F76C0035C399 /* FindMinimumRotatedSortedArrayIITests.swift */,
 				3D5C921527A7F76B0035C399 /* FindMinimumRotatedSortedArrayTests.swift */,
@@ -3043,6 +3049,7 @@
 				437119442A5EEE6B000E0EE5 /* GridGame.swift in Sources */,
 				431B84CE2A9AA3F600C647FD /* MaximumLengthOfPairChain.swift in Sources */,
 				4311BC702A585DEB00137AED /* IsomorphicStrings.swift in Sources */,
+				435B70A02B04E441003D51CA /* FindLargestValueInEachTreeRow.swift in Sources */,
 				43EE0BDE2A5617C0003D23E0 /* ValidParenthesisString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3358,6 +3365,7 @@
 				4311BC722A585E2400137AED /* IsomorphicStringsTests.swift in Sources */,
 				43313BC529D8EBAB005FCF5D /* BullsAndCowsTest.swift in Sources */,
 				43BD45802AFCCFE2006216F0 /* SumRootToLeafNumbersTests.swift in Sources */,
+				435B70A22B04E469003D51CA /* FindLargestValueInEachTreeRowTests.swift in Sources */,
 				4311BC7A2A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift in Sources */,
 				3D5C93A327A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift in Sources */,
 				434679502A56D68300A1D225 /* ConcatenationOfArrayTests.swift in Sources */,
