@@ -722,6 +722,8 @@
 		436EC1BF2B0645FA003F7BC7 /* CreateBinaryTreeFromDescriptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1BE2B0645FA003F7BC7 /* CreateBinaryTreeFromDescriptionsTests.swift */; };
 		436EC1C12B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1C02B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift */; };
 		436EC1C32B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1C22B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift */; };
+		436EC1C52B0669F6003F7BC7 /* DeleteNodesAndReturnForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1C42B0669F6003F7BC7 /* DeleteNodesAndReturnForest.swift */; };
+		436EC1C72B066AC8003F7BC7 /* DeleteNodesAndReturnForestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1C62B066AC8003F7BC7 /* DeleteNodesAndReturnForestTests.swift */; };
 		437119442A5EEE6B000E0EE5 /* GridGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119432A5EEE6B000E0EE5 /* GridGame.swift */; };
 		437119462A5EEEA1000E0EE5 /* GridGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119452A5EEEA1000E0EE5 /* GridGameTests.swift */; };
 		437119482A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */; };
@@ -1569,6 +1571,8 @@
 		436EC1BE2B0645FA003F7BC7 /* CreateBinaryTreeFromDescriptionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBinaryTreeFromDescriptionsTests.swift; sourceTree = "<group>"; };
 		436EC1C02B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorOfDeepestLeaves.swift; sourceTree = "<group>"; };
 		436EC1C22B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorOfDeepestLeavesTests.swift; sourceTree = "<group>"; };
+		436EC1C42B0669F6003F7BC7 /* DeleteNodesAndReturnForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNodesAndReturnForest.swift; sourceTree = "<group>"; };
+		436EC1C62B066AC8003F7BC7 /* DeleteNodesAndReturnForestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNodesAndReturnForestTests.swift; sourceTree = "<group>"; };
 		437119432A5EEE6B000E0EE5 /* GridGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGame.swift; sourceTree = "<group>"; };
 		437119452A5EEEA1000E0EE5 /* GridGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGameTests.swift; sourceTree = "<group>"; };
 		437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheIndexOfTheFirstOccurrenceInAString.swift; sourceTree = "<group>"; };
@@ -1855,6 +1859,7 @@
 				43026BCE2AFEDB050066473B /* DeepestLeavesSum.swift */,
 				435B70B32B0568EC003D51CA /* DeleteLeavesWithAGivenValue.swift */,
 				43CE799E2AF93EE3001D6D7C /* DeleteNodeInABST.swift */,
+				436EC1C42B0669F6003F7BC7 /* DeleteNodesAndReturnForest.swift */,
 				3D5C90AA27A7F7620035C399 /* DestroyingAsteroids.swift */,
 				43EF3C202AFB7FB60085445E /* DetermineIfACellIsReachableAtAGivenTime.swift */,
 				3D09759627DB625E007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotation.swift */,
@@ -2273,6 +2278,7 @@
 				43026BD02AFEDB460066473B /* DeepestLeavesSumTests.swift */,
 				435B70B52B056923003D51CA /* DeleteLeavesWithAGivenValueTests.swift */,
 				43CE79A02AF99856001D6D7C /* DeleteNodeInABSTTests.swift */,
+				436EC1C62B066AC8003F7BC7 /* DeleteNodesAndReturnForestTests.swift */,
 				3D5C91F827A7F76B0035C399 /* DestroyingAsteroidsTests.swift */,
 				43EF3C222AFB7FEA0085445E /* DetermineIfACellIsReachableAtAGivenTimeTests.swift */,
 				3D09759827DB628F007FC11F /* DetermineWhetherMatrixCanBeObtainedByRotationTests.swift */,
@@ -2808,6 +2814,7 @@
 				439563CE2A5DF452004ACCE6 /* AllNodesDistanceKInBinaryTree.swift in Sources */,
 				436634AC2AFE81050087F13F /* TwoSumIVInputIsABST.swift in Sources */,
 				3D5C914C27A7F7630035C399 /* TreeNode.swift in Sources */,
+				436EC1C52B0669F6003F7BC7 /* DeleteNodesAndReturnForest.swift in Sources */,
 				4346794E2A56C8A500A1D225 /* ConcatenationOfArray.swift in Sources */,
 				434BCB102A090F750026A985 /* CountGoodNodesInBinaryTree.swift in Sources */,
 				3D5C917B27A7F7630035C399 /* NumberConnectedComponentsUndirectedGraph.swift in Sources */,
@@ -3203,6 +3210,7 @@
 				3D5C92BD27A7F76C0035C399 /* GroupShiftedStringsTests.swift in Sources */,
 				43C039FA2A691FA3007E29EB /* FrequencyOfTheMostFrequentElementTests.swift in Sources */,
 				3D5C92B627A7F76C0035C399 /* Matrix01Tests.swift in Sources */,
+				436EC1C72B066AC8003F7BC7 /* DeleteNodesAndReturnForestTests.swift in Sources */,
 				43169EE02A6184C400DF16FD /* NonDecreasingArrayTests.swift in Sources */,
 				3D5C931A27A7F76C0035C399 /* SerializeDeserializeBinaryTreeTests.swift in Sources */,
 				3D5C92FE27A7F76C0035C399 /* ValidateBinarySearchTreeTests.swift in Sources */,
