@@ -720,6 +720,8 @@
 		436EC1BB2B063E2C003F7BC7 /* BinaryTreePruningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1BA2B063E2C003F7BC7 /* BinaryTreePruningTests.swift */; };
 		436EC1BD2B0645C4003F7BC7 /* CreateBinaryTreeFromDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1BC2B0645C4003F7BC7 /* CreateBinaryTreeFromDescriptions.swift */; };
 		436EC1BF2B0645FA003F7BC7 /* CreateBinaryTreeFromDescriptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1BE2B0645FA003F7BC7 /* CreateBinaryTreeFromDescriptionsTests.swift */; };
+		436EC1C12B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1C02B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift */; };
+		436EC1C32B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1C22B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift */; };
 		437119442A5EEE6B000E0EE5 /* GridGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119432A5EEE6B000E0EE5 /* GridGame.swift */; };
 		437119462A5EEEA1000E0EE5 /* GridGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119452A5EEEA1000E0EE5 /* GridGameTests.swift */; };
 		437119482A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */; };
@@ -1565,6 +1567,8 @@
 		436EC1BA2B063E2C003F7BC7 /* BinaryTreePruningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePruningTests.swift; sourceTree = "<group>"; };
 		436EC1BC2B0645C4003F7BC7 /* CreateBinaryTreeFromDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBinaryTreeFromDescriptions.swift; sourceTree = "<group>"; };
 		436EC1BE2B0645FA003F7BC7 /* CreateBinaryTreeFromDescriptionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBinaryTreeFromDescriptionsTests.swift; sourceTree = "<group>"; };
+		436EC1C02B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorOfDeepestLeaves.swift; sourceTree = "<group>"; };
+		436EC1C22B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorOfDeepestLeavesTests.swift; sourceTree = "<group>"; };
 		437119432A5EEE6B000E0EE5 /* GridGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGame.swift; sourceTree = "<group>"; };
 		437119452A5EEEA1000E0EE5 /* GridGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGameTests.swift; sourceTree = "<group>"; };
 		437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheIndexOfTheFirstOccurrenceInAString.swift; sourceTree = "<group>"; };
@@ -1953,6 +1957,7 @@
 				3D5C90B927A7F7620035C399 /* LowestCommonAncestorBinaryTree.swift */,
 				3D5C90A127A7F7620035C399 /* LowestCommonAncestorBinaryTreeII.swift */,
 				3D5C909C27A7F7620035C399 /* LowestCommonAncestorBinaryTreeIII.swift */,
+				436EC1C02B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift */,
 				3D13819D27C3F0DE00E17E5A /* MajorityElement.swift */,
 				3D1381A127C3FC3A00E17E5A /* MajorityElementII.swift */,
 				3D5C910627A7F7630035C399 /* Matrix01.swift */,
@@ -2370,6 +2375,7 @@
 				3D5C927927A7F76C0035C399 /* LowestCommonAncestorBinaryTreeIIITests.swift */,
 				3D5C922427A7F76B0035C399 /* LowestCommonAncestorBinaryTreeIITests.swift */,
 				3D5C923D27A7F76C0035C399 /* LowestCommonAncestorBinaryTreeTests.swift */,
+				436EC1C22B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift */,
 				3D1381A327C3FC7500E17E5A /* MajorityElementIITests.swift */,
 				3D13819F27C3F12800E17E5A /* MajorityElementTests.swift */,
 				3D5C921027A7F76B0035C399 /* Matrix01Tests.swift */,
@@ -2763,6 +2769,7 @@
 				3D46243927E4DED100A888C1 /* RemoveDuplicatesFromSortedArrayII.swift in Sources */,
 				43C039F82A691F78007E29EB /* FrequencyOfTheMostFrequentElement.swift in Sources */,
 				435B709C2B04DB95003D51CA /* FindBottomLeftTreeValue.swift in Sources */,
+				436EC1C12B065E1D003F7BC7 /* LowestCommonAncestorOfDeepestLeaves.swift in Sources */,
 				3D5C919127A7F7630035C399 /* BinaryTreeRightSideView.swift in Sources */,
 				3D5C91CA27A7F7630035C399 /* ReverseLinkedList.swift in Sources */,
 				3D5C919527A7F7630035C399 /* DiagonalTraverse.swift in Sources */,
@@ -3237,6 +3244,7 @@
 				3D5C933D27A7F76C0035C399 /* TwoSumIITests.swift in Sources */,
 				3D5C92F927A7F76C0035C399 /* PascalsTriangleIITests.swift in Sources */,
 				4366348E2AFE25910087F13F /* RestoreTheArrayFromAdjacentPairsTests.swift in Sources */,
+				436EC1C32B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift in Sources */,
 				437142F22AE816E600E65D11 /* CountSubIslandsTests.swift in Sources */,
 				3D5C933927A7F76C0035C399 /* SearchInsertPositionTests.swift in Sources */,
 				3D5C933727A7F76C0035C399 /* NaryTreeLevelOrderTraversalTests.swift in Sources */,
