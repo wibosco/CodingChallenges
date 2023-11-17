@@ -22,7 +22,7 @@ struct TrimABinarySearchTree {
     //a node that is too low then we (potentially) replace that node with its `right` node and then check that that right
     //node is within the range. We repeat this process but for `high` but this time we place the node with its `left`
     //node.
-    
+    //
     //It's important to note that the guard statements also handle the case where the true tree root is outside of
     //low...high
     static func trimBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
