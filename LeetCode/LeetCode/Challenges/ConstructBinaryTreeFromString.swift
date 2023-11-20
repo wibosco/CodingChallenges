@@ -10,12 +10,13 @@ import Foundation
 //https://leetcode.com/problems/construct-binary-tree-from-string/
 struct ConstructBinaryTreeFromString {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(n) where n is the number of characters in s
+    //Space: O(n)
     //string
     //binary tree
     //DFS
     //recursive
+    //bottom-up
     //inout
     //
     //Solution Description:
