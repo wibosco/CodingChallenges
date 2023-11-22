@@ -30,7 +30,7 @@ A collection of coding challenges and their solutions from:
 
 | Keywords | Techniques |
 | -------- | ---------- |
-| "Shortest path", "Minimum" | `BFS`, `Dijkstra` | 
+| "Shortest path", "Minimum", "closest" | `BFS`, `Dijkstra` | 
 | "Level-by-level", "Least number of moves", "Batch" | `BFS` |
 | "All paths", "Choices", "Branching" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
@@ -70,6 +70,7 @@ A collection of coding challenges and their solutions from:
 | Repeatedly find the min and max value in subarrays| Sort the overall array and take the first and last element in the subarray | `MinimumDifferenceBetweenHighestAndLowestOfKScore` |
 | Find the end of duplicates in an array | Nest a while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
 | Find the minimum distance from one element to multiple elements in a graph | Multi-source BFS | `AsFarFromLandAsPossible` |
+| Traverse up a tree | Turn the tree into a directed graph with `child -> parent` and `parent -> child` | `ClosestLeafInABinaryTree` |
 
 A lot of problems can be treated as graph problems.
 
