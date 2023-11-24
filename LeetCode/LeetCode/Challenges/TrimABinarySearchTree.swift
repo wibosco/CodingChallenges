@@ -60,6 +60,8 @@ struct TrimABinarySearchTree {
     //higher `right` node in its place for us to then check if that node is within the range. If the current node has a
     //higher value than `low` then /we continue searching down its `left` branch so any that are lower. We repeat this
     //process for checking that nodes are within the upper bounds of the range.
+    //
+    //Similar to: https://leetcode.com/problems/split-bst/
     static func trimBSTTwoMethods(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
         guard let root = root else {
             return nil
