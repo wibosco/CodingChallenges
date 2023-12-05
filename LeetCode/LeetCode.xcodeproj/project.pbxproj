@@ -778,6 +778,8 @@
 		438AE5892A7A9981009130FC /* SearchSuggestionsSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AE5882A7A9981009130FC /* SearchSuggestionsSystemTests.swift */; };
 		438AE58B2A7AAFBB009130FC /* PalindromeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AE58A2A7AAFBB009130FC /* PalindromeLinkedList.swift */; };
 		438AE58D2A7AAFEC009130FC /* PalindromeLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AE58C2A7AAFEC009130FC /* PalindromeLinkedListTests.swift */; };
+		438C2EDB2B1F516B00C43AAA /* SmallestStringStartingFromLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C2EDA2B1F516B00C43AAA /* SmallestStringStartingFromLeaf.swift */; };
+		438C2EDD2B1F550900C43AAA /* SmallestStringStartingFromLeafTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C2EDC2B1F550900C43AAA /* SmallestStringStartingFromLeafTests.swift */; };
 		438EBCAF2AEFB1CB007083B7 /* FindClosestNodeToGivenTwoNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EBCAE2AEFB1CB007083B7 /* FindClosestNodeToGivenTwoNodes.swift */; };
 		438EBCB12AEFB206007083B7 /* FindClosestNodeToGivenTwoNodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EBCB02AEFB206007083B7 /* FindClosestNodeToGivenTwoNodesTests.swift */; };
 		438EBCB32AEFE41B007083B7 /* AsFarFromLandAsPossible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EBCB22AEFE41B007083B7 /* AsFarFromLandAsPossible.swift */; };
@@ -1665,6 +1667,8 @@
 		438AE5882A7A9981009130FC /* SearchSuggestionsSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestionsSystemTests.swift; sourceTree = "<group>"; };
 		438AE58A2A7AAFBB009130FC /* PalindromeLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeLinkedList.swift; sourceTree = "<group>"; };
 		438AE58C2A7AAFEC009130FC /* PalindromeLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeLinkedListTests.swift; sourceTree = "<group>"; };
+		438C2EDA2B1F516B00C43AAA /* SmallestStringStartingFromLeaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestStringStartingFromLeaf.swift; sourceTree = "<group>"; };
+		438C2EDC2B1F550900C43AAA /* SmallestStringStartingFromLeafTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestStringStartingFromLeafTests.swift; sourceTree = "<group>"; };
 		438EBCAE2AEFB1CB007083B7 /* FindClosestNodeToGivenTwoNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindClosestNodeToGivenTwoNodes.swift; sourceTree = "<group>"; };
 		438EBCB02AEFB206007083B7 /* FindClosestNodeToGivenTwoNodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindClosestNodeToGivenTwoNodesTests.swift; sourceTree = "<group>"; };
 		438EBCB22AEFE41B007083B7 /* AsFarFromLandAsPossible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsFarFromLandAsPossible.swift; sourceTree = "<group>"; };
@@ -2213,6 +2217,7 @@
 				3D5C90E827A7F7620035C399 /* SimplifyPath.swift */,
 				43F3720E2A78090F0000BF78 /* SingleElementInASortedArray.swift */,
 				43313BB629D7231F005FCF5D /* SingleNumber .swift */,
+				438C2EDA2B1F516B00C43AAA /* SmallestStringStartingFromLeaf.swift */,
 				3D5C90DD27A7F7620035C399 /* SmallestStringWithSwaps.swift */,
 				439910422B07AC810020E9CC /* SmallestSubtreeWithAllTheDeepestNodes.swift */,
 				439A63852AEAAC5300AAAF1A /* SnakesAndLadders.swift */,
@@ -2648,6 +2653,7 @@
 				3D5C923227A7F76B0035C399 /* SimplifyPathTests.swift */,
 				43F372102A78093F0000BF78 /* SingleElementInASortedArrayTests.swift */,
 				43313BB829D72335005FCF5D /* SingleNumberTests.swift */,
+				438C2EDC2B1F550900C43AAA /* SmallestStringStartingFromLeafTests.swift */,
 				3D5C928727A7F76C0035C399 /* SmallestStringWithSwapsTests.swift */,
 				439910442B07ACA90020E9CC /* SmallestSubtreeWithAllTheDeepestNodesTests.swift */,
 				439A63872AEAACA600AAAF1A /* SnakesAndLaddersTests.swift */,
@@ -2849,6 +2855,7 @@
 				433082D42A07B052003A5DE7 /* CarFleet.swift in Sources */,
 				436EC1B52B061E67003F7BC7 /* DistributeCoinsInBinaryTree.swift in Sources */,
 				3D5C917127A7F7630035C399 /* GraphValidTree.swift in Sources */,
+				438C2EDB2B1F516B00C43AAA /* SmallestStringStartingFromLeaf.swift in Sources */,
 				3D5C91DC27A7F7630035C399 /* CourseScheduleII.swift in Sources */,
 				3D8C787127AD6EF900ADD88A /* RunningSumOf1DArray.swift in Sources */,
 				3D5C917827A7F7630035C399 /* NaryTreeLevelOrderTraversal.swift in Sources */,
@@ -3333,6 +3340,7 @@
 				3D5C930927A7F76C0035C399 /* UglyNumberTests.swift in Sources */,
 				439910452B07ACA90020E9CC /* SmallestSubtreeWithAllTheDeepestNodesTests.swift in Sources */,
 				438EBCB12AEFB206007083B7 /* FindClosestNodeToGivenTwoNodesTests.swift in Sources */,
+				438C2EDD2B1F550900C43AAA /* SmallestStringStartingFromLeafTests.swift in Sources */,
 				3D5C932B27A7F76C0035C399 /* CloneBinaryTreeWithRandomPointerTests.swift in Sources */,
 				3D7F318B27F791A600200775 /* UniquePathsIITests.swift in Sources */,
 				3D8424DD27F1AFEC00B91AAB /* MeetingRoomsTests.swift in Sources */,
