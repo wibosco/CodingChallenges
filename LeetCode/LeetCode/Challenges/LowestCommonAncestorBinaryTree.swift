@@ -8,7 +8,7 @@
 
 import Foundation
 
-//https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/
+//https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 struct LowestCommonAncestorBinaryTree {
     
     //Time: O(n) where n is the number of nodes in the tree
@@ -25,6 +25,8 @@ struct LowestCommonAncestorBinaryTree {
     //
     //As we are only interested in the lowest common ancestor rather than any common ancestor we need to ensure that we
     //pass back the first node that is true for 2 of the above 3 scenarios. When we find this node we set it to `lca`.
+    //
+    //Similar to: https://leetcode.com/problems/find-distance-in-a-binary-tree/
     static func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         var lca: TreeNode?
 
