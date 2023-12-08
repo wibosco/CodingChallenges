@@ -34,6 +34,8 @@ struct ClosestLeafInABinaryTree {
     //not being a leaf node, the `sentinelHead` ensures in that case it would have an out-degree of 2. Once we have built
     //the graph we perform a BFS from `k` to the leaf nodes. As our graph now has loops, to avoid searching the same edge
     //repeatedly we use a `visited` set to store the nodes we have been to. Once we find a leaf node we return it.
+    //
+    //Similar to: https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
     static func findClosestLeaf(_ root: TreeNode?, _ k: Int) -> Int {
         guard let root = root else {
             return 0

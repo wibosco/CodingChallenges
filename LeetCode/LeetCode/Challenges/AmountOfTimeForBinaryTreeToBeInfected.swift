@@ -20,15 +20,18 @@ struct AmountOfTimeForBinaryTreeToBeInfected {
     //iterative
     //dictionary
     //visited
+    //set
     //adjacency list
     //
     //Solution Description:
     //As we need to travel both down and up the tree after we have found the `start` node and the `TreeNode` type doesn't contain
-    //a parent property we need to first covert our tree into a directed graph where an edges exist between parent->child and
-    //child->parent to allow for traversing back up the tree. We build this graph/adjacency-list using DFS. With this adjacency
+    //a parent property we need to first covert our tree into a directed graph where an edges exist between `parent->child` and
+    //`child->parent` to allow for traversing back up the tree. We build this graph/adjacency-list using DFS. With this adjacency
     //list we can now treat our tree like a directed graph and perform a BFS from `start` until all nodes have been visited - we
     //treat each iteration of `queue` as a minute passing. To void getting caught in a cycle we use a visited array so we only
     //add each node to `queue` once. Once all nodes have been visited, we return `minutes`.
+    //
+    //Similar to: https://leetcode.com/problems/closest-leaf-in-a-binary-tree/
     static func amountOfTime(_ root: TreeNode?, _ start: Int) -> Int {
         guard let root = root else {
             return -1
