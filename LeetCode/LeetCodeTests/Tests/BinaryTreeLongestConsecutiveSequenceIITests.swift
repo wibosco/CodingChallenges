@@ -1,5 +1,5 @@
 //
-//  AABinaryTreeLongestConsecutiveSequenceIITests.swift
+//  BinaryTreeLongestConsecutiveSequenceIITests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 21/11/2023.
@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-final class AABinaryTreeLongestConsecutiveSequenceIITests: XCTestCase {
+final class BinaryTreeLongestConsecutiveSequenceIITests: XCTestCase {
 
     //MARK: - Tests
     
