@@ -10,14 +10,15 @@ import Foundation
 //https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/
 struct StepByStepDirectionsFromABinaryTreeNodeToAnother {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n)
     //binary tree
     //DFS
     //recursive
     //array
     //inout
     //top-down
+    //backtracking
     //
     //Solution Description:
     //Using DFS we search for the path from root to either `startValue` or `destValue`. We then compare these paths to determine
@@ -78,7 +79,7 @@ struct StepByStepDirectionsFromABinaryTreeNodeToAnother {
         let found = dfs(node.left, target, "L", &path) || dfs(node.right, target, "R", &path)
         
         if !found {
-            path.removeLast()
+            path.removeLast() //backtracking
         }
         
         return found
