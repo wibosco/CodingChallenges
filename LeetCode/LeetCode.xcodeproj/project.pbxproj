@@ -622,6 +622,8 @@
 		433229D52A570FDD00EB2232 /* MinimumSizeSubarraySumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433229D42A570FDD00EB2232 /* MinimumSizeSubarraySumTests.swift */; };
 		43349F762A52FB3D002E2379 /* NetworkDelayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43349F752A52FB3D002E2379 /* NetworkDelayTime.swift */; };
 		43349F782A52FB4D002E2379 /* NetworkDelayTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43349F772A52FB4D002E2379 /* NetworkDelayTimeTests.swift */; };
+		4335FB0F2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335FB0E2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift */; };
+		4335FB112B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335FB102B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift */; };
 		4336E5542B236C520060A25D /* MakeCostsOfPathsEqualInABinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E5532B236C520060A25D /* MakeCostsOfPathsEqualInABinaryTree.swift */; };
 		4336E5562B236C810060A25D /* MakeCostsOfPathsEqualInABinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E5552B236C810060A25D /* MakeCostsOfPathsEqualInABinaryTreeTests.swift */; };
 		4336E5582B23CCA50060A25D /* EvenOddTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E5572B23CCA50060A25D /* EvenOddTree.swift */; };
@@ -1539,6 +1541,8 @@
 		433229D42A570FDD00EB2232 /* MinimumSizeSubarraySumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumSizeSubarraySumTests.swift; sourceTree = "<group>"; };
 		43349F752A52FB3D002E2379 /* NetworkDelayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTime.swift; sourceTree = "<group>"; };
 		43349F772A52FB4D002E2379 /* NetworkDelayTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTimeTests.swift; sourceTree = "<group>"; };
+		4335FB0E2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateBinaryTreeNodes.swift; sourceTree = "<group>"; };
+		4335FB102B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateBinaryTreeNodesTests.swift; sourceTree = "<group>"; };
 		4336E5532B236C520060A25D /* MakeCostsOfPathsEqualInABinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCostsOfPathsEqualInABinaryTree.swift; sourceTree = "<group>"; };
 		4336E5552B236C810060A25D /* MakeCostsOfPathsEqualInABinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCostsOfPathsEqualInABinaryTreeTests.swift; sourceTree = "<group>"; };
 		4336E5572B23CCA50060A25D /* EvenOddTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenOddTree.swift; sourceTree = "<group>"; };
@@ -2336,6 +2340,7 @@
 				436634A32AFE793A0087F13F /* UnivaluedBinaryTree.swift */,
 				433BBFC029E3F58500A9A21E /* ValidAnagram.swift */,
 				3D5C90D027A7F7620035C399 /* ValidateBinarySearchTree.swift */,
+				4335FB0E2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift */,
 				4302D0882A73E124001D5375 /* ValidateStackSequences.swift */,
 				3D1D0C7E28061950006DA350 /* ValidNumber.swift */,
 				3D5C90D527A7F7620035C399 /* ValidPalindrome.swift */,
@@ -2786,6 +2791,7 @@
 				436634A52AFE79840087F13F /* UnivaluedBinaryTreeTests.swift */,
 				433BBFC229E3F5B000A9A21E /* ValidAnagramTests.swift */,
 				3D5C925827A7F76C0035C399 /* ValidateBinarySearchTreeTests.swift */,
+				4335FB102B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift */,
 				4302D08A2A73E156001D5375 /* ValidateStackSequencesTests.swift */,
 				3D1D0C8028061A23006DA350 /* ValidNumberTests.swift */,
 				3D5C926B27A7F76C0035C399 /* ValidPalindromeIITests.swift */,
@@ -3303,6 +3309,7 @@
 				43169EE62A61F85300DF16FD /* LongestArithmeticSubsequenceOfGivenDifference.swift in Sources */,
 				43A692A629F69FD50043B5D0 /* MaximumProductSubarray.swift in Sources */,
 				434D464D2A7C011B008F80C9 /* MaximumTwinSumOfALinkedList.swift in Sources */,
+				4335FB0F2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift in Sources */,
 				4346794A2A56BE2A00A1D225 /* NonOverlappingIntervals.swift in Sources */,
 				432557642A79513200C3BB71 /* SuccessfulPairsOfSpellsAndPotions.swift in Sources */,
 				3D5C919E27A7F7630035C399 /* SearchInRotatedSortedArrayII.swift in Sources */,
@@ -3629,6 +3636,7 @@
 				3D1CD89027D94BEE00D4CA5F /* JumpGameIITests.swift in Sources */,
 				436634A22AFE70EF0087F13F /* SumOfRootToLeafBinaryNumbersTests.swift in Sources */,
 				4323713F29DB29EA005A2F04 /* AdditiveNumberTests.swift in Sources */,
+				4335FB112B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift in Sources */,
 				3D5C92D327A7F76C0035C399 /* CloneGraphTests.swift in Sources */,
 				3DB7C5D327CEC58B00353EED /* ExclusiveTimeOfFunctionsTests.swift in Sources */,
 				3D5C92E227A7F76C0035C399 /* SwapNodesInPairsTests.swift in Sources */,
