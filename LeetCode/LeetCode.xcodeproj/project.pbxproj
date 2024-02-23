@@ -624,6 +624,8 @@
 		43349F782A52FB4D002E2379 /* NetworkDelayTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43349F772A52FB4D002E2379 /* NetworkDelayTimeTests.swift */; };
 		4335FB0F2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335FB0E2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift */; };
 		4335FB112B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335FB102B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift */; };
+		4335FB132B8944D500416BB6 /* CheckIfNAndItsDoubleExist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335FB122B8944D500416BB6 /* CheckIfNAndItsDoubleExist.swift */; };
+		4335FB152B89455100416BB6 /* CheckIfNAndItsDoubleExistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335FB142B89455100416BB6 /* CheckIfNAndItsDoubleExistTests.swift */; };
 		4336E5542B236C520060A25D /* MakeCostsOfPathsEqualInABinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E5532B236C520060A25D /* MakeCostsOfPathsEqualInABinaryTree.swift */; };
 		4336E5562B236C810060A25D /* MakeCostsOfPathsEqualInABinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E5552B236C810060A25D /* MakeCostsOfPathsEqualInABinaryTreeTests.swift */; };
 		4336E5582B23CCA50060A25D /* EvenOddTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E5572B23CCA50060A25D /* EvenOddTree.swift */; };
@@ -1543,6 +1545,8 @@
 		43349F772A52FB4D002E2379 /* NetworkDelayTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTimeTests.swift; sourceTree = "<group>"; };
 		4335FB0E2B88F03600416BB6 /* ValidateBinaryTreeNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateBinaryTreeNodes.swift; sourceTree = "<group>"; };
 		4335FB102B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateBinaryTreeNodesTests.swift; sourceTree = "<group>"; };
+		4335FB122B8944D500416BB6 /* CheckIfNAndItsDoubleExist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfNAndItsDoubleExist.swift; sourceTree = "<group>"; };
+		4335FB142B89455100416BB6 /* CheckIfNAndItsDoubleExistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfNAndItsDoubleExistTests.swift; sourceTree = "<group>"; };
 		4336E5532B236C520060A25D /* MakeCostsOfPathsEqualInABinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCostsOfPathsEqualInABinaryTree.swift; sourceTree = "<group>"; };
 		4336E5552B236C810060A25D /* MakeCostsOfPathsEqualInABinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCostsOfPathsEqualInABinaryTreeTests.swift; sourceTree = "<group>"; };
 		4336E5572B23CCA50060A25D /* EvenOddTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenOddTree.swift; sourceTree = "<group>"; };
@@ -1962,6 +1966,7 @@
 				437FA7382B09571F00EF41C7 /* CheckCompletenessOfABinaryTree.swift */,
 				43169ED92A617B6F00DF16FD /* CheckIfAStringContainsAllBinaryCodesOfSizeK.swift */,
 				437760492AEBFEE40028692C /* CheckIfMoveIsLegal.swift */,
+				4335FB122B8944D500416BB6 /* CheckIfNAndItsDoubleExist.swift */,
 				3D5C913627A7F7630035C399 /* ClimbingStairs.swift */,
 				3D5C913A27A7F7630035C399 /* CloneBinaryTreeWithRandomPointer.swift */,
 				3D5C90B827A7F7620035C399 /* CloneGraph.swift */,
@@ -2417,6 +2422,7 @@
 				437FA73A2B09574F00EF41C7 /* CheckCompletenessOfABinaryTreeTests.swift */,
 				43169EDB2A617BA800DF16FD /* CheckIfAStringContainsAllBinaryCodesOfSizeKTests.swift */,
 				4377604B2AEBFF170028692C /* CheckIfMoveIsLegalTests.swift */,
+				4335FB142B89455100416BB6 /* CheckIfNAndItsDoubleExistTests.swift */,
 				3D5C920727A7F76B0035C399 /* ClimbingStairsTests.swift */,
 				3D5C928527A7F76C0035C399 /* CloneBinaryTreeWithRandomPointerTests.swift */,
 				3D5C922D27A7F76B0035C399 /* CloneGraphTests.swift */,
@@ -3323,6 +3329,7 @@
 				3D46243D27E542CE00A888C1 /* PartitionList.swift in Sources */,
 				3DE789AF27EB3B8700E1D1B9 /* RestoreIPAddresses.swift in Sources */,
 				3D46243527E497D300A888C1 /* WordSearch.swift in Sources */,
+				4335FB132B8944D500416BB6 /* CheckIfNAndItsDoubleExist.swift in Sources */,
 				3D5C91B427A7F7630035C399 /* DailyTemperatures.swift in Sources */,
 				3D30553527C631AE00294BC7 /* CombinationSum.swift in Sources */,
 				4311BC6C2A5855ED00137AED /* UniqueEmailAddresses.swift in Sources */,
@@ -3448,6 +3455,7 @@
 				439910452B07ACA90020E9CC /* SmallestSubtreeWithAllTheDeepestNodesTests.swift in Sources */,
 				438EBCB12AEFB206007083B7 /* FindClosestNodeToGivenTwoNodesTests.swift in Sources */,
 				438C2EDD2B1F550900C43AAA /* SmallestStringStartingFromLeafTests.swift in Sources */,
+				4335FB152B89455100416BB6 /* CheckIfNAndItsDoubleExistTests.swift in Sources */,
 				3D5C932B27A7F76C0035C399 /* CloneBinaryTreeWithRandomPointerTests.swift in Sources */,
 				3D7F318B27F791A600200775 /* UniquePathsIITests.swift in Sources */,
 				3D8424DD27F1AFEC00B91AAB /* MeetingRoomsTests.swift in Sources */,
