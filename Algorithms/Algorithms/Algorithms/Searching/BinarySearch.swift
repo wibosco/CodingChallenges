@@ -22,7 +22,7 @@ struct BinarySearch {
     //If `values[mid]` matches `target` then we have found our target and can return; if  `values[mid]` does not match `target`
     //then we half the search space by moving either `left` to the right (if `values[mid]` was smaller than `target`) or moving
     //`right` to the left (if `values[mid]` was larger than `target`). We can reduce the search space like this because `values`
-    //sorted so we know that if `values[mid]` was smaller than `target` then any index less than `mid` will contain an even
+    //is sorted so we know that if `values[mid]` was smaller than `target` then any index less than `mid` will contain an even
     //smaller value than `values[mid]` so searching those other indexes would be pointless (the opposite is true for reducing
     //the search space to the right of `mid`).
     //

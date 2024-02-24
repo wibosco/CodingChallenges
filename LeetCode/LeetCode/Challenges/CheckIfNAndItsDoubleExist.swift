@@ -24,7 +24,7 @@ struct CheckIfNAndItsDoubleExist {
     func checkIfExist(_ arr: [Int]) -> Bool {
         var seen = Set<Int>()
         
-        for (index, value) in arr.enumerated() {
+        for value in arr {
             //have we seen double this value already
             if seen.contains((value * 2)) {
                 return true
