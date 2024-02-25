@@ -564,6 +564,8 @@
 		4311BC762A5866CB00137AED /* FindPivotIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC752A5866CB00137AED /* FindPivotIndexTests.swift */; };
 		4311BC782A586AC100137AED /* FindAllNumbersDisappearedInAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC772A586AC100137AED /* FindAllNumbersDisappearedInAnArray.swift */; };
 		4311BC7A2A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC792A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift */; };
+		4314616F2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */; };
+		431461712B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */; };
 		43147ED02A64103900802598 /* OptimalPartitionOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */; };
 		43147ED22A64106E00802598 /* OptimalPartitionOfStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ED12A64106E00802598 /* OptimalPartitionOfStringTests.swift */; };
 		43147ED62A641C9E00802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ED52A641C9E00802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScore.swift */; };
@@ -1491,6 +1493,8 @@
 		4311BC752A5866CB00137AED /* FindPivotIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPivotIndexTests.swift; sourceTree = "<group>"; };
 		4311BC772A586AC100137AED /* FindAllNumbersDisappearedInAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAllNumbersDisappearedInAnArray.swift; sourceTree = "<group>"; };
 		4311BC792A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAllNumbersDisappearedInAnArrayTests.swift; sourceTree = "<group>"; };
+		4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArray.swift; sourceTree = "<group>"; };
+		431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArrayTests.swift; sourceTree = "<group>"; };
 		43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalPartitionOfString.swift; sourceTree = "<group>"; };
 		43147ED12A64106E00802598 /* OptimalPartitionOfStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalPartitionOfStringTests.swift; sourceTree = "<group>"; };
 		43147ED52A641C9E00802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumDifferenceBetweenHighestAndLowestOfKScore.swift; sourceTree = "<group>"; };
@@ -2072,6 +2076,7 @@
 				3D5C90E727A7F7620035C399 /* FindPeakElement.swift */,
 				4311BC732A58668100137AED /* FindPivotIndex.swift */,
 				3D5C90B127A7F7620035C399 /* FindSmallestLetterGreaterThanTarget.swift */,
+				4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */,
 				43D8B8012A629C0000B3F197 /* FindTheDifferenceOfTwoArrays.swift */,
 				437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */,
 				3D5C911027A7F7630035C399 /* FindTheTownJudge.swift */,
@@ -2530,6 +2535,7 @@
 				3D5C924A27A7F76C0035C399 /* FindPeakElementTests.swift */,
 				4311BC752A5866CB00137AED /* FindPivotIndexTests.swift */,
 				3D5C928F27A7F76C0035C399 /* FindSmallestLetterGreaterThanTargetTests.swift */,
+				431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */,
 				43D8B8032A629C3700B3F197 /* FindTheDifferenceOfTwoArraysTests.swift */,
 				437119492A5F528C000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAStringTests.swift */,
 				3D5C924527A7F76C0035C399 /* FindTheTownJudgeTests.swift */,
@@ -3210,6 +3216,7 @@
 				3D193ABB27C78D7100E49F08 /* CombinationSumIII.swift in Sources */,
 				3D5C916127A7F7630035C399 /* LowestCommonAncestorBinarySearchTree.swift in Sources */,
 				43F3DF3929E0B61600EDEB1C /* OddEvenLinkedList.swift in Sources */,
+				4314616F2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift in Sources */,
 				3D46242927E29BDB00A888C1 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				3D5C91EF27A7F7630035C399 /* DivideTwoIntegers.swift in Sources */,
 				436634982AFE5C320087F13F /* IncreasingOrderSearchTree.swift in Sources */,
@@ -3757,6 +3764,7 @@
 				3D5C92BE27A7F76C0035C399 /* PeakIndexMountainArrayTests.swift in Sources */,
 				3DB7C5CF27CD480200353EED /* MovingAverageTests.swift in Sources */,
 				4311BC722A585E2400137AED /* IsomorphicStringsTests.swift in Sources */,
+				431461712B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift in Sources */,
 				435B70AE2B0513BF003D51CA /* ReverseOddLevelsOfBinaryTreeTests.swift in Sources */,
 				43313BC529D8EBAB005FCF5D /* BullsAndCowsTest.swift in Sources */,
 				43BD45802AFCCFE2006216F0 /* SumRootToLeafNumbersTests.swift in Sources */,

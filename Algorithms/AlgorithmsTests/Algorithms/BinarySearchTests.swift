@@ -291,7 +291,7 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(index, 3)
     }
     
-    func test_findLastIndex_multipleIterations_valueNotFound() {
+    func test_findLastIndex_multipleIterations_valueIsInMidRange_valueNotFound() {
         let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 16, 20, 22, 34, 78]
         
         let index = BinarySearch.findLastIndex(of: 56, in: values)
@@ -299,4 +299,19 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertNil(index)
     }
     
+    func test_findLastIndex_multipleIterations_valueIsTooSmall_valueNotFound() {
+        let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 16, 20, 22, 34, 78]
+        
+        let index = BinarySearch.findLastIndex(of: -100, in: values)
+        
+        XCTAssertNil(index)
+    }
+    
+    func test_findLastIndex_multipleIterations_valueIsToolarge_valueNotFound() {
+        let values = [-17, -9, 0, 2, 3, 5, 7, 11, 13, 16, 16, 20, 22, 34, 78]
+        
+        let index = BinarySearch.findLastIndex(of: 100, in: values)
+        
+        XCTAssertNil(index)
+    }
 }

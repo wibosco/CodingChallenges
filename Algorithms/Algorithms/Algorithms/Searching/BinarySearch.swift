@@ -123,6 +123,11 @@ struct BinarySearch {
             }
         }
         
+        //if target is smaller than all elements in values the right will have went to -1
+        guard right >= 0 else {
+            return nil
+        }
+        
         //only right can be used here
         return values[right] == target ? right : nil
     }
