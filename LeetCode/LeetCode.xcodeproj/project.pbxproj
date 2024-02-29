@@ -936,6 +936,8 @@
 		43F7AF462A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */; };
 		43FB69902AF3D28E00438457 /* NumberOfEnclaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB698F2AF3D28E00438457 /* NumberOfEnclaves.swift */; };
 		43FB69922AF3D2B400438457 /* NumberOfEnclavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB69912AF3D2B400438457 /* NumberOfEnclavesTests.swift */; };
+		43FB7C502B90E44A002FD664 /* FairCandySwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB7C4F2B90E44A002FD664 /* FairCandySwap.swift */; };
+		43FB7C522B90E4BB002FD664 /* FairCandySwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB7C512B90E4BA002FD664 /* FairCandySwapTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1879,6 +1881,8 @@
 		43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingNodesInALinkedListTests.swift; sourceTree = "<group>"; };
 		43FB698F2AF3D28E00438457 /* NumberOfEnclaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfEnclaves.swift; sourceTree = "<group>"; };
 		43FB69912AF3D2B400438457 /* NumberOfEnclavesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfEnclavesTests.swift; sourceTree = "<group>"; };
+		43FB7C4F2B90E44A002FD664 /* FairCandySwap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairCandySwap.swift; sourceTree = "<group>"; };
+		43FB7C512B90E4BA002FD664 /* FairCandySwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairCandySwapTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2082,6 +2086,7 @@
 				4336E5572B23CCA50060A25D /* EvenOddTree.swift */,
 				3D30552C27C4E39600294BC7 /* ExcelSheetColumnNumber.swift */,
 				3DB7C5D027CEC56800353EED /* ExclusiveTimeOfFunctions.swift */,
+				43FB7C4F2B90E44A002FD664 /* FairCandySwap.swift */,
 				3D5C912727A7F7630035C399 /* FibonacciNumber.swift */,
 				3D5C90DC27A7F7620035C399 /* FinalPricesWithSpecialDiscount.swift */,
 				3DA6FF0227AA922A009BD7A8 /* FindAllAnagramsInAString.swift */,
@@ -2548,6 +2553,7 @@
 				4336E5592B23CCDA0060A25D /* EvenOddTreeTests.swift */,
 				3D30552E27C4E41500294BC7 /* ExcelSheetColumnNumberTests.swift */,
 				3DB7C5D227CEC58B00353EED /* ExclusiveTimeOfFunctionsTests.swift */,
+				43FB7C512B90E4BA002FD664 /* FairCandySwapTests.swift */,
 				3D5C927527A7F76C0035C399 /* FibonacciNumberTests.swift */,
 				3D5C928A27A7F76C0035C399 /* FinalPricesWithSpecialDiscountTests.swift */,
 				3DA6FF0427AA9250009BD7A8 /* FindAllAnagramsInAStringTests.swift */,
@@ -3028,6 +3034,7 @@
 				437FA7392B09571F00EF41C7 /* CheckCompletenessOfABinaryTree.swift in Sources */,
 				3D7F318927F7915700200775 /* UniquePathsII.swift in Sources */,
 				4366348C2AFE255D0087F13F /* RestoreTheArrayFromAdjacentPairs.swift in Sources */,
+				43FB7C502B90E44A002FD664 /* FairCandySwap.swift in Sources */,
 				4354347B2AF50335002B996E /* MinimumNumberOfVerticesToReachAllNodes.swift in Sources */,
 				3D2A96B3289D683A003B954F /* FindLeavesOfBinaryTree.swift in Sources */,
 				3D5C914B27A7F7630035C399 /* ListNodeRandom.swift in Sources */,
@@ -3481,6 +3488,7 @@
 				3D5C930827A7F76C0035C399 /* ReverseIntegerTests.swift in Sources */,
 				3D5C92F227A7F76C0035C399 /* TopKFrequentElementsTests.swift in Sources */,
 				3D5C930D27A7F76C0035C399 /* SubarraySumEqualsKTests.swift in Sources */,
+				43FB7C522B90E4BB002FD664 /* FairCandySwapTests.swift in Sources */,
 				3D3C1ECF27FE357E004FB321 /* RemoveAllAdjacentDuplicatesInStringIITests.swift in Sources */,
 				435434852AF5550D002B996E /* RemoveCoveredIntervalsTests.swift in Sources */,
 				3D42A47727F6342C00687F75 /* ProductOfArrayExceptSelfTests.swift in Sources */,
