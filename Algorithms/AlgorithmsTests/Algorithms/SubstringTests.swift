@@ -13,7 +13,7 @@ final class SubstringTests: XCTestCase {
 
     //MARK: - Tests
     
-    // MARK: Generation
+    // MARK: Generation DFS
     
     func test_generation_A() {
         let s = "ab"
@@ -44,6 +44,39 @@ final class SubstringTests: XCTestCase {
         XCTAssertTrue(result.contains("abc"))
         XCTAssertTrue(result.contains("bcd"))
         XCTAssertTrue(result.contains("abcd"))
+    }
+    
+    // MARK: Generation For
+    
+    func test_generation_usingDFS_A() {
+        let s = "ab"
+        
+        let result = Substring.generateSubstringsUsingNestedForLoops(s)
+        
+        XCTAssertEqual(result.count, 3)
+        
+        XCTAssertEqual(result[0], "a")
+        XCTAssertEqual(result[1], "ab")
+        XCTAssertEqual(result[2], "b")
+    }
+    
+    func test_generation_usingDFS_B() {
+        let s = "abcd"
+        
+        let result = Substring.generateSubstringsUsingNestedForLoops(s)
+        
+        XCTAssertEqual(result.count, 10)
+        
+        XCTAssertEqual(result[0], "a")
+        XCTAssertEqual(result[1], "ab")
+        XCTAssertEqual(result[2], "abc")
+        XCTAssertEqual(result[3], "abcd")
+        XCTAssertEqual(result[4], "b")
+        XCTAssertEqual(result[5], "bc")
+        XCTAssertEqual(result[6], "bcd")
+        XCTAssertEqual(result[7], "c")
+        XCTAssertEqual(result[8], "cd")
+        XCTAssertEqual(result[9], "d")
     }
     
     // MARK: Count

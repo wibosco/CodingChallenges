@@ -52,6 +52,8 @@
 		439563C82A5D9746004ACCE6 /* SubsequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439563C72A5D9746004ACCE6 /* SubsequenceTests.swift */; };
 		439563CA2A5D9A2B004ACCE6 /* Subsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439563C92A5D9A2B004ACCE6 /* Subsequence.swift */; };
 		439563CC2A5D9EDE004ACCE6 /* SubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439563CB2A5D9EDE004ACCE6 /* SubstringTests.swift */; };
+		43E48E1D2B8EA56100DAD512 /* Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E48E1C2B8EA56100DAD512 /* Subarray.swift */; };
+		43E48E1F2B8EA8BE00DAD512 /* SubarrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E48E1E2B8EA8BE00DAD512 /* SubarrayTests.swift */; };
 		43F7AF3E2A7D007C007932E9 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF3D2A7D007C007932E9 /* LinkedList.swift */; };
 		43F7AF402A7D00E1007932E9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF3F2A7D00E1007932E9 /* ListNode.swift */; };
 		43F7AF422A7D02E9007932E9 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF412A7D02E9007932E9 /* LinkedListTests.swift */; };
@@ -114,6 +116,8 @@
 		439563C72A5D9746004ACCE6 /* SubsequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsequenceTests.swift; sourceTree = "<group>"; };
 		439563C92A5D9A2B004ACCE6 /* Subsequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subsequence.swift; sourceTree = "<group>"; };
 		439563CB2A5D9EDE004ACCE6 /* SubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringTests.swift; sourceTree = "<group>"; };
+		43E48E1C2B8EA56100DAD512 /* Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subarray.swift; sourceTree = "<group>"; };
+		43E48E1E2B8EA8BE00DAD512 /* SubarrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubarrayTests.swift; sourceTree = "<group>"; };
 		43F7AF3D2A7D007C007932E9 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		43F7AF3F2A7D00E1007932E9 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		43F7AF412A7D02E9007932E9 /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 				3DFC2F0E283BE396001256EE /* QuickSortTests.swift */,
 				3DFC2F0D283BE396001256EE /* RadixSortTests.swift */,
 				3DFC2F12283BE396001256EE /* SelectionSortTests.swift */,
+				43E48E1E2B8EA8BE00DAD512 /* SubarrayTests.swift */,
 				439563C72A5D9746004ACCE6 /* SubsequenceTests.swift */,
 				439563CB2A5D9EDE004ACCE6 /* SubstringTests.swift */,
 				3D03E8A5283E384100944AF3 /* TopologicalSortTests.swift */,
@@ -284,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				439563C02A5D7BC5004ACCE6 /* Permutations.swift */,
+				43E48E1C2B8EA56100DAD512 /* Subarray.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -411,6 +417,7 @@
 				3D8838EC283FBB7D00BF3257 /* BinaryTreeNode.swift in Sources */,
 				439563CA2A5D9A2B004ACCE6 /* Subsequence.swift in Sources */,
 				3DD4729E2851F4E50008C93D /* HeapSort.swift in Sources */,
+				43E48E1D2B8EA56100DAD512 /* Subarray.swift in Sources */,
 				3DD472A02851F4E50008C93D /* RadixSort.swift in Sources */,
 				3DD4729C2851F4E50008C93D /* InsertionSort.swift in Sources */,
 				43F7AF402A7D00E1007932E9 /* ListNode.swift in Sources */,
@@ -445,6 +452,7 @@
 				3DFC2F18283BE396001256EE /* RadixSortTests.swift in Sources */,
 				3DFC2F1A283BE396001256EE /* InsertionSortTests.swift in Sources */,
 				3DD472AC28524D8B0008C93D /* PrimTests.swift in Sources */,
+				43E48E1F2B8EA8BE00DAD512 /* SubarrayTests.swift in Sources */,
 				4379F49729EC9F41003BA6F9 /* BinarySearchTreeTests.swift in Sources */,
 				3D03E8A6283E384100944AF3 /* TopologicalSortTests.swift in Sources */,
 				3DFC2F1F283BE396001256EE /* BubbleSortTests.swift in Sources */,

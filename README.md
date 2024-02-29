@@ -66,6 +66,7 @@ A collection of coding challenges and their solutions from:
 | Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
 | Simulate time passing or different rounds | Batch up changes either using a `Queue` or caching state between rounds | `PushDominoes` |
 | Count possible substrings | `count * (count + 1) / 2` | `Substring` |
+| Count possible subarrays | `count * (count + 1) / 2` | CountTheNumberOfIncremovableSubarraysI |
 | Count possible subsequences | `(2 ^ count) - 1` | `Subsequence` |
 | Repeatedly find the min and max value in subarrays| Sort the overall array and take the first and last element in the subarray | `MinimumDifferenceBetweenHighestAndLowestOfKScore` |
 | Find the end of duplicates in an array | Nest a while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |

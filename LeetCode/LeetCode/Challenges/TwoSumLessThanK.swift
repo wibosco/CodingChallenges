@@ -10,7 +10,6 @@ import Foundation
 //https://leetcode.com/problems/two-sum-less-than-k/
 struct TwoSumLessThanK {
     
-    
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(n)
     //array
@@ -45,7 +44,6 @@ struct TwoSumLessThanK {
         
         return result
     }
-    
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(n)

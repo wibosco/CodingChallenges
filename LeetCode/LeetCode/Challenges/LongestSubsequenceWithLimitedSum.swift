@@ -40,7 +40,6 @@ struct LongestSubsequenceWithLimitedSum {
             results.append(result)
         }
         
-        
         return results
     }
     
