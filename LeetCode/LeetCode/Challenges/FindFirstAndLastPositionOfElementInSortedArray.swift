@@ -14,7 +14,8 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
     //Time: O(log n)
     //Space: O(1)
     //array
-    //binary search
+    //binary search find leftmost
+    //binary search find rightmost
     //
     //Solution Description:
     //Using `nums` twice with binary search, we first attempt to locate the starting index of `target`. If we can't find

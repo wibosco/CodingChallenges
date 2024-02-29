@@ -15,7 +15,7 @@ struct IntersectionOfTwoArrays {
     //                           where m is the number of values in `nums2`
     //Space: O(n) (`intersection` array)
     //array
-    //binary search
+    //binary search find exact match
     //sorting
     //
     //Solution Description:

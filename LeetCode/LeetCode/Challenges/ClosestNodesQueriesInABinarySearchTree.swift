@@ -14,7 +14,8 @@ struct ClosestNodesQueriesInABinarySearchTree {
     //Space: O(
     //binary tree
     //binary search tree
-    //binary search
+    //binary search find leftmost
+    //binary search find rightmost
     //in-order
     //DFS
     //recursive

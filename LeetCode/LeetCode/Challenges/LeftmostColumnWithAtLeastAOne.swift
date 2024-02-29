@@ -13,7 +13,7 @@ struct LeftmostColumnWithAtLeastAOne {
     //Time: O(n log m) where n is the number of rows in `binaryMatrix`, m is the number of columns i n `binaryMatrix`
     //Space: O(1)
     //matrix
-    //binary search
+    //binary search find leftmost
     //
     //Solution Description:
     //Using the dimensions of the binary matrix, we iterate through each row and perform a binary search on that rows

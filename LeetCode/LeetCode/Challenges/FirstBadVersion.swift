@@ -9,7 +9,6 @@
 import Foundation
 
 //https://leetcode.com/problems/first-bad-version/
-//binary search
 struct FirstBadVersion {
     let badVersion: Int
     
@@ -21,6 +20,7 @@ struct FirstBadVersion {
     
     //Time: O(log n)
     //Space: O(1)
+    //binary search find leftmost
     //divide and conquer
     //
     //Solution Description:

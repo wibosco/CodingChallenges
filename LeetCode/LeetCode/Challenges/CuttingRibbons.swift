@@ -9,12 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/cutting-ribbons/
-//binary search
 struct CuttingRibbons {
     
     //Time: O(log n) where n is the number of elements in `ribbons`
     //Space: O(1)
     //array
+    //binary search find rightmost
     //maximum
     //divide and conquer
     //

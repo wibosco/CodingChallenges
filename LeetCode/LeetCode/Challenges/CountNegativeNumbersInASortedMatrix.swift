@@ -15,7 +15,7 @@ struct CountNegativeNumbersInASortedMatrix {
     //Space: O(1)
     //array
     //matrix
-    //binary search
+    //binary search find leftmost
     //
     //Solution Description:
     //As we know the rows are sorted, we can use binary search to find the index whihch is start of the elements that are less

@@ -14,7 +14,7 @@ struct CapacityToShipPackagesWithinDDays {
     //O(n log m) where n is number of elements in `weights`
     //           where m the search range
     //Space: O(1)
-    //binary search
+    //binary search find leftmost
     //sorted
     //minimum
     //greedy

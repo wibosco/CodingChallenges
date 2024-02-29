@@ -14,7 +14,8 @@ struct FindTargetIndicesAfterSortingArray {
     //Space: O(n)
     //array
     //sorting
-    //binary search
+    //binary search find leftmost
+    //binary search find rightmost
     //
     //Solution Description:
     //With a sorted array of `nums` we can perform two binary searches to find the first occurrence of `target` and the last

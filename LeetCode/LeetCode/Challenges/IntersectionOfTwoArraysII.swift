@@ -76,7 +76,7 @@ struct IntersectionOfTwoArraysII {
     
     //Time: O(m log m + n log m) where n is the number of values in `nums1`, m is the number of values in `nums2`
     //Space: O(n) (intersection)
-    //binary search
+    //binary search find exact match
     //sorting
     //
     //Solution Description:

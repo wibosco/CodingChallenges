@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/find-the-duplicate-number/
-//array
 struct FindDuplicateNumber {
     
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //linked list
     //circular dependency
     //two pointers
@@ -49,7 +49,8 @@ struct FindDuplicateNumber {
     
     //Time: O(n log n) where n is the number of elements in `nums`
     //Space: O(1)
-    //binary search
+    //array
+    //binary search find rightmost
     //divide and conquer
     //nested loops
     //

@@ -13,7 +13,7 @@ struct KokoEatingBananas {
     
     //Time: O(n log m) where n is number of elements in `piles` and m the search range
     //Space: O(1)
-    //binary search
+    //binary search find leftmost
     //minimum
     //sorted
     //modulo

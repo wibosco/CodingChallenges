@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/find-peak-element/
-//array
 struct FindPeakElement {
     
     //Time: O(log n) where n is the number of elements in `nums`
     //Space: O(1)
+    //array
     //binary search
     //divide and conquer
     //

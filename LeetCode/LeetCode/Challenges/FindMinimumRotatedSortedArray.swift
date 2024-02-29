@@ -9,12 +9,12 @@
 import Foundation
 
 //https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-//binary search
 struct FindMinimumRotatedSortedArray {
     
     //Time: O(log n)
     //Space: O(1)
     //divide and conquer
+    //binary search find leftmost
     static func findMin(_ nums: [Int]) -> Int {
         var left = 0
         var right = nums.count - 1

@@ -13,7 +13,7 @@ struct FixedPoint {
     //Time: O(log n) where n is the number of elements in `arr`
     //Space: O(1)
     //array
-    //binary search
+    //binary search find exact match
     //
     //Solution Description:
     //As we have a sorted array we can use binary search to find where `arr[i] == i`. As always with binary search we take the
@@ -45,7 +45,7 @@ struct FixedPoint {
                 right = mid - 1
                 
                 if values[mid] == mid {
-                    result  = mid
+                    result = mid
                 }
             } else {
                 left = mid + 1

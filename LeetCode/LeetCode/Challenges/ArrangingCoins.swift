@@ -14,7 +14,7 @@ struct ArrangingCoins {
     //Space: O(1)
     //array
     //sorted
-    //binary search
+    //binary search find exact match
     //math
     //
     //Solution Description:

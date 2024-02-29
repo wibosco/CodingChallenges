@@ -13,13 +13,13 @@ struct FindSmallestLetterGreaterThanTarget {
     
     //Time: O(log n)
     //Space: O(1)
-    //binary search
+    //array
+    //binary search find exact match
     //divide and conquer
     //
     //Solution Description:
-    //As `letters` is sorted, we use binary search to iterate through the array. At the end `left`
-    //should either contain the index value we are looking for or `letter.count` if that value
-    //does not exist. 
+    //As `letters` is sorted, we use binary search to iterate through the array. At the end `left` should either contain 
+    //the index value we are looking for or `letter.count` if that value does not exist.
     static func nextGreatestLetter(_ letters: [Character], _ target: Character) -> Character {
         var left = 0
         var right = letters.count - 1
@@ -42,6 +42,7 @@ struct FindSmallestLetterGreaterThanTarget {
     
     //Time: O(n)
     //Space: O(1)
+    //array
     //
     //Solution Description:
     //Loop through the letters, checking in each iteration if it is greater than the target

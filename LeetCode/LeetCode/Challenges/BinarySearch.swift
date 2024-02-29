@@ -13,7 +13,7 @@ struct BinarySearch {
     
     //Time: O(log n) where n is the number of elements in `nums`
     //Space: O(1)
-    //binary search
+    //binary search find exact match
     //sorted
     //divide and conquer
     //
