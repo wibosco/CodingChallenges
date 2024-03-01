@@ -35,7 +35,7 @@ struct KthMissingPositiveNumber {
             return k
         }
         
-        let result = binarySearch(arr, k)
+        let result = binarySearch(arr, remaining)
         
         return result
     }
@@ -49,7 +49,7 @@ struct KthMissingPositiveNumber {
         
         while left <= right {
             let mid = left + (right - left) / 2 //to avoid overflow
-            
+
             let deltaIndex = abs(gapsFilledUpToIndex - mid)
             let deltaValue = abs(values[gapsFilledUpToIndex] - values[mid])
             let gapsToBeFilled = abs(deltaIndex - deltaValue)
