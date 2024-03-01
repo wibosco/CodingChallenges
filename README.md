@@ -38,6 +38,7 @@ A collection of coding challenges and their solutions from:
 | "Generate all", "All permutations", "All combinations", "All possible", "Choices", "Branching" | `Backtracking (DFS)` |
 | "Next Permutation" | `pivot & sorting` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
+| "Right-most", "Left-most"| `Binary Search` |
 | "Iterating array comparing elements" | `Stack` |
 | "Next greater element", "Next lesser element" | `Monotonic stack` |
 | "Longest subsequence", "Smallest subsequence", "Maximum", "Minimum", "Neighbors"| `Sliding window`|
@@ -72,6 +73,8 @@ A collection of coding challenges and their solutions from:
 | Find the end of duplicates in an array | Nest a while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
 | Find the minimum distance from one element to multiple elements in a graph | Multi-source BFS | `AsFarFromLandAsPossible` |
 | Traverse up a tree | Turn the tree into a directed graph with `child -> parent` and `parent -> child` | `ClosestLeafInABinaryTree` |
+| Sort two "linked" arrays together | Merge the two array into one tuple array | `MaximumCoinsHeroesCanCollect` |
+| Work out the cost/total of all previous elements in sorted data | `PrefixSum` | `MaximumCoinsHeroesCanCollect` |
 
 A lot of problems can be treated as graph problems.
 
