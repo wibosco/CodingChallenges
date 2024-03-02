@@ -1,5 +1,5 @@
 //
-//  AAMaximumCoinsHeroesCanCollectTests.swift
+//  MaximumCoinsHeroesCanCollectTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 01/03/2024.
@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-final class AAMaximumCoinsHeroesCanCollectTests: XCTestCase {
+final class MaximumCoinsHeroesCanCollectTests: XCTestCase {
 
     // MARK: - Tests
     
