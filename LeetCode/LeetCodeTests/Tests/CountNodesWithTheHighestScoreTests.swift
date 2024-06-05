@@ -1,5 +1,5 @@
 //
-//  AACountNodesWithTheHighestScoreTests.swift
+//  CountNodesWithTheHighestScoreTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 20/02/2024.

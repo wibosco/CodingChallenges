@@ -1,5 +1,5 @@
 //
-//  AACheckIfNAndItsDoubleExistTests.swift
+//  CheckIfNAndItsDoubleExistTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 23/02/2024.

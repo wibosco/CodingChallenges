@@ -1,5 +1,5 @@
 //
-//  AAReversePrefixOfWordTests.swift
+//  ReversePrefixOfWordTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 05/06/2024.

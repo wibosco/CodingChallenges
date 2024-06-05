@@ -1,5 +1,5 @@
 //
-//  AAFixedPointTests.swift
+//  FixedPointTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 27/02/2024.
