@@ -600,6 +600,8 @@
 		432557662A79516000C3BB71 /* SuccessfulPairsOfSpellsAndPotionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432557652A79516000C3BB71 /* SuccessfulPairsOfSpellsAndPotionsTests.swift */; };
 		432853762AF6F7C3005531E8 /* MinimumPenaltyForAShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432853752AF6F7C3005531E8 /* MinimumPenaltyForAShop.swift */; };
 		432853782AF6F7EB005531E8 /* MinimumPenaltyForAShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432853772AF6F7EB005531E8 /* MinimumPenaltyForAShopTests.swift */; };
+		432985982C133EBB002C4D37 /* SortArrayByParity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432985972C133EBB002C4D37 /* SortArrayByParity.swift */; };
+		4329859A2C133EF5002C4D37 /* SortArrayByParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432985992C133EF5002C4D37 /* SortArrayByParityTests.swift */; };
 		432F13852B26753D003E9989 /* TwoSumBSTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F13842B26753D003E9989 /* TwoSumBSTs.swift */; };
 		432F13872B267568003E9989 /* TwoSumBSTsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F13862B267568003E9989 /* TwoSumBSTsTests.swift */; };
 		433082D42A07B052003A5DE7 /* CarFleet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433082D32A07B052003A5DE7 /* CarFleet.swift */; };
@@ -1575,6 +1577,8 @@
 		432557652A79516000C3BB71 /* SuccessfulPairsOfSpellsAndPotionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulPairsOfSpellsAndPotionsTests.swift; sourceTree = "<group>"; };
 		432853752AF6F7C3005531E8 /* MinimumPenaltyForAShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumPenaltyForAShop.swift; sourceTree = "<group>"; };
 		432853772AF6F7EB005531E8 /* MinimumPenaltyForAShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumPenaltyForAShopTests.swift; sourceTree = "<group>"; };
+		432985972C133EBB002C4D37 /* SortArrayByParity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortArrayByParity.swift; sourceTree = "<group>"; };
+		432985992C133EF5002C4D37 /* SortArrayByParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortArrayByParityTests.swift; sourceTree = "<group>"; };
 		432F13842B26753D003E9989 /* TwoSumBSTs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumBSTs.swift; sourceTree = "<group>"; };
 		432F13862B267568003E9989 /* TwoSumBSTsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumBSTsTests.swift; sourceTree = "<group>"; };
 		433082D32A07B052003A5DE7 /* CarFleet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFleet.swift; sourceTree = "<group>"; };
@@ -2431,6 +2435,7 @@
 				439910422B07AC810020E9CC /* SmallestSubtreeWithAllTheDeepestNodes.swift */,
 				439A63852AEAAC5300AAAF1A /* SnakesAndLadders.swift */,
 				3D9B1D2228354619004FCFF8 /* SortAnArray.swift */,
+				432985972C133EBB002C4D37 /* SortArrayByParity.swift */,
 				3DA8E510280438EB00A23F3C /* SortCharactersByFrequency.swift */,
 				3D46242427E2921900A888C1 /* SortColors.swift */,
 				3D5C90C127A7F7620035C399 /* SortList.swift */,
@@ -2910,6 +2915,7 @@
 				439910442B07ACA90020E9CC /* SmallestSubtreeWithAllTheDeepestNodesTests.swift */,
 				439A63872AEAACA600AAAF1A /* SnakesAndLaddersTests.swift */,
 				3D9B1D2428354650004FCFF8 /* SortAnArrayTests.swift */,
+				432985992C133EF5002C4D37 /* SortArrayByParityTests.swift */,
 				3DA8E5122804395600A23F3C /* SortCharactersByFrequencyTests.swift */,
 				3D46242627E294E700A888C1 /* SortColorsTests.swift */,
 				3D5C927A27A7F76C0035C399 /* SortListTests.swift */,
@@ -3148,6 +3154,7 @@
 				3D5C914A27A7F7630035C399 /* Heap.swift in Sources */,
 				3D5C91E527A7F7630035C399 /* RemoveDuplicatesFromSortedArray.swift in Sources */,
 				3D8424DB27F1AF1800B91AAB /* MeetingRooms.swift in Sources */,
+				432985982C133EBB002C4D37 /* SortArrayByParity.swift in Sources */,
 				3D7F319127F9E39D00200775 /* IsGraphBipartite.swift in Sources */,
 				430094CA2B0278D700650F1E /* PathSumII.swift in Sources */,
 				43F2A1AF2B986E110006A658 /* NumberOfArithmeticTriplets.swift in Sources */,
@@ -3708,6 +3715,7 @@
 				3D5C92E827A7F76C0035C399 /* MinimumRemoveToMakeValidParenthesesTests.swift in Sources */,
 				43495F692B2203670037FEA7 /* PseudoPalindromicPathsInABinaryTreeTests.swift in Sources */,
 				43E48E1B2B8E8F8A00DAD512 /* CountTheNumberOfIncremovableSubarraysITests.swift in Sources */,
+				4329859A2C133EF5002C4D37 /* SortArrayByParityTests.swift in Sources */,
 				3D5C933D27A7F76C0035C399 /* TwoSumIITests.swift in Sources */,
 				3D5C92F927A7F76C0035C399 /* PascalsTriangleIITests.swift in Sources */,
 				4366348E2AFE25910087F13F /* RestoreTheArrayFromAdjacentPairsTests.swift in Sources */,
