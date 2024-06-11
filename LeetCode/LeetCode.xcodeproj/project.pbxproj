@@ -984,6 +984,8 @@
 		43F3DF3B29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */; };
 		43F3F8462C18D528000C0BF6 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3F8452C18D528000C0BF6 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift */; };
 		43F3F8482C18D551000C0BF6 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3F8472C18D551000C0BF6 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentenceTests.swift */; };
+		43F3F84A2C18DC33000C0BF6 /* FindIndicesWithIndexAndValueDifferenceI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3F8492C18DC33000C0BF6 /* FindIndicesWithIndexAndValueDifferenceI.swift */; };
+		43F3F84C2C18DC6E000C0BF6 /* FindIndicesWithIndexAndValueDifferenceITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3F84B2C18DC6E000C0BF6 /* FindIndicesWithIndexAndValueDifferenceITests.swift */; };
 		43F7AF442A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */; };
 		43F7AF462A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */; };
 		43FB69902AF3D28E00438457 /* NumberOfEnclaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB698F2AF3D28E00438457 /* NumberOfEnclaves.swift */; };
@@ -1981,6 +1983,8 @@
 		43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedListTests.swift; sourceTree = "<group>"; };
 		43F3F8452C18D528000C0BF6 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.swift; sourceTree = "<group>"; };
 		43F3F8472C18D551000C0BF6 /* CheckIfAWordOccursAsAPrefixOfAnyWordInASentenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfAWordOccursAsAPrefixOfAnyWordInASentenceTests.swift; sourceTree = "<group>"; };
+		43F3F8492C18DC33000C0BF6 /* FindIndicesWithIndexAndValueDifferenceI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIndicesWithIndexAndValueDifferenceI.swift; sourceTree = "<group>"; };
+		43F3F84B2C18DC6E000C0BF6 /* FindIndicesWithIndexAndValueDifferenceITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIndicesWithIndexAndValueDifferenceITests.swift; sourceTree = "<group>"; };
 		43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingNodesInALinkedList.swift; sourceTree = "<group>"; };
 		43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingNodesInALinkedListTests.swift; sourceTree = "<group>"; };
 		43FB698F2AF3D28E00438457 /* NumberOfEnclaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfEnclaves.swift; sourceTree = "<group>"; };
@@ -2211,6 +2215,7 @@
 				3D5C90FD27A7F7630035C399 /* FindFirstAndLastPositionOfElementInSortedArray.swift */,
 				4385D01D2B986423007AF1EE /* FindFirstPalindromicStringInTheArray.swift */,
 				3D5C90EE27A7F7620035C399 /* FindIfPathExistsInGraph.swift */,
+				43F3F8492C18DC33000C0BF6 /* FindIndicesWithIndexAndValueDifferenceI.swift */,
 				3D5C910E27A7F7630035C399 /* FindKClosestElements.swift */,
 				435B709F2B04E441003D51CA /* FindLargestValueInEachTreeRow.swift */,
 				3D2A96B2289D683A003B954F /* FindLeavesOfBinaryTree.swift */,
@@ -2704,6 +2709,7 @@
 				3D5C920E27A7F76B0035C399 /* FindFirstAndLastPositionOfElementInSortedArrayTests.swift */,
 				4385D01F2B986458007AF1EE /* FindFirstPalindromicStringInTheArrayTests.swift */,
 				3D5C922F27A7F76B0035C399 /* FindIfPathExistsInGraphTests.swift */,
+				43F3F84B2C18DC6E000C0BF6 /* FindIndicesWithIndexAndValueDifferenceITests.swift */,
 				3D5C924B27A7F76C0035C399 /* FindKClosestElementsTests.swift */,
 				435B70A12B04E469003D51CA /* FindLargestValueInEachTreeRowTests.swift */,
 				3D2A96B4289D6891003B954F /* FindLeavesOfBinaryTreeTests.swift */,
@@ -3154,6 +3160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F3F84A2C18DC33000C0BF6 /* FindIndicesWithIndexAndValueDifferenceI.swift in Sources */,
 				3D5C919A27A7F7630035C399 /* MaximumSubarray.swift in Sources */,
 				43CA0FBC2C109350004D7740 /* DIStringMatch.swift in Sources */,
 				3DA6FF0727AC784D009BD7A8 /* RepeatedDNASequences.swift in Sources */,
@@ -3796,6 +3803,7 @@
 				4366348E2AFE25910087F13F /* RestoreTheArrayFromAdjacentPairsTests.swift in Sources */,
 				436EC1C32B065E4E003F7BC7 /* LowestCommonAncestorOfDeepestLeavesTests.swift in Sources */,
 				437142F22AE816E600E65D11 /* CountSubIslandsTests.swift in Sources */,
+				43F3F84C2C18DC6E000C0BF6 /* FindIndicesWithIndexAndValueDifferenceITests.swift in Sources */,
 				3D5C933927A7F76C0035C399 /* SearchInsertPositionTests.swift in Sources */,
 				3D5C933727A7F76C0035C399 /* NaryTreeLevelOrderTraversalTests.swift in Sources */,
 				3D5C92C027A7F76C0035C399 /* FloodFillTests.swift in Sources */,
