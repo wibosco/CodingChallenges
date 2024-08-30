@@ -63,7 +63,7 @@ A collection of coding challenges and their solutions from:
 | Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
 | Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
 | Explore possible replacement values for a given element in an array/string | `DFS`, `Memoization` | `ValidParenthesisString` |
-| Can't use additional memeory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
+| Can't use additional memory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
 | Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
 | Simulate time passing or different rounds | Batch up changes either using a `Queue` or caching state between rounds | `PushDominoes` |
 | Count possible substrings | `count * (count + 1) / 2` | `Substring` |
