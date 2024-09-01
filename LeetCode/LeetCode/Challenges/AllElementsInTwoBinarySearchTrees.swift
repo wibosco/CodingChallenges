@@ -10,9 +10,9 @@ import Foundation
 //https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
 struct AllElementsInTwoBinarySearchTrees {
     
-    //Time: O(n+m) where n is the number of nodes in the `root1` tree
-    //             where m is the number of nodes in the `root2` tree
-    //Space: O(n+m)
+    //Time: O(n + m) where n is the number of nodes in the `root1` tree
+    //               where m is the number of nodes in the `root2` tree
+    //Space: O(n + m)
     //binary tree
     //DFS
     //recursive

@@ -10,7 +10,7 @@ import Foundation
 //https://leetcode.com/problems/intersection-of-two-linked-lists/
 struct IntersectionOfTwoLinkedLists {
     
-    //Time: O(n+ m) where n is the number of nodes in `headA` list
+    //Time: O(n +  m) where n is the number of nodes in `headA` list
     //              where m is the number of nodes in `headB` list
     //Space: O(1)
     //linked list
@@ -57,7 +57,7 @@ struct IntersectionOfTwoLinkedLists {
         return p1 === p2 ? p1 : nil //could have been p2
     }
     
-    //Time: O(n+ m) where n is the number of nodes in `headA` list
+    //Time: O(n +  m) where n is the number of nodes in `headA` list
     //              where m is the number of nodes in `headB` list
     //Space: O(n)
     //linked list

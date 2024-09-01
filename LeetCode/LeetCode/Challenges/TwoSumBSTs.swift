@@ -10,9 +10,9 @@ import Foundation
 //https://leetcode.com/problems/two-sum-bsts/
 struct TwoSumBSTs {
     
-    //Time: O(n+m) where n is the number of nodes in `root1`
-    //             where m is the number of nodes in `root2`
-    //Space: O(n+m)
+    //Time: O(n + m) where n is the number of nodes in `root1`
+    //               where m is the number of nodes in `root2`
+    //Space: O(n + m)
     //binary tree
     //DFS
     //recursive
