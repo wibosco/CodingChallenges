@@ -70,12 +70,13 @@ A collection of coding challenges and their solutions from:
 | Count possible subarrays | `count * (count + 1) / 2` | `CountTheNumberOfIncremovableSubarraysI` |
 | Count possible subsequences | `(2 ^ count) - 1` | `Subsequence` |
 | Repeatedly find the min and max value in subarrays| Sort the overall array and take the first and last element in the subarray | `MinimumDifferenceBetweenHighestAndLowestOfKScore` |
-| Find the end of duplicates in an array | Nest a while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
+| Find the end of duplicates in an array | Nested while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
 | Find the minimum distance from one element to multiple elements in a graph | Multi-source BFS | `AsFarFromLandAsPossible` |
 | Traverse up a tree | Turn the tree into a directed graph with `child -> parent` and `parent -> child` | `ClosestLeafInABinaryTree` |
 | Sort two "linked" arrays together | Merge the two array into one tuple array | `MaximumCoinsHeroesCanCollect` |
 | Work out the cost/total of all previous elements in sorted data | `PrefixSum` | `MaximumCoinsHeroesCanCollect` |
 | Flip neighbors to find the maximum/minimum | `Sliding window` | `MaximizeTheConfusionOfAnExam` |
+| Reverse order of substrings while keeping the same order of each substring| Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
 
 A lot of problems can be treated as graph problems.
 
