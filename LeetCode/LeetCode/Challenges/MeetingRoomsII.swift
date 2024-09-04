@@ -18,17 +18,16 @@ struct MeetingRoomsII {
     //intervals
     //
     //Solution Description:
-    //What's important to understand is that a room is only free once the "current time" is greater than or equal to
-    //that meetings end time. The current time is defined by the position we are at in the `intervals` array. As
-    //meeting can start and end within the duration of an earlier meeting we can't simply sort the `intervals` array
-    //and compare neighbors. Instead we need to split out the start (`startTimes`) and end times (`endTimes`) into
-    //separate, sorted arrays and then iterate through `startTimes` and compare it against `endTimes` to determine
-    //how many rooms are in use at any given time - `roomsInUse`. To do this we keep two pointers `startPointer` and
-    //`endPointer` which we can increment at different rates. If the current meeting start time is less than the
-    //current end time then we need another room (increment `roomsInUse`); if the start time is greater than or equal
-    //to the current time we can free a room (decrement `roomsInUse`) and check the next end time to see if we can
-    //free any more rooms until the end time go beyond the current time. Once we have iterated through all start
-    //times we return the max rooms in use at one time.
+    //What's important to understand is that a room is only free once the "current time" is greater than or equal to that meetings
+    //end time. The current time is defined by the position we are at in the `intervals` array. As meeting can start and end
+    //within the duration of an earlier meeting we can't simply sort the `intervals` array and compare neighbors. Instead we need
+    //to split out the start (`startTimes`) and end times (`endTimes`) into separate, sorted arrays and then iterate through
+    //`startTimes` and compare it against `endTimes` to determine how many rooms are in use at any given time - `roomsInUse`. To
+    //do this we keep two pointers `startPointer` and `endPointer` which we can increment at different rates. If the current
+    //meeting start time is less than the current end time then we need another room (increment `roomsInUse`); if the start time
+    //is greater than or equal to the current time we can free a room (decrement `roomsInUse`) and check the next end time to see
+    //if we can free any more rooms until the end time go beyond the current time. Once we have iterated through all start times
+    //we return the max rooms in use at one time.
     static func minMeetingRooms(_ intervals: [[Int]]) -> Int {
         guard intervals.count > 1 else {
             return 1
