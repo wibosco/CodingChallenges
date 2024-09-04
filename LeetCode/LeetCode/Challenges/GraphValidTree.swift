@@ -110,6 +110,7 @@ struct GraphValidTree {
     //visited
     //adjacency list
     //undirected graph
+    //cycle detection
     //
     //Solution Description:
     //A valid tree has one root (all nodes need to be connected) and no cycles. First a check is made to ensure that edges are
@@ -187,6 +188,7 @@ struct GraphValidTree {
     //union find
     //disjoint set
     //undirected graph
+    //cycle detection
     //
     //Solution Description:
     //A valid tree has one root (all nodes need to be connected) and no cycles by using a disjoint set we can test for both

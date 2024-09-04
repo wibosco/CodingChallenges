@@ -17,7 +17,7 @@ struct SortList {
     //sorted
     //recursion
     //three pointers
-    //fast and slow pointers
+    //slow and fast pointers
     //merge sort
     //divide and conquer
     //sentinel head

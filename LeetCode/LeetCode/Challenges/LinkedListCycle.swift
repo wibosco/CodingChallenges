@@ -16,6 +16,7 @@ struct LinkedListCycle {
     //linked list
     //two pointers
     //slow and fast pointers
+    //cycle detection
     //
     //Solution Description:
     //Using a fast and slow pointer iterate through the list. If they meet we know that there is a cycle; if they don't meet and the

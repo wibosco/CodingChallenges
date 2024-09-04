@@ -18,7 +18,7 @@ struct ConvertSortedListToBinarySearchTree {
     //DFS
     //recursive
     //sorted
-    //fast and slow pointers
+    //slow and fast pointers
     //divide and conquer
     //three pointers
     //

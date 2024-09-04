@@ -16,6 +16,7 @@ struct LinkedListCycleII {
     //linked list
     //two pointers
     //slow and fast pointers
+    //cycle detection
     //
     //Solution Description:
     //Using a fast and slow pointer iterate through the list. If they meet we know that we have a cycle; if they don't meet and the
@@ -54,21 +55,23 @@ struct LinkedListCycleII {
     //Space: O(n)
     //linked list
     //set
+    //cycle detection
+    //visited
     //
     //Solution Description:
-    //Iterate through the list, inserting each unique node that we come across into the `list` set. If the set already contains the
-    //node then we have a cycle and can return that node as the start; if we get to the end of the list we know that the list
+    //Iterate through the list, inserting each unique node that we come across into the `visited` set. If the set already contains
+    //the node then we have a cycle and can return that node as the start; if we get to the end of the list we know that the list
     //doesn't contain a cycle and can return nil
     static func detectCycleSet(_ head: ListNode?) -> ListNode? {
-        var list = Set<ListNode>()
+        var visited = Set<ListNode>()
         var node = head
         
         while let n = node {
-            guard !list.contains(n) else {
+            guard !visited.contains(n) else {
                 return n
             }
             
-            list.insert(n)
+            visited.insert(n)
             node = n.next
         }
         

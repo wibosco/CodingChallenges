@@ -39,7 +39,7 @@ struct MaximumEnemyFortsThatCanBeCaptured {
             if value == 0 {
                 currentCapturedForts += 1
             } else {
-                if (value == -1 && startingBoundary == 1) || (value == 1 && startingBoundary == -1)  {
+                if (value == -1 && startingBoundary == 1) || (value == 1 && startingBoundary == -1) {
                     //found a matching end to our start
                     maxCapturedForts = max(maxCapturedForts, currentCapturedForts)
                 }

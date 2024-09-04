@@ -45,7 +45,7 @@ A collection of coding challenges and their solutions from:
 | "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
-| "Loop/cycle in a graph" | `Disjoint sets`, `Topological sort` |
+| "Loop/cycle in a graph" | `Disjoint sets`, `Topological sort`, `DFS - Visited` |
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
 | "Compare neighbors in a string", "Comparing right to left elements"| `Stack` |
 | "Largest value", "Smallest value"| `Heap` |
@@ -77,6 +77,7 @@ A collection of coding challenges and their solutions from:
 | Work out the cost/total of all previous elements in sorted data | `PrefixSum` | `MaximumCoinsHeroesCanCollect` |
 | Flip neighbors to find the maximum/minimum | `Sliding window` | `MaximizeTheConfusionOfAnExam` |
 | Reverse order of substrings while keeping the same order of each substring| Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
+| Wrap an arrays indexes round an offset | `Modulo` | `CircularArrayLoop` |
 
 A lot of problems can be treated as graph problems.
 
