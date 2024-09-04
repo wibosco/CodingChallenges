@@ -67,6 +67,7 @@ struct MaximumNumberOfRemovableCharacters {
     //two pointers
     //marking
     //nested loops
+    //fast forward
     //
     //Solution Description:
     //Iterating through `removable` we "mark" each index that we remove and test if `p` is still a subsequence of this updated `s`.

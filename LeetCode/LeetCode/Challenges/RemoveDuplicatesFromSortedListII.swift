@@ -15,6 +15,7 @@ struct RemoveDuplicatesFromSortedListII {
     //linked list
     //two pointers
     //sentinel head
+    //fast forward
     //
     //Solution Description:
     //Using two pointers we iterate through the list comparing the `current` node with its next node. If their values don't

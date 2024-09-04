@@ -70,7 +70,7 @@ A collection of coding challenges and their solutions from:
 | Count possible subarrays | `count * (count + 1) / 2` | `CountTheNumberOfIncremovableSubarraysI` |
 | Count possible subsequences | `(2 ^ count) - 1` | `Subsequence` |
 | Repeatedly find the min and max value in subarrays| Sort the overall array and take the first and last element in the subarray | `MinimumDifferenceBetweenHighestAndLowestOfKScore` |
-| Find the end of duplicates in an array | Nested while loop that only increments one of the pointers | `RemoveDuplicatesFromSortedListII` |
+| Find the end of duplicates in an array | Nested while loop that only increments one of the pointers i.e. fast forward | `RemoveDuplicatesFromSortedListII` |
 | Find the minimum distance from one element to multiple elements in a graph | Multi-source BFS | `AsFarFromLandAsPossible` |
 | Traverse up a tree | Turn the tree into a directed graph with `child -> parent` and `parent -> child` | `ClosestLeafInABinaryTree` |
 | Sort two "linked" arrays together | Merge the two array into one tuple array | `MaximumCoinsHeroesCanCollect` |

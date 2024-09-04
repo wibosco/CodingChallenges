@@ -16,6 +16,7 @@ struct MinimumSizeSubarraySum {
     //sliding window
     //prefix sum
     //nested loop
+    //fast forward
     //
     //Solution Description:
     //Using a sliding window approach we iterate through `nums` in a linear fashion adding or subtracting the elements of `nums`
