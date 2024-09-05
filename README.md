@@ -36,7 +36,7 @@ A collection of coding challenges and their solutions from:
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
 | "Path may not exist"| `isolated vertices`, `cycles` |
 | "Generate all", "All permutations", "All combinations", "All possible", "Choices", "Branching" | `Backtracking (DFS)` |
-| "Next Permutation" | `pivot & sorting` |
+| "Next Permutation" | `pivot & swap` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Right-most", "Left-most"| `Binary Search` |
 | "Iterating array comparing elements" | `Stack` |
@@ -79,6 +79,7 @@ A collection of coding challenges and their solutions from:
 | Reverse order of substrings while keeping the same order of each substring| Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
 | Wrap an arrays indexes round an offset | `Modulo` | `CircularArrayLoop` |
 | Need to build a relatioship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
+| Find the next permutation of a number | `pivot & swap` | `NextPermutation` `NextGreaterElementIII` |
 
 A lot of problems can be treated as graph problems.
 

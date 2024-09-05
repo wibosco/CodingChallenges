@@ -11,45 +11,64 @@ import Foundation
 //https://leetcode.com/problems/next-permutation/
 struct NextPermutation {
     
-    //Time: O(n) - Don't be tricked by the for inside a for, notice the breaks
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //array
     //two pointers
     //inline
+    //permutation
+    //pivot & swap
     //
     //Solution Description:
-    //In order to find the next larger permutation we need to the smallest unit index (indexing from the right) that
-    //has a larger value than the index directly to its right - this becomes our pivot index (if this doesn't exist
-    //then we have the highest value premutation and should return the lowest possible permutation i.e. all in
-    //ascending order). We then need to switch out this pivot with the smallest unit index that has a larger value
-    //than the pivots value - please note that we only switch out one index. Finally having switched out the pivot
-    //we then just need to ensure that everything after the pivot is the smallest it can be by sorting it in ascending
-    //order.
+    //To find the next permutation we need to find an element that when swapped with another minimally increases `nums` in
+    //value. The element that minimally increases `n` in value is the left-most element that when reading from right to
+    //left is smaller than it's right neighbor i.e. the elements to it's right are in ascending order (right to left) and
+    //this element breaks that order e.g.
+    //
+    //In `834762` the `4` is that value
+    //
+    //We call this breaking order element the `pivot`. Once we have the `pivot` we need to find the smallest value that is
+    //greater than it to swap over - this is to minimise the increase in `n`. You might be thinking if everything to the
+    //right of `pivot` is ascending won't that smallest value be the last digit in `n` - be careful here, just because the
+    //`pivot` is smaller than it's neighor doesn't mean that it is smaller than all elements to the right and swapping the
+    //`pivot` with an element smaller than itself would not result in the smallest permutation of `n` greater than `n` but
+    //rather a smaller permutation of `n` e.g.
+    //
+    //In `834762` we don't want to swap the `4` with the `2` as `832764` < `834762` instead we want to swap it with the `6`
+    //
+    //So having swapped the `pivot` with the smallest right neighbor that is still greater than the `pivot` e.g.
+    //
+    //`836742`
+    //
+    //we can still make this number smaller by reversing those ascending numbers to the right of the old `pivot` index to
+    //descending order e.g.
+    //
+    //`836247`
     //
     //See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
+    //Similar to: https://leetcode.com/problems/next-greater-element-iii/
     static func nextPermutation(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }
         
-        var pivot = -1 //so if no pivot is found the whole array will be sorted in ascending order
-        //ls - less significant index
-        //ms = more significant index i.e. one to the right
-        for ls in (1..<nums.count).reversed() {
-            let ms = ls - 1
-            if nums[ls] > nums[ms] {
-                pivot = ms
-                let insidePivot = (pivot + 1)
-                for index in (insidePivot..<nums.count).reversed() {
-                    if nums[index] > nums[pivot] {
-                        nums.swapAt(pivot, index)
-                        break
-                    }
-                }
-                break
-            }
+        //find the least significant value that is smaller than it's right neighbor
+        var pivot = nums.count - 2
+        while pivot >= 0, nums[(pivot + 1)] <= nums[pivot] {
+            pivot -= 1
         }
         
+        if pivot >= 0 {
+            //find the least-significant-value to the right of the pivot that is larger than the pivot
+            var lsv = nums.count - 1
+            while lsv > 0, nums[lsv] <= nums[pivot] {
+                lsv -= 1
+            }
+            nums.swapAt(pivot, lsv)
+        }
+        
+        //now the pivot is moved into place making `nums` > `n` we need to minimise `nums` so it's as small
+        //as can be while still > `n`.
         nums[(pivot + 1)...].reverse()
     }
     
