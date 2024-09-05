@@ -10,7 +10,8 @@ import Foundation
 //https://leetcode.com/problems/longest-uncommon-subsequence-ii/
 struct LongestUncommonSubsequenceII {
     
-    //Time: O(n ^ 2) where n is the number of elements in `strs`
+    //Time: O(n log n + n ^ 2 * m) where n is the number of elements in `strs`
+    //                             where m is the number of characters in a `strs` element
     //Space: O(n)
     //string
     //array
@@ -44,7 +45,7 @@ struct LongestUncommonSubsequenceII {
                     break
                 }
                 
-                if isSubsequence(a, b) {
+                if isSubsequence(a, of: b) {
                     foundSubsequence = true
                     break
                 }
@@ -58,7 +59,7 @@ struct LongestUncommonSubsequenceII {
         return -1
     }
     
-    private func isSubsequence(_ a: String, _ b: String) -> Bool {
+    private func isSubsequence(_ a: String, of b: String) -> Bool {
         let a = Array(a)
         let b = Array(b)
         
@@ -66,7 +67,7 @@ struct LongestUncommonSubsequenceII {
         var p2 = 0
         
         while p1 < a.count {
-            while p2 < b.count, a[p1] != b[p2] {
+            while p2 < b.count, a[p1] != b[p2] { //fast forward
                 p2 += 1
             }
             
