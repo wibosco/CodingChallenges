@@ -78,6 +78,7 @@ A collection of coding challenges and their solutions from:
 | Flip neighbors to find the maximum/minimum | `Sliding window` | `MaximizeTheConfusionOfAnExam` |
 | Reverse order of substrings while keeping the same order of each substring| Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
 | Wrap an arrays indexes round an offset | `Modulo` | `CircularArrayLoop` |
+| Need to build a relatioship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
 
 A lot of problems can be treated as graph problems.
 

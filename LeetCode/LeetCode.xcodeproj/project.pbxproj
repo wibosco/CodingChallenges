@@ -754,6 +754,8 @@
 		435BFD7F2A5E9DFA00D1F14A /* FindEventualSafeStatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFD7E2A5E9DFA00D1F14A /* FindEventualSafeStatesTests.swift */; };
 		435C46952B10DA1D00EA07F2 /* FindNearestRightNodeInBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C46942B10DA1D00EA07F2 /* FindNearestRightNodeInBinaryTree.swift */; };
 		435C46972B10DA5300EA07F2 /* FindNearestRightNodeInBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C46962B10DA5300EA07F2 /* FindNearestRightNodeInBinaryTreeTests.swift */; };
+		435D41562C899F2000B19321 /* Heaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D41552C899F2000B19321 /* Heaters.swift */; };
+		435D41582C899F4D00B19321 /* HeatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D41572C899F4D00B19321 /* HeatersTests.swift */; };
 		435F019B2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */; };
 		435F019D2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */; };
 		435F019F2A0CF0BB00F6B50F /* SurroundedRegions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F019E2A0CF0BB00F6B50F /* SurroundedRegions.swift */; };
@@ -1791,6 +1793,8 @@
 		435BFD7E2A5E9DFA00D1F14A /* FindEventualSafeStatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindEventualSafeStatesTests.swift; sourceTree = "<group>"; };
 		435C46942B10DA1D00EA07F2 /* FindNearestRightNodeInBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNearestRightNodeInBinaryTree.swift; sourceTree = "<group>"; };
 		435C46962B10DA5300EA07F2 /* FindNearestRightNodeInBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNearestRightNodeInBinaryTreeTests.swift; sourceTree = "<group>"; };
+		435D41552C899F2000B19321 /* Heaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heaters.swift; sourceTree = "<group>"; };
+		435D41572C899F4D00B19321 /* HeatersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatersTests.swift; sourceTree = "<group>"; };
 		435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaOfIsland.swift; sourceTree = "<group>"; };
 		435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaOfIslandTests.swift; sourceTree = "<group>"; };
 		435F019E2A0CF0BB00F6B50F /* SurroundedRegions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurroundedRegions.swift; sourceTree = "<group>"; };
@@ -2335,6 +2339,7 @@
 				3D5C90DB27A7F7620035C399 /* GuessNumberHigherOrLower.swift */,
 				43C8CB4E2A5426F200FAA411 /* HandOfStraights.swift */,
 				3D5C911A27A7F7630035C399 /* HappyNumber.swift */,
+				435D41552C899F2000B19321 /* Heaters.swift */,
 				4379F48829E802D6003BA6F9 /* HouseRobber.swift */,
 				4379F48C29E820C0003BA6F9 /* HouseRobberII.swift */,
 				430BD7C62B02CB770036A03F /* HouseRobberIII.swift */,
@@ -2848,6 +2853,7 @@
 				3D5C924627A7F76C0035C399 /* GuessNumberHigherOrLowerTests.swift */,
 				43C8CB502A54270A00FAA411 /* HandOfStraightsTests.swift */,
 				3D5C91FA27A7F76B0035C399 /* HappyNumberTests.swift */,
+				435D41572C899F4D00B19321 /* HeatersTests.swift */,
 				430BD7C82B02CBB50036A03F /* HouseRobberIIITests.swift */,
 				4379F48E29E820F0003BA6F9 /* HouseRobberIITests.swift */,
 				4379F48A29E802E8003BA6F9 /* HouseRobberTests.swift */,
@@ -3782,6 +3788,7 @@
 				43BB2BA92C8755CD0008AB9C /* ReverseWordsInAString.swift in Sources */,
 				3D5C91EC27A7F7630035C399 /* FloodFill.swift in Sources */,
 				439910432B07AC810020E9CC /* SmallestSubtreeWithAllTheDeepestNodes.swift in Sources */,
+				435D41562C899F2000B19321 /* Heaters.swift in Sources */,
 				435B70A82B050453003D51CA /* AddOneRowToTree.swift in Sources */,
 				3D5C914827A7F7630035C399 /* GraphVertice.swift in Sources */,
 				43495F6B2B221D6A0037FEA7 /* MaximumAverageSubtree.swift in Sources */,
@@ -4192,6 +4199,7 @@
 				43BD45802AFCCFE2006216F0 /* SumRootToLeafNumbersTests.swift in Sources */,
 				435B70A22B04E469003D51CA /* FindLargestValueInEachTreeRowTests.swift in Sources */,
 				4311BC7A2A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift in Sources */,
+				435D41582C899F4D00B19321 /* HeatersTests.swift in Sources */,
 				3D5C93A327A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift in Sources */,
 				434679502A56D68300A1D225 /* ConcatenationOfArrayTests.swift in Sources */,
 				43169EE82A61F8BA00DF16FD /* LongestArithmeticSubsequenceOfGivenDifferenceTests.swift in Sources */,
