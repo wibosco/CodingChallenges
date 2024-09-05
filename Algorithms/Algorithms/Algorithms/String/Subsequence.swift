@@ -88,36 +88,32 @@ struct Subsequence {
     //subsequence
     //nested loops
     //two pointers
+    //fast forward
     //
     //Solution Description:
-    //Using nested loops we iterate through `sub` and attempt for find a match for each character (in order) in `full`. Using two
-    //pointers we are able to loop through both strings at different rates - remember a subsequence only needs to keep the relative
-    //order of the elements the same, it can omit any elements in between. The outer loop iterates through the elements in `sub` and
-    //the inner loop through `full`. If there is a match between `sub` and `full`, then we move onto the next element in `sub` and
-    //attempt to find it in `full` - note that `fIndex` isn't reset upon finding a match. If we find all of `sub` in `full` then
-    //`sIndex` will be equal to `sub.count` otherwise it won't be so we can use this to return true or false respectively.
-    static func isSubsequence(_ sub: String, of full: String) -> Bool {
-        let sub = Array(sub)
-        let full = Array(full)
+    //Using nested loops we iterate through `a` and attempt to find a match for each character (in order) in `b`. Using two
+    //pointers we are able to loop through both strings at different rates - remember a subsequence only needs to keep the
+    //relative order of the elements the same, it can omit any elements in between. The outer loop iterates through the
+    //elements in `a` and the inner loop through `b`. If there is a match between `a` and `b`, then we move onto the next
+    //element in `a` and attempt to find it in `b` - note that `p2` isn't reset upon finding a match. If we find all of `a` in
+    //`b` then `p2` will be equal to or less than `b.count` otherwise it won't be so we can use this to return true or false
+    //respectively.
+    static func isSubsequence(_ a: String, of b: String) -> Bool {
+        let a = Array(a)
+        let b = Array(b)
         
-        var sIndex = 0
-        var fIndex = 0
+        var p1 = 0
+        var p2 = 0
         
-        while sIndex < sub.count {
-            var match = false
-            
-            while fIndex < full.count && !match {
-                match = (full[fIndex] == sub[sIndex])
-                fIndex += 1
+        while p1 < a.count {
+            while p2 < b.count, b[p2] != a[p1] { //fast forward when there isn't a match
+                p2 += 1
             }
             
-            if !match {
-                break
-            }
-            
-            sIndex += 1
+            p1 += 1
+            p2 += 1
         }
         
-        return sIndex == sub.count
+        return p2 <= b.count
     }
 }
