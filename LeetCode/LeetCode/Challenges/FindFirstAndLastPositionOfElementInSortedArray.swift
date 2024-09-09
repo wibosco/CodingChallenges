@@ -51,7 +51,7 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
         var startingIndex = -1
         
         while left <= right {
-            let mid = left + (right - left) / 2
+            let mid = left + (right - left) / 2 //to avoid overflow
             
             if nums[mid] == target {
                 let previous = mid - 1
