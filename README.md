@@ -80,6 +80,7 @@ A collection of coding challenges and their solutions from:
 | Wrap an arrays indexes round an offset | `Modulo` | `CircularArrayLoop` |
 | Need to build a relatioship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
 | Find the next permutation of a number | `pivot & swap` | `NextPermutation` `NextGreaterElementIII` |
+| Find elements in one array and compare against another | `Two pointers`, `Fast Forwarding` | `SwapAdjacentInLRString` |
 
 A lot of problems can be treated as graph problems.
 

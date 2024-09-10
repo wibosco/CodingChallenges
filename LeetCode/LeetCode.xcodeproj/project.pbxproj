@@ -772,6 +772,8 @@
 		435F01A12A0CF12D00F6B50F /* SurroundedRegionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F01A02A0CF12D00F6B50F /* SurroundedRegionsTests.swift */; };
 		435F01A32A0D23C000F6B50F /* RedundantConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F01A22A0D23C000F6B50F /* RedundantConnection.swift */; };
 		435F01A52A0D249000F6B50F /* RedundantConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F01A42A0D249000F6B50F /* RedundantConnectionTests.swift */; };
+		4361B2D02C9080E600A38FB7 /* SwapAdjacentInLRString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361B2CF2C9080E600A38FB7 /* SwapAdjacentInLRString.swift */; };
+		4361B2D22C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361B2D12C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift */; };
 		43643B152B0E058D00B9D711 /* EqualTreePartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43643B142B0E058D00B9D711 /* EqualTreePartition.swift */; };
 		43643B172B0E05D900B9D711 /* EqualTreePartitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43643B162B0E05D900B9D711 /* EqualTreePartitionTests.swift */; };
 		43643B192B0E1C0500B9D711 /* PathSumIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43643B182B0E1C0500B9D711 /* PathSumIV.swift */; };
@@ -1823,6 +1825,8 @@
 		435F01A02A0CF12D00F6B50F /* SurroundedRegionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurroundedRegionsTests.swift; sourceTree = "<group>"; };
 		435F01A22A0D23C000F6B50F /* RedundantConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedundantConnection.swift; sourceTree = "<group>"; };
 		435F01A42A0D249000F6B50F /* RedundantConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedundantConnectionTests.swift; sourceTree = "<group>"; };
+		4361B2CF2C9080E600A38FB7 /* SwapAdjacentInLRString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapAdjacentInLRString.swift; sourceTree = "<group>"; };
+		4361B2D12C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapAdjacentInLRStringTests.swift; sourceTree = "<group>"; };
 		43643B142B0E058D00B9D711 /* EqualTreePartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualTreePartition.swift; sourceTree = "<group>"; };
 		43643B162B0E05D900B9D711 /* EqualTreePartitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualTreePartitionTests.swift; sourceTree = "<group>"; };
 		43643B182B0E1C0500B9D711 /* PathSumIV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSumIV.swift; sourceTree = "<group>"; };
@@ -2687,6 +2691,7 @@
 				43313BBE29D8DA2B005FCF5D /* WordPattern.swift */,
 				3D46243427E497D300A888C1 /* WordSearch.swift */,
 				3D5C90F127A7F7620035C399 /* ZigzagConversion.swift */,
+				4361B2CF2C9080E600A38FB7 /* SwapAdjacentInLRString.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -2694,6 +2699,7 @@
 		3D5C91F327A7F76B0035C399 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4361B2D12C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift */,
 				3D5C921627A7F76B0035C399 /* AccountsMergeTests.swift */,
 				3D46241E27E2432B00A888C1 /* AddBinaryTests.swift */,
 				43313BB229D71237005FCF5D /* AddDigitsTests.swift */,
@@ -3630,6 +3636,7 @@
 				3D46242927E29BDB00A888C1 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				3D5C91EF27A7F7630035C399 /* DivideTwoIntegers.swift in Sources */,
 				436634982AFE5C320087F13F /* IncreasingOrderSearchTree.swift in Sources */,
+				4361B2D02C9080E600A38FB7 /* SwapAdjacentInLRString.swift in Sources */,
 				3D5C91C627A7F7630035C399 /* FirstBadVersion.swift in Sources */,
 				433953072B041E6D009F067C /* AllElementsInTwoBinarySearchTrees.swift in Sources */,
 				4311BC742A58668100137AED /* FindPivotIndex.swift in Sources */,
@@ -3894,6 +3901,7 @@
 				3D5C92A027A7F76C0035C399 /* HappyNumberTests.swift in Sources */,
 				3DE789B127EB3BD000E1D1B9 /* RestoreIPAddressesTests.swift in Sources */,
 				3D5C933327A7F76C0035C399 /* ReconstructItineraryTests.swift in Sources */,
+				4361B2D22C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift in Sources */,
 				3D5C932027A7F76C0035C399 /* SortListTests.swift in Sources */,
 				3D1D0C85280645C7006DA350 /* GameOfLifeTests.swift in Sources */,
 				3D5C92B827A7F76C0035C399 /* UniqueBinarySearchTreesTests.swift in Sources */,
