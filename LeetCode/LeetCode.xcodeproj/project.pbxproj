@@ -916,6 +916,8 @@
 		43A1F14B2B855D6E004712A7 /* CountNodesWithTheHighestScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1F14A2B855D6E004712A7 /* CountNodesWithTheHighestScoreTests.swift */; };
 		43A30FE72C93377A0054D728 /* KthSmallestPrimeFraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A30FE62C93377A0054D728 /* KthSmallestPrimeFraction.swift */; };
 		43A30FE92C9337B50054D728 /* KthSmallestPrimeFractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A30FE82C9337B50054D728 /* KthSmallestPrimeFractionTests.swift */; };
+		43A30FEB2C93743C0054D728 /* NumberOfSubarraysWithBoundedMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A30FEA2C93743C0054D728 /* NumberOfSubarraysWithBoundedMaximum.swift */; };
+		43A30FED2C93746A0054D728 /* NumberOfSubarraysWithBoundedMaximumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A30FEC2C93746A0054D728 /* NumberOfSubarraysWithBoundedMaximumTests.swift */; };
 		43A423C82A0544DD005AFB34 /* PermutationInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A423C72A0544DD005AFB34 /* PermutationInString.swift */; };
 		43A423CA2A054725005AFB34 /* PermutationInStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A423C92A054725005AFB34 /* PermutationInStringTests.swift */; };
 		43A692A629F69FD50043B5D0 /* MaximumProductSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A692A529F69FD50043B5D0 /* MaximumProductSubarray.swift */; };
@@ -1971,6 +1973,8 @@
 		43A1F14A2B855D6E004712A7 /* CountNodesWithTheHighestScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountNodesWithTheHighestScoreTests.swift; sourceTree = "<group>"; };
 		43A30FE62C93377A0054D728 /* KthSmallestPrimeFraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthSmallestPrimeFraction.swift; sourceTree = "<group>"; };
 		43A30FE82C9337B50054D728 /* KthSmallestPrimeFractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthSmallestPrimeFractionTests.swift; sourceTree = "<group>"; };
+		43A30FEA2C93743C0054D728 /* NumberOfSubarraysWithBoundedMaximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfSubarraysWithBoundedMaximum.swift; sourceTree = "<group>"; };
+		43A30FEC2C93746A0054D728 /* NumberOfSubarraysWithBoundedMaximumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfSubarraysWithBoundedMaximumTests.swift; sourceTree = "<group>"; };
 		43A423C72A0544DD005AFB34 /* PermutationInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationInString.swift; sourceTree = "<group>"; };
 		43A423C92A054725005AFB34 /* PermutationInStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationInStringTests.swift; sourceTree = "<group>"; };
 		43A692A529F69FD50043B5D0 /* MaximumProductSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumProductSubarray.swift; sourceTree = "<group>"; };
@@ -2516,6 +2520,7 @@
 				435AFB9A2A5C5D8C00721B88 /* NumberOfPairsOfInterchangeableRectangles.swift */,
 				3D5C911827A7F7630035C399 /* NumberOfProvinces.swift */,
 				43F2406C2A68409100FB5964 /* NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold.swift */,
+				43A30FEA2C93743C0054D728 /* NumberOfSubarraysWithBoundedMaximum.swift */,
 				43C42B832A65565100D5881B /* NumberOfSubsequencesThatSatisfyTheGivenSumCondition.swift */,
 				431F3D572A634CAB00500C0E /* NumberOfZeroFilledSubarrays.swift */,
 				43F3DF3829E0B61600EDEB1C /* OddEvenLinkedList.swift */,
@@ -3038,6 +3043,7 @@
 				435AFB9C2A5C5DD200721B88 /* NumberOfPairsOfInterchangeableRectanglesTests.swift */,
 				3D5C922E27A7F76B0035C399 /* NumberOfProvincesTests.swift */,
 				43F2406E2A6840C800FB5964 /* NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThresholdTests.swift */,
+				43A30FEC2C93746A0054D728 /* NumberOfSubarraysWithBoundedMaximumTests.swift */,
 				43C42B852A6556B200D5881B /* NumberOfSubsequencesThatSatisfyTheGivenSumConditionTests.swift */,
 				431F3D592A634CE700500C0E /* NumberOfZeroFilledSubarraysTests.swift */,
 				43F3DF3A29E0B6B100EDEB1C /* OddEvenLinkedListTests.swift */,
@@ -3849,6 +3855,7 @@
 				3D5C914827A7F7630035C399 /* GraphVertice.swift in Sources */,
 				43495F6B2B221D6A0037FEA7 /* MaximumAverageSubtree.swift in Sources */,
 				3D5C919027A7F7630035C399 /* CapacityToShipPackagesWithinDDays.swift in Sources */,
+				43A30FEB2C93743C0054D728 /* NumberOfSubarraysWithBoundedMaximum.swift in Sources */,
 				3D5C91DE27A7F7630035C399 /* BinaryTreeInorderTraversal.swift in Sources */,
 				437119442A5EEE6B000E0EE5 /* GridGame.swift in Sources */,
 				439910472B07CAF30020E9CC /* MaximumLevelSumOfABinaryTree.swift in Sources */,
@@ -3937,6 +3944,7 @@
 				438EBCB12AEFB206007083B7 /* FindClosestNodeToGivenTwoNodesTests.swift in Sources */,
 				438C2EDD2B1F550900C43AAA /* SmallestStringStartingFromLeafTests.swift in Sources */,
 				4335FB152B89455100416BB6 /* CheckIfNAndItsDoubleExistTests.swift in Sources */,
+				43A30FED2C93746A0054D728 /* NumberOfSubarraysWithBoundedMaximumTests.swift in Sources */,
 				3D5C932B27A7F76C0035C399 /* CloneBinaryTreeWithRandomPointerTests.swift in Sources */,
 				3D7F318B27F791A600200775 /* UniquePathsIITests.swift in Sources */,
 				3D8424DD27F1AFEC00B91AAB /* MeetingRoomsTests.swift in Sources */,

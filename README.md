@@ -55,6 +55,8 @@ A collection of coding challenges and their solutions from:
 | "Merge", "Intervals", "Neighbors" | `sort` |
 | "Rotate by k" | `(i + k) % array.count` |
 
+**When unable to spot a pattern, stop and write out the steps involved in the given example - work the problem without code.**
+
 ## Need to... Tips
 
 | Need to... | Technique | Example |
