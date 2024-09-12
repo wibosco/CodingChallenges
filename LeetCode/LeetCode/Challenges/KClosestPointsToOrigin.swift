@@ -18,7 +18,7 @@ struct KClosestPointsToOrigin {
     //in-line
     //
     //Solution Description:
-    //Using `quick select` we sort `points` around a pivot by gradually partitioning `nums` into a smaller semi-sorted arrays.
+    //Using `quick select` we sort `points` around a pivot by gradually partitioning `points` into smaller semi-sorted arrays.
     //We do not need to fully sort `points`, instead we only need to sort up to the `kth` index so after each partitioning we
     //check if the elements up to the `kth` index as been sorted if so we can return `points[0..<k]` else we take one half of
     //the semi-sorted array and partition it further.
