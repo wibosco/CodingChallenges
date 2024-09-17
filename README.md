@@ -38,6 +38,7 @@ A collection of coding challenges and their solutions from:
 | "Generate all", "All permutations", "All combinations", "All possible", "Choices", "Branching" | `Backtracking (DFS)` |
 | "Next Permutation" | `pivot & swap` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
+| "Maximum", "Minimum", "Optimization", "Container" | `Greedy` |
 | "Right-most", "Left-most"| `Binary Search` |
 | "Iterating array comparing elements" | `Stack` |
 | "Next greater element", "Next lesser element" | `Monotonic stack` |
@@ -51,8 +52,8 @@ A collection of coding challenges and their solutions from:
 | "Largest value", "Smallest value"| `Heap` |
 | "kth smallest", "kth largest", "kth frequent", "Top k", "k closet" | `QuickSelect` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
-| "Consecutive" | `sort` |
-| "Merge", "Intervals", "Neighbors" | `sort` |
+| "Consecutive" | `Sort` |
+| "Merge", "Intervals", "Neighbors" | `Sort` |
 | "Rotate by k" | `(i + k) % array.count` |
 
 **When unable to spot a pattern, stop and write out the steps involved in the given example - work the problem without code.**
@@ -61,7 +62,7 @@ A collection of coding challenges and their solutions from:
 
 | Need to... | Technique | Example |
 | ---------- | --------- | ------- |
-| Optimise graph traversal | `Memoization`  | `LongestIncreasingSubsequence` |
+| Optimise graph traversal | `Memoization` | `LongestIncreasingSubsequence` |
 | Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
 | Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
 | Explore possible replacement values for a given element in an array/string | `DFS`, `Memoization` | `ValidParenthesisString` |

@@ -93,7 +93,6 @@ struct NumberOfSubarraysWithBoundedMaximum {
                 p2 += 1
             }
             
-            
             p1 = p2 + 1 //`p2` is at a value outside the range so jump to the next index
         }
         

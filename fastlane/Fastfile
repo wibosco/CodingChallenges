@@ -20,19 +20,7 @@ platform :ios do
   lane :run_all_tests do
     run_tests(
       workspace: "CodingChallenges.xcworkspace",
-      scheme: "Algorithms"
-    )
-    run_tests(
-      workspace: "CodingChallenges.xcworkspace",
-      scheme: "LeetCode"
-    )
-    run_tests(
-      workspace: "CodingChallenges.xcworkspace",
-      scheme: "HackerRank"
-    )
-    run_tests(
-      workspace: "CodingChallenges.xcworkspace",
-      scheme: "CrackingTheCodingInterview"
+      scheme: "CodingChallenges"
     )
   end
 end
