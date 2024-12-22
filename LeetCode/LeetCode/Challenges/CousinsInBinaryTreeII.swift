@@ -17,10 +17,14 @@ struct CousinsInBinaryTreeII {
     //level traversal
     //
     //Solution Description:
-    //A twist on a standard BFS we check track of the current iteration of nodes to be procssed in the queue and also the previous
-    //iteration of nodes. The current iteration of nodes allows us to easily calculate the sum of nodes at that level while the
-    //previous iteration allows us to subtract from that level sum, the value of nodes that share same a parent. The difference
-    //between these two sums is then assigned to each child node of that parent.
+    //With a twist on a standard BFS approch, we keep track of both the current iteration of nodes and also the previous
+    //iteration of nodes:
+    //
+    // - The current iteration of nodes allows us to calculate the sum of nodes for that level.
+    // - The previous iteration nodes allows us to calculate the sum of nodes that share same a parent.
+    //
+    //The difference between these two sums is then assigned to each child node of that parent. We repeat this process until
+    //the queue is empty.
     static func replaceValueInTree(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else {
             return nil
