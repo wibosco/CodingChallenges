@@ -17,7 +17,7 @@ final class BinaryTreePruningTests: XCTestCase {
         let data = [1,nil,0,0,1]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePruning.pruneTree(root)
+        let result = BinaryTreePruning().pruneTree(root)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [1,nil,0,nil,1])
@@ -27,7 +27,7 @@ final class BinaryTreePruningTests: XCTestCase {
         let data = [1,0,1,0,0,0,1]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePruning.pruneTree(root)
+        let result = BinaryTreePruning().pruneTree(root)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [1,nil,1,nil,1])
@@ -37,7 +37,7 @@ final class BinaryTreePruningTests: XCTestCase {
         let data = [1,1,0,1,1,0,1,0]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePruning.pruneTree(root)
+        let result = BinaryTreePruning().pruneTree(root)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [1,1,0,1,1,nil,1])
@@ -47,7 +47,7 @@ final class BinaryTreePruningTests: XCTestCase {
         let data = [0,0,0]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePruning.pruneTree(root)
+        let result = BinaryTreePruning().pruneTree(root)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [])

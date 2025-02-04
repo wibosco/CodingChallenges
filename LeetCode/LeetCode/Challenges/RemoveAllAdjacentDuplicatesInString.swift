@@ -21,7 +21,7 @@ struct RemoveAllAdjacentDuplicatesInString {
     //Iterate through `s` inspecting each character to see if it matches the last element in `stack`. If it does match we
     //remove that last element from the stack and skip over the current character. If it doesn't match we add the character
     //to the stack. Once we have iterated through all characters in `s` we return what is still in the stack as the result.
-    static func removeDuplicates(_ s: String) -> String {
+    func removeDuplicates(_ s: String) -> String {
         guard s.count > 1 else {
             return s
         }
@@ -52,7 +52,7 @@ struct RemoveAllAdjacentDuplicatesInString {
     //Solution Description:
     //Using two pointers we iterate through `s` comparing each character with it's immediate right most character. If they
     //match we remove both characters, if they don't match we move on. Finally what is left is the result.
-    static func removeDuplicatesTwoPoints(_ s: String) -> String {
+    func removeDuplicatesTwoPoints(_ s: String) -> String {
         guard s.count > 1 else {
             return s
         }

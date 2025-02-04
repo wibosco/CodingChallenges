@@ -32,7 +32,7 @@ struct MaximumSubarray {
     //
     //See: https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm
     //This is almost a two pointers question but as we only return the value we need to keep the start pointer
-    static func maxSubArray(_ nums: [Int]) -> Int {
+    func maxSubArray(_ nums: [Int]) -> Int {
         var currentSum = nums[0]
         var maxSum = nums[0]
         

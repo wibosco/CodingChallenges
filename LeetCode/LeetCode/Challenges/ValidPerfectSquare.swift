@@ -18,7 +18,7 @@ struct ValidPerfectSquare {
     //Solution Description:
     //1. Note that any ascending number sequence is sorted by definition
     //2. Perform binary search using the squared value to compare with num
-    static func isPerfectSquare(_ num: Int) -> Bool {
+    func isPerfectSquare(_ num: Int) -> Bool {
         guard num != 1 else {
             return true
         }

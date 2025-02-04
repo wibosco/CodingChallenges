@@ -35,7 +35,7 @@ struct ThreeSumClosest {
     //moving the `left` pointer). We repeat this process for all possible starting values.
     //
     //Similar to: https://leetcode.com/problems/3sum/
-    static func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
+    func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
         let nums = nums.sorted()
         
         //careful: while we use the smallest absolute difference between target and sum to determine

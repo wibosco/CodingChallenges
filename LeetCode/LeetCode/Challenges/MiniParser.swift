@@ -21,7 +21,7 @@ struct MiniParser {
     //is one). When we encounter a "]" or "," we take what is in `num` (if it contains anything) and create an
     //`NestedInteger` value instance from it, which is then added to the last element in the stack. Finally if the stack
     //is every empty then we have reached the processable data and can return that last `NestedInteger` instance.
-    static func deserialize(_ s: String) -> NestedInteger {
+    func deserialize(_ s: String) -> NestedInteger {
         guard s[s.startIndex] == "[" else {
             let ni = NestedInteger()
             ni.setInteger(Int(s)!)

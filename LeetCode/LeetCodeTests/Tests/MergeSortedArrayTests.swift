@@ -20,7 +20,7 @@ final class MergeSortedArrayTests: XCTestCase {
         let nums2 = [2, 5, 6]
         let n = 3
         
-        MergeSortedArray.merge(&nums1, m, nums2, n)
+        MergeSortedArray().merge(&nums1, m, nums2, n)
         
         XCTAssertEqual(nums1, [1, 2, 2, 3, 5, 6])
     }
@@ -31,7 +31,7 @@ final class MergeSortedArrayTests: XCTestCase {
         let nums2 = [Int]()
         let n = 0
         
-        MergeSortedArray.merge(&nums1, m, nums2, n)
+        MergeSortedArray().merge(&nums1, m, nums2, n)
         
         XCTAssertEqual(nums1, [1])
     }
@@ -42,7 +42,7 @@ final class MergeSortedArrayTests: XCTestCase {
         let nums2 = [1]
         let n = 1
         
-        MergeSortedArray.merge(&nums1, m, nums2, n)
+        MergeSortedArray().merge(&nums1, m, nums2, n)
         
         XCTAssertEqual(nums1, [1])
     }
@@ -53,7 +53,7 @@ final class MergeSortedArrayTests: XCTestCase {
         let nums2 = [1, 2, 2]
         let n = 3
         
-        MergeSortedArray.merge(&nums1, m, nums2, n)
+        MergeSortedArray().merge(&nums1, m, nums2, n)
         
         XCTAssertEqual(nums1, [-1, 0, 0, 1, 2, 2, 3, 3, 3])
     }

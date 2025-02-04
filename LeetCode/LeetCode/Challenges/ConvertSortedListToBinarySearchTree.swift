@@ -30,7 +30,7 @@ struct ConvertSortedListToBinarySearchTree {
     //nodes in the linked list have been converted into binary tree nodes - this uses DFS as the left tree is fully built
     //before the right tree. To find the middle node we use a fast and slow pointer as we don't know in advance how many nodes
     //are in the linked list.
-    static func sortedListToBST(_ head: ListNode?) -> TreeNode? {
+    func sortedListToBST(_ head: ListNode?) -> TreeNode? {
         guard let head = head else {
             return nil
         }
@@ -40,7 +40,7 @@ struct ConvertSortedListToBinarySearchTree {
         return root
     }
     
-    static func dfs(_ node: ListNode?) -> TreeNode? {
+    func dfs(_ node: ListNode?) -> TreeNode? {
         //base case
         guard let node = node else {
             return nil

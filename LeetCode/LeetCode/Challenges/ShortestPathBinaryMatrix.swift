@@ -24,7 +24,7 @@ struct ShortestPathBinaryMatrix {
     //that nodes is navigatable i.e. 0 value. Using BFS we then traverse through the neighbors of each nodes until we either
     //find the target (bottom right) or we run out of neighbors. To prevent an infinite search, any visited nodes we insert
     //into a `visited` set.
-    static func shortestPathBinaryMatrix(_ grid: [[Int]]) -> Int {
+    func shortestPathBinaryMatrix(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
             return -1
         }
@@ -80,7 +80,7 @@ struct ShortestPathBinaryMatrix {
         return -1 //error state
     }
     
-    private static func validNeighbors(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
+    private func validNeighbors(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]
@@ -113,7 +113,7 @@ struct ShortestPathBinaryMatrix {
     //if that nodes is navigatable i.e. 0 value. Gradually build up an adjacent list for all nodes in the graph, using BFS we
     //then traverse through the neighbors until we either find the target (bottom right) or we run out of neighbors. To prevent
     //an infinite search, any visited nodes we insert into a `visited` set.
-    static func shortestPathBinaryMatrixLongWay(_ grid: [[Int]]) -> Int {
+    func shortestPathBinaryMatrixLongWay(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
             return -1
         }

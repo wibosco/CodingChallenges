@@ -32,7 +32,7 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
     //NB: Don't be tempted on finding an element that equals `target` to then perform a linear search for the start and
     //end indexes as this potentially could involve search the whole of `nums` and turn our `log n` solution into a `n`
     //solution
-    static func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
+    func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         guard !nums.isEmpty else {
             return [-1, -1]
         }

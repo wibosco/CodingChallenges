@@ -20,7 +20,7 @@ final class AllNodesDistanceKInBinaryTreeTests: XCTestCase {
         let target = dfs(root, targetValue)
         let k = 2
         
-        let result = AllNodesDistanceKInBinaryTree.distanceK(root, target, k)
+        let result = AllNodesDistanceKInBinaryTree().distanceK(root, target, k)
         
         XCTAssertEqual(result.count, 3)
         XCTAssertEqual(result, [7, 4, 1])
@@ -33,7 +33,7 @@ final class AllNodesDistanceKInBinaryTreeTests: XCTestCase {
         let target = dfs(root, targetValue)
         let k = 3
         
-        let result = AllNodesDistanceKInBinaryTree.distanceK(root, target, k)
+        let result = AllNodesDistanceKInBinaryTree().distanceK(root, target, k)
         
         XCTAssertEqual(result.count, 0)
         XCTAssertEqual(result, [])
@@ -46,7 +46,7 @@ final class AllNodesDistanceKInBinaryTreeTests: XCTestCase {
         let target = dfs(root, targetValue)
         let k = 3
         
-        let result = AllNodesDistanceKInBinaryTree.distanceK(root, target, k)
+        let result = AllNodesDistanceKInBinaryTree().distanceK(root, target, k)
         
         XCTAssertEqual(result.count, 1)
         XCTAssertEqual(result, [2])

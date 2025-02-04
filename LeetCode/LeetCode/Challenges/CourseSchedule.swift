@@ -36,7 +36,7 @@ struct CourseSchedule {
     //parent-child vertices but also between parent and any descendant vertice. Once we have traversed all vertices from a
     //source we remove it from `currentVisited` as any further encounter with that vertice shouldn't be treated as the sign
     //of a cycle. When all possible source vertices has been traversed we can return `cycleDetected`.
-    static func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
+    func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
         var adjList = Array(repeating: [Int](), count: numCourses)
         
         for prerequisite in prerequisites {
@@ -62,7 +62,7 @@ struct CourseSchedule {
         return true
     }
     
-    private static func dfs(_ adjList: [[Int]], _ source: Int, _ visited: inout Set<Int>, _ currentVisited: inout Set<Int>, _ cycleDetected: inout Bool) {
+    private func dfs(_ adjList: [[Int]], _ source: Int, _ visited: inout Set<Int>, _ currentVisited: inout Set<Int>, _ cycleDetected: inout Bool) {
         guard !cycleDetected else {
             return
         }

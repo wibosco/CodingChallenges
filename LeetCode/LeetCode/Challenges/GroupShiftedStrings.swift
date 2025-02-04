@@ -24,7 +24,7 @@ struct GroupShiftedStrings {
     //dictionary with the string as the value. If two strings have the same distance then it means that they have been
     //rotated the same number of times and so match - this matching string is added to the `grouping` dict under the same
     //key. At the end we extract all values as an array of strings and merged them to form the result.
-    static func groupStrings(_ strings: [String]) -> [[String]] {
+    func groupStrings(_ strings: [String]) -> [[String]] {
         guard strings.count > 1 else {
             return [strings]
         }

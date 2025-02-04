@@ -18,7 +18,7 @@ final class SortListTests: XCTestCase {
         let data = [4, 2, 1, 3]
         let head = ListNode.deserialize(data)
         
-        let result = SortList.sortList(head)
+        let result = SortList().sortList(head)
         
         let values = ListNode.serialize(result)
         
@@ -29,7 +29,7 @@ final class SortListTests: XCTestCase {
         let data = [-1, 5, 3, 4, 0]
         let head = ListNode.deserialize(data)
         
-        let result = SortList.sortList(head)
+        let result = SortList().sortList(head)
         
         let values = ListNode.serialize(result)
         
@@ -40,7 +40,7 @@ final class SortListTests: XCTestCase {
         let data = [Int]()
         let head = ListNode.deserialize(data)
         
-        let result = SortList.sortList(head)
+        let result = SortList().sortList(head)
         
         let values = ListNode.serialize(result)
         

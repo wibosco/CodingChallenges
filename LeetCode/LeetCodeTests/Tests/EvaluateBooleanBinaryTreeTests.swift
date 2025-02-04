@@ -17,7 +17,7 @@ final class EvaluateBooleanBinaryTreeTests: XCTestCase {
         let data = [2,1,3,nil,nil,0,1]
         let root = TreeNode.deserialize(data)
         
-        let result = EvaluateBooleanBinaryTree.evaluateTree(root)
+        let result = EvaluateBooleanBinaryTree().evaluateTree(root)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class EvaluateBooleanBinaryTreeTests: XCTestCase {
         let data = [0]
         let root = TreeNode.deserialize(data)
         
-        let result = EvaluateBooleanBinaryTree.evaluateTree(root)
+        let result = EvaluateBooleanBinaryTree().evaluateTree(root)
         
         XCTAssertFalse(result)
     }

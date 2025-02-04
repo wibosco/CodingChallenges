@@ -17,7 +17,7 @@ final class FindAllAnagramsInAStringTests: XCTestCase {
         let s = "cbaebabacd"
         let p = "abc"
         
-        let result = FindAllAnagramsInAString.findAnagrams(s, p)
+        let result = FindAllAnagramsInAString().findAnagrams(s, p)
         
         XCTAssertEqual(result, [0, 6])
     }
@@ -26,7 +26,7 @@ final class FindAllAnagramsInAStringTests: XCTestCase {
         let s = "abab"
         let p = "ab"
         
-        let result = FindAllAnagramsInAString.findAnagrams(s, p)
+        let result = FindAllAnagramsInAString().findAnagrams(s, p)
         
         XCTAssertEqual(result, [0, 1, 2])
     }
@@ -35,7 +35,7 @@ final class FindAllAnagramsInAStringTests: XCTestCase {
         let s = "aaaaaaaaaa"
         let p = "aaaaaaaaaaaaa"
         
-        let result = FindAllAnagramsInAString.findAnagrams(s, p)
+        let result = FindAllAnagramsInAString().findAnagrams(s, p)
         
         XCTAssertEqual(result, [Int]())
     }

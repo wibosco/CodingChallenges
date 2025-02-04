@@ -22,7 +22,7 @@ struct MaximumNumberOfVowelsInASubstringOfGivenLength {
     //rightwards we check if the right-most element is a vowel and increment `currentVowelCount` if it is. We then check if that
     //vowel count is the largest we've seen yet. Afterwards we reduce the elements in the window by 1 to prepare for the next
     //iteration by popping the left-most element - if that left-most element was a vowel we decrement `currentVowelCount`.
-    static func maxVowels(_ s: String, _ k: Int) -> Int {
+    func maxVowels(_ s: String, _ k: Int) -> Int {
         let characters = Array(s)
         let vowels = Set<Character>(["a", "e", "i", "o", "u"])
         

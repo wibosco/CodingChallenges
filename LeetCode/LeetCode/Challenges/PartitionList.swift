@@ -22,7 +22,7 @@ struct PartitionList {
     //original list we break any cycle that may have been introduced between `lessThanList` and `greaterThanList` by assigning the
     //tail of `greaterThanList` to point at nil. We then combine the two lists and using the dummy node for `lessThanList` return
     //the head of `lessThanList`.
-    static func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
+    func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
         var lessThanList: ListNode? = ListNode(-1)
         let sentinelLess = lessThanList //needed to hold onto the head of lessThanList
         

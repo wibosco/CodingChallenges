@@ -30,7 +30,7 @@ struct IsGraphBipartite {
     //encounter a node that already exists in `nodes` and isn't that levels color i.e. matches the "parent" nodes color
     //then we know that this graph is bipartite and can return false. We repeat this process of "coloring" for each node as
     //it possible for that this graph contains unconnected nodes/subgraphs.
-    static func isBipartite(_ graph: [[Int]]) -> Bool {
+    func isBipartite(_ graph: [[Int]]) -> Bool {
         var nodes = [Int: Bool]() //true: red, false: green
         
         for i in 0..<graph.count { //may contain multiple graphs
@@ -83,7 +83,7 @@ struct IsGraphBipartite {
     //encounter a node that already exists in `nodes` and isn't that levels color i.e. matches the "parent" nodes color
     //then we know that this graph is bipartite and can return false. We repeat this process of "coloring" for each node as
     //it possible for that this graph contains unconnected nodes/subgraphs.
-    static func isBipartiteDFS(_ graph: [[Int]]) -> Bool {
+    func isBipartiteDFS(_ graph: [[Int]]) -> Bool {
         var nodes = [Int: Bool]() //true: red, false: green
         
         for i in 0..<graph.count { //may contain multiple graphs

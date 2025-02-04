@@ -23,7 +23,7 @@ struct OpenTheLock {
     //of any given combination on demand. We are also able to combine the `deadends` with the `visited` set to determine whether
     //to continue do that branch or not. After each loop of the BFS we create increment the `level` as we move farther away from
     //"0000"
-    static func openLock(_ deadends: [String], _ target: String) -> Int {
+    func openLock(_ deadends: [String], _ target: String) -> Int {
         var visited: Set<String> = Set(deadends)
         let start = "0000"
         

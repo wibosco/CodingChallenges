@@ -23,7 +23,7 @@ struct CountSortedVowelStrings {
     //Using DFS we and a sorted array `vowels`, we create all possible non-descending combinations of vowels for the given
     //length `n`. At each recursive call we start extracting elements from `vowels` at the `currentIndex` value which is the
     //previous calls index - this ensures that the combination that we are constructing is non-descending.
-    static func countVowelStrings(_ n: Int) -> Int {
+    func countVowelStrings(_ n: Int) -> Int {
         let vowels = ["a", "e", "i", "o", "u"]
         var count = 0
         
@@ -32,7 +32,7 @@ struct CountSortedVowelStrings {
         return count
     }
     
-    private static func dfs(_ n: Int, _ vowels: [String], _ currentIndex: Int, _ count: inout Int) {
+    private func dfs(_ n: Int, _ vowels: [String], _ currentIndex: Int, _ count: inout Int) {
         guard n > 0 else {
             count += 1
             return

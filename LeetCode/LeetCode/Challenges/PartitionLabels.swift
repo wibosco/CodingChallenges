@@ -26,7 +26,7 @@ struct PartitionLabels {
     //allow for O(1) retrieval when determining the end/right-most boundary of a partition. Next we iterate through each
     //character in `s` to determine if that character falls inside the existing partition or is the start of a new partition. As
     //each partition ends we determine it's length and add it to `lengths`.
-    static func partitionLabels(_ s: String) -> [Int] {
+    func partitionLabels(_ s: String) -> [Int] {
         var characterEndIndexes = [Character: Int]()
         let characters = Array(s)
         
@@ -79,7 +79,7 @@ struct PartitionLabels {
     //end/right-most index then we merge the partitions, taking care to extend the new partition end/right-most index if needed;
     //else if the start/left-most index is before the partitions end/right-most index we create a new partition. Once all
     //partitions have been merged we determine the length of each partition.
-    static func partitionLabelsA(_ s: String) -> [Int] {
+    func partitionLabelsA(_ s: String) -> [Int] {
         var startEnd = [Character: (Int, Int)]() //[letter: (start, end)]
         
         let characters = Array(s)

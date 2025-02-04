@@ -17,7 +17,7 @@ final class MultiplyStringsTests: XCTestCase {
         let num1 = "2"
         let num2 = "3"
         
-        let result = MultiplyStrings.multiply(num1, num2)
+        let result = MultiplyStrings().multiply(num1, num2)
         
         XCTAssertEqual(result, "6")
     }
@@ -26,7 +26,7 @@ final class MultiplyStringsTests: XCTestCase {
         let num1 = "123"
         let num2 = "456"
         
-        let result = MultiplyStrings.multiply(num1, num2)
+        let result = MultiplyStrings().multiply(num1, num2)
         
         XCTAssertEqual(result, "56088")
     }
@@ -35,7 +35,7 @@ final class MultiplyStringsTests: XCTestCase {
         let num1 = "9133"
         let num2 = "0"
         
-        let result = MultiplyStrings.multiply(num1, num2)
+        let result = MultiplyStrings().multiply(num1, num2)
         
         XCTAssertEqual(result, "0")
     }

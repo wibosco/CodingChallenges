@@ -20,7 +20,7 @@ struct ExcelSheetColumnNumber {
     //Treating the alphabet as base 26, we iterate through `columnTitle` in reverse and multiple the value of each character
     //by the position of that character in the string to get it's base 26 value. We then add those values together to get the
     //total value
-    static func titleToNumberDic(_ columnTitle: String) -> Int {
+    func titleToNumberDic(_ columnTitle: String) -> Int {
         let alphabet: [Character: Int] = ["A": 1,
                                           "B": 2,
                                           "C": 3,
@@ -70,7 +70,7 @@ struct ExcelSheetColumnNumber {
     //Treating the alphabet as base 26, we iterate through `columnTitle` in reverse and multiple the value of each character
     //by the position of that character in the string to get it's base 26 value. We then add those values together to get the
     //total value
-    static func titleToNumber(_ columnTitle: String) -> Int {
+    func titleToNumber(_ columnTitle: String) -> Int {
         var base = 1
         var num = 0
         

@@ -18,7 +18,7 @@ final class KokoEatingBananasTests: XCTestCase {
         let piles = [3, 6, 7, 11]
         let h = 8
         
-        let result = KokoEatingBananas.minEatingSpeed(piles, h)
+        let result = KokoEatingBananas().minEatingSpeed(piles, h)
         
         XCTAssertEqual(result, 4)
     }
@@ -27,7 +27,7 @@ final class KokoEatingBananasTests: XCTestCase {
         let piles = [30, 11, 23, 4, 20]
         let h = 5
         
-        let result = KokoEatingBananas.minEatingSpeed(piles, h)
+        let result = KokoEatingBananas().minEatingSpeed(piles, h)
         
         XCTAssertEqual(result, 30)
     }
@@ -36,7 +36,7 @@ final class KokoEatingBananasTests: XCTestCase {
         let piles = [30, 11, 23, 4, 20]
         let h = 6
         
-        let result = KokoEatingBananas.minEatingSpeed(piles, h)
+        let result = KokoEatingBananas().minEatingSpeed(piles, h)
         
         XCTAssertEqual(result, 23)
     }

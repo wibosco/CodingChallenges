@@ -19,7 +19,7 @@ struct FindTheDifferenceOfTwoArrays {
     //First we convert the arrays into sets as this will allows for O(1) retrieval performance. Then we iterate through each
     //set and check if that current element is in the other set - if it isn't we add it to our distinct sets. Once both sets
     //have been processed we return the distinct arrays.
-    static func findDifference(_ nums1: [Int], _ nums2: [Int]) -> [[Int]] {
+    func findDifference(_ nums1: [Int], _ nums2: [Int]) -> [[Int]] {
         let nums1Set = Set(nums1)
         let nums2Set = Set(nums2)
         

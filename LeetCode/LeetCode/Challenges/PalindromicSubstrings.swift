@@ -30,7 +30,7 @@ struct PalindromicSubstrings {
     //increment `palindromes`. Once we have check each starting position we return the count.
     //
     //Similar to: https://leetcode.com/problems/longest-palindromic-substring/
-    static func countSubstrings(_ s: String) -> Int {
+    func countSubstrings(_ s: String) -> Int {
         var palindromes: Int = 0
         
         let chars = Array(s)
@@ -43,7 +43,7 @@ struct PalindromicSubstrings {
         return palindromes
     }
     
-    private static func countPalindromes(_ chars: [Character], _ left: Int, _ right: Int, _ palindromes: inout Int) {
+    private func countPalindromes(_ chars: [Character], _ left: Int, _ right: Int, _ palindromes: inout Int) {
         var left = left
         var right = right
         

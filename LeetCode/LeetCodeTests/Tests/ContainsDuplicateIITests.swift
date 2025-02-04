@@ -17,7 +17,7 @@ final class ContainsDuplicateIITests: XCTestCase {
         let nums = [1, 2, 3, 1]
         let k = 3
         
-        let result = ContainsDuplicateII.containsNearbyDuplicate(nums, k)
+        let result = ContainsDuplicateII().containsNearbyDuplicate(nums, k)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class ContainsDuplicateIITests: XCTestCase {
         let nums = [1, 0, 1, 1]
         let k = 1
         
-        let result = ContainsDuplicateII.containsNearbyDuplicate(nums, k)
+        let result = ContainsDuplicateII().containsNearbyDuplicate(nums, k)
         
         XCTAssertTrue(result)
     }
@@ -35,7 +35,7 @@ final class ContainsDuplicateIITests: XCTestCase {
         let nums = [1, 2, 3, 1, 2, 3]
         let k = 2
         
-        let result = ContainsDuplicateII.containsNearbyDuplicate(nums, k)
+        let result = ContainsDuplicateII().containsNearbyDuplicate(nums, k)
         
         XCTAssertFalse(result)
     }

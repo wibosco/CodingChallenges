@@ -25,7 +25,7 @@ struct TrimABinarySearchTree {
     //
     //It's important to note that the guard statements also handle the case where the true tree root is outside of
     //low...high
-    static func trimBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
+    func trimBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }
@@ -62,7 +62,7 @@ struct TrimABinarySearchTree {
     //process for checking that nodes are within the upper bounds of the range.
     //
     //Similar to: https://leetcode.com/problems/split-bst/
-    static func trimBSTTwoMethods(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
+    func trimBSTTwoMethods(_ root: TreeNode?, _ low: Int, _ high: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }
@@ -83,7 +83,7 @@ struct TrimABinarySearchTree {
         return newRoot
     }
     
-    private static func trim(_ node: TreeNode?, _ low: Int, _ high: Int) {
+    private func trim(_ node: TreeNode?, _ low: Int, _ high: Int) {
         guard let node = node else {
             return
         }

@@ -17,7 +17,7 @@ final class SumOfRootToLeafBinaryNumbersTests: XCTestCase {
         let data = [1,0,1,0,1,0,1]
         let root = TreeNode.deserialize(data)
         
-        let result = SumOfRootToLeafBinaryNumbers.sumRootToLeaf(root)
+        let result = SumOfRootToLeafBinaryNumbers().sumRootToLeaf(root)
         
         XCTAssertEqual(result, 22)
     }
@@ -26,7 +26,7 @@ final class SumOfRootToLeafBinaryNumbersTests: XCTestCase {
         let data = [0]
         let root = TreeNode.deserialize(data)
         
-        let result = SumOfRootToLeafBinaryNumbers.sumRootToLeaf(root)
+        let result = SumOfRootToLeafBinaryNumbers().sumRootToLeaf(root)
         
         XCTAssertEqual(result, 0)
     }

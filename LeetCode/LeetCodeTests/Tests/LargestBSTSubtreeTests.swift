@@ -17,7 +17,7 @@ final class LargestBSTSubtreeTests: XCTestCase {
         let data = [10,5,15,1,8,nil,7]
         let root = TreeNode.deserialize(data)
             
-        let result = LargestBSTSubtree.largestBSTSubtree(root)
+        let result = LargestBSTSubtree().largestBSTSubtree(root)
         
         XCTAssertEqual(result, 3)
     }
@@ -26,7 +26,7 @@ final class LargestBSTSubtreeTests: XCTestCase {
         let data = [4,2,7,2,3,5,nil,2,nil,nil,nil,nil,nil,1]
         let root = TreeNode.deserialize(data)
             
-        let result = LargestBSTSubtree.largestBSTSubtree(root)
+        let result = LargestBSTSubtree().largestBSTSubtree(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -35,7 +35,7 @@ final class LargestBSTSubtreeTests: XCTestCase {
         let data = [Int]()
         let root = TreeNode.deserialize(data)
             
-        let result = LargestBSTSubtree.largestBSTSubtree(root)
+        let result = LargestBSTSubtree().largestBSTSubtree(root)
         
         XCTAssertEqual(result, 0)
     }

@@ -16,7 +16,7 @@ final class MinimumPenaltyForAShopTests: XCTestCase {
     func test_A() {
         let customers = "YYNY"
         
-        let result = MinimumPenaltyForAShop.bestClosingTime(customers)
+        let result = MinimumPenaltyForAShop().bestClosingTime(customers)
         
         XCTAssertEqual(result, 2)
     }
@@ -24,7 +24,7 @@ final class MinimumPenaltyForAShopTests: XCTestCase {
     func test_B() {
         let customers = "NNNNN"
         
-        let result = MinimumPenaltyForAShop.bestClosingTime(customers)
+        let result = MinimumPenaltyForAShop().bestClosingTime(customers)
         
         XCTAssertEqual(result, 0)
     }
@@ -32,7 +32,7 @@ final class MinimumPenaltyForAShopTests: XCTestCase {
     func test_C() {
         let customers = "YYYY"
         
-        let result = MinimumPenaltyForAShop.bestClosingTime(customers)
+        let result = MinimumPenaltyForAShop().bestClosingTime(customers)
         
         XCTAssertEqual(result, 4)
     }

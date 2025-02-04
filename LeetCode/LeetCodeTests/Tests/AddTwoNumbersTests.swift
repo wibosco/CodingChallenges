@@ -18,7 +18,7 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([2, 4, 3])
         let l2 = ListNode.deserialize([5, 6, 4])
         
-        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers().addTwoNumbers(l1, l2)
         
         let values = ListNode.serialize(result)
         
@@ -29,7 +29,7 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([0])
         let l2 = ListNode.deserialize([0])
         
-        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers().addTwoNumbers(l1, l2)
         
         let values = ListNode.serialize(result)
         
@@ -40,7 +40,7 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([9, 9, 9, 9, 9, 9, 9])
         let l2 = ListNode.deserialize([9, 9, 9, 9])
         
-        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers().addTwoNumbers(l1, l2)
         
         let values = ListNode.serialize(result)
         
@@ -51,7 +51,7 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([2, 4, 9])
         let l2 = ListNode.deserialize([5, 6, 4, 9])
         
-        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers().addTwoNumbers(l1, l2)
         
         let values = ListNode.serialize(result)
         
@@ -62,7 +62,7 @@ final class AddTwoNumbersTests: XCTestCase {
         let l1 = ListNode.deserialize([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
         let l2 = ListNode.deserialize([5, 6, 4])
         
-        let result = AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result = AddTwoNumbers().addTwoNumbers(l1, l2)
         
         let values = ListNode.serialize(result)
         

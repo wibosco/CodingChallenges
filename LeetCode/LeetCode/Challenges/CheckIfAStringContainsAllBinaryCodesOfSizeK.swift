@@ -26,7 +26,7 @@ struct CheckIfAStringContainsAllBinaryCodesOfSizeK {
     //add that substring to our `substrings` set. As `substrings` is a set any duplicate substring that is produced will
     //be discarded. We then increment our window to the left by one element and repeat the process. Once all possible
     //substrings have been produced and added to `substrings` we take the count of that set and check it is equal to 2^k.
-    static func hasAllCodes(_ s: String, _ k: Int) -> Bool {
+    func hasAllCodes(_ s: String, _ k: Int) -> Bool {
         let characters = Array(s)
         guard characters.count >= k else {
             return false

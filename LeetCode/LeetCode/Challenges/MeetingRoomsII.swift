@@ -28,7 +28,7 @@ struct MeetingRoomsII {
     //is greater than or equal to the current time we can free a room (decrement `roomsInUse`) and check the next end time to see
     //if we can free any more rooms until the end time go beyond the current time. Once we have iterated through all start times
     //we return the max rooms in use at one time.
-    static func minMeetingRooms(_ intervals: [[Int]]) -> Int {
+    func minMeetingRooms(_ intervals: [[Int]]) -> Int {
         guard intervals.count > 1 else {
             return 1
         }

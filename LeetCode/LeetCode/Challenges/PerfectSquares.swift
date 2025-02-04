@@ -24,7 +24,7 @@ struct PerfectSquares {
     //be set so that if two branches have the same total they are effectively merged - this will
     //significantly speed up the BFS. The neighbor of each total is the `squares` set. If during
     //a level the total exceeds `n`, that branch is discarded.
-    static func numSquares(_ n: Int) -> Int {
+    func numSquares(_ n: Int) -> Int {
         var squares = Set<Int>()
         var i = 1
         while (i * i) <= n {

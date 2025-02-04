@@ -18,7 +18,7 @@ final class IntersectionOfTwoArraysTests: XCTestCase {
         let nums1 = [1, 2, 2, 1]
         let nums2 = [2, 2]
         
-        let intersectingValues = IntersectionOfTwoArrays.intersection(nums1, nums2)
+        let intersectingValues = IntersectionOfTwoArrays().intersection(nums1, nums2)
         
         let expectedValues = [2]
         
@@ -34,7 +34,7 @@ final class IntersectionOfTwoArraysTests: XCTestCase {
         let nums1 = [4, 9, 5]
         let nums2 = [9, 4, 9, 8, 4]
         
-        let intersectingValues = IntersectionOfTwoArrays.intersection(nums1, nums2)
+        let intersectingValues = IntersectionOfTwoArrays().intersection(nums1, nums2)
         
         let expectedValues = [4, 9]
         

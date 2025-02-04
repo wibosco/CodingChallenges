@@ -18,7 +18,7 @@ final class NestedListWeightSumTests: XCTestCase {
         let data = "[[1,1],2,[1,1]]"
         let nestedList = NestedInteger.deserialize(data)
         
-        let result = NestedListWeightSum.depthSum([nestedList])
+        let result = NestedListWeightSum().depthSum([nestedList])
         
         XCTAssertEqual(result, 10)
     }
@@ -27,7 +27,7 @@ final class NestedListWeightSumTests: XCTestCase {
         let data = "[1,[4,[6]]]"
         let nestedList = NestedInteger.deserialize(data)
         
-        let result = NestedListWeightSum.depthSum([nestedList])
+        let result = NestedListWeightSum().depthSum([nestedList])
         
         XCTAssertEqual(result, 27)
     }

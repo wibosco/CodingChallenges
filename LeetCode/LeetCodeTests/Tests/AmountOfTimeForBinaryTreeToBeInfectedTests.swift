@@ -18,7 +18,7 @@ final class AmountOfTimeForBinaryTreeToBeInfectedTests: XCTestCase {
         let data = [1,5,3,nil,4,10,6,9,2]
         let root = TreeNode.deserialize(data)
         
-        let result = AmountOfTimeForBinaryTreeToBeInfected.amountOfTime(root, start)
+        let result = AmountOfTimeForBinaryTreeToBeInfected().amountOfTime(root, start)
         
         XCTAssertEqual(result, 4)
     }
@@ -28,7 +28,7 @@ final class AmountOfTimeForBinaryTreeToBeInfectedTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = AmountOfTimeForBinaryTreeToBeInfected.amountOfTime(root, start)
+        let result = AmountOfTimeForBinaryTreeToBeInfected().amountOfTime(root, start)
         
         XCTAssertEqual(result, 0)
     }

@@ -37,7 +37,7 @@ final class IntersectionOfTwoLinkedListsTests: XCTestCase {
         
         intersectionParentNodeB?.next = intersectionNodeA
         
-        let result = IntersectionOfTwoLinkedLists.getIntersectionNode(headA, headB)
+        let result = IntersectionOfTwoLinkedLists().getIntersectionNode(headA, headB)
         
         XCTAssertTrue(result === intersectionNodeA)
     }
@@ -66,7 +66,7 @@ final class IntersectionOfTwoLinkedListsTests: XCTestCase {
         
         intersectionParentNodeB?.next = intersectionNodeA
         
-        let result = IntersectionOfTwoLinkedLists.getIntersectionNode(headA, headB)
+        let result = IntersectionOfTwoLinkedLists().getIntersectionNode(headA, headB)
         
         XCTAssertTrue(result === intersectionNodeA)
     }
@@ -80,7 +80,7 @@ final class IntersectionOfTwoLinkedListsTests: XCTestCase {
         
         
         
-        let result = IntersectionOfTwoLinkedLists.getIntersectionNode(headA, headB)
+        let result = IntersectionOfTwoLinkedLists().getIntersectionNode(headA, headB)
         
         XCTAssertNil(result)
     }

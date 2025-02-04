@@ -28,7 +28,7 @@ struct CapacityToShipPackagesWithinDDays {
     //a weight for the ships i.e. the left edge needs to move right; if the delivery can happen within the days using the current
     //weight we need to ensure that that weight is the minimum so we have to shrink the weight i.e. the right edge need to move
     //left.
-    static func shipWithinDays(_ weights: [Int], _ days: Int) -> Int {
+    func shipWithinDays(_ weights: [Int], _ days: Int) -> Int {
         var left = 0 // minimum weight which has to be the largest/heaviest in `weights`
         var right = 0 //maximum weight which is the sum of all elements in `weights` i.e. only one trip required
         

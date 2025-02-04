@@ -29,7 +29,7 @@ struct InsertInterval {
     //upper boundary to accommodate this new upper boundary (lower boundary never changes as it is either less than or equal
     //to the interval-to-be-merged lower boundary). If there isn't an overlap we add the interval to the `mergedIntervals`
     //array. Once all intervals have been compared we return the `mergedIntervals` array.
-    static func insert(_ intervals: [[Int]], _ newInterval: [Int]) -> [[Int]] {
+    func insert(_ intervals: [[Int]], _ newInterval: [Int]) -> [[Int]] {
         var intervals = intervals
         var insertedNewInterval = false
         

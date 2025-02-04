@@ -17,7 +17,7 @@ final class MinimumDifferenceBetweenHighestAndLowestOfKScoreTests: XCTestCase {
         let nums = [90]
         let k = 1
         
-        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore.minimumDifference(nums, k)
+        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore().minimumDifference(nums, k)
             
         XCTAssertEqual(result, 0)
     }
@@ -26,7 +26,7 @@ final class MinimumDifferenceBetweenHighestAndLowestOfKScoreTests: XCTestCase {
         let nums = [9, 4, 1, 7]
         let k = 2
         
-        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore.minimumDifference(nums, k)
+        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore().minimumDifference(nums, k)
             
         XCTAssertEqual(result, 2)
     }
@@ -35,7 +35,7 @@ final class MinimumDifferenceBetweenHighestAndLowestOfKScoreTests: XCTestCase {
         let nums = [87063, 61094, 44530, 21297, 95857, 93551, 9918]
         let k = 6
         
-        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore.minimumDifference(nums, k)
+        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore().minimumDifference(nums, k)
             
         XCTAssertEqual(result, 74560)
     }
@@ -44,7 +44,7 @@ final class MinimumDifferenceBetweenHighestAndLowestOfKScoreTests: XCTestCase {
         let nums = [93614, 91956, 83384, 14321, 29824, 89095, 96047, 25770, 39895]
         let k = 3
         
-        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore.minimumDifference(nums, k)
+        let result = MinimumDifferenceBetweenHighestAndLowestOfKScore().minimumDifference(nums, k)
             
         XCTAssertEqual(result, 4091)
     }

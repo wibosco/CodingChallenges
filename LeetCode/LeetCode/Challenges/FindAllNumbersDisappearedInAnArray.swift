@@ -23,7 +23,7 @@ struct FindAllNumbersDisappearedInAnArray {
     //again and add any indexes that have a positive value to `disappearedNumbers` as that index isn't included as a
     //value of `nums`. Please note that as our output is expected to start at 1 we need to add or subtract 1 when
     //required.
-    static func findDisappearedNumbers(_ nums: [Int]) -> [Int] {
+    func findDisappearedNumbers(_ nums: [Int]) -> [Int] {
         var disappearedNumbers = [Int]()
         var nums = nums
         
@@ -52,7 +52,7 @@ struct FindAllNumbersDisappearedInAnArray {
     //First we convert the `nums` array into a set to allow for O(1) retrieval time. We then iterate through the range 1...n
     //and check if that index is in the set `numsSet`. If that index is not in the set then we append it to
     //`disappearedNumbers`; if that index is in the set we skip over it.
-    static func findDisappearedNumbersExtraStorage(_ nums: [Int]) -> [Int] {
+    func findDisappearedNumbersExtraStorage(_ nums: [Int]) -> [Int] {
         var disappearedNumbers = [Int]()
         let numsSet = Set(nums)
         

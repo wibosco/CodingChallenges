@@ -24,7 +24,7 @@ struct DecodeString {
     //determine how times that encoded char array should be expanded so keep popping from the stack until we have that multiplier
     //(`k`) i.e. 6. We now decode that char array by pushing it onto the stack `k` times. Repeat this process until all `[` and
     //`]` encoding has been expanded and we have come to the end of our `chars` array.
-    static func decodeString(_ s: String) -> String {
+    func decodeString(_ s: String) -> String {
         var stack = [Character]()
         for char in s {
             if char == "]" {

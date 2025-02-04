@@ -24,7 +24,7 @@ struct PairsOfSongsWithTotalDurationsDivisibleBy60 {
     //requirement that paired songs need to be "(i + j) % 60 == 0"
     //
     //Similar to: https://leetcode.com/problems/two-sum/
-    static func numPairsDivisibleBy60(_ time: [Int]) -> Int {
+    func numPairsDivisibleBy60(_ time: [Int]) -> Int {
         var remainders = [Int: Int]()
         var pairs = 0
         

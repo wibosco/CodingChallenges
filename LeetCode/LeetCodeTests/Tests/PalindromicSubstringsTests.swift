@@ -16,7 +16,7 @@ final class PalindromicSubstringsTests: XCTestCase {
     func test_A() {
         let s = "abc"
         
-        let result = PalindromicSubstrings.countSubstrings(s)
+        let result = PalindromicSubstrings().countSubstrings(s)
         
         XCTAssertEqual(result, 3)
     }
@@ -24,7 +24,7 @@ final class PalindromicSubstringsTests: XCTestCase {
     func test_B() {
         let s = "aaa"
         
-        let result = PalindromicSubstrings.countSubstrings(s)
+        let result = PalindromicSubstrings().countSubstrings(s)
         
         XCTAssertEqual(result, 6)
     }
@@ -32,7 +32,7 @@ final class PalindromicSubstringsTests: XCTestCase {
     func test_C() {
         let s = "aba"
         
-        let result = PalindromicSubstrings.countSubstrings(s)
+        let result = PalindromicSubstrings().countSubstrings(s)
         
         XCTAssertEqual(result, 4)
     }
@@ -40,7 +40,7 @@ final class PalindromicSubstringsTests: XCTestCase {
     func test_D() {
         let s = "abba"
         
-        let result = PalindromicSubstrings.countSubstrings(s)
+        let result = PalindromicSubstrings().countSubstrings(s)
         
         XCTAssertEqual(result, 6)
     }
@@ -48,7 +48,7 @@ final class PalindromicSubstringsTests: XCTestCase {
     func test_E() {
         let s = "fdsklf"
         
-        let result = PalindromicSubstrings.countSubstrings(s)
+        let result = PalindromicSubstrings().countSubstrings(s)
         
         XCTAssertEqual(result, 6)
     }

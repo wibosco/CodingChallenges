@@ -33,7 +33,7 @@ struct KthSymbolInGrammar {
     //will always be `0` (remember we are indexing from 1) - the opposite approach is taken if the parent is `1` as it's children
     //will be `1 0`. We repeat this process until eventually the recursive call stack is empty and the leaf nodes value has been
     //found
-    static func kthGrammar(_ n: Int, _ k: Int) -> Int {
+    func kthGrammar(_ n: Int, _ k: Int) -> Int {
         guard n != 1 else { //base case
             return 0
         }

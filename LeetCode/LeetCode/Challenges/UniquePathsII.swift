@@ -22,7 +22,7 @@ struct UniquePathsII {
     //As this grid can contain obstacles we treat these cells as a restart for that paths counts and so set the value of
     //those cells to zero. We can repeat this process for all cells  until we reach the target cell (bottom right) at which
     //point we will have the number of possible paths to that cell as the cells value.
-    static func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
+    func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
         guard obstacleGrid[0][0] != 1 else {
             return 0
         }
@@ -70,7 +70,7 @@ struct UniquePathsII {
     //cell is in the bounds of the matrix i.e. for `down`, row is less than the row count and for `right`, column is less
     //then the column count. We repeat these moves until either we reach `target` at which time we increment `count` or we
     //can't take any more moves on our current branch and so abandon it.
-    static func uniquePathsWithObstaclesDFS(_ obstacleGrid: [[Int]]) -> Int {
+    func uniquePathsWithObstaclesDFS(_ obstacleGrid: [[Int]]) -> Int {
         guard obstacleGrid[0][0] != 1 else {
             return 0
         }
@@ -83,7 +83,7 @@ struct UniquePathsII {
         return count
     }
     
-    private static func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ target: [Int], _ count: inout Int) {
+    private func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ target: [Int], _ count: inout Int) {
         guard [row, column] != target else {
             count += 1
             return

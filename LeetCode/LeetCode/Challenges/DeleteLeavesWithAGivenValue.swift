@@ -20,7 +20,7 @@ struct DeleteLeavesWithAGivenValue {
     //Solution Description:
     //Using DFS we traverse to the leaf nodes of each branch and then pass back if the parent node should delete that child. This
     //ensures that if a parent node becomes a leaf node and it's value matches `target` it will also be deleted.
-    static func removeLeafNodes(_ root: TreeNode?, _ target: Int) -> TreeNode? {
+    func removeLeafNodes(_ root: TreeNode?, _ target: Int) -> TreeNode? {
         if dfs(root, target) {
             return nil
         }
@@ -28,7 +28,7 @@ struct DeleteLeavesWithAGivenValue {
         return root
     }
     
-    private static func dfs(_ node: TreeNode?, _ target: Int) -> Bool {
+    private func dfs(_ node: TreeNode?, _ target: Int) -> Bool {
         guard let node = node else {
             return true
         }

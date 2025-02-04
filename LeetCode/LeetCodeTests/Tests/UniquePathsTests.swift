@@ -17,7 +17,7 @@ final class UniquePathsTests: XCTestCase {
         let m = 3
         let n = 7
         
-        let result = UniquePaths.uniquePaths(m, n)
+        let result = UniquePaths().uniquePaths(m, n)
         
         XCTAssertEqual(result, 28)
     }
@@ -26,7 +26,7 @@ final class UniquePathsTests: XCTestCase {
         let m = 3
         let n = 2
         
-        let result = UniquePaths.uniquePaths(m, n)
+        let result = UniquePaths().uniquePaths(m, n)
         
         XCTAssertEqual(result, 3)
     }
@@ -35,7 +35,7 @@ final class UniquePathsTests: XCTestCase {
         let m = 19
         let n = 13
         
-        let result = UniquePaths.uniquePaths(m, n)
+        let result = UniquePaths().uniquePaths(m, n)
         
         XCTAssertEqual(result, 86493225)
     }

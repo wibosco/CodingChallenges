@@ -27,7 +27,7 @@ struct FindTheTownJudge {
     //is such an element we have our judge; if not the town doesn't have a judge.
     //
     //In graph theory a `*degree` is either the number of incoming (`inDegree`) and outgoing (`outDegree`) edges
-    static func findJudge(_ n: Int, _ trust: [[Int]]) -> Int {
+    func findJudge(_ n: Int, _ trust: [[Int]]) -> Int {
         var townFolk = Array(repeating: 0, count: n)
         
         for relationship in trust {

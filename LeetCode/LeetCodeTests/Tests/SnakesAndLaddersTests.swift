@@ -21,7 +21,7 @@ final class SnakesAndLaddersTests: XCTestCase {
                      [-1, -1, -1, -1, -1, -1],
                      [-1, 15, -1, -1, -1, -1]]
         
-        let result = SnakesAndLadders.snakesAndLadders(board)
+        let result = SnakesAndLadders().snakesAndLadders(board)
         
         XCTAssertEqual(result, 4)
     }
@@ -30,7 +30,7 @@ final class SnakesAndLaddersTests: XCTestCase {
         let board = [[-1, -1],
                      [-1, 3]]
         
-        let result = SnakesAndLadders.snakesAndLadders(board)
+        let result = SnakesAndLadders().snakesAndLadders(board)
         
         XCTAssertEqual(result, 1)
     }
@@ -40,7 +40,7 @@ final class SnakesAndLaddersTests: XCTestCase {
                      [1, 1, 1],
                      [-1, 1 ,1]]
         
-        let result = SnakesAndLadders.snakesAndLadders(board)
+        let result = SnakesAndLadders().snakesAndLadders(board)
         
         XCTAssertEqual(result, -1)
     }
@@ -52,7 +52,7 @@ final class SnakesAndLaddersTests: XCTestCase {
                      [25, -1, 20, -1, -1],
                      [-1, -1, -1, -1, 15]]
         
-        let result = SnakesAndLadders.snakesAndLadders(board)
+        let result = SnakesAndLadders().snakesAndLadders(board)
         
         XCTAssertEqual(result, 2)
     }
@@ -63,7 +63,7 @@ final class SnakesAndLaddersTests: XCTestCase {
                      [-1, 10, -1, -1],
                      [-1, 6, 2, 8]]
         
-        let result = SnakesAndLadders.snakesAndLadders(board)
+        let result = SnakesAndLadders().snakesAndLadders(board)
         
         XCTAssertEqual(result, 2)
     }

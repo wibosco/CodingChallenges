@@ -17,7 +17,7 @@ final class MaximumWidthOfBinaryTreeTests: XCTestCase {
         let data = [1,3,2,5,3,nil,9]
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumWidthOfBinaryTree.widthOfBinaryTree(root)
+        let result = MaximumWidthOfBinaryTree().widthOfBinaryTree(root)
         
         XCTAssertEqual(result, 4)
     }
@@ -26,7 +26,7 @@ final class MaximumWidthOfBinaryTreeTests: XCTestCase {
         let data = [1,3,2,5,nil,nil,9,6,nil,7]
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumWidthOfBinaryTree.widthOfBinaryTree(root)
+        let result = MaximumWidthOfBinaryTree().widthOfBinaryTree(root)
         
         XCTAssertEqual(result, 7)
     }
@@ -35,7 +35,7 @@ final class MaximumWidthOfBinaryTreeTests: XCTestCase {
         let data = [1,3,2,5]
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumWidthOfBinaryTree.widthOfBinaryTree(root)
+        let result = MaximumWidthOfBinaryTree().widthOfBinaryTree(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -44,7 +44,7 @@ final class MaximumWidthOfBinaryTreeTests: XCTestCase {
         let data = [1,nil,3,nil,2,5,4]
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumWidthOfBinaryTree.widthOfBinaryTree(root)
+        let result = MaximumWidthOfBinaryTree().widthOfBinaryTree(root)
         
         XCTAssertEqual(result, 2)
     }

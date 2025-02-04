@@ -19,7 +19,7 @@ struct LengthOfLastWord {
     //non-space character at which point we start to count those characters. When continue counting until we either
     //reach the start of `s` or we encounter another space character at which point we our loop as the first word is
     //over.
-    static func lengthOfLastWord(_ s: String) -> Int {
+    func lengthOfLastWord(_ s: String) -> Int {
         var wordCount = 0
         
         for c in s.reversed() {

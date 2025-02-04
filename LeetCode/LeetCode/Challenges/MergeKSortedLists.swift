@@ -27,7 +27,7 @@ struct MergeKSortedLists {
     //then add the remaining of the other to merged list. We repeat this process for pairs in `lists`. With our reduced `lists`
     //we then recursively call `mergeKLists` passing the reduced `lists` to repeat the whole process. We only stop merging
     //once we get down to just the one element in `list`.
-    static func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
+    func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
         guard !lists.isEmpty else {
             return nil
         }
@@ -53,7 +53,7 @@ struct MergeKSortedLists {
         return mergeKLists(mergedLists)
     }
     
-    private static func mergeLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+    private func mergeLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         guard let list1 = list1, let list2 = list2 else {
             return list1 == nil ? list2: list1
         }
@@ -97,7 +97,7 @@ struct MergeKSortedLists {
     //both `list1` and `list2` choosing the smaller node from each list to add to the merged list as the new `tail`. To keep
     //access to the head of the merged list we employ a sentinel head node. We continue this until one list is exhausted and
     //then add the remaining of the other to merged list.
-    static func mergeKListsOneByOne(_ lists: [ListNode?]) -> ListNode? {
+    func mergeKListsOneByOne(_ lists: [ListNode?]) -> ListNode? {
         guard !lists.isEmpty else {
             return nil
         }

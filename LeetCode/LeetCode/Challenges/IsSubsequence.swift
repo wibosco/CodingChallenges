@@ -20,7 +20,7 @@ struct IsSubsequence {
     //then we advance/increment the `sP` to search for the next character in the sequence. Regardless of matching or not we
     //always advance/increment the `tP`. By iterating linearly through `t` we ensure that `s` is matched in the correct
     //order. At the end we know if all of `s` was found in `t`, if `sP` has went beyond the elements of `s`.
-    static func isSubsequence(_ s: String, _ t: String) -> Bool {
+    func isSubsequence(_ s: String, _ t: String) -> Bool {
         guard t.count >= s.count else {
             return false
         }

@@ -22,7 +22,7 @@ struct ReorderList {
     //then merged together with each step taking the reversed list's node and making it the `next` node of the non-reversed
     //list. As we don't use an additional data structure to hold the list we need before re-assigning `next` we need to hold
     //onto the old `next` and attach it to the new `next` so we don't lose anything.
-    static func reorderList(_ head: ListNode?) {
+    func reorderList(_ head: ListNode?) {
         var slow = head
         var fast = head
         
@@ -71,7 +71,7 @@ struct ReorderList {
     //Solution Description:
     //Using an array to store all nodes in order we use two pointers to move through the array from opposite sides, overriding
     //the left nodes `next` property to now point at the right node
-    static func reorderListTwoPointers(_ head: ListNode?) {
+    func reorderListTwoPointers(_ head: ListNode?) {
         var nodes = [ListNode]()
         var node: ListNode? = head
         

@@ -21,7 +21,7 @@ struct ReverseOddLevelsOfBinaryTree {
     //Using BFS we traverse the tree level-by-level. At each level we check if that level is odd, if it is we swap the current node's
     //value with its mirrored node's value - note how we don't swap the actual nodes just their values, this saves us having to
     //re-associate any child nodes. We repeat this process for all nodes in the tree.
-    static func reverseOddLevels(_ root: TreeNode?) -> TreeNode? {
+    func reverseOddLevels(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else {
             return nil
         }

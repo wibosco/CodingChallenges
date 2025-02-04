@@ -36,7 +36,7 @@ struct InterleavingString {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func isInterleave(_ s1: String, _ s2: String, _ s3: String) -> Bool {
+    func isInterleave(_ s1: String, _ s2: String, _ s3: String) -> Bool {
         guard (s1.count + s2.count) == s3.count else {
             return false
         }
@@ -49,7 +49,7 @@ struct InterleavingString {
         return found
     }
     
-    private static func interleave(_ s1: [Character], _ s1Index: Int, _ s2: [Character], _ s2Index: Int, _ s3: [Character], _ s3Index: Int, _ found: inout Bool, _ memo: inout Set<[Int]>) {
+    private func interleave(_ s1: [Character], _ s1Index: Int, _ s2: [Character], _ s2Index: Int, _ s3: [Character], _ s3Index: Int, _ found: inout Bool, _ memo: inout Set<[Int]>) {
         guard found != true else {
             return
         }

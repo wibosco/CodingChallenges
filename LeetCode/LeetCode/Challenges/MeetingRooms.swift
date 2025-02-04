@@ -20,7 +20,7 @@ struct MeetingRooms {
     //First we sort `intervals` by ascending start time and then iterate through that sorted array comparing the start
     //time and end time of neighbors to determine if any two meeting overlap. If they do overlap we immediately return
     //false; if there are no overlaps we return true
-    static func canAttendMeetings(_ intervals: [[Int]]) -> Bool {
+    func canAttendMeetings(_ intervals: [[Int]]) -> Bool {
         guard intervals.count > 1 else {
             return true
         }

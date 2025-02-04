@@ -17,7 +17,7 @@ final class FindTheIndexOfTheFirstOccurrenceInAStringTests: XCTestCase {
         let haystack = "hello"
         let needle = "he"
         
-        let result = FindTheIndexOfTheFirstOccurrenceInAString.strStr(haystack, needle)
+        let result = FindTheIndexOfTheFirstOccurrenceInAString().strStr(haystack, needle)
         
         XCTAssertEqual(result, 0)
     }
@@ -26,7 +26,7 @@ final class FindTheIndexOfTheFirstOccurrenceInAStringTests: XCTestCase {
         let haystack = "hello"
         let needle = "el"
         
-        let result = FindTheIndexOfTheFirstOccurrenceInAString.strStr(haystack, needle)
+        let result = FindTheIndexOfTheFirstOccurrenceInAString().strStr(haystack, needle)
         
         XCTAssertEqual(result, 1)
     }
@@ -35,7 +35,7 @@ final class FindTheIndexOfTheFirstOccurrenceInAStringTests: XCTestCase {
         let haystack = "leetcode"
         let needle = "leeto"
         
-        let result = FindTheIndexOfTheFirstOccurrenceInAString.strStr(haystack, needle)
+        let result = FindTheIndexOfTheFirstOccurrenceInAString().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }
@@ -44,7 +44,7 @@ final class FindTheIndexOfTheFirstOccurrenceInAStringTests: XCTestCase {
         let haystack = "a"
         let needle = "a"
         
-        let result = FindTheIndexOfTheFirstOccurrenceInAString.strStr(haystack, needle)
+        let result = FindTheIndexOfTheFirstOccurrenceInAString().strStr(haystack, needle)
         
         XCTAssertEqual(result, 0)
     }
@@ -53,7 +53,7 @@ final class FindTheIndexOfTheFirstOccurrenceInAStringTests: XCTestCase {
         let haystack = "a"
         let needle = "b"
         
-        let result = FindTheIndexOfTheFirstOccurrenceInAString.strStr(haystack, needle)
+        let result = FindTheIndexOfTheFirstOccurrenceInAString().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }
@@ -62,7 +62,7 @@ final class FindTheIndexOfTheFirstOccurrenceInAStringTests: XCTestCase {
         let haystack = "bb"
         let needle = "bbb"
         
-        let result = FindTheIndexOfTheFirstOccurrenceInAString.strStr(haystack, needle)
+        let result = FindTheIndexOfTheFirstOccurrenceInAString().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }

@@ -18,7 +18,7 @@ final class BinaryTreeZigzagLevelOrderTraversalTests: XCTestCase {
         let data = [3, 9, 20, nil, nil, 15, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeZigzagLevelOrderTraversal.zigzagLevelOrder(root)
+        let result = BinaryTreeZigzagLevelOrderTraversal().zigzagLevelOrder(root)
         
         XCTAssertEqual(result, [[3], [20, 9], [15, 7]])
     }
@@ -27,7 +27,7 @@ final class BinaryTreeZigzagLevelOrderTraversalTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeZigzagLevelOrderTraversal.zigzagLevelOrder(root)
+        let result = BinaryTreeZigzagLevelOrderTraversal().zigzagLevelOrder(root)
         
         XCTAssertEqual(result, [[1]])
     }
@@ -36,7 +36,7 @@ final class BinaryTreeZigzagLevelOrderTraversalTests: XCTestCase {
         let data = [Int?]()
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeZigzagLevelOrderTraversal.zigzagLevelOrder(root)
+        let result = BinaryTreeZigzagLevelOrderTraversal().zigzagLevelOrder(root)
         
         XCTAssertEqual(result, [[Int]]())
     }

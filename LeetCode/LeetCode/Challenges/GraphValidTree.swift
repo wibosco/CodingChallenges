@@ -47,7 +47,7 @@ struct GraphValidTree {
     //dictionary we check if it has `neighbor` i.e. in the past have we travelled `node -> neighbor` and are now trying to
     //travel `neighbor -> node`. If `neighbor` exists in the set of `node` then we skip, if not we check if `neighbor` exists
     //as a key in `paths`. If `neighbor` is a key, we have a loop.
-    static func validTree(_ n: Int, _ edges: [[Int]]) -> Bool {
+    func validTree(_ n: Int, _ edges: [[Int]]) -> Bool {
         //For the graph to be a valid tree, it must have exactly `n - 1` edges.
         //Any less, and it can't possibly be fully connected. Any more, and
         //it has to contain cycles.
@@ -80,7 +80,7 @@ struct GraphValidTree {
         return paths.count == n
     }
     
-    private static func dfs(_ node: Int, _ adjList: [[Int]], _ paths: inout [Int: Set<Int>], _ cycleDetected: inout Bool) {
+    private func dfs(_ node: Int, _ adjList: [[Int]], _ paths: inout [Int: Set<Int>], _ cycleDetected: inout Bool) {
         guard !cycleDetected else {
             return
         }
@@ -127,7 +127,7 @@ struct GraphValidTree {
     //run through all edges from a given node and haven't detected a loop we then just need to check if we actually visited each
     //node in the graph. We haven't visited each node then it means that there are isolated nodes in the graph so this graph
     //isn't a tree.
-    static func validTreeBFS(_ n: Int, _ edges: [[Int]]) -> Bool {
+    func validTreeBFS(_ n: Int, _ edges: [[Int]]) -> Bool {
         //For the graph to be a valid tree, it must have exactly `n - 1` edges.
         //Any less, and it can't possibly be fully connected. Any more, and
         //it has to contain cycles.
@@ -194,7 +194,7 @@ struct GraphValidTree {
     //A valid tree has one root (all nodes need to be connected) and no cycles by using a disjoint set we can test for both
     //conditions. First a check is made to ensure that edges are not too few or too many and then a check is that connecting
     //the nodes together does not result in a cycle
-    static func validTreeDisjointSet(_ n: Int, _ edges: [[Int]]) -> Bool {
+    func validTreeDisjointSet(_ n: Int, _ edges: [[Int]]) -> Bool {
         //For the graph to be a valid tree, it must have exactly `n - 1` edges.
         //Any less, and it can't possibly be fully connected. Any more, and
         //it has to contain cycles.

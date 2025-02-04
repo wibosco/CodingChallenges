@@ -16,7 +16,7 @@ final class MaximumProductSubarrayTests: XCTestCase {
     func test_A() {
         let nums = [2, 3, -2, 4]
         
-        let result = MaximumProductSubarray.maxProduct(nums)
+        let result = MaximumProductSubarray().maxProduct(nums)
         
         XCTAssertEqual(result, 6)
     }
@@ -24,7 +24,7 @@ final class MaximumProductSubarrayTests: XCTestCase {
     func test_B() {
         let nums = [-2, 0, -1]
         
-        let result = MaximumProductSubarray.maxProduct(nums)
+        let result = MaximumProductSubarray().maxProduct(nums)
         
         XCTAssertEqual(result, 0)
     }
@@ -32,7 +32,7 @@ final class MaximumProductSubarrayTests: XCTestCase {
     func test_C() {
         let nums = [-3, -1, -1]
         
-        let result = MaximumProductSubarray.maxProduct(nums)
+        let result = MaximumProductSubarray().maxProduct(nums)
         
         XCTAssertEqual(result, 3)
     }

@@ -31,7 +31,7 @@ struct Subsets {
     //
     //Similar to: https://leetcode.com/problems/combination-sum/
     //Similar to: https://leetcode.com/problems/permutations/
-    static func subsets(_ nums: [Int]) -> [[Int]] {
+    func subsets(_ nums: [Int]) -> [[Int]] {
         var subsets = [[Int]]()
         
         backtrack(nums, 0, [Int](), &subsets)
@@ -39,7 +39,7 @@ struct Subsets {
         return subsets
     }
     
-    private static func backtrack(_ nums: [Int], _ left: Int, _ current: [Int], _ subsets: inout [[Int]]) {
+    private func backtrack(_ nums: [Int], _ left: Int, _ current: [Int], _ subsets: inout [[Int]]) {
         subsets.append(current)
         
         guard left < nums.count else {

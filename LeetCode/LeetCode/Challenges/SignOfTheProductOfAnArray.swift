@@ -19,7 +19,7 @@ struct SignOfTheProductOfAnArray {
     //Iterating through `nums` we count the number of negative numbers that we encounter - if the count is odd then we know that
     //the product produced will be negative, if the count is even we know the product will be positive. A special case if we
     //encounter a zero, then we instantly return zero, as anything multiplied by zero will always be zero.
-    static func arraySign(_ nums: [Int]) -> Int {
+    func arraySign(_ nums: [Int]) -> Int {
         var negatives = 0
         for num in nums {
             guard num != 0 else {

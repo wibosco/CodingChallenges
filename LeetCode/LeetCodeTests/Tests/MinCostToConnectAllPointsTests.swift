@@ -21,7 +21,7 @@ final class MinCostToConnectAllPointsTests: XCTestCase {
                       [5, 2],
                       [7, 0]]
         
-        let result = MinCostToConnectAllPoints.minCostConnectPoints(points)
+        let result = MinCostToConnectAllPoints().minCostConnectPoints(points)
         
         XCTAssertEqual(result, 20)
     }
@@ -31,7 +31,7 @@ final class MinCostToConnectAllPointsTests: XCTestCase {
                       [-2, 5],
                       [-4, 1]]
         
-        let result = MinCostToConnectAllPoints.minCostConnectPoints(points)
+        let result = MinCostToConnectAllPoints().minCostConnectPoints(points)
         
         XCTAssertEqual(result, 18)
     }
@@ -42,7 +42,7 @@ final class MinCostToConnectAllPointsTests: XCTestCase {
                       [1, 0],
                       [-1, 1]]
         
-        let result = MinCostToConnectAllPoints.minCostConnectPoints(points)
+        let result = MinCostToConnectAllPoints().minCostConnectPoints(points)
         
         XCTAssertEqual(result, 4)
     }
@@ -51,7 +51,7 @@ final class MinCostToConnectAllPointsTests: XCTestCase {
         let points = [[-1000000, -1000000],
                       [1000000, 1000000]]
         
-        let result = MinCostToConnectAllPoints.minCostConnectPoints(points)
+        let result = MinCostToConnectAllPoints().minCostConnectPoints(points)
         
         XCTAssertEqual(result, 4000000)
     }
@@ -59,7 +59,7 @@ final class MinCostToConnectAllPointsTests: XCTestCase {
     func test_E() {
         let points = [[0, 0]]
         
-        let result = MinCostToConnectAllPoints.minCostConnectPoints(points)
+        let result = MinCostToConnectAllPoints().minCostConnectPoints(points)
         
         XCTAssertEqual(result, 0)
     }

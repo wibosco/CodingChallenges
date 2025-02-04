@@ -17,7 +17,7 @@ final class FindAllTheLonelyNodesTests: XCTestCase {
         let data = [1,2,3,nil,4]
         let root = TreeNode.deserialize(data)
         
-        let result = FindAllTheLonelyNodes.getLonelyNodes(root)
+        let result = FindAllTheLonelyNodes().getLonelyNodes(root)
         
         let expectedResult = Set([4])
         
@@ -33,7 +33,7 @@ final class FindAllTheLonelyNodesTests: XCTestCase {
         let data = [7,1,4,6,nil,5,3,nil,nil,nil,nil,nil,2]
         let root = TreeNode.deserialize(data)
         
-        let result = FindAllTheLonelyNodes.getLonelyNodes(root)
+        let result = FindAllTheLonelyNodes().getLonelyNodes(root)
         
         let expectedResult = Set([6,2])
         
@@ -49,7 +49,7 @@ final class FindAllTheLonelyNodesTests: XCTestCase {
         let data = [11,99,88,77,nil,nil,66,55,nil,nil,44,33,nil,nil,22]
         let root = TreeNode.deserialize(data)
         
-        let result = FindAllTheLonelyNodes.getLonelyNodes(root)
+        let result = FindAllTheLonelyNodes().getLonelyNodes(root)
         
         let expectedResult = Set([77,55,33,66,44,22])
         

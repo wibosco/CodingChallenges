@@ -24,7 +24,7 @@ struct SubdomainVisitCount {
     //be used as a key for `domainsCount`. `domainsCount` allows us to combine domain counts across multiple `cpdomains`
     //that share at least a subdomain. Once all `cpdomains` elements have been iterated we combine the key and value
     //combinations `domainsCount` into the expected string array format and return that array.
-    static func subdomainVisits(_ cpdomains: [String]) -> [String] {
+    func subdomainVisits(_ cpdomains: [String]) -> [String] {
         var domainsCount = [String: Int]()
         
         for cpdomain in cpdomains {

@@ -18,7 +18,7 @@ final class BinarySearchTests: XCTestCase {
         let nums = [-1, 0, 3, 5, 9, 12]
         let target = 9
         
-        let result = BinarySearch.search(nums, target)
+        let result = BinarySearch().search(nums, target)
         
         XCTAssertEqual(result, 4)
     }
@@ -27,7 +27,7 @@ final class BinarySearchTests: XCTestCase {
         let nums = [-1, 0, 3, 5, 9, 12]
         let target = 2
         
-        let result = BinarySearch.search(nums, target)
+        let result = BinarySearch().search(nums, target)
         
         XCTAssertEqual(result, -1)
     }
@@ -36,7 +36,7 @@ final class BinarySearchTests: XCTestCase {
         let nums = [5]
         let target = 5
         
-        let result = BinarySearch.search(nums, target)
+        let result = BinarySearch().search(nums, target)
         
         XCTAssertEqual(result, 0)
     }
@@ -45,7 +45,7 @@ final class BinarySearchTests: XCTestCase {
         let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         let target = 6
         
-        let result = BinarySearch.search(nums, target)
+        let result = BinarySearch().search(nums, target)
         
         XCTAssertEqual(result, 5)
     }

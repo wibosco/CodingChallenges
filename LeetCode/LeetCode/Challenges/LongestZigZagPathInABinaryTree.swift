@@ -24,7 +24,7 @@ struct LongestZigZagPathInABinaryTree {
     //where the same direction is taken we reset count. This ensures that we test all unique zig-zag paths in the tree in the same
     //traversal. At each node we check if this path is the longest yet and if so we assign it to `maxCount`. Once all nodes in the
     //tree have been visited we are able to return `maxCount` as the result.
-    static func longestZigZag(_ root: TreeNode?) -> Int {
+    func longestZigZag(_ root: TreeNode?) -> Int {
         var maxCount = 0
         
         dfs(root?.left, true, 1, &maxCount)
@@ -33,7 +33,7 @@ struct LongestZigZagPathInABinaryTree {
         return maxCount
     }
     
-    private static func dfs(_ node: TreeNode?, _ fromLeft: Bool, _ count: Int, _ maxCount: inout Int) {
+    private func dfs(_ node: TreeNode?, _ fromLeft: Bool, _ count: Int, _ maxCount: inout Int) {
         guard let node = node else {
             return
         }

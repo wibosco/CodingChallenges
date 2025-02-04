@@ -22,7 +22,7 @@ final class Search2DMatrixIITests: XCTestCase {
                       [18, 21, 23, 26, 30]]
         let target = 5
         
-        let result = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII().searchMatrix(matrix, target)
         
         XCTAssertTrue(result)
     }
@@ -35,7 +35,7 @@ final class Search2DMatrixIITests: XCTestCase {
                       [18, 21, 23, 26, 30]]
         let target = 20
         
-        let result = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII().searchMatrix(matrix, target)
         
         XCTAssertFalse(result)
     }
@@ -45,7 +45,7 @@ final class Search2DMatrixIITests: XCTestCase {
                       [-1]]
         let target = 0
         
-        let result = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII().searchMatrix(matrix, target)
         
         XCTAssertFalse(result)
     }
@@ -54,7 +54,7 @@ final class Search2DMatrixIITests: XCTestCase {
         let matrix = [[1, 1]]
         let target = 0
         
-        let result = Search2DMatrixII.searchMatrix(matrix, target)
+        let result = Search2DMatrixII().searchMatrix(matrix, target)
         
         XCTAssertFalse(result)
     }

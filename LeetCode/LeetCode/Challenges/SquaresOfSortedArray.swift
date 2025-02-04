@@ -22,7 +22,7 @@ struct SquaresOfSortedArray {
     //through `nums` from opposite ends comparing the squared values at each pointer (remember a negative number squared
     //becomes positive). Whichever squared value is greater we insert into our `squared` array (before any already inserted
     //values as they would be greater).
-    static func sortedSquares(_ nums: [Int]) -> [Int] {
+    func sortedSquares(_ nums: [Int]) -> [Int] {
         var squared = Array(repeating: 0, count: nums.count) //avoid having to expand the array with each new append
         
         var left = 0
@@ -57,7 +57,7 @@ struct SquaresOfSortedArray {
     //Solution Description:
     //Square all the nums and add them to the `squared` array in the order of `nums`. Then sort the squared array in ascending
     //order
-    static func sortedSquaresSorting(_ nums: [Int]) -> [Int] {
+    func sortedSquaresSorting(_ nums: [Int]) -> [Int] {
         var squared = [Int]()
         for num in nums {
             squared.append((num * num))

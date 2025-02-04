@@ -28,11 +28,11 @@ struct LowestCommonAncestorOfDeepestLeaves {
     //branches have been compared and can return the `lca`.
     //
     //Same as: https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
-    static func lcaDeepestLeaves(_ root: TreeNode?) -> TreeNode? {
+    func lcaDeepestLeaves(_ root: TreeNode?) -> TreeNode? {
         return dfs(root, 0).0
     }
     
-    private static func dfs(_ node: TreeNode?, _ depth: Int) -> (lca: TreeNode?, maxDeepFound: Int) {
+    private func dfs(_ node: TreeNode?, _ depth: Int) -> (lca: TreeNode?, maxDeepFound: Int) {
         guard let node = node else {
             return (nil, (depth - 1)) //found this branches max depth
         }

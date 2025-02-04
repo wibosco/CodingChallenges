@@ -17,7 +17,7 @@ final class RootEqualsSumOfChildrenTests: XCTestCase {
         let data = [10,4,6]
         let root = TreeNode.deserialize(data)
         
-        let result = RootEqualsSumOfChildren.checkTree(root)
+        let result = RootEqualsSumOfChildren().checkTree(root)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class RootEqualsSumOfChildrenTests: XCTestCase {
         let data = [5,3,1]
         let root = TreeNode.deserialize(data)
         
-        let result = RootEqualsSumOfChildren.checkTree(root)
+        let result = RootEqualsSumOfChildren().checkTree(root)
         
         XCTAssertFalse(result)
     }

@@ -17,7 +17,7 @@ final class GroupShiftedStringsTests: XCTestCase {
     func test_A() {
         let strings = ["abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"]
         
-        let groupings = GroupShiftedStrings.groupStrings(strings)
+        let groupings = GroupShiftedStrings().groupStrings(strings)
         
         let expectedGrouping = [["acef"], ["a", "z"], ["abc", "bcd", "xyz"], ["az", "ba"]]
         
@@ -32,7 +32,7 @@ final class GroupShiftedStringsTests: XCTestCase {
     func test_B() {
         let strings = ["a"]
         
-        let groupings = GroupShiftedStrings.groupStrings(strings)
+        let groupings = GroupShiftedStrings().groupStrings(strings)
         
         XCTAssertEqual(groupings, [["a"]])
     }
@@ -40,7 +40,7 @@ final class GroupShiftedStringsTests: XCTestCase {
     func test_C() {
         let strings = ["az", "ba"]
         
-        let groupings = GroupShiftedStrings.groupStrings(strings)
+        let groupings = GroupShiftedStrings().groupStrings(strings)
         
         let expectedGrouping = [["az", "ba"]]
         

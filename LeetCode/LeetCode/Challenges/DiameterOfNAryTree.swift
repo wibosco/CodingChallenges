@@ -31,14 +31,14 @@ struct DiameterOfNAryTree { //DiameterOfN-AryTree
     //
     //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707
     //for difference between height and depth
-    static func diameter(_ root: NaryTreeNode?) -> Int {
+    func diameter(_ root: NaryTreeNode?) -> Int {
         var longestDiameter = 0
         height(root, &longestDiameter)
         return longestDiameter
     }
     
     @discardableResult
-    private static func height(_ root: NaryTreeNode?, _ longestDiameter: inout Int) -> Int {
+    private func height(_ root: NaryTreeNode?, _ longestDiameter: inout Int) -> Int {
         guard let children = root?.children, !children.isEmpty else { //base when we go beyond a leaf
             return 0
         }

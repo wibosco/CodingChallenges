@@ -22,7 +22,7 @@ final class OpenTheLockTests: XCTestCase {
                         "2002"]
         let target = "0202"
         
-        let result = OpenTheLock.openLock(deadends, target)
+        let result = OpenTheLock().openLock(deadends, target)
         
         XCTAssertEqual(result, 6)
     }
@@ -31,7 +31,7 @@ final class OpenTheLockTests: XCTestCase {
         let deadends = ["8888"]
         let target = "0009"
         
-        let result = OpenTheLock.openLock(deadends, target)
+        let result = OpenTheLock().openLock(deadends, target)
         
         XCTAssertEqual(result, 1)
     }
@@ -40,7 +40,7 @@ final class OpenTheLockTests: XCTestCase {
         let deadends = ["8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"]
         let target = "8888"
         
-        let result = OpenTheLock.openLock(deadends, target)
+        let result = OpenTheLock().openLock(deadends, target)
         
         XCTAssertEqual(result, -1)
     }
@@ -49,7 +49,7 @@ final class OpenTheLockTests: XCTestCase {
         let deadends = ["0000"]
         let target = "8888"
         
-        let result = OpenTheLock.openLock(deadends, target)
+        let result = OpenTheLock().openLock(deadends, target)
         
         XCTAssertEqual(result, -1)
     }

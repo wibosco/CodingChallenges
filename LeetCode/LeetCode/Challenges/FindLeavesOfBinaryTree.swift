@@ -54,7 +54,7 @@ struct FindLeavesOfBinaryTree {
     //   | h = 0 |
     //   +-------+
 
-    static func findLeaves(_ root: TreeNode?) -> [[Int]] {
+    func findLeaves(_ root: TreeNode?) -> [[Int]] {
         var leaves = [[Int]]()
         
         dfs(root, &leaves)
@@ -63,7 +63,7 @@ struct FindLeavesOfBinaryTree {
     }
     
     @discardableResult
-    private static func dfs(_ node: TreeNode?, _ leaves: inout [[Int]]) -> Int {
+    private func dfs(_ node: TreeNode?, _ leaves: inout [[Int]]) -> Int {
         guard let node = node else {
             return 0
         }

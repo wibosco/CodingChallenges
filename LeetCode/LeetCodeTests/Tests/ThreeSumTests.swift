@@ -16,7 +16,7 @@ final class ThreeSumTests: XCTestCase {
     func test_A() {
         let nums = [-1, 0, 1, 2, -1, -4]
         
-        let triplets = ThreeSum.threeSum(nums)
+        let triplets = ThreeSum().threeSum(nums)
         
         let expectedTriplets = [[-1, -1, 2], [-1, 0, 1]]
         
@@ -31,7 +31,7 @@ final class ThreeSumTests: XCTestCase {
     func test_B() {
         let nums = [Int]()
         
-        let triplets = ThreeSum.threeSum(nums)
+        let triplets = ThreeSum().threeSum(nums)
         
         XCTAssertEqual(triplets, [[Int]]())
     }
@@ -39,7 +39,7 @@ final class ThreeSumTests: XCTestCase {
     func test_C() {
         let nums = [0]
         
-        let triplets = ThreeSum.threeSum(nums)
+        let triplets = ThreeSum().threeSum(nums)
         
         XCTAssertEqual(triplets, [[Int]]())
     }

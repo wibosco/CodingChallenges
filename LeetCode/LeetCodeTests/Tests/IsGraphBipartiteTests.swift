@@ -16,7 +16,7 @@ final class IsGraphBipartiteTests: XCTestCase {
     func test_A() {
         let graph = [[1, 2, 3], [0, 2], [0, 1, 3], [0, 2]]
         
-        let result = IsGraphBipartite.isBipartite(graph)
+        let result = IsGraphBipartite().isBipartite(graph)
         
         XCTAssertFalse(result)
     }
@@ -24,7 +24,7 @@ final class IsGraphBipartiteTests: XCTestCase {
     func test_B() {
         let graph = [[1, 3], [0, 2], [1, 3], [0, 2]]
         
-        let result = IsGraphBipartite.isBipartite(graph)
+        let result = IsGraphBipartite().isBipartite(graph)
         
         XCTAssertTrue(result)
     }

@@ -16,7 +16,7 @@ final class IncreasingTripletSubsequenceTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3, 4, 5]
         
-        let result = IncreasingTripletSubsequence.increasingTriplet(nums)
+        let result = IncreasingTripletSubsequence().increasingTriplet(nums)
         
         XCTAssertTrue(result)
     }
@@ -24,7 +24,7 @@ final class IncreasingTripletSubsequenceTests: XCTestCase {
     func test_B() {
         let nums = [5, 4, 3, 2, 1]
         
-        let result = IncreasingTripletSubsequence.increasingTriplet(nums)
+        let result = IncreasingTripletSubsequence().increasingTriplet(nums)
         
         XCTAssertFalse(result)
     }
@@ -32,7 +32,7 @@ final class IncreasingTripletSubsequenceTests: XCTestCase {
     func test_C() {
         let nums = [2, 1, 5, 0, 4, 6]
         
-        let result = IncreasingTripletSubsequence.increasingTriplet(nums)
+        let result = IncreasingTripletSubsequence().increasingTriplet(nums)
         
         XCTAssertTrue(result)
     }

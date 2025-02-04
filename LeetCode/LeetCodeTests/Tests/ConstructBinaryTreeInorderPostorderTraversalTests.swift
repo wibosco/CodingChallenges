@@ -18,7 +18,7 @@ final class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
         let inorder = [9, 3, 15, 20, 7]
         let postorder = [9, 15, 7, 20, 3]
         
-        let root = ConstructBinaryTreeInorderPostorderTraversal.buildTree(inorder, postorder)
+        let root = ConstructBinaryTreeInorderPostorderTraversal().buildTree(inorder, postorder)
         
         let result = TreeNode.serialize(root)
         
@@ -29,7 +29,7 @@ final class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
         let inorder = [-1]
         let postorder = [-1]
         
-        let root = ConstructBinaryTreeInorderPostorderTraversal.buildTree(inorder, postorder)
+        let root = ConstructBinaryTreeInorderPostorderTraversal().buildTree(inorder, postorder)
         
         let result = TreeNode.serialize(root)
         
@@ -40,7 +40,7 @@ final class ConstructBinaryTreeInorderPostorderTraversalTests: XCTestCase {
         let inorder = [1, 2]
         let postorder = [2, 1]
         
-        let root = ConstructBinaryTreeInorderPostorderTraversal.buildTree(inorder, postorder)
+        let root = ConstructBinaryTreeInorderPostorderTraversal().buildTree(inorder, postorder)
         
         let result = TreeNode.serialize(root)
         

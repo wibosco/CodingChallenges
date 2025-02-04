@@ -20,7 +20,7 @@ final class MergeTwoBinaryTreesTests: XCTestCase {
         let tree1 = TreeNode.deserialize(data1)
         let tree2 = TreeNode.deserialize(data2)
         
-        let mergedTree = MergeTwoBinaryTrees.mergeTrees(tree1, tree2)
+        let mergedTree = MergeTwoBinaryTrees().mergeTrees(tree1, tree2)
         
         let result = TreeNode.serialize(mergedTree)
         
@@ -34,7 +34,7 @@ final class MergeTwoBinaryTreesTests: XCTestCase {
         let tree1 = TreeNode.deserialize(data1)
         let tree2 = TreeNode.deserialize(data2)
         
-        let mergedTree = MergeTwoBinaryTrees.mergeTrees(tree1, tree2)
+        let mergedTree = MergeTwoBinaryTrees().mergeTrees(tree1, tree2)
         
         let result = TreeNode.serialize(mergedTree)
         

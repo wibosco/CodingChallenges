@@ -25,7 +25,7 @@ struct SingleNumber {
     //N.B. In an XOR operation the order isn't important - https://en.wikipedia.org/wiki/XOR_gate
     //
     //N.B. https://www.youtube.com/watch?v=qMPX1AOa83k
-    static func singleNumber(_ nums: [Int]) -> Int {
+    func singleNumber(_ nums: [Int]) -> Int {
         var result = 0 // n ^ 0 = n so 0 is a safe first value
         
         for num in nums {
@@ -44,7 +44,7 @@ struct SingleNumber {
     //Using a set (for O(1) search time) to store `nums` elements that we have already seen, we loop through `nums` and check
     //if that element is already in `singles`. If it is we know it can't be the single and can remove it from the `singles`; if
     //it is not then we add it to `singles` and continue looping
-    static func singleNumberSet(_ nums: [Int]) -> Int {
+    func singleNumberSet(_ nums: [Int]) -> Int {
         var singles = Set<Int>()
         
         for num in nums {

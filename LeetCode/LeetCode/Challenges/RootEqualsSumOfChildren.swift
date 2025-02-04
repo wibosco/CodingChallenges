@@ -16,7 +16,7 @@ struct RootEqualsSumOfChildren {
     //
     //Solution Description:
     //We sum the `root` node's left and right child nodes and compare that value against the value of root.
-    static func checkTree(_ root: TreeNode?) -> Bool {
+    func checkTree(_ root: TreeNode?) -> Bool {
         guard let root = root, let left = root.left, let right = root.right else {
             return false
         }

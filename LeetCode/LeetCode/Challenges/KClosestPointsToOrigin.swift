@@ -25,7 +25,7 @@ struct KClosestPointsToOrigin {
     //
     //N.B. Here we are using Lomutos partitioning scheme, see:
     //https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
-    static func kClosest(_ points: [[Int]], _ k: Int) -> [[Int]] {
+    func kClosest(_ points: [[Int]], _ k: Int) -> [[Int]] {
         var points = points
         quickSelect(&points, 0, (points.count - 1), k) //note the "-1" for right
         
@@ -34,7 +34,7 @@ struct KClosestPointsToOrigin {
         return closetPoints
     }
     
-    private static func quickSelect(_ points: inout [[Int]], _ left: Int, _ right: Int, _ k: Int) {
+    private func quickSelect(_ points: inout [[Int]], _ left: Int, _ right: Int, _ k: Int) {
         guard left < right else { //needed to ensure that we don't go out of bounds
             return
         }
@@ -50,7 +50,7 @@ struct KClosestPointsToOrigin {
         }
     }
     
-    private static func partition(_ points: inout [[Int]], _ left: Int, _ right: Int) -> Int {
+    private func partition(_ points: inout [[Int]], _ left: Int, _ right: Int) -> Int {
         let pivot = squaredDistance(points[right]) //note that the pivot is set using the right pointer
         
         var i = left // `i` will track the start of the section that is > pivot
@@ -70,7 +70,7 @@ struct KClosestPointsToOrigin {
         return i
     }
     
-    private static func squaredDistance(_ point: [Int]) -> Int {
+    private func squaredDistance(_ point: [Int]) -> Int {
         let xValue = pow(Double(point[0]), Double(2))
         let yValue = pow(Double(point[1]), Double(2))
         

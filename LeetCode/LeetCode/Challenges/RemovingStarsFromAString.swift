@@ -19,7 +19,7 @@ struct RemovingStarsFromAString {
     //Solution Description:
     //As we iterate through `s`, if we encounter a `*` we pop the last element from the stack, if we encounter anything else
     //we add it to the stack. Once all characters in `s` have been processed we convert the stack into a string and return it.
-    static func removeStars(_ s: String) -> String {
+    func removeStars(_ s: String) -> String {
         var stack = [Character]()
         
         for c in s {

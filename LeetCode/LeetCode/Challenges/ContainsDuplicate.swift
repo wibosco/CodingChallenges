@@ -20,7 +20,7 @@ struct ContainsDuplicate {
     //whenever we encounter a new element we check if it already in `seen`. If it is in `seen` we have a duplicate and can
     //immediately exit and return true; if it isn't in `seen` we add to `seen` and continue onto the next element. If we iterate
     //through all the elements in `nums` we return false as it contains no duplicates.
-    static func containsDuplicate(_ nums: [Int]) -> Bool {
+    func containsDuplicate(_ nums: [Int]) -> Bool {
         var seen = Set<Int>()
         
         for num in nums {

@@ -19,7 +19,7 @@ final class DiameterOfBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = DiameterOfBinaryTree.diameterOfBinaryTree(root)
+        let result = DiameterOfBinaryTree().diameterOfBinaryTree(root)
         
         XCTAssertEqual(result, 3)
     }
@@ -29,7 +29,7 @@ final class DiameterOfBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = DiameterOfBinaryTree.diameterOfBinaryTree(root)
+        let result = DiameterOfBinaryTree().diameterOfBinaryTree(root)
         
         XCTAssertEqual(result, 1)
     }

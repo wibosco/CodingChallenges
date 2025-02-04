@@ -18,7 +18,7 @@ struct BuildingsWithOceanView {
     //Solution Description:
     //Coming from right to left (ocean inwards) we track the tallest building that have so far, if a building is taller than it
     //then it has an ocean view if not then it doesn't.
-    static func findBuildings(_ heights: [Int]) -> [Int] {
+    func findBuildings(_ heights: [Int]) -> [Int] {
         var currentTallest = heights.last!
         var oceanViews = [(heights.count - 1)]
         
@@ -53,7 +53,7 @@ struct BuildingsWithOceanView {
     //As x increases, y decreases always, then it’s a monotonically decreasing function.
     //
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
-    static func findBuildingsStack(_ heights: [Int]) -> [Int] {
+    func findBuildingsStack(_ heights: [Int]) -> [Int] {
         var stack = [Int]()
         var oceanViews = [Int]()
 

@@ -34,7 +34,7 @@ struct DailyTemperatures {
     //
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
     //See: https://www.youtube.com/watch?v=cTBiBSnjO3c
-    static func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
+    func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
         var wait = Array(repeating: 0, count: temperatures.count)
         var stack = [Int]()
         
@@ -60,7 +60,7 @@ struct DailyTemperatures {
     //The outer loop, loops through each temperature in order with the inner loop lopping through the temperatures after
     //the outer loop's temperature. A check is made to test if the inner temperature is greater than the outer. If so the
     //difference in days is added to the `wait` array and the inner loop breaks, if not the inner continues searching.
-    static func dailyTemperaturesTwoLoops(_ temperatures: [Int]) -> [Int] {
+    func dailyTemperaturesTwoLoops(_ temperatures: [Int]) -> [Int] {
         var wait = Array(repeating: 0, count: temperatures.count)
         for i in 0..<temperatures.count {
             for j in (i + 1)..<temperatures.count {

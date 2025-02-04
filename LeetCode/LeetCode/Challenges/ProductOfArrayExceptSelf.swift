@@ -19,7 +19,7 @@ struct ProductOfArrayExceptSelf {
     //value. What makes this trickier is that `nums` can contain zeros. If `nums` contains one zero then the only element in
     //the `result` array that won't be zero is that zero element. If `nums` contains multiple zeros then all elements in
     //`result` will be zero
-    static func productExceptSelf(_ nums: [Int]) -> [Int] {
+    func productExceptSelf(_ nums: [Int]) -> [Int] {
         var zeroCount = 0
         var total = 1
         var nonZeroTotal = 1
@@ -70,7 +70,7 @@ struct ProductOfArrayExceptSelf {
     //be invalid and need to be recalculated. By making two passes left-to-right and right-to-left we can successfully
     //omit any 0 indexes from our `prefixProducts`. If there exists more than one 0 then our product would still be 0
     //but this is to be expected.
-    static func productExceptSelfProducts(_ nums: [Int]) -> [Int] {
+    func productExceptSelfProducts(_ nums: [Int]) -> [Int] {
         var productsFromTheLeft = Array(repeating: 1, count: nums.count)
         var leftProduct = 1
         for i in 0..<nums.count {

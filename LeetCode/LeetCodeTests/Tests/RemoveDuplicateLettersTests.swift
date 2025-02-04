@@ -16,7 +16,7 @@ final class RemoveDuplicateLettersTests: XCTestCase {
     func test_A() {
         let s = "bcabc"
         
-        let result = RemoveDuplicateLetters.removeDuplicateLetters(s)
+        let result = RemoveDuplicateLetters().removeDuplicateLetters(s)
         
         XCTAssertEqual(result, "abc")
     }
@@ -24,7 +24,7 @@ final class RemoveDuplicateLettersTests: XCTestCase {
     func test_B() {
         let s = "cbacdcbc"
         
-        let result = RemoveDuplicateLetters.removeDuplicateLetters(s)
+        let result = RemoveDuplicateLetters().removeDuplicateLetters(s)
         
         XCTAssertEqual(result, "acdb")
     }
@@ -32,7 +32,7 @@ final class RemoveDuplicateLettersTests: XCTestCase {
     func test_C() {
         let s = "dedabc"
         
-        let result = RemoveDuplicateLetters.removeDuplicateLetters(s)
+        let result = RemoveDuplicateLetters().removeDuplicateLetters(s)
         
         XCTAssertEqual(result, "deabc")
     }

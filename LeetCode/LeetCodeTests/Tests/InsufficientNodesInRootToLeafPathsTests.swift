@@ -18,7 +18,7 @@ final class InsufficientNodesInRootToLeafPathsTests: XCTestCase {
         let data = [1,2,3,4,-99,-99,7,8,9,-99,-99,12,13,-99,14]
         let root = TreeNode.deserialize(data)
         
-        let result = InsufficientNodesInRootToLeafPaths.sufficientSubset(root, limit)
+        let result = InsufficientNodesInRootToLeafPaths().sufficientSubset(root, limit)
         
         let values = TreeNode.serialize(result)
         
@@ -30,7 +30,7 @@ final class InsufficientNodesInRootToLeafPathsTests: XCTestCase {
         let data = [5,4,8,11,nil,17,4,7,1,nil,nil,5,3]
         let root = TreeNode.deserialize(data)
         
-        let result = InsufficientNodesInRootToLeafPaths.sufficientSubset(root, limit)
+        let result = InsufficientNodesInRootToLeafPaths().sufficientSubset(root, limit)
         
         let values = TreeNode.serialize(result)
         
@@ -42,7 +42,7 @@ final class InsufficientNodesInRootToLeafPathsTests: XCTestCase {
         let data = [1,2,-3,-5,nil,4,nil]
         let root = TreeNode.deserialize(data)
         
-        let result = InsufficientNodesInRootToLeafPaths.sufficientSubset(root, limit)
+        let result = InsufficientNodesInRootToLeafPaths().sufficientSubset(root, limit)
         
         let values = TreeNode.serialize(result)
         

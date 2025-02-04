@@ -30,7 +30,7 @@ struct SplitBST {
     //`target` there. Once we have searched all nodes in the tree we should have our two trees which can be returned.
     //
     //Similar to: https://leetcode.com/problems/trim-a-binary-search-tree/
-    static func splitBST(_ root: TreeNode?, _ target: Int) -> [TreeNode?] {
+    func splitBST(_ root: TreeNode?, _ target: Int) -> [TreeNode?] {
         guard let root = root else {
             return [nil, nil] //lessThanOrEqualTree, GreaterThanTree
         }

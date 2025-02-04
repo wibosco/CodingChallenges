@@ -17,7 +17,7 @@ final class ConvertSortedListToBinarySearchTreeTests: XCTestCase {
         let data = [-10,-3,0,5,9]
         let head = ListNode.deserialize(data)
         
-        let result = ConvertSortedListToBinarySearchTree.sortedListToBST(head)
+        let result = ConvertSortedListToBinarySearchTree().sortedListToBST(head)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [0,-3,9,-10,nil,5])
@@ -27,7 +27,7 @@ final class ConvertSortedListToBinarySearchTreeTests: XCTestCase {
         let data = [Int]()
         let head = ListNode.deserialize(data)
         
-        let result = ConvertSortedListToBinarySearchTree.sortedListToBST(head)
+        let result = ConvertSortedListToBinarySearchTree().sortedListToBST(head)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [Int]())

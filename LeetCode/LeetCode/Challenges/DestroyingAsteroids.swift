@@ -22,7 +22,7 @@ struct DestroyingAsteroids {
     //with `mass`. If `mass` is equal or larger then the asteroid then it is absorbed into `mass`; if the asteroid is larger
     //then we exit early and return false. Finally after we have iterated through all the asteroids we return true as the
     //planet has survived
-    static func asteroidsDestroyed(_ mass: Int, _ asteroids: [Int]) -> Bool {
+    func asteroidsDestroyed(_ mass: Int, _ asteroids: [Int]) -> Bool {
         var mass = mass
         let asteroids = asteroids.sorted { $0 < $1 }
         

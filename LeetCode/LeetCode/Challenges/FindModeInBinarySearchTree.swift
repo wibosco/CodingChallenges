@@ -25,7 +25,7 @@ struct FindModeInBinarySearchTree {
     //count `maxCount` we have seen so far, if the two counts match then we add `node[i]` to `modes`; if `count` is greater
     //than `maxCount` then we remove all elements from `modes` and add `nodes[i]`; if `count` is less than `maxCount` we
     //move onto the next unique value in `nodes`. After all elements in `nodes` have been check we return `modes`.
-     static func findMode(_ root: TreeNode?) -> [Int] {
+     func findMode(_ root: TreeNode?) -> [Int] {
         let nodes = inorder(root)
         
         var modes = [Int]()
@@ -60,7 +60,7 @@ struct FindModeInBinarySearchTree {
         return modes
     }
     
-    private static func inorder(_ node: TreeNode?) -> [Int] {
+    private func inorder(_ node: TreeNode?) -> [Int] {
         guard let node = node else {
             return [Int]()
         }
@@ -82,7 +82,7 @@ struct FindModeInBinarySearchTree {
     //increment its count otherwise we set the count to 1. Once all nodes in the tree have been visited we iterate
     //through the `frequency` dictionary and add each node/value that has a count of `maxCount` to `modes`. `modes` is
     //then returned.
-    static func findModeFrequency(_ root: TreeNode?) -> [Int] {
+    func findModeFrequency(_ root: TreeNode?) -> [Int] {
         var frequency = [Int: Int]()
         var maxCount = 0
         
@@ -99,7 +99,7 @@ struct FindModeInBinarySearchTree {
         return modes
     }
     
-    private static func dfs(_ node: TreeNode?, _ frequency: inout [Int: Int], _ maxCount: inout Int) {
+    private func dfs(_ node: TreeNode?, _ frequency: inout [Int: Int], _ maxCount: inout Int) {
         guard let node = node else {
             return
         }

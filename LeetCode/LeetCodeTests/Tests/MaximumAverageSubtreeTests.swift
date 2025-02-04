@@ -17,7 +17,7 @@ final class MaximumAverageSubtreeTests: XCTestCase {
         let data = [5,6,1]
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumAverageSubtree.maximumAverageSubtree(root)
+        let result = MaximumAverageSubtree().maximumAverageSubtree(root)
         
         XCTAssertEqual(result, 6.0, accuracy: 0.00001)
     }
@@ -26,7 +26,7 @@ final class MaximumAverageSubtreeTests: XCTestCase {
         let data = [0,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumAverageSubtree.maximumAverageSubtree(root)
+        let result = MaximumAverageSubtree().maximumAverageSubtree(root)
         
         XCTAssertEqual(result, 1.0, accuracy: 0.00001)
     }

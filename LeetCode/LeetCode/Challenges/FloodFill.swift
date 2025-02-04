@@ -28,7 +28,7 @@ struct FloodFill {
     //test if it can be filled i.e. is the same color as `sr, sc` and hasn't visited before. If that neighbor we add it
     //to the queue and eventually convert it's color. Once the queue is empty we have traversed all possible vertices
     //from `sr, sc` and can return the updated image.
-    static func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
+    func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
         let relativeIndexing = [    [-1, 0],
                                 [0, -1], [0, 1],
                                      [1, 0]
@@ -75,7 +75,7 @@ struct FloodFill {
     //test if it can be filled i.e. is the same color as `sr, sc` and hasn't visited before. If that neighbor we add it
     //to the queue and eventually convert it's color. Once the queue is empty we have traversed all possible vertices
     //from `sr, sc` and can return the updated image.
-    static func floodFillDFS(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
+    func floodFillDFS(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
         let oldColor = image[sr][sc]
         var newImage = image
         
@@ -86,7 +86,7 @@ struct FloodFill {
         return newImage
     }
     
-    private static func dfs(_ image: inout [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int, _ oldColor: Int, _ visited: inout Set<[Int]>) {
+    private func dfs(_ image: inout [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int, _ oldColor: Int, _ visited: inout Set<[Int]>) {
         let relativeIndexing = [[-1, 0], [0, -1], [0, 1], [1, 0]] //[row, column]
         
         image[sr][sc] = newColor
@@ -100,7 +100,7 @@ struct FloodFill {
     
     // MARK: - Neighbors
     
-    private static func visitableNeighbors(_ image: [[Int]], _ sr: Int, _ sc: Int, _ oldColor: Int, _ relativeIndexing: [[Int]], _ visited: Set<[Int]>) -> [[Int]] {
+    private func visitableNeighbors(_ image: [[Int]], _ sr: Int, _ sc: Int, _ oldColor: Int, _ relativeIndexing: [[Int]], _ visited: Set<[Int]>) -> [[Int]] {
         var neighbors = [[Int]]()
         
         for relativeIndex in relativeIndexing {

@@ -24,7 +24,7 @@ struct JumpGame {
     //if it is possible to jump directly to the target index from the current index (`root`). If we can we set `found`
     //to true and return; if not we build the possible neighbors, check that we have't already visited them, delve
     //deep on each unvisited neighbour and repeat the process.
-    static func canJump(_ nums: [Int]) -> Bool {
+    func canJump(_ nums: [Int]) -> Bool {
         guard nums.count > 1 else {
             return true
         }
@@ -38,7 +38,7 @@ struct JumpGame {
         return found
     }
     
-    private static func dfs(_ nums: [Int], _ root: Int, _ target: Int, _ visited: inout Set<Int>, _ found: inout Bool) {
+    private func dfs(_ nums: [Int], _ root: Int, _ target: Int, _ visited: inout Set<Int>, _ found: inout Bool) {
         guard !found else {
             return
         }
@@ -80,7 +80,7 @@ struct JumpGame {
     //the tree in a BFS manner searching for `target` (`nums` end index). At level we can determine if it is possible
     //to jump directly to the target index. If we can we return true; if not we build the possible neighbors, check
     //that we have't already visited them, add each unvisited neighbour to `queue` and repeat the process.
-    static func canJumpBFS(_ nums: [Int]) -> Bool {
+    func canJumpBFS(_ nums: [Int]) -> Bool {
         guard nums.count > 1 else {
             return true
         }

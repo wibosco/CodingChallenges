@@ -18,7 +18,7 @@ final class ClosestBinarySearchTreeValueTests: XCTestCase {
         let target = 3.714286
         let root = TreeNode.deserialize([4, 2, 5, 1, 3])
         
-        let result = ClosestBinarySearchTreeValue.closestValue(root, target)
+        let result = ClosestBinarySearchTreeValue().closestValue(root, target)
         
         XCTAssertEqual(result, 4)
     }
@@ -27,7 +27,7 @@ final class ClosestBinarySearchTreeValueTests: XCTestCase {
         let target = 4.428571
         let root = TreeNode.deserialize([1])
         
-        let result = ClosestBinarySearchTreeValue.closestValue(root, target)
+        let result = ClosestBinarySearchTreeValue().closestValue(root, target)
         
         XCTAssertEqual(result, 1)
     }
@@ -36,7 +36,7 @@ final class ClosestBinarySearchTreeValueTests: XCTestCase {
         let target = 3.428571
         let root = TreeNode.deserialize([1, nil, 3])
         
-        let result = ClosestBinarySearchTreeValue.closestValue(root, target)
+        let result = ClosestBinarySearchTreeValue().closestValue(root, target)
         
         XCTAssertEqual(result, 3)
     }

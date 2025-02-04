@@ -19,7 +19,7 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree().isSymmetric(root)
         
         XCTAssertTrue(result)
     }
@@ -29,7 +29,7 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree().isSymmetric(root)
         
         XCTAssertFalse(result)
     }
@@ -39,7 +39,7 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree().isSymmetric(root)
         
         XCTAssertTrue(result)
     }
@@ -49,7 +49,7 @@ final class SymmetricTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = SymmetricTree.isSymmetric(root)
+        let result = SymmetricTree().isSymmetric(root)
         
         XCTAssertFalse(result)
     }

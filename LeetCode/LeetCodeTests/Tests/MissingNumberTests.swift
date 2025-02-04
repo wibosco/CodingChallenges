@@ -16,7 +16,7 @@ final class MissingNumberTests: XCTestCase {
     func test_A() {
         let nums = [3, 0, 1]
         
-        let result = MissingNumber.missingNumber(nums)
+        let result = MissingNumber().missingNumber(nums)
         
         XCTAssertEqual(result, 2)
     }
@@ -24,7 +24,7 @@ final class MissingNumberTests: XCTestCase {
     func test_B() {
         let nums = [0, 1]
         
-        let result = MissingNumber.missingNumber(nums)
+        let result = MissingNumber().missingNumber(nums)
         
         XCTAssertEqual(result, 2)
     }
@@ -32,7 +32,7 @@ final class MissingNumberTests: XCTestCase {
     func test_C() {
         let nums = [9, 6, 4, 2, 3, 5, 7, 0, 1]
         
-        let result = MissingNumber.missingNumber(nums)
+        let result = MissingNumber().missingNumber(nums)
         
         XCTAssertEqual(result, 8)
     }

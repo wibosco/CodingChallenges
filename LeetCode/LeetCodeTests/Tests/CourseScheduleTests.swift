@@ -17,7 +17,7 @@ final class CourseScheduleTests: XCTestCase {
         let numCourses = 2
         let prerequisites = [[1, 0]]
         
-        let result = CourseSchedule.canFinish(numCourses, prerequisites)
+        let result = CourseSchedule().canFinish(numCourses, prerequisites)
         
         XCTAssertTrue(result)
     }
@@ -27,7 +27,7 @@ final class CourseScheduleTests: XCTestCase {
         let prerequisites = [[1, 0],
                              [0, 1]]
         
-        let result = CourseSchedule.canFinish(numCourses, prerequisites)
+        let result = CourseSchedule().canFinish(numCourses, prerequisites)
         
         XCTAssertFalse(result)
     }

@@ -23,7 +23,7 @@ struct CustomSortString {
     //when a character of `order` appears in `countings` we add it n-times to our ordered array `orderedS`. Finally any
     //characters that appear in `s` but not in `order` are appended to the end of `orderedS` (careful to add them the
     //number of times they appear in `s`).
-    static func customSortString(_ order: String, _ s: String) -> String {
+    func customSortString(_ order: String, _ s: String) -> String {
         guard s.count > 1 else {
             return s
         }
@@ -62,7 +62,7 @@ struct CustomSortString {
     //through `s`, if the character appears in `order` we determine where it should go in relation to characters already added to
     //`orderedS` an insert it. If it doesn't then we append it to `others`. Finally we concatenate `orderedS` and `others` to get
     //the final string ordering
-    static func customSortStringLooping(_ order: String, _ s: String) -> String {
+    func customSortStringLooping(_ order: String, _ s: String) -> String {
         guard s.count > 1 else {
             return s
         }

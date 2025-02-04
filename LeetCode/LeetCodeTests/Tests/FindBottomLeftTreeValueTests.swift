@@ -17,7 +17,7 @@ final class FindBottomLeftTreeValueTests: XCTestCase {
         let data = [2,1,3]
         let root = TreeNode.deserialize(data)
         
-        let result = FindBottomLeftTreeValue.findBottomLeftValue(root)
+        let result = FindBottomLeftTreeValue().findBottomLeftValue(root)
         
         XCTAssertEqual(result, 1)
     }
@@ -26,7 +26,7 @@ final class FindBottomLeftTreeValueTests: XCTestCase {
         let data = [1,2,3,4,nil,5,6,nil,nil,7]
         let root = TreeNode.deserialize(data)
         
-        let result = FindBottomLeftTreeValue.findBottomLeftValue(root)
+        let result = FindBottomLeftTreeValue().findBottomLeftValue(root)
         
         XCTAssertEqual(result, 7)
     }
@@ -35,7 +35,7 @@ final class FindBottomLeftTreeValueTests: XCTestCase {
         let data = [0,nil,-1]
         let root = TreeNode.deserialize(data)
         
-        let result = FindBottomLeftTreeValue.findBottomLeftValue(root)
+        let result = FindBottomLeftTreeValue().findBottomLeftValue(root)
         
         XCTAssertEqual(result, -1)
     }

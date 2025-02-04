@@ -21,7 +21,7 @@ struct IntersectionOfTwoArraysII {
     //that `p1` and `p2` are pointing match then we add that value to `intersectingValues`; if they don't match and the value
     //of `p1` is greater `p2` then we increment `p2` to increase its value; if `p2` is greater we increment `p1`. We continue
     //this either `p1` or `p2` reaches the end of its array
-    static func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         let nums1 = nums1.sorted() //O(n log n)
         let nums2 = nums2.sorted() //O(m log m)
         
@@ -55,7 +55,7 @@ struct IntersectionOfTwoArraysII {
     //`nums2` and where we find a match for the current `nums2` element in `frequency` we add that element to `intersection`
     // - if that frequency for the match is still above 0. We then decrement that frequency by 1 so we don't end up over
     //counting matches.
-    static func intersectDictionary(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersectDictionary(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var frequency = [Int: Int]()
         
         for num in nums1 {
@@ -81,7 +81,7 @@ struct IntersectionOfTwoArraysII {
     //
     //Solution Description:
     //By sorting `nums2` we can use binary search to find matching elements between `nums1` and `nums2`.
-    static func intersectBinarySearch(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersectBinarySearch(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersection = [Int]()
         
         var nums2 = nums2.sorted() //O(m log m)
@@ -97,7 +97,7 @@ struct IntersectionOfTwoArraysII {
         return intersection
     }
     
-    private static func binarySearch(_ nums: [Int], for target: Int) -> Int {
+    private func binarySearch(_ nums: [Int], for target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
         

@@ -18,7 +18,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [5, 7, 7, 8, 8, 10]
         let target = 8
         
-        let result = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let result = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(result, [3, 4])
     }
@@ -27,7 +27,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [5, 7, 7, 8, 8, 10]
         let target = 6
         
-        let result = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let result = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(result, [-1, -1])
     }
@@ -36,7 +36,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [Int]()
         let target = 0
         
-        let result = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let result = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(result, [-1, -1])
     }
@@ -45,7 +45,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [1]
         let target = 1
         
-        let result = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let result = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(result, [0, 0])
     }
@@ -54,7 +54,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [2, 2]
         let target = 2
         
-        let range = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let range = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(range, [0, 1])
     }
@@ -63,7 +63,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [1, 3]
         let target = 1
         
-        let result = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let result = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(result, [0, 0])
     }
@@ -72,7 +72,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [1, 1, 2]
         let target = 1
         
-        let result = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let result = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(result, [0, 1])
     }
@@ -81,7 +81,7 @@ final class FindFirstAndLastPositionOfElementInSortedArrayTests: XCTestCase {
         let nums = [3, 3, 3]
         let target = 3
         
-        let result = FindFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target)
+        let result = FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target)
         
         XCTAssertEqual(result, [0, 2])
     }

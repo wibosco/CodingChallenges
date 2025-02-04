@@ -30,7 +30,7 @@ struct MinCostToConnectAllPoints {
     //ensure that using it will not create a cycle in the graph by inspecting the `visited` set. If the min edge isn't introducing
     //a cycle we add it's weight to the `total`, add it to the `visited` set and add it's edges to the min heap causes it the
     //potentially reconfigure itself.
-    static func minCostConnectPoints(_ points: [[Int]]) -> Int {
+    func minCostConnectPoints(_ points: [[Int]]) -> Int {
         //convert points to an adjacency list
         var adjList = Array(repeating: [GraphWeightedEdge](), count: points.count)
         for i in 0..<points.count {
@@ -94,7 +94,7 @@ struct MinCostToConnectAllPoints {
     //that we built and use the union-find process (disjoint sets) to connect the vertices and detect if connecting those vertices
     //will introduce a cycle - if connecting would introduce a cycle we skip over counting that edge as part of the MST. Finally
     //because a tree has n - 1 edges where `n` is the number of vertices when we reach this value we have our MST.
-    static func minCostConnectPointsKruskal(_ points: [[Int]]) -> Int {
+    func minCostConnectPointsKruskal(_ points: [[Int]]) -> Int {
         //sort
         var edges = [GraphWeightedEdge]()
         

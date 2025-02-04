@@ -32,7 +32,7 @@ struct StringToInteger {
     //still result in an overflow - if adding `digit` would overflow. We repeat this process for `Int32.min` but checking for
     //underflow. If both checks pass we shift `result` by 10 an add `num`. We repeat this process until we reach the end of
     //`s` or we encounter a non-number `c`.
-    static func myAtoi(_ s: String) -> Int {
+    func myAtoi(_ s: String) -> Int {
         var result = 0
         var sign = 1 //positive is the default
         var index = 0

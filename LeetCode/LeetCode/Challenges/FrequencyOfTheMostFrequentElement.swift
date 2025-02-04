@@ -29,7 +29,7 @@ struct FrequencyOfTheMostFrequentElement {
     //that we don't hold `right` in position for a failed comparison, instead `right` always moves forward because a window size
     //is only that size because of a previous valid "+ k" operation so shrinking the window would achieve at best the same window
     //size as a previous successful match. We repeat this process until all elements in `nums` have been tested.
-    static func maxFrequency(_ nums: [Int], _ k: Int) -> Int {
+    func maxFrequency(_ nums: [Int], _ k: Int) -> Int {
         let nums = nums.sorted()
         
         var maxFrequencyCount = 0

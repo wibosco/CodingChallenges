@@ -26,7 +26,7 @@ struct SmallestStringStartingFromLeaf {
     //returned from left and right child nodes and take the lexicographically smaller path and return that path as the
     //smallest on this branch. We repeat this process for each branch in the tree until we return to the root - we then
     //convert the smallest array into a string and return that string.
-    static func smallestFromLeaf(_ root: TreeNode?) -> String {
+    func smallestFromLeaf(_ root: TreeNode?) -> String {
         let smallestPath = dfs(root, [])
         
         let startingValue = Int(UnicodeScalar("a").value)
@@ -35,7 +35,7 @@ struct SmallestStringStartingFromLeaf {
         return smallest
     }
     
-    private static func dfs(_ node: TreeNode?, _ path: [Int]) -> [Int] {
+    private func dfs(_ node: TreeNode?, _ path: [Int]) -> [Int] {
         guard let node = node else {
             return []
         }
@@ -57,7 +57,7 @@ struct SmallestStringStartingFromLeaf {
         return smallest(left, right)
     }
     
-    private static func smallest(_ a: [Int], _ b: [Int]) -> [Int] {
+    private func smallest(_ a: [Int], _ b: [Int]) -> [Int] {
         var p1 = 0
                 
         while p1 < a.count && p1 < b.count {

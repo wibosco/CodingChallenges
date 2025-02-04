@@ -29,7 +29,7 @@ struct MinimumOperationsToReduceXToZero {
     //many elements are in our edges, if the number of elements in the edges is smaller than `minimumGap` then we update
     //`minimumGap` to that new value. Once `nums` has been iterated through we check if we found a set of edges equal to `x` by
     //checking if `minimumGap` equals `Int.max` and return either -1 for a failure to find `x` or the gap size.
-    static func minOperations(_ nums: [Int], _ x: Int) -> Int {
+    func minOperations(_ nums: [Int], _ x: Int) -> Int {
         var left = 0
         var right = 0
         

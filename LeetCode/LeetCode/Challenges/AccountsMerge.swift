@@ -32,7 +32,7 @@ struct AccountsMerge {
     //track which vertices we have visited and only search those vertices that haven't been previously visited. Once each
     //subgraph has been search we sort the email addresses, add the name and append the merged account to our
     //`mergedAccounts` array
-    static func accountsMerge(_ accounts: [[String]]) -> [[String]] {
+    func accountsMerge(_ accounts: [[String]]) -> [[String]] {
         var adjList = [String: [String]]()
         
         //build adjacency list
@@ -116,7 +116,7 @@ struct AccountsMerge {
     //track which vertices we have visited and only search those vertices that haven't been previously visited. Once each
     //subgraph has been search we sort the email addresses, add the name and append the merged account to our
     //`mergedAccounts` array
-    static func accountsMergeDFS(_ accounts: [[String]]) -> [[String]] {
+    func accountsMergeDFS(_ accounts: [[String]]) -> [[String]] {
         var adjList = [String: [String]]()
         
         //build adjacency list
@@ -161,7 +161,7 @@ struct AccountsMerge {
         return mergedAccounts
     }
     
-    private static func dfs(_ mergedEmails: inout [String], _ email: String, _ visited: inout Set<String>, _ adjList: [String: [String]]) {
+    private func dfs(_ mergedEmails: inout [String], _ email: String, _ visited: inout Set<String>, _ adjList: [String: [String]]) {
         visited.insert(email)
         mergedEmails.append(email)
         
@@ -198,7 +198,7 @@ struct AccountsMerge {
     //combined the duplicated email addresses in sets. We now need to iterate through each unique email address and find
     //which set they are associated with to complete our merge. Once we have all accounted represented once with their email
     //addresses, we only need to sort the email addresses and add in the users name
-    static func accountsMergeUnionFind(_ accounts: [[String]]) -> [[String]] {
+    func accountsMergeUnionFind(_ accounts: [[String]]) -> [[String]] {
         var map = [String: Int]() //[Email: Index], to add all unique emails
         let uf = UnionFind(count: accounts.count)
         

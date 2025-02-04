@@ -17,7 +17,7 @@ final class MaximumNumberOfVowelsInASubstringOfGivenLengthTests: XCTestCase {
         let s = "abciiidef"
         let k = 3
         
-        let result = MaximumNumberOfVowelsInASubstringOfGivenLength.maxVowels(s, k)
+        let result = MaximumNumberOfVowelsInASubstringOfGivenLength().maxVowels(s, k)
         
         XCTAssertEqual(result, 3)
     }
@@ -26,7 +26,7 @@ final class MaximumNumberOfVowelsInASubstringOfGivenLengthTests: XCTestCase {
         let s = "aeiou"
         let k = 2
         
-        let result = MaximumNumberOfVowelsInASubstringOfGivenLength.maxVowels(s, k)
+        let result = MaximumNumberOfVowelsInASubstringOfGivenLength().maxVowels(s, k)
         
         XCTAssertEqual(result, 2)
     }
@@ -35,7 +35,7 @@ final class MaximumNumberOfVowelsInASubstringOfGivenLengthTests: XCTestCase {
         let s = "leetcode"
         let k = 3
         
-        let result = MaximumNumberOfVowelsInASubstringOfGivenLength.maxVowels(s, k)
+        let result = MaximumNumberOfVowelsInASubstringOfGivenLength().maxVowels(s, k)
         
         XCTAssertEqual(result, 2)
     }

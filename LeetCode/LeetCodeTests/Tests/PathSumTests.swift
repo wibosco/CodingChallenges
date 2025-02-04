@@ -20,7 +20,7 @@ final class PathSumTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = PathSum.hasPathSum(root, targetSum)
+        let result = PathSum().hasPathSum(root, targetSum)
         
         XCTAssertTrue(result)
     }
@@ -31,7 +31,7 @@ final class PathSumTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = PathSum.hasPathSum(root, targetSum)
+        let result = PathSum().hasPathSum(root, targetSum)
         
         XCTAssertFalse(result)
     }
@@ -42,7 +42,7 @@ final class PathSumTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = PathSum.hasPathSum(root, targetSum)
+        let result = PathSum().hasPathSum(root, targetSum)
         
         XCTAssertTrue(result)
     }

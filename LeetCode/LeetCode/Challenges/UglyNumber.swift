@@ -19,7 +19,7 @@ struct UglyNumber {
     //Solution Description:
     //Determine if `n` can cleanly be divided by each ugly prime, if it can divide it until it can't; if it can't
     //move onto the next prime. Once all the primes have been processed, check if `n` has been reduced to 1
-    static func isUgly(_ n: Int) -> Bool {
+    func isUgly(_ n: Int) -> Bool {
         guard n != 0 else {
             return false
         }

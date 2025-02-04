@@ -17,7 +17,7 @@ final class RotateArrayTests: XCTestCase {
         var nums = [1, 2, 3, 4, 5, 6, 7]
         let k = 3
         
-        RotateArray.rotate(&nums, k)
+        RotateArray().rotate(&nums, k)
         
         XCTAssertEqual(nums, [5, 6, 7, 1, 2, 3, 4])
     }
@@ -26,7 +26,7 @@ final class RotateArrayTests: XCTestCase {
         var nums = [-1, -100, 3, 99]
         let k = 2
         
-        RotateArray.rotate(&nums, k)
+        RotateArray().rotate(&nums, k)
         
         XCTAssertEqual(nums, [3, 99, -1, -100])
     }
@@ -35,7 +35,7 @@ final class RotateArrayTests: XCTestCase {
         var nums = [-1]
         let k = 2
         
-        RotateArray.rotate(&nums, k)
+        RotateArray().rotate(&nums, k)
         
         XCTAssertEqual(nums, [-1])
     }
@@ -44,7 +44,7 @@ final class RotateArrayTests: XCTestCase {
         var nums = [1, 2, 3]
         let k = 8
         
-        RotateArray.rotate(&nums, k)
+        RotateArray().rotate(&nums, k)
         
         XCTAssertEqual(nums, [2, 3, 1])
     }

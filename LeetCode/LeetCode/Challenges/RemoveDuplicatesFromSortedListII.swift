@@ -24,7 +24,7 @@ struct RemoveDuplicatesFromSortedListII {
     //until we reach the end of the duplicates and update `current` to beyond the duplicates. We repeat this process until
     //we reach the end of the list. At the end we set the `next` property on the tail node (`previous`) to nil to avoid the
     //scenario where there are duplicates at the end of the list.
-    static func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         guard head?.next != nil else {
             return head
         }

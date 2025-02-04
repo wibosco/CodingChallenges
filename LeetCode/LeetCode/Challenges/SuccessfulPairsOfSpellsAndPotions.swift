@@ -24,7 +24,7 @@ struct SuccessfulPairsOfSpellsAndPotions {
     //earliest/smallest element. With that element and a sorted `potions`, we know that all subsequent elements will also equal or
     //exceed `success` so we can calculate the remaining elements and add that our `pairs` array. Where no elements equal or exceed
     //`success` we add `0`.
-    static func successfulPairs(_ spells: [Int], _ potions: [Int], _ success: Int) -> [Int] {
+    func successfulPairs(_ spells: [Int], _ potions: [Int], _ success: Int) -> [Int] {
         let potions = potions.sorted()
         
         var pairs = [Int]()
@@ -60,7 +60,7 @@ struct SuccessfulPairsOfSpellsAndPotions {
     //By first sorting `potions` we can iterate through `spells` and once we have found one `potion` and `spell` combination that
     //equals or exceeds `success` then we know that all subsequent elements in `potions` will also equal or exceed `success` so we
     //can calculate the remaining elements and add that our `pairs` array. Where no elements equal or exceed `success` we add `0`.
-    static func successfulPairsLooping(_ spells: [Int], _ potions: [Int], _ success: Int) -> [Int] {
+    func successfulPairsLooping(_ spells: [Int], _ potions: [Int], _ success: Int) -> [Int] {
         let potions = potions.sorted()
         
         var pairs = [Int]()

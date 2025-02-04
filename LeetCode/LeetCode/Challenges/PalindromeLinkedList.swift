@@ -25,7 +25,7 @@ struct PalindromeLinkedList {
     //list) rightwards by one node. Next we iterate through both lists and compare the values of each node against its
     //counterpart - if there is a mismatch we return false. If after iterating through all nodes, everything matches we return
     //true.
-    static func isPalindrome(_ head: ListNode?) -> Bool {
+    func isPalindrome(_ head: ListNode?) -> Bool {
         var fast = head
         var slow = head
         
@@ -79,7 +79,7 @@ struct PalindromeLinkedList {
     //Solution Description:
     //We iterate through the linked list and every node that we come to we store in `array`. Once all nodes have been added to `array`
     //we check if `array` is equal to itself reversed and return the result.
-    static func isPalindromeExtraMemory(_ head: ListNode?) -> Bool {
+    func isPalindromeExtraMemory(_ head: ListNode?) -> Bool {
         var array = [Int]()
         var node = head
         

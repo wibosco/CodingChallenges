@@ -20,7 +20,7 @@ final class DetermineIfACellIsReachableAtAGivenTimeTests: XCTestCase {
         let fy = 7
         let t = 6
         
-        let result = DetermineIfACellIsReachableAtAGivenTime.isReachableAtTime(sx, sy, fx, fy, t)
+        let result = DetermineIfACellIsReachableAtAGivenTime().isReachableAtTime(sx, sy, fx, fy, t)
         
         XCTAssertTrue(result)
     }
@@ -32,7 +32,7 @@ final class DetermineIfACellIsReachableAtAGivenTimeTests: XCTestCase {
         let fy = 3
         let t = 3
         
-        let result = DetermineIfACellIsReachableAtAGivenTime.isReachableAtTime(sx, sy, fx, fy, t)
+        let result = DetermineIfACellIsReachableAtAGivenTime().isReachableAtTime(sx, sy, fx, fy, t)
         
         XCTAssertFalse(result)
     }
@@ -44,7 +44,7 @@ final class DetermineIfACellIsReachableAtAGivenTimeTests: XCTestCase {
         let fy = 4
         let t = 6
         
-        let result = DetermineIfACellIsReachableAtAGivenTime.isReachableAtTime(sx, sy, fx, fy, t)
+        let result = DetermineIfACellIsReachableAtAGivenTime().isReachableAtTime(sx, sy, fx, fy, t)
         
         XCTAssertTrue(result)
     }
@@ -56,7 +56,7 @@ final class DetermineIfACellIsReachableAtAGivenTimeTests: XCTestCase {
         let fy = 890107308
         let t = 274809225
         
-        let result = DetermineIfACellIsReachableAtAGivenTime.isReachableAtTime(sx, sy, fx, fy, t)
+        let result = DetermineIfACellIsReachableAtAGivenTime().isReachableAtTime(sx, sy, fx, fy, t)
         
         XCTAssertFalse(result)
     }

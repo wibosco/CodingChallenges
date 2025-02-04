@@ -17,7 +17,7 @@ final class SumOfLeftLeavesTests: XCTestCase {
         let data = [3,9,20,nil,nil,15,7]
         let root = TreeNode.deserialize(data)
         
-        let result = SumOfLeftLeaves.sumOfLeftLeaves(root)
+        let result = SumOfLeftLeaves().sumOfLeftLeaves(root)
         
         XCTAssertEqual(result, 24)
     }
@@ -26,7 +26,7 @@ final class SumOfLeftLeavesTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = SumOfLeftLeaves.sumOfLeftLeaves(root)
+        let result = SumOfLeftLeaves().sumOfLeftLeaves(root)
         
         XCTAssertEqual(result, 0)
     }
@@ -35,7 +35,7 @@ final class SumOfLeftLeavesTests: XCTestCase {
         let data = [1,2,3,4,5]
         let root = TreeNode.deserialize(data)
         
-        let result = SumOfLeftLeaves.sumOfLeftLeaves(root)
+        let result = SumOfLeftLeaves().sumOfLeftLeaves(root)
         
         XCTAssertEqual(result, 4)
     }

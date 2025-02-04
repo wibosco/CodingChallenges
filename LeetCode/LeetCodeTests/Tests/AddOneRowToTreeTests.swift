@@ -19,7 +19,7 @@ final class AddOneRowToTreeTests: XCTestCase {
         let data = [4,2,6,3,1,5]
         let root = TreeNode.deserialize(data)
         
-        let result = AddOneRowToTree.addOneRow(root, val, depth)
+        let result = AddOneRowToTree().addOneRow(root, val, depth)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [4,1,1,2,nil,nil,6,3,1,5])
@@ -31,7 +31,7 @@ final class AddOneRowToTreeTests: XCTestCase {
         let data = [4,2,nil,3,1]
         let root = TreeNode.deserialize(data)
         
-        let result = AddOneRowToTree.addOneRow(root, val, depth)
+        let result = AddOneRowToTree().addOneRow(root, val, depth)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [4,2,nil,1,1,3,nil,nil,1])

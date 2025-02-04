@@ -19,7 +19,7 @@ final class GameOfLifeTests: XCTestCase {
                      [1, 1, 1],
                      [0, 0, 0]]
         
-        GameOfLife.gameOfLife(&board)
+        GameOfLife().gameOfLife(&board)
         
         XCTAssertEqual(board, [[0, 0, 0], [1, 0, 1], [0, 1, 1], [0, 1, 0]])
     }
@@ -28,7 +28,7 @@ final class GameOfLifeTests: XCTestCase {
         var board = [[1, 1],
                      [1, 0]]
         
-        GameOfLife.gameOfLife(&board)
+        GameOfLife().gameOfLife(&board)
         
         XCTAssertEqual(board, [[1, 1], [1, 1]])
     }

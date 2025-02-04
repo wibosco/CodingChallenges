@@ -20,7 +20,7 @@ final class AllPathsFromSourceToTargetTests: XCTestCase {
                      [3],
                      []]
         
-        let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
+        let paths = AllPathsFromSourceToTarget().allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 1, 3], [0, 2, 3]]
         
@@ -39,7 +39,7 @@ final class AllPathsFromSourceToTargetTests: XCTestCase {
                      [4],
                      []]
         
-        let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
+        let paths = AllPathsFromSourceToTarget().allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 4], [0, 3, 4], [0, 1, 3, 4], [0, 1, 2, 3, 4], [0, 1, 4]]
         
@@ -55,7 +55,7 @@ final class AllPathsFromSourceToTargetTests: XCTestCase {
         let graph = [[1],
                      []]
         
-        let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
+        let paths = AllPathsFromSourceToTarget().allPathsSourceTarget(graph)
         
         XCTAssertEqual(paths, [[0, 1]])
     }
@@ -66,7 +66,7 @@ final class AllPathsFromSourceToTargetTests: XCTestCase {
                      [3],
                      []]
         
-        let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
+        let paths = AllPathsFromSourceToTarget().allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 1, 2, 3], [0, 2, 3], [0, 3]]
         
@@ -84,7 +84,7 @@ final class AllPathsFromSourceToTargetTests: XCTestCase {
                      [3],
                      []]
         
-        let paths = AllPathsFromSourceToTarget.allPathsSourceTarget(graph)
+        let paths = AllPathsFromSourceToTarget().allPathsSourceTarget(graph)
         
         let expectedPaths = [[0, 1, 2, 3], [0, 3]]
         

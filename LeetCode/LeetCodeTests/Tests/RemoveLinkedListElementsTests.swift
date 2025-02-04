@@ -19,7 +19,7 @@ final class RemoveLinkedListElementsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let result = RemoveLinkedListElements.removeElements(head, val)
+        let result = RemoveLinkedListElements().removeElements(head, val)
         
         let values = ListNode.serialize(result)
         
@@ -32,7 +32,7 @@ final class RemoveLinkedListElementsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let result = RemoveLinkedListElements.removeElements(head, val)
+        let result = RemoveLinkedListElements().removeElements(head, val)
         
         let values = ListNode.serialize(result)
         
@@ -45,7 +45,7 @@ final class RemoveLinkedListElementsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let result = RemoveLinkedListElements.removeElements(head, val)
+        let result = RemoveLinkedListElements().removeElements(head, val)
         
         let values = ListNode.serialize(result)
         

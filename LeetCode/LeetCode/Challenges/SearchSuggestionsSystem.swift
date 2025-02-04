@@ -23,7 +23,7 @@ struct SearchSuggestionsSystem {
     //we iterate through each character in `searchWord` and find matches for that character at that index in `products`, any
     //elements that don't match we discard so each iteration of through `searchWord` potentially results in fewer `products`
     //iterations. if more than 3 products match that iterations criteria is only add the first 3 to `suggestions`.
-    static func suggestedProducts(_ products: [String], _ searchWord: String) -> [[String]] {
+    func suggestedProducts(_ products: [String], _ searchWord: String) -> [[String]] {
         var products = products.sorted()
         let searchWord = Array(searchWord)
         

@@ -20,11 +20,11 @@ struct SumOfNodesWithEvenValuedGrandparent {
     //Using DFS we traverse the tree. At each node we check if the grandparent node was even, if it was we add the current nodes
     //value to `sum`, we then "promote" the current nodes parent to grandparent, and set the parent to be the current node. We
     //then repeat this on the current nodes childern. Eventually once all nodes have been traversed we return the accumulated sum.
-    static func sumEvenGrandparent(_ root: TreeNode?) -> Int {
+    func sumEvenGrandparent(_ root: TreeNode?) -> Int {
         return dfs(root, false, false)
     }
     
-    private static func dfs(_ node: TreeNode?, _ parentEven: Bool, _ grandParentEven: Bool) -> Int {
+    private func dfs(_ node: TreeNode?, _ parentEven: Bool, _ grandParentEven: Bool) -> Int {
         guard let node = node else {
             return 0
         }

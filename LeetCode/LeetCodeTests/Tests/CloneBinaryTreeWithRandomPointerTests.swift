@@ -19,7 +19,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let root = TreeNodeRandom.deserialize(data)
         
-        let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
+        let clone = CloneBinaryTreeWithRandomPointer().copyRandomBinaryTree(root)
         
         let result = TreeNodeRandom.serialize(clone)
         
@@ -31,7 +31,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let root = TreeNodeRandom.deserialize(data)
         
-        let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
+        let clone = CloneBinaryTreeWithRandomPointer().copyRandomBinaryTree(root)
         
         let result = TreeNodeRandom.serialize(clone)
         
@@ -43,7 +43,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let root = TreeNodeRandom.deserialize(data)
         
-        let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
+        let clone = CloneBinaryTreeWithRandomPointer().copyRandomBinaryTree(root)
         
         let result = TreeNodeRandom.serialize(clone)
         
@@ -55,7 +55,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let root = TreeNodeRandom.deserialize(data)
         
-        let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
+        let clone = CloneBinaryTreeWithRandomPointer().copyRandomBinaryTree(root)
         
         let result = TreeNodeRandom.serialize(clone)
         
@@ -67,7 +67,7 @@ final class CloneBinaryTreeWithRandomPointerTests: XCTestCase {
         
         let root = TreeNodeRandom.deserialize(data)
         
-        let clone = CloneBinaryTreeWithRandomPointer.copyRandomBinaryTree(root)
+        let clone = CloneBinaryTreeWithRandomPointer().copyRandomBinaryTree(root)
         
         let result = TreeNodeRandom.serialize(clone)
         

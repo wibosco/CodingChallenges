@@ -17,7 +17,7 @@ final class MinimumOperationsToReduceXToZeroTests: XCTestCase {
         let nums = [1,1,4,2,3]
         let x = 5
         
-        let result = MinimumOperationsToReduceXToZero.minOperations(nums, x)
+        let result = MinimumOperationsToReduceXToZero().minOperations(nums, x)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class MinimumOperationsToReduceXToZeroTests: XCTestCase {
         let nums = [5,6,7,8,9]
         let x = 4
         
-        let result = MinimumOperationsToReduceXToZero.minOperations(nums, x)
+        let result = MinimumOperationsToReduceXToZero().minOperations(nums, x)
         
         XCTAssertEqual(result, -1)
     }
@@ -35,7 +35,7 @@ final class MinimumOperationsToReduceXToZeroTests: XCTestCase {
         let nums = [3,2,20,1,1,3]
         let x = 10
         
-        let result = MinimumOperationsToReduceXToZero.minOperations(nums, x)
+        let result = MinimumOperationsToReduceXToZero().minOperations(nums, x)
         
         XCTAssertEqual(result, 5)
     }
@@ -44,7 +44,7 @@ final class MinimumOperationsToReduceXToZeroTests: XCTestCase {
         let nums = [5]
         let x = 5
         
-        let result = MinimumOperationsToReduceXToZero.minOperations(nums, x)
+        let result = MinimumOperationsToReduceXToZero().minOperations(nums, x)
         
         XCTAssertEqual(result, 1)
     }
@@ -53,7 +53,7 @@ final class MinimumOperationsToReduceXToZeroTests: XCTestCase {
         let nums = [1,10,1]
         let x = 22
         
-        let result = MinimumOperationsToReduceXToZero.minOperations(nums, x)
+        let result = MinimumOperationsToReduceXToZero().minOperations(nums, x)
         
         XCTAssertEqual(result, -1)
     }

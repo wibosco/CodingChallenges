@@ -18,7 +18,7 @@ final class TargetSumTests: XCTestCase {
         let nums = [1, 1, 1, 1, 1]
         let target = 3
         
-        let result = TargetSum.findTargetSumWays(nums, target)
+        let result = TargetSum().findTargetSumWays(nums, target)
         
         XCTAssertEqual(result, 5)
     }
@@ -27,7 +27,7 @@ final class TargetSumTests: XCTestCase {
         let nums = [1]
         let target = 1
         
-        let result = TargetSum.findTargetSumWays(nums, target)
+        let result = TargetSum().findTargetSumWays(nums, target)
         
         XCTAssertEqual(result, 1)
     }

@@ -17,7 +17,7 @@ final class LeftmostColumnWithAtLeastAOneTests: XCTestCase {
         let mat = [[0, 0], [1, 1]]
         let binaryMatrix = BinaryMatrix(mat)
         
-        let result = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
+        let result = LeftmostColumnWithAtLeastAOne().leftMostColumnWithOne(binaryMatrix)
         
         XCTAssertEqual(result, 0)
     }
@@ -26,7 +26,7 @@ final class LeftmostColumnWithAtLeastAOneTests: XCTestCase {
         let mat = [[0, 0], [0, 1]]
         let binaryMatrix = BinaryMatrix(mat)
         
-        let result = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
+        let result = LeftmostColumnWithAtLeastAOne().leftMostColumnWithOne(binaryMatrix)
         
         XCTAssertEqual(result, 1)
     }
@@ -35,7 +35,7 @@ final class LeftmostColumnWithAtLeastAOneTests: XCTestCase {
         let mat = [[0, 0], [0, 0]]
         let binaryMatrix = BinaryMatrix(mat)
         
-        let result = LeftmostColumnWithAtLeastAOne.leftMostColumnWithOne(binaryMatrix)
+        let result = LeftmostColumnWithAtLeastAOne().leftMostColumnWithOne(binaryMatrix)
         
         XCTAssertEqual(result, -1)
     }

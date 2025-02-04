@@ -17,7 +17,7 @@ final class RemoveElementTests: XCTestCase {
         var nums = [3, 2, 2, 3]
         let val = 3
         
-        let result = RemoveElement.removeElement(&nums, val)
+        let result = RemoveElement().removeElement(&nums, val)
         
         XCTAssertEqual(result, 2)
         XCTAssertEqual(nums[0..<result], [2, 2])
@@ -27,7 +27,7 @@ final class RemoveElementTests: XCTestCase {
         var nums = [0, 1, 2, 2, 3, 0, 4, 2]
         let val = 2
         
-        let result = RemoveElement.removeElement(&nums, val)
+        let result = RemoveElement().removeElement(&nums, val)
         
         XCTAssertEqual(result, 5)
         XCTAssertEqual(nums[0..<result], [0, 1, 3, 0, 4])
@@ -37,7 +37,7 @@ final class RemoveElementTests: XCTestCase {
         var nums = [1]
         let val = 1
         
-        let result = RemoveElement.removeElement(&nums, val)
+        let result = RemoveElement().removeElement(&nums, val)
         
         XCTAssertEqual(result, 0)
     }

@@ -17,7 +17,7 @@ final class DetonateTheMaximumBombsTests: XCTestCase {
         let bombs = [[2,1,3],
                      [6,1,4]]
         
-        let result = DetonateTheMaximumBombs.maximumDetonation(bombs)
+        let result = DetonateTheMaximumBombs().maximumDetonation(bombs)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class DetonateTheMaximumBombsTests: XCTestCase {
         let bombs = [[1,1,5],
                      [10,10,5]]
         
-        let result = DetonateTheMaximumBombs.maximumDetonation(bombs)
+        let result = DetonateTheMaximumBombs().maximumDetonation(bombs)
         
         XCTAssertEqual(result, 1)
     }
@@ -38,7 +38,7 @@ final class DetonateTheMaximumBombsTests: XCTestCase {
                      [4,5,3],
                      [5,6,4]]
         
-        let result = DetonateTheMaximumBombs.maximumDetonation(bombs)
+        let result = DetonateTheMaximumBombs().maximumDetonation(bombs)
         
         XCTAssertEqual(result, 5)
     }

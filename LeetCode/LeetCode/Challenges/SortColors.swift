@@ -22,7 +22,7 @@ struct SortColors {
     //that count, move onto 1s and exhaust that count and finally move onto 2s for the remainder of the elements.
     //
     //See: https://en.wikipedia.org/wiki/Counting_sort
-    static func sortColors(_ nums: inout [Int]) {
+    func sortColors(_ nums: inout [Int]) {
         var zeroCount = 0
         var oneCount = 0
         
@@ -64,7 +64,7 @@ struct SortColors {
     //encounter a one we just increment `current` as the 1 is already in the 1 subarray.
     //
     //See: https://en.wikipedia.org/wiki/Dutch_national_flag_problem
-    static func sortColorsDutch(_ nums: inout [Int]) {
+    func sortColorsDutch(_ nums: inout [Int]) {
         var p0 = 0
         var current = 0
         var p2 = nums.count - 1

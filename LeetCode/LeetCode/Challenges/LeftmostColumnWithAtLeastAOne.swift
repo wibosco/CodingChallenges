@@ -21,7 +21,7 @@ struct LeftmostColumnWithAtLeastAOne {
     //and for each additional row we search we compare that rows lowest column with the matrix overall lowest column.
     //If that rows lowest column value is lower than the current matrix we replace it. If no row contains a column with
     //a `1` then `leftMostColumn` is never updated and we return `-1`.
-    static func leftMostColumnWithOne(_ binaryMatrix: BinaryMatrix) -> Int {
+    func leftMostColumnWithOne(_ binaryMatrix: BinaryMatrix) -> Int {
         let dimensions = binaryMatrix.dimensions()
         let rows = dimensions[0]
         let columns = dimensions[1]
@@ -37,7 +37,7 @@ struct LeftmostColumnWithAtLeastAOne {
         return leftMostColumn == Int.max ? -1 : leftMostColumn
     }
     
-    private static func binarySearch(_ binaryMatrix: BinaryMatrix, _ row: Int, _ rowLength: Int) -> Int {
+    private func binarySearch(_ binaryMatrix: BinaryMatrix, _ row: Int, _ rowLength: Int) -> Int {
         var left = 0
         var right = rowLength - 1
         

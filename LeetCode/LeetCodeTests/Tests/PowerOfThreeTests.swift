@@ -16,7 +16,7 @@ final class PowerOfThreeTests: XCTestCase {
     func test_A() {
         let n = 27
         
-        let result = PowerOfThree.isPowerOfThree(n)
+        let result = PowerOfThree().isPowerOfThree(n)
         
         XCTAssertTrue(result)
     }
@@ -24,7 +24,7 @@ final class PowerOfThreeTests: XCTestCase {
     func test_B() {
         let n = -1
         
-        let result = PowerOfThree.isPowerOfThree(n)
+        let result = PowerOfThree().isPowerOfThree(n)
         
         XCTAssertFalse(result)
     }
@@ -32,7 +32,7 @@ final class PowerOfThreeTests: XCTestCase {
     func test_C() {
         let n = 0
         
-        let result = PowerOfThree.isPowerOfThree(n)
+        let result = PowerOfThree().isPowerOfThree(n)
         
         XCTAssertFalse(result)
     }

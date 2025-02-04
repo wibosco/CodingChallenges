@@ -26,7 +26,7 @@ final class CountSubIslandsTests: XCTestCase {
                      [1, 0, 1, 1, 0],
                      [0, 1, 0, 1, 0]]
         
-        let result = CountSubIslands.countSubIslands(grid1, grid2)
+        let result = CountSubIslands().countSubIslands(grid1, grid2)
         
         XCTAssertEqual(result, 3)
     }
@@ -44,7 +44,7 @@ final class CountSubIslandsTests: XCTestCase {
                      [0, 1, 0, 1, 0],
                      [1, 0, 0, 0, 1]]
         
-        let result = CountSubIslands.countSubIslands(grid1, grid2)
+        let result = CountSubIslands().countSubIslands(grid1, grid2)
         
         XCTAssertEqual(result, 2)
     }

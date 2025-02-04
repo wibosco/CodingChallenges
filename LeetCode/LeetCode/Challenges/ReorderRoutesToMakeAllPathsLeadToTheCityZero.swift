@@ -34,7 +34,7 @@ struct ReorderRoutesToMakeAllPathsLeadToTheCityZero {
     //iterations offer a path to node `0` if we discover that `node` is pointing away from it's predecessor (by checking
     //the `adjList`) we know that that path would need to change and we increment `changes`. After iterating through all
     //nodes in the graph we return `changes` as the result.
-     static func minReorder(_ n: Int, _ connections: [[Int]]) -> Int {
+     func minReorder(_ n: Int, _ connections: [[Int]]) -> Int {
         var adjList = Array(repeating: Set<Int>(), count: n)
         var neighbors = Array(repeating: Set<Int>(), count: n)
     

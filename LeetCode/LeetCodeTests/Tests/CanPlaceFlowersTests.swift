@@ -18,7 +18,7 @@ final class CanPlaceFlowersTests: XCTestCase {
         let flowerbed = [1, 0, 0, 0, 1]
         let n = 1
         
-        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers().canPlaceFlowers(flowerbed, n)
         
         XCTAssertTrue(result)
     }
@@ -27,7 +27,7 @@ final class CanPlaceFlowersTests: XCTestCase {
         let flowerbed = [1, 0, 0, 0, 1]
         let n = 2
         
-        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers().canPlaceFlowers(flowerbed, n)
         
         XCTAssertFalse(result)
     }
@@ -36,7 +36,7 @@ final class CanPlaceFlowersTests: XCTestCase {
         let flowerbed = [1, 0, 1, 0, 0]
         let n = 1
         
-        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers().canPlaceFlowers(flowerbed, n)
         
         XCTAssertTrue(result)
     }
@@ -45,7 +45,7 @@ final class CanPlaceFlowersTests: XCTestCase {
         let flowerbed = [0, 0, 1, 1, 0]
         let n = 1
         
-        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers().canPlaceFlowers(flowerbed, n)
         
         XCTAssertTrue(result)
     }
@@ -54,7 +54,7 @@ final class CanPlaceFlowersTests: XCTestCase {
         let flowerbed = [1]
         let n = 1
         
-        let result = CanPlaceFlowers.canPlaceFlowers(flowerbed, n)
+        let result = CanPlaceFlowers().canPlaceFlowers(flowerbed, n)
         
         XCTAssertFalse(result)
     }

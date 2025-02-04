@@ -17,7 +17,7 @@ final class MinimumRemoveToMakeValidParenthesesTests: XCTestCase {
     func test_A() {
         let s = "lee(t(c)o)de)"
         
-        let result = MinimumRemoveToMakeValidParentheses.minRemoveToMakeValid(s)
+        let result = MinimumRemoveToMakeValidParentheses().minRemoveToMakeValid(s)
         
         XCTAssertEqual(result, "lee(t(c)o)de")
     }
@@ -25,7 +25,7 @@ final class MinimumRemoveToMakeValidParenthesesTests: XCTestCase {
     func test_B() {
         let s = "a)b(c)d"
         
-        let result = MinimumRemoveToMakeValidParentheses.minRemoveToMakeValid(s)
+        let result = MinimumRemoveToMakeValidParentheses().minRemoveToMakeValid(s)
         
         XCTAssertEqual(result, "ab(c)d")
     }
@@ -33,7 +33,7 @@ final class MinimumRemoveToMakeValidParenthesesTests: XCTestCase {
     func test_C() {
         let s = "))(("
         
-        let result = MinimumRemoveToMakeValidParentheses.minRemoveToMakeValid(s)
+        let result = MinimumRemoveToMakeValidParentheses().minRemoveToMakeValid(s)
         
         XCTAssertEqual(result, "")
     }

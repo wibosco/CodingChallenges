@@ -22,7 +22,7 @@ struct MinimumNumberOfFlipsToMakeTheBinaryStringAlternating {
     //the pattern matching multiple times. Rather than actually moving elements we can instead use a sliding window of size
     //`s` on a character array of `s` + `s`, this way our view into `s` will contain a valid version of `s`. Using this
     //sliding window and combined `s`, we can then compare a given character against those targets and track any mismatches.
-    static func minFlips(_ s: String) -> Int {
+    func minFlips(_ s: String) -> Int {
         var characters = Array(s)
         
         let windowSize = characters.count
@@ -96,7 +96,7 @@ struct MinimumNumberOfFlipsToMakeTheBinaryStringAlternating {
     //that flip and add it to an ongoing total of flips. Once all elements in that version of `s` have been checked, we compare
     //the number of flips required to make an alternating pattern against the minimum flips required for any version of `s`. To
     //reduce the amount of work required we use memoization. Once all version of `s` have been checked we return the minimum.
-    static func minFlipsMemo(_ s: String) -> Int {
+    func minFlipsMemo(_ s: String) -> Int {
         var characters = Array(s)
         var minimumFlips = Int.max
         var memo = [[Character]: Int]()
@@ -114,7 +114,7 @@ struct MinimumNumberOfFlipsToMakeTheBinaryStringAlternating {
         return minimumFlips
     }
     
-    private static func dfs(_ characters: inout [Character], _ mid: Int, _ memo: inout [[Character]: Int]) -> Int {
+    private func dfs(_ characters: inout [Character], _ mid: Int, _ memo: inout [[Character]: Int]) -> Int {
         guard mid < (characters.count - 1) else {
             return 0
         }
@@ -149,7 +149,7 @@ struct MinimumNumberOfFlipsToMakeTheBinaryStringAlternating {
         return totalFlips
     }
     
-    private static func flipCharacter(_ characters: inout [Character], _ index: Int) {
+    private func flipCharacter(_ characters: inout [Character], _ index: Int) {
         if characters[index] == "0" {
             characters[index] = "1"
         } else {

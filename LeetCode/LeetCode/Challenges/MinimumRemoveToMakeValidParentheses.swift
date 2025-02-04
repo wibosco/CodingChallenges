@@ -20,7 +20,7 @@ struct MinimumRemoveToMakeValidParentheses {
     //Solution Description:
     //Make two passes through the string. First pass to remove unpaired closing brackets with the assumption that all opening
     //brackets are paired. Second pass in reverse to remove unpaired opening brackets.
-    static func minRemoveToMakeValid(_ s: String) -> String {
+    func minRemoveToMakeValid(_ s: String) -> String {
         //find unbalanced ")"
         var openingCount = 0
         var forwardS = [Character]() //don't use a String instance here as it's too expensive timewise

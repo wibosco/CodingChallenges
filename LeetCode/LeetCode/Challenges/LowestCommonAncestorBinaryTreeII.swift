@@ -27,7 +27,7 @@ struct LowestCommonAncestorBinaryTreeII {
     //As we are only interested in the lowest common ancestor rather than any common ancestor we need to
     //ensure that we pass back the first node that is true for 2 of the above 3 scenarios. When we find this
     //node we set it to `lca`
-    static func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         var lca: TreeNode?
         
         dfs(root, p, q, &lca)
@@ -36,7 +36,7 @@ struct LowestCommonAncestorBinaryTreeII {
     }
     
     @discardableResult
-    private static func dfs(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?, _ lca: inout TreeNode?) -> Bool {
+    private func dfs(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?, _ lca: inout TreeNode?) -> Bool {
         guard let root = root, let p = p, let q = q, lca == nil else { //check lca to determine if we have found it already
             return false
         }

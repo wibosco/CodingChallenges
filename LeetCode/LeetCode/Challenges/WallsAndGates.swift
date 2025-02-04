@@ -31,7 +31,7 @@ struct WallsAndGates {
     //
     //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The extra loop is to work
     //through the neighbors of a nodes - don't confuse this with the actual level traversal loop which is the second loop
-    static func wallsAndGates(_ rooms: inout [[Int]]) {        
+    func wallsAndGates(_ rooms: inout [[Int]]) {        
         //-1 - wall, 0 - gate , INF - room
         
         var queue = [[Int]]()
@@ -74,7 +74,7 @@ struct WallsAndGates {
         }
     }
     
-    private static func navigatableNeighbors(_ rooms: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]]) -> [[Int]] {
+    private func navigatableNeighbors(_ rooms: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]]) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]

@@ -23,7 +23,7 @@ struct ContainerWithMostWater {
     //heights to use in the area calculation. This area is then compared against the largest area we have seen so far and if
     //larger it replaces it, else we move on. When deciding which pointer to move for the next area calculation we do so in a
     //greedy manner by only moving the smaller pointer.
-    static func maxArea(_ height: [Int]) -> Int {
+    func maxArea(_ height: [Int]) -> Int {
         var maxContainerArea = 0
         
         var left = 0
@@ -51,7 +51,7 @@ struct ContainerWithMostWater {
     
     //Time: O(n^2)
     //Space: O(1)
-    static func maxAreaBruteForce(_ height: [Int]) -> Int {
+    func maxAreaBruteForce(_ height: [Int]) -> Int {
         var maxContainerArea = 0
         
         for i in 0..<height.count {

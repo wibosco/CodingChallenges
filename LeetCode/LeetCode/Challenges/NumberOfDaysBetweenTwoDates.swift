@@ -22,11 +22,11 @@ struct NumberOfDaysBetweenTwoDates {
     //also a multiple of 100 unless (again) it is always a multiple of 400. Give that another read - it might be sense the
     //second time. Knowing which year is a leap year means that all that we need to do if work of the number of days from
     //1971-01-01 to the given date for both dates and then get the absolute difference between the days.
-    static func daysBetweenDates(_ date1: String, _ date2: String) -> Int {
+    func daysBetweenDates(_ date1: String, _ date2: String) -> Int {
         return abs(daysSince1971(date1) - daysSince1971(date2))
     }
     
-    private static func daysSince1971(_ date: String) -> Int {
+    private func daysSince1971(_ date: String) -> Int {
         let dateComponents = date.components(separatedBy: "-").map { Int($0)! }
         
         let year = dateComponents[0]
@@ -41,7 +41,7 @@ struct NumberOfDaysBetweenTwoDates {
         return days
     }
     
-    private static func yearInDaysFrom1971(_ year: Int) -> Int {
+    private func yearInDaysFrom1971(_ year: Int) -> Int {
         var total = 0
         
         for i in 1971..<year { //note that we don't include the current year
@@ -55,7 +55,7 @@ struct NumberOfDaysBetweenTwoDates {
         return total
     }
     
-    private static func monthInDays(_ month: Int, _ year: Int) -> Int {
+    private func monthInDays(_ month: Int, _ year: Int) -> Int {
         var days = 0
         for i in 1..<month { //note that we don't include the current month
             switch i {
@@ -73,7 +73,7 @@ struct NumberOfDaysBetweenTwoDates {
         return days
     }
     
-    private static func isLeapYear(_ year: Int) -> Bool {
+    private func isLeapYear(_ year: Int) -> Bool {
         return ((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0))
     }
 }

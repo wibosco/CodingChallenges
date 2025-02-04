@@ -16,7 +16,7 @@ final class PartitionLabelsTests: XCTestCase {
     func test_A() {
         let s = "ababcbacadefegdehijhklij"
         
-        let result = PartitionLabels.partitionLabels(s)
+        let result = PartitionLabels().partitionLabels(s)
         
         XCTAssertEqual(result, [9, 7, 8])
     }
@@ -24,7 +24,7 @@ final class PartitionLabelsTests: XCTestCase {
     func test_B() {
         let s = "eccbbbbdec"
         
-        let result = PartitionLabels.partitionLabels(s)
+        let result = PartitionLabels().partitionLabels(s)
         
         XCTAssertEqual(result, [10])
     }

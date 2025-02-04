@@ -17,7 +17,7 @@ final class NumberOfDaysBetweenTwoDatesTests: XCTestCase {
         let date1 = "2019-06-29"
         let date2 = "2019-06-30"
         
-        let result = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
+        let result = NumberOfDaysBetweenTwoDates().daysBetweenDates(date1, date2)
         
         XCTAssertEqual(result, 1)
     }
@@ -26,7 +26,7 @@ final class NumberOfDaysBetweenTwoDatesTests: XCTestCase {
         let date1 = "2020-01-15"
         let date2 = "2019-12-31"
         
-        let result = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
+        let result = NumberOfDaysBetweenTwoDates().daysBetweenDates(date1, date2)
         
         XCTAssertEqual(result, 15)
     }
@@ -35,7 +35,7 @@ final class NumberOfDaysBetweenTwoDatesTests: XCTestCase {
         let date1 = "1971-06-29"
         let date2 = "2010-09-23"
         
-        let result = NumberOfDaysBetweenTwoDates.daysBetweenDates(date1, date2)
+        let result = NumberOfDaysBetweenTwoDates().daysBetweenDates(date1, date2)
         
         XCTAssertEqual(result, 14331)
     }

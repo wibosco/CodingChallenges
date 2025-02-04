@@ -36,7 +36,7 @@ struct CheapestFlightsWithinKStops {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func findCheapestPrice(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ k: Int) -> Int {
+    func findCheapestPrice(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ k: Int) -> Int {
         var cities = Array(repeating: [(Int, Double)](), count: n)
         
         for flight in flights {
@@ -58,7 +58,7 @@ struct CheapestFlightsWithinKStops {
         return cheapestCost
     }
     
-    private static func dfs(_ cities: [[(Int, Double)]], _ src: Int, _ dst: Int, _ k: Int, _ memo: inout [String: Double]) -> Double {
+    private func dfs(_ cities: [[(Int, Double)]], _ src: Int, _ dst: Int, _ k: Int, _ memo: inout [String: Double]) -> Double {
         if src == dst && k >= 0 { //first base case
             return 0
         }
@@ -107,7 +107,7 @@ struct CheapestFlightsWithinKStops {
     //paths. If we manage to get to `dst` within in `k` stopovers we compare the cost of that path against the cheapest
     //cost that we have encountered so far. If the current price is cheaper then we override `cheapestPrice` with that
     //cheaper price.
-    static func findCheapestPriceBacktracking(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ k: Int) -> Int {
+    func findCheapestPriceBacktracking(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ k: Int) -> Int {
         var cities = Array(repeating: [(Int, Int)](), count: n)
         
         for flight in flights {
@@ -129,7 +129,7 @@ struct CheapestFlightsWithinKStops {
         return minCost == Int.max ? -1 : minCost
     }
     
-    private static func backtracking(_ cities: [[(Int, Int)]], _ src: Int, _ dst: Int, _ k: Int, _ visited: inout Set<Int>, _ currentPrice: Int, _ cheapestPrice: inout Int) {
+    private func backtracking(_ cities: [[(Int, Int)]], _ src: Int, _ dst: Int, _ k: Int, _ visited: inout Set<Int>, _ currentPrice: Int, _ cheapestPrice: inout Int) {
         if src == dst && k >= 0 {
             cheapestPrice = min(cheapestPrice, currentPrice)
             return

@@ -20,7 +20,7 @@ final class LeafSimilarTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = LeafSimilarTrees.leafSimilar(root1, root2)
+        let result = LeafSimilarTrees().leafSimilar(root1, root2)
         
         XCTAssertTrue(result)
     }
@@ -32,7 +32,7 @@ final class LeafSimilarTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = LeafSimilarTrees.leafSimilar(root1, root2)
+        let result = LeafSimilarTrees().leafSimilar(root1, root2)
         
         XCTAssertFalse(result)
     }

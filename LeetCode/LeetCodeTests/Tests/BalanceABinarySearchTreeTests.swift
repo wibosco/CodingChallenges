@@ -17,7 +17,7 @@ final class BalanceABinarySearchTreeTests: XCTestCase {
         let data = [1,nil,2,nil,3,nil,4,nil,nil]
         let root = TreeNode.deserialize(data)
         
-        let result = BalanceABinarySearchTree.balanceBST(root)
+        let result = BalanceABinarySearchTree().balanceBST(root)
         
         let values = TreeNode.serialize(result)
         
@@ -28,7 +28,7 @@ final class BalanceABinarySearchTreeTests: XCTestCase {
         let data = [2,1,3]
         let root = TreeNode.deserialize(data)
         
-        let result = BalanceABinarySearchTree.balanceBST(root)
+        let result = BalanceABinarySearchTree().balanceBST(root)
         
         let values = TreeNode.serialize(result)
         

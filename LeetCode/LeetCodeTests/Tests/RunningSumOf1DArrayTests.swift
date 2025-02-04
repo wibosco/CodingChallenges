@@ -16,7 +16,7 @@ final class RunningSumOf1DArrayTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3, 4]
         
-        let result = RunningSumOf1DArray.runningSum(nums)
+        let result = RunningSumOf1DArray().runningSum(nums)
         
         XCTAssertEqual(result, [1, 3, 6, 10])
     }
@@ -24,7 +24,7 @@ final class RunningSumOf1DArrayTests: XCTestCase {
     func test_B() {
         let nums = [1, 1, 1, 1, 1]
         
-        let result = RunningSumOf1DArray.runningSum(nums)
+        let result = RunningSumOf1DArray().runningSum(nums)
         
         XCTAssertEqual(result, [1, 2, 3, 4, 5])
     }
@@ -32,7 +32,7 @@ final class RunningSumOf1DArrayTests: XCTestCase {
     func test_C() {
         let nums = [3, 1, 2, 10, 1]
         
-        let result = RunningSumOf1DArray.runningSum(nums)
+        let result = RunningSumOf1DArray().runningSum(nums)
         
         XCTAssertEqual(result, [3, 4, 6, 16, 17])
     }

@@ -22,7 +22,7 @@ struct TwoSum {
     //nest loops we build a dictionary containing each seen `nums` element and its `index`. This will allow constant access time
     //to check for if the difference between the current `nums` element and target has already been seen. If that difference is
     //in `visited` we return the two indexes with the visited index being first (as it came before the current element)
-    static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var visited = [Int: Int]() //[num: index]
         
         for (index, num) in nums.enumerated() {
@@ -43,7 +43,7 @@ struct TwoSum {
     //
     //Solution Description:
     //Iterate through `nums` and add every other `nums` element after it to check if the sum equals `target`
-    static func twoSumNestedLoops(_ nums: [Int], _ target: Int) -> [Int] {
+    func twoSumNestedLoops(_ nums: [Int], _ target: Int) -> [Int] {
         for i in 0..<nums.count {
             for j in (i+1)..<nums.count {
                 let sum = nums[i] + nums[j]

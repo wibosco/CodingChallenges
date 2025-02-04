@@ -30,7 +30,7 @@ struct CountNumberOfHomogenousSubstrings {
     //
     //N.B. the modulo operations are only here to satisfy the leetcode question, if `nums` contained small enough values there
     //would be no need for them.
-    static func countHomogenous(_ s: String) -> Int {
+    func countHomogenous(_ s: String) -> Int {
         let chars = Array(s)
         
         var sum = 0

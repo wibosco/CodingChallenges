@@ -40,7 +40,7 @@ struct CombinationSumII {
     //same and need to be removed.
     //
     //Similar to: https://leetcode.com/problems/subsets-ii/
-    static func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
+    func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
         var combinations = [[Int]]()
         var curr = [Int]()
 
@@ -49,7 +49,7 @@ struct CombinationSumII {
         return combinations
     }
     
-    private static func dfs(_ candidates: [Int], _ remaining: Int, _ startingIndex: Int, _ curr: inout [Int], _ combinations: inout [[Int]]) {
+    private func dfs(_ candidates: [Int], _ remaining: Int, _ startingIndex: Int, _ curr: inout [Int], _ combinations: inout [[Int]]) {
         guard remaining >= 0 else {
             return
         }

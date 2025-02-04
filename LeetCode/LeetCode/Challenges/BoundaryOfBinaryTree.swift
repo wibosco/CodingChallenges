@@ -30,7 +30,7 @@ struct BoundaryOfBinaryTree {
     //traversals if we encounter a leaf node we add it immediately to `boundary` without checking if it is part of the left
     //or right boundary. Once the left, right and leaf boundaries have been built we add in the root node and return the
     //combined array.
-    static func boundaryOfBinaryTree(_ root: TreeNode?) -> [Int] {
+    func boundaryOfBinaryTree(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
@@ -44,7 +44,7 @@ struct BoundaryOfBinaryTree {
         return [root.val] + leftBoundary + rightBoundary
     }
     
-    private static func dfs(_ node: TreeNode?, _ findLeftBoundary: Bool, _ findRightBoundary: Bool, _ boundary: inout [Int]) {
+    private func dfs(_ node: TreeNode?, _ findLeftBoundary: Bool, _ findRightBoundary: Bool, _ boundary: inout [Int]) {
         guard let node = node else {
             return
         }

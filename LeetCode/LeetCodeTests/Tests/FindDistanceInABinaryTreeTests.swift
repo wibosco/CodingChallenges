@@ -19,7 +19,7 @@ final class FindDistanceInABinaryTreeTests: XCTestCase {
         let data = [3,5,1,6,2,0,8,nil,nil,7,4]
         let root = TreeNode.deserialize(data)
     
-        let result = FindDistanceInABinaryTree.findDistance(root, p, q)
+        let result = FindDistanceInABinaryTree().findDistance(root, p, q)
         
         XCTAssertEqual(result, 3)
     }
@@ -30,7 +30,7 @@ final class FindDistanceInABinaryTreeTests: XCTestCase {
         let data = [3,5,1,6,2,0,8,nil,nil,7,4]
         let root = TreeNode.deserialize(data)
     
-        let result = FindDistanceInABinaryTree.findDistance(root, p, q)
+        let result = FindDistanceInABinaryTree().findDistance(root, p, q)
         
         XCTAssertEqual(result, 2)
     }
@@ -41,7 +41,7 @@ final class FindDistanceInABinaryTreeTests: XCTestCase {
         let data = [3,5,1,6,2,0,8,nil,nil,7,4]
         let root = TreeNode.deserialize(data)
     
-        let result = FindDistanceInABinaryTree.findDistance(root, p, q)
+        let result = FindDistanceInABinaryTree().findDistance(root, p, q)
         
         XCTAssertEqual(result, 0)
     }

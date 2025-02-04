@@ -17,7 +17,7 @@ final class SumOfNodesWithEvenValuedGrandparentTests: XCTestCase {
         let data = [6,7,8,2,7,1,3,9,nil,1,4,nil,nil,nil,5]
         let root = TreeNode.deserialize(data)
         
-        let result = SumOfNodesWithEvenValuedGrandparent.sumEvenGrandparent(root)
+        let result = SumOfNodesWithEvenValuedGrandparent().sumEvenGrandparent(root)
         
         XCTAssertEqual(result, 18)
     }
@@ -26,7 +26,7 @@ final class SumOfNodesWithEvenValuedGrandparentTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = SumOfNodesWithEvenValuedGrandparent.sumEvenGrandparent(root)
+        let result = SumOfNodesWithEvenValuedGrandparent().sumEvenGrandparent(root)
         
         XCTAssertEqual(result, 0)
     }

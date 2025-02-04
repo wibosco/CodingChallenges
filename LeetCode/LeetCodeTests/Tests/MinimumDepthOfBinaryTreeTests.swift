@@ -17,7 +17,7 @@ final class MinimumDepthOfBinaryTreeTests: XCTestCase {
         let data = [3, 9, 20, nil, nil, 15, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = MinimumDepthOfBinaryTree.minDepth(root)
+        let result = MinimumDepthOfBinaryTree().minDepth(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class MinimumDepthOfBinaryTreeTests: XCTestCase {
         let data = [2, nil, 3, nil, 4, nil, 5, nil, 6]
         let root = TreeNode.deserialize(data)
         
-        let result = MinimumDepthOfBinaryTree.minDepth(root)
+        let result = MinimumDepthOfBinaryTree().minDepth(root)
         
         XCTAssertEqual(result, 5)
     }

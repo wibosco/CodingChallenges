@@ -28,14 +28,14 @@ struct NumberOfGoodLeafNodesPairs {
     //ancestor node we can have each leaf node return the depth it is at, we can then combine these depths to get the distance between
     //them and compare that difference to `distance` to determine if those nodes are "good". After we compare all leaf nodes we combine
     //the two depth arrays to pass further up the callstack - this way we don't double count leaf nodes.
-    static func countPairs(_ root: TreeNode?, _ distance: Int) -> Int {
+    func countPairs(_ root: TreeNode?, _ distance: Int) -> Int {
         var count = 0
         _ = dfs(root, distance, 0, &count)
         
         return count
     }
     
-    private static func dfs(_ node: TreeNode?, _ distance: Int, _ depth: Int, _ count: inout Int) -> [Int] {
+    private func dfs(_ node: TreeNode?, _ distance: Int, _ depth: Int, _ count: inout Int) -> [Int] {
         guard let node = node else {
             return [Int]()
         }

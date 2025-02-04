@@ -33,7 +33,7 @@ struct HouseRobber {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func rob(_ nums: [Int]) -> Int {
+    func rob(_ nums: [Int]) -> Int {
         guard nums.count > 2 else {
             return nums.max()!
         }
@@ -43,7 +43,7 @@ struct HouseRobber {
         return max(dfs(nums, 0, &memo), dfs(nums, 1, &memo))
     }
     
-    private static func dfs(_ nums: [Int], _ start: Int, _ memo: inout [Int: Int]) -> Int {
+    private func dfs(_ nums: [Int], _ start: Int, _ memo: inout [Int: Int]) -> Int {
         guard start < nums.count else {
             return 0
         }

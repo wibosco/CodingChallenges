@@ -17,7 +17,7 @@ final class CousinsInBinaryTreeIITests: XCTestCase {
         let data = [5,4,9,1,10,nil,7]
         let root = TreeNode.deserialize(data)
         
-        let result = CousinsInBinaryTreeII.replaceValueInTree(root)
+        let result = CousinsInBinaryTreeII().replaceValueInTree(root)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [0,0,0,7,7,nil,11])
@@ -27,7 +27,7 @@ final class CousinsInBinaryTreeIITests: XCTestCase {
         let data = [3,1,2]
         let root = TreeNode.deserialize(data)
         
-        let result = CousinsInBinaryTreeII.replaceValueInTree(root)
+        let result = CousinsInBinaryTreeII().replaceValueInTree(root)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [0,0,0])

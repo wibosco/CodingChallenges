@@ -16,7 +16,7 @@ final class SortCharactersByFrequencyTests: XCTestCase {
     func test_A() {
         let s = "tree"
         
-        let result = SortCharactersByFrequency.frequencySort(s)
+        let result = SortCharactersByFrequency().frequencySort(s)
         
         //order of same frequency characters isn't important
         XCTAssertTrue(result == "eetr" || result == "eert")
@@ -25,7 +25,7 @@ final class SortCharactersByFrequencyTests: XCTestCase {
     func test_B() {
         let s = "cccaaa"
         
-        let result = SortCharactersByFrequency.frequencySort(s)
+        let result = SortCharactersByFrequency().frequencySort(s)
         
         //order of same frequency characters isn't important
         XCTAssertTrue(result == "cccaaa" || result == "aaaccc")
@@ -34,7 +34,7 @@ final class SortCharactersByFrequencyTests: XCTestCase {
     func test_C() {
         let s = "Aabb"
         
-        let result = SortCharactersByFrequency.frequencySort(s)
+        let result = SortCharactersByFrequency().frequencySort(s)
         
         //order of same frequency characters isn't important
         XCTAssertTrue(result == "bbaA" || result == "bbAa")

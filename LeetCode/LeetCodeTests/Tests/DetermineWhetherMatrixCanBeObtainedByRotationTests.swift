@@ -17,7 +17,7 @@ final class DetermineWhetherMatrixCanBeObtainedByRotationTests: XCTestCase {
         let mat = [[0, 1], [1, 0]]
         let target = [[1, 0], [0, 1]]
         
-        let result = DetermineWhetherMatrixCanBeObtainedByRotation.findRotation(mat, target)
+        let result = DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat, target)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class DetermineWhetherMatrixCanBeObtainedByRotationTests: XCTestCase {
         let mat = [[0, 1], [1, 1]]
         let target = [[1, 0], [0, 1]]
         
-        let result = DetermineWhetherMatrixCanBeObtainedByRotation.findRotation(mat, target)
+        let result = DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat, target)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class DetermineWhetherMatrixCanBeObtainedByRotationTests: XCTestCase {
         let mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]]
         let target = [[1, 1, 1], [0, 1, 0], [0, 0, 0]]
         
-        let result = DetermineWhetherMatrixCanBeObtainedByRotation.findRotation(mat, target)
+        let result = DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat, target)
         
         XCTAssertTrue(result)
     }
@@ -44,7 +44,7 @@ final class DetermineWhetherMatrixCanBeObtainedByRotationTests: XCTestCase {
         let mat = [[0, 0, 0], [0, 0, 1], [0, 0, 1]]
         let target = [[0, 0, 0], [0, 0, 1], [0, 0, 1]]
         
-        let result = DetermineWhetherMatrixCanBeObtainedByRotation.findRotation(mat, target)
+        let result = DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat, target)
         
         XCTAssertTrue(result)
     }

@@ -18,7 +18,7 @@ final class ConstructStringFromBinaryTreeTests: XCTestCase {
         let data = [1, 2, 3, 4]
         let root = TreeNode.deserialize(data)
         
-        let result = ConstructStringFromBinaryTree.tree2str(root)
+        let result = ConstructStringFromBinaryTree().tree2str(root)
         
         XCTAssertEqual(result, "1(2(4))(3)")
     }
@@ -27,7 +27,7 @@ final class ConstructStringFromBinaryTreeTests: XCTestCase {
         let data = [1, 2, 3, nil, 4]
         let root = TreeNode.deserialize(data)
         
-        let result = ConstructStringFromBinaryTree.tree2str(root)
+        let result = ConstructStringFromBinaryTree().tree2str(root)
         
         XCTAssertEqual(result, "1(2()(4))(3)")
     }

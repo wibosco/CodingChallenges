@@ -19,7 +19,7 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-2, 2]]
         let k = 1
         
-        let result = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin().kClosest(points, k)
         
         XCTAssertEqual(result, [[-2, 2]])
     }
@@ -30,7 +30,7 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-2, 4]]
         let k = 2
         
-        let result = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin().kClosest(points, k)
         
         XCTAssertEqual(result, [[3, 3], [-2, 4]])
     }
@@ -40,7 +40,7 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [1, 0]]
         let k = 2
         
-        let result = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin().kClosest(points, k)
         
         XCTAssertEqual(result, [[0, 1], [1, 0]])
     }
@@ -52,7 +52,7 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-4, -7]]
         let k = 3
 
-        let result = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin().kClosest(points, k)
         
         XCTAssertEqual(result, [[-4, -7], [-4, -8], [-2, 10]])
     }
@@ -70,7 +70,7 @@ final class KClosestPointsToOriginTests: XCTestCase {
                       [-57, -67]]
         let k = 5
 
-        let result = KClosestPointsToOrigin.kClosest(points, k)
+        let result = KClosestPointsToOrigin().kClosest(points, k)
         
         XCTAssertEqual(result, [[2, 31], [-27, -38], [-55, -39], [-57, -67], [34, -84]])
     }

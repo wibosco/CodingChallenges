@@ -18,7 +18,7 @@ final class ContinuousSubarraySumTests: XCTestCase {
         let nums = [23, 2, 4, 6, 7]
         let k = 6
         
-        let result = ContinuousSubarraySum.checkSubarraySum(nums, k)
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
         
         XCTAssertTrue(result)
     }
@@ -27,7 +27,7 @@ final class ContinuousSubarraySumTests: XCTestCase {
         let nums = [23, 2, 6, 4, 7]
         let k = 13
         
-        let result = ContinuousSubarraySum.checkSubarraySum(nums, k)
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
         
         XCTAssertFalse(result)
     }
@@ -36,7 +36,7 @@ final class ContinuousSubarraySumTests: XCTestCase {
         let nums = [1, 0]
         let k = 2
         
-        let result = ContinuousSubarraySum.checkSubarraySum(nums, k)
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
         
         XCTAssertFalse(result)
     }
@@ -45,7 +45,7 @@ final class ContinuousSubarraySumTests: XCTestCase {
         let nums = [1, 2, 3]
         let k = 5
         
-        let result = ContinuousSubarraySum.checkSubarraySum(nums, k)
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
         
         XCTAssertTrue(result)
     }
@@ -54,7 +54,7 @@ final class ContinuousSubarraySumTests: XCTestCase {
         let nums = [1, 2, 12]
         let k = 6
         
-        let result = ContinuousSubarraySum.checkSubarraySum(nums, k)
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
         
         XCTAssertFalse(result)
     }
@@ -63,7 +63,7 @@ final class ContinuousSubarraySumTests: XCTestCase {
         let nums = [5, 0, 0, 0]
         let k = 3
         
-        let result = ContinuousSubarraySum.checkSubarraySum(nums, k)
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
         
         XCTAssertTrue(result)
     }

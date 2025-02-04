@@ -20,7 +20,7 @@ struct AddOneRowToTree {
     //Using BFS we traverse the tree level-by-level until we get to the `depth - 1` level i.e. the parents of the nodes to be added,
     //and then insert new nodes into that level by transplanting the existing left and right nodes as the child of the new nodes and
     //then setting the left and right child of the parent node to those new nodes.
-    static func addOneRow(_ root: TreeNode?, _ val: Int, _ depth: Int) -> TreeNode? {
+    func addOneRow(_ root: TreeNode?, _ val: Int, _ depth: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }

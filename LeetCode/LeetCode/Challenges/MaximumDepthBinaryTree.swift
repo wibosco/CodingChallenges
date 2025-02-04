@@ -24,7 +24,7 @@ struct MaximumDepthBinaryTree {
     //
     //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707
     //for difference between height and depth
-    static func maxDepth(_ root: TreeNode?) -> Int {
+    func maxDepth(_ root: TreeNode?) -> Int {
         guard let root = root else { //base when we go beyond a leaf
             return 0
         }
@@ -47,11 +47,11 @@ struct MaximumDepthBinaryTree {
     //
     //N.B. see https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707
     //for difference between height and depth
-    static func maxDepthDFS(_ root: TreeNode?) -> Int {
+    func maxDepthDFS(_ root: TreeNode?) -> Int {
         return maxDepthDFS(root, 0)
     }
     
-    private static func maxDepthDFS(_ root: TreeNode?, _ depth: Int) -> Int {
+    private func maxDepthDFS(_ root: TreeNode?, _ depth: Int) -> Int {
         guard let root = root else {
             return depth
         }
@@ -72,7 +72,7 @@ struct MaximumDepthBinaryTree {
     //Solution Description:
     //Using BFS, traverse down the tree adding 1 to the `depth` for level we encounter. When the queue is empty we have
     //the maximum depth.
-    static func maxDepthBFS(_ root: TreeNode?) -> Int {
+    func maxDepthBFS(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }

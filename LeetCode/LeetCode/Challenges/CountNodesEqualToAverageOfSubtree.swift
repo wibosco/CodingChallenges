@@ -22,14 +22,14 @@ struct CountNodesEqualToAverageOfSubtree {
     //stack we pass back up with sum of that subtree and the count of the nodes that make up that subtree. We then add the current
     //node to that sum and count and check if once the average is calculated that nodes value matches the average - if it does we
     //increment `matchCount`. We repeat this process until all nodes have been checked.
-    static func averageOfSubtree(_ root: TreeNode?) -> Int {
+    func averageOfSubtree(_ root: TreeNode?) -> Int {
         var matchCount = 0
         _ = dfs(root, &matchCount)
         
         return matchCount
     }
     
-    private static func dfs(_ node: TreeNode?, _ matchCount: inout Int) -> (Int, Int) { //sum, count
+    private func dfs(_ node: TreeNode?, _ matchCount: inout Int) -> (Int, Int) { //sum, count
         guard let node = node else {
             return (0, 0)
         }

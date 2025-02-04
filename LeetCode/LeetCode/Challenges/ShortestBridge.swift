@@ -29,7 +29,7 @@ struct ShortestBridge {
     //level-by-level fashion and so ensure that minimum number of steps are used to bridge the two islands.
     //
     //N.B. A set is used for the queue in the BFS section to minimise memory usage.
-    static func shortestBridge(_ grid: [[Int]]) -> Int {
+    func shortestBridge(_ grid: [[Int]]) -> Int {
         var island = Set<[Int]>()
         
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] //up down left right
@@ -47,7 +47,7 @@ struct ShortestBridge {
         return bfs(grid, island, relativeIndexes)
     }
     
-    private static func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ relativeIndexes: [[Int]], _ visited: inout Set<[Int]>) {
+    private func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ relativeIndexes: [[Int]], _ visited: inout Set<[Int]>) {
         guard row >= 0, row < grid.count, column >= 0, column < grid[row].count else {
             return
         }
@@ -70,7 +70,7 @@ struct ShortestBridge {
         }
     }
     
-    private static func bfs(_ grid: [[Int]], _ island: Set<[Int]>, _ relativeIndexes: [[Int]]) -> Int {
+    private func bfs(_ grid: [[Int]], _ island: Set<[Int]>, _ relativeIndexes: [[Int]]) -> Int {
         var count = 0
         
         var queue = island //use a set for the queue to avoid storing same index multiple times

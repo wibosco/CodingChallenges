@@ -23,7 +23,7 @@ struct CheckCompletenessOfABinaryTree {
     //tree - it's important to note that the next node might be on the same level or the next level so `missing` needs to exist
     //outside of queue and not be reset with each level. If we traverse all levels we know there are either no gaps or the gaps
     //to the right of the last node (which is acceptable) then we return true.
-    static func isCompleteTree(_ root: TreeNode?) -> Bool {
+    func isCompleteTree(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
         }

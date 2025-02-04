@@ -17,7 +17,7 @@ final class PalindromeLinkedListTests: XCTestCase {
         let data = [1, 2, 2, 1]
         let head = ListNode.deserialize(data)
             
-        let result = PalindromeLinkedList.isPalindrome(head)
+        let result = PalindromeLinkedList().isPalindrome(head)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class PalindromeLinkedListTests: XCTestCase {
         let data = [1, 2]
         let head = ListNode.deserialize(data)
             
-        let result = PalindromeLinkedList.isPalindrome(head)
+        let result = PalindromeLinkedList().isPalindrome(head)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class PalindromeLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 2, 1]
         let head = ListNode.deserialize(data)
             
-        let result = PalindromeLinkedList.isPalindrome(head)
+        let result = PalindromeLinkedList().isPalindrome(head)
         
         XCTAssertTrue(result)
     }
@@ -44,7 +44,7 @@ final class PalindromeLinkedListTests: XCTestCase {
         let data = [1, 2, 1]
         let head = ListNode.deserialize(data)
             
-        let result = PalindromeLinkedList.isPalindrome(head)
+        let result = PalindromeLinkedList().isPalindrome(head)
         
         XCTAssertTrue(result)
     }
@@ -53,7 +53,7 @@ final class PalindromeLinkedListTests: XCTestCase {
         let data = [1]
         let head = ListNode.deserialize(data)
             
-        let result = PalindromeLinkedList.isPalindrome(head)
+        let result = PalindromeLinkedList().isPalindrome(head)
         
         XCTAssertTrue(result)
     }

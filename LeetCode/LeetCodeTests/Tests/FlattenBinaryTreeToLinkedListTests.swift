@@ -19,7 +19,7 @@ final class FlattenBinaryTreeToLinkedListTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        FlattenBinaryTreeToLinkedList.flatten(root)
+        FlattenBinaryTreeToLinkedList().flatten(root)
         
         let result = TreeNode.serialize(root)
         
@@ -31,7 +31,7 @@ final class FlattenBinaryTreeToLinkedListTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        FlattenBinaryTreeToLinkedList.flatten(root)
+        FlattenBinaryTreeToLinkedList().flatten(root)
         
         let result = TreeNode.serialize(root)
         
@@ -43,7 +43,7 @@ final class FlattenBinaryTreeToLinkedListTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        FlattenBinaryTreeToLinkedList.flatten(root)
+        FlattenBinaryTreeToLinkedList().flatten(root)
         
         let result = TreeNode.serialize(root)
         

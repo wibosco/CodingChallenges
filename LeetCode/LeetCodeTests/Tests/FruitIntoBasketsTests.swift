@@ -16,7 +16,7 @@ final class FruitIntoBasketsTests: XCTestCase {
     func test_A() {
         let fruits = [1, 2, 1]
         
-        let result = FruitIntoBaskets.totalFruit(fruits)
+        let result = FruitIntoBaskets().totalFruit(fruits)
         
         XCTAssertEqual(result, 3)
     }
@@ -24,7 +24,7 @@ final class FruitIntoBasketsTests: XCTestCase {
     func test_B() {
         let fruits = [0, 1, 2, 2]
         
-        let result = FruitIntoBaskets.totalFruit(fruits)
+        let result = FruitIntoBaskets().totalFruit(fruits)
         
         XCTAssertEqual(result, 3)
     }
@@ -32,7 +32,7 @@ final class FruitIntoBasketsTests: XCTestCase {
     func test_C() {
         let fruits = [1, 2, 3, 2, 2]
         
-        let result = FruitIntoBaskets.totalFruit(fruits)
+        let result = FruitIntoBaskets().totalFruit(fruits)
         
         XCTAssertEqual(result, 4)
     }
@@ -40,7 +40,7 @@ final class FruitIntoBasketsTests: XCTestCase {
     func test_D() {
         let fruits = [3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4]
         
-        let result = FruitIntoBaskets.totalFruit(fruits)
+        let result = FruitIntoBaskets().totalFruit(fruits)
         
         XCTAssertEqual(result, 5)
     }
@@ -49,7 +49,7 @@ final class FruitIntoBasketsTests: XCTestCase {
     func test_E() {
         let fruits = [0, 1, 1, 4, 3]
         
-        let result = FruitIntoBaskets.totalFruit(fruits)
+        let result = FruitIntoBaskets().totalFruit(fruits)
         
         XCTAssertEqual(result, 3)
     }

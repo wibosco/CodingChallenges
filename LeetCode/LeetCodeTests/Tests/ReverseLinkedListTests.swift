@@ -18,7 +18,7 @@ final class ReverseLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5]
         let head = ListNode.deserialize(data)
         
-        let result = ReverseLinkedList.reverseList(head)
+        let result = ReverseLinkedList().reverseList(head)
         
         let values = ListNode.serialize(result)
         
@@ -29,7 +29,7 @@ final class ReverseLinkedListTests: XCTestCase {
         let data = [1, 2]
         let head = ListNode.deserialize(data)
         
-        let result = ReverseLinkedList.reverseList(head)
+        let result = ReverseLinkedList().reverseList(head)
         
         let values = ListNode.serialize(result)
         
@@ -40,7 +40,7 @@ final class ReverseLinkedListTests: XCTestCase {
         let data = [Int]()
         let head = ListNode.deserialize(data)
         
-        let result = ReverseLinkedList.reverseList(head)
+        let result = ReverseLinkedList().reverseList(head)
         
         let values = ListNode.serialize(result)
         

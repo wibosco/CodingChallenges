@@ -17,7 +17,7 @@ final class CoinChangeTests: XCTestCase {
         let coins = [1, 2, 5]
         let amount = 11
         
-        let result = CoinChange.coinChange(coins, amount)
+        let result = CoinChange().coinChange(coins, amount)
         
         XCTAssertEqual(result, 3)
     }
@@ -26,7 +26,7 @@ final class CoinChangeTests: XCTestCase {
         let coins = [2]
         let amount = 3
         
-        let result = CoinChange.coinChange(coins, amount)
+        let result = CoinChange().coinChange(coins, amount)
         
         XCTAssertEqual(result, -1)
     }
@@ -35,7 +35,7 @@ final class CoinChangeTests: XCTestCase {
         let coins = [1]
         let amount = 0
         
-        let result = CoinChange.coinChange(coins, amount)
+        let result = CoinChange().coinChange(coins, amount)
         
         XCTAssertEqual(result, 0)
     }
@@ -44,7 +44,7 @@ final class CoinChangeTests: XCTestCase {
         let coins = [1, 2, 5]
         let amount = 100
         
-        let result = CoinChange.coinChange(coins, amount)
+        let result = CoinChange().coinChange(coins, amount)
         
         XCTAssertEqual(result, 20)
     }
@@ -53,7 +53,7 @@ final class CoinChangeTests: XCTestCase {
         let coins = [186, 419, 83, 408]
         let amount = 6249
         
-        let result = CoinChange.coinChange(coins, amount)
+        let result = CoinChange().coinChange(coins, amount)
         
         XCTAssertEqual(result, 20)
     }
@@ -62,7 +62,7 @@ final class CoinChangeTests: XCTestCase {
         let coins = [1, 3, 4, 5]
         let amount = 7
         
-        let result = CoinChange.coinChange(coins, amount)
+        let result = CoinChange().coinChange(coins, amount)
         
         XCTAssertEqual(result, 2)
     }

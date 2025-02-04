@@ -16,7 +16,7 @@ final class PermutationsTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3]
         
-        let permutations = Permutations.permute(nums)
+        let permutations = Permutations().permute(nums)
         
         let expectedPermutations = [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
         
@@ -31,7 +31,7 @@ final class PermutationsTests: XCTestCase {
     func test_B() {
         let nums = [0, 1]
         
-        let permutations = Permutations.permute(nums)
+        let permutations = Permutations().permute(nums)
         
         let expectedPermutations = [[0, 1], [1, 0]]
         
@@ -46,7 +46,7 @@ final class PermutationsTests: XCTestCase {
     func test_C() {
         let nums = [1]
         
-        let permutations = Permutations.permute(nums)
+        let permutations = Permutations().permute(nums)
         
         let expectedPermutations = [[1]]
         

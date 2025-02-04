@@ -16,7 +16,7 @@ final class LongestConsecutiveSequenceTests: XCTestCase {
     func test_A() {
         let nums = [100, 4, 200, 1, 3, 2]
         
-        let result = LongestConsecutiveSequence.longestConsecutive(nums)
+        let result = LongestConsecutiveSequence().longestConsecutive(nums)
         
         XCTAssertEqual(result, 4)
     }
@@ -24,7 +24,7 @@ final class LongestConsecutiveSequenceTests: XCTestCase {
     func test_B() {
         let nums = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1]
         
-        let result = LongestConsecutiveSequence.longestConsecutive(nums)
+        let result = LongestConsecutiveSequence().longestConsecutive(nums)
         
         XCTAssertEqual(result, 9)
     }

@@ -27,7 +27,7 @@ struct MaximumSwap {
     //we find that element we swap the current element with it and return as that is guaranteed to be the largest configuration
     //of `num`. If we can't find a replacement for any of the digits in `num` i.e. `num` is in descending or equal order then we
     //simply return `num`
-    static func maximumSwap(_ num: Int) -> Int {
+    func maximumSwap(_ num: Int) -> Int {
         var digits = String(num).compactMap { $0.wholeNumberValue }
         
         var map = [Int: Int]() // [val: index]
@@ -59,7 +59,7 @@ struct MaximumSwap {
     //
     //Solution Description:
     //Loop through all possible swaps and store the maximum value found.
-    static func maximumSwapBruteForce(_ num: Int) -> Int {
+    func maximumSwapBruteForce(_ num: Int) -> Int {
         var maxNum = num
         
         let digits = String(num).compactMap { Int(String($0)) }

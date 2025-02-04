@@ -26,7 +26,7 @@ struct KthLargestElementInArray {
     //
     //N.B. Here we are using Lomutos partitioning scheme, see:
     //https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
-    static func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
+    func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
         var nums = nums
         
         let invertedK = nums.count - k
@@ -34,7 +34,7 @@ struct KthLargestElementInArray {
         return quickSelect(&nums, 0, (nums.count - 1), invertedK) //note the "-1" for right as we index from 0
     }
     
-    private static func quickSelect(_ nums: inout [Int], _ left: Int, _ right: Int, _ k: Int) -> Int {
+    private func quickSelect(_ nums: inout [Int], _ left: Int, _ right: Int, _ k: Int) -> Int {
         let partitionIndex = partition(&nums, left, right)
         
         if partitionIndex == k {
@@ -46,7 +46,7 @@ struct KthLargestElementInArray {
         }
     }
     
-    private static func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {
+    private func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {
         let pivot = nums[right] //note that the pivot is set using the right pointer
         
         var i = left
@@ -73,7 +73,7 @@ struct KthLargestElementInArray {
     //
     //Solution Description:
     //Using a max heap we sort the nums and then extract the `k` element from that heap
-    static func findKthLargestHeap(_ nums: [Int], _ k: Int) -> Int {
+    func findKthLargestHeap(_ nums: [Int], _ k: Int) -> Int {
         var heap = Heap(elements: nums) {
             $0 > $1
         }

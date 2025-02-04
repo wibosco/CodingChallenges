@@ -23,13 +23,13 @@ struct BalancedBinaryTree {
     //then we know the tree is unbalanced and we return -1; if the hight difference is 1 or 0 we take the max height and add 1
     //to it and return that increased height as the node/root height. We repeat this process until we reach the root of the tree
     //or have -1 returned.
-    static func isBalanced(_ root: TreeNode?) -> Bool {
+    func isBalanced(_ root: TreeNode?) -> Bool {
         let balanced = dfs(root)
         
         return balanced != -1
     }
     
-    private static func dfs(_ node: TreeNode?) -> Int {
+    private func dfs(_ node: TreeNode?) -> Int {
         guard let node = node else {
             return 0
         }

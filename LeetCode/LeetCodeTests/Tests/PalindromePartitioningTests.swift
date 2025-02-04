@@ -16,7 +16,7 @@ final class PalindromePartitioningTests: XCTestCase {
     func test_A() {
         let s = "aab"
         
-        let result = PalindromePartitioning.partition(s)
+        let result = PalindromePartitioning().partition(s)
         
         XCTAssertEqual(result, [["a", "a", "b"],["aa", "b"]])
     }
@@ -24,7 +24,7 @@ final class PalindromePartitioningTests: XCTestCase {
     func test_B() {
         let s = "a"
         
-        let result = PalindromePartitioning.partition(s)
+        let result = PalindromePartitioning().partition(s)
         
         XCTAssertEqual(result, [["a"]])
     }

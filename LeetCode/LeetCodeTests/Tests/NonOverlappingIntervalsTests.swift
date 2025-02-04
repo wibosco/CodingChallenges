@@ -16,7 +16,7 @@ final class NonOverlappingIntervalsTests: XCTestCase {
     func test_A() {
         let intervals = [[1, 2], [2, 3], [3, 4], [1, 3]]
         
-        let result = NonOverlappingIntervals.eraseOverlapIntervals(intervals)
+        let result = NonOverlappingIntervals().eraseOverlapIntervals(intervals)
         
         XCTAssertEqual(result, 1)
     }
@@ -24,7 +24,7 @@ final class NonOverlappingIntervalsTests: XCTestCase {
     func test_B() {
         let intervals = [[1, 2], [1, 2], [1, 2]]
         
-        let result = NonOverlappingIntervals.eraseOverlapIntervals(intervals)
+        let result = NonOverlappingIntervals().eraseOverlapIntervals(intervals)
         
         XCTAssertEqual(result, 2)
     }
@@ -32,7 +32,7 @@ final class NonOverlappingIntervalsTests: XCTestCase {
     func test_C() {
         let intervals = [[1, 2], [2, 3]]
         
-        let result = NonOverlappingIntervals.eraseOverlapIntervals(intervals)
+        let result = NonOverlappingIntervals().eraseOverlapIntervals(intervals)
         
         XCTAssertEqual(result, 0)
     }

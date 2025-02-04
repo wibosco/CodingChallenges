@@ -18,7 +18,7 @@ final class PopulatingNextRightPointersTests: XCTestCase {
         let data = [1, 2, 3, 4, 5, 6, 7]
         let root = TreeNodeNext.deserialize(data)
         
-        let node = PopulatingNextRightPointers.connect(root)
+        let node = PopulatingNextRightPointers().connect(root)
         
         let result = TreeNodeNext.serialize(node)
         
@@ -29,7 +29,7 @@ final class PopulatingNextRightPointersTests: XCTestCase {
         let data = [Int]()
         let root = TreeNodeNext.deserialize(data)
         
-        let node = PopulatingNextRightPointers.connect(root)
+        let node = PopulatingNextRightPointers().connect(root)
         
         let result = TreeNodeNext.serialize(node)
         

@@ -17,7 +17,7 @@ final class MostFrequentSubtreeSumTests: XCTestCase {
         let data = [5,2,-3]
         let root = TreeNode.deserialize(data)
         
-        let result = MostFrequentSubtreeSum.findFrequentTreeSum(root)
+        let result = MostFrequentSubtreeSum().findFrequentTreeSum(root)
         
         let expectedResult = Set([2,-3,4])
         
@@ -33,7 +33,7 @@ final class MostFrequentSubtreeSumTests: XCTestCase {
         let data = [5,2,-5]
         let root = TreeNode.deserialize(data)
         
-        let result = MostFrequentSubtreeSum.findFrequentTreeSum(root)
+        let result = MostFrequentSubtreeSum().findFrequentTreeSum(root)
         
         let expectedResult = Set([2])
         

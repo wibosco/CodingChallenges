@@ -34,7 +34,7 @@ struct CarFleet {
     //As x increases, y decreases always, then it’s a monotonically decreasing function.
     //
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
-    static func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
+    func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
         let combined = zip(position, speed)
         //as cars can't overtake want to build car fleets by reverse starting position order
         let sortedByPosition = combined.sorted { $0.0 < $1.0 }

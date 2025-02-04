@@ -29,7 +29,7 @@ struct EliminateMaximumNumberOfMonsters {
     //N.B. this is kind of like a BFS level-by-level approach however because the monsters don't interfere with each other and we
     //need to eliminate the monsters that reach the city first rather than just the nearer monsters, we are able to calculate the
     //monsters moves and eliminate them in a greedy manner which is much simpler/efficient than the alternative BFS approach.
-    static func eliminateMaximum(_ dist: [Int], _ speed: [Int]) -> Int {
+    func eliminateMaximum(_ dist: [Int], _ speed: [Int]) -> Int {
         let monsters = dist.count
         var arrivalTimes = [Int]()
                 

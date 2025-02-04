@@ -22,7 +22,7 @@ struct PalindromeNumber {
     //to ensure that the digit is added in the correct position we first multiple it by 10 and then we add. Next we perform an
     //integer division by 10 to `tmp` to prepare it for the next iteration. After iterating through `x` we compare `reversedX`
     //against `x`
-    static func isPalindrome(_ x: Int) -> Bool {
+    func isPalindrome(_ x: Int) -> Bool {
         guard x >= 0 else {
             return false
         }

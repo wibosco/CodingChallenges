@@ -18,7 +18,7 @@ final class DeleteNodesAndReturnForestTests: XCTestCase {
         let data = [1,2,3,4,5,6,7]
         let root = TreeNode.deserialize(data)
         
-        let result = DeleteNodesAndReturnForest.delNodes(root, toDelete)
+        let result = DeleteNodesAndReturnForest().delNodes(root, toDelete)
         let trees = result.map { TreeNode.serialize($0) }
         
         var expectedTrees = Set<[Int?]>()
@@ -38,7 +38,7 @@ final class DeleteNodesAndReturnForestTests: XCTestCase {
         let data = [1,2,4,nil,3]
         let root = TreeNode.deserialize(data)
         
-        let result = DeleteNodesAndReturnForest.delNodes(root, toDelete)
+        let result = DeleteNodesAndReturnForest().delNodes(root, toDelete)
         let trees = result.map { TreeNode.serialize($0) }
         
         var expectedTrees = Set<[Int?]>()

@@ -18,7 +18,7 @@ final class FlipBinaryTreeToMatchPreorderTraversalTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let voyage = [2,1]
         
-        let result = FlipBinaryTreeToMatchPreorderTraversal.flipMatchVoyage(root, voyage)
+        let result = FlipBinaryTreeToMatchPreorderTraversal().flipMatchVoyage(root, voyage)
         
         XCTAssertEqual(result, [-1])
     }
@@ -28,7 +28,7 @@ final class FlipBinaryTreeToMatchPreorderTraversalTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let voyage = [1,3,2]
         
-        let result = FlipBinaryTreeToMatchPreorderTraversal.flipMatchVoyage(root, voyage)
+        let result = FlipBinaryTreeToMatchPreorderTraversal().flipMatchVoyage(root, voyage)
         
         XCTAssertEqual(result, [1])
     }
@@ -38,7 +38,7 @@ final class FlipBinaryTreeToMatchPreorderTraversalTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let voyage = [1,2,3]
         
-        let result = FlipBinaryTreeToMatchPreorderTraversal.flipMatchVoyage(root, voyage)
+        let result = FlipBinaryTreeToMatchPreorderTraversal().flipMatchVoyage(root, voyage)
         
         XCTAssertEqual(result, [])
     }
@@ -48,7 +48,7 @@ final class FlipBinaryTreeToMatchPreorderTraversalTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let voyage = [2,4,3,1,5]
         
-        let result = FlipBinaryTreeToMatchPreorderTraversal.flipMatchVoyage(root, voyage)
+        let result = FlipBinaryTreeToMatchPreorderTraversal().flipMatchVoyage(root, voyage)
         
         XCTAssertEqual(result, [2])
     }
@@ -58,7 +58,7 @@ final class FlipBinaryTreeToMatchPreorderTraversalTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let voyage = [1,3,2]
         
-        let result = FlipBinaryTreeToMatchPreorderTraversal.flipMatchVoyage(root, voyage)
+        let result = FlipBinaryTreeToMatchPreorderTraversal().flipMatchVoyage(root, voyage)
         
         XCTAssertEqual(result, [-1])
     }

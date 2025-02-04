@@ -28,7 +28,7 @@ struct MultiplyStrings {
     //process to multiplication.
     //
     //NB: see also https://leetcode.com/problems/add-two-numbers/
-    static func multiply(_ num1: String, _ num2: String) -> String {
+    func multiply(_ num1: String, _ num2: String) -> String {
         guard num1 != "0", num2 != "0" else {
             return "0"
         }
@@ -47,7 +47,7 @@ struct MultiplyStrings {
         return result
     }
     
-    private static func buildProducts(_ num1: String, _ num2: String) -> [String] {
+    private func buildProducts(_ num1: String, _ num2: String) -> [String] {
         var results = [String]()
         var trailingZeros = 0
         
@@ -80,7 +80,7 @@ struct MultiplyStrings {
         return results
     }
     
-    private static func add(_ num1: String, _ num2: String) -> String {
+    private func add(_ num1: String, _ num2: String) -> String {
         var result = ""
         
         var carry = 0

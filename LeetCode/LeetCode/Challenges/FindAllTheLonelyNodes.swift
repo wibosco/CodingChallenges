@@ -21,7 +21,7 @@ struct FindAllTheLonelyNodes {
     //Solution Description:
     //Using DFS we visit each node in the tree and check if that node only has one child, if so we add that child node to
     //`lonelyNodes` else we skip over it.
-    static func getLonelyNodes(_ root: TreeNode?) -> [Int] {
+    func getLonelyNodes(_ root: TreeNode?) -> [Int] {
         var lonelyNodes = [Int]()
         
         dfs(root, &lonelyNodes)
@@ -29,7 +29,7 @@ struct FindAllTheLonelyNodes {
         return lonelyNodes
     }
     
-    private static func dfs(_ node: TreeNode?, _ lonelyNodes: inout [Int]) {
+    private func dfs(_ node: TreeNode?, _ lonelyNodes: inout [Int]) {
         guard let node = node else {
             return
         }

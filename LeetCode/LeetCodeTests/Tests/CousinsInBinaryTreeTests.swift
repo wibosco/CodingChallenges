@@ -19,7 +19,7 @@ final class CousinsInBinaryTreeTests: XCTestCase {
         let data = [1,2,3,4]
         let root = TreeNode.deserialize(data)
         
-        let result = CousinsInBinaryTree.isCousins(root, x, y)
+        let result = CousinsInBinaryTree().isCousins(root, x, y)
         
         XCTAssertFalse(result)
     }
@@ -30,7 +30,7 @@ final class CousinsInBinaryTreeTests: XCTestCase {
         let data = [1,2,3,nil,4,nil,5]
         let root = TreeNode.deserialize(data)
         
-        let result = CousinsInBinaryTree.isCousins(root, x, y)
+        let result = CousinsInBinaryTree().isCousins(root, x, y)
         
         XCTAssertTrue(result)
     }
@@ -41,7 +41,7 @@ final class CousinsInBinaryTreeTests: XCTestCase {
         let data = [1,2,3,nil,4]
         let root = TreeNode.deserialize(data)
         
-        let result = CousinsInBinaryTree.isCousins(root, x, y)
+        let result = CousinsInBinaryTree().isCousins(root, x, y)
         
         XCTAssertFalse(result)
     }

@@ -25,7 +25,7 @@ struct NonOverlappingIntervals {
     //overlap taking the "smaller" interval reduces the choice of it overlapping with it's right neighbor. If there isn't an
     //overlap we update `lastInterval` with the current interval and repeat the process. Once all intervals have been compared
     //and the overlaps removed we return `removalCount`.
-    static func eraseOverlapIntervals(_ intervals: [[Int]]) -> Int {
+    func eraseOverlapIntervals(_ intervals: [[Int]]) -> Int {
         let sortedIntervals = intervals.sorted { $0[0] < $1[0] }
         
         var removalCount = 0

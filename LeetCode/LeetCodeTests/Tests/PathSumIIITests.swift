@@ -18,7 +18,7 @@ final class PathSumIIITests: XCTestCase {
         let data = [10,5,-3,3,2,nil,11,3,-2,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = PathSumIII.pathSum(root, targetSum)
+        let result = PathSumIII().pathSum(root, targetSum)
         
         XCTAssertEqual(result, 3)
     }
@@ -28,7 +28,7 @@ final class PathSumIIITests: XCTestCase {
         let data = [5,4,8,11,nil,13,4,7,2,nil,nil,5,1]
         let root = TreeNode.deserialize(data)
         
-        let result = PathSumIII.pathSum(root, targetSum)
+        let result = PathSumIII().pathSum(root, targetSum)
         
         XCTAssertEqual(result, 3)
     }
@@ -38,7 +38,7 @@ final class PathSumIIITests: XCTestCase {
         let data = [1,nil,2,nil,3,nil,4,nil,5]
         let root = TreeNode.deserialize(data)
         
-        let result = PathSumIII.pathSum(root, targetSum)
+        let result = PathSumIII().pathSum(root, targetSum)
         
         XCTAssertEqual(result, 2)
     }

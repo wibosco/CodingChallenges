@@ -19,7 +19,7 @@ final class SearchSortedArrayOfUnknownSizeTests: XCTestCase {
         let target = 9
         
         let reader = ArrayReader(secret: secret)
-        let index = SearchSortedArrayOfUnknownSize.search(reader, target)
+        let index = SearchSortedArrayOfUnknownSize().search(reader, target)
         
         XCTAssertEqual(index, 4)
     }
@@ -29,7 +29,7 @@ final class SearchSortedArrayOfUnknownSizeTests: XCTestCase {
         let target = 2
         
         let reader = ArrayReader(secret: secret)
-        let index = SearchSortedArrayOfUnknownSize.search(reader, target)
+        let index = SearchSortedArrayOfUnknownSize().search(reader, target)
         
         XCTAssertEqual(index, -1)
     }

@@ -24,7 +24,7 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 3
         let k = 1
         
-        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops().findCheapestPrice(n, flights, src, dst, k)
         
         XCTAssertEqual(result, 700)
     }
@@ -38,7 +38,7 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 1
         
-        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops().findCheapestPrice(n, flights, src, dst, k)
         
         XCTAssertEqual(result, 200)
     }
@@ -52,7 +52,7 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 0
         
-        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops().findCheapestPrice(n, flights, src, dst, k)
         
         XCTAssertEqual(result, 500)
     }
@@ -87,7 +87,7 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 0
         let k = 7
         
-        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops().findCheapestPrice(n, flights, src, dst, k)
         
         XCTAssertEqual(result, 14)
     }
@@ -179,7 +179,7 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 6
         
-        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops().findCheapestPrice(n, flights, src, dst, k)
         
         XCTAssertEqual(result, 169)
     }
@@ -192,7 +192,7 @@ final class CheapestFlightsWithinKStopsTests: XCTestCase {
         let dst = 2
         let k = 0
         
-        let result = CheapestFlightsWithinKStops.findCheapestPrice(n, flights, src, dst, k)
+        let result = CheapestFlightsWithinKStops().findCheapestPrice(n, flights, src, dst, k)
         
         XCTAssertEqual(result, -1)
     }

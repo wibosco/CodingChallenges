@@ -26,7 +26,7 @@ struct BinarySearch {
     //3. is it less than the target - going forward only search the elements to the right of `mid`
     //
     //With this approach we are halving the search space with each iteration.
-    static func search(_ nums: [Int], _ target: Int) -> Int {
+    func search(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
         

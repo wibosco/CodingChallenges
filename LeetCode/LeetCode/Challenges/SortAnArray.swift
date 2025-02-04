@@ -21,7 +21,7 @@ struct SortAnArray {
     //Using min-heap we are able sort `nums` using heap sort. First we fill the heap with the contents of `nums` and then
     //gradually the top element from the heap - each removal causes the heap to re-arrange itself and ensure that the next
     //smallest value in that heap is now at the top. As we empty to heap we fill the `sorted` array.
-    static func sortArray(_ nums: [Int]) -> [Int] {
+    func sortArray(_ nums: [Int]) -> [Int] {
         var heap = Heap(elements: nums) { $0 < $1 }
         var sorted = [Int]()
         
@@ -57,7 +57,7 @@ struct SortAnArray {
     //N.B. Radix sort is not a comparison sort
     //
     //N.B. Similar to counting sort in that buckets are used
-    static func sortArrayRadixSort(_ nums: [Int]) -> [Int] {
+    func sortArrayRadixSort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
         }
@@ -114,7 +114,7 @@ struct SortAnArray {
     //to `high` and check if that value has an entry in the dictionary. If it does have an entry then we add the value of the
     //current iteration `i` to the `sorted` array `count` times; if it doesn't we skip it. As we are going from low to high we
     //will be adding those values in non-descending order.
-    static func sortArrayCountingSort(_ nums: [Int]) -> [Int] {
+    func sortArrayCountingSort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
         }
@@ -165,7 +165,7 @@ struct SortAnArray {
     //
     //N.B. Here we are using Lomutos partitioning scheme, see:
     //https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
-    static func sortArrayQuicksort(_ nums: [Int]) -> [Int] {
+    func sortArrayQuicksort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
         }
@@ -177,7 +177,7 @@ struct SortAnArray {
         return nums
     }
     
-    private static func quickSort(_ nums: inout [Int], _ left: Int, _ right: Int) {
+    private func quickSort(_ nums: inout [Int], _ left: Int, _ right: Int) {
         guard left < right else {
             return
         }
@@ -189,7 +189,7 @@ struct SortAnArray {
         quickSort(&nums, (sortedIndex + 1), right) //partition/sort those elements to the right of the pivot
     }
     
-    private static func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {
+    private func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {
         let pivot = nums[right] //note this is the value not the index
         
         var i = left //i becomes the edge of the values less than the pivot and those greater than the pivot
@@ -240,7 +240,7 @@ struct SortAnArray {
     //
     //                [1, 2, 2, 4, 6, 7]
     //
-    static func sortArrayMergeSort(_ nums: [Int]) -> [Int] {
+    func sortArrayMergeSort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
         }
@@ -248,7 +248,7 @@ struct SortAnArray {
         return mergeSort(nums, 0, nums.count) //note that we the count without - 1
     }
     
-    private static func mergeSort(_ nums: [Int], _ left: Int, _ right: Int) -> [Int] {
+    private func mergeSort(_ nums: [Int], _ left: Int, _ right: Int) -> [Int] {
         guard right - left > 1 else { //single element
             return [nums[left]]
         }
@@ -261,7 +261,7 @@ struct SortAnArray {
         return merge(left, right)
     }
     
-    private static func merge(_ left: [Int], _ right: [Int]) -> [Int] {
+    private func merge(_ left: [Int], _ right: [Int]) -> [Int] {
         var merged = [Int]()
         
         var p1 = 0
@@ -308,7 +308,7 @@ struct SortAnArray {
     //already in the sorted section). To discover that sorted position we gradually compare that unsorted element with each
     //sorted element (in descending order) until the unsorted element larger than the sorted element and we insert that
     //unsorted element into its sorted position. This process is repeated until all elements are sorted.
-    static func sortArrayInsertionSort(_ nums: [Int]) -> [Int] {
+    func sortArrayInsertionSort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
         }
@@ -341,7 +341,7 @@ struct SortAnArray {
     //Using selection sort, we find the smallest element in `nums` and replace the current element at 0 with that smallest
     //element. Next find the second smallest element in `nums` and replace the current element at 1 with that second smallest
     //element. This process is repeated until all elements are sorted.
-    static func sortArraySelectionSort(_ nums: [Int]) -> [Int] {
+    func sortArraySelectionSort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
         }
@@ -375,7 +375,7 @@ struct SortAnArray {
     //know when `nums` is sorted, at the start of each pass through we set `sorted` to true. If `sorted` remains true after
     //passing through each element in `nums` then we know that `nums` is sorted and can stop looping; if `sorted` is false then
     //we know that at some point the previous loop we swapped elements and need to check again.
-    static func sortArrayBubbleSort(_ nums: [Int]) -> [Int] {
+    func sortArrayBubbleSort(_ nums: [Int]) -> [Int] {
         guard nums.count > 1 else {
             return nums
         }

@@ -25,7 +25,7 @@ struct CreateBinaryTreeFromDescriptions {
     //child to the `childern` set. Care must be taken to ensure that nodes that where parents-only but have now become childern of
     //another node are removed from the `parents` set. Once all elements in `descriptions` are being processed, only one element
     //should exist in `parents` which we can return as the root of the tree.
-    static func createBinaryTree(_ descriptions: [[Int]]) -> TreeNode? {
+    func createBinaryTree(_ descriptions: [[Int]]) -> TreeNode? {
         var childern = Set<Int>()
         var parents = Set<Int>()
         

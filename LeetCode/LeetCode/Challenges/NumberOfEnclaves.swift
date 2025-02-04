@@ -29,7 +29,7 @@ struct NumberOfEnclaves {
     //square of an island "touches" the border of `grid` we don't include that island in our count but we do continue
     //searching it to so we can eliminate that whole island from any future searches. At the end of each search we merge
     //`dfsVisited` into `visited`.
-    static func numEnclaves(_ grid: [[Int]]) -> Int {
+    func numEnclaves(_ grid: [[Int]]) -> Int {
         var count = 0
         var visited = Set<[Int]>()
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] // [up, down, left, right]
@@ -58,7 +58,7 @@ struct NumberOfEnclaves {
         return count
     }
     
-    private static func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ relativeIndexes: [[Int]], _ visited: inout Set<[Int]>) -> Bool {
+    private func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ relativeIndexes: [[Int]], _ visited: inout Set<[Int]>) -> Bool {
         var enclave = !(row == 0 || row == (grid.count - 1) || column == 0 || column == (grid[row].count - 1))
         for relativeIndex in relativeIndexes {
             let nextRow = row + relativeIndex[0]

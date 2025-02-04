@@ -24,7 +24,7 @@ struct MaximumWidthOfBinaryTree {
     //of what it's index would actually be in a full level - remember we only care about the gap between the nodes not their position. At
     //each level is calculate the widest gap between the nodes by taking the difference between first and last nodes and compare that
     //against `maxWidth` - updating if need be. We repeat this process for all levels.
-    static func widthOfBinaryTree(_ root: TreeNode?) -> Int {
+    func widthOfBinaryTree(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return -1
         }

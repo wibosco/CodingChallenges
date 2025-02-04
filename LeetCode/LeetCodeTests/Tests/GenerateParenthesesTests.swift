@@ -17,7 +17,7 @@ final class GenerateParenthesesTests: XCTestCase {
     func test_A() {
         let n = 3
         
-        let result = GenerateParentheses.generateParenthesis(n)
+        let result = GenerateParentheses().generateParenthesis(n)
         
         XCTAssertEqual(result, ["((()))", "(()())", "(())()", "()(())", "()()()"])
     }
@@ -25,7 +25,7 @@ final class GenerateParenthesesTests: XCTestCase {
     func test_B() {
         let n = 1
         
-        let result = GenerateParentheses.generateParenthesis(n)
+        let result = GenerateParentheses().generateParenthesis(n)
         
         XCTAssertEqual(result, ["()"])
     }

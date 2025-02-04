@@ -29,7 +29,7 @@ struct RomanToInteger {
     //decimal conversion value e.g. for "IV" we first added 1 to `total` then we encountered the "V" so we need to remove
     //that false addition which results in `total` == `0` and then remove another 1 before we apply the "V" so that rather
     //than increasing `total` by 5 we correctly increase it by 4 (`IV` == 4).
-    static func romanToInt(_ s: String) -> Int {
+    func romanToInt(_ s: String) -> Int {
         let mapping: [Character: Int] = [
             "I": 1,
             "V": 5,

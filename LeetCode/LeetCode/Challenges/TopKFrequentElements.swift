@@ -29,7 +29,7 @@ struct TopKFrequentElements {
     //
     //N.B. Here we are using Lomutos partitioning scheme, see:
     //https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort#lomutos-partitioning-scheme
-    static func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
+    func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
         var frequencies = [Int: Int]() //[num, frequency]
         
         for num in nums {
@@ -43,7 +43,7 @@ struct TopKFrequentElements {
         return order[0..<k].compactMap { $0.0 }
     }
     
-    private static func quickSelect(_ order: inout [(Int, Int)], _ left: Int, _ right: Int, _ k: Int) {
+    private func quickSelect(_ order: inout [(Int, Int)], _ left: Int, _ right: Int, _ k: Int) {
         guard left < right else {
             return
         }
@@ -59,7 +59,7 @@ struct TopKFrequentElements {
         }
     }
     
-    private static func partition(_ order: inout [(Int, Int)], _ left: Int, _ right: Int) -> Int {
+    private func partition(_ order: inout [(Int, Int)], _ left: Int, _ right: Int) -> Int {
         let pivot = order[right].1 //note that the pivot is set using the right pointer
         
         var i = left
@@ -92,7 +92,7 @@ struct TopKFrequentElements {
     //and the inner array is the `num` values. Next we iterate through the `buckets` array in reverse ordering and add the
     //contents of each bucket to our result array - `order`. As a bucket can contain no items we can't just take the top `k`
     //buckets. Once `order` contains `k` elements we can return it.
-    static func topKFrequentBucketSort(_ nums: [Int], _ k: Int) -> [Int] {
+    func topKFrequentBucketSort(_ nums: [Int], _ k: Int) -> [Int] {
         var frequencies = [Int: Int]() //[num, frequency]
         
         for num in nums {

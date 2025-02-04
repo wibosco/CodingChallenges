@@ -24,7 +24,7 @@ struct SymmetricTree {
     //
     //Similar to: https://leetcode.com/problems/subtree-of-another-tree/
     //Similar to: https://leetcode.com/problems/same-tree/
-    static func isSymmetric(_ root: TreeNode?) -> Bool {
+    func isSymmetric(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
         }
@@ -32,7 +32,7 @@ struct SymmetricTree {
         return isSymmetric(root.left, root.right)
     }
     
-    private static func isSymmetric(_ a: TreeNode?, _ b: TreeNode?) -> Bool {
+    private func isSymmetric(_ a: TreeNode?, _ b: TreeNode?) -> Bool {
         guard let a = a, let b = b else {
            return a == nil && b == nil
         }
@@ -52,7 +52,7 @@ struct SymmetricTree {
     //2. At each level perform a comparison that levels outer most elements and then move inwards (repeat until
     //   no more elements to compare)
     //3. Ensure that parent element is the same for any subtree
-    static func isSymmetricComplex(_ root: TreeNode?) -> Bool {
+    func isSymmetricComplex(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
         }

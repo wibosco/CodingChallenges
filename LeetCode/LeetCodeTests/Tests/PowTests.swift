@@ -18,7 +18,7 @@ final class PowTests: XCTestCase {
         let x = 2.00000
         let n = 10
         
-        let result = Pow.myPow(x, n)
+        let result = Pow().myPow(x, n)
         
         XCTAssertEqual(result, 1024.0, accuracy: 0.001)
     }
@@ -27,7 +27,7 @@ final class PowTests: XCTestCase {
         let x = 2.10000
         let n = 3
         
-        let result = Pow.myPow(x, n)
+        let result = Pow().myPow(x, n)
         
         XCTAssertEqual(result, 9.26100, accuracy: 0.001)
     }
@@ -36,7 +36,7 @@ final class PowTests: XCTestCase {
         let x = 2.00000
         let n = -2
         
-        let result = Pow.myPow(x, n)
+        let result = Pow().myPow(x, n)
         
         XCTAssertEqual(result, 0.25000, accuracy: 0.001)
     }
@@ -45,7 +45,7 @@ final class PowTests: XCTestCase {
         let x = 1.00000
         let n = -2147483648
         
-        let result = Pow.myPow(x, n)
+        let result = Pow().myPow(x, n)
         
         XCTAssertEqual(result, 1, accuracy: 0.001)
     }

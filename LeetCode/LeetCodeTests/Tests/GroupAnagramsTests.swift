@@ -16,7 +16,7 @@ final class GroupAnagramsTests: XCTestCase {
     func test_A() {
         let strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
         
-        let groupings = GroupAnagrams.groupAnagrams(strs)
+        let groupings = GroupAnagrams().groupAnagrams(strs)
         
         let expectedGroupings = [["bat"], ["tan", "nat"], ["eat", "tea", "ate"]]
         
@@ -31,7 +31,7 @@ final class GroupAnagramsTests: XCTestCase {
     func test_B() {
         let strs = [""]
         
-        let groupings = GroupAnagrams.groupAnagrams(strs)
+        let groupings = GroupAnagrams().groupAnagrams(strs)
         
         let expectedGroupings = [[""]]
         
@@ -46,7 +46,7 @@ final class GroupAnagramsTests: XCTestCase {
     func test_C() {
         let strs = ["a"]
         
-        let groupings = GroupAnagrams.groupAnagrams(strs)
+        let groupings = GroupAnagrams().groupAnagrams(strs)
         
         let expectedGroupings = [["a"]]
         

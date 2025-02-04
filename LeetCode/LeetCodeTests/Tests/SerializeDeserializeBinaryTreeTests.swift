@@ -17,8 +17,8 @@ final class SerializeDeserializeBinaryTreeTests: XCTestCase {
     func test_A() {
         let data = [1, 2, 3, nil, nil, 4, 5]
         
-        let tree = SerializeDeserializeBinaryTree.deserialize(data)
-        let values = SerializeDeserializeBinaryTree.serialize(tree)
+        let tree = SerializeDeserializeBinaryTree().deserialize(data)
+        let values = SerializeDeserializeBinaryTree().serialize(tree)
         
         XCTAssertEqual(values, data)
     }
@@ -26,8 +26,8 @@ final class SerializeDeserializeBinaryTreeTests: XCTestCase {
     func test_B() {
         let data = [Int]()
         
-        let tree = SerializeDeserializeBinaryTree.deserialize(data)
-        let values = SerializeDeserializeBinaryTree.serialize(tree)
+        let tree = SerializeDeserializeBinaryTree().deserialize(data)
+        let values = SerializeDeserializeBinaryTree().serialize(tree)
         
         XCTAssertEqual(values, data)
     }
@@ -35,8 +35,8 @@ final class SerializeDeserializeBinaryTreeTests: XCTestCase {
     func test_C() {
         let data = [1]
         
-        let tree = SerializeDeserializeBinaryTree.deserialize(data)
-        let values = SerializeDeserializeBinaryTree.serialize(tree)
+        let tree = SerializeDeserializeBinaryTree().deserialize(data)
+        let values = SerializeDeserializeBinaryTree().serialize(tree)
         
         XCTAssertEqual(values, data)
     }
@@ -44,8 +44,8 @@ final class SerializeDeserializeBinaryTreeTests: XCTestCase {
     func test_D() {
         let data = [1, 2]
         
-        let tree = SerializeDeserializeBinaryTree.deserialize(data)
-        let values = SerializeDeserializeBinaryTree.serialize(tree)
+        let tree = SerializeDeserializeBinaryTree().deserialize(data)
+        let values = SerializeDeserializeBinaryTree().serialize(tree)
         
         XCTAssertEqual(values, data)
     }
@@ -53,8 +53,8 @@ final class SerializeDeserializeBinaryTreeTests: XCTestCase {
     func test_E() {
         let data = [1, 2, 3, nil, 4, 5, 6]
         
-        let tree = SerializeDeserializeBinaryTree.deserialize(data)
-        let values = SerializeDeserializeBinaryTree.serialize(tree)
+        let tree = SerializeDeserializeBinaryTree().deserialize(data)
+        let values = SerializeDeserializeBinaryTree().serialize(tree)
         
         XCTAssertEqual(values, data)
     }

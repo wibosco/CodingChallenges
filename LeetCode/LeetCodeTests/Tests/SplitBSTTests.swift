@@ -18,7 +18,7 @@ final class SplitBSTTests: XCTestCase {
         let data = [4,2,6,1,3,5,7]
         let root = TreeNode.deserialize(data)
         
-        let result = SplitBST.splitBST(root, target)
+        let result = SplitBST().splitBST(root, target)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedResult: Set<[Int?]> = Set([[2,1],
@@ -37,7 +37,7 @@ final class SplitBSTTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = SplitBST.splitBST(root, target)
+        let result = SplitBST().splitBST(root, target)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedResult: Set<[Int?]> = Set([[1],
@@ -56,7 +56,7 @@ final class SplitBSTTests: XCTestCase {
         let data = [1, nil, 2]
         let root = TreeNode.deserialize(data)
         
-        let result = SplitBST.splitBST(root, target)
+        let result = SplitBST().splitBST(root, target)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedResult: Set<[Int?]> = Set([[1],
@@ -75,7 +75,7 @@ final class SplitBSTTests: XCTestCase {
         let data = [10, 9, 12]
         let root = TreeNode.deserialize(data)
         
-        let result = SplitBST.splitBST(root, target)
+        let result = SplitBST().splitBST(root, target)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedResult: Set<[Int?]> = Set([[10, 9, 12],
@@ -94,7 +94,7 @@ final class SplitBSTTests: XCTestCase {
         let data = [10,5,20,3,9,15,25,nil,nil,8,nil,nil,nil,nil,nil,6,nil,nil,7]
         let root = TreeNode.deserialize(data)
         
-        let result = SplitBST.splitBST(root, target)
+        let result = SplitBST().splitBST(root, target)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedResult: Set<[Int?]> = Set([[5,3,6],

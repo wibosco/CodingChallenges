@@ -19,7 +19,7 @@ final class SwapNodesInPairsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let result = SwapNodesInPairs.swapPairs(head)
+        let result = SwapNodesInPairs().swapPairs(head)
         
         let values = ListNode.serialize(result)
         
@@ -31,7 +31,7 @@ final class SwapNodesInPairsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let result = SwapNodesInPairs.swapPairs(head)
+        let result = SwapNodesInPairs().swapPairs(head)
         
         let values = ListNode.serialize(result)
         
@@ -43,7 +43,7 @@ final class SwapNodesInPairsTests: XCTestCase {
         
         let head = ListNode.deserialize(data)
         
-        let result = SwapNodesInPairs.swapPairs(head)
+        let result = SwapNodesInPairs().swapPairs(head)
         
         let values = ListNode.serialize(result)
         

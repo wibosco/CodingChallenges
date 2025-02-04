@@ -25,7 +25,7 @@ struct CousinsInBinaryTreeII {
     //
     //The difference between these two sums is then assigned to each child node of that parent. We repeat this process until
     //the queue is empty.
-    static func replaceValueInTree(_ root: TreeNode?) -> TreeNode? {
+    func replaceValueInTree(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else {
             return nil
         }

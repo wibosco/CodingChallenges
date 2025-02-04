@@ -20,7 +20,7 @@ final class ReconstructItineraryTests: XCTestCase {
                        ["SFO", "SJC"],
                        ["LHR", "SFO"]]
         
-        let result = ReconstructItinerary.findItinerary(tickets)
+        let result = ReconstructItinerary().findItinerary(tickets)
         
         XCTAssertEqual(result, ["JFK", "MUC", "LHR", "SFO", "SJC"])
     }
@@ -32,7 +32,7 @@ final class ReconstructItineraryTests: XCTestCase {
                        ["ATL", "JFK"],
                        ["ATL", "SFO"]]
         
-        let result = ReconstructItinerary.findItinerary(tickets)
+        let result = ReconstructItinerary().findItinerary(tickets)
         
         XCTAssertEqual(result, ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"])
     }
@@ -42,7 +42,7 @@ final class ReconstructItineraryTests: XCTestCase {
                        ["JFK", "NRT"],
                        ["NRT", "JFK"]]
         
-        let result = ReconstructItinerary.findItinerary(tickets)
+        let result = ReconstructItinerary().findItinerary(tickets)
         
         XCTAssertEqual(result, ["JFK", "NRT", "JFK", "KUL"])
     }

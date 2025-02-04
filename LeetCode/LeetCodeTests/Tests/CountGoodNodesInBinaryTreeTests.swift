@@ -17,7 +17,7 @@ final class CountGoodNodesInBinaryTreeTests: XCTestCase {
         let data = [3, 1, 4, 3, nil, 1, 5]
         let root = TreeNode.deserialize(data)
         
-        let result = CountGoodNodesInBinaryTree.goodNodes(root)
+        let result = CountGoodNodesInBinaryTree().goodNodes(root)
         
         XCTAssertEqual(result, 4)
     }
@@ -26,7 +26,7 @@ final class CountGoodNodesInBinaryTreeTests: XCTestCase {
         let data = [3, 3, nil, 4, 2]
         let root = TreeNode.deserialize(data)
         
-        let result = CountGoodNodesInBinaryTree.goodNodes(root)
+        let result = CountGoodNodesInBinaryTree().goodNodes(root)
         
         XCTAssertEqual(result, 3)
     }
@@ -35,7 +35,7 @@ final class CountGoodNodesInBinaryTreeTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = CountGoodNodesInBinaryTree.goodNodes(root)
+        let result = CountGoodNodesInBinaryTree().goodNodes(root)
         
         XCTAssertEqual(result, 1)
     }

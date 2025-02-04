@@ -24,7 +24,7 @@ struct FindAllAnagramsInAString {
     //dictionaries contain both the characters and the frequency with which they occurred. If both dictionaries match then it
     //means that we have anagram in that window and we add the left most element's index to the `indexes` array. Once we have
     //iterated through all characters in `s` we return the indexes that we have founds.
-    static func findAnagrams(_ s: String, _ p: String) -> [Int] {
+    func findAnagrams(_ s: String, _ p: String) -> [Int] {
         let ns = s.count //calling `count` is an O(n) operation so pulling it out to speed things up
         let np = p.count
         

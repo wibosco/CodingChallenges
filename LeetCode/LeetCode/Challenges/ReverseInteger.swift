@@ -28,7 +28,7 @@ struct ReverseInteger {
     //result in an overflow - if adding `digit` would overflow we return 0. We repeat this process for `Int32.min` but
     //checking for underflow. If both pass we add `digit` to `reversed` and perform an integer division to reduce `x` and
     //repeat the process.
-    static func reverse(_ x: Int) -> Int {
+    func reverse(_ x: Int) -> Int {
         var reversed = 0
         var x = x
         

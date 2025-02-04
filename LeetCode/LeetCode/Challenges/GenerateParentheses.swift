@@ -30,7 +30,7 @@ struct GenerateParentheses {
     //bracket combination and that branch should be abandoned).
     //
     //See: https://www.youtube.com/watch?v=sz1qaKt0KGQ for more info
-    static func generateParenthesis(_ n: Int) -> [String] {
+    func generateParenthesis(_ n: Int) -> [String] {
         var parentheses = [String]()
         
         backtrack(&parentheses, "", n, n)
@@ -38,7 +38,7 @@ struct GenerateParentheses {
         return parentheses
     }
     
-    private static func backtrack(_ combinations: inout [String], _ current: String, _ remainingOpenCount: Int, _ remainingClosedCount: Int) {
+    private func backtrack(_ combinations: inout [String], _ current: String, _ remainingOpenCount: Int, _ remainingClosedCount: Int) {
         //Goal
         guard remainingOpenCount > 0 || remainingClosedCount > 0 else {
             combinations.append(current)

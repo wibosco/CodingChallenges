@@ -17,7 +17,7 @@ final class ValidateStackSequencesTests: XCTestCase {
         let pushed = [1, 2, 3, 4, 5]
         let popped = [4, 5, 3, 2, 1]
         
-        let result = ValidateStackSequences.validateStackSequences(pushed, popped)
+        let result = ValidateStackSequences().validateStackSequences(pushed, popped)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class ValidateStackSequencesTests: XCTestCase {
         let pushed = [1, 2, 3, 4, 5]
         let popped = [4, 3, 5, 1, 2]
         
-        let result = ValidateStackSequences.validateStackSequences(pushed, popped)
+        let result = ValidateStackSequences().validateStackSequences(pushed, popped)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class ValidateStackSequencesTests: XCTestCase {
         let pushed = [2, 1, 0]
         let popped = [1, 2, 0]
         
-        let result = ValidateStackSequences.validateStackSequences(pushed, popped)
+        let result = ValidateStackSequences().validateStackSequences(pushed, popped)
         
         XCTAssertTrue(result)
     }

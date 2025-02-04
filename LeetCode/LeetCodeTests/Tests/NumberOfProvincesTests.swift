@@ -19,7 +19,7 @@ final class NumberOfProvincesTests: XCTestCase {
                            [1, 1, 0],
                            [0, 0, 1]]
         
-        let result = NumberOfProvinces.findCircleNum(isConnected)
+        let result = NumberOfProvinces().findCircleNum(isConnected)
         
         XCTAssertEqual(result, 2)
     }
@@ -29,7 +29,7 @@ final class NumberOfProvincesTests: XCTestCase {
                            [0, 1, 0],
                            [0, 0, 1]]
         
-        let result = NumberOfProvinces.findCircleNum(isConnected)
+        let result = NumberOfProvinces().findCircleNum(isConnected)
         
         XCTAssertEqual(result, 3)
     }
@@ -54,7 +54,7 @@ final class NumberOfProvincesTests: XCTestCase {
          [0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0], //13
          [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1]] //14
         
-        let result = NumberOfProvinces.findCircleNum(isConnected)
+        let result = NumberOfProvinces().findCircleNum(isConnected)
         
         XCTAssertEqual(result, 3)
     }

@@ -28,7 +28,7 @@ struct LongestRepeatingCharacterReplacement {
     //
     //N.B. We never actually create the replacing string as we are only interested in the count so there is no need to know
     //exactly which characters will be replace,
-    static func characterReplacement(_ s: String, _ k: Int) -> Int {
+    func characterReplacement(_ s: String, _ k: Int) -> Int {
         guard k < s.count else {
             return s.count
         }

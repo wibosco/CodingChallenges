@@ -36,13 +36,13 @@ struct RotateArray {
     //
     //which is the same as if we shifted right 2 which in turn is k % nums.count. so instead of 8 shifts we only need to
     //perform 2.
-    static func rotate(_ nums: inout [Int], _ k: Int) {
+    func rotate(_ nums: inout [Int], _ k: Int) {
         reverse(&nums, 0, (nums.count - 1))
         reverse(&nums, 0, (k % nums.count) - 1) //sort wrapped-around partition
         reverse(&nums, (k % nums.count), (nums.count - 1)) //sort right-shifted partition
     }
     
-    private static func reverse(_ nums: inout [Int], _ left: Int, _ right: Int) {
+    private func reverse(_ nums: inout [Int], _ left: Int, _ right: Int) {
         var left = left
         var right = right
         
@@ -78,7 +78,7 @@ struct RotateArray {
     //
     //which is the same as if we shifted right 2 which in turn is k % nums.count. so instead of 8 shifts we only need to
     //perform 2.
-    static func rotateExtraMemory(_ nums: inout [Int], _ k: Int) {
+    func rotateExtraMemory(_ nums: inout [Int], _ k: Int) {
         var rotatedNums = Array(repeating: 0, count: nums.count)
 
         for (i, num) in nums.enumerated() {

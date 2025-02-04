@@ -26,14 +26,14 @@ struct BinarySearchTreeToGreaterSumTree {
     //we can then use to get the `root` new GST value. As this is tree we can perform this in recursive manner as each
     //subtree is itself a full tree. We repeat this process until all nodes have been updated, at which point we can
     //return the `root` node.
-    static func bstToGst(_ root: TreeNode?) -> TreeNode? {
+    func bstToGst(_ root: TreeNode?) -> TreeNode? {
         var total = 0
         dfs(root, &total)
         
         return root
     }
     
-    private static func dfs(_ node: TreeNode?, _ total: inout Int) {
+    private func dfs(_ node: TreeNode?, _ total: inout Int) {
         guard let node = node else {
             return
         }

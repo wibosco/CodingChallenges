@@ -24,7 +24,7 @@ struct MergeTwoBinaryTrees {
     //both trees by selecting the same branch in both and recursively calling `mergeTrees`. If only one tree at the current
     //level is non-nil we take that tree and supplant it into our merged tree. If both trees at that level are nil then we
     //have reach the end of that branch and return nil as the result of the merge.
-    static func mergeTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> TreeNode? {
+    func mergeTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> TreeNode? {
         if let root1 = root1, let root2 = root2 {
             let val = root1.val + root2.val
             let node = TreeNode(val)

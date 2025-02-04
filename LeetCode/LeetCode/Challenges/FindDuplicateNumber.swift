@@ -29,7 +29,7 @@ struct FindDuplicateNumber {
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
     //c
     //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
-    static func findDuplicate(_ nums: [Int]) -> Int {
+    func findDuplicate(_ nums: [Int]) -> Int {
         var slow = nums[0]
         var fast = nums[0]
         
@@ -64,7 +64,7 @@ struct FindDuplicateNumber {
     //always [1, n]). If that count is greater than expected then we know that potentially we have duplicate and that further
     //searching only needs to happen to the left of `mid` and we move the right boundary left; if count is as expected less
     //than or equal to mid then we know that the duplicate must be to the right of mid and we move the left boundary right.
-    static func findDuplicateBinarySearch(_ nums: [Int]) -> Int {
+    func findDuplicateBinarySearch(_ nums: [Int]) -> Int {
         var left = 1
         var right = nums.count - 1
         
@@ -97,7 +97,7 @@ struct FindDuplicateNumber {
     //through `nums` we treat the value of each element as an index and then set that indexes value to be negative. If
     //that second elements value is already negative then we know that we have already been here and the original index
     //(i) is a duplicate
-    static func findDuplicateNegativeMarking(_ nums: [Int]) -> Int {
+    func findDuplicateNegativeMarking(_ nums: [Int]) -> Int {
         var nums = nums
         var i = 0
         
@@ -124,7 +124,7 @@ struct FindDuplicateNumber {
     //Using a set (for O(1) search time) to store `nums` elements that we have already seen, we loop through `nums` and check
     //if that element is already in `count`. If it is we have found our duplicate; if it is not then we add it to `count` and
     //continue looping
-    static func findDuplicateDictionary(_ nums: [Int]) -> Int {
+    func findDuplicateDictionary(_ nums: [Int]) -> Int {
         var count = Set<Int>()
         for num in nums {
             guard !count.contains(num) else {
@@ -145,7 +145,7 @@ struct FindDuplicateNumber {
     //First we sort `nums` so that the duplicates is now beside each other. Then we iterate through the sorted array comparing
     //each element with it immediate neighbor. If they match we have found our duplicate; if they don't match we move onto the
     //next element
-    static func findDuplicateSorting(_ nums: [Int]) -> Int {
+    func findDuplicateSorting(_ nums: [Int]) -> Int {
         let sortedNums = nums.sorted() //Time: O(n log n)
         for i in 0..<(sortedNums.count - 1) {
             if sortedNums[i] == sortedNums[(i + 1)] { //Time: O(n)
@@ -162,7 +162,7 @@ struct FindDuplicateNumber {
     //
     //Solution Description:
     //Using two loops we compare each element of `nums` against all other elements until we find the duplicate
-    static func findDuplicateLooping(_ nums: [Int]) -> Int {
+    func findDuplicateLooping(_ nums: [Int]) -> Int {
         for i in 0..<nums.count {
             for j in (i + 1)..<nums.count {
                 if nums[i] == nums[j] {

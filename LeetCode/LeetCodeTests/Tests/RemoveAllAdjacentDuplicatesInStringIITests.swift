@@ -17,7 +17,7 @@ final class RemoveAllAdjacentDuplicatesInStringIITests: XCTestCase {
         let s = "abcd"
         let k = 2
         
-        let result = RemoveAllAdjacentDuplicatesInStringII.removeDuplicates(s, k)
+        let result = RemoveAllAdjacentDuplicatesInStringII().removeDuplicates(s, k)
         
         XCTAssertEqual(result, "abcd")
     }
@@ -26,7 +26,7 @@ final class RemoveAllAdjacentDuplicatesInStringIITests: XCTestCase {
         let s = "deeedbbcccbdaa"
         let k = 3
         
-        let result = RemoveAllAdjacentDuplicatesInStringII.removeDuplicates(s, k)
+        let result = RemoveAllAdjacentDuplicatesInStringII().removeDuplicates(s, k)
         
         XCTAssertEqual(result, "aa")
     }
@@ -35,7 +35,7 @@ final class RemoveAllAdjacentDuplicatesInStringIITests: XCTestCase {
         let s = "pbbcggttciiippooaais"
         let k = 2
         
-        let result = RemoveAllAdjacentDuplicatesInStringII.removeDuplicates(s, k)
+        let result = RemoveAllAdjacentDuplicatesInStringII().removeDuplicates(s, k)
         
         XCTAssertEqual(result, "ps")
     }
@@ -44,7 +44,7 @@ final class RemoveAllAdjacentDuplicatesInStringIITests: XCTestCase {
         let s = "yfttttfbbbbnnnnffbgffffgbbbbgssssgthyyyy"
         let k = 4
         
-        let result = RemoveAllAdjacentDuplicatesInStringII.removeDuplicates(s, k)
+        let result = RemoveAllAdjacentDuplicatesInStringII().removeDuplicates(s, k)
         
         XCTAssertEqual(result, "ybth")
     }

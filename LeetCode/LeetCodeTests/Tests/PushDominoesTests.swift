@@ -16,7 +16,7 @@ final class PushDominoesTests: XCTestCase {
     func test_A() {
         let dominoes = "RR.L"
         
-        let result = PushDominoes.pushDominoes(dominoes)
+        let result = PushDominoes().pushDominoes(dominoes)
         
         XCTAssertEqual(result, "RR.L")
     }
@@ -24,7 +24,7 @@ final class PushDominoesTests: XCTestCase {
     func test_B() {
         let dominoes = ".L.R...LR..L.."
         
-        let result = PushDominoes.pushDominoes(dominoes)
+        let result = PushDominoes().pushDominoes(dominoes)
         
         XCTAssertEqual(result, "LL.RR.LLRRLL..")
     }
@@ -32,7 +32,7 @@ final class PushDominoesTests: XCTestCase {
     func test_C() {
         let dominoes = "."
         
-        let result = PushDominoes.pushDominoes(dominoes)
+        let result = PushDominoes().pushDominoes(dominoes)
         
         XCTAssertEqual(result, ".")
     }

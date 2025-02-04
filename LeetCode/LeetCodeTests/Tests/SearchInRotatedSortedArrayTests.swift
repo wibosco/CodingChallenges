@@ -18,7 +18,7 @@ final class SearchInRotatedSortedArrayTests: XCTestCase {
         let nums = [4, 5, 6, 7, 0, 1, 2]
         let target = 0
         
-        let result = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray().search(nums, target)
         
         XCTAssertEqual(result, 4)
     }
@@ -27,7 +27,7 @@ final class SearchInRotatedSortedArrayTests: XCTestCase {
         let nums = [4, 5, 6, 7, 0, 1, 2]
         let target = 3
         
-        let result = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray().search(nums, target)
         
         XCTAssertEqual(result, -1)
     }
@@ -36,7 +36,7 @@ final class SearchInRotatedSortedArrayTests: XCTestCase {
         let nums = [1]
         let target = 0
         
-        let result = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray().search(nums, target)
         
         XCTAssertEqual(result, -1)
     }
@@ -45,7 +45,7 @@ final class SearchInRotatedSortedArrayTests: XCTestCase {
         let nums = [3, 1]
         let target = 3
         
-        let result = SearchInRotatedSortedArray.search(nums, target)
+        let result = SearchInRotatedSortedArray().search(nums, target)
         
         XCTAssertEqual(result, 0)
     }

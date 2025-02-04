@@ -23,7 +23,7 @@ struct IncreasingOrderSearchTree {
     //Using CFS we perform an in-order traversal of the tree, this will order the nodes into an ascending order array - ``order.
     //We then iterate through `order` and associated the current node with the previous node. Once all nodes have been reordered
     //we return the new root.
-    static func increasingBST(_ root: TreeNode?) -> TreeNode? {
+    func increasingBST(_ root: TreeNode?) -> TreeNode? {
         var order = [TreeNode]()
         inorder(root, &order)
         
@@ -45,7 +45,7 @@ struct IncreasingOrderSearchTree {
         return newRoot
     }
     
-    private static func inorder(_ node: TreeNode?, _ order: inout [TreeNode]) {
+    private func inorder(_ node: TreeNode?, _ order: inout [TreeNode]) {
         guard let node = node else {
             return
         }

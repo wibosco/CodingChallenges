@@ -29,7 +29,7 @@ struct HandOfStraights {
     //value than +1 we can't form a consecutive group and so we return false; else we continue until we have a full group or we
     //run out of cards. When we exit the group we check if the last group we attempted to build formed a full group - if not we
     //return false. We repeat this process until all cards are placed in groups.
-    static func isNStraightHand(_ hand: [Int], _ groupSize: Int) -> Bool {
+    func isNStraightHand(_ hand: [Int], _ groupSize: Int) -> Bool {
         guard hand.count % groupSize == 0 else {
             return false
         }

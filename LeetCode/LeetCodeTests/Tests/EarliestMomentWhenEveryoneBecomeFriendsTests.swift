@@ -25,7 +25,7 @@ final class EarliestMomentWhenEveryoneBecomeFriendsTests: XCTestCase {
                     [20190322, 4, 5]]
         let n = 6
         
-        let result = EarliestMomentWhenEveryoneBecomeFriends.earliestAcq(logs, n)
+        let result = EarliestMomentWhenEveryoneBecomeFriends().earliestAcq(logs, n)
         
         XCTAssertEqual(result, 20190301)
     }
@@ -38,7 +38,7 @@ final class EarliestMomentWhenEveryoneBecomeFriendsTests: XCTestCase {
                     [7, 3, 1]]
         let n = 4
         
-        let result = EarliestMomentWhenEveryoneBecomeFriends.earliestAcq(logs, n)
+        let result = EarliestMomentWhenEveryoneBecomeFriends().earliestAcq(logs, n)
         
         XCTAssertEqual(result, 3)
     }
@@ -52,7 +52,7 @@ final class EarliestMomentWhenEveryoneBecomeFriendsTests: XCTestCase {
                     [3, 3, 1]]
         let n = 4
         
-        let result = EarliestMomentWhenEveryoneBecomeFriends.earliestAcq(logs, n)
+        let result = EarliestMomentWhenEveryoneBecomeFriends().earliestAcq(logs, n)
         
         XCTAssertEqual(result, 2)
     }

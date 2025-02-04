@@ -42,13 +42,13 @@ struct ClimbingStairs {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func climbStairs(_ n: Int) -> Int {
+    func climbStairs(_ n: Int) -> Int {
         var memo = [Int: Int]()
         let ways = climbStairs(n, 0, &memo)
         return ways
     }
     
-    private static func climbStairs(_ targetTotal: Int, _ climbTotal: Int, _ memo: inout [Int: Int]) -> Int {
+    private func climbStairs(_ targetTotal: Int, _ climbTotal: Int, _ memo: inout [Int: Int]) -> Int {
         guard climbTotal != targetTotal else {
             return 1 // another step
         }
@@ -76,11 +76,11 @@ struct ClimbingStairs {
     //Recursively go down each possible combination of `1` and `2` until we either get to the target or exceed it. Paths that
     //lead to the target are returned with 1 or those that don't are returned with 0. We add this numbers together to get
     //the total valid paths
-    static func climbStairsBrute(_ n: Int) -> Int {
+    func climbStairsBrute(_ n: Int) -> Int {
         return climbStairs(n, 0)
     }
     
-    private static func climbStairs(_ targetTotal: Int, _ climbTotal: Int) -> Int {
+    private func climbStairs(_ targetTotal: Int, _ climbTotal: Int) -> Int {
         guard climbTotal != targetTotal else {
             return 1 // valid climb
         }
@@ -102,14 +102,14 @@ struct ClimbingStairs {
     //Recursively go down each possible combination of `1` and `2` until we either get to the target or exceed it. Paths that
     //lead to the target are added to the `ways` set, those that are discarded. Once all possible paths are exhausted we
     //return the count of `ways`
-    static func climbStairsSet(_ n: Int) -> Int {
+    func climbStairsSet(_ n: Int) -> Int {
         var ways = Set<[Int]>()
         climbStairs(n, [], 0, &ways)
         
         return ways.count
     }
     
-    private static func climbStairs(_ targetTotal: Int, _ climb: [Int], _ climbTotal: Int, _ ways: inout Set<[Int]>) {
+    private func climbStairs(_ targetTotal: Int, _ climb: [Int], _ climbTotal: Int, _ ways: inout Set<[Int]>) {
         guard climbTotal != targetTotal else {
             ways.insert(climb)
             return

@@ -17,7 +17,7 @@ final class AddBinaryTests: XCTestCase {
         let a = "11"
         let b = "1"
         
-        let result = AddBinary.addBinary(a, b)
+        let result = AddBinary().addBinary(a, b)
         
         XCTAssertEqual(result, "100")
     }
@@ -26,7 +26,7 @@ final class AddBinaryTests: XCTestCase {
         let a = "1010"
         let b = "1011"
         
-        let result = AddBinary.addBinary(a, b)
+        let result = AddBinary().addBinary(a, b)
         
         XCTAssertEqual(result, "10101")
     }

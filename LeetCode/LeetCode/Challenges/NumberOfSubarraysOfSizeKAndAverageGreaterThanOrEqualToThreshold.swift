@@ -24,7 +24,7 @@ struct NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold {
     //window moves. Once all subarrays of length `k` have been checked we return `subarrayCount`.
     //
     //N.B. A subarray is contiguous slice of elements from a larger array.
-    static func numOfSubarrays(_ arr: [Int], _ k: Int, _ threshold: Int) -> Int {
+    func numOfSubarrays(_ arr: [Int], _ k: Int, _ threshold: Int) -> Int {
         var windowSum = 0
         var subarrayCount = 0
         

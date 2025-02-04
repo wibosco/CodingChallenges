@@ -31,7 +31,7 @@ struct SnakesAndLadders {
     //we add that new position to the next iteration of the queue. The `visited` set allows us to cut down on the amount of
     //searching by ensuring we only search from position once (apart from 0). If at the end of the BFS we haven't hit `target` then
     //we return -1.
-    static func snakesAndLadders(_ board: [[Int]]) -> Int {
+    func snakesAndLadders(_ board: [[Int]]) -> Int {
         var flatBoard = [Int]()
         
         for (i, row) in board.reversed().enumerated() {

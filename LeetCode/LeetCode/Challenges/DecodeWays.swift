@@ -60,13 +60,13 @@ struct DecodeWays {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func numDecodings(_ s: String) -> Int {
+    func numDecodings(_ s: String) -> Int {
         var memo = [Int: Int]()
         
         return dfs(Array(s), 0, &memo)
     }
     
-    private static func dfs(_ characters: [Character], _ left: Int, _ memo: inout [Int: Int]) -> Int {
+    private func dfs(_ characters: [Character], _ left: Int, _ memo: inout [Int: Int]) -> Int {
         guard left < characters.count else {
             return 1
         }
@@ -86,7 +86,7 @@ struct DecodeWays {
             
             let encoding = String(characters[left...right])
                 
-            guard alphabet[encoding] != nil else {
+            guard DecodeWays.alphabet[encoding] != nil else {
                 continue
             }
                 

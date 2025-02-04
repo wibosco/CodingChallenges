@@ -17,7 +17,7 @@ final class BuildingsWithOceanViewTests: XCTestCase {
     func test_A() {
         let heights = [4, 2, 3, 1]
         
-        let result = BuildingsWithOceanView.findBuildings(heights)
+        let result = BuildingsWithOceanView().findBuildings(heights)
         
         XCTAssertEqual(result, [0, 2, 3]) // indexes
     }
@@ -25,7 +25,7 @@ final class BuildingsWithOceanViewTests: XCTestCase {
     func test_B() {
         let heights = [4, 3, 2, 1]
         
-        let result = BuildingsWithOceanView.findBuildings(heights)
+        let result = BuildingsWithOceanView().findBuildings(heights)
         
         XCTAssertEqual(result, [0, 1, 2, 3]) // indexes
     }
@@ -33,7 +33,7 @@ final class BuildingsWithOceanViewTests: XCTestCase {
     func test_C() {
         let heights = [1, 3, 2, 4]
         
-        let result = BuildingsWithOceanView.findBuildings(heights)
+        let result = BuildingsWithOceanView().findBuildings(heights)
         
         XCTAssertEqual(result, [3]) // indexes
     }

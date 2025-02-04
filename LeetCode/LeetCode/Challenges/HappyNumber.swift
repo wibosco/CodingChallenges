@@ -23,7 +23,7 @@ struct HappyNumber {
     //true if it does
     //
     //See: https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
-    static func isHappy(_ n: Int) -> Bool {
+    func isHappy(_ n: Int) -> Bool {
         var hare = n
         var tortoise = n
         
@@ -42,7 +42,7 @@ struct HappyNumber {
         return false
     }
     
-    private static func nextValue(_ val: Int) -> Int {
+    private func nextValue(_ val: Int) -> Int {
         var val = val
         var nextValue = 0
         while val > 0 {
@@ -65,7 +65,7 @@ struct HappyNumber {
     //together. We then check if the sum of that sum is 1. If it is 1 then we are done, the loop ends and we then true; if it is
     //not 1 and we haven't seen the value before we repeat the process. If we ever get a number that we have seen before then we
     //have a loop and can exit by returning false
-    static func isHappyDictionary(_ n: Int) -> Bool {
+    func isHappyDictionary(_ n: Int) -> Bool {
         var seenValues = Set<Int>()
         var val = n
         

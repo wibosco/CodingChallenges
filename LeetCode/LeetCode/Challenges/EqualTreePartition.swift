@@ -22,7 +22,7 @@ struct EqualTreePartition {
     //Using bottom-up DFS we produce a sum tree where every node holds the sum of it's subtree. We then perform a top-down DFS to
     //determine if removing a edge will result in the two trees having the same value. We recusively attempt this with all nodes
     //in the tree until we find a spliting that results in equal trees. 
-    static func checkEqualTree(_ root: TreeNode?) -> Bool {
+    func checkEqualTree(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
         }
@@ -32,7 +32,7 @@ struct EqualTreePartition {
         return canEqualise(root.left, total) || canEqualise(root.right, total)
     }
     
-    private static func buildSumTree(_ node: TreeNode?) -> Int {
+    private func buildSumTree(_ node: TreeNode?) -> Int {
         guard let node = node else {
             return 0
         }
@@ -45,7 +45,7 @@ struct EqualTreePartition {
         return node.val
     }
     
-    private static func canEqualise(_ node: TreeNode?, _ total: Int) -> Bool {
+    private func canEqualise(_ node: TreeNode?, _ total: Int) -> Bool {
         guard let node = node else {
             return false
         }

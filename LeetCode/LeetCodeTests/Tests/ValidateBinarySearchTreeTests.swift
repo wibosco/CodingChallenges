@@ -19,7 +19,7 @@ final class ValidateBinarySearchTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = ValidateBinarySearchTree.isValidBST(root)
+        let result = ValidateBinarySearchTree().isValidBST(root)
         
         XCTAssertTrue(result)
     }
@@ -29,7 +29,7 @@ final class ValidateBinarySearchTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = ValidateBinarySearchTree.isValidBST(root)
+        let result = ValidateBinarySearchTree().isValidBST(root)
         
         XCTAssertFalse(result)
     }
@@ -39,7 +39,7 @@ final class ValidateBinarySearchTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = ValidateBinarySearchTree.isValidBST(root)
+        let result = ValidateBinarySearchTree().isValidBST(root)
         
         XCTAssertFalse(result)
     }

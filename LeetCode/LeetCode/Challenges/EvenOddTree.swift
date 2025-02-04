@@ -22,7 +22,7 @@ struct EvenOddTree {
     //Using BFS we traverse the tree level-by-level ensuring that each level meets the characteristics of that level even a
     //level does not we immediately return false. If after checking all nodes in the tree we haven't returned false we know
     //that this tree is "Even Odd" and can return true.
-    static func isEvenOddTree(_ root: TreeNode?) -> Bool {
+    func isEvenOddTree(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
         }

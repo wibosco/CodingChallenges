@@ -21,7 +21,7 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
         
         let (p, q) = TreeNodeParent.deserialize(data, 5, 1)
         
-        let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
+        let result = LowestCommonAncestorBinaryTreeIII().lowestCommonAncestor(p, q)
         
         XCTAssertEqual(result?.val, 3)
     }
@@ -31,7 +31,7 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
         
         let (p, q) = TreeNodeParent.deserialize(data, 5, 4)
         
-        let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
+        let result = LowestCommonAncestorBinaryTreeIII().lowestCommonAncestor(p, q)
         
         XCTAssertEqual(result?.val, 5)
     }
@@ -41,7 +41,7 @@ final class LowestCommonAncestorBinaryTreeIIITests: XCTestCase {
         
         let (p, q) = TreeNodeParent.deserialize(data, 1, 2)
         
-        let result = LowestCommonAncestorBinaryTreeIII.lowestCommonAncestor(p, q)
+        let result = LowestCommonAncestorBinaryTreeIII().lowestCommonAncestor(p, q)
         
         XCTAssertEqual(result?.val, 1)
     }

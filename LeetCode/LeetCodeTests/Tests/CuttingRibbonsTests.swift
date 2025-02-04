@@ -18,7 +18,7 @@ final class CuttingRibbonsTests: XCTestCase {
         let ribbons = [9, 7, 5]
         let k = 3
         
-        let result = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons().maxLength(ribbons, k)
         
         XCTAssertEqual(result, 5)
     }
@@ -27,7 +27,7 @@ final class CuttingRibbonsTests: XCTestCase {
         let ribbons = [7, 5, 9]
         let k = 4
         
-        let result = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons().maxLength(ribbons, k)
         
         XCTAssertEqual(result, 4)
     }
@@ -36,7 +36,7 @@ final class CuttingRibbonsTests: XCTestCase {
         let ribbons = [5, 7, 9]
         let k = 22
         
-        let result = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons().maxLength(ribbons, k)
         
         XCTAssertEqual(result, 0)
     }
@@ -94,7 +94,7 @@ final class CuttingRibbonsTests: XCTestCase {
                        100000]
         let k = 49
         
-        let result = CuttingRibbons.maxLength(ribbons, k)
+        let result = CuttingRibbons().maxLength(ribbons, k)
         
         XCTAssertEqual(result, 100000)
     }

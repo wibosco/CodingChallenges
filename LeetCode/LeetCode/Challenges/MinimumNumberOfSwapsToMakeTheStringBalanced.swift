@@ -24,7 +24,7 @@ struct MinimumNumberOfSwapsToMakeTheStringBalanced {
     //mismatched brackets - both `[` and `]`. In order to match a pair of brackets we only need to move one bracket so we
     //can half the stack count. Dor every swap we solve not one but two mismatched brackets so we again divide the count
     //by 2. We add 1 to ensure that we et the correct answer for both odd and even counts.
-    static func minSwaps(_ s: String) -> Int {
+    func minSwaps(_ s: String) -> Int {
         var stack = [Character]()
         
         for c in s {
@@ -60,7 +60,7 @@ struct MinimumNumberOfSwapsToMakeTheStringBalanced {
     //we need to track what it was at it's maximum. Once we know the maximum we know that for every swap we solve not one
     //but two mismatched brackets so we divide the max by 2. We add 1 to ensure that we get the correct answer for both odd
     //and even maxes.
-    static func minSwapsCounting(_ s: String) -> Int {
+    func minSwapsCounting(_ s: String) -> Int {
         var currentExtraClosing = 0
         var maxExtraClosing = 0
         

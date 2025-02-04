@@ -22,7 +22,7 @@ struct DetermineWhetherMatrixCanBeObtainedByRotation {
     //through each row and then the columns in that. As each column will become a row in the rotated matrix we use the index of
     //the column as the row index and insert the value as the first element of that row. After populating the new matrix we
     //compare against `target` and if they match we return true else we repeat the process.
-    static func findRotation(_ mat: [[Int]], _ target: [[Int]]) -> Bool {
+    func findRotation(_ mat: [[Int]], _ target: [[Int]]) -> Bool {
         guard mat != target else {
             return true
         }

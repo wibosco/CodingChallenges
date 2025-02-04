@@ -23,13 +23,13 @@ struct ValidPalindromeII {
     //and `right` pointers along (separately) and attempt to validate the slightly shorter version of `s`. If any further
     //mismatches are found then we stop comparing and return false; if no other mismatches are found and we reach the end of
     //our comparisons then that one deletion was enough and we return true.
-    static func validPalindrome(_ s: String) -> Bool {
+    func validPalindrome(_ s: String) -> Bool {
         let chars = Array(s)
         
         return isValidPalindrome(chars, 0, (chars.count - 1), true)
     }
     
-    private static func isValidPalindrome(_ chars: [Character], _ left: Int, _ right: Int, _ canDelete: Bool) -> Bool {
+    private func isValidPalindrome(_ chars: [Character], _ left: Int, _ right: Int, _ canDelete: Bool) -> Bool {
         guard left < right else {
             return true
         }
@@ -56,7 +56,7 @@ struct ValidPalindromeII {
     //and `right` pointers along (separately) and attempt to validate the slightly shorter version of `s`. If any further
     //mismatches are found then we stop comparing and return false; if no other mismatches are found and we reach the end of
     //our comparisons then that one deletion was enough and we return true.
-    static func validPalindromeInout(_ s: String) -> Bool {
+    func validPalindromeInout(_ s: String) -> Bool {
         let chars = Array(s)
         var valid = false
         
@@ -65,7 +65,7 @@ struct ValidPalindromeII {
         return valid
     }
     
-    private static func isValidPalindromeInout(_ chars: [Character], _ left: Int, _ right: Int, _ canRemove: Bool, _ valid: inout Bool) {
+    private func isValidPalindromeInout(_ chars: [Character], _ left: Int, _ right: Int, _ canRemove: Bool, _ valid: inout Bool) {
         guard left < right else {
             valid = true
             return
@@ -94,11 +94,11 @@ struct ValidPalindromeII {
     //one without the left mismatch character and one without the right mismatch character. We then attempt to see if those
     //two altered strings are palindromes. If that one deletion was enough to transform `s` into a palindrome then we can
     //return true; if however neither branch results in a palindrome without further deletions then we return false
-    static func validPalindromeNewArrays(_ s: String) -> Bool {
+    func validPalindromeNewArrays(_ s: String) -> Bool {
         return isValidPalindromeNewArrays(Array(s), true)
     }
     
-    private static func isValidPalindromeNewArrays(_ chars: [Character], _ canRemove: Bool) -> Bool {
+    private func isValidPalindromeNewArrays(_ chars: [Character], _ canRemove: Bool) -> Bool {
         var left = 0
         var right = (chars.count - 1)
         

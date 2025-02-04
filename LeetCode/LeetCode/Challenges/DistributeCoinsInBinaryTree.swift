@@ -26,7 +26,7 @@ struct DistributeCoinsInBinaryTree {
     //care which way the transaction happens we just care about the number of coin movements so when tracking the coin
     //movements we do so as an absolute value. We repeat this process for both left and right child of every node until we
     //have visited and adjusted each node.
-    static func distributeCoins(_ root: TreeNode?) -> Int {
+    func distributeCoins(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -38,7 +38,7 @@ struct DistributeCoinsInBinaryTree {
         return moved
     }
     
-    private static func dfs(_ node: TreeNode, _ moved: inout Int) {
+    private func dfs(_ node: TreeNode, _ moved: inout Int) {
         if let left = node.left {
             dfs(left, &moved)
             

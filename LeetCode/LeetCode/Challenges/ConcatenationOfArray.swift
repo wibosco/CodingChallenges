@@ -16,7 +16,7 @@ struct ConcatenationOfArray {
     //
     //Solution Description:
     //The elements in `num` should repeat at index `i + n` where `i` is the original index and `n` is the length of `nums`
-    static func getConcatenation(_ nums: [Int]) -> [Int] {
+    func getConcatenation(_ nums: [Int]) -> [Int] {
         return nums + nums
     }
 }

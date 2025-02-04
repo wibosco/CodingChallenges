@@ -31,7 +31,7 @@ struct PacificAtlanticWaterFlow {
     //which cells are common but also avoid visiting cells that we have already been to. We use relative-indexing to
     //determine which cells we can move to As we are going ocean-in rather than cell-out we reverse the height constraint
     //so that we are looking to move to cells that have a value less than or equal to the current cell.
-    static func pacificAtlantic(_ heights: [[Int]]) -> [[Int]] { //[row, column]
+    func pacificAtlantic(_ heights: [[Int]]) -> [[Int]] { //[row, column]
         var pacificReachable = Set<[Int]>()
         var atlanticReachable = Set<[Int]>()
         
@@ -54,7 +54,7 @@ struct PacificAtlanticWaterFlow {
         return Array(common)
     }
     
-    private static func dfs(_ heights: [[Int]], _ row: Int, _ column: Int, _ reachable: inout Set<[Int]>) {
+    private func dfs(_ heights: [[Int]], _ row: Int, _ column: Int, _ reachable: inout Set<[Int]>) {
         guard !reachable.contains([row, column]) else {
             return
         }
@@ -68,7 +68,7 @@ struct PacificAtlanticWaterFlow {
         }
     }
     
-    private static func dfsNavigatableNeighbors(_ heights: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
+    private func dfsNavigatableNeighbors(_ heights: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
         // swiftlint:disable comma
         let relativeIndexing = [       [0, -1],
                                 [-1, 0],    [1, 0],
@@ -125,7 +125,7 @@ struct PacificAtlanticWaterFlow {
     //indexing to determine which cells we can move to. To avoid an infinite loop we use a `visited` set so that we don't
     //visited the same cell twice in that DFS iteration. If both oceans are reachable from a cell we add it to `reachBoth`.
     //Once all cells have used a starting point, we return `reachBoth`.
-    static func pacificAtlanticBruteForce(_ heights: [[Int]]) -> [[Int]] { //[row, column]
+    func pacificAtlanticBruteForce(_ heights: [[Int]]) -> [[Int]] { //[row, column]
         var reachBoth = [[Int]]()
         
         for row in 0..<heights.count {
@@ -143,7 +143,7 @@ struct PacificAtlanticWaterFlow {
         return reachBoth
     }
     
-    private static func canReachOceans(_ heights: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>, _ canReachPacificOcean: inout Bool, _ canReachAtlanticOcean: inout Bool) -> Bool {
+    private func canReachOceans(_ heights: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>, _ canReachPacificOcean: inout Bool, _ canReachAtlanticOcean: inout Bool) -> Bool {
         if row == 0 || column == 0 {
             canReachPacificOcean = true
         }
@@ -168,7 +168,7 @@ struct PacificAtlanticWaterFlow {
         return false
     }
     
-    private static func navigatableNeighbors(_ heights: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>) -> [[Int]] {
+    private func navigatableNeighbors(_ heights: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>) -> [[Int]] {
         // swiftlint:disable comma
         let relativeIndexing = [       [0, -1],
                                 [-1, 0],    [1, 0],

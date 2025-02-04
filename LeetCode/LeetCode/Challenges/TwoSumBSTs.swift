@@ -25,14 +25,14 @@ struct TwoSumBSTs {
     //and right branches of the tree. 
     //
     //Similar to: https://leetcode.com/problems/two-sum/
-    static func twoSumBSTs(_ root1: TreeNode?, _ root2: TreeNode?, _ target: Int) -> Bool {
+    func twoSumBSTs(_ root1: TreeNode?, _ root2: TreeNode?, _ target: Int) -> Bool {
         var root1Values = Set<Int>()
         convertToSet(root1, &root1Values)
         
         return findTarget(root2, root1Values, target)
     }
     
-    private static func convertToSet(_ node: TreeNode?, _ values: inout Set<Int>) {
+    private func convertToSet(_ node: TreeNode?, _ values: inout Set<Int>) {
         guard let node = node else {
             return
         }
@@ -43,7 +43,7 @@ struct TwoSumBSTs {
         convertToSet(node.right, &values)
     }
     
-    private static func findTarget(_ node: TreeNode?, _ values: Set<Int>, _ target: Int) -> Bool {
+    private func findTarget(_ node: TreeNode?, _ values: Set<Int>, _ target: Int) -> Bool {
         guard let node = node else {
             return false
         }

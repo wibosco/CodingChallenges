@@ -23,7 +23,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 2
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertFalse(result)
     }
@@ -37,7 +37,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 3
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertFalse(result)
     }
@@ -51,7 +51,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 3
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertTrue(result)
     }
@@ -64,7 +64,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 2
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertFalse(result)
     }
@@ -76,7 +76,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 1
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertFalse(result)
     }
@@ -90,7 +90,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 1
         let destination = 3
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertFalse(result)
     }
@@ -250,7 +250,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 15
         let destination = 33
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertTrue(result)
     }
@@ -270,7 +270,7 @@ final class AllPathsFromSourceLeadToDestinationTests: XCTestCase {
         let source = 0
         let destination = 4
         
-        let result = AllPathsFromSourceLeadToDestination.leadsToDestination(n, edges, source, destination)
+        let result = AllPathsFromSourceLeadToDestination().leadsToDestination(n, edges, source, destination)
         
         XCTAssertTrue(result)
     }

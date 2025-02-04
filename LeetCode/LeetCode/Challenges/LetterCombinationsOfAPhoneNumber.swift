@@ -35,7 +35,7 @@ struct LetterCombinationsOfAPhoneNumber {
     //`combinations` array
     //
     //NB: don't the `key` in space complexity as it is constant
-    static func letterCombinations(_ digits: String) -> [String] {
+    func letterCombinations(_ digits: String) -> [String] {
         guard !digits.isEmpty else {
             return [String]()
         }
@@ -48,14 +48,14 @@ struct LetterCombinationsOfAPhoneNumber {
         return combinations
     }
         
-    private static func backtrack(_ digits: [Character], _ index: Int, _ combination: String, _ combinations: inout [String]) {
+    private func backtrack(_ digits: [Character], _ index: Int, _ combination: String, _ combinations: inout [String]) {
         //Goal
         guard index < digits.count else {
             combinations.append(combination)
             return
         }
         
-        let letters = keypad[digits[index]]!
+        let letters = LetterCombinationsOfAPhoneNumber.keypad[digits[index]]!
         
         //Choice, this problem does not have constraints
         for letter in letters { //no need iterate through the `digits` array as we are only interested in letters
@@ -66,7 +66,7 @@ struct LetterCombinationsOfAPhoneNumber {
     
     //Time: O(n^3)
     //string
-    static func letterCombinationsAlt(_ digits: String) -> [String] {
+    func letterCombinationsAlt(_ digits: String) -> [String] {
         guard !digits.isEmpty else {
             return []
         }
@@ -75,7 +75,7 @@ struct LetterCombinationsOfAPhoneNumber {
         
         for digit in digits {
             var tmp = [String]()
-            let letters = keypad[digit]!
+            let letters = LetterCombinationsOfAPhoneNumber.keypad[digit]!
             for permutation in permutations {
                 for letter in letters {
                     //Add letter.count number of new permutations to the existing premutation value

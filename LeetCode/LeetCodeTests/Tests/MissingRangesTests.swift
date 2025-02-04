@@ -18,7 +18,7 @@ final class MissingRangesTests: XCTestCase {
         let lower = 0
         let upper = 99
         
-        let result = MissingRanges.findMissingRanges(nums, lower, upper)
+        let result = MissingRanges().findMissingRanges(nums, lower, upper)
         
         XCTAssertEqual(result, ["2", "4->49", "51->74", "76->99"])
     }
@@ -28,7 +28,7 @@ final class MissingRangesTests: XCTestCase {
         let lower = -1
         let upper = -1
         
-        let result = MissingRanges.findMissingRanges(nums, lower, upper)
+        let result = MissingRanges().findMissingRanges(nums, lower, upper)
         
         XCTAssertEqual(result, [])
     }
@@ -38,7 +38,7 @@ final class MissingRangesTests: XCTestCase {
         let lower = -1
         let upper = 0
         
-        let result = MissingRanges.findMissingRanges(nums, lower, upper)
+        let result = MissingRanges().findMissingRanges(nums, lower, upper)
         
         XCTAssertEqual(result, ["0"])
     }
@@ -48,7 +48,7 @@ final class MissingRangesTests: XCTestCase {
         let lower = 1
         let upper = 1
         
-        let result = MissingRanges.findMissingRanges(nums, lower, upper)
+        let result = MissingRanges().findMissingRanges(nums, lower, upper)
         
         XCTAssertEqual(result, ["1"])
     }
@@ -58,7 +58,7 @@ final class MissingRangesTests: XCTestCase {
         let lower = -2
         let upper = -1
         
-        let result = MissingRanges.findMissingRanges(nums, lower, upper)
+        let result = MissingRanges().findMissingRanges(nums, lower, upper)
         
         XCTAssertEqual(result, ["-2"])
     }

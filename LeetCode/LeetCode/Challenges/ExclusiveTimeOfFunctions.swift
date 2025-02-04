@@ -33,7 +33,7 @@ struct ExclusiveTimeOfFunctions {
     //`A-start, B-start, A-end, B-end` so if we get an end log then the top of the stack should be its corresponding start log
     //
     //NB. Really important to spot that when a process ends it takes the full second to end so actually it ends on the next second
-    static func exclusiveTime(_ n: Int, _ logs: [String]) -> [Int] {
+    func exclusiveTime(_ n: Int, _ logs: [String]) -> [Int] {
         var stack = [Log]()
         var times = Array(repeating: 0, count: n)
         
@@ -62,7 +62,7 @@ struct ExclusiveTimeOfFunctions {
         return times
     }
     
-    private static func parse(_ log: String) -> Log {
+    private func parse(_ log: String) -> Log {
         let components = log.split(separator: ":")
         
         let functionID = Int(components[0])!

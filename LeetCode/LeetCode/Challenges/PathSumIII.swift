@@ -22,7 +22,7 @@ struct PathSumIII {
     //First we do in inorder traversal of the tree to get all nodes in the tree. Then we do a DFS where we search the subtree of
     //each node and calculate if any path(s) on that subtree is equal to `targetSum`, if so we increment `pathsFound`. Once all
     //nodes have been searched as root, we return `pathsFound`.
-    static func pathSum(_ root: TreeNode?, _ targetSum: Int) -> Int {
+    func pathSum(_ root: TreeNode?, _ targetSum: Int) -> Int {
         var nodes = [TreeNode]()
         inorder(root, &nodes)
         
@@ -34,7 +34,7 @@ struct PathSumIII {
         return pathsFound
     }
     
-    private static func inorder(_ node: TreeNode?, _ nodes: inout [TreeNode]) {
+    private func inorder(_ node: TreeNode?, _ nodes: inout [TreeNode]) {
         guard let node = node else {
             return
         }
@@ -44,7 +44,7 @@ struct PathSumIII {
         inorder(node.right, &nodes)
     }
     
-    private static func dfs(_ node: TreeNode?, _ targetSum: Int, _ currentSum: Int, _ pathsFound: inout Int) {
+    private func dfs(_ node: TreeNode?, _ targetSum: Int, _ currentSum: Int, _ pathsFound: inout Int) {
         guard let node = node else {
             return
         }

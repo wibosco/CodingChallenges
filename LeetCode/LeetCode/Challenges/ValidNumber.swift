@@ -15,7 +15,7 @@ struct ValidNumber {
     //
     //Solution Description:
     //
-    static func isNumber(_ s: String) -> Bool {
+    func isNumber(_ s: String) -> Bool {
         let characters = Array(s)
         
         var i = 0

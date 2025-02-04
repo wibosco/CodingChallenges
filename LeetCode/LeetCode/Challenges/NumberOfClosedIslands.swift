@@ -27,7 +27,7 @@ struct NumberOfClosedIslands {
     //re-searching a previously searched square we store each land square we encounter in `visited`. When we encounter
     //the border of the graph we don't end our DFS,  instead we allow it to continue to find the full extent of the
     //island so that all those squares can be eliminated from any future searches (via the `visited` set).
-    static func closedIsland(_ grid: [[Int]]) -> Int {
+    func closedIsland(_ grid: [[Int]]) -> Int {
         var closedCount = 0
         var visited = Set<[Int]>()
         let relativeIndexing = [[-1, 0], [1, 0], [0, -1], [0, 1]] //[up, down, left, right]
@@ -52,7 +52,7 @@ struct NumberOfClosedIslands {
         return closedCount
     }
     
-    private static func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]], _ visited: inout Set<[Int]>) -> Bool {
+    private func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]], _ visited: inout Set<[Int]>) -> Bool {
         var closed = row > 0 && row < (grid.count - 1) && column > 0 && column < (grid[row].count - 1)
         
         for relativeIndex in relativeIndexing {

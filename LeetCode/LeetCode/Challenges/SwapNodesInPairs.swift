@@ -25,7 +25,7 @@ struct SwapNodesInPairs {
     //move the the `current` and `previous` node pointers so `previous` is now node `n` and `current` is node
     //`n + 2`. We repeat this process until we reach the end of the list, we can then return the `next` node of
     //our dummy/sentinel holding node.
-    static func swapPairs(_ head: ListNode?) -> ListNode? {
+    func swapPairs(_ head: ListNode?) -> ListNode? {
         let sentinel = ListNode(-1)
         var previous: ListNode? = sentinel
         var current = head
@@ -57,11 +57,11 @@ struct SwapNodesInPairs {
     //swap on the next two nodes. At the end we return the `next` node which is now the `head` node of the pair, the
     //returned `node` is then used as the next node of the old `head` so that all nodes are joined to another node (apart
     //from the end node)
-    static func swapPairsRecursive(_ head: ListNode?) -> ListNode? {
+    func swapPairsRecursive(_ head: ListNode?) -> ListNode? {
         return swapPairs(head, head?.next)
     }
     
-    private static func swapPairs(_ head: ListNode?, _ next: ListNode?) -> ListNode? {
+    private func swapPairs(_ head: ListNode?, _ next: ListNode?) -> ListNode? {
         guard let head = head else {
             return nil
         }

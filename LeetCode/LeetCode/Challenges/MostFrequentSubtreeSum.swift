@@ -26,7 +26,7 @@ struct MostFrequentSubtreeSum {
     //dictionary alongside the count of how many times that sum has been produced. To simplify retrieval of the most
     //frequent sums we keep track of which count is the most seen. Once we have fully traversed the tree and produced all
     //sums we iterate through `sums` and add any sum that has a count of `maxCount` to `mostFrequentSums`.
-    static func findFrequentTreeSum(_ root: TreeNode?) -> [Int] {
+    func findFrequentTreeSum(_ root: TreeNode?) -> [Int] {
         var maxCount = 0
         var sums = [Int: Int]() //[sum, count]
         
@@ -45,7 +45,7 @@ struct MostFrequentSubtreeSum {
         return mostFrequentSums
     }
     
-    private static func dfs(_ node: TreeNode?, _ sums: inout [Int: Int], _ maxCount: inout Int) -> Int {
+    private func dfs(_ node: TreeNode?, _ sums: inout [Int: Int], _ maxCount: inout Int) -> Int {
         guard let node = node else {
             return 0
         }

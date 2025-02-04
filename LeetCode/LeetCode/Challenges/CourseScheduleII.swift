@@ -48,7 +48,7 @@ struct CourseScheduleII {
     //
     //N.B. The below example is using DFS as seen here:
     //https://en.wikipedia.org/wiki/Topological_sorting#Depth-first_search
-    static func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
+    func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         guard numCourses > 1 else {
             return [0]
         }
@@ -79,7 +79,7 @@ struct CourseScheduleII {
         return ordering.reversed()
     }
     
-    private static func dfs(_ adjList: [[Int]], _ source: Int, _ visited: inout Set<Int>, _ currentVisited: inout Set<Int>, _ ordering: inout [Int], _ cycleDetected: inout Bool) {
+    private func dfs(_ adjList: [[Int]], _ source: Int, _ visited: inout Set<Int>, _ currentVisited: inout Set<Int>, _ ordering: inout [Int], _ cycleDetected: inout Bool) {
         guard !cycleDetected else {
             return
         }
@@ -128,7 +128,7 @@ struct CourseScheduleII {
     //empty array as some courses couldn't be taken - dependency cycle.
     //
     //In graph theory a `*degree` is either the number of incoming (`inDegree`) and outgoing (`outDegree`) edges.
-    static func findOrderBFS(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
+    func findOrderBFS(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         guard numCourses > 1 else {
             return [0]
         }

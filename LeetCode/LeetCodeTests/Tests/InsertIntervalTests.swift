@@ -17,7 +17,7 @@ final class InsertIntervalTests: XCTestCase {
         let intervals = [[1, 3], [6, 9]]
         let newInterval = [2, 5]
         
-        let result = InsertInterval.insert(intervals, newInterval)
+        let result = InsertInterval().insert(intervals, newInterval)
         
         XCTAssertEqual(result, [[1, 5], [6, 9]])
     }
@@ -26,7 +26,7 @@ final class InsertIntervalTests: XCTestCase {
         let intervals = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
         let newInterval = [4, 8]
         
-        let result = InsertInterval.insert(intervals, newInterval)
+        let result = InsertInterval().insert(intervals, newInterval)
         
         XCTAssertEqual(result, [[1, 2], [3, 10], [12, 16]])
     }

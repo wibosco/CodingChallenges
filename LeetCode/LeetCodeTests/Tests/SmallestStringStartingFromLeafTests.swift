@@ -17,7 +17,7 @@ final class SmallestStringStartingFromLeafTests: XCTestCase {
         let data = [0,1,2,3,4,3,4]
         let root = TreeNode.deserialize(data)
         
-        let result = SmallestStringStartingFromLeaf.smallestFromLeaf(root)
+        let result = SmallestStringStartingFromLeaf().smallestFromLeaf(root)
         
         XCTAssertEqual(result, "dba")
     }
@@ -26,7 +26,7 @@ final class SmallestStringStartingFromLeafTests: XCTestCase {
         let data = [25,1,3,1,3,0,2]
         let root = TreeNode.deserialize(data)
         
-        let result = SmallestStringStartingFromLeaf.smallestFromLeaf(root)
+        let result = SmallestStringStartingFromLeaf().smallestFromLeaf(root)
         
         XCTAssertEqual(result, "adz")
     }
@@ -35,7 +35,7 @@ final class SmallestStringStartingFromLeafTests: XCTestCase {
         let data = [2,2,1,nil,1,0,nil,0]
         let root = TreeNode.deserialize(data)
         
-        let result = SmallestStringStartingFromLeaf.smallestFromLeaf(root)
+        let result = SmallestStringStartingFromLeaf().smallestFromLeaf(root)
         
         XCTAssertEqual(result, "abc")
     }
@@ -44,7 +44,7 @@ final class SmallestStringStartingFromLeafTests: XCTestCase {
         let data = [0,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = SmallestStringStartingFromLeaf.smallestFromLeaf(root)
+        let result = SmallestStringStartingFromLeaf().smallestFromLeaf(root)
         
         XCTAssertEqual(result, "ba")
     }
@@ -54,7 +54,7 @@ final class SmallestStringStartingFromLeafTests: XCTestCase {
         let data = [25,1,nil,0,0,1,nil,nil,nil,0]
         let root = TreeNode.deserialize(data)
         
-        let result = SmallestStringStartingFromLeaf.smallestFromLeaf(root)
+        let result = SmallestStringStartingFromLeaf().smallestFromLeaf(root)
         
         XCTAssertEqual(result, "ababz")
     }

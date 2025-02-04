@@ -36,7 +36,7 @@ struct WordSearch {
     //remove entries from visited until we either find an alternative branch or run out of cells. This backtracking of
     //`visited` is needed to ensure that we don't block off any new branches because we visited that cell in an older,
     //invalid branch.
-    static func exist(_ board: [[Character]], _ word: String) -> Bool {
+    func exist(_ board: [[Character]], _ word: String) -> Bool {
         var exists = false
         var visited = Set<[Int]>()
         let characters = Array(word)
@@ -60,7 +60,7 @@ struct WordSearch {
         return false
     }
     
-    private static func backtrack(_ board: [[Character]], _ row: Int, _ column: Int, _ word: [Character], _ wordIndex: Int, _ visited: inout Set<[Int]>, _ exists: inout Bool) {
+    private func backtrack(_ board: [[Character]], _ row: Int, _ column: Int, _ word: [Character], _ wordIndex: Int, _ visited: inout Set<[Int]>, _ exists: inout Bool) {
         guard exists != true else {
             return
         }
@@ -83,10 +83,10 @@ struct WordSearch {
         }
     }
     
-    private static func navigatableNeighbors(_ board: [[Character]], _ row: Int, _ column: Int, _ match: Character, _ visited: inout Set<[Int]>) -> [[Int]] {
+    private func navigatableNeighbors(_ board: [[Character]], _ row: Int, _ column: Int, _ match: Character, _ visited: inout Set<[Int]>) -> [[Int]] {
         var neighbors = [[Int]]()
         
-        for relativeIndex in relativeIndexing {
+        for relativeIndex in WordSearch.relativeIndexing {
             let newRow = row + relativeIndex[0]
             let newColumn = column + relativeIndex[1]
             

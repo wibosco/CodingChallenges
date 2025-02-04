@@ -24,7 +24,7 @@ struct CopyListWithRandomPointer {
     //the original node, if we have we return it else we create a copy and attempt to fill its `next` and `random` properties
     //before return it - this is a depth first approach. Once all copies have been made we use the `head` node to return its
     //copy
-    static func copyRandomList(_ head: ListNodeRandom?) -> ListNodeRandom? {
+    func copyRandomList(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil
         }
@@ -36,7 +36,7 @@ struct CopyListWithRandomPointer {
     }
     
     @discardableResult
-    private static func constructList(_ original: ListNodeRandom?, _ copies: inout [ListNodeRandom: ListNodeRandom]) -> ListNodeRandom? {
+    private func constructList(_ original: ListNodeRandom?, _ copies: inout [ListNodeRandom: ListNodeRandom]) -> ListNodeRandom? {
         guard let original = original else {
             return nil
         }
@@ -63,7 +63,7 @@ struct CopyListWithRandomPointer {
     //key, if this isn't the first time through we add `originalCopy` as the `next` property of the previous copy, if the
     //original node has a random node then we also create this node and add it to the dictionary. Once all copies have been
     //made we use the `head` node to return its copy
-    static func copyRandomListDictionary(_ head: ListNodeRandom?) -> ListNodeRandom? {
+    func copyRandomListDictionary(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil
         }
@@ -101,7 +101,7 @@ struct CopyListWithRandomPointer {
     //as the key (without attempting to set the `next` or `random` properties). Next we iterate through the original list
     //again, this time setting the `next` and `random` properties. Once all copies have been made we use the `head` node to
     //return its copy
-    static func copyRandomListDictionaryMultiplePass(_ head: ListNodeRandom?) -> ListNodeRandom? {
+    func copyRandomListDictionaryMultiplePass(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil
         }

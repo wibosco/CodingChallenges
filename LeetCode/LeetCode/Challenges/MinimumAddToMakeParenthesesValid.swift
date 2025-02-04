@@ -25,7 +25,7 @@ struct MinimumAddToMakeParenthesesValid {
     //that only an unpaired opening bracket can later be paired so `unpairedOpeningBracket` can increase and decrease
     //whereas `unpairedClosingBracket` can only increase. After having iterated through `s` we then add the number of
     //unpaired opening brackets to the number of unpaired closing brackets and return as the number of additions needed
-    static func minAddToMakeValid(_ s: String) -> Int {
+    func minAddToMakeValid(_ s: String) -> Int {
         var unpairedOpeningBracket = 0
         var unpairedClosingBracket = 0
         
@@ -53,7 +53,7 @@ struct MinimumAddToMakeParenthesesValid {
     //Using a stack, traverse `s` attempting to match brackets i.e. for "(" there must be a closing ")" later in the `s`.
     //Once we get the end of `s` any elements in the stack don't have a opening/closing bracket in the correct sequence
     //so we would need to add that number of opening/closing brackets to balance the existing brackets.
-    static func minAddToMakeValidStack(_ s: String) -> Int {
+    func minAddToMakeValidStack(_ s: String) -> Int {
         var stack = [Character]()
         
         for c in s {

@@ -18,7 +18,7 @@ struct DiagonalTraverse {
     //
     //Solution Description:
     //Walk the diagonals in the matrix, moving between row and column as necessary.
-    static func findDiagonalOrderMath(_ mat: [[Int]]) -> [Int] {
+    func findDiagonalOrderMath(_ mat: [[Int]]) -> [Int] {
         let rowCount = mat.count
         let columnCount = mat[0].count
         
@@ -64,7 +64,7 @@ struct DiagonalTraverse {
     //given key as an array. Once the `diagonals` dictionary is populated we can then iterate through the keys that we discovered
     //(in order) and if the key is even reverse the order of the diagonal array and add to the `order` array; if not we just add
     //as is to the `order` array.
-    static func findDiagonalOrder(_ mat: [[Int]]) -> [Int] {
+    func findDiagonalOrder(_ mat: [[Int]]) -> [Int] {
         var diagonals = [Int: [Int]]()
         var keys = [Int]() //`keys` will control the traversal order
         

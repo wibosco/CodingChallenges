@@ -17,7 +17,7 @@ final class CheckCompletenessOfABinaryTreeTest: XCTestCase {
         let data = [1,2,3,4,5,6]
         let root = TreeNode.deserialize(data)
         
-        let result = CheckCompletenessOfABinaryTree.isCompleteTree(root)
+        let result = CheckCompletenessOfABinaryTree().isCompleteTree(root)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class CheckCompletenessOfABinaryTreeTest: XCTestCase {
         let data = [1,2,3,4,5,nil,7]
         let root = TreeNode.deserialize(data)
         
-        let result = CheckCompletenessOfABinaryTree.isCompleteTree(root)
+        let result = CheckCompletenessOfABinaryTree().isCompleteTree(root)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class CheckCompletenessOfABinaryTreeTest: XCTestCase {
         let data = [1,2,3,nil,nil,6]
         let root = TreeNode.deserialize(data)
         
-        let result = CheckCompletenessOfABinaryTree.isCompleteTree(root)
+        let result = CheckCompletenessOfABinaryTree().isCompleteTree(root)
         
         XCTAssertFalse(result)
     }
@@ -44,7 +44,7 @@ final class CheckCompletenessOfABinaryTreeTest: XCTestCase {
         let data = [1,2,3,5,6]
         let root = TreeNode.deserialize(data)
         
-        let result = CheckCompletenessOfABinaryTree.isCompleteTree(root)
+        let result = CheckCompletenessOfABinaryTree().isCompleteTree(root)
         
         XCTAssertTrue(result)
     }
@@ -53,7 +53,7 @@ final class CheckCompletenessOfABinaryTreeTest: XCTestCase {
         let data = [1,2,3,4,5,6,7,8,9,10,11,12,13,nil,nil,15]
         let root = TreeNode.deserialize(data)
         
-        let result = CheckCompletenessOfABinaryTree.isCompleteTree(root)
+        let result = CheckCompletenessOfABinaryTree().isCompleteTree(root)
         
         XCTAssertFalse(result)
     }

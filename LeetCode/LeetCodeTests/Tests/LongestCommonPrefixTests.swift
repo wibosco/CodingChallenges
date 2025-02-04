@@ -17,7 +17,7 @@ final class LongestCommonPrefixTests: XCTestCase {
     func test_A() {
         let strs = ["flower", "flow", "flight"]
         
-        let result = LongestCommonPrefix.longestCommonPrefix(strs)
+        let result = LongestCommonPrefix().longestCommonPrefix(strs)
         
         XCTAssertEqual(result, "fl")
     }
@@ -25,7 +25,7 @@ final class LongestCommonPrefixTests: XCTestCase {
     func test_B() {
         let strs = ["dog", "racecar", "car"]
         
-        let result = LongestCommonPrefix.longestCommonPrefix(strs)
+        let result = LongestCommonPrefix().longestCommonPrefix(strs)
         
         XCTAssertEqual(result, "")
     }
@@ -33,7 +33,7 @@ final class LongestCommonPrefixTests: XCTestCase {
     func test_C() {
         let strs = ["a"]
         
-        let result = LongestCommonPrefix.longestCommonPrefix(strs)
+        let result = LongestCommonPrefix().longestCommonPrefix(strs)
         
         XCTAssertEqual(result, "a")
     }
@@ -41,7 +41,7 @@ final class LongestCommonPrefixTests: XCTestCase {
     func test_D() {
         let strs = ["ab", "a"]
         
-        let result = LongestCommonPrefix.longestCommonPrefix(strs)
+        let result = LongestCommonPrefix().longestCommonPrefix(strs)
         
         XCTAssertEqual(result, "a")
     }
@@ -49,7 +49,7 @@ final class LongestCommonPrefixTests: XCTestCase {
     func test_E() {
         let strs = ["cir", "car"]
         
-        let result = LongestCommonPrefix.longestCommonPrefix(strs)
+        let result = LongestCommonPrefix().longestCommonPrefix(strs)
         
         XCTAssertEqual(result, "c")
     }

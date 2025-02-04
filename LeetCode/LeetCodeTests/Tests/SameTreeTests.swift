@@ -21,7 +21,7 @@ final class SameTreeTests: XCTestCase {
         let pRoot = TreeNode.deserialize(p)
         let qRoot = TreeNode.deserialize(q)
         
-        let result = SameTree.isSameTree(pRoot, qRoot)
+        let result = SameTree().isSameTree(pRoot, qRoot)
         
         XCTAssertTrue(result)
     }
@@ -33,7 +33,7 @@ final class SameTreeTests: XCTestCase {
         let pRoot = TreeNode.deserialize(p)
         let qRoot = TreeNode.deserialize(q)
         
-        let result = SameTree.isSameTree(pRoot, qRoot)
+        let result = SameTree().isSameTree(pRoot, qRoot)
         
         XCTAssertFalse(result)
     }
@@ -45,7 +45,7 @@ final class SameTreeTests: XCTestCase {
         let pRoot = TreeNode.deserialize(p)
         let qRoot = TreeNode.deserialize(q)
         
-        let result = SameTree.isSameTree(pRoot, qRoot)
+        let result = SameTree().isSameTree(pRoot, qRoot)
         
         XCTAssertFalse(result)
     }

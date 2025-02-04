@@ -19,7 +19,7 @@ final class SurroundedRegionsTests: XCTestCase {
                                     ["X","X","O","X"],
                                     ["X","O","X","X"]]
         
-        SurroundedRegions.solve(&board)
+        SurroundedRegions().solve(&board)
         
         let expectedBoard: [[Character]] = [["X","X","X","X"],
                                             ["X","X","X","X"],
@@ -32,7 +32,7 @@ final class SurroundedRegionsTests: XCTestCase {
     func test_B() {
         var board: [[Character]] = [["X"]]
         
-        SurroundedRegions.solve(&board)
+        SurroundedRegions().solve(&board)
         
         let expectedBoard: [[Character]] = [["X"]]
         

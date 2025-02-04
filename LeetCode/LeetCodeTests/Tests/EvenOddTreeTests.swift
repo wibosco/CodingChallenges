@@ -17,7 +17,7 @@ final class EvenOddTreeTests: XCTestCase {
         let data = [1,10,4,3,nil,7,9,12,8,6,nil,nil,2]
         let root = TreeNode.deserialize(data)
         
-        let result = EvenOddTree.isEvenOddTree(root)
+        let result = EvenOddTree().isEvenOddTree(root)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class EvenOddTreeTests: XCTestCase {
         let data = [5,4,2,3,3,7]
         let root = TreeNode.deserialize(data)
         
-        let result = EvenOddTree.isEvenOddTree(root)
+        let result = EvenOddTree().isEvenOddTree(root)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class EvenOddTreeTests: XCTestCase {
         let data = [5,9,1,3,5,7]
         let root = TreeNode.deserialize(data)
         
-        let result = EvenOddTree.isEvenOddTree(root)
+        let result = EvenOddTree().isEvenOddTree(root)
         
         XCTAssertFalse(result)
     }

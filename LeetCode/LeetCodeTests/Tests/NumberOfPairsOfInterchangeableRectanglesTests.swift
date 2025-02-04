@@ -19,7 +19,7 @@ final class NumberOfPairsOfInterchangeableRectanglesTests: XCTestCase {
                           [10, 20],
                           [15, 30]]
         
-        let result = NumberOfPairsOfInterchangeableRectangles.interchangeableRectangles(rectangles)
+        let result = NumberOfPairsOfInterchangeableRectangles().interchangeableRectangles(rectangles)
         
         XCTAssertEqual(result, 6)
     }
@@ -28,7 +28,7 @@ final class NumberOfPairsOfInterchangeableRectanglesTests: XCTestCase {
         let rectangles = [[4, 5],
                           [7, 8]]
         
-        let result = NumberOfPairsOfInterchangeableRectangles.interchangeableRectangles(rectangles)
+        let result = NumberOfPairsOfInterchangeableRectangles().interchangeableRectangles(rectangles)
         
         XCTAssertEqual(result, 0)
     }

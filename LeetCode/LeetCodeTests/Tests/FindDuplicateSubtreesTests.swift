@@ -17,7 +17,7 @@ final class FindDuplicateSubtreesTests: XCTestCase {
         let data = [1,2,3,4,nil,2,4,nil,nil,4]
         let root = TreeNode.deserialize(data)
         
-        let result = FindDuplicateSubtrees.findDuplicateSubtrees(root)
+        let result = FindDuplicateSubtrees().findDuplicateSubtrees(root)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedValues: Set<[Int?]> = Set([[2,4],[4]])
@@ -33,7 +33,7 @@ final class FindDuplicateSubtreesTests: XCTestCase {
         let data = [2,1,1]
         let root = TreeNode.deserialize(data)
         
-        let result = FindDuplicateSubtrees.findDuplicateSubtrees(root)
+        let result = FindDuplicateSubtrees().findDuplicateSubtrees(root)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedValues: Set<[Int?]> = Set([[1]])
@@ -49,7 +49,7 @@ final class FindDuplicateSubtreesTests: XCTestCase {
         let data = [2,2,2,3,nil,3,nil]
         let root = TreeNode.deserialize(data)
         
-        let result = FindDuplicateSubtrees.findDuplicateSubtrees(root)
+        let result = FindDuplicateSubtrees().findDuplicateSubtrees(root)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedValues: Set<[Int?]> = Set([[2,3],[3]])
@@ -65,7 +65,7 @@ final class FindDuplicateSubtreesTests: XCTestCase {
         let data = [0,0,0,0,nil,nil,0,nil,nil,nil,0]
         let root = TreeNode.deserialize(data)
         
-        let result = FindDuplicateSubtrees.findDuplicateSubtrees(root)
+        let result = FindDuplicateSubtrees().findDuplicateSubtrees(root)
         let values = result.map { TreeNode.serialize($0) }
         
         let expectedValues: Set<[Int?]> = Set([[0]])

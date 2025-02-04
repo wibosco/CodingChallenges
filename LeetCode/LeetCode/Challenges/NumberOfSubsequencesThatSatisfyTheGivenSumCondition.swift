@@ -35,7 +35,7 @@ struct NumberOfSubsequencesThatSatisfyTheGivenSumCondition {
     //would be no need for them.
     //
     //N.B. The possible subsequence count formula is `2 ^ subsequence-element-count`
-    static func numSubseq(_ nums: [Int], _ target: Int) -> Int {
+    func numSubseq(_ nums: [Int], _ target: Int) -> Int {
         let nums = nums.sorted()
         let mod = 1000000007 //modulo operation is required
        

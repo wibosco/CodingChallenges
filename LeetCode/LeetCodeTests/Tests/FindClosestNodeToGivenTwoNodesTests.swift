@@ -18,7 +18,7 @@ final class FindClosestNodeToGivenTwoNodesTests: XCTestCase {
         let node1 = 0
         let node2 = 1
             
-        let result = FindClosestNodeToGivenTwoNodes.closestMeetingNode(edges, node1, node2)
+        let result = FindClosestNodeToGivenTwoNodes().closestMeetingNode(edges, node1, node2)
         
         XCTAssertEqual(result, 2)
     }
@@ -28,7 +28,7 @@ final class FindClosestNodeToGivenTwoNodesTests: XCTestCase {
         let node1 = 0
         let node2 = 2
             
-        let result = FindClosestNodeToGivenTwoNodes.closestMeetingNode(edges, node1, node2)
+        let result = FindClosestNodeToGivenTwoNodes().closestMeetingNode(edges, node1, node2)
         
         XCTAssertEqual(result, 2)
     }
@@ -38,7 +38,7 @@ final class FindClosestNodeToGivenTwoNodesTests: XCTestCase {
         let node1 = 3
         let node2 = 2
             
-        let result = FindClosestNodeToGivenTwoNodes.closestMeetingNode(edges, node1, node2)
+        let result = FindClosestNodeToGivenTwoNodes().closestMeetingNode(edges, node1, node2)
         
         XCTAssertEqual(result, 3)
     }
@@ -48,7 +48,7 @@ final class FindClosestNodeToGivenTwoNodesTests: XCTestCase {
         let node1 = 1
         let node2 = 6
             
-        let result = FindClosestNodeToGivenTwoNodes.closestMeetingNode(edges, node1, node2)
+        let result = FindClosestNodeToGivenTwoNodes().closestMeetingNode(edges, node1, node2)
         
         XCTAssertEqual(result, 1)
     }
@@ -58,7 +58,7 @@ final class FindClosestNodeToGivenTwoNodesTests: XCTestCase {
         let node1 = 2
         let node2 = 0
             
-        let result = FindClosestNodeToGivenTwoNodes.closestMeetingNode(edges, node1, node2)
+        let result = FindClosestNodeToGivenTwoNodes().closestMeetingNode(edges, node1, node2)
         
         XCTAssertEqual(result, 0)
     }

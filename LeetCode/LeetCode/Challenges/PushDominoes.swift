@@ -31,7 +31,7 @@ struct PushDominoes {
     //the start an end of the array.
     //
     //N.B. how `cachedDominoes` is used during the comparisons and and `liveDominoes` to hold the updated state.
-    static func pushDominoes(_ dominoes: String) -> String {
+    func pushDominoes(_ dominoes: String) -> String {
         var liveDominoes = Array(dominoes)
         var cachedDominoes = [Character]()
         
@@ -98,7 +98,7 @@ struct PushDominoes {
     //neighbor we go ahead and update that neighbor to `L` as any other previous-previous neighbors will have already been processed
     //and so we know that there is an `R` element to balance this `L` - remember how we encounter an `R`, we check the next-next
     //neighbor. We repeat this process until the queue is empty.
-    static func pushDominoesQueue(_ dominoes: String) -> String {
+    func pushDominoesQueue(_ dominoes: String) -> String {
         var dominoes = Array(dominoes)
         var queue = [(Int, Character)]() // [Index: DominoeValue]
         

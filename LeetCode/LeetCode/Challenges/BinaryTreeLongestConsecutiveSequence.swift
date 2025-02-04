@@ -23,7 +23,7 @@ struct BinaryTreeLongestConsecutiveSequence {
     //it's parent node to determine if the child node is continuation of the previous sequence or the start of a new
     //sequence. When we reach the end of a sequence we compare it's length against `longest` and update if necessary. Once
     //all nodes have been checked we return `longest`.
-    static func longestConsecutive(_ root: TreeNode?) -> Int {
+    func longestConsecutive(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -36,7 +36,7 @@ struct BinaryTreeLongestConsecutiveSequence {
         return longest
     }
     
-    private static func dfs(_ node: TreeNode?, _ parent: TreeNode, _ length: Int, _ longest: inout Int) {
+    private func dfs(_ node: TreeNode?, _ parent: TreeNode, _ length: Int, _ longest: inout Int) {
         guard let node = node else {
             longest = max(longest, length)
             return

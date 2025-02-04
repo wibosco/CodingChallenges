@@ -22,7 +22,7 @@ final class CloneGraphTests: XCTestCase {
         
         let graph = GraphVertice.deserialize(adjList)
         
-        let result = CloneGraph.cloneGraph(graph)
+        let result = CloneGraph().cloneGraph(graph)
         
         let values = GraphVertice.extractValuesIntoAdjList(fromGraph: result)
         
@@ -35,7 +35,7 @@ final class CloneGraphTests: XCTestCase {
         
         let graph = GraphVertice.deserialize(adjList)
         
-        let result = CloneGraph.cloneGraph(graph)
+        let result = CloneGraph().cloneGraph(graph)
         
         let values = GraphVertice.extractValuesIntoAdjList(fromGraph: result)
         
@@ -54,7 +54,7 @@ final class CloneGraphTests: XCTestCase {
         
         let graph = GraphVertice.deserialize(adjList)
         
-        let result = CloneGraph.cloneGraph(graph)
+        let result = CloneGraph().cloneGraph(graph)
         
         let values = GraphVertice.extractValuesIntoAdjList(fromGraph: result)
         

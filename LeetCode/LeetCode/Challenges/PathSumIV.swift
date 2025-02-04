@@ -23,7 +23,7 @@ struct PathSumIV {
     //First we convert `nums` into a levels and index dictionary to allow for easier retrieval. Then we perform a DFS of each
     //branch in the tree using `levels`. As we traverse we build up a `sum` of each node for each branch once we reach a leaf
     //node we add that paths sum to `total`. Once all paths have been visited we return `total`.
-    static func pathSum(_ nums: [Int]) -> Int {
+    func pathSum(_ nums: [Int]) -> Int {
         var levels = [Int: [Int: Int]]()
         for num in nums {
             let level = (num / 100) - 1
@@ -42,7 +42,7 @@ struct PathSumIV {
         return total
     }
     
-    private static func dfs(_ levels: [Int: [Int: Int]], _ level: Int, _ index: Int, _ sum: Int, _ total: inout Int) {
+    private func dfs(_ levels: [Int: [Int: Int]], _ level: Int, _ index: Int, _ sum: Int, _ total: inout Int) {
         guard let value = levels[level]?[index] else {
             return
         }

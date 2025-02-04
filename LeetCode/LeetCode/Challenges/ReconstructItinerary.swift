@@ -24,7 +24,7 @@ struct ReconstructItinerary {
     //Convert the tickets in an adjacency list which we then sort. Sorting the list allows us to choose the "smallest"
     //route (greedy) between airports at all times so ensuring that the first route is the expected route. We use
     //backtracking to explore possible routes until we find one that has a count of `tickets.count + 1`
-    static func findItinerary(_ tickets: [[String]]) -> [String] {
+    func findItinerary(_ tickets: [[String]]) -> [String] {
         var adjList = [String: [String]]()
         
         for ticket in tickets {
@@ -44,7 +44,7 @@ struct ReconstructItinerary {
     }
     
     @discardableResult
-    private static func dfs(_ adjList: [String: [String]], _ count: Int, _ curr: String, _ route: inout [String]) -> Bool {
+    private func dfs(_ adjList: [String: [String]], _ count: Int, _ curr: String, _ route: inout [String]) -> Bool {
         route.append(curr)
         
         //Goal

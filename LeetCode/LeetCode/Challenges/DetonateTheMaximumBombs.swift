@@ -33,7 +33,7 @@ struct DetonateTheMaximumBombs {
     //need to care about the weighting of the edge so can drop that detail. Once we have our adjacency list we perform a DFS
     //from each node and track the nodes visited during that search. We then compare the nodes visited from each node and keep
     //track of the largest which is returned once all DFSs are complete.
-    static func maximumDetonation(_ bombs: [[Int]]) -> Int {
+    func maximumDetonation(_ bombs: [[Int]]) -> Int {
         var adjList = Array(repeating: Set<Int>(), count: bombs.count)
         
         for i in 0..<bombs.count {
@@ -71,7 +71,7 @@ struct DetonateTheMaximumBombs {
         return maxBombs
     }
     
-    private static func dfs(_ adjList: [Set<Int>], _ node: Int, _ visited: inout Set<Int>) {
+    private func dfs(_ adjList: [Set<Int>], _ node: Int, _ visited: inout Set<Int>) {
         visited.insert(node)
         
         for neighbor in adjList[node] {

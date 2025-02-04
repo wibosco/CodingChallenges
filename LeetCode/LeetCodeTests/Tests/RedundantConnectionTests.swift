@@ -16,7 +16,7 @@ final class RedundantConnectionTests: XCTestCase {
     func test_A() {
         let edges = [[1, 2], [1, 3], [2, 3]]
             
-        let result = RedundantConnection.findRedundantConnection(edges)
+        let result = RedundantConnection().findRedundantConnection(edges)
         
         XCTAssertEqual(result, [2, 3])
     }
@@ -24,7 +24,7 @@ final class RedundantConnectionTests: XCTestCase {
     func test_B() {
         let edges = [[1, 2], [2, 3], [3, 4], [1, 4], [1, 5]]
             
-        let result = RedundantConnection.findRedundantConnection(edges)
+        let result = RedundantConnection().findRedundantConnection(edges)
         
         XCTAssertEqual(result, [1, 4])
     }

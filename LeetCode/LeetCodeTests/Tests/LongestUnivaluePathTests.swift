@@ -17,7 +17,7 @@ final class LongestUnivaluePathTests: XCTestCase {
         let data = [5,4,5,1,1,nil,5]
         let root = TreeNode.deserialize(data)
         
-        let result = LongestUnivaluePath.longestUnivaluePath(root)
+        let result = LongestUnivaluePath().longestUnivaluePath(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class LongestUnivaluePathTests: XCTestCase {
         let data = [1,4,5,4,4,nil,5]
         let root = TreeNode.deserialize(data)
         
-        let result = LongestUnivaluePath.longestUnivaluePath(root)
+        let result = LongestUnivaluePath().longestUnivaluePath(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -35,7 +35,7 @@ final class LongestUnivaluePathTests: XCTestCase {
         let data = [Int]()
         let root = TreeNode.deserialize(data)
         
-        let result = LongestUnivaluePath.longestUnivaluePath(root)
+        let result = LongestUnivaluePath().longestUnivaluePath(root)
         
         XCTAssertEqual(result, 0)
     }
@@ -44,7 +44,7 @@ final class LongestUnivaluePathTests: XCTestCase {
         let data = [1,nil,1,1,1,1,1,1]
         let root = TreeNode.deserialize(data)
         
-        let result = LongestUnivaluePath.longestUnivaluePath(root)
+        let result = LongestUnivaluePath().longestUnivaluePath(root)
         
         XCTAssertEqual(result, 4)
     }

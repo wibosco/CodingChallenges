@@ -26,7 +26,7 @@ struct LongestIncreasingSubsequence {
     //count.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func lengthOfLIS(_ nums: [Int]) -> Int {
+    func lengthOfLIS(_ nums: [Int]) -> Int {
         var lis = Array(repeating: 1, count: nums.count)
         
         for i in (0..<nums.count).reversed() {
@@ -60,7 +60,7 @@ struct LongestIncreasingSubsequence {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func lengthOfLISMemoization(_ nums: [Int]) -> Int {
+    func lengthOfLISMemoization(_ nums: [Int]) -> Int {
         var longest = 0
         var memo = [Int: Int]()
         
@@ -72,7 +72,7 @@ struct LongestIncreasingSubsequence {
         return longest
     }
     
-    private static func dfs(_ nums: [Int], _ currentIndex: Int, _ num: Int, _ memo: inout [Int: Int]) -> Int {
+    private func dfs(_ nums: [Int], _ currentIndex: Int, _ num: Int, _ memo: inout [Int: Int]) -> Int {
         guard currentIndex < nums.count else {
             return 0
         }
@@ -108,7 +108,7 @@ struct LongestIncreasingSubsequence {
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
     //each node of that graph from every possible path in DFS manner.
-    static func lengthOfLISDFS(_ nums: [Int]) -> Int {
+    func lengthOfLISDFS(_ nums: [Int]) -> Int {
         var longest = 0
         
         for i in 0..<nums.count {
@@ -118,7 +118,7 @@ struct LongestIncreasingSubsequence {
         return longest
     }
     
-    private static func dfs(_ nums: [Int], _ currentIndex: Int, _ num: Int, _ currentLength: Int, _ longest: inout Int) {
+    private func dfs(_ nums: [Int], _ currentIndex: Int, _ num: Int, _ currentLength: Int, _ longest: inout Int) {
         guard currentIndex < nums.count else {
             longest = max(longest, currentLength)
             return

@@ -19,7 +19,7 @@ final class MinimumFuelCostToReportToTheCapitalTests: XCTestCase {
                      [0,3]]
         let seats = 5
             
-        let result = MinimumFuelCostToReportToTheCapital.minimumFuelCost(roads, seats)
+        let result = MinimumFuelCostToReportToTheCapital().minimumFuelCost(roads, seats)
         
         XCTAssertEqual(result, 3)
     }
@@ -33,7 +33,7 @@ final class MinimumFuelCostToReportToTheCapitalTests: XCTestCase {
                      [4,6]]
         let seats = 2
             
-        let result = MinimumFuelCostToReportToTheCapital.minimumFuelCost(roads, seats)
+        let result = MinimumFuelCostToReportToTheCapital().minimumFuelCost(roads, seats)
         
         XCTAssertEqual(result, 7)
     }

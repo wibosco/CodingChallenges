@@ -16,7 +16,7 @@ final class MaximumProductOfTheLengthOfTwoPalindromicSubsequencesTests: XCTestCa
     func test_A() {
         let s = "leetcodecom"
         
-        let result = MaximumProductOfTheLengthOfTwoPalindromicSubsequences.maxProduct(s)
+        let result = MaximumProductOfTheLengthOfTwoPalindromicSubsequences().maxProduct(s)
         
         XCTAssertEqual(result, 9)
     }
@@ -24,7 +24,7 @@ final class MaximumProductOfTheLengthOfTwoPalindromicSubsequencesTests: XCTestCa
     func test_B() {
         let s = "bb"
         
-        let result = MaximumProductOfTheLengthOfTwoPalindromicSubsequences.maxProduct(s)
+        let result = MaximumProductOfTheLengthOfTwoPalindromicSubsequences().maxProduct(s)
         
         XCTAssertEqual(result, 1)
     }
@@ -32,7 +32,7 @@ final class MaximumProductOfTheLengthOfTwoPalindromicSubsequencesTests: XCTestCa
     func test_C() {
         let s = "accbcaxxcxx"
         
-        let result = MaximumProductOfTheLengthOfTwoPalindromicSubsequences.maxProduct(s)
+        let result = MaximumProductOfTheLengthOfTwoPalindromicSubsequences().maxProduct(s)
         
         XCTAssertEqual(result, 25)
     }

@@ -20,7 +20,7 @@ struct DeepestLeavesSum {
     //Using BFS we traverse the tree level-by-level and calculate the sum of all the nodes at that level, this level sum is then
     //store outside the BFS loop in `lastSum`. Using `lastSum` means tjaty we don't need any special loop to know when we are on the
     //final level as each level will override `lastSum` so when the queue is empty `lastSum` will be the last sum.
-    static func deepestLeavesSum(_ root: TreeNode?) -> Int {
+    func deepestLeavesSum(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }

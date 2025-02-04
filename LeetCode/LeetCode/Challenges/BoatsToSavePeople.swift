@@ -21,7 +21,7 @@ struct BoatsToSavePeople {
     //Sorting `people` in ascending order we can take a greedy two pointer approach to filling the boats. As we fill
     //the boats we prioritise the larger of the elements in `people` and attempt to add a smaller element in as well.
     //As each element is added we adjust the pointers inwards.
-    static func numRescueBoats(_ people: [Int], _ limit: Int) -> Int {
+    func numRescueBoats(_ people: [Int], _ limit: Int) -> Int {
         let sorted = people.sorted()
         
         var boats = 0

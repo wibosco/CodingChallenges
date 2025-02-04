@@ -17,7 +17,7 @@ final class BinaryTreeLongestConsecutiveSequenceIITests: XCTestCase {
         let data = [1,2,3]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLongestConsecutiveSequenceII.longestConsecutive(root)
+        let result = BinaryTreeLongestConsecutiveSequenceII().longestConsecutive(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class BinaryTreeLongestConsecutiveSequenceIITests: XCTestCase {
         let data = [2,1,3]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLongestConsecutiveSequenceII.longestConsecutive(root)
+        let result = BinaryTreeLongestConsecutiveSequenceII().longestConsecutive(root)
         
         XCTAssertEqual(result, 3)
     }
@@ -35,7 +35,7 @@ final class BinaryTreeLongestConsecutiveSequenceIITests: XCTestCase {
         let data = [1,1,1]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLongestConsecutiveSequenceII.longestConsecutive(root)
+        let result = BinaryTreeLongestConsecutiveSequenceII().longestConsecutive(root)
         
         XCTAssertEqual(result, 1)
     }
@@ -44,7 +44,7 @@ final class BinaryTreeLongestConsecutiveSequenceIITests: XCTestCase {
         let data = [1,nil,2]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLongestConsecutiveSequenceII.longestConsecutive(root)
+        let result = BinaryTreeLongestConsecutiveSequenceII().longestConsecutive(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -53,7 +53,7 @@ final class BinaryTreeLongestConsecutiveSequenceIITests: XCTestCase {
         let data = [2,nil,3,4,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLongestConsecutiveSequenceII.longestConsecutive(root)
+        let result = BinaryTreeLongestConsecutiveSequenceII().longestConsecutive(root)
         
         XCTAssertEqual(result, 3)
     }

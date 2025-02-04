@@ -21,7 +21,7 @@ struct RepeatedDNASequences {
     //10 character sequence that we come across in a set. If the set already contains the current sequence then we know
     //that we have a repeat and can add it to the `repeatedSequences` set. Each iteration through the loop we increment
     //the left and right index to keep the same window size and ensure that we are moving forward.
-    static func findRepeatedDnaSequences(_ s: String) -> [String] {
+    func findRepeatedDnaSequences(_ s: String) -> [String] {
         guard s.count > 10 else {
             return [String]()
         }

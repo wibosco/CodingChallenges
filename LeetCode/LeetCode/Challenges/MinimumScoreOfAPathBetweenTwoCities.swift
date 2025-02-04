@@ -32,7 +32,7 @@ struct MinimumScoreOfAPathBetweenTwoCities {
     //connected to node 0 (which will include node n) and store the smallest weight we find in `minWeight`. As this graph
     //contains loops to avoid searching the same path multiple times we store a used path in a `visited` set. Once all
     //paths/nodes connected to node 0 have been search we return `minWeight.`
-    static func minScore(_ n: Int, _ roads: [[Int]]) -> Int {
+    func minScore(_ n: Int, _ roads: [[Int]]) -> Int {
         var adjList = Array(repeating: [[Int]](), count: n)
         for road in roads {
             let src = road[0] - 1

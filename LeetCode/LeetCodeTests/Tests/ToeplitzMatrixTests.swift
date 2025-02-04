@@ -19,7 +19,7 @@ final class ToeplitzMatrixTests: XCTestCase {
                       [5, 1, 2, 3],
                       [9, 5, 1, 2]]
         
-        let result = ToeplitzMatrix.isToeplitzMatrix(matrix)
+        let result = ToeplitzMatrix().isToeplitzMatrix(matrix)
         
         XCTAssertTrue(result)
     }
@@ -28,7 +28,7 @@ final class ToeplitzMatrixTests: XCTestCase {
         let matrix = [[1, 2],
                       [2, 2]]
         
-        let result = ToeplitzMatrix.isToeplitzMatrix(matrix)
+        let result = ToeplitzMatrix().isToeplitzMatrix(matrix)
         
         XCTAssertFalse(result)
     }

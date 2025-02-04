@@ -22,7 +22,7 @@ final class FloodFillTests: XCTestCase {
         let sc = 1
         let newColor = 2
         
-        let result = FloodFill.floodFill(image, sr, sc, newColor)
+        let result = FloodFill().floodFill(image, sr, sc, newColor)
         
         XCTAssertEqual(result, [[2, 2, 2], [2, 2, 0], [2, 0, 1]])
     }
@@ -34,7 +34,7 @@ final class FloodFillTests: XCTestCase {
         let sc = 0
         let newColor = 2
         
-        let result = FloodFill.floodFill(image, sr, sc, newColor)
+        let result = FloodFill().floodFill(image, sr, sc, newColor)
         
         XCTAssertEqual(result, [[2, 2, 2], [2, 2, 2]])
     }
@@ -47,7 +47,7 @@ final class FloodFillTests: XCTestCase {
         let sc = 1
         let newColor = 2
         
-        let result = FloodFill.floodFill(image, sr, sc, newColor)
+        let result = FloodFill().floodFill(image, sr, sc, newColor)
         
         XCTAssertEqual(result, [[2, 2, 2], [2, 2, 0], [2, 0, 1]])
     }

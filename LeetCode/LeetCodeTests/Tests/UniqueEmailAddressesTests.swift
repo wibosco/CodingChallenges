@@ -16,7 +16,7 @@ final class UniqueEmailAddressesTests: XCTestCase {
     func test_A() {
         let emails = ["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"]
         
-        let result = UniqueEmailAddresses.numUniqueEmails(emails)
+        let result = UniqueEmailAddresses().numUniqueEmails(emails)
         
         XCTAssertEqual(result, 2)
     }
@@ -24,7 +24,7 @@ final class UniqueEmailAddressesTests: XCTestCase {
     func test_B() {
         let emails = ["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"]
         
-        let result = UniqueEmailAddresses.numUniqueEmails(emails)
+        let result = UniqueEmailAddresses().numUniqueEmails(emails)
         
         XCTAssertEqual(result, 3)
     }

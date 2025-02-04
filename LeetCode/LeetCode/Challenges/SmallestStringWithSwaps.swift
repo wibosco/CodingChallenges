@@ -23,7 +23,7 @@ struct SmallestStringWithSwaps {
     //can occur can interact with each other. We then assign the actual character value to each of those groups. We then sort
     //each group to ensure that the smallest value character is first. Finally we iterate through `s` changing the character at
     //any given index for the smallest in the group (for that index)
-    static func smallestStringWithSwaps(_ s: String, _ pairs: [[Int]]) -> String {
+    func smallestStringWithSwaps(_ s: String, _ pairs: [[Int]]) -> String {
         guard s.count != 1 else {
             return s
         }

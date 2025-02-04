@@ -35,7 +35,7 @@ struct FindEventualSafeStates {
     //vertice we add it to our local visited set and only remove it when we are finished searching from that vertice (remember this
     //includes all descendents of that vertice). If searching from that vertices we re-encounter it (or any of it's descendents)
     //then we know that a cycle exists.
-    static func eventualSafeNodes(_ graph: [[Int]]) -> [Int] {
+    func eventualSafeNodes(_ graph: [[Int]]) -> [Int] {
         var safeNodes = [Int]()
         var visited = [Int: Bool]()
 
@@ -53,7 +53,7 @@ struct FindEventualSafeStates {
         return safeNodes
     }
     
-    private static func dfs(_ adjList: [[Int]], _ source: Int, _ visited: inout [Int: Bool], _ currentVisited: inout Set<Int>, _ detectedCycle: inout Bool) {
+    private func dfs(_ adjList: [[Int]], _ source: Int, _ visited: inout [Int: Bool], _ currentVisited: inout Set<Int>, _ detectedCycle: inout Bool) {
         guard !detectedCycle else {
             return
         }
@@ -107,7 +107,7 @@ struct FindEventualSafeStates {
     //vertice we add it to our local visited set and only remove it when we are finished searching from that vertice (remember this
     //includes all descendents of that vertice). If searching from that vertices we re-encounter it (or any of it's descendents)
     //then we know that a cycle exists.
-    static func eventualSafeNodesReturnResult(_ graph: [[Int]]) -> [Int] {
+    func eventualSafeNodesReturnResult(_ graph: [[Int]]) -> [Int] {
         var safeNodes = [Int]()
         var visited = [Int: Bool]()
         
@@ -124,7 +124,7 @@ struct FindEventualSafeStates {
         return safeNodes
     }
     
-    private static func dfsReturnResult(_ adjList: [[Int]], _ source: Int, _ visited: inout [Int: Bool], _ currentVisited: inout Set<Int>) -> Bool {
+    private func dfsReturnResult(_ adjList: [[Int]], _ source: Int, _ visited: inout [Int: Bool], _ currentVisited: inout Set<Int>) -> Bool {
         guard visited[source] == nil else {
             //have found another path onto a graph that has already been searched
             return visited[source]!

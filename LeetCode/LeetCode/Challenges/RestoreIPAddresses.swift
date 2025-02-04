@@ -22,7 +22,7 @@ struct RestoreIPAddresses {
     //between 1 and 3 digits. Using backtracking we separate each combination and we place them into an ongoing array
     //`current` if at any time that array contains more than 4 elements we know that the IP address is invalid and we exit
     //that branch. If we use all digits in `s` and `current` equals 4 then we have a valid IP address and add it `addresses`
-    static func restoreIpAddresses(_ s: String) -> [String] {
+    func restoreIpAddresses(_ s: String) -> [String] {
         guard s.count <= 12 else { //maximum size of a valid IP address
             return [String]()
         }
@@ -35,7 +35,7 @@ struct RestoreIPAddresses {
         return addresses
     }
     
-    private static func backtrack(_ characters: [Character], _ left: Int, _ current: [String], _ addresses: inout [String]) {
+    private func backtrack(_ characters: [Character], _ left: Int, _ current: [String], _ addresses: inout [String]) {
         guard current.count < 5 else { //valid IP address has 4 sections anything more and it's invalid
             return
         }

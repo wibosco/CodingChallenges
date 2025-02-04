@@ -17,7 +17,7 @@ final class WordBreakTests: XCTestCase {
         let s = "leetcode"
         let wordDict = ["leet", "code"]
         
-        let result = WordBreak.wordBreak(s, wordDict)
+        let result = WordBreak().wordBreak(s, wordDict)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class WordBreakTests: XCTestCase {
         let s = "applepenapple"
         let wordDict = ["apple", "pen"]
         
-        let result = WordBreak.wordBreak(s, wordDict)
+        let result = WordBreak().wordBreak(s, wordDict)
         
         XCTAssertTrue(result)
     }
@@ -35,7 +35,7 @@ final class WordBreakTests: XCTestCase {
         let s = "catsandog"
         let wordDict = ["cats", "dog", "sand", "and", "cat"]
         
-        let result = WordBreak.wordBreak(s, wordDict)
+        let result = WordBreak().wordBreak(s, wordDict)
         
         XCTAssertFalse(result)
     }

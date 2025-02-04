@@ -18,7 +18,7 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "dbbca"
         let s3 = "aadbbcbcac"
         
-        let result = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString().isInterleave(s1, s2, s3)
         
         XCTAssertTrue(result)
     }
@@ -28,7 +28,7 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "dbbca"
         let s3 = "aadbbbaccc"
         
-        let result = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString().isInterleave(s1, s2, s3)
         
         XCTAssertFalse(result)
     }
@@ -38,7 +38,7 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = ""
         let s3 = ""
         
-        let result = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString().isInterleave(s1, s2, s3)
         
         XCTAssertTrue(result)
     }
@@ -48,7 +48,7 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = ""
         let s3 = "c"
         
-        let result = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString().isInterleave(s1, s2, s3)
         
         XCTAssertFalse(result)
     }
@@ -58,7 +58,7 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "babababababababababababababababababababababababababababababababababababababababababababababababaaaba"
         let s3 = "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababbb"
         
-        let result = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString().isInterleave(s1, s2, s3)
         
         XCTAssertFalse(result)
     }
@@ -68,7 +68,7 @@ final class InterleavingStringTests: XCTestCase {
         let s2 = "babababab"
         let s3 = "ababababababa"
         
-        let result = InterleavingString.isInterleave(s1, s2, s3)
+        let result = InterleavingString().isInterleave(s1, s2, s3)
         
         XCTAssertFalse(result)
     }

@@ -22,7 +22,7 @@ struct PlusOne {
     //if we had 9 + 1 which is 10 then the new `carry` is 1). As long as carry isn't 0 then we repeat the process for
     //subsequent values of `i`. We also need to handle the scenario where we have updated all the values in `digits`
     //still have a non-zero carry value, in this case we add that carry to the start of `digits`
-    static func plusOne(_ digits: [Int]) -> [Int] {
+    func plusOne(_ digits: [Int]) -> [Int] {
         var digits = digits
         var i = digits.count - 1
         var carry = 1

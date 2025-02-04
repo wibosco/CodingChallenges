@@ -17,7 +17,7 @@ final class BuddyStringsTests: XCTestCase {
         let s = "ab"
         let goal = "ba"
         
-        let result = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings().buddyStrings(s, goal)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class BuddyStringsTests: XCTestCase {
         let s = "ab"
         let goal = "ab"
         
-        let result = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings().buddyStrings(s, goal)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class BuddyStringsTests: XCTestCase {
         let s = "aa"
         let goal = "aa"
         
-        let result = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings().buddyStrings(s, goal)
         
         XCTAssertTrue(result)
     }
@@ -44,7 +44,7 @@ final class BuddyStringsTests: XCTestCase {
         let s = "aabdd"
         let goal = "aabcc"
         
-        let result = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings().buddyStrings(s, goal)
         
         XCTAssertFalse(result)
     }
@@ -53,7 +53,7 @@ final class BuddyStringsTests: XCTestCase {
         let s = "aabcc"
         let goal = "aabc"
         
-        let result = BuddyStrings.buddyStrings(s, goal)
+        let result = BuddyStrings().buddyStrings(s, goal)
         
         XCTAssertFalse(result)
     }

@@ -24,7 +24,7 @@ struct UniqueBinarySearchTrees {
     //
     //N.B. https://www.youtube.com/watch?v=GgP75HAvrlY
     //N.B. https://leetcode.com/problems/unique-binary-search-trees/discuss/1425684/For-those-who-don't-understand-why-Cartesian-product-(Visualization)
-    static func numTrees(_ n: Int) -> Int {
+    func numTrees(_ n: Int) -> Int {
         guard n > 1 else {
             return 1
         }

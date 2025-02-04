@@ -24,7 +24,7 @@ struct SwappingNodesInALinkedList {
     //to move after we already seen `k` nodes - this will result in the `trailing` pointer being `k` nodes in from the end of
     //the list. We then exchange their `val` values - note that there is not need to actually move the node itself just the
     //value it represents.
-    static func swapNodes(_ head: ListNode?, _ k: Int) -> ListNode? {
+    func swapNodes(_ head: ListNode?, _ k: Int) -> ListNode? {
         var left = head
         var trailing = head
         var right = head
@@ -61,7 +61,7 @@ struct SwappingNodesInALinkedList {
     //to capture the nodes that will be swapped using that count to help determine which node is the second/right node. We
     //then exchange their `val` values - note that there is not need to actually move the node itself just the value it
     //represents.
-    static func swapNodesCount(_ head: ListNode?, _ k: Int) -> ListNode? {
+    func swapNodesCount(_ head: ListNode?, _ k: Int) -> ListNode? {
         var count = 0
         
         var current = head
@@ -109,7 +109,7 @@ struct SwappingNodesInALinkedList {
     //We move through the linked list and store each node that we encounter into an array. We then take the two we are interested
     //in swapping and exchange their `val` values - note that there is not need to actually move the node itself just the value it
     //represents.
-    static func swapNodesArray(_ head: ListNode?, _ k: Int) -> ListNode? {
+    func swapNodesArray(_ head: ListNode?, _ k: Int) -> ListNode? {
         var array = [ListNode]()
         
         var current = head

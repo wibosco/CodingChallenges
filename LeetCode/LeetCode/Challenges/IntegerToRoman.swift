@@ -14,7 +14,7 @@ import Foundation
 struct IntegerToRoman {
     
     //Time: O(n)
-    static func intToRoman(_ num: Int) -> String {
+    func intToRoman(_ num: Int) -> String {
         let romanNumerals = [
             ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], // Units
             ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"], // Tens

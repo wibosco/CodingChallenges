@@ -26,7 +26,7 @@ struct FindDuplicateSubtrees {
     //subtree and it's structure we need to bake the structure into our keys which we do with "L" and "R". We repeat this process
     //for all subtrees and then we iterate through `subtrees` - any subtree patterns that have multiple root nodes are duplicates
     //so we add the first root to `roots`. Once all subtrees have been checked we return `duplicates`.
-    static func findDuplicateSubtrees(_ root: TreeNode?) -> [TreeNode?] {
+    func findDuplicateSubtrees(_ root: TreeNode?) -> [TreeNode?] {
         guard let root = root else {
             return []
         }
@@ -46,7 +46,7 @@ struct FindDuplicateSubtrees {
         return duplicates
     }
     
-    private static func dfs(_ node: TreeNode?, _ subtrees: inout [String: [TreeNode]]) -> String {
+    private func dfs(_ node: TreeNode?, _ subtrees: inout [String: [TreeNode]]) -> String {
         guard let node = node else {
             return ""
         }

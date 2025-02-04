@@ -22,7 +22,7 @@ struct BullsAndCows {
     //keys of `nonMatchingGuess` to find at `cow` characters. As each `cow` character must be paired between `nonMatchingSecret`
     //and `nonMatchingGuess` we take the min of the counts that we collected as this will only include the pairing regardless
     //of which dictionary holds the smaller count. Finally we format and return the counts.
-    static func getHint(_ secret: String, _ guess: String) -> String {
+    func getHint(_ secret: String, _ guess: String) -> String {
         var bullCount = 0
         var cowCount = 0
 

@@ -28,7 +28,7 @@ struct LinkedListCycleII {
     //Similar to: https://leetcode.com/problems/linked-list-cycle/
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
     //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
-    static func detectCycle(_ head: ListNode?) -> ListNode? {
+    func detectCycle(_ head: ListNode?) -> ListNode? {
         var hare: ListNode? = head
         var tortoise: ListNode? = head
         
@@ -62,7 +62,7 @@ struct LinkedListCycleII {
     //Iterate through the list, inserting each unique node that we come across into the `visited` set. If the set already contains
     //the node then we have a cycle and can return that node as the start; if we get to the end of the list we know that the list
     //doesn't contain a cycle and can return nil
-    static func detectCycleSet(_ head: ListNode?) -> ListNode? {
+    func detectCycleSet(_ head: ListNode?) -> ListNode? {
         var visited = Set<ListNode>()
         var node = head
         

@@ -16,7 +16,7 @@ final class ExcelSheetColumnNumberTests: XCTestCase {
     func test_A() {
         let columnTitle = "A"
         
-        let result = ExcelSheetColumnNumber.titleToNumber(columnTitle)
+        let result = ExcelSheetColumnNumber().titleToNumber(columnTitle)
         
         XCTAssertEqual(result, 1)
     }
@@ -24,7 +24,7 @@ final class ExcelSheetColumnNumberTests: XCTestCase {
     func test_B() {
         let columnTitle = "AB"
         
-        let result = ExcelSheetColumnNumber.titleToNumber(columnTitle)
+        let result = ExcelSheetColumnNumber().titleToNumber(columnTitle)
         
         XCTAssertEqual(result, 28)
     }
@@ -32,7 +32,7 @@ final class ExcelSheetColumnNumberTests: XCTestCase {
     func test_C() {
         let columnTitle = "ZY"
         
-        let result = ExcelSheetColumnNumber.titleToNumber(columnTitle)
+        let result = ExcelSheetColumnNumber().titleToNumber(columnTitle)
         
         XCTAssertEqual(result, 701)
     }

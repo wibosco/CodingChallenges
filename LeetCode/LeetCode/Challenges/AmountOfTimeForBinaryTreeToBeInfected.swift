@@ -32,7 +32,7 @@ struct AmountOfTimeForBinaryTreeToBeInfected {
     //add each node to `queue` once. Once all nodes have been visited, we return `minutes`.
     //
     //Similar to: https://leetcode.com/problems/closest-leaf-in-a-binary-tree/
-    static func amountOfTime(_ root: TreeNode?, _ start: Int) -> Int {
+    func amountOfTime(_ root: TreeNode?, _ start: Int) -> Int {
         guard let root = root else {
             return -1
         }
@@ -69,7 +69,7 @@ struct AmountOfTimeForBinaryTreeToBeInfected {
         return minutes
     }
     
-    private static func buildGraph(_ node: TreeNode, _ adjList: inout [Int: [Int]]) {
+    private func buildGraph(_ node: TreeNode, _ adjList: inout [Int: [Int]]) {
         if let left = node.left {
             adjList[node.val, default: [Int]()].append(left.val)
             adjList[left.val, default: [Int]()].append(node.val)

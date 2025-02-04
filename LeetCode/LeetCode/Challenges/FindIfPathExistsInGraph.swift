@@ -23,7 +23,7 @@ struct FindIfPathExistsInGraph {
     //Build an adjacency list containing all the connections from a node/vertice to other nodes/vertices. Check that both start
     //and end nodes actually have connections. Then traverse the graph in the BFS manner, stopping only when the `end` is found
     //or there are no more edges in the graph that contains `start`.
-    static func validPath(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
+    func validPath(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
         }
@@ -78,7 +78,7 @@ struct FindIfPathExistsInGraph {
     //Build an adjacency list containing all the connections from a node/vertice to other nodes/vertices. Check that both start
     //and end nodes actually have connections. Then traverse the graph in the DFS manner, stopping only when the `end` is found
     //or there are no more edges in the graph that contains `start`.
-    static func validPathAdjacencyListDFS(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
+    func validPathAdjacencyListDFS(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
         }
@@ -126,7 +126,7 @@ struct FindIfPathExistsInGraph {
     //Solution Description:
     //Build an array of nodes and then connect them using the array index as the edges index. Then traverse the graph in the DFS
     //manner, stopping only when the `end` is found or there are no more edges in the graph that contains `start`.
-    static func validPathGraphNodesDFS(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
+    func validPathGraphNodesDFS(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
         }
@@ -177,7 +177,7 @@ struct FindIfPathExistsInGraph {
     //Solution Description:
     //Using union find connected the nodes into sets. If start and end exist in the same set then they are connected otherwise
     //they are not
-    static func validPathDisjointSets(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
+    func validPathDisjointSets(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
         guard start != end else {
             return true
         }

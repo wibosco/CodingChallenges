@@ -16,7 +16,7 @@ final class ArrayWithElementsNotEqualToAverageOfNeighborsTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3, 4, 5]
             
-        let result = ArrayWithElementsNotEqualToAverageOfNeighbors.rearrangeArray(nums)
+        let result = ArrayWithElementsNotEqualToAverageOfNeighbors().rearrangeArray(nums)
         
         XCTAssertEqual(result, [1, 5, 2, 4, 3])
     }
@@ -24,7 +24,7 @@ final class ArrayWithElementsNotEqualToAverageOfNeighborsTests: XCTestCase {
     func test_B() {
         let nums = [6, 2, 0, 9, 7]
             
-        let result = ArrayWithElementsNotEqualToAverageOfNeighbors.rearrangeArray(nums)
+        let result = ArrayWithElementsNotEqualToAverageOfNeighbors().rearrangeArray(nums)
         
         XCTAssertEqual(result, [0, 9, 2, 7, 6])
     }

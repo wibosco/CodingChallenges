@@ -21,11 +21,11 @@ struct SumOfLeftLeaves {
     //a parent property, during the DFS we pass if that node is a left chld of it's parent or not. Once we find a left child
     //leaf node we return its value and add that value to other left child leaf nodes as the the callstack unwinds. Once all
     //nodes have been checked we return the sum.
-    static func sumOfLeftLeaves(_ root: TreeNode?) -> Int {
+    func sumOfLeftLeaves(_ root: TreeNode?) -> Int {
         return dfs(root, false)
     }
     
-    private static func  dfs(_ node: TreeNode?, _ leftChild: Bool) -> Int {
+    private func  dfs(_ node: TreeNode?, _ leftChild: Bool) -> Int {
         guard let node = node else {
             return 0
         }

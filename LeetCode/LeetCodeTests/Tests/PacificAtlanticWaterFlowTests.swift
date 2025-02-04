@@ -20,7 +20,7 @@ final class PacificAtlanticWaterFlowTests: XCTestCase {
                        [6, 7, 1, 4, 5],
                        [5, 1, 1, 2, 4]]
         
-        let result = PacificAtlanticWaterFlow.pacificAtlantic(heights)
+        let result = PacificAtlanticWaterFlow().pacificAtlantic(heights)
         
         let expectedResult = [[0, 4],
                               [1, 3],
@@ -41,7 +41,7 @@ final class PacificAtlanticWaterFlowTests: XCTestCase {
     func test_B() {
         let heights = [[1]]
         
-        let result = PacificAtlanticWaterFlow.pacificAtlantic(heights)
+        let result = PacificAtlanticWaterFlow().pacificAtlantic(heights)
         
         XCTAssertEqual(result, [[0, 0]])
     }
@@ -51,7 +51,7 @@ final class PacificAtlanticWaterFlowTests: XCTestCase {
                        [8, 9, 4],
                        [7, 6, 5]]
         
-        let result = PacificAtlanticWaterFlow.pacificAtlantic(heights)
+        let result = PacificAtlanticWaterFlow().pacificAtlantic(heights)
         
         let expectedResult = [[0, 2],
                               [1, 0],
@@ -74,7 +74,7 @@ final class PacificAtlanticWaterFlowTests: XCTestCase {
                        [1, 1],
                        [1, 1]]
         
-        let result = PacificAtlanticWaterFlow.pacificAtlantic(heights)
+        let result = PacificAtlanticWaterFlow().pacificAtlantic(heights)
         
         let expectedResult = [[0, 0],
                               [0, 1],

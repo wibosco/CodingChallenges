@@ -29,7 +29,7 @@ struct MinimumFuelCostToReportToTheCapital {
     //that mismatch there between calculating how many passengers are here vs how many care it came to get here. Once we
     //have iterated through all neighbor (excluding the parent relationship) we return the total number of passengers at
     //this node so that it's parent node can calculate how many cars will be required.
-    static func minimumFuelCost(_ roads: [[Int]], _ seats: Int) -> Int {
+    func minimumFuelCost(_ roads: [[Int]], _ seats: Int) -> Int {
         let nodeCount = (roads.count + 1)
         var adjList = Array(repeating: [Int](), count: nodeCount)
         
@@ -51,7 +51,7 @@ struct MinimumFuelCostToReportToTheCapital {
         return totalCarsUsed //as cars and fuel are 1 to 1, we can use them interchangeably
     }
     
-    private static func dfs(_ adjList: [[Int]], _ node: Int, _ parent: Int, _ seats: Int, _ totalCarsUsed: inout Int) -> Int {
+    private func dfs(_ adjList: [[Int]], _ node: Int, _ parent: Int, _ seats: Int, _ totalCarsUsed: inout Int) -> Int {
         var totalPassengersMeetingAtCurrentNode = 0
         for neighbor in adjList[node] {
             guard neighbor != parent else {

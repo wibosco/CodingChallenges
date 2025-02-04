@@ -18,7 +18,7 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths().binaryTreePaths(root)
         
         XCTAssertEqual(result, ["1->2->5", "1->3"])
     }
@@ -28,7 +28,7 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths().binaryTreePaths(root)
         
         XCTAssertEqual(result, ["1"])
     }
@@ -38,7 +38,7 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths().binaryTreePaths(root)
         
         XCTAssertEqual(result, ["1->2", "1->3"])
     }
@@ -48,7 +48,7 @@ final class BinaryTreePathsTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreePaths.binaryTreePaths(root)
+        let result = BinaryTreePaths().binaryTreePaths(root)
         
         XCTAssertEqual(result, ["1->2->3"])
     }

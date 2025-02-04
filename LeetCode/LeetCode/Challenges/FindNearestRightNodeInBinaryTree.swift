@@ -22,7 +22,7 @@ struct FindNearestRightNodeInBinaryTree {
     //true so that the next node we encounter in that level we return it, if we don't encounter another node we know that
     //there is no to the right of `u` and can return nil. If we get to the end of the tree traversal and haven't found `u` we
     //return nil.
-    static func findNearestRightNode(_ root: TreeNode?, _ u: TreeNode?) -> TreeNode? {
+    func findNearestRightNode(_ root: TreeNode?, _ u: TreeNode?) -> TreeNode? {
         guard let root = root, let u = u else {
             return nil
         }

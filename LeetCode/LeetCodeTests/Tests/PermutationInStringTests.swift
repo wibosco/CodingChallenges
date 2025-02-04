@@ -17,7 +17,7 @@ final class PermutationInStringTests: XCTestCase {
         let s1 = "ab"
         let s2 = "eidbaooo"
         
-        let result = PermutationInString.checkInclusion(s1, s2)
+        let result = PermutationInString().checkInclusion(s1, s2)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class PermutationInStringTests: XCTestCase {
         let s1 = "ab"
         let s2 = "eidboaoo"
         
-        let result = PermutationInString.checkInclusion(s1, s2)
+        let result = PermutationInString().checkInclusion(s1, s2)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class PermutationInStringTests: XCTestCase {
         let s1 = "adc"
         let s2 = "dcda"
         
-        let result = PermutationInString.checkInclusion(s1, s2)
+        let result = PermutationInString().checkInclusion(s1, s2)
         
         XCTAssertTrue(result)
     }

@@ -17,7 +17,7 @@ final class FindTheDifferenceOfTwoArraysTests: XCTestCase {
         let nums1 = [1, 2, 3]
         let nums2 = [2, 4, 6]
             
-        let result = FindTheDifferenceOfTwoArrays.findDifference(nums1, nums2)
+        let result = FindTheDifferenceOfTwoArrays().findDifference(nums1, nums2)
         
         let first = result[0]
         let second = result[1]
@@ -37,7 +37,7 @@ final class FindTheDifferenceOfTwoArraysTests: XCTestCase {
         let nums1 = [1, 2, 3, 3]
         let nums2 = [1, 1, 2, 2]
             
-        let result = FindTheDifferenceOfTwoArrays.findDifference(nums1, nums2)
+        let result = FindTheDifferenceOfTwoArrays().findDifference(nums1, nums2)
         
         let first = result[0]
         let second = result[1]

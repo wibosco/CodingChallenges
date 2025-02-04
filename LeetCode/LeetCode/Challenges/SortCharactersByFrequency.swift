@@ -23,7 +23,7 @@ struct SortCharactersByFrequency {
     //in `frequency` into buckets (multiple keys can be in the same bucket). We then iterate through our buckets (in
     //reverse order as we want a descending result) and add each key into the `result` array the number that bucket
     //represents
-    static func frequencySort(_ s: String) -> String {
+    func frequencySort(_ s: String) -> String {
         var frequency = [Character: Int]()
         var maxFrequency = 0
         
@@ -61,7 +61,7 @@ struct SortCharactersByFrequency {
     //Using a dictionary (`frequency`) we count all the occurrences of any given character in `s`. We then sort `frequency`
     //so that the elements are return in descending order. Iterating through the sorted `frequency` dictionary we
     //reassemble `s` in sorted fashion
-    static func frequencySortDictionary(_ s: String) -> String {
+    func frequencySortDictionary(_ s: String) -> String {
         var frequency = [Character: Int]()
         
         for c in s {

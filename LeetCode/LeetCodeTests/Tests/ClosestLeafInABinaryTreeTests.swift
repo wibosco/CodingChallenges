@@ -18,7 +18,7 @@ final class ClosestLeafInABinaryTreeTests: XCTestCase {
         let data = [1,3,2]
         let root = TreeNode.deserialize(data)
         
-        let result = ClosestLeafInABinaryTree.findClosestLeaf(root, k)
+        let result = ClosestLeafInABinaryTree().findClosestLeaf(root, k)
         
         XCTAssertEqual(result, 3) //could also be 2
     }
@@ -28,7 +28,7 @@ final class ClosestLeafInABinaryTreeTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = ClosestLeafInABinaryTree.findClosestLeaf(root, k)
+        let result = ClosestLeafInABinaryTree().findClosestLeaf(root, k)
         
         XCTAssertEqual(result, 1)
     }
@@ -38,7 +38,7 @@ final class ClosestLeafInABinaryTreeTests: XCTestCase {
         let data = [1,2,3,4,nil,nil,nil,5,nil,6]
         let root = TreeNode.deserialize(data)
         
-        let result = ClosestLeafInABinaryTree.findClosestLeaf(root, k)
+        let result = ClosestLeafInABinaryTree().findClosestLeaf(root, k)
         
         XCTAssertEqual(result, 3)
     }
@@ -48,7 +48,7 @@ final class ClosestLeafInABinaryTreeTests: XCTestCase {
         let data = [1,2,3,nil,nil,4,5,6,nil,nil,7,8,9,10]
         let root = TreeNode.deserialize(data)
         
-        let result = ClosestLeafInABinaryTree.findClosestLeaf(root, k)
+        let result = ClosestLeafInABinaryTree().findClosestLeaf(root, k)
         
         XCTAssertEqual(result, 10)
     }
@@ -58,7 +58,7 @@ final class ClosestLeafInABinaryTreeTests: XCTestCase {
         let data = [1,2,3,nil,nil,4,5,6,nil,nil,7,8,9,10]
         let root = TreeNode.deserialize(data)
         
-        let result = ClosestLeafInABinaryTree.findClosestLeaf(root, k)
+        let result = ClosestLeafInABinaryTree().findClosestLeaf(root, k)
         
         XCTAssertEqual(result, 8) //could also be 9
     }
@@ -68,7 +68,7 @@ final class ClosestLeafInABinaryTreeTests: XCTestCase {
         let data = [1,2]
         let root = TreeNode.deserialize(data)
         
-        let result = ClosestLeafInABinaryTree.findClosestLeaf(root, k)
+        let result = ClosestLeafInABinaryTree().findClosestLeaf(root, k)
         
         XCTAssertEqual(result, 2)
     }

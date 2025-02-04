@@ -23,7 +23,7 @@ struct SearchInsertPosition {
     //by either moving the left boundary right i.e. `nums[mid]` is smaller than the target or we move the right boundary
     //left i.e. `nums[mid]` is larger than the target. If having search `nums` we haven't found target then `left` will be
     //at the position that `target` would have been.
-    static func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = (nums.count - 1)
         

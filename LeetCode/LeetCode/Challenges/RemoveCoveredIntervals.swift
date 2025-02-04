@@ -28,7 +28,7 @@ struct RemoveCoveredIntervals {
     //`count` which is used to mimic the covering action; if the current interval is not within the range of the
     //rightward interval we replace `lastInterval` with `interval`. We the subtract the count value from the starting
     //interval to determine how many intervals are left.
-    static func removeCoveredIntervals(_ intervals: [[Int]]) -> Int {
+    func removeCoveredIntervals(_ intervals: [[Int]]) -> Int {
         //sort so that the left-most starting value is first and if they are equal, sort by the right-most ending
         //value so the "longer" interval is first
         let sortedIntervals = intervals.sorted {

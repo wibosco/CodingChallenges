@@ -18,7 +18,7 @@ struct NRepeatedElementInSize2NArray {
     //
     //Solution Description:
     //
-    static func repeatedNTimes(_ nums: [Int]) -> Int {
+    func repeatedNTimes(_ nums: [Int]) -> Int {
         var count = [Int: Int]()
         
         for num in nums {

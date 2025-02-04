@@ -20,7 +20,7 @@ final class FlipEquivalentBinaryTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = FlipEquivalentBinaryTrees.flipEquiv(root1, root2)
+        let result = FlipEquivalentBinaryTrees().flipEquiv(root1, root2)
         
         XCTAssertTrue(result)
     }
@@ -32,7 +32,7 @@ final class FlipEquivalentBinaryTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = FlipEquivalentBinaryTrees.flipEquiv(root1, root2)
+        let result = FlipEquivalentBinaryTrees().flipEquiv(root1, root2)
         
         XCTAssertTrue(result)
     }
@@ -44,7 +44,7 @@ final class FlipEquivalentBinaryTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = FlipEquivalentBinaryTrees.flipEquiv(root1, root2)
+        let result = FlipEquivalentBinaryTrees().flipEquiv(root1, root2)
         
         XCTAssertFalse(result)
     }
@@ -56,7 +56,7 @@ final class FlipEquivalentBinaryTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = FlipEquivalentBinaryTrees.flipEquiv(root1, root2)
+        let result = FlipEquivalentBinaryTrees().flipEquiv(root1, root2)
         
         XCTAssertFalse(result)
     }

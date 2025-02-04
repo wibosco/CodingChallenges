@@ -19,7 +19,7 @@ struct BinaryTreeLevelOrderTraversal {
     //
     //Solution Description:
     //Using BFS we traverse the tree level by level and add each node that we encounter to `levels`.
-    static func levelOrder(_ root: TreeNode?) -> [[Int]] {
+    func levelOrder(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
             return []
         }

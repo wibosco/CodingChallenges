@@ -39,7 +39,7 @@ struct NextGreaterElementI {
     //As x increases, y decreases always, then it’s a monotonically decreasing function.
     //
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
-    static func nextGreaterElement(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func nextGreaterElement(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var stack = [Int]()
         
         var greaterThan = [Int: Int]()
@@ -79,7 +79,7 @@ struct NextGreaterElementI {
     //the `indexing` dictionary to jump straight to the index in `nums2` for the current `nums1` element. From that element
     //we then search for any elements greater than `num1`. If we find an element it becomes an entry in `result` else we add
     //-1
-    static func nextGreaterElementLooping(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func nextGreaterElementLooping(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var indexing = [Int: Int]()
         
         for (i, num) in nums2.enumerated() {

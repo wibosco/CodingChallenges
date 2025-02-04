@@ -18,7 +18,7 @@ final class SwappingNodesInALinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5]
         let head = ListNode.deserialize(data)
         
-        let returnedHead = SwappingNodesInALinkedList.swapNodes(head, k)
+        let returnedHead = SwappingNodesInALinkedList().swapNodes(head, k)
         let result = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(result, [1, 4, 3, 2, 5])
@@ -29,7 +29,7 @@ final class SwappingNodesInALinkedListTests: XCTestCase {
         let data = [7, 9, 6, 6, 7, 8, 3, 0, 9, 5]
         let head = ListNode.deserialize(data)
         
-        let returnedHead = SwappingNodesInALinkedList.swapNodes(head, k)
+        let returnedHead = SwappingNodesInALinkedList().swapNodes(head, k)
         let result = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(result, [7, 9, 6, 6, 8, 7, 3, 0, 9, 5])
@@ -40,7 +40,7 @@ final class SwappingNodesInALinkedListTests: XCTestCase {
         let data = [7, 9, 5]
         let head = ListNode.deserialize(data)
         
-        let returnedHead = SwappingNodesInALinkedList.swapNodes(head, k)
+        let returnedHead = SwappingNodesInALinkedList().swapNodes(head, k)
         let result = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(result, [5, 9, 7])
@@ -51,7 +51,7 @@ final class SwappingNodesInALinkedListTests: XCTestCase {
         let data = [7, 5]
         let head = ListNode.deserialize(data)
         
-        let returnedHead = SwappingNodesInALinkedList.swapNodes(head, k)
+        let returnedHead = SwappingNodesInALinkedList().swapNodes(head, k)
         let result = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(result, [5, 7])
@@ -62,7 +62,7 @@ final class SwappingNodesInALinkedListTests: XCTestCase {
         let data = [7]
         let head = ListNode.deserialize(data)
         
-        let returnedHead = SwappingNodesInALinkedList.swapNodes(head, k)
+        let returnedHead = SwappingNodesInALinkedList().swapNodes(head, k)
         let result = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(result, [7])
@@ -73,7 +73,7 @@ final class SwappingNodesInALinkedListTests: XCTestCase {
         let data = [100, 90]
         let head = ListNode.deserialize(data)
         
-        let returnedHead = SwappingNodesInALinkedList.swapNodes(head, k)
+        let returnedHead = SwappingNodesInALinkedList().swapNodes(head, k)
         let result = ListNode.serialize(returnedHead)
         
         XCTAssertEqual(result, [90, 100])

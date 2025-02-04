@@ -23,7 +23,7 @@ struct KeysAndRooms {
     //we add the room to both `queue` and `visited`. We then get the keys for room 0, we check that they don't
     //open a room we have already visited and we add them to the queue. When the queue is empty we compare the
     //rooms visited with the total rooms.
-    static func canVisitAllRooms(_ rooms: [[Int]]) -> Bool {
+    func canVisitAllRooms(_ rooms: [[Int]]) -> Bool {
         var queue = [0]
         var visited = Set<Int>(arrayLiteral: 0)
         
@@ -61,14 +61,14 @@ struct KeysAndRooms {
     //we add the room to `visited`. We then get the keys for room 0, we check that they don't open a room we
     //have already visited and we perform a recursive key with the new keys. When the recursive DFS call finishes
     //we compare the rooms visited with the total rooms.
-    static func canVisitAllRoomsDFSRecursive(_ rooms: [[Int]]) -> Bool {
+    func canVisitAllRoomsDFSRecursive(_ rooms: [[Int]]) -> Bool {
         var visited = Set<Int>(arrayLiteral: 0)
         dfs(rooms, 0, &visited)
         
         return visited.count == rooms.count
     }
     
-    private static func dfs(_ rooms: [[Int]], _ root: Int, _ visited: inout Set<Int>) {
+    private func dfs(_ rooms: [[Int]], _ root: Int, _ visited: inout Set<Int>) {
         let neighbors = rooms[root]
         for neighbor in neighbors {
             guard !visited.contains(neighbor) else {
@@ -93,7 +93,7 @@ struct KeysAndRooms {
     //we add the room to both `stack` and `visited`. We then get the keys for room 0, we check that they don't
     //open a room we have already visited and we add them to the stack. When the stack is empty we compare the
     //rooms visited with the total rooms.
-    static func canVisitAllRoomsDFSIterative(_ rooms: [[Int]]) -> Bool {
+    func canVisitAllRoomsDFSIterative(_ rooms: [[Int]]) -> Bool {
         var stack = [0]
         var visited = Set<Int>(arrayLiteral: 0)
         

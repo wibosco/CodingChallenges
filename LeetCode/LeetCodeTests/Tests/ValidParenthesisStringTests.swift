@@ -16,7 +16,7 @@ final class ValidParenthesisStringTests: XCTestCase {
     func test_A() {
         let s = "()"
         
-        let result = ValidParenthesisString.checkValidString(s)
+        let result = ValidParenthesisString().checkValidString(s)
         
         XCTAssertTrue(result)
     }
@@ -24,7 +24,7 @@ final class ValidParenthesisStringTests: XCTestCase {
     func test_B() {
         let s = "(*))"
         
-        let result = ValidParenthesisString.checkValidString(s)
+        let result = ValidParenthesisString().checkValidString(s)
         
         XCTAssertTrue(result)
     }
@@ -32,7 +32,7 @@ final class ValidParenthesisStringTests: XCTestCase {
     func test_C() {
         let s = "(*)"
         
-        let result = ValidParenthesisString.checkValidString(s)
+        let result = ValidParenthesisString().checkValidString(s)
         
         XCTAssertTrue(result)
     }
@@ -40,7 +40,7 @@ final class ValidParenthesisStringTests: XCTestCase {
     func test_D() {
         let s = ")(*)"
         
-        let result = ValidParenthesisString.checkValidString(s)
+        let result = ValidParenthesisString().checkValidString(s)
         
         XCTAssertFalse(result)
     }
@@ -48,7 +48,7 @@ final class ValidParenthesisStringTests: XCTestCase {
     func test_E() {
         let s = "(*)))"
         
-        let result = ValidParenthesisString.checkValidString(s)
+        let result = ValidParenthesisString().checkValidString(s)
         
         XCTAssertFalse(result)
     }
@@ -56,7 +56,7 @@ final class ValidParenthesisStringTests: XCTestCase {
     func test_F() {
         let s = "***)))"
         
-        let result = ValidParenthesisString.checkValidString(s)
+        let result = ValidParenthesisString().checkValidString(s)
         
         XCTAssertTrue(result)
     }

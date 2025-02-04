@@ -26,7 +26,7 @@ struct KDiffPairsInAnArray {
     //`complement` in the `frequencies` dictionary to show that it has already be used in a pair. As we are only
     //interested in unique pairs, we use a set to store them (`pairs`) as any duplicates will be omitted. Finally we
     //return count of `pairs`.
-    static func findPairs(_ nums: [Int], _ k: Int) -> Int {
+    func findPairs(_ nums: [Int], _ k: Int) -> Int {
         var frequencies = [Int: Int]() //[diff: count]
         
         for num in nums { //O(n)

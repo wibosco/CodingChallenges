@@ -21,7 +21,7 @@ struct NestedListWeightSum {
     //Treat `nestedList` as a graph. Using BFS traverse through the `nestedList`, at each level checking if we have an integer or
     //list. If we have an integer we multiple it against the depth and add it to the total; if we have a list we add it's elements
     //to the queue.
-    static func depthSum(_ nestedList: [NestedInteger]) -> Int {
+    func depthSum(_ nestedList: [NestedInteger]) -> Int {
         var total = 0
         var queue = [NestedInteger]()
         
@@ -65,14 +65,14 @@ struct NestedListWeightSum {
     //Treat `nestedList` as a graph. Using DFS traverse through the `nestedList`, at each level checking if we
     //have an integer or list. If we have an integer we multiple it against the depth and add it to the total;
     //if we have a list we go deeper.
-    static func depthSumDFS(_ nestedList: [NestedInteger]) -> Int {
+    func depthSumDFS(_ nestedList: [NestedInteger]) -> Int {
         var total = 0
         dfs(nestedList, 0, &total) //on the leetcode website this 0 for depth needs to be 1 to pass - strange
         
         return total
     }
     
-    private static func dfs(_ nestedList: [NestedInteger], _ depth: Int, _ total: inout Int) {
+    private func dfs(_ nestedList: [NestedInteger], _ depth: Int, _ total: inout Int) {
         guard !nestedList.isEmpty else {
             return
         }

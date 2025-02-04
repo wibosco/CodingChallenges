@@ -18,7 +18,7 @@ final class SubarraySumEqualsKTests: XCTestCase {
         let nums = [1, 1, 1]
         let k = 2
         
-        let result = SubarraySumEqualsK.subarraySum(nums, k)
+        let result = SubarraySumEqualsK().subarraySum(nums, k)
         
         XCTAssertEqual(result, 2)
     }
@@ -27,7 +27,7 @@ final class SubarraySumEqualsKTests: XCTestCase {
         let nums = [1, 2, 3]
         let k = 3
         
-        let result = SubarraySumEqualsK.subarraySum(nums, k)
+        let result = SubarraySumEqualsK().subarraySum(nums, k)
         
         XCTAssertEqual(result, 2)
     }
@@ -36,7 +36,7 @@ final class SubarraySumEqualsKTests: XCTestCase {
         let nums = [1, -1, 0]
         let k = 0
         
-        let result = SubarraySumEqualsK.subarraySum(nums, k)
+        let result = SubarraySumEqualsK().subarraySum(nums, k)
         
         XCTAssertEqual(result, 3)
     }

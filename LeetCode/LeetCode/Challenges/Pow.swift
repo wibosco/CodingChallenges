@@ -36,7 +36,7 @@ struct Pow {
     //correct exponent.
     //
     //See: https://www.youtube.com/watch?v=snOaKR2xgZg
-    static func myPow(_ x: Double, _ n: Int) -> Double {
+    func myPow(_ x: Double, _ n: Int) -> Double {
         guard x != 0 else {
             return 0
         }
@@ -50,7 +50,7 @@ struct Pow {
         return myPowHelper(x, abs(n))
     }
     
-    private static func myPowHelper(_ x: Double, _ n: Int) -> Double {
+    private func myPowHelper(_ x: Double, _ n: Int) -> Double {
         guard n > 0 else { //base case
             return 1
         }
@@ -76,7 +76,7 @@ struct Pow {
     //attempting to divide it, we turn it into a faction to simplify our calculations.
     //
     //See: https://www.youtube.com/watch?v=snOaKR2xgZg
-    static func myPowBruteForce(_ x: Double, _ n: Int) -> Double {
+    func myPowBruteForce(_ x: Double, _ n: Int) -> Double {
         var x = x
    
         if n < 0 {

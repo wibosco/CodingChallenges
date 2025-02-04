@@ -33,7 +33,7 @@ struct MaximumNumberOfRemovableCharacters {
     //`sIndex` will be equal to `sub.count` otherwise it won't be so we can use this to return true or false respectively. Knowing if
     //`p` is a subsequence of `s` for a given index of `removable` we then adjust the search space either left or right and repeat
     //the process until we run out of search space at which point we return `left`. 
-    static func maximumRemovals(_ s: String, _ p: String, _ removable: [Int]) -> Int {
+    func maximumRemovals(_ s: String, _ p: String, _ removable: [Int]) -> Int {
         let p = Array(p)
         
         var left = 0
@@ -77,7 +77,7 @@ struct MaximumNumberOfRemovableCharacters {
     //the inner loop through `full`. If there is a match between `sub` and `full`, then we move onto the next element in `sub` and
     //attempt to find it in `full` - note that `fIndex` isn't reset upon finding a match. If we find all of `sub` in `full` then
     //`sIndex` will be equal to `sub.count` otherwise it won't be so we can use this to return true or false respectively.
-    static func maximumRemovalsLinear(_ s: String, _ p: String, _ removable: [Int]) -> Int {
+    func maximumRemovalsLinear(_ s: String, _ p: String, _ removable: [Int]) -> Int {
         var removed = 0
         var s = Array(s)
         let p = Array(p)
@@ -95,7 +95,7 @@ struct MaximumNumberOfRemovableCharacters {
         return removed
     }
     
-    private static func isSubsequence(_ sub: [Character], of full: [Character]) -> Bool {
+    private func isSubsequence(_ sub: [Character], of full: [Character]) -> Bool {
         var sIndex = 0
         var fIndex = 0
         

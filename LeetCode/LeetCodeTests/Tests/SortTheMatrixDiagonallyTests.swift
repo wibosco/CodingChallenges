@@ -18,7 +18,7 @@ final class SortTheMatrixDiagonallyTests: XCTestCase {
                    [2, 2, 1, 2],
                    [1, 1, 1, 2]]
         
-        let result = SortTheMatrixDiagonally.diagonalSort(mat)
+        let result = SortTheMatrixDiagonally().diagonalSort(mat)
         
         XCTAssertEqual(result, [[1, 1, 1, 1],
                                 [1, 2, 2, 2],
@@ -32,7 +32,7 @@ final class SortTheMatrixDiagonallyTests: XCTestCase {
                    [22, 27, 33, 25, 68, 4],
                    [84, 28, 14, 11, 5, 50]]
         
-        let result = SortTheMatrixDiagonally.diagonalSort(mat)
+        let result = SortTheMatrixDiagonally().diagonalSort(mat)
         
         XCTAssertEqual(result, [[5, 17, 4, 1, 52, 7],
                                 [11, 11, 25, 45, 8, 69],

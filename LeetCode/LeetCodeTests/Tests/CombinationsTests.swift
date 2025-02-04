@@ -17,7 +17,7 @@ final class CombinationsTests: XCTestCase {
         let n = 4
         let k = 2
         
-        let combinations = Combinations.combine(n, k)
+        let combinations = Combinations().combine(n, k)
         
         let expectedCombinations = [[2, 4], [3, 4], [2, 3], [1, 2], [1, 3], [1, 4]]
         
@@ -33,7 +33,7 @@ final class CombinationsTests: XCTestCase {
         let n = 1
         let k = 1
         
-        let combinations = Combinations.combine(n, k)
+        let combinations = Combinations().combine(n, k)
         
         let expectedCombinations = [[1]]
         

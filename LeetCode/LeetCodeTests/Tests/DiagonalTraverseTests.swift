@@ -19,7 +19,7 @@ final class DiagonalTraverseTests: XCTestCase {
                    [4, 5, 6],
                    [7, 8, 9]]
         
-        let result = DiagonalTraverse.findDiagonalOrder(mat)
+        let result = DiagonalTraverse().findDiagonalOrder(mat)
         
         XCTAssertEqual(result, [1, 2, 4, 7, 5, 3, 6, 8, 9])
     }
@@ -28,7 +28,7 @@ final class DiagonalTraverseTests: XCTestCase {
         let mat = [[1, 2],
                    [3, 4]]
         
-        let result = DiagonalTraverse.findDiagonalOrder(mat)
+        let result = DiagonalTraverse().findDiagonalOrder(mat)
         
         XCTAssertEqual(result, [1, 2, 3, 4])
     }

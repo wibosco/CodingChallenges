@@ -18,7 +18,7 @@ final class TopKFrequentElementsTests: XCTestCase {
         let nums = [1, 1, 1, 2, 2, 3]
         let k = 2
         
-        let top = TopKFrequentElements.topKFrequent(nums, k)
+        let top = TopKFrequentElements().topKFrequent(nums, k)
         
         let expectedGrouping = [1, 2]
         
@@ -34,7 +34,7 @@ final class TopKFrequentElementsTests: XCTestCase {
         let nums = [1]
         let k = 1
         
-        let top = TopKFrequentElements.topKFrequent(nums, k)
+        let top = TopKFrequentElements().topKFrequent(nums, k)
         
         let expectedGrouping = [1]
         
@@ -50,7 +50,7 @@ final class TopKFrequentElementsTests: XCTestCase {
         let nums = [-1, -1]
         let k = 1
         
-        let top = TopKFrequentElements.topKFrequent(nums, k)
+        let top = TopKFrequentElements().topKFrequent(nums, k)
         
         let expectedGrouping = [-1]
         

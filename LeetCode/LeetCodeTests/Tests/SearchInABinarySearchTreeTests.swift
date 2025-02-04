@@ -19,7 +19,7 @@ final class SearchInABinarySearchTreeTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let val = 2
         
-        let result = SearchInABinarySearchTree.searchBST(root, val)
+        let result = SearchInABinarySearchTree().searchBST(root, val)
         
         let values = TreeNode.serialize(result)
         
@@ -31,7 +31,7 @@ final class SearchInABinarySearchTreeTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let val = 5
         
-        let result = SearchInABinarySearchTree.searchBST(root, val)
+        let result = SearchInABinarySearchTree().searchBST(root, val)
         
         let values = TreeNode.serialize(result)
         

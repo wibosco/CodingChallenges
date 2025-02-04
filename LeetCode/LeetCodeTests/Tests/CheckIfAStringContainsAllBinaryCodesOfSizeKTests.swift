@@ -17,7 +17,7 @@ final class CheckIfAStringContainsAllBinaryCodesOfSizeKTests: XCTestCase {
         let s = "00110110"
         let k = 2
             
-        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK.hasAllCodes(s, k)
+        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK().hasAllCodes(s, k)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class CheckIfAStringContainsAllBinaryCodesOfSizeKTests: XCTestCase {
         let s = "0110"
         let k = 1
             
-        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK.hasAllCodes(s, k)
+        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK().hasAllCodes(s, k)
         
         XCTAssertTrue(result)
     }
@@ -35,7 +35,7 @@ final class CheckIfAStringContainsAllBinaryCodesOfSizeKTests: XCTestCase {
         let s = "0110"
         let k = 2
             
-        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK.hasAllCodes(s, k)
+        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK().hasAllCodes(s, k)
         
         XCTAssertFalse(result)
     }
@@ -44,7 +44,7 @@ final class CheckIfAStringContainsAllBinaryCodesOfSizeKTests: XCTestCase {
         let s = "00110"
         let k = 2
             
-        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK.hasAllCodes(s, k)
+        let result = CheckIfAStringContainsAllBinaryCodesOfSizeK().hasAllCodes(s, k)
         
         XCTAssertTrue(result)
     }

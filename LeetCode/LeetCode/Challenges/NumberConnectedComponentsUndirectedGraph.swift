@@ -24,7 +24,7 @@ struct NumberConnectedComponentsUndirectedGraph {
     //graph multiple times. When choosing whether to perform a BFS traversal we check if the root vertices has already been
     //visited - by checking it is in `visited`. If the root has been visited then we skip it; if it hasn't been visited we
     //traverse it and increment `count` at the end of that traversal.
-    static func countComponents(_ n: Int, _ edges: [[Int]]) -> Int {
+    func countComponents(_ n: Int, _ edges: [[Int]]) -> Int {
         var adjList = Array(repeating: [Int](), count: n)
         
         for edge in edges {
@@ -54,7 +54,7 @@ struct NumberConnectedComponentsUndirectedGraph {
         return count
     }
     
-    private static func dfs(_ vertice: Int, _ adjList: [[Int]], _ visited: inout Set<Int>) {
+    private func dfs(_ vertice: Int, _ adjList: [[Int]], _ visited: inout Set<Int>) {
         for neighbor in adjList[vertice] {
             guard !visited.contains(neighbor) else {
                 continue
@@ -83,7 +83,7 @@ struct NumberConnectedComponentsUndirectedGraph {
     //graph multiple times. When choosing whether to perform a BFS traversal we check if the root vertices has already been
     //visited - by checking it is in `visited`. If the root has been visited then we skip it; if it hasn't been visited we
     //traverse it and increment `count` at the end of that traversal.
-    static func countComponentsBFS(_ n: Int, _ edges: [[Int]]) -> Int {
+    func countComponentsBFS(_ n: Int, _ edges: [[Int]]) -> Int {
         var adjList = Array(repeating: [Int](), count: n)
         
         for edge in edges {
@@ -139,7 +139,7 @@ struct NumberConnectedComponentsUndirectedGraph {
     //
     //Solution Description:
     //Using disjoint sets combine the nodes together using the edges array and count how many distinct sets there are
-    static func countComponentsDisjointSets(_ n: Int, _ edges: [[Int]]) -> Int {
+    func countComponentsDisjointSets(_ n: Int, _ edges: [[Int]]) -> Int {
         guard !edges.isEmpty else {
             return n
         }

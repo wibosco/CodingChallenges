@@ -18,7 +18,7 @@ final class MiddleOfLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5]
         let head = ListNode.deserialize(data)
         
-        let result = MiddleOfLinkedList.middleNode(head)
+        let result = MiddleOfLinkedList().middleNode(head)
         
         let values = ListNode.serialize(result)
         
@@ -29,7 +29,7 @@ final class MiddleOfLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5, 6]
         let head = ListNode.deserialize(data)
         
-        let result = MiddleOfLinkedList.middleNode(head)
+        let result = MiddleOfLinkedList().middleNode(head)
         
         let values = ListNode.serialize(result)
         

@@ -16,7 +16,7 @@ final class ConstructBinaryTreeFromStringTests: XCTestCase {
     func test_A() {
         let s = "4(2(3)(1))(6(5))"
         
-        let root = ConstructBinaryTreeFromString.str2tree(s)
+        let root = ConstructBinaryTreeFromString().str2tree(s)
         
         let result = TreeNode.serialize(root)
         
@@ -26,7 +26,7 @@ final class ConstructBinaryTreeFromStringTests: XCTestCase {
     func test_B() {
         let s = "4(2(3)(1))(6(5)(7))"
         
-        let root = ConstructBinaryTreeFromString.str2tree(s)
+        let root = ConstructBinaryTreeFromString().str2tree(s)
         
         let result = TreeNode.serialize(root)
         
@@ -36,7 +36,7 @@ final class ConstructBinaryTreeFromStringTests: XCTestCase {
     func test_C() {
         let s = "-4(2(3)(1))(6(5)(7))"
         
-        let root = ConstructBinaryTreeFromString.str2tree(s)
+        let root = ConstructBinaryTreeFromString().str2tree(s)
         
         let result = TreeNode.serialize(root)
         

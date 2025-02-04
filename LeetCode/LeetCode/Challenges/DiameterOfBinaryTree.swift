@@ -26,14 +26,14 @@ struct DiameterOfBinaryTree {
     //
     //See: https://leetcode.com/problems/maximum-depth-of-binary-tree/ for details on how to calculate the depth of
     //a tree
-    static func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
+    func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
         var longestDiameter = 0
         height(root, &longestDiameter)
         return longestDiameter
     }
 
     @discardableResult
-    private static func height(_ root: TreeNode?, _ longestDiameter: inout Int) -> Int {
+    private func height(_ root: TreeNode?, _ longestDiameter: inout Int) -> Int {
         guard let root = root else { //base when we go beyond a leaf
             return 0
         }

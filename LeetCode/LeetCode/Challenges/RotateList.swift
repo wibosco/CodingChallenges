@@ -22,7 +22,7 @@ struct RotateList {
     //number base. Attach the existing tail to the head (forming a temp ring). Using two pointer iterate through the list finding
     //the new tail and new head. Break the existing existing connection between new tail and new head (breaking the ring) and return
     //the new head.
-    static func rotateRight(_ head: ListNode?, _ k: Int) -> ListNode? {
+    func rotateRight(_ head: ListNode?, _ k: Int) -> ListNode? {
         guard head != nil, head?.next != nil, k > 0 else {
             return head
         }
@@ -66,7 +66,7 @@ struct RotateList {
     //Build an array containing all the list nodes. Use modulo to wrap rotation shift around the array, taking care to break
     //the last node from the new head node (as this is now the tail) and attaching the old tail to the next node i.e. the first
     //node in the array (old head)
-    static func rotateRightArray(_ head: ListNode?, _ k: Int) -> ListNode? {
+    func rotateRightArray(_ head: ListNode?, _ k: Int) -> ListNode? {
         guard head != nil, head?.next != nil, k > 0 else {
             return head
         }

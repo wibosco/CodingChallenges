@@ -26,7 +26,7 @@ struct PseudoPalindromicPathsInABinaryTree {
     //dictionary. Once we reach a leaf node we check the `freq` for odd counts - if we end up with an `offCount` of 0 or 1
     //then this path can be reconstructed into a palindromic and we increment `count`, otherwise we skip over. We repeat this
     //for each path in the tree. Once all paths have been checked we return `count`.
-    static func pseudoPalindromicPaths (_ root: TreeNode?) -> Int {
+    func pseudoPalindromicPaths (_ root: TreeNode?) -> Int {
         var count = 0
         var freq = [Int: Int]()
         
@@ -35,7 +35,7 @@ struct PseudoPalindromicPathsInABinaryTree {
         return count
     }
     
-    private static func dfs(_ node: TreeNode?, _ freq: inout [Int: Int], _ count: inout Int) {
+    private func dfs(_ node: TreeNode?, _ freq: inout [Int: Int], _ count: inout Int) {
         guard let node = node else {
             return
         }

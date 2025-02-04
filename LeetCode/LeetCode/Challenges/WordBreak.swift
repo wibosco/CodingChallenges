@@ -38,7 +38,7 @@ struct WordBreak {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
+    func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
         let chars = Array(s)
         let wordSet = Set(wordDict)
         var memo = [Int: Bool]()
@@ -46,7 +46,7 @@ struct WordBreak {
         return dfs(chars, wordSet, 0, &memo)
     }
     
-    private static func dfs(_ chars: [Character], _ wordSet: Set<String>, _ startIndex: Int, _ memo: inout [Int: Bool]) -> Bool {
+    private func dfs(_ chars: [Character], _ wordSet: Set<String>, _ startIndex: Int, _ memo: inout [Int: Bool]) -> Bool {
         guard startIndex < chars.count else {
             return true
         }

@@ -26,7 +26,7 @@ struct LinkedListCycle {
     //Similar to: https://leetcode.com/problems/linked-list-cycle-ii/
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
     //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
-    static func hasCycle(_ head: ListNode?) -> Bool {
+    func hasCycle(_ head: ListNode?) -> Bool {
         var hare = head
         var tortoise = head
         
@@ -47,7 +47,7 @@ struct LinkedListCycle {
     //Solution Description:
     //Using a fast and slow pointer iterate through the list. If they meet we know that there is a cycle; if they don't meet and the
     //fast pointer reaches the end of the list then we don't have a cycle.
-    static func hasCycleNonEquatable(_ head: ListNode?) -> Bool {
+    func hasCycleNonEquatable(_ head: ListNode?) -> Bool {
         var p1 = head
         var p2 = head?.next
 

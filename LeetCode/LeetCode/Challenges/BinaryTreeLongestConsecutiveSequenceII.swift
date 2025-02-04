@@ -30,7 +30,7 @@ struct BinaryTreeLongestConsecutiveSequenceII {
     //don't need to come from the same child node. There is a special case where the current node can join the two paths into
     //either into a sequence - here we add `ascending` and `descending` and 1 together - note this combined value can not be
     //passed up as we want a path not a subtree. We repeat this process until we are back the root.
-    static func longestConsecutive(_ root: TreeNode?) -> Int {
+    func longestConsecutive(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -42,7 +42,7 @@ struct BinaryTreeLongestConsecutiveSequenceII {
         return maxCount
     }
     
-    private static func dfs(_ node: TreeNode?, _ maxCount: inout Int) -> ((Int, Int)) { //ascendingCount, descendingCount
+    private func dfs(_ node: TreeNode?, _ maxCount: inout Int) -> ((Int, Int)) { //ascendingCount, descendingCount
         guard let node = node else {
             return ((0, 0))
         }

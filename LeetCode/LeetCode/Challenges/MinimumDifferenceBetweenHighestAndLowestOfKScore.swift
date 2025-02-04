@@ -24,7 +24,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
     //difference between the minimum and maximum value and comparing that with the minimum difference found so far. As `nums`
     //has been sorted the minimum and maximum value will the the first and last element in the subarray. After iterating
     //through all elements in `nums` we return `minDiff`.
-    static func minimumDifference(_ nums: [Int], _ k: Int) -> Int {
+    func minimumDifference(_ nums: [Int], _ k: Int) -> Int {
         guard nums.count > 1 else {
             return 0
         }
@@ -65,7 +65,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
     //value and return it else we abandon that subsequence. If the difference of that subsequence is returned we compare it
     //against the minimum difference found across all subsequences so far. Once we have produced all subsequences we return that
     //minimum difference.
-    static func minimumDifferenceSubsequenceReturning(_ nums: [Int], _ k: Int) -> Int {
+    func minimumDifferenceSubsequenceReturning(_ nums: [Int], _ k: Int) -> Int {
         guard nums.count > 1 else {
             return 0
         }
@@ -80,7 +80,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
         return minDiff
     }
     
-    private static func dfs(_ nums: [Int], _ index: Int, _ k: Int, _ minValue: Int, _ maxValue: Int) -> Int {
+    private func dfs(_ nums: [Int], _ index: Int, _ k: Int, _ minValue: Int, _ maxValue: Int) -> Int {
         guard k > 0 else {
             return maxValue - minValue
         }
@@ -120,7 +120,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
     //value and return it else we abandon that subsequence. If the difference of that subsequence is returned we compare it
     //against the minimum difference found across all subsequences so far. Once we have produced all subsequences we return that
     //minimum difference.
-    static func minimumDifferenceSubsequenceInOut(_ nums: [Int], _ k: Int) -> Int {
+    func minimumDifferenceSubsequenceInOut(_ nums: [Int], _ k: Int) -> Int {
         guard nums.count > 1 else {
             return 0
         }
@@ -134,7 +134,7 @@ struct MinimumDifferenceBetweenHighestAndLowestOfKScore {
         return minDiff
     }
     
-    private static func dfs(_ nums: [Int], _ index: Int, _ k: Int, _ minValue: Int, _ maxValue: Int, _ minDiff: inout Int) {
+    private func dfs(_ nums: [Int], _ index: Int, _ k: Int, _ minValue: Int, _ maxValue: Int, _ minDiff: inout Int) {
         guard k > 0 else {
             let diff = maxValue - minValue
             minDiff = min(minDiff, diff)

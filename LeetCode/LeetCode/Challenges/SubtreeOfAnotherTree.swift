@@ -29,7 +29,7 @@ struct SubtreeOfAnotherTree {
     //
     //Similar to: https://leetcode.com/problems/symmetric-tree/
     //Similar to: https://leetcode.com/problems/same-tree/
-    static func isSubtree(_ t1: TreeNode?, _ t2: TreeNode?) -> Bool {
+    func isSubtree(_ t1: TreeNode?, _ t2: TreeNode?) -> Bool {
         guard let t1 = t1, let t2 = t2 else {
             return false
         }
@@ -41,7 +41,7 @@ struct SubtreeOfAnotherTree {
         return isSubtree(t1.left, t2) || isSubtree(t1.right, t2)
     }
     
-    private static func isMatch(_ n1: TreeNode?, _ n2: TreeNode?) -> Bool {
+    private func isMatch(_ n1: TreeNode?, _ n2: TreeNode?) -> Bool {
         guard let n1 = n1, let n2 = n2 else {
            return n1 == nil && n2 == nil
         }
@@ -62,7 +62,7 @@ struct SubtreeOfAnotherTree {
     //Using DFS search for all possible nodes in `t1` of the root of `t2`. Then iterate through each possible root checking
     //if from that point it is match for all of the nodes in `t2`. We do this by comparing the value of each node and ensure
     //that it falls in the same position (left or right).
-    static func isSubtreeDFSBFS(_ t1: TreeNode?, _ t2: TreeNode?) -> Bool {
+    func isSubtreeDFSBFS(_ t1: TreeNode?, _ t2: TreeNode?) -> Bool {
         guard let t1 = t1, let t2 = t2 else {
             return false
         }
@@ -116,7 +116,7 @@ struct SubtreeOfAnotherTree {
         return false
     }
     
-    private static func findMatches(_ root: TreeNode?, _ target: TreeNode, _ matches: inout [TreeNode]) {
+    private func findMatches(_ root: TreeNode?, _ target: TreeNode, _ matches: inout [TreeNode]) {
         guard let root = root else {
             return
         }

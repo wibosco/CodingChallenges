@@ -17,7 +17,7 @@ final class HandOfStraightsTests: XCTestCase {
         let hand = [1, 2, 3, 6, 2, 3, 4, 7, 8]
         let groupSize = 3
         
-        let result = HandOfStraights.isNStraightHand(hand, groupSize)
+        let result = HandOfStraights().isNStraightHand(hand, groupSize)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class HandOfStraightsTests: XCTestCase {
         let hand = [1, 2, 3, 4, 5]
         let groupSize = 4
         
-        let result = HandOfStraights.isNStraightHand(hand, groupSize)
+        let result = HandOfStraights().isNStraightHand(hand, groupSize)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class HandOfStraightsTests: XCTestCase {
         let hand = [8, 10, 12]
         let groupSize = 3
         
-        let result = HandOfStraights.isNStraightHand(hand, groupSize)
+        let result = HandOfStraights().isNStraightHand(hand, groupSize)
         
         XCTAssertFalse(result)
     }
@@ -44,7 +44,7 @@ final class HandOfStraightsTests: XCTestCase {
         let hand = [1, 1, 2, 2, 3, 3]
         let groupSize = 2
         
-        let result = HandOfStraights.isNStraightHand(hand, groupSize)
+        let result = HandOfStraights().isNStraightHand(hand, groupSize)
         
         XCTAssertFalse(result)
     }

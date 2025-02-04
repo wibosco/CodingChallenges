@@ -18,7 +18,7 @@ final class KthSymbolInGrammarTests: XCTestCase {
         let n = 1
         let k = 1
         
-        let result = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar().kthGrammar(n, k)
         
         XCTAssertEqual(result, 0)
     }
@@ -27,7 +27,7 @@ final class KthSymbolInGrammarTests: XCTestCase {
         let n = 2
         let k = 1
         
-        let result = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar().kthGrammar(n, k)
         
         XCTAssertEqual(result, 0)
     }
@@ -36,7 +36,7 @@ final class KthSymbolInGrammarTests: XCTestCase {
         let n = 2
         let k = 2
         
-        let result = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar().kthGrammar(n, k)
         
         XCTAssertEqual(result, 1)
     }
@@ -45,7 +45,7 @@ final class KthSymbolInGrammarTests: XCTestCase {
         let n = 3
         let k = 1
         
-        let result = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar().kthGrammar(n, k)
         
         XCTAssertEqual(result, 0)
     }
@@ -54,7 +54,7 @@ final class KthSymbolInGrammarTests: XCTestCase {
         let n = 4
         let k = 5
         
-        let result = KthSymbolInGrammar.kthGrammar(n, k)
+        let result = KthSymbolInGrammar().kthGrammar(n, k)
         
         XCTAssertEqual(result, 1)
     }

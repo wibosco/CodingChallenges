@@ -16,7 +16,7 @@ final class SumOfAllOddLengthSubarraysTests: XCTestCase {
     func test_A() {
         let arr = [1, 4, 2, 5, 3]
         
-        let result = SumOfAllOddLengthSubarrays.sumOddLengthSubarrays(arr)
+        let result = SumOfAllOddLengthSubarrays().sumOddLengthSubarrays(arr)
         
         XCTAssertEqual(result, 58)
     }
@@ -24,7 +24,7 @@ final class SumOfAllOddLengthSubarraysTests: XCTestCase {
     func test_B() {
         let arr = [1, 2]
         
-        let result = SumOfAllOddLengthSubarrays.sumOddLengthSubarrays(arr)
+        let result = SumOfAllOddLengthSubarrays().sumOddLengthSubarrays(arr)
         
         XCTAssertEqual(result, 3)
     }
@@ -32,7 +32,7 @@ final class SumOfAllOddLengthSubarraysTests: XCTestCase {
     func test_C() {
         let arr = [10, 11, 12]
         
-        let result = SumOfAllOddLengthSubarrays.sumOddLengthSubarrays(arr)
+        let result = SumOfAllOddLengthSubarrays().sumOddLengthSubarrays(arr)
         
         XCTAssertEqual(result, 66)
     }

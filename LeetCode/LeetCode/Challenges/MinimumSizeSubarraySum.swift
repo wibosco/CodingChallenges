@@ -27,7 +27,7 @@ struct MinimumSizeSubarraySum {
     //only the outer loop.
     //
     //Think of sliding window moves across the array as how a caterpillar moves.
-    static func minSubArrayLen(_ target: Int, _ nums: [Int]) -> Int {
+    func minSubArrayLen(_ target: Int, _ nums: [Int]) -> Int {
         var minLength = Int.max
         
         var left = 0

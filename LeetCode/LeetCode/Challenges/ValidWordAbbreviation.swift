@@ -21,7 +21,7 @@ struct ValidWordAbbreviation {
     //Iterate through both the `abbr` and `word` strings comparing elements to ensure they match. Where needed build a string
     //stack `num` to hold any numbers that we find. At the end, make sure that the pointer used for iterating the `word`
     //string matches the length of `word`
-    static func validWordAbbreviation(_ word: String, _ abbr: String) -> Bool {
+    func validWordAbbreviation(_ word: String, _ abbr: String) -> Bool {
         var num = ""
         let chars = Array(word)
         var p = 0

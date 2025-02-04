@@ -27,7 +27,7 @@ struct MaximumProductOfTheLengthOfTwoPalindromicSubsequences {
     //palindrome then we check if it overlaps with any other palindrome subsequences using a set to ensure O(1) retrieval.
     //If two subsequences don't overlap we calculate the product and compare it against our the max product, replacing if
     //needed. Once all palindrome subsequences have been checked we return that max product.
-    static func maxProduct(_ s: String) -> Int {
+    func maxProduct(_ s: String) -> Int {
         let characters = Array(s)
         var subsequences = Set<[Int]>()
         var subsequence = [Int]()
@@ -55,7 +55,7 @@ struct MaximumProductOfTheLengthOfTwoPalindromicSubsequences {
         return maxProduct
     }
     
-    private static func generateAllSubsequences(_ count: Int, _ index: Int, _ subsequence: inout [Int], _ subsequences: inout Set<[Int]>) {
+    private func generateAllSubsequences(_ count: Int, _ index: Int, _ subsequence: inout [Int], _ subsequences: inout Set<[Int]>) {
         guard index < count else {
             return
         }
@@ -68,7 +68,7 @@ struct MaximumProductOfTheLengthOfTwoPalindromicSubsequences {
         }
     }
     
-    private static func isPalindrome(_ characters: [Character], _ possible: [Int]) -> Bool {
+    private func isPalindrome(_ characters: [Character], _ possible: [Int]) -> Bool {
         var left = 0
         var right = possible.count - 1
         
@@ -87,7 +87,7 @@ struct MaximumProductOfTheLengthOfTwoPalindromicSubsequences {
         return true
     }
     
-    private static func calculateMaxProduct(_ palindromes: Set<Set<Int>>, _ palindrome: Set<Int>, _ maxProduct: inout Int) {
+    private func calculateMaxProduct(_ palindromes: Set<Set<Int>>, _ palindrome: Set<Int>, _ maxProduct: inout Int) {
         for otherPalindrome in palindromes {
             var collision = false
             

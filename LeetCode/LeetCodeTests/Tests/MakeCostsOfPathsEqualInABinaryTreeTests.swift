@@ -17,7 +17,7 @@ final class MakeCostsOfPathsEqualInABinaryTreeTests: XCTestCase {
         let n = 7
         let cost = [1,5,2,2,3,3,1]
             
-        let result = MakeCostsOfPathsEqualInABinaryTree.minIncrements(n, cost)
+        let result = MakeCostsOfPathsEqualInABinaryTree().minIncrements(n, cost)
         
         XCTAssertEqual(result, 6)
     }
@@ -26,7 +26,7 @@ final class MakeCostsOfPathsEqualInABinaryTreeTests: XCTestCase {
         let n = 3
         let cost = [5,3,3]
             
-        let result = MakeCostsOfPathsEqualInABinaryTree.minIncrements(n, cost)
+        let result = MakeCostsOfPathsEqualInABinaryTree().minIncrements(n, cost)
         
         XCTAssertEqual(result, 0)
     }

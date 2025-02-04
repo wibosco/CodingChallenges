@@ -22,7 +22,7 @@ struct ArrayWithElementsNotEqualToAverageOfNeighbors {
     //the average we need to make those neighbors either both larger than the element or both smaller than the element. By sorting `nums`
     //we can build up the `rearranged` array by alternating whether we select a larger or smaller element to place at a given index so
     //ensuring that each elements neighbors will either both be larger or both be smaller i.e. `[large, small, large, small, large, small]`.
-    static func rearrangeArray(_ nums: [Int]) -> [Int] {
+    func rearrangeArray(_ nums: [Int]) -> [Int] {
         let nums = nums.sorted()
         
         var rearranged = [Int]()

@@ -18,7 +18,7 @@ final class CourseScheduleIITests: XCTestCase {
         let numCourses = 2
         let prerequisites = [[1, 0]]
         
-        let result = CourseScheduleII.findOrder(numCourses, prerequisites)
+        let result = CourseScheduleII().findOrder(numCourses, prerequisites)
         
         let expectedResult = [0, 1]
         
@@ -37,7 +37,7 @@ final class CourseScheduleIITests: XCTestCase {
                              [3, 1],
                              [3, 2]]
         
-        let result = CourseScheduleII.findOrder(numCourses, prerequisites)
+        let result = CourseScheduleII().findOrder(numCourses, prerequisites)
         
         let expectedResult = [0, 1, 2, 3]
         
@@ -53,7 +53,7 @@ final class CourseScheduleIITests: XCTestCase {
         let numCourses = 1
         let prerequisites = [[Int]]()
         
-        let result = CourseScheduleII.findOrder(numCourses, prerequisites)
+        let result = CourseScheduleII().findOrder(numCourses, prerequisites)
         
         XCTAssertEqual(result, [0])
     }
@@ -64,7 +64,7 @@ final class CourseScheduleIITests: XCTestCase {
                              [1, 2],
                              [0, 1]]
         
-        let result = CourseScheduleII.findOrder(numCourses, prerequisites)
+        let result = CourseScheduleII().findOrder(numCourses, prerequisites)
         
         XCTAssertEqual(result, [])
     }

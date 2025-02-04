@@ -37,7 +37,7 @@ struct AsFarFromLandAsPossible {
     //
     //N.B Manhattan distance (|xi - xj| + |yi - yj|) is the distance between two squares as measured in vertical and/or
     //horizontal moves.
-    static func maxDistance(_ grid: [[Int]]) -> Int {
+    func maxDistance(_ grid: [[Int]]) -> Int {
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] //[up down left right]
         
         var queue = [[Int]]() //[[row, column]]
@@ -113,7 +113,7 @@ struct AsFarFromLandAsPossible {
     //
     //N.B Manhattan distance (|xi - xj| + |yi - yj|) is the distance between two squares as measured in vertical and/or 
     //horizontal moves.
-    static func maxDistanceFromWater(_ grid: [[Int]]) -> Int {
+    func maxDistanceFromWater(_ grid: [[Int]]) -> Int {
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] //[up down left right]
         
         var maxDistance = -1
@@ -131,7 +131,7 @@ struct AsFarFromLandAsPossible {
         return maxDistance
     }
     
-    private static func bfs(_ grid: [[Int]], _ srcRow: Int, _ srcColumn: Int, _ relativeIndexes: [[Int]]) -> Int {
+    private func bfs(_ grid: [[Int]], _ srcRow: Int, _ srcColumn: Int, _ relativeIndexes: [[Int]]) -> Int {
         var visited = Set<[Int]>()
         visited.insert([srcRow, srcColumn])
         

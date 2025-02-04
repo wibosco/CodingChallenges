@@ -22,7 +22,7 @@ struct MaximumDifferenceBetweenNodeAndAncestor {
     //absolute difference between those two values and return it. We then compare it against the difference produced from other
     //branches further up the tree and take the largest value. At each level we check if we have found a new `minVal` or `maxVal`.
     //We repeat this process until we get to the root at which point we return.
-    static func maxAncestorDiff(_ root: TreeNode?) -> Int {
+    func maxAncestorDiff(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return -1
         }
@@ -30,7 +30,7 @@ struct MaximumDifferenceBetweenNodeAndAncestor {
         return dfs(root, root.val, root.val)
     }
     
-    private static func dfs(_ node: TreeNode?, _ minVal: Int, _ maxVal: Int) -> Int {
+    private func dfs(_ node: TreeNode?, _ minVal: Int, _ maxVal: Int) -> Int {
         guard let node = node else {
             return  maxVal - minVal
         }
@@ -56,7 +56,7 @@ struct MaximumDifferenceBetweenNodeAndAncestor {
     //and calculating the absolute difference between those values at every node. `minVal` and `maxVal` are tried to the branch
     //or path the current node is on whereas `greatestDifference` is across the whole tree. At each level we check if we have
     //found a new `minVal` or `maxVal`. once all nodes have been checked with return `greatestDifference`.
-    static func maxAncestorDiffTopDown(_ root: TreeNode?) -> Int {
+    func maxAncestorDiffTopDown(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return -1
         }
@@ -69,7 +69,7 @@ struct MaximumDifferenceBetweenNodeAndAncestor {
         return greatestDifference
     }
     
-    private static func dfsTopDown(_ node: TreeNode?, _ minVal: Int, _ maxVal: Int, _ greatestDifference: inout Int) {
+    private func dfsTopDown(_ node: TreeNode?, _ minVal: Int, _ maxVal: Int, _ greatestDifference: inout Int) {
         guard let node = node else {
             return
         }

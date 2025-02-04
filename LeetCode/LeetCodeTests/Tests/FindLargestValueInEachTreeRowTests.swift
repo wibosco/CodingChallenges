@@ -17,7 +17,7 @@ final class FindLargestValueInEachTreeRowTests: XCTestCase {
         let data = [1,3,2,5,3,nil,9]
         let root = TreeNode.deserialize(data)
         
-        let result = FindLargestValueInEachTreeRow.largestValues(root)
+        let result = FindLargestValueInEachTreeRow().largestValues(root)
         
         XCTAssertEqual(result, [1,3,9])
     }
@@ -26,7 +26,7 @@ final class FindLargestValueInEachTreeRowTests: XCTestCase {
         let data = [1,2,3]
         let root = TreeNode.deserialize(data)
         
-        let result = FindLargestValueInEachTreeRow.largestValues(root)
+        let result = FindLargestValueInEachTreeRow().largestValues(root)
         
         XCTAssertEqual(result, [1,3])
     }

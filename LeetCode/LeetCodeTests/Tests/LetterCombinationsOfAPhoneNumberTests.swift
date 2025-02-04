@@ -17,7 +17,7 @@ final class LetterCombinationsOfAPhoneNumberTests: XCTestCase {
     func test_A() {
         let digits = "23"
         
-        let result = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
+        let result = LetterCombinationsOfAPhoneNumber().letterCombinations(digits)
         
         XCTAssertEqual(result, ["ad",
                                 "ae",
@@ -33,7 +33,7 @@ final class LetterCombinationsOfAPhoneNumberTests: XCTestCase {
     func test_B() {
         let digits = "2"
         
-        let result = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
+        let result = LetterCombinationsOfAPhoneNumber().letterCombinations(digits)
         
         XCTAssertEqual(result, ["a",
                                 "b",
@@ -43,7 +43,7 @@ final class LetterCombinationsOfAPhoneNumberTests: XCTestCase {
     func test_C() {
         let digits = ""
         
-        let result = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
+        let result = LetterCombinationsOfAPhoneNumber().letterCombinations(digits)
         
         XCTAssertEqual(result, [])
     }
@@ -51,7 +51,7 @@ final class LetterCombinationsOfAPhoneNumberTests: XCTestCase {
     func test_D() {
         let digits = "234"
         
-        let result = LetterCombinationsOfAPhoneNumber.letterCombinations(digits)
+        let result = LetterCombinationsOfAPhoneNumber().letterCombinations(digits)
         
         XCTAssertEqual(result, ["adg",
                                 "adh",

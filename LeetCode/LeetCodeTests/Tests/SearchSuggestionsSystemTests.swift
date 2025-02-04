@@ -17,7 +17,7 @@ final class SearchSuggestionsSystemTests: XCTestCase {
         let products = ["mobile", "mouse", "moneypot", "monitor", "mousepad"]
         let searchWord = "mouse"
         
-        let result = SearchSuggestionsSystem.suggestedProducts(products, searchWord)
+        let result = SearchSuggestionsSystem().suggestedProducts(products, searchWord)
         
         XCTAssertEqual(result, [["mobile", "moneypot", "monitor"],
                                 ["mobile", "moneypot", "monitor"],
@@ -30,7 +30,7 @@ final class SearchSuggestionsSystemTests: XCTestCase {
         let products = ["havana"]
         let searchWord = "havana"
         
-        let result = SearchSuggestionsSystem.suggestedProducts(products, searchWord)
+        let result = SearchSuggestionsSystem().suggestedProducts(products, searchWord)
         
         XCTAssertEqual(result, [["havana"],
                                 ["havana"],
@@ -44,7 +44,7 @@ final class SearchSuggestionsSystemTests: XCTestCase {
         let products = ["bags", "baggage", "banner", "box", "cloths"]
         let searchWord = "bags"
         
-        let result = SearchSuggestionsSystem.suggestedProducts(products, searchWord)
+        let result = SearchSuggestionsSystem().suggestedProducts(products, searchWord)
         
         XCTAssertEqual(result, [["baggage", "bags", "banner"],
                                 ["baggage", "bags", "banner"],

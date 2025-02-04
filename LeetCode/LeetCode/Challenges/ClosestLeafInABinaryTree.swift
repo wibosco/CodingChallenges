@@ -36,7 +36,7 @@ struct ClosestLeafInABinaryTree {
     //repeatedly we use a `visited` set to store the nodes we have been to. Once we find a leaf node we return it.
     //
     //Similar to: https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
-    static func findClosestLeaf(_ root: TreeNode?, _ k: Int) -> Int {
+    func findClosestLeaf(_ root: TreeNode?, _ k: Int) -> Int {
         guard let root = root else {
             return 0
         }
@@ -82,7 +82,7 @@ struct ClosestLeafInABinaryTree {
         return -1
     }
     
-    private static func buildGraph(_ node: TreeNode?, _ parent: TreeNode, _ adjList: inout [Int: [Int]]) {
+    private func buildGraph(_ node: TreeNode?, _ parent: TreeNode, _ adjList: inout [Int: [Int]]) {
         guard let node = node else {
             return
         }
@@ -112,7 +112,7 @@ struct ClosestLeafInABinaryTree {
     //calculate the distance from the current node to `k` and add that the distance from the current node to a leaf
     //node - if that value is smaller than `closestLeaf` we update it and return the new closest leaf details. We repeat
     //this process until return to the root and can return `closestLeaf`.
-    static func findClosestLeafDFS(_ root: TreeNode?, _ k: Int) -> Int {
+    func findClosestLeafDFS(_ root: TreeNode?, _ k: Int) -> Int {
         guard let root = root else {
             return 0
         }
@@ -124,7 +124,7 @@ struct ClosestLeafInABinaryTree {
         return closestLeaf.1
     }
     
-    private static func dfs(_ node: TreeNode, _ k: Int, _ closestLeaf: inout (Int, Int)) -> (Int, Int, Int) { //distanceToK, distanceToLeaf, nodeVal
+    private func dfs(_ node: TreeNode, _ k: Int, _ closestLeaf: inout (Int, Int)) -> (Int, Int, Int) { //distanceToK, distanceToLeaf, nodeVal
         if node.left == nil && node.right == nil {
             if node.val == k {
                 closestLeaf = (0, node.val)

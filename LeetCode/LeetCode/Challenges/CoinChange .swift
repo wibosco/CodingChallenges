@@ -31,7 +31,7 @@ struct CoinChange {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
         guard amount > 0 else {
             return 0
         }
@@ -43,7 +43,7 @@ struct CoinChange {
         return coinsUsed == Int.max ? -1: coinsUsed
     }
 
-    private static func dfs(_ coins: [Int], _ memo: inout [Int: Int], _ remaining: Int) -> Int {
+    private func dfs(_ coins: [Int], _ memo: inout [Int: Int], _ remaining: Int) -> Int {
         guard remaining >= 0 else {
             return -1
         }

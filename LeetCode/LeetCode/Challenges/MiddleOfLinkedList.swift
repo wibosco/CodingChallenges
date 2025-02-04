@@ -19,7 +19,7 @@ struct MiddleOfLinkedList {
     //Solution Description:
     //Using a slow and fast pointer we iterate through the list. The slow pointer moves one node at a time whereas the fast
     //pointer moves two nodes. This result in the slow pointer pointing at the middle of the list 
-    static func middleNode(_ head: ListNode?) -> ListNode? {
+    func middleNode(_ head: ListNode?) -> ListNode? {
         var slow = head
         var fast = head
         
@@ -40,7 +40,7 @@ struct MiddleOfLinkedList {
     //Iterate through the array, placing all nodes into an array in the order we encounter them in. Once list has been
     //fully traversed we divide the length of the array by 2 (as this is an int division any remainder is lost) and
     //return the element at that index
-    static func middleNodeArray(_ head: ListNode?) -> ListNode? {
+    func middleNodeArray(_ head: ListNode?) -> ListNode? {
         var array = [ListNode]()
         
         var curr: ListNode? = head

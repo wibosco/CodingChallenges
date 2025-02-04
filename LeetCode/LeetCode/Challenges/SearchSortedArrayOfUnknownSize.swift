@@ -14,7 +14,7 @@ struct SearchSortedArrayOfUnknownSize {
     
     // MARK: - Search
     
-    static func search(_ reader: ArrayReader, _ target: Int) -> Int {
+    func search(_ reader: ArrayReader, _ target: Int) -> Int {
         var left = 0
         var right = 10_000
         

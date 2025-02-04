@@ -13,7 +13,7 @@ struct Sqrt {
     
     //Time: O(log n)
     //binary search
-    static func mySqrt(_ x: Int) -> Int {
+    func mySqrt(_ x: Int) -> Int {
         guard x > 1 else {
             return x
         }
@@ -38,7 +38,7 @@ struct Sqrt {
     }
     
     //Time: O(n)
-    static func mySqrtLinear(_ x: Int) -> Int {
+    func mySqrtLinear(_ x: Int) -> Int {
         var i = 0
         while (i * i) <= x {
             i += 1

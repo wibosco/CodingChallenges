@@ -28,7 +28,7 @@ struct AllNodesDistanceKInBinaryTree {
     //movements by 1. We need to be careful to avoid re-searching the branch we just came from so we use a blocker node to cut
     //that branch off - blocker acts like a single entry `visited` set. We repeat the upwards movement and then downwards
     //searching until `k` is 0.
-    static func distanceK(_ root: TreeNode?, _ target: TreeNode?, _ k: Int) -> [Int] {
+    func distanceK(_ root: TreeNode?, _ target: TreeNode?, _ k: Int) -> [Int] {
         guard let root = root, let target = target else {
             return []
         }
@@ -55,7 +55,7 @@ struct AllNodesDistanceKInBinaryTree {
         return values
     }
     
-    private static func buildParentRelationships(_ node: TreeNode, _ target: TreeNode, _ parents: inout [Int: TreeNode]) {
+    private func buildParentRelationships(_ node: TreeNode, _ target: TreeNode, _ parents: inout [Int: TreeNode]) {
         guard node.val != target.val else {
             return
         }
@@ -71,7 +71,7 @@ struct AllNodesDistanceKInBinaryTree {
         }
     }
     
-    private static func bfs(_ node: TreeNode, _ blocker: TreeNode, _ k: Int, _ values: inout [Int]) {
+    private func bfs(_ node: TreeNode, _ blocker: TreeNode, _ k: Int, _ values: inout [Int]) {
         var queue = [node]
         var k = k
         

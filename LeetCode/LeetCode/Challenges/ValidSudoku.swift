@@ -21,7 +21,7 @@ struct ValidSudoku {
     //Iterate through each row and column checking that the value at grid location is unique in the row, column and
     //box. There is no need to make each check independently instead we can add an empty Character set for each row,
     //column and box position and check that O(1) time to determine if that value is unique.
-    static func isValidSudoku(_ board: [[Character]]) -> Bool {
+    func isValidSudoku(_ board: [[Character]]) -> Bool {
         var rows = Array(repeating: Set<Character>(), count: 9) //9 rows
         var columns = Array(repeating: Set<Character>(), count: 9) //9 columns
         var boxes = Array(repeating: Set<Character>(), count: 9) //9 boxes

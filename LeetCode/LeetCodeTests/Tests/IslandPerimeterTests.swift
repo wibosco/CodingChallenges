@@ -19,7 +19,7 @@ final class IslandPerimeterTests: XCTestCase {
                     [0,1,0,0],
                     [1,1,0,0]]
         
-        let result = IslandPerimeter.islandPerimeter(grid)
+        let result = IslandPerimeter().islandPerimeter(grid)
         
         XCTAssertEqual(result, 16)
     }
@@ -27,7 +27,7 @@ final class IslandPerimeterTests: XCTestCase {
     func test_B() {
         let grid = [[1]]
         
-        let result = IslandPerimeter.islandPerimeter(grid)
+        let result = IslandPerimeter().islandPerimeter(grid)
         
         XCTAssertEqual(result, 4)
     }
@@ -35,7 +35,7 @@ final class IslandPerimeterTests: XCTestCase {
     func test_D() {
         let grid = [[1,0]]
         
-        let result = IslandPerimeter.islandPerimeter(grid)
+        let result = IslandPerimeter().islandPerimeter(grid)
         
         XCTAssertEqual(result, 4)
     }

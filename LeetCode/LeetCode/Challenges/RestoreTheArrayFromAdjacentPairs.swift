@@ -29,7 +29,7 @@ struct RestoreTheArrayFromAdjacentPairs {
     //we then iterate through the our elements in `adjList` and build up `array` using the previously added elements of
     //`array `as either the key or constraint to finding the next element. Once we've iterated through all elements we can
     //return `array`
-    static func restoreArray(_ adjacentPairs: [[Int]]) -> [Int] {
+    func restoreArray(_ adjacentPairs: [[Int]]) -> [Int] {
         var adjList = [Int: [Int]]()
         
         for adjacentPair in adjacentPairs {

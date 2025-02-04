@@ -18,7 +18,7 @@ final class RotateImageTests: XCTestCase {
                       [4, 5, 6],
                       [7, 8, 9]]
         
-        RotateImage.rotate(&matrix)
+        RotateImage().rotate(&matrix)
         
         XCTAssertEqual(matrix, [[7, 4, 1], [8, 5, 2], [9, 6, 3]])
     }
@@ -29,7 +29,7 @@ final class RotateImageTests: XCTestCase {
                       [13, 3, 6, 7],
                       [15, 14, 12, 16]]
         
-        RotateImage.rotate(&matrix)
+        RotateImage().rotate(&matrix)
         
         XCTAssertEqual(matrix, [[15, 13, 2, 5], [14, 3, 4, 1], [12, 6, 8, 9], [16, 7, 10, 11]])
     }
@@ -37,7 +37,7 @@ final class RotateImageTests: XCTestCase {
     func test_C() {
         var matrix = [[1]]
         
-        RotateImage.rotate(&matrix)
+        RotateImage().rotate(&matrix)
         
         XCTAssertEqual(matrix, [[1]])
     }
@@ -46,7 +46,7 @@ final class RotateImageTests: XCTestCase {
         var matrix = [[1, 2],
                       [3, 4]]
         
-        RotateImage.rotate(&matrix)
+        RotateImage().rotate(&matrix)
         
         XCTAssertEqual(matrix, [[3, 1], [4, 2]])
     }

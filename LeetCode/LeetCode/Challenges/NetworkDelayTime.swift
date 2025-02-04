@@ -41,7 +41,7 @@ struct NetworkDelayTime {
     //
     //N.B. I've omitted using a MinHeap as this isn't a data structure included with standard Swift and won't be feasible to
     //code it in a coding challenge.
-    static func networkDelayTime(_ times: [[Int]], _ n: Int, _ k: Int) -> Int {
+    func networkDelayTime(_ times: [[Int]], _ n: Int, _ k: Int) -> Int {
         var adjList = Array(repeating: [(Int, Int)](), count: n)
         for edge in times {
             let src = edge[0] - 1 //nodes in times are label from 1 rather than 0 so we adjust
@@ -68,7 +68,7 @@ struct NetworkDelayTime {
         return totalTime
     }
     
-    private static func buildShortestPath(from k: Int, _ adjList: [[(Int, Int)]], _ n: Int) -> [Int] {
+    private func buildShortestPath(from k: Int, _ adjList: [[(Int, Int)]], _ n: Int) -> [Int] {
         //build using Dijkstra algorithm
         var distances = Array(repeating: Int.max, count: n)
         distances[k] = 0 //0 as we start at k so no need to travel there
@@ -140,7 +140,7 @@ struct NetworkDelayTime {
     //
     //N.B. I've omitted using a MinHeap as this isn't a data structure included with standard Swift and won't be feasible to
     //code it in a coding challenge.
-    static func networkDelayTimeOptimised(_ times: [[Int]], _ n: Int, _ k: Int) -> Int {
+    func networkDelayTimeOptimised(_ times: [[Int]], _ n: Int, _ k: Int) -> Int {
         var adjList = Array(repeating: [(Int, Int)](), count: n)
         for edge in times {
             let src = edge[0] - 1 //nodes in times are label from 1 rather than 0 so we adjust

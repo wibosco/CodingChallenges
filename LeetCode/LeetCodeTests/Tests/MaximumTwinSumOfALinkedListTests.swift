@@ -17,7 +17,7 @@ final class MaximumTwinSumOfALinkedListTests: XCTestCase {
         let data = [5, 4, 2, 1]
         let head = ListNode.deserialize(data)
         
-        let result = MaximumTwinSumOfALinkedList.pairSum(head)
+        let result = MaximumTwinSumOfALinkedList().pairSum(head)
         
         XCTAssertEqual(result, 6)
     }
@@ -26,7 +26,7 @@ final class MaximumTwinSumOfALinkedListTests: XCTestCase {
         let data = [4, 2, 2, 3]
         let head = ListNode.deserialize(data)
         
-        let result = MaximumTwinSumOfALinkedList.pairSum(head)
+        let result = MaximumTwinSumOfALinkedList().pairSum(head)
         
         XCTAssertEqual(result, 7)
     }
@@ -35,7 +35,7 @@ final class MaximumTwinSumOfALinkedListTests: XCTestCase {
         let data = [1, 100000]
         let head = ListNode.deserialize(data)
         
-        let result = MaximumTwinSumOfALinkedList.pairSum(head)
+        let result = MaximumTwinSumOfALinkedList().pairSum(head)
         
         XCTAssertEqual(result, 100001)
     }

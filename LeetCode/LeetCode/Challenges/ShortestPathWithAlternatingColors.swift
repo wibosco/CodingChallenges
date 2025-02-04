@@ -31,7 +31,7 @@ struct ShortestPathWithAlternatingColors {
     //node via a different color edge, when we insert into `visited` we insert both the node itself and the edge color that got
     //us here. As some nodes won't be reachable we default the `distances` array to `-1`. After all paths from node 0 have been
     //search we return `distances`.
-    static func shortestAlternatingPaths(_ n: Int, _ redEdges: [[Int]], _ blueEdges: [[Int]]) -> [Int] {
+    func shortestAlternatingPaths(_ n: Int, _ redEdges: [[Int]], _ blueEdges: [[Int]]) -> [Int] {
         var adjList = Array(repeating: [[Int]](), count: n)
         
         for edge in redEdges {

@@ -23,7 +23,7 @@ struct PathSumII {
     //path of nodes that got as to that node. Once we get to a leaf node we check if `targetSum` is 0, meaning that the
     //same of the path to that leaf node is equal to `targetSum` then we add the `path` to our overall `paths` array. As
     //we unwind the recursive stack we remove the current node from `path` so that `path` can be reused with another path.
-    static func pathSum(_ root: TreeNode?, _ targetSum: Int) -> [[Int]] {
+    func pathSum(_ root: TreeNode?, _ targetSum: Int) -> [[Int]] {
         var path = [Int]()
         var paths = [[Int]]()
         
@@ -32,7 +32,7 @@ struct PathSumII {
         return paths
     }
     
-    private static func dfs(_ node: TreeNode?, _ targetSum: Int, _ path: inout [Int], _ paths: inout [[Int]]) {
+    private func dfs(_ node: TreeNode?, _ targetSum: Int, _ path: inout [Int], _ paths: inout [[Int]]) {
         guard let node = node else {
             return
         }

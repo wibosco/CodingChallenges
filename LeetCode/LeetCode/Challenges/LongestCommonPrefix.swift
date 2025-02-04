@@ -25,7 +25,7 @@ struct LongestCommonPrefix {
     //
     //NB: if we get to the final return it means not only that the whole of `chrs[0]` is the prefix but also that `chrs[0]`
     //must the smallest (or joint smallest) element in `strs`
-    static func longestCommonPrefix(_ strs: [String]) -> String {
+    func longestCommonPrefix(_ strs: [String]) -> String {
         let chrs = strs.map { Array($0) } //to optimise access
         
         var prefix = [Character]()

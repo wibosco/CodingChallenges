@@ -16,7 +16,7 @@ final class FindEventualSafeStatesTests: XCTestCase {
     func test_A() {
         let graph = [[1, 2], [2, 3], [5], [0], [5], [], []]
             
-        let result = FindEventualSafeStates.eventualSafeNodes(graph)
+        let result = FindEventualSafeStates().eventualSafeNodes(graph)
         
         XCTAssertEqual(result, [2, 4, 5, 6])
     }
@@ -24,7 +24,7 @@ final class FindEventualSafeStatesTests: XCTestCase {
     func test_B() {
         let graph = [[1, 2, 3, 4], [1, 2], [3, 4], [0, 4], []]
             
-        let result = FindEventualSafeStates.eventualSafeNodes(graph)
+        let result = FindEventualSafeStates().eventualSafeNodes(graph)
         
         XCTAssertEqual(result, [4])
     }
@@ -32,7 +32,7 @@ final class FindEventualSafeStatesTests: XCTestCase {
     func test_C() {
         let graph = [[], [0, 2, 3, 4], [3], [4], []]
             
-        let result = FindEventualSafeStates.eventualSafeNodes(graph)
+        let result = FindEventualSafeStates().eventualSafeNodes(graph)
         
         XCTAssertEqual(result, [0, 1, 2, 3, 4])
     }

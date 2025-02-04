@@ -31,7 +31,7 @@ struct MissingRanges {
     //upper and lower bounds as an entry in `missingRanges`. It's important to note here that the missing range does not
     //include `previous` and `current` as both these values are included in `nums` instead it includes the values "inside"
     //those `previous` and `current`
-    static func findMissingRanges(_ nums: [Int], _ lower: Int, _ upper: Int) -> [String] {
+    func findMissingRanges(_ nums: [Int], _ lower: Int, _ upper: Int) -> [String] {
         var missingRanges = [String]()
         
         var previous = lower - 1
@@ -75,7 +75,7 @@ struct MissingRanges {
     //range is greater than 2 then we need to include the ranges upper and lower bounds as an entry in `missingRanges`. It's
     //important to note here that the missing range does not include `previous` and `current` as both these values are included
     //in `nums` instead it includes the values "inside" those `previous` and `current`
-    static func findMissingRangesExpandedNums(_ nums: [Int], _ lower: Int, _ upper: Int) -> [String] {
+    func findMissingRangesExpandedNums(_ nums: [Int], _ lower: Int, _ upper: Int) -> [String] {
         var missingRanges = [String]()
         
         var nums = nums

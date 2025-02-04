@@ -23,7 +23,7 @@ struct RemoveAllAdjacentDuplicatesInStringII {
     //By storing the duplicate value in the stack we make it possible to determine if that coming-together has resulted in
     //`k` duplicates now being side-by-side without having to recount the stack for the current `s` value. Once we encounter
     //a `duplicateCount` value that matches `k` we pop those duplicates off the stack.
-    static func removeDuplicates(_ s: String, _ k: Int) -> String {
+    func removeDuplicates(_ s: String, _ k: Int) -> String {
         var stack = [(Character, Int)]() //(character, duplicate-count)
         
         for c in s {
@@ -54,7 +54,7 @@ struct RemoveAllAdjacentDuplicatesInStringII {
     //When a `counts` value equals `k` we remove the duplicate characters in `s` until `k` duplicates are gon, we also
     //remove `k` elements from `counts` to keep them in sync. We repeat this process until all of `s` is processed.
     //Special must be taken to reset `i` back to a value before `k` elements where removed.
-    static func removeDuplicatesInLine(_ s: String, _ k: Int) -> String {
+    func removeDuplicatesInLine(_ s: String, _ k: Int) -> String {
         var characters = Array(s)
         var counts = [Int]()
         counts.append(1)

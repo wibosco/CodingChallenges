@@ -27,7 +27,7 @@ struct SearchInRotatedSortedArrayII {
     //know that the right subarray is sorted and we check if `target` would be in that subarray and move the left and right
     //boundary appropriately. Finally as this array can contain duplicates if `left` and `mid` are equal we increment left to
     //create a slightly smaller search space next iteration. 
-    static func search(_ nums: [Int], _ target: Int) -> Bool {
+    func search(_ nums: [Int], _ target: Int) -> Bool {
         guard nums.count > 0 else {
             return false
         }

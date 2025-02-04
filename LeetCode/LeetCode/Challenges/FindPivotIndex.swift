@@ -21,7 +21,7 @@ struct FindPivotIndex {
     //`leftSum` - note that we don't yet add `num` to `leftSum`. If those two value are equal then we have found the pivot
     //index and can return `i`; if they are not equal we add `num` to `leftSum` and continue iterating. If have iterated
     //through all elements in `nums` we haven't found the pivot index we return `-1`.
-    static func pivotIndex(_ nums: [Int]) -> Int {
+    func pivotIndex(_ nums: [Int]) -> Int {
         var leftSum = 0
         var rightSum = 0
         

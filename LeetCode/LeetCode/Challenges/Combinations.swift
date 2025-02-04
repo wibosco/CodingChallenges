@@ -22,7 +22,7 @@ struct Combinations {
     //Using backtracking we work through all the possible combinations from `1...n`. As we want combinations and permutations
     //order isn't important so `[1, 4]` an `[4, 1]` are considered the same. To avoid out-of-order duplicates when
     //backtracking we are careful to ensure that we are only ever using digits beyond the current digit.
-    static func combine(_ n: Int, _ k: Int) -> [[Int]] {
+    func combine(_ n: Int, _ k: Int) -> [[Int]] {
         var combinations = [[Int]]()
         
         backtrack(1, (n + 1), k, [Int](), &combinations)//counting from 1
@@ -30,7 +30,7 @@ struct Combinations {
         return combinations
     }
     
-    private static func backtrack(_ left: Int, _ right: Int, _ limit: Int, _ current: [Int], _ combinations: inout [[Int]]) {
+    private func backtrack(_ left: Int, _ right: Int, _ limit: Int, _ current: [Int], _ combinations: inout [[Int]]) {
         guard current.count < limit else {
             combinations.append(current)
             return

@@ -23,7 +23,7 @@ final class MaxAreaOfIslandTests: XCTestCase {
                     [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
                     [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]]
         
-        let result = MaxAreaOfIsland.maxAreaOfIsland(grid)
+        let result = MaxAreaOfIsland().maxAreaOfIsland(grid)
         
         XCTAssertEqual(result, 6)
     }
@@ -31,7 +31,7 @@ final class MaxAreaOfIslandTests: XCTestCase {
     func test_B() {
         let grid = [[0, 0, 0, 0, 0, 0, 0, 0]]
         
-        let result = MaxAreaOfIsland.maxAreaOfIsland(grid)
+        let result = MaxAreaOfIsland().maxAreaOfIsland(grid)
         
         XCTAssertEqual(result, 0)
     }
@@ -39,7 +39,7 @@ final class MaxAreaOfIslandTests: XCTestCase {
     func test_C() {
         let grid = [[0, 0, 0, 1, 0, 0, 0, 0]]
         
-        let result = MaxAreaOfIsland.maxAreaOfIsland(grid)
+        let result = MaxAreaOfIsland().maxAreaOfIsland(grid)
         
         XCTAssertEqual(result, 1)
     }

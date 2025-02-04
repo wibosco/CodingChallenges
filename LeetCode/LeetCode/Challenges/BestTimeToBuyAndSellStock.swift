@@ -26,7 +26,7 @@ struct BestTimeToBuyAndSellStock {
     //We are always looking for a lower price so when we encounter one we update our lowest buying price value.
     //
     //See: https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm
-    static func maxProfit(_ prices: [Int]) -> Int {
+    func maxProfit(_ prices: [Int]) -> Int {
         var maxProfit = 0
         var lowestBuyingPrice = prices[0]
         

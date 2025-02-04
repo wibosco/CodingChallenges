@@ -17,7 +17,7 @@ final class OddEvenLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5]
         let list = ListNode.deserialize(data)
         
-        let result = OddEvenLinkedList.oddEvenList(list)
+        let result = OddEvenLinkedList().oddEvenList(list)
         
         let values = ListNode.serialize(result)
         
@@ -28,7 +28,7 @@ final class OddEvenLinkedListTests: XCTestCase {
         let data = [2, 1, 3, 5, 6, 4, 7]
         let list = ListNode.deserialize(data)
         
-        let result = OddEvenLinkedList.oddEvenList(list)
+        let result = OddEvenLinkedList().oddEvenList(list)
         
         let values = ListNode.serialize(result)
         
@@ -39,7 +39,7 @@ final class OddEvenLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4]
         let list = ListNode.deserialize(data)
         
-        let result = OddEvenLinkedList.oddEvenList(list)
+        let result = OddEvenLinkedList().oddEvenList(list)
         
         let values = ListNode.serialize(result)
         
@@ -50,7 +50,7 @@ final class OddEvenLinkedListTests: XCTestCase {
         let data = [1]
         let list = ListNode.deserialize(data)
         
-        let result = OddEvenLinkedList.oddEvenList(list)
+        let result = OddEvenLinkedList().oddEvenList(list)
         
         let values = ListNode.serialize(result)
         
@@ -61,7 +61,7 @@ final class OddEvenLinkedListTests: XCTestCase {
         let data = [1, 2, 3, 4, 5, 6, 7, 8]
         let list = ListNode.deserialize(data)
         
-        let result = OddEvenLinkedList.oddEvenList(list)
+        let result = OddEvenLinkedList().oddEvenList(list)
         
         let values = ListNode.serialize(result)
         

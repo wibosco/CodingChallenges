@@ -19,7 +19,7 @@ final class PartitionListTests: XCTestCase {
         
         let x = 3
         
-        let result = PartitionList.partition(list, x)
+        let result = PartitionList().partition(list, x)
         
         let values = ListNode.serialize(result)
         
@@ -32,7 +32,7 @@ final class PartitionListTests: XCTestCase {
         
         let x = 2
         
-        let result = PartitionList.partition(list, x)
+        let result = PartitionList().partition(list, x)
         
         let values = ListNode.serialize(result)
         

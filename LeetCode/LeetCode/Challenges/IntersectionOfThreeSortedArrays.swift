@@ -24,7 +24,7 @@ struct IntersectionOfThreeSortedArrays {
     //3. p1 if it is less than both p2 && p3
     //
     //When any of the pointers reaches the end of its respective array there can be no more matches and we exit
-    static func arraysIntersection(_ arr1: [Int], _ arr2: [Int], _ arr3: [Int]) -> [Int] {
+    func arraysIntersection(_ arr1: [Int], _ arr2: [Int], _ arr3: [Int]) -> [Int] {
         var p1 = 0
         var p2 = 0
         var p3 = 0

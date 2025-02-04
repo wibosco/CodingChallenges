@@ -18,7 +18,7 @@ final class FindTheTownJudgeTests: XCTestCase {
         let n = 2
         let trust = [[1, 2]]
         
-        let result = FindTheTownJudge.findJudge(n, trust)
+        let result = FindTheTownJudge().findJudge(n, trust)
         
         XCTAssertEqual(result, 2)
     }
@@ -28,7 +28,7 @@ final class FindTheTownJudgeTests: XCTestCase {
         let trust = [[1, 3],
                      [2, 3]]
         
-        let result = FindTheTownJudge.findJudge(n, trust)
+        let result = FindTheTownJudge().findJudge(n, trust)
         
         XCTAssertEqual(result, 3)
     }
@@ -39,7 +39,7 @@ final class FindTheTownJudgeTests: XCTestCase {
                      [2, 3],
                      [3, 1]]
         
-        let result = FindTheTownJudge.findJudge(n, trust)
+        let result = FindTheTownJudge().findJudge(n, trust)
         
         XCTAssertEqual(result, -1)
     }
@@ -49,7 +49,7 @@ final class FindTheTownJudgeTests: XCTestCase {
         let trust = [[1, 2],
                      [2, 3]]
         
-        let result = FindTheTownJudge.findJudge(n, trust)
+        let result = FindTheTownJudge().findJudge(n, trust)
         
         XCTAssertEqual(result, -1)
     }

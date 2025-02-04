@@ -30,7 +30,7 @@ struct AllPathsFromSourceLeadToDestination {
     //`adjList` will not be full. As such when traversing the graph any leaf nodes that we encounter won't be in `adjList` so
     //extra care must be taken here. When a leaf node is found we need to to check if it is the target (as only the target can be
     //a leaf node for this graph to be "valid" - see problem description for details)
-    static func leadsToDestination(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
+    func leadsToDestination(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
         var adjList = [Int: [Int]]()
     
         for edge in edges {
@@ -42,7 +42,7 @@ struct AllPathsFromSourceLeadToDestination {
         return dfs(adjList, source, destination, &visited)
     }
     
-    private static func dfs(_ adjList: [Int: [Int]], _ curr: Int, _ target: Int, _ visited: inout Set<Int>) -> Bool {
+    private func dfs(_ adjList: [Int: [Int]], _ curr: Int, _ target: Int, _ visited: inout Set<Int>) -> Bool {
         //if visited already contains `curr` then we have a cycle
         guard !visited.contains(curr) else { //constraint
             return false
@@ -81,7 +81,7 @@ struct AllPathsFromSourceLeadToDestination {
     //
     //N.B. as we build a full adjacency list (containing all nodes) we can quickly determine if the destination node is part of a
     //"valid" (see problem description) tree by check it's a leaf node before undertaking a DFS traversal.
-    static func leadsToDestinationQuickCheck(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
+    func leadsToDestinationQuickCheck(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
         var adjList = Array(repeating: [Int](), count: n)
 
         for edge in edges {
@@ -97,7 +97,7 @@ struct AllPathsFromSourceLeadToDestination {
         return dfsQuickCheck(adjList, source, destination, &visited)
     }
 
-    private static func dfsQuickCheck(_ adjList: [[Int]], _ curr: Int, _ target: Int, _ visited: inout Set<Int>) -> Bool {
+    private func dfsQuickCheck(_ adjList: [[Int]], _ curr: Int, _ target: Int, _ visited: inout Set<Int>) -> Bool {
         guard curr != target else { //goal
             return true
         }

@@ -20,7 +20,7 @@ struct ConstructBinaryTreePreorderInorderTraversal {
     //divide and conquer
     //DFS
     //array
-    static func buildTree(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {
+    func buildTree(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {
         var preorderIndex = 0 //preorder so we go from start to end
         
         var inorderMapping = [Int: Int]() //to speed up retrieve of root from inorder array
@@ -31,7 +31,7 @@ struct ConstructBinaryTreePreorderInorderTraversal {
         return buildTree(preorder, &preorderIndex, inorderMapping, 0, (inorder.count - 1))
     }
     
-    private static func buildTree(_ preorder: [Int], _ preorderIndex: inout Int, _ inorderMapping: [Int: Int], _ inorderStart: Int, _ inorderEnd: Int) -> TreeNode? {
+    private func buildTree(_ preorder: [Int], _ preorderIndex: inout Int, _ inorderMapping: [Int: Int], _ inorderStart: Int, _ inorderEnd: Int) -> TreeNode? {
         guard inorderEnd >= inorderStart else { //are we working inside the range of inorder elements
             return nil
         }
@@ -63,12 +63,12 @@ struct ConstructBinaryTreePreorderInorderTraversal {
     //divide and conquer
     //DFS
     //array
-    static func buildTreeRemoval(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {
+    func buildTreeRemoval(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {
         var preorder = preorder
         return buildTreeRemoval(&preorder, inorder)
     }
 
-    private static func buildTreeRemoval(_ preorder: inout [Int], _ inorder: [Int]) -> TreeNode? {
+    private func buildTreeRemoval(_ preorder: inout [Int], _ inorder: [Int]) -> TreeNode? {
         guard !preorder.isEmpty, !inorder.isEmpty else {
             return nil
         }

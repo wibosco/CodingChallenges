@@ -18,7 +18,7 @@ struct TargetSum {
     //dynamic vertices
     //
     //Solution Description:
-    static func findTargetSumWays(_ nums: [Int], _ target: Int) -> Int {
+    func findTargetSumWays(_ nums: [Int], _ target: Int) -> Int {
         var count = 0
         
         dfs(nums, 1, target, nums[0], &count)
@@ -27,7 +27,7 @@ struct TargetSum {
         return count
     }
     
-    private static func dfs(_ nums: [Int], _ index: Int, _ target: Int, _ total: Int, _ count: inout Int) {
+    private func dfs(_ nums: [Int], _ index: Int, _ target: Int, _ total: Int, _ count: inout Int) {
         guard index != nums.count else {
             if total == target {
                 count += 1

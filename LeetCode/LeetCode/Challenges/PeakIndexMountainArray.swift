@@ -13,7 +13,7 @@ struct PeakIndexMountainArray {
     
     //Time: O(log n)
     //binary search
-    static func peakIndexInMountainArray(_ arr: [Int]) -> Int {
+    func peakIndexInMountainArray(_ arr: [Int]) -> Int {
         var left = 0
         var right = arr.count - 1
         
@@ -32,7 +32,7 @@ struct PeakIndexMountainArray {
     }
     
     //Time: O(n)
-    static func peakIndexInMountainArrayLinear(_ arr: [Int]) -> Int {
+    func peakIndexInMountainArrayLinear(_ arr: [Int]) -> Int {
         var peak: Int?
         var i = 1
         while peak == nil {

@@ -17,7 +17,7 @@ final class MiniParserTests: XCTestCase {
     func test_A() {
         let s = "324"
         
-        let ni = MiniParser.deserialize(s)
+        let ni = MiniParser().deserialize(s)
         
         let result = NestedInteger.serialize(ni)
         
@@ -27,7 +27,7 @@ final class MiniParserTests: XCTestCase {
     func test_B() {
         let s = "[123,[456,[789]]]"
         
-        let ni = MiniParser.deserialize(s)
+        let ni = MiniParser().deserialize(s)
         
         let result = NestedInteger.serialize(ni)
         

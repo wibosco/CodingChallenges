@@ -17,7 +17,7 @@ final class CombinationSumIIITests: XCTestCase {
         let k = 3
         let n = 7
         
-        let result = CombinationSumIII.combinationSum3(k, n)
+        let result = CombinationSumIII().combinationSum3(k, n)
         
         XCTAssertEqual(result, [[1, 2, 4]])
     }
@@ -26,7 +26,7 @@ final class CombinationSumIIITests: XCTestCase {
         let k = 3
         let n = 9
         
-        let result = CombinationSumIII.combinationSum3(k, n)
+        let result = CombinationSumIII().combinationSum3(k, n)
         
         XCTAssertEqual(result, [[1, 2, 6], [1, 3, 5], [2, 3, 4]])
     }
@@ -35,7 +35,7 @@ final class CombinationSumIIITests: XCTestCase {
         let k = 4
         let n = 1
         
-        let result = CombinationSumIII.combinationSum3(k, n)
+        let result = CombinationSumIII().combinationSum3(k, n)
         
         XCTAssertEqual(result, [[Int]]())
     }

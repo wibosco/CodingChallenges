@@ -20,7 +20,7 @@ struct FibonacciNumber {
     //Solution Description:
     //Using a bottom-up approach we only need to hold onto the previous steps value to enable us to calculate the next steps value
     //- this enables to use space when working out fib(n).
-    static func fib(_ n: Int) -> Int {
+    func fib(_ n: Int) -> Int {
         guard n > 0 else {
             return 0
         }
@@ -62,7 +62,7 @@ struct FibonacciNumber {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    static func fibTopDown(_ n: Int) -> Int {
+    func fibTopDown(_ n: Int) -> Int {
         guard n > 0 else {
             return 0
         }
@@ -71,7 +71,7 @@ struct FibonacciNumber {
         return fib(n, &memo)
     }
     
-    private static func fib(_ n: Int, _ memo: inout [Int: Int]) -> Int {
+    private func fib(_ n: Int, _ memo: inout [Int: Int]) -> Int {
         //check if we have already went down the `n` branch and can just return the result of the previous effort
         guard memo[n] == nil else {
             return memo[n]!
@@ -94,7 +94,7 @@ struct FibonacciNumber {
     //
     //Solution Description:
     //Work out the sequence of values for each value of `n` and add them together.
-    static func fibExpensive(_ n: Int) -> Int {
+    func fibExpensive(_ n: Int) -> Int {
         guard n != 0 else {
             return 0
         }

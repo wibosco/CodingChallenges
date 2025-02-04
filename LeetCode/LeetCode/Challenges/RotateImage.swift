@@ -46,7 +46,7 @@ struct RotateImage {
     //[23, 18, 13,  8, 3]
     //[24, 19, 14,  9, 4]
     //[25, 20, 15, 10, 5]
-    static func rotate(_ matrix: inout [[Int]]) {
+    func rotate(_ matrix: inout [[Int]]) {
         //transpose/reverse around left-to-right diagonal
         for i in 0..<matrix.count {
             for j in (i + 1)..<matrix.count {
@@ -73,7 +73,7 @@ struct RotateImage {
     //When rotating a matrix by 90 degrees we are really rotating 4 cells together i.e. A moves to B, B moves to C, C moves
     //to D and D moves to A. So in order to rotate we need to group cells into 4 and rotate each cell onto the other cells
     //current location.
-    static func rotateMath(_ matrix: inout [[Int]]) {
+    func rotateMath(_ matrix: inout [[Int]]) {
         let count = matrix.count
         
         for i in 0..<((count + 1) / 2) {
@@ -102,7 +102,7 @@ struct RotateImage {
     //compare against `target` and if they match we return true else we repeat the process.
     //
     //Similar to: https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
-    static func rotateExtraStorage(_ matrix: inout [[Int]]) {
+    func rotateExtraStorage(_ matrix: inout [[Int]]) {
         var matrix2 = Array(repeating: [Int](), count: matrix.count)
         
         for r in 0..<matrix.count {

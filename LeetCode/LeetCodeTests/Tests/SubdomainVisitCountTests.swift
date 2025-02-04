@@ -16,7 +16,7 @@ final class SubdomainVisitCountTests: XCTestCase {
     func test_A() {
         let cpdomains = ["9001 discuss.leetcode.com"]
         
-        let subDomainCounts = SubdomainVisitCount.subdomainVisits(cpdomains)
+        let subDomainCounts = SubdomainVisitCount().subdomainVisits(cpdomains)
         
         let expectedSubDomainCounts = ["9001 leetcode.com", "9001 discuss.leetcode.com", "9001 com"]
         
@@ -29,7 +29,7 @@ final class SubdomainVisitCountTests: XCTestCase {
     func test_B() {
         let cpdomains = ["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"]
         
-        let subDomainCounts = SubdomainVisitCount.subdomainVisits(cpdomains)
+        let subDomainCounts = SubdomainVisitCount().subdomainVisits(cpdomains)
         
         let expectedSubDomainCounts = ["901 mail.com", "50 yahoo.com", "900 google.mail.com", "5 wiki.org", "5 org", "1 intel.mail.com", "951 com"]
         

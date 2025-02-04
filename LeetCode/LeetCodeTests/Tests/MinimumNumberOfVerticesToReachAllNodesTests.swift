@@ -21,7 +21,7 @@ final class MinimumNumberOfVerticesToReachAllNodesTests: XCTestCase {
                      [3,4],
                      [4,2]]
         
-        let result = MinimumNumberOfVerticesToReachAllNodes.findSmallestSetOfVertices(n, edges)
+        let result = MinimumNumberOfVerticesToReachAllNodes().findSmallestSetOfVertices(n, edges)
         
         XCTAssertEqual(result, [0, 3])
     }
@@ -34,7 +34,7 @@ final class MinimumNumberOfVerticesToReachAllNodesTests: XCTestCase {
                      [1,4],
                      [2,4]]
         
-        let result = MinimumNumberOfVerticesToReachAllNodes.findSmallestSetOfVertices(n, edges)
+        let result = MinimumNumberOfVerticesToReachAllNodes().findSmallestSetOfVertices(n, edges)
         
         XCTAssertEqual(result, [0, 2, 3])
     }

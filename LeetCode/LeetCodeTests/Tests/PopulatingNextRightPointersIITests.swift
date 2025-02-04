@@ -18,7 +18,7 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         let data = [1, 2, 3, 4, 5, nil, 7]
         let root = TreeNodeNext.deserialize(data)
         
-        let node = PopulatingNextRightPointersII.connect(root)
+        let node = PopulatingNextRightPointersII().connect(root)
         
         let result = TreeNodeNext.serialize(node)
         
@@ -29,7 +29,7 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         let data = [Int]()
         let root = TreeNodeNext.deserialize(data)
         
-        let node = PopulatingNextRightPointersII.connect(root)
+        let node = PopulatingNextRightPointersII().connect(root)
         
         let result = TreeNodeNext.serialize(node)
         
@@ -40,7 +40,7 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         let data = [1, 2, 3, 4, 5, nil, 6, 7, nil, nil, nil, nil, 8]
         let root = TreeNodeNext.deserialize(data)
         
-        let node = PopulatingNextRightPointersII.connect(root)
+        let node = PopulatingNextRightPointersII().connect(root)
         
         let result = TreeNodeNext.serialize(node)
         
@@ -51,7 +51,7 @@ final class PopulatingNextRightPointersIITests: XCTestCase {
         let data = [-1, -7, 9, nil, nil, -1, -7, nil, 8, -9]
         let root = TreeNodeNext.deserialize(data)
         
-        let node = PopulatingNextRightPointersII.connect(root)
+        let node = PopulatingNextRightPointersII().connect(root)
         
         let result = TreeNodeNext.serialize(node)
         

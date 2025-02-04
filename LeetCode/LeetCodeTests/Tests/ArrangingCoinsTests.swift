@@ -16,7 +16,7 @@ final class ArrangingCoinsTests: XCTestCase {
     func test_A() {
         let n = 5
         
-        let result = ArrangingCoins.arrangeCoins(n)
+        let result = ArrangingCoins().arrangeCoins(n)
         
         XCTAssertEqual(result, 2)
     }
@@ -24,7 +24,7 @@ final class ArrangingCoinsTests: XCTestCase {
     func test_B() {
         let n = 8
         
-        let result = ArrangingCoins.arrangeCoins(n)
+        let result = ArrangingCoins().arrangeCoins(n)
         
         XCTAssertEqual(result, 3)
     }
@@ -32,7 +32,7 @@ final class ArrangingCoinsTests: XCTestCase {
     func test_C() {
         let n = 1
         
-        let result = ArrangingCoins.arrangeCoins(n)
+        let result = ArrangingCoins().arrangeCoins(n)
         
         XCTAssertEqual(result, 1)
     }

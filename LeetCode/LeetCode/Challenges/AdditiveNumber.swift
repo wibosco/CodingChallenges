@@ -50,7 +50,7 @@ struct AdditiveNumber {
     // [1899] [1] [17]
     // [1899] [11] [7]
     // [18991] [1] [7]
-    static func isAdditiveNumber(_ num: String) -> Bool {
+    func isAdditiveNumber(_ num: String) -> Bool {
         guard num.count > 2 else {
             return false
         }
@@ -78,7 +78,7 @@ struct AdditiveNumber {
         return false
     }
     
-    private static func isAdditiveNumber(_ nums: [Character], _ n1StartIndex: Int, _ n2StartIndex: Int, _ resultStartIndex: Int, _ found: Bool) -> Bool {
+    private func isAdditiveNumber(_ nums: [Character], _ n1StartIndex: Int, _ n2StartIndex: Int, _ resultStartIndex: Int, _ found: Bool) -> Bool {
         guard resultStartIndex < nums.count else {
             return found //found is used to know if an additive number was found in the previous loop
         }
@@ -144,7 +144,7 @@ struct AdditiveNumber {
     // [1899] [1] [17]
     // [1899] [11] [7]
     // [18991] [1] [7]
-    static func isAdditiveNumberArray(_ num: String) -> Bool {
+    func isAdditiveNumberArray(_ num: String) -> Bool {
         guard num.count > 2 else {
             return false
         }
@@ -176,7 +176,7 @@ struct AdditiveNumber {
         return false
     }
     
-    private static func isAdditiveNumber(_ n1: [Character], _ n2: [Character], _ nums: [Character], _ found: Bool) -> Bool {
+    private func isAdditiveNumber(_ n1: [Character], _ n2: [Character], _ nums: [Character], _ found: Bool) -> Bool {
         guard nums.count > 0 else {
             return found
         }

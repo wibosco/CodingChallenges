@@ -25,7 +25,7 @@ struct Matrix01 {
     //the graph in a BFS manner, checking each neighbor to see if it has a value of `1`, if it does we update that value
     //with the current `level` value and add it to both `queue` and `visited`. Once the queue is empty we have traversed
     //all possible vertices and can return the updated distance array.
-    static func updateMatrix(_ mat: [[Int]]) -> [[Int]] {
+    func updateMatrix(_ mat: [[Int]]) -> [[Int]] {
         var distances = mat
         
         var queue = [[Int]]()
@@ -75,7 +75,7 @@ struct Matrix01 {
         return distances
     }
 
-    private static func visitableNeighbors(_ mat: [[Int]], _ row: Int, _ column: Int, _ visited: Set<[Int]>, _ relativeIndexing: [[Int]]) -> [[Int]] {
+    private func visitableNeighbors(_ mat: [[Int]], _ row: Int, _ column: Int, _ visited: Set<[Int]>, _ relativeIndexing: [[Int]]) -> [[Int]] {
         var neighbors = [[Int]]()
         
         for relativeIndex in relativeIndexing {

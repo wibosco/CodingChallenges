@@ -26,12 +26,12 @@ struct TwoSumIVInputIsABST {
     //immediately return true,; if delta isn't in `visited` we add the current nodes value to `visited` and continue the
     //search. Particular care must be taken where the current nodes value and delta are the same as we can't reuse a node.
     //As `visited` is an inout set, values found in one branch of the search are available to other branches.
-    static func findTarget(_ root: TreeNode?, _ k: Int) -> Bool {
+    func findTarget(_ root: TreeNode?, _ k: Int) -> Bool {
         var visited = Set<Int>()
         return dfs(root, k, &visited)
     }
     
-    private static func dfs(_ node: TreeNode?, _ target: Int, _ visited: inout Set<Int>) -> Bool {
+    private func dfs(_ node: TreeNode?, _ target: Int, _ visited: inout Set<Int>) -> Bool {
         guard let node = node else {
             return false
         }

@@ -16,7 +16,7 @@ struct FindKClosestElements {
     //two pointers
     //sliding window
     //binary search find exact match
-    static func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
+    func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
         guard arr.count > k else {
             return arr
         }
@@ -68,7 +68,7 @@ struct FindKClosestElements {
         return Array(arr[left...right])
     }
     
-    private static func nearestIndex(to x: Int, in arr: [Int], from left: Int, to right: Int) -> Int {
+    private func nearestIndex(to x: Int, in arr: [Int], from left: Int, to right: Int) -> Int {
         let leftDelta = abs(arr[left] - x)
         let rightDelta = abs(arr[right] - x)
         

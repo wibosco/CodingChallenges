@@ -27,7 +27,7 @@ struct NonDecreasingArray {
     //array where `left` isn't in the range yet so all we can do is update `center` with `right`. If any updates do occur we track
     //it with `changes` and if `changes` ever gets greater than 1 then we exit the while loop and return false. If `changes` stays
     //less than 2 then we return true.
-    static func checkPossibility(_ nums: [Int]) -> Bool {
+    func checkPossibility(_ nums: [Int]) -> Bool {
         var changes = 0
         var nums = nums
     

@@ -22,7 +22,7 @@ struct FindBottomLeftTreeValue {
     //a BFS level-by-level fashion where we add a nodes left child before it's right child, the first node popped from the queue at
     //each level will the left most node of that level so each level we go down we can assign that first node to `bottomLeftMost`.
     //Once we traverse all levels we can return `bottomLeftMost`.
-    static func findBottomLeftValue(_ root: TreeNode?) -> Int {
+    func findBottomLeftValue(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return -1
         }

@@ -18,7 +18,7 @@ final class ConvertBinarySearchTreeToSortedDoublyLinkedListTests: XCTestCase {
         let data = [4, 2, 5, 1, 3]
         let root = TreeNode.deserialize(data)
         
-        let head = ConvertBinarySearchTreeToSortedDoublyLinkedList.treeToDoublyList(root)
+        let head = ConvertBinarySearchTreeToSortedDoublyLinkedList().treeToDoublyList(root)
         
         let result = TreeNode.serializeAsDoublyLinkedList(head)
         
@@ -29,7 +29,7 @@ final class ConvertBinarySearchTreeToSortedDoublyLinkedListTests: XCTestCase {
         let data = [2, 1, 3]
         let root = TreeNode.deserialize(data)
         
-        let head = ConvertBinarySearchTreeToSortedDoublyLinkedList.treeToDoublyList(root)
+        let head = ConvertBinarySearchTreeToSortedDoublyLinkedList().treeToDoublyList(root)
         
         let result = TreeNode.serializeAsDoublyLinkedList(head)
         

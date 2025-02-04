@@ -19,7 +19,7 @@ struct ReplaceElementsWithGreatestElementOnRightSide {
     //This value is used to set the element at the same index as we are iterating at in `result`, we then compare the current
     //value against `rightMax` and take the larger of the two as the next `rightMax`. We repeat this process until all elements
     //have been seen.
-    static func replaceElements(_ arr: [Int]) -> [Int] {
+    func replaceElements(_ arr: [Int]) -> [Int] {
         var result = Array(repeating: -1, count: arr.count)
         var rightMax = -1
         

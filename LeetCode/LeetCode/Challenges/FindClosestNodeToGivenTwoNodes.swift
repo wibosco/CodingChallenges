@@ -25,7 +25,7 @@ struct FindClosestNodeToGivenTwoNodes {
     //current `closest` matching node value, taking the minimum value this time. If the two values `closest.1` and `cValue`
     //are the same we take the smaller node index value (`key`). After having iterated through all possible matching nodes
     //we either return the matching node or -1.
-    static func closestMeetingNode(_ edges: [Int], _ node1: Int, _ node2: Int) -> Int {
+    func closestMeetingNode(_ edges: [Int], _ node1: Int, _ node2: Int) -> Int {
         var pathFromNode1 = [Int: Int]()
         explore(edges, node1, 0, &pathFromNode1)
         
@@ -49,7 +49,7 @@ struct FindClosestNodeToGivenTwoNodes {
         return closest.1 == Int.max ? -1 : closest.0
     }
     
-    private static func explore(_ edges: [Int], _ node: Int, _ step: Int, _ visited: inout [Int: Int]) {
+    private func explore(_ edges: [Int], _ node: Int, _ step: Int, _ visited: inout [Int: Int]) {
         guard visited[node] == nil else {
             return
         }

@@ -17,7 +17,7 @@ final class MinimumNumberOfSwapsToMakeTheStringBalancedTests: XCTestCase {
     func test_A() {
         let s = "][]["
         
-        let result = MinimumNumberOfSwapsToMakeTheStringBalanced.minSwaps(s)
+        let result = MinimumNumberOfSwapsToMakeTheStringBalanced().minSwaps(s)
         
         XCTAssertEqual(result, 1)
     }
@@ -25,7 +25,7 @@ final class MinimumNumberOfSwapsToMakeTheStringBalancedTests: XCTestCase {
     func test_B() {
         let s = "]]][[["
         
-        let result = MinimumNumberOfSwapsToMakeTheStringBalanced.minSwaps(s)
+        let result = MinimumNumberOfSwapsToMakeTheStringBalanced().minSwaps(s)
         
         XCTAssertEqual(result, 2)
     }
@@ -33,7 +33,7 @@ final class MinimumNumberOfSwapsToMakeTheStringBalancedTests: XCTestCase {
     func test_C() {
         let s = "[]"
         
-        let result = MinimumNumberOfSwapsToMakeTheStringBalanced.minSwaps(s)
+        let result = MinimumNumberOfSwapsToMakeTheStringBalanced().minSwaps(s)
         
         XCTAssertEqual(result, 0)
     }

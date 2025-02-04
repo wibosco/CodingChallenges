@@ -20,7 +20,7 @@ final class NumberOfClosedIslandsTests: XCTestCase {
                     [1,0,0,0,0,1,0,1],
                     [1,1,1,1,1,1,1,0]]
         
-        let result = NumberOfClosedIslands.closedIsland(grid)
+        let result = NumberOfClosedIslands().closedIsland(grid)
         
         XCTAssertEqual(result, 2)
     }
@@ -30,7 +30,7 @@ final class NumberOfClosedIslandsTests: XCTestCase {
                     [0,1,0,1,0],
                     [0,1,1,1,0]]
         
-        let result = NumberOfClosedIslands.closedIsland(grid)
+        let result = NumberOfClosedIslands().closedIsland(grid)
         
         XCTAssertEqual(result, 1)
     }
@@ -44,7 +44,7 @@ final class NumberOfClosedIslandsTests: XCTestCase {
                     [1,0,0,0,0,0,1],
                     [1,1,1,1,1,1,1]]
         
-        let result = NumberOfClosedIslands.closedIsland(grid)
+        let result = NumberOfClosedIslands().closedIsland(grid)
         
         XCTAssertEqual(result, 2)
     }

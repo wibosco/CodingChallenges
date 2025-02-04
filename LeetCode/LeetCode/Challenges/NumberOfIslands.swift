@@ -36,7 +36,7 @@ struct NumberOfIslands {
     //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
-    static func numIslands(_ grid: [[String]]) -> Int {
+    func numIslands(_ grid: [[String]]) -> Int {
         //0 - sea, 1 - land
         var visited = Set<[Int]>()
         var islandCount = 0
@@ -53,8 +53,8 @@ struct NumberOfIslands {
         return islandCount
     }
     
-    private static func dfs(grid: [[String]], root: [Int], visited: inout Set<[Int]>) {
-        let neighbors = unvisitedLandNeighbors(grid, root[0], root[1], relativeIndexing, visited)
+    private func dfs(grid: [[String]], root: [Int], visited: inout Set<[Int]>) {
+        let neighbors = unvisitedLandNeighbors(grid, root[0], root[1], NumberOfIslands.relativeIndexing, visited)
         for neighbor in neighbors {
             guard !visited.contains(neighbor) else {
                 continue
@@ -66,13 +66,13 @@ struct NumberOfIslands {
         }
     }
     
-    private static func dfsIterative(grid: [[String]], root: [Int], visited: inout Set<[Int]>) {
+    private func dfsIterative(grid: [[String]], root: [Int], visited: inout Set<[Int]>) {
         var stack = [root]
         
         while !stack.isEmpty {
             let node = stack.removeLast()
 
-            let neighbors = unvisitedLandNeighbors(grid, node[0], node[1], relativeIndexing, visited)
+            let neighbors = unvisitedLandNeighbors(grid, node[0], node[1], NumberOfIslands.relativeIndexing, visited)
             for neighbor in neighbors {
                 guard !visited.contains(neighbor) else {
                     continue
@@ -104,7 +104,7 @@ struct NumberOfIslands {
     //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple BFSs
-    static func numIslandsBFS(_ grid: [[String]]) -> Int {
+    func numIslandsBFS(_ grid: [[String]]) -> Int {
         //0 - sea, 1 - land
         var visited = Set<[Int]>()
         var islandCount = 0
@@ -121,7 +121,7 @@ struct NumberOfIslands {
         return islandCount
     }
     
-    private static func bfs(_ grid: [[String]], _ root: [Int], _ visited: inout Set<[Int]>) {
+    private func bfs(_ grid: [[String]], _ root: [Int], _ visited: inout Set<[Int]>) {
         var queue = [root]
         
         while !queue.isEmpty {
@@ -134,7 +134,7 @@ struct NumberOfIslands {
                 }
                 visited.insert(vertice)
                 
-                let neighbors = unvisitedLandNeighbors(grid, vertice[0], vertice[1], relativeIndexing, visited)
+                let neighbors = unvisitedLandNeighbors(grid, vertice[0], vertice[1], NumberOfIslands.relativeIndexing, visited)
                 for neighbor in neighbors {
                     newQueueItems.append(neighbor)
                 }
@@ -146,7 +146,7 @@ struct NumberOfIslands {
     
     // MARK: - Neighbors
     
-    private static func unvisitedLandNeighbors(_ grid: [[String]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]], _ visited: Set<[Int]>) -> [[Int]] {
+    private func unvisitedLandNeighbors(_ grid: [[String]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]], _ visited: Set<[Int]>) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row - relativeIndex[0]

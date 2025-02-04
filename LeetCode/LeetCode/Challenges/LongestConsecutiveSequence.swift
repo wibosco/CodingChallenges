@@ -24,7 +24,7 @@ struct LongestConsecutiveSequence {
     //the start of a sequence now need to find the end, as we are looking for a consecutive sequence we know the next value needs to be
     //`num + 1` so we search for that value and so on until we reach the end. Once the length of a sequence is found we compare it against
     //`longest` and take the higher value. With all elements check we return `longest`.
-    static func longestConsecutive(_ nums: [Int]) -> Int {
+    func longestConsecutive(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {
             return nums.count
         }

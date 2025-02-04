@@ -27,7 +27,7 @@ struct AllElementsInTwoBinarySearchTrees {
     //through each array independently so ensuring that the smallest element of each array is being compared. Once we have
     //exhausted one array we stop merging and instead take the remaining elements from the non-exhausted array and merge them onto
     //the end of `mergedValues`. 
-    static func getAllElements(_ root1: TreeNode?, _ root2: TreeNode?) -> [Int] {
+    func getAllElements(_ root1: TreeNode?, _ root2: TreeNode?) -> [Int] {
         var values1 = [Int]()
         var values2 = [Int]()
         
@@ -61,7 +61,7 @@ struct AllElementsInTwoBinarySearchTrees {
         return mergedValues
     }
     
-    private static func inorder(_ node: TreeNode?, _ values: inout [Int]) {
+    private func inorder(_ node: TreeNode?, _ values: inout [Int]) {
         guard let node = node else {
             return
         }

@@ -47,7 +47,7 @@ struct NextPermutation {
     //
     //See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
     //Similar to: https://leetcode.com/problems/next-greater-element-iii/
-    static func nextPermutation(_ nums: inout [Int]) {
+    func nextPermutation(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }
@@ -77,7 +77,7 @@ struct NextPermutation {
     //array
     //
     //See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
-    static func nextPermutationAlt(_ nums: inout [Int]) {
+    func nextPermutationAlt(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }

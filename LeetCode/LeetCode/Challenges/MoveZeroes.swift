@@ -23,7 +23,7 @@ struct MoveZeros {
     //used to identify non-zero values. With the slow pointer on a zero value and the fast pointer on a non-zero value, the
     //values are swapped - the ordering of the zeros isn't important so swapping the first zero is fine. This will result in
     //the zeros moving gradually moved to the end of the array as we partition the array.
-    static func moveZeroes(_ nums: inout [Int]) {
+    func moveZeroes(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }
@@ -52,7 +52,7 @@ struct MoveZeros {
     //Solution Description:
     //Remove zeros from `nums` as this are found while keeping a count of how many have been removed. Once all zeros have been
     //removed, add them to the end of the array.
-    static func moveZeroesAppending(_ nums: inout [Int]) {
+    func moveZeroesAppending(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }

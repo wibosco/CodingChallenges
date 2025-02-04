@@ -21,7 +21,7 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let subRoot = TreeNode.deserialize(subData)
         
-        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree().isSubtree(root, subRoot)
         
         XCTAssertTrue(result)
     }
@@ -33,7 +33,7 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let subRoot = TreeNode.deserialize(subData)
         
-        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree().isSubtree(root, subRoot)
         
         XCTAssertFalse(result)
     }
@@ -45,7 +45,7 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let subRoot = TreeNode.deserialize(subData)
         
-        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree().isSubtree(root, subRoot)
         
         XCTAssertTrue(result)
     }
@@ -57,7 +57,7 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let subRoot = TreeNode.deserialize(subData)
         
-        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree().isSubtree(root, subRoot)
         
         XCTAssertFalse(result)
     }
@@ -69,7 +69,7 @@ final class SubtreeOfAnotherTreeTests: XCTestCase {
         let root = TreeNode.deserialize(data)
         let subRoot = TreeNode.deserialize(subData)
         
-        let result = SubtreeOfAnotherTree.isSubtree(root, subRoot)
+        let result = SubtreeOfAnotherTree().isSubtree(root, subRoot)
         
         XCTAssertFalse(result)
     }

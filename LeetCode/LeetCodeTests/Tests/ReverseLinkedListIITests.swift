@@ -20,7 +20,7 @@ final class ReverseLinkedListIITests: XCTestCase {
         let left = 2
         let right = 4
         
-        let result = ReverseLinkedListII.reverseBetween(list, left, right)
+        let result = ReverseLinkedListII().reverseBetween(list, left, right)
         
         let values = ListNode.serialize(result)
         
@@ -34,7 +34,7 @@ final class ReverseLinkedListIITests: XCTestCase {
         let left = 1
         let right = 1
         
-        let result = ReverseLinkedListII.reverseBetween(list, left, right)
+        let result = ReverseLinkedListII().reverseBetween(list, left, right)
         
         let values = ListNode.serialize(result)
         
@@ -48,7 +48,7 @@ final class ReverseLinkedListIITests: XCTestCase {
         let left = 1
         let right = 2
         
-        let result = ReverseLinkedListII.reverseBetween(list, left, right)
+        let result = ReverseLinkedListII().reverseBetween(list, left, right)
         
         let values = ListNode.serialize(result)
         
@@ -62,7 +62,7 @@ final class ReverseLinkedListIITests: XCTestCase {
         let left = 2
         let right = 2
         
-        let result = ReverseLinkedListII.reverseBetween(list, left, right)
+        let result = ReverseLinkedListII().reverseBetween(list, left, right)
         
         let values = ListNode.serialize(result)
         

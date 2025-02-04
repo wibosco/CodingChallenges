@@ -19,7 +19,7 @@ struct CountCompleteTreeNodes {
     //Solution Description:
     //Using DFS we traverse to the leaf nodes than gradually add the value of each branch together as we unwind the recursive
     //call stack.
-    static func countNodes(_ root: TreeNode?) -> Int {
+    func countNodes(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }

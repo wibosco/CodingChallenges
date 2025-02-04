@@ -20,7 +20,7 @@ struct IntersectionOfTwoArrays {
     //
     //Solution Description:
     //By sorting `nums2` we can use binary search to find matching elements between `nums1` and `nums2`.
-    static func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersection = Set<Int>()
         
         let sortedNums2 = nums2.sorted() //O(m log m)
@@ -34,7 +34,7 @@ struct IntersectionOfTwoArrays {
         return Array(intersection)
     }
     
-    private static func binarySearch(_ nums: [Int], for target: Int) -> Bool {
+    private func binarySearch(_ nums: [Int], for target: Int) -> Bool {
         var left = 0
         var right = nums.count - 1
         
@@ -62,7 +62,7 @@ struct IntersectionOfTwoArrays {
     //Solution Description:
     //For each element in `nums2` we iterate through `nums2` until we either find that element of run out of elements in
     //`nums2`
-    static func intersectionLooping(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersectionLooping(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersection = Set<Int>()
         
         for num1 in nums1 {

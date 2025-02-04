@@ -19,7 +19,7 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree().maxDepth(root)
         
         XCTAssertEqual(result, 3)
     }
@@ -29,7 +29,7 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree().maxDepth(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -39,7 +39,7 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree().maxDepth(root)
         
         XCTAssertEqual(result, 0)
     }
@@ -49,7 +49,7 @@ final class MaximumDepthBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = MaximumDepthBinaryTree.maxDepth(root)
+        let result = MaximumDepthBinaryTree().maxDepth(root)
         
         XCTAssertEqual(result, 1)
     }

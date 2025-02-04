@@ -25,7 +25,7 @@ struct MinimumNumberOfVerticesToReachAllNodes {
     //nodes with an in-degree of 0 can be part of our minimum node set as otherwise they would be unreachable. So first we
     //iterate through `edges` and store the in-degree value for each destination node that we encounter in `inDegreeCount`. We
     //then iterate through `inDegreeCount` and add any nodes with a count of 0 to `result`.
-    static func findSmallestSetOfVertices(_ n: Int, _ edges: [[Int]]) -> [Int] {
+    func findSmallestSetOfVertices(_ n: Int, _ edges: [[Int]]) -> [Int] {
         var inDegreeCount = Array(repeating: 0, count: n)
         
         for edge in edges {

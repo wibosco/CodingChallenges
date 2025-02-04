@@ -21,7 +21,7 @@ struct MergeStringsAlternately {
     //(`word1` first). As `word1` and `word2` can have different lengths, our while loop stops merging once we reach the
     //end of either `word1` or `word2`. As it is still possible for characters to remain, we merge any remaining
     //characters in either `word1` or `word2` into `merged` and return it.
-    static func mergeAlternately(_ word1: String, _ word2: String) -> String {
+    func mergeAlternately(_ word1: String, _ word2: String) -> String {
         let word1 = Array(word1)
         let word2 = Array(word2)
         

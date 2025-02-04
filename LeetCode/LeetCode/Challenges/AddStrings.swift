@@ -26,7 +26,7 @@ struct AddStrings {
     //of our ongoing `result` string
     //
     //Similar to: https://leetcode.com/problems/add-two-numbers/
-    static func addStrings(_ num1: String, _ num2: String) -> String {
+    func addStrings(_ num1: String, _ num2: String) -> String {
         guard num1 != "0" else {
             return num2
         }

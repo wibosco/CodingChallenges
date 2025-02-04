@@ -16,7 +16,7 @@ final class SignOfTheProductOfAnArrayTests: XCTestCase {
     func test_A() {
         let nums = [-1, -2, -3, -4, 3, 2, 1]
         
-        let result = SignOfTheProductOfAnArray.arraySign(nums)
+        let result = SignOfTheProductOfAnArray().arraySign(nums)
         
         XCTAssertEqual(result, 1)
     }
@@ -24,7 +24,7 @@ final class SignOfTheProductOfAnArrayTests: XCTestCase {
     func test_B() {
         let nums = [1, 5, 0, 2, -3]
         
-        let result = SignOfTheProductOfAnArray.arraySign(nums)
+        let result = SignOfTheProductOfAnArray().arraySign(nums)
         
         XCTAssertEqual(result, 0)
     }
@@ -32,7 +32,7 @@ final class SignOfTheProductOfAnArrayTests: XCTestCase {
     func test_C() {
         let nums = [-1, 1, -1, 1, -1]
         
-        let result = SignOfTheProductOfAnArray.arraySign(nums)
+        let result = SignOfTheProductOfAnArray().arraySign(nums)
         
         XCTAssertEqual(result, -1)
     }

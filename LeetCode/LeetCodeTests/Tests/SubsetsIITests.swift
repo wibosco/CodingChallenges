@@ -16,7 +16,7 @@ final class SubsetsIITests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 2]
         
-        let subsets = SubsetsII.subsetsWithDup(nums)
+        let subsets = SubsetsII().subsetsWithDup(nums)
         
         let expectedSubsets = [[], [1], [1, 2], [1, 2, 2], [2], [2, 2]]
         
@@ -31,7 +31,7 @@ final class SubsetsIITests: XCTestCase {
     func test_B() {
         let nums = [0]
         
-        let subsets = SubsetsII.subsetsWithDup(nums)
+        let subsets = SubsetsII().subsetsWithDup(nums)
         
         let expectedSubsets = [[], [0]]
         
@@ -46,7 +46,7 @@ final class SubsetsIITests: XCTestCase {
     func test_C() {
         let nums = [4, 4, 4, 1, 4]
         
-        let subsets = SubsetsII.subsetsWithDup(nums)
+        let subsets = SubsetsII().subsetsWithDup(nums)
         
         let expectedSubsets = [[], [1], [1, 4], [1, 4, 4], [1, 4, 4, 4], [1, 4, 4, 4, 4], [4], [4, 4], [4, 4, 4], [4, 4, 4, 4]]
         

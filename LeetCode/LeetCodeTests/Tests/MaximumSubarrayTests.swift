@@ -17,7 +17,7 @@ final class MaximumSubarrayTests: XCTestCase {
     func test_A() {
         let nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
         
-        let result = MaximumSubarray.maxSubArray(nums)
+        let result = MaximumSubarray().maxSubArray(nums)
         
         XCTAssertEqual(result, 6)
     }
@@ -25,7 +25,7 @@ final class MaximumSubarrayTests: XCTestCase {
     func test_B() {
         let nums = [1]
         
-        let result = MaximumSubarray.maxSubArray(nums)
+        let result = MaximumSubarray().maxSubArray(nums)
         
         XCTAssertEqual(result, 1)
     }
@@ -33,7 +33,7 @@ final class MaximumSubarrayTests: XCTestCase {
     func test_C() {
         let nums = [5, 4, -1, 7, 8]
         
-        let result = MaximumSubarray.maxSubArray(nums)
+        let result = MaximumSubarray().maxSubArray(nums)
         
         XCTAssertEqual(result, 23)
     }

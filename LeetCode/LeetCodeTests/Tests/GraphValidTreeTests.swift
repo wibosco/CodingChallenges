@@ -21,7 +21,7 @@ final class GraphValidTreeTests: XCTestCase {
                      [0, 3],
                      [1, 4]]
         
-        let result = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree().validTree(n, edges)
         
         XCTAssertTrue(result)
     }
@@ -34,7 +34,7 @@ final class GraphValidTreeTests: XCTestCase {
                      [1, 3],
                      [1, 4]]
         
-        let result = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree().validTree(n, edges)
         
         XCTAssertFalse(result)
     }
@@ -45,7 +45,7 @@ final class GraphValidTreeTests: XCTestCase {
                      [1, 2],
                      [3, 4]]
         
-        let result = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree().validTree(n, edges)
         
         XCTAssertFalse(result)
     }
@@ -55,7 +55,7 @@ final class GraphValidTreeTests: XCTestCase {
         let edges = [[0, 1],
                      [1, 2]]
         
-        let result = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree().validTree(n, edges)
         
         XCTAssertFalse(result)
     }
@@ -64,7 +64,7 @@ final class GraphValidTreeTests: XCTestCase {
         let n = 2
         let edges = [[1, 0]]
         
-        let result = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree().validTree(n, edges)
         
         XCTAssertTrue(result)
     }
@@ -76,7 +76,7 @@ final class GraphValidTreeTests: XCTestCase {
                      [1, 4],
                      [2, 3]]
         
-        let result = GraphValidTree.validTree(n, edges)
+        let result = GraphValidTree().validTree(n, edges)
         
         XCTAssertFalse(result)
     }

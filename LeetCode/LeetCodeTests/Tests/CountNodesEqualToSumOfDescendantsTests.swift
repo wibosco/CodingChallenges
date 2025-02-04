@@ -17,7 +17,7 @@ final class CountNodesEqualToSumOfDescendantsTests: XCTestCase {
         let data = [10,3,4,2,1]
         let root = TreeNode.deserialize(data)
         
-        let result = CountNodesEqualToSumOfDescendants.equalToDescendants(root)
+        let result = CountNodesEqualToSumOfDescendants().equalToDescendants(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class CountNodesEqualToSumOfDescendantsTests: XCTestCase {
         let data = [2,3,nil,2,nil]
         let root = TreeNode.deserialize(data)
         
-        let result = CountNodesEqualToSumOfDescendants.equalToDescendants(root)
+        let result = CountNodesEqualToSumOfDescendants().equalToDescendants(root)
         
         XCTAssertEqual(result, 0)
     }
@@ -35,7 +35,7 @@ final class CountNodesEqualToSumOfDescendantsTests: XCTestCase {
         let data = [0]
         let root = TreeNode.deserialize(data)
         
-        let result = CountNodesEqualToSumOfDescendants.equalToDescendants(root)
+        let result = CountNodesEqualToSumOfDescendants().equalToDescendants(root)
         
         XCTAssertEqual(result, 1)
     }

@@ -20,7 +20,7 @@ struct SumRootToLeafNumbers {
     //Using DFS, we traverse our tree to each leaf node, at which point we know the full `value` and can return that value. We then
     //unwind our call stack and sum up the left and right branches of each node that we unwind to until eventually getting to the root
     //node where we can return the total sum.
-    static func sumNumbers(_ root: TreeNode?) -> Int {
+    func sumNumbers(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -28,7 +28,7 @@ struct SumRootToLeafNumbers {
         return dfs(root, 0)
     }
     
-    private static func dfs(_ node: TreeNode?, _ value: Int) -> Int {
+    private func dfs(_ node: TreeNode?, _ value: Int) -> Int {
         guard let node = node else {
             return 0
         }
@@ -58,7 +58,7 @@ struct SumRootToLeafNumbers {
     //
     //N.B. we have to be careful not to accidentally count each leaf nodes value twice by letting our DFS method take an optional node
     //and return `newValue` inside a guard checking for `nil` (as I did the first time I wrote the DFS method).
-    static func sumNumbersInOut(_ root: TreeNode?) -> Int {
+    func sumNumbersInOut(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -70,7 +70,7 @@ struct SumRootToLeafNumbers {
         return sum
     }
     
-    private static func dfsInOut(_ node: TreeNode, _ value: Int, _ sum: inout Int) {
+    private func dfsInOut(_ node: TreeNode, _ value: Int, _ sum: inout Int) {
         let newValue = (value * 10) + node.val
         
         if node.left == nil && node.right == nil { //is a leaf node?

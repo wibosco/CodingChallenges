@@ -17,7 +17,7 @@ final class LongestRepeatingCharacterReplacementTests: XCTestCase {
         let s = "ABAB"
         let k = 2
         
-        let result = LongestRepeatingCharacterReplacement.characterReplacement(s, k)
+        let result = LongestRepeatingCharacterReplacement().characterReplacement(s, k)
         
         XCTAssertEqual(result, 4)
     }
@@ -26,7 +26,7 @@ final class LongestRepeatingCharacterReplacementTests: XCTestCase {
         let s = "AABABBA"
         let k = 1
         
-        let result = LongestRepeatingCharacterReplacement.characterReplacement(s, k)
+        let result = LongestRepeatingCharacterReplacement().characterReplacement(s, k)
         
         XCTAssertEqual(result, 4)
     }
@@ -35,7 +35,7 @@ final class LongestRepeatingCharacterReplacementTests: XCTestCase {
         let s = "GGAAAABACCBBA"
         let k = 2
         
-        let result = LongestRepeatingCharacterReplacement.characterReplacement(s, k)
+        let result = LongestRepeatingCharacterReplacement().characterReplacement(s, k)
         
         XCTAssertEqual(result, 7)
     }

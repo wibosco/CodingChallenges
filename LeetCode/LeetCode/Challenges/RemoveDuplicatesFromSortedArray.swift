@@ -46,7 +46,7 @@ struct RemoveDuplicatesFromSortedArray {
     //(Just 5 iterations as `fast` starts at 1)
     //
     //NB: It's important to stress here that we override values and don't swap them
-    static func removeDuplicates(_ nums: inout [Int]) -> Int {
+    func removeDuplicates(_ nums: inout [Int]) -> Int {
         guard nums.count > 1 else {
             return nums.count
         }

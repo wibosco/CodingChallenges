@@ -17,7 +17,7 @@ final class ShortestBridgeTests: XCTestCase {
         let grid = [[0,1],
                     [1,0]]
         
-        let result = ShortestBridge.shortestBridge(grid)
+        let result = ShortestBridge().shortestBridge(grid)
         
         XCTAssertEqual(result, 1)
     }
@@ -27,7 +27,7 @@ final class ShortestBridgeTests: XCTestCase {
                     [0,0,0],
                     [0,0,1]]
         
-        let result = ShortestBridge.shortestBridge(grid)
+        let result = ShortestBridge().shortestBridge(grid)
         
         XCTAssertEqual(result, 2)
     }
@@ -39,7 +39,7 @@ final class ShortestBridgeTests: XCTestCase {
                     [1,0,0,0,1],
                     [1,1,1,1,1]]
         
-        let result = ShortestBridge.shortestBridge(grid)
+        let result = ShortestBridge().shortestBridge(grid)
         
         XCTAssertEqual(result, 1)
     }

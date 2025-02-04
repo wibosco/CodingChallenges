@@ -17,7 +17,7 @@ final class LongestZigZagPathInABinaryTreeTests: XCTestCase {
         let data = [1,nil,1,1,1,nil,nil,1,1,nil,1,nil,nil,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = LongestZigZagPathInABinaryTree.longestZigZag(root)
+        let result = LongestZigZagPathInABinaryTree().longestZigZag(root)
         
         XCTAssertEqual(result, 3)
     }
@@ -26,7 +26,7 @@ final class LongestZigZagPathInABinaryTreeTests: XCTestCase {
         let data = [1,1,1,nil,1,nil,nil,1,1,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = LongestZigZagPathInABinaryTree.longestZigZag(root)
+        let result = LongestZigZagPathInABinaryTree().longestZigZag(root)
         
         XCTAssertEqual(result, 4)
     }
@@ -35,7 +35,7 @@ final class LongestZigZagPathInABinaryTreeTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = LongestZigZagPathInABinaryTree.longestZigZag(root)
+        let result = LongestZigZagPathInABinaryTree().longestZigZag(root)
         
         XCTAssertEqual(result, 0)
     }

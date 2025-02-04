@@ -33,7 +33,7 @@ struct LongestPalindromicSubstring {
     //N.B. `a` is considered a palindrome so the below solution accounts for that.
     //
     //Similar to: https://leetcode.com/problems/palindromic-substrings/
-    static func longestPalindrome(_ s: String) -> String {
+    func longestPalindrome(_ s: String) -> String {
         guard s.count > 1 else {
             return s
         }
@@ -49,7 +49,7 @@ struct LongestPalindromicSubstring {
         return String(longest)
     }
 
-    private static func setLongestPalindrome(_ characters: [Character], _ longest: inout [Character], _ left: Int, _ right: Int) {
+    private func setLongestPalindrome(_ characters: [Character], _ longest: inout [Character], _ left: Int, _ right: Int) {
         var left = left
         var right = right
 
@@ -80,7 +80,7 @@ struct LongestPalindromicSubstring {
     //Brute force generate all possible in-order combinations of the characters in `s` by iterating through `s` forwards and comparing it
     //against all characters that come after in reverse order. If we find a palindrome we check it's length against the longest we've
     //found so far and store it if it is longer.
-    static func longestPalindromeBruteForce(_ s: String) -> String {
+    func longestPalindromeBruteForce(_ s: String) -> String {
         let characters = Array(s)
         var longestPalindrome = Array(characters[...0])
 
@@ -102,7 +102,7 @@ struct LongestPalindromicSubstring {
         return String(longestPalindrome)
     }
     
-    private static func isPalindrome(_ characters: [Character]) -> Bool {
+    private func isPalindrome(_ characters: [Character]) -> Bool {
         var left = 0
         var right = (characters.count - 1)
         

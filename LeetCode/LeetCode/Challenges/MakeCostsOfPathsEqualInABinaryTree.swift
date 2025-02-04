@@ -28,7 +28,7 @@ struct MakeCostsOfPathsEqualInABinaryTree {
     //nodes need to be equal. So by equalising the child nodes to the greater value of those nodes we make the minimum
     //number of changes at that level. This also ensures that the path that doesn't need to change isn't changed. We
     //repeat this process as the recursive stack unwinds until we are back at root.
-    static func minIncrements(_ n: Int, _ cost: [Int]) -> Int {
+    func minIncrements(_ n: Int, _ cost: [Int]) -> Int {
         var increments = 0
         
         _ = dfs(cost, 0, &increments)
@@ -36,7 +36,7 @@ struct MakeCostsOfPathsEqualInABinaryTree {
         return increments
     }
     
-    private static func dfs(_ graph: [Int], _ index: Int, _ increments: inout Int) -> Int {
+    private func dfs(_ graph: [Int], _ index: Int, _ increments: inout Int) -> Int {
         guard index < graph.count else {
             return 0
         }

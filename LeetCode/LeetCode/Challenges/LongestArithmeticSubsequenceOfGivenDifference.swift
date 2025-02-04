@@ -15,7 +15,7 @@ struct LongestArithmeticSubsequenceOfGivenDifference {
     //subsequence
     //array
     //
-    static func longestSubsequence(_ arr: [Int], _ difference: Int) -> Int {
+    func longestSubsequence(_ arr: [Int], _ difference: Int) -> Int {
         var dp = [Int: Int]()
         var longestLength = 1
         
@@ -43,7 +43,7 @@ struct LongestArithmeticSubsequenceOfGivenDifference {
     //
     //Solution Description:
     //
-    static func longestSubsequenceMemo(_ arr: [Int], _ difference: Int) -> Int {
+    func longestSubsequenceMemo(_ arr: [Int], _ difference: Int) -> Int {
         var longestLength = 1
         var memo = [Int: Int]()
         
@@ -55,7 +55,7 @@ struct LongestArithmeticSubsequenceOfGivenDifference {
         return max(longestLength, 1)
     }
     
-    private static func dfs(_ arr: [Int], _ difference: Int, _ currentIndex: Int, _ memo: inout [Int: Int]) -> Int {
+    private func dfs(_ arr: [Int], _ difference: Int, _ currentIndex: Int, _ memo: inout [Int: Int]) -> Int {
         guard currentIndex < arr.count else {
             return 1
         }

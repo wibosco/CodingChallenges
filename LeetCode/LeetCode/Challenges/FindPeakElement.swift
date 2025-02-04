@@ -23,7 +23,7 @@ struct FindPeakElement {
     //down or flat. Once we know this trend we can move our boundaries accordingly - move left if the right neighbour is lower
     //(we don't just return as while `mid` is greater, it itself might be part of a downward slope), move right if the right
     //neighbour is equal or greater than. Eventually we narrow down on an actual peak and can return it as the `left` index.
-    static func findPeakElement(_ nums: [Int]) -> Int {
+    func findPeakElement(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {
             return 0
         }
@@ -51,7 +51,7 @@ struct FindPeakElement {
     //
     //Solution Description:
     //Loop through `nums` comparing previous num with current num and current num with next num to find the start of a peak
-    static func findPeakElementLinear(_ nums: [Int]) -> Int {
+    func findPeakElementLinear(_ nums: [Int]) -> Int {
         var nums = nums
         
         nums.append(Int(Int32.min))

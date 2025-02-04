@@ -19,7 +19,7 @@ final class NumberOfEnclavesTests: XCTestCase {
                     [0,1,1,0],
                     [0,0,0,0]]
         
-        let result = NumberOfEnclaves.numEnclaves(grid)
+        let result = NumberOfEnclaves().numEnclaves(grid)
         
         XCTAssertEqual(result, 3)
     }
@@ -30,7 +30,7 @@ final class NumberOfEnclavesTests: XCTestCase {
                     [0,0,1,0],
                     [0,0,0,0]]
         
-        let result = NumberOfEnclaves.numEnclaves(grid)
+        let result = NumberOfEnclaves().numEnclaves(grid)
         
         XCTAssertEqual(result, 0)
     }

@@ -20,7 +20,7 @@ struct MinimumValueToGetPositive {
     //The min starting value we want is 1 larger than the min step-by-step sum. So we iterate through `nums` adding each
     //element to the running total and comparing it against `minValue`. If we find a smaller value we update `minValue`;
     //else we continue on.
-    static func minStartValue(_ nums: [Int]) -> Int {
+    func minStartValue(_ nums: [Int]) -> Int {
         var minValue = 0
         var runningTotal = 0
         for num in nums {
@@ -41,7 +41,7 @@ struct MinimumValueToGetPositive {
     //While `nums` is unsorted, our starting values range is sorted (constraint is that `nums` can only contain values
     //from -100 to 100 so we have our range). Using this we can perform a binary search on the starting values to
     //determine which starting value is the minimum.
-    static func minStartValueBinarySearch(_ nums: [Int]) -> Int {
+    func minStartValueBinarySearch(_ nums: [Int]) -> Int {
         var left = 1
         var right = nums.count * 100 + 1 //nums have a range of -100 to 100
         
@@ -72,7 +72,7 @@ struct MinimumValueToGetPositive {
     //Using a start value of 1, sum it with each element in `nums` using that result as the next value to be summed
     //with the next element of `nums`. If the result is at any time less than 1 then end the iteration and increment
     //the starting number by 1. Once you can make it through `nums` and stay above 0, you have the minimum start value.
-    static func minStartValueBruteForce(_ nums: [Int]) -> Int {
+    func minStartValueBruteForce(_ nums: [Int]) -> Int {
         var i = 1
     outerloop: while i < Int.max {
         var runningTotal = i

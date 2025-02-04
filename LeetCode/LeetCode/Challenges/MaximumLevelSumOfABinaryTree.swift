@@ -21,7 +21,7 @@ struct MaximumLevelSumOfABinaryTree {
     //Using BFS we perform a level-by-level traversal of the tree. At each level we calculate the sum of all nodes in that level
     //and then compare that local sum with the overall `maxSum`. If the local sum is larger then we replace `maxSum` with that
     //local sum and update `levelWithMaxSum` to be the current level. We repeat this for all levels in the tree.
-    static func maxLevelSum(_ root: TreeNode?) -> Int {
+    func maxLevelSum(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return -1
         }

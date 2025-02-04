@@ -49,7 +49,7 @@ struct ImplementStrStr {
     //See: https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
     //See: https://www.youtube.com/watch?v=V5-7GzOfADQ
     //lps - longest prefix substring
-    static func strStr(_ haystack: String, _ needle: String) -> Int {
+    func strStr(_ haystack: String, _ needle: String) -> Int {
         guard !needle.isEmpty else {
             return 0
         }
@@ -118,7 +118,7 @@ struct ImplementStrStr {
     //Using two pointers we traverse through both `haystack` and `needle` and compare the characters of `haystack` against the relevant
     //character of `needle` i.e. if we have previously matched the first character of `needle` we compare the next character of `haystack`
     //against the second character of `needle`. If at any time we get a mismatch we reset `n` to 0.
-    static func strStrNestedLoops(_ haystack: String, _ needle: String) -> Int {
+    func strStrNestedLoops(_ haystack: String, _ needle: String) -> Int {
         let haystack = Array(haystack)
         let needle = Array(needle)
             

@@ -18,7 +18,7 @@ final class NextGreaterElementITests: XCTestCase {
         let nums1 = [4, 1, 2]
         let nums2 = [1, 3, 4, 2]
         
-        let result = NextGreaterElementI.nextGreaterElement(nums1, nums2)
+        let result = NextGreaterElementI().nextGreaterElement(nums1, nums2)
         
         XCTAssertEqual(result, [-1, 3, -1])
     }
@@ -27,7 +27,7 @@ final class NextGreaterElementITests: XCTestCase {
         let nums1 = [2, 4]
         let nums2 = [1, 2, 3, 4]
         
-        let result = NextGreaterElementI.nextGreaterElement(nums1, nums2)
+        let result = NextGreaterElementI().nextGreaterElement(nums1, nums2)
         
         XCTAssertEqual(result, [3, -1])
     }

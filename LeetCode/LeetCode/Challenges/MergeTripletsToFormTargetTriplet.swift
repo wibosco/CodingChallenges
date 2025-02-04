@@ -21,7 +21,7 @@ struct MergeTripletsToFormTargetTriplet {
     //create each combination of `triplets` we instead only to find the exact values of `target` in the same position of
     //those filtered/valid triplets. Finding those exact matches tells us that we would eventually manage to combine the
     //triplets into `target`.
-    static func mergeTriplets(_ triplets: [[Int]], _ target: [Int]) -> Bool {
+    func mergeTriplets(_ triplets: [[Int]], _ target: [Int]) -> Bool {
         var foundFirstMatch = false
         var foundSecondMatch = false
         var foundThirdMatch = false

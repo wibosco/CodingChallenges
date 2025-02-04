@@ -13,7 +13,7 @@ struct ValidPalindrome {
     
     //Time: O(n)
     //two pointers
-    static func isPalindrome(_ s: String) -> Bool {
+    func isPalindrome(_ s: String) -> Bool {
         let str = s.lowercased().filter { $0.isLetter || $0.isNumber }
         let characters = Array(str)
         

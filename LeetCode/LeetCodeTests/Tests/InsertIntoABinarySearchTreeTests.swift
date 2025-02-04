@@ -18,7 +18,7 @@ final class InsertIntoABinarySearchTreeTests: XCTestCase {
         let data = [4,2,7,1,3]
         let root = TreeNode.deserialize(data)
         
-        let result = InsertIntoABinarySearchTree.insertIntoBST(root, val)
+        let result = InsertIntoABinarySearchTree().insertIntoBST(root, val)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [4,2,7,1,3,5])
@@ -29,7 +29,7 @@ final class InsertIntoABinarySearchTreeTests: XCTestCase {
         let data = [40,20,60,10,30,50,70]
         let root = TreeNode.deserialize(data)
         
-        let result = InsertIntoABinarySearchTree.insertIntoBST(root, val)
+        let result = InsertIntoABinarySearchTree().insertIntoBST(root, val)
         let values = TreeNode.serialize(result)
         
         XCTAssertEqual(values, [40,20,60,10,30,50,70,nil,nil,25])

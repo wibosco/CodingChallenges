@@ -18,7 +18,7 @@ final class CarFleetTests: XCTestCase {
         let position = [10, 8, 0, 5, 3]
         let speed = [2, 4, 1, 1, 3]
         
-        let result = CarFleet.carFleet(target, position, speed)
+        let result = CarFleet().carFleet(target, position, speed)
         
         XCTAssertEqual(result, 3)
     }
@@ -28,7 +28,7 @@ final class CarFleetTests: XCTestCase {
         let position = [0, 2, 4]
         let speed = [4, 2, 1]
         
-        let result = CarFleet.carFleet(target, position, speed)
+        let result = CarFleet().carFleet(target, position, speed)
         
         XCTAssertEqual(result, 1)
     }
@@ -38,7 +38,7 @@ final class CarFleetTests: XCTestCase {
         let position = [0, 2, 4]
         let speed = [4, 2, 1]
         
-        let result = CarFleet.carFleet(target, position, speed)
+        let result = CarFleet().carFleet(target, position, speed)
         
         XCTAssertEqual(result, 1)
     }
@@ -48,7 +48,7 @@ final class CarFleetTests: XCTestCase {
         let position = [6, 8]
         let speed = [3, 2]
         
-        let result = CarFleet.carFleet(target, position, speed)
+        let result = CarFleet().carFleet(target, position, speed)
         
         XCTAssertEqual(result, 2)
     }
@@ -58,7 +58,7 @@ final class CarFleetTests: XCTestCase {
         let position = [0, 4, 2]
         let speed = [2, 1, 3]
         
-        let result = CarFleet.carFleet(target, position, speed)
+        let result = CarFleet().carFleet(target, position, speed)
         
         XCTAssertEqual(result, 1)
     }

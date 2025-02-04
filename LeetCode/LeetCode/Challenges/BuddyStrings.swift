@@ -26,7 +26,7 @@ struct BuddyStrings {
     //through both `sFrequency` and `goalFrequency` and ensure that everything matches. There is an edge case here where
     //`aa` == `aa` should return true so below we handle this through checking that there are no mismatches but there are
     //duplicates that can be switched to keep `s` matching `goal`
-    static func buddyStrings(_ s: String, _ goal: String) -> Bool {
+    func buddyStrings(_ s: String, _ goal: String) -> Bool {
         guard s.count == goal.count else {
             return false
         }

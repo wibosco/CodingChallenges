@@ -19,7 +19,7 @@ struct ValidAnagram {
     //Solution Description:
     //Iterate through `s` and `t` and store the frequency of each character in `sFrequency` and `tFrequency` respectively.
     //Compare `sFrequency` and `tFrequency` to check if they match.
-    static func isAnagram(_ s: String, _ t: String) -> Bool {
+    func isAnagram(_ s: String, _ t: String) -> Bool {
         guard s.count == t.count else {
             return false
         }
@@ -47,7 +47,7 @@ struct ValidAnagram {
     //Solution Description:
     //Iterate through `s` and `t` and store the frequency of each character in `sFrequency` and `tFrequency` respectively.
     //Compare `sFrequency` and `tFrequency` to check if they match.
-    static func isAnagram3Loops(_ s: String, _ t: String) -> Bool {
+    func isAnagram3Loops(_ s: String, _ t: String) -> Bool {
         guard s.count == t.count else {
             return false
         }

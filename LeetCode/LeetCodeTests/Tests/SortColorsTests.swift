@@ -16,7 +16,7 @@ final class SortColorsTests: XCTestCase {
     func test_A() {
         var nums = [2, 0, 2, 1, 1, 0]
         
-        SortColors.sortColors(&nums)
+        SortColors().sortColors(&nums)
         
         XCTAssertEqual(nums, [0, 0, 1, 1, 2, 2])
     }
@@ -24,7 +24,7 @@ final class SortColorsTests: XCTestCase {
     func test_B() {
         var nums = [2, 0, 1]
         
-        SortColors.sortColors(&nums)
+        SortColors().sortColors(&nums)
         
         XCTAssertEqual(nums, [0, 1, 2])
     }

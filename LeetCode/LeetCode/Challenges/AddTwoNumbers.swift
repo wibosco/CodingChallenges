@@ -28,7 +28,7 @@ final class AddTwoNumbers {
     //as the new list progresses we never lose the head of that list.
     //
     //Similar to: https://leetcode.com/problems/add-strings/
-    static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         var l1: ListNode? = l1
         var l2: ListNode? = l2
         

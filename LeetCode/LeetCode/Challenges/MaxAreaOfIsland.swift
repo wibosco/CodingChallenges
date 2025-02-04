@@ -26,7 +26,7 @@ struct MaxAreaOfIsland {
     //We traverse through `grid` checking if each index contains land (1). If that index is land then we perform a DFS
     //from that index to find all connected land indexes. We use relative indexing to determine where we can move to
     //during DFS. To avoid visiting an index multiple times we set the value of that index to water (0).
-    static func maxAreaOfIsland(_ grid: [[Int]]) -> Int {
+    func maxAreaOfIsland(_ grid: [[Int]]) -> Int {
         var largest = 0
         var grid = grid
         
@@ -43,7 +43,7 @@ struct MaxAreaOfIsland {
         return largest
     }
     
-    private static func search(_ grid: inout [[Int]], _ row: Int, _ column: Int, _ current: inout Int) {
+    private func search(_ grid: inout [[Int]], _ row: Int, _ column: Int, _ current: inout Int) {
         guard row >= 0, row < grid.count else {
             return
         }
@@ -83,7 +83,7 @@ struct MaxAreaOfIsland {
     //from that index to find all connected land indexes. We use relative indexing to determine where we can move to
     //during DFS. To avoid visiting an index multiple times we store each index that we visit and skip it if we come
     //across that index again.
-    static func maxAreaOfIslandAlt(_ grid: [[Int]]) -> Int {
+    func maxAreaOfIslandAlt(_ grid: [[Int]]) -> Int {
         var largest = 0
         var visited = Set<[Int]>()
         
@@ -104,7 +104,7 @@ struct MaxAreaOfIsland {
         return largest
     }
     
-    private static func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>, _ current: inout Int) {
+    private func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>, _ current: inout Int) {
         guard !visited.contains([row, column]) else {
             return
         }
@@ -120,7 +120,7 @@ struct MaxAreaOfIsland {
         }
     }
     
-    private static func landNeighbors(_ grid: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>) -> [[Int]] {
+    private func landNeighbors(_ grid: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>) -> [[Int]] {
         let relativeIndex = [[0, -1], [-1, 0], [1, 0], [0, 1]]
         
         var neighbors = [[Int]]()

@@ -16,7 +16,7 @@ final class SingleElementInASortedArrayTests: XCTestCase {
     func test_A() {
         let nums = [1, 1, 2, 3, 3, 4, 4, 8, 8]
         
-        let result = SingleElementInASortedArray.singleNonDuplicate(nums)
+        let result = SingleElementInASortedArray().singleNonDuplicate(nums)
         
         XCTAssertEqual(result, 2)
     }
@@ -24,7 +24,7 @@ final class SingleElementInASortedArrayTests: XCTestCase {
     func test_B() {
         let nums = [3, 3, 7, 7, 10, 11, 11]
         
-        let result = SingleElementInASortedArray.singleNonDuplicate(nums)
+        let result = SingleElementInASortedArray().singleNonDuplicate(nums)
         
         XCTAssertEqual(result, 10)
     }
@@ -32,7 +32,7 @@ final class SingleElementInASortedArrayTests: XCTestCase {
     func test_C() {
         let nums = [1]
         
-        let result = SingleElementInASortedArray.singleNonDuplicate(nums)
+        let result = SingleElementInASortedArray().singleNonDuplicate(nums)
         
         XCTAssertEqual(result, 1)
     }
@@ -40,7 +40,7 @@ final class SingleElementInASortedArrayTests: XCTestCase {
     func test_D() {
         let nums = [1, 1, 2]
         
-        let result = SingleElementInASortedArray.singleNonDuplicate(nums)
+        let result = SingleElementInASortedArray().singleNonDuplicate(nums)
         
         XCTAssertEqual(result, 2)
     }
@@ -48,7 +48,7 @@ final class SingleElementInASortedArrayTests: XCTestCase {
     func test_E() {
         let nums = [1, 2, 2, 3, 3]
         
-        let result = SingleElementInASortedArray.singleNonDuplicate(nums)
+        let result = SingleElementInASortedArray().singleNonDuplicate(nums)
         
         XCTAssertEqual(result, 1)
     }
@@ -56,7 +56,7 @@ final class SingleElementInASortedArrayTests: XCTestCase {
     func test_F() {
         let nums = [2, 2, 3, 3, 4]
         
-        let result = SingleElementInASortedArray.singleNonDuplicate(nums)
+        let result = SingleElementInASortedArray().singleNonDuplicate(nums)
         
         XCTAssertEqual(result, 4)
     }

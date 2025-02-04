@@ -19,7 +19,7 @@ struct UnivaluedBinaryTree {
     //Solution Description:
     //Using DFS, we traverse through the tree comparing the nodes we encounter with the value of the root node. If the current
     //nodes value and the root nodes value don't match we return false else we continue on the check the next nodes down.
-    static func isUnivalTree(_ root: TreeNode?) -> Bool {
+    func isUnivalTree(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return false
         }
@@ -27,7 +27,7 @@ struct UnivaluedBinaryTree {
         return dfs(root, root.val)
     }
     
-    private static func dfs(_ node: TreeNode?, _ matcher: Int) -> Bool {
+    private func dfs(_ node: TreeNode?, _ matcher: Int) -> Bool {
         guard let node = node else {
             return true
         }

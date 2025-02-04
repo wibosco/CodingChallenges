@@ -21,7 +21,7 @@ final class NumberOfIslandsTests: XCTestCase {
             ["1", "1", "0", "0", "0"],
             ["0", "0", "0", "0", "0"]]
         
-        let result = NumberOfIslands.numIslands(grid)
+        let result = NumberOfIslands().numIslands(grid)
         
         XCTAssertEqual(result, 1)
     }
@@ -33,7 +33,7 @@ final class NumberOfIslandsTests: XCTestCase {
             ["0", "0", "1", "0", "0"],
             ["0", "0", "0", "1", "1"]]
         
-        let result = NumberOfIslands.numIslands(grid)
+        let result = NumberOfIslands().numIslands(grid)
         
         XCTAssertEqual(result, 3)
     }
@@ -44,7 +44,7 @@ final class NumberOfIslandsTests: XCTestCase {
             ["0", "1", "0"],
             ["1", "1", "1"]]
         
-        let result = NumberOfIslands.numIslands(grid)
+        let result = NumberOfIslands().numIslands(grid)
         
         XCTAssertEqual(result, 1)
     }
@@ -71,7 +71,7 @@ final class NumberOfIslandsTests: XCTestCase {
                     ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
                     ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]]
         
-        let result = NumberOfIslands.numIslands(grid)
+        let result = NumberOfIslands().numIslands(grid)
         
         XCTAssertEqual(result, 1)
     }

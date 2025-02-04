@@ -23,7 +23,7 @@ struct PathSum {
     //node, a check is performed to determine if sum is equal to 0 i.e. the path does indeed equal the target.
     //
     //NB. no need for a helper method as zero acts as the target.
-    static func hasPathSum(_ root: TreeNode?, _ targetSum: Int) -> Bool {
+    func hasPathSum(_ root: TreeNode?, _ targetSum: Int) -> Bool {
         guard let root = root else {
             return false
         }
@@ -46,11 +46,11 @@ struct PathSum {
     //Solution Description:
     //Using DFS move through the tree, adding the nodes value together at each stage. Once we get to a leaf node, a check
     //if performed to determine if sum is equal to the target.
-    static func hasPathSumAddition(_ root: TreeNode?, _ targetSum: Int) -> Bool {
+    func hasPathSumAddition(_ root: TreeNode?, _ targetSum: Int) -> Bool {
         return hasPathSum(root, 0, targetSum)
     }
     
-    private static func hasPathSum(_ root: TreeNode?, _ runningTotal: Int, _ targetSum: Int) -> Bool {
+    private func hasPathSum(_ root: TreeNode?, _ runningTotal: Int, _ targetSum: Int) -> Bool {
         guard let root = root else {
             return false
         }

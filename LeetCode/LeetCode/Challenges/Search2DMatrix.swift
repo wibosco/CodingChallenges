@@ -23,7 +23,7 @@ struct Search2DMatrix {
     //search by searching the first column and selecting the row that the target might be in or returning true if we happen
     //to find the target in that first column. Once we now which row to search we use binary search again to search that row.
     //If we find the target we return true; if we don't find the target and exhaust the search space we return false
-    static func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
+    func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
         var columnLeft = 0
         var columnRight = matrix.count - 1
         
@@ -71,7 +71,7 @@ struct Search2DMatrix {
     //Solution Description:
     //As the matrix is sorted we can merge the rows into a single array and perform a binary search on single array. By using
     //binary search we are able to discard half the search space every time we don't find the target
-    static func searchMatrixMerge(_ matrix: [[Int]], _ target: Int) -> Bool {
+    func searchMatrixMerge(_ matrix: [[Int]], _ target: Int) -> Bool {
         var array = [Int]()
         for row in matrix { // O(n)
             array.append(contentsOf: row) //create one array from all rows

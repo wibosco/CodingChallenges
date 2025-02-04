@@ -19,7 +19,7 @@ final class BinaryTreeLevelOrderTraversalTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLevelOrderTraversal.levelOrder(root)
+        let result = BinaryTreeLevelOrderTraversal().levelOrder(root)
         
         XCTAssertEqual(result, [[3], [9, 20], [15, 7]])
     }
@@ -29,7 +29,7 @@ final class BinaryTreeLevelOrderTraversalTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLevelOrderTraversal.levelOrder(root)
+        let result = BinaryTreeLevelOrderTraversal().levelOrder(root)
         
         XCTAssertEqual(result, [[1]])
     }
@@ -39,7 +39,7 @@ final class BinaryTreeLevelOrderTraversalTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLevelOrderTraversal.levelOrder(root)
+        let result = BinaryTreeLevelOrderTraversal().levelOrder(root)
         
         XCTAssertEqual(result, [])
     }
@@ -49,7 +49,7 @@ final class BinaryTreeLevelOrderTraversalTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeLevelOrderTraversal.levelOrder(root)
+        let result = BinaryTreeLevelOrderTraversal().levelOrder(root)
         
         XCTAssertEqual(result, [[1], [2, 3], [4, 5]])
     }

@@ -18,7 +18,7 @@ final class NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThresholdTests
         let k = 3
         let threshold = 4
         
-        let result = NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold.numOfSubarrays(arr, k, threshold)
+        let result = NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold().numOfSubarrays(arr, k, threshold)
         
         XCTAssertEqual(result, 3)
     }
@@ -28,7 +28,7 @@ final class NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThresholdTests
         let k = 3
         let threshold = 5
         
-        let result = NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold.numOfSubarrays(arr, k, threshold)
+        let result = NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold().numOfSubarrays(arr, k, threshold)
         
         XCTAssertEqual(result, 6)
     }

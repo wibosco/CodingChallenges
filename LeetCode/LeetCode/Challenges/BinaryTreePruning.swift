@@ -22,7 +22,7 @@ struct BinaryTreePruning {
     //returning a bool here we return either the node itself or nil so that the outcome of this recursive call can be
     //immediately assign to the child property of its parent. As the callstack unwinds we repeat this process for not just
     //the node value but also each child subtree.
-    static func pruneTree(_ root: TreeNode?) -> TreeNode? {
+    func pruneTree(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else {
             return nil
         }
@@ -44,7 +44,7 @@ struct BinaryTreePruning {
     //Using DFS we traverse to the leaf nodes and then return whether or not that leaf node has a value of `1`. As the callstack
     //unwinds we repeat this process for not just the node value but also each child subtree. If a child subtree does not
     //contain at least 1 `1` we prune it.
-    static func pruneTreeDifferentMethod(_ root: TreeNode?) -> TreeNode? {
+    func pruneTreeDifferentMethod(_ root: TreeNode?) -> TreeNode? {
         if !containsOne(root) {
             return nil
         }
@@ -52,7 +52,7 @@ struct BinaryTreePruning {
         return root
     }
     
-    private static func containsOne(_ node: TreeNode?) -> Bool {
+    private func containsOne(_ node: TreeNode?) -> Bool {
         guard let node = node else {
             return false
         }

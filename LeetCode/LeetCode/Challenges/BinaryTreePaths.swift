@@ -26,7 +26,7 @@ struct BinaryTreePaths {
     //
     //N.B. A node is only considered a leaf node if it has no children nodes - a node with only one child is not a leaf
     //node.
-    static func binaryTreePaths(_ root: TreeNode?) -> [String] {
+    func binaryTreePaths(_ root: TreeNode?) -> [String] {
         guard let root = root else {
             return []
         }
@@ -39,7 +39,7 @@ struct BinaryTreePaths {
         return paths
     }
     
-    private static func dfs(_ node: TreeNode?, _ path: inout [String], _ paths: inout [String]) {
+    private func dfs(_ node: TreeNode?, _ path: inout [String], _ paths: inout [String]) {
         guard let node = node else {
             return
         }

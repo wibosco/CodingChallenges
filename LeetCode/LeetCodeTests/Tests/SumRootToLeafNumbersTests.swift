@@ -17,7 +17,7 @@ final class SumRootToLeafNumbersTests: XCTestCase {
         let data = [1,2,3]
         let root = TreeNode.deserialize(data)
         
-        let result = SumRootToLeafNumbers.sumNumbers(root)
+        let result = SumRootToLeafNumbers().sumNumbers(root)
         
         XCTAssertEqual(result, 25)
     }
@@ -26,7 +26,7 @@ final class SumRootToLeafNumbersTests: XCTestCase {
         let data = [4,9,0,5,1]
         let root = TreeNode.deserialize(data)
         
-        let result = SumRootToLeafNumbers.sumNumbers(root)
+        let result = SumRootToLeafNumbers().sumNumbers(root)
         
         XCTAssertEqual(result, 1026)
     }
@@ -35,7 +35,7 @@ final class SumRootToLeafNumbersTests: XCTestCase {
         let data = [4]
         let root = TreeNode.deserialize(data)
         
-        let result = SumRootToLeafNumbers.sumNumbers(root)
+        let result = SumRootToLeafNumbers().sumNumbers(root)
         
         XCTAssertEqual(result, 4)
     }

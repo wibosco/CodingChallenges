@@ -17,7 +17,7 @@ final class LongestArithmeticSubsequenceOfGivenDifferenceTests: XCTestCase {
         let arr = [1, 2, 3, 4]
         let difference = 1
         
-        let result = LongestArithmeticSubsequenceOfGivenDifference.longestSubsequence(arr, difference)
+        let result = LongestArithmeticSubsequenceOfGivenDifference().longestSubsequence(arr, difference)
         
         XCTAssertEqual(result, 4)
     }
@@ -26,7 +26,7 @@ final class LongestArithmeticSubsequenceOfGivenDifferenceTests: XCTestCase {
         let arr = [1, 3, 5, 7]
         let difference = 1
         
-        let result = LongestArithmeticSubsequenceOfGivenDifference.longestSubsequence(arr, difference)
+        let result = LongestArithmeticSubsequenceOfGivenDifference().longestSubsequence(arr, difference)
         
         XCTAssertEqual(result, 1)
     }
@@ -35,7 +35,7 @@ final class LongestArithmeticSubsequenceOfGivenDifferenceTests: XCTestCase {
         let arr = [1, 5, 7, 8, 5, 3, 4, 2, 1]
         let difference = -2
         
-        let result = LongestArithmeticSubsequenceOfGivenDifference.longestSubsequence(arr, difference)
+        let result = LongestArithmeticSubsequenceOfGivenDifference().longestSubsequence(arr, difference)
         
         XCTAssertEqual(result, 4)
     }

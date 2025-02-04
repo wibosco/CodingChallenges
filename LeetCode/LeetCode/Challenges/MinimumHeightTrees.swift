@@ -26,7 +26,7 @@ struct MinimumHeightTrees {
     //Bottom-up ensures that we gradually prune the tree of nodes in a level by level fashion and as a new leaf node can only be
     //created from a pruned node we are able to easily generate the next leaf nodes at each level. Eventually we end up with
     //either 1 or 2 nodes at the top that are the roots for the minimum tree.
-    static func findMinHeightTrees(_ n: Int, _ edges: [[Int]]) -> [Int] {
+    func findMinHeightTrees(_ n: Int, _ edges: [[Int]]) -> [Int] {
         guard n > 1 else {
             return [0]
         }
@@ -89,7 +89,7 @@ struct MinimumHeightTrees {
     //each level of that BFS and then compare that with the current minimum height encountered so far; if
     //it's lower or equal we replace it; if higher we skip on. The height of each tree is stored in
     //`treeHeights` to allow for easy retrieval of the minimum height once all sources have been checked.
-    static func findMinHeightTreesBFS(_ n: Int, _ edges: [[Int]]) -> [Int] {
+    func findMinHeightTreesBFS(_ n: Int, _ edges: [[Int]]) -> [Int] {
         var adjList = Array(repeating: [Int](), count: n)
         
         for edge in edges {

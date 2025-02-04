@@ -16,7 +16,7 @@ final class OptimalPartitionOfStringTests: XCTestCase {
     func test_A() {
         let s = "abacaba"
         
-        let result = OptimalPartitionOfString.partitionString(s)
+        let result = OptimalPartitionOfString().partitionString(s)
         
         XCTAssertEqual(result, 4)
     }
@@ -24,7 +24,7 @@ final class OptimalPartitionOfStringTests: XCTestCase {
     func test_B() {
         let s = "ssssss"
         
-        let result = OptimalPartitionOfString.partitionString(s)
+        let result = OptimalPartitionOfString().partitionString(s)
         
         XCTAssertEqual(result, 6)
     }

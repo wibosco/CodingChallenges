@@ -17,7 +17,7 @@ final class ValidAnagramTests: XCTestCase {
         let s = "anagram"
         let t = "nagaram"
         
-        let result = ValidAnagram.isAnagram(s, t)
+        let result = ValidAnagram().isAnagram(s, t)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class ValidAnagramTests: XCTestCase {
         let s = "rat"
         let t = "car"
         
-        let result = ValidAnagram.isAnagram(s, t)
+        let result = ValidAnagram().isAnagram(s, t)
         
         XCTAssertFalse(result)
     }

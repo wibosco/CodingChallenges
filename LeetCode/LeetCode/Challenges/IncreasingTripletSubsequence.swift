@@ -24,7 +24,7 @@ struct IncreasingTripletSubsequence {
     //include `large`. It's important to note that we want the best version of `small` and `medium` so if we encounter smaller
     //elements that fit those roles, we replace the current value with that smaller value and so increase our chances of finding
     //a triplet.
-    static func increasingTriplet(_ nums: [Int]) -> Bool {
+    func increasingTriplet(_ nums: [Int]) -> Bool {
         var small = Int.max
         var medium = Int.max
 

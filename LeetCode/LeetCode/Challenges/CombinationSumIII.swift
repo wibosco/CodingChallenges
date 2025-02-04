@@ -34,7 +34,7 @@ struct CombinationSumIII {
     //duplicates directly from that levels combinations. It's important to note that the duplicate combinations will still
     //be checked but only once with this approach so avoiding any duplicate combinations that are just out-of-order.
     //We repeat this process until all possible combinations have been tried.
-    static func combinationSum3(_ k: Int, _ n: Int) -> [[Int]] {
+    func combinationSum3(_ k: Int, _ n: Int) -> [[Int]] {
         let candidates = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         var curr = [Int]()
         var combinations = [[Int]]()
@@ -44,7 +44,7 @@ struct CombinationSumIII {
         return combinations
     }
     
-    private static func dfs(_ candidates: [Int], _ remaining: Int, _ limit: Int, _ startingIndex: Int, _ curr: inout [Int], _ combinations: inout [[Int]]) {
+    private func dfs(_ candidates: [Int], _ remaining: Int, _ limit: Int, _ startingIndex: Int, _ curr: inout [Int], _ combinations: inout [[Int]]) {
         guard remaining >= 0 else {
             return
         }

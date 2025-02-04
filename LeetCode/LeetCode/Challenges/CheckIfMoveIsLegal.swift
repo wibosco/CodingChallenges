@@ -23,7 +23,7 @@ struct CheckIfMoveIsLegal {
     //that square to determine if any pass the given criteria for a good/valid line. The search of a line happens
     //recursively until we determine if that line is good/valid. To avoid over searching, when we find one good/valid line,
     //we immediately return.
-    static func checkMove(_ board: [[Character]], _ rMove: Int, _ cMove: Int, _ color: Character) -> Bool {
+    func checkMove(_ board: [[Character]], _ rMove: Int, _ cMove: Int, _ color: Character) -> Bool {
         //up, down, left, right, upDiagonalLeft, upDiagonalRight, downDiagonalLeft, downDiagonalRight
         let relativeIndexes = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1)]
         
@@ -39,7 +39,7 @@ struct CheckIfMoveIsLegal {
         return false
     }
     
-    private static func search(_ board: [[Character]], _ r: Int, _ c: Int, _ relativeIndex: (Int, Int), _ color: Character, _ length: Int) -> Bool {
+    private func search(_ board: [[Character]], _ r: Int, _ c: Int, _ relativeIndex: (Int, Int), _ color: Character, _ length: Int) -> Bool {
         if r < 0 || r >= board.count || c < 0 || c >= board[r].count {
             return false
         }

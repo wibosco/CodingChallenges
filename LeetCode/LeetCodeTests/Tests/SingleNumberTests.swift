@@ -16,7 +16,7 @@ final class SingleNumberTests: XCTestCase {
     func test_A() {
         let nums = [2, 2, 1]
         
-        let result = SingleNumber.singleNumber(nums)
+        let result = SingleNumber().singleNumber(nums)
         
         XCTAssertEqual(result, 1)
     }
@@ -24,7 +24,7 @@ final class SingleNumberTests: XCTestCase {
     func test_B() {
         let nums = [4, 1, 2, 1, 2]
         
-        let result = SingleNumber.singleNumber(nums)
+        let result = SingleNumber().singleNumber(nums)
         
         XCTAssertEqual(result, 4)
     }
@@ -32,7 +32,7 @@ final class SingleNumberTests: XCTestCase {
     func test_C() {
         let nums = [1]
         
-        let result = SingleNumber.singleNumber(nums)
+        let result = SingleNumber().singleNumber(nums)
         
         XCTAssertEqual(result, 1)
     }
@@ -40,7 +40,7 @@ final class SingleNumberTests: XCTestCase {
     func test_D() {
         let nums = [2, 1, -2, 1, -2]
         
-        let result = SingleNumber.singleNumber(nums)
+        let result = SingleNumber().singleNumber(nums)
         
         XCTAssertEqual(result, 2)
     }

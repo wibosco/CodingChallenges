@@ -20,7 +20,7 @@ struct MaximumProductSubarray {
     //to that element. As `nums` can contain zeros, we know that for any given element, that element on it's own might be
     //the maximum or minimum product so when calculating those values, our `max` and `min` operations are over three
     //values. We then compare `currentMaxProduct` against the overall `maxProduct` and take the largest.
-    static func maxProduct(_ nums: [Int]) -> Int {
+    func maxProduct(_ nums: [Int]) -> Int {
         var maxProduct = nums[0]
         var currentMaxProduct = nums[0]
         var currentMinProduct = nums[0]

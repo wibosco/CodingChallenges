@@ -18,7 +18,7 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
         let grid = [[0, 1],
                     [1, 0]]
         
-        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix().shortestPathBinaryMatrix(grid)
         
         XCTAssertEqual(result, 2)
     }
@@ -28,7 +28,7 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [1, 1, 0],
                     [1, 1, 0]]
         
-        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix().shortestPathBinaryMatrix(grid)
         
         XCTAssertEqual(result, 4)
     }
@@ -38,7 +38,7 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [1, 1, 0],
                     [1, 1, 0]]
         
-        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix().shortestPathBinaryMatrix(grid)
         
         XCTAssertEqual(result, -1)
     }
@@ -53,7 +53,7 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [0, 0, 0, 0, 0, 1, 1, 0],
                     [1, 0, 0, 0, 0, 1, 1, 0]]
         
-        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix().shortestPathBinaryMatrix(grid)
         
         XCTAssertEqual(result, 10)
     }
@@ -61,7 +61,7 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
     func test_E() {
         let grid = [[0]]
         
-        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix().shortestPathBinaryMatrix(grid)
         
         XCTAssertEqual(result, 1)
     }
@@ -73,7 +73,7 @@ final class ShortestPathBinaryMatrixTests: XCTestCase {
                     [0, 0, 0, 1, 1],
                     [0, 0, 0, 1, 0]]
         
-        let result = ShortestPathBinaryMatrix.shortestPathBinaryMatrix(grid)
+        let result = ShortestPathBinaryMatrix().shortestPathBinaryMatrix(grid)
         
         XCTAssertEqual(result, -1)
     }

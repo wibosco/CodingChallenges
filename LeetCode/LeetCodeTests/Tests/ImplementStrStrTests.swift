@@ -18,7 +18,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "hello"
         let needle = "ll"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, 2)
     }
@@ -27,7 +27,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "aaaaa"
         let needle = "bba"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }
@@ -36,7 +36,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = ""
         let needle = ""
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, 0)
     }
@@ -45,7 +45,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "plllol"
         let needle = "llol"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, 2)
     }
@@ -54,7 +54,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = ""
         let needle = "a"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }
@@ -63,7 +63,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "a"
         let needle = ""
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, 0)
     }
@@ -72,7 +72,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "aaa"
         let needle = "aaaa"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }
@@ -81,7 +81,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "mississippi"
         let needle = "issipi"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }
@@ -90,7 +90,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "ABCTTBGGABTTCGGA"
         let needle = "ABCBGGABCGGA"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, -1)
     }
@@ -99,7 +99,7 @@ final class ImplementStrStrTests: XCTestCase {
         let haystack = "ABABCABCABABABD"
         let needle = "ABABD"
         
-        let result = ImplementStrStr.strStr(haystack, needle)
+        let result = ImplementStrStr().strStr(haystack, needle)
         
         XCTAssertEqual(result, 10)
     }

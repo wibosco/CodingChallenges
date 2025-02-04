@@ -22,7 +22,7 @@ struct FlattenBinaryTreeToLinkedList {
     //Using DFS perform a preorder traversal of the tree adding the nodes that we come across to an array. After the array is
     //populated we iterate through, setting the current nodes right node to the next node in the array. We also remove any
     //existing left and right associations
-    static func flatten(_ root: TreeNode?) {
+    func flatten(_ root: TreeNode?) {
         guard let root = root else {
             return
         }
@@ -42,7 +42,7 @@ struct FlattenBinaryTreeToLinkedList {
         }
     }
     
-    private static func dfs(_ root: TreeNode?, _ ordering: inout [TreeNode]) {
+    private func dfs(_ root: TreeNode?, _ ordering: inout [TreeNode]) {
         guard let root = root else {
             return
         }

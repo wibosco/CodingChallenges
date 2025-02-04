@@ -19,7 +19,7 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "leetcode"]
         let order = "hlabcdefgijkmnopqrstuvwxyz"
         
-        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary().isAlienSorted(words, order)
         
         XCTAssertTrue(result)
     }
@@ -30,7 +30,7 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "row"]
         let order = "worldabcefghijkmnpqstuvxyz"
         
-        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary().isAlienSorted(words, order)
         
         XCTAssertFalse(result)
     }
@@ -40,7 +40,7 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "app"]
         let order = "abcdefghijklmnopqrstuvwxyz"
         
-        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary().isAlienSorted(words, order)
         
         XCTAssertFalse(result)
     }
@@ -50,7 +50,7 @@ final class VerifyingAnAlienDictionaryTests: XCTestCase {
                      "q"]
         let order = "ngxlkthsjuoqcpavbfdermiywz"
         
-        let result = VerifyingAnAlienDictionary.isAlienSorted(words, order)
+        let result = VerifyingAnAlienDictionary().isAlienSorted(words, order)
         
         XCTAssertTrue(result)
     }

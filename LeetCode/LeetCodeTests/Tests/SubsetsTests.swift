@@ -16,7 +16,7 @@ final class SubsetsTests: XCTestCase {
     func test_A() {
         let nums = [1, 2, 3]
         
-        let subsets = Subsets.subsets(nums)
+        let subsets = Subsets().subsets(nums)
         
         let expectedSubsets = [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
         
@@ -31,7 +31,7 @@ final class SubsetsTests: XCTestCase {
     func test_B() {
         let nums = [0]
         
-        let subsets = Subsets.subsets(nums)
+        let subsets = Subsets().subsets(nums)
         
         let expectedSubsets = [[], [0]]
         

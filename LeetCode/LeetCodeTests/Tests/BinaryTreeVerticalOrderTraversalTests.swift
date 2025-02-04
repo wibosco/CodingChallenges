@@ -18,7 +18,7 @@ final class BinaryTreeVerticalOrderTraversalTests: XCTestCase {
         let data = [3, 9, 20, nil, nil, 15, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeVerticalOrderTraversal.verticalOrder(root)
+        let result = BinaryTreeVerticalOrderTraversal().verticalOrder(root)
         
         XCTAssertEqual(result, [[9], [3, 15], [20], [7]])
     }
@@ -27,7 +27,7 @@ final class BinaryTreeVerticalOrderTraversalTests: XCTestCase {
         let data = [3, 9, 8, 4, 0, 1, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeVerticalOrderTraversal.verticalOrder(root)
+        let result = BinaryTreeVerticalOrderTraversal().verticalOrder(root)
         
         XCTAssertEqual(result, [[4], [9], [3, 0, 1], [8], [7]])
     }
@@ -36,7 +36,7 @@ final class BinaryTreeVerticalOrderTraversalTests: XCTestCase {
         let data = [3, 9, 8, 4, 0, 1, 7, nil, nil, nil, 2, 5]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeVerticalOrderTraversal.verticalOrder(root)
+        let result = BinaryTreeVerticalOrderTraversal().verticalOrder(root)
         
         XCTAssertEqual(result, [[4], [9, 5], [3, 0, 1], [8, 2], [7]])
     }
@@ -45,7 +45,7 @@ final class BinaryTreeVerticalOrderTraversalTests: XCTestCase {
         let data = [3, 9, 8, 4, 0, 1, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeVerticalOrderTraversal.verticalOrder(root)
+        let result = BinaryTreeVerticalOrderTraversal().verticalOrder(root)
         
         XCTAssertEqual(result, [[4], [9], [3, 0, 1], [8], [7]])
     }
@@ -54,13 +54,13 @@ final class BinaryTreeVerticalOrderTraversalTests: XCTestCase {
         let data = [3, 9, 8, 4, 0, 1, 7, nil, nil, nil, 2, 5]
         let root = TreeNode.deserialize(data)
         
-        let result = BinaryTreeVerticalOrderTraversal.verticalOrder(root)
+        let result = BinaryTreeVerticalOrderTraversal().verticalOrder(root)
         
         XCTAssertEqual(result, [[4], [9, 5], [3, 0, 1], [8, 2], [7]])
     }
     
     func test_F() {
-        let result = BinaryTreeVerticalOrderTraversal.verticalOrder(nil)
+        let result = BinaryTreeVerticalOrderTraversal().verticalOrder(nil)
         
         XCTAssertEqual(result, [[Int]]())
     }

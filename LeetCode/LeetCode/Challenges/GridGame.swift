@@ -33,7 +33,7 @@ struct GridGame {
     //second can get.
     //
     //N.B. it really helps to think of the two robots as actually competing.
-    static func gridGame(_ grid: [[Int]]) -> Int {
+    func gridGame(_ grid: [[Int]]) -> Int {
         //grid always contains two rows
         var prefixSumRow1 = grid[0]
         var prefixSumRow2 = grid[1]

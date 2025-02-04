@@ -18,7 +18,7 @@ final class KthLargestElementInArrayTests: XCTestCase {
         let nums = [3, 2, 1, 5, 6, 4]
         let k = 2
         
-        let result = KthLargestElementInArray.findKthLargest(nums, k)
+        let result = KthLargestElementInArray().findKthLargest(nums, k)
         
         XCTAssertEqual(result, 5)
     }
@@ -27,7 +27,7 @@ final class KthLargestElementInArrayTests: XCTestCase {
         let nums = [3, 2, 3, 1, 2, 4, 5, 5, 6]
         let k = 4
         
-        let result = KthLargestElementInArray.findKthLargest(nums, k)
+        let result = KthLargestElementInArray().findKthLargest(nums, k)
         
         XCTAssertEqual(result, 4)
     }
@@ -36,7 +36,7 @@ final class KthLargestElementInArrayTests: XCTestCase {
         let nums = [2, 1]
         let k = 1
         
-        let result = KthLargestElementInArray.findKthLargest(nums, k)
+        let result = KthLargestElementInArray().findKthLargest(nums, k)
         
         XCTAssertEqual(result, 2)
     }
@@ -45,7 +45,7 @@ final class KthLargestElementInArrayTests: XCTestCase {
         let nums = [3, 1, 2, 4]
         let k = 2
         
-        let result = KthLargestElementInArray.findKthLargest(nums, k)
+        let result = KthLargestElementInArray().findKthLargest(nums, k)
         
         XCTAssertEqual(result, 3)
     }

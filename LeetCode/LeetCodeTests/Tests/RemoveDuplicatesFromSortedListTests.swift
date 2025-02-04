@@ -17,7 +17,7 @@ final class RemoveDuplicatesFromSortedListTests: XCTestCase {
         let data = [1, 1, 2]
         let head = ListNode.deserialize(data)
         
-        let result = RemoveDuplicatesFromSortedList.deleteDuplicates(head)
+        let result = RemoveDuplicatesFromSortedList().deleteDuplicates(head)
         
         let values = ListNode.serialize(result)
         
@@ -28,7 +28,7 @@ final class RemoveDuplicatesFromSortedListTests: XCTestCase {
         let data = [1, 1, 2, 3, 3]
         let head = ListNode.deserialize(data)
         
-        let result = RemoveDuplicatesFromSortedList.deleteDuplicates(head)
+        let result = RemoveDuplicatesFromSortedList().deleteDuplicates(head)
         
         let values = ListNode.serialize(result)
         

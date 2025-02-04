@@ -16,7 +16,7 @@ final class UniqueLength3PalindromicSubsequencesTests: XCTestCase {
     func test_A() {
         let s = "aabca"
         
-        let result = UniqueLength3PalindromicSubsequences.countPalindromicSubsequence(s)
+        let result = UniqueLength3PalindromicSubsequences().countPalindromicSubsequence(s)
         
         XCTAssertEqual(result, 3)
     }
@@ -24,7 +24,7 @@ final class UniqueLength3PalindromicSubsequencesTests: XCTestCase {
     func test_B() {
         let s = "adc"
         
-        let result = UniqueLength3PalindromicSubsequences.countPalindromicSubsequence(s)
+        let result = UniqueLength3PalindromicSubsequences().countPalindromicSubsequence(s)
         
         XCTAssertEqual(result, 0)
     }
@@ -32,7 +32,7 @@ final class UniqueLength3PalindromicSubsequencesTests: XCTestCase {
     func test_C() {
         let s = "bbcbaba"
         
-        let result = UniqueLength3PalindromicSubsequences.countPalindromicSubsequence(s)
+        let result = UniqueLength3PalindromicSubsequences().countPalindromicSubsequence(s)
         
         XCTAssertEqual(result, 4)
     }

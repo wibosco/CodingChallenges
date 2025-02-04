@@ -51,7 +51,7 @@ struct MinimumDepthOfBinaryTree {
     //   | h = 0 |
     //   +-------+
     //
-    static func minDepth(_ root: TreeNode?) -> Int {
+    func minDepth(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }

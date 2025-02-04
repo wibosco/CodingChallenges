@@ -19,7 +19,7 @@ final class CountUnivalueSubtreesTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = CountUnivalueSubtrees.countUnivalSubtrees(root)
+        let result = CountUnivalueSubtrees().countUnivalSubtrees(root)
         
         XCTAssertEqual(result, 4)
     }
@@ -29,7 +29,7 @@ final class CountUnivalueSubtreesTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = CountUnivalueSubtrees.countUnivalSubtrees(root)
+        let result = CountUnivalueSubtrees().countUnivalSubtrees(root)
         
         XCTAssertEqual(result, 0)
     }
@@ -39,7 +39,7 @@ final class CountUnivalueSubtreesTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = CountUnivalueSubtrees.countUnivalSubtrees(root)
+        let result = CountUnivalueSubtrees().countUnivalSubtrees(root)
         
         XCTAssertEqual(result, 6)
     }

@@ -29,7 +29,7 @@ struct CountSubIslands {
     //when a non-sub-island is encountered we don't stop searching that island as we need to "mark" the whole island as
     //invalid. To ensure that we don't search the same island multiple times we update `grid2` transform those land elements
     //into water. As an island can start at any index in `grid2` we must attempt to begin the search at each index in `grid2`.
-    static func countSubIslands(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
+    func countSubIslands(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
         var count = 0
         var grid2 = grid2
         
@@ -44,7 +44,7 @@ struct CountSubIslands {
         return count
     }
     
-    private static func dfs(_ grid1: [[Int]], _ grid2: inout [[Int]], _ row: Int, _ column: Int) -> Bool {
+    private func dfs(_ grid1: [[Int]], _ grid2: inout [[Int]], _ row: Int, _ column: Int) -> Bool {
         if row < 0 || row > (grid2.count - 1) || column < 0 || column > (grid2[row].count - 1) {
             return true
         }
@@ -86,7 +86,7 @@ struct CountSubIslands {
     //To ensure that we don't search the same island multiple times we use a `visited` set to store the indexes of the element
     //already encountered. As an island can start at any index in `grid2` we must attempt to begin the search at each index in
     //`grid2`.
-    static func countSubIslandsVisited(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
+    func countSubIslandsVisited(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
         var count = 0
         var visited = Set<[Int]>()
         
@@ -111,7 +111,7 @@ struct CountSubIslands {
         return count
     }
     
-    private static func dfsVisited(_ grid1: [[Int]], _ grid2: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>) -> Bool {
+    private func dfsVisited(_ grid1: [[Int]], _ grid2: [[Int]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>) -> Bool {
         var isSubIsland = grid1[row][column] == 1
         
         let neighbors = landNeighbors(grid2, row, column)
@@ -130,7 +130,7 @@ struct CountSubIslands {
         return isSubIsland
     }
     
-    private static func landNeighbors(_ grid: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
+    private func landNeighbors(_ grid: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
         var neighbors = [[Int]]()
         
         let relativeIndexing = [[-1, 0], [0, -1], [0, 1], [1, 0]] //[row, column]

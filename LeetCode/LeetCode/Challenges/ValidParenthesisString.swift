@@ -35,7 +35,7 @@ struct ValidParenthesisString {
     //result being the current index and the left count - we don't need to care about the path we have taken only what we have
     //at that moment as all possible paths that got as to that same value of index and left count will be treated the same for
     //any forward choices.
-    static func checkValidString(_ s: String) -> Bool {
+    func checkValidString(_ s: String) -> Bool {
         var memo = [String: Bool]()
         
         let result = dfs(Array(s), 0, 0, &memo)
@@ -43,7 +43,7 @@ struct ValidParenthesisString {
         return result
     }
     
-    private static func dfs(_ characters: [Character], _ index: Int, _ leftCount: Int, _ memo: inout [String: Bool]) -> Bool {
+    private func dfs(_ characters: [Character], _ index: Int, _ leftCount: Int, _ memo: inout [String: Bool]) -> Bool {
         let memoKey = "\(index)\(leftCount)"
         guard memo[memoKey] == nil else {
             return memo[memoKey]!
@@ -95,7 +95,7 @@ struct ValidParenthesisString {
     //the `s` has been fully iterated. There is no need for us to update `characters` with the choice we are making for any
     //given `*` instead we simply update `leftCount` to behave as if we had encountered one of the 3 possible choices for that
     //`*`.
-    static func checkValidStringBruteForce(_ s: String) -> Bool {
+    func checkValidStringBruteForce(_ s: String) -> Bool {
         var isValid = false
         
         dfs(Array(s), 0, 0, &isValid)
@@ -103,7 +103,7 @@ struct ValidParenthesisString {
         return isValid
     }
     
-    private static func dfs(_ characters: [Character], _ index: Int, _ leftCount: Int, _ isValid: inout Bool) {
+    private func dfs(_ characters: [Character], _ index: Int, _ leftCount: Int, _ isValid: inout Bool) {
         guard !isValid else {
             return
         }

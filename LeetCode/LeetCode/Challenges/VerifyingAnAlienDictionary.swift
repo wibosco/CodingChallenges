@@ -25,7 +25,7 @@ struct VerifyingAnAlienDictionary {
     //with the shorter word needing to come first
     //
     //N.B. Time complexity could also be described as O(m * n) where m is the length of `words` and n the characters per word
-    static func isAlienSorted(_ words: [String], _ order: String) -> Bool {
+    func isAlienSorted(_ words: [String], _ order: String) -> Bool {
         guard words.count > 1 else {
             return true
         }

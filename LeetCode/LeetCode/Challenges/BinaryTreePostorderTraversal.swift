@@ -20,7 +20,7 @@ struct BinaryTreePostorderTraversal {
     //
     //Solution Description:
     //Recursively add nods to `visited` after all left and right child nodes have been added.
-    static func postorderTraversal(_ root: TreeNode?) -> [Int] {
+    func postorderTraversal(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }
@@ -32,7 +32,7 @@ struct BinaryTreePostorderTraversal {
         return visited
     }
 
-    private static func postorderTraversal(node: TreeNode?, visited: inout [Int]) {
+    private func postorderTraversal(node: TreeNode?, visited: inout [Int]) {
         guard let node = node else {
             return
         }
@@ -50,7 +50,7 @@ struct BinaryTreePostorderTraversal {
     //
     //Solution Description:
     //Recursively add nods to `visited` after all left and right child nodes have been added.
-    static func postorderTraversalIterative(_ root: TreeNode?) -> [Int] {
+    func postorderTraversalIterative(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return []
         }

@@ -29,7 +29,7 @@ struct RedundantConnection {
     //N.B. How we only build the graph enough to be able to find the cycle.
     //
     //N.B. This is similar to detecting a cycle in topological sort.
-    static func findRedundantConnection(_ edges: [[Int]]) -> [Int] {
+    func findRedundantConnection(_ edges: [[Int]]) -> [Int] {
         var adjList = Array(repeating: [Int](), count: (edges.count + 1))
         
         for edge in edges {
@@ -48,7 +48,7 @@ struct RedundantConnection {
         return [Int]() //no cycle found
     }
     
-    private static func pathExists(_ adjList: [[Int]], _ source: Int, _ destination: Int, _ visited: inout Set<Int>) -> Bool {
+    private func pathExists(_ adjList: [[Int]], _ source: Int, _ destination: Int, _ visited: inout Set<Int>) -> Bool {
         //found an existing path between source to destination despite that "edge" not having been added yet
         guard source != destination else {
             return true

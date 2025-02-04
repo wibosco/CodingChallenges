@@ -18,7 +18,7 @@ final class NetworkDelayTimeTests: XCTestCase {
         let n = 4
         let k = 2
         
-        let result = NetworkDelayTime.networkDelayTime(times, n, k)
+        let result = NetworkDelayTime().networkDelayTime(times, n, k)
         
         XCTAssertEqual(result, 2)
     }
@@ -28,7 +28,7 @@ final class NetworkDelayTimeTests: XCTestCase {
         let n = 2
         let k = 1
         
-        let result = NetworkDelayTime.networkDelayTime(times, n, k)
+        let result = NetworkDelayTime().networkDelayTime(times, n, k)
         
         XCTAssertEqual(result, 1)
     }
@@ -38,7 +38,7 @@ final class NetworkDelayTimeTests: XCTestCase {
         let n = 2
         let k = 2
         
-        let result = NetworkDelayTime.networkDelayTime(times, n, k)
+        let result = NetworkDelayTime().networkDelayTime(times, n, k)
         
         XCTAssertEqual(result, -1)
     }

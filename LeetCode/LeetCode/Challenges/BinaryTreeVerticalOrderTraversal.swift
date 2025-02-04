@@ -24,7 +24,7 @@ struct BinaryTreeVerticalOrderTraversal {
     //will already be in the correct order - top to bottom then column by column. To avoid having to sort the dictionary keys
     //we track the min and max column value which then allows to quickly extract the already sorted value arrays from the
     //dictionary.
-    static func verticalOrder(_ root: TreeNode?) -> [[Int]] {
+    func verticalOrder(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()
         }
@@ -80,7 +80,7 @@ struct BinaryTreeVerticalOrderTraversal {
     //"deeper" in the tree than other nodes with that same column value - this means that our value arrays will not be in the
     //correct order (top to bottom then column by column) so will require further sorting before being added to the result
     //array.
-    static func verticalOrderDFS(_ root: TreeNode?) -> [[Int]] {
+    func verticalOrderDFS(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()
         }
@@ -100,7 +100,7 @@ struct BinaryTreeVerticalOrderTraversal {
         return result
     }
     
-    private static func dfs(_ node: TreeNode?, _ order: inout [Int: [(Int, Int)]], _ column: Int, _ depth: Int, _ minColumn: inout Int, _ maxColumn: inout Int) {
+    private func dfs(_ node: TreeNode?, _ order: inout [Int: [(Int, Int)]], _ column: Int, _ depth: Int, _ minColumn: inout Int, _ maxColumn: inout Int) {
         guard let node = node else {
             return
         }

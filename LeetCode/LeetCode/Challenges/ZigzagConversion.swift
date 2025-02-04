@@ -23,7 +23,7 @@ struct ZigzagConversion {
     //direction and start moving back up the rows and when we hit the first row (0) we change direction again and start moving
     //back down the rows. We repeat this process until we run out of characters, at which point we concatenate the strings at
     //each row together (in row order) and return it
-    static func convert(_ s: String, _ numRows: Int) -> String {
+    func convert(_ s: String, _ numRows: Int) -> String {
         guard numRows > 1 else {
             return s
         }
@@ -51,7 +51,7 @@ struct ZigzagConversion {
     
     //Time: O(3n)
     //string
-    static func convertSlow(_ s: String, _ numRows: Int) -> String {
+    func convertSlow(_ s: String, _ numRows: Int) -> String {
         guard numRows > 1 else {
             return s
         }

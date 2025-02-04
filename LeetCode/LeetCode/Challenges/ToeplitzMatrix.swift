@@ -27,7 +27,7 @@ struct ToeplitzMatrix {
     //
     //N.B. this solution would also work testing bottom-right neighbor, we would just need to skip the last row and column
     //instead
-    static func isToeplitzMatrix(_ matrix: [[Int]]) -> Bool {
+    func isToeplitzMatrix(_ matrix: [[Int]]) -> Bool {
         for i in 1..<matrix.count { // start from 1 as row 0 and column 0 can't have top-left neighbors
             for j in 1..<matrix[i].count {
                 let val = matrix[i][j]
@@ -54,7 +54,7 @@ struct ToeplitzMatrix {
     //compare against the value for [r2, c2] if they don't match then we know that don't have a toeplitz matrix, if they do
     //match then we check the next value, etc. Finally if we have checked all values in the matrix then it means that we do have
     //a toeplitz matrix and we can return true
-    static func isToeplitzMatrixGrouping(_ matrix: [[Int]]) -> Bool {
+    func isToeplitzMatrixGrouping(_ matrix: [[Int]]) -> Bool {
         var groups = [Int: Int]()
         
         for i in 0..<matrix.count {

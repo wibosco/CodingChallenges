@@ -18,7 +18,7 @@ final class CustomSortStringTests: XCTestCase {
         let order = "cba"
         let s = "abcd"
         
-        let result = CustomSortString.customSortString(order, s)
+        let result = CustomSortString().customSortString(order, s)
         
         XCTAssertEqual(result, "cbad")
     }
@@ -27,7 +27,7 @@ final class CustomSortStringTests: XCTestCase {
         let order = "cbafg"
         let s = "abcd"
         
-        let result = CustomSortString.customSortString(order, s)
+        let result = CustomSortString().customSortString(order, s)
         
         XCTAssertEqual(result, "cbad")
     }
@@ -36,7 +36,7 @@ final class CustomSortStringTests: XCTestCase {
         let order =  "hucw"
         let s = "utzoampdgkalexslxoqfkdjoczajxtuhqyxvlfatmptqdsochtdzgypsfkgqwbgqbcamdqnqztaqhqanirikahtmalzqjjxtqfnh"
         
-        let result = CustomSortString.customSortString(order, s)
+        let result = CustomSortString().customSortString(order, s)
         
         XCTAssertEqual(result, "hhhhhuucccwaaaaaaaaabbdddddeffffggggiijjjjkkkkllllmmmmnnnoooopppqqqqqqqqqqqrsssttttttttvxxxxxyyzzzzz")
     }

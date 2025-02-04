@@ -27,7 +27,7 @@ struct GasStation {
     //
     //N.B. while it might not be possible to get to station `i` from 0 i.e. [0..i], it might be possible to get there by
     //going [(i + 1)...0...i] as any unused gas is carried forward in the tank
-    static func canCompleteCircuit(_ gas: [Int], _ cost: [Int]) -> Int {
+    func canCompleteCircuit(_ gas: [Int], _ cost: [Int]) -> Int {
         var currentGas = 0
         var totalGasCostDelta = 0
         var startingStation = 0
@@ -56,7 +56,7 @@ struct GasStation {
     //point `tank` drops below 0 then we know that it isn't possible to get back to our `gas` element and we move onto
     //the next `gas` element. As the final both `gas` and `cost` wrap round from end..start we need to perform a modulo
     //operation on the inner loop variable - `j`
-    static func canCompleteCircuitNestedLoops(_ gas: [Int], _ cost: [Int]) -> Int {
+    func canCompleteCircuitNestedLoops(_ gas: [Int], _ cost: [Int]) -> Int {
         for i in 0..<gas.count {
             var tank = 0
             var j = i

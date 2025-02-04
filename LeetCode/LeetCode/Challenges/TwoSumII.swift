@@ -26,7 +26,7 @@ struct TwoSumII {
     //we need to increase the sum value which we can do by moving the `left` pointer inwards (remember `numbers` is sorted
     //so moving the `right` pointer inwards would only reduce the sum value (which is already too low) so our only option
     //is moving the `left` pointer)
-    static func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
+    func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
         var left = 0
         var right = numbers.count - 1
         
@@ -56,7 +56,7 @@ struct TwoSumII {
     //binary search to half the search space after each mismatch. With each iteration through `nums` we can further reduce
     //the search space as only `nums` elements after the current element could be valid partners so the `left` boundary of
     //our binary search will gradually creep forward.
-    static func twoSumBinarySearch(_ numbers: [Int], _ target: Int) -> [Int] {
+    func twoSumBinarySearch(_ numbers: [Int], _ target: Int) -> [Int] {
         for (i, num) in numbers.enumerated() {
             let diff = target - num
             
@@ -91,7 +91,7 @@ struct TwoSumII {
     //Iterate through `nums` and add every other `nums` element after it to check if the sum equals `target`. As `nums` is sorted
     //once we encounter elements that are greater than the difference between `target` - current `nums` element then we can exit
     //that iteration as no further `nums` elements will allow us to reach `target`
-    static func twoSumNestedLoops(_ numbers: [Int], _ target: Int) -> [Int] {
+    func twoSumNestedLoops(_ numbers: [Int], _ target: Int) -> [Int] {
         for (i, num) in numbers.enumerated() {
             guard (i + 1) < numbers.count else {
                 break

@@ -23,7 +23,7 @@ struct DetermineIfACellIsReachableAtAGivenTime {
     //N.B. this form of distance is calculate using the `Chebyshev distance` formula
     //https://en.wikipedia.org/wiki/Chebyshev_distance
     //https://chris3606.github.io/GoRogue/articles/grid_components/measuring-distance.html
-    static func isReachableAtTime(_ sx: Int, _ sy: Int, _ fx: Int, _ fy: Int, _ t: Int) -> Bool {
+    func isReachableAtTime(_ sx: Int, _ sy: Int, _ fx: Int, _ fy: Int, _ t: Int) -> Bool {
         let width = abs(sx - fx)
         let height = abs(sy - fy)
         
@@ -51,14 +51,14 @@ struct DetermineIfACellIsReachableAtAGivenTime {
     //the complexity added.
     //
     //N.B. this solution does not scale well.
-    static func isReachableAtTimeDFS(_ sx: Int, _ sy: Int, _ fx: Int, _ fy: Int, _ t: Int) -> Bool {
+    func isReachableAtTimeDFS(_ sx: Int, _ sy: Int, _ fx: Int, _ fy: Int, _ t: Int) -> Bool {
         //up down left right up-diagonal-left up-diagonal-right down-diagonal-left down-diagonal-right
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1], [-1, -1], [-1, 1], [1, -1], [1, 1]]
         
         return dfs(sx, sy, fx, fy, t, relativeIndexes)
     }
     
-    private static func dfs(_ x: Int, _ y: Int, _ fx: Int, _ fy: Int, _ timeRemaining: Int, _ relativeIndexes: [[Int]]) -> Bool {
+    private func dfs(_ x: Int, _ y: Int, _ fx: Int, _ fy: Int, _ timeRemaining: Int, _ relativeIndexes: [[Int]]) -> Bool {
         guard timeRemaining > 0 else {
             return x == fx && y == fy
         }

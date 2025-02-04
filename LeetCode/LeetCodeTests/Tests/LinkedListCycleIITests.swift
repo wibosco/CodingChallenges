@@ -19,7 +19,7 @@ final class LinkedListCycleIITests: XCTestCase {
         let pos = 1
         let head = ListNode.deserialize(data, pos)
         
-        let result = LinkedListCycleII.detectCycle(head)
+        let result = LinkedListCycleII().detectCycle(head)
         
         XCTAssertEqual(result?.val, 2)
     }
@@ -29,7 +29,7 @@ final class LinkedListCycleIITests: XCTestCase {
         let pos = 0
         let head = ListNode.deserialize(data, pos)
         
-        let result = LinkedListCycleII.detectCycle(head)
+        let result = LinkedListCycleII().detectCycle(head)
         
         XCTAssertEqual(result?.val, 1)
     }
@@ -39,7 +39,7 @@ final class LinkedListCycleIITests: XCTestCase {
         let pos = -1
         let head = ListNode.deserialize(data, pos)
         
-        let result = LinkedListCycleII.detectCycle(head)
+        let result = LinkedListCycleII().detectCycle(head)
         
         XCTAssertNil(result)
     }

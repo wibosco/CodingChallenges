@@ -20,7 +20,7 @@ struct AverageOfLevelsInBinaryTree {
     //Solution Description:
     //Using BFS we traversal the tree level-by-level. At each level we calculate the average of that level and add it to the
     //`averages` array. Once all levels have been traversed we return `averages`.
-    static func averageOfLevels(_ root: TreeNode?) -> [Double] {
+    func averageOfLevels(_ root: TreeNode?) -> [Double] {
         guard let root = root else {
             return [Double]()
         }

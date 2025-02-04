@@ -22,7 +22,7 @@ final class FindIfPathExistsInGraphTests: XCTestCase {
         let start = 0
         let end = 2
         
-        let result = FindIfPathExistsInGraph.validPath(n, edges, start, end)
+        let result = FindIfPathExistsInGraph().validPath(n, edges, start, end)
         
         XCTAssertTrue(result)
     }
@@ -37,7 +37,7 @@ final class FindIfPathExistsInGraphTests: XCTestCase {
         let start = 0
         let end = 5
         
-        let result = FindIfPathExistsInGraph.validPath(n, edges, start, end)
+        let result = FindIfPathExistsInGraph().validPath(n, edges, start, end)
         
         XCTAssertFalse(result)
     }
@@ -48,7 +48,7 @@ final class FindIfPathExistsInGraphTests: XCTestCase {
         let start = 0
         let end = 0
         
-        let result = FindIfPathExistsInGraph.validPath(n, edges, start, end)
+        let result = FindIfPathExistsInGraph().validPath(n, edges, start, end)
         
         XCTAssertTrue(result)
     }

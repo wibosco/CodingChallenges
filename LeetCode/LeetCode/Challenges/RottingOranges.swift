@@ -33,7 +33,7 @@ struct RottingOranges {
     //
     //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The extra loop is to work
     //through the neighbors of a nodes - don't confuse this with the actual level traversal loop which is the second loop.
-    static func orangesRotting(_ grid: [[Int]]) -> Int {
+    func orangesRotting(_ grid: [[Int]]) -> Int {
         //0 - empty, 1 - fresh, 2 - rotten
         var queue = [[Int]]()
         var freshFruit = 0
@@ -94,7 +94,7 @@ struct RottingOranges {
         return freshFruit > 0 ? -1 : (spreadTime - 1)
     }
     
-    private static func navigatableNeighbors(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int, visited: [[Int]]) -> [[Int]] {
+    private func navigatableNeighbors(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int, visited: [[Int]]) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]
@@ -142,7 +142,7 @@ struct RottingOranges {
     //NB: As this is a graph rather than a binary tree, the BFS contains 3 loops rather than 2. The
     //extra loop is to work through the neighbors of a nodes - don't confuse this with the actual
     //level traversal loop which is the second loop
-    static func orangesRottingMutating(_ grid: [[Int]]) -> Int {
+    func orangesRottingMutating(_ grid: [[Int]]) -> Int {
         //0 - empty, 1 - fresh, 2 - rotten
         var queue = [[Int]]()
         var freshFruit = 0
@@ -202,7 +202,7 @@ struct RottingOranges {
         return freshFruit > 0 ? -1 : (spreadTime - 1)
     }
     
-    private static func navigatableFreshNeighborsMuting(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
+    private func navigatableFreshNeighborsMuting(_ grid: [[Int]], _ relativeIndexing: [[Int]], _ row: Int, _ column: Int) -> [[Int]] {
         var neighbors = [[Int]]()
         for relativeIndex in relativeIndexing {
             let relativeRow = row + relativeIndex[0]

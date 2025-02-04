@@ -25,7 +25,7 @@ struct ContainsDuplicateII {
     //to `k` then we don't need to keep the smaller of the two indexes and no subsequent calculation using that index will
     //result in a value less than or equal to `k` as the other index will only be larger than the current index so whenever a
     //calculation fails we replace the previous index with the current index for that element on `nums` in the `map` dictionary.
-    static func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
+    func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
         var map = [Int: Int]()
         
         for (i, num) in nums.enumerated() {

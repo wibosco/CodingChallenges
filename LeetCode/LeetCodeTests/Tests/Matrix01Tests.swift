@@ -19,7 +19,7 @@ final class Matrix01Tests: XCTestCase {
                    [0, 1, 0],
                    [0, 0, 0]]
         
-        let result = Matrix01.updateMatrix(mat)
+        let result = Matrix01().updateMatrix(mat)
         
         XCTAssertEqual(result, [[0, 0, 0], [0, 1, 0], [0, 0, 0]])
     }
@@ -29,7 +29,7 @@ final class Matrix01Tests: XCTestCase {
                    [0, 1, 0],
                    [1, 1, 1]]
         
-        let result = Matrix01.updateMatrix(mat)
+        let result = Matrix01().updateMatrix(mat)
         
         XCTAssertEqual(result, [[0, 0, 0], [0, 1, 0], [1, 2, 1]])
     }

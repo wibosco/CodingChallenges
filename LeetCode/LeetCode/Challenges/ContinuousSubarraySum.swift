@@ -29,7 +29,7 @@ struct ContinuousSubarraySum {
     //not `j`
     //
     //N.B. see https://stackoverflow.com/questions/51830010/continuous-subarray-sum
-    static func checkSubarraySum(_ nums: [Int], _ k: Int) -> Bool {
+    func checkSubarraySum(_ nums: [Int], _ k: Int) -> Bool {
         guard nums.count > 1 else {
             return false
         }
@@ -66,7 +66,7 @@ struct ContinuousSubarraySum {
     //Solution Description:
     //Loop through the `nums` array and add each element to all other elements checking that sum is a multiple of `k`. To ensure
     //all combinations we need to gradually reducing `nums` with each iteration
-    static func checkSubarraySumBruteForce(_ nums: [Int], _ k: Int) -> Bool {
+    func checkSubarraySumBruteForce(_ nums: [Int], _ k: Int) -> Bool {
         guard nums.count > 1 else {
             return false
         }

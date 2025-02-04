@@ -20,7 +20,7 @@ final class MergeKSortedListsTests: XCTestCase {
         
         let lists = [list1, list2, list3]
         
-        let result = MergeKSortedLists.mergeKLists(lists)
+        let result = MergeKSortedLists().mergeKLists(lists)
         
         let values = ListNode.serialize(result)
         
@@ -32,7 +32,7 @@ final class MergeKSortedListsTests: XCTestCase {
         
         let lists = [list1]
         
-        let result = MergeKSortedLists.mergeKLists(lists)
+        let result = MergeKSortedLists().mergeKLists(lists)
         
         let values = ListNode.serialize(result)
         

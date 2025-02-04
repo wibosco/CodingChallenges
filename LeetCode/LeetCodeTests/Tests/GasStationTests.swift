@@ -17,7 +17,7 @@ final class GasStationTests: XCTestCase {
         let gas = [1, 2, 3, 4, 5]
         let cost = [3, 4, 5, 1, 2]
         
-        let result = GasStation.canCompleteCircuit(gas, cost)
+        let result = GasStation().canCompleteCircuit(gas, cost)
         
         XCTAssertEqual(result, 3)
     }
@@ -26,7 +26,7 @@ final class GasStationTests: XCTestCase {
         let gas = [2, 3, 4]
         let cost = [3, 4, 3]
         
-        let result = GasStation.canCompleteCircuit(gas, cost)
+        let result = GasStation().canCompleteCircuit(gas, cost)
         
         XCTAssertEqual(result, -1)
     }
@@ -35,7 +35,7 @@ final class GasStationTests: XCTestCase {
         let gas = [4]
         let cost = [5]
         
-        let result = GasStation.canCompleteCircuit(gas, cost)
+        let result = GasStation().canCompleteCircuit(gas, cost)
         
         XCTAssertEqual(result, -1)
     }

@@ -18,7 +18,7 @@ final class TwoSumTests: XCTestCase {
         let nums = [2, 7, 11, 15]
         let target = 9
         
-        let result = TwoSum.twoSum(nums, target)
+        let result = TwoSum().twoSum(nums, target)
         
         XCTAssertEqual([0, 1], result)
     }
@@ -27,7 +27,7 @@ final class TwoSumTests: XCTestCase {
         let nums = [3, 2, 4]
         let target = 6
         
-        let result = TwoSum.twoSum(nums, target)
+        let result = TwoSum().twoSum(nums, target)
         
         XCTAssertEqual([1, 2], result)
     }
@@ -36,7 +36,7 @@ final class TwoSumTests: XCTestCase {
         let nums = [3, 3]
         let target = 6
         
-        let result = TwoSum.twoSum(nums, target)
+        let result = TwoSum().twoSum(nums, target)
         
         XCTAssertEqual([0, 1], result)
     }

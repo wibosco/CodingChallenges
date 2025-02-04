@@ -26,7 +26,7 @@ struct Permutations {
     //
     //Similar to: https://leetcode.com/problems/combination-sum/
     //Similar to: https://leetcode.com/problems/subsets/
-    static func permute(_ nums: [Int]) -> [[Int]] {
+    func permute(_ nums: [Int]) -> [[Int]] {
         var permutations = [[Int]]()
         
         backtrack(nums, [Int](), &permutations)
@@ -34,7 +34,7 @@ struct Permutations {
         return permutations
     }
     
-    private static func backtrack(_ nums: [Int], _ current: [Int], _ permutations: inout [[Int]]) {
+    private func backtrack(_ nums: [Int], _ current: [Int], _ permutations: inout [[Int]]) {
         guard !nums.isEmpty else {
             permutations.append(current)
             return
@@ -64,7 +64,7 @@ struct Permutations {
     //
     //Similar to: https://leetcode.com/problems/combination-sum/
     //Similar to: https://leetcode.com/problems/subsets/
-    static func permuteContains(_ nums: [Int]) -> [[Int]] {
+    func permuteContains(_ nums: [Int]) -> [[Int]] {
         var permutations = [[Int]]()
         
         backtrackContains(nums, [Int](), &permutations)
@@ -72,7 +72,7 @@ struct Permutations {
         return permutations
     }
     
-    private static func backtrackContains(_ nums: [Int], _ current: [Int], _ permutations: inout [[Int]]) {
+    private func backtrackContains(_ nums: [Int], _ current: [Int], _ permutations: inout [[Int]]) {
         guard current.count < nums.count else {
             permutations.append(current)
             return

@@ -16,7 +16,7 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
     func test_A() {
         let adjacentPairs = [[2,1],[3,4],[3,2]]
         
-        let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
+        let result = RestoreTheArrayFromAdjacentPairs().restoreArray(adjacentPairs)
         
         //start node can change with end node and that is still valid
         if result[0] == 1 {
@@ -29,7 +29,7 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
     func test_B() {
         let adjacentPairs = [[4,-2],[1,4],[-3,1]]
         
-        let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
+        let result = RestoreTheArrayFromAdjacentPairs().restoreArray(adjacentPairs)
         
         //start node can change with end node and that is still valid
         if result[0] == -2 {
@@ -42,7 +42,7 @@ final class RestoreTheArrayFromAdjacentPairsTests: XCTestCase {
     func test_C() {
         let adjacentPairs = [[100000,-100000]]
         
-        let result = RestoreTheArrayFromAdjacentPairs.restoreArray(adjacentPairs)
+        let result = RestoreTheArrayFromAdjacentPairs().restoreArray(adjacentPairs)
         
         //start node can change with end node and that is still valid
         if result[0] == 100000 {

@@ -24,7 +24,7 @@ struct MaxNumberOfKSumPairs {
     //`differences` as it has been matched).
     //
     //Similar to: https://leetcode.com/problems/two-sum/
-    static func maxOperations(_ nums: [Int], _ k: Int) -> Int {
+    func maxOperations(_ nums: [Int], _ k: Int) -> Int {
         var differences = [Int: Int]() //[diff, count]
         var operations = 0
         

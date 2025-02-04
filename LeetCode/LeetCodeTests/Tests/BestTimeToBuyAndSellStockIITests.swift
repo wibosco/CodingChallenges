@@ -16,7 +16,7 @@ final class BestTimeToBuyAndSellStockIITests: XCTestCase {
     func test_A() {
         let prices = [7, 1, 5, 3, 6, 4]
         
-        let result = BestTimeToBuyAndSellStockII.maxProfit(prices)
+        let result = BestTimeToBuyAndSellStockII().maxProfit(prices)
         
         XCTAssertEqual(result, 7)
     }
@@ -24,7 +24,7 @@ final class BestTimeToBuyAndSellStockIITests: XCTestCase {
     func test_B() {
         let prices = [1, 2, 3, 4, 5]
         
-        let result = BestTimeToBuyAndSellStockII.maxProfit(prices)
+        let result = BestTimeToBuyAndSellStockII().maxProfit(prices)
         
         XCTAssertEqual(result, 4)
     }
@@ -32,7 +32,7 @@ final class BestTimeToBuyAndSellStockIITests: XCTestCase {
     func test_C() {
         let prices = [7, 6, 4, 3, 1]
         
-        let result = BestTimeToBuyAndSellStockII.maxProfit(prices)
+        let result = BestTimeToBuyAndSellStockII().maxProfit(prices)
         
         XCTAssertEqual(result, 0)
     }

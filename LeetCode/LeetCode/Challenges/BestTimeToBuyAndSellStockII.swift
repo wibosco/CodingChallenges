@@ -23,7 +23,7 @@ struct BestTimeToBuyAndSellStockII {
     //profit is then banked and we continue on looking for the next profitable buy/sell combination. We are not
     //trying to find the greatest positive difference instead we are using a greedy approach and taking any positive
     //difference
-    static func maxProfit(_ prices: [Int]) -> Int {
+    func maxProfit(_ prices: [Int]) -> Int {
         var profit = 0
         
         for i in 0..<(prices.count - 1) {

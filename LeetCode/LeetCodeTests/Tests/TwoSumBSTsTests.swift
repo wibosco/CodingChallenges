@@ -20,7 +20,7 @@ final class TwoSumBSTsTests: XCTestCase {
         let data2 = [1,0,3]
         let root2 = TreeNode.deserialize(data2)
         
-        let result = TwoSumBSTs.twoSumBSTs(root1, root2, target)
+        let result = TwoSumBSTs().twoSumBSTs(root1, root2, target)
         
         XCTAssertTrue(result)
     }
@@ -32,7 +32,7 @@ final class TwoSumBSTsTests: XCTestCase {
         let data2 = [5,1,7,0,2]
         let root2 = TreeNode.deserialize(data2)
         
-        let result = TwoSumBSTs.twoSumBSTs(root1, root2, target)
+        let result = TwoSumBSTs().twoSumBSTs(root1, root2, target)
         
         XCTAssertFalse(result)
     }

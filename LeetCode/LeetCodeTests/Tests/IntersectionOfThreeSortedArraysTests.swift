@@ -18,7 +18,7 @@ final class IntersectionOfThreeSortedArraysTests: XCTestCase {
         let arr2 = [1, 2, 5, 7, 9]
         let arr3 = [1, 3, 4, 5, 8]
         
-        let result = IntersectionOfThreeSortedArrays.arraysIntersection(arr1, arr2, arr3)
+        let result = IntersectionOfThreeSortedArrays().arraysIntersection(arr1, arr2, arr3)
         
         XCTAssertEqual(result, [1, 5])
     }
@@ -28,7 +28,7 @@ final class IntersectionOfThreeSortedArraysTests: XCTestCase {
         let arr2 = [501, 880, 1593, 1710, 1870]
         let arr3 = [521, 682, 1337, 1395, 1764]
         
-        let result = IntersectionOfThreeSortedArrays.arraysIntersection(arr1, arr2, arr3)
+        let result = IntersectionOfThreeSortedArrays().arraysIntersection(arr1, arr2, arr3)
         
         XCTAssertEqual(result, [])
     }

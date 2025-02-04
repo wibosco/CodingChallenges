@@ -23,7 +23,7 @@ struct CountGoodNodesInBinaryTree {
     //any child nodes and compare their value against the largest/max. Where a nodes value is equal or greater than we
     //increment `count` as this is a "good node" and set `max` to that value. We repeat this process until all nodes
     //have checked.
-    static func goodNodes(_ root: TreeNode?) -> Int {
+    func goodNodes(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -35,7 +35,7 @@ struct CountGoodNodesInBinaryTree {
         return count
     }
     
-    private static func dfs(_ node: TreeNode?, _ max: Int, _ count: inout Int) {
+    private func dfs(_ node: TreeNode?, _ max: Int, _ count: inout Int) {
         guard let node = node else {
             return
         }

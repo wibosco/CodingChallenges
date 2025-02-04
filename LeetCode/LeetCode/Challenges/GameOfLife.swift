@@ -22,7 +22,7 @@ struct GameOfLife {
     //Iterate through `board` and using relative indexing determine the state of cells surrounding each cell. We then
     //record the changes to that cell in a new board `nextBoard` so that the changes that we make don't affect any
     //unprocessed cells on the original board - `board`.
-    static func gameOfLife(_ board: inout [[Int]]) {
+    func gameOfLife(_ board: inout [[Int]]) {
         var nextBoard = Array(repeating: Array(repeating: 0, count: board[0].count), count: board.count)
         
         // swiftlint:disable comma
@@ -42,7 +42,7 @@ struct GameOfLife {
         board = nextBoard
     }
     
-    private static func update(_ board: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]]) -> Int {
+    private func update(_ board: [[Int]], _ row: Int, _ column: Int, _ relativeIndexing: [[Int]]) -> Int {
         let isAlive = board[row][column] == 1
         var liveNeighbors = 0
         

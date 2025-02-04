@@ -25,7 +25,7 @@ struct MergeIntervals {
     //merged and set that as the merged intervals upper boundary - the lower boundary never changes as it is either less than
     //or equal to the interval-to-be-merged lower boundary. If there isn't an overlap we add the interval to the
     //`mergedIntervals` array. Once all intervals have been compared we return the `mergedIntervals` array.
-    static func merge(_ intervals: [[Int]]) -> [[Int]] {
+    func merge(_ intervals: [[Int]]) -> [[Int]] {
         guard intervals.count > 1 else {
             return intervals
         }

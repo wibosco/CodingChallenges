@@ -17,7 +17,7 @@ final class ExclusiveTimeOfFunctionsTests: XCTestCase {
         let n = 2
         let logs = ["0:start:0", "1:start:2", "1:end:5", "0:end:6"]
         
-        let result = ExclusiveTimeOfFunctions.exclusiveTime(n, logs)
+        let result = ExclusiveTimeOfFunctions().exclusiveTime(n, logs)
         
         XCTAssertEqual(result, [3, 4])
     }
@@ -26,7 +26,7 @@ final class ExclusiveTimeOfFunctionsTests: XCTestCase {
         let n = 1
         let logs = ["0:start:0", "0:start:2", "0:end:5", "0:start:6", "0:end:6", "0:end:7"]
         
-        let result = ExclusiveTimeOfFunctions.exclusiveTime(n, logs)
+        let result = ExclusiveTimeOfFunctions().exclusiveTime(n, logs)
         
         XCTAssertEqual(result, [8])
     }
@@ -35,7 +35,7 @@ final class ExclusiveTimeOfFunctionsTests: XCTestCase {
         let n = 2
         let logs = ["0:start:0", "0:start:2", "0:end:5", "1:start:6", "1:end:6", "0:end:7"]
         
-        let result = ExclusiveTimeOfFunctions.exclusiveTime(n, logs)
+        let result = ExclusiveTimeOfFunctions().exclusiveTime(n, logs)
         
         XCTAssertEqual(result, [7, 1])
     }

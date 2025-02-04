@@ -17,7 +17,7 @@ final class ReorderListTests: XCTestCase {
     func test_A() {
         let list = ListNode.deserialize([1, 2, 3, 4])
         
-        ReorderList.reorderList(list)
+        ReorderList().reorderList(list)
         
         let result = ListNode.serialize(list)
         
@@ -27,7 +27,7 @@ final class ReorderListTests: XCTestCase {
     func test_B() {
         let list = ListNode.deserialize([1, 2, 3, 4, 5])
         
-        ReorderList.reorderList(list)
+        ReorderList().reorderList(list)
         
         let result = ListNode.serialize(list)
         
@@ -37,7 +37,7 @@ final class ReorderListTests: XCTestCase {
     func test_C() {
         let list = ListNode.deserialize([1, 2])
         
-        ReorderList.reorderList(list)
+        ReorderList().reorderList(list)
         
         let result = ListNode.serialize(list)
         

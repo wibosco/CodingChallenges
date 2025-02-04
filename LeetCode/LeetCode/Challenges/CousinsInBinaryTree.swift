@@ -24,7 +24,7 @@ struct CousinsInBinaryTree {
     //also store the parent of that node in the queue. This way at the end of levels iteration we check if either `x` or `y`
     //was found and if and only if they where found if they share a parent. We repeat this process until we find either or both
     //`x` and `y` or we run out of nodes to search.
-    static func isCousins(_ root: TreeNode?, _ x: Int, _ y: Int) -> Bool {
+    func isCousins(_ root: TreeNode?, _ x: Int, _ y: Int) -> Bool {
         guard let root = root else {
             return false
         }

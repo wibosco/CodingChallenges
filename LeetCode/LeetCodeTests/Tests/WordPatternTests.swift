@@ -17,7 +17,7 @@ final class WordPatternTests: XCTestCase {
         let pattern = "abba"
         let str = "dog cat cat dog"
         
-        let result = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern().wordPattern(pattern, str)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class WordPatternTests: XCTestCase {
         let pattern = "abba"
         let str = "dog cat cat fish"
         
-        let result = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern().wordPattern(pattern, str)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class WordPatternTests: XCTestCase {
         let pattern = "aaaa"
         let str = "dog cat cat dog"
         
-        let result = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern().wordPattern(pattern, str)
         
         XCTAssertFalse(result)
     }
@@ -44,7 +44,7 @@ final class WordPatternTests: XCTestCase {
         let pattern = "abba"
         let str = "dog dog dog dog"
         
-        let result = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern().wordPattern(pattern, str)
         
         XCTAssertFalse(result)
     }
@@ -53,7 +53,7 @@ final class WordPatternTests: XCTestCase {
         let pattern = "aaa"
         let str = "aa aa aa aa"
         
-        let result = WordPattern.wordPattern(pattern, str)
+        let result = WordPattern().wordPattern(pattern, str)
         
         XCTAssertFalse(result)
     }

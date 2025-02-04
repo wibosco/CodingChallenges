@@ -29,7 +29,7 @@ struct IntersectionOfTwoLinkedLists {
     //
     //Similar to https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
     //Similar to: https://leetcode.com/problems/find-the-duplicate-number/
-    static func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+    func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
         var p1 = headA
         var p2 = headB
         
@@ -69,7 +69,7 @@ struct IntersectionOfTwoLinkedLists {
     //that node is the first intersection node and so we return it immediately. If having iterated through all nodes
     //in the `headB` list and we haven't found the same node in the set then we know that there is no intersection
     //node and can return nil.
-    static func getIntersectionNodeSet(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+    func getIntersectionNodeSet(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
         var nodesInA = Set<ListNode>()
         var currentA = headA
         

@@ -26,7 +26,7 @@ struct SimplifyPath {
     //4. Anything else add to `stack`
     //
     //Add a starting "/" and concatenate stack components together using "/"
-    static func simplifyPath(_ path: String) -> String {
+    func simplifyPath(_ path: String) -> String {
         let components = path.split(separator: "/") //don't try and treat each character independently
         var stack = [String]()
         

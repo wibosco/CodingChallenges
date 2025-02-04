@@ -17,7 +17,7 @@ final class EqualTreePartitionTests: XCTestCase {
         let data = [5,10,10,nil,nil,2,3]
         let root = TreeNode.deserialize(data)
         
-        let result = EqualTreePartition.checkEqualTree(root)
+        let result = EqualTreePartition().checkEqualTree(root)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class EqualTreePartitionTests: XCTestCase {
         let data = [1,2,10,nil,nil,2,20]
         let root = TreeNode.deserialize(data)
         
-        let result = EqualTreePartition.checkEqualTree(root)
+        let result = EqualTreePartition().checkEqualTree(root)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class EqualTreePartitionTests: XCTestCase {
         let data = [0,-1,1]
         let root = TreeNode.deserialize(data)
         
-        let result = EqualTreePartition.checkEqualTree(root)
+        let result = EqualTreePartition().checkEqualTree(root)
         
         XCTAssertFalse(result)
     }
@@ -44,7 +44,7 @@ final class EqualTreePartitionTests: XCTestCase {
         let data = [2,nil,3,nil,4,nil,5,nil,6]
         let root = TreeNode.deserialize(data)
         
-        let result = EqualTreePartition.checkEqualTree(root)
+        let result = EqualTreePartition().checkEqualTree(root)
         
         XCTAssertFalse(result)
     }
@@ -53,7 +53,7 @@ final class EqualTreePartitionTests: XCTestCase {
         let data = [2,1,3,0,2,nil,nil,nil,nil,2,nil,1,nil,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = EqualTreePartition.checkEqualTree(root)
+        let result = EqualTreePartition().checkEqualTree(root)
         
         XCTAssertTrue(result)
     }

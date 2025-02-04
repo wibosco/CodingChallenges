@@ -33,7 +33,7 @@ struct RemoveKDigits {
     //As x increases, y decreases always, then it’s a monotonically decreasing function.
     //
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
-    static func removeKdigits(_ num: String, _ k: Int) -> String {
+    func removeKdigits(_ num: String, _ k: Int) -> String {
         var stack = [Character]()
         var remainingRemovals = k
         

@@ -17,7 +17,7 @@ final class DecodeStringTests: XCTestCase {
     func test_A() {
         let s = "3[a]2[bc]"
         
-        let result = DecodeString.decodeString(s)
+        let result = DecodeString().decodeString(s)
         
         XCTAssertEqual(result, "aaabcbc")
     }
@@ -25,7 +25,7 @@ final class DecodeStringTests: XCTestCase {
     func test_B() {
         let s = "3[a2[c]]"
         
-        let result = DecodeString.decodeString(s)
+        let result = DecodeString().decodeString(s)
         
         XCTAssertEqual(result, "accaccacc")
     }
@@ -33,7 +33,7 @@ final class DecodeStringTests: XCTestCase {
     func test_C() {
         let s = "2[abc]3[cd]ef"
         
-        let result = DecodeString.decodeString(s)
+        let result = DecodeString().decodeString(s)
         
         XCTAssertEqual(result, "abcabccdcdcdef")
     }
@@ -41,7 +41,7 @@ final class DecodeStringTests: XCTestCase {
     func test_D() {
         let s = "abc3[cd]xyz"
         
-        let result = DecodeString.decodeString(s)
+        let result = DecodeString().decodeString(s)
         
         XCTAssertEqual(result, "abccdcdcdxyz")
     }
@@ -49,7 +49,7 @@ final class DecodeStringTests: XCTestCase {
     func test_E() {
         let s = "10[leetcode]"
         
-        let result = DecodeString.decodeString(s)
+        let result = DecodeString().decodeString(s)
         
         XCTAssertEqual(result, "leetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcode")
     }
@@ -57,7 +57,7 @@ final class DecodeStringTests: XCTestCase {
     func test_F() {
         let s = "12[e]"
         
-        let result = DecodeString.decodeString(s)
+        let result = DecodeString().decodeString(s)
         
         XCTAssertEqual(result, "eeeeeeeeeeee")
     }

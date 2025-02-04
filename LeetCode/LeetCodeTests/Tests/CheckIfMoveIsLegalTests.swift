@@ -26,7 +26,7 @@ final class CheckIfMoveIsLegalTests: XCTestCase {
         let cMove = 3
         let color: Character = "B"
         
-        let result = CheckIfMoveIsLegal.checkMove(board, rMove, cMove, color)
+        let result = CheckIfMoveIsLegal().checkMove(board, rMove, cMove, color)
         
         XCTAssertTrue(result)
     }
@@ -44,7 +44,7 @@ final class CheckIfMoveIsLegalTests: XCTestCase {
         let cMove = 4
         let color: Character = "W"
         
-        let result = CheckIfMoveIsLegal.checkMove(board, rMove, cMove, color)
+        let result = CheckIfMoveIsLegal().checkMove(board, rMove, cMove, color)
         
         XCTAssertFalse(result)
     }
@@ -62,7 +62,7 @@ final class CheckIfMoveIsLegalTests: XCTestCase {
         let cMove = 4
         let color: Character = "W"
         
-        let result = CheckIfMoveIsLegal.checkMove(board, rMove, cMove, color)
+        let result = CheckIfMoveIsLegal().checkMove(board, rMove, cMove, color)
         
         XCTAssertTrue(result)
     }

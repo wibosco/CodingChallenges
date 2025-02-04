@@ -17,7 +17,7 @@ final class ReverseStringTests: XCTestCase {
     func test_A() {
         var s = ["h", "e", "l", "l", "o"]
         
-        ReverseString.reverseString(&s)
+        ReverseString().reverseString(&s)
         
         XCTAssertEqual(s, ["o", "l", "l", "e", "h"])
     }
@@ -25,7 +25,7 @@ final class ReverseStringTests: XCTestCase {
     func test_B() {
         var s = ["H", "a", "n", "n", "a", "h"]
         
-        ReverseString.reverseString(&s)
+        ReverseString().reverseString(&s)
         
         XCTAssertEqual(s, ["h", "a", "n", "n", "a", "H"])
     }

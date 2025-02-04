@@ -21,7 +21,7 @@ struct EarliestMomentWhenEveryoneBecomeFriends {
     //Using disjoint sets combine the logs together. Sort the logs so that as we merge each log into sets when we get to one set we
     //know that we have the earliest time and can return. If we get to the end with getting to one set we know not everyone are
     //friends and so can return -1.
-    static func earliestAcq(_ logs: [[Int]], _ n: Int) -> Int {
+    func earliestAcq(_ logs: [[Int]], _ n: Int) -> Int {
         let sortedLogs = logs.sorted { $0[0] < $1[0] }
         let unionFind = UnionFindCounting(count: n)
         

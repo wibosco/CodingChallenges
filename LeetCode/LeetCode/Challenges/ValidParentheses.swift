@@ -26,17 +26,17 @@ struct ValidParentheses {
     //then that pair is valid and we continue on to the next character; if it isn't then (or there are no elements in the
     //stack) then we know that `s` isn't valid and can immediately return false. After we have processed all elements in
     //`s`, we need to check that the stack is empty to determine if `s` is valid
-    static func isValid(_ s: String) -> Bool {
+    func isValid(_ s: String) -> Bool {
         guard s.count % 2 == 0 else { //valid parentheses needs to come in pairs so `s` can't have an odd count
             return false
         }
         
         var stack = [Character]()
         for c in s {
-            if mapping[c] != nil { //check if `c` is a closing parentheses
+            if ValidParentheses.mapping[c] != nil { //check if `c` is a closing parentheses
                 stack.append(c) //add opening parentheses to the stack
             } else if let popped = stack.popLast() { //check that the stack isn't empty
-                if c !=  mapping[popped] {  //check that the popped element is an opening match for `c`
+                if c !=  ValidParentheses.mapping[popped] {  //check that the popped element is an opening match for `c`
                     return false
                 }
             } else {

@@ -38,7 +38,7 @@ struct RemoveDuplicateLetters {
     //As x increases, y decreases always, then it’s a monotonically decreasing function.
     //
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
-    static func removeDuplicateLetters(_ s: String) -> String {
+    func removeDuplicateLetters(_ s: String) -> String {
         var stack = [Character]() //increasing monotonic stack
         let chars = Array(s)
         

@@ -30,7 +30,7 @@ struct LowestCommonAncestorBinaryTree {
     //pass back the first node that is true for 2 of the above 3 scenarios. When we find this node we set it to `lca`.
     //
     //Similar to: https://leetcode.com/problems/find-distance-in-a-binary-tree/
-    static func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         var lca: TreeNode?
 
         findLowestCommonAncestor(root, p, q, &lca)
@@ -39,7 +39,7 @@ struct LowestCommonAncestorBinaryTree {
     }
     
     @discardableResult
-    private static func findLowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?, _ lca: inout TreeNode?) -> Bool {
+    private func findLowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?, _ lca: inout TreeNode?) -> Bool {
         //checking lca here prevents us falsely reporting a higher common-ancestor node as the lowest-common-ancestor
         guard let root = root, let p = p, let q = q, lca == nil else {
             return false
@@ -86,7 +86,7 @@ struct LowestCommonAncestorBinaryTree {
     //Solution description:
     //Using DFS we can track the path to both `p` and `q` nodes - storing this each path in an array. We then iterate through
     //those paths and when we find the same node in both paths we return that node.
-    static func lowestCommonAncestorArrays(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestorArrays(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil
         }
@@ -113,7 +113,7 @@ struct LowestCommonAncestorBinaryTree {
     }
     
     @discardableResult
-    private static func findPath(to target: TreeNode, from root: TreeNode?, path: inout [TreeNode]) -> Bool {
+    private func findPath(to target: TreeNode, from root: TreeNode?, path: inout [TreeNode]) -> Bool {
         guard let root = root else {
             return false
         }

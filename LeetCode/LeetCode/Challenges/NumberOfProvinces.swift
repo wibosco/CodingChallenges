@@ -26,7 +26,7 @@ struct NumberOfProvinces {
     //through each vertice in the graph and traverse it's graph using DFS. To ensure that we don't search the same graph
     //multiple times (from different starting vertices) or get caught in an infinite loop, each vertice we encounter we place
     //in the `visited` set. At the end of each DFS traversal we increment `count`.
-    static func findCircleNum(_ isConnected: [[Int]]) -> Int {
+    func findCircleNum(_ isConnected: [[Int]]) -> Int {
         var visited = Set<Int>()
         var count = 0
         
@@ -45,7 +45,7 @@ struct NumberOfProvinces {
         return count
     }
     
-    private static func dfs(_ src: Int, _ adjMatrix: [[Int]], _ visited: inout Set<Int>) {
+    private func dfs(_ src: Int, _ adjMatrix: [[Int]], _ visited: inout Set<Int>) {
         for dst in 0..<adjMatrix[src].count {
             guard adjMatrix[src][dst] == 1 else { //`1` indicates that there is an edge between these two vertices
                 continue
@@ -75,7 +75,7 @@ struct NumberOfProvinces {
     //through each vertice in the graph and traverse it's graph using BFS. To ensure that we don't search the same graph
     //multiple times (from different starting vertices) or get caught in an infinite loop, each vertice we encounter we place
     //in the `visited` set. At the end of each BFS traversal we increment `count`.
-    static func findCircleNumBFS(_ isConnected: [[Int]]) -> Int {
+    func findCircleNumBFS(_ isConnected: [[Int]]) -> Int {
         var visited = Set<Int>()
         var queue = [Int]()
         var count = 0
@@ -124,7 +124,7 @@ struct NumberOfProvinces {
     //
     //Solution Description:
     //A valid tree has one root and no cycles by using a disjoint set we can test for both conditions.
-    static func findCircleNumDisjointSet(_ isConnected: [[Int]]) -> Int {
+    func findCircleNumDisjointSet(_ isConnected: [[Int]]) -> Int {
         guard !isConnected.isEmpty else {
             return 0
         }

@@ -25,7 +25,7 @@ struct UniqueEmailAddresses {
     //through all characters in the email address (removing those characters we don't want) we add the sanitised email to a
     //set so that any duplicate entries are automatically merged/removed. Once all emails are parsed we return the count of
     //that set.
-    static func numUniqueEmails(_ emails: [String]) -> Int {
+    func numUniqueEmails(_ emails: [String]) -> Int {
         var uniqueEmails = Set<String>()
         
         for email in emails {
@@ -67,7 +67,7 @@ struct UniqueEmailAddresses {
     //in this section of the email address, `ignore` controls whether we skip the current character. Once we iterate through
     //all characters in the email address (removing those characters we don't want) we add the sanitised email to a set so
     //that any duplicate entries are automatically merged/removed. Once all emails are parsed we return the count of that set.
-    static func numUniqueEmailsCharacter(_ emails: [String]) -> Int {
+    func numUniqueEmailsCharacter(_ emails: [String]) -> Int {
         var uniqueEmails = Set<String>()
         
         for email in emails {

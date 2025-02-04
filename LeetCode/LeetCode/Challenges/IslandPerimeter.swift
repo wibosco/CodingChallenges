@@ -25,7 +25,7 @@ struct IslandPerimeter {
     //either of these conditions are met (base case), we return 1 to represent that this element of land has 1 perimeter in
     //the given direction. We continue DFS until all possible connected land elements have been search and return the
     //accumulated perimeter count. As `grid` only has one island we return that count straight away.
-    static func islandPerimeter(_ grid: [[Int]]) -> Int {
+    func islandPerimeter(_ grid: [[Int]]) -> Int {
         var landVisited = Set<[Int]>()
         let relativeIndexes = [[-1, 0], [1, 0], [0, -1], [0, 1]] //up, down, left, right
         
@@ -42,7 +42,7 @@ struct IslandPerimeter {
         return -1
     }
     
-    private static func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ landVisited: inout Set<[Int]>, _ relativeIndexes: [[Int]]) -> Int {
+    private func dfs(_ grid: [[Int]], _ row: Int, _ column: Int, _ landVisited: inout Set<[Int]>, _ relativeIndexes: [[Int]]) -> Int {
         guard row >= 0, row < grid.count, column >= 0, column < grid[row].count else {
             return 1
         }

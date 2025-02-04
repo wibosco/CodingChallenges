@@ -17,7 +17,7 @@ final class NextPermutationTests: XCTestCase {
     func test_A() {
         var nums = [1, 2, 3]
         
-        NextPermutation.nextPermutation(&nums)
+        NextPermutation().nextPermutation(&nums)
         
         XCTAssertEqual(nums, [1, 3, 2])
     }
@@ -25,7 +25,7 @@ final class NextPermutationTests: XCTestCase {
     func test_B() {
         var nums = [3, 2, 1]
         
-        NextPermutation.nextPermutation(&nums)
+        NextPermutation().nextPermutation(&nums)
         
         XCTAssertEqual(nums, [1, 2, 3])
     }
@@ -33,7 +33,7 @@ final class NextPermutationTests: XCTestCase {
     func test_C() {
         var nums = [1]
         
-        NextPermutation.nextPermutation(&nums)
+        NextPermutation().nextPermutation(&nums)
         
         XCTAssertEqual(nums, [1])
     }
@@ -41,7 +41,7 @@ final class NextPermutationTests: XCTestCase {
     func test_D() {
         var nums = [1, 3, 2]
         
-        NextPermutation.nextPermutation(&nums)
+        NextPermutation().nextPermutation(&nums)
         
         XCTAssertEqual(nums, [2, 1, 3])
     }

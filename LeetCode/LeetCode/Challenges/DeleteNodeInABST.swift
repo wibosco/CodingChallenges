@@ -35,7 +35,7 @@ struct DeleteNodeInABST {
     //recursive calls end, returning mostly the same node as was present before the deletion to be assigned to their parent's
     //left or right properties. This reassignment has the benefit of implicitly handling reassigning the tree's root node if
     //needed without needing to explicitly handle it.
-    static func deleteNode(_ root: TreeNode?, _ key: Int) -> TreeNode? {
+    func deleteNode(_ root: TreeNode?, _ key: Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }
@@ -66,7 +66,7 @@ struct DeleteNodeInABST {
         return root
     }
     
-    private static func leftMost(_ node: TreeNode) -> TreeNode {
+    private func leftMost(_ node: TreeNode) -> TreeNode {
         if let left = node.left {
             return leftMost(left)
         }

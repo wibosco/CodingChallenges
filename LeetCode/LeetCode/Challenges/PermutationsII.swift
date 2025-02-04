@@ -25,7 +25,7 @@ struct PermutationsII {
     //frequency as we use a num or backtrack from using a num. Also as `nums` can contain duplicates we need to be careful that
     //we don't include the same array outcome but with different ordering (with regards to the original `nums` ordering) so
     //`permutations` is a set to avoid this
-    static func permuteUnique(_ nums: [Int]) -> [[Int]] {
+    func permuteUnique(_ nums: [Int]) -> [[Int]] {
         var permutations = Set<[Int]>()
         var frequency = [Int: Int]()
         
@@ -40,7 +40,7 @@ struct PermutationsII {
         return Array(permutations)
     }
     
-    private static func backtrack(_ nums: inout [Int: Int], _ targetLength: Int, _ permutation: inout [Int], _ permutations: inout Set<[Int]>) {
+    private func backtrack(_ nums: inout [Int: Int], _ targetLength: Int, _ permutation: inout [Int], _ permutations: inout Set<[Int]>) {
         guard permutation.count < targetLength else {
             permutations.insert(permutation)
             return
@@ -74,7 +74,7 @@ struct PermutationsII {
     //important to remove the current elements from `nums` from the the next recursive call. Also as `nums` can contain
     //duplicates we need to be careful that we don't include the same array outcome but with different ordering (with regards
     //to the original `nums` ordering) so `permutations` is a set to avoid this
-    static func permuteUniqueRemoval(_ nums: [Int]) -> [[Int]] {
+    func permuteUniqueRemoval(_ nums: [Int]) -> [[Int]] {
         var permutations = Set<[Int]>()
         
         dfs(nums, [Int](), &permutations)
@@ -82,7 +82,7 @@ struct PermutationsII {
         return Array(permutations)
     }
     
-    private static func dfs(_ nums: [Int], _ current: [Int], _ permutations: inout Set<[Int]>) {
+    private func dfs(_ nums: [Int], _ current: [Int], _ permutations: inout Set<[Int]>) {
         guard !nums.isEmpty else {
             permutations.insert(current)
             return

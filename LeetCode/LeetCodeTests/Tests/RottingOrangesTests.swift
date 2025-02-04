@@ -19,7 +19,7 @@ final class RottingOrangesTests: XCTestCase {
                     [1, 1, 0],
                     [0, 1, 1]]
         
-        let result = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges().orangesRotting(grid)
         
         XCTAssertEqual(result, 4)
     }
@@ -29,7 +29,7 @@ final class RottingOrangesTests: XCTestCase {
                     [0, 1, 1],
                     [1, 0, 1]]
         
-        let result = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges().orangesRotting(grid)
         
         XCTAssertEqual(result, -1)
     }
@@ -37,7 +37,7 @@ final class RottingOrangesTests: XCTestCase {
     func test_C() {
         let grid = [[0, 2]]
         
-        let result = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges().orangesRotting(grid)
         
         XCTAssertEqual(result, 0)
     }
@@ -45,7 +45,7 @@ final class RottingOrangesTests: XCTestCase {
     func test_D() {
         let grid = [[0]]
         
-        let result = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges().orangesRotting(grid)
         
         XCTAssertEqual(result, 0)
     }
@@ -53,7 +53,7 @@ final class RottingOrangesTests: XCTestCase {
     func test_E() {
         let grid = [[1]]
         
-        let result = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges().orangesRotting(grid)
         
         XCTAssertEqual(result, -1)
     }
@@ -61,7 +61,7 @@ final class RottingOrangesTests: XCTestCase {
     func test_F() {
         let grid = [[0, 1]]
         
-        let result = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges().orangesRotting(grid)
         
         XCTAssertEqual(result, -1)
     }
@@ -72,7 +72,7 @@ final class RottingOrangesTests: XCTestCase {
                     [0, 0],
                     [2, 0]]
         
-        let result = RottingOranges.orangesRotting(grid)
+        let result = RottingOranges().orangesRotting(grid)
         
         XCTAssertEqual(result, 1)
     }

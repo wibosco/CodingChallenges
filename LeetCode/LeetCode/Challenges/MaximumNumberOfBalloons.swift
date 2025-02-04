@@ -22,7 +22,7 @@ struct MaximumNumberOfBalloons {
     //throw the full word away. The interesting part of this challenge is that not all letters in `ballon` have the same
     //frequency - `l` and `o` appear twice, the rest only once. This means that when determining the minimum we need to
     //reduce the value of `l` and `o` by dividing them by 2.
-    static func maxNumberOfBalloons(_ text: String) -> Int {
+    func maxNumberOfBalloons(_ text: String) -> Int {
         var frequency = [Character: Int]() //[letter: count]
         
         for c in text {

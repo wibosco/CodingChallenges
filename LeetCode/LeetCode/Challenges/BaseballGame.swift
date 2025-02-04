@@ -19,7 +19,7 @@ struct BaseballGame {
     //We iterate through the elements in `operations` and using a stack place each number that we come across into that stack. As
     //we encounter the other possible operations we remove and manipulate the values in the stack. Once all operations have been
     //processed we sum the remaining values in the stack and return it.
-    static func calPoints(_ operations: [String]) -> Int {
+    func calPoints(_ operations: [String]) -> Int {
         var stack = [Int]()
         
         for operation in operations {

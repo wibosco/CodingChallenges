@@ -23,7 +23,7 @@ struct JumpGameII {
     //next jump where we would reach `target`); if not we build the possible neighbors, check that we have't already
     //visited them and add each unvisited neighbour to `queue`. At the end of each level we increment `jumps` and
     //repeat the process.
-    static func jump(_ nums: [Int]) -> Int {
+    func jump(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {
             return 0
         }

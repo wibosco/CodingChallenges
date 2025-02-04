@@ -30,7 +30,7 @@ struct PalindromePartitioning {
     //`palindromes` to `result`. Once we reach the end of one recursive branch we then backtrack to the nearest (latest)
     //valid palindrome and attempt to find another valid path by adding to that palindrome and searching down the
     //graph/tree from that new position. We repeat this process until all possible branches have been searched.
-    static func partition(_ s: String) -> [[String]] {
+    func partition(_ s: String) -> [[String]] {
         var result = [[String]]()
         
         dfs(Array(s), 0, 0, [], &result)
@@ -38,7 +38,7 @@ struct PalindromePartitioning {
         return result
     }
     
-    private static func dfs(_ characters: [Character], _ start: Int, _ end: Int, _ palindromes: [String], _ result: inout [[String]]) {
+    private func dfs(_ characters: [Character], _ start: Int, _ end: Int, _ palindromes: [String], _ result: inout [[String]]) {
         guard end < characters.count else { //goal
             guard !palindromes.isEmpty, start == end else {
                 return
@@ -60,7 +60,7 @@ struct PalindromePartitioning {
         dfs(characters, start, (end + 1), palindromes, &result)
     }
     
-    private static func isPalindrome(_ characters: [Character], _ start: Int, _ end: Int) -> Bool {
+    private func isPalindrome(_ characters: [Character], _ start: Int, _ end: Int) -> Bool {
         var p1 = start
         var p2 = end
             

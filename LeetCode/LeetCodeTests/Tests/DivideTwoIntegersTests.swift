@@ -18,7 +18,7 @@ final class DivideTwoIntegersTests: XCTestCase {
         let dividend = 10
         let divisor = 3
         
-        let result = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers().divide(dividend, divisor)
         
         XCTAssertEqual(result, 3)
     }
@@ -27,7 +27,7 @@ final class DivideTwoIntegersTests: XCTestCase {
         let dividend = 7
         let divisor = -3
         
-        let result = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers().divide(dividend, divisor)
         
         XCTAssertEqual(result, -2)
     }
@@ -36,7 +36,7 @@ final class DivideTwoIntegersTests: XCTestCase {
         let dividend = 0
         let divisor = 1
         
-        let result = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers().divide(dividend, divisor)
         
         XCTAssertEqual(result, 0)
     }
@@ -45,7 +45,7 @@ final class DivideTwoIntegersTests: XCTestCase {
         let dividend = 1
         let divisor = 1
         
-        let result = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers().divide(dividend, divisor)
         
         XCTAssertEqual(result, 1)
     }
@@ -54,7 +54,7 @@ final class DivideTwoIntegersTests: XCTestCase {
         let dividend = -2147483648
         let divisor = -1
         
-        let result = DivideTwoIntegers.divide(dividend, divisor)
+        let result = DivideTwoIntegers().divide(dividend, divisor)
         
         XCTAssertEqual(result, 2147483647)
     }

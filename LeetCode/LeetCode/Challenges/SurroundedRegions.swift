@@ -30,7 +30,7 @@ struct SurroundedRegions {
     //elements. We then perform the same search for the first and last element of each column (top and bottom edge).
     //Once we've search for `O` elements from all edges we then iterate through all elements on the board and when we
     //encounter an `S` we transform it into `O`, if we encounter an `X` or `O` we set it to `X`.
-    static func solve(_ board: inout [[Character]]) {
+    func solve(_ board: inout [[Character]]) {
         for row in 0..<board.count {
             searchIsland(&board, row, 0) //search for O in first element of each row
             searchIsland(&board, row, (board[row].count - 1)) //search for O in last element of each row
@@ -52,7 +52,7 @@ struct SurroundedRegions {
         }
     }
     
-    private static func searchIsland(_ board: inout [[Character]], _ row: Int, _ column: Int) {
+    private func searchIsland(_ board: inout [[Character]], _ row: Int, _ column: Int) {
         guard row >= 0, row < board.count, column >= 0, column < board[row].count else {
             return
         }
@@ -88,7 +88,7 @@ struct SurroundedRegions {
     //false we add that `O` island to `islands` set. To avoid searching the same island from multiple different starting
     //indexes we add each index we search to the `visited` set. Finally we iterate through all the elements in the board
     //and if that element exists in `island` we set it to `O` else we set it to `X`.
-    static func solveAlt(_ board: inout [[Character]]) {
+    func solveAlt(_ board: inout [[Character]]) {
         var islands = Set<[Int]>()
         var visited = Set<[Int]>()
         
@@ -116,7 +116,7 @@ struct SurroundedRegions {
         }
     }
     
-    private static func dfs(_ board: [[Character]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>, _ currentIsland: inout Set<[Int]>, _ flip: inout Bool) {
+    private func dfs(_ board: [[Character]], _ row: Int, _ column: Int, _ visited: inout Set<[Int]>, _ currentIsland: inout Set<[Int]>, _ flip: inout Bool) {
         guard row >= 0, row < board.count, column >= 0, column < board[row].count else {
             return
         }

@@ -18,7 +18,7 @@ final class DeleteNodeInABSTTests: XCTestCase {
         let key = 3
         let root = TreeNode.deserialize(data)
         
-        let result = DeleteNodeInABST.deleteNode(root, key)
+        let result = DeleteNodeInABST().deleteNode(root, key)
             
         let values = TreeNode.serialize(result)
         
@@ -30,7 +30,7 @@ final class DeleteNodeInABSTTests: XCTestCase {
         let key = 0
         let root = TreeNode.deserialize(data)
         
-        let result = DeleteNodeInABST.deleteNode(root, key)
+        let result = DeleteNodeInABST().deleteNode(root, key)
             
         let values = TreeNode.serialize(result)
         
@@ -42,7 +42,7 @@ final class DeleteNodeInABSTTests: XCTestCase {
         let key = 0
         let root = TreeNode.deserialize(data)
         
-        let result = DeleteNodeInABST.deleteNode(root, key)
+        let result = DeleteNodeInABST().deleteNode(root, key)
             
         XCTAssertNil(result)
     }

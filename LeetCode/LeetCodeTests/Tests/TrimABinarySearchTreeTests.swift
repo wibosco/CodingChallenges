@@ -20,7 +20,7 @@ final class TrimABinarySearchTreeTests: XCTestCase {
         let low = 1
         let high = 2
         
-        let result = TrimABinarySearchTree.trimBST(tree, low, high)
+        let result = TrimABinarySearchTree().trimBST(tree, low, high)
         
         let values = TreeNode.serialize(result)
         
@@ -34,7 +34,7 @@ final class TrimABinarySearchTreeTests: XCTestCase {
         let low = 1
         let high = 3
         
-        let result = TrimABinarySearchTree.trimBST(tree, low, high)
+        let result = TrimABinarySearchTree().trimBST(tree, low, high)
         
         let values = TreeNode.serialize(result)
         
@@ -48,7 +48,7 @@ final class TrimABinarySearchTreeTests: XCTestCase {
         let low = 3
         let high = 4
         
-        let result = TrimABinarySearchTree.trimBST(tree, low, high)
+        let result = TrimABinarySearchTree().trimBST(tree, low, high)
         
         let values = TreeNode.serialize(result)
         

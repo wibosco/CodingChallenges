@@ -17,7 +17,7 @@ final class MaxNumberOfKSumPairsTests: XCTestCase {
         let nums = [1, 2, 3, 4]
         let k = 5
         
-        let result = MaxNumberOfKSumPairs.maxOperations(nums, k)
+        let result = MaxNumberOfKSumPairs().maxOperations(nums, k)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class MaxNumberOfKSumPairsTests: XCTestCase {
         let nums = [3, 1, 3, 4, 3]
         let k = 6
         
-        let result = MaxNumberOfKSumPairs.maxOperations(nums, k)
+        let result = MaxNumberOfKSumPairs().maxOperations(nums, k)
         
         XCTAssertEqual(result, 1)
     }
@@ -35,7 +35,7 @@ final class MaxNumberOfKSumPairsTests: XCTestCase {
         let nums = [3, 1, 3, 4, 3]
         let k = 9
         
-        let result = MaxNumberOfKSumPairs.maxOperations(nums, k)
+        let result = MaxNumberOfKSumPairs().maxOperations(nums, k)
         
         XCTAssertEqual(result, 0)
     }

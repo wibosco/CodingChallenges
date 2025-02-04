@@ -22,7 +22,7 @@ struct FruitIntoBaskets {
     //frequency dictionary and recheck for 2 different fruit types - we repeat this step until the window contains at most 2
     //different fruit types. With every iteration we calculate the the maximum window size that we have seen so far and store it
     //in `maxFruits`. Once iterating through all elements in `fruits`, we return `maxFruits`.
-    static func totalFruit(_ fruits: [Int]) -> Int {
+    func totalFruit(_ fruits: [Int]) -> Int {
         var maxFruits = 0
         
         var left = 0

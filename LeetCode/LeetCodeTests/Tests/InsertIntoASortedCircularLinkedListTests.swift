@@ -19,7 +19,7 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 2
         
-        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList().insert(list, insertVal)
         
         let values = ListNode.serialize(result)
         
@@ -32,7 +32,7 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 1
         
-        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList().insert(list, insertVal)
         
         let values = ListNode.serialize(result)
         
@@ -45,7 +45,7 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 0
         
-        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList().insert(list, insertVal)
         
         let values = ListNode.serialize(result)
         
@@ -58,7 +58,7 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 0
         
-        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList().insert(list, insertVal)
         
         let values = ListNode.serialize(result)
         
@@ -71,7 +71,7 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         let insertVal = 1
         
-        let result = InsertIntoASortedCircularLinkedList.insert(list, insertVal)
+        let result = InsertIntoASortedCircularLinkedList().insert(list, insertVal)
         
         let values = ListNode.serialize(result)
         

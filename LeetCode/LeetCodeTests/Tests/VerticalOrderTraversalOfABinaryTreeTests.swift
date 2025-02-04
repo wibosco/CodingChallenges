@@ -17,7 +17,7 @@ final class VerticalOrderTraversalOfABinaryTreeTests: XCTestCase {
         let data = [3, 9, 20, nil, nil, 15, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
+        let result = VerticalOrderTraversalOfABinaryTree().verticalTraversal(root)
         
         XCTAssertEqual(result, [[9], [3, 15], [20], [7]])
     }
@@ -26,7 +26,7 @@ final class VerticalOrderTraversalOfABinaryTreeTests: XCTestCase {
         let data = [1, 2, 3, 4, 5, 6, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
+        let result = VerticalOrderTraversalOfABinaryTree().verticalTraversal(root)
         
         XCTAssertEqual(result, [[4], [2], [1, 5, 6], [3], [7]])
     }
@@ -35,7 +35,7 @@ final class VerticalOrderTraversalOfABinaryTreeTests: XCTestCase {
         let data = [1, 2, 3, 4, 6, 5, 7]
         let root = TreeNode.deserialize(data)
         
-        let result = VerticalOrderTraversalOfABinaryTree.verticalTraversal(root)
+        let result = VerticalOrderTraversalOfABinaryTree().verticalTraversal(root)
         
         XCTAssertEqual(result, [[4], [2], [1, 5, 6], [3], [7]])
     }

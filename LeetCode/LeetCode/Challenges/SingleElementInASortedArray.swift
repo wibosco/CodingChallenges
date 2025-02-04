@@ -23,7 +23,7 @@ struct SingleElementInASortedArray {
     //element against it's neighbors to determine if `mid` is the left or right of that pair and determine if it should be
     //on an even or odd index. If there is a mismatch between expectation and reality then we know which way to shift the
     //search. Of course is possible that `mid` falls on the non-duplicate element in which case we return it immediately.
-    static func singleNonDuplicate(_ nums: [Int]) -> Int {
+    func singleNonDuplicate(_ nums: [Int]) -> Int {
         var left = 0
         var right = (nums.count - 1)
         

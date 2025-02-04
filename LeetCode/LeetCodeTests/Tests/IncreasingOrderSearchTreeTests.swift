@@ -17,7 +17,7 @@ final class IncreasingOrderSearchTreeTests: XCTestCase {
         let data = [5,3,6,2,4,nil,8,1,nil,nil,nil,7,9]
         let root = TreeNode.deserialize(data)
         
-        let result = IncreasingOrderSearchTree.increasingBST(root)
+        let result = IncreasingOrderSearchTree().increasingBST(root)
         
         let values = TreeNode.serialize(result)
         
@@ -28,7 +28,7 @@ final class IncreasingOrderSearchTreeTests: XCTestCase {
         let data = [5,1,7]
         let root = TreeNode.deserialize(data)
         
-        let result = IncreasingOrderSearchTree.increasingBST(root)
+        let result = IncreasingOrderSearchTree().increasingBST(root)
         
         let values = TreeNode.serialize(result)
         

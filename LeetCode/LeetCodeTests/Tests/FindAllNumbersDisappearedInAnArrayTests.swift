@@ -16,7 +16,7 @@ final class FindAllNumbersDisappearedInAnArrayTests: XCTestCase {
     func test_A() {
         let nums = [4, 3, 2, 7, 8, 2, 3, 1]
         
-        let result = FindAllNumbersDisappearedInAnArray.findDisappearedNumbers(nums)
+        let result = FindAllNumbersDisappearedInAnArray().findDisappearedNumbers(nums)
         
         XCTAssertEqual(result, [5, 6])
     }
@@ -24,7 +24,7 @@ final class FindAllNumbersDisappearedInAnArrayTests: XCTestCase {
     func test_B() {
         let nums = [1, 1]
         
-        let result = FindAllNumbersDisappearedInAnArray.findDisappearedNumbers(nums)
+        let result = FindAllNumbersDisappearedInAnArray().findDisappearedNumbers(nums)
         
         XCTAssertEqual(result, [2])
     }

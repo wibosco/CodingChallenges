@@ -17,7 +17,7 @@ final class IsSubsequenceTests: XCTestCase {
         let s = "abc"
         let t = "ahbgdc"
         
-        let result = IsSubsequence.isSubsequence(s, t)
+        let result = IsSubsequence().isSubsequence(s, t)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class IsSubsequenceTests: XCTestCase {
         let s = "axc"
         let t = "ahbgdc"
         
-        let result = IsSubsequence.isSubsequence(s, t)
+        let result = IsSubsequence().isSubsequence(s, t)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class IsSubsequenceTests: XCTestCase {
         let s = "abc"
         let t = "ahbgdcz"
         
-        let result = IsSubsequence.isSubsequence(s, t)
+        let result = IsSubsequence().isSubsequence(s, t)
         
         XCTAssertTrue(result)
     }

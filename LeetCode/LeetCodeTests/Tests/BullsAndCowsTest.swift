@@ -17,7 +17,7 @@ final class BullsAndCowsTest: XCTestCase {
         let secret = "1807"
         let guess = "7810"
         
-        let result = BullsAndCows.getHint(secret, guess)
+        let result = BullsAndCows().getHint(secret, guess)
         
         XCTAssertEqual(result, "1A3B")
     }
@@ -26,7 +26,7 @@ final class BullsAndCowsTest: XCTestCase {
         let secret = "1123"
         let guess = "0111"
         
-        let result = BullsAndCows.getHint(secret, guess)
+        let result = BullsAndCows().getHint(secret, guess)
         
         XCTAssertEqual(result, "1A1B")
     }

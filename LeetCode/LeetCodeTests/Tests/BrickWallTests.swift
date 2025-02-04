@@ -21,7 +21,7 @@ final class BrickWallTests: XCTestCase {
                     [3, 1, 2],
                     [1, 3, 1, 1]]
         
-        let result = BrickWall.leastBricks(wall)
+        let result = BrickWall().leastBricks(wall)
         
         XCTAssertEqual(result, 2)
     }
@@ -31,7 +31,7 @@ final class BrickWallTests: XCTestCase {
                     [1],
                     [1]]
         
-        let result = BrickWall.leastBricks(wall)
+        let result = BrickWall().leastBricks(wall)
         
         XCTAssertEqual(result, 3)
     }
@@ -40,7 +40,7 @@ final class BrickWallTests: XCTestCase {
         let wall = [[100000000, 100000000],
                     [100000000, 100000000]]
         
-        let result = BrickWall.leastBricks(wall)
+        let result = BrickWall().leastBricks(wall)
         
         XCTAssertEqual(result, 0)
     }

@@ -17,7 +17,7 @@ final class HappyNumberTests: XCTestCase {
     func test_A() {
         let n = 19
         
-        let result = HappyNumber.isHappy(n)
+        let result = HappyNumber().isHappy(n)
         
         XCTAssertTrue(result)
     }
@@ -25,7 +25,7 @@ final class HappyNumberTests: XCTestCase {
     func test_B() {
         let n = 2
         
-        let result = HappyNumber.isHappy(n)
+        let result = HappyNumber().isHappy(n)
         
         XCTAssertFalse(result)
     }
@@ -33,7 +33,7 @@ final class HappyNumberTests: XCTestCase {
     func test_C() {
         let n = 1
         
-        let result = HappyNumber.isHappy(n)
+        let result = HappyNumber().isHappy(n)
         
         XCTAssertTrue(result)
     }

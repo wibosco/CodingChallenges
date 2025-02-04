@@ -31,7 +31,7 @@ struct SubarraySumEqualsK {
     //
     //N.B. We handle the special case where `nums[i] == k` by seeding `map` with `[0, 1]` i.e. a difference of 0
     //Similar to: https://leetcode.com/problems/two-sum/
-    static func subarraySum(_ nums: [Int], _ k: Int) -> Int {
+    func subarraySum(_ nums: [Int], _ k: Int) -> Int {
         var prefixSum = 0
         //special case where `nums[i] == k`
         var map = [0: 1] //[sum, count] - we need a count as array can contain negative

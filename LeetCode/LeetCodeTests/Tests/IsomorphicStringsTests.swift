@@ -17,7 +17,7 @@ final class IsomorphicStringsTests: XCTestCase {
         let s = "egg"
         let t = "add"
         
-        let result = IsomorphicStrings.isIsomorphic(s, t)
+        let result = IsomorphicStrings().isIsomorphic(s, t)
         
         XCTAssertTrue(result)
     }
@@ -26,7 +26,7 @@ final class IsomorphicStringsTests: XCTestCase {
         let s = "foo"
         let t = "bar"
         
-        let result = IsomorphicStrings.isIsomorphic(s, t)
+        let result = IsomorphicStrings().isIsomorphic(s, t)
         
         XCTAssertFalse(result)
     }
@@ -35,7 +35,7 @@ final class IsomorphicStringsTests: XCTestCase {
         let s = "paper"
         let t = "title"
         
-        let result = IsomorphicStrings.isIsomorphic(s, t)
+        let result = IsomorphicStrings().isIsomorphic(s, t)
         
         XCTAssertTrue(result)
     }
@@ -44,7 +44,7 @@ final class IsomorphicStringsTests: XCTestCase {
         let s = "badc"
         let t = "baba"
         
-        let result = IsomorphicStrings.isIsomorphic(s, t)
+        let result = IsomorphicStrings().isIsomorphic(s, t)
         
         XCTAssertFalse(result)
     }

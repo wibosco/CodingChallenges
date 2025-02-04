@@ -18,7 +18,7 @@ final class RemoveCoveredIntervalsTests: XCTestCase {
                          [3,6],
                          [2,8]]
         
-        let result = RemoveCoveredIntervals.removeCoveredIntervals(intervals)
+        let result = RemoveCoveredIntervals().removeCoveredIntervals(intervals)
         
         XCTAssertEqual(result, 2)
     }
@@ -27,7 +27,7 @@ final class RemoveCoveredIntervalsTests: XCTestCase {
         let intervals = [[1,4],
                          [2,3]]
         
-        let result = RemoveCoveredIntervals.removeCoveredIntervals(intervals)
+        let result = RemoveCoveredIntervals().removeCoveredIntervals(intervals)
         
         XCTAssertEqual(result, 1)
     }
@@ -37,7 +37,7 @@ final class RemoveCoveredIntervalsTests: XCTestCase {
                          [1,4],
                          [3,4]]
         
-        let result = RemoveCoveredIntervals.removeCoveredIntervals(intervals)
+        let result = RemoveCoveredIntervals().removeCoveredIntervals(intervals)
         
         XCTAssertEqual(result, 1)
     }

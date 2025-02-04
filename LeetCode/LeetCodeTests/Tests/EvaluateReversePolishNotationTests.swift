@@ -17,7 +17,7 @@ final class EvaluateReversePolishNotationTests: XCTestCase {
     func test_A() {
         let tokens = ["2", "1", "+", "3", "*"]
         
-        let result = EvaluateReversePolishNotation.evalRPN(tokens)
+        let result = EvaluateReversePolishNotation().evalRPN(tokens)
         
         XCTAssertEqual(result, 9)
     }
@@ -25,7 +25,7 @@ final class EvaluateReversePolishNotationTests: XCTestCase {
     func test_B() {
         let tokens = ["4", "13", "5", "/", "+"]
         
-        let result = EvaluateReversePolishNotation.evalRPN(tokens)
+        let result = EvaluateReversePolishNotation().evalRPN(tokens)
         
         XCTAssertEqual(result, 6)
     }
@@ -33,7 +33,7 @@ final class EvaluateReversePolishNotationTests: XCTestCase {
     func test_C() {
         let tokens = ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]
         
-        let result = EvaluateReversePolishNotation.evalRPN(tokens)
+        let result = EvaluateReversePolishNotation().evalRPN(tokens)
         
         XCTAssertEqual(result, 22)
     }
@@ -41,7 +41,7 @@ final class EvaluateReversePolishNotationTests: XCTestCase {
     func test_D() {
         let tokens = ["18"]
         
-        let result = EvaluateReversePolishNotation.evalRPN(tokens)
+        let result = EvaluateReversePolishNotation().evalRPN(tokens)
         
         XCTAssertEqual(result, 18)
     }
@@ -49,7 +49,7 @@ final class EvaluateReversePolishNotationTests: XCTestCase {
     func test_E() {
         let tokens = ["4", "3", "-"]
         
-        let result = EvaluateReversePolishNotation.evalRPN(tokens)
+        let result = EvaluateReversePolishNotation().evalRPN(tokens)
         
         XCTAssertEqual(result, 1)
     }
@@ -57,7 +57,7 @@ final class EvaluateReversePolishNotationTests: XCTestCase {
     func test_F() {
         let tokens = ["3", "11", "+", "5", "-"]
         
-        let result = EvaluateReversePolishNotation.evalRPN(tokens)
+        let result = EvaluateReversePolishNotation().evalRPN(tokens)
         
         XCTAssertEqual(result, 9)
     }

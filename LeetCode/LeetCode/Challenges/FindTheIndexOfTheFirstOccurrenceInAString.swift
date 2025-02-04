@@ -46,7 +46,7 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
     //See: https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
     //See: https://www.youtube.com/watch?v=V5-7GzOfADQ
     //lps - longest prefix substring
-    static func strStr(_ haystack: String, _ needle: String) -> Int {
+    func strStr(_ haystack: String, _ needle: String) -> Int {
         guard !needle.isEmpty else {
             return 0
         }
@@ -118,7 +118,7 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
     //match we continue on by incrementing both pointers and repeat the process; If the characters at those indexes don't
     //match we return and the outer loops moves onto the next index of `characters`. If we reach the end of `characters`
     //without finding `target` then we return -1.
-    static func strStrNestedLoops(_ haystack: String, _ needle: String) -> Int {
+    func strStrNestedLoops(_ haystack: String, _ needle: String) -> Int {
         let characters = Array(haystack)
         let target = Array(needle)
         
@@ -138,7 +138,7 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
         return -1
     }
     
-    private static func same(_ characters: [Character], target: [Character], _ start: Int) -> Bool {
+    private func same(_ characters: [Character], target: [Character], _ start: Int) -> Bool {
         var p1 = 0
         var p2 = start
         

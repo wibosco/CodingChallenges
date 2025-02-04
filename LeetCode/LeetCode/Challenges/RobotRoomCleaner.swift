@@ -54,7 +54,7 @@ struct RobotRoomCleaner {
     //For each cell (row, column combination) we attempt to move in all directions in a DFS manner. As we are moving if we
     //encounter an obstacle or have no unvisited cell to move into we backtrack the robot. We do this by performing a 180
     //turn, move and then perform another 180 to face the original direction ready to choose a different direction.
-    static func cleanRoom(_ robot: Robot) {
+    func cleanRoom(_ robot: Robot) {
         // going clockwise : 0: 'up', 1: 'right', 2: 'down', 3: 'left'
         let relativeIndexing = [[-1, 0], [0, 1], [1, 0], [0, -1]]
         var visited = Set<[Int]>()
@@ -62,7 +62,7 @@ struct RobotRoomCleaner {
         backtrack(robot, 0, 0, 0, relativeIndexing, &visited)
     }
     
-    private static func backtrack(_ robot: Robot, _ row: Int, _ column: Int, _ direction: Int, _ relativeIndexing: [[Int]], _ visited: inout Set<[Int]>) {
+    private func backtrack(_ robot: Robot, _ row: Int, _ column: Int, _ direction: Int, _ relativeIndexing: [[Int]], _ visited: inout Set<[Int]>) {
         visited.insert([row, column])
         robot.clean()
         

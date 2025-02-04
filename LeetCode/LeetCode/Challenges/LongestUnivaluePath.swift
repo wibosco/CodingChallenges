@@ -34,7 +34,7 @@ struct LongestUnivaluePath {
     //the length of the univalue path. We track the longest univalue path that we have encountered so far in `longest.`
     //The current univalue length based on that nodes value is passed up as the recursive stack unwinds for the process
     //to be repeated. Eventually we return to the root node and so can return `longest`.
-    static func longestUnivaluePath(_ root: TreeNode?) -> Int {
+    func longestUnivaluePath(_ root: TreeNode?) -> Int {
         guard let root = root else {
             return 0
         }
@@ -46,7 +46,7 @@ struct LongestUnivaluePath {
         return longest - 1 //-1 because we return the edges not the nodes in the sequence
     }
     
-    private static func dfs(_ node: TreeNode?, _ longest: inout Int) -> Int {
+    private func dfs(_ node: TreeNode?, _ longest: inout Int) -> Int {
         guard let node = node else { //basecase
             return 0
         }

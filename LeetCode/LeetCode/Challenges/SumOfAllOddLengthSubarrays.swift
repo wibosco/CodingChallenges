@@ -17,7 +17,7 @@ struct SumOfAllOddLengthSubarrays {
     //Solution Description:
     //By performing two inner loops we all possible subarrays in `arr` from each possible starting position. If that subarray will
     //result in an odd count then we sum the elements in that subarray and add it to our running total
-    static func sumOddLengthSubarrays(_ arr: [Int]) -> Int {
+    func sumOddLengthSubarrays(_ arr: [Int]) -> Int {
         var sum = 0
         for i in 0..<arr.count {
             for j in i..<arr.count {

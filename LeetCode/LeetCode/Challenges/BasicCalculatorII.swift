@@ -32,7 +32,7 @@ struct BasicCalculatorII {
     //
     //NB. We are processing the operation after we "parse" the second value in the operation by processing the operation symbol
     //after we encounter the next one (or the end of `s`).
-    static func calculate(_ s: String) -> Int {
+    func calculate(_ s: String) -> Int {
         var stack = [Int]()
         
         var currentValue = 0

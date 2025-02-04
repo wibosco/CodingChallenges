@@ -20,7 +20,7 @@ struct CanPlaceFlowers {
     //Iterate through the array. For every empty plot we check the previous index (where possible) and the next index (where
     //possible) to see if we can plant on this plot. If possible we plant and increment `placed` by one. At the end of the
     //loop we check if we planted at least `n` flowers
-    static func canPlaceFlowers(_ flowerbed: [Int], _ n: Int) -> Bool {
+    func canPlaceFlowers(_ flowerbed: [Int], _ n: Int) -> Bool {
         var flowerbed = flowerbed
         var placed = 0
         

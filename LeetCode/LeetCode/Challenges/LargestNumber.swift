@@ -26,7 +26,7 @@ struct LargestNumber {
     //the local larger ordering and repeat the process until all elements are sorted into their final positions. Before
     //returning we check for an edge case where `strs` consists of zeros - if it does we return just one zero; else we
     //join the elements in `strs` and return.
-    static func largestNumber(_ nums: [Int]) -> String {
+    func largestNumber(_ nums: [Int]) -> String {
         var strs = nums.map { String($0) }
         strs.sort { ($0 + $1) > ($1 + $0) }
         

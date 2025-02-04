@@ -18,7 +18,7 @@ final class AsFarFromLandAsPossibleTests: XCTestCase {
                     [0,0,0],
                     [1,0,1]]
         
-        let result = AsFarFromLandAsPossible.maxDistance(grid)
+        let result = AsFarFromLandAsPossible().maxDistance(grid)
         
         XCTAssertEqual(result, 2)
     }
@@ -28,7 +28,7 @@ final class AsFarFromLandAsPossibleTests: XCTestCase {
                     [0,0,0],
                     [0,0,0]]
         
-        let result = AsFarFromLandAsPossible.maxDistance(grid)
+        let result = AsFarFromLandAsPossible().maxDistance(grid)
         
         XCTAssertEqual(result, 4)
     }
@@ -38,7 +38,7 @@ final class AsFarFromLandAsPossibleTests: XCTestCase {
                     [0,0,0],
                     [0,0,0]]
         
-        let result = AsFarFromLandAsPossible.maxDistance(grid)
+        let result = AsFarFromLandAsPossible().maxDistance(grid)
         
         XCTAssertEqual(result, -1)
     }
@@ -48,7 +48,7 @@ final class AsFarFromLandAsPossibleTests: XCTestCase {
                     [1,1,1],
                     [1,1,1]]
         
-        let result = AsFarFromLandAsPossible.maxDistance(grid)
+        let result = AsFarFromLandAsPossible().maxDistance(grid)
         
         XCTAssertEqual(result, -1)
     }

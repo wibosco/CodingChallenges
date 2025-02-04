@@ -23,7 +23,7 @@ struct SearchInRotatedSortedArray {
     //need to determine if the target is before or after that pivot (provided the pivot isn't actually the target) e.g. in
     //[4, 5, 6, 0, 1, 2 ,3] is the target in [4, 5, 6] or [1, 2, 3] - effectively performing a one step binary search. Once we
     //have our sorted subarray we can then perform a standard binary search to find the target
-    static func search(_ nums: [Int], _ target: Int) -> Int {
+    func search(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
         
@@ -86,7 +86,7 @@ struct SearchInRotatedSortedArray {
     //against the sorted left array and adjust boundaries appropriately - reducing the search space by half; if mid is less then
     //we do the opposite. Eventually we either find the target in the array or after we have exhausted the search space we return
     //-1
-    static func searchOneLoop(_ nums: [Int], _ target: Int) -> Int {
+    func searchOneLoop(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
         

@@ -17,7 +17,7 @@ final class RomanToIntegerTests: XCTestCase {
     func test_A() {
         let s = "III"
         
-        let result = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger().romanToInt(s)
         
         XCTAssertEqual(result, 3)
     }
@@ -25,7 +25,7 @@ final class RomanToIntegerTests: XCTestCase {
     func test_B() {
         let s = "IV"
         
-        let result = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger().romanToInt(s)
         
         XCTAssertEqual(result, 4)
     }
@@ -33,7 +33,7 @@ final class RomanToIntegerTests: XCTestCase {
     func test_C() {
         let s = "IX"
         
-        let result = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger().romanToInt(s)
         
         XCTAssertEqual(result, 9)
     }
@@ -41,7 +41,7 @@ final class RomanToIntegerTests: XCTestCase {
     func test_D() {
         let s = "LVIII"
         
-        let result = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger().romanToInt(s)
         
         XCTAssertEqual(result, 58)
     }
@@ -49,7 +49,7 @@ final class RomanToIntegerTests: XCTestCase {
     func test_E() {
         let s = "MCMXCIV"
         
-        let result = RomanToInteger.romanToInt(s)
+        let result = RomanToInteger().romanToInt(s)
         
         XCTAssertEqual(result, 1994)
     }

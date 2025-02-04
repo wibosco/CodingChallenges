@@ -17,7 +17,7 @@ final class NumberOfSubsequencesThatSatisfyTheGivenSumConditionTests: XCTestCase
         let nums = [3, 5, 6, 7]
         let target = 9
         
-        let result = NumberOfSubsequencesThatSatisfyTheGivenSumCondition.numSubseq(nums, target)
+        let result = NumberOfSubsequencesThatSatisfyTheGivenSumCondition().numSubseq(nums, target)
         
         XCTAssertEqual(result, 4)
     }
@@ -26,7 +26,7 @@ final class NumberOfSubsequencesThatSatisfyTheGivenSumConditionTests: XCTestCase
         let nums = [3, 3, 6, 8]
         let target = 10
         
-        let result = NumberOfSubsequencesThatSatisfyTheGivenSumCondition.numSubseq(nums, target)
+        let result = NumberOfSubsequencesThatSatisfyTheGivenSumCondition().numSubseq(nums, target)
         
         XCTAssertEqual(result, 6)
     }
@@ -35,7 +35,7 @@ final class NumberOfSubsequencesThatSatisfyTheGivenSumConditionTests: XCTestCase
         let nums = [2, 3, 3, 4, 6, 7]
         let target = 12
         
-        let result = NumberOfSubsequencesThatSatisfyTheGivenSumCondition.numSubseq(nums, target)
+        let result = NumberOfSubsequencesThatSatisfyTheGivenSumCondition().numSubseq(nums, target)
         
         XCTAssertEqual(result, 61)
     }

@@ -30,7 +30,7 @@ struct BrickWall {
     //
     //N.B. The trick here to stop thinking about cutting through bricks and rather start thinking about avoiding cuts by
     //using the gaps between bricks.
-    static func leastBricks(_ wall: [[Int]]) -> Int {
+    func leastBricks(_ wall: [[Int]]) -> Int {
         var gapsBetweenBricks = [Int: Int]() //[row-index: gap-count]
 
         for bricks in wall {

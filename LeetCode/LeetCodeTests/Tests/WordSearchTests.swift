@@ -19,7 +19,7 @@ final class WordSearchTests: XCTestCase {
                                     ["A", "D", "E", "E"]]
         let word = "ABCCED"
         
-        let result = WordSearch.exist(board, word)
+        let result = WordSearch().exist(board, word)
         
         XCTAssertTrue(result)
     }
@@ -30,7 +30,7 @@ final class WordSearchTests: XCTestCase {
                                     ["A", "D", "E", "E"]]
         let word = "SEE"
         
-        let result = WordSearch.exist(board, word)
+        let result = WordSearch().exist(board, word)
         
         XCTAssertTrue(result)
     }
@@ -41,7 +41,7 @@ final class WordSearchTests: XCTestCase {
                                     ["A", "D", "E", "E"]]
         let word = "ABCB"
         
-        let result = WordSearch.exist(board, word)
+        let result = WordSearch().exist(board, word)
         
         XCTAssertFalse(result)
     }
@@ -50,7 +50,7 @@ final class WordSearchTests: XCTestCase {
         let board: [[Character]] = [["A", "B"]]
         let word = "BA"
         
-        let result = WordSearch.exist(board, word)
+        let result = WordSearch().exist(board, word)
         
         XCTAssertTrue(result)
     }
@@ -59,7 +59,7 @@ final class WordSearchTests: XCTestCase {
         let board: [[Character]] = [["A", "A"]]
         let word = "AAA"
         
-        let result = WordSearch.exist(board, word)
+        let result = WordSearch().exist(board, word)
         
         XCTAssertFalse(result)
     }
@@ -69,7 +69,7 @@ final class WordSearchTests: XCTestCase {
                                     ["c", "d"]]
         let word = "acdb"
         
-        let result = WordSearch.exist(board, word)
+        let result = WordSearch().exist(board, word)
         
         XCTAssertTrue(result)
     }

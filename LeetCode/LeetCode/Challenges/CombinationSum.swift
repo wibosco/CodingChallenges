@@ -36,7 +36,7 @@ struct CombinationSum {
     //
     //Similar to: https://leetcode.com/problems/permutations/
     //Similar to: https://leetcode.com/problems/subsets/
-    static func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
+    func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
         var combinations = [[Int]]()
         var combination = [Int]()
         
@@ -45,7 +45,7 @@ struct CombinationSum {
         return combinations
     }
     
-    private static func dfs(_ candidates: [Int], _ remaining: Int, _ startIndex: Int, _ combination: inout [Int], _ combinations: inout [[Int]]) {
+    private func dfs(_ candidates: [Int], _ remaining: Int, _ startIndex: Int, _ combination: inout [Int], _ combinations: inout [[Int]]) {
         //constraint
         guard remaining >= 0 else {
             return

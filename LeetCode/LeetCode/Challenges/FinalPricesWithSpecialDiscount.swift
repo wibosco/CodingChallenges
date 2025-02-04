@@ -30,7 +30,7 @@ struct FinalPricesWithSpecialDiscount {
     //As x increases, y decreases always, then it’s a monotonically decreasing function.
     //
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
-    static func finalPrices(_ prices: [Int]) -> [Int] {
+    func finalPrices(_ prices: [Int]) -> [Int] {
         var finalPrices = prices
         var stack = [Int]()
         

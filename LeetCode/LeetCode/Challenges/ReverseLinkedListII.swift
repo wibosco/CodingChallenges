@@ -20,7 +20,7 @@ struct ReverseLinkedListII {
     //Treating the linked list as 3 lists - before left, between left and right and after right. We can then take the `between
     //left and right` and reverse the elements in position. After this we then rejoin the three lists together and return the
     //new head.
-    static func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
+    func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
         var list1Head: ListNode?
         var list1Tail: ListNode?
         
@@ -101,7 +101,7 @@ struct ReverseLinkedListII {
     //`nodes`. Then using two pointers we move through `nodes` from opposite sides and swap over the values of nodes at
     //`p0` and `p1` (note that we don't attempt to rewire the nodes `next` properties - we only swap over the values).
     //Once `p0` and `p1` cross we exit and return the head of the swapped linked list.
-    static func reverseBetweenArray(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
+    func reverseBetweenArray(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
         guard left != right else {
             return head
         }
@@ -154,7 +154,7 @@ struct ReverseLinkedListII {
     //the recursive calls. As the recursive callbacks will go all the way back to the start of the list (which could be
     //before `left`) once the swapping is complete we set `finished` to true and quick exit any recursive callbacks
     //received after this
-    static func reverseBetweenRecursion(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
+    func reverseBetweenRecursion(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
         guard left != right else {
             return head
         }
@@ -171,7 +171,7 @@ struct ReverseLinkedListII {
         return head
     }
     
-    private static func reverseByBacktracking(_ leftRemainingCount: Int, _ rightRemainingCount: Int, _ leftNode: inout ListNode, _ rightNode: ListNode?, _ finished: inout Bool) {
+    private func reverseByBacktracking(_ leftRemainingCount: Int, _ rightRemainingCount: Int, _ leftNode: inout ListNode, _ rightNode: ListNode?, _ finished: inout Bool) {
         guard let rightNode = rightNode, rightRemainingCount > 0 else {
             return //found `right` index node now begin backtracking
         }

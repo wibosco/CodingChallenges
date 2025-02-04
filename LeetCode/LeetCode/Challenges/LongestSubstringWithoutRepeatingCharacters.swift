@@ -25,7 +25,7 @@ struct LongestSubstringWithoutRepeatingCharacters {
     //compare it with our all time longest. If it's longer we replace it.
     //
     //N.B. This solution is sufficiently quicker when using a Character array rather than a string index
-    static func lengthOfLongestSubstring(_ s: String) -> Int {
+    func lengthOfLongestSubstring(_ s: String) -> Int {
         var longestLength = 0
         var currentStartIndex = 0
         
@@ -51,7 +51,7 @@ struct LongestSubstringWithoutRepeatingCharacters {
     //
     //Solution Description:
     //N.B. This solution is sufficiently slower due to `let char = s[s.index(s.startIndex, offsetBy: index)]`
-    static func lengthOfLongestSubstringAlt(_ s: String) -> Int {
+    func lengthOfLongestSubstringAlt(_ s: String) -> Int {
         var visited = [Character: Int]()
         var longestNonRepeatingWindow = 0
         var currentWindowStartIndex = 0

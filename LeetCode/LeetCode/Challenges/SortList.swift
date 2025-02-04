@@ -33,7 +33,7 @@ struct SortList {
     //
     //See: https://leetcode.com/problems/merge-two-sorted-lists/ for merging
     //See: https://leetcode.com/problems/middle-of-the-linked-list/ for finding the center of a linked list
-    static func sortList(_ head: ListNode?) -> ListNode? {
+    func sortList(_ head: ListNode?) -> ListNode? {
         guard let head = head, head.next != nil else { //basecase
             return head
         }
@@ -48,7 +48,7 @@ struct SortList {
         return sortedList
     }
     
-    private static func splitListAroundMid(_ head: ListNode?) -> ListNode? {
+    private func splitListAroundMid(_ head: ListNode?) -> ListNode? {
         var prev: ListNode? //we want to split around the middle node so we need to keep reference to the node before it
         var slow = head
         var fast = head
@@ -64,7 +64,7 @@ struct SortList {
         return slow
     }
     
-    private static func merge(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+    private func merge(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         let sentinel = ListNode(-1) //so we don't lose the start of the merged list
         var mergedList = sentinel //will be the tail of the list
         
@@ -99,7 +99,7 @@ struct SortList {
     //Solution Description:
     //Go through the list and store each node into an array. Sort that array by the `val` property of each node. Link each
     //node with the node directly succeeding it so the new order is represented in the list structure
-    static func sortListArray(_ head: ListNode?) -> ListNode? {
+    func sortListArray(_ head: ListNode?) -> ListNode? {
         guard let head = head else {
             return nil
         }

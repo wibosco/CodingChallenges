@@ -20,12 +20,12 @@ struct CloneBinaryTreeWithRandomPointer {
     //Solution Description:
     //Using DFS, traverse the tree making copies of the nodes that we encounter when a copy does not already exist and associating the
     //copies together.
-    static func copyRandomBinaryTree(_ root: TreeNodeRandom?) -> TreeNodeRandom? {
+    func copyRandomBinaryTree(_ root: TreeNodeRandom?) -> TreeNodeRandom? {
         var copies = [TreeNodeRandom: TreeNodeRandom]()
         return copyRandomBinaryTree(root, &copies)
     }
     
-    private static func copyRandomBinaryTree(_ root: TreeNodeRandom?, _ copies: inout [TreeNodeRandom: TreeNodeRandom]) -> TreeNodeRandom? {
+    private func copyRandomBinaryTree(_ root: TreeNodeRandom?, _ copies: inout [TreeNodeRandom: TreeNodeRandom]) -> TreeNodeRandom? {
         guard let root = root else {
             return nil
         }
@@ -54,7 +54,7 @@ struct CloneBinaryTreeWithRandomPointer {
     //Using BFS, traverse the tree copying nodes into a dictionary with the original node being the key and the copy the value (ignoring
     //random, left and right values from this pass through). Then perform a second BFS traversal on the original tree, this time connecting
     //up the `random`, `left` and `right` properties for each node in the tree by accessing the copied nodes from the dictionary.
-    static func copyRandomBinaryTreeTwoPass(_ root: TreeNodeRandom?) -> TreeNodeRandom? {
+    func copyRandomBinaryTreeTwoPass(_ root: TreeNodeRandom?) -> TreeNodeRandom? {
         guard let root = root else {
             return nil
         }
@@ -89,7 +89,7 @@ struct CloneBinaryTreeWithRandomPointer {
         return copiedNodes[root]
     }
     
-    private static func copyNodes(_ root: TreeNodeRandom) -> [TreeNodeRandom: TreeNodeRandom] {
+    private func copyNodes(_ root: TreeNodeRandom) -> [TreeNodeRandom: TreeNodeRandom] {
         var nodes = [TreeNodeRandom: TreeNodeRandom]()
         var queue: [TreeNodeRandom?] = [root]
         

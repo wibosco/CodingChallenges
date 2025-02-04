@@ -23,7 +23,7 @@ struct MaximumAverageSubtree {
     //calculate that subtrees average - this average is then compared against `maxAverage` and `maxAverage` is updated if
     //necessary. When then pass the `count` and `sum` up the next level to repeat this process. Once all averages have been
     //calculcate we return `maxAverage`.
-    static func maximumAverageSubtree(_ root: TreeNode?) -> Double {
+    func maximumAverageSubtree(_ root: TreeNode?) -> Double {
         var maxAverage = 0.0
         
         _ = dfs(root, &maxAverage)
@@ -31,7 +31,7 @@ struct MaximumAverageSubtree {
         return maxAverage
     }
     
-    private static func dfs(_ node: TreeNode?, _ maxAverage: inout Double) -> (Int, Int) { //count, sum
+    private func dfs(_ node: TreeNode?, _ maxAverage: inout Double) -> (Int, Int) { //count, sum
         guard let node = node else {
             return (0, 0) //basecase
         }

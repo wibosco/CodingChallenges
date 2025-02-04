@@ -17,7 +17,7 @@ final class CountCompleteTreeNodesTests: XCTestCase {
         let data = [1,2,3,4,5,6]
         let root = TreeNode.deserialize(data)
         
-        let result = CountCompleteTreeNodes.countNodes(root)
+        let result = CountCompleteTreeNodes().countNodes(root)
         
         XCTAssertEqual(result, 6)
     }
@@ -26,7 +26,7 @@ final class CountCompleteTreeNodesTests: XCTestCase {
         let data = [Int]()
         let root = TreeNode.deserialize(data)
         
-        let result = CountCompleteTreeNodes.countNodes(root)
+        let result = CountCompleteTreeNodes().countNodes(root)
         
         XCTAssertEqual(result, 0)
     }
@@ -35,7 +35,7 @@ final class CountCompleteTreeNodesTests: XCTestCase {
         let data = [1]
         let root = TreeNode.deserialize(data)
         
-        let result = CountCompleteTreeNodes.countNodes(root)
+        let result = CountCompleteTreeNodes().countNodes(root)
         
         XCTAssertEqual(result, 1)
     }

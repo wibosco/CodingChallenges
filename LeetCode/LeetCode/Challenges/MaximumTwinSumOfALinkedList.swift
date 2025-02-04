@@ -20,7 +20,7 @@ struct MaximumTwinSumOfALinkedList {
     //array and using the formula `count - 1 - i`, extract the paired node for each `i` node, calculate the sum and check it
     //against `maxSum`, taking the larger of the values as the maximum sum seen so far. Once all nodes have been paired we
     //return `maxSum`.
-    static func pairSum(_ head: ListNode?) -> Int {
+    func pairSum(_ head: ListNode?) -> Int {
         var nodes = [Int]()
         
         var current = head
@@ -54,7 +54,7 @@ struct MaximumTwinSumOfALinkedList {
     //with each node encounter on one linked list being the pair of other node on the other linked list at the same "index".
     //We can then calculate the sum of the paired nodes and check it against `maxSum`, taking the larger of the values as the
     //maximum sum seen so far. Once all nodes have been paired we return `maxSum`.
-    static func pairSumReversing(_ head: ListNode?) -> Int {
+    func pairSumReversing(_ head: ListNode?) -> Int {
         var slow = head
         var fast = head
         

@@ -33,7 +33,7 @@ struct MergeSortedArray {
     // [1 2 3 4 5 6]
     //
     //We treat everything after `p` as final and anything before as open to change
-    static func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
+    func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
         var p1 = m - 1
         var p2 = n - 1
         
@@ -64,7 +64,7 @@ struct MergeSortedArray {
     //element in `nums2` - if we find that the current `nums2` element is smaller than the current `nums1` element we
     //iterate through `nums2` until we find a `nums2` element that is larger or we exhaust `nums2`. If comparing `nums1`
     //against `nums2` we still have values in `nums2` we add these as-is to the end of the `combined` array
-    static func mergeExtraStorage(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
+    func mergeExtraStorage(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
         var combined = [Int]()
         
         var p1 = 0

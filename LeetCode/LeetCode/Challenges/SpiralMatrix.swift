@@ -31,7 +31,7 @@ struct SpiralMatrix {
     //know the maximum number of possible moves (the number of cells in `matrix`) so all that is left so for us to track the
     //cells that have been visited in `visited`, append the current cells value to `order` and decrement `possibleMoves` until
     //all cells have been visited.
-    static func spiralOrder(_ matrix: [[Int]]) -> [Int] {
+    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
         var possibleMoves = (matrix.count * matrix[0].count) - 1
         var visited = Set<[Int]>()
         visited.insert([0, 0])
@@ -54,7 +54,7 @@ struct SpiralMatrix {
         return order
     }
     
-    private static func nextMove(_ matrix: [[Int]], _ row: Int, _ column: Int, _ direction: inout Direction, _ visited: Set<[Int]>) -> [Int] {
+    private func nextMove(_ matrix: [[Int]], _ row: Int, _ column: Int, _ direction: inout Direction, _ visited: Set<[Int]>) -> [Int] {
         switch direction {
         case .right:
             let nextIndex = [row, (column + 1)]

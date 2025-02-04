@@ -23,7 +23,7 @@ struct DeleteNodesAndReturnForest {
     //Using DFS we preform a top-down approach for determining if a node should be deleted and a bottom-up approach for actually 
     //deleting the nodes by assigning either the original node back to it's parent or nil. In order to hold onto the roots, we
     //add each root node to `roots`.
-    static func delNodes(_ root: TreeNode?, _ to_delete: [Int]) -> [TreeNode?] {
+    func delNodes(_ root: TreeNode?, _ to_delete: [Int]) -> [TreeNode?] {
         let toBeDeleted = Set(to_delete)
         var roots = [TreeNode]()
         
@@ -32,7 +32,7 @@ struct DeleteNodesAndReturnForest {
         return roots
     }
     
-    private static func dfs(_ node: TreeNode?, _ toBeDeleted: Set<Int>, _ isRoot: Bool, _ roots: inout [TreeNode]) -> TreeNode? {
+    private func dfs(_ node: TreeNode?, _ toBeDeleted: Set<Int>, _ isRoot: Bool, _ roots: inout [TreeNode]) -> TreeNode? {
         guard let node = node else {
             return nil
         }
@@ -58,7 +58,7 @@ struct DeleteNodesAndReturnForest {
     //Solution Description:
     //Using BFS we traverse the nodes in the tree and break the connection between parent and "to-be-deleted" nodes. In order to 
     //hold onto the roots, we add each root node to `roots`.
-    static func delNodesBFS(_ root: TreeNode?, _ to_delete: [Int]) -> [TreeNode?] {
+    func delNodesBFS(_ root: TreeNode?, _ to_delete: [Int]) -> [TreeNode?] {
         guard let root = root else {
             return []
         }

@@ -19,7 +19,7 @@ struct PowerOfThree {
     //Solution Description:
     //W attempt to divide `n` by 3 recursively until we get 1. We check that our division is "clean" by ensuring none of the divisions
     //will result in a remainder.
-    static func isPowerOfThree(_ n: Int) -> Bool {
+    func isPowerOfThree(_ n: Int) -> Bool {
         guard n > 0 else {
             return false
         }

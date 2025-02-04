@@ -18,7 +18,7 @@ final class RecoverBinarySearchTreeTests: XCTestCase {
         let data = [1, 3, nil, nil, 2]
         let root = TreeNode.deserialize(data)
         
-        RecoverBinarySearchTree.recoverTree(root)
+        RecoverBinarySearchTree().recoverTree(root)
         
         let result = TreeNode.serialize(root)
         
@@ -29,7 +29,7 @@ final class RecoverBinarySearchTreeTests: XCTestCase {
         let data = [3, 1, 4, nil, nil, 2]
         let root = TreeNode.deserialize(data)
         
-        RecoverBinarySearchTree.recoverTree(root)
+        RecoverBinarySearchTree().recoverTree(root)
         
         let result = TreeNode.serialize(root)
         

@@ -16,7 +16,7 @@ final class HouseRobberIITests: XCTestCase {
     func test_A() {
         let nums = [2, 3, 2]
         
-        let result = HouseRobberII.rob(nums)
+        let result = HouseRobberII().rob(nums)
         
         XCTAssertEqual(result, 3)
     }
@@ -27,7 +27,7 @@ final class HouseRobberIITests: XCTestCase {
         //nums = [1,2,3,1]
         let nums = [1, 2, 3, 1]
         
-        let result = HouseRobberII.rob(nums)
+        let result = HouseRobberII().rob(nums)
         
         XCTAssertEqual(result, 4)
     }
@@ -35,7 +35,7 @@ final class HouseRobberIITests: XCTestCase {
     func test_C() {
         let nums = [1, 2, 3]
         
-        let result = HouseRobberII.rob(nums)
+        let result = HouseRobberII().rob(nums)
         
         XCTAssertEqual(result, 3)
     }
@@ -44,7 +44,7 @@ final class HouseRobberIITests: XCTestCase {
         //                X     X        X     X
         let nums = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
         
-        let result = HouseRobberII.rob(nums)
+        let result = HouseRobberII().rob(nums)
         
         XCTAssertEqual(result, 16)
     }

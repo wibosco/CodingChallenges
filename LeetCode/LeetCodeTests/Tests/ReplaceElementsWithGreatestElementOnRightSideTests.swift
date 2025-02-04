@@ -16,7 +16,7 @@ final class ReplaceElementsWithGreatestElementOnRightSideTests: XCTestCase {
     func test_A() {
         let arr = [17, 18, 5, 4, 6, 1]
             
-        let result = ReplaceElementsWithGreatestElementOnRightSide.replaceElements(arr)
+        let result = ReplaceElementsWithGreatestElementOnRightSide().replaceElements(arr)
         
         XCTAssertEqual(result, [18, 6, 6, 6, 1, -1])
     }
@@ -24,7 +24,7 @@ final class ReplaceElementsWithGreatestElementOnRightSideTests: XCTestCase {
     func test_B() {
         let arr = [400]
             
-        let result = ReplaceElementsWithGreatestElementOnRightSide.replaceElements(arr)
+        let result = ReplaceElementsWithGreatestElementOnRightSide().replaceElements(arr)
         
         XCTAssertEqual(result, [-1])
     }

@@ -34,7 +34,7 @@ struct SubsetsII {
     //still generated through the DFS call on another branch.
     //
     //Similar to: https://leetcode.com/problems/combination-sum-ii/
-    static func subsetsWithDup(_ nums: [Int]) -> [[Int]] {
+    func subsetsWithDup(_ nums: [Int]) -> [[Int]] {
         var subsets = [[Int]]()
         
         backtrack(nums.sorted(), 0, [Int](), &subsets)
@@ -42,7 +42,7 @@ struct SubsetsII {
         return subsets
     }
     
-    private static func backtrack(_ nums: [Int], _ left: Int, _ current: [Int], _ subsets: inout [[Int]]) {
+    private func backtrack(_ nums: [Int], _ left: Int, _ current: [Int], _ subsets: inout [[Int]]) {
         subsets.append(current)
         
         guard left < nums.count else {

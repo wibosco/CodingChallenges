@@ -18,7 +18,7 @@ final class FindNearestRightNodeInBinaryTreeTests: XCTestCase {
         let data = [1,2,3,nil,4,5,6]
         let root = TreeNode.deserialize(data)
         
-        let result = FindNearestRightNodeInBinaryTree.findNearestRightNode(root, u)
+        let result = FindNearestRightNodeInBinaryTree().findNearestRightNode(root, u)
         
         XCTAssertEqual(result?.val, 5)
     }
@@ -28,7 +28,7 @@ final class FindNearestRightNodeInBinaryTreeTests: XCTestCase {
         let data = [3,nil,4,2]
         let root = TreeNode.deserialize(data)
         
-        let result = FindNearestRightNodeInBinaryTree.findNearestRightNode(root, u)
+        let result = FindNearestRightNodeInBinaryTree().findNearestRightNode(root, u)
         
         XCTAssertNil(result)
     }

@@ -23,7 +23,7 @@ struct InsertIntoASortedCircularLinkedList {
     //value in the list so it won't actually fall between any two nodes and should be added at the end (or start). Another
     //special case is where having iterated through the list we still haven't found a "spot" for the new node - this can occur
     //when the list contains duplicate node values, in this case we need to insert the new node before the `head` node.
-    static func insert(_ head: ListNode?, _ insertVal: Int) -> ListNode? {
+    func insert(_ head: ListNode?, _ insertVal: Int) -> ListNode? {
         guard let head = head else {
             let node = ListNode(insertVal)
             node.next = node

@@ -16,7 +16,7 @@ final class UniquePathsIITests: XCTestCase {
     func test_A() {
         let obstacleGrid = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
         
-        let result = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
+        let result = UniquePathsII().uniquePathsWithObstacles(obstacleGrid)
         
         XCTAssertEqual(result, 2)
     }
@@ -24,7 +24,7 @@ final class UniquePathsIITests: XCTestCase {
     func test_B() {
         let obstacleGrid = [[0, 1], [0, 0]]
         
-        let result = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
+        let result = UniquePathsII().uniquePathsWithObstacles(obstacleGrid)
         
         XCTAssertEqual(result, 1)
     }
@@ -32,7 +32,7 @@ final class UniquePathsIITests: XCTestCase {
     func test_C() {
         let obstacleGrid = [[1, 1], [0, 0]]
         
-        let result = UniquePathsII.uniquePathsWithObstacles(obstacleGrid)
+        let result = UniquePathsII().uniquePathsWithObstacles(obstacleGrid)
         
         XCTAssertEqual(result, 0)
     }

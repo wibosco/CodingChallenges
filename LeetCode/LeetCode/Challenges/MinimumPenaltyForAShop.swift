@@ -23,7 +23,7 @@ struct MinimumPenaltyForAShop {
     //We then loop back through `customers` and either increment or decrement `penalityForClosing` as we close the shop
     //from that hour. We track the minimum penalty value found, alongside the index where that minimum was first found.
     //At the end of the second `customers` iteration we return the index for the minimum.
-    static func bestClosingTime(_ customers: String) -> Int {
+    func bestClosingTime(_ customers: String) -> Int {
         var penalityForClosing = 0
         for customer in customers {
             if customer == "Y" {

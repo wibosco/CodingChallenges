@@ -15,7 +15,7 @@ struct FindMinimumRotatedSortedArray {
     //Space: O(1)
     //divide and conquer
     //binary search find leftmost
-    static func findMin(_ nums: [Int]) -> Int {
+    func findMin(_ nums: [Int]) -> Int {
         var left = 0
         var right = nums.count - 1
         

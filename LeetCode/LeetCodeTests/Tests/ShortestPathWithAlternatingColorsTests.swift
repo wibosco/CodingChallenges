@@ -19,7 +19,7 @@ final class ShortestPathWithAlternatingColorsTests: XCTestCase {
                         [1,2]]
         let blueEdges = [[Int]]()
         
-        let result = ShortestPathWithAlternatingColors.shortestAlternatingPaths(n, redEdges, blueEdges)
+        let result = ShortestPathWithAlternatingColors().shortestAlternatingPaths(n, redEdges, blueEdges)
         
         XCTAssertEqual(result, [0,1,-1])
     }
@@ -29,7 +29,7 @@ final class ShortestPathWithAlternatingColorsTests: XCTestCase {
         let redEdges = [[0,1]]
         let blueEdges = [[2, 1]]
         
-        let result = ShortestPathWithAlternatingColors.shortestAlternatingPaths(n, redEdges, blueEdges)
+        let result = ShortestPathWithAlternatingColors().shortestAlternatingPaths(n, redEdges, blueEdges)
         
         XCTAssertEqual(result, [0,1,-1])
     }
@@ -39,7 +39,7 @@ final class ShortestPathWithAlternatingColorsTests: XCTestCase {
         let redEdges = [[0,1]]
         let blueEdges = [[1,0]]
         
-        let result = ShortestPathWithAlternatingColors.shortestAlternatingPaths(n, redEdges, blueEdges)
+        let result = ShortestPathWithAlternatingColors().shortestAlternatingPaths(n, redEdges, blueEdges)
         
         XCTAssertEqual(result, [0,1,-1])
     }
@@ -61,7 +61,7 @@ final class ShortestPathWithAlternatingColorsTests: XCTestCase {
                          [3,3],
                          [2,3]]
         
-        let result = ShortestPathWithAlternatingColors.shortestAlternatingPaths(n, redEdges, blueEdges)
+        let result = ShortestPathWithAlternatingColors().shortestAlternatingPaths(n, redEdges, blueEdges)
         
         XCTAssertEqual(result, [0,-1,-1,1,-1])
     }
@@ -76,7 +76,7 @@ final class ShortestPathWithAlternatingColorsTests: XCTestCase {
                          [2,3],
                          [3,1]]
         
-        let result = ShortestPathWithAlternatingColors.shortestAlternatingPaths(n, redEdges, blueEdges)
+        let result = ShortestPathWithAlternatingColors().shortestAlternatingPaths(n, redEdges, blueEdges)
         
         XCTAssertEqual(result, [0,1,2,3,7])
     }

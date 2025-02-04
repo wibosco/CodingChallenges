@@ -36,7 +36,7 @@ struct LargestBSTSubtree {
     //with the combined size. We also update the `min` and `max` values for this tree and pass it up. It's important to
     //note that of the values returned `isBST` is the most important as a tree can't be a BST unless of it's subtress are
     //also BSTs.
-    static func largestBSTSubtree(_ root: TreeNode?) -> Int {
+    func largestBSTSubtree(_ root: TreeNode?) -> Int {
         var maxSize = 0
         
         _ = dfs(root, &maxSize)
@@ -44,7 +44,7 @@ struct LargestBSTSubtree {
         return maxSize
     }
     
-    private static func dfs(_ node: TreeNode?, _ maxSize: inout Int) -> (Bool, Int, Int, Int) { //isBST, treeSize, minValue, maxValue
+    private func dfs(_ node: TreeNode?, _ maxSize: inout Int) -> (Bool, Int, Int, Int) { //isBST, treeSize, minValue, maxValue
         guard let node = node else {
             return (true, 0, Int.max, Int.min)
         }

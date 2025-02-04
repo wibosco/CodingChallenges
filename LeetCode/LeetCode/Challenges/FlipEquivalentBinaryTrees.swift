@@ -29,7 +29,7 @@ struct FlipEquivalentBinaryTrees {
     //Any other configuration of nodes at the same stage shows that the trees don't match. If the nodes match we pass the matching
     //pairs of child nodes down to the next recursive call to have their childern checked. We repeat this process until we either
     //get a mismatch with the above criteria or we visit all nodes.
-    static func flipEquiv(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
+    func flipEquiv(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
         guard root1?.val == root2?.val else {
             return false
         }
@@ -37,7 +37,7 @@ struct FlipEquivalentBinaryTrees {
         return dfs(root1, root2)
     }
     
-    private static func dfs(_ node1: TreeNode?, _ node2: TreeNode?) -> Bool {
+    private func dfs(_ node1: TreeNode?, _ node2: TreeNode?) -> Bool {
         guard let node1 = node1, let node2 = node2 else { //basecase
             return node1 == nil && node2 == nil //do they match in both being nil?
         }

@@ -20,7 +20,7 @@ struct RangeSumOfBST {
     //Solution Description:
     //Using BFS to traverse the tree, compare each node's value to determine if it is between `low` and `high`. If
     //it is then add the value to the `result`. Then add the nodes left and right nodes to the queue and repeat.
-    static func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
+    func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
         guard let root = root else {
             return 0
         }
@@ -64,13 +64,13 @@ struct RangeSumOfBST {
     //Using DFS to recursively traverse the tree, compare each node's value to determine if it is between `low` and
     //`high`. If it is then add the value to the `result`. Then add the nodes left and right nodes to the queue
     //and repeat.
-    static func rangeSumBSTDFSRecursive(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
+    func rangeSumBSTDFSRecursive(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
         var sum = 0
         dfs(root, low, high, &sum)
         return sum
     }
     
-    private static func dfs(_ root: TreeNode?, _ low: Int, _ high: Int, _ sum: inout Int) {
+    private func dfs(_ root: TreeNode?, _ low: Int, _ high: Int, _ sum: inout Int) {
         guard let root = root else {
             return
         }
@@ -95,7 +95,7 @@ struct RangeSumOfBST {
     //Using DFS to iteratively traverse the tree, compare each node's value to determine if it is between `low` and
     //`high`. If it is then add the value to the `result`. Then add the nodes left and right nodes to the queue
     //and repeat.
-    static func rangeSumBSTDFSIterative(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
+    func rangeSumBSTDFSIterative(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
         guard let root = root else {
             return 0
         }

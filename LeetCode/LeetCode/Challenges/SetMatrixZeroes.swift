@@ -23,7 +23,7 @@ struct SetMatrixZeroes {
     //`zeroRows` and `zeroColumns` respectively this ensures that should a row have multiple zeros it will only be counted
     //once. Once we have found all the original zeros in `matrix` we iterate back through again and set the value of any
     //cell to zero where that cells row or column is in either `zeroRows` or `zeroColumns`.
-    static func setZeroes(_ matrix: inout [[Int]]) {
+    func setZeroes(_ matrix: inout [[Int]]) {
         var zeroRows = Set<Int>()
         var zeroColumns = Set<Int>()
         

@@ -16,7 +16,7 @@ final class RemovingStarsFromAStringTests: XCTestCase {
     func test_A() {
         let s = "leet**cod*e"
         
-        let result = RemovingStarsFromAString.removeStars(s)
+        let result = RemovingStarsFromAString().removeStars(s)
             
         XCTAssertEqual(result, "lecoe")
     }
@@ -24,7 +24,7 @@ final class RemovingStarsFromAStringTests: XCTestCase {
     func test_B() {
         let s = "erase*****"
         
-        let result = RemovingStarsFromAString.removeStars(s)
+        let result = RemovingStarsFromAString().removeStars(s)
             
         XCTAssertEqual(result, "")
     }

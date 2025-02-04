@@ -16,7 +16,7 @@ final class CountNumberOfHomogenousSubstringsTests: XCTestCase {
     func test_A() {
         let s = "abbcccaa"
         
-        let result = CountNumberOfHomogenousSubstrings.countHomogenous(s)
+        let result = CountNumberOfHomogenousSubstrings().countHomogenous(s)
         
         XCTAssertEqual(result, 13)
     }
@@ -24,7 +24,7 @@ final class CountNumberOfHomogenousSubstringsTests: XCTestCase {
     func test_B() {
         let s = "xy"
         
-        let result = CountNumberOfHomogenousSubstrings.countHomogenous(s)
+        let result = CountNumberOfHomogenousSubstrings().countHomogenous(s)
         
         XCTAssertEqual(result, 2)
     }
@@ -32,7 +32,7 @@ final class CountNumberOfHomogenousSubstringsTests: XCTestCase {
     func test_C() {
         let s = "zzzzz"
         
-        let result = CountNumberOfHomogenousSubstrings.countHomogenous(s)
+        let result = CountNumberOfHomogenousSubstrings().countHomogenous(s)
         
         XCTAssertEqual(result, 15)
     }

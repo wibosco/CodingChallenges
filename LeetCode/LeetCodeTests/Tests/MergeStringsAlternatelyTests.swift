@@ -17,7 +17,7 @@ final class MergeStringsAlternatelyTests: XCTestCase {
         let word1 = "abc"
         let word2 = "pqr"
         
-        let result = MergeStringsAlternately.mergeAlternately(word1, word2)
+        let result = MergeStringsAlternately().mergeAlternately(word1, word2)
         
         XCTAssertEqual(result, "apbqcr")
     }
@@ -26,7 +26,7 @@ final class MergeStringsAlternatelyTests: XCTestCase {
         let word1 = "ab"
         let word2 = "pqr"
         
-        let result = MergeStringsAlternately.mergeAlternately(word1, word2)
+        let result = MergeStringsAlternately().mergeAlternately(word1, word2)
         
         XCTAssertEqual(result, "apbqr")
     }
@@ -35,7 +35,7 @@ final class MergeStringsAlternatelyTests: XCTestCase {
         let word1 = "abcd"
         let word2 = "pq"
         
-        let result = MergeStringsAlternately.mergeAlternately(word1, word2)
+        let result = MergeStringsAlternately().mergeAlternately(word1, word2)
         
         XCTAssertEqual(result, "apbqcd")
     }

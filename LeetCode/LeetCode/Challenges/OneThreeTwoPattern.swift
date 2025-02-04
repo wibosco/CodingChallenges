@@ -25,7 +25,7 @@ struct OneThreeTwoPattern {
     //return true as we have found all 3 elements of the 132 pattern, else we add `(minVal, num)` as a possible candidate to the stack and
     //check if `num` is smaller than `minVal` so future `nums` elements. If after iterating through all of `nums` we haven't returned true,
     //we return false.
-    static func find132pattern(_ nums: [Int]) -> Bool {
+    func find132pattern(_ nums: [Int]) -> Bool {
         var stack = [(Int, Int)]() //(minimumValueBeforeNum, num)
         var minVal = Int.max
         

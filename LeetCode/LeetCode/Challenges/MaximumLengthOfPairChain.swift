@@ -23,7 +23,7 @@ struct MaximumLengthOfPairChain {
     //`pairs` we know that the longest chain must include the first elements so don't need to include multiple sources.
     //
     //N.B. We don't stop the iteration after a failure of `p2[0] > last[1]` as the longest chain can be a non-contiguous slice.
-    static func findLongestChain(_ pairs: [[Int]]) -> Int {
+    func findLongestChain(_ pairs: [[Int]]) -> Int {
         let pairs = pairs.sorted { $0[1] < $1[1]  } //N.B. we sort on the second element
 
         var last = pairs[0]
@@ -62,7 +62,7 @@ struct MaximumLengthOfPairChain {
     //is then returned. As our DFS can result the same we use memoization to cache the maximum chain size we find for each
     //element/node work and so allow us to save on work if a later DFS recursion attempts to find maximum chain size from that
     //same element/node.
-    static func findLongestChainMemo(_ pairs: [[Int]]) -> Int {
+    func findLongestChainMemo(_ pairs: [[Int]]) -> Int {
         let pairs = pairs.sorted { $0[0] < $1[0]  }
         
         var memo = [Int: Int]()
@@ -78,7 +78,7 @@ struct MaximumLengthOfPairChain {
 
     }
     
-    private static func dfs(_ pairs: [[Int]], _ lastIndex: Int, _ memo: inout [Int: Int]) -> Int {
+    private func dfs(_ pairs: [[Int]], _ lastIndex: Int, _ memo: inout [Int: Int]) -> Int {
         guard lastIndex < pairs.count else {
             return 0
         }
@@ -122,7 +122,7 @@ struct MaximumLengthOfPairChain {
     //deeper from that element/node; else we skip over it to the next element/node. We repeat this process until all possible
     //valid subsequences of `pairs` has been created and take the maximum size of the created chains as the longest chain which
     //is then returned.
-    static func findLongestChainDFS(_ pairs: [[Int]]) -> Int {
+    func findLongestChainDFS(_ pairs: [[Int]]) -> Int {
         let pairs = pairs.sorted { $0[0] < $1[0]  }
             
         var maxCount = 0
@@ -137,7 +137,7 @@ struct MaximumLengthOfPairChain {
 
     }
     
-    private static func dfs(_ pairs: [[Int]], _ lastIndex: Int) -> Int {
+    private func dfs(_ pairs: [[Int]], _ lastIndex: Int) -> Int {
         guard lastIndex < pairs.count else {
             return 0
         }

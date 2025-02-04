@@ -24,7 +24,7 @@ struct FlipBinaryTreeToMatchPreorderTraversal {
     //nodes, before continuing the check with the new structure. We prevent unlimited flips of the same level by nesting the
     //flipped call - this means we don't need to pass a "canFlip" parameter into `dfs`. We repeat this process until we either
     //get another mismatch after having already flipped or we visit all nodes in the tree.
-    static func flipMatchVoyage(_ root: TreeNode?, _ voyage: [Int]) -> [Int] {
+    func flipMatchVoyage(_ root: TreeNode?, _ voyage: [Int]) -> [Int] {
         guard let root = root else {
             return [-1]
         }
@@ -39,7 +39,7 @@ struct FlipBinaryTreeToMatchPreorderTraversal {
         return changes
     }
     
-    private static func dfs(_ node: TreeNode?, _ voyage: [Int], _ index: inout Int, _ changes: inout [Int]) -> Bool {
+    private func dfs(_ node: TreeNode?, _ voyage: [Int], _ index: inout Int, _ changes: inout [Int]) -> Bool {
         guard let node = node else {
             return true
         }

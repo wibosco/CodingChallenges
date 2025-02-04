@@ -20,7 +20,7 @@ struct ReverseString {
     //Using two pointers - `left` at the start of `s` and `right` at the end of `s`, swap the elements at those two
     //locations. Then increment/decrement the respective pointers until they go beyond each other at which point we
     //have swapped all elements in `s`
-    static func reverseStringIterative(_ s: inout [String]) {
+    func reverseStringIterative(_ s: inout [String]) {
         guard s.count > 1 else {
             return
         }
@@ -46,11 +46,11 @@ struct ReverseString {
     //Using two pointers - `left` at the start of `s` and `right` at the end of `s`, swap the elements at those two
     //locations. Then increment/decrement the respective pointers until they go beyond each other at which point we
     //have swapped all elements in `s`
-    static func reverseString(_ s: inout [String]) {
+    func reverseString(_ s: inout [String]) {
         reverseString(&s, 0, (s.count - 1))
     }
     
-    private static func reverseString(_ s: inout [String], _ left: Int, _ right: Int) {
+    private func reverseString(_ s: inout [String], _ left: Int, _ right: Int) {
         guard left < right else {
             return
         }

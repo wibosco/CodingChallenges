@@ -21,7 +21,7 @@ final class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
         let p = TreeNode(5)
         let q = TreeNode(1)
         
-        let result = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
+        let result = LowestCommonAncestorBinaryTreeII().lowestCommonAncestor(root, p, q)
         
         XCTAssertEqual(result?.val, 3)
     }
@@ -33,7 +33,7 @@ final class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
         let p = TreeNode(5)
         let q = TreeNode(4)
         
-        let result = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
+        let result = LowestCommonAncestorBinaryTreeII().lowestCommonAncestor(root, p, q)
         
         XCTAssertEqual(result?.val, 5)
     }
@@ -45,7 +45,7 @@ final class LowestCommonAncestorBinaryTreeIITests: XCTestCase {
         let p = TreeNode(5)
         let q = TreeNode(10)
         
-        let result = LowestCommonAncestorBinaryTreeII.lowestCommonAncestor(root, p, q)
+        let result = LowestCommonAncestorBinaryTreeII().lowestCommonAncestor(root, p, q)
         
         XCTAssertNil(result)
     }

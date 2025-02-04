@@ -26,7 +26,7 @@ final class ValidSudokuTests: XCTestCase {
          [".", ".", ".", "4", "1", "9", ".", ".", "5"],
          [".", ".", ".", ".", "8", ".", ".", "7", "9"]]
         
-        let result = ValidSudoku.isValidSudoku(board)
+        let result = ValidSudoku().isValidSudoku(board)
         
         XCTAssertTrue(result)
     }
@@ -43,7 +43,7 @@ final class ValidSudokuTests: XCTestCase {
          [".", ".", ".", "4", "1", "9", ".", ".", "5"],
          [".", ".", ".", ".", "8", ".", ".", "7", "9"]]
         
-        let result = ValidSudoku.isValidSudoku(board)
+        let result = ValidSudoku().isValidSudoku(board)
         
         XCTAssertFalse(result)
     }
@@ -60,7 +60,7 @@ final class ValidSudokuTests: XCTestCase {
          [".", ".", ".", ".", ".", "3", ".", ".", "."],
          [".", ".", ".", ".", ".", "5", "2", ".", "."]]
 
-        let result = ValidSudoku.isValidSudoku(board)
+        let result = ValidSudoku().isValidSudoku(board)
         
         XCTAssertFalse(result)
     }

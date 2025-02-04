@@ -16,7 +16,7 @@ final class JumpGameTests: XCTestCase {
     func test_A() {
         let nums = [2, 3, 1, 1, 4]
         
-        let result = JumpGame.canJump(nums)
+        let result = JumpGame().canJump(nums)
         
         XCTAssertTrue(result)
     }
@@ -24,7 +24,7 @@ final class JumpGameTests: XCTestCase {
     func test_B() {
         let nums = [3, 2, 1, 0, 4]
         
-        let result = JumpGame.canJump(nums)
+        let result = JumpGame().canJump(nums)
         
         XCTAssertFalse(result)
     }
@@ -32,7 +32,7 @@ final class JumpGameTests: XCTestCase {
     func test_C() {
         let nums = [0]
         
-        let result = JumpGame.canJump(nums)
+        let result = JumpGame().canJump(nums)
         
         XCTAssertTrue(result)
     }
@@ -40,7 +40,7 @@ final class JumpGameTests: XCTestCase {
     func test_D() {
         let nums = [1, 2, 3]
         
-        let result = JumpGame.canJump(nums)
+        let result = JumpGame().canJump(nums)
         
         XCTAssertTrue(result)
     }

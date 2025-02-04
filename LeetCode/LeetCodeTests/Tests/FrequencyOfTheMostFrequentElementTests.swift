@@ -17,7 +17,7 @@ final class FrequencyOfTheMostFrequentElementTests: XCTestCase {
         let nums = [1, 2, 4]
         let k = 5
         
-        let result = FrequencyOfTheMostFrequentElement.maxFrequency(nums, k)
+        let result = FrequencyOfTheMostFrequentElement().maxFrequency(nums, k)
         
         XCTAssertEqual(result, 3)
     }
@@ -26,7 +26,7 @@ final class FrequencyOfTheMostFrequentElementTests: XCTestCase {
         let nums = [1, 4, 8, 13]
         let k = 5
         
-        let result = FrequencyOfTheMostFrequentElement.maxFrequency(nums, k)
+        let result = FrequencyOfTheMostFrequentElement().maxFrequency(nums, k)
         
         XCTAssertEqual(result, 2)
     }
@@ -35,7 +35,7 @@ final class FrequencyOfTheMostFrequentElementTests: XCTestCase {
         let nums = [3, 9, 6]
         let k = 2
         
-        let result = FrequencyOfTheMostFrequentElement.maxFrequency(nums, k)
+        let result = FrequencyOfTheMostFrequentElement().maxFrequency(nums, k)
         
         XCTAssertEqual(result, 1)
     }

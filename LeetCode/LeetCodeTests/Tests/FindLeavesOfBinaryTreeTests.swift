@@ -18,7 +18,7 @@ final class FindLeavesOfBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = FindLeavesOfBinaryTree.findLeaves(root)
+        let result = FindLeavesOfBinaryTree().findLeaves(root)
         
         XCTAssertEqual(result, [[4, 5, 3], [2], [1]])
     }
@@ -28,7 +28,7 @@ final class FindLeavesOfBinaryTreeTests: XCTestCase {
         
         let root = TreeNode.deserialize(data)
         
-        let result = FindLeavesOfBinaryTree.findLeaves(root)
+        let result = FindLeavesOfBinaryTree().findLeaves(root)
         
         XCTAssertEqual(result, [[1]])
     }

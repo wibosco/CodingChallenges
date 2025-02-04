@@ -38,7 +38,7 @@ struct UniqueLength3PalindromicSubsequences {
     //with `a` as the edge our search space only contains `b` however you can see that the second right edge of `a` contains
     //`c`. With `leftEdgeOptions` we don't track the count of the character as any instance of `l` can be used to sandwich
     //`mid`.
-    static func countPalindromicSubsequence(_ s: String) -> Int {
+    func countPalindromicSubsequence(_ s: String) -> Int {
         var rightEdgeOptions = [Character: Int]()
         
         for c in s {
@@ -79,7 +79,7 @@ struct UniqueLength3PalindromicSubsequences {
     //discarded). We then iterate through those characters that occur at least twice in `s` and add each character that falls
     //between the start and end index to the `palindromes` set. At the end of each pairing we add the count of unique
     //palindromes to `count`.
-    static func countPalindromicSubsequenceNested(_ s: String) -> Int {
+    func countPalindromicSubsequenceNested(_ s: String) -> Int {
         var ranges = [Character: (Int, Int?)]()
         let characters = Array(s)
         

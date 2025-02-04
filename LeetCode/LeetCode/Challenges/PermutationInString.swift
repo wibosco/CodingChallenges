@@ -32,7 +32,7 @@ struct PermutationInString {
     //we increase that characters count by 1 and where that count has now become greater than 0 we also reduce `matches` by 1 (this
     //check ensures that we don't under count a character just because it appear multiple times in that window). If at any point
     //`matches` is equal to `windowSize` meaning that all the characters in `s1` are present in that window we return true.
-    static func checkInclusion(_ s1: String, _ s2: String) -> Bool {
+    func checkInclusion(_ s1: String, _ s2: String) -> Bool {
         var c1Frequency = [Character: Int]()
         
         let c1 = Array(s1)

@@ -18,7 +18,7 @@ final class SuccessfulPairsOfSpellsAndPotionsTests: XCTestCase {
         let potions = [1, 2, 3, 4, 5]
         let success = 7
             
-        let result = SuccessfulPairsOfSpellsAndPotions.successfulPairs(spells, potions, success)
+        let result = SuccessfulPairsOfSpellsAndPotions().successfulPairs(spells, potions, success)
         
         XCTAssertEqual(result, [4, 0, 3])
     }
@@ -28,7 +28,7 @@ final class SuccessfulPairsOfSpellsAndPotionsTests: XCTestCase {
         let potions = [8, 5, 8]
         let success = 16
             
-        let result = SuccessfulPairsOfSpellsAndPotions.successfulPairs(spells, potions, success)
+        let result = SuccessfulPairsOfSpellsAndPotions().successfulPairs(spells, potions, success)
         
         XCTAssertEqual(result, [2, 0, 2])
     }

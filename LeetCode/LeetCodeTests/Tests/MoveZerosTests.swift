@@ -17,7 +17,7 @@ final class MoveZerosTests: XCTestCase {
     func test_A() {
         var nums = [0, 1, 0, 3, 12]
         
-        MoveZeros.moveZeroes(&nums)
+        MoveZeros().moveZeroes(&nums)
         
         XCTAssertEqual(nums, [1, 3, 12, 0, 0])
     }
@@ -25,7 +25,7 @@ final class MoveZerosTests: XCTestCase {
     func test_B() {
         var nums = [0]
         
-        MoveZeros.moveZeroes(&nums)
+        MoveZeros().moveZeroes(&nums)
         
         XCTAssertEqual(nums, [0])
     }
@@ -33,7 +33,7 @@ final class MoveZerosTests: XCTestCase {
     func test_C() {
         var nums = [0, 1]
         
-        MoveZeros.moveZeroes(&nums)
+        MoveZeros().moveZeroes(&nums)
         
         XCTAssertEqual(nums, [1, 0])
     }
@@ -41,7 +41,7 @@ final class MoveZerosTests: XCTestCase {
     func test_D() {
         var nums = [2, 1]
         
-        MoveZeros.moveZeroes(&nums)
+        MoveZeros().moveZeroes(&nums)
         
         XCTAssertEqual(nums, [2, 1])
     }
@@ -49,7 +49,7 @@ final class MoveZerosTests: XCTestCase {
     func test_E() {
         var nums = [0, 0]
         
-        MoveZeros.moveZeroes(&nums)
+        MoveZeros().moveZeroes(&nums)
         
         XCTAssertEqual(nums, [0, 0])
     }
@@ -57,7 +57,7 @@ final class MoveZerosTests: XCTestCase {
     func test_F() {
         var nums = [4, 2, 4, 0, 0, 3, 0, 5, 1, 0]
         
-        MoveZeros.moveZeroes(&nums)
+        MoveZeros().moveZeroes(&nums)
         
         XCTAssertEqual(nums, [4, 2, 4, 3, 5, 1, 0, 0, 0, 0])
     }

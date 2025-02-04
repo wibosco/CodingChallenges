@@ -25,7 +25,7 @@ struct SortTheMatrixDiagonally {
     //means that we don't need to keep a separate index for each diagonal to know which item to pop or remove items
     //from the start of that array which is a O(n) operation (popping is a O(1) operation). We then re-traverse `mat`
     //and extract the value at each location from `diagonals`
-    static func diagonalSort(_ mat: [[Int]]) -> [[Int]] {
+    func diagonalSort(_ mat: [[Int]]) -> [[Int]] {
         var orderedMat = mat
         var diagonals = [Int: [Int]]()
         
@@ -63,7 +63,7 @@ struct SortTheMatrixDiagonally {
     //(always row + 1 and column + 1). We then sort this diagonal in ascending order and place the sorted diagonal into
     //a different matrix (`orderedMat`). We repeat this process for the first column (skipping the first row cell as
     //this has already been sorted).
-    static func diagonalSortRelativeIndexing(_ mat: [[Int]]) -> [[Int]] {
+    func diagonalSortRelativeIndexing(_ mat: [[Int]]) -> [[Int]] {
         var orderedMat = mat //n * m
         
         //m * min(n, m) log min(n, m)
@@ -95,7 +95,7 @@ struct SortTheMatrixDiagonally {
         return orderedMat
     }
     
-    private static func extractDiagonal(_ mat: [[Int]], _ row: Int, _ column: Int, _ values: inout [Int]) {
+    private func extractDiagonal(_ mat: [[Int]], _ row: Int, _ column: Int, _ values: inout [Int]) {
         values.append(mat[row][column])
         
         let newRow = row + 1
@@ -112,7 +112,7 @@ struct SortTheMatrixDiagonally {
         extractDiagonal(mat, newRow, newColumn, &values)
     }
     
-    private static func insertDiagonal(_ mat: inout [[Int]], _ row: Int, _ column: Int, _ values: [Int], _ index: Int) {
+    private func insertDiagonal(_ mat: inout [[Int]], _ row: Int, _ column: Int, _ values: [Int], _ index: Int) {
         mat[row][column] = values[index]
         
         let newRow = row + 1

@@ -35,7 +35,7 @@ struct FindDistanceInABinaryTree {
     //N.B. `pPath` and `qPath` contain nodes so to each the edges we need to subtract 1.
     //
     //Similar to: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
-    static func findDistance(_ root: TreeNode?, _ p: Int, _ q: Int) -> Int {
+    func findDistance(_ root: TreeNode?, _ p: Int, _ q: Int) -> Int {
         let pPath = find(root, p, 0, [])
         let qPath = find(root, q, 0, [])
         
@@ -65,7 +65,7 @@ struct FindDistanceInABinaryTree {
         return -1
     }
     
-    private static func find(_ node: TreeNode?, _ target: Int, _ depth: Int, _ path: [Int]) -> [Int] {
+    private func find(_ node: TreeNode?, _ target: Int, _ depth: Int, _ path: [Int]) -> [Int] {
         guard let node = node else {
             return []
         }

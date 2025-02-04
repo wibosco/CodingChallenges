@@ -26,7 +26,7 @@ struct RemoveDuplicatesFromSortedArrayII {
     //and we can return `slow` as the upper boundary of the "valid" array.
     //
     //Similar to: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-    static func removeDuplicates(_ nums: inout [Int]) -> Int {
+    func removeDuplicates(_ nums: inout [Int]) -> Int {
         guard nums.count > 1 else {
             return 1
         }

@@ -21,7 +21,7 @@ struct UniquePaths {
     //paths to the cell in the row directly above and the possible paths to the cell directly to the left and adding them.
     //We can repeat this process until we reach the target cell (bottom right) at which point we will have the number of
     //possible paths.
-    static func uniquePaths(_ m: Int, _ n: Int) -> Int {
+    func uniquePaths(_ m: Int, _ n: Int) -> Int {
         var matrix = Array(repeating: Array(repeating: 1, count: n), count: m)
         
         for r in 1..<m { //notice we don't start at 0 as they are already filled with 1
@@ -49,7 +49,7 @@ struct UniquePaths {
     //bounds of the matrix i.e. for `down`, row is less than the row count and for `right`, column is less then the column
     //count. We repeat these moves until either we reach the target (`m - 1, n - 1`) at which time we increment `count` or
     //we can't take any more moves on our current branch and so abandon it.
-    static func uniquePathsDFS(_ m: Int, _ n: Int) -> Int {
+    func uniquePathsDFS(_ m: Int, _ n: Int) -> Int {
         var paths = 0
         
         dfs(m, n, 0, 0, &paths)
@@ -57,7 +57,7 @@ struct UniquePaths {
         return paths
     }
     
-    private static func dfs(_ m: Int, _ n: Int, _ r: Int, _ c: Int, _ paths: inout Int) {
+    private func dfs(_ m: Int, _ n: Int, _ r: Int, _ c: Int, _ paths: inout Int) {
         if r == (m - 1) && c == (n - 1) {
             paths += 1
             return

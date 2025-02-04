@@ -20,7 +20,7 @@ struct FindLargestValueInEachTreeRow {
     //Solution Description:
     //Using BFS we can go level-by-level and find the largest value for the nodes at that level. At the end of each level we can
     //then store that largest value in `values`. Once all nodes have been checked we return `values.`
-    static func largestValues(_ root: TreeNode?) -> [Int] {
+    func largestValues(_ root: TreeNode?) -> [Int] {
         guard let root = root else {
             return [Int]()
         }

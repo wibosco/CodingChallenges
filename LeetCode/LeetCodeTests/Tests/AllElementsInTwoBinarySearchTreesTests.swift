@@ -20,7 +20,7 @@ final class AllElementsInTwoBinarySearchTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = AllElementsInTwoBinarySearchTrees.getAllElements(root1, root2)
+        let result = AllElementsInTwoBinarySearchTrees().getAllElements(root1, root2)
         
         XCTAssertEqual(result, [0,1,1,2,3,4])
     }
@@ -32,7 +32,7 @@ final class AllElementsInTwoBinarySearchTreesTests: XCTestCase {
         let root1 = TreeNode.deserialize(data1)
         let root2 = TreeNode.deserialize(data2)
         
-        let result = AllElementsInTwoBinarySearchTrees.getAllElements(root1, root2)
+        let result = AllElementsInTwoBinarySearchTrees().getAllElements(root1, root2)
         
         XCTAssertEqual(result, [1,1,8,8])
     }

@@ -25,14 +25,14 @@ struct ConvertBSTToGreaterTree {
     //greater in value. This will allow us to perform a linear traversal and update each node with its GST value. It's
     //important to note that we don't attempt to re-create the tree rather we just re-assign the value of each node to it's
     //GST value.
-    static func convertBST(_ root: TreeNode?) -> TreeNode? {
+    func convertBST(_ root: TreeNode?) -> TreeNode? {
         var sum = 0
         dfs(root, &sum)
         
         return root
     }
     
-    private static func dfs(_ node: TreeNode?, _ sum: inout Int) {
+    private func dfs(_ node: TreeNode?, _ sum: inout Int) {
         guard let node = node else {
             return
         }

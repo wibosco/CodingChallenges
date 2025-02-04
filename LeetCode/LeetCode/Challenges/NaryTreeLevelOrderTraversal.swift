@@ -21,7 +21,7 @@ struct NaryTreeLevelOrderTraversal { //N-aryTreeLevelOrderTraversal
     //
     //NB: As this is an N-ary tree rather than a binary tree, the BFS contains 3 loops rather than 2. The extra loop is to
     //work through the neighbors of a nodes - don't confuse this with the actual level traversal loop which is the second loop.
-    static func levelOrder(_ root: NaryTreeNode?) -> [[Int]] {
+    func levelOrder(_ root: NaryTreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()
         }

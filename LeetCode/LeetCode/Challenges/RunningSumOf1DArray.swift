@@ -18,7 +18,7 @@ struct RunningSumOf1DArray {
     //Solution Description:
     //Using the prefix sum technique we iterate through the `nums` array and adding nums[i] to running total of all the
     //previous values of `nums` which we can get from the last elements in `prefixSum`
-    static func runningSum(_ nums: [Int]) -> [Int] {
+    func runningSum(_ nums: [Int]) -> [Int] {
         var prefixSum = [Int]()
         prefixSum.append(nums[0])
         

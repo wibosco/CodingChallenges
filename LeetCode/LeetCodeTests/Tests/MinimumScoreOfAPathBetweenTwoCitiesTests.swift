@@ -20,7 +20,7 @@ final class MinimumScoreOfAPathBetweenTwoCitiesTests: XCTestCase {
                      [2,4,5],
                      [1,4,7]]
         
-        let result = MinimumScoreOfAPathBetweenTwoCities.minScore(n, roads)
+        let result = MinimumScoreOfAPathBetweenTwoCities().minScore(n, roads)
         
         XCTAssertEqual(result, 5)
     }
@@ -31,7 +31,7 @@ final class MinimumScoreOfAPathBetweenTwoCitiesTests: XCTestCase {
                      [1,3,4],
                      [3,4,7]]
         
-        let result = MinimumScoreOfAPathBetweenTwoCities.minScore(n, roads)
+        let result = MinimumScoreOfAPathBetweenTwoCities().minScore(n, roads)
         
         XCTAssertEqual(result, 2)
     }

@@ -17,7 +17,7 @@ final class DistributeCoinsInBinaryTreeTests: XCTestCase {
         let data = [3,0,0]
         let root = TreeNode.deserialize(data)
         
-        let result = DistributeCoinsInBinaryTree.distributeCoins(root)
+        let result = DistributeCoinsInBinaryTree().distributeCoins(root)
         
         XCTAssertEqual(result, 2)
     }
@@ -26,7 +26,7 @@ final class DistributeCoinsInBinaryTreeTests: XCTestCase {
         let data = [0,3,0]
         let root = TreeNode.deserialize(data)
         
-        let result = DistributeCoinsInBinaryTree.distributeCoins(root)
+        let result = DistributeCoinsInBinaryTree().distributeCoins(root)
         
         XCTAssertEqual(result, 3)
     }
@@ -35,7 +35,7 @@ final class DistributeCoinsInBinaryTreeTests: XCTestCase {
         let data = [7,0,0,0,0,0,0]
         let root = TreeNode.deserialize(data)
         
-        let result = DistributeCoinsInBinaryTree.distributeCoins(root)
+        let result = DistributeCoinsInBinaryTree().distributeCoins(root)
         
         XCTAssertEqual(result, 10)
     }

@@ -27,7 +27,7 @@ struct SpiralMatrixII {
     //know when to change direction then as we move from the outer cells to internal cells we can use the cells value to
     //know when to change direction i.e. value > 0 we change. Eventually we will have filled in all the cells in the matrix
     //and can return it
-    static func generateMatrix(_ n: Int) -> [[Int]] {
+    func generateMatrix(_ n: Int) -> [[Int]] {
         var matrix = Array(repeating: Array(repeating: 0, count: n), count: n)
         let totalCells = n * n
         

@@ -26,14 +26,14 @@ struct BalanceABinarySearchTree {
     //nodes until we run out of nodes, at which point our call stack starts to return and we assign those returned nodes to either
     //the left or right child node of the call higher up the stack. Once all nodes have been nodes have been processed we have our
     //balanced binary search tree.
-    static func balanceBST(_ root: TreeNode?) -> TreeNode? {
+    func balanceBST(_ root: TreeNode?) -> TreeNode? {
         var nodes = [TreeNode]()
         inorderTraversal(root, &nodes)
         
         return balance(nodes, 0, (nodes.count - 1))
     }
     
-    private static func inorderTraversal(_ root: TreeNode?, _ array: inout [TreeNode]) {
+    private func inorderTraversal(_ root: TreeNode?, _ array: inout [TreeNode]) {
         guard let root = root else {
             return
         }
@@ -43,7 +43,7 @@ struct BalanceABinarySearchTree {
         inorderTraversal(root.right, &array)
     }
     
-    private static func balance(_ nodes: [TreeNode], _ start: Int, _ end: Int) -> TreeNode? {
+    private func balance(_ nodes: [TreeNode], _ start: Int, _ end: Int) -> TreeNode? {
         guard end >= start else {
             return nil
         }

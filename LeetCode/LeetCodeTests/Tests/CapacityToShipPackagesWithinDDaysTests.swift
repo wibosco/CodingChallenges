@@ -18,7 +18,7 @@ final class CapacityToShipPackagesWithinDDaysTests: XCTestCase {
         let weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         let days = 5
         
-        let result = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
+        let result = CapacityToShipPackagesWithinDDays().shipWithinDays(weights, days)
         
         XCTAssertEqual(result, 15)
     }
@@ -27,7 +27,7 @@ final class CapacityToShipPackagesWithinDDaysTests: XCTestCase {
         let weights = [3, 2, 2, 4, 1, 4]
         let days = 3
         
-        let result = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
+        let result = CapacityToShipPackagesWithinDDays().shipWithinDays(weights, days)
         
         XCTAssertEqual(result, 6)
     }
@@ -36,7 +36,7 @@ final class CapacityToShipPackagesWithinDDaysTests: XCTestCase {
         let weights = [1, 2, 3, 1, 1]
         let days = 4
         
-        let result = CapacityToShipPackagesWithinDDays.shipWithinDays(weights, days)
+        let result = CapacityToShipPackagesWithinDDays().shipWithinDays(weights, days)
         
         XCTAssertEqual(result, 3)
     }

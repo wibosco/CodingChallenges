@@ -17,7 +17,7 @@ final class CombinationSumTests: XCTestCase {
         let candidates = [2, 3, 6, 7]
         let target = 7
         
-        let combinations = CombinationSum.combinationSum(candidates, target)
+        let combinations = CombinationSum().combinationSum(candidates, target)
         
         let expectedCombinations = [[2, 2, 3], [7]]
         
@@ -33,7 +33,7 @@ final class CombinationSumTests: XCTestCase {
         let candidates = [2, 3, 5]
         let target = 8
         
-        let combinations = CombinationSum.combinationSum(candidates, target)
+        let combinations = CombinationSum().combinationSum(candidates, target)
         
         let expectedCombinations = [[2, 2, 2, 2], [2, 3, 3], [3, 5]]
         
@@ -49,7 +49,7 @@ final class CombinationSumTests: XCTestCase {
         let candidates = [2]
         let target = 1
         
-        let combinations = CombinationSum.combinationSum(candidates, target)
+        let combinations = CombinationSum().combinationSum(candidates, target)
         
         let expectedCombinations = [[Int]]()
         

@@ -17,7 +17,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_A() {
         let s = "()"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertTrue(result)
     }
@@ -25,7 +25,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_B() {
         let s = "()[]{}"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertTrue(result)
     }
@@ -33,7 +33,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_C() {
         let s = "(]"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertFalse(result)
     }
@@ -41,7 +41,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_D() {
         let s = "([)]"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertFalse(result)
     }
@@ -49,7 +49,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_E() {
         let s = "{[]}"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertTrue(result)
     }
@@ -57,7 +57,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_F() {
         let s = "(([]){})"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertTrue(result)
     }
@@ -65,7 +65,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_G() {
         let s = "){"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertFalse(result)
     }
@@ -73,7 +73,7 @@ final class ValidParenthesesTests: XCTestCase {
     func test_H() {
         let s = "))"
         
-        let result = ValidParentheses.isValid(s)
+        let result = ValidParentheses().isValid(s)
         
         XCTAssertFalse(result)
     }

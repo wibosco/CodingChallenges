@@ -18,7 +18,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "internationalization"
         let abbr = "i12iz4n"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertTrue(result)
     }
@@ -27,7 +27,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "apple"
         let abbr = "a2e"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertFalse(result)
     }
@@ -36,7 +36,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "s10n"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertTrue(result)
     }
@@ -45,7 +45,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "sub4u4"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertTrue(result)
     }
@@ -54,7 +54,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "12"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertTrue(result)
     }
@@ -63,7 +63,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "su3i1u2on"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertTrue(result)
     }
@@ -72,7 +72,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "substitution"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertTrue(result)
     }
@@ -81,7 +81,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "s55n"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertFalse(result)
     }
@@ -90,7 +90,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "s010n"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertFalse(result)
     }
@@ -99,7 +99,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "substitution"
         let abbr = "s0ubstitution"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertFalse(result)
     }
@@ -108,7 +108,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "word"
         let abbr = "3e"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertFalse(result)
     }
@@ -117,7 +117,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "hi"
         let abbr = "2i"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertFalse(result)
     }
@@ -126,7 +126,7 @@ final class ValidWordAbbreviationTests: XCTestCase {
         let word = "hi"
         let abbr = "1"
         
-        let result = ValidWordAbbreviation.validWordAbbreviation(word, abbr)
+        let result = ValidWordAbbreviation().validWordAbbreviation(word, abbr)
         
         XCTAssertFalse(result)
     }

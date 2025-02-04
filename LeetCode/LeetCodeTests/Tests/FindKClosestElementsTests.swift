@@ -19,7 +19,7 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 4
         let x = 3
         
-        let result = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements().findClosestElements(arr, k, x)
         
         XCTAssertEqual(result, [1, 2, 3, 4])
     }
@@ -29,7 +29,7 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 4
         let x = -1
         
-        let result = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements().findClosestElements(arr, k, x)
         
         XCTAssertEqual(result, [1, 2, 3, 4])
     }
@@ -39,7 +39,7 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 1
         let x = 9
         
-        let result = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements().findClosestElements(arr, k, x)
         
         XCTAssertEqual(result, [10])
     }
@@ -49,7 +49,7 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 2
         let x = 2
         
-        let result = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements().findClosestElements(arr, k, x)
         
         XCTAssertEqual(result, [1, 3])
     }
@@ -59,7 +59,7 @@ final class FindKClosestElementsTests: XCTestCase {
         let k = 3
         let x = 5
         
-        let result = FindKClosestElements.findClosestElements(arr, k, x)
+        let result = FindKClosestElements().findClosestElements(arr, k, x)
         
         XCTAssertEqual(result, [3, 3, 4])
     }

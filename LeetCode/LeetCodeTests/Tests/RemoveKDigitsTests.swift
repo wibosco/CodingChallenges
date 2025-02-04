@@ -17,7 +17,7 @@ final class RemoveKDigitsTests: XCTestCase {
         let num = "1432219"
         let k = 3
             
-        let result = RemoveKDigits.removeKdigits(num, k)
+        let result = RemoveKDigits().removeKdigits(num, k)
         
         XCTAssertEqual(result, "1219")
     }
@@ -26,7 +26,7 @@ final class RemoveKDigitsTests: XCTestCase {
         let num = "10"
         let k = 2
             
-        let result = RemoveKDigits.removeKdigits(num, k)
+        let result = RemoveKDigits().removeKdigits(num, k)
         
         XCTAssertEqual(result, "0")
     }
@@ -35,7 +35,7 @@ final class RemoveKDigitsTests: XCTestCase {
         let num = "10200"
         let k = 1
             
-        let result = RemoveKDigits.removeKdigits(num, k)
+        let result = RemoveKDigits().removeKdigits(num, k)
         
         XCTAssertEqual(result, "200") //0200 is the same as 200
     }
@@ -44,7 +44,7 @@ final class RemoveKDigitsTests: XCTestCase {
         let num = "10"
         let k = 1
             
-        let result = RemoveKDigits.removeKdigits(num, k)
+        let result = RemoveKDigits().removeKdigits(num, k)
         
         XCTAssertEqual(result, "0")
     }
@@ -53,7 +53,7 @@ final class RemoveKDigitsTests: XCTestCase {
         let num = "9"
         let k = 1
             
-        let result = RemoveKDigits.removeKdigits(num, k)
+        let result = RemoveKDigits().removeKdigits(num, k)
         
         XCTAssertEqual(result, "0")
     }

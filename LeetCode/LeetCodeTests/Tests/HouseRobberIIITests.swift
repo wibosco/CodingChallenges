@@ -18,7 +18,7 @@ final class HouseRobberIIITests: XCTestCase {
         let data = [3,2,3,nil,3,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = HouseRobberIII.rob(root)
+        let result = HouseRobberIII().rob(root)
         
         XCTAssertEqual(result, 7)
     }
@@ -27,7 +27,7 @@ final class HouseRobberIIITests: XCTestCase {
         let data = [3,4,5,1,3,nil,1]
         let root = TreeNode.deserialize(data)
         
-        let result = HouseRobberIII.rob(root)
+        let result = HouseRobberIII().rob(root)
         
         XCTAssertEqual(result, 9)
     }
