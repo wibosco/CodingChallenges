@@ -1050,6 +1050,8 @@
 		43FB69922AF3D2B400438457 /* NumberOfEnclavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB69912AF3D2B400438457 /* NumberOfEnclavesTests.swift */; };
 		43FB7C502B90E44A002FD664 /* FairCandySwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB7C4F2B90E44A002FD664 /* FairCandySwap.swift */; };
 		43FB7C522B90E4BB002FD664 /* FairCandySwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB7C512B90E4BA002FD664 /* FairCandySwapTests.swift */; };
+		43FB93552D521EC00025E432 /* FindTheLexicographicallySmallestValidSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB93542D521EC00025E432 /* FindTheLexicographicallySmallestValidSequence.swift */; };
+		43FB93572D521F200025E432 /* FindTheLexicographicallySmallestValidSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB93562D521F200025E432 /* FindTheLexicographicallySmallestValidSequenceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2107,6 +2109,8 @@
 		43FB69912AF3D2B400438457 /* NumberOfEnclavesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfEnclavesTests.swift; sourceTree = "<group>"; };
 		43FB7C4F2B90E44A002FD664 /* FairCandySwap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairCandySwap.swift; sourceTree = "<group>"; };
 		43FB7C512B90E4BA002FD664 /* FairCandySwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairCandySwapTests.swift; sourceTree = "<group>"; };
+		43FB93542D521EC00025E432 /* FindTheLexicographicallySmallestValidSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheLexicographicallySmallestValidSequence.swift; sourceTree = "<group>"; };
+		43FB93562D521F200025E432 /* FindTheLexicographicallySmallestValidSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheLexicographicallySmallestValidSequenceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2355,6 +2359,7 @@
 				43D8B8012A629C0000B3F197 /* FindTheDifferenceOfTwoArrays.swift */,
 				436DCCD72B8C849100AC8F0A /* FindTheDistanceValueBetweenTwoArrays.swift */,
 				437119472A5F5232000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAString.swift */,
+				43FB93542D521EC00025E432 /* FindTheLexicographicallySmallestValidSequence.swift */,
 				3D5C911027A7F7630035C399 /* FindTheTownJudge.swift */,
 				3D5C911527A7F7630035C399 /* FirstBadVersion.swift */,
 				4342D3A02B8DD0C4007686D7 /* FixedPoint.swift */,
@@ -2878,6 +2883,7 @@
 				43D8B8032A629C3700B3F197 /* FindTheDifferenceOfTwoArraysTests.swift */,
 				436DCCD92B8C84C000AC8F0A /* FindTheDistanceValueBetweenTwoArraysTests.swift */,
 				437119492A5F528C000E0EE5 /* FindTheIndexOfTheFirstOccurrenceInAStringTests.swift */,
+				43FB93562D521F200025E432 /* FindTheLexicographicallySmallestValidSequenceTests.swift */,
 				3D5C924527A7F76C0035C399 /* FindTheTownJudgeTests.swift */,
 				3D5C91FE27A7F76B0035C399 /* FirstBadVersionTests.swift */,
 				4342D3A22B8DD103007686D7 /* FixedPointTests.swift */,
@@ -3410,6 +3416,7 @@
 				3D5C91B227A7F7630035C399 /* AccountsMerge.swift in Sources */,
 				4385D01E2B986424007AF1EE /* FindFirstPalindromicStringInTheArray.swift in Sources */,
 				3D2617A227B5711200269FA3 /* KDiffPairsInAnArray.swift in Sources */,
+				43FB93552D521EC00025E432 /* FindTheLexicographicallySmallestValidSequence.swift in Sources */,
 				3D46241D27E242C500A888C1 /* AddBinary.swift in Sources */,
 				4330B6912B0BA3F3004BCEE6 /* BoundaryOfBinaryTree.swift in Sources */,
 				3D5C916F27A7F7630035C399 /* ConstructBinaryTreeInorderPostorderTraversal.swift in Sources */,
@@ -4316,6 +4323,7 @@
 				433BBFC329E3F5B100A9A21E /* ValidAnagramTests.swift in Sources */,
 				3D5C92A627A7F76C0035C399 /* DiameterOfNAryTreeTests.swift in Sources */,
 				43EE0BDC2A55A60C003D23E0 /* PartitionLabelsTests.swift in Sources */,
+				43FB93572D521F200025E432 /* FindTheLexicographicallySmallestValidSequenceTests.swift in Sources */,
 				43CE79A12AF99856001D6D7C /* DeleteNodeInABSTTests.swift in Sources */,
 				43FB69922AF3D2B400438457 /* NumberOfEnclavesTests.swift in Sources */,
 				3DE789AD27E9EA9D00E1D1B9 /* ReverseLinkedListIITests.swift in Sources */,
