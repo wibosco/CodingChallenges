@@ -26,6 +26,7 @@ struct NumberOfIslands {
     //subgraphs
     //forest
     //disconnected
+    //visited
     //
     //Solution Description:
     //Treat the grid as graph, potentially containing multiple unconnected subgraphs. Iterate through the graph until we find
