@@ -20,7 +20,6 @@ struct NumberOfIslands {
     //relative indexing
     //matrix
     //subgraphs
-    //forest
     //disconnected
     //visited
     //
@@ -32,6 +31,8 @@ struct NumberOfIslands {
     //discovered land we increase the island count and and try to find unexplored land by continuing to loop through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
+    //
+    //Similar to: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
     func numIslands(_ grid: [[Character]]) -> Int {
         var islands = 0
         var grid = grid
@@ -74,7 +75,6 @@ struct NumberOfIslands {
     //relative indexing
     //matrix
     //subgraphs
-    //forest
     //disconnected
     //visited
     //
@@ -133,7 +133,6 @@ struct NumberOfIslands {
     //relative indexing
     //matrix
     //subgraphs
-    //forest
     //disconnected
     //visited
     //
@@ -191,7 +190,6 @@ struct NumberOfIslands {
     //relative indexing
     //matrix
     //subgraphs
-    //forest
     //disconnected
     //visited
     //
@@ -253,7 +251,6 @@ struct NumberOfIslands {
     //relative indexing
     //matrix
     //subgraphs
-    //forest
     //disconnected
     //
     //Solution Description:

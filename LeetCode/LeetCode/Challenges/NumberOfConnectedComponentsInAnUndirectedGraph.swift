@@ -1,5 +1,5 @@
 //
-//  NumberConnectedComponentsUndirectedGraph.swift
+//  NumberOfConnectedComponentsInAnUndirectedGraph.swift
 //  LeetCode
 //
 //  Created by William Boles on 30/11/2021.
@@ -9,12 +9,20 @@
 import Foundation
 
 //https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
-struct NumberConnectedComponentsUndirectedGraph {
+struct NumberOfConnectedComponentsInAnUndirectedGraph {
     
     //Time: O(v + e) where v is the number of vertices in the graph
     //               where e is the number of edges
     //Space: O(v + e)
     //graph theory
+    //adjacency list
+    //undirected graph
+    //multi-source
+    //DFS
+    //recursive
+    //visited
+    //set
+    //array
     //
     //Solution Description:
     //First we convert `edges` into an adjacency list to allow for quicker lookup time determining which vertices are visitable
@@ -24,6 +32,8 @@ struct NumberConnectedComponentsUndirectedGraph {
     //graph multiple times. When choosing whether to perform a BFS traversal we check if the root vertices has already been
     //visited - by checking it is in `visited`. If the root has been visited then we skip it; if it hasn't been visited we
     //traverse it and increment `count` at the end of that traversal.
+    //
+    //Similar to: https://leetcode.com/problems/number-of-islands/
     func countComponents(_ n: Int, _ edges: [[Int]]) -> Int {
         var adjList = Array(repeating: [Int](), count: n)
         
@@ -43,7 +53,6 @@ struct NumberConnectedComponentsUndirectedGraph {
             guard !visited.contains(i) else {
                 continue
             }
-        
             visited.insert(i)
             
             dfs(i, adjList, &visited)
@@ -59,8 +68,8 @@ struct NumberConnectedComponentsUndirectedGraph {
             guard !visited.contains(neighbor) else {
                 continue
             }
-            
             visited.insert(neighbor)
+            
             dfs(neighbor, adjList, &visited)
         }
     }
@@ -116,8 +125,8 @@ struct NumberConnectedComponentsUndirectedGraph {
                         guard !visited.contains(neighbor) else {
                             continue
                         }
-                        
                         visited.insert(neighbor)
+                        
                         newQueueItems.append(neighbor)
                     }
                 }

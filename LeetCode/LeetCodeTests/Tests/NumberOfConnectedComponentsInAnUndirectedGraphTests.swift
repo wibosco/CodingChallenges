@@ -1,5 +1,5 @@
 //
-//  NumberConnectedComponentsUndirectedGraphTests.swift
+//  NumberOfConnectedComponentsInAnUndirectedGraphTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 30/11/2021.
@@ -10,7 +10,7 @@ import XCTest
 
 @testable import LeetCode
 
-final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
+final class NumberOfConnectedComponentsInAnUndirectedGraphTests: XCTestCase {
     
     // MARK: - Tests
     
@@ -20,7 +20,7 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [1, 2],
                      [3, 4]]
         
-        let result = NumberConnectedComponentsUndirectedGraph().countComponents(n, edges)
+        let result = NumberOfConnectedComponentsInAnUndirectedGraph().countComponents(n, edges)
         
         XCTAssertEqual(result, 2)
     }
@@ -32,7 +32,7 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [2, 3],
                      [3, 4]]
         
-        let result = NumberConnectedComponentsUndirectedGraph().countComponents(n, edges)
+        let result = NumberOfConnectedComponentsInAnUndirectedGraph().countComponents(n, edges)
         
         XCTAssertEqual(result, 1)
     }
@@ -43,7 +43,7 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [1, 2],
                      [1, 3]]
         
-        let result = NumberConnectedComponentsUndirectedGraph().countComponents(n, edges)
+        let result = NumberOfConnectedComponentsInAnUndirectedGraph().countComponents(n, edges)
         
         XCTAssertEqual(result, 2)
     }
@@ -751,7 +751,7 @@ final class NumberConnectedComponentsUndirectedGraphTests: XCTestCase {
                      [161, 440],
                      [351, 100]]
         
-        let result = NumberConnectedComponentsUndirectedGraph().countComponents(n, edges)
+        let result = NumberOfConnectedComponentsInAnUndirectedGraph().countComponents(n, edges)
         
         XCTAssertEqual(result, 35)
     }
