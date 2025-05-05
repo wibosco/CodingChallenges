@@ -1,5 +1,5 @@
 //
-//  AAMinimumAverageOfSmallestAndLargestElementsTests.swift
+//  MinimumAverageOfSmallestAndLargestElementsTests.swift
 //  LeetCodeTests
 //
 //  Created by William Boles on 30/08/2024.

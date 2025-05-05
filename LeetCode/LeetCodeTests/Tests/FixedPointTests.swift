@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LeetCode
 
-final class AAFixedPointTests: XCTestCase {
+final class FixedPointTests: XCTestCase {
 
     //MARK: - Tests
     

@@ -674,6 +674,8 @@
 		433953092B041E99009F067C /* AllElementsInTwoBinarySearchTreesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433953082B041E99009F067C /* AllElementsInTwoBinarySearchTreesTests.swift */; };
 		433985B92B0AB33D00D7702C /* FindDuplicateSubtrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433985B82B0AB33D00D7702C /* FindDuplicateSubtrees.swift */; };
 		433985BB2B0AB37A00D7702C /* FindDuplicateSubtreesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433985BA2B0AB37A00D7702C /* FindDuplicateSubtreesTests.swift */; };
+		433A10152DC8AF9A00054EF8 /* BattleshipsInABoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A10142DC8AF9A00054EF8 /* BattleshipsInABoard.swift */; };
+		433A10172DC8AFDE00054EF8 /* BattleshipsInABoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A10162DC8AFDE00054EF8 /* BattleshipsInABoardTests.swift */; };
 		433BBFC129E3F58500A9A21E /* ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BBFC029E3F58500A9A21E /* ValidAnagram.swift */; };
 		433BBFC329E3F5B100A9A21E /* ValidAnagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BBFC229E3F5B000A9A21E /* ValidAnagramTests.swift */; };
 		433BBFC529E4B1BD00A9A21E /* LongestConsecutiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BBFC429E4B1BD00A9A21E /* LongestConsecutiveSequence.swift */; };
@@ -1739,6 +1741,8 @@
 		433953082B041E99009F067C /* AllElementsInTwoBinarySearchTreesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllElementsInTwoBinarySearchTreesTests.swift; sourceTree = "<group>"; };
 		433985B82B0AB33D00D7702C /* FindDuplicateSubtrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDuplicateSubtrees.swift; sourceTree = "<group>"; };
 		433985BA2B0AB37A00D7702C /* FindDuplicateSubtreesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDuplicateSubtreesTests.swift; sourceTree = "<group>"; };
+		433A10142DC8AF9A00054EF8 /* BattleshipsInABoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleshipsInABoard.swift; sourceTree = "<group>"; };
+		433A10162DC8AFDE00054EF8 /* BattleshipsInABoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleshipsInABoardTests.swift; sourceTree = "<group>"; };
 		433BBFC029E3F58500A9A21E /* ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidAnagram.swift; sourceTree = "<group>"; };
 		433BBFC229E3F5B000A9A21E /* ValidAnagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidAnagramTests.swift; sourceTree = "<group>"; };
 		433BBFC429E4B1BD00A9A21E /* LongestConsecutiveSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestConsecutiveSequence.swift; sourceTree = "<group>"; };
@@ -2226,6 +2230,7 @@
 				434BCB0B2A08F6EE0026A985 /* BalancedBinaryTree.swift */,
 				4302D0802A73C287001D5375 /* BaseballGame.swift */,
 				3DB7C5C827CD125300353EED /* BasicCalculatorII.swift */,
+				433A10142DC8AF9A00054EF8 /* BattleshipsInABoard.swift */,
 				3D5C93A027A83D6B0035C399 /* BestTimeToBuyAndSellStock.swift */,
 				3DF8DF0527A94E120034F83B /* BestTimeToBuyAndSellStockII.swift */,
 				3D5C90F927A7F7620035C399 /* BinarySearch.swift */,
@@ -2754,6 +2759,7 @@
 				434BCB0D2A08F73F0026A985 /* BalancedBinaryTreeTests.swift */,
 				4302D0822A73C2B7001D5375 /* BaseballGameTests.swift */,
 				3DB7C5CA27CD128900353EED /* BasicCalculatorIITests.swift */,
+				433A10162DC8AFDE00054EF8 /* BattleshipsInABoardTests.swift */,
 				3DF8DF0727A94E620034F83B /* BestTimeToBuyAndSellStockIITests.swift */,
 				3D5C93A227A83DCC0035C399 /* BestTimeToBuyAndSellStockTests.swift */,
 				3D5C927B27A7F76C0035C399 /* BinarySearchTests.swift */,
@@ -3767,6 +3773,7 @@
 				3D7F319527FA4E9C00200775 /* CheapestFlightsWithinKStops.swift in Sources */,
 				43026BCF2AFEDB050066473B /* DeepestLeavesSum.swift in Sources */,
 				43D24C2A2C84FB8500CC83B6 /* AssignCookies.swift in Sources */,
+				433A10152DC8AF9A00054EF8 /* BattleshipsInABoard.swift in Sources */,
 				3D5C91F127A7F7630035C399 /* AddStrings.swift in Sources */,
 				43D3C1B02B29E988000DFBFC /* BinaryTreeColoringGame.swift in Sources */,
 				43313BC329D8E844005FCF5D /* BullsAndCows.swift in Sources */,
@@ -3898,6 +3905,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433A10172DC8AFDE00054EF8 /* BattleshipsInABoardTests.swift in Sources */,
 				43AFF6F22A51646300EFC288 /* PalindromePartitioningTests.swift in Sources */,
 				4377604C2AEBFF170028692C /* CheckIfMoveIsLegalTests.swift in Sources */,
 				3D5C92FB27A7F76C0035C399 /* BinaryTreePreorderTraversalTests.swift in Sources */,

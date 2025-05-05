@@ -1,5 +1,5 @@
 //
-//  AAFindTheLexicographicallySmallestValidSequence.swift
+//  FindTheLexicographicallySmallestValidSequence.swift
 //  LeetCode
 //
 //  Created by William Boles on 04/02/2025.

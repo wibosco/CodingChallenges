@@ -20,7 +20,7 @@ struct LongPressedName {
     //Solution Description:
     //Using two pointers we iterate through `name` and `typed` and determine if the characters found at each pointer match. If they
     //don't match we return false; if they do match we need to determine what value to set `p2` to -  we do this by looking ahead to
-    //the next `p1` value if avaailable. If the next `p1` value is the same as curret value we increment `p2`; if th next value is
+    //the next `p1` value if available. If the next `p1` value is the same as curret value we increment `p2`; if th next value is
     //different to the current value we attempt to "fast forward" `p2` meaning that we increment `p2` until doesn't match the
     //current `p1` value. By doing this we ensure that we don't fast forward prematurely but only when `p1` is itself moving onto
     //a new value. If we iterate through `name` and it is a match for values checked in `typed` we need to ensure that all values
