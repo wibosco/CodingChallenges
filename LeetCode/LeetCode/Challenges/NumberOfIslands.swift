@@ -26,13 +26,14 @@ struct NumberOfIslands {
     //Solution Description:
     //Treat the grid as graph, potentially containing multiple unconnected subgraphs. Iterate through the graph until we find
     //land (element containing `1`). Once we have found land we need to find all land that is connected with it. Using DFS we
-    //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
-    //back over already discovered land we overwrite any `1` with `0`. Once we have exhausted all land connected to this first
-    //discovered land we increase the island count and and try to find unexplored land by continuing to loop through the grid.
+    //traverse the graph from this land element and find all connected land using relative indexing. To ensure that we don't
+    //revisit elements we overwrite the current elements value with `0`. Once we have exhausted all land elements on the island
+    //we increase the island count and try to find unexplored land by continuing to loop through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
     //
     //Similar to: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+    //Similar to: https://leetcode.com/problems/number-of-distinct-islands/
     func numIslands(_ grid: [[Character]]) -> Int {
         var islands = 0
         var grid = grid
@@ -83,7 +84,7 @@ struct NumberOfIslands {
     //land (element containing `1`). Once we have found land we need to find all land that is connected with it. Using DFS we
     //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
     //back over already discovered land we keep track of it using a `visited` set. Once we have exhausted all land connected
-    //to this first discovered land we increase the island count and and try to find unexplored land by continuing to loop
+    //to this first discovered land we increase the island count and try to find unexplored land by continuing to loop
     //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
