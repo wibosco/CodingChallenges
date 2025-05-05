@@ -9,12 +9,6 @@ import Foundation
 
 //https://leetcode.com/problems/word-search/
 struct WordSearch {
-    // swiftlint:disable comma
-    static let relativeIndexing = [      [-1, 0],
-                                   [0, -1],     [0, 1],
-                                         [1, 0]
-                                  ]
-    // swiftlint:enable comma
     
     //Time: O((m*n)*3^l) where m is number of rows
     //                   where n is the number of columns
@@ -84,9 +78,16 @@ struct WordSearch {
     }
     
     private func navigatableNeighbors(_ board: [[Character]], _ row: Int, _ column: Int, _ match: Character, _ visited: inout Set<[Int]>) -> [[Int]] {
+        // swiftlint:disable comma
+        let relativeIndexing = [      [-1, 0],
+                                [0, -1],     [0, 1],
+                                      [1, 0]
+        ]
+        // swiftlint:enable comma
+        
         var neighbors = [[Int]]()
         
-        for relativeIndex in WordSearch.relativeIndexing {
+        for relativeIndex in relativeIndexing {
             let newRow = row + relativeIndex[0]
             let newColumn = column + relativeIndex[1]
             

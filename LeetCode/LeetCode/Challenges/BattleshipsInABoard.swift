@@ -52,7 +52,7 @@ struct BattleshipsInABoard {
     //
     //Solution Description:
     //We iterate through each element in `board` and check if that element is an `X`. If it is we use DFS and relative indexing
-    //to find all connected `X` elements. Each `X` encountered is overridden with `.` so ensuring that we don't revisit that
+    //to find all connected `X` elements. Each `X` encountered is overwrite with `.` so ensuring that we don't revisit that
     //index. Once no more `X` elements exist that are connected to the initial `X` element we exit the DFS and increment
     //`battleships`. We then move onto the next `board` element, ready to repeat the DFS if neccessary. Once all elements have
     //been checked we return `battleships`.
