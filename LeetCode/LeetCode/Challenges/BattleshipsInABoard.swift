@@ -49,6 +49,7 @@ struct BattleshipsInABoard {
     //recursive
     //multi-source
     //inline
+    //marking
     //
     //Solution Description:
     //We iterate through each element in `board` and check if that element is an `X`. If it is we use DFS and relative indexing

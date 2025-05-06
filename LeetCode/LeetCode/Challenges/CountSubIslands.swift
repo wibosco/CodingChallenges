@@ -11,6 +11,71 @@ import Foundation
 struct CountSubIslands {
     
     //Time: O(n * m) where n is the number of rows
+    //               where m is the number of columns
+    //Space: O(n * m)
+    //graph theory
+    //matrix
+    //DFS
+    //recursive
+    //relative indexing
+    //multi-source
+    //marking
+    //inline
+    //inout
+    //
+    //Solution Description:
+    //Using DFS and relative indexing we fully search each island encountered in `grid2`. Each `grid2` land element we compare
+    //against the corresponding element in `grid1`, if the element in `grid1` is also land we know that this `grid2` island is
+    //a potential sub-island; if the element in `grid1` is water then we know this `grid2` island can not be a sub-island -
+    //when a non-sub-island is encountered we don't stop searching that island as we need to "mark" the whole island as
+    //invalid. To ensure that we don't search the same island multiple times we update `grid2` by overwriting those land
+    //elements to water. As an island can start at any index in `grid2` we must attempt to begin the search at each index in
+    //`grid2`.
+    func countSubIslands(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
+        var count = 0
+        var grid2 = grid2
+        
+        for row in 0..<grid2.count {
+            for column in 0..<grid2[row].count {
+                guard grid2[row][column] == 1 else {
+                    continue
+                }
+                
+                var subIsland = true
+                dfs(grid1, &grid2, row, column, &subIsland)
+                
+                if subIsland {
+                    count += 1
+                }
+            }
+        }
+        
+        return count
+    }
+    
+    private func dfs(_ grid1: [[Int]], _ grid2: inout [[Int]], _ row: Int, _ column: Int, _ subIsland: inout Bool) {
+        guard row >= 0, row < grid2.count, column >= 0, column < grid2[row].count else {
+            return
+        }
+        
+        guard grid2[row][column] == 1 else {
+            return
+        }
+        grid2[row][column] = 0
+        
+        if grid1[row][column] == 0 {
+            subIsland = false
+            //don't return here as we want to convert this island to water so as to revisit it
+        }
+        
+        //relative indexing
+        dfs(grid1, &grid2, (row - 1), column, &subIsland)
+        dfs(grid1, &grid2, (row + 1), column, &subIsland)
+        dfs(grid1, &grid2, row, (column - 1), &subIsland)
+        dfs(grid1, &grid2, row, (column + 1), &subIsland)
+    }
+    
+    //Time: O(n * m) where n is the number of rows
     //               where m is the the number of columns
     //Space: O(n * m)
     //graph theory
@@ -29,7 +94,7 @@ struct CountSubIslands {
     //when a non-sub-island is encountered we don't stop searching that island as we need to "mark" the whole island as
     //invalid. To ensure that we don't search the same island multiple times we update `grid2` transform those land elements
     //into water. As an island can start at any index in `grid2` we must attempt to begin the search at each index in `grid2`.
-    func countSubIslands(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
+    func countSubIslands2(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
         var count = 0
         var grid2 = grid2
         
@@ -58,6 +123,7 @@ struct CountSubIslands {
         var isSubIsland = grid1[row][column] == 1
         
         //careful here as in swift if the first condition in the AND is false, the second condition isn't executed
+        //so the dfs call needs to come first otherwise it might not be executed
         isSubIsland = dfs(grid1, &grid2, (row - 1), column) && isSubIsland //above
         isSubIsland = dfs(grid1, &grid2, (row + 1), column) && isSubIsland //below
         isSubIsland = dfs(grid1, &grid2, row, (column - 1)) && isSubIsland //left
@@ -86,7 +152,7 @@ struct CountSubIslands {
     //To ensure that we don't search the same island multiple times we use a `visited` set to store the indexes of the element
     //already encountered. As an island can start at any index in `grid2` we must attempt to begin the search at each index in
     //`grid2`.
-    func countSubIslandsVisited(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
+    func countSubIslands3(_ grid1: [[Int]], _ grid2: [[Int]]) -> Int {
         var count = 0
         var visited = Set<[Int]>()
         
@@ -118,7 +184,7 @@ struct CountSubIslands {
         
         for neighbor in neighbors {
             if visited.contains(neighbor) {
-               continue
+                continue
             }
             
             visited.insert(neighbor)
