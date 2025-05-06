@@ -34,6 +34,7 @@ struct NumberOfConnectedComponentsInAnUndirectedGraph {
     //traverse it and increment `count` at the end of that traversal.
     //
     //Similar to: https://leetcode.com/problems/number-of-islands/
+    //Similar to: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
     func countComponents(_ n: Int, _ edges: [[Int]]) -> Int {
         var adjList = Array(repeating: [Int](), count: n)
         
