@@ -10,6 +10,7 @@ struct BattleshipsInABoard {
     //Space: O(1)
     //graph theory
     //matrix
+    //relative indexing
     //
     //Solution Description:
     //We iterate through each element in `board` and check if that element is an `X`. If it is we next determine if it any other
