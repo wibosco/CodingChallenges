@@ -30,7 +30,7 @@ struct SubtreeOfAnotherTree {
     //Similar to: https://leetcode.com/problems/symmetric-tree/
     //Similar to: https://leetcode.com/problems/same-tree/
     func isSubtree(_ t1: TreeNode?, _ t2: TreeNode?) -> Bool {
-        guard let t1 = t1, let t2 = t2 else {
+        guard let t1, let t2 else { //need to check for nil otherwise recursion will result in an infinite loop
             return false
         }
 
@@ -42,7 +42,7 @@ struct SubtreeOfAnotherTree {
     }
     
     private func isMatch(_ n1: TreeNode?, _ n2: TreeNode?) -> Bool {
-        guard let n1 = n1, let n2 = n2 else {
+        guard let n1, let n2 else { //need to check for nil otherwise recursion will result in an infinite loop
            return n1 == nil && n2 == nil
         }
         
