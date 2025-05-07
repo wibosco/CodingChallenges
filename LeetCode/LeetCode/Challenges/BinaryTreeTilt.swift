@@ -10,8 +10,8 @@ import Foundation
 //https://leetcode.com/problems/binary-tree-tilt/
 struct BinaryTreeTilt {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n)
     //binary tree
     //DFS
     //recursive
@@ -19,7 +19,8 @@ struct BinaryTreeTilt {
     //
     //Solution Description:
     //Using DFS we calculate the left and right child sum for each node in the tree using a bottom-up approach. Once we
-    //the left and right sum we can calculate the tilt for the current node and add that tilt to our `totalTilt` sum.
+    //have the left and right sum we can calculate the tilt for the current node and add that tilt to our `totalTilt` sum.
+    //Then we return the sum of the tree with `node` as the root to repeat the process for node's parent (if it exists).
     func findTilt(_ root: TreeNode?) -> Int {
         var totalTilt = 0
         _ = dfs(root, &totalTilt)
