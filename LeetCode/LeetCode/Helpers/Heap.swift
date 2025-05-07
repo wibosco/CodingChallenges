@@ -65,7 +65,7 @@ struct Heap<Element> {
     }
     
     private func rightChildIndex(of index: Int) -> Int {
-        return (2 * index) + 2 //left child of an element is always 2i + 2 i.e. left child + 1
+        return (2 * index) + 2 //right child of an element is always 2i + 2 i.e. left child + 1
     }
     
     private func parentIndex(of index: Int) -> Int {

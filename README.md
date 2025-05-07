@@ -29,7 +29,7 @@ A collection of coding challenges and their solutions from:
 
 | Keywords | Techniques |
 | -------- | ---------- |
-| "Shortest path", "Minimum", "closest" | `BFS`, `Dijkstra` | 
+| "Shortest path", "Minimum", "closest" | `BFS`, `Dijkstra` |
 | "Level-by-level", "Least number of moves", "Batch" | `BFS` |
 | "All paths", "Choices", "Branching" | `BFS`, `DFS` |
 | "Path exists" | `BFS`, `DFS`, `Disjont sets` |
@@ -62,7 +62,7 @@ A collection of coding challenges and their solutions from:
 | Need to... | Technique | Example |
 | ---------- | --------- | ------- |
 | Optimise graph traversal | `Memoization` | `LongestIncreasingSubsequence` |
-| Generate all premutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
+| Generate all permutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
 | Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
 | Explore possible replacement values for a given element in an array/string | `DFS`, `Memoization` | `ValidParenthesisString` |
 | Can't use additional memory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
@@ -80,9 +80,12 @@ A collection of coding challenges and their solutions from:
 | Flip neighbors to find the maximum/minimum | `Sliding window` | `MaximizeTheConfusionOfAnExam` |
 | Reverse order of substrings while keeping the same order of each substring| Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
 | Wrap an arrays indexes round an offset | `Modulo` | `CircularArrayLoop` |
-| Need to build a relatioship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
+| Need to build a relationship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
 | Find the next permutation of a number | `pivot & swap` | `NextPermutation` `NextGreaterElementIII` |
 | Find elements in one array and compare against another | `Two pointers`, `Fast Forwarding` | `SwapAdjacentInLRString` |
+| Find child nodes in binary tree when represented as an array | left-child: (index * 2) + 1 <br /> right-child: (index * 2) + 2 | `NumberOfNodesWithValueOne` |
+| Find parent node in binary tree when represented as an array | index / 2 | `NumberOfNodesWithValueOne` |
+| Avoid repeating costly action multiple times | Reduce to final action to avoid reverting previous action | `NumberOfNodesWithValueOne` |
 
 A lot of problems can be treated as graph problems.
 
@@ -143,7 +146,7 @@ A lot of problems can be treated as graph problems.
 7. Can contain unconnected nodes
 8. Adjacency list can be used to store the `outdegree` of each node in a graph
 9. A matrix can be used to show edges between Nodes
-    1. Wasteful spacewise
+    1. Wasteful space-wise
 10. A path is sequence of nodes that it takes to get from A -> Z
 11. Directed Acyclic Graph (DAG) is a directed graph with no directed cycles
     1. Topological sort only works on DAGs
