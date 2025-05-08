@@ -11,12 +11,13 @@ import Foundation
 //https://leetcode.com/problems/merge-two-sorted-lists/
 struct MergeTwoSortedLists {
     
-    //Time: O(m+n) where m is the length of `l1`
-    //             where n is the length of `l2`
-    //Space: O(1)
+    //Time: O(max(m, n)) where m is the length of `l1`
+    //                   where n is the length of `l2`
+    //Space: O(m + n) where m is the length of `l1`
+    //                where n is the length of `l2`
+    //linked list
     //iterative
     //sentinel head
-    //linked list
     //
     //Solution Description:
     //Iteratively walk through `l1` and `l2` choosing the smaller node from each list to add to the merged list. We continue
@@ -27,31 +28,31 @@ struct MergeTwoSortedLists {
         var l2 = l2
         
         let sentinel = ListNode(0)
-        var tail = sentinel
+        var tail: ListNode? = sentinel
 
         while let l1N = l1, let l2N = l2 { //only loop until you exhaust one of the lists
             if l1N.val < l2N.val {
-                tail.next = l1N
+                tail?.next = l1N
                 
                 l1 = l1N.next
             } else {
-                tail.next = l2N
+                tail?.next = l2N
                 
                 l2 = l2N.next
             }
             
-            tail = tail.next! //move the tail of merged
+            tail = tail?.next //move the tail of merged
         }
         
-        tail.next = (l1 == nil) ? l2 : l1 //add the remaining nodes as is to the merged list
+        tail?.next = (l1 == nil) ? l2 : l1 //add the remaining nodes as is to the merged list
         
         return sentinel.next
     }
     
-    //Time: O(m+n) where m is the length of `l1`
-    //             where n is the length of `l2`
-    //Space: O(m+n) recursive call stack, where m is the length of `l1`
-    //                                    where n is the length of `l2`
+    //Time: O(m + n) where m is the length of `l1`
+    //               where n is the length of `l2`
+    //Space: O(m + n) recursive call stack, where m is the length of `l1`
+    //                                      where n is the length of `l2`
     //linked list
     //recursive
     //merge sort
@@ -60,7 +61,7 @@ struct MergeTwoSortedLists {
     //Solution Description:
     //Recursively walk through l1 and l2 choosing the smaller node from each list to add to the `merged` list. Continue until
     //one list is exhausted and then add the remaining of the other to `merged`
-    func mergeTwoListsRecursive(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    func mergeTwoLists2(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         let sentinel = ListNode(0)
         
         mergeTwoLists(l1, l2, sentinel)
