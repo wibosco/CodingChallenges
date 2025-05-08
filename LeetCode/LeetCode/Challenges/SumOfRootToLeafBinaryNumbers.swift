@@ -18,11 +18,12 @@ struct SumOfRootToLeafBinaryNumbers {
     //recursive
     //inout
     //backtracking
+    //bit manipulation
     //
     //Solution Description:
     //Using DFS we traverse to each leaf node, gradually building up the `bits` at each level. Once we reach the leaf node, we convert
-    //the bits array into a decomal value by reversing the array elements (so that the MSB is in the largest index) and then raising 2
-    //to the power of the index, to ensure we only count bits with a value of `1` we then multiple that raised value but the bit. This
+    //the bits array into a decimal value by reversing the array elements (so that the MSB is in the largest index) and then raising 2
+    //to the power of the index, to ensure we only count bits with a value of `1` we then multiple that raised value by the bit. This
     //decimal value is then added to `total`. We then remove the last value of `bits` as the recursive stack unwinds. We repeat this
     //process for all leaf nodes. One the DFS has completed we return `total`.
     func sumRootToLeaf(_ root: TreeNode?) -> Int {
