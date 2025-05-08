@@ -982,6 +982,8 @@
 		43BF97212DCCD2C00038654A /* MinimumPairRemovalToSortArrayITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF97202DCCD2C00038654A /* MinimumPairRemovalToSortArrayITests.swift */; };
 		43BF97232DCCD5750038654A /* LinkedListFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF97222DCCD5750038654A /* LinkedListFrequency.swift */; };
 		43BF97252DCCD6940038654A /* LinkedListFrequencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF97242DCCD6940038654A /* LinkedListFrequencyTests.swift */; };
+		43BF97272DCCE3910038654A /* WinnerOfTheLinkedListGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF97262DCCE3910038654A /* WinnerOfTheLinkedListGame.swift */; };
+		43BF97292DCCECED0038654A /* WinnerOfTheLinkedListGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF97282DCCECED0038654A /* WinnerOfTheLinkedListGameTests.swift */; };
 		43C039F82A691F78007E29EB /* FrequencyOfTheMostFrequentElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C039F72A691F78007E29EB /* FrequencyOfTheMostFrequentElement.swift */; };
 		43C039FA2A691FA3007E29EB /* FrequencyOfTheMostFrequentElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C039F92A691FA3007E29EB /* FrequencyOfTheMostFrequentElementTests.swift */; };
 		43C42B802A65296A00D5881B /* MergeStringsAlternately.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C42B7F2A65296A00D5881B /* MergeStringsAlternately.swift */; };
@@ -2069,6 +2071,8 @@
 		43BF97202DCCD2C00038654A /* MinimumPairRemovalToSortArrayITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumPairRemovalToSortArrayITests.swift; sourceTree = "<group>"; };
 		43BF97222DCCD5750038654A /* LinkedListFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListFrequency.swift; sourceTree = "<group>"; };
 		43BF97242DCCD6940038654A /* LinkedListFrequencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListFrequencyTests.swift; sourceTree = "<group>"; };
+		43BF97262DCCE3910038654A /* WinnerOfTheLinkedListGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerOfTheLinkedListGame.swift; sourceTree = "<group>"; };
+		43BF97282DCCECED0038654A /* WinnerOfTheLinkedListGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerOfTheLinkedListGameTests.swift; sourceTree = "<group>"; };
 		43C039F72A691F78007E29EB /* FrequencyOfTheMostFrequentElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyOfTheMostFrequentElement.swift; sourceTree = "<group>"; };
 		43C039F92A691FA3007E29EB /* FrequencyOfTheMostFrequentElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyOfTheMostFrequentElementTests.swift; sourceTree = "<group>"; };
 		43C42B7F2A65296A00D5881B /* MergeStringsAlternately.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeStringsAlternately.swift; sourceTree = "<group>"; };
@@ -2773,6 +2777,7 @@
 				3D5C909D27A7F7620035C399 /* VerifyingAnAlienDictionary.swift */,
 				3DEFAAB527D267CF00DB0E9D /* VerticalOrderTraversalOfABinaryTree.swift */,
 				3D5C913727A7F7630035C399 /* WallsAndGates.swift */,
+				43BF97262DCCE3910038654A /* WinnerOfTheLinkedListGame.swift */,
 				43A692A929F6D7030043B5D0 /* WordBreak.swift */,
 				43313BBE29D8DA2B005FCF5D /* WordPattern.swift */,
 				3D46243427E497D300A888C1 /* WordSearch.swift */,
@@ -3308,6 +3313,7 @@
 				3D5C926427A7F76C0035C399 /* VerifyingAnAlienDictionaryTests.swift */,
 				3DEFAAB727D2683A00DB0E9D /* VerticalOrderTraversalOfABinaryTreeTests.swift */,
 				3D5C91FB27A7F76B0035C399 /* WallsAndGatesTests.swift */,
+				43BF97282DCCECED0038654A /* WinnerOfTheLinkedListGameTests.swift */,
 				43A692AB29F6D7300043B5D0 /* WordBreakTests.swift */,
 				43313BC029D8DA5E005FCF5D /* WordPatternTests.swift */,
 				3D46243627E4986C00A888C1 /* WordSearchTests.swift */,
@@ -3853,6 +3859,7 @@
 				3D9283032823C3420059ACDD /* MaxNumberOfKSumPairs.swift in Sources */,
 				43F28D302DCC033100B1D2E7 /* NumberOfNodesWithValueOne.swift in Sources */,
 				3D5C91EA27A7F7630035C399 /* StringToInteger.swift in Sources */,
+				43BF97272DCCE3910038654A /* WinnerOfTheLinkedListGame.swift in Sources */,
 				3DC8EE2827DFF80400F34FA2 /* LengthOfLastWord.swift in Sources */,
 				3D5C915B27A7F7630035C399 /* DestroyingAsteroids.swift in Sources */,
 				439C8ACE2B92199A00C3FD84 /* CheckIfANumberIsMajorityElementInASortedArray.swift in Sources */,
@@ -4009,6 +4016,7 @@
 				43F3720D2A77AFB80000BF78 /* ArrangingCoinsTests.swift in Sources */,
 				430BD7C92B02CBB50036A03F /* HouseRobberIIITests.swift in Sources */,
 				434679542A56D9B900A1D225 /* ReplaceElementsWithGreatestElementOnRightSideTests.swift in Sources */,
+				43BF97292DCCECED0038654A /* WinnerOfTheLinkedListGameTests.swift in Sources */,
 				3D5C92AE27A7F76C0035C399 /* ImplementStrStrTests.swift in Sources */,
 				3D5C932D27A7F76C0035C399 /* SmallestStringWithSwapsTests.swift in Sources */,
 				3D5C92B027A7F76C0035C399 /* Search2DMatrixIITests.swift in Sources */,
