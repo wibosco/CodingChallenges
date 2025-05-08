@@ -78,8 +78,6 @@ final class IntersectionOfTwoLinkedListsTests: XCTestCase {
         let headA = ListNode.deserialize(dataA)
         let headB = ListNode.deserialize(dataB)
         
-        
-        
         let result = IntersectionOfTwoLinkedLists().getIntersectionNode(headA, headB)
         
         XCTAssertNil(result)

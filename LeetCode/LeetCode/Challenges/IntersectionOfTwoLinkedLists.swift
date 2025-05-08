@@ -11,7 +11,7 @@ import Foundation
 struct IntersectionOfTwoLinkedLists {
     
     //Time: O(n +  m) where n is the number of nodes in `headA` list
-    //              where m is the number of nodes in `headB` list
+    //                where m is the number of nodes in `headB` list
     //Space: O(1)
     //linked list
     //two pointers
