@@ -15,7 +15,7 @@ struct RemoveKDigits {
     //array
     //string
     //stack
-    //monotonic decreasing stack
+    //monotonic stack
     //greedy
     //
     //Solution Description:

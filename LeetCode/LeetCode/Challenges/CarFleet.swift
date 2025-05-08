@@ -15,7 +15,7 @@ struct CarFleet {
     //array
     //sorting
     //stack
-    //monotonic decreasing stack
+    //monotonic stack
     //
     //Solution Description:
     //As cars can not overtake each other, any car that catches another car is slowed down and treated as a fleet. Due to
@@ -39,7 +39,7 @@ struct CarFleet {
         //as cars can't overtake want to build car fleets by reverse starting position order
         let sortedByPosition = combined.sorted { $0.0 < $1.0 }
         
-        var stack = [Double]() //monotonic decreasing stack
+        var stack = [Double]() //monotonic stack
         
         for (position, speed) in sortedByPosition.reversed() {
             //determine when the current car reaches the target

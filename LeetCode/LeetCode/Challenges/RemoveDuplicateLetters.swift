@@ -14,7 +14,7 @@ struct RemoveDuplicateLetters {
     //Space: O(n)
     //string
     //stack
-    //monotonic increasing stack
+    //monotonic stack
     //dictionary
     //set
     //visited

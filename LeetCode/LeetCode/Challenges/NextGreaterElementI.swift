@@ -15,7 +15,7 @@ struct NextGreaterElementI {
     //               where m is the number of elements in `nums2`
     //Space: O(n) where n is the the number of elements in `nums1`
     //stack
-    //monotonic decreasing stack
+    //monotonic stack
     //dictionary
     //
     //Solution Description:

@@ -16,7 +16,7 @@ struct DailyTemperatures {
     //           important to note here is that `stack` will only ever hold a total of n elements)
     //Space: O(n) where n is the number of temperatures
     //stack
-    //monotonic decreasing stack
+    //monotonic stack
     //
     //Solution Description:
     //As we loop through the temperatures we push onto the stack any temperature that is less than the temperature at the

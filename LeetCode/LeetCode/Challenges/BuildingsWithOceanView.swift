@@ -36,7 +36,7 @@ struct BuildingsWithOceanView {
     //Space: O(n) where n is the number of heights
     //array
     //stack
-    //monotonic decreasing stack
+    //monotonic stack
     //
     //Solution Description:
     //Coming from right to left (ocean inwards) we track the building we have seen so far in a monotonic decreasing stack i.e.
