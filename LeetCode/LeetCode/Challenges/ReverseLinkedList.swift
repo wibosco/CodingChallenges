@@ -15,6 +15,7 @@ struct ReverseLinkedList {
     //Space: O(1)
     //linked list
     //two pointers
+    //reverse linked list
     //
     //Solution Description:
     //Using two pointers we iterate through the list and update the `cur` node's next pointer to point to the previous
@@ -53,6 +54,7 @@ struct ReverseLinkedList {
     //Space: O(n) call stack
     //linked list
     //recursive
+    //reverse linked list
     //
     //Solution Description:
     //Recursively iterate through the list, shrinking the list by one with each call until we get to the tail (base case) i.e.
@@ -80,6 +82,7 @@ struct ReverseLinkedList {
     //Space: O(1)
     //linked list
     //two pointers
+    //reverse linked list
     //
     //Solution Description:
     //Iterate through the list until we find the tail. Once we have the tail start to move the nodes one at time from the
@@ -110,6 +113,7 @@ struct ReverseLinkedList {
     //Time: O(n) where n is the number of nodes in the list.
     //Space: O(n) 
     //linked list
+    //reverse linked list
     //
     //Solution Description:
     //Iterate through the list placing each array in order into an array. Once we have all nodes in the array iterate

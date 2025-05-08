@@ -14,6 +14,7 @@ final class LinkedList<Element: Comparable> {
     //Time: O(n) where n is the number of nodes in the list.
     //Space: O(1)
     //two pointers
+    //reverse linked list
     //
     //Solution Description:
     //Using two pointers we iterate through the list and update the `cur` node's next pointer to point to the previous
