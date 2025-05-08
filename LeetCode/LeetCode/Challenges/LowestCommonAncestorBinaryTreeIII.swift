@@ -49,6 +49,37 @@ struct LowestCommonAncestorBinaryTreeIII {
         return p1 //could have used p2
     }
     
+    //Time: O(n + m) where n is the level of `p`
+    //               where m is the level of `q`
+    //Space: O(n)
+    //binary tree
+    //visited
+    //set
+    //
+    //Solution Description:
+    //We traverse from `p` to root, storing each node we encounter in `visited`. We then traverse from `q` to root and compare
+    //each node encountered against `visited`. When we find a match we return that node as the lowest common ancestor.
+    func lowestCommonAncestor2(_ p: TreeNodeParent?,_ q: TreeNodeParent?) -> TreeNodeParent? {
+        var visited = [Int: TreeNodeParent]()
+
+        var p = p
+        while let n = p {
+            visited[n.val] = n
+            p = n.parent
+        }
+
+        var q = q
+        while let n = q {
+            if let match = visited[n.val] {
+                return match
+            }
+
+            q = n.parent
+        }
+
+        return nil
+    }
+    
     //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //binary tree
@@ -64,7 +95,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //
     //As we are only interested in the lowest common ancestor rather than any common ancestor we need to ensure that we pass
     //back the first node that is true for 2 of the above 3 scenarios. When we find this node we set it to `lca`
-    func lowestCommonAncestorLong(_ p: TreeNodeParent?, _ q: TreeNodeParent?) -> TreeNodeParent? {
+    func lowestCommonAncestor3(_ p: TreeNodeParent?, _ q: TreeNodeParent?) -> TreeNodeParent? {
         guard let p = p, let q = q else {
             return nil
         }
