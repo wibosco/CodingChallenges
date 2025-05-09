@@ -784,6 +784,8 @@
 		4361B2D22C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361B2D12C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift */; };
 		4362DCA72DCDFB5E00234A5E /* FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362DCA62DCDFB5E00234A5E /* FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.swift */; };
 		4362DCA92DCDFB9000234A5E /* FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362DCA82DCDFB9000234A5E /* FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTests.swift */; };
+		4362DCAB2DCE18EF00234A5E /* InsertionSortList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362DCAA2DCE18EF00234A5E /* InsertionSortList.swift */; };
+		4362DCAD2DCE191F00234A5E /* InsertionSortListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362DCAC2DCE191F00234A5E /* InsertionSortListTests.swift */; };
 		43643B152B0E058D00B9D711 /* EqualTreePartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43643B142B0E058D00B9D711 /* EqualTreePartition.swift */; };
 		43643B172B0E05D900B9D711 /* EqualTreePartitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43643B162B0E05D900B9D711 /* EqualTreePartitionTests.swift */; };
 		43643B192B0E1C0500B9D711 /* PathSumIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43643B182B0E1C0500B9D711 /* PathSumIV.swift */; };
@@ -1881,6 +1883,8 @@
 		4361B2D12C90815000A38FB7 /* SwapAdjacentInLRStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapAdjacentInLRStringTests.swift; sourceTree = "<group>"; };
 		4362DCA62DCDFB5E00234A5E /* FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.swift; sourceTree = "<group>"; };
 		4362DCA82DCDFB9000234A5E /* FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTests.swift; sourceTree = "<group>"; };
+		4362DCAA2DCE18EF00234A5E /* InsertionSortList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortList.swift; sourceTree = "<group>"; };
+		4362DCAC2DCE191F00234A5E /* InsertionSortListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortListTests.swift; sourceTree = "<group>"; };
 		43643B142B0E058D00B9D711 /* EqualTreePartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualTreePartition.swift; sourceTree = "<group>"; };
 		43643B162B0E05D900B9D711 /* EqualTreePartitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualTreePartitionTests.swift; sourceTree = "<group>"; };
 		43643B182B0E1C0500B9D711 /* PathSumIV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSumIV.swift; sourceTree = "<group>"; };
@@ -2474,6 +2478,7 @@
 				3DC8EE2327DFF2EB00F34FA2 /* InsertInterval.swift */,
 				435B70B72B056DE1003D51CA /* InsertIntoABinarySearchTree.swift */,
 				3D8D27792810A5EF001C692F /* InsertIntoASortedCircularLinkedList.swift */,
+				4362DCAA2DCE18EF00234A5E /* InsertionSortList.swift */,
 				438C2EDE2B1F8CF800C43AAA /* InsufficientNodesInRootToLeafPaths.swift */,
 				3D5C90C327A7F7620035C399 /* IntegerToRoman.swift */,
 				3DE789B227EC947F00E1D1B9 /* InterleavingString.swift */,
@@ -3017,6 +3022,7 @@
 				3DC8EE2527DFF38100F34FA2 /* InsertIntervalTests.swift */,
 				435B70B92B056E0F003D51CA /* InsertIntoABinarySearchTreeTests.swift */,
 				3D8D277B2810A63E001C692F /* InsertIntoASortedCircularLinkedListTests.swift */,
+				4362DCAC2DCE191F00234A5E /* InsertionSortListTests.swift */,
 				438C2EE02B1F8D4100C43AAA /* InsufficientNodesInRootToLeafPathsTests.swift */,
 				3D5C923027A7F76B0035C399 /* IntegerToRomanTests.swift */,
 				3DE789B427EC97B900E1D1B9 /* InterleavingStringTests.swift */,
@@ -3661,6 +3667,7 @@
 				436EC1B12B060D31003F7BC7 /* NumberOfGoodLeafNodesPairs.swift in Sources */,
 				3D5C915E27A7F7630035C399 /* IntersectionOfTwoArrays.swift in Sources */,
 				3D3B213D27D6A0AD0055C0D1 /* RandomPickWithWeight.swift in Sources */,
+				4362DCAB2DCE18EF00234A5E /* InsertionSortList.swift in Sources */,
 				43A692AA29F6D7030043B5D0 /* WordBreak.swift in Sources */,
 				3D5C91B527A7F7630035C399 /* SwapNodesInPairs.swift in Sources */,
 				3D5C91D927A7F7630035C399 /* SearchInsertPosition.swift in Sources */,
@@ -4509,6 +4516,7 @@
 				43147ED22A64106E00802598 /* OptimalPartitionOfStringTests.swift in Sources */,
 				3D5C931C27A7F76C0035C399 /* PopulatingNextRightPointersTests.swift in Sources */,
 				433BBFC729E4B20F00A9A21E /* LongestConsecutiveSequenceTests.swift in Sources */,
+				4362DCAD2DCE191F00234A5E /* InsertionSortListTests.swift in Sources */,
 				3D9283092823E5840059ACDD /* ImplementStackUsingQueuesTests.swift in Sources */,
 				3D5C92CF27A7F76C0035C399 /* DiameterOfBinaryTreeTests.swift in Sources */,
 				3D5C92F727A7F76C0035C399 /* BinaryTreeVerticalOrderTraversalTests.swift in Sources */,
