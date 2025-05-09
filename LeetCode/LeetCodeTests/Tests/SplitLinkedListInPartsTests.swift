@@ -4,7 +4,7 @@ import Testing
 
 @testable import LeetCode
 
-struct AASplitLinkedListInPartsTests {
+struct SplitLinkedListInPartsTests {
 
     // MARK: - Tests
     
