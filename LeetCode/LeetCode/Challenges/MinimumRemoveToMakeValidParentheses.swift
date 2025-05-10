@@ -16,6 +16,7 @@ struct MinimumRemoveToMakeValidParentheses {
     //string
     //array
     //counting
+    //two passes
     //
     //Solution Description:
     //Make two passes through the string. First pass to remove unpaired closing brackets with the assumption that all opening
