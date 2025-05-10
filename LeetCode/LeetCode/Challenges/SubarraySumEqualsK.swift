@@ -60,7 +60,7 @@ struct SubarraySumEqualsK {
     //Looping through all possible contiguous subarray combinations we build up a sum of the values from i...j and compare
     //that sum to `k`. Where `sum` == `k` we increment `count` as we have found a contiguous subarray combination that
     //results in `k`. As `nums` can contain negative values upon matching `k` we keep going in case there are other matches
-    func subarraySumRecursive(_ nums: [Int], _ k: Int) -> Int {
+    func subarraySum2(_ nums: [Int], _ k: Int) -> Int {
         var count = 0
                 
         for i in 0..<nums.count {
