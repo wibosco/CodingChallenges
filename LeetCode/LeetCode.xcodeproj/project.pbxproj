@@ -1012,6 +1012,8 @@
 		43C1EBAF2DCFDC9E007038C1 /* PrintImmutableLinkedListInReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1EBAE2DCFDC9E007038C1 /* PrintImmutableLinkedListInReverse.swift */; };
 		43C1EBB12DCFDE52007038C1 /* RemoveDuplicatesFromAnUnsortedLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1EBB02DCFDE52007038C1 /* RemoveDuplicatesFromAnUnsortedLinkedList.swift */; };
 		43C1EBB32DCFDEDC007038C1 /* RemoveDuplicatesFromAnUnsortedLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1EBB22DCFDEDC007038C1 /* RemoveDuplicatesFromAnUnsortedLinkedListTests.swift */; };
+		43C1EBB52DCFE5D1007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1EBB42DCFE5D1007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValues.swift */; };
+		43C1EBB72DCFE603007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1EBB62DCFE603007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValuesTests.swift */; };
 		43C42B802A65296A00D5881B /* MergeStringsAlternately.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C42B7F2A65296A00D5881B /* MergeStringsAlternately.swift */; };
 		43C42B822A6529DA00D5881B /* MergeStringsAlternatelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C42B812A6529DA00D5881B /* MergeStringsAlternatelyTests.swift */; };
 		43C42B842A65565100D5881B /* NumberOfSubsequencesThatSatisfyTheGivenSumCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C42B832A65565100D5881B /* NumberOfSubsequencesThatSatisfyTheGivenSumCondition.swift */; };
@@ -2127,6 +2129,8 @@
 		43C1EBAE2DCFDC9E007038C1 /* PrintImmutableLinkedListInReverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintImmutableLinkedListInReverse.swift; sourceTree = "<group>"; };
 		43C1EBB02DCFDE52007038C1 /* RemoveDuplicatesFromAnUnsortedLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromAnUnsortedLinkedList.swift; sourceTree = "<group>"; };
 		43C1EBB22DCFDEDC007038C1 /* RemoveDuplicatesFromAnUnsortedLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromAnUnsortedLinkedListTests.swift; sourceTree = "<group>"; };
+		43C1EBB42DCFE5D1007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortLinkedListAlreadySortedUsingAbsoluteValues.swift; sourceTree = "<group>"; };
+		43C1EBB62DCFE603007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortLinkedListAlreadySortedUsingAbsoluteValuesTests.swift; sourceTree = "<group>"; };
 		43C42B7F2A65296A00D5881B /* MergeStringsAlternately.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeStringsAlternately.swift; sourceTree = "<group>"; };
 		43C42B812A6529DA00D5881B /* MergeStringsAlternatelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeStringsAlternatelyTests.swift; sourceTree = "<group>"; };
 		43C42B832A65565100D5881B /* NumberOfSubsequencesThatSatisfyTheGivenSumCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfSubsequencesThatSatisfyTheGivenSumCondition.swift; sourceTree = "<group>"; };
@@ -2776,6 +2780,7 @@
 				438243982C178E2500A93EF2 /* SortArrayByParityII.swift */,
 				3DA8E510280438EB00A23F3C /* SortCharactersByFrequency.swift */,
 				3D46242427E2921900A888C1 /* SortColors.swift */,
+				43C1EBB42DCFE5D1007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValues.swift */,
 				3D5C90C127A7F7620035C399 /* SortList.swift */,
 				3D1D0C8A2807001A006DA350 /* SortTheMatrixDiagonally.swift */,
 				432592202C8882F500F1340A /* SortTransformedArray.swift */,
@@ -3324,6 +3329,7 @@
 				432985992C133EF5002C4D37 /* SortArrayByParityTests.swift */,
 				3DA8E5122804395600A23F3C /* SortCharactersByFrequencyTests.swift */,
 				3D46242627E294E700A888C1 /* SortColorsTests.swift */,
+				43C1EBB62DCFE603007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValuesTests.swift */,
 				3D5C927A27A7F76C0035C399 /* SortListTests.swift */,
 				3D1D0C8C2807008A006DA350 /* SortTheMatrixDiagonallyTests.swift */,
 				432592222C88832B00F1340A /* SortTransformedArrayTests.swift */,
@@ -3878,6 +3884,7 @@
 				4379F48929E802D6003BA6F9 /* HouseRobber.swift in Sources */,
 				3DA6FF0327AA922A009BD7A8 /* FindAllAnagramsInAString.swift in Sources */,
 				3D8D277A2810A5EF001C692F /* InsertIntoASortedCircularLinkedList.swift in Sources */,
+				43C1EBB52DCFE5D1007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValues.swift in Sources */,
 				43BD45922AFD86F0006216F0 /* MinimumAbsoluteDifferenceInBST.swift in Sources */,
 				3D5C916927A7F7630035C399 /* CloneGraph.swift in Sources */,
 				3D14657C280A270400DF647A /* LeftmostColumnWithAtLeastAOne.swift in Sources */,
@@ -4306,6 +4313,7 @@
 				433229D52A570FDD00EB2232 /* MinimumSizeSubarraySumTests.swift in Sources */,
 				438AE5892A7A9981009130FC /* SearchSuggestionsSystemTests.swift in Sources */,
 				3D5C92CD27A7F76C0035C399 /* KthSymbolInGrammarTests.swift in Sources */,
+				43C1EBB72DCFE603007038C1 /* SortLinkedListAlreadySortedUsingAbsoluteValuesTests.swift in Sources */,
 				3D5C92DB27A7F76C0035C399 /* RemoveDuplicatesFromSortedArrayTests.swift in Sources */,
 				43BE41112AFA9B8300524B86 /* BalanceABinarySearchTreeTests.swift in Sources */,
 				3D5C92F427A7F76C0035C399 /* RotateListTests.swift in Sources */,
