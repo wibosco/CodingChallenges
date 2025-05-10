@@ -4,7 +4,7 @@ import Testing
 
 @testable import LeetCode
 
-struct AARemoveZeroSumConsecutiveNodesFromLinkedListTests {
+struct RemoveZeroSumConsecutiveNodesFromLinkedListTests {
 
     // MARK: - Tests
     
