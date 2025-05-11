@@ -21,6 +21,8 @@ struct NextGreaterNodeInLinkedList {
     //it's important to note that we are the stack elements answer not the current elements answer. We repeat this process
     //until the stack element is either greater than the current element or empty. We then add the current element to the stack
     //and repeat the process. Once all elements have been processed we return `answers`.
+    //
+    //Similar to: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
     func nextLargerNodes(_ head: ListNode?) -> [Int] {
         var values = [Int]()
         var current = head
