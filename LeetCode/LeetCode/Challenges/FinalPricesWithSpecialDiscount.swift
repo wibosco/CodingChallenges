@@ -9,18 +9,24 @@
 import Foundation
 
 //https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
-//stack
 struct FinalPricesWithSpecialDiscount {
     
-    //Time: O(n) where n is the prices
-    //Space: O(n) where n is the final prices
+    //Time: O(n) where n is the number of elements in `prices`
+    //Space: O(n)
     //stack
-    //monotonic ascending stack
+    //monotonic stack
+    //array
     //
     //Solution Description:
-    //Using a monotonic ascending stack we iterate through the `prices` array, adding prices to the stack until we come
-    //across an price that is less than the last price in the stock. We pop that last item and pop substitute the
-    //current price from it to get the discounted price which is then put into the `finalPrices` array.
+    //As not all prices will be discounted when we  initilise `finalPrices` we make a copy of `price`, this ensures
+    //that prices whether discounted or not are present in the final array. Instead of calculating the discount for
+    //the current price we actually add the current price to an ascending monotonic stack to be calculated when we
+    //find the lower price. So calculating the earlier `index[i]` only when we reach the later `index[j]`. By using
+    //a stack this way we able to calculate all discounts in O(n) time complexity. So for each price we encounter we
+    //first check if that price is lower than the prices in the stack - if it is we can now discount that earlier
+    //prices and set its final price; if not we skip (all other prices in the stack will be lower so we can break out
+    //of the stack loop). We then add the current price to the stack. We repeat this process for all prices. And
+    //finally return `finalPrices`.
     //
     //Background:
     //Monotonic = It is a word for mathematics functions. A function y = f(x) is monotonically increasing or decreasing
@@ -32,18 +38,18 @@ struct FinalPricesWithSpecialDiscount {
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
     func finalPrices(_ prices: [Int]) -> [Int] {
         var finalPrices = prices
-        var stack = [Int]()
+        var stack = [Int]() //this stack contains the indexes of the prices waiting to be discounted
         
-        for (i, price) in prices.enumerated() {
-            while !stack.isEmpty {
-                guard prices[stack.last!] >= price else {
+        for j in 0..<prices.count {
+            while let i = stack.last {
+                guard prices[j] <= prices[i] else { //check if prices[i] can be popped from the stack
                     break
                 }
                 
-                let toBeDiscounted = stack.removeLast()
-                finalPrices[toBeDiscounted] -= price
+                finalPrices[i] = prices[i] - prices[j]
+                stack.removeLast() //pop
             }
-            stack.append(i)
+            stack.append(j)
         }
         
         return finalPrices
