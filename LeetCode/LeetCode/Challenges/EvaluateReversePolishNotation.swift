@@ -27,6 +27,8 @@ struct EvaluateReversePolishNotation {
     //than it also contain the ongoing result - don't do this as trying to handle the special case which is the
     //first iteration (where you need to take two elements from the stack) and subsequent iterations (where you
     //only need to take one) leads to some very messy code for division and subtraction
+    //
+    //Similar to: https://leetcode.com/problems/clumsy-factorial/
     func evalRPN(_ tokens: [String]) -> Int {
         guard !tokens.isEmpty else {
             return 0
