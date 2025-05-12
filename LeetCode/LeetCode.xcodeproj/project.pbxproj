@@ -560,6 +560,8 @@
 		430878872DD20B3800F9257E /* NaryTreePostorderTraversalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430878862DD20B3800F9257E /* NaryTreePostorderTraversalTests.swift */; };
 		430878892DD2163100F9257E /* NumberOfStudentsUnableToEatLunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430878882DD2163100F9257E /* NumberOfStudentsUnableToEatLunch.swift */; };
 		4308788B2DD2165D00F9257E /* NumberOfStudentsUnableToEatLunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4308788A2DD2165D00F9257E /* NumberOfStudentsUnableToEatLunchTests.swift */; };
+		4308788D2DD2368800F9257E /* MaximalRangeThatEachElementIsMaximumInIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4308788C2DD2368800F9257E /* MaximalRangeThatEachElementIsMaximumInIt.swift */; };
+		4308788F2DD236B300F9257E /* MaximalRangeThatEachElementIsMaximumInItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4308788E2DD236B300F9257E /* MaximalRangeThatEachElementIsMaximumInItTests.swift */; };
 		430BD7C72B02CB770036A03F /* HouseRobberIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BD7C62B02CB770036A03F /* HouseRobberIII.swift */; };
 		430BD7C92B02CBB50036A03F /* HouseRobberIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BD7C82B02CBB50036A03F /* HouseRobberIIITests.swift */; };
 		430BE5542C82180D00265975 /* MinimumAverageOfSmallestAndLargestElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BE5532C82180D00265975 /* MinimumAverageOfSmallestAndLargestElements.swift */; };
@@ -1693,6 +1695,8 @@
 		430878862DD20B3800F9257E /* NaryTreePostorderTraversalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaryTreePostorderTraversalTests.swift; sourceTree = "<group>"; };
 		430878882DD2163100F9257E /* NumberOfStudentsUnableToEatLunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfStudentsUnableToEatLunch.swift; sourceTree = "<group>"; };
 		4308788A2DD2165D00F9257E /* NumberOfStudentsUnableToEatLunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfStudentsUnableToEatLunchTests.swift; sourceTree = "<group>"; };
+		4308788C2DD2368800F9257E /* MaximalRangeThatEachElementIsMaximumInIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximalRangeThatEachElementIsMaximumInIt.swift; sourceTree = "<group>"; };
+		4308788E2DD236B300F9257E /* MaximalRangeThatEachElementIsMaximumInItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximalRangeThatEachElementIsMaximumInItTests.swift; sourceTree = "<group>"; };
 		430BD7C62B02CB770036A03F /* HouseRobberIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberIII.swift; sourceTree = "<group>"; };
 		430BD7C82B02CBB50036A03F /* HouseRobberIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobberIIITests.swift; sourceTree = "<group>"; };
 		430BE5532C82180D00265975 /* MinimumAverageOfSmallestAndLargestElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAverageOfSmallestAndLargestElements.swift; sourceTree = "<group>"; };
@@ -2610,6 +2614,7 @@
 				435270282DD133FA0056A459 /* MakeTheStringGreat.swift */,
 				3D5C910627A7F7630035C399 /* Matrix01.swift */,
 				435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */,
+				4308788C2DD2368800F9257E /* MaximalRangeThatEachElementIsMaximumInIt.swift */,
 				4331CCEB2B93CD7300293C85 /* MaximizeTheConfusionOfAnExam.swift */,
 				43495F6A2B221D6A0037FEA7 /* MaximumAverageSubtree.swift */,
 				43F28D272DCBE94F00B1D2E7 /* MaximumBinaryTree.swift */,
@@ -3171,6 +3176,7 @@
 				4352702A2DD1342B0056A459 /* MakeTheStringGreatTests.swift */,
 				3D5C921027A7F76B0035C399 /* Matrix01Tests.swift */,
 				435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */,
+				4308788E2DD236B300F9257E /* MaximalRangeThatEachElementIsMaximumInItTests.swift */,
 				4331CCED2B93CDA200293C85 /* MaximizeTheConfusionOfAnExamTests.swift */,
 				43495F6C2B221F120037FEA7 /* MaximumAverageSubtreeTests.swift */,
 				43F28D2D2DCBF5D700B1D2E7 /* MaximumBinaryTreeIITests.swift */,
@@ -3995,6 +4001,7 @@
 				43313BB529D71263005FCF5D /* AddDigits.swift in Sources */,
 				3D7F319527FA4E9C00200775 /* CheapestFlightsWithinKStops.swift in Sources */,
 				43026BCF2AFEDB050066473B /* DeepestLeavesSum.swift in Sources */,
+				4308788D2DD2368800F9257E /* MaximalRangeThatEachElementIsMaximumInIt.swift in Sources */,
 				43D24C2A2C84FB8500CC83B6 /* AssignCookies.swift in Sources */,
 				433A10152DC8AF9A00054EF8 /* BattleshipsInABoard.swift in Sources */,
 				3D5C91F127A7F7630035C399 /* AddStrings.swift in Sources */,
@@ -4461,6 +4468,7 @@
 				430878832DD2016C00F9257E /* NaryTreePreorderTraversalTests.swift in Sources */,
 				3D5C92E227A7F76C0035C399 /* SwapNodesInPairsTests.swift in Sources */,
 				4354347D2AF50394002B996E /* MinimumNumberOfVerticesToReachAllNodesTests.swift in Sources */,
+				4308788F2DD236B300F9257E /* MaximalRangeThatEachElementIsMaximumInItTests.swift in Sources */,
 				3D47EA682800EC0C00407F75 /* MergeKSortedListsTests.swift in Sources */,
 				4362DCB92DCE5D6A00234A5E /* SplitLinkedListInPartsTests.swift in Sources */,
 				435AFB952A5BFC1200721B88 /* BrickWallTests.swift in Sources */,

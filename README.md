@@ -32,7 +32,7 @@ A collection of coding challenges and their solutions from:
 | "Shortest path", "Minimum", "closest" | `BFS`, `Dijkstra` |
 | "Level-by-level", "Least number of moves", "Batch" | `BFS` |
 | "All paths", "Choices", "Branching" | `BFS`, `DFS` |
-| "Path exists" | `BFS`, `DFS`, `Disjont sets` |
+| "Path exists" | `BFS`, `DFS`, `Disjoint sets` |
 | "Path may not exist"| `isolated vertices`, `cycles` |
 | "Generate all", "All permutations", "All combinations", "All possible", "Choices", "Branching" | `Backtracking (DFS)` |
 | "Next Permutation" | `pivot & swap` |
@@ -40,7 +40,8 @@ A collection of coding challenges and their solutions from:
 | "Maximum", "Minimum", "Optimization", "Container" | `Greedy` |
 | "Right-most", "Left-most"| `Binary Search` |
 | "Iterating array comparing elements" | `Stack` |
-| "Next greater element", "Next lesser element" | `Monotonic stack` |
+| "Next smaller element", "Previous smaller element" | `Monotonic increasing stack` |
+| "Next greater element", "Previous greater element" | `Monotonic decreasing stack` |
 | "Longest subsequence", "Smallest subsequence", "Maximum", "Minimum", "Neighbors"| `Sliding window`|
 | "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
@@ -110,9 +111,9 @@ A lot of problems can be treated as graph problems.
 6. The depth of a node is the number of edges from the node to the tree's root node - a root node will have a depth of 0
 7. The height of a node is the number of edges on the longest path from the node to a leaf - a leaf node will have a height of 0
 8. Traversal:
-    1. Preorder traversal involves traversing from the root to the left subtree then to the right subtree
-    2. Inorder traversal involves traversing from the left subtree to the root then to the right subtree
-    3. Postorder traversal involves traversing from the left subtree to the right subtree then to the root
+    1. Pre-order traversal involves traversing from the root to the left subtree then to the right subtree
+    2. In-order traversal involves traversing from the left subtree to the root then to the right subtree
+    3. Post-order traversal involves traversing from the left subtree to the right subtree then to the root
 9. Searching:
     1. Breadth First Search (BFS) - queue based, level by level traversal
     2. Depth First Search (DFS) - stack based, go as deep as possible then backtrack
@@ -128,7 +129,7 @@ A lot of problems can be treated as graph problems.
 
 1. Nodes to the left of the root are less than or equal than that of the root
 2. Nodes to the right of the root are greater than that of the root
-3. Inorder traversal results in a sorted list of the nodes in a BST
+3. In-order traversal results in a sorted list of the nodes in a BST
 4. Searching takes O(log n) time as at each node it is possible to discard half of the remaining nodes (as being either too small of too large)
 
 ### Graph
