@@ -24,6 +24,8 @@ struct ValidateBinarySearchTree {
     //immediate right but the tree to its right) and all nodes on the left are less than (not just it's immediate left
     //but the tree to its left). So to validate a BST we can't just compare a root node with its left and right nodes
     //instead we need to also compare it with its predecessors value as well.
+    //
+    //Similar to: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
     func isValidBST(_ root: TreeNode?) -> Bool {
         guard let root = root else {
             return true
