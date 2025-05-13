@@ -1046,6 +1046,8 @@
 		43C560B42DD35AE5009BA767 /* BeautifulTowersITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C560B32DD35AE5009BA767 /* BeautifulTowersITests.swift */; };
 		43C560B82DD38A90009BA767 /* LongestAbsoluteFilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C560B72DD38A90009BA767 /* LongestAbsoluteFilePath.swift */; };
 		43C560BA2DD38AC0009BA767 /* LongestAbsoluteFilePathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C560B92DD38AC0009BA767 /* LongestAbsoluteFilePathTests.swift */; };
+		43C560BC2DD3A80C009BA767 /* TernaryExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C560BB2DD3A80B009BA767 /* TernaryExpressionParser.swift */; };
+		43C560BE2DD3A841009BA767 /* TernaryExpressionParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C560BD2DD3A841009BA767 /* TernaryExpressionParserTests.swift */; };
 		43C8CB4F2A5426F200FAA411 /* HandOfStraights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8CB4E2A5426F200FAA411 /* HandOfStraights.swift */; };
 		43C8CB512A54270A00FAA411 /* HandOfStraightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8CB502A54270A00FAA411 /* HandOfStraightsTests.swift */; };
 		43CA0FB02C1065A0004D7740 /* ReversePrefixOfWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA0FAF2C1065A0004D7740 /* ReversePrefixOfWord.swift */; };
@@ -2191,6 +2193,8 @@
 		43C560B32DD35AE5009BA767 /* BeautifulTowersITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautifulTowersITests.swift; sourceTree = "<group>"; };
 		43C560B72DD38A90009BA767 /* LongestAbsoluteFilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestAbsoluteFilePath.swift; sourceTree = "<group>"; };
 		43C560B92DD38AC0009BA767 /* LongestAbsoluteFilePathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestAbsoluteFilePathTests.swift; sourceTree = "<group>"; };
+		43C560BB2DD3A80B009BA767 /* TernaryExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TernaryExpressionParser.swift; sourceTree = "<group>"; };
+		43C560BD2DD3A841009BA767 /* TernaryExpressionParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TernaryExpressionParserTests.swift; sourceTree = "<group>"; };
 		43C8CB4E2A5426F200FAA411 /* HandOfStraights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOfStraights.swift; sourceTree = "<group>"; };
 		43C8CB502A54270A00FAA411 /* HandOfStraightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOfStraightsTests.swift; sourceTree = "<group>"; };
 		43CA0FAF2C1065A0004D7740 /* ReversePrefixOfWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversePrefixOfWord.swift; sourceTree = "<group>"; };
@@ -2883,6 +2887,7 @@
 				43F7AF432A7D3AFB007932E9 /* SwappingNodesInALinkedList.swift */,
 				3D5C912027A7F7630035C399 /* SymmetricTree.swift */,
 				3D5C90C427A7F7620035C399 /* TargetSum.swift */,
+				43C560BB2DD3A80B009BA767 /* TernaryExpressionParser.swift */,
 				43B737E52B8BDA1500C7F1FB /* TheKWeakestRowsInAMatrix.swift */,
 				3D3B213827D6556B0055C0D1 /* ThreeSum.swift */,
 				3D3B213E27D6B23F0055C0D1 /* ThreeSumClosest.swift */,
@@ -3446,6 +3451,7 @@
 				43F7AF452A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift */,
 				3D5C929827A7F76C0035C399 /* SymmetricTreeTests.swift */,
 				3D5C920927A7F76B0035C399 /* TargetSumTests.swift */,
+				43C560BD2DD3A841009BA767 /* TernaryExpressionParserTests.swift */,
 				43B737E72B8BDA4800C7F1FB /* TheKWeakestRowsInAMatrixTests.swift */,
 				3D3B214027D6B2720055C0D1 /* ThreeSumClosestTests.swift */,
 				3D3B213A27D655EA0055C0D1 /* ThreeSumTests.swift */,
@@ -4156,6 +4162,7 @@
 				4302D0852A73DE42001D5375 /* RemovingStarsFromAString.swift in Sources */,
 				3D5C919627A7F7630035C399 /* OpenTheLock.swift in Sources */,
 				4362DCBF2DCEA33600234A5E /* DeleteNodeInALinkedList.swift in Sources */,
+				43C560BC2DD3A80C009BA767 /* TernaryExpressionParser.swift in Sources */,
 				43BB2BA92C8755CD0008AB9C /* ReverseWordsInAString.swift in Sources */,
 				3D5C91EC27A7F7630035C399 /* FloodFill.swift in Sources */,
 				439910432B07AC810020E9CC /* SmallestSubtreeWithAllTheDeepestNodes.swift in Sources */,
@@ -4308,6 +4315,7 @@
 				3D46242727E294E700A888C1 /* SortColorsTests.swift in Sources */,
 				43313BBD29D733C9005FCF5D /* MissingNumberTests.swift in Sources */,
 				3D5C932F27A7F76C0035C399 /* ReverseLinkedListTests.swift in Sources */,
+				43C560BE2DD3A841009BA767 /* TernaryExpressionParserTests.swift in Sources */,
 				43C560B42DD35AE5009BA767 /* BeautifulTowersITests.swift in Sources */,
 				435F01A12A0CF12D00F6B50F /* SurroundedRegionsTests.swift in Sources */,
 				432592272C88B72F00F1340A /* StringCompressionTests.swift in Sources */,

@@ -22,6 +22,7 @@ struct MinimumStringLengthAfterRemovingSubstrings {
     //string length.
     //
     //Similar to: https://leetcode.com/problems/valid-parentheses/
+    //Similar to: https://leetcode.com/problems/ternary-expression-parser/
     func minLength(_ s: String) -> Int {
         let pairs: [Character: Character] = ["B": "A",
                                              "D": "C"]
