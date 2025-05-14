@@ -19,9 +19,9 @@ struct FindTheDistanceValueBetweenTwoArrays {
     //Solution Description:
     //In order for calculate the distance between two arrays we take each element from first array and compare it against every
     //element in the second array - if they are within `d` of each other we discount that element from the first array and move
-    //on; if they are not within `d` we increment `result`. If we sort one of the array we can use binary search to determine
+    //on; if they are not within `d` we increment `result`. If we sort one of the arrays we can use binary search to determine
     //if we should count that value or not. There is a slight twist in that as `arr1` and/or `arr2` can have both positive and
-    //negative numbers, and distance is measured in absolute terms we need to careful with how we calculate distance so rather
+    //negative numbers, and distance is measured in absolute terms, we need to careful with how we calculate distance so rather
     //than comparing mid element of our search against `d` we instead calculate the range a value would need to fall into to be
     //"invalid" and comapre the mid element against that range. We repeat this process for all elements in `arr1`.
     func findTheDistanceValue(_ arr1: [Int], _ arr2: [Int], _ d: Int) -> Int {

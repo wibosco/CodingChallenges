@@ -66,4 +66,13 @@ final class FindTargetIndicesAfterSortingArrayTests: XCTestCase {
         
         XCTAssertEqual(result, [Int]())
     }
+    
+    func test_G() {
+        let nums = [1]
+        let target = 2
+        
+        let result = FindTargetIndicesAfterSortingArray().targetIndices(nums, target)
+        
+        XCTAssertEqual(result, [Int]())
+    }
 }

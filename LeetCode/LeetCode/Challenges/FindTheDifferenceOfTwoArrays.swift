@@ -8,11 +8,11 @@
 import Foundation
 
 //https://leetcode.com/problems/find-the-difference-of-two-arrays/
-//array
 struct FindTheDifferenceOfTwoArrays {
     
     //Time: O(n + m) where n is the number of elements in `nums1`, where m is the number of elements in `nums2`
     //Space: O(n + m)
+    //array
     //set
     //
     //Solution Description:

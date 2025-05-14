@@ -26,8 +26,8 @@ struct FindTargetIndicesAfterSortingArray {
     func targetIndices(_ nums: [Int], _ target: Int) -> [Int] {
         let sortedNums = nums.sorted(by: <)
         
-        let leftMostIndex = firstOccurrence(sortedNums, target)
-        let rightMostIndex = lastOccurrence(sortedNums, target)
+        let leftMostIndex = findLeftMost(sortedNums, target)
+        let rightMostIndex = findRightMost(sortedNums, target)
         
         guard let leftMostIndex = leftMostIndex, let rightMostIndex = rightMostIndex else {
             return [Int]()
@@ -36,7 +36,7 @@ struct FindTargetIndicesAfterSortingArray {
         return Array(leftMostIndex...rightMostIndex)
     }
     
-    private func firstOccurrence(_ values: [Int], _ target: Int) -> Int? {
+    private func findLeftMost(_ values: [Int], _ target: Int) -> Int? {
         var left = 0
         var right = values.count - 1
         
@@ -58,7 +58,7 @@ struct FindTargetIndicesAfterSortingArray {
         return result
     }
     
-    private func lastOccurrence(_ values: [Int], _ target: Int) -> Int? {
+    private func findRightMost(_ values: [Int], _ target: Int) -> Int? {
         var left = 0
         var right = values.count - 1
         
