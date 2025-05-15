@@ -61,4 +61,12 @@ final class FindPeakElementTests: XCTestCase {
         
         XCTAssertEqual(result, 0)
     }
+    
+    func test_G() {
+        let nums = [-2147483648]
+        
+        let result = FindPeakElement().findPeakElement(nums)
+        
+        XCTAssertEqual(result, 0)
+    }
 }

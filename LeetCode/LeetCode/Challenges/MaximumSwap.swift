@@ -40,7 +40,7 @@ struct MaximumSwap {
                 continue
             }
             
-            for subVal in ((orgVal + 1)...9).reversed() where subVal != orgVal { //try and find the largest value possible
+            for subVal in ((orgVal + 1)...9).reversed() { //try and find the largest value possible
                 if let subIndex = map[subVal], subIndex > orgIndex { //only swap if it appears later in `num`
                     digits.swapAt(orgIndex, subIndex)
                     
@@ -56,6 +56,9 @@ struct MaximumSwap {
     
     //Time: O(n^2) where n is the number of digits in `nums`
     //Space: O(n) where n is the number of digits in `nums` (digits)
+    //array
+    //swap
+    //string
     //
     //Solution Description:
     //Loop through all possible swaps and store the maximum value found.

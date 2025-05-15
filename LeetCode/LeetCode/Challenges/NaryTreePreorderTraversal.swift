@@ -25,7 +25,7 @@ struct NaryTreePreorderTraversal {
         var stack = [NaryTreeNode]()
         stack.append(root)
         
-        while let node = stack.popLast(){
+        while let node = stack.popLast() {
             order.append(node.val)
             
             for child in node.children.reversed() { //reverse so that the left-most node is at the top of the stack

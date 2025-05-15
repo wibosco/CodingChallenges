@@ -85,7 +85,7 @@ struct FindAllGroupsOfFarmland {
                 var end = [row, column]
                 dfs(&land, row, column, &end)
                 
-                farmland.append([row, column, end[0],end[1]])
+                farmland.append([row, column, end[0], end[1]])
             }
         }
         

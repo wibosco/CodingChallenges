@@ -59,7 +59,7 @@ struct LowestCommonAncestorBinaryTreeIII {
     //Solution Description:
     //We traverse from `p` to root, storing each node we encounter in `visited`. We then traverse from `q` to root and compare
     //each node encountered against `visited`. When we find a match we return that node as the lowest common ancestor.
-    func lowestCommonAncestor2(_ p: TreeNodeParent?,_ q: TreeNodeParent?) -> TreeNodeParent? {
+    func lowestCommonAncestor2(_ p: TreeNodeParent?, _ q: TreeNodeParent?) -> TreeNodeParent? {
         var visited = [Int: TreeNodeParent]()
 
         var p = p

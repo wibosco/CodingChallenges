@@ -25,8 +25,8 @@ struct MakeTheStringGreat {
                 continue
             }
             
-            if  (last != c &&
-                 (last.uppercased() == String(c) || last.lowercased() == String(c))) {
+            if  last != c &&
+                 (last.uppercased() == String(c) || last.lowercased() == String(c)) {
                 stack.removeLast()
             } else {
                 stack.append(c)

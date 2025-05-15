@@ -53,7 +53,6 @@ struct SplitLinkedListInParts {
             current?.next = nil
             current = tmp
             
-            
             bucket += 1
         }
         

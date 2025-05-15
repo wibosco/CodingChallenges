@@ -22,7 +22,7 @@ struct RansomNote {
     func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {
         var counts = [Character: Int]()
 
-        for c in magazine{
+        for c in magazine {
             counts[c, default: 0] += 1
         }
 

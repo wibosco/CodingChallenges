@@ -49,7 +49,7 @@ struct MaximalRangeThatEachElementIsMaximumInIt {
                 
                 stack.removeLast()
                 
-                right[i] = j;
+                right[i] = j
             }
             stack.append(j)
         }
