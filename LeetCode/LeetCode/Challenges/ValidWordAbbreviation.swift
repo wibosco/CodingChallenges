@@ -11,8 +11,8 @@ import Foundation
 //https://leetcode.com/problems/valid-word-abbreviation/
 struct ValidWordAbbreviation {
     
-    //Time: O(n)
-    //Space: O(1)
+    //Time: O(n) where n is the number of characters in `abbr`
+    //Space: O(m) where m is the number of characters in `word`
     //string
     //array
     //two pointers
@@ -52,5 +52,53 @@ struct ValidWordAbbreviation {
         p += Int(num) ?? 0
         
         return p == chars.count
+    }
+    
+    //Time: O(n) where n is the number of characters in `abbr`
+    //Space: O(n + m) where m is the number of characters in `word`
+    //string
+    //array
+    //two pointers
+    //
+    //Solution Description:
+    //Iterate through both the `abbr` and `word` strings comparing elements to ensure they match. Where needed convert a
+    //numeric string into an Int. At the end, make sure that the pointers used are both at the end of their
+    //string.
+    func validWordAbbreviation2(_ word: String, _ abbr: String) -> Bool {
+        var wordPointer = 0
+        var abbrPointer = 0
+
+        var word = Array(word)
+        var abbr = Array(abbr)
+
+        while wordPointer < word.count, abbrPointer < abbr.count {
+            var count = 0
+            while abbrPointer < abbr.count && abbr[abbrPointer].isNumber {
+                if count == 0 && abbr[abbrPointer] == "0" { //leading zero
+                    return false
+                }
+                count *= 10
+                count += Int(String(abbr[abbrPointer]))!
+
+                abbrPointer += 1
+            }
+
+            wordPointer += count
+
+            if wordPointer == word.count && abbrPointer == abbr.count {
+                return true
+            } else if wordPointer >= word.count {
+                return false
+            } else if abbrPointer >= abbr.count {
+                return false
+            } else if word[wordPointer] != abbr[abbrPointer] {
+                return false
+            }
+            
+            abbrPointer += 1
+            wordPointer += 1
+        }
+
+        return wordPointer == word.count && abbrPointer == abbr.count
     }
 }
