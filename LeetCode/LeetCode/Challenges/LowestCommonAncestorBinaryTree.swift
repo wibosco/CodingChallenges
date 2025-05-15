@@ -86,7 +86,7 @@ struct LowestCommonAncestorBinaryTree {
     //Solution description:
     //Using DFS we can track the path to both `p` and `q` nodes - storing this each path in an array. We then iterate through
     //those paths and when we find the same node in both paths we return that node.
-    func lowestCommonAncestorArrays(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor2(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil
         }
