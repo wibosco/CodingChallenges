@@ -11,6 +11,67 @@ import Foundation
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 struct FindFirstAndLastPositionOfElementInSortedArray {
     
+    //Time: O(log n) where n is the number of elements in `nums`
+    //Space: O(1)
+    //binary search
+    //array
+    //binary search find leftmost
+    //binary search find rightmost
+    //
+    //Solution Description:
+    //
+    //Similar to: https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/
+    //Similar to: https://leetcode.com/problems/find-target-indices-after-sorting-array/
+    func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
+        let leftMost = leftMost(nums, target)
+        let rightMost = rightMost(nums, target)
+        
+        return [leftMost, rightMost]
+    }
+    
+    private func leftMost(_ nums: [Int], _ target: Int) -> Int {
+        var left = 0
+        var right = nums.count - 1
+        
+        var result = -1
+        while left <= right {
+            let mid = left + (right - left) / 2
+            
+            if nums[mid] == target {
+                result = mid
+                right = mid - 1
+            } else if nums[mid] > target {
+                right = mid - 1
+            } else {
+                left = mid + 1
+            }
+        }
+        
+        return result
+    }
+    
+    private func rightMost(_ nums: [Int], _ target: Int) -> Int {
+        var left = 0
+        var right = nums.count - 1
+        
+        var result = -1
+        
+        while left <= right {
+            let mid = left + (right - left) / 2
+            
+            if nums[mid] == target {
+                result = mid
+                left = mid + 1
+            } else if nums[mid] > target {
+                right = mid - 1
+            } else {
+                left = mid + 1
+            }
+        }
+        
+        return result
+    }
+    
     //Time: O(log n)
     //Space: O(1)
     //array
@@ -32,7 +93,9 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
     //NB: Don't be tempted on finding an element that equals `target` to then perform a linear search for the start and
     //end indexes as this potentially could involve search the whole of `nums` and turn our `log n` solution into a `n`
     //solution
-    func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
+    //
+    //Similar to: https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/
+    func searchRange2(_ nums: [Int], _ target: Int) -> [Int] {
         guard !nums.isEmpty else {
             return [-1, -1]
         }
@@ -46,7 +109,7 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
         
         var left = 0
         var right = nums.count - 1
-
+        
         //find startingIndex
         var startingIndex = -1
         
@@ -95,7 +158,7 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
                 left = mid + 1
             }
         }
-    
+        
         return [startingIndex, endingIndex]
     }
 }

@@ -20,6 +20,8 @@ struct CheckIfANumberIsMajorityElementInASortedArray {
     //As `nums` is sorted we can use binary search find the first index of `target` and the last index of `target`. With
     //these indexes we can calculate if `target` is th majority element by checking if it has a range greater than half
     //the size of `nums`.
+    //
+    //Similar to: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
     func isMajorityElement(_ nums: [Int], _ target: Int) -> Bool {
         let leftMost = leftMostBinarySearch(nums, target)
         let rightMost = rightMostBinarySearch(nums, target)

@@ -23,6 +23,9 @@ struct FindTargetIndicesAfterSortingArray {
     //
     //N.B. Both `leftMostIndex` and `rightMostIndex` might have the same index value or they both might be nil but one can't
     //be nil while the other is non-nil.
+    //
+    //Similar to: https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/
+    //Similar to: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
     func targetIndices(_ nums: [Int], _ target: Int) -> [Int] {
         let sortedNums = nums.sorted(by: <)
         
