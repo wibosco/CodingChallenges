@@ -84,9 +84,10 @@ A collection of coding challenges and their solutions from:
 | Need to build a relationship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
 | Find the next permutation of a number | `pivot & swap` | `NextPermutation` `NextGreaterElementIII` |
 | Find elements in one array and compare against another | `Two pointers`, `Fast Forwarding` | `SwapAdjacentInLRString` |
-| Find child nodes in binary tree when represented as an array | left-child: (index * 2) + 1 <br /> right-child: (index * 2) + 2 | `NumberOfNodesWithValueOne` |
-| Find parent node in binary tree when represented as an array | index / 2 | `NumberOfNodesWithValueOne` |
+| Find child nodes in binary tree when represented as an array | `left-child: (index * 2) + 1` <br /> `right-child: (index * 2) + 2` | `NumberOfNodesWithValueOne` |
+| Find parent node in binary tree when represented as an array | `index / 2` | `NumberOfNodesWithValueOne` |
 | Avoid repeating costly action multiple times | Reduce to final action to avoid reverting previous action | `NumberOfNodesWithValueOne` |
+| Keep track of the "last" node seen in a DFS tree traversal across levels that does not match the tree ordering | `inout` parameter | `ConvertBinarySearchTreeToSortedDoublyLinkedList` |
 
 A lot of problems can be treated as graph problems.
 

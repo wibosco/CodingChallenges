@@ -35,4 +35,15 @@ final class ConvertBinarySearchTreeToSortedDoublyLinkedListTests: XCTestCase {
         
         XCTAssertEqual(result, [1, 2, 3])
     }
+    
+    func test_C() {
+        let data = [Int]()
+        let root = TreeNode.deserialize(data)
+        
+        let head = ConvertBinarySearchTreeToSortedDoublyLinkedList().treeToDoublyList(root)
+        
+        let result = TreeNode.serializeAsDoublyLinkedList(head)
+        
+        XCTAssertEqual(result, [])
+    }
 }
