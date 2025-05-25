@@ -1084,6 +1084,8 @@
 		43D8B8042A629C3700B3F197 /* FindTheDifferenceOfTwoArraysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8B8032A629C3700B3F197 /* FindTheDifferenceOfTwoArraysTests.swift */; };
 		43D9177D2DC6C03900058C16 /* RansomNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9177C2DC6C03900058C16 /* RansomNote.swift */; };
 		43D9177F2DC6C07700058C16 /* RansomNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9177E2DC6C07700058C16 /* RansomNoteTests.swift */; };
+		43DEDA3C2DE3C131007A8E69 /* CarPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEDA3B2DE3C131007A8E69 /* CarPooling.swift */; };
+		43DEDA3E2DE3C4FE007A8E69 /* CarPoolingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEDA3D2DE3C4FE007A8E69 /* CarPoolingTests.swift */; };
 		43E175ED2A701BB200798BE4 /* FruitIntoBaskets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E175EC2A701BB200798BE4 /* FruitIntoBaskets.swift */; };
 		43E175EF2A701BE300798BE4 /* FruitIntoBasketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E175EE2A701BE300798BE4 /* FruitIntoBasketsTests.swift */; };
 		43E270272B03CFEF000C2478 /* PathSumIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E270262B03CFEF000C2478 /* PathSumIIITests.swift */; };
@@ -2235,6 +2237,8 @@
 		43D8B8032A629C3700B3F197 /* FindTheDifferenceOfTwoArraysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheDifferenceOfTwoArraysTests.swift; sourceTree = "<group>"; };
 		43D9177C2DC6C03900058C16 /* RansomNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RansomNote.swift; sourceTree = "<group>"; };
 		43D9177E2DC6C07700058C16 /* RansomNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RansomNoteTests.swift; sourceTree = "<group>"; };
+		43DEDA3B2DE3C131007A8E69 /* CarPooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPooling.swift; sourceTree = "<group>"; };
+		43DEDA3D2DE3C4FE007A8E69 /* CarPoolingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPoolingTests.swift; sourceTree = "<group>"; };
 		43E175EC2A701BB200798BE4 /* FruitIntoBaskets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitIntoBaskets.swift; sourceTree = "<group>"; };
 		43E175EE2A701BE300798BE4 /* FruitIntoBasketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitIntoBasketsTests.swift; sourceTree = "<group>"; };
 		43E270262B03CFEF000C2478 /* PathSumIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSumIIITests.swift; sourceTree = "<group>"; };
@@ -2429,6 +2433,7 @@
 				3D5C90FF27A7F7630035C399 /* CanPlaceFlowers.swift */,
 				3D5C90DF27A7F7620035C399 /* CapacityToShipPackagesWithinDDays.swift */,
 				433082D32A07B052003A5DE7 /* CarFleet.swift */,
+				43DEDA3B2DE3C131007A8E69 /* CarPooling.swift */,
 				3D7F319427FA4E9C00200775 /* CheapestFlightsWithinKStops.swift */,
 				437FA7382B09571F00EF41C7 /* CheckCompletenessOfABinaryTree.swift */,
 				439C8ACD2B92199A00C3FD84 /* CheckIfANumberIsMajorityElementInASortedArray.swift */,
@@ -3000,6 +3005,7 @@
 				3D5C925927A7F76C0035C399 /* CanPlaceFlowersTests.swift */,
 				3D5C926627A7F76C0035C399 /* CapacityToShipPackagesWithinDDaysTests.swift */,
 				433082D52A07B091003A5DE7 /* CarFleetTests.swift */,
+				43DEDA3D2DE3C4FE007A8E69 /* CarPoolingTests.swift */,
 				3D7F319627FA4EC700200775 /* CheapestFlightsWithinKStopsTests.swift */,
 				437FA73A2B09574F00EF41C7 /* CheckCompletenessOfABinaryTreeTests.swift */,
 				439C8ACF2B9219CF00C3FD84 /* CheckIfANumberIsMajorityElementInASortedArrayTests.swift */,
@@ -4043,6 +4049,7 @@
 				4347A1C029E20D9800501CEE /* IncreasingTripletSubsequence.swift in Sources */,
 				3D5C917527A7F7630035C399 /* TargetSum.swift in Sources */,
 				3D5C91C727A7F7630035C399 /* PascalsTriangleII.swift in Sources */,
+				43DEDA3C2DE3C131007A8E69 /* CarPooling.swift in Sources */,
 				435434832AF554CF002B996E /* RemoveCoveredIntervals.swift in Sources */,
 				3D5C91D727A7F7630035C399 /* SubarraySumEqualsK.swift in Sources */,
 				43BB2BAD2C875C9A0008AB9C /* OneEditDistance.swift in Sources */,
@@ -4493,6 +4500,7 @@
 				3DC6177427F3AC330019DDD1 /* UndergroundSystemTests.swift in Sources */,
 				4362DCC12DCEA35A00234A5E /* DeleteNodeInALinkedListTests.swift in Sources */,
 				3D5C92A227A7F76C0035C399 /* AddTwoNumbersTests.swift in Sources */,
+				43DEDA3E2DE3C4FE007A8E69 /* CarPoolingTests.swift in Sources */,
 				43349F782A52FB4D002E2379 /* NetworkDelayTimeTests.swift in Sources */,
 				3D5C92A727A7F76C0035C399 /* ConstructBinaryTreePreorderInorderTraversalTests.swift in Sources */,
 				432853782AF6F7EB005531E8 /* MinimumPenaltyForAShopTests.swift in Sources */,
