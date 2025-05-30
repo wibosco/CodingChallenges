@@ -17,63 +17,65 @@ struct InsertIntoASortedCircularLinkedList {
     //
     //Solution Description:
     //Iterating through the list we attempt find the position that the new node (`insertVal`) should be inserted. Using two
-    //pointers we move through the list comparing `insertVal` against both the current node (`t`) and the next node (`n`) in the
-    //list. If `insertVal` is between those two nodes values then we insert the new node there. Special care needs to be taken
-    //when we reach the "end" of the ascending values as it is possible for `insertVal` to actually be the smallest or largest
-    //value in the list so it won't actually fall between any two nodes and should be added at the end (or start). Another
-    //special case is where having iterated through the list we still haven't found a "spot" for the new node - this can occur
-    //when the list contains duplicate node values, in this case we need to insert the new node before the `head` node.
+    //pointers we move through the list comparing `insertVal` against both the current node (`current`) and the next node
+    //(`next`) in the list. If `insertVal` is between those two nodes values then we insert the new node there. Special care
+    //needs to be taken when we reach the "end" of the ascending values as it is possible for `insertVal` to actually be the
+    //smallest or largest value in the list so it won't actually fall between any two nodes and should be added at the end
+    //(or start). Another special case is where having iterated through the list we still haven't found a "spot" for the new
+    //node - this can occur when the list contains duplicate node values, in this case we need to insert the new node before
+    //the `head` node.
     func insert(_ head: ListNode?, _ insertVal: Int) -> ListNode? {
         guard let head = head else {
             let node = ListNode(insertVal)
             node.next = node
+            
             return node
         }
         
-        var tail: ListNode? = head
+        guard head !== head.next else {
+            //list only contains one node
+            let node = ListNode(insertVal)
+            head.next = node
+            node.next = head
+            
+            return head
+        }
+    
+        var current = head
         
-        while let t = tail {
-            guard t.next !== t else {
-                //list only contains one node
-                let node = ListNode(insertVal)
-                t.next = node
-                node.next = t
-                
-                break
-            }
+        while true {
+            let next = current.next!
             
-            let n = t.next!
-            
-            if t.val < n.val { //ascending value
-                if insertVal >= t.val && insertVal <= n.val {
-                    //new node between is between t and n
+            if current.val < next.val { //ascending value
+                if insertVal >= current.val && insertVal <= next.val {
+                    //new node between is between current and next
                     let node = ListNode(insertVal)
-                    let tmp = t.next
-                    t.next = node
+                    let tmp = current.next
+                    current.next = node
                     node.next = tmp
                     
                     break
                 }
-            } else if t.val > n.val { //descending value i.e. start of the list
-                if insertVal >= t.val || insertVal <= n.val {
+            } else if current.val > next.val { //descending value i.e. start of the list
+                if insertVal >= current.val || insertVal <= next.val {
                     //new node is either less than all other nodes or greater than all other nodes
                     let node = ListNode(insertVal)
-                    let tmp = t.next
-                    t.next = node
+                    let tmp = current.next
+                    current.next = node
                     node.next = tmp
                     
                     break
                 }
-            } else if n == head {//back to the start, list contains duplicates
+            } else if next === head {//back to the start, list contains duplicates
                 let node = ListNode(insertVal)
-                let tmp = t.next
-                t.next = node
+                let tmp = current.next
+                current.next = node
                 node.next = tmp
                 
                 break
             }
             
-            tail = t.next
+            current = current.next!
         }
         
         return head

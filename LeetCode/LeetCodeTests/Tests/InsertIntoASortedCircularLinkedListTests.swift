@@ -77,4 +77,17 @@ final class InsertIntoASortedCircularLinkedListTests: XCTestCase {
         
         XCTAssertEqual(values, [1, 1, 3, 5])
     }
+    
+    func test_F() {
+        let data = [1, 3, 5]
+        let list = ListNode.deserializeCircularList(data)
+        
+        let insertVal = 6
+        
+        let result = InsertIntoASortedCircularLinkedList().insert(list, insertVal)
+        
+        let values = ListNode.serialize(result)
+        
+        XCTAssertEqual(values, [1, 3, 5, 6])
+    }
 }
