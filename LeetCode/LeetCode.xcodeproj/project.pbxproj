@@ -574,6 +574,8 @@
 		430BE55A2C826F8A00265975 /* NumberOfDistinctAveragesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BE5592C826F8A00265975 /* NumberOfDistinctAveragesTests.swift */; };
 		430E11AE2C8A3D3400D40AEF /* NextGreaterElementIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E11AD2C8A3D3400D40AEF /* NextGreaterElementIII.swift */; };
 		430E11B02C8A3D5F00D40AEF /* NextGreaterElementIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E11AF2C8A3D5F00D40AEF /* NextGreaterElementIIITests.swift */; };
+		431168132DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431168122DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift */; };
+		431168152DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431168142DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift */; };
 		4311BC642A5838AC00137AED /* IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC632A5838AC00137AED /* IsSubsequence.swift */; };
 		4311BC662A5838ED00137AED /* IsSubsequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC652A5838ED00137AED /* IsSubsequenceTests.swift */; };
 		4311BC682A5849FE00137AED /* PascalsTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC672A5849FE00137AED /* PascalsTriangle.swift */; };
@@ -1727,6 +1729,8 @@
 		430BE5592C826F8A00265975 /* NumberOfDistinctAveragesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDistinctAveragesTests.swift; sourceTree = "<group>"; };
 		430E11AD2C8A3D3400D40AEF /* NextGreaterElementIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGreaterElementIII.swift; sourceTree = "<group>"; };
 		430E11AF2C8A3D5F00D40AEF /* NextGreaterElementIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGreaterElementIIITests.swift; sourceTree = "<group>"; };
+		431168122DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxConsecutiveOnesIII.swift; sourceTree = "<group>"; };
+		431168142DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxConsecutiveOnesIIITests.swift; sourceTree = "<group>"; };
 		4311BC632A5838AC00137AED /* IsSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSubsequence.swift; sourceTree = "<group>"; };
 		4311BC652A5838ED00137AED /* IsSubsequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSubsequenceTests.swift; sourceTree = "<group>"; };
 		4311BC672A5849FE00137AED /* PascalsTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalsTriangle.swift; sourceTree = "<group>"; };
@@ -2657,6 +2661,7 @@
 				435270282DD133FA0056A459 /* MakeTheStringGreat.swift */,
 				3D5C910627A7F7630035C399 /* Matrix01.swift */,
 				435F019A2A0BE2BC00F6B50F /* MaxAreaOfIsland.swift */,
+				431168122DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift */,
 				4308788C2DD2368800F9257E /* MaximalRangeThatEachElementIsMaximumInIt.swift */,
 				4331CCEB2B93CD7300293C85 /* MaximizeTheConfusionOfAnExam.swift */,
 				43495F6A2B221D6A0037FEA7 /* MaximumAverageSubtree.swift */,
@@ -3228,6 +3233,7 @@
 				4352702A2DD1342B0056A459 /* MakeTheStringGreatTests.swift */,
 				3D5C921027A7F76B0035C399 /* Matrix01Tests.swift */,
 				435F019C2A0BE2F100F6B50F /* MaxAreaOfIslandTests.swift */,
+				431168142DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift */,
 				4308788E2DD236B300F9257E /* MaximalRangeThatEachElementIsMaximumInItTests.swift */,
 				4331CCED2B93CDA200293C85 /* MaximizeTheConfusionOfAnExamTests.swift */,
 				43495F6C2B221F120037FEA7 /* MaximumAverageSubtreeTests.swift */,
@@ -3903,6 +3909,7 @@
 				436634A82AFE7CC50087F13F /* LeafSimilarTrees.swift in Sources */,
 				433985B92B0AB33D00D7702C /* FindDuplicateSubtrees.swift in Sources */,
 				438243952C174D7600A93EF2 /* ShortestDistanceToACharacter.swift in Sources */,
+				431168132DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift in Sources */,
 				43C1EBB12DCFDE52007038C1 /* RemoveDuplicatesFromAnUnsortedLinkedList.swift in Sources */,
 				433914712C8CE87C00560FEC /* ShortestUnsortedContinuousSubarray.swift in Sources */,
 				437618262C18749000D16EC9 /* ApplyOperationsToAnArray.swift in Sources */,
@@ -4664,6 +4671,7 @@
 				3D5C933C27A7F76C0035C399 /* ConvertBinarySearchTreeToSortedDoublyLinkedListTests.swift in Sources */,
 				3DEFAAB427D21DB700DB0E9D /* DotProductOfTwoSparseVectorsTests.swift in Sources */,
 				43A692A829F69FFD0043B5D0 /* MaximumProductSubarrayTests.swift in Sources */,
+				431168152DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift in Sources */,
 				3D5C92E127A7F76C0035C399 /* FindDuplicateNumberTests.swift in Sources */,
 				4311BC762A5866CB00137AED /* FindPivotIndexTests.swift in Sources */,
 				3D46242F27E35A4100A888C1 /* CombinationsTests.swift in Sources */,
