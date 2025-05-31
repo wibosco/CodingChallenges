@@ -24,6 +24,8 @@ struct KthMissingPositiveNumber {
     //the `kth` index is to the right, else if `remaining` < 0 then we know that the `kth` index is the left. As we move left
     //and right we gradually find the index to the left of the `kth` index and so add any remaining `remaining` value to that
     //indexes value.
+    //
+    //Similar to: https://leetcode.com/problems/missing-element-in-sorted-array/
     func findKthPositive(_ arr: [Int], _ k: Int) -> Int {
         var remaining = k
         
