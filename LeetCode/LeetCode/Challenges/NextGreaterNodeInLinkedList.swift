@@ -23,6 +23,7 @@ struct NextGreaterNodeInLinkedList {
     //and repeat the process. Once all elements have been processed we return `answers`.
     //
     //Similar to: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
+    //Similar to: https://leetcode.com/problems/next-greater-element-ii/
     func nextLargerNodes(_ head: ListNode?) -> [Int] {
         var values = [Int]()
         var current = head
