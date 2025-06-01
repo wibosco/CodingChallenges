@@ -14,6 +14,71 @@ struct PalindromeLinkedList {
     //Space: O(1)
     //linked list
     //slow and fast pointers
+    //two pointers
+    //reverse linked list
+    //
+    //Solution Description:
+    //Using a fast and slow pointer we iterate through the list, leaving the slow pointer in the "middle" (or as near as possible
+    //for an evenly numbered list). Treating the nodes up from `head` to just before `p1` as one list and from `p1` to the tail as
+    //another list. As it's possible for a valid palindrome to be either odd or even in length we either include the node at `p1`
+    //in the second list for odd lengths or exclude it for even lengths  We reverse the second list. Now we use two pointers to
+    //iterate through both lists and compare their node values - if they don't match we return false. Once all nodes have been
+    //compared we return true.
+    func isPalindrome(_ head: ListNode?) -> Bool {
+        var p1 = head
+        var p2 = head?.next
+        var count = 0
+
+        while p2?.next != nil {
+            p1 = p1?.next
+            p2 = p2?.next?.next
+            count += 1
+        }
+
+        var p3: ListNode?
+        if count % 2 == 0 {
+            p3 = reverse(p1?.next)
+        } else {
+            p3 = reverse(p1)
+        }
+
+        p1?.next = nil
+
+        var p4 = head
+
+        while p3 != nil && p4 != nil {
+            if p3!.val != p4!.val {
+                return false
+            }
+
+            p3 = p3?.next
+            p4 = p4?.next
+        }
+
+        return true
+    }
+
+    private func reverse(_ head: ListNode?) -> ListNode? {
+        var prev: ListNode? = nil
+        var current = head
+
+        while current != nil {
+            let tmp = current?.next
+            
+            current?.next = prev
+            
+            prev = current
+            current = tmp
+        }
+
+        return prev
+    }
+    
+    //Time: O(n) where n is the number of nodes in the linked list
+    //Space: O(1)
+    //linked list
+    //slow and fast pointers
+    //two pointers
     //reverse linked list
     //
     //Solution Description:
@@ -25,7 +90,7 @@ struct PalindromeLinkedList {
     //list) rightwards by one node. Next we iterate through both lists and compare the values of each node against its
     //counterpart - if there is a mismatch we return false. If after iterating through all nodes, everything matches we return
     //true.
-    func isPalindrome(_ head: ListNode?) -> Bool {
+    func isPalindrome2(_ head: ListNode?) -> Bool {
         var fast = head
         var slow = head
         
@@ -75,11 +140,46 @@ struct PalindromeLinkedList {
     //Space: O(n)
     //linked list
     //array
+    //two pointers
+    //
+    //Solution Description:
+    //We iterate through the linked list and every node encountered is stored in `values`. Then using two pointers we iterate
+    //outside in comparing the elements at each pointer - if they don't match we return false. Once `p1` crosses `p2` we know
+    //that we have compared all elements and can return true.
+    func isPalindrome3(_ head: ListNode?) -> Bool {
+        var values = [Int]()
+
+        var tail = head
+
+        while let t = tail {
+            values.append(t.val)
+            tail = t.next
+        }
+
+        var p1 = 0
+        var p2 = values.count - 1
+
+        while p1 < p2 {
+            if values[p1] != values[p2] {
+                return false
+            }
+
+            p1 += 1
+            p2 -= 1
+        }
+
+        return true
+    }
+    
+    //Time: O(n) where n is the number of nodes in the linked list
+    //Space: O(n)
+    //linked list
+    //array
     //
     //Solution Description:
     //We iterate through the linked list and every node that we come to we store in `array`. Once all nodes have been added to `array`
     //we check if `array` is equal to itself reversed and return the result.
-    func isPalindromeExtraMemory(_ head: ListNode?) -> Bool {
+    func isPalindrome4(_ head: ListNode?) -> Bool {
         var array = [Int]()
         var node = head
         
