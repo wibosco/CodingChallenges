@@ -88,6 +88,7 @@ A collection of coding challenges and their solutions from:
 | Find parent node in binary tree when represented as an array | `index / 2` | `NumberOfNodesWithValueOne` |
 | Avoid repeating costly action multiple times | Reduce to final action to avoid reverting previous action | `NumberOfNodesWithValueOne` |
 | Keep track of the "last" node seen in a DFS tree traversal across levels that does not match the tree ordering | `inout` parameter | `ConvertBinarySearchTreeToSortedDoublyLinkedList` |
+| Find left and right bounds of a value in a sorted array | `Binary search` with a result value | `FindFirstAndLastPositionOfElementInSortedArray` |
 
 A lot of problems can be treated as graph problems.
 

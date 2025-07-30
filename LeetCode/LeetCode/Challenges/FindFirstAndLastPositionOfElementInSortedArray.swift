@@ -17,8 +17,11 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
     //array
     //binary search find leftmost
     //binary search find rightmost
+    //result
     //
     //Solution Description:
+    //As `nums` is sorted we can use binary search to find the leftmost index of `target` and then find the rightmost index.
+    //These indexes can then be returned as an array.
     //
     //Similar to: https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/
     //Similar to: https://leetcode.com/problems/find-target-indices-after-sorting-array/
@@ -38,6 +41,7 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
             let mid = left + (right - left) / 2
             
             if nums[mid] == target {
+                //to simplify pointer manipulation we use a result value
                 result = mid
                 right = mid - 1
             } else if nums[mid] > target {
@@ -60,6 +64,7 @@ struct FindFirstAndLastPositionOfElementInSortedArray {
             let mid = left + (right - left) / 2
             
             if nums[mid] == target {
+                //to simplify pointer manipulation we use a result value
                 result = mid
                 left = mid + 1
             } else if nums[mid] > target {

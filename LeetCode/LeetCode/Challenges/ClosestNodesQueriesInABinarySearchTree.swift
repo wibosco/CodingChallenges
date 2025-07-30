@@ -21,6 +21,7 @@ struct ClosestNodesQueriesInABinarySearchTree {
     //recursive
     //inout
     //array
+    //result
     //
     //Solution Description:
     //As this is binary search tree, we know that an in-order traversal will produce a sorted array. With a sorted array we can
