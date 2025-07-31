@@ -61,7 +61,7 @@ struct NextPermutation {
         if pivot >= 0 {
             //find the least-significant-value to the right of the pivot that is larger than the pivot
             var lsv = nums.count - 1
-            while lsv > 0, nums[lsv] <= nums[pivot] {
+            while lsv > pivot, nums[lsv] <= nums[pivot] {
                 lsv -= 1
             }
             nums.swapAt(pivot, lsv)

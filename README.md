@@ -50,7 +50,8 @@ A collection of coding challenges and their solutions from:
 | "Minimum cost" | `MST`, `Kruskal`, `Prims` |
 | "Compare neighbors in a string", "Comparing right to left elements"| `Stack` |
 | "Largest value", "Smallest value"| `Heap` |
-| "kth smallest", "kth largest", "kth frequent", "Top k", "k closet" | `QuickSelect` |
+| "kth smallest", "kth largest", "kth frequent", "Top k", "k closet" | `QuickSelect`, `BucketSort` |
+| "Sort by frequency"| `BucketSort` |
 | "Matrix diagonal" | `r1 - c1 == r2 - c2`|
 | "Consecutive" | `Sort` |
 | "Merge", "Intervals", "Neighbors" | `Sort` |
