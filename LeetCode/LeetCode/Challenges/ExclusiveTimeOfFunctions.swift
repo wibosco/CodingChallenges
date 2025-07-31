@@ -65,10 +65,12 @@ struct ExclusiveTimeOfFunctions {
     }
         
     private struct Log {
+        // swiftlint:disable nesting
         enum LogType {
             case start
             case end
         }
+        // swiftlint:enable nesting
         
         let functionID: Int
         let type: LogType

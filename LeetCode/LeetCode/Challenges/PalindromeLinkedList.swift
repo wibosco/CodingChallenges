@@ -59,7 +59,7 @@ struct PalindromeLinkedList {
     }
 
     private func reverse(_ head: ListNode?) -> ListNode? {
-        var prev: ListNode? = nil
+        var prev: ListNode?
         var current = head
 
         while current != nil {

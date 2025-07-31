@@ -97,7 +97,7 @@ struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
         return order.first
     }
     
-    private func dfs(_ root: TreeNode?, _ order: inout [TreeNode]){
+    private func dfs(_ root: TreeNode?, _ order: inout [TreeNode]) {
         guard let root else {
             return
         }

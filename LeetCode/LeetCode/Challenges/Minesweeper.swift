@@ -32,12 +32,13 @@ struct Minesweeper {
             board[row][column] = "X"
             return board
         }
-    
+        // swiftlint:disable comma
         let relativeIndexes = [
             [-1, -1], [-1, 0], [-1, 1],
             [0, -1],           [0, 1],
             [1, -1],  [1, 0],  [1, 1]
         ]
+        // swiftlint:enable comma
         
         dfs(&board, row, column, relativeIndexes)
         
@@ -118,12 +119,13 @@ struct Minesweeper {
             board[row][column] = "X"
             return board
         }
-    
+        // swiftlint:disable comma
         let relativeIndexes = [
             [-1, -1], [-1, 0], [-1, 1],
             [0, -1],           [0, 1],
             [1, -1],  [1, 0],  [1, 1]
         ]
+        // swiftlint:enable comma
 
         var visited = Set<[Int]>()
 
