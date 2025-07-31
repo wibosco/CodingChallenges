@@ -68,8 +68,8 @@ struct ValidWordAbbreviation {
         var wordPointer = 0
         var abbrPointer = 0
 
-        var word = Array(word)
-        var abbr = Array(abbr)
+        let word = Array(word)
+        let abbr = Array(abbr)
 
         while wordPointer < word.count, abbrPointer < abbr.count {
             var count = 0

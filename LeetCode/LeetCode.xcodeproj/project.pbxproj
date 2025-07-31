@@ -574,6 +574,7 @@
 		430BE55A2C826F8A00265975 /* NumberOfDistinctAveragesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BE5592C826F8A00265975 /* NumberOfDistinctAveragesTests.swift */; };
 		430E11AE2C8A3D3400D40AEF /* NextGreaterElementIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E11AD2C8A3D3400D40AEF /* NextGreaterElementIII.swift */; };
 		430E11B02C8A3D5F00D40AEF /* NextGreaterElementIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E11AF2C8A3D5F00D40AEF /* NextGreaterElementIIITests.swift */; };
+		4310B4102E3C2AFF00B6E68D /* FixedPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310B40F2E3C2AFF00B6E68D /* FixedPointTests.swift */; };
 		431168132DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431168122DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift */; };
 		431168152DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431168142DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift */; };
 		4311BC642A5838AC00137AED /* IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC632A5838AC00137AED /* IsSubsequence.swift */; };
@@ -707,7 +708,6 @@
 		433E55C029DF145E00974B73 /* CoinChange .swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E55BF29DF145E00974B73 /* CoinChange .swift */; };
 		433E55C229DF14D600974B73 /* CoinChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E55C129DF14D600974B73 /* CoinChangeTests.swift */; };
 		4342D3A12B8DD0C4007686D7 /* FixedPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342D3A02B8DD0C4007686D7 /* FixedPoint.swift */; };
-		4342D3A32B8DD103007686D7 /* FixedPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342D3A22B8DD103007686D7 /* FixedPointTests.swift */; };
 		4343A7C42AB20DF6000E48C8 /* ConstructStringFromBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343A7C32AB20DF6000E48C8 /* ConstructStringFromBinaryTree.swift */; };
 		4343A7C62AB20E7E000E48C8 /* ConstructStringFromBinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343A7C52AB20E7E000E48C8 /* ConstructStringFromBinaryTreeTests.swift */; };
 		43459DFD2C85B1EC00A81BA5 /* DuplicateZeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43459DFC2C85B1EC00A81BA5 /* DuplicateZeros.swift */; };
@@ -1753,6 +1753,7 @@
 		430BE5592C826F8A00265975 /* NumberOfDistinctAveragesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDistinctAveragesTests.swift; sourceTree = "<group>"; };
 		430E11AD2C8A3D3400D40AEF /* NextGreaterElementIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGreaterElementIII.swift; sourceTree = "<group>"; };
 		430E11AF2C8A3D5F00D40AEF /* NextGreaterElementIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGreaterElementIIITests.swift; sourceTree = "<group>"; };
+		4310B40F2E3C2AFF00B6E68D /* FixedPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedPointTests.swift; sourceTree = "<group>"; };
 		431168122DE9FB6A00A4E23B /* MaxConsecutiveOnesIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxConsecutiveOnesIII.swift; sourceTree = "<group>"; };
 		431168142DE9FBD600A4E23B /* MaxConsecutiveOnesIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxConsecutiveOnesIIITests.swift; sourceTree = "<group>"; };
 		4311BC632A5838AC00137AED /* IsSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSubsequence.swift; sourceTree = "<group>"; };
@@ -1886,7 +1887,6 @@
 		433E55BF29DF145E00974B73 /* CoinChange .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinChange .swift"; sourceTree = "<group>"; };
 		433E55C129DF14D600974B73 /* CoinChangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinChangeTests.swift; sourceTree = "<group>"; };
 		4342D3A02B8DD0C4007686D7 /* FixedPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedPoint.swift; sourceTree = "<group>"; };
-		4342D3A22B8DD103007686D7 /* FixedPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedPointTests.swift; sourceTree = "<group>"; };
 		4343A7C32AB20DF6000E48C8 /* ConstructStringFromBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructStringFromBinaryTree.swift; sourceTree = "<group>"; };
 		4343A7C52AB20E7E000E48C8 /* ConstructStringFromBinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructStringFromBinaryTreeTests.swift; sourceTree = "<group>"; };
 		43459DFC2C85B1EC00A81BA5 /* DuplicateZeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateZeros.swift; sourceTree = "<group>"; };
@@ -3206,7 +3206,7 @@
 				4362DCA82DCDFB9000234A5E /* FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTests.swift */,
 				3D5C924527A7F76C0035C399 /* FindTheTownJudgeTests.swift */,
 				3D5C91FE27A7F76B0035C399 /* FirstBadVersionTests.swift */,
-				4342D3A22B8DD103007686D7 /* FixedPointTests.swift */,
+				4310B40F2E3C2AFF00B6E68D /* FixedPointTests.swift */,
 				3D5C923A27A7F76B0035C399 /* FlattenBinaryTreeToLinkedListTests.swift */,
 				437FA73E2B09616000EF41C7 /* FlipBinaryTreeToMatchPreorderTraversalTests.swift */,
 				4399104C2B07CF920020E9CC /* FlipEquivalentBinaryTreesTests.swift */,
@@ -4732,7 +4732,6 @@
 				43B737E82B8BDA4800C7F1FB /* TheKWeakestRowsInAMatrixTests.swift in Sources */,
 				43739C152B003556007D77E5 /* ConvertSortedListToBinarySearchTreeTests.swift in Sources */,
 				4366349E2AFE6B8A0087F13F /* EvaluateBooleanBinaryTreeTests.swift in Sources */,
-				4342D3A32B8DD103007686D7 /* FixedPointTests.swift in Sources */,
 				3D5C92BE27A7F76C0035C399 /* PeakIndexMountainArrayTests.swift in Sources */,
 				3DB7C5CF27CD480200353EED /* MovingAverageTests.swift in Sources */,
 				4311BC722A585E2400137AED /* IsomorphicStringsTests.swift in Sources */,
@@ -4866,6 +4865,7 @@
 				3D5C92C527A7F76C0035C399 /* SearchInABinarySearchTreeTests.swift in Sources */,
 				435B70A62B04EAB7003D51CA /* ConvertBSTToGreaterTreeTests.swift in Sources */,
 				3D5C92EF27A7F76C0035C399 /* IntersectionOfTwoArraysIITests.swift in Sources */,
+				4310B4102E3C2AFF00B6E68D /* FixedPointTests.swift in Sources */,
 				3D5C931D27A7F76C0035C399 /* CountUnivalueSubtreesTests.swift in Sources */,
 				430BE5562C82184D00265975 /* MinimumAverageOfSmallestAndLargestElementsTests.swift in Sources */,
 				3D5C92EE27A7F76C0035C399 /* SquaresOfSortedArrayTests.swift in Sources */,
@@ -5036,7 +5036,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.LeetCode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5068,7 +5071,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.LeetCode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5090,9 +5096,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.LeetCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -5111,9 +5121,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.LeetCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

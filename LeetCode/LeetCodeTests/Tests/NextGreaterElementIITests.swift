@@ -4,7 +4,7 @@ import Testing
 
 @testable import LeetCode
 
-struct AANextGreaterElementIITests {
+struct NextGreaterElementIITests {
 
     // MARK: - Tests
     

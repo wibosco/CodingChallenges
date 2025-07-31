@@ -4,7 +4,7 @@ import Testing
 
 @testable import LeetCode
 
-struct AABeautifulTowersITests {
+struct BeautifulTowersITests {
 
     // MARK: - Tests
     
