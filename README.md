@@ -38,7 +38,7 @@ A collection of coding challenges and their solutions from:
 | "Next Permutation" | `pivot & swap` |
 | "Sorted", "Maximum", "Minimum" | `Binary Search`, `Two pointers` |
 | "Maximum", "Minimum", "Optimization", "Container" | `Greedy` |
-| "Right-most", "Left-most"| `Binary Search` |
+| "Right-most", "Left-most", "Sorted"| `Binary Search` |
 | "Iterating array comparing elements" | `Stack` |
 | "Next smaller element", "Previous smaller element" | `Monotonic increasing stack` |
 | "Next greater element", "Previous greater element" | `Monotonic decreasing stack` |
@@ -144,7 +144,7 @@ A lot of problems can be treated as graph problems.
     1. Directed - only allow travel down an edge in a certain direction,
     2. Undirected - edge can be used for travel both ways
 4. Each node has an `indegree` - this is the number of node connecting into that node   
-5. Each node has n `outdegree` - this is the number of nodes, this node is connecting to
+5. Each node has an `outdegree` - this is the number of nodes, this node is connecting to
 6. A node can have any number of edges to other nodes
 7. Can contain unconnected nodes
 8. Adjacency list can be used to store the `outdegree` of each node in a graph
