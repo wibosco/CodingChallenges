@@ -114,4 +114,67 @@ struct MinimumRemoveToMakeValidParentheses {
         
         return String(ans.reversed())
     }
+    
+    //Time: O(n) where n is the number of characters in `s`
+    //Space: O(n)
+    //string
+    //array
+    //counting
+    //two passes
+    //
+    //Solution Description:
+    //Make two passes through the string. First pass to remove unpaired closing brackets with the assumption that all opening
+    //brackets are paired. Second pass in reverse to remove unpaired opening brackets.
+    func minRemoveToMakeValid3(_ s: String) -> String {
+        var chars = Array(s)
+        
+        removeUnpairedClosingBackets(&chars)
+        removeUnpairedOpeningBackets(&chars)
+        
+        return String(chars)
+    }
+    
+    private func removeUnpairedClosingBackets(_ chars: inout [Character]) {
+        var backetCount = 0
+        var cleanedChars = [Character]()
+        
+        for char in chars {
+            if char == "(" {
+                backetCount += 1
+                
+                cleanedChars.append(char)
+            } else if char == ")" {
+                if backetCount > 0 {
+                    backetCount -= 1
+                    cleanedChars.append(char)
+                }
+            } else {
+                cleanedChars.append(char)
+            }
+        }
+        
+        chars = cleanedChars
+    }
+    
+    private func removeUnpairedOpeningBackets(_ chars: inout [Character]) {
+        var backetCount = 0
+        var cleanedChars = [Character]()
+        
+        for char in chars.reversed() {
+            if char == ")" {
+                backetCount += 1
+                
+                cleanedChars.append(char)
+            } else if char == "(" {
+                if backetCount > 0 {
+                    backetCount -= 1
+                    cleanedChars.append(char)
+                }
+            } else {
+                cleanedChars.append(char)
+            }
+        }
+        
+        chars = cleanedChars.reversed()
+    }
 }
