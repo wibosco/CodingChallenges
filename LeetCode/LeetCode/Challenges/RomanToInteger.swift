@@ -60,4 +60,118 @@ struct RomanToInteger {
         
         return total
     }
+    
+    //Time: O(n) where n is the number of characters in `s`
+    //Space: O(n)
+    //string
+    //dictionary
+    //
+    //Solution Description:
+    //`I`, `X`, and `C` can modify the value that comes after them so as we iterate through `s`, when one of those three
+    //characters are encountered we peek ahead to see the value of that chracter will be positive or negative so that
+    //`sum` can be updated accordingly. For all other characters we convert them their int partner and add that to `sum`.
+    //Once all values have been converted we return `sum`.
+    func romanToInt2(_ s: String) -> Int {
+        let singleMapping: [Character: Int] = [
+            "I": 1,
+            "V": 5,
+            "X": 10,
+            "L": 50,
+            "C": 100,
+            "D": 500,
+            "M": 1000
+        ]
+        
+        let doubleMapping: [String: Int] = [
+            "IV": 4,
+            "IX": 9,
+            "XL": 40,
+            "XC": 90,
+            "CD": 400,
+            "CM": 900
+        ]
+        
+        let chars = Array(s) //O(n)
+        var sum = 0
+        var p1 = 0
+
+        while p1 < chars.count {
+            let p2 = p1 + 1
+            if p2 < chars.count {
+                let double = "\(chars[p1])\(chars[p2])"
+                if let value = doubleMapping[double] {
+                    sum += value
+                    p1 += 2
+                    
+                    continue
+                }
+            }
+            
+            sum += singleMapping[chars[p1]]!
+
+            p1 += 1
+        }
+
+        return sum
+    }
+
+    //Time: O(n) where n is the number of characters in `s`
+    //Space: O(n)
+    //string
+    //dictionary
+    //
+    //Solution Description:
+    //`I`, `X`, and `C` can modify the value that comes after them so as we iterate through `s`, when one of those three
+    //characters are encountered we peek ahead to see the value of that chracter will be positive or negative so that
+    //`sum` can be updated accordingly. For all other characters we convert them their int partner and add that to `sum`.
+    //Once all values have been converted we return `sum`.
+    func romanToInt3(_ s: String) -> Int {
+        let mapping: [Character: Int] = [
+            "I": 1,
+            "V": 5,
+            "X": 10,
+            "L": 50,
+            "C": 100,
+            "D": 500,
+            "M": 1000
+        ]
+        
+        let chars = Array(s) //O(n)
+        var sum = 0
+        var p1 = 0
+
+        while p1 < chars.count {
+            if chars[p1] == "I" {
+                let val = mapping[chars[p1]]!
+                p1 += 1
+                if p1 < chars.count && (chars[p1] == "V" || chars[p1] == "X") {
+                    sum -= val
+                } else {
+                    sum += val
+                }
+            } else if chars[p1] == "X" {
+                let val = mapping[chars[p1]]!
+                p1 += 1
+                if p1 < chars.count && (chars[p1] == "L" || chars[p1] == "C" ) {
+                    sum -= val
+                } else {
+                    sum += val
+                }
+            } else if chars[p1] == "C" {
+                let val = mapping[chars[p1]]!
+                p1 += 1
+                if p1 < chars.count && (chars[p1] == "D" || chars[p1] == "M") {
+                    sum -= val
+                } else {
+                    sum += val
+                }
+            } else {
+                sum += mapping[chars[p1]]!
+
+                p1 += 1
+            }
+        }
+
+        return sum
+    }
 }
