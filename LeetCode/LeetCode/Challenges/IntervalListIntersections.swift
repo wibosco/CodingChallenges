@@ -65,7 +65,8 @@ struct IntervalListIntersections {
             let firstEnd = firstList[p1][1]
             let secondStart = secondList[p2][0]
             let secondEnd = secondList[p2][1]
-
+            
+            //make sure the intervals overlap
             if firstStart >= secondStart && firstStart <= secondEnd {
                 //first overlaps second
                 if firstEnd >= secondEnd {
@@ -77,6 +78,7 @@ struct IntervalListIntersections {
 
                     p1 += 1
                 }
+            //make sure the intervals overlap
             } else if secondStart >= firstStart && secondStart <= firstEnd {
                 //second overlaps first
                 if secondEnd >= firstEnd {

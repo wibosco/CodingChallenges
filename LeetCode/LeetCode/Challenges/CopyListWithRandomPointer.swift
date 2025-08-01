@@ -9,11 +9,11 @@
 import Foundation
 
 //https://leetcode.com/problems/copy-list-with-random-pointer/
-//linked list
 struct CopyListWithRandomPointer {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(n) where n is the number of nodes in the list
+    //linked list
     //recursive
     //DFS
     //
@@ -56,6 +56,7 @@ struct CopyListWithRandomPointer {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(n) where n is the number of nodes in the list
+    //linked list
     //dictionary
     //
     //Solution Description:
@@ -63,7 +64,7 @@ struct CopyListWithRandomPointer {
     //key, if this isn't the first time through we add `originalCopy` as the `next` property of the previous copy, if the
     //original node has a random node then we also create this node and add it to the dictionary. Once all copies have been
     //made we use the `head` node to return its copy
-    func copyRandomListDictionary(_ head: ListNodeRandom?) -> ListNodeRandom? {
+    func copyRandomList2(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil
         }
@@ -94,14 +95,16 @@ struct CopyListWithRandomPointer {
     
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(n) where n is the number of nodes in the list
+    //linked list
     //dictionary
+    //two passes
     //
     //Solution Description:
     //First we iterate through the linked list storing a copy each node into a dictionary with the original node being used
     //as the key (without attempting to set the `next` or `random` properties). Next we iterate through the original list
     //again, this time setting the `next` and `random` properties. Once all copies have been made we use the `head` node to
-    //return its copy
-    func copyRandomListDictionaryMultiplePass(_ head: ListNodeRandom?) -> ListNodeRandom? {
+    //return its copy.
+    func copyRandomList3(_ head: ListNodeRandom?) -> ListNodeRandom? {
         guard let head = head else {
             return nil
         }

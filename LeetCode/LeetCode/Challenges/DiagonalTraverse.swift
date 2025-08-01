@@ -9,12 +9,14 @@
 import Foundation
 
 //https://leetcode.com/problems/diagonal-traverse/
-//matrix
 struct DiagonalTraverse {
     
     //Time: O(m * n) where m is number of rows and n the number of columns
     //Space: O(1)
+    //matrix
+    //array
     //path finding
+    //two pointers
     //
     //Solution Description:
     //Walk the diagonals in the matrix, moving between row and column as necessary.
@@ -39,7 +41,7 @@ struct DiagonalTraverse {
                     r -= 1
                     c += 1
                 }
-            } else { // downloads
+            } else { // downwards
                 if r == (rowCount - 1) { //change direction - move right onto the next column
                     c += 1 // end of rows, move right onto start of upwards diagonal
                 } else if c == 0 { //change direction - move down into the next row
@@ -56,7 +58,10 @@ struct DiagonalTraverse {
     
     //Time: O(m * n) where m is number of rows and n the number of columns
     //Space: O(m * n) where m is number of rows and n the number of columns
+    //matrix
+    //array
     //dictionary
+    //math
     //
     //Solution Description:
     //If two elements are on the same diagonal then (r1 - c1) == (r2 - c2). Using this we can iterate through the matrix and sum
@@ -87,7 +92,7 @@ struct DiagonalTraverse {
                 for element in elements.reversed() {
                     order.append(element)
                 }
-            } else { //downloads
+            } else { //downwards
                 order.append(contentsOf: diagonals[key]!)
             }
         }

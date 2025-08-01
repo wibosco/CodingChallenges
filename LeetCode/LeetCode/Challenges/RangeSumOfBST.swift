@@ -58,6 +58,7 @@ struct RangeSumOfBST {
     //binary search tree
     //DFS
     //recursive
+    //inout
     //pre-order
     //
     //Solution Description:
@@ -118,6 +119,33 @@ struct RangeSumOfBST {
             }
         }
         
+        return sum
+    }
+    
+    //Time: O(n) where n the number of nodes in the tree
+    //Space: O(h) where h is the height of the tree
+    //binary tree
+    //binary search tree
+    //DFS
+    //recusive
+    //bottom up
+    //
+    //Solution Description:
+    //Using DFS to recursively traverse the tree to each leaf. Once a leaf is enocunter the recursive stack starts
+    //to unwind we check if the current nodes value is between `low` and `high` we add that value to the values
+    //returned from the left and right banches. This combined value is returned. We repeat this process until the
+    //stack has unwinded and can return the final summed value.
+    func rangeSumBST4(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
+        guard let root else {
+            return 0
+        }
+
+        let left = rangeSumBST(root.left, low, high)
+        let right = rangeSumBST(root.right, low, high)
+
+        let val = root.val >= low && root.val <= high ? root.val : 0
+        let sum = left + right + val
+
         return sum
     }
 }
