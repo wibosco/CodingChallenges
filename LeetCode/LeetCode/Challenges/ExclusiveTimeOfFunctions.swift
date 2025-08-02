@@ -11,6 +11,47 @@ import Foundation
 struct ExclusiveTimeOfFunctions {
     
     //Time: O(n) where n is the number of elements in `logs`
+    //Space: O(n)
+    //stack
+    //array
+    //
+    //Solution Description:
+    //A functions execution can be split by multiple functions inbetween so calculating the execution time isn't as simple as
+    //substracting the start time from the end time as those unbetween functions effectively "pause" the current function.
+    //Using a stack we can store the start logs in the order they appear. Once we encounter an end log we pop the top log from
+    //`stack` (this will be in the starting log of the end log) as calculate the difference between the two timestamps before
+    //adding to the value in `times`. It's important to note that the value in `time` might not be 0 because as we the process
+    //the current end log we also adjust the time value of the wrapping function to remove the time that the wrapped function
+    //was "paused". Once all logs have been processed we return `times`.
+    func exclusiveTime(_ n: Int, _ logs: [String]) -> [Int] {
+        var times = Array(repeating: 0, count: n)
+        var stack = [(Int, Int)]() //(fid, timestamp)
+        
+        for log in logs {
+            let components = log.components(separatedBy: ":")
+            let fid = Int(components[0])!
+            let type = components[1]
+            let timestamp = Int(components[2])!
+
+            if type == "start" {
+                stack.append((fid, timestamp))
+            } else {
+                //last element in `stack` is should be the start log of the current log
+                let (_, startTimestamp) = stack.removeLast()
+                let executionTime = (startTimestamp...timestamp).count
+                times[fid] += executionTime
+
+                if let (wrappingFid, _) = stack.last {
+                    //adjust time excuting of function that wrapped the current one
+                    times[wrappingFid] -= executionTime
+                }
+            }
+        }
+
+        return times
+    }
+    
+    //Time: O(n) where n is the number of elements in `logs`
     //Space: O(n) where n is the number of elements in `logs` (actually O(n/2))
     //array
     //stack
@@ -35,7 +76,7 @@ struct ExclusiveTimeOfFunctions {
     //
     //NB. Really important to spot that when a process ends it takes the full second to end so actually it ends on the next
     //second
-    func exclusiveTime(_ n: Int, _ logs: [String]) -> [Int] {
+    func exclusiveTime2(_ n: Int, _ logs: [String]) -> [Int] {
         var stack = [Log]()
         var times = Array(repeating: 0, count: n)
         
@@ -91,57 +132,5 @@ struct ExclusiveTimeOfFunctions {
         let log = Log(functionID: functionID, type: type, timestamp: timestamp)
         
         return log
-    }
-    
-    //Time: O(n) where n is the number of elements in `logs`
-    //Space: O(n)
-    //stack
-    //array
-    //
-    //Solution Description:
-    //A functions execution can be split by multiple functions inbetween so calculating the execution time isn't as simple as
-    //substracting the start time from the end time as those unbetween functions effectively "pause" the current function.
-    //Using a stack we can store the start logs in the order they appear. Once we encounter an end log we pop the top log from
-    //`stack` (this will be in the starting log of the end log) as calculate the difference between the two timestamps before
-    //adding to the value in `times`. It's important to note that the value in `time` might not be 0 because as we the process
-    //the current end log we also adjust the time value of the wrapping function to remove the time that the wrapped function
-    //was "paused". Once all logs have been processed we return `times`.
-    func exclusiveTime2(_ n: Int, _ logs: [String]) -> [Int] {
-        var times = Array(repeating: 0, count: n)
-        var stack = [(Int, String, Int)]()
-        
-        var i = 0
-
-        while i < logs.count {
-            let log = logs[i]
-            let (id, type, timestamp) = splitLog(log)
-
-            if type == "start" {
-                stack.append((id, type, timestamp))
-            } else {
-                //last element in `stack` is should be the start log of the current log
-                let (_, _, prevTimestamp) = stack.removeLast()
-                let diff = timestamp - prevTimestamp + 1 //+1 as the execution takes the current second to finish
-                times[id] += diff
-
-                if let (wrappingId, _, _) = stack.last {
-                    //adjust time excuting of function that wrapped the current one
-                    times[wrappingId] -= diff
-                }
-            }
-
-            i += 1
-        }
-
-        return times
-    }
-
-    private func splitLog(_ log: String) -> (Int, String, Int) {
-        let components = log.components(separatedBy: ":")
-        let id = Int(components[0])!
-        let type = components[1]
-        let timestamp = Int(components[2])!
-
-        return (id, type, timestamp)
     }
 }

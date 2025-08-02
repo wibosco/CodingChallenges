@@ -16,6 +16,7 @@ struct BinaryTreeLevelOrderTraversal {
     //binary tree
     //iterative
     //BFS
+    //level traversal
     //
     //Solution Description:
     //Using BFS we traverse the tree level by level and add each node that we encounter to `levels`.

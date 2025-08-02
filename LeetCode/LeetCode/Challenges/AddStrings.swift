@@ -51,9 +51,9 @@ struct AddStrings {
             
             let sum = n1Val + n2Val + carry
             
-            carry = sum / 10
+            carry = sum / 10 //ignore the units column
             
-            let val = String("\((sum % 10))")
+            let val = String("\((sum % 10))") //ignore the tens column
             result = val + result
         }
         
