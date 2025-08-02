@@ -66,4 +66,38 @@ struct RemoveDuplicatesFromSortedArray {
         
         return slow
     }
+    
+    //Time: O(n) where n is the number of elements of in `nums`
+    //Space: O(1)
+    //array
+    //two pointers
+    //sorted
+    //inline
+    //
+    //Solution Description:
+    //Using two pointers we override duplicates with the next non-duplicate value. As this array is sorted we know that an
+    //duplicates will come directly after a value. By using two pointers we keep the `p1` pointer on the edge of our
+    //non-duplicates array while the `p2` pointer skims over any duplicates. Once a non-duplicate is found we move that
+    //non-duplicate into the non-duplicates side of the array and move the non-duplicates boundary forward by one. We
+    //repeat this process until all non-duplicate values have been moved. `p1` is then at the edge of the non-duplicate
+    //elements and can be returned as the count.
+    func removeDuplicates2(_ nums: inout [Int]) -> Int {
+        var p1 = 0
+        var p2 = 1
+        
+        while p2 < nums.count {
+            //we don't fast forward to avoid having check that p2 is valid when overrding below
+            guard nums[p1] != nums[p2] else {
+                p2 += 1
+                continue
+            }
+
+            nums[(p1 + 1)] = nums[p2]
+
+            p1 += 1
+            p2 += 1
+        }
+
+        return (p1 + 1)
+    }
 }

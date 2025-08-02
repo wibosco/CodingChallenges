@@ -50,13 +50,13 @@ struct RemoveNthNodeFromEndOfList {
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
     //linked list
-    //2 passes
+    //two passes
     //
     //Solution Description:
     //Iterating through the list we first count how many nodes are in the list and determine what the `nth` node would be. We then
     //iterate back through the list until we get the to the `nth - 1` node and then assign that `next` property of that node to the
     //`nth + 1` node so removing the `nth` node from list.
-    func removeNthFromEnd2Passes(_ head: ListNode?, _ n: Int) -> ListNode? {
+    func removeNthFromEnd2(_ head: ListNode?, _ n: Int) -> ListNode? {
         guard let head = head else {
             return nil
         }
@@ -98,7 +98,7 @@ struct RemoveNthNodeFromEndOfList {
     //Iterate through the list storing each node in an array (in the order we encounter them in). Next work out which index in `nodes`
     //is `Nth from end` and repoint the node `Nth - 1` to point to the `Nth + 1` node. Special care needs to be taken if the `Nth from
     //end` node is the head - in which case we don't need to repoint and can just return `head.next` as the new list head.
-    func removeNthFromEndArray(_ head: ListNode?, _ n: Int) -> ListNode? {
+    func removeNthFromEnd3(_ head: ListNode?, _ n: Int) -> ListNode? {
         var nodes = [ListNode]()
         
         var tail = head
