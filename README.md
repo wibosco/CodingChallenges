@@ -42,7 +42,7 @@ A collection of coding challenges and their solutions from:
 | "Iterating array comparing elements" | `Stack` |
 | "Next smaller element", "Previous smaller element" | `Monotonic increasing stack` |
 | "Next greater element", "Previous greater element" | `Monotonic decreasing stack` |
-| "Longest subsequence", "Smallest subsequence", "Maximum", "Minimum", "Neighbors"| `Sliding window`|
+| "Longest subsequence", "Smallest subsequence", "Maximum", "Minimum", "Neighbors", "The maximum number of consecutive"| `Sliding window`|
 | "Subsequence in a graph" | `Memoization`, `Backtracking (DFS)` |
 | "In-place" | `Swap`|
 | "Loop/cycle in a linked list"| `Slow and Fast pointers i.e. Hare and Tortoise`|
