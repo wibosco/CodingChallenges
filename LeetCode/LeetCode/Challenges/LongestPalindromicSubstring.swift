@@ -126,6 +126,7 @@ struct LongestPalindromicSubstring {
     
     //Time: O(n^3) where n is the number of characters in `s`. n to check if a string is a palindrome and n^2 to generate all combinations
     //string
+    //two pointers
     //
     //Solution Description:
     //Brute force generate all possible in-order combinations of the characters in `s` by iterating through `s` forwards and comparing it
