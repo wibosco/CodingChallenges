@@ -85,19 +85,18 @@ struct SearchInRotatedSortedArray {
     //than right then we know that pivot is in right part of the subarray i.e. right part isn't sorted, so we compare the target
     //against the sorted left array and adjust boundaries appropriately - reducing the search space by half; if mid is less then
     //we do the opposite. Eventually we either find the target in the array or after we have exhausted the search space we return
-    //-1
+    //-1.
     func searchOneLoop(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
-        
-        //find pivot and perform search
+    
         while left <= right {
             let mid = left + (right - left) / 2
             
             if target == nums[mid] {
                 return mid
             } else if nums[mid] > nums[right] {
-                //pivot is somewhere to the right of mid
+                //we know that left...mid is sorted so search there i.e. pivot is somewhere to the right of mid
                 if target >= nums[left] && target <= nums[mid] {
                     //search left
                     right = mid - 1
@@ -106,7 +105,7 @@ struct SearchInRotatedSortedArray {
                     left = mid + 1
                 }
             } else {
-                //pivot is somewhere to the left of mid
+                //we know that mid...right is sorted so search there i.e. pivot is somewhere to the left of mid
                 if target >= nums[mid] && target <= nums[right] {
                     //search right
                     left = mid + 1
