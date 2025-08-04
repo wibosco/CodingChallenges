@@ -1092,6 +1092,8 @@
 		43D24C302C85089600CC83B6 /* CheckIfStringIsAPrefixOfArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D24C2F2C85089600CC83B6 /* CheckIfStringIsAPrefixOfArrayTests.swift */; };
 		43D28E1D2DEA4A2800DEC600 /* IntervalListIntersections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D28E1C2DEA4A2800DEC600 /* IntervalListIntersections.swift */; };
 		43D28E1F2DEA4A7A00DEC600 /* IntervalListIntersectionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D28E1E2DEA4A7A00DEC600 /* IntervalListIntersectionsTest.swift */; };
+		43D2910A2E40F01C00BE8FC2 /* FourSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D291092E40F01C00BE8FC2 /* FourSum.swift */; };
+		43D2910C2E40F05600BE8FC2 /* FourSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2910B2E40F05600BE8FC2 /* FourSumTests.swift */; };
 		43D3C1B02B29E988000DFBFC /* BinaryTreeColoringGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D3C1AF2B29E988000DFBFC /* BinaryTreeColoringGame.swift */; };
 		43D3C1B22B29E9B7000DFBFC /* BinaryTreeColoringGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D3C1B12B29E9B7000DFBFC /* BinaryTreeColoringGameTests.swift */; };
 		43D3C1B42B29FB6A000DFBFC /* StepByStepDirectionsFromABinaryTreeNodeToAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D3C1B32B29FB6A000DFBFC /* StepByStepDirectionsFromABinaryTreeNodeToAnother.swift */; };
@@ -2271,6 +2273,8 @@
 		43D24C2F2C85089600CC83B6 /* CheckIfStringIsAPrefixOfArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfStringIsAPrefixOfArrayTests.swift; sourceTree = "<group>"; };
 		43D28E1C2DEA4A2800DEC600 /* IntervalListIntersections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalListIntersections.swift; sourceTree = "<group>"; };
 		43D28E1E2DEA4A7A00DEC600 /* IntervalListIntersectionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalListIntersectionsTest.swift; sourceTree = "<group>"; };
+		43D291092E40F01C00BE8FC2 /* FourSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSum.swift; sourceTree = "<group>"; };
+		43D2910B2E40F05600BE8FC2 /* FourSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSumTests.swift; sourceTree = "<group>"; };
 		43D3C1AF2B29E988000DFBFC /* BinaryTreeColoringGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeColoringGame.swift; sourceTree = "<group>"; };
 		43D3C1B12B29E9B7000DFBFC /* BinaryTreeColoringGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeColoringGameTests.swift; sourceTree = "<group>"; };
 		43D3C1B32B29FB6A000DFBFC /* StepByStepDirectionsFromABinaryTreeNodeToAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepDirectionsFromABinaryTreeNodeToAnother.swift; sourceTree = "<group>"; };
@@ -2628,6 +2632,7 @@
 				4399104A2B07CF680020E9CC /* FlipEquivalentBinaryTrees.swift */,
 				43CA0FB32C107236004D7740 /* FlippingAnImage.swift */,
 				3D5C913B27A7F7630035C399 /* FloodFill.swift */,
+				43D291092E40F01C00BE8FC2 /* FourSum.swift */,
 				43C039F72A691F78007E29EB /* FrequencyOfTheMostFrequentElement.swift */,
 				43E175EC2A701BB200798BE4 /* FruitIntoBaskets.swift */,
 				3D1D0C8228064541006DA350 /* GameOfLife.swift */,
@@ -3212,6 +3217,7 @@
 				4399104C2B07CF920020E9CC /* FlipEquivalentBinaryTreesTests.swift */,
 				43CA0FB52C107282004D7740 /* FlippingAnImageTests.swift */,
 				3D5C921A27A7F76B0035C399 /* FloodFillTests.swift */,
+				43D2910B2E40F05600BE8FC2 /* FourSumTests.swift */,
 				43C039F92A691FA3007E29EB /* FrequencyOfTheMostFrequentElementTests.swift */,
 				43E175EE2A701BE300798BE4 /* FruitIntoBasketsTests.swift */,
 				3D1D0C84280645C7006DA350 /* GameOfLifeTests.swift */,
@@ -4189,6 +4195,7 @@
 				437B65C72AFADC3A009A0594 /* EliminateMaximumNumberOfMonsters.swift in Sources */,
 				3D5C91EE27A7F7630035C399 /* SameTree.swift in Sources */,
 				43495F672B22033B0037FEA7 /* PseudoPalindromicPathsInABinaryTree.swift in Sources */,
+				43D2910A2E40F01C00BE8FC2 /* FourSum.swift in Sources */,
 				435B70AC2B051394003D51CA /* ReverseOddLevelsOfBinaryTree.swift in Sources */,
 				3D42A47127F5E6C200687F75 /* ContainsDuplicateII.swift in Sources */,
 				43EF3C252AFC431C0085445E /* CountCompleteTreeNodes.swift in Sources */,
@@ -4499,6 +4506,7 @@
 				438EBCB52AEFE44A007083B7 /* AsFarFromLandAsPossibleTests.swift in Sources */,
 				3D5C92E627A7F76C0035C399 /* RemoveNthNodeFromEndOfListTests.swift in Sources */,
 				3D5C92AC27A7F76C0035C399 /* ValidSudokuTests.swift in Sources */,
+				43D2910C2E40F05600BE8FC2 /* FourSumTests.swift in Sources */,
 				3D30553727C6333400294BC7 /* CombinationSumTests.swift in Sources */,
 				436634AA2AFE7CEF0087F13F /* LeafSimilarTreesTests.swift in Sources */,
 				43F7AF462A7D3B38007932E9 /* SwappingNodesInALinkedListTests.swift in Sources */,
