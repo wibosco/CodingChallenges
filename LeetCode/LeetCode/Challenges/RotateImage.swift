@@ -73,17 +73,34 @@ struct RotateImage {
     //When rotating a matrix by 90 degrees we are really rotating 4 cells together i.e. A moves to B, B moves to C, C moves
     //to D and D moves to A. So in order to rotate we need to group cells into 4 and rotate each cell onto the other cells
     //current location.
-    func rotateMath(_ matrix: inout [[Int]]) {
-        let count = matrix.count
-        
-        for i in 0..<((count + 1) / 2) {
-            for j in 0..<(count / 2) {
-                let tmp = matrix[(count - 1 - j)][i]
-                matrix[(count - 1 - j)][i] = matrix[(count - 1 - i)][(count - j - 1)]
-                matrix[(count - 1 - i)][(count - j - 1)] = matrix[j][(count - 1 - i)]
-                matrix[j][(count - 1 - i)] = matrix[i][j]
-                matrix[i][j] = tmp
+    func rotate2(_ matrix: inout [[Int]]) {
+        var left = 0
+        var right = matrix.count - 1
+
+        while left < right {
+            //i is the row and column offset too allow for grdually moving inwards
+            for i in 0..<(right - left) {
+                let top = left
+                let bottom = right
+                
+                //save top left
+                let tmp = matrix[top][left + i] //first cell to be overwritten
+                
+                //move bottom left into top left
+                matrix[top][left + i] = matrix[bottom - i][left]
+                
+                //move bottom right into bottom left
+                matrix[bottom - i][left] = matrix[bottom][right - i]
+                
+                //move top right bottom right
+                matrix[bottom][right - i] = matrix[top + i][right]
+                
+                //move top left into top right
+                matrix[top + i][right] = tmp
             }
+            
+            left += 1
+            right -= 1
         }
     }
     
@@ -102,7 +119,7 @@ struct RotateImage {
     //compare against `target` and if they match we return true else we repeat the process.
     //
     //Similar to: https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
-    func rotateExtraStorage(_ matrix: inout [[Int]]) {
+    func rotate3(_ matrix: inout [[Int]]) {
         var matrix2 = Array(repeating: [Int](), count: matrix.count)
         
         for r in 0..<matrix.count {
