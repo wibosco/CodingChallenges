@@ -118,7 +118,7 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
     //match we continue on by incrementing both pointers and repeat the process; If the characters at those indexes don't
     //match we return and the outer loops moves onto the next index of `characters`. If we reach the end of `characters`
     //without finding `target` then we return -1.
-    func strStrNestedLoops(_ haystack: String, _ needle: String) -> Int {
+    func strStr2(_ haystack: String, _ needle: String) -> Int {
         let characters = Array(haystack)
         let target = Array(needle)
         
@@ -130,7 +130,7 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
         let upperBounds = (characters.count - target.count)
         
         for i in 0...upperBounds {
-            if same(characters, target: target, i) {
+            if same(characters, target, i) {
                 return i
             }
         }
@@ -138,7 +138,7 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
         return -1
     }
     
-    private func same(_ characters: [Character], target: [Character], _ start: Int) -> Bool {
+    private func same(_ characters: [Character], _ target: [Character], _ start: Int) -> Bool {
         var p1 = 0
         var p2 = start
         
@@ -152,5 +152,49 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
         }
         
         return true
+    }
+    
+    //Time: O(n * m) where n is the number of characters in `haystack`
+    //               where m is the number of characters in `needle`
+    //Space: O(1)
+    //array
+    //string
+    //two pointers
+    //fast forward
+    //
+    //Solution Description:
+    //We iterate throught `haystack` and compare each character encountered to the first character of `needle`. If they match
+    //we to loop through both `haystack` and `needle` comparing each character against it's counterpart using two new
+    //pointers - `p2` and `p3`. We create new pointers so that if this is a false start we can return to where we where so
+    //ensuring that we don't miss any potential other `needle` instances. If the inner loop matches all the way to the end of
+    //`needle` we return the outer pointer `p1` (as this is the start of `needle`); if the inner loop doesn't match all the
+    //way to the end of `needle` we reset `p2` back to 0 and continue the outer loop. If after iterating through all
+    //characters in `haystack` we haven't found `needle`, we return -1.
+    func strStr3(_ haystack: String, _ needle: String) -> Int {
+        let haystack = Array(haystack)
+        let needle = Array(needle)
+
+        var p1 = 0
+        var p2 = 0
+
+        while p1 < haystack.count {
+            if haystack[p1] == needle[p2] {
+                var p3 = p1
+                while p3 < haystack.count, p2 < needle.count, haystack[p3] == needle[p2] {
+                    p3 += 1
+                    p2 += 1
+                }
+
+                if p2 == needle.count {
+                    return p1
+                } else {
+                    p2 = 0
+                }
+            }
+
+            p1 += 1
+        }
+
+        return -1
     }
 }
