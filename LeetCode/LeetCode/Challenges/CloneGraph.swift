@@ -26,8 +26,8 @@ struct CloneGraph {
             return nil
         }
         
-        var copiedVertices = [GraphVertice: GraphVertice]()
-        copiedVertices[vertice] = GraphVertice(vertice.val)
+        var copies = [GraphVertice: GraphVertice]()
+        copies[vertice] = GraphVertice(vertice.val)
         
         var queue = [vertice]
         
@@ -35,14 +35,14 @@ struct CloneGraph {
             var newQueueItems = [GraphVertice]()
             
             for v in queue {
-                let copy = copiedVertices[v]
+                let copy = copies[v]
                 
                 for neighbor in v.neighbors {
-                    if let copiedNeighbor = copiedVertices[neighbor] {
+                    if let copiedNeighbor = copies[neighbor] {
                         copy?.neighbors.append(copiedNeighbor)
                     } else {
                         let copiedNeighbor = GraphVertice(neighbor.val)
-                        copiedVertices[neighbor] = copiedNeighbor
+                        copies[neighbor] = copiedNeighbor
                         copy?.neighbors.append(copiedNeighbor)
                         
                         newQueueItems.append(neighbor)
@@ -53,7 +53,7 @@ struct CloneGraph {
             }
         }
         
-        return copiedVertices[vertice]
+        return copies[vertice]
     }
     
     //Time: O(n + e) where n is the number of vertice
@@ -62,18 +62,20 @@ struct CloneGraph {
     //graph theory
     //BFS
     //dictionary
+    //two pass
+    //visited
     //
     //Solution Description:
     //Traverse the graph using BFS to make an initial copy all of the vertices and store those copies in the `copiedVertices`
     //dictionary - this pass doesn't include connecting vertices together. A second pass is then made that associates the
     //vertices with their neighbors.
-    func cloneGraphBFS(_ node: GraphVertice?) -> GraphVertice? {
+    func cloneGraph2(_ node: GraphVertice?) -> GraphVertice? {
         guard let vertice = node else {
             return nil
         }
         
-        var copiedVertices = [GraphVertice: GraphVertice]()
-        copiedVertices[vertice] = GraphVertice(vertice.val)
+        var copies = [GraphVertice: GraphVertice]()
+        copies[vertice] = GraphVertice(vertice.val)
         
         var queue = [vertice]
         var visited = Set<GraphVertice>()
@@ -88,7 +90,7 @@ struct CloneGraph {
                         continue
                     }
 
-                    copiedVertices[neighbor] = GraphVertice(neighbor.val)
+                    copies[neighbor] = GraphVertice(neighbor.val)
                     
                     newQueueItems.append(neighbor)
                     visited.insert(neighbor)
@@ -98,14 +100,14 @@ struct CloneGraph {
             queue = newQueueItems
         }
         
-        for v in copiedVertices.keys {
+        for v in copies.keys {
             for neighbor in v.neighbors {
-                let copy = copiedVertices[v]
-                copy?.neighbors.append(copiedVertices[neighbor]!)
+                let copy = copies[v]
+                copy?.neighbors.append(copies[neighbor]!)
             }
         }
         
-        return copiedVertices[vertice]
+        return copies[vertice]
     }
     
     //Time: O(n + e) where n is the number of vertices
@@ -114,33 +116,37 @@ struct CloneGraph {
     //graph theory
     //DFS
     //recursive
+    //dictionary
+    //inout
+    //bottom up
     //
     //Solution Description:
     //Perform a recursive DFS search through the graph, making a copy when we encounter an unvisited vertice and using the
     //original vertice to build that copies neighbor list. If we have already copied a vertice that we encounter (i.e. a
     //later vertice that has been previously copied vertice as a neighbor) then we return it straight away.
-    func cloneGraphDFS(_ node: GraphVertice?) -> GraphVertice? {
+    func cloneGraph3(_ node: GraphVertice?) -> GraphVertice? {
         guard let vertice = node else {
             return nil
         }
 
-        var copiedVertices = [GraphVertice: GraphVertice]()
-        deepCopy(curr: vertice, vertices: &copiedVertices)
+        var copies = [GraphVertice: GraphVertice]()
+        deepCopy(vertice, &copies)
 
-        return copiedVertices[vertice]!
+        return copies[vertice]!
     }
 
     @discardableResult
-    private func deepCopy(curr: GraphVertice, vertices: inout [GraphVertice: GraphVertice]) -> GraphVertice {
-        guard vertices[curr] == nil else {
-            return vertices[curr]!
+    private func deepCopy(_ curr: GraphVertice, _ copies: inout [GraphVertice: GraphVertice]) -> GraphVertice {
+        guard copies[curr] == nil else {
+            return copies[curr]!
         }
 
         let copy = GraphVertice(curr.val)
-        vertices[curr] = copy
+        copies[curr] = copy
 
         for neighbor in curr.neighbors {
-            copy.neighbors.append(deepCopy(curr: neighbor, vertices: &vertices))
+            let neighborCopy = deepCopy(neighbor, &copies)
+            copy.neighbors.append(neighborCopy)
         }
 
         return copy
@@ -153,25 +159,27 @@ struct CloneGraph {
     //DFS
     //recursive
     //dictionary
+    //two pass
+    //visited
     //
     //Solution Description:
     //Traverse the graph using DFS to make an initial copy all of the vertices and store those copies in the `copiedVertices`
     //dictionary - this pass doesn't include connecting vertices together. A second pass is then made that associates the
     //vertices with their neighbors.
-    func cloneGraphMultiplePasses(_ node: GraphVertice?) -> GraphVertice? {
+    func cloneGraph4(_ node: GraphVertice?) -> GraphVertice? {
         guard let vertice = node else {
             return nil
         }
         
-        var vertices = [GraphVertice: GraphVertice]()
+        var copies = [GraphVertice: GraphVertice]()
         var visited = Set<GraphVertice>()
-        deepCopy(curr: vertice, vertices: &vertices, visited: &visited)
-        connectNeighbors(vertices: vertices)
+        deepCopy(vertice, &copies, &visited)
+        connectNeighbors(copies)
         
-        return vertices[vertice]! //return copy of vertice passed in
+        return copies[vertice]! //return copy of vertice passed in
     }
     
-    private func deepCopy(curr: GraphVertice, vertices: inout [GraphVertice: GraphVertice], visited: inout Set<GraphVertice>) {
+    private func deepCopy(_ curr: GraphVertice, _ copies: inout [GraphVertice: GraphVertice], _ visited: inout Set<GraphVertice>) {
         guard !visited.contains(curr) else {
             return
         }
@@ -179,17 +187,17 @@ struct CloneGraph {
         visited.insert(curr)
         
         let copy = GraphVertice(curr.val)
-        vertices[curr] = copy
+        copies[curr] = copy
         
         for neighbor in curr.neighbors {
-            deepCopy(curr: neighbor, vertices: &vertices, visited: &visited)
+            deepCopy(neighbor, &copies, &visited)
         }
     }
     
-    private func connectNeighbors(vertices: [GraphVertice: GraphVertice]) {
-        for (original, copy) in vertices {
+    private func connectNeighbors(_ copies: [GraphVertice: GraphVertice]) {
+        for (original, copy) in copies {
             for originalNeighbor in original.neighbors {
-                let copiedNeighbor = vertices[originalNeighbor]!
+                let copiedNeighbor = copies[originalNeighbor]!
                 copy.neighbors.append(copiedNeighbor)
             }
         }
