@@ -18,56 +18,71 @@ struct LongestSubstringWithoutRepeatingCharacters {
     //
     //Solution Description:
     //Using a dictionary `map` to store the characters we have already seen, we iterate through `s`. As we iterate through we keep
-    //track of the start of our non-repeating subarray - `currentStartIndex`. For each character we encounter we check if we have
-    //already seen the current character in the current on-repeating subarray i.e. from `currentStartIndex...i`. If we have seen
-    //that character we set the `currentStartIndex` to be the index after that previous version of the the current character (it
-    //must the index after so as to exclude the repeat). We then calculate the length of the current non-repeating characters and
-    //compare it with our all time longest. If it's longer we replace it.
+    //track of the start of our non-repeating subarray - `left`. For each character we encounter we check if we have already seen
+    //the current character in the current on-repeating subarray i.e. from `left...right`. If we have seen that character we set
+    //the `left` to be the index after that previous version of the the current character (it must the index after so as to exclude
+    //the repeat). We then calculate the length of the current non-repeating characters and compare it with our all time longest.
+    //If it's longer we replace it. Once all characters have been checked we return `longest`.
     //
-    //N.B. This solution is sufficiently quicker when using a Character array rather than a string index
+    //N.B. There is no need to "cleanup" `map` as we can just exclude those entries in `map` that fall outside of the window.
     func lengthOfLongestSubstring(_ s: String) -> Int {
-        var longestLength = 0
-        var currentStartIndex = 0
-        
-        var map = [Character: Int]() //[char: index]
-        
-        for (i, c) in s.enumerated() {
-            if let j = map[c], j >= currentStartIndex {
-                currentStartIndex = j + 1
+        let chars = Array(s)
+        var map = [Character: Int]()
+
+        var left = 0
+        var right = 0
+        var longest = 0
+
+        while right < chars.count {
+            let c = chars[right]
+            if let index = map[c], index >= left { //only care about indexes that come after the start of the window
+                left = index + 1
             }
-            
-            map[c] = i //we only care about the latest version of `c`
-            
-            let currentLength = (i + 1) - currentStartIndex
-            longestLength = max(longestLength, currentLength)
+
+            map[c] = right
+            longest = max(longest, (right - left + 1))
+
+            right += 1
         }
-        
-        return longestLength
+
+        return longest
     }
     
     //Time: O(n) where n is the characters in `s`
     //Space: O(n) where n is the characters in `s`
     //string
+    //sliding window
     //
     //Solution Description:
-    //N.B. This solution is sufficiently slower due to `let char = s[s.index(s.startIndex, offsetBy: index)]`
+    //Using a dictionary `map` to store the characters we have already seen, we iterate through `s`. As we iterate through we keep
+    //track of the start of our non-repeating subarray - `left`. For each character we encounter we check if we have already seen
+    //the current character in the current on-repeating subarray i.e. from `left...right`. If we have seen that character we set
+    //the `left` to be the index after that previous version of the the current character (it must the index after so as to exclude
+    //the repeat). We then calculate the length of the current non-repeating characters and compare it with our all time longest.
+    //If it's longer we replace it. Once all characters have been checked we return `longest`.
     func lengthOfLongestSubstringAlt(_ s: String) -> Int {
-        var visited = [Character: Int]()
-        var longestNonRepeatingWindow = 0
-        var currentWindowStartIndex = 0
-        
-        for index in 0..<s.count {
-            let char = s[s.index(s.startIndex, offsetBy: index)]
-            if let visitedIndex = visited[char], visitedIndex >= currentWindowStartIndex {
-                currentWindowStartIndex = (visitedIndex + 1)
+        let chars = Array(s)
+        var map = [Character: Int]()
+
+        var left = 0
+        var right = 0
+        var longest = 0
+
+        while right < chars.count {
+            let c = chars[right]
+            if let index = map[c] {
+                for i in left...index { // cleanup map by removing those indexes that are no longer in the window
+                    map[chars[i]] = nil
+                }
+                left = index + 1
             }
-            
-            let currentWindowSize = (index + 1) - currentWindowStartIndex
-            longestNonRepeatingWindow = max(longestNonRepeatingWindow, currentWindowSize)
-            
-            visited[char] = index
+
+            map[c] = right
+            longest = max(longest, (right - left + 1))
+
+            right += 1
         }
-    
-        return longestNonRepeatingWindow
+
+        return longest
     }
 }
