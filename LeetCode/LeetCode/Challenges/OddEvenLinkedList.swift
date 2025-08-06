@@ -79,9 +79,9 @@ struct OddEvenLinkedList {
     //Using effectively two different lists, we move each node into either list as we encounter them. Once all nodes have been
     //sorted we combine the lists with the even list coming after the odd list.
     func oddEvenList3(_ head: ListNode?) -> ListNode? {
-        var oddHead = ListNode(-1)
+        let oddHead = ListNode(-1)
         var oddTail: ListNode? = oddHead
-        var evenHead = ListNode(-1)
+        let evenHead = ListNode(-1)
         var evenTail: ListNode? = evenHead
 
         var tail = head
