@@ -47,7 +47,7 @@ struct OddEvenLinkedList {
     //First we find the tail of the list. Using three pointers (`tail`, `odd` and `even`) we iterate through the list and move the even
     //nodes to the end of the list so that when we move `odd` onto the `tail` node we can exit the loop with all the odd nodes coming
     //before the even nodes.
-    func oddEvenListTail(_ head: ListNode?) -> ListNode? {
+    func oddEvenList2(_ head: ListNode?) -> ListNode? {
         var tail = head
         
         while let next = tail?.next {
@@ -68,5 +68,41 @@ struct OddEvenLinkedList {
         even?.next = nil
         
         return head
+    }
+    
+    //Time: O(n) where n is the number of nodes in the list
+    //Space: O(1)
+    //linked list
+    //sentinel head
+    //
+    //Solution Description:
+    //Using effectively two different lists, we move each node into either list as we encounter them. Once all nodes have been
+    //sorted we combine the lists with the even list coming after the odd list.
+    func oddEvenList3(_ head: ListNode?) -> ListNode? {
+        var oddHead = ListNode(-1)
+        var oddTail: ListNode? = oddHead
+        var evenHead = ListNode(-1)
+        var evenTail: ListNode? = evenHead
+
+        var tail = head
+
+        var count = 1
+        while let t = tail {
+            if count % 2 == 0 {
+                evenTail?.next = t
+                evenTail = evenTail?.next
+            } else {
+                oddTail?.next = t
+                oddTail = oddTail?.next
+            }
+
+            tail = t.next
+            count += 1
+        }
+        
+        evenTail?.next = nil //tidy up
+        oddTail?.next = evenHead.next
+
+        return oddHead.next
     }
 }
