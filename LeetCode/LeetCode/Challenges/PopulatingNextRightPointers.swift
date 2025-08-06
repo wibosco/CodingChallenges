@@ -38,7 +38,6 @@ struct PopulatingNextRightPointers {
         dfs(node.right)
     }
     
-    
     //Time: O(n) where n is the number nodes in the tree
     //Space: O(m) where m is number of nodes at the last level (as it's a perfect tree)
     //binary tree - perfect

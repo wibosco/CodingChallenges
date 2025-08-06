@@ -11,10 +11,9 @@ import Foundation
 //https://leetcode.com/problems/reorder-list/
 struct ReorderList {
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
     //linked list
-    //no additional space
     //
     //Solution Description:
     //First we find the middle of the list and effectively split the list into two lists. Everything from the middle to end
@@ -62,7 +61,7 @@ struct ReorderList {
         //unreversed list
     }
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of nodes in the list
     //Space: O(n)
     //linked list
     //two pointers

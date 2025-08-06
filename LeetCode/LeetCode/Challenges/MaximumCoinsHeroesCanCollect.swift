@@ -15,7 +15,7 @@ struct MaximumCoinsHeroesCanCollect {
     //Space: O(n)
     //array
     //binary search
-    //prefixSum
+    //prefix sum
     //sorting
     //
     //Solution Description:

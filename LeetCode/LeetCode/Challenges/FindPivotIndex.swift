@@ -13,7 +13,6 @@ struct FindPivotIndex {
     //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //array
-    //prefix sum
     //
     //Solution Description:
     //First we calculate the total sum of all elements in `nums` and store that in `rightSum`. We then iterate through `nums`
