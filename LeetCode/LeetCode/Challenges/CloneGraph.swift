@@ -62,7 +62,7 @@ struct CloneGraph {
     //graph theory
     //BFS
     //dictionary
-    //two pass
+    //two passes
     //visited
     //
     //Solution Description:
@@ -159,7 +159,7 @@ struct CloneGraph {
     //DFS
     //recursive
     //dictionary
-    //two pass
+    //two passes
     //visited
     //
     //Solution Description:
