@@ -37,11 +37,50 @@ struct RemoveAllAdjacentDuplicatesInStringII {
             if duplicateCount == k {
                 stack.removeLast((k - 1)) //final duplicate wasn't added to the stack so we need to take one away from `k`
             } else {
+                //no need to remove the previous count as this would just make converting into a string harder by requiring
+                //as to expand on each stack element so that it matches the number of characters matches the count
                 stack.append((c, duplicateCount))
             }
         }
         
         return String(stack.map { $0.0 })
+    }
+    
+    //Time: O(n) where n is the number of characters in `s`
+    //Space: O(n)
+    //string
+    //stack
+    //two pointers
+    //
+    //Solution Description:
+    //As we iterate through `s` we store the characters that we come across in `stack`. If the top of the stack is the same as
+    //the current value of `s` we iterate through the stack to see if there are enough duplicates to justify removing those
+    //duplicates from the stack. If there are enough duplicates we remove them; if there are not enough duplicates we add the
+    //current value to the stack. Once all characters have been processed we return those characters still in the stack.
+    func removeDuplicates2(_ s: String, _ k: Int) -> String {
+        var stack = [Character]()
+        let chars = Array(s)
+
+        for c in chars {
+            if stack.last == c && stack.count >= (k - 1) {
+                var remaining = k - 1
+                var j = stack.count - 1
+                while remaining > 0 && stack[j] == c {
+                    j -= 1
+                    remaining -= 1
+                }
+
+                if remaining == 0 {
+                    stack.removeLast((k - 1))
+                } else {
+                    stack.append(c)
+                }
+            } else {
+                stack.append(c)
+            }
+        }
+
+        return String(stack)
     }
     
     //Time: O(n^2) where n is the number of characters in `s`
@@ -51,10 +90,10 @@ struct RemoveAllAdjacentDuplicatesInStringII {
     //
     //Solution Description:
     //Using a `counts` array we keep track of the duplicate count for the character in `s` that is at the `counts` index.
-    //When a `counts` value equals `k` we remove the duplicate characters in `s` until `k` duplicates are gon, we also
+    //When a `counts` value equals `k` we remove the duplicate characters in `s` until `k` duplicates are gone, we also
     //remove `k` elements from `counts` to keep them in sync. We repeat this process until all of `s` is processed.
     //Special must be taken to reset `i` back to a value before `k` elements where removed.
-    func removeDuplicatesInLine(_ s: String, _ k: Int) -> String {
+    func removeDuplicates3(_ s: String, _ k: Int) -> String {
         var characters = Array(s)
         var counts = [Int]()
         counts.append(1)
