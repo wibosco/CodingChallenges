@@ -21,7 +21,6 @@ struct FruitsIntoBasketsII {
     //unplaced fruit and return that value
     func numOfUnplacedFruits(_ fruits: [Int], _ baskets: [Int]) -> Int {
         var p1 = 0
-        var p2 = 0
 
         var used = Set<Int>()
 

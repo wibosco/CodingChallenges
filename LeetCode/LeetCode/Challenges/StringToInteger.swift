@@ -55,7 +55,7 @@ struct StringToInteger {
                 break
             }
             
-            guard var digit = c.wholeNumberValue else {
+            guard let digit = c.wholeNumberValue else {
                 break
             }
             
