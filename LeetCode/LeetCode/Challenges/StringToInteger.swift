@@ -20,18 +20,16 @@ struct StringToInteger {
     //math
     //
     //Solution Description:
-    //Converting from a string an int comes with strict conditions below we enforce them. First we check for white space at
+    //Converting from a string an int comes with strict conditions, below we enforce them. First we check for white space at
     //the start of the `s` and increment `index` until we find something that isn't white space. Next we check if the
     //character at `index` is a sign ("+" is optional but should be treated as the default if no sign is present). If it is a
     //"+" or "-" we set `sign` to be either `1` or `-1` respectively. Next we iterate through the rest of `s`. First we check
-    //if `c` is a number if so we apply the `sign` to `num`; if not we break and return what `result` contains. Next we check
-    //if adding `num` to `result` will cause and overflow or underflow. For overflow we first check if can shift `result` up
-    //by 10 by checking if it is already greater than `Int32.max / 10` i.e. we shift the Int32.max down. If `result` is
-    //greater than `Int32.max / 10` then any shift by 10 will result in an overflow. We need to be careful on the edge where
-    //`result` is equal to `Int32.max / 10` as we can shift by 10 without an overflow but adding certain `num` values will
-    //still result in an overflow - if adding `digit` would overflow. We repeat this process for `Int32.min` but checking for
-    //underflow. If both checks pass we shift `result` by 10 an add `num`. We repeat this process until we reach the end of
-    //`s` or we encounter a non-number `c`.
+    //if the current `result` value is outside of our upper limit, if it is we break; if it is not we continue. Next we check
+    //if `c` is a number if so we apply the `sign` to `num`; if not we break and return what `result` contains. If both checks
+    //pass we multiple `result` by 10 an add `digit`. We repeat this process until we reach the end of `s` or we encounter a
+    //non-number `c`. We then apply the sign. If `result` is negative we check that we haven't moved past the lower bounds, if
+    //so we return the lower bounds else we return `result`. if `result` is positive we check that we haven't moved past the
+    //upper bounds, if so we return the upper bounds else we return `result`.
     func myAtoi(_ s: String) -> Int {
         var result = 0
         var sign = 1 //positive is the default
@@ -53,24 +51,24 @@ struct StringToInteger {
         }
         
         for c in characters[index...] {
-            guard var num = c.wholeNumberValue else {
+            guard result < Int(Int32.max) else {
                 break
             }
             
-            num *= sign
-            
-            if result > (Int32.max / 10) || (result == (Int32.max / 10) && num > (Int32.max % 10)) {
-                result = Int(Int32.max)
-                break
-            } else if result < Int32.min/10 || (result == (Int32.min / 10) && num < (Int32.min % 10)) {
-                result = Int(Int32.min)
+            guard var digit = c.wholeNumberValue else {
                 break
             }
             
             result *= 10
-            result += num
+            result += digit
         }
         
-        return result
+        result *= sign
+        
+        if result < 0 {
+            return max(result, Int(Int32.min))
+        } else {
+            return min(result, Int(Int32.max))
+        }
     }
 }
