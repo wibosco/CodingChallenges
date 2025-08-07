@@ -540,6 +540,8 @@
 		43026BCD2AFED2EA0066473B /* CountNodesEqualToAverageOfSubtreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43026BCC2AFED2EA0066473B /* CountNodesEqualToAverageOfSubtreeTests.swift */; };
 		43026BCF2AFEDB050066473B /* DeepestLeavesSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43026BCE2AFEDB050066473B /* DeepestLeavesSum.swift */; };
 		43026BD12AFEDB460066473B /* DeepestLeavesSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43026BD02AFEDB460066473B /* DeepestLeavesSumTests.swift */; };
+		430279282E44A5C8002C5619 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430279272E44A5C8002C5619 /* TicTacToe.swift */; };
+		4302792A2E44A897002C5619 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430279292E44A897002C5619 /* TicTacToeTests.swift */; };
 		4302D0812A73C287001D5375 /* BaseballGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302D0802A73C287001D5375 /* BaseballGame.swift */; };
 		4302D0832A73C2B7001D5375 /* BaseballGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302D0822A73C2B7001D5375 /* BaseballGameTests.swift */; };
 		4302D0852A73DE42001D5375 /* RemovingStarsFromAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302D0842A73DE42001D5375 /* RemovingStarsFromAString.swift */; };
@@ -1727,6 +1729,8 @@
 		43026BCC2AFED2EA0066473B /* CountNodesEqualToAverageOfSubtreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountNodesEqualToAverageOfSubtreeTests.swift; sourceTree = "<group>"; };
 		43026BCE2AFEDB050066473B /* DeepestLeavesSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepestLeavesSum.swift; sourceTree = "<group>"; };
 		43026BD02AFEDB460066473B /* DeepestLeavesSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepestLeavesSumTests.swift; sourceTree = "<group>"; };
+		430279272E44A5C8002C5619 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
+		430279292E44A897002C5619 /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		4302D0802A73C287001D5375 /* BaseballGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballGame.swift; sourceTree = "<group>"; };
 		4302D0822A73C2B7001D5375 /* BaseballGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballGameTests.swift; sourceTree = "<group>"; };
 		4302D0842A73DE42001D5375 /* RemovingStarsFromAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovingStarsFromAString.swift; sourceTree = "<group>"; };
@@ -2991,6 +2995,7 @@
 				43B737E52B8BDA1500C7F1FB /* TheKWeakestRowsInAMatrix.swift */,
 				3D3B213827D6556B0055C0D1 /* ThreeSum.swift */,
 				3D3B213E27D6B23F0055C0D1 /* ThreeSumClosest.swift */,
+				430279272E44A5C8002C5619 /* TicTacToe.swift */,
 				3D5C911D27A7F7630035C399 /* ToeplitzMatrix.swift */,
 				3D5C910227A7F7630035C399 /* TopKFrequentElements.swift */,
 				3D1465732809893B00DF647A /* TrimABinarySearchTree.swift */,
@@ -3575,6 +3580,7 @@
 				43B737E72B8BDA4800C7F1FB /* TheKWeakestRowsInAMatrixTests.swift */,
 				3D3B214027D6B2720055C0D1 /* ThreeSumClosestTests.swift */,
 				3D3B213A27D655EA0055C0D1 /* ThreeSumTests.swift */,
+				430279292E44A897002C5619 /* TicTacToeTests.swift */,
 				3D5C922827A7F76B0035C399 /* ToeplitzMatrixTests.swift */,
 				3D5C924C27A7F76C0035C399 /* TopKFrequentElementsTests.swift */,
 				3D146575280989A300DF647A /* TrimABinarySearchTreeTests.swift */,
@@ -4270,6 +4276,7 @@
 				3D46242527E2921900A888C1 /* SortColors.swift in Sources */,
 				3D8424DF27F23D6100B91AAB /* RandomizedSet.swift in Sources */,
 				430E11AE2C8A3D3400D40AEF /* NextGreaterElementIII.swift in Sources */,
+				430279282E44A5C8002C5619 /* TicTacToe.swift in Sources */,
 				3D146578280A10E500DF647A /* NumberOfDaysBetweenTwoDates.swift in Sources */,
 				438C2EDF2B1F8CF800C43AAA /* InsufficientNodesInRootToLeafPaths.swift in Sources */,
 				43615E762E3A19600015F952 /* ElementAppearingMoreThan25PercentInSortedArray.swift in Sources */,
@@ -4396,6 +4403,7 @@
 				437F394A2AEEDF8E002275CF /* ShortestBridgeTests.swift in Sources */,
 				430515C929DF76A7007F59B0 /* PowerOfThreeTests.swift in Sources */,
 				436EC1B32B060DD9003F7BC7 /* NumberOfGoodLeafNodesPairsTests.swift in Sources */,
+				4302792A2E44A897002C5619 /* TicTacToeTests.swift in Sources */,
 				43A692AE29F6D75E0043B5D0 /* WordBreakTests.swift in Sources */,
 				3D5C931E27A7F76C0035C399 /* DiagonalTraverseTests.swift in Sources */,
 				4300FF9229E6C0C400299C39 /* PacificAtlanticWaterFlowTests.swift in Sources */,
