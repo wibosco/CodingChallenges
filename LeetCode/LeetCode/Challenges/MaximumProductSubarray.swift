@@ -16,25 +16,33 @@ struct MaximumProductSubarray {
     //
     //Solution Description:
     //As `nums` can contain negative numbers we need to track not just the maximum product but also the minimum product as
-    //the product of two negatives is a positive. Iterating through `nums` we calculate the maximum and minimum product up
-    //to that element. As `nums` can contain zeros, we know that for any given element, that element on it's own might be
-    //the maximum or minimum product so when calculating those values, our `max` and `min` operations are over three
-    //values. We then compare `currentMaxProduct` against the overall `maxProduct` and take the largest.
+    //the product of two negatives is a positive. Iterating through `nums` we calculate the maximum and minimum subarray
+    //product up to that element - there are a few things to consider here:
+    //
+    //1. The maximum/minimum might be just the current value
+    //2. The maximum/minimum might be the current maximum/minimum multipled by the current value
+    //3. The maximum/minimum might be the opposite maximum/minimum value multipled by the current value (e.g. two negatives)
+    //
+    //So our comparison needs to take into account all three possibilites. Just to note here that if we take `num` as the
+    //maximum or minimum value we are effectively restarting the subarray from that index. Once we update `subarrayMax` to be
+    //the new maximum value for the current subarray we compare it agains the alltime maximum value and update it if greater.
+    //Once all elements in `nums` have been processed we return `result`.
     func maxProduct(_ nums: [Int]) -> Int {
-        var maxProduct = nums[0]
-        var currentMaxProduct = nums[0]
-        var currentMinProduct = nums[0]
-        
+        var result = nums[0]
+        var subarrayMin = nums[0]
+        var subarrayMax = nums[0]
+
         for num in nums[1...] {
-            let oldMaxProduct = currentMaxProduct
+            let tmp = subarrayMin //we will be overriding this but need it for the second calculation
             
-            //note that we multiple against both `currentMaxProduct` and `currentMinProduct`
-            currentMaxProduct = max(num, (num * currentMaxProduct), (num * currentMinProduct))
-            currentMinProduct = min(num, (num * oldMaxProduct), (num * currentMinProduct))
-            
-            maxProduct = max(maxProduct, currentMaxProduct)
+            //N.B how we use `subarrayMax` and `subarrayMin` in both calculations
+            //as a negative number can flip a max to a min or min to a max
+            subarrayMin = min(num, (subarrayMax * num), (subarrayMin * num))
+            subarrayMax = max(num, (subarrayMax * num), (tmp * num))
+
+            result = max(result, subarrayMax)
         }
-        
-        return maxProduct
+
+        return result
     }
 }
