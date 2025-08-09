@@ -11,8 +11,41 @@ import Foundation
 //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 struct LowestCommonAncestorBinarySearchTree {
     
-    //Time: O(log n) where n is the number of nodes in the tree
-    //Space: O(log n)
+    //Time: O(h) where h is the height of the tree
+    //Space: O(1)
+    //binary tree
+    //binary search tree
+    //iterative
+    //
+    //Solution Description:
+    //Using an iterative approach we traverse the tree. At each node we compare the `val` of `node` against that of `p` and `q`;
+    //if the `node` value is greater than both then continue search down left branch only; if the root value is less than both
+    //then continue search down the right branch only; if the both are different then we have found the lowest common ancestor
+    //as one of p and q is in the left branch and one in the right branch or one is in fact the node itself.
+    //
+    //N.B. As we are able to make informed choices due the nature of a BST we only need to hold onto one node at any given time.
+    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+        guard let root, let p, let q else {
+            return nil
+        }
+        
+        var node: TreeNode? = root
+        
+        while let n = node {
+            if n.val > p.val && n.val > q.val { // node is greater than p & q so search left
+                node = n.left
+            } else if n.val < p.val && n.val < q.val { // node is less than p & q so search right
+                node = n.right
+            } else { // p & q are going down different branches or node is either one so this is the lca
+                return n
+            }
+        }
+    
+        return nil
+    }
+    
+    //Time: O(h) where h is the height of the tree
+    //Space: O(h)
     //binary tree
     //binary search tree
     //DFS
@@ -24,7 +57,7 @@ struct LowestCommonAncestorBinarySearchTree {
     //then continue search down left branch only; if the root value is less than both then continue search down the right branch
     //only; else we have found the lowest common ancestor as one of p and q is in the left branch and one in the right branch or
     //one is in fact the root itself.
-    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor2(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil
         }
@@ -35,10 +68,11 @@ struct LowestCommonAncestorBinarySearchTree {
             return lowestCommonAncestor(root.right, p, q)
         }
         
+        // p & q are going down different branches or node is either one so this is the lca
         return root
     }
     
-    //Time: O(log n) where n is the number of nodes in the tree
+    //Time: O(h) where h is the number of nodes in the tree
     //Space: O(1) there will only ever be one node in the queue
     //binary tree
     //binary search tree
@@ -51,7 +85,7 @@ struct LowestCommonAncestorBinarySearchTree {
     //then continue search down left branch only; if the root value is less than both then continue search down the right branch
     //only; else we have found the lowest common ancestor as one of p and q is in the left branch and one in the right branch or
     //one is in fact the root itself.
-    func lowestCommonAncestorBFS(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor3(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil
         }
@@ -71,6 +105,7 @@ struct LowestCommonAncestorBinarySearchTree {
                         newQueueItems.append(right)
                     }
                 } else {
+                    // p & q are going down different branches or node is either one so this is the lca
                     return node
                 }
             }

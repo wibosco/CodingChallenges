@@ -97,10 +97,12 @@ struct ValidSudoku {
         let centers = [[1, 1], [1, 4], [1, 7],
                        [4, 1], [4, 4], [4, 7],
                        [7, 1], [7, 4], [7, 7]]
-
+        
+        // swiftlint:disable comma
         let relativeIndexing = [[-1, -1], [-1, 0], [-1, 1],
                                 [0, -1],           [0, 1],
                                 [1, -1],  [1, 0],  [1, 1]]
+        // swiftlint:enable comma
 
         for center in centers {
             var seen = Set<Int>()

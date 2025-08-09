@@ -62,7 +62,8 @@ struct InterleavingString {
         let char3 = chars3[p3]
 
         if char1 == char3 && char2 == char3 {
-            return dfs(chars1, chars2, chars3, (p1 + 1), p2, (p3 + 1), &visited) || dfs(chars1, chars2, chars3, p1, (p2 + 1), (p3 + 1), &visited)
+            return dfs(chars1, chars2, chars3, (p1 + 1), p2, (p3 + 1), &visited) ||
+                    dfs(chars1, chars2, chars3, p1, (p2 + 1), (p3 + 1), &visited)
         } else if char1 == char3 {
             return dfs(chars1, chars2, chars3, (p1 + 1), p2, (p3 + 1), &visited)
         } else if char2 == char3 {
