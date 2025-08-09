@@ -10,14 +10,15 @@ import Foundation
 //https://leetcode.com/problems/jump-game/
 struct JumpGame {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(n^2) where n is the number of elements in `nums`
+    //Space: O(n)
     //array
     //n-ary tree
     //DFS
     //recursive
     //visited
     //top-down
+    //memoization
     //
     //Solution Description:
     //Treating `nums` as an n-ary tree with the possible movements from each `nums` element as edges. We can traverse
@@ -56,8 +57,8 @@ struct JumpGame {
         return false
     }
     
-    //Time: O(n) where n is the number of elements in `nums`
-    //Space: O(n) where n is the number of elements in `nums`
+    //Time: O(n^2) where n is the number of elements in `nums`
+    //Space: O(n)
     //array
     //n-ary tree
     //DFS
@@ -115,8 +116,8 @@ struct JumpGame {
         }
     }
     
-    //Time: O(n) where n is the number of elements in `nums`
-    //Space: O(n) where n is the number of elements in `nums`
+    //Time: O(n^2) where n is the number of elements in `nums`
+    //Space: O(n)
     //array
     //n-ary tree
     //BFS
