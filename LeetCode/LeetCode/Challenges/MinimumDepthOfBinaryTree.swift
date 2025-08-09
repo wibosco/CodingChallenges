@@ -82,4 +82,35 @@ struct MinimumDepthOfBinaryTree {
         
         return -1
     }
+    
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(h) where h is the height of the tree
+    //binary tree
+    //DFS
+    //recursive
+    //bottom-up
+    //
+    //Solution Description:
+    //Using DFS we recursively, we gradually build up a depth of each level we pass through. When we reach a leaf node we
+    //the depth to that leaf node. If a node has both left and right childern we take the minimum leaf node depth. As the
+    //stack unwinds we continue to take the minimum depth until we reach the root, where we return that minimum depth.
+    func minDepth2(_ root: TreeNode?) -> Int {
+        guard let root else {
+            return 0
+        }
+
+        return dfs(root, 0)
+    }
+
+    private func dfs(_ node: TreeNode, _ depth: Int) -> Int {
+        if let left = node.left, let right = node.right {
+            return min(dfs(left, (depth + 1)), dfs(right, (depth + 1)))
+        } else if let left = node.left {
+            return dfs(left, (depth + 1))
+        } else if let right = node.right {
+            return dfs(right, (depth + 1))
+        }
+
+        return depth + 1
+    }
 }
