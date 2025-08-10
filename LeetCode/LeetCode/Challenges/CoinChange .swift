@@ -10,8 +10,69 @@ import Foundation
 //https://leetcode.com/problems/coin-change/
 struct CoinChange {
     
-    //Time: O(
-    //Space: O(
+    //Time: O(m * n) where n is the `amount`
+    //               where m is the number of elements in `coins`
+    //Space: O(m)
+    //array
+    //graph theory
+    //BFS
+    //iterative
+    //memoization
+    //dynamic programming
+    //set
+    //
+    //Solution Description:
+    //To find the minimum number of coins required we can treat this as graph and use BFS. Each iteration through we take the
+    //remaining `amount` value and subtract all possible coin values - adding each new `amount` into the next iteration of the
+    //queue. If `amount` drops below 0 then we know that combination of coins isn't valid. If `amount` is zero then we have
+    //found the minimum number of coins required (as this traversal is using BFS we know that is the minimum). To avoid
+    //repeated work we use a memoization to store each `amount` we have traversed from, if another path takes as to the same
+    //amount we know it isn't possible to get to zero from there (if it was possible we would have stopped our traversal before
+    //this point.)
+    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+        guard amount > 0 else {
+            return 0
+        }
+
+        var queue = [(Int, Int)]() //[amount, count]
+        queue.append((amount, 0))
+
+        var memo = Set<Int>() //amount
+
+        while !queue.isEmpty {
+            var nextQueue = [(Int, Int)]()
+
+            for (amount, count) in queue {
+                guard !memo.contains(amount) else {
+                    continue
+                }
+                memo.insert(amount)
+
+                for coin in coins {
+                    let amount = amount - coin
+                    let count = count + 1
+
+                    guard amount >= 0 else {
+                        continue
+                    }
+
+                    guard amount > 0 else {
+                        return count
+                    }
+                    
+                    nextQueue.append((amount, count))
+                }
+            }
+
+            queue = nextQueue
+        }
+
+        return -1
+    }
+    
+    //Time: O(m * n) where n is the `amount`
+    //               where m is the number of elements in `coins`
+    //Space: O(m)
     //array
     //DFS
     //memoization
@@ -31,7 +92,7 @@ struct CoinChange {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+    func coinChange2(_ coins: [Int], _ amount: Int) -> Int {
         guard amount > 0 else {
             return 0
         }
