@@ -23,7 +23,12 @@ struct IncreasingTripletSubsequence {
     //First we are only interested in `small` then once that have a value we include `medium` and once `medium` has a value we
     //include `large`. It's important to note that we want the best version of `small` and `medium` so if we encounter smaller
     //elements that fit those roles, we replace the current value with that smaller value and so increase our chances of finding
-    //a triplet.
+    //a triplet. This might seem counter-intuitive at first, as by replacing `small` we have invalidated the ordering but we are
+    //not trying to return the order only show that the correct sequence exists so we already that there is a smaller value than
+    //`medium` to the left we don't lose that knowledge by replacing `small` we just lose what that smaller value is. By
+    //replacing `small` we increase the chance that we will find an even smaller `medium` value and so increase the chances that
+    //we will find a `large` value (as it no longer needs be quite as large now) however if we bump into a value that is larger
+    //than `medium` before it can be replace - great - we just return true. 
     func increasingTriplet(_ nums: [Int]) -> Bool {
         var small = Int.max
         var medium = Int.max
