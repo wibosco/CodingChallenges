@@ -11,12 +11,39 @@ import Foundation
 //https://leetcode.com/problems/find-k-closest-elements/
 struct FindKClosestElements {
     
+    //Time: O(n + k) where n is the number elements on `arr`
+    //Space: O(1)
+    //array
+    //two pointers
+    //sliding window
+    //
+    //Solution Description:
+    //Keeping a window size of `k` we iterate through `arr` and move that window depending on if the current `arr` element is
+    //closer to `x`. We can't just gradually slide the window as `arr` contains duplicates so instead we the current `arr`
+    //element is closer we take it as the `right` pointer of the window and subtract `k` from `right` to get the `left` pointer
+    //of the window. Once all elements have been processed we return the window.
+    func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
+        var left = 0
+        var right = k - 1
+
+        for i in k..<arr.count {
+            guard abs(arr[left] - x) <= abs(arr[i] - x) else {
+                left = i - (k - 1)
+                right = i
+
+                continue
+            }
+        }
+
+        return Array(arr[left...right]) //O(k)
+    }
+    
     //Time: O((log n) + k)
     //divide and conquer
     //two pointers
     //sliding window
     //binary search find exact match
-    func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
+    func findClosestElements2(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
         guard arr.count > k else {
             return arr
         }

@@ -11,7 +11,8 @@ import Foundation
 //https://leetcode.com/problems/koko-eating-bananas/
 struct KokoEatingBananas {
     
-    //Time: O(n log m) where n is number of elements in `piles` and m the search range
+    //Time: O(n log m) where n is number of elements in `piles`
+    //                 where m the search range
     //Space: O(1)
     //binary search find leftmost
     //minimum
@@ -20,7 +21,7 @@ struct KokoEatingBananas {
     //
     //Solution Description:
     //Koko can eat at a minimum 1 banana an hour and at a maximum Koko can one pile i.e. the largest pile. We can treat this
-    //min..max range as a sorted list of possible bananas eaten per hour. Performing a binary search on this range will allow
+    //min...max range as a sorted list of possible bananas eaten per hour. Performing a binary search on this range will allow
     //us to find the minimum eating speed by discarding half the speeds after each step until we run out of range. If the eating
     //speed is too small to eat all bananas in `h` time then we increase the speed by moving the left boundary right so to limit
     //our search range to faster speeds; if we are able to eat all bananas with `h` time then we know what going any quicker
