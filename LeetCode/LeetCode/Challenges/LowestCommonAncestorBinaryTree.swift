@@ -12,6 +12,67 @@ import Foundation
 struct LowestCommonAncestorBinaryTree {
     
     //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n)
+    //binary tree
+    //DFS
+    //recursive
+    //backtracking
+    //array
+    //top-down
+    //
+    //Solution description:
+    //Using DFS we can track the path to both `p` and `q` nodes - storing this each path in an array. We then iterate through
+    //those paths and when we find the same node in both paths we return that node. By setting `lca` on a rolling basis we
+    //avoid having to do any pointer manipulation if lowest common ancestor is the last node in one of the paths.
+    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+        guard let root = root, let p = p, let q = q else {
+            return nil
+        }
+        
+        var pathToP = [TreeNode]()
+        var pathToQ = [TreeNode]()
+        
+        findPath(to: p, from: root, path: &pathToP)
+        findPath(to: q, from: root, path: &pathToQ)
+        
+        var lca = root
+        var i = 0
+        
+        while i < pathToP.count && i < pathToQ.count {
+            guard pathToP[i].val == pathToQ[i].val else {
+                break
+            }
+            
+            //could have been pathToQ as they both contain the same node
+            lca = pathToP[i]
+            i += 1
+        }
+    
+        return lca
+    }
+    
+    @discardableResult
+    private func findPath(to target: TreeNode, from root: TreeNode?, path: inout [TreeNode]) -> Bool {
+        guard let root = root else {
+            return false
+        }
+        
+        path.append(root)
+        
+        guard target.val != root.val else {
+            return true
+        }
+        
+        let found = findPath(to: target, from: root.left, path: &path) || findPath(to: target, from: root.right, path: &path)
+        
+        if !found {
+            path.removeLast() //backtracking
+        }
+        
+        return found //don't just return false otherwise the path will be unintentionally altered
+    }
+    
+    //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //binary tree
     //DFS
@@ -30,7 +91,7 @@ struct LowestCommonAncestorBinaryTree {
     //pass back the first node that is true for 2 of the above 3 scenarios. When we find this node we set it to `lca`.
     //
     //Similar to: https://leetcode.com/problems/find-distance-in-a-binary-tree/
-    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor2(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         var lca: TreeNode?
 
         findLowestCommonAncestor(root, p, q, &lca)
@@ -72,64 +133,5 @@ struct LowestCommonAncestorBinaryTree {
         }
     
         return mid || left || right
-    }
-    
-    //Time: O(n) where n is the number of nodes in the tree
-    //Space: O(n)
-    //binary tree
-    //DFS
-    //recursive
-    //backtracking
-    //array
-    //top-down
-    //
-    //Solution description:
-    //Using DFS we can track the path to both `p` and `q` nodes - storing this each path in an array. We then iterate through
-    //those paths and when we find the same node in both paths we return that node.
-    func lowestCommonAncestor2(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
-        guard let root = root, let p = p, let q = q else {
-            return nil
-        }
-        
-        var pathToP = [TreeNode]()
-        var pathToQ = [TreeNode]()
-        
-        findPath(to: p, from: root, path: &pathToP)
-        findPath(to: q, from: root, path: &pathToQ)
-        
-        var lca = root
-        var i = 0
-        
-        while i < pathToP.count && i < pathToQ.count {
-            guard pathToP[i].val == pathToQ[i].val else {
-                break
-            }
-            
-            lca = pathToP[i] //could have been pathToQ as they both contain the same node
-            i += 1
-        }
-    
-        return lca
-    }
-    
-    @discardableResult
-    private func findPath(to target: TreeNode, from root: TreeNode?, path: inout [TreeNode]) -> Bool {
-        guard let root = root else {
-            return false
-        }
-        
-        path.append(root)
-        
-        guard target.val != root.val else {
-            return true
-        }
-        
-        let found = findPath(to: target, from: root.left, path: &path) || findPath(to: target, from: root.right, path: &path)
-        
-        if !found {
-            path.removeLast() //backtracking
-        }
-        
-        return found
     }
 }

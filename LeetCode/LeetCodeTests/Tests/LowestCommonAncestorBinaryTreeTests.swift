@@ -49,4 +49,16 @@ final class LowestCommonAncestorBinaryTreeTests: XCTestCase {
         
         XCTAssertEqual(result?.val, 1)
     }
+    
+    func test_D() {
+        let data = [37,-34,-48,nil,-100,-101,48,nil,nil,nil,nil,-54,nil,-71,-22,nil,nil,nil,8]
+        
+        let root = TreeNode.deserialize(data)
+        let p = TreeNode(-71)
+        let q = TreeNode(48)
+        
+        let result = LowestCommonAncestorBinaryTree().lowestCommonAncestor(root, p, q)
+        
+        XCTAssertEqual(result?.val, 48)
+    }
 }
