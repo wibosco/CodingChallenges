@@ -11,7 +11,7 @@ import Foundation
 struct ConstructBinaryTreeFromString {
     
     //Time: O(n) where n is the number of characters in s
-    //Space: O(n)
+    //Space: O(h) where h is height of the tree
     //string
     //binary tree
     //DFS
@@ -72,7 +72,8 @@ struct ConstructBinaryTreeFromString {
         while index < characters.count {
             let c = characters[index]
             
-            guard c.isWholeNumber || c == "-" else { //can't just check that `c` is a digit as we need to handle negative numbers
+            //can't just check that `c` is a digit as we need to handle negative numbers
+            guard c.isWholeNumber || c == "-" else {
                 break
             }
             
@@ -81,5 +82,70 @@ struct ConstructBinaryTreeFromString {
         }
         
         return Int(strNum)!
+    }
+    
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(h) where h is height of the tree
+    //string
+    //binary tree
+    //stack
+    //
+    //Solution Description:
+    //As we iterate through `s` and nodes we gradually add to and remove from a stack. The stack allows us to hold onto the
+    //parents while we build the child subtrees, regardless of how deep the child subtrees might be. We only add nodes to the
+    //stack if they are parent nodes i.e. not leaf nodes. We can determine if a node is a leaf node whether a ")" character
+    //immediately follows the number value of the node. If we encounter a ")" preceded by another ")" then we know that the
+    //subbtree with the `stack.last` parent as the root node has been completed and can pop that node from the stack. The
+    //overall root node does not have a parent so will never be popped from the stack. Once we process all characters in `s`
+    //we return the root node from the stack.
+    func str2tree2(_ s: String) -> TreeNode? {
+        let chars = Array(s)
+
+        var stack = [TreeNode]()
+
+        var p1 = 0
+
+        while p1 < chars.count {
+            if chars[p1] == "-" || chars[p1].isNumber {
+                let sign = chars[p1] == "-" ? -1 : 1
+                if sign == -1 {
+                    p1 += 1
+                }
+
+                var num = 0
+                while p1 < chars.count, chars[p1].isNumber {
+                    num *= 10
+                    num += chars[p1].wholeNumberValue!
+
+                    p1 += 1
+                }
+                num *= sign
+
+                let node = TreeNode(num)
+
+                if let parent = stack.last {
+                    //always fill left to right
+                    if parent.left == nil {
+                        parent.left = node
+                    } else {
+                        parent.right = node
+                    }
+
+                    if chars[p1] == "(" {
+                        //not a leaf node so add it to the stack
+                        stack.append(node)
+                    }
+                } else {
+                    //root node
+                    stack.append(node)
+                }
+            } else if chars[p1] == ")" {
+                stack.removeLast()
+            }
+
+            p1 += 1
+        }
+
+        return stack.first
     }
 }
