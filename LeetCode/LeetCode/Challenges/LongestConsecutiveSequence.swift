@@ -16,39 +16,44 @@ struct LongestConsecutiveSequence {
     //set
     //
     //Solution Description:
-    //Rather than sorting `nums` which would be a O(n log n) operation we can instead iterate twice through `nums` to determine the longest
-    //sequence. On the first iteration we build up the `elements` set which will allows us to check if a `nums` element has a pre or post
-    //sequence value in `nums` in O(1) time. In the next iteration of `nums`, we first check if `num - 1` exists in `elements` - the start
-    //of a sequence is the left/lowest value in that sequence. If `num - 1` exists then we know that we don't have the start of a sequence
-    //and that a longer sequence could be formed so we move to the next element in `nums`; if `num - 1` doesn't not exist we have found
-    //the start of a sequence now need to find the end, as we are looking for a consecutive sequence we know the next value needs to be
-    //`num + 1` so we search for that value and so on until we reach the end. Once the length of a sequence is found we compare it against
-    //`longest` and take the higher value. With all elements check we return `longest`.
+    //Rather than sorting `nums` which would be a O(n log n) operation we can instead iterate twice through the elements in
+    //`nums` to determine the longest sequence. On the first iteration we build up the `elements` set which will allows us to
+    //check if a `nums` element has a pre or post sequence value in O(1) time. In the next iteration of `elements` as we only
+    //need the unique values of `nums`, we first check if `num - 1` exists in `elements` - the start of a sequence is the
+    //left/lowest value in that sequence so has. If `num - 1` exists then we know that we don't have the start of a sequence
+    //and that a longer sequence could be formed so we move to the next element in `elements`; if `num - 1` doesn't not exist
+    //we have found the start of a sequence now need to find the end, as we are looking for a consecutive sequence we know
+    //the next value needs to be `num + 1` so we search for that value. We repeat this incrementing and search process until
+    //the next value in the sequence doesn't exist. Once the length of a sequence is found we compare it against `longest`
+    //and take the higher value. When all elements have been processed we return `longest`.
     func longestConsecutive(_ nums: [Int]) -> Int {
-        guard nums.count > 1 else {
-            return nums.count
+        guard nums.count > 0 else {
+            return 0
         }
-        
-        let elements = Set<Int>(nums)
-        
-        var longest = 0
-        
+
+        var elements = Set<Int>()
         for num in nums {
+            elements.insert(num)
+        }
+
+        var longest = 1
+        for num in elements { //no need to search through `nums` again, only need the unique values
             guard !elements.contains((num - 1)) else {
+                //num isn't the start of a sequence
                 continue
             }
-            
-            var sequenceNum = (num + 1)
-            var count = 1
-            
-            while elements.contains(sequenceNum) {
-                count += 1
-                sequenceNum += 1
+
+            //num is the start of a sequence
+            var length = 1
+            var next = num + 1
+            while elements.contains(next) {
+                length += 1
+                next += 1
             }
-            
-            longest = max(longest, count)
+
+            longest = max(longest, length)
         }
-        
+
         return longest
     }
     
