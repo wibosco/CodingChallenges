@@ -97,7 +97,7 @@ struct MergeKSortedLists {
     //both `list1` and `list2` choosing the smaller node from each list to add to the merged list as the new `tail`. To keep
     //access to the head of the merged list we employ a sentinel head node. We continue this until one list is exhausted and
     //then add the remaining of the other to merged list.
-    func mergeKListsOneByOne(_ lists: [ListNode?]) -> ListNode? {
+    func mergeKLists2(_ lists: [ListNode?]) -> ListNode? {
         guard !lists.isEmpty else {
             return nil
         }
@@ -105,9 +105,39 @@ struct MergeKSortedLists {
         var mergedList = lists[0]
         
         for list in lists[1...] {
-            mergedList = mergeLists(mergedList, list) //uses same merge method as above solution
+            mergedList = mergeLists2(mergedList, list) //uses same merge method as above solution
         }
         
         return mergedList
+    }
+    
+    private func mergeLists2(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+        guard let list1 = list1, let list2 = list2 else {
+            return list1 == nil ? list2: list1
+        }
+        
+        let sentinel = ListNode(-1)
+        var tail = sentinel
+        
+        var p1: ListNode? = list1
+        var p2: ListNode? = list2
+        
+        while let l1 = p1, let l2 = p2 { //only loop until you exhaust one of the lists
+            if l1.val < l2.val {
+                tail.next = p1
+            
+                p1 = p1?.next
+            } else {
+                tail.next = p2
+                
+                p2 = p2?.next
+            }
+            
+            tail = tail.next! //move the tail of merged
+        }
+        
+        tail.next = p1 == nil ? p2 : p1 //add the remaining nodes as is to the merged list
+    
+        return sentinel.next
     }
 }

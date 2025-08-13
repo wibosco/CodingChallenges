@@ -40,4 +40,22 @@ final class ClosestBinarySearchTreeValueTests: XCTestCase {
         
         XCTAssertEqual(result, 3)
     }
+    
+    func test_D() {
+        let target = 3.5
+        let root = TreeNode.deserialize([4,2,5,1,3])
+        
+        let result = ClosestBinarySearchTreeValue().closestValue(root, target)
+        
+        XCTAssertEqual(result, 3)
+    }
+    
+    func test_E() {
+        let target = 4.5
+        let root = TreeNode.deserialize([4,2,5,1,3])
+        
+        let result = ClosestBinarySearchTreeValue().closestValue(root, target)
+        
+        XCTAssertEqual(result, 4)
+    }
 }
