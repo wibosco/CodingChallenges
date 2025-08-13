@@ -57,6 +57,34 @@ struct JumpGame {
         return false
     }
     
+    //Time: O(n) where n is the number of elements in `nums`
+    //Space: O(1)
+    //array
+    //greedy
+    //
+    //Solution Description:
+    //Rather than trying to get from index `0` to `nums.count - 1` we can instead see if there is a path from
+    //`nums.count - 1` to `0`. By iterating from right-to-left we can determine if a path exists in one pass. We
+    //keep track of the index is are trying to "jump" to - `target`. Once we find a previous index that can reach
+    //that `target` index, that previous index becomes `target` and the next iteration is checked for if it can
+    //reach that new `target` index. If after iterating `nums`, target is `0` then we have found a path and return
+    //true else we return false.
+    func canJump2(_ nums: [Int]) -> Bool {
+        var target = nums.count - 1
+
+        var p1 = nums.count - 1
+        while p1 >= 0 {
+            if (p1 + nums[p1]) >= target {
+                //can get from the current index to target so lets see if we can get to this index
+                target = p1
+            }
+
+            p1 -= 1
+        }
+
+        return target == 0
+    }
+    
     //Time: O(n^2) where n is the number of elements in `nums`
     //Space: O(n)
     //array
@@ -71,7 +99,7 @@ struct JumpGame {
     //if it is possible to jump directly to the target index from the current index (`root`). If we can we set `found`
     //to true and return; if not we build the possible neighbors, check that we have't already visited them, delve
     //deep on each unvisited neighbour and repeat the process.
-    func canJump2(_ nums: [Int]) -> Bool {
+    func canJump3(_ nums: [Int]) -> Bool {
         guard nums.count > 1 else {
             return true
         }
@@ -80,12 +108,12 @@ struct JumpGame {
         var visited = Set<Int>() //indexes
         visited.insert(0)
         
-        dfs2(nums, 0, (nums.count - 1), &visited, &found)
+        dfs3(nums, 0, (nums.count - 1), &visited, &found)
         
         return found
     }
     
-    private func dfs2(_ nums: [Int], _ root: Int, _ target: Int, _ visited: inout Set<Int>, _ found: inout Bool) {
+    private func dfs3(_ nums: [Int], _ root: Int, _ target: Int, _ visited: inout Set<Int>, _ found: inout Bool) {
         guard !found else {
             return
         }
@@ -108,7 +136,7 @@ struct JumpGame {
             }
             visited.insert(root)
             
-            dfs2(nums, nextRoot, target, &visited, &found)
+            dfs3(nums, nextRoot, target, &visited, &found)
             
             guard !found else {
                 return
@@ -127,7 +155,7 @@ struct JumpGame {
     //the tree in a BFS manner searching for `target` (`nums` end index). At level we can determine if it is possible
     //to jump directly to the target index. If we can we return true; if not we build the possible neighbors, check
     //that we have't already visited them, add each unvisited neighbour to `queue` and repeat the process.
-    func canJump3(_ nums: [Int]) -> Bool {
+    func canJump4(_ nums: [Int]) -> Bool {
         guard nums.count > 1 else {
             return true
         }
