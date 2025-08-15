@@ -83,7 +83,7 @@ struct LongestRepeatingCharacterReplacement {
     //all unqiue characters have been checked we return `longest`.
     func characterReplacement2(_ s: String, _ k: Int) -> Int {
         var unique = Set<Character>()
-        var chars = Array(s)
+        let chars = Array(s)
         
         for c in chars {
             unique.insert(c)

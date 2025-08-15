@@ -23,15 +23,77 @@ struct PacificAtlanticWaterFlow {
     //inout
     //
     //Solution Description:
-    //Rather than determine if every cell can reach the oceans, we can instead reverse it and see how far the oceans can
-    //reach in land. We can then take these ocean-reachable cells and see if there is any overlap between those cells that
-    //can reach the Pacific and those that can reach the Atlantic. As a starting point we know that all cells that border
-    //the matrix can reach at least one of the two oceans so we take each cell on the border and perform a DFS from that
-    //cell. As we discover new reachable cells we add them to the `reachable` set which will allow us to form the know
-    //which cells are common but also avoid visiting cells that we have already been to. We use relative-indexing to
-    //determine which cells we can move to As we are going ocean-in rather than cell-out we reverse the height constraint
-    //so that we are looking to move to cells that have a value less than or equal to the current cell.
-    func pacificAtlantic(_ heights: [[Int]]) -> [[Int]] { //[row, column]
+    //Rather than determine if every cell can reach the oceans, we can instead reverse it and see how far the oceans can reach
+    //in land - rather than looking for land which is lower, we instead look for land which is higher. We can then take these
+    //ocean-reachable cells and see if there is any overlap between those cells that can reach the Pacific and those that can
+    //reach the Atlantic. As a starting point we know that all cells that border the matrix can reach at least one of the two
+    //oceans so we take each cell on the border and perform a DFS from that cell. As we discover new reachable cells we add
+    //them to each reachable set which will allow us to know not only  which cells are common but also avoid re-visiting cells.
+    //We use relative-indexing to determine which cells we can move to. As we are going ocean-in rather than cell-out we
+    //reverse the height constraint so that we are looking to move to cells that have a value less than or equal to the current
+    //cell.
+    func pacificAtlantic(_ heights: [[Int]]) -> [[Int]] {
+        var canReachPacific = Set<[Int]>()
+        var canReachAtlantic = Set<[Int]>()
+        
+        //search from left and right columns
+        for r in 0..<heights.count {
+            dfs(heights, r, 0, 0, &canReachPacific)
+            dfs(heights, r, (heights[r].count - 1), 0, &canReachAtlantic)
+        }
+        
+        //search from top and bottom rows
+        for c in 0..<heights[0].count {
+            dfs(heights, 0, c, 0, &canReachPacific)
+            dfs(heights, (heights.count - 1), c, 0, &canReachAtlantic)
+        }
+
+        return Array(canReachAtlantic.intersection(canReachPacific))
+    }
+
+    private func dfs(_ heights: [[Int]], _ r: Int, _ c: Int, _ value: Int, _ visited: inout Set<[Int]>) {
+        guard r >= 0, r < heights.count, c >= 0, c < heights[r].count else {
+            return
+        }
+
+        guard heights[r][c] >= value else {
+            return
+        }
+
+        guard !visited.contains([r, c]) else {
+            return
+        }
+        visited.insert([r, c])
+        
+        //relative indexing
+        dfs(heights, r + 1, c, heights[r][c], &visited)
+        dfs(heights, r - 1, c, heights[r][c], &visited)
+        dfs(heights, r, c + 1, heights[r][c], &visited)
+        dfs(heights, r, c - 1, heights[r][c], &visited)
+    }
+    
+    //Time: O(n * m) where n is the number of rows in `heights`
+    //               where m is the number of columns in `heights`
+    //Space: O(n + m)
+    //graph theory
+    //visited
+    //DFS
+    //relative indexing
+    //matrix
+    //recursive
+    //multi-source
+    //inout
+    //
+    //Solution Description:
+    //Rather than determine if every cell can reach the oceans, we can instead reverse it and see how far the oceans can reach
+    //in land. We can then take these ocean-reachable cells and see if there is any overlap between those cells that can reach
+    //the Pacific and those that can reach the Atlantic. As a starting point we know that all cells that border the matrix can
+    //reach at least one of the two oceans so we take each cell on the border and perform a DFS from that cell. As we discover
+    //new reachable cells we add them to the `reachable` set which will allow us to know not only which cells are common but
+    //also avoid visiting cells that we have already been to. We use relative-indexing to determine which cells we can move to.
+    //As we are going ocean-in rather than cell-out we reverse the height constraint so that we are looking to move to cells
+    //that have a value less than or equal to the current cell.
+    func pacificAtlantic2(_ heights: [[Int]]) -> [[Int]] { //[row, column]
         var pacificReachable = Set<[Int]>()
         var atlanticReachable = Set<[Int]>()
         
@@ -125,7 +187,7 @@ struct PacificAtlanticWaterFlow {
     //indexing to determine which cells we can move to. To avoid an infinite loop we use a `visited` set so that we don't
     //visited the same cell twice in that DFS iteration. If both oceans are reachable from a cell we add it to `reachBoth`.
     //Once all cells have used a starting point, we return `reachBoth`.
-    func pacificAtlanticBruteForce(_ heights: [[Int]]) -> [[Int]] { //[row, column]
+    func pacificAtlantic3(_ heights: [[Int]]) -> [[Int]] { //[row, column]
         var reachBoth = [[Int]]()
         
         for row in 0..<heights.count {

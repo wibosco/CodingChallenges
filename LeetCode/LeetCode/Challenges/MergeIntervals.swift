@@ -78,17 +78,17 @@ struct MergeIntervals {
         
         var mergedIntervals = [intervals[0]] //seed with the first interval
         
-        for i in 1..<intervals.count {
-            let comparisonInterval = intervals[i]
+        for interval in intervals[1...] {
             let mergedInterval = mergedIntervals.last!
             
-            if mergedInterval[1] >= comparisonInterval[0] {
+            //as intervals is sorted by the start index we don't need to compare that
+            if mergedInterval[1] >= interval[0] {
                 //Only the max can change as we already sorted on the on the min value
-                let upper = max(comparisonInterval[1], mergedInterval[1])
+                let upper = max(interval[1], mergedInterval[1])
                 mergedIntervals[(mergedIntervals.count - 1)][1] = upper
             } else {
                 //new interval
-                mergedIntervals.append(comparisonInterval)
+                mergedIntervals.append(interval)
             }
         }
         
