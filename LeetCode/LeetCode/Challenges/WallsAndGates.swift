@@ -20,6 +20,82 @@ struct WallsAndGates {
     //relative indexing
     //matrix
     //mutating
+    //inline
+    //level-by-level
+    //
+    //Solution Description:
+    //Treating the matrix as a graph we can use BFS to determine how far away a given cell is from it's nearest gate. Rather
+    //than starting with each cell and working out the nearest gate we can instead go in reverse and start from each gate. To
+    //do this we first need to find the gates by interating through every cell in `rooms` and adding those indexes with a
+    //value of 0 to`gates`. We then iterate through `gates` and start a BFS from each index. As we are trying to find any
+    //given cells nearest index each level iteration through the queue we increment `level` which is then used to mark the
+    //cell. As it is possible for a multiple gates to be accessible to the same cell, we only mark a cell with level if that
+    //level is a lower value than the correct cells value. If a cell has a value that is less than `level` we skip it i.e.
+    //we don't add its neighbors to the queue. As we process the queue we use a 4-way relative mapping array to determine
+    //which cells to add the queue next. We repeat this process for all reachable cells before moving on to the next gate.
+    //Once all gates have acted as the source for a BFS we are completed.
+    //
+    //NB: No need for a visited set as `rooms` acts as that as it updated with each iteration.
+    func wallsAndGates(_ rooms: inout [[Int]]) {
+        var gates = [(Int, Int)]()
+
+        for r in 0..<rooms.count {
+            for c in 0..<rooms[r].count {
+                guard rooms[r][c] == 0 else {
+                    continue
+                }
+
+                gates.append((r, c))
+            }
+        }
+
+        for gate in gates {
+            var queue = [(Int, Int)]() //[(row, col)]
+            
+            //we alreay know that `gate` is a gate so start with it's neighbors
+            queue.append((gate.0 + 1, gate.1))
+            queue.append((gate.0 - 1, gate.1))
+            queue.append((gate.0, gate.1 + 1))
+            queue.append((gate.0, gate.1 - 1))
+
+            var level = 1
+
+            while !queue.isEmpty {
+                var nextIteration = [(Int, Int)]()
+                
+                for (r, c) in queue {
+                    guard r >= 0, r < rooms.count, c >= 0, c < rooms[r].count else {
+                        continue
+                    }
+
+                    guard rooms[r][c] > level else {
+                        continue
+                    }
+
+                    rooms[r][c] = level
+
+                    nextIteration.append((r + 1, c))
+                    nextIteration.append((r - 1, c))
+                    nextIteration.append((r, c + 1))
+                    nextIteration.append((r, c - 1))
+                }
+
+                queue = nextIteration
+                level += 1
+            }
+        }
+    }
+    
+    //Time: O(n * m) where n is number for row in `rooms`
+    //               where m is the number of columns in `rooms`
+    //Space: O(n * m)
+    //graph theory
+    //BFS
+    //multi-source
+    //relative indexing
+    //matrix
+    //mutating
+    //inline
     //
     //Solution Description:
     //This is a graph problem. First we determine where (if) the gates are in the grid. These gates are then used as the starting
@@ -33,7 +109,7 @@ struct WallsAndGates {
     //the neighbors of a nodes - don't confuse this with the actual level traversal loop which is the second loop.
     //
     //NB: No need for a visited set as `rooms` acts as that as it updated with each iteration.
-    func wallsAndGates(_ rooms: inout [[Int]]) {
+    func wallsAndGates2(_ rooms: inout [[Int]]) {
         //-1 - wall, 0 - gate , INF - room
         
         var queue = [[Int]]()

@@ -21,6 +21,7 @@ struct PacificAtlanticWaterFlow {
     //recursive
     //multi-source
     //inout
+    //two passes
     //
     //Solution Description:
     //Rather than determine if every cell can reach the oceans, we can instead reverse it and see how far the oceans can reach
@@ -83,6 +84,7 @@ struct PacificAtlanticWaterFlow {
     //recursive
     //multi-source
     //inout
+    //two passes
     //
     //Solution Description:
     //Rather than determine if every cell can reach the oceans, we can instead reverse it and see how far the oceans can reach

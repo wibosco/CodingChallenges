@@ -11,7 +11,66 @@ import Foundation
 //https://leetcode.com/problems/shortest-path-in-binary-matrix/
 struct ShortestPathBinaryMatrix {
     
-    //Time: O(n) where n is the number of cells in `grid`
+    //Time: O(n) where n is the number of elements in `grid`
+    //Space: O(n)
+    //graph theory
+    //BFS
+    //relative indexing
+    //matrix
+    //inline
+    //level traversal
+    //
+    //Solution Description:
+    //Treat the matrix as a graph with each "touching" node being a neighbor. "Touching" is defined by using relative indexing
+    //from the [row][column] position that is being checked i.e. all 8 nodes around - careful to check for out of bounds and if
+    //that nodes is navigatable i.e. 0 value. Using BFS we then traverse through the neighbors of each nodes until we either
+    //find the target (bottom right) or we run out of neighbors. To prevent an infinite search, we update each grid node we
+    //encounter to `1` so that any other path that leads to that node (which can't then be the shortest path), stops at it.
+    func shortestPathBinaryMatrix(_ grid: [[Int]]) -> Int {
+        var grid = grid
+        let target = (grid.count - 1, grid.count - 1)
+
+        var queue = [(Int, Int)]()
+        queue.append((0, 0))
+        var level = 1
+
+        while !queue.isEmpty {
+            var nextIteration = [(Int, Int)]()
+
+            for (r, c) in queue {
+                guard r >= 0, r < grid.count, c >= 0, c < grid[r].count else {
+                    continue
+                }
+
+                guard grid[r][c] == 0 else {
+                    continue
+                }
+                grid[r][c] = 1
+
+                //needs to come after the `== 0` check as the target can be unreachable due to being `1`
+                guard target != (r, c) else {
+                    return level
+                }
+
+                //relative indexing
+                nextIteration.append((r + 1, c))
+                nextIteration.append((r - 1, c))
+                nextIteration.append((r, c + 1))
+                nextIteration.append((r, c - 1))
+                nextIteration.append((r + 1, c + 1))
+                nextIteration.append((r - 1, c - 1))
+                nextIteration.append((r + 1, c - 1))
+                nextIteration.append((r - 1, c + 1))
+            }
+
+            queue = nextIteration
+            level += 1
+        }
+
+        return -1
+    }
+    
+    //Time: O(n) where n is the number of elements in `grid`
     //Space: O(n)
     //graph theory
     //BFS
@@ -24,7 +83,7 @@ struct ShortestPathBinaryMatrix {
     //that nodes is navigatable i.e. 0 value. Using BFS we then traverse through the neighbors of each nodes until we either
     //find the target (bottom right) or we run out of neighbors. To prevent an infinite search, any visited nodes we insert
     //into a `visited` set.
-    func shortestPathBinaryMatrix(_ grid: [[Int]]) -> Int {
+    func shortestPathBinaryMatrix2(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
             return -1
         }
@@ -100,7 +159,7 @@ struct ShortestPathBinaryMatrix {
         return neighbors
     }
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of elements `grid`
     //Space: O(n)
     //graph theory
     //BFS
@@ -113,7 +172,7 @@ struct ShortestPathBinaryMatrix {
     //if that nodes is navigatable i.e. 0 value. Gradually build up an adjacent list for all nodes in the graph, using BFS we
     //then traverse through the neighbors until we either find the target (bottom right) or we run out of neighbors. To prevent
     //an infinite search, any visited nodes we insert into a `visited` set.
-    func shortestPathBinaryMatrixLongWay(_ grid: [[Int]]) -> Int {
+    func shortestPathBinaryMatrixLongWay2(_ grid: [[Int]]) -> Int {
         guard !grid.isEmpty else {
             return -1
         }

@@ -76,7 +76,7 @@ struct RandomPickWithWeight {
 //our random value we can then iterate through `prefixSums` and determine if the random value would land in that range. As
 //`prefixSums` is a sorted array (in ascending order) we have treat the previous iterates upper bounds as this iterations
 //lower bounds so in order to get to iteration `i`, the random value must be larger than all previous iterations.
-struct RandomPickWithWeigh2{
+struct RandomPickWithWeigh2 {
     private let prefixSums: [Int]
     private let total: Int
     
