@@ -33,12 +33,21 @@ final class CustomSortStringTests: XCTestCase {
     }
     
     func test_C() {
-        let order =  "hucw"
-        let s = "utzoampdgkalexslxoqfkdjoczajxtuhqyxvlfatmptqdsochtdzgypsfkgqwbgqbcamdqnqztaqhqanirikahtmalzqjjxtqfnh"
+        let order =  "kqep"
+        let s = "pekeq"
         
         let result = CustomSortString().customSortString(order, s)
         
-        XCTAssertEqual(result, "hhhhhuucccwaaaaaaaaabbdddddeffffggggiijjjjkkkkllllmmmmnnnoooopppqqqqqqqqqqqrsssttttttttvxxxxxyyzzzzz")
+        XCTAssertEqual(result, "kqeep")
+    }
+    
+    func test_D() {
+        let order =  "hucw"
+        let s = "thutcwt"
+        
+        let result = CustomSortString().customSortString(order, s)
+        
+        XCTAssertEqual(result, "hucwttt")
     }
 
 }

@@ -13,6 +13,7 @@ struct QuickSort {
     //Space: O(log n) recursive stack
     //sorting
     //quicksort
+    //quickselect
     //divide and conquer
     //recursive
     //
