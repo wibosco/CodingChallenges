@@ -43,11 +43,32 @@ struct KthMissingPositiveNumber {
     //array
     //
     //Solution Description:
-    //Rather than fill in the gaps we use the value that are there to increase `k` to what it should be in `arr`. As we loop
+    //We find the first index where the gap between what the value of index is and what it should be is greater than or equal to
+    //`k`, we can then use that index and add `k` to it to get the result. If you index exists then it be because the `kth`
+    //element is off the right side of `arr` and so we calculate how many gaps exist in `arr` and subtract those gaps from `k`
+    //before then adding that reduced `k` to that final element and returning the sum.
+    func findKthPositive2(_ arr: [Int], _ k: Int) -> Int {
+        for i in 0..<arr.count {
+            if arr[i] - (i + 1) >= k {
+                return i + k
+            }
+        }
+
+        //kth element is to the right of last element
+        let k =  k - (arr[arr.count - 1] - arr.count)
+        return arr[arr.count - 1] + k
+    }
+    
+    //Time: O(n) where n is the number of elements in `arr`
+    //Space: O(1)
+    //array
+    //
+    //Solution Description:
+    //Rather than fill in the gaps we use the values that are there to increase `k` to what it should be in `arr`. As we loop
     //through 'arr', we check if the current value `num` is less than or equal to `k` if it then we increase `k` as this value
     //doesn't need to be filled in; if it is not then we can't fill in to this value and the current value of `k` is that
     //missing value and can be returned.
-    func findKthPositive2(_ arr: [Int], _ k: Int) -> Int {
+    func findKthPositive3(_ arr: [Int], _ k: Int) -> Int {
         var k = k
         
         for num in arr {
@@ -73,7 +94,7 @@ struct KthMissingPositiveNumber {
     //element should be but isn't so we add `k` to that index to the missing kth value.
     //
     //Similar to: https://leetcode.com/problems/missing-element-in-sorted-array/
-    func findKthPositive3(_ arr: [Int], _ k: Int) -> Int {
+    func findKthPositive4(_ arr: [Int], _ k: Int) -> Int {
         var left = 0
         var right = arr.count - 1
 

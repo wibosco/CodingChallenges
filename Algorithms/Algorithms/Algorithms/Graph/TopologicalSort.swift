@@ -127,7 +127,7 @@ struct TopologicalSort {
     //N.B. The below example is using DFS as seen here:
     //https://en.wikipedia.org/wiki/Topological_sorting#Depth-first_search
     static func isDAG(_ adjList: [[Int]]) -> Bool {
-        var visited = [Int: Bool]() //allows us to avoid searching the same graph but from a different starting vertice
+        var visited = Set<Int>() //allows us to avoid searching the same graph but from a different starting vertice
         
         for source in 0..<adjList.count {
             var currentVisited = Set<Int>() //allows us to detect a cycle inside this DFS iteration
@@ -140,29 +140,24 @@ struct TopologicalSort {
         return true
     }
     
-    private static func hasCycle(_ adjList: [[Int]], _ source: Int, _ visited: inout [Int: Bool], _ currentVisited: inout Set<Int>) -> Bool {
-        guard visited[source] == nil else {
+    private static func hasCycle(_ adjList: [[Int]], _ source: Int, _ visited: inout Set<Int>, _ currentVisited: inout Set<Int>) -> Bool {
+        guard !visited.contains(source) else {
             //have found another path onto a graph that has already been searched
-            return visited[source]!
+            return false
         }
-        
+        visited.insert(source)
         currentVisited.insert(source)
         
         for neighbor in adjList[source] {
             guard !currentVisited.contains(neighbor) else {
                 //returned to a previously seen vertice (in this iteration) so this graph has cycle i.e. isn't a DAG
-                visited[source] = true
                 return true
             }
             
             guard !hasCycle(adjList, neighbor, &visited, &currentVisited) else {
-                visited[source] = true
-                
                 return true
             }
         }
-        
-        visited[source] = false
         
         //all descendants of `source` have been searched so if we encounter `source` again it is from a sibling vertice
         //and shouldn't be treated as a cycle
