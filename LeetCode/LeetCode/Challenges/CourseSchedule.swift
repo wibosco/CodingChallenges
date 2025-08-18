@@ -142,6 +142,7 @@ struct CourseSchedule {
         var visited = Set<Int>()
         for i in 0..<adjList.count {
             var callStack = Set<Int>()
+            callStack.insert(i)
             if !dfs(adjList, i, &callStack, &visited) {
                 return false
             }
@@ -155,14 +156,14 @@ struct CourseSchedule {
             return true //must not contain a cycle otherwise we won't be here
         }
         visited.insert(i)
-        callStack.insert(i)
-
+        
         for neighbor in adjList[i] {
             //needs to be here to avoid crashing with `globalVisited`
             guard !callStack.contains(neighbor) else {
                 //returned to a previously seen node (in this iteration) so this graph has cycle i.e. isn't a DAG
                 return false
             }
+            callStack.insert(neighbor)
 
             if !dfs(adjList, neighbor, &callStack, &visited) {
                 return false
