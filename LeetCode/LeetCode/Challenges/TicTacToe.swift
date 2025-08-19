@@ -13,75 +13,69 @@ import Foundation
 //
 //Solution Description:
 //Treating the board as a graph we can traverse through it after each move using relative indexing to determine if a player has
-//won or not. As there are four ways to win, we perform up to 4 traversals per move. We count how many index are filled with the
+//won or not. As there are 4 ways to win, we perform up to 4 traversals per move. We count how many index are filled with the
 //players marker on each traversal, if the count is equal to the length of the board then we know that the player has filled in
 //an entire row, column or diagonal and has won the game.
 class TicTacToe {
-    private var board: [[String]]
-    
+    private let n: Int
+    private var board: [[Int]]
+
     init(_ n: Int) {
-        self.board = Array(repeating: Array(repeating: "", count: n), count: n)
+        self.n = n
+        self.board = Array(repeating: Array(repeating: 0, count: n), count: n)
     }
     
     func move(_ row: Int, _ col: Int, _ player: Int) -> Int {
-        let marker: String
-        if player == 1 {
-            marker = "X"
-        } else {
-            marker = "O"
-        }
-        
-        board[row][col] = marker
-        
-        let outcome = checkVertical(marker, [row, col]) ||
-                        checkHozitional(marker, [row, col]) ||
-                        checkLeftwardDiagonal(marker, [row, col]) ||
-                        checkRightwardDiagonal(marker, [row, col])
-        
-        if outcome {
+        board[row][col] = player
+
+        if hasWon(row, col, player) {
             return player
         }
-        
+
         return 0
     }
-    
-    private func checkVertical(_ marker: String, _ index: [Int]) -> Bool {
-        let matches = check(marker, index, 0, [0, -1]) + check(marker, index, 0, [0, 1]) - 1 //-1 so to not double count index
-        
-        return matches == board.count
+
+    private func hasWon(_ r: Int, _ c: Int, _ player: Int) -> Bool {
+        return checkRow(r, c, player) ||
+                checkColumn(r, c, player) ||
+                checkLeftDiagonal(r, c, player) ||
+                checkRightDiagonal(r, c, player)
     }
-    
-    private func checkHozitional(_ marker: String, _ index: [Int]) -> Bool {
-        let matches = check(marker, index, 0, [-1, 0]) + check(marker, index, 0, [1, 0]) - 1 //-1 so to not double count index
-        
-        return matches == board.count
+
+    private func checkRow(_ r: Int, _ c: Int, _ player: Int) -> Bool {
+        let matches = check(r, c, player, [0, -1]) + check(r, c, player, [0, 1]) - 1 //-1 so to not double count first index
+
+        return matches == n
     }
-    
-    private func checkLeftwardDiagonal(_ marker: String, _ index: [Int]) -> Bool {
-        let matches = check(marker, index, 0, [-1, -1]) + check(marker, index, 0, [1, 1]) - 1 //-1 so to not double count index
-        
-        return matches == board.count
+
+    private func checkColumn(_ r: Int, _ c: Int, _ player: Int) -> Bool {
+        let matches = check(r, c, player, [-1, 0]) + check(r, c, player, [1, 0]) - 1 //-1 so to not double count first index
+
+        return matches == n
     }
-    
-    private func checkRightwardDiagonal(_ marker: String, _ index: [Int]) -> Bool {
-        let matches = check(marker, index, 0, [-1, 1]) + check(marker, index, 0, [1, -1]) - 1 //-1 so to not double count index
-        
-        return matches == board.count
+
+    private func checkLeftDiagonal(_ r: Int, _ c: Int, _ player: Int) -> Bool {
+        let matches = check(r, c, player, [-1, -1]) + check(r, c, player, [1, 1]) - 1 //-1 so to not double count first index
+
+        return matches == n
     }
-    
-    private func check(_ marker: String, _ index: [Int], _ count: Int, _ relativeIndex: [Int]) -> Int {
-        guard index[0] >= 0, index[0] < board.count, index[1] >= 0, index[1] < board[index[0]].count else {
-            return count
+
+    private func checkRightDiagonal(_ r: Int, _ c: Int, _ player: Int) -> Bool {
+        let matches = check(r, c, player, [-1, 1]) + check(r, c, player, [1, -1]) - 1 //-1 so to not double count first index
+
+        return matches == n
+    }
+
+    private func check(_ r: Int, _ c: Int, _ player: Int, _ direction: [Int]) -> Int {
+        guard r >= 0, r < board.count, c >= 0, c < board[r].count else {
+            return 0
         }
-        
-        guard board[index[0]][index[1]] == marker else {
-            return count
+
+        guard board[r][c] == player else {
+            return 0
         }
-        
-        let newRow = index[0] + relativeIndex[0]
-        let newCol = index[1] + relativeIndex[1]
-        
-        return check(marker, [newRow, newCol], (count + 1), relativeIndex)
+
+        return check((r + direction[0]), (c + direction[1]), player, direction) + 1
     }
 }
 
