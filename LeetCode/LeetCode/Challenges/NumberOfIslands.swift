@@ -21,7 +21,7 @@ struct NumberOfIslands {
     //matrix
     //subgraphs
     //disconnected
-    //visited
+    //negative marking
     //
     //Solution Description:
     //Treat the grid as graph, potentially containing multiple unconnected subgraphs. Iterate through the graph until we find
@@ -139,6 +139,60 @@ struct NumberOfIslands {
     //
     //Solution Description:
     //Treat the grid as graph, potentially containing multiple unconnected subgraphs. Iterate through the graph until we find
+    //land (element containing `1`). Once we have found land we need to find all land that is connected with it. Using DFS we
+    //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
+    //back over already discovered land we keep track of it using a `visited` set. Once we have exhausted all land connected
+    //to this first discovered land we increase the island count and try to find unexplored land by continuing to loop
+    //through the grid.
+    //
+    //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
+    func numIslands3(_ grid: [[Character]]) -> Int {
+        var visited = Set<[Int]>()
+        var count = 0
+
+        for r in 0..<grid.count {
+            for c in 0..<grid[r].count {
+                if dfs3(grid, r, c, &visited) {
+                    count += 1
+                }
+            }
+        }
+
+        return count
+    }
+
+    private func dfs3(_ grid: [[Character]], _ r: Int, _ c: Int, _ visited: inout Set<[Int]>) -> Bool {
+        guard r >= 0, r < grid.count, c >= 0, c < grid[r].count else {
+            return false
+        }
+
+        guard !visited.contains([r, c]), grid[r][c] == "1" else {
+            return false
+        }
+        visited.insert([r, c])
+
+        _ = dfs3(grid, r + 1, c, &visited)
+        _ = dfs3(grid, r - 1, c, &visited)
+        _ = dfs3(grid, r, c + 1, &visited)
+        _ = dfs3(grid, r, c - 1, &visited)
+
+        return true
+    }
+    
+    //Time: O(m * n) where m is the number of rows in `grid`
+    //               where n is the number of columns in `grid`
+    //Space: O(m * n)
+    //graph theory
+    //DFS
+    //recursive
+    //relative indexing
+    //matrix
+    //subgraphs
+    //disconnected
+    //visited
+    //
+    //Solution Description:
+    //Treat the grid as graph, potentially containing multiple unconnected subgraphs. Iterate through the graph until we find
     //land (cell containing `1`). Once we have found land we need to find all land that is connected with it. Using DFS we
     //traverse the graph from this land cell and find all connected land using relative indexing. To ensure that we don't go
     //back over already discovered land we keep track of it using a `visited` set. Once we have exhausted all land connected
@@ -146,7 +200,7 @@ struct NumberOfIslands {
     //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
-    func numIslands3(_ grid: [[Character]]) -> Int {
+    func numIslands4(_ grid: [[Character]]) -> Int {
         //0 - sea, 1 - land
         var visited = Set<[Int]>()
         var islandCount = 0
@@ -203,7 +257,7 @@ struct NumberOfIslands {
     //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple DFSs
-    func numIslands4(_ grid: [[Character]]) -> Int {
+    func numIslands5(_ grid: [[Character]]) -> Int {
         //0 - sea, 1 - land
         var visited = Set<[Int]>()
         var islandCount = 0
@@ -263,7 +317,7 @@ struct NumberOfIslands {
     //through the grid.
     //
     //N.B: This graph can have multiple unconnected subgraphs so we need to perform multiple BFSs
-    func numIslands5(_ grid: [[Character]]) -> Int {
+    func numIslands6(_ grid: [[Character]]) -> Int {
         //0 - sea, 1 - land
         var visited = Set<[Int]>()
         var islandCount = 0
