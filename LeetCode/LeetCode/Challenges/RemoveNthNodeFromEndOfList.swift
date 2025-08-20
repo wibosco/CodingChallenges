@@ -24,16 +24,13 @@ struct RemoveNthNodeFromEndOfList {
     //node to overcome we introduce a dummy node that we will place before `head` so we can still remove `head` if we need to without
     //introducing any complex logic.
     func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
-        guard let head = head else {
-            return nil
-        }
-        
         let dummy = ListNode(-1) //will allow us to remove the `head` node if needed
         dummy.next = head
+        
         var p1: ListNode? = dummy
         var p2: ListNode? = dummy
         
-        for _ in 0..<(n + 1) { //`n + 1` so `p2` will stop at the node before the `nth` node
+        for _ in 0...n { //note the `...` rather than `..<` so `p2` will stop at the node before the `nth` node
             p1 = p1?.next
         }
 
