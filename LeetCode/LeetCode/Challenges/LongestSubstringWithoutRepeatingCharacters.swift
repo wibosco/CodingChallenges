@@ -35,6 +35,7 @@ struct LongestSubstringWithoutRepeatingCharacters {
 
         while right < chars.count {
             let c = chars[right]
+            //`left` could have the same value as `index` so needs to be `>=` rather than just `>`
             if let index = map[c], index >= left { //only care about indexes that come after the start of the window
                 left = index + 1
             }
