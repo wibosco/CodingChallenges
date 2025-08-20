@@ -118,4 +118,28 @@ struct PopulatingNextRightPointers {
         
         return root
     }
+    
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(h) where h is the height of the tree
+    //binary tree - perfect
+    //DFS
+    //recursive
+    //
+    //Solution Description:
+    //Using DFS we traverse the tree and set the `next` property for each node's child nodes we encounter. To conenct
+    //subtrees we use the `next` property of the current node to get to it's `next` nodes child nodes.
+    func connect4(_ root: TreeNodeNext?) -> TreeNodeNext? {
+        //need basecase to prevent infinite calls
+        guard let root else {
+            return nil
+        }
+
+        root.left?.next = root.right
+        root.right?.next = root.next?.left
+
+        _ = connect4(root.left)
+        _ = connect4(root.right)
+
+        return root
+    }
 }
