@@ -151,4 +151,86 @@ struct ValidSudoku {
 
         return true
     }
+    
+    //Time: O(n * m) where n is the number of rows in `board`
+    //               where m is the number of columns in `board`
+    //Space: O(max(n, m))
+    //matrix
+    //array
+    //graph theory
+    //relative indexing
+    //DFS
+    //iterative
+    //visited
+    //
+    //Solution Description:
+    //Treating `board` as a graph we can use DFS with relative indexing to determine if the rows and columns are valid. And
+    //then using relative indexing without DFS we can determine if each block is valid as well. As this is a sudoku board we
+    //know the position of each block so can hard code those indexes.
+    func isValidSudoku3(_ board: [[Character]]) -> Bool {
+
+        //rows
+        for r in 0..<board.count {
+            var seen = Set<Character>()
+            for c in 0..<board[r].count {
+                let num = board[r][c]
+
+                guard board[r][c] != "." else {
+                    continue
+                }
+
+                guard !seen.contains(num) else {
+                    return false
+                }
+                seen.insert(num)
+            }
+        }
+
+        //columns
+        for c in 0..<board[0].count {
+            var seen = Set<Character>()
+            for r in 0..<board.count {
+                let num = board[r][c]
+
+                guard board[r][c] != "." else {
+                    continue
+                }
+
+                guard !seen.contains(num) else {
+                    return false
+                }
+                seen.insert(num)
+            }
+        }
+
+        //boxes
+        let centers = [[1, 1], [1, 4], [1, 7],
+                       [4, 1], [4, 4], [4, 7],
+                       [7, 1], [7, 4], [7, 7]]
+
+        let relativeIndexing = [[-1, -1], [-1, 0], [-1, 1],
+                                [0, -1], [0, 0], [0, 1],
+                                [1, -1], [1, 0], [1, 1]]
+
+        for center in centers {
+            var seen = Set<Character>()
+            for relativeIndex in relativeIndexing {
+                let r = center[0] + relativeIndex[0]
+                let c = center[1] + relativeIndex[1]
+
+                let num = board[r][c]
+
+                guard board[r][c] != "." else {
+                    continue
+                }
+
+                guard !seen.contains(num) else {
+                    return false
+                }
+                seen.insert(num)
+            }
+        }
+
+        return true
+    }
 }
