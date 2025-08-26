@@ -11,6 +11,35 @@ import Foundation
 //https://leetcode.com/problems/intersection-of-two-arrays/
 struct IntersectionOfTwoArrays {
     
+    //Time: O(n + m) where n is the number of elements in `nums1`
+    //               where m is the number of elements in `nums2`
+    //Space: O(n)
+    //array
+    //set
+    //
+    //Solution Description:
+    //We iterate through `nums1` and place each element into a set (so allowing O(1) look up time). Then we iterate through
+    //`nums2` if a value appears in `set1` then we add it to `intersection` as we know both arrays contain that value.
+    //`Intersection` has to be a set to avoid duplicate values being added. Once all values in `nums2` have been processed
+    //we convert `intersection` into an array and return it.
+    func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+        var set1 = Set<Int>()
+        for n in nums1 {
+            set1.insert(n)
+        }
+
+        var intersection = Set<Int>()
+        for n in nums2 {
+            guard set1.contains(n) else {
+                continue
+            }
+
+            intersection.insert(n)
+        }
+
+        return Array(intersection)
+    }
+    
     //Time: O(m log m + n log m) where n is the number of values in `nums1`
     //                           where m is the number of values in `nums2`
     //Space: O(n) (`intersection` array)
@@ -20,7 +49,7 @@ struct IntersectionOfTwoArrays {
     //
     //Solution Description:
     //By sorting `nums2` we can use binary search to find matching elements between `nums1` and `nums2`.
-    func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersection2(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersection = Set<Int>()
         
         let sortedNums2 = nums2.sorted() //O(m log m)
@@ -62,7 +91,7 @@ struct IntersectionOfTwoArrays {
     //Solution Description:
     //For each element in `nums2` we iterate through `nums2` until we either find that element of run out of elements in
     //`nums2`
-    func intersectionLooping(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    func intersection3(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var intersection = Set<Int>()
         
         for num1 in nums1 {
