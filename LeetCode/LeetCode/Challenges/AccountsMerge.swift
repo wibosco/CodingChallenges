@@ -15,6 +15,66 @@ struct AccountsMerge {
     //                       where m the number of unique email addresses
     //Space: O(n * m)
     //graph theory
+    //DFS
+    //multi-source
+    //visited
+    //dictionary
+    //adjacency list
+    //sorting
+    //
+    //Solution Description:
+    //Treat the accounts as a graph, with the emails being the vertices. Ignoring the account name to begin with, we first
+    //build up adjacency list (using a dictionary) from the email addresses - treating the first email address in each
+    //account as the "root" for that subgraph. What's important to note here is that the add the email addresses to both
+    //sides of the edge and we use the email addresses as both key and value in that adjacency list. Next we iterate
+    //back through the `accounts` array and perform a depth first search on each vertice we encounter. As this graph can
+    //contain multiple subgraphs, we need to perform multiple DFSs - to ensure that we don't get caught in a cycle we
+    //track which vertices we have visited and only search those vertices that haven't been previously visited. Once each
+    //subgraph has been search we sort the email addresses, add the name and append the merged account to our
+    //`mergedAccounts` array
+    func accountsMerge(_ accounts: [[String]]) -> [[String]] {
+        var adjList = [String: [String]]()
+
+        for account in accounts {
+            let src = account[1] //account[0] is the users name
+            for dst in account[2...] {
+                adjList[src, default: [String]()].append(dst)
+                adjList[dst, default: [String]()].append(src)
+            }
+        }
+
+        var seen = Set<String>()
+        var mergedAccounts = [[String]]()
+
+        for account in accounts {
+            var connectedEmails = [String]()
+
+            dfs(adjList, account[1], &connectedEmails, &seen)
+
+            if connectedEmails.count > 0 {
+                mergedAccounts.append(([account[0]] + connectedEmails.sorted(by: <)))
+            }
+        }
+
+        return mergedAccounts
+    }
+
+    private func dfs(_ adjList: [String: [String]], _ value: String, _ connectedEmails: inout [String], _ seen: inout Set<String>) {
+        guard !seen.contains(value) else {
+            return
+        }
+        connectedEmails.append(value)
+        seen.insert(value)
+
+        for neighbor in adjList[value] ?? [] {
+            dfs(adjList, neighbor, &connectedEmails, &seen)
+        }
+    }
+    
+    //Time: O(m * (n log n)) where n is the number of unique accounts
+    //                       where m the number of unique email addresses
+    //Space: O(n * m)
+    //graph theory
     //BFS
     //multi-source
     //visited
@@ -32,7 +92,7 @@ struct AccountsMerge {
     //track which vertices we have visited and only search those vertices that haven't been previously visited. Once each
     //subgraph has been search we sort the email addresses, add the name and append the merged account to our
     //`mergedAccounts` array
-    func accountsMerge(_ accounts: [[String]]) -> [[String]] {
+    func accountsMerge2(_ accounts: [[String]]) -> [[String]] {
         var adjList = [String: [String]]()
         
         //build adjacency list
@@ -116,7 +176,7 @@ struct AccountsMerge {
     //track which vertices we have visited and only search those vertices that haven't been previously visited. Once each
     //subgraph has been search we sort the email addresses, add the name and append the merged account to our
     //`mergedAccounts` array
-    func accountsMergeDFS(_ accounts: [[String]]) -> [[String]] {
+    func accountsMerge3(_ accounts: [[String]]) -> [[String]] {
         var adjList = [String: [String]]()
         
         //build adjacency list
@@ -147,7 +207,7 @@ struct AccountsMerge {
             
             var mergedEmails = [String]()
             
-            dfs(&mergedEmails, email, &visited, adjList)
+            dfs3(&mergedEmails, email, &visited, adjList)
             
             mergedEmails.sort { $0 < $1 } // n log n
             
@@ -161,7 +221,7 @@ struct AccountsMerge {
         return mergedAccounts
     }
     
-    private func dfs(_ mergedEmails: inout [String], _ email: String, _ visited: inout Set<String>, _ adjList: [String: [String]]) {
+    private func dfs3(_ mergedEmails: inout [String], _ email: String, _ visited: inout Set<String>, _ adjList: [String: [String]]) {
         visited.insert(email)
         mergedEmails.append(email)
         
@@ -174,7 +234,7 @@ struct AccountsMerge {
                 continue
             }
             
-            dfs(&mergedEmails, neighbor, &visited, adjList)
+            dfs3(&mergedEmails, neighbor, &visited, adjList)
         }
     }
     
@@ -198,7 +258,7 @@ struct AccountsMerge {
     //combined the duplicated email addresses in sets. We now need to iterate through each unique email address and find
     //which set they are associated with to complete our merge. Once we have all accounted represented once with their email
     //addresses, we only need to sort the email addresses and add in the users name
-    func accountsMergeUnionFind(_ accounts: [[String]]) -> [[String]] {
+    func accountsMerge4(_ accounts: [[String]]) -> [[String]] {
         var map = [String: Int]() //[Email: Index], to add all unique emails
         let uf = UnionFind(count: accounts.count)
         
