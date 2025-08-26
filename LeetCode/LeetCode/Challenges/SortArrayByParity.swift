@@ -15,6 +15,42 @@ struct SortArrayByParity {
     //array
     //two pointers
     //in-line
+    //fast forward
+    //
+    //Solution Description:
+    //Using two pointers we iterate through `nums` from out to in until `p1` crosses `p2`. With `p1` we are attempting to find odd
+    //values and with `p2` we are attempting to find even values. When we find those two values we swap them and continue searching
+    //`nums` for anyother misplaced values. Once `p1` crosses `p2` we know that all values are sorted and can return `nums`.
+    func sortArrayByParity(_ nums: [Int]) -> [Int] {
+        var p1 = 0
+        var p2 = nums.count - 1
+
+        var nums = nums
+
+        while p1 < p2 {
+            //fast foward to an odd value
+            while p1 < p2, nums[p1] % 2 == 0 {
+                p1 += 1
+            }
+            
+            //fast forward to an even value
+            while p2 > p1, nums[p2] % 2 != 0 {
+                p2 -= 1
+            }
+
+            if p1 < p2 {
+                nums.swapAt(p1, p2)
+            }
+        }
+
+        return nums
+    }
+    
+    //Time: O(n) where n is the number of elements in `nums`
+    //Space: O(n)
+    //array
+    //two pointers
+    //in-line
     //
     //Solution Description:
     //Using two pointers we iterate through `nums` and move values depending on if they are even or not. `p1` is the value that is
@@ -24,7 +60,10 @@ struct SortArrayByParity {
     //forward as `p1` isn't sorted yet. This results in every value before `p1` being even, every value between `p1` and `p2` being
     //odd, every value from `p2` being unknown. Once `p2` reaches the end of `nums` we return `nums` as all even values are before
     //the odd values.
-    func sortArrayByParity(_ nums: [Int]) -> [Int] {
+    //
+    //Similar to: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+    //Similar to: //https://leetcode.com/problems/remove-element/
+    func sortArrayByParity2(_ nums: [Int]) -> [Int] {
         var nums = nums
         
         var p1 = 0
@@ -55,7 +94,7 @@ struct SortArrayByParity {
     //Iterating through `nums` we check if any given value is odd or even - if even we add it to the `evenArray` array; if
     //odd we add it to the `oddArray` array. After iterating through all values we combine `evenArray` and `oddArray` into
     //the one array and return it.
-    func sortArrayByParityTwoArrays(_ nums: [Int]) -> [Int] {
+    func sortArrayByParity3(_ nums: [Int]) -> [Int] {
         var evenArray = [Int]()
         var oddArray = [Int]()
         

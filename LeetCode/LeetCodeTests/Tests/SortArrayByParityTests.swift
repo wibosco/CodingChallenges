@@ -19,7 +19,8 @@ final class SortArrayByParityTests: XCTestCase {
         
         let result = SortArrayByParity().sortArrayByParity(nums)
         
-        XCTAssertEqual(result, [2,4,3,1])
+        //the order within the even and odd sections isn't important
+        XCTAssertEqual(result, [4,2,1,3])
     }
     
     func test_B() {
@@ -27,6 +28,7 @@ final class SortArrayByParityTests: XCTestCase {
         
         let result = SortArrayByParity().sortArrayByParity(nums)
         
+        //the order within the even and odd sections isn't important
         XCTAssertEqual(result, [0])
     }
     
@@ -35,6 +37,7 @@ final class SortArrayByParityTests: XCTestCase {
         
         let result = SortArrayByParity().sortArrayByParity(nums)
         
-        XCTAssertEqual(result, [2,4,3,1])
+        //the order within the even and odd sections isn't important
+        XCTAssertEqual(result, [4,2,3,1])
     }
 }
