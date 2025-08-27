@@ -56,6 +56,7 @@ A collection of coding challenges and their solutions from:
 | "Consecutive" | `Sort` |
 | "Merge", "Intervals", "Neighbors" | `Sort` |
 | "Rotate by k" | `(i + k) % array.count` |
+| "Array" | `stack`, `monotonic stack`, `two pointers`, `sliding window`, `binary search` |
 
 **When unable to spot a pattern, stop and write out the steps involved in the given example - work the problem without code.**
 

@@ -11,7 +11,7 @@ import Foundation
 //https://leetcode.com/problems/container-with-most-water/
 struct ContainerWithMostWater {
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of elements in `height`
     //Space: O(1)
     //greedy
     //two pointers
@@ -33,7 +33,7 @@ struct ContainerWithMostWater {
             let h1 = height[left]
             let h2 = height[right]
             
-            let h = min(h1, h2)
+            let h = min(h1, h2) //can't go above the smaller value
             let l = right - left
             
             let containerArea = h * l //area = height * length
@@ -49,7 +49,7 @@ struct ContainerWithMostWater {
         return maxContainerArea
     }
     
-    //Time: O(n^2)
+    //Time: O(n ^ 2) where n is the number of elements in `height`
     //Space: O(1)
     func maxAreaBruteForce(_ height: [Int]) -> Int {
         var maxContainerArea = 0
