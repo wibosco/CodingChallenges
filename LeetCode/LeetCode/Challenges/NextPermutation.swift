@@ -18,6 +18,7 @@ struct NextPermutation {
     //inline
     //permutation
     //pivot & swap
+    //backtracking (virutal not actual)
     //
     //Solution Description:
     //To find the next permutation we need to find an element that when swapped with another minimally increases `nums` in
@@ -27,7 +28,11 @@ struct NextPermutation {
     //
     //In `834762` the `4` is that value
     //
-    //We call this breaking order element the `pivot`. Once we have the `pivot` we need to find the smallest value that is
+    //We call this breaking order element the `pivot`. This `pivot` is what we want to change because a descending subarray
+    //to the right shows that all permutations with the `pivot` as the root have been exhausted and that the root of this
+    //tree now needs to be changed for it's next element. Think of it like backtracking, once all possible subtrees have
+    //been built we move the root onto the next element (which is the smallest value in the search space to the right) as
+    //in DFS we would be looping over the neighbors. Once we have the `pivot` we need to find the smallest value that is
     //greater than it to swap over - this is to minimise the increase in `n`. You might be thinking if everything to the
     //right of `pivot` is ascending won't that smallest value be the last digit in `n` - be careful here, just because the
     //`pivot` is smaller than it's neighor doesn't mean that it is smaller than all elements to the right and swapping the
@@ -45,7 +50,7 @@ struct NextPermutation {
     //
     //`836247`
     //
-    //See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
+    //See: https://www.youtube.com/watch?v=quAS1iydq7U
     //Similar to: https://leetcode.com/problems/next-greater-element-iii/
     func nextPermutation(_ nums: inout [Int]) {
         guard nums.count > 1 else {
@@ -59,7 +64,8 @@ struct NextPermutation {
         }
         
         if pivot >= 0 {
-            //find the least-significant-value to the right of the pivot that is larger than the pivot
+            //we know that `(pivot + 1)...` is descending so first `nums[lsv]` is the smallest value greater than
+            //`nums[pivot]` i.e the next permutation for the value at index `pivot`
             var lsv = nums.count - 1
             while lsv > pivot, nums[lsv] <= nums[pivot] {
                 lsv -= 1
@@ -68,7 +74,8 @@ struct NextPermutation {
         }
         
         //now the pivot is moved into place making `nums` > `n` we need to minimise `nums` so it's as small
-        //as can be while still > `n`.
+        //as can be while still > `n` i.e. if this was a tree we would have reset our search space with a
+        //new root and selected the smallest value as the new value for `pivot + 1`
         nums[(pivot + 1)...].reverse()
     }
     
@@ -76,7 +83,7 @@ struct NextPermutation {
     //two pointers
     //array
     //
-    //See: https://www.youtube.com/watch?v=quAS1iydq7U&t=1s
+    //See: https://www.youtube.com/watch?v=quAS1iydq7U
     func nextPermutationAlt(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
