@@ -30,14 +30,16 @@ struct NextPermutation {
     //
     //We call this breaking order element the `pivot`. This `pivot` is what we want to change because a descending subarray
     //to the right shows that all permutations with the `pivot` as the root have been exhausted and that the root of this
-    //tree now needs to be changed for it's next element. Think of it like backtracking, once all possible subtrees have
-    //been built we move the root onto the next element (which is the smallest value in the search space to the right) as
-    //in DFS we would be looping over the neighbors. Once we have the `pivot` we need to find the smallest value that is
-    //greater than it to swap over - this is to minimise the increase in `n`. You might be thinking if everything to the
-    //right of `pivot` is ascending won't that smallest value be the last digit in `n` - be careful here, just because the
-    //`pivot` is smaller than it's neighor doesn't mean that it is smaller than all elements to the right and swapping the
-    //`pivot` with an element smaller than itself would not result in the smallest permutation of `n` greater than `n` but
-    //rather a smaller permutation of `n` e.g.
+    //tree now needs to be changed for it's next element which must exist to the right as there are larger values there.
+    //Remember that when performing a DFS there is an order to how you choose the next element - this order is the same for
+    //every permutation. Think of it like backtracking, once all possible subtrees have been built we move the root onto the
+    //next element (which is the smallest value in the search space to the right) as in DFS we would be looping over the
+    //neighbors. Once we have the `pivot` we need to find the smallest value that is greater than it to swap over - this is
+    //to minimise the increase in `n`. You might be thinking if everything to the right of `pivot` is ascending won't that
+    //smallest value be the last digit in `n` - be careful here, just because the `pivot` is smaller than it's neighor
+    //doesn't mean that it is smaller than all elements to the right and swapping the `pivot` with an element smaller than
+    //itself would not result in the smallest permutation of `n` greater than `n` but rather a smaller permutation of `n`
+    //e.g.
     //
     //In `834762` we don't want to swap the `4` with the `2` as `832764` < `834762` instead we want to swap it with the `6`
     //
