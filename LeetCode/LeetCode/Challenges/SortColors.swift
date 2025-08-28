@@ -95,16 +95,16 @@ struct SortColors {
     //
     //Solution Description:
     //Using two pointer we iterate through `nums` - first sorting `0` and then `1` values. First we move `p1` onto the first
-    //non-`0` index then coming from the opposite end of `nums` we move every `0` element we encounter to index `p1` which we
+    //non-zero index then coming from the opposite end of `nums` we move every `0` element we encounter to index `p1` which we
     //then increment. We repeat this process until `p1` crosses `p2`. Without resetting `p1` we then move it onto the first
-    //non-`1` index and following the same process as we used for `0`, this time we swap every `1` element with the value at
+    //non-one index and following the same process as we used for `0`, this time we swap every `1` element with the value at
     //index `p1`. Once the `0` and `1` elements have been sorted, the `2` elements have also been sorted and we can exit.
     func sortColors3(_ nums: inout [Int]) {
         var p1 = 0
         var p2 = nums.count - 1
         
         //order `0`
-        while p1 < p2, nums[p1] == 0 { //move `p1` onto first non-`0` index
+        while p1 < p2, nums[p1] == 0 { //move `p1` onto first non-zero index
             p1 += 1
         }
 
@@ -112,7 +112,7 @@ struct SortColors {
             if nums[p2] == 0 {
                 nums.swapAt(p1, p2)
 
-                while p1 < p2, nums[p1] == 0 { //move `p1` onto next non-`0` index
+                while p1 < p2, nums[p1] == 0 { //move `p1` onto next non-zero index
                     p1 += 1
                 }
             }
@@ -123,7 +123,7 @@ struct SortColors {
         //order `1`
         p2 = nums.count - 1
 
-        while p1 < p2, nums[p1] == 1 { //move `p1` onto first non-`1` index
+        while p1 < p2, nums[p1] == 1 { //move `p1` onto first non-one index
             p1 += 1
         }
 
@@ -131,7 +131,7 @@ struct SortColors {
             if nums[p2] == 1 {
                 nums.swapAt(p1, p2)
 
-                while p1 < p2, nums[p1] == 1 { //move `p1` onto next non-`1` index
+                while p1 < p2, nums[p1] == 1 { //move `p1` onto next non-one index
                     p1 += 1
                 }
             }
