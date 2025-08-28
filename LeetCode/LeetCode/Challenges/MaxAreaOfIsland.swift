@@ -77,13 +77,68 @@ struct MaxAreaOfIsland {
     //visited
     //recursive
     //multi-source
+    //inout
+    //
+    //Solution Description:
+    //We traverse through `grid` checking if each index contains land (1). If that index is land then we perform a DFS
+    //from that index to find all connected land indexes. We use relative indexing to determine where we can move to
+    //during DFS. To avoid visiting an index multiple times we use a visited set.
+    func maxAreaOfIsland2(_ grid: [[Int]]) -> Int {
+        var maxArea = 0
+        var visited = Set<[Int]>()
+
+        for r in 0..<grid.count {
+            for c in 0..<grid[r].count {
+                var island = Set<[Int]>()
+
+                dfs(grid, r, c, &island, &visited)
+
+                maxArea = max(maxArea, island.count)
+            }
+        }
+
+        return maxArea
+    }
+
+    private func dfs(_ grid: [[Int]], _ r: Int, _ c: Int, _ island: inout Set<[Int]>, _ visited: inout Set<[Int]>) {
+        guard r >= 0, r < grid.count, c >= 0, c < grid[r].count else {
+            return
+        }
+
+        guard grid[r][c] == 1 else {
+            return
+        }
+
+        guard !island.contains([r, c]), !visited.contains([r, c]) else {
+            return
+        }
+        island.insert([r, c])
+        visited.insert([r, c])
+        
+        //relative indexing
+        dfs(grid, r + 1, c, &island, &visited)
+        dfs(grid, r - 1, c, &island, &visited)
+        dfs(grid, r, c + 1, &island, &visited)
+        dfs(grid, r, c - 1, &island, &visited)
+    }
+    
+    //Time: O(n * m) where n is the number for row in grid
+    //               where m is the number for columns in grid
+    //Space: O(n * m)
+    //graph theory
+    //DFS
+    //relative indexing
+    //matrix
+    //visited
+    //recursive
+    //multi-source
     //
     //Solution Description:
     //We traverse through `grid` checking if each index contains land (1). If that index is land then we perform a DFS
     //from that index to find all connected land indexes. We use relative indexing to determine where we can move to
     //during DFS. To avoid visiting an index multiple times we store each index that we visit and skip it if we come
     //across that index again.
-    func maxAreaOfIslandAlt(_ grid: [[Int]]) -> Int {
+    func maxAreaOfIsland3(_ grid: [[Int]]) -> Int {
         var largest = 0
         var visited = Set<[Int]>()
         
