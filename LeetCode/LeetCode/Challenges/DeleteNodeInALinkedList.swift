@@ -5,7 +5,7 @@ import Foundation
 //https://leetcode.com/problems/delete-node-in-a-linked-list/
 struct DeleteNodeInALinkedList {
     
-    //Time: O(1) where n is the number of nodes in the list
+    //Time: O(1)
     //Space: O(1)
     //linked list
     //
@@ -19,7 +19,7 @@ struct DeleteNodeInALinkedList {
         }
         
         node.val = next.val
-        node.next = next.next
+        node.next = next.next //skip over the node that was copied so elimating it from the linked list
     }
     
     //Time: O(n) where n is the number of nodes in the list
