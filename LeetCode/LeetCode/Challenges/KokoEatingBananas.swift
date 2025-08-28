@@ -27,6 +27,8 @@ struct KokoEatingBananas {
     //our search range to faster speeds; if we are able to eat all bananas with `h` time then we know what going any quicker
     //will also result in all bananas so we can discard those speeds as we want the minimum eating speed i.e move the right
     //boundary left so to limit our search range to slower speeds.
+    //
+    //Similar to: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
     func minEatingSpeed(_ piles: [Int], _ h: Int) -> Int {
         var left = 1 //slowest eating speed
         var right = 0 //find the largest single pile that she could eat in one hour
