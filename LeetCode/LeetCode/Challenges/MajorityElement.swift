@@ -49,7 +49,7 @@ struct MajorityElement {
     //Iterate through `nums` and track the number of times that we have seen the current element in a dictionary. As well as building
     //up the frequency dictionary we also track the current element has been seen more than `nums / 2`. If it has we set the `majority`
     //variable and exit the loop; else we keep iterating.
-    func majorityElementDictionary(_ nums: [Int]) -> Int {
+    func majorityElement2(_ nums: [Int]) -> Int {
         var frequencies = [Int: Int]()
         var majority = nums[0]
         let threshold = nums.count / 2

@@ -15,6 +15,7 @@ struct GasStation {
     //array
     //counting
     //greedy
+    //Kadanes algorithm (with a twist)
     //
     //Solution Description:
     //In order for a circuit of the gas stations to be possible there needs to be more gas available than it costs to
@@ -27,6 +28,8 @@ struct GasStation {
     //
     //N.B. while it might not be possible to get to station `i` from 0 i.e. [0..i], it might be possible to get there by
     //going [(i + 1)...0...i] as any unused gas is carried forward in the tank
+    //
+    //Similar to: https://leetcode.com/problems/maximum-subarray/
     func canCompleteCircuit(_ gas: [Int], _ cost: [Int]) -> Int {
         var currentGas = 0
         var totalGasCostDelta = 0
@@ -38,7 +41,10 @@ struct GasStation {
             
             if currentGas < 0 {
                 currentGas = 0
-                startingStation = (i + 1) //can't station is reachable without more gas so update the starting station
+                
+                //`i` station isn't reachable without more gas so update the starting station to try and find that extra
+                //gas later in the array
+                startingStation = (i + 1)
             }
         }
     
