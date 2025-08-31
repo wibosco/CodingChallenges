@@ -18,6 +18,8 @@ struct MaxConsecutiveOnesIII {
     //we enounter a `0` where we then decrement `flips` and the while loop exits. We then calculate the difference between the
     //two pointers and compare that against the current `maxCount`, if it is greater then the difference becomes the new
     //`maxCount`. We repeat this process until `right` reaches the end of `nums` at which point we return `maxCount`.
+    //
+    //Similar to: https://leetcode.com/problems/max-consecutive-ones/
     func longestOnes(_ nums: [Int], _ k: Int) -> Int {
         var maxCount = 0
         
@@ -61,6 +63,8 @@ struct MaxConsecutiveOnesIII {
     //value index - this might be to the right of `right` if `flips` started as `0`. We then calculate the difference between the
     //two pointers and compare that against the current `maxCount`, if it is greater then the difference becomes the new
     //`maxCount`. We repeat this process until `right` reaches the end of `nums` at which point we return `maxCount`.
+    //
+    //Similar to: https://leetcode.com/problems/max-consecutive-ones/
     func longestOnes2(_ nums: [Int], _ k: Int) -> Int {
         var maxCount = 0
         
@@ -103,6 +107,8 @@ struct MaxConsecutiveOnesIII {
     //number of flips have occurred. In each iteration we calculate the current length of consecutive `1` values and if
     //greater than `maxCount` we replace `maxCount` with that value. Once all elements in `nums` have been processed we return
     //`maxCount`.
+    //
+    //Similar to: https://leetcode.com/problems/max-consecutive-ones/
     func longestOnes3(_ nums: [Int], _ k: Int) -> Int {
         var flipped = [Int]()
         var maxCount = 0

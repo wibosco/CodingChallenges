@@ -27,6 +27,8 @@ struct FindPeakElement {
     //right neighbour is lower (we don't just return as while `mid` is greater, it itself might be part of a downward slope),
     //move right if the right neighbour is equal or greater than. Eventually we narrow down on an actual peak and can return
     //it as the `left` index.
+    //
+    //Similar to: https://leetcode.com/problems/peak-index-in-a-mountain-array/
     func findPeakElement(_ nums: [Int]) -> Int {
         guard nums.count > 1 else {
             return 0
@@ -68,6 +70,8 @@ struct FindPeakElement {
     //right neighbour is lower (we don't just return as while `mid` is greater, it itself might be part of a downward slope),
     //move right if the right neighbour is equal or greater than. Once we find an index where both left and right neighbors
     //are lower we have found a peak and can return that index.
+    //
+    //Similar to: https://leetcode.com/problems/peak-index-in-a-mountain-array/
     func findPeakElement2(_ nums: [Int]) -> Int {
         return binarySearch(nums)
     }

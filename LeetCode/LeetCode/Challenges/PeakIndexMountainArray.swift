@@ -19,6 +19,8 @@ struct PeakIndexMountainArray {
     //Solution Description:
     //Using binary search we iterate through `arr` and move leftwards or rightwards depending on whether we are on an
     //ascending or descending slope. When `left` crosses `right` then we have found our peak at `left` and can return it.
+    //
+    //Similar to: https://leetcode.com/problems/find-peak-element/
     func peakIndexInMountainArray(_ arr: [Int]) -> Int {
         var left = 0
         var right = arr.count - 1

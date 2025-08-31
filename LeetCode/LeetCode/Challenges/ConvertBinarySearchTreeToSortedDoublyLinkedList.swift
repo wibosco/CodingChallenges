@@ -34,6 +34,8 @@ struct ConvertBinarySearchTreeToSortedDoublyLinkedList {
     //
     //N.B. How `tail` is an inout parameter as this allows it to "travel" across different levels of the tree as the
     //recursive stack unwinds.
+    //
+    //Similar to: https://leetcode.com/problems/validate-binary-search-tree/
     func treeToDoublyList(_ root: TreeNode?) -> TreeNode? {
         let sentinel = TreeNode(0)
         var tail = sentinel

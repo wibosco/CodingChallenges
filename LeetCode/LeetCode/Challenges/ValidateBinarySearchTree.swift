@@ -67,6 +67,8 @@ struct ValidateBinarySearchTree {
     //is immediately before the current node in an in-order traversal might be "far" away from it we use an `inout`
     //parameter to hold that predecessor node. If the current node is less than or equal to it's predecessor then we know
     //that this tree is not a BST and can return false.
+    //
+    //Similar to: https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/
     func isValidBST2(_ root: TreeNode?) -> Bool {
         var last: TreeNode?
         return dfs(root, &last)
