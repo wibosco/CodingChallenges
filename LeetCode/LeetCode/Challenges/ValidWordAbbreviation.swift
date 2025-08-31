@@ -11,6 +11,56 @@ import Foundation
 //https://leetcode.com/problems/valid-word-abbreviation/
 struct ValidWordAbbreviation {
     
+    //Time: O(max(n, m)) where n is the number of characters in `word`
+    //                   where m is the number of characters in `abbr`
+    //Space: O(n + m)
+    //string
+    //array
+    //two pointers
+    //fast forward
+    //
+    //Solution Description:
+    //We iterate through both `word` and `abbr` together using two pointers. Where the current value of each character array
+    //is a letter we directly compare those two elements - if they don't match we return false; if they match we increment
+    //both pointers. Where the current value of `abbr` is a number, we first check that number isn't `0` (if it is we return
+    //false) and then fast forward through `abbr` building up the number. When we have the full number we increment the `word`
+    //pointer (`p1`) by that number. When we exhaust either/both `word` and `abbr` we check if both have been fully processed
+    //and return true or false depending on the outcome.
+    func validWordAbbreviation(_ word: String, _ abbr: String) -> Bool {
+        var p1 = 0
+        var p2 = 0
+
+        let word = Array(word)
+        let abbr = Array(abbr)
+
+        while p2 < abbr.count, p1 < word.count {
+            if abbr[p2].isNumber {
+                guard abbr[p2] != "0" else {
+                    return false
+                }
+
+                var num = 0
+                //fast forward
+                while p2 < abbr.count, let digit = abbr[p2].wholeNumberValue {
+                    num *= 10
+                    num += digit
+
+                    p2 += 1
+                }
+                p1 += num
+            } else {
+                if abbr[p2] != word[p1] {
+                    return false
+                }
+
+                p2 += 1
+                p1 += 1
+            }
+        }
+
+        return p1 == word.count && p2 == abbr.count
+    }
+    
     //Time: O(n) where n is the number of characters in `abbr`
     //Space: O(m) where m is the number of characters in `word`
     //string
@@ -18,10 +68,13 @@ struct ValidWordAbbreviation {
     //two pointers
     //
     //Solution Description:
-    //Iterate through both the `abbr` and `word` strings comparing elements to ensure they match. Where needed build a string
-    //stack `num` to hold any numbers that we find. At the end, make sure that the pointer used for iterating the `word`
-    //string matches the length of `word`
-    func validWordAbbreviation(_ word: String, _ abbr: String) -> Bool {
+    //We iterate through both `word` and `abbr` together using two pointers. Where the current value of each character array
+    //is a letter we directly compare those two elements - if they don't match we return false; if they match we increment
+    //both pointers. Where the current value of `abbr` is a number, we first check that number isn't `0` (if it is we return
+    //false) and then fast forward through `abbr` building up the number. When we have the full number we increment the `word`
+    //pointer (`p1`) by that number. When we exhaust `abbr` we check that `word` was fully matched by comparing it against
+    //`word.count` and return the outcome of that check.
+    func validWordAbbreviation2(_ word: String, _ abbr: String) -> Bool {
         var num = ""
         let chars = Array(word)
         var p = 0
@@ -59,12 +112,16 @@ struct ValidWordAbbreviation {
     //string
     //array
     //two pointers
+    //fast forward
     //
     //Solution Description:
-    //Iterate through both the `abbr` and `word` strings comparing elements to ensure they match. Where needed convert a
-    //numeric string into an Int. At the end, make sure that the pointers used are both at the end of their
-    //string.
-    func validWordAbbreviation2(_ word: String, _ abbr: String) -> Bool {
+    //We iterate through both `word` and `abbr` together using two pointers. Where the current value of each character array
+    //is a letter we directly compare those two elements - if they don't match we return false; if they match we increment
+    //both pointers. Where the current value of `abbr` is a number, we first check that number isn't `0` (if it is we return
+    //false) and then fast forward through `abbr` building up the number. When we have the full number we increment the `word`
+    //pointer (`p1`) by that number. When we exhaust either/both `word` and `abbr` we check if both have been fully processed
+    //and return true or false depending on the outcome.
+    func validWordAbbreviation3(_ word: String, _ abbr: String) -> Bool {
         var wordPointer = 0
         var abbrPointer = 0
 
