@@ -29,7 +29,9 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "YES"
+            testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3DFC2EC7283AC6AB001256EE"

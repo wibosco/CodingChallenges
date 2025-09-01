@@ -54,6 +54,8 @@
 		439563CC2A5D9EDE004ACCE6 /* SubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439563CB2A5D9EDE004ACCE6 /* SubstringTests.swift */; };
 		43E48E1D2B8EA56100DAD512 /* Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E48E1C2B8EA56100DAD512 /* Subarray.swift */; };
 		43E48E1F2B8EA8BE00DAD512 /* SubarrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E48E1E2B8EA8BE00DAD512 /* SubarrayTests.swift */; };
+		43F757412E65CEC600224961 /* Kadane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F757402E65CEC600224961 /* Kadane.swift */; };
+		43F757432E65CF4F00224961 /* KadaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F757422E65CF4F00224961 /* KadaneTests.swift */; };
 		43F7AF3E2A7D007C007932E9 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF3D2A7D007C007932E9 /* LinkedList.swift */; };
 		43F7AF402A7D00E1007932E9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF3F2A7D00E1007932E9 /* ListNode.swift */; };
 		43F7AF422A7D02E9007932E9 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7AF412A7D02E9007932E9 /* LinkedListTests.swift */; };
@@ -118,6 +120,8 @@
 		439563CB2A5D9EDE004ACCE6 /* SubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringTests.swift; sourceTree = "<group>"; };
 		43E48E1C2B8EA56100DAD512 /* Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subarray.swift; sourceTree = "<group>"; };
 		43E48E1E2B8EA8BE00DAD512 /* SubarrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubarrayTests.swift; sourceTree = "<group>"; };
+		43F757402E65CEC600224961 /* Kadane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadane.swift; sourceTree = "<group>"; };
+		43F757422E65CF4F00224961 /* KadaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KadaneTests.swift; sourceTree = "<group>"; };
 		43F7AF3D2A7D007C007932E9 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		43F7AF3F2A7D00E1007932E9 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		43F7AF412A7D02E9007932E9 /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 				3DFC2F0C283BE396001256EE /* DijkstraTests.swift */,
 				3DFC2F10283BE396001256EE /* HeapSortTests.swift */,
 				3DFC2F0F283BE396001256EE /* InsertionSortTests.swift */,
+				43F757422E65CF4F00224961 /* KadaneTests.swift */,
 				3DE771AB285388DD002981DD /* KruskalTests.swift */,
 				43F7AF412A7D02E9007932E9 /* LinkedListTests.swift */,
 				3DFC2F11283BE396001256EE /* MergeSortTests.swift */,
@@ -290,6 +295,7 @@
 			children = (
 				439563C02A5D7BC5004ACCE6 /* Permutations.swift */,
 				43E48E1C2B8EA56100DAD512 /* Subarray.swift */,
+				43F757402E65CEC600224961 /* Kadane.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -419,6 +425,7 @@
 				3DD4729E2851F4E50008C93D /* HeapSort.swift in Sources */,
 				43E48E1D2B8EA56100DAD512 /* Subarray.swift in Sources */,
 				3DD472A02851F4E50008C93D /* RadixSort.swift in Sources */,
+				43F757412E65CEC600224961 /* Kadane.swift in Sources */,
 				3DD4729C2851F4E50008C93D /* InsertionSort.swift in Sources */,
 				43F7AF402A7D00E1007932E9 /* ListNode.swift in Sources */,
 				43F7AF3E2A7D007C007932E9 /* LinkedList.swift in Sources */,
@@ -449,6 +456,7 @@
 				3DFC2F1C283BE396001256EE /* MergeSortTests.swift in Sources */,
 				3DFC2F1D283BE396001256EE /* SelectionSortTests.swift in Sources */,
 				3DFC2F3A283BE3CE001256EE /* PriorityQueueTests.swift in Sources */,
+				43F757432E65CF4F00224961 /* KadaneTests.swift in Sources */,
 				3DFC2F18283BE396001256EE /* RadixSortTests.swift in Sources */,
 				3DFC2F1A283BE396001256EE /* InsertionSortTests.swift in Sources */,
 				3DD472AC28524D8B0008C93D /* PrimTests.swift in Sources */,
