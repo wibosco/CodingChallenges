@@ -173,7 +173,7 @@ struct NumberOfZeroFilledSubarrays {
             if nums[p1] == 0 {
                 var p2 = p1
 
-                while p2 < nums.count, nums[p2] == 0{
+                while p2 < nums.count, nums[p2] == 0 {
                     p2 += 1
                 }
 

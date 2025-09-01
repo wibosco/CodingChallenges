@@ -67,7 +67,7 @@ struct CountNodesEqualToAverageOfSubtree {
         return count
     }
 
-    private func dfs2(_ node: TreeNode?) -> (Int, Int, Int)  { //(total, nodes, count)
+    private func dfs2(_ node: TreeNode?) -> (Int, Int, Int) { //(total, nodes, count)
         guard let node else {
             return (0, 0, 0)
         }

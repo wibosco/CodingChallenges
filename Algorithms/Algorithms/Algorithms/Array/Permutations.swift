@@ -25,14 +25,14 @@ struct Permutations {
     //already used element so whenever we use an element we add it to the `usedIndexes` set so that it can be skipped over on
     //any deeper recursive calls. We then backtrack and the permutation changes when that recursive call returns.
     //
-    //Permutations of 123:
+    //Permutations of [1,2,3]:
     //
-    //     123
-    //     132
-    //     213
-    //     132
-    //     321
-    //     312
+    //     [1,2,3]
+    //     [1,3,2]
+    //     [2,1,3]
+    //     [1,3,2]
+    //     [3,2,1]
+    //     [3,1,2]
     //
     static func generatePermutations(_ nums: [Int]) -> Set<[Int]> {
         var permutations = Set<[Int]>()

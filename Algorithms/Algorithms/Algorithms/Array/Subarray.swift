@@ -22,18 +22,15 @@ struct Subarray {
     //ever move forwards, never backwards. Each new element we encounter we add to our subarray and store that addition in
     //`subarrays` as it own unique array - a subarray doesn't need to use all elements in `arr`.
     //
-    //Subarrays of `1549`
+    //Subarrays of `[1,2,3]`
     //
-    //    1
-    //    5
-    //    4
-    //    9
-    //    15
-    //    54
-    //    49
-    //    154
-    //    549
-    //    1549
+    //      [1]
+    //      [2]
+    //      [3]
+    //      [1,2]
+    //      [2,3]
+    //      [1,2,3]
+    //
     static func generateSubarrays(_ arr: [Int]) -> [[Int]] {
         var subarrays = [[Int]]()
         
@@ -64,18 +61,15 @@ struct Subarray {
     //ever move forwards, never backwards. Each new element we encounter we add to our subarray and store that addition in
     //`subarrays` as it own unique array - a subarray doesn't need to use all elements in `arr`.
     //
-    //Subarrays of `1549`
+    //Subarrays of `[1,2,3]`
     //
-    //    1
-    //    5
-    //    4
-    //    9
-    //    15
-    //    54
-    //    49
-    //    154
-    //    549
-    //    1549
+    //      [1]
+    //      [2]
+    //      [3]
+    //      [1,2]
+    //      [2,3]
+    //      [1,2,3]
+    //
     static func generateSubarraysUsingDFS(_ arr: [Int]) -> [[Int]] {
         var subarrays = [[Int]]()
         

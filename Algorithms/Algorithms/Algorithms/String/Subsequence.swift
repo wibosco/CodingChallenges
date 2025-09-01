@@ -22,30 +22,23 @@ struct Subsequence {
     //multi-source
     //n-ary tree
     //subsequence
+    //combination
     //
     //Solution Description:
-    //A subsequence is a non-contiguous slice of `s` i.e. while order is preserved some characters can be skipped over. Therefore
-    //to generate all subsequences we need to iterate through `s` from every possible position to every possible other position -
-    //in a forwards direction. To this we iterate in a DFS manner using backtracking to selected different "next" indexes from
-    //the current index. We do this until every possible start position has been fully explored.
+    //A subsequence is a non-contiguous slice of `s` i.e. while order is preserved some characters can be skipped over.
+    //Therefore to generate all subsequences we need to iterate through `s` from every possible position to every possible
+    //other position - in a forwards direction. To this we iterate in a DFS manner using backtracking to selected different
+    //"next" indexes from the current index. We do this until every possible start position has been fully explored.
     //
-    //Subsequences of `abcd`
+    //Subsequences of `abc`
     //
     //    a
     //    b
     //    c
-    //    d
     //    ab
     //    ac
-    //    ad
     //    bc
-    //    bd
-    //    cd
     //    abc
-    //    abd
-    //    acd
-    //    bcd
-    //    abcd
     static func generateSubsequences(_ s: String) -> Set<String> {
         var subsequences = Set<String>()
         var subsequence = [Character]()
@@ -63,7 +56,9 @@ struct Subsequence {
         for i in index..<characters.count { //with a subsequence we can skip over elements but not go backwards
             subsequence.append(characters[i])
             subsequences.insert(String(subsequence))
+            
             dfs(characters, (i + 1), &subsequence, &subsequences)
+            
             subsequence.removeLast()
         }
     }
@@ -78,6 +73,7 @@ struct Subsequence {
     //Solution Description:
     //Use a formula to work out the count.
     static func countSubsequences(_ s: String) -> Int {
+        //2^s.count
         return Int(pow(Double(2), Double(s.count))) - 1 //-1 removes the empty subsequence
     }
     
