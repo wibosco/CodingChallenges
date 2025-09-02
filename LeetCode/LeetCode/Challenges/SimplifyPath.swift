@@ -44,4 +44,57 @@ struct SimplifyPath {
     
         return "/" + stack.joined(separator: "/")
     }
+    
+    //Time: O(n) where n is the number of characters in `path`
+    //Space: O(n)
+    //stack
+    //string
+    //
+    //Solution Description:
+    //Using a stack we build up the final version of the path by iterating through the characters in `path`. Treating the "/"
+    //character as a signal the start of a new path component we fast forward through any additional "/" and then build up
+    //the body of path component until we hit another "/" character which signals the end of that component. We then
+    //determine if the path component is a command by checking if it is:
+    //
+    //1. `.` - treat as a no-op and skip
+    //2.  '..', pop last component from the `stack`
+    //
+    //Anything else we add to `stack`. Once all chracters in `path` have been processed we concatenate the elements of `stack`
+    //together, add a "/" prefix and return that single string.
+    func simplifyPath2(_ path: String) -> String {
+        let path = Array(path)
+        var stack = [String]()
+
+        var p1 = 0
+
+        while p1 < path.count {
+            if path[p1] == "/" {
+                while p1 < path.count, path[p1] == "/" {
+                    p1 += 1
+                }
+
+                guard p1 < path.count else {
+                    break
+                }
+
+                var component = [Character]()
+                while p1 < path.count, path[p1] != "/" {
+                    component.append(path[p1])
+                    p1 += 1
+                }
+
+                let str = String(component)
+
+                if str == "." {
+                    continue
+                } else if str == ".." {
+                    _ = stack.popLast()
+                } else {
+                    stack.append(str)
+                }
+            }
+        }
+
+        return "/" + stack.joined(separator: "/")
+    }
 }
