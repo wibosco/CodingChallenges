@@ -23,8 +23,8 @@ class LRUCache {
         }
     }
     
-    private var head = Node(key: -1, value: -1)
-    private var tail = Node(key: -1, value: -1)
+    private let head = Node(key: -1, value: -1)
+    private let tail = Node(key: -1, value: -1)
     
     private var nodes = [Int: Node]()
     private let capacity: Int

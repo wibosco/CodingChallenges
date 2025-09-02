@@ -40,4 +40,13 @@ struct LRUCacheTests {
         #expect(cache.get(1) == -1)
         #expect(cache.get(2) == 3)
     }
+    
+    @Test
+    func test_C() {
+        let cache = LRUCache(1)
+        
+        cache.put(2, 1)
+        
+        #expect(cache.get(2) == 1)
+    }
 }
