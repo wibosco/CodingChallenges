@@ -46,6 +46,8 @@
 		3DFC2F3A283BE3CE001256EE /* PriorityQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC2F39283BE3CE001256EE /* PriorityQueueTests.swift */; };
 		4379F49529EC9B23003BA6F9 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F49429EC9B23003BA6F9 /* BinarySearchTree.swift */; };
 		4379F49729EC9F41003BA6F9 /* BinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379F49629EC9F41003BA6F9 /* BinarySearchTreeTests.swift */; };
+		438118E42E685E6700922A22 /* QuickSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438118E32E685E6700922A22 /* QuickSelect.swift */; };
+		438118E62E68600A00922A22 /* QuickSelectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438118E52E68600A00922A22 /* QuickSelectTests.swift */; };
 		439563C12A5D7BC5004ACCE6 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439563C02A5D7BC5004ACCE6 /* Permutations.swift */; };
 		439563C32A5D88E1004ACCE6 /* PermutationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439563C22A5D88E1004ACCE6 /* PermutationsTests.swift */; };
 		439563C62A5D8ED3004ACCE6 /* Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439563C52A5D8ED3004ACCE6 /* Substring.swift */; };
@@ -114,6 +116,8 @@
 		3DFC2F39283BE3CE001256EE /* PriorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTests.swift; sourceTree = "<group>"; };
 		4379F49429EC9B23003BA6F9 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		4379F49629EC9F41003BA6F9 /* BinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTests.swift; sourceTree = "<group>"; };
+		438118E32E685E6700922A22 /* QuickSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSelect.swift; sourceTree = "<group>"; };
+		438118E52E68600A00922A22 /* QuickSelectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSelectTests.swift; sourceTree = "<group>"; };
 		439563C02A5D7BC5004ACCE6 /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 		439563C22A5D88E1004ACCE6 /* PermutationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsTests.swift; sourceTree = "<group>"; };
 		439563C52A5D8ED3004ACCE6 /* Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Substring.swift; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 				3DFC2F11283BE396001256EE /* MergeSortTests.swift */,
 				439563C22A5D88E1004ACCE6 /* PermutationsTests.swift */,
 				3DD472AB28524D8B0008C93D /* PrimTests.swift */,
+				438118E52E68600A00922A22 /* QuickSelectTests.swift */,
 				3DFC2F0E283BE396001256EE /* QuickSortTests.swift */,
 				3DFC2F0D283BE396001256EE /* RadixSortTests.swift */,
 				3DFC2F12283BE396001256EE /* SelectionSortTests.swift */,
@@ -302,6 +307,7 @@
 				43F757402E65CEC600224961 /* Kadane.swift */,
 				439563C02A5D7BC5004ACCE6 /* Permutations.swift */,
 				43E48E1C2B8EA56100DAD512 /* Subarray.swift */,
+				438118E32E685E6700922A22 /* QuickSelect.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -372,7 +378,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					3DFC2EBF283AC6AA001256EE = {
 						CreatedOnToolsVersion = 13.0;
@@ -439,6 +445,7 @@
 				439563C12A5D7BC5004ACCE6 /* Permutations.swift in Sources */,
 				4379F49529EC9B23003BA6F9 /* BinarySearchTree.swift in Sources */,
 				439563C62A5D8ED3004ACCE6 /* Substring.swift in Sources */,
+				438118E42E685E6700922A22 /* QuickSelect.swift in Sources */,
 				3DD472A32851F4E50008C93D /* QuickSort.swift in Sources */,
 				3DE771A8285375A3002981DD /* UnionFind.swift in Sources */,
 				3DD472A42851F4E50008C93D /* Dijkstra.swift in Sources */,
@@ -467,6 +474,7 @@
 				3DFC2F18283BE396001256EE /* RadixSortTests.swift in Sources */,
 				3DFC2F1A283BE396001256EE /* InsertionSortTests.swift in Sources */,
 				3DD472AC28524D8B0008C93D /* PrimTests.swift in Sources */,
+				438118E62E68600A00922A22 /* QuickSelectTests.swift in Sources */,
 				43E48E1F2B8EA8BE00DAD512 /* SubarrayTests.swift in Sources */,
 				4379F49729EC9F41003BA6F9 /* BinarySearchTreeTests.swift in Sources */,
 				3D03E8A6283E384100944AF3 /* TopologicalSortTests.swift in Sources */,
@@ -537,6 +545,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -601,6 +610,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -697,7 +707,6 @@
 		3DFC2ED6283AC6AB001256EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -724,7 +733,6 @@
 		3DFC2ED7283AC6AB001256EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
