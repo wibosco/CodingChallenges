@@ -5,8 +5,8 @@ import Foundation
 //https://leetcode.com/problems/count-collisions-on-a-road/
 struct CountCollisionsOnARoad {
     
-    //Time:
-    //Space:
+    //Time: O(n) where n is the number of characters in `directions`.
+    //Space: O(n) where n is the number of characters in `directions`.
     //stack
     //stack
     //array
