@@ -601,6 +601,8 @@
 		43147ED22A64106E00802598 /* OptimalPartitionOfStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ED12A64106E00802598 /* OptimalPartitionOfStringTests.swift */; };
 		43147ED62A641C9E00802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ED52A641C9E00802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScore.swift */; };
 		43147ED82A641CD500802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ED72A641CD500802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScoreTests.swift */; };
+		431616B22EE1D91F009869DD /* CountCollisionsOnARoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431616B12EE1D91F009869DD /* CountCollisionsOnARoad.swift */; };
+		431616B42EE1DAB0009869DD /* CountCollisionsOnARoadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431616B32EE1DAB0009869DD /* CountCollisionsOnARoadTests.swift */; };
 		43169ED62A61328600DF16FD /* PushDominoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43169ED52A61328600DF16FD /* PushDominoes.swift */; };
 		43169ED82A6132B600DF16FD /* PushDominoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43169ED72A6132B600DF16FD /* PushDominoesTests.swift */; };
 		43169EDA2A617B6F00DF16FD /* CheckIfAStringContainsAllBinaryCodesOfSizeK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43169ED92A617B6F00DF16FD /* CheckIfAStringContainsAllBinaryCodesOfSizeK.swift */; };
@@ -1804,6 +1806,8 @@
 		43147ED12A64106E00802598 /* OptimalPartitionOfStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalPartitionOfStringTests.swift; sourceTree = "<group>"; };
 		43147ED52A641C9E00802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumDifferenceBetweenHighestAndLowestOfKScore.swift; sourceTree = "<group>"; };
 		43147ED72A641CD500802598 /* MinimumDifferenceBetweenHighestAndLowestOfKScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumDifferenceBetweenHighestAndLowestOfKScoreTests.swift; sourceTree = "<group>"; };
+		431616B12EE1D91F009869DD /* CountCollisionsOnARoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollisionsOnARoad.swift; sourceTree = "<group>"; };
+		431616B32EE1DAB0009869DD /* CountCollisionsOnARoadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollisionsOnARoadTests.swift; sourceTree = "<group>"; };
 		43169ED52A61328600DF16FD /* PushDominoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushDominoes.swift; sourceTree = "<group>"; };
 		43169ED72A6132B600DF16FD /* PushDominoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushDominoesTests.swift; sourceTree = "<group>"; };
 		43169ED92A617B6F00DF16FD /* CheckIfAStringContainsAllBinaryCodesOfSizeK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfAStringContainsAllBinaryCodesOfSizeK.swift; sourceTree = "<group>"; };
@@ -2577,6 +2581,7 @@
 				43739C122B00351D007D77E5 /* ConvertSortedListToBinarySearchTree.swift */,
 				3D5C913327A7F7630035C399 /* CopyListWithRandomPointer.swift */,
 				4376182D2C18936C00D16EC9 /* CountBinarySubstrings.swift */,
+				431616B12EE1D91F009869DD /* CountCollisionsOnARoad.swift */,
 				43EF3C242AFC431C0085445E /* CountCompleteTreeNodes.swift */,
 				434BCB0F2A090F750026A985 /* CountGoodNodesInBinaryTree.swift */,
 				43AE97EF2B8A985600AF961C /* CountNegativeNumbersInASortedMatrix.swift */,
@@ -3174,6 +3179,7 @@
 				43739C142B003556007D77E5 /* ConvertSortedListToBinarySearchTreeTests.swift */,
 				3D5C91F727A7F76B0035C399 /* CopyListWithRandomPointerTests.swift */,
 				4376182F2C18939C00D16EC9 /* CountBinarySubstringsTests.swift */,
+				431616B32EE1DAB0009869DD /* CountCollisionsOnARoadTests.swift */,
 				43EF3C262AFC43EC0085445E /* CountCompleteTreeNodesTests.swift */,
 				434BCB112A090FB40026A985 /* CountGoodNodesInBinaryTreeTests.swift */,
 				43AE97F12B8A98B800AF961C /* CountNegativeNumbersInASortedMatrixTests.swift */,
@@ -4059,6 +4065,7 @@
 				3D46242127E24E1B00A888C1 /* SetMatrixZeroes.swift in Sources */,
 				4343A7C42AB20DF6000E48C8 /* ConstructStringFromBinaryTree.swift in Sources */,
 				433E55C029DF145E00974B73 /* CoinChange .swift in Sources */,
+				431616B22EE1D91F009869DD /* CountCollisionsOnARoad.swift in Sources */,
 				436634A82AFE7CC50087F13F /* LeafSimilarTrees.swift in Sources */,
 				433985B92B0AB33D00D7702C /* FindDuplicateSubtrees.swift in Sources */,
 				438243952C174D7600A93EF2 /* ShortestDistanceToACharacter.swift in Sources */,
@@ -4677,6 +4684,7 @@
 				4311BC6A2A584A3600137AED /* PascalsTriangleTests.swift in Sources */,
 				43BB2BAB2C8755FE0008AB9C /* ReverseWordsInAStringTests.swift in Sources */,
 				43C560B02DD347CC009BA767 /* ConstructBinarySearchTreeFromPreorderTraversalTests.swift in Sources */,
+				431616B42EE1DAB0009869DD /* CountCollisionsOnARoadTests.swift in Sources */,
 				437119462A5EEEA1000E0EE5 /* GridGameTests.swift in Sources */,
 				3D5C92E527A7F76C0035C399 /* MinimumAddToMakeParenthesesValidTests.swift in Sources */,
 				43D24C302C85089600CC83B6 /* CheckIfStringIsAPrefixOfArrayTests.swift in Sources */,
