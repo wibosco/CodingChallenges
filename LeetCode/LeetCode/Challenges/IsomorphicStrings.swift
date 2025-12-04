@@ -85,8 +85,6 @@ struct IsomorphicStrings {
     //make sure it the previous mapping matches the current mapping, if the current mapping is to a different we return false.
     //We now repeat this process for mapping from `t` to `s`. If both mappings are valid, we return true else we return false.
     func isIsomorphic2(_ s: String, _ t: String) -> Bool {
-        var mapping = [Character: Character]()
-
         let s = Array(s)
         let t = Array(t)
 

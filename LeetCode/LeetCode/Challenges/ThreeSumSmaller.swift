@@ -21,7 +21,7 @@ struct ThreeSumSmaller {
         let nums = nums.sorted(by: <)
         var count = 0
 
-        for (i, num) in nums.enumerated() {
+        for i in 0..<nums.count {
             var left = i + 1 //don't include num in the search range
             var right = nums.count - 1
 
