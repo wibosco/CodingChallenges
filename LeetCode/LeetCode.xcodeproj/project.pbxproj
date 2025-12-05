@@ -597,6 +597,8 @@
 		4311BC7A2A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BC792A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift */; };
 		43126E1B2EE31FC9008E4983 /* CountPartitionsWithEvenSumDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E1A2EE31FC9008E4983 /* CountPartitionsWithEvenSumDifference.swift */; };
 		43126E1D2EE31FF5008E4983 /* CountPartitionsWithEvenSumDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E1C2EE31FF5008E4983 /* CountPartitionsWithEvenSumDifferenceTests.swift */; };
+		43126E1F2EE32A61008E4983 /* FindSubsequenceOfLengthKWithTheLargestSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E1E2EE32A61008E4983 /* FindSubsequenceOfLengthKWithTheLargestSum.swift */; };
+		43126E212EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E202EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift */; };
 		4314616F2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */; };
 		431461712B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */; };
 		43147ED02A64103900802598 /* OptimalPartitionOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */; };
@@ -1808,6 +1810,8 @@
 		4311BC792A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAllNumbersDisappearedInAnArrayTests.swift; sourceTree = "<group>"; };
 		43126E1A2EE31FC9008E4983 /* CountPartitionsWithEvenSumDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountPartitionsWithEvenSumDifference.swift; sourceTree = "<group>"; };
 		43126E1C2EE31FF5008E4983 /* CountPartitionsWithEvenSumDifferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountPartitionsWithEvenSumDifferenceTests.swift; sourceTree = "<group>"; };
+		43126E1E2EE32A61008E4983 /* FindSubsequenceOfLengthKWithTheLargestSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSubsequenceOfLengthKWithTheLargestSum.swift; sourceTree = "<group>"; };
+		43126E202EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSubsequenceOfLengthKWithTheLargestSumTests.swift; sourceTree = "<group>"; };
 		4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArray.swift; sourceTree = "<group>"; };
 		431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArrayTests.swift; sourceTree = "<group>"; };
 		43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalPartitionOfString.swift; sourceTree = "<group>"; };
@@ -2680,6 +2684,7 @@
 				4311BC732A58668100137AED /* FindPivotIndex.swift */,
 				439C8AD52B9235CD00C3FD84 /* FindSmallestCommonElementInAllRows.swift */,
 				3D5C90B127A7F7620035C399 /* FindSmallestLetterGreaterThanTarget.swift */,
+				43126E1E2EE32A61008E4983 /* FindSubsequenceOfLengthKWithTheLargestSum.swift */,
 				4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */,
 				437618212C186BBA00D16EC9 /* FindTheArrayConcatenationValue.swift */,
 				43D8B8012A629C0000B3F197 /* FindTheDifferenceOfTwoArrays.swift */,
@@ -3280,6 +3285,7 @@
 				4311BC752A5866CB00137AED /* FindPivotIndexTests.swift */,
 				439C8AD72B92364F00C3FD84 /* FindSmallestCommonElementInAllRowsTests.swift */,
 				3D5C928F27A7F76C0035C399 /* FindSmallestLetterGreaterThanTargetTests.swift */,
+				43126E202EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift */,
 				431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */,
 				437618232C186BD300D16EC9 /* FindTheArrayConcatenationValueTests.swift */,
 				43D8B8032A629C3700B3F197 /* FindTheDifferenceOfTwoArraysTests.swift */,
@@ -4200,6 +4206,7 @@
 				3D5C918827A7F7630035C399 /* KthSmallestElementInBinarySearchTree.swift in Sources */,
 				3D46243127E38EA400A888C1 /* Subsets.swift in Sources */,
 				43C42B802A65296A00D5881B /* MergeStringsAlternately.swift in Sources */,
+				43126E1F2EE32A61008E4983 /* FindSubsequenceOfLengthKWithTheLargestSum.swift in Sources */,
 				3D5C91C027A7F7630035C399 /* EvaluateReversePolishNotation.swift in Sources */,
 				3D5C91BD27A7F7630035C399 /* SearchInRotatedSortedArray.swift in Sources */,
 				436634A02AFE70C70087F13F /* SumOfRootToLeafBinaryNumbers.swift in Sources */,
@@ -4754,6 +4761,7 @@
 				3D1CD89027D94BEE00D4CA5F /* JumpGameIITests.swift in Sources */,
 				436634A22AFE70EF0087F13F /* SumOfRootToLeafBinaryNumbersTests.swift in Sources */,
 				4323713F29DB29EA005A2F04 /* AdditiveNumberTests.swift in Sources */,
+				43126E212EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift in Sources */,
 				4335FB112B88F04500416BB6 /* ValidateBinaryTreeNodesTests.swift in Sources */,
 				3D5C92D327A7F76C0035C399 /* CloneGraphTests.swift in Sources */,
 				3DB7C5D327CEC58B00353EED /* ExclusiveTimeOfFunctionsTests.swift in Sources */,
