@@ -603,6 +603,8 @@
 		43126E252EE33558008E4983 /* StrongPasswordCheckerIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E242EE33558008E4983 /* StrongPasswordCheckerIITests.swift */; };
 		43126E272EE33F98008E4983 /* FindAndReplacePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E262EE33F98008E4983 /* FindAndReplacePattern.swift */; };
 		43126E292EE34274008E4983 /* FindAndReplacePatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E282EE34274008E4983 /* FindAndReplacePatternTests.swift */; };
+		43126E2B2EE35F90008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E2A2EE35F90008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairs.swift */; };
+		43126E2D2EE35FC3008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E2C2EE35FC3008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairsTests.swift */; };
 		4314616F2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */; };
 		431461712B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */; };
 		43147ED02A64103900802598 /* OptimalPartitionOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */; };
@@ -1820,6 +1822,8 @@
 		43126E242EE33558008E4983 /* StrongPasswordCheckerIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongPasswordCheckerIITests.swift; sourceTree = "<group>"; };
 		43126E262EE33F98008E4983 /* FindAndReplacePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAndReplacePattern.swift; sourceTree = "<group>"; };
 		43126E282EE34274008E4983 /* FindAndReplacePatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAndReplacePatternTests.swift; sourceTree = "<group>"; };
+		43126E2A2EE35F90008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAbsoluteDistanceBetweenMirrorPairs.swift; sourceTree = "<group>"; };
+		43126E2C2EE35FC3008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAbsoluteDistanceBetweenMirrorPairsTests.swift; sourceTree = "<group>"; };
 		4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArray.swift; sourceTree = "<group>"; };
 		431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArrayTests.swift; sourceTree = "<group>"; };
 		43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalPartitionOfString.swift; sourceTree = "<group>"; };
@@ -2841,6 +2845,7 @@
 				3D5C90A527A7F7620035C399 /* MinCostToConnectAllPoints.swift */,
 				43F9D7FB2DEBBA8D009BEA45 /* Minesweeper.swift */,
 				43BD45912AFD86F0006216F0 /* MinimumAbsoluteDifferenceInBST.swift */,
+				43126E2A2EE35F90008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairs.swift */,
 				3D5C90DA27A7F7620035C399 /* MinimumAddToMakeParenthesesValid.swift */,
 				430BE5532C82180D00265975 /* MinimumAverageOfSmallestAndLargestElements.swift */,
 				439C8AD12B92217900C3FD84 /* MinimumCommonValue.swift */,
@@ -3444,6 +3449,7 @@
 				3D5C922527A7F76B0035C399 /* MinCostToConnectAllPointsTests.swift */,
 				43F9D7FD2DEBBB59009BEA45 /* MinesweeperTests.swift */,
 				43BD45932AFD8767006216F0 /* MinimumAbsoluteDifferenceInBSTTests.swift */,
+				43126E2C2EE35FC3008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairsTests.swift */,
 				3D5C923F27A7F76C0035C399 /* MinimumAddToMakeParenthesesValidTests.swift */,
 				430BE5552C82184D00265975 /* MinimumAverageOfSmallestAndLargestElementsTests.swift */,
 				439C8AD32B9221A900C3FD84 /* MinimumCommonValueTests.swift */,
@@ -4162,6 +4168,7 @@
 				3D5C916127A7F7630035C399 /* LowestCommonAncestorBinarySearchTree.swift in Sources */,
 				43F3DF3929E0B61600EDEB1C /* OddEvenLinkedList.swift in Sources */,
 				4314616F2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift in Sources */,
+				43126E2B2EE35F90008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairs.swift in Sources */,
 				435D415E2C89F49500B19321 /* LongestWordInDictionaryThroughDeleting.swift in Sources */,
 				3D46242927E29BDB00A888C1 /* RemoveDuplicatesFromSortedList.swift in Sources */,
 				3D5C91EF27A7F7630035C399 /* DivideTwoIntegers.swift in Sources */,
@@ -4733,6 +4740,7 @@
 				3D5C92E527A7F76C0035C399 /* MinimumAddToMakeParenthesesValidTests.swift in Sources */,
 				43D24C302C85089600CC83B6 /* CheckIfStringIsAPrefixOfArrayTests.swift in Sources */,
 				4366349A2AFE5C690087F13F /* IncreasingOrderSearchTreeTests.swift in Sources */,
+				43126E2D2EE35FC3008E4983 /* MinimumAbsoluteDistanceBetweenMirrorPairsTests.swift in Sources */,
 				3D5C92A927A7F76C0035C399 /* AddStringsTests.swift in Sources */,
 				430258342B9A227000A9DD45 /* ReverseWordsInAStringIIITests.swift in Sources */,
 				3DA6FF0927AC787A009BD7A8 /* RepeatedDNASequencesTests.swift in Sources */,
