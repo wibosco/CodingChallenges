@@ -601,6 +601,8 @@
 		43126E212EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E202EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift */; };
 		43126E232EE33525008E4983 /* StrongPasswordCheckerII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E222EE33525008E4983 /* StrongPasswordCheckerII.swift */; };
 		43126E252EE33558008E4983 /* StrongPasswordCheckerIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E242EE33558008E4983 /* StrongPasswordCheckerIITests.swift */; };
+		43126E272EE33F98008E4983 /* FindAndReplacePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E262EE33F98008E4983 /* FindAndReplacePattern.swift */; };
+		43126E292EE34274008E4983 /* FindAndReplacePatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43126E282EE34274008E4983 /* FindAndReplacePatternTests.swift */; };
 		4314616F2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */; };
 		431461712B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */; };
 		43147ED02A64103900802598 /* OptimalPartitionOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */; };
@@ -1816,6 +1818,8 @@
 		43126E202EE32AAC008E4983 /* FindSubsequenceOfLengthKWithTheLargestSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSubsequenceOfLengthKWithTheLargestSumTests.swift; sourceTree = "<group>"; };
 		43126E222EE33525008E4983 /* StrongPasswordCheckerII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongPasswordCheckerII.swift; sourceTree = "<group>"; };
 		43126E242EE33558008E4983 /* StrongPasswordCheckerIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongPasswordCheckerIITests.swift; sourceTree = "<group>"; };
+		43126E262EE33F98008E4983 /* FindAndReplacePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAndReplacePattern.swift; sourceTree = "<group>"; };
+		43126E282EE34274008E4983 /* FindAndReplacePatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAndReplacePatternTests.swift; sourceTree = "<group>"; };
 		4314616E2B8B3959008683E1 /* FindTargetIndicesAfterSortingArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArray.swift; sourceTree = "<group>"; };
 		431461702B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTargetIndicesAfterSortingArrayTests.swift; sourceTree = "<group>"; };
 		43147ECF2A64103900802598 /* OptimalPartitionOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalPartitionOfString.swift; sourceTree = "<group>"; };
@@ -2666,6 +2670,7 @@
 				437618292C18874600D16EC9 /* FindAllKDistantIndicesInAnArray.swift */,
 				4311BC772A586AC100137AED /* FindAllNumbersDisappearedInAnArray.swift */,
 				4330B6882B0B6262004BCEE6 /* FindAllTheLonelyNodes.swift */,
+				43126E262EE33F98008E4983 /* FindAndReplacePattern.swift */,
 				435B709B2B04DB95003D51CA /* FindBottomLeftTreeValue.swift */,
 				438EBCAE2AEFB1CB007083B7 /* FindClosestNodeToGivenTwoNodes.swift */,
 				43495F5E2B21CDF90037FEA7 /* FindDistanceInABinaryTree.swift */,
@@ -3268,6 +3273,7 @@
 				4376182B2C18878C00D16EC9 /* FindAllKDistantIndicesInAnArrayTests.swift */,
 				4311BC792A586AED00137AED /* FindAllNumbersDisappearedInAnArrayTests.swift */,
 				4330B68A2B0B699A004BCEE6 /* FindAllTheLonelyNodesTests.swift */,
+				43126E282EE34274008E4983 /* FindAndReplacePatternTests.swift */,
 				435B709D2B04DBC3003D51CA /* FindBottomLeftTreeValueTests.swift */,
 				438EBCB02AEFB206007083B7 /* FindClosestNodeToGivenTwoNodesTests.swift */,
 				43495F602B21CE610037FEA7 /* FindDistanceInABinaryTreeTests.swift */,
@@ -3876,6 +3882,7 @@
 				436EC1BD2B0645C4003F7BC7 /* CreateBinaryTreeFromDescriptions.swift in Sources */,
 				3D5C915127A7F7630035C399 /* ReverseString.swift in Sources */,
 				3D8C787527AD725000ADD88A /* SumOfAllOddLengthSubarrays.swift in Sources */,
+				43126E272EE33F98008E4983 /* FindAndReplacePattern.swift in Sources */,
 				3D5C91AD27A7F7630035C399 /* FindMinimumRotatedSortedArrayII.swift in Sources */,
 				431C89DA2DC7B5DA002A7A6B /* NumberOfEquivalentDominoPairs.swift in Sources */,
 				4336E5542B236C520060A25D /* MakeCostsOfPathsEqualInABinaryTree.swift in Sources */,
@@ -4840,6 +4847,7 @@
 				43BD45902AFD7317006216F0 /* CountNumberOfHomogenousSubstringsTests.swift in Sources */,
 				435AFBA12A5C9BFE00721B88 /* MinimumDepthOfBinaryTreeTests.swift in Sources */,
 				3DB98D7E280381EE00A3D2E9 /* RemoveLinkedListElementsTests.swift in Sources */,
+				43126E292EE34274008E4983 /* FindAndReplacePatternTests.swift in Sources */,
 				430878932DD29A5800F9257E /* CheckIfWordIsValidAfterSubstitutionsTests.swift in Sources */,
 				43313BB929D72335005FCF5D /* SingleNumberTests.swift in Sources */,
 				3D7E30A5282C140C00D7737D /* CountSortedVowelStringsTests.swift in Sources */,
