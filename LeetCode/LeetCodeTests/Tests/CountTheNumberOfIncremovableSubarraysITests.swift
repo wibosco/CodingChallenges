@@ -1,9 +1,5 @@
-//
-//  CountTheNumberOfIncremovableSubarraysITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 27/02/2024.
-//
+// Created 27/02/2024.
+
 
 import XCTest
 

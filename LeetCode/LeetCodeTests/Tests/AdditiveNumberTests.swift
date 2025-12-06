@@ -1,9 +1,5 @@
-//
-//  AdditiveNumberTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 03/04/2023.
-//
+// Created 03/04/2023.
+
 
 import XCTest
 

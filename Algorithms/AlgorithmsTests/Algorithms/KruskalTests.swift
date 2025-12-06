@@ -1,9 +1,5 @@
-//
-//  KruskalTests.swift
-//  AlgorithmsTests
-//
-//  Created by William Boles on 10/06/2022.
-//
+// Created 10/06/2022.
+
 
 import XCTest
 

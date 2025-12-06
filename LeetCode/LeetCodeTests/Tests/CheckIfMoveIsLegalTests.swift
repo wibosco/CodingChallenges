@@ -1,9 +1,5 @@
-//
-//  CheckIfMoveIsLegalTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 27/10/2023.
-//
+// Created 27/10/2023.
+
 
 import XCTest
 

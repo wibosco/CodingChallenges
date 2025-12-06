@@ -1,9 +1,4 @@
-//
-//  Kruskal.swift
-//  Algorithms
-//
-//  Created by William Boles on 10/06/2022.
-//
+// Created 10/06/2022.
 
 import Foundation
 

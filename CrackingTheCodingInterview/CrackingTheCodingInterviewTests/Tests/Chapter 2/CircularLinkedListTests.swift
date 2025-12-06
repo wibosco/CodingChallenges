@@ -1,10 +1,5 @@
-//
-//  CircularLinkedListTests.swift
-//  CrackingTheCodingInterviewTests
-//
-//  Created by William Boles on 30/05/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 30/05/2016.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  OddEvenLinkedList.swift
-//  LeetCode
-//
-//  Created by William Boles on 07/04/2023.
-//
+// Created 07/04/2023.
 
 import Foundation
 

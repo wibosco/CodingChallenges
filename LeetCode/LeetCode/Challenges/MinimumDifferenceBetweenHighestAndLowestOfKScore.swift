@@ -1,9 +1,4 @@
-//
-//  MinimumDifferenceBetweenHighestAndLowestOfKScore.swift
-//  LeetCode
-//
-//  Created by William Boles on 16/07/2023.
-//
+// Created 16/07/2023.
 
 import Foundation
 

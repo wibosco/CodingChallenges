@@ -1,9 +1,5 @@
-//
-//  NumberOfZeroFilledSubarraysTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 15/07/2023.
-//
+// Created 15/07/2023.
+
 
 import XCTest
 

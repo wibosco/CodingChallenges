@@ -1,9 +1,4 @@
-//
-//  DivideArrayInSetsOfKConsecutiveNumbers.swift
-//  LeetCode
-//
-//  Created by William Boles on 04/07/2023.
-//
+// Created 04/07/2023.
 
 import Foundation
 

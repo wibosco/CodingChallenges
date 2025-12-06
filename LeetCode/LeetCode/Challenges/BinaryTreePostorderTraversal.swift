@@ -1,10 +1,4 @@
-//
-//  BinaryTreePostorderTraversal.swift
-//  LeetCode
-//
-//  Created by William Boles on 22/11/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 22/11/2021.
 
 import Foundation
 

@@ -1,9 +1,4 @@
-//
-//  UndergroundSystem.swift
-//  LeetCode
-//
-//  Created by William Boles on 29/03/2022.
-//
+// Created 29/03/2022.
 
 import Foundation
 

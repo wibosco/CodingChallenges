@@ -1,10 +1,4 @@
-//
-//  SearchSorted ArrayOfUnknownSize.swift
-//  LeetCode
-//
-//  Created by William Boles on 19/11/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 19/11/2021.
 
 import Foundation
 

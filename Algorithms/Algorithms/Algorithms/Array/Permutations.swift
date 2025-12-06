@@ -1,9 +1,4 @@
-//
-//  Permutations.swift
-//  Algorithms
-//
-//  Created by William Boles on 11/07/2023.
-//
+// Created 11/07/2023.
 
 import Foundation
 

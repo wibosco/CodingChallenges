@@ -1,9 +1,5 @@
-//
-//  SplitBSTTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 23/11/2023.
-//
+// Created 23/11/2023.
+
 
 import XCTest
 

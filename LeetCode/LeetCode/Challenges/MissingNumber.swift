@@ -1,9 +1,4 @@
-//
-//  MissingNumber.swift
-//  LeetCode
-//
-//  Created by William Boles on 31/03/2023.
-//
+// Created 31/03/2023.
 
 import Foundation
 

@@ -1,9 +1,4 @@
-//
-//  FruitIntoBaskets.swift
-//  LeetCode
-//
-//  Created by William Boles on 25/07/2023.
-//
+// Created 25/07/2023.
 
 import Foundation
 

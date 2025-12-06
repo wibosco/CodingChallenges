@@ -1,9 +1,5 @@
-//
-//  UniquePathsIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 01/04/2022.
-//
+// Created 01/04/2022.
+
 
 import XCTest
 

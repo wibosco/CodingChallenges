@@ -1,9 +1,4 @@
-//
-//  ThreeSumClosest.swift
-//  LeetCode
-//
-//  Created by William Boles on 07/03/2022.
-//
+// Created 07/03/2022.
 
 import Foundation
 

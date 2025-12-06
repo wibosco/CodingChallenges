@@ -1,9 +1,4 @@
-//
-//  SpecialArrayWithXElementsGreaterThanOrEqualX.swift
-//  LeetCode
-//
-//  Created by William Boles on 29/02/2024.
-//
+// Created 29/02/2024.
 
 import Foundation
 

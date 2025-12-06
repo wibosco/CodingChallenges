@@ -1,9 +1,4 @@
-//
-//  EliminateMaximumNumberOfMonsters.swift
-//  LeetCode
-//
-//  Created by William Boles on 07/11/2023.
-//
+// Created 07/11/2023.
 
 import Foundation
 

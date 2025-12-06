@@ -1,9 +1,4 @@
-//
-//  CountSubIslands.swift
-//  LeetCode
-//
-//  Created by William Boles on 24/10/2023.
-//
+// Created 24/10/2023.
 
 import Foundation
 

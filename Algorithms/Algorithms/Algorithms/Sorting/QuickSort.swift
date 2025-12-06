@@ -1,9 +1,4 @@
-//
-//  QuickSort.swift
-//  Algorithms
-//
-//  Created by William Boles on 22/05/2022.
-//
+// Created 22/05/2022.
 
 import Foundation
 

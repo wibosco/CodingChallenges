@@ -1,10 +1,5 @@
-//
-//  PrimsMSTTests.swift
-//  HackerRankTests
-//
-//  Created by William Boles on 28/06/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 28/06/2016.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  MaximumNumberOfRemovableCharacters.swift
-//  LeetCode
-//
-//  Created by William Boles on 02/08/2023.
-//
+// Created 02/08/2023.
 
 import Foundation
 

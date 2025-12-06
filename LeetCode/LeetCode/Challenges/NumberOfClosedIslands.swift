@@ -1,9 +1,4 @@
-//
-//  NumberOfClosedIslands.swift
-//  LeetCode
-//
-//  Created by William Boles on 31/10/2023.
-//
+// Created 31/10/2023.
 
 import Foundation
 

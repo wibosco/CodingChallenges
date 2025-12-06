@@ -1,9 +1,5 @@
-//
-//  LinkedListInBinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 16/12/2023.
-//
+// Created 16/12/2023.
+
 
 import XCTest
 

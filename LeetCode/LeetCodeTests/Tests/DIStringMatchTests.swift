@@ -1,9 +1,5 @@
-//
-//  DIStringMatchTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 05/06/2024.
-//
+// Created 05/06/2024.
+
 
 import XCTest
 

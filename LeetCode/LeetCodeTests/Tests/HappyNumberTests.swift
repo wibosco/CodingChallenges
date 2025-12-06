@@ -1,10 +1,5 @@
-//
-//  HappyNumberTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 20/01/2022.
-//  Copyright © 2022 Boles. All rights reserved.
-//
+// Created 20/01/2022.
+
 
 import XCTest
 

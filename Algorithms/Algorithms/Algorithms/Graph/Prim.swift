@@ -1,9 +1,4 @@
-//
-//  Prim.swift
-//  Algorithms
-//
-//  Created by William Boles on 09/06/2022.
-//
+// Created 09/06/2022.
 
 import Foundation
 

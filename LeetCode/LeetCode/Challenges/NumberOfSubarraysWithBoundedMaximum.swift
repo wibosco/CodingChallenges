@@ -1,9 +1,4 @@
-//
-//  NumberOfSubarraysWithBoundedMaximum.swift
-//  LeetCode
-//
-//  Created by William Boles on 12/09/2024.
-//
+// Created 12/09/2024.
 
 import Foundation
 

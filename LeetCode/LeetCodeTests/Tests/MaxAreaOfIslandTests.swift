@@ -1,9 +1,5 @@
-//
-//  MaxAreaOfIslandTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 10/05/2023.
-//
+// Created 10/05/2023.
+
 
 import XCTest
 

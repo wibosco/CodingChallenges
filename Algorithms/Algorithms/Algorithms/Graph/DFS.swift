@@ -1,9 +1,4 @@
-//
-//  DFS.swift
-//  Algorithms
-//
-//  Created by William Boles on 27/05/2022.
-//
+// Created 27/05/2022.
 
 import Foundation
 

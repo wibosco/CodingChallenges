@@ -1,9 +1,5 @@
-//
-//  SumOfSquareNumbersTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 09/09/2024.
-//
+// Created 09/09/2024.
+
 
 import XCTest
 

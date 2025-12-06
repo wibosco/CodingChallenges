@@ -1,10 +1,5 @@
-//
-//  AddTwoNumbersTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 03/11/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 03/11/2021.
+
 
 import XCTest
 

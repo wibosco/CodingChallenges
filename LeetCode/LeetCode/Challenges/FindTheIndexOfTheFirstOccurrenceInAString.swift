@@ -1,14 +1,8 @@
-//
-//  FindTheIndexOfTheFirstOccurrenceInAString.swift
-//  LeetCode
-//
-//  Created by William Boles on 12/07/2023.
-//
+// Created 12/07/2023.
 
 import Foundation
 
 //https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
-
 struct FindTheIndexOfTheFirstOccurrenceInAString {
     
     //Time: O(n + m) where n is the number of elements in `haystack`

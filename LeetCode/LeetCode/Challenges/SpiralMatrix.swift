@@ -1,9 +1,4 @@
-//
-//  SpiralMatrix.swift
-//  LeetCode
-//
-//  Created by William Boles on 13/03/2022.
-//
+// Created 13/03/2022.
 
 import Foundation
 

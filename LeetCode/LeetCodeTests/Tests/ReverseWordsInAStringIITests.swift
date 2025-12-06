@@ -1,9 +1,5 @@
-//
-//  ReverseWordsInAStringIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 04/09/2024.
-//
+// Created 04/09/2024.
+
 
 import XCTest
 

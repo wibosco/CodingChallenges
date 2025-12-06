@@ -1,9 +1,5 @@
-//
-//  MaximizeTheConfusionOfAnExamTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 02/03/2024.
-//
+// Created 02/03/2024.
+
 
 import XCTest
 

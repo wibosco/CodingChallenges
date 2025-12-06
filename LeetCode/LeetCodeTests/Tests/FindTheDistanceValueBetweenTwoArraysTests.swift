@@ -1,9 +1,5 @@
-//
-//  FindTheDistanceValueBetweenTwoArraysTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 26/02/2024.
-//
+// Created 26/02/2024.
+
 
 import XCTest
 

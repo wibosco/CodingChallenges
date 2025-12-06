@@ -1,9 +1,5 @@
-//
-//  BinaryTreeLongestConsecutiveSequenceTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 09/12/2023.
-//
+// Created 09/12/2023.
+
 
 import XCTest
 

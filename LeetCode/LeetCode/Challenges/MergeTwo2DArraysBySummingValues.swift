@@ -1,9 +1,4 @@
-//
-//  MergeTwo2DArraysBySummingValues.swift
-//  LeetCode
-//
-//  Created by William Boles on 09/06/2024.
-//
+// Created 09/06/2024.
 
 import Foundation
 

@@ -1,9 +1,5 @@
-//
-//  RemoveCoveredIntervalsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 03/11/2023.
-//
+// Created 03/11/2023.
+
 
 import XCTest
 

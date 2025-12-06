@@ -1,9 +1,4 @@
-//
-//  FindIndicesWithIndexAndValueDifferenceI.swift
-//  LeetCode
-//
-//  Created by William Boles on 11/06/2024.
-//
+// Created 11/06/2024.
 
 import Foundation
 

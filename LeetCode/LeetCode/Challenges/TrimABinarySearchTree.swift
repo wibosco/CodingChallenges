@@ -1,9 +1,4 @@
-//
-//  TrimABinarySearchTree.swift
-//  LeetCode
-//
-//  Created by William Boles on 15/04/2022.
-//
+// Created 15/04/2022.
 
 import Foundation
 

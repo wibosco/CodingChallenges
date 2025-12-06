@@ -1,10 +1,5 @@
-//
-//  TwoSumIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 20/11/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 20/11/2021.
+
 
 import XCTest
 

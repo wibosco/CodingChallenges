@@ -1,9 +1,4 @@
-//
-//  RunningSumOf1DArray.swift
-//  LeetCode
-//
-//  Created by William Boles on 04/02/2022.
-//
+// Created 04/02/2022.
 
 import Foundation
 

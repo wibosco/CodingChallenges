@@ -1,9 +1,4 @@
-//
-//  LongestIncreasingSubsequence.swift
-//  LeetCode
-//
-//  Created by William Boles on 02/04/2023.
-//
+// Created 02/04/2023.
 
 import Foundation
 

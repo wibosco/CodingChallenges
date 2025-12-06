@@ -1,9 +1,5 @@
-//
-//  ReverseStringIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 02/09/2024.
-//
+// Created 02/09/2024.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  FindAllAnagramsInAString.swift
-//  LeetCode
-//
-//  Created by William Boles on 02/02/2022.
-//
+// Created 02/02/2022.
 
 import Foundation
 

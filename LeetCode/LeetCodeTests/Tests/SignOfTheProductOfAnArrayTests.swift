@@ -1,9 +1,5 @@
-//
-//  SignOfTheProductOfAnArrayTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 14/07/2023.
-//
+// Created 14/07/2023.
+
 
 import XCTest
 

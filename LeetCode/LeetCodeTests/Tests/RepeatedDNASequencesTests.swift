@@ -1,9 +1,5 @@
-//
-//  RepeatedDNASequencesTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 03/02/2022.
-//
+// Created 03/02/2022.
+
 
 import XCTest
 

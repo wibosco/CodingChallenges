@@ -1,9 +1,4 @@
-//
-//  RemoveLinkedListElements.swift
-//  LeetCode
-//
-//  Created by William Boles on 10/04/2022.
-//
+// Created 10/04/2022.
 
 import Foundation
 

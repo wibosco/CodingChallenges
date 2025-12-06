@@ -1,9 +1,5 @@
-//
-//  BasicCalculatorIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 28/02/2022.
-//
+// Created 28/02/2022.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  MovingAverage.swift
-//  LeetCode
-//
-//  Created by William Boles on 28/02/2022.
-//
+// Created 28/02/2022.
 
 import Foundation
 

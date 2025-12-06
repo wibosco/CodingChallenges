@@ -1,9 +1,5 @@
-//
-//  ValidNumberTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 12/04/2022.
-//
+// Created 12/04/2022.
+
 
 import XCTest
 

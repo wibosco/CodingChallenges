@@ -97,7 +97,6 @@ struct RepeatedSubstringPattern {
         let dividesEvenly = chars.count % patternLength == 0
         
         return hasPrefixSuffixOverlap && dividesEvenly
-                 
     }
     
     //Time: O(n * m) where n is the number of characters in `s`

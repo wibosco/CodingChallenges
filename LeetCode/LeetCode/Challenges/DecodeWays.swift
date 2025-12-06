@@ -1,9 +1,4 @@
-//
-//  DecodeWays.swift
-//  LeetCode
-//
-//  Created by William Boles on 21/03/2022.
-//
+// Created 21/03/2022.
 
 import Foundation
 

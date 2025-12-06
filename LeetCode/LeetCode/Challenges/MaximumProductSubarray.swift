@@ -1,9 +1,4 @@
-//
-//  MaximumProductSubarray.swift
-//  LeetCode
-//
-//  Created by William Boles on 24/04/2023.
-//
+// Created 24/04/2023.
 
 import Foundation
 

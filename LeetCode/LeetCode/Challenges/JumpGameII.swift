@@ -1,9 +1,4 @@
-//
-//  JumpGameII.swift
-//  LeetCode
-//
-//  Created by William Boles on 09/03/2022.
-//
+// Created 09/03/2022.
 
 import Foundation
 

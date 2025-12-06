@@ -1,9 +1,5 @@
-//
-//  CheckCompletenessOfABinaryTreeTest.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 18/11/2023.
-//
+// Created 18/11/2023.
+
 
 import XCTest
 

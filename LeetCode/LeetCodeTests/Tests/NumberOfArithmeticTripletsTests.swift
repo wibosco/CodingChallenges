@@ -1,9 +1,5 @@
-//
-//  NumberOfArithmeticTripletsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 06/03/2024.
-//
+// Created 06/03/2024.
+
 
 import XCTest
 

@@ -1,9 +1,5 @@
-//
-//  SnakesAndLaddersTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 26/10/2023.
-//
+// Created 26/10/2023.
+
 
 import XCTest
 

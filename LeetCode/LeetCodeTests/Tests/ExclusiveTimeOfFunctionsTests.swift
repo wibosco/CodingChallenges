@@ -1,9 +1,5 @@
-//
-//  ExclusiveTimeOfFunctionsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 01/03/2022.
-//
+// Created 01/03/2022.
+
 
 import XCTest
 

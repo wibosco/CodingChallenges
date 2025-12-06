@@ -1,9 +1,4 @@
-//
-//  StepByStepDirectionsFromABinaryTreeNodeToAnother.swift
-//  LeetCode
-//
-//  Created by William Boles on 13/12/2023.
-//
+// Created 13/12/2023.
 
 import Foundation
 

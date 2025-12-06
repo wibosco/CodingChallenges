@@ -1,9 +1,4 @@
-//
-//  BFSTests.swift
-//  AlgorithmsTests
-//
-//  Created by William Boles on 26/05/2022.
-//
+// Created 26/05/2022.
 
 import XCTest
 

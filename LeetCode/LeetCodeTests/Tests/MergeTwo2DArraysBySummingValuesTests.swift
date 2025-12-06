@@ -1,9 +1,5 @@
-//
-//  MergeTwo2DArraysBySummingValuesTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 09/06/2024.
-//
+// Created 09/06/2024.
+
 
 import XCTest
 

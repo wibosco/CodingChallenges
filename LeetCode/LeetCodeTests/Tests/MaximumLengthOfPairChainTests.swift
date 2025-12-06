@@ -1,9 +1,5 @@
-//
-//  MaximumLengthOfPairChainTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 26/08/2023.
-//
+// Created 26/08/2023.
+
 
 import XCTest
 

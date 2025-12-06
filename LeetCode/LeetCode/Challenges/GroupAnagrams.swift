@@ -1,9 +1,4 @@
-//
-//  GroupAnagrams.swift
-//  LeetCode
-//
-//  Created by William Boles on 11/03/2022.
-//
+// Created 11/03/2022.
 
 import Foundation
 

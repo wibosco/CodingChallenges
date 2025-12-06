@@ -1,9 +1,4 @@
-//
-//  FindLeavesOfBinaryTree.swift
-//  LeetCode
-//
-//  Created by William Boles on 05/08/2022.
-//
+// Created 05/08/2022.
 
 import Foundation
 

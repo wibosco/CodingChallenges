@@ -1,9 +1,5 @@
-//
-//  FindDistanceInABinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 07/12/2023.
-//
+// Created 07/12/2023.
+
 
 import XCTest
 

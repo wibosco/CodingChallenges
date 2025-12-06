@@ -1,9 +1,5 @@
-//
-//  RemoveDuplicatesFromSortedListTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 16/03/2022.
-//
+// Created 16/03/2022.
+
 
 import XCTest
 

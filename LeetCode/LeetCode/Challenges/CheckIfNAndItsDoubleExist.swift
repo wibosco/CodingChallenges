@@ -1,9 +1,4 @@
-//
-//  CheckIfNAndItsDoubleExist.swift
-//  LeetCode
-//
-//  Created by William Boles on 23/02/2024.
-//
+// Created 23/02/2024.
 
 import Foundation
 

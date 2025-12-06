@@ -1,9 +1,4 @@
-//
-//  ShortestUnsortedContinuousSubarray.swift
-//  LeetCode
-//
-//  Created by William Boles on 07/09/2024.
-//
+// Created 07/09/2024.
 
 import Foundation
 

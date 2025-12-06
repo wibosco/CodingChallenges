@@ -1,9 +1,5 @@
-//
-//  MinimumSizeSubarraySumTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 06/07/2023.
-//
+// Created 06/07/2023.
+
 
 import XCTest
 

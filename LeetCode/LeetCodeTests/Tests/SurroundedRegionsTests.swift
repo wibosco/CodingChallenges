@@ -1,9 +1,5 @@
-//
-//  SurroundedRegionsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 11/05/2023.
-//
+// Created 11/05/2023.
+
 
 import XCTest
 

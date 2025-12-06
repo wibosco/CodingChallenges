@@ -1,9 +1,5 @@
-//
-//  MaximumNumberOfVowelsInASubstringOfGivenLengthTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 26/07/2023.
-//
+// Created 26/07/2023.
+
 
 import XCTest
 

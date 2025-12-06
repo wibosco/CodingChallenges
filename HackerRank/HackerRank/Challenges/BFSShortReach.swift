@@ -1,10 +1,4 @@
-//
-//  BFSShortReach.swift
-//  HackerRank
-//
-//  Created by William Boles on 24/06/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 24/06/2016.
 
 import Foundation
 

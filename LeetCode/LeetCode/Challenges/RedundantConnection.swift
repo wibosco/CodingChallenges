@@ -1,9 +1,4 @@
-//
-//  RedundantConnection.swift
-//  LeetCode
-//
-//  Created by William Boles on 11/05/2023.
-//
+// Created 11/05/2023.
 
 import Foundation
 

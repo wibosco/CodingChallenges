@@ -1,9 +1,5 @@
-//
-//  PrimTests.swift
-//  AlgorithmsTests
-//
-//  Created by William Boles on 09/06/2022.
-//
+// Created 09/06/2022.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  ConvertSortedListToBinarySearchTree.swift
-//  LeetCode
-//
-//  Created by William Boles on 11/11/2023.
-//
+// Created 11/11/2023.
 
 import Foundation
 

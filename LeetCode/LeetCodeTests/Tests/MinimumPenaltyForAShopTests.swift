@@ -1,9 +1,5 @@
-//
-//  MinimumPenaltyForAShopTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 04/11/2023.
-//
+// Created 04/11/2023.
+
 
 import XCTest
 

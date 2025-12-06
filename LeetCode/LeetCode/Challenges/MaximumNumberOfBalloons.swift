@@ -1,9 +1,4 @@
-//
-//  MaximumNumberOfBalloons.swift
-//  LeetCode
-//
-//  Created by William Boles on 09/07/2023.
-//
+// Created 09/07/2023.
 
 import Foundation
 

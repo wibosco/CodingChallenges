@@ -1,9 +1,4 @@
-//
-//  InsufficientNodesInRootToLeafPaths.swift
-//  LeetCode
-//
-//  Created by William Boles on 05/12/2023.
-//
+// Created 05/12/2023.
 
 import Foundation
 

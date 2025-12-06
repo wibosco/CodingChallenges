@@ -1,10 +1,5 @@
-//
-//  OrganizingContainersOfBallsTests.swift
-//  HackerRankTests
-//
-//  Created by William Boles on 29/10/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 29/10/2021.
+
 
 import XCTest
 

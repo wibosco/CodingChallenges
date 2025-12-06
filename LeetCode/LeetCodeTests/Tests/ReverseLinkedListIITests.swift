@@ -1,9 +1,5 @@
-//
-//  ReverseLinkedListIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 22/03/2022.
-//
+// Created 22/03/2022.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  PriorityQueue.swift
-//  Algorithms
-//
-//  Created by William Boles on 23/05/2022.
-//
+// Created 23/05/2022.
 
 import Foundation
 

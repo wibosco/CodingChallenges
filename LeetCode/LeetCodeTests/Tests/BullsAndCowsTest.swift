@@ -1,9 +1,5 @@
-//
-//  BullsAndCowsTest.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 01/04/2023.
-//
+// Created 01/04/2023.
+
 
 import XCTest
 

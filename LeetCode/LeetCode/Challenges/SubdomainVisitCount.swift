@@ -1,9 +1,4 @@
-//
-//  SubdomainVisitCount.swift
-//  LeetCode
-//
-//  Created by William Boles on 27/03/2022.
-//
+// Created 27/03/2022.
 
 import Foundation
 

@@ -1,10 +1,4 @@
-//
-//  FindFirstAndLastPositionOfElementInSortedArray.swift
-//  LeetCode
-//
-//  Created by William Boles on 18/11/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 18/11/2021.
 
 import Foundation
 

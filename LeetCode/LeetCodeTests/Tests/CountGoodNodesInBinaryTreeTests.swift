@@ -1,9 +1,5 @@
-//
-//  CountGoodNodesInBinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 08/05/2023.
-//
+// Created 08/05/2023.
+
 
 import XCTest
 

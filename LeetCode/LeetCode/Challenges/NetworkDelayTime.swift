@@ -1,9 +1,4 @@
-//
-//  NetworkDelayTime.swift
-//  LeetCode
-//
-//  Created by William Boles on 03/07/2023.
-//
+// Created 03/07/2023.
 
 import Foundation
 

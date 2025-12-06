@@ -1,9 +1,4 @@
-//
-//  BinarySearchTreeTests.swift
-//  AlgorithmsTests
-//
-//  Created by William Boles on 16/04/2023.
-//
+// Created 16/04/2023.
 
 import XCTest
 

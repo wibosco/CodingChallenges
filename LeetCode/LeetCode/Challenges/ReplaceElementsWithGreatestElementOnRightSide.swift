@@ -1,9 +1,4 @@
-//
-//  ReplaceElementsWithGreatestElementOnRightSide.swift
-//  LeetCode
-//
-//  Created by William Boles on 06/07/2023.
-//
+// Created 06/07/2023.
 
 import Foundation
 

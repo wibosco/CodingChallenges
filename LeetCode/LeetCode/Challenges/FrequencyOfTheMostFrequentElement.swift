@@ -1,9 +1,4 @@
-//
-//  FrequencyOfTheMostFrequentElement.swift
-//  LeetCode
-//
-//  Created by William Boles on 20/07/2023.
-//
+// Created 20/07/2023.
 
 import Foundation
 

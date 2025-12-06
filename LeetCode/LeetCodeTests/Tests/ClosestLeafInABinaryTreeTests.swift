@@ -1,9 +1,5 @@
-//
-//  ClosestLeafInABinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 22/11/2023.
-//
+// Created 22/11/2023.
+
 
 import XCTest
 

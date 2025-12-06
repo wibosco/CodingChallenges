@@ -1,9 +1,4 @@
-//
-//  ListNode.swift
-//  Algorithms
-//
-//  Created by William Boles on 04/08/2023.
-//
+// Created 04/08/2023.
 
 import Foundation
 

@@ -1,9 +1,4 @@
-//
-//  FindFirstPalindromicStringInTheArray.swift
-//  LeetCode
-//
-//  Created by William Boles on 06/03/2024.
-//
+// Created 06/03/2024.
 
 import Foundation
 

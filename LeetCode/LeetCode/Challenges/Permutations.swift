@@ -1,9 +1,4 @@
-//
-//  Permutations.swift
-//  LeetCode
-//
-//  Created by William Boles on 10/03/2022.
-//
+// Created 10/03/2022.
 
 import Foundation
 

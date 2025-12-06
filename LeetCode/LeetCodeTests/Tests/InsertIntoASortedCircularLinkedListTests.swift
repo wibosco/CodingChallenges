@@ -1,9 +1,5 @@
-//
-//  InsertIntoASortedCircularLinkedListTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 20/04/2022.
-//
+// Created 20/04/2022.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  IncreasingOrderSearchTree.swift
-//  LeetCode
-//
-//  Created by William Boles on 10/11/2023.
-//
+// Created 10/11/2023.
 
 import Foundation
 

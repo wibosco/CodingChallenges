@@ -1,9 +1,4 @@
-//
-//  KDiffPairsInAnArray.swift
-//  LeetCode
-//
-//  Created by William Boles on 10/02/2022.
-//
+// Created 10/02/2022.
 
 import Foundation
 

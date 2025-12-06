@@ -1,9 +1,4 @@
-//
-//  FindDuplicateSubtrees.swift
-//  LeetCode
-//
-//  Created by William Boles on 19/11/2023.
-//
+// Created 19/11/2023.
 
 import Foundation
 

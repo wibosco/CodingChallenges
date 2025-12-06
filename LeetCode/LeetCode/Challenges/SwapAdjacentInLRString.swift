@@ -1,9 +1,4 @@
-//
-//  SwapAdjacentInLRString.swift
-//  LeetCode
-//
-//  Created by William Boles on 10/09/2024.
-//
+// Created 10/09/2024.
 
 import Foundation
 

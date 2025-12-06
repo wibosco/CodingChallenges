@@ -1,9 +1,4 @@
-//
-//  DeleteNodeInABST.swift
-//  LeetCode
-//
-//  Created by William Boles on 06/11/2023.
-//
+// Created 06/11/2023.
 
 import Foundation
 

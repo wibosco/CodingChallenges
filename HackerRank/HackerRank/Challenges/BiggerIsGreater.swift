@@ -1,10 +1,4 @@
-//
-//  BiggerIsGreater.swift
-//  HackerRank
-//
-//  Created by William Boles on 17/05/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 17/05/2016.
 
 import Foundation
 

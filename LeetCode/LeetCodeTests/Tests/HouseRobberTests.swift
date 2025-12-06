@@ -1,9 +1,5 @@
-//
-//  House Robber HouseRobberTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 13/04/2023.
-//
+// Created 13/04/2023.
+
 
 import XCTest
 

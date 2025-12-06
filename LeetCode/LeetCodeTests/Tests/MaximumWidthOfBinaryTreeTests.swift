@@ -1,9 +1,5 @@
-//
-//  MaximumWidthOfBinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 17/11/2023.
-//
+// Created 17/11/2023.
+
 
 import XCTest
 

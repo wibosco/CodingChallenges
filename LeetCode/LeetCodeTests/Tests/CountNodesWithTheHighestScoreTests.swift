@@ -1,9 +1,5 @@
-//
-//  CountNodesWithTheHighestScoreTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 20/02/2024.
-//
+// Created 20/02/2024.
+
 
 import XCTest
 

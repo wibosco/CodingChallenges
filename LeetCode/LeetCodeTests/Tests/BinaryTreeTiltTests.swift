@@ -1,9 +1,5 @@
-//
-//  BinaryTreeTiltTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 10/11/2023.
-//
+// Created 10/11/2023.
+
 
 import XCTest
 

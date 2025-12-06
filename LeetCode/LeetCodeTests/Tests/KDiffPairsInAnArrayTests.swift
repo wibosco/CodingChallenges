@@ -1,9 +1,5 @@
-//
-//  KDiffPairsInAnArrayTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 10/02/2022.
-//
+// Created 10/02/2022.
+
 
 import XCTest
 

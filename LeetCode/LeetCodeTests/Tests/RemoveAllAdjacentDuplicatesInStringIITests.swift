@@ -1,9 +1,5 @@
-//
-//  RemoveAllAdjacentDuplicatesInStringIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 06/04/2022.
-//
+// Created 06/04/2022.
+
 
 import XCTest
 

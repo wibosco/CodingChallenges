@@ -1,9 +1,4 @@
-//
-//  RestoreIPAddresses.swift
-//  LeetCode
-//
-//  Created by William Boles on 23/03/2022.
-//
+// Created 23/03/2022.
 
 import Foundation
 

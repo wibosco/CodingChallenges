@@ -1,9 +1,5 @@
-//
-//  RemoveElementTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 22/02/2022.
-//
+// Created 22/02/2022.
+
 
 import XCTest
 

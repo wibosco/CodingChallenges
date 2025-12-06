@@ -1,9 +1,4 @@
-//
-//  SortArrayByParityII.swift
-//  LeetCode
-//
-//  Created by William Boles on 10/06/2024.
-//
+// Created 10/06/2024.
 
 import Foundation
 

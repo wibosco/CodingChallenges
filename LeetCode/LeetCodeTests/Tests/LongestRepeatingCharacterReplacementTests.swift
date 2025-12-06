@@ -1,9 +1,5 @@
-//
-//  LongestRepeatingCharacterReplacementTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 11/04/2023.
-//
+// Created 11/04/2023.
+
 
 import XCTest
 

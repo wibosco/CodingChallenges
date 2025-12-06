@@ -1,9 +1,5 @@
-//
-//  ConstructStringFromBinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 13/09/2023.
-//
+// Created 13/09/2023.
+
 
 import XCTest
 

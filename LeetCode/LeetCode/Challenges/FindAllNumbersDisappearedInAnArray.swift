@@ -1,9 +1,4 @@
-//
-//  FindAllNumbersDisappearedInAnArray.swift
-//  LeetCode
-//
-//  Created by William Boles on 07/07/2023.
-//
+// Created 07/07/2023.
 
 import Foundation
 

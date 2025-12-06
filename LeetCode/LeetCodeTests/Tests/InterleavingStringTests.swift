@@ -1,9 +1,5 @@
-//
-//  InterleavingStringTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 24/03/2022.
-//
+// Created 24/03/2022.
+
 
 import XCTest
 

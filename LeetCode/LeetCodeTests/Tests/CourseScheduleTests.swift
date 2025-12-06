@@ -1,9 +1,5 @@
-//
-//  CourseScheduleTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 12/04/2023.
-//
+// Created 12/04/2023.
+
 
 import XCTest
 

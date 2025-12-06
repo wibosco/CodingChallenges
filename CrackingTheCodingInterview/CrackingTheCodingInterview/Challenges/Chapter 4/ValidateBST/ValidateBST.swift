@@ -1,10 +1,4 @@
-//
-//  ValidateBST.swift
-//  CrackingTheCodingInterview
-//
-//  Created by William Boles on 02/07/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 02/07/2016.
 
 import Foundation
 

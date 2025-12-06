@@ -1,9 +1,4 @@
-//
-//  QuicksortInPlace.swift
-//  HackerRank
-//
-//  Created by William Boles on 19/05/2022.
-//
+// Created 19/05/2022.
 
 import Foundation
 

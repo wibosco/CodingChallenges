@@ -1,9 +1,4 @@
-//
-//  MaximumTwinSumOfALinkedList.swift
-//  LeetCode
-//
-//  Created by William Boles on 03/08/2023.
-//
+// Created 03/08/2023.
 
 import Foundation
 

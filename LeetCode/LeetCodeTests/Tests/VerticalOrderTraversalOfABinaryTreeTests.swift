@@ -1,9 +1,5 @@
-//
-//  VerticalOrderTraversalOfABinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 04/03/2022.
-//
+// Created 04/03/2022.
+
 
 import XCTest
 

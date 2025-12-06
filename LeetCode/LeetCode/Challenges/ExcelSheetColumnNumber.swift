@@ -1,9 +1,4 @@
-//
-//  ExcelSheetColumnNumber.swift
-//  LeetCode
-//
-//  Created by William Boles on 22/02/2022.
-//
+// Created 22/02/2022.
 
 import Foundation
 

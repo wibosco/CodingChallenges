@@ -1,9 +1,4 @@
-//
-//  ClosestLeafInABinaryTree.swift
-//  LeetCode
-//
-//  Created by William Boles on 22/11/2023.
-//
+// Created 22/11/2023.
 
 import Foundation
 

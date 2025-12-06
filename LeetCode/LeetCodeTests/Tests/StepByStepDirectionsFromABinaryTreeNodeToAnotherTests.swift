@@ -1,9 +1,5 @@
-//
-//  StepByStepDirectionsFromABinaryTreeNodeToAnotherTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 13/12/2023.
-//
+// Created 13/12/2023.
+
 
 import XCTest
 

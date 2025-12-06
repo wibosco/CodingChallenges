@@ -1,9 +1,4 @@
-//
-//  MergeTwoBinaryTrees.swift
-//  LeetCode
-//
-//  Created by William Boles on 11/04/2022.
-//
+// Created 11/04/2022.
 
 import Foundation
 

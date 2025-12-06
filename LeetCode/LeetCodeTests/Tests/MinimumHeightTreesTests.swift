@@ -1,9 +1,5 @@
-//
-//  MinimumHeightTreesTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 05/04/2023.
-//
+// Created 05/04/2023.
+
 
 import XCTest
 

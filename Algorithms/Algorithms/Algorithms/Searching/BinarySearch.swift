@@ -1,9 +1,4 @@
-//
-//  BinarySearch.swift
-//  Algorithms
-//
-//  Created by William Boles on 25/05/2022.
-//
+// Created 25/05/2022.
 
 import Foundation
 

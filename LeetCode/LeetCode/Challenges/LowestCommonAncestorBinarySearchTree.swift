@@ -1,10 +1,4 @@
-//
-//  LowestCommonAncestorBinarySearchTree.swift
-//  LeetCode
-//
-//  Created by William Boles on 16/01/2022.
-//  Copyright © 2022 Boles. All rights reserved.
-//
+// Created 16/01/2022.
 
 import Foundation
 

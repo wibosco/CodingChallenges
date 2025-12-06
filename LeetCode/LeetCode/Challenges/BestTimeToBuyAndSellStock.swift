@@ -1,9 +1,4 @@
-//
-//  BestTimeToBuyAndSellStock.swift
-//  LeetCode
-//
-//  Created by William Boles on 31/01/2022.
-//
+// Created 31/01/2022.
 
 import Foundation
 

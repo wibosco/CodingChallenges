@@ -1,10 +1,5 @@
-//
-//  PairsOfSongsWithTotalDurationsDivisibleBy60Tests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 22/01/2022.
-//  Copyright © 2022 Boles. All rights reserved.
-//
+// Created 22/01/2022.
+
 
 import XCTest
 

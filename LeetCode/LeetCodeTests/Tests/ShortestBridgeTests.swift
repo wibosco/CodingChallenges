@@ -1,9 +1,5 @@
-//
-//  ShortestBridgeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 29/10/2023.
-//
+// Created 29/10/2023.
+
 
 import XCTest
 

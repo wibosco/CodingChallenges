@@ -1,9 +1,5 @@
-//
-//  IncreasingTripletSubsequenceTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 08/04/2023.
-//
+// Created 08/04/2023.
+
 
 import XCTest
 

@@ -1,9 +1,5 @@
-//
-//  QuicksortInPlaceTests.swift
-//  HackerRankTests
-//
-//  Created by William Boles on 19/05/2022.
-//
+// Created 19/05/2022.
+
 
 import XCTest
 

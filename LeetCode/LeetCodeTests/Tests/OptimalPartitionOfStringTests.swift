@@ -1,9 +1,5 @@
-//
-//  OptimalPartitionOfStringTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 16/07/2023.
-//
+// Created 16/07/2023.
+
 
 import XCTest
 

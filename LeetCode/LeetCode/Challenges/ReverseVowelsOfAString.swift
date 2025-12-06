@@ -1,9 +1,4 @@
-//
-//  ReverseVowelsOfAString.swift
-//  LeetCode
-//
-//  Created by William Boles on 01/09/2024.
-//
+// Created 01/09/2024.
 
 import Foundation
 

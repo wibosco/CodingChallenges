@@ -1,9 +1,5 @@
-//
-//  CountNegativeNumbersInASortedMatrixTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 24/02/2024.
-//
+// Created 24/02/2024.
+
 
 import XCTest
 

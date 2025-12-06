@@ -1,9 +1,4 @@
-//
-//  FindEventualSafeStates.swift
-//  LeetCode
-//
-//  Created by William Boles on 12/07/2023.
-//
+// Created 12/07/2023.
 
 import Foundation
 

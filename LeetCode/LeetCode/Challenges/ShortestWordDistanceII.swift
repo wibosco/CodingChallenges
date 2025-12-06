@@ -1,9 +1,4 @@
-//
-//  ShortestWordDistanceII.swift
-//  LeetCode
-//
-//  Created by William Boles on 30/03/2022.
-//
+// Created 30/03/2022.
 
 import Foundation
 

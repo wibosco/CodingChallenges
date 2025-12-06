@@ -1,10 +1,5 @@
-//
-//  ChocolateFeastTests.swift
-//  HackerRankTests
-//
-//  Created by Boles on 08/05/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 08/05/2016.
+
 
 import XCTest
 

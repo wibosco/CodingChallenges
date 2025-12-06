@@ -1,10 +1,5 @@
-//
-//  BuildOrderTests.swift
-//  CrackingTheCodingInterviewTests
-//
-//  Created by William Boles on 02/06/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 02/06/2016.
+
 
 import XCTest
 

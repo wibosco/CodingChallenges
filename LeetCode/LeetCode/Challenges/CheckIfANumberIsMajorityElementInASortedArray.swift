@@ -1,9 +1,4 @@
-//
-//  CheckIfANumberIsMajorityElementInASortedArray.swift
-//  LeetCode
-//
-//  Created by William Boles on 01/03/2024.
-//
+// Created 01/03/2024.
 
 import Foundation
 

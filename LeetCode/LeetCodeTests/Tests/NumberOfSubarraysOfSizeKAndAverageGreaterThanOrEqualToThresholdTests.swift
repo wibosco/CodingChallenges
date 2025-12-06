@@ -1,9 +1,5 @@
-//
-//  NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThresholdTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 19/07/2023.
-//
+// Created 19/07/2023.
+
 
 import XCTest
 

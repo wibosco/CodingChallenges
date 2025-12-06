@@ -1,9 +1,5 @@
-//
-//  PermutationsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 10/03/2022.
-//
+// Created 10/03/2022.
+
 
 import XCTest
 

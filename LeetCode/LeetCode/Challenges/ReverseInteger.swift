@@ -1,10 +1,4 @@
-//
-//  ReverseInteger.swift
-//  LeetCode
-//
-//  Created by William Boles on 07/11/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 07/11/2021.
 
 import Foundation
 

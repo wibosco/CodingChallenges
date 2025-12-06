@@ -1,9 +1,4 @@
-//
-//  ConvertBSTToGreaterTree.swift
-//  LeetCode
-//
-//  Created by William Boles on 15/11/2023.
-//
+// Created 15/11/2023.
 
 import Foundation
 

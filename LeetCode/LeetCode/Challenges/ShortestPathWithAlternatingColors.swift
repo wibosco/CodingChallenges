@@ -1,9 +1,4 @@
-//
-//  ShortestPathWithAlternatingColors.swift
-//  LeetCode
-//
-//  Created by William Boles on 30/10/2023.
-//
+// Created 30/10/2023.
 
 import Foundation
 

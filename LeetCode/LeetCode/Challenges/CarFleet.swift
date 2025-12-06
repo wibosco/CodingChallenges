@@ -1,9 +1,4 @@
-//
-//  CarFleet.swift
-//  LeetCode
-//
-//  Created by William Boles on 07/05/2023.
-//
+// Created 07/05/2023.
 
 import Foundation
 

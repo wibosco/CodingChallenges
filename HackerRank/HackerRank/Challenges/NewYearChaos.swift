@@ -1,10 +1,4 @@
-//
-//  NewYearChaos.swift
-//  HackerRank
-//
-//  Created by Boles on 14/05/2016.
-//  Copyright © 2016 Boles. All rights reserved.
-//
+// Created 14/05/2016.
 
 import Foundation
 

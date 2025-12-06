@@ -1,9 +1,4 @@
-//
-//  NumberOfSubsequencesThatSatisfyTheGivenSumCondition.swift
-//  LeetCode
-//
-//  Created by William Boles on 17/07/2023.
-//
+// Created 17/07/2023.
 
 import Foundation
 

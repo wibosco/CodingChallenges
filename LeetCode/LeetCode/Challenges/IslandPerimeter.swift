@@ -1,9 +1,4 @@
-//
-//  IslandPerimeter.swift
-//  LeetCode
-//
-//  Created by William Boles on 28/10/2023.
-//
+// Created 28/10/2023.
 
 import Foundation
 

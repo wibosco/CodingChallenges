@@ -1,9 +1,4 @@
-//
-//  CombinationSum.swift
-//  LeetCode
-//
-//  Created by William Boles on 23/02/2022.
-//
+// Created 23/02/2022.
 
 import Foundation
 

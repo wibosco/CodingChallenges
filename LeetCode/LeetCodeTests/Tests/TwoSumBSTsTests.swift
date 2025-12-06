@@ -1,9 +1,5 @@
-//
-//  ATwoSumBSTsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 10/12/2023.
-//
+// Created 10/12/2023.
+
 
 import XCTest
 

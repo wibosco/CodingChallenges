@@ -1,9 +1,5 @@
-//
-//  DijkstraTests.swift
-//  AlgorithmsTests
-//
-//  Created by William Boles on 22/05/2022.
-//
+// Created 22/05/2022.
+
 
 import XCTest
 

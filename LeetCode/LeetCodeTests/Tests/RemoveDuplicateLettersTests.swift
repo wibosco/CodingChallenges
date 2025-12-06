@@ -1,9 +1,5 @@
-//
-//  RemoveDuplicateLettersTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 06/04/2023.
-//
+// Created 06/04/2023.
+
 
 import XCTest
 

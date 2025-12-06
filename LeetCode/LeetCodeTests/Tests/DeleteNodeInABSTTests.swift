@@ -1,9 +1,5 @@
-//
-//  DeleteNodeInABSTTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 06/11/2023.
-//
+// Created 06/11/2023.
+
 
 import XCTest
 

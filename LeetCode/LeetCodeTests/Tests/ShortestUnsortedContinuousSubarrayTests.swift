@@ -1,9 +1,5 @@
-//
-//  ShortestUnsortedContinuousSubarrayTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 07/09/2024.
-//
+// Created 07/09/2024.
+
 
 import XCTest
 

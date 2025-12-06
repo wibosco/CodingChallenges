@@ -1,9 +1,5 @@
-//
-//  RemovingStarsFromAStringTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 28/07/2023.
-//
+// Created 28/07/2023.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  ReorderRoutesToMakeAllPathsLeadToTheCityZero.swift
-//  LeetCode
-//
-//  Created by William Boles on 25/10/2023.
-//
+// Created 25/10/2023.
 
 import Foundation
 

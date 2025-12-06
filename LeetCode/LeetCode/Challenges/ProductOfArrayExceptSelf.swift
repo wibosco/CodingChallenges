@@ -1,9 +1,4 @@
-//
-//  ProductOfArrayExceptSelf.swift
-//  LeetCode
-//
-//  Created by William Boles on 31/03/2022.
-//
+// Created 31/03/2022.
 
 import Foundation
 

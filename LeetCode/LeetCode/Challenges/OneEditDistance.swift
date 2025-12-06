@@ -1,9 +1,4 @@
-//
-//  OneEditDistance.swift
-//  LeetCode
-//
-//  Created by William Boles on 03/09/2024.
-//
+// Created 03/09/2024.
 
 import Foundation
 

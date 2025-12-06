@@ -1,9 +1,5 @@
-//
-//  FindTheLexicographicallySmallestValidSequenceTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 04/02/2025.
-//
+// Created 04/02/2025.
+
 
 import XCTest
 

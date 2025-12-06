@@ -1,9 +1,5 @@
-//
-//  CountSortedVowelStringsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 11/05/2022.
-//
+// Created 11/05/2022.
+
 
 import XCTest
 

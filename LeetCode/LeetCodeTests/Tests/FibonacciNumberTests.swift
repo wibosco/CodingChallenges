@@ -1,10 +1,5 @@
-//
-//  FibonacciNumberTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 21/12/2021.
-//  Copyright © 2021 Boles. All rights reserved.
-//
+// Created 21/12/2021.
+
 
 import XCTest
 

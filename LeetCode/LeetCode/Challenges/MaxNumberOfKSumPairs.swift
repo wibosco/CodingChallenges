@@ -1,9 +1,4 @@
-//
-//  MaxNumberOfKSumPairs.swift
-//  LeetCode
-//
-//  Created by William Boles on 05/05/2022.
-//
+// Created 05/05/2022.
 
 import Foundation
 

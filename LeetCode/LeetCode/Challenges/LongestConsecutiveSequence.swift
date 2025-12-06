@@ -1,9 +1,4 @@
-//
-//  LongestConsecutiveSequence.swift
-//  LeetCode
-//
-//  Created by William Boles on 10/04/2023.
-//
+// Created 10/04/2023.
 
 import Foundation
 

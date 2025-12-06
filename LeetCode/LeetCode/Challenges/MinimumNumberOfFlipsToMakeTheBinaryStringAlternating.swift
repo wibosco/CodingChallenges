@@ -1,9 +1,4 @@
-//
-//  MinimumNumberOfFlipsToMakeTheBinaryStringAlternating.swift
-//  LeetCode
-//
-//  Created by William Boles on 27/07/2023.
-//
+// Created 27/07/2023.
 
 import Foundation
 

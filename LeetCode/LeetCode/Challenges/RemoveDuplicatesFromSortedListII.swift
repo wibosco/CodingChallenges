@@ -1,9 +1,4 @@
-//
-//  RemoveDuplicatesFromSortedListII.swift
-//  LeetCode
-//
-//  Created by William Boles on 19/03/2022.
-//
+// Created 19/03/2022.
 
 import Foundation
 

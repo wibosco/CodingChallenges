@@ -1,9 +1,5 @@
-//
-//  PalindromePartitioningTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 02/07/2023.
-//
+// Created 02/07/2023.
+
 
 import XCTest
 

@@ -1,9 +1,5 @@
-//
-//  BoundaryOfBinaryTreeTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 20/11/2023.
-//
+// Created 20/11/2023.
+
 
 import XCTest
 

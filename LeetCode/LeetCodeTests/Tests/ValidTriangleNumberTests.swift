@@ -1,9 +1,5 @@
-//
-//  ValidTriangleNumberTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 08/09/2024.
-//
+// Created 08/09/2024.
+
 
 import XCTest
 

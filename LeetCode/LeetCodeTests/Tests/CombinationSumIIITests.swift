@@ -1,9 +1,5 @@
-//
-//  CombinationSumIIITests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 24/02/2022.
-//
+// Created 24/02/2022.
+
 
 import XCTest
 

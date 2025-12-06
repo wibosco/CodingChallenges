@@ -1,9 +1,4 @@
-//
-//  IntersectionOfThreeSortedArrays.swift
-//  LeetCode
-//
-//  Created by William Boles on 13/04/2022.
-//
+// Created 13/04/2022.
 
 import Foundation
 

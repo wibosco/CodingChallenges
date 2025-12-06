@@ -1,9 +1,5 @@
-//
-//  CombinationsTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 17/03/2022.
-//
+// Created 17/03/2022.
+
 
 import XCTest
 

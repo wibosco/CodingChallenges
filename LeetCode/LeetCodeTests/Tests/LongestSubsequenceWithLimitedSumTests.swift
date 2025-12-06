@@ -1,9 +1,5 @@
-//
-//  LongestSubsequenceWithLimitedSumTests.swift
-//  LeetCodeTests
-//
-//  Created by William Boles on 25/02/2024.
-//
+// Created 25/02/2024.
+
 
 import XCTest
 

@@ -1,9 +1,4 @@
-//
-//  CreateBinaryTreeFromDescriptions.swift
-//  LeetCode
-//
-//  Created by William Boles on 16/11/2023.
-//
+// Created 16/11/2023.
 
 import Foundation
 
