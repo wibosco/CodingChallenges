@@ -11,7 +11,7 @@ import Foundation
 
 struct FindTheIndexOfTheFirstOccurrenceInAString {
     
-    //Time: O(n + m) where n is the number fo elements in `haystack`
+    //Time: O(n + m) where n is the number of elements in `haystack`
     //               where m is the number of elements in `needle`
     //Space: O(n + m)
     //array
@@ -23,29 +23,37 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
     //two pointers
     //
     //Solution Description:
-    //Using KMP we are to traverse through `haystack` and determine if `needle` is present in a more efficient way when compared
-    //to nested loops. We do this by examining `needle` and determining, if any prefixes in `needle` are repeated later on in
-    //`needle` which can be used to avoid having to go back to the start of `needle` when comparing against `haystack` instead
-    //we can go back to the end of the start of that matching prefix. This prefix knowledge is stored in an `lps-table`
-    //(sometimes known as a `failure-table` or `pi-table`) e.g.
+    //Using KMP we traverse through `haystack` once to find `needle`, avoiding the `O(n * m)` cost of nested loops. We do this by
+    //building an LPS (Longest Proper Prefix which is also Suffix) table which tells us how far to backtrack in `needle` when a
+    //mismatch occurs, allowing us to skip redundant character comparisons.
     //
-    //needle = "ABABD"
+    //The LPS table captures the pattern's internal structure:
     //
-    //So here we have a `lps-table` of:
+    //Example:
     //
-    //ABABD
-    //00120
+    //  needle = "abcdabcd"
+    //  LPS table: [0, 0, 0, 0, 1, 2, 3, 4]
     //
-    //So here if we encountered a haystack of `ABABABD` when we hit that third `A` rather than going back to the start of `needle`,
-    //the `lps-table` would instead instruct as to go back to needle index `2` and see if that matched - which in this case does
-    //match so we continue on and eventually find the whole `needle` string. If it didn't match we would have eventually followed
-    //the `lps-table` back to the start of `needle`.
+    //  lps[7] = 4 means: the last 4 chars "abcd" match the first 4 chars "abcd"
     //
-    //As you can see, using an `lps` table can save us a lot of effort by avoiding duplicate work.
+    //When searching, if we have a partial match then hit a mismatch:
+    //
+    //  haystack: "abcdabceabcdabcd"
+    //             ^^^^^^^✗
+    //  needle:   "abcdabcd"
+    //
+    // We matched 7 chars "abcdabc" then hit 'e' vs 'd' (mismatch at needle[7])
+    //
+    // Instead of restarting from haystack index 1 (to ensure we fully search `haystack`):
+    //    - Use lps[6] = 3 to jump needle back to index 3
+    //
+    //This works because the last 3 matched chars "abc" also match needle's first 3. We don't re-check those characters in
+    //haystack. If that still mismatches, continue backtracking via LPS until we find a match or reach needle[0]. Then
+    //continue searching from where we left off in haystack. If we reach the end of `needle` we can return the start index.
+    //If we reach the end of `haystack` without finding `needle` then we know that `needle` is not present and can return -1.
     //
     //See: https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
     //See: https://www.youtube.com/watch?v=V5-7GzOfADQ
-    //lps - longest prefix substring
     func strStr(_ haystack: String, _ needle: String) -> Int {
         guard !needle.isEmpty else {
             return 0
@@ -59,45 +67,58 @@ struct FindTheIndexOfTheFirstOccurrenceInAString {
         let needle = Array(needle)
         
         //Generate lps/pi/failure table
+        
         var lps = Array(repeating: 0, count: needle.count)
-        var slow = 0
-
-        //The `fast` pointer will linearly move through `needle`, the `slow` pointer will increment and reset back to zero as
-        //matching character substrings that match the prefix of `needle` are found later on in `needle`
-        for fast in 1..<needle.count {
-            //if we have found the same characters as the prefix (the prefix being [0...slow]) later on then increment prefix
-            //pointer (`slow`) else reset our prefix pointer (`slow`) back to the start of `needle`. It's important to note here
-            //that we are only checking that the current character of `slow` against `fast` rather than `0...slow` because in
-            //order for `slow` to be non-zero it's predecessors will have needed to have been matched so building the `lps-table`
-            //is an linear operation.
+        var slow = 0  //length of current matching prefix
+        var fast = 1  //current position we're computing LPS for
+        
+        while fast < needle.count {
             if needle[fast] == needle[slow] {
+                //characters match - extend the matching prefix
                 slow += 1
+                lps[fast] = slow
+                
+                fast += 1
             } else {
-                slow = 0
+                if slow != 0 {
+                    //mismatch - backtrack to try a shorter prefix
+                    //this is the key step that makes LPS construction O(n)
+                    slow = lps[(slow - 1)]
+                    //don't increment fast - retry this position with shorter prefix
+                } else {
+                    //Mismatch and no matching prefix at all
+                    lps[fast] = 0
+                
+                    fast += 1
+                }
             }
-            
-            //store that matching prefix end index (`slow`) for the `fast` index
-            lps[fast] = slow
         }
         
         //Search
         
-        var h = 0
-        var n = 0
+        // Search for needle in haystack using LPS table
+        var i = 0  //index in haystack
+        var j = 0  //index in needle
         
-        while h + n < haystack.count {
-            if haystack[(h + n)] == needle[n] {
-                n += 1
-                if n == needle.count {
-                    return h
+        while i < haystack.count {
+            if haystack[i] == needle[j] {
+                //characters match - advance both pointers
+                i += 1
+                j += 1
+                
+                if j == needle.count {
+                    //found complete match
+                    return i - j
                 }
             } else {
-                //move n back to a position where the comparison between `haystack` and `needle` matched - this might have not been
-                //the case so n is set to 0
-                let lastMatchingIndex = max(0, (n - 1))
-                let resetIndex = lps[lastMatchingIndex]
-                n = resetIndex
-                h += 1
+                if j != 0 {
+                    //mismatch - use LPS to backtrack in needle
+                    // dn't move i - we don't need to re-check this character
+                    j = lps[j - 1]
+                } else {
+                    //mismatch at start of needle - move to next haystack character
+                    i += 1
+                }
             }
         }
         
