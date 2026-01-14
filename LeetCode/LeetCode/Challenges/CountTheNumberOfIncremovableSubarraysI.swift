@@ -57,6 +57,7 @@ struct CountTheNumberOfIncremovableSubarraysI {
         result += nums.count - right
         
         if left >= right { //all nums are in increasing order so return all possible subarrays
+            //formula for calculating how many possible subarrays from this length
             return nums.count * (nums.count + 1) / 2
         }
         

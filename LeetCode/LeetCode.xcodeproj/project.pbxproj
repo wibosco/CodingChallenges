@@ -892,6 +892,8 @@
 		436890862A658CEC002736F6 /* RotateArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436890852A658CEC002736F6 /* RotateArrayTests.swift */; };
 		436CB1F22F18325C00AA79BF /* UniqueSubstringsInWraparoundString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CB1F12F18325C00AA79BF /* UniqueSubstringsInWraparoundString.swift */; };
 		436CB1F42F1832A900AA79BF /* UniqueSubstringsInWraparoundStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CB1F32F1832A900AA79BF /* UniqueSubstringsInWraparoundStringTests.swift */; };
+		436CB1F62F1842DB00AA79BF /* NumberOfSmoothDescentPeriodsOfAStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CB1F52F1842DB00AA79BF /* NumberOfSmoothDescentPeriodsOfAStock.swift */; };
+		436CB1F82F18430900AA79BF /* NumberOfSmoothDescentPeriodsOfAStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CB1F72F18430900AA79BF /* NumberOfSmoothDescentPeriodsOfAStockTests.swift */; };
 		436DCCD82B8C849100AC8F0A /* FindTheDistanceValueBetweenTwoArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436DCCD72B8C849100AC8F0A /* FindTheDistanceValueBetweenTwoArrays.swift */; };
 		436DCCDA2B8C84C000AC8F0A /* FindTheDistanceValueBetweenTwoArraysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436DCCD92B8C84C000AC8F0A /* FindTheDistanceValueBetweenTwoArraysTests.swift */; };
 		436EC1B12B060D31003F7BC7 /* NumberOfGoodLeafNodesPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC1B02B060D31003F7BC7 /* NumberOfGoodLeafNodesPairs.swift */; };
@@ -2117,6 +2119,8 @@
 		436890852A658CEC002736F6 /* RotateArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateArrayTests.swift; sourceTree = "<group>"; };
 		436CB1F12F18325C00AA79BF /* UniqueSubstringsInWraparoundString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueSubstringsInWraparoundString.swift; sourceTree = "<group>"; };
 		436CB1F32F1832A900AA79BF /* UniqueSubstringsInWraparoundStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueSubstringsInWraparoundStringTests.swift; sourceTree = "<group>"; };
+		436CB1F52F1842DB00AA79BF /* NumberOfSmoothDescentPeriodsOfAStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfSmoothDescentPeriodsOfAStock.swift; sourceTree = "<group>"; };
+		436CB1F72F18430900AA79BF /* NumberOfSmoothDescentPeriodsOfAStockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfSmoothDescentPeriodsOfAStockTests.swift; sourceTree = "<group>"; };
 		436DCCD72B8C849100AC8F0A /* FindTheDistanceValueBetweenTwoArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheDistanceValueBetweenTwoArrays.swift; sourceTree = "<group>"; };
 		436DCCD92B8C84C000AC8F0A /* FindTheDistanceValueBetweenTwoArraysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheDistanceValueBetweenTwoArraysTests.swift; sourceTree = "<group>"; };
 		436EC1B02B060D31003F7BC7 /* NumberOfGoodLeafNodesPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfGoodLeafNodesPairs.swift; sourceTree = "<group>"; };
@@ -2915,6 +2919,7 @@
 				43F28D2F2DCC033100B1D2E7 /* NumberOfNodesWithValueOne.swift */,
 				435AFB9A2A5C5D8C00721B88 /* NumberOfPairsOfInterchangeableRectangles.swift */,
 				3D5C911827A7F7630035C399 /* NumberOfProvinces.swift */,
+				436CB1F52F1842DB00AA79BF /* NumberOfSmoothDescentPeriodsOfAStock.swift */,
 				430878882DD2163100F9257E /* NumberOfStudentsUnableToEatLunch.swift */,
 				43F2406C2A68409100FB5964 /* NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThreshold.swift */,
 				43A30FEA2C93743C0054D728 /* NumberOfSubarraysWithBoundedMaximum.swift */,
@@ -3522,6 +3527,7 @@
 				43F28D312DCC036700B1D2E7 /* NumberOfNodesWithValueOneTests.swift */,
 				435AFB9C2A5C5DD200721B88 /* NumberOfPairsOfInterchangeableRectanglesTests.swift */,
 				3D5C922E27A7F76B0035C399 /* NumberOfProvincesTests.swift */,
+				436CB1F72F18430900AA79BF /* NumberOfSmoothDescentPeriodsOfAStockTests.swift */,
 				4308788A2DD2165D00F9257E /* NumberOfStudentsUnableToEatLunchTests.swift */,
 				43F2406E2A6840C800FB5964 /* NumberOfSubarraysOfSizeKAndAverageGreaterThanOrEqualToThresholdTests.swift */,
 				43A30FEC2C93746A0054D728 /* NumberOfSubarraysWithBoundedMaximumTests.swift */,
@@ -4341,6 +4347,7 @@
 				4311BC782A586AC100137AED /* FindAllNumbersDisappearedInAnArray.swift in Sources */,
 				3D5C918B27A7F7630035C399 /* MinimumAddToMakeParenthesesValid.swift in Sources */,
 				43313BBB29D73378005FCF5D /* MissingNumber.swift in Sources */,
+				436CB1F62F1842DB00AA79BF /* NumberOfSmoothDescentPeriodsOfAStock.swift in Sources */,
 				43E175ED2A701BB200798BE4 /* FruitIntoBaskets.swift in Sources */,
 				3D5C91A427A7F7630035C399 /* FlattenBinaryTreeToLinkedList.swift in Sources */,
 				437B65C72AFADC3A009A0594 /* EliminateMaximumNumberOfMonsters.swift in Sources */,
@@ -4916,6 +4923,7 @@
 				4311BC722A585E2400137AED /* IsomorphicStringsTests.swift in Sources */,
 				431461712B8B398D008683E1 /* FindTargetIndicesAfterSortingArrayTests.swift in Sources */,
 				435B70AE2B0513BF003D51CA /* ReverseOddLevelsOfBinaryTreeTests.swift in Sources */,
+				436CB1F82F18430900AA79BF /* NumberOfSmoothDescentPeriodsOfAStockTests.swift in Sources */,
 				43313BC529D8EBAB005FCF5D /* BullsAndCowsTest.swift in Sources */,
 				433D27F92C8644EB00182C14 /* StrobogrammaticNumberTests.swift in Sources */,
 				433F2B2F2E643F4200C7752F /* MaxConsecutiveOnesTests.swift in Sources */,
