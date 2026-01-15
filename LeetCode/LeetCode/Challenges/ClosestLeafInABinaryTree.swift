@@ -19,9 +19,10 @@ struct ClosestLeafInABinaryTree {
     //set
     //dictionary
     //inout
+    //sentinel head
     //
     //Solution Description:
-    //In order to traverse both up and down the tree we first need to turn it into a direct graph with `parent->child` and
+    //In order to traverse both up and down the tree we first need to turn it into a directed graph with `parent->child` and
     //`child->parent` relationships. This will allow us to use BFS to find the minimum path from `k` to a leaf node. So to
     //build a graph out of the tree we use DFS to traverse all paths in the tree and add each edge to `adjList`. We need to
     //add an additional node in here `sentinelHead` to allow us to correctly identify leaf nodes - a leaf node will have an
@@ -90,6 +91,102 @@ struct ClosestLeafInABinaryTree {
     }
     
     //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(h + h) where n is the number of nodes in the tree
+    //                where h is the height of the tree
+    //binary tree
+    //graph theory
+    //DFS
+    //recursive
+    //BFS
+    //iterative
+    //adjacency list
+    //visited
+    //set
+    //dictionary
+    //inout
+    //
+    //Solution Description:
+    //In order to traverse both up and down the tree we first need to turn it into a directed graph with `parent->child` and
+    //`child->parent` relationships. This will allow us to use BFS to find the minimum path from `k` to a leaf node. So to
+    //build a graph out of the tree we use DFS to traverse all paths in the tree and add each edge to `adjList`. As we are
+    //interested in finding the shortest path to a leaf node from `k`, each left node we encounter we add to a `leafs` set.
+    //Once we have built the graph and found all leafs we perform a BFS from `k` to the leaf nodes. As our graph now has
+    //loops, to avoid searching the same edge repeatedly we use a `visited` set to store the nodes we have been to. Each
+    //node that we encounter we check if it in `leafs`, if it is we return the leaf node (BFS ensures it is the shortest).
+    //
+    //Similar to: https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
+    func findClosestLeaf2(_ root: TreeNode?, _ k: Int) -> Int {
+        guard let root else {
+            return -1
+        }
+
+        var adjList = [Int: [Int]]()
+        var leafs = Set<Int>()
+
+        convertTreeIntoGraph(root, &adjList, &leafs)
+
+        guard !leafs.contains(k) else {
+            return k
+        }
+        
+        return findShortestPathToLeaf(k, adjList, leafs)
+    }
+
+    private func convertTreeIntoGraph(_ node: TreeNode, _ adjList: inout [Int: [Int]], _ leafs: inout Set<Int>) {
+        // adjList[node.val, default: [Int]()].append(parent.val)
+        guard (node.left != nil || node.right != nil) else {
+            leafs.insert(node.val)
+            return
+        }
+
+        if let left = node.left {
+            adjList[node.val, default: [Int]()].append(left.val)
+            adjList[left.val, default: [Int]()].append(node.val)
+
+            convertTreeIntoGraph(left, &adjList, &leafs)
+        }
+
+        if let right = node.right {
+            adjList[node.val, default: [Int]()].append(right.val)
+            adjList[right.val, default: [Int]()].append(node.val)
+
+            convertTreeIntoGraph(right, &adjList, &leafs)
+        }
+    }
+
+    private func findShortestPathToLeaf(_ root: Int, _ adjList: [Int: [Int]], _ leafs: Set<Int>) -> Int {
+        var queue = [Int]()
+        queue.append(root)
+
+        var visited = Set<Int>()
+
+        while !queue.isEmpty {
+            var nextQueue = [Int]()
+
+            for nextNode in queue {
+                visited.insert(nextNode)
+
+                for neighbor in adjList[nextNode, default: [Int]()] {
+                    guard !visited.contains(neighbor) else {
+                        continue
+                    }
+
+                    guard !leafs.contains(neighbor) else{
+                        return neighbor
+                    }
+
+                    nextQueue.append(neighbor)
+                }
+            }
+
+            queue = nextQueue
+        }
+
+        return root
+    }
+    
+    
+    //Time: O(n) where n is the number of nodes in the tree
     //Space: O(h) where h is the height of the tree
     //DFS
     //recursive
@@ -107,7 +204,7 @@ struct ClosestLeafInABinaryTree {
     //calculate the distance from the current node to `k` and add that the distance from the current node to a leaf
     //node - if that value is smaller than `closestLeaf` we update it and return the new closest leaf details. We repeat
     //this process until return to the root and can return `closestLeaf`.
-    func findClosestLeafDFS(_ root: TreeNode?, _ k: Int) -> Int {
+    func findClosestLeaf3(_ root: TreeNode?, _ k: Int) -> Int {
         guard let root = root else {
             return 0
         }
