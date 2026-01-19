@@ -894,6 +894,8 @@
 		436657C42F1C042600B2EECA /* MinimumAbsoluteSumDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436657C32F1C042600B2EECA /* MinimumAbsoluteSumDifferenceTests.swift */; };
 		436657C62F1C334700B2EECA /* MaximumProductOfWordLengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436657C52F1C334700B2EECA /* MaximumProductOfWordLengths.swift */; };
 		436657C82F1C33C600B2EECA /* MaximumProductOfWordLengthsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436657C72F1C33C600B2EECA /* MaximumProductOfWordLengthsTests.swift */; };
+		436657CA2F1C389800B2EECA /* MaximumStudentsOnASingleBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436657C92F1C389800B2EECA /* MaximumStudentsOnASingleBench.swift */; };
+		436657CC2F1C39CE00B2EECA /* MaximumStudentsOnASingleBenchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436657CB2F1C39CE00B2EECA /* MaximumStudentsOnASingleBenchTests.swift */; };
 		436890842A658CB6002736F6 /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436890832A658CB6002736F6 /* RotateArray.swift */; };
 		436890862A658CEC002736F6 /* RotateArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436890852A658CEC002736F6 /* RotateArrayTests.swift */; };
 		436CB1F22F18325C00AA79BF /* UniqueSubstringsInWraparoundString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CB1F12F18325C00AA79BF /* UniqueSubstringsInWraparoundString.swift */; };
@@ -2127,6 +2129,8 @@
 		436657C32F1C042600B2EECA /* MinimumAbsoluteSumDifferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAbsoluteSumDifferenceTests.swift; sourceTree = "<group>"; };
 		436657C52F1C334700B2EECA /* MaximumProductOfWordLengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumProductOfWordLengths.swift; sourceTree = "<group>"; };
 		436657C72F1C33C600B2EECA /* MaximumProductOfWordLengthsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumProductOfWordLengthsTests.swift; sourceTree = "<group>"; };
+		436657C92F1C389800B2EECA /* MaximumStudentsOnASingleBench.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumStudentsOnASingleBench.swift; sourceTree = "<group>"; };
+		436657CB2F1C39CE00B2EECA /* MaximumStudentsOnASingleBenchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumStudentsOnASingleBenchTests.swift; sourceTree = "<group>"; };
 		436890832A658CB6002736F6 /* RotateArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
 		436890852A658CEC002736F6 /* RotateArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateArrayTests.swift; sourceTree = "<group>"; };
 		436CB1F12F18325C00AA79BF /* UniqueSubstringsInWraparoundString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueSubstringsInWraparoundString.swift; sourceTree = "<group>"; };
@@ -2856,6 +2860,7 @@
 				439563BB2A5CBDF4004ACCE6 /* MaximumProductOfTheLengthOfTwoPalindromicSubsequences.swift */,
 				436657C52F1C334700B2EECA /* MaximumProductOfWordLengths.swift */,
 				43A692A529F69FD50043B5D0 /* MaximumProductSubarray.swift */,
+				436657C92F1C389800B2EECA /* MaximumStudentsOnASingleBench.swift */,
 				3D5C90E927A7F7620035C399 /* MaximumSubarray.swift */,
 				3D5C90AB27A7F7620035C399 /* MaximumSwap.swift */,
 				434D464C2A7C011B008F80C9 /* MaximumTwinSumOfALinkedList.swift */,
@@ -3466,6 +3471,7 @@
 				439563BD2A5CBE29004ACCE6 /* MaximumProductOfTheLengthOfTwoPalindromicSubsequencesTests.swift */,
 				436657C72F1C33C600B2EECA /* MaximumProductOfWordLengthsTests.swift */,
 				43A692A729F69FFD0043B5D0 /* MaximumProductSubarrayTests.swift */,
+				436657CB2F1C39CE00B2EECA /* MaximumStudentsOnASingleBenchTests.swift */,
 				3D5C926927A7F76C0035C399 /* MaximumSubarrayTests.swift */,
 				3D5C928427A7F76C0035C399 /* MaximumSwapTests.swift */,
 				434D464E2A7C016C008F80C9 /* MaximumTwinSumOfALinkedListTests.swift */,
@@ -4083,6 +4089,7 @@
 				436EC1B12B060D31003F7BC7 /* NumberOfGoodLeafNodesPairs.swift in Sources */,
 				3D5C915E27A7F7630035C399 /* IntersectionOfTwoArrays.swift in Sources */,
 				3D3B213D27D6A0AD0055C0D1 /* RandomPickWithWeight.swift in Sources */,
+				436657CA2F1C389800B2EECA /* MaximumStudentsOnASingleBench.swift in Sources */,
 				4362DCAB2DCE18EF00234A5E /* InsertionSortList.swift in Sources */,
 				43A692AA29F6D7030043B5D0 /* WordBreak.swift in Sources */,
 				43DB083E2DECC59D00DABE74 /* LongestSubstringWithAtMostTwoDistinctCharacters.swift in Sources */,
@@ -5004,6 +5011,7 @@
 				3D5C92A427A7F76C0035C399 /* FirstBadVersionTests.swift in Sources */,
 				43CA0FB22C1065AF004D7740 /* ReversePrefixOfWordTests.swift in Sources */,
 				433BBFC329E3F5B100A9A21E /* ValidAnagramTests.swift in Sources */,
+				436657CC2F1C39CE00B2EECA /* MaximumStudentsOnASingleBenchTests.swift in Sources */,
 				3D5C92A627A7F76C0035C399 /* DiameterOfNAryTreeTests.swift in Sources */,
 				43EE0BDC2A55A60C003D23E0 /* PartitionLabelsTests.swift in Sources */,
 				43FB93572D521F200025E432 /* FindTheLexicographicallySmallestValidSequenceTests.swift in Sources */,
