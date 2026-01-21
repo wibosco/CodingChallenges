@@ -14,9 +14,9 @@ struct PlusOne {
     //Iterating `digits` in reverse order we first set up `carry` to hold a value of 1 (that we want to add) then we
     //add `carry` to the value at `i` (the last element in the array here). We then set `i` to be `val`s unit value
     //(e.g if we had 9 + 1 which is 10 we set `digits[i]` to 0) and set `carry` to be using an integer division (e.g.
-    //if we had 9 + 1 which is 10 then the new `carry` is 1). As long as carry isn't 0 then we repeat the process for
+    //if we had 9 + 1 which is 10 then the new `carry` is 1). As long as `carry` isn't 0 then we repeat the process for
     //subsequent values of `i`. We also need to handle the scenario where we have updated all the values in `digits`
-    //still have a non-zero carry value, in this case we add that carry to the start of `digits`
+    //still have a non-zero `carry` value, in this case we add `carry` to the start of `digits`.
     func plusOne(_ digits: [Int]) -> [Int] {
         var digits = digits
         var i = digits.count - 1
@@ -33,6 +33,41 @@ struct PlusOne {
         
         digits = carry > 0 ? [carry] + digits : digits
         
+        return digits
+    }
+    
+    //Time: O(n) where n is the number of elements in `digits`
+    //Space: O(n)
+    //array
+    //modulo
+    //
+    //Solution Description:
+    //Iterating `digits` in reverse order we first set up `carry` to hold a value of 1 (that we want to add) then we
+    //add `carry` to the value at `p1` (the last element in the array here). We then set `p1` to be `val`s unit value
+    //(e.g if we had 9 + 1 which is 10 we set `digits[i]` to 0) and set `carry` to be using an integer division (e.g.
+    //if we had 9 + 1 which is 10 then the new `carry` is 1). As long as `carry` isn't 0 then we repeat the process for
+    //subsequent values of `p1`. We also need to handle the scenario where we have updated all the values in `digits`
+    //still have a non-zero `carry` value, in this case we add `carry` to the start of `digits`.
+    func plusOne2(_ digits: [Int]) -> [Int] {
+        var digits = digits
+        var carry = 1
+
+        var p1 = digits.count - 1
+
+        while carry > 0 {
+            if p1 >= 0 {
+                let sum = digits[p1] + carry
+
+                digits[p1] = sum % 10
+                carry = sum / 10
+
+                p1 -= 1
+            } else {
+                digits = [carry] + digits
+                carry = 0
+            }
+        }
+    
         return digits
     }
 }
