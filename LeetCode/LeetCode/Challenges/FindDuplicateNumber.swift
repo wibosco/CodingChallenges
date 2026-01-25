@@ -155,7 +155,7 @@ struct FindDuplicateNumber {
     //nested loops
     //
     //Solution Description:
-    //Using two loops we compare each element of `nums` against all other elements until we find the duplicate
+    //Using two loops we compare each element of `nums` against all other elements until we find the duplicate.
     func findDuplicateLooping(_ nums: [Int]) -> Int {
         for i in 0..<nums.count {
             for j in (i + 1)..<nums.count {
