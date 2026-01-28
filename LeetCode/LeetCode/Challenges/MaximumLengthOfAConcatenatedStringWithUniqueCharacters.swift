@@ -5,7 +5,7 @@ import Foundation
 //https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/
 struct MaximumLengthOfAConcatenatedStringWithUniqueCharacters {
     
-    //Time: (2 ^ n) where n is the number of elements in `arr` (2 is because we either include the element or not)
+    //Time: (2 ^ n) where n is the number of elements in `arr`
     //
     //Space: O(n)
     //array
