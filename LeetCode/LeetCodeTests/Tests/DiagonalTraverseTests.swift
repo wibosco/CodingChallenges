@@ -1,6 +1,5 @@
 // Created 01/01/2022.
 
-
 import XCTest
 
 @testable import LeetCode

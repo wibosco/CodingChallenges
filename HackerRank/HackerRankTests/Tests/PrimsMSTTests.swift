@@ -1,6 +1,5 @@
 // Created 28/06/2016.
 
-
 import XCTest
 
 @testable import HackerRank

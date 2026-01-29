@@ -1,6 +1,5 @@
 // Created 01/06/2016.
 
-
 import XCTest
 
 @testable import CrackingTheCodingInterview
