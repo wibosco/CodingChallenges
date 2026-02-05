@@ -92,6 +92,7 @@ A collection of coding challenges and their solutions from:
 | Find left and right bounds of a value in a sorted array | `Binary search` with a result value | `FindFirstAndLastPositionOfElementInSortedArray` |
 | Sum values together in a sorted array to match a target | `Two pointers` | `Foursum` |
 | You must write an algorithm that runs in `O(n)` time | Make multiple passes | `LongestConsecutiveSequence` |
+| Repeatedly remove elements from an array | Turn array into `linked list` | `MinimumPairRemovalToSortArrayI` |
 
 A lot of problems can be treated as graph problems.
 
