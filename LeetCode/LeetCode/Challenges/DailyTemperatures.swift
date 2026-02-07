@@ -6,18 +6,23 @@ import Foundation
 //array
 struct DailyTemperatures {
     
-    //Time: O(n) where n is the number of temperatures (technically O(2n) because of the inner while - whats
-    //           important to note here is that `stack` will only ever hold a total of n elements)
-    //Space: O(n) where n is the number of temperatures
+    //Time: O(n) where n is the number of elements in `temperatures`
+    //Space: O(n)
     //stack
     //monotonic stack
     //
     //Solution Description:
-    //As we loop through the temperatures we push onto the stack any temperature that is less than the temperature at the
-    //top of our monotonic decreasing stack. This ensures that the stack will be in decreasing order. If the temperature
-    //is greater than the "top" of the stack then we pop that stack and determine the difference (in days) between the two
-    //temperatures and store this in the "wait" array. We repeat this until the current temperature is smaller than the
-    //top of the stack or the stack is empty.
+    //Rather than attempting to determine the "next" temperature that is greater than the current temperature we instead
+    //inverse this by determing if there are any temperatures before that the current temperature that are smaller than
+    //the current temperature. As we are only interested in the "next" greater temperature, once a temperature has found
+    //it's "next" temperature we don't have to check that temperature again. We do this in O(n) time with a monotonic
+    //stack. The monotonic stack will hold all temperatures whose "next" temperature hasn't been found in descending
+    //order i.e. 78 -> 76 -> 67, etc. As we loop through `temperatures` we will compare the current temperature against
+    //those elements in the stack. If the current temperature is greater than the stack elements we will pop the stack
+    //elements and update their "next" value in `result` by taking the difference between the current index and the
+    //stack index. We repeat for all stack elements until either the stack is empty or we encounter a temperature that
+    //is greater than or equal to the current temperature. We can then add the current temperature to `stack` and repeat
+    //this process. Once all elements in `temperatures` have been processed we can then return `result`.
     //
     //Background:
     //Monotonic = It is a word for mathematics functions. A function y = f(x) is monotonically increasing or decreasing
@@ -29,22 +34,20 @@ struct DailyTemperatures {
     //See: https://www.geeksforgeeks.org/introduction-to-monotonic-stack-data-structure-and-algorithm-tutorials/
     //See: https://www.youtube.com/watch?v=cTBiBSnjO3c
     func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
-        var wait = Array(repeating: 0, count: temperatures.count)
-        var stack = [Int]()
-        
-        for (i, temperature) in temperatures.enumerated() {
-            while !stack.isEmpty {
-                guard temperatures[stack.last!] < temperature else {
-                    break
-                }
-                
-                let j = stack.removeLast()
-                wait[j] = i - j
+        var result = Array(repeating: 0, count: temperatures.count)
+
+        var stack = [Int]() //[index]
+
+        for i in 0..<temperatures.count {
+            while let last = stack.last, temperatures[last] < temperatures[i] {
+                result[last] = (i - last)
+                stack.removeLast()
             }
+
             stack.append(i)
         }
-        
-        return wait
+
+        return result
     }
     
     //Time: O(n^2) where n is the number of temperatures
