@@ -5,7 +5,55 @@ import Foundation
 //https://leetcode.com/problems/product-of-array-except-self/
 struct ProductOfArrayExceptSelf {
     
-    //Time: O(n)
+    //Time: O(n) where n is the number of elements in `nums`
+    //Space: O(n)
+    //array
+    //reversing
+    //prefix sum
+    //
+    //Solution Description:
+    //To avoid having to make nested loops through `nums` to calculate the product while excluding `self`, we crete two
+    //prefix sum (actually prefix product) arrays one populating the array going from left -> right and one populating
+    //going from right -> left. These prefix sum arrays are one element longer than `nums` to accommodate a `1` value that
+    //represents the edge of either array. With these two prefix sum arrays we can iterate through `forwardPrefixSum` and
+    //calculate the product of `nums` if `self` was excluded.
+    func productExceptSelf(_ nums: [Int]) -> [Int] {
+        var forwardPrefixSum = [1]
+        var product = 1
+
+        for num in nums {
+            product *= num
+            forwardPrefixSum.append(product)
+        }
+
+        var backwardPrefixSum = [1]
+        product = 1
+
+        for num in nums.reversed() {
+            product *= num
+            backwardPrefixSum.append(product)
+        }
+
+        backwardPrefixSum.reverse()
+
+        var p1 = 1
+
+        var result = [Int]()
+
+        while p1 < forwardPrefixSum.count {
+            //note the `(p1 - 1)` when accessing `forwardPrefixSum` we we want to get the product up to but
+            //no including `p1`. We don't need to offset `backwardPrefixSum` as this is already padded by
+            //the extra `1` so the value at `p1` already excludes what the true `p1` would be.
+            let val = forwardPrefixSum[(p1 - 1)] * backwardPrefixSum[p1]
+            result.append(val)
+
+            p1 += 1
+        }
+
+        return result
+    }
+    
+    //Time: O(n) where n is the number of elements in `nums`
     //Space: O(1)
     //array
     //
@@ -14,7 +62,7 @@ struct ProductOfArrayExceptSelf {
     //value. What makes this trickier is that `nums` can contain zeros. If `nums` contains one zero then the only element in
     //the `result` array that won't be zero is that zero element. If `nums` contains multiple zeros then all elements in
     //`result` will be zero
-    func productExceptSelf(_ nums: [Int]) -> [Int] {
+    func productExceptSelf2(_ nums: [Int]) -> [Int] {
         var zeroCount = 0
         var total = 1
         var nonZeroTotal = 1
@@ -51,6 +99,7 @@ struct ProductOfArrayExceptSelf {
     //Space: O(n)
     //array
     //reversing
+    //prefix sum
     //
     //Solution Description:
     //We make three passes of `nums`. The first pass which goes from left-to-right (i.e. 0...n) sets the product of `i`
@@ -65,7 +114,7 @@ struct ProductOfArrayExceptSelf {
     //be invalid and need to be recalculated. By making two passes left-to-right and right-to-left we can successfully
     //omit any 0 indexes from our `prefixProducts`. If there exists more than one 0 then our product would still be 0
     //but this is to be expected.
-    func productExceptSelfProducts(_ nums: [Int]) -> [Int] {
+    func productExceptSelf3(_ nums: [Int]) -> [Int] {
         var productsFromTheLeft = Array(repeating: 1, count: nums.count)
         var leftProduct = 1
         for i in 0..<nums.count {
