@@ -23,21 +23,18 @@ struct AsteroidCollision {
     func asteroidCollision(_ asteroids: [Int]) -> [Int] {
         var stack = [Int]()
 
-        //pos ->, neg <-
-
         for asteroid in asteroids {
-            if asteroid < 0, let last = stack.last, last > 0 { //is the current asteroid moving towards those on the stack?
-                //fast forward
-                while let last = stack.last, last > 0, abs(asteroid) > last {
-                    stack.removeLast()
-                }
-
-                if stack.isEmpty {
+            //positive ->  <- negative
+            //collison only happens if two asteroids are moving towards each other
+            while let last = stack.last, last > 0, asteroid < 0, abs(asteroid) > last {
+                stack.removeLast()
+            }
+            
+            if let last = stack.last {
+                if (last < 0 && asteroid < 0) || (last > 0 && asteroid > 0) || (last < 0 && asteroid > 0) {
                     stack.append(asteroid)
-                } else if let last = stack.last, last > 0, last == abs(asteroid) {
+                } else if last == abs(asteroid) {
                     stack.removeLast()
-                } else if let last = stack.last, last < 0 {
-                    stack.append(asteroid)
                 }
             } else {
                 stack.append(asteroid)
