@@ -10,7 +10,7 @@ struct ShortestDistanceToACharacter {
     //string
     //array
     //two pointers
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //Uses two passes, on the first pass we calculate the distance from any given index to an earlier (lower index) `c`

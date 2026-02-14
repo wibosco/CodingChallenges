@@ -10,7 +10,7 @@ struct RemoveDuplicatesFromAnUnsortedLinkedList {
     //linked list
     //dictionary
     //frequency
-    //two passes
+    //multi-pass
     //sentinel head
     //
     //Solution Description:

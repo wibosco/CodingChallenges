@@ -10,7 +10,7 @@ struct NextGreaterElementII {
     //stack
     //monotonic stack
     //array
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //Using a decreasing monotonic stack we make two reverse order passes through `nums`. Due the circular nature of `nums` an

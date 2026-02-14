@@ -135,7 +135,7 @@ struct CopyListWithRandomPointer {
     //Space: O(n) where n is the number of nodes in the list
     //linked list
     //dictionary
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //First we iterate through the linked list storing a copy each node into a dictionary with the original node being used

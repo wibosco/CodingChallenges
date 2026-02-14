@@ -41,7 +41,7 @@ struct RemoveNthNodeFromEndOfList {
     //Time: O(n) where n is the number of nodes in the list
     //Space: O(1)
     //linked list
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //Iterating through the list we first count how many nodes are in the list and determine what the `nth` node would be. We then

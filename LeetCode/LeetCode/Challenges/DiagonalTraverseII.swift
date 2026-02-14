@@ -49,7 +49,7 @@ struct DiagonalTraverseII {
     //array
     //matrix
     //nested loops
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //The starting cell for every matrix is either the first column or the bottom row, making an `L` shape. Some rows don't have

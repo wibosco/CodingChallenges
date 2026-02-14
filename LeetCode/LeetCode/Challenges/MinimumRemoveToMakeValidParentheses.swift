@@ -10,7 +10,7 @@ struct MinimumRemoveToMakeValidParentheses {
     //string
     //array
     //counting
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //Make two passes through the string. First pass to remove unpaired closing brackets with the assumption that all opening
@@ -64,7 +64,7 @@ struct MinimumRemoveToMakeValidParentheses {
     //string
     //array
     //counting
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //Make two passes through the string. First pass to remove unpaired closing brackets with the assumption that all opening
@@ -114,7 +114,7 @@ struct MinimumRemoveToMakeValidParentheses {
     //string
     //array
     //counting
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //Make two passes through the string. First pass to remove unpaired closing brackets with the assumption that all opening

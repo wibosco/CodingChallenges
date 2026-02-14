@@ -10,7 +10,7 @@ struct MaximalRangeThatEachElementIsMaximumInIt {
     //monotonic stack
     //stack
     //array
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //Treating the finding of the left edge of the range and the right edge of the range as two seperate tasks wecan make two

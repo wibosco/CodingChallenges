@@ -10,7 +10,7 @@ struct ReverseWordsInAStringII {
     //string
     //array
     //two pointers
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //First we need to reverse all the characters in `s` which moves the words into the right position but backwards so then we need 

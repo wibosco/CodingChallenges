@@ -11,7 +11,7 @@ struct RemoveZeroSumConsecutiveNodesFromLinkedList {
     //sentinel head
     //prefix sum
     //dictionary
-    //two passes
+    //multi-pass
     //
     //Solution Description:
     //To determine which nodes can be removed we need to find where the sum of nodes from `0..n` is the same as `0..m` as this
