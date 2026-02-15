@@ -14,9 +14,9 @@ struct GameOfLife {
     //multi-source
     //
     //Solution Description:
-    //Iterate through `board` and using relative indexing determine the state of cells surrounding each cell. We then
-    //record the changes to that cell in a new board `nextBoard` so that the changes that we make don't affect any
-    //unprocessed cells on the original board - `board`.
+    //Iterate through `board` and using relative indexing determine the state of cells surrounding each cell. We then record the
+    //changes to that cell in a new board `nextBoard` so that the changes that we make don't affect any unprocessed cells on the
+    //original board - `board`.
     func gameOfLife(_ board: inout [[Int]]) {
         var nextBoard = Array(repeating: Array(repeating: 0, count: board[0].count), count: board.count)
         
