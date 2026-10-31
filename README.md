@@ -80,7 +80,7 @@ A collection of coding challenges and their solutions from:
 | Sort two "linked" arrays together | Merge the two array into one tuple array | `MaximumCoinsHeroesCanCollect` |
 | Work out the cost/total of all previous elements in sorted data | `PrefixSum` | `MaximumCoinsHeroesCanCollect` |
 | Flip neighbors to find the maximum/minimum | `Sliding window` | `MaximizeTheConfusionOfAnExam` |
-| Reverse order of substrings while keeping the same order of each substring| Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
+| Reverse order of substrings while keeping the same order of each substring | Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
 | Wrap an arrays indexes round an offset | `Modulo` | `CircularArrayLoop` |
 | Need to build a relationship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
 | Find the next permutation of a number | `pivot & swap` | `NextPermutation` `NextGreaterElementIII` |
@@ -93,6 +93,7 @@ A collection of coding challenges and their solutions from:
 | Sum values together in a sorted array to match a target | `Two pointers` | `Foursum` |
 | You must write an algorithm that runs in `O(n)` time | Make multiple passes | `LongestConsecutiveSequence` |
 | Repeatedly remove elements from an array | Turn array into `linked list` | `MinimumPairRemovalToSortArrayI` |
+| Find `x`th node from end of linked list | Two pointers, fast forward first pointer `x` nodes in | `RemoveNthNodeFromEndOfList` |
 
 A lot of problems can be treated as graph problems.
 
