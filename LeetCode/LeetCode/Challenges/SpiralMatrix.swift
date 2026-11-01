@@ -4,6 +4,73 @@ import Foundation
 
 //https://leetcode.com/problems/spiral-matrix/
 struct SpiralMatrix {
+    
+    //Time: O(n * m) where n is the number of rows in `matrix`
+    //               where m is the number of columns in `matrix`
+    //Space: O(n * m)
+    //matrix
+    //graph
+    //visited
+    //relative indexing
+    //simulation
+    //batching
+    //fast forward
+    //
+    //
+    //Solution Description:
+    //A spiral will go `east -> south -> wast -> north`, until all cells have been visited, this means that if we hit a
+    //boundary we move onto the next direction e.g. from travelling east to south. A boundary is either the edge of the
+    //matrix or encountering a cell we have already visited. Each iteration of `east -> south -> wast -> north` is treated a
+    //batch. We complete as many batches as needed to ensure that all cells are recorded in `order`. Fast forwarding is used
+    //to to walk the entirety of a direction before moving onto the next direction. This simplifies switching direction.
+    //Once all cells have been visited we return `order`.
+    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
+        var visited = Set<[Int]>() //[row, col]
+        visited.insert([0,0])
+
+        var order = [Int]()
+        order.append(matrix[0][0])
+
+        var row = 0
+        var col = 0
+
+        while order.count < (matrix.count * matrix[0].count) {
+            //east
+            while (col + 1) < matrix[0].count, !visited.contains([row, (col + 1)]) {
+                col += 1
+
+                order.append(matrix[row][col])
+                visited.insert([row, col])
+            }
+
+            //south
+            while (row + 1) < matrix.count, !visited.contains([(row + 1), col]) {
+                row += 1
+
+                order.append(matrix[row][col])
+                visited.insert([row, col])
+            }
+
+            //west
+            while (col - 1) >= 0, !visited.contains([row, (col - 1)]) {
+                col -= 1
+
+                order.append(matrix[row][col])
+                visited.insert([row, col])
+            }
+
+            //north
+            while (row - 1) >= 0, !visited.contains([(row - 1), col]) {
+                row -= 1
+
+                order.append(matrix[row][col])
+                visited.insert([row, col])
+            }
+        }
+
+        return order
+    }
+    
     private enum Direction {
         case up
         case down
@@ -19,6 +86,7 @@ struct SpiralMatrix {
     //visited
     //relative indexing
     //inout
+    //simulation
     //
     //Solution Description:
     //A spiral will go right -> down -> left -> up, until all cells have been visited, this means that if we hit a boundary
@@ -27,7 +95,7 @@ struct SpiralMatrix {
     //know the maximum number of possible moves (the number of cells in `matrix`) so all that is left so for us to track the
     //cells that have been visited in `visited`, append the current cells value to `order` and decrement `possibleMoves` until
     //all cells have been visited.
-    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
+    func spiralOrder2(_ matrix: [[Int]]) -> [Int] {
         var possibleMoves = (matrix.count * matrix[0].count) - 1
         var visited = Set<[Int]>()
         visited.insert([0, 0])
@@ -99,6 +167,7 @@ struct SpiralMatrix {
     //visited
     //relative indexing
     //inout
+    //simulation
     //
     //Solution Description:
     //A spiral will go right -> down -> left -> up, until all cells have been visited, this means that if we hit a boundary
@@ -108,7 +177,7 @@ struct SpiralMatrix {
     //enter an infinite cycle we use a visited set to know when we reach the start of the ciruite again. When a circuit
     //completes we move the boundaries of the next inwards. When `order` has a count that matches the matrix count then we
     //can return `order`.
-    func spiralOrder2(_ matrix: [[Int]]) -> [Int] {
+    func spiralOrder3(_ matrix: [[Int]]) -> [Int] {
         var order = [Int]()
         var visited = Set<[Int]>()
 
