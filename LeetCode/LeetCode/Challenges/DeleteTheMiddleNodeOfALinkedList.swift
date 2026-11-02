@@ -9,6 +9,7 @@ struct DeleteTheMiddleNodeOfALinkedList {
     //Space: O(1)
     //linked list
     //two pointers
+    //middle linked list
     //fast and slow pointers
     //sentinel head
     //

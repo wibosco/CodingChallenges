@@ -9,11 +9,13 @@ struct WordBreak {
     //Space: O(n + m) where n is the number of elements in `s`
     //                where m is the elements in `wordDict`
     //string
+    //array
     //memoization
     //top-down
     //dynamic programming
     //DFS
     //recursive
+    //fast forward
     //
     //Solution Description:
     //Using DFS we iterate through `s` attempting to find a match for an element in `wordDict`. Once we find a match we then
@@ -50,14 +52,14 @@ struct WordBreak {
             return memo[startIndex]!
         }
 
-        for j in (startIndex + 1)...chars.count { //our substring creation will ensure that we don't go over count
-            let word = String(chars[startIndex..<j])
+        for end in (startIndex + 1)...chars.count { //our substring creation will ensure that we don't go over count
+            let word = String(chars[startIndex..<end])
             
             //keep adding characters to `word` until we get a match with an element in `wordSet`. Once we have that
-            //match, recursively search for the next word starting from the end of `word` - `j`. If searching from
+            //match, recursively search for the next word starting from the end of `word` - `end`. If searching from
             //`word` doesn't result in a full successful search then we add another character to `word` in case
             //`word` is part of another element in `wordSet` e.g. "cat" then becomes "cats" and repeat the process
-            if wordSet.contains(word) && dfs(chars, wordSet, j, &memo) {
+            if wordSet.contains(word) && dfs(chars, wordSet, end, &memo) {
                 return true
             }
         }

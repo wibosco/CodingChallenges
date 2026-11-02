@@ -11,6 +11,10 @@ final class ListNode {
     init(_ val: Int) {
         self.val = val
     }
+    
+    convenience init() {
+        self.init(-1)
+    }
 }
 
 extension ListNode {
