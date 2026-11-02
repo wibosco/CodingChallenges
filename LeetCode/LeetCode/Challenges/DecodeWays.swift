@@ -40,6 +40,7 @@ struct DecodeWays {
     //dynamic programming
     //recursive
     //DFS
+    //inout
     //
     //Solution Description:
     //Treating `s` and the possible ways of decoding it as a binary tree we can perform a DFS through the tree. As this
@@ -91,5 +92,68 @@ struct DecodeWays {
         memo[left] = decodings
         
         return decodings
+    }
+        
+    //Time: O(n) where n is the number of nodes in the tree
+    //Space: O(n)
+    //string
+    //array
+    //binary tree
+    //memoization
+    //top-down
+    //dynamic programming
+    //recursive
+    //DFS
+    //inout
+    //
+    //Solution Description:
+    //Treating `s` and the possible ways of decoding it as a binary tree we can perform a DFS through the tree. As this
+    //binary tree will have repeating subtrees i.e. the same paths but in different order, we can use memoization to cut down
+    //on the number of recursive calls needed by returning the number of possible decoding paths from any given index. This
+    //means that we only need to complete the DFS iteration through the tree once for every index so if we end up on that
+    //index again we can shortcut and just return the count. The other consideration is that only certain paths through `s`
+    //are valid so when attempting to decode we need to check if the present character sequence is a valid encoding. Which
+    //we do by ensuring the number being decoded is between 1 and 26, without a leading 0. To avoid double counting where a
+    //a frame as made use of `currentVal` to create a compound value, we shortcut that next call to reset the `currentVal`
+    //back to 0 so that we don't make use of `s[i]` twice in the decoding path.
+    //
+    //Similar to: https://leetcode.com/problems/climbing-stairs/
+    //
+    //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
+    //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
+    func numDecodings2(_ s: String) -> Int {
+        let s = s.compactMap { $0.wholeNumberValue }
+        var memo = [Int: Int]()
+
+        return dfs(s, 0, 0, &memo)
+    }
+
+    private func dfs(_ s: [Int], _ i: Int, _ currentVal: Int, _ memo: inout [Int: Int]) -> Int {
+        guard i < s.count else {
+            return currentVal == 0 ? 1 : 0
+        }
+
+        let val = s[i]
+        let sum = currentVal + val
+
+        guard sum >= 1, sum <= 26 else {
+            return 0
+        }
+
+        guard currentVal == 0 else {
+            return dfs(s, i + 1, 0, &memo)
+        }
+
+        guard memo[i] == nil else {
+            return memo[i]!
+        }
+
+        let count = dfs(s, (i + 1), 0, &memo) + dfs(s, (i + 1), (val * 10), &memo)
+
+        memo[i] = count
+
+        return count
     }
 }
