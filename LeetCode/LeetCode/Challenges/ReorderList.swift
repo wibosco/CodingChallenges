@@ -105,7 +105,7 @@ struct ReorderList {
         let sen = ListNode()
         sen.next = head
 
-        var tail = head
+        let tail = head
 
         while tail?.next != nil {
             let nh = tail?.next

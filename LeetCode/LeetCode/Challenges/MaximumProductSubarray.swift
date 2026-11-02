@@ -28,12 +28,13 @@ struct MaximumProductSubarray {
         var subarrayMax = nums[0]
 
         for num in nums[1...] {
-            let tmp = subarrayMin //we will be overriding this but need it for the second calculation
+            let extendedMax = subarrayMax * num
+            let extendedMin = subarrayMin * num
             
             //N.B how we use `subarrayMax` and `subarrayMin` in both calculations
             //as a negative number can flip a max to a min or min to a max
-            subarrayMin = min(num, (subarrayMax * num), (subarrayMin * num))
-            subarrayMax = max(num, (subarrayMax * num), (tmp * num))
+            subarrayMax = max(num, extendedMax, extendedMin)
+            subarrayMin = min(num, extendedMax, extendedMin)
 
             result = max(result, subarrayMax)
         }
