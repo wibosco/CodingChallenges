@@ -4,8 +4,89 @@ import Foundation
 
 //https://leetcode.com/problems/course-schedule/
 struct CourseSchedule {
+    
+    //Time: O(n + e) where n is the number of vertices in the graph
+    //               where e is the number of edges in the graph
+    //Space: O(n)
+    //graph theory
+    //DAG
+    //DFS
+    //recursive
+    //visited
+    //directed graph
+    //multi-source
+    //adjacency list
+    //topological sort
+    //backtracking
+    //cycle detection
+    //inout
+    //
+    //Solution Description:
+    //Treating `numCourses` as the vertices in a graph and each `prerequisites` element as an edge between two vertices we
+    //first build a adjacency list to allow for easy access to each vertice and use that adjacency list to detect the presence
+    //of a cycle or not. A course prerequisite is by it's very nature a a direct edge so a valid prerequisites needs to be
+    //acyclic which means that in order for the `prerequisites` to be valid we need to determine if `adjList` contains a DAG.
+    //Using DFS topological sort (without the sorting) we can iterate over all vertices in the graph (there is no guarantee
+    //that all vertices are connected) and look for any cycles. In order to detect a cycle we need to track which vertices are
+    //currently on the call stack of this DFS, if we encounter the same vertice twice then the graph has a cycle (in a DAG we
+    //should be able to search all the descendants of a vertice before we can encounter it again). Note, that the call stack
+    //will not contain all vertices that this DFS has seen, only those that have descendents still be processed - a vertice
+    //being visited multiple times doesn't necessarily mean there is a cycle, it is only a cycle if that vertice is being
+    //re-visited by one of it's own descendents (hasn't got to be a direct descendent). As there is no quick way to search the
+    //actual callstack for a given node we use `localVisited` as a stand-in. Being a set, `localVisited `allows us to query if
+    //a vertice is repeated in O(1) time. Once we have traversed all vertices from a source we remove it from `localVisited`
+    //as any further encounter with that vertice shouldn't be treated as the sign of a cycle. If at any time we encounter
+    //a node that is already in `localVisited` then we know a cycle exists and can return false. Once all nodes in the current
+    //search space have been checked we can return true for that loop. We then select the next source node. To avoid
+    //re-searching the same graph from a different starting vertice we use `globalVisited` to hold those vertices already
+    //visited.
+    func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
+        var adjList = Array(repeating: [Int](), count: numCourses)
 
-    //Time: O(n + e) n is the number of vertices in the graph
+        for item in prerequisites {
+            adjList[item[0]].append(item[1])
+        }
+
+        //used to know if a node has already been search and proven to be "safe"
+        var globalVisited = Set<Int>()
+        for i in 0..<numCourses {
+            //used to know if a node has already been in the call stack
+            var localVisited = Set<Int>()
+
+            if !dfs(adjList, i, &localVisited, &globalVisited) {
+                return false
+            }
+        }
+
+        return true
+    }
+
+    private func dfs(_ adjList: [[Int]], _ i: Int, _ localVisited: inout Set<Int>, _ globalVisited: inout Set<Int>) -> Bool {
+        guard !localVisited.contains(i) else {
+            return false
+        }
+        
+        //all paths from this node have been searched and are known to be "safe"
+        guard !globalVisited.contains(i) else {
+            return true
+        }
+        
+        //only add the current `i` once we have checked `globalVisited` to avoid it never being removed due to the early exit
+        localVisited.insert(i)
+        globalVisited.insert(i)
+
+        for d in adjList[i] {
+            if !dfs(adjList, d, &localVisited, &globalVisited) {
+                return false
+            }
+        }
+
+        localVisited.remove(i)
+
+        return true
+    }
+    
+    //Time: O(n + e) where n is the number of vertices in the graph
     //               where e is the number of edges in the graph
     //Space: O(n)
     //graph theory
@@ -38,7 +119,7 @@ struct CourseSchedule {
     //further encounter with that vertice shouldn't be treated as the sign of a cycle. When all possible source vertices has
     //been traversed we can return `cycleDetected`. To avoid re-searching the same graph from a different starting vertice we
     //use `visited` to hold those vertices already visited.
-    func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
+    func canFinish2(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
         var adjList = Array(repeating: [Int](), count: numCourses)
         
         for prerequisite in prerequisites {
@@ -48,6 +129,7 @@ struct CourseSchedule {
             adjList[src].append(dst)
         }
         
+        //used to know if a node has already been search and proven to be "safe"
         var visited = Set<Int>()
         var cycleDetected = false
         
@@ -93,7 +175,7 @@ struct CourseSchedule {
         callStack.remove(source)
     }
     
-    //Time: O(n + e) n is the number of vertices in the graph
+    //Time: O(n + e) where n is the number of vertices in the graph
     //               where e is the number of edges in the graph
     //Space: O(n)
     //graph theory
@@ -127,7 +209,7 @@ struct CourseSchedule {
     //further encounter with that vertice shouldn't be treated as the sign of a cycle. If a cycle is detected we return false
     //else when all possible source vertices has been traversed we return true. To avoid re-searching the same graph from
     //a different starting vertice we use `visited` to hold those vertices already visited.
-    func canFinish2(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
+    func canFinish3(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {
         var adjList = Array(repeating: [Int](), count: numCourses)
 
         for p in prerequisites {
@@ -138,7 +220,7 @@ struct CourseSchedule {
         for i in 0..<adjList.count {
             var callStack = Set<Int>()
             callStack.insert(i)
-            if !dfs(adjList, i, &callStack, &visited) {
+            if !dfs3(adjList, i, &callStack, &visited) {
                 return false
             }
         }
@@ -146,7 +228,7 @@ struct CourseSchedule {
         return true
     }
 
-    private func dfs(_ adjList: [[Int]], _ i: Int, _ callStack: inout Set<Int>, _ visited: inout Set<Int>) -> Bool {
+    private func dfs3(_ adjList: [[Int]], _ i: Int, _ callStack: inout Set<Int>, _ visited: inout Set<Int>) -> Bool {
         guard !visited.contains(i) else {
             return true //must not contain a cycle otherwise we won't be here
         }
@@ -160,7 +242,7 @@ struct CourseSchedule {
             }
             callStack.insert(neighbor)
 
-            if !dfs(adjList, neighbor, &callStack, &visited) {
+            if !dfs3(adjList, neighbor, &callStack, &visited) {
                 return false
             }
         }
