@@ -33,6 +33,8 @@ struct HouseRobber {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
+    //
+    ////Similar to: https://leetcode.com/problems/house-robber-ii/
     func rob(_ nums: [Int]) -> Int {
         var memo = [Int: Int]()
 
