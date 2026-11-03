@@ -10,16 +10,12 @@ on:
 jobs:
   build:
 
-    runs-on: macos-26
+    runs-on: xcode-27
 
     steps:
     - uses: actions/checkout@v7
     - name: List available Xcode versions
       run: ls /Applications | grep Xcode
-    - name: Show current version of Xcode
-      run: xcodebuild -version
-    - name: Set up Xcode version
-      run: sudo xcode-select -s /Applications/Xcode_26.6.app/Contents/Developer
     - name: Show current version of Xcode
       run: xcodebuild -version
     - name: Set up Ruby
