@@ -5,7 +5,7 @@ import Foundation
 //https://leetcode.com/problems/longest-increasing-subsequence
 struct LongestIncreasingSubsequence {
     
-    //Time: O(n^2) where n is the number of elements in `nums` (nested for loops)
+    //Time: O(n ^ 2) where n is the number of elements in `nums` (nested for loops)
     //Space: O(n)
     //array
     //graph theory
@@ -35,7 +35,63 @@ struct LongestIncreasingSubsequence {
         return lis.max() ?? 0
     }
     
-    //Time: O(n^2) where n is the number of elements in `nums` (nested for loops)
+    //Time: O(n ^ 2) where n is the number of elements in `nums` (each node's `for` loop only runs once thanks to `memo`)
+    //Space: O(n)
+    //array
+    //graph theory
+    //DFS
+    //recursive
+    //memoization
+    //top-down
+    //dynamic programming
+    //
+    //Solution Description:
+    //Treating `nums` as a graph, we traverse the graph in a DFS manner to determine the longest possible ascending
+    //subsequence. To avoid traversing paths that we have already travelled down we use memoization to store the longest
+    //ascending subsequence that can follow each node - as an entry is only added once every path from that node has been
+    //checked, you know that if a node has a memoization entry, that entry is the maximum. At each node in the graph we check
+    //all nodes that come after it for its next valid subsequence element - this is because choosing the first valid element
+    //can "block" the longest subsequence e.g. in `[1, 100, 2, 3]` choosing `100` after `1` blocks `2, 3`, so we need to check
+    //all valid nodes as the next node in the subsequence. For each valid next node we add 1 (for that node) to the length of
+    //the subsequence that can follow it, and store the longest of these in `longest`. Once all possible next nodes from `i`
+    //have been checked we add `longest` to `memo` and return it.
+    //
+    //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
+    //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
+    func lengthOfLIS2(_ nums: [Int]) -> Int {
+        var memo = [Int: Int]()
+
+        return dfs(nums, 0, Int.min, &memo) //Int.min is outside the range of possible values so safe as a default tail
+    }
+
+    private func dfs(_ nums: [Int], _ i: Int, _ tail: Int, _ memo: inout [Int: Int]) -> Int {
+        guard i < nums.count else {
+            return 0
+        }
+
+        guard memo[i] == nil else {
+            return memo[i]!
+        }
+
+        var longest = 0
+
+        for j in i..<nums.count { //loop of any possible next element not just the first one
+            guard nums[j] > tail else { //skip over non-ascending elements
+                continue
+            }
+
+            let length = dfs(nums, (j + 1), nums[j], &memo) + 1 //note that `j` is used, `+ 1` needed for `j`` to be counted
+            longest = max(longest, length)
+        }
+
+        memo[i] = longest
+
+        return longest
+    }
+    
+    //Time: O(n ^ 2) where n is the number of elements in `nums` (nested for loops)
     //Space: O(n)
     //array
     //graph theory
@@ -60,19 +116,19 @@ struct LongestIncreasingSubsequence {
     //the cached result when the same computation is needed again.
     //
     //N.B. Dynamic programming can be thought of as local brute force.
-    func lengthOfLIS2(_ nums: [Int]) -> Int {
+    func lengthOfLIS3(_ nums: [Int]) -> Int {
         var lis = 0
         var memo = [Int: Int]()
         
         for i in 0..<nums.count {
-            let lengthFromI =  dfs(nums, (i + 1), nums[i], &memo) + 1 //add 1 for current node being added to count
+            let lengthFromI = dfs3(nums, (i + 1), nums[i], &memo) + 1 //add 1 for current node being added to count
             lis = max(lis, lengthFromI)
         }
         
         return lis
     }
     
-    private func dfs(_ nums: [Int], _ i: Int, _ num: Int, _ memo: inout [Int: Int]) -> Int {
+    private func dfs3(_ nums: [Int], _ i: Int, _ num: Int, _ memo: inout [Int: Int]) -> Int {
         guard i < nums.count else {
             return 0
         }
@@ -88,7 +144,7 @@ struct LongestIncreasingSubsequence {
                 continue
             }
         
-            let lengthFromJ = dfs(nums, (j + 1), nums[j], &memo) + 1
+            let lengthFromJ = dfs3(nums, (j + 1), nums[j], &memo) + 1
             longestFromI = max(longestFromI, lengthFromJ)
         }
         
@@ -97,7 +153,7 @@ struct LongestIncreasingSubsequence {
         return longestFromI
     }
     
-    //Time: O(2^n) where n is the number of elements in `nums` (at each index we can choose to add that value to our count or not)
+    //Time: O(2 ^ n) where n is the number of elements in `nums` (at each index we can choose to add that value to our count or not)
     //Space: O(n)
     //array
     //graph theory
@@ -108,7 +164,7 @@ struct LongestIncreasingSubsequence {
     //Solution Description:
     //Treating `nums` as a graph, we traverse the graph and determine the longest possible incrementing subsequence by visiting
     //each node of that graph from every possible path in DFS manner.
-    func lengthOfLIS3(_ nums: [Int]) -> Int {
+    func lengthOfLIS4(_ nums: [Int]) -> Int {
         var longest = 0
         
         for i in 0..<nums.count {
