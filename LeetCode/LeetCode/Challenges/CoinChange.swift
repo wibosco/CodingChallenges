@@ -24,6 +24,14 @@ struct CoinChange {
     //repeated work we use a memoization to store each `amount` we have traversed from, if another path takes as to the same
     //amount we know it isn't possible to get to zero from there (if it was possible we would have stopped our traversal before
     //this point.)
+    //
+    //The memoization here is really just a visited set in disguise as only invalid values are stored in `memo`. As soon as
+    //`amount` is equal to 0, we return the `count`.
+    //
+    //N.B. Memoization is a term describing an optimization technique where you cache previously computed results, and return
+    //the cached result when the same computation is needed again.
+    //
+    //N.B. Dynamic programming can be thought of as local brute force.
     func coinChange(_ coins: [Int], _ amount: Int) -> Int {
         guard amount > 0 else {
             return 0
@@ -88,15 +96,9 @@ struct CoinChange {
     //
     //N.B. Dynamic programming can be thought of as local brute force.
     func coinChange2(_ coins: [Int], _ amount: Int) -> Int {
-        guard amount > 0 else {
-            return 0
-        }
-        
         var memo = [Int: Int]()
         
-        let coinsUsed = dfs(coins, &memo, amount)
-    
-        return coinsUsed == Int.max ? -1: coinsUsed
+        return dfs(coins, &memo, amount)
     }
 
     private func dfs(_ coins: [Int], _ memo: inout [Int: Int], _ remaining: Int) -> Int {
