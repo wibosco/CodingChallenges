@@ -20,7 +20,8 @@ platform :ios do
   lane :run_all_tests do
     run_tests(
       workspace: "CodingChallenges.xcworkspace",
-      scheme: "CodingChallenges"
+      scheme: "CodingChallenges",
+      xcodebuild_formatter: "xcbeautify"
     )
   end
 end

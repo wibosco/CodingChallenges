@@ -23,4 +23,4 @@ jobs:
       with:
         bundler-cache: true
     - name: Run unit tests
-      run: bundle exec fastlane run_all_tests --verbose
+      run: bundle exec fastlane run_all_tests

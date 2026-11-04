@@ -1,7 +1,6 @@
 // Created 17/01/2022.
 
 import Foundation
-import CoreText
 
 //https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/
 struct MinimumNumberOfSwapsToMakeTheStringBalanced {
