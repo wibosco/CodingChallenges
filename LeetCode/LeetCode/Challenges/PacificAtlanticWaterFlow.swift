@@ -55,7 +55,9 @@ struct PacificAtlanticWaterFlow {
         guard heights[r][c] >= value else {
             return
         }
-
+        
+        //note that this comes after the height check, this ensures we don't mark a cell has visited
+        //before it has the chance to be the source for rain
         guard !visited.contains([r, c]) else {
             return
         }
