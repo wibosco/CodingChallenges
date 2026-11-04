@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "12283049-7708-4ECE-875E-4447A4312A15",
+      "name" : "Default",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LeetCode.xcodeproj",
+        "identifier" : "3D5C907E27A7F6A80035C399",
+        "name" : "LeetCodeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

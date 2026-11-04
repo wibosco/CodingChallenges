@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "20F0DD46-169C-461D-8B81-B6717FD34009",
+      "name" : "Default",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:HackerRank.xcodeproj",
+        "identifier" : "3D5C8E9027A7F2A30035C399",
+        "name" : "HackerRankTests"
+      }
+    }
+  ],
+  "version" : 1
+}

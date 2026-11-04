@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "0951D55B-C5F5-49AC-AED7-6062FAA67993",
+      "name" : "Default",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CrackingTheCodingInterview.xcodeproj",
+        "identifier" : "3D5C8FEC27A7F4850035C399",
+        "name" : "CrackingTheCodingInterviewTests"
+      }
+    }
+  ],
+  "version" : 1
+}

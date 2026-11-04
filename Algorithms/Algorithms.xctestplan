@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "D31DA355-4003-461C-8D3F-BB066855B6A2",
+      "name" : "Default",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Algorithms.xcodeproj",
+        "identifier" : "3DFC2EC7283AC6AB001256EE",
+        "name" : "AlgorithmsTests"
+      }
+    }
+  ],
+  "version" : 1
+}

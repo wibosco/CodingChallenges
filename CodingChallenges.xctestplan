@@ -1,0 +1,47 @@
+{
+  "configurations" : [
+    {
+      "id" : "10A3C8C9-7B58-4DC1-97F2-078714DF5DE8",
+      "name" : "Default",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LeetCode/LeetCode.xcodeproj",
+        "identifier" : "3D5C907E27A7F6A80035C399",
+        "name" : "LeetCodeTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:HackerRank/HackerRank.xcodeproj",
+        "identifier" : "3D5C8E9027A7F2A30035C399",
+        "name" : "HackerRankTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Algorithms/Algorithms.xcodeproj",
+        "identifier" : "3DFC2EC7283AC6AB001256EE",
+        "name" : "AlgorithmsTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CrackingTheCodingInterview/CrackingTheCodingInterview.xcodeproj",
+        "identifier" : "3D5C8FEC27A7F4850035C399",
+        "name" : "CrackingTheCodingInterviewTests"
+      }
+    }
+  ],
+  "version" : 1
+}
