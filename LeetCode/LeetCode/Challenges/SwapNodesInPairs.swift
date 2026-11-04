@@ -1,7 +1,6 @@
 // Created 16/12/2021.
 
 import Foundation
-import UIKit
 
 //https://leetcode.com/problems/swap-nodes-in-pairs/
 struct SwapNodesInPairs {
