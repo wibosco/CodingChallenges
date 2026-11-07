@@ -11,6 +11,7 @@ struct MedianOfTwoSortedArrays {
     //array
     //two pointers
     //modulo
+    //median
     //
     //Solution Description:
     //Using two pointers we iterate through `nums1` and `nums2` and merge them into one array - `merged`. We take the smallest
