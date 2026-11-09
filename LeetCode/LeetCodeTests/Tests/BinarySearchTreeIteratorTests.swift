@@ -4,14 +4,14 @@ import XCTest
 
 @testable import LeetCode
 
-final class BSTIteratorTests: XCTestCase {
+final class BinarySearchTreeIteratorTests: XCTestCase {
 
     // MARK: - Tests
     
     func test_A() {
         let data = [7, 3, 15, nil, nil, 9, 20]
         let root = TreeNode.deserialize(data)
-        let iterator = BSTIterator(root)
+        let iterator = BinarySearchTreeIterator(root)
         
         XCTAssertEqual(iterator.next(), 3)
         XCTAssertEqual(iterator.next(), 7)

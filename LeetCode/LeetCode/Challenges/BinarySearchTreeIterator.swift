@@ -16,7 +16,7 @@ import Foundation
 //nodes on branch, again only until we reach the left most element. If the node has no `right` node then the next element is
 //the stack is now the top - this is why sometimes this operation is O(1) and sometimes O(n). As we gradually run out of
 //`right` nodes we pop more and more elements off the `stack` until we have no more to pop
-final class BSTIterator {
+final class BinarySearchTreeIterator {
     private var stack = [TreeNode]() //Space: O(n)
     
     init(_ root: TreeNode?) {
