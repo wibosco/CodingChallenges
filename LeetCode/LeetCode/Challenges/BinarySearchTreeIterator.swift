@@ -5,26 +5,36 @@ import Foundation
 //https://leetcode.com/problems/binary-search-tree-iterator/
 //design
 //stack
+//binary search tree
+//recursion
+//iterator
+//amortised
 //
 //Time: average: O(1) and worse: O(n) where n is the number of nodes in the tree
-//Space: O(n)
+//Space: O(h)
 //
 //Solution Description:
-//Rather than preprocessing the full tree we only preprocess down to the first element that will be returned in an inorder
-//traversal - the left most element. We store this element and all other elements than we have already seen in a stack.
-//When `next` is called we return the element at the top of the stack and if that element has a `right` node we process the
-//nodes on branch, again only until we reach the left most element. If the node has no `right` node then the next element is
-//the stack is now the top - this is why sometimes this operation is O(1) and sometimes O(n). As we gradually run out of
-//`right` nodes we pop more and more elements off the `stack` until we have no more to pop
+//Rather than flattening the whole tree up front, we only go as far as the next value we need. On init we push the
+//root and every left child below it onto a stack, so the top of the stack is the leftmost node - the smallest value.
+//When `next` is called we pop the top node, which is the value to return. If that node has a right subtree we push
+//that subtree's left spine, so the top of the stack is again the next smallest value. If there's no right subtree,
+//the node beneath on the stack is the parent whose left subtree we've just finished, which is the next value in order.
+//
+//A single `next` can push up to `h` nodes, but across all calls each node is pushed and popped exactly once, so n calls
+//cost O(n) in total - amortised O(1) per call. The stack only ever holds nodes from one root-to-leaf path, so it
+//never exceeds h nodes.
+//
+//Amortised describes the cost of an operation averaged over a worst-case sequence of calls. Individual calls can
+//occasionally be expensive, but the total work divided by the number of calls is bounded by the stated complexity.
 final class BinarySearchTreeIterator {
     private var stack = [TreeNode]() //Space: O(n)
     
     init(_ root: TreeNode?) {
-        leftMostInorder(root)
+        pushLeftBranchOntoStack(root)
     }
     
-    //Time: average: O(h), worse: O(n)
-    private func leftMostInorder(_ node: TreeNode?) {
+    //Time: O(h)
+    private func pushLeftBranchOntoStack(_ node: TreeNode?) {
         var node = node
         while let n = node {
             stack.append(n)
@@ -32,15 +42,13 @@ final class BinarySearchTreeIterator {
         }
     }
     
-    //Time: average: O(1), worse O(n)
+    //Time: amortised: O(1), worse O(h)
     func next() -> Int {
-        let next = stack.removeLast()
+        let node = stack.removeLast()
         
-        if let right = next.right {
-            leftMostInorder(right)
-        }
+        pushLeftBranchOntoStack(node.right)
         
-        return next.val
+        return node.val
     }
     
     //Time: O(1)
