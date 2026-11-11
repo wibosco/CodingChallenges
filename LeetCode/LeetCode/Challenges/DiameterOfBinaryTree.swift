@@ -20,6 +20,7 @@ struct DiameterOfBinaryTree {
     //
     //See: https://leetcode.com/problems/maximum-depth-of-binary-tree/ for details on how to calculate the depth of
     //a tree
+    //Similar to: https://leetcode.com/problems/binary-tree-maximum-path-sum/
     func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
         var longestDiameter = 0
         height(root, &longestDiameter)
