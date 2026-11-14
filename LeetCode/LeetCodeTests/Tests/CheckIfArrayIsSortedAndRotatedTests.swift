@@ -43,4 +43,13 @@ struct CheckIfArrayIsSortedAndRotatedTests {
         
         #expect(result == true)
     }
+    
+    @Test
+    func test_E() {
+        let nums = [1,1,1]
+        
+        let result = CheckIfArrayIsSortedAndRotated().check(nums)
+        
+        #expect(result == true)
+    }
 }
