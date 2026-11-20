@@ -7,6 +7,7 @@ struct UniqueBinarySearchTreesII {
     
     //Time: O(n * 4^n) where n is the number of nodes in each tree
     //Space: O(n * 4^n)
+    //binary tree
     //binary search tree
     //recursive
     //bottom-up
@@ -27,6 +28,8 @@ struct UniqueBinarySearchTreesII {
     //
     //N.B. When a range is empty we return `[nil]` rather than `[]`. An empty subtree is still a valid subtree, and
     //returning `[]` would stop the nested loops from running, losing every tree that has an empty left or right subtree.
+    //
+    //Similar to: https://leetcode.com/problems/unique-binary-search-trees/
     func generateTrees(_ n: Int) -> [TreeNode?] {
         return generateTrees(1, n)
     }
