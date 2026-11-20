@@ -112,7 +112,7 @@ struct CloneGraph {
     //recursive
     //dictionary
     //inout
-    //bottom up
+    //bottom-up
     //
     //Solution Description:
     //Perform a recursive DFS search through the graph, making a copy when we encounter an unvisited vertice and using the

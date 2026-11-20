@@ -156,7 +156,7 @@ struct RangeSumOfBST {
     //binary search tree
     //DFS
     //recusive
-    //bottom up
+    //bottom-up
     //
     //Solution Description:
     //Using DFS to recursively traverse the tree to each leaf. Once a leaf is enocunter the recursive stack starts to unwind

@@ -10,7 +10,7 @@ struct ClosestBinarySearchTreeValue {
     //binary tree
     //binary search tree
     //recursive
-    //bottom up
+    //bottom-up
     //
     //Solution Description:
     //We traverse the tree, at each level calculating the delta of the current node's `val` with the `target`. As this is
@@ -57,7 +57,7 @@ struct ClosestBinarySearchTreeValue {
     //binary search tree
     //DFS
     //recursive
-    //bottom up
+    //bottom-up
     //
     //Solution Description:
     //We traverse the tree in a DFS manner, at each level we compare the delta of that levels node value with the `target`.

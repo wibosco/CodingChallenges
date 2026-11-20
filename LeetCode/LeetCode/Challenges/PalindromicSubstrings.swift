@@ -63,7 +63,7 @@ struct PalindromicSubstrings {
     //array
     //two pointers
     //recursive
-    //bottom up
+    //bottom-up
     //multi-source
     //
     //Solution Description:

@@ -80,7 +80,7 @@ struct NextPermutation {
     //array
     //
     //See: https://www.youtube.com/watch?v=quAS1iydq7U
-    func nextPermutationAlt(_ nums: inout [Int]) {
+    func nextPermutation2(_ nums: inout [Int]) {
         guard nums.count > 1 else {
             return
         }

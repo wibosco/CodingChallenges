@@ -8,7 +8,7 @@ struct FibonacciNumber {
     
     //Time: O(n) where n is each number in the sequence n - 0
     //Space: O(1)
-    //bottom up
+    //bottom-up
     //iterative
     //
     //Solution Description:
