@@ -3,27 +3,63 @@
 import Foundation
 
 //https://leetcode.com/problems/evaluate-reverse-polish-notation/
-//stack
 struct EvaluateReversePolishNotation {
     
-    //Time: O(n) where n is number of tokens
-    //Space: O(n) where n is number of tokens
+    //Time: O(n) where n is number of elements in `tokens`
+    //Space: O(n)
+    //stack
+    //array
     //
     //Solution Description:
-    //Using a stack we add elements until we come to an operator, at which point we pop two elements from the stack
-    //and apply the operator to them. The result of this calculation is then added to the stack so that it can be
-    //used next iteration.
+    //Using a stack we add elements until we come to an operator, at which point we pop two elements from the stack and apply
+    //the operator to them. The result of this calculation is then added to the stack so that it can be used next iteration.
+    func evalRPN(_ tokens: [String]) -> Int {
+        var stack = [Int]()
+
+        for t in tokens {
+            if let num = Int(t) {
+                stack.append(num)
+            } else {
+                //note that this because we are using a stack the first value popped was actually added later than the
+                //second value popped - this ordering is important for the division and subtraction calculations
+                let second = stack.removeLast()
+                let first = stack.removeLast()
+
+                if t == "/" {
+                    stack.append((first / second))
+                } else if t == "*" {
+                    stack.append((first * second))
+                } else if t == "+" {
+                    stack.append((first + second))
+                } else if t == "-" {
+                    stack.append((first - second))
+                }
+            }
+        }
+
+        return stack.first!
+    }
+    
+    //Time: O(n) where n is number of elements in `tokens`
+    //Space: O(n)
+    //stack
+    //array
+    //set
     //
-    //N.B. It's important to note that order of the elements retrieved from the stack is essential for getting the
-    //correct answer for division and subtraction calculations
+    //Solution Description:
+    //Using a stack we add elements until we come to an operator, at which point we pop two elements from the stack and apply
+    //the operator to them. The result of this calculation is then added to the stack so that it can be used next iteration.
     //
-    //N.B2. You might be tempted to use a `result` variable so to only fill the stack with token elements rather
-    //than it also contain the ongoing result - don't do this as trying to handle the special case which is the
-    //first iteration (where you need to take two elements from the stack) and subsequent iterations (where you
-    //only need to take one) leads to some very messy code for division and subtraction
+    //N.B. It's important to note that order of the elements retrieved from the stack is essential for getting the correct
+    //answer for division and subtraction calculations
+    //
+    //N.B2. You might be tempted to use a `result` variable so to only fill the stack with token elements rather than it
+    //also contain the ongoing result - don't do this as trying to handle the special case which is the first iteration
+    //(where you need to take two elements from the stack) and subsequent iterations (where you only need to take one) leads
+    //to some very messy code for division and subtraction
     //
     //Similar to: https://leetcode.com/problems/clumsy-factorial/
-    func evalRPN(_ tokens: [String]) -> Int {
+    func evalRPN2(_ tokens: [String]) -> Int {
         guard !tokens.isEmpty else {
             return 0
         }
