@@ -94,6 +94,8 @@ A collection of coding challenges and their solutions from:
 | You must write an algorithm that runs in `O(n)` time | Make multiple passes | `LongestConsecutiveSequence` |
 | Repeatedly remove elements from an array | Turn array into `linked list` | `MinimumPairRemovalToSortArrayI` |
 | Find `x`th node from end of linked list | Two pointers, fast forward first pointer `x` nodes in | `RemoveNthNodeFromEndOfList` |
+| Pause recursion | Use an explicit rather than recursive implicit stack | `BinarySearchTreeIterator` |
+| Get predecessor of a node in a tree | Use inorder traversal with a `inout` parameter to hold the last seen node | `ValidateBinarySearchTree` |
 
 A lot of problems can be treated as graph problems.
 
