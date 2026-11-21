@@ -5,13 +5,14 @@ import Foundation
 //https://leetcode.com/problems/validate-binary-search-tree/
 struct ValidateBinarySearchTree {
     
-    //Time: O(n) where n is the number of nodes in the tree
+    //Time: O(h) where h is the height of the tree
     //Space: O(n) - stack calls
     //binary tree
     //binary search tree
     //pre-order
     //recursive
     //DFS
+    //top-down
     //
     //Solution Description:
     //In order for a BST to be valid, all nodes on the right of a particular node need to be greater invalue and all nodes
@@ -24,10 +25,6 @@ struct ValidateBinarySearchTree {
     //
     //Similar to: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
     func isValidBST(_ root: TreeNode?) -> Bool {
-        guard let root = root else {
-            return true
-        }
-        
         return preOrder(root, Int.min, Int.max)
     }
     
@@ -43,7 +40,7 @@ struct ValidateBinarySearchTree {
         return preOrder(node.left, lower, node.val) && preOrder(node.right, node.val, upper) //both need to be valid
     }
     
-    //Time: O(n) where n is the number of nodes in the tree
+    //Time: O(h) where h is the height of the tree
     //Space: O(n)
     //binary tree
     //binary search tree
@@ -77,7 +74,7 @@ struct ValidateBinarySearchTree {
             return false
         }
 
-        if last?.val ?? Int.min >= node.val {
+        if let last, last.val >= node.val {
             return false
         }
         last = node
@@ -85,7 +82,7 @@ struct ValidateBinarySearchTree {
         return dfs(node.right, &last)
     }
     
-    //Time: O(n) where n is the number of nodes in the tree
+    //Time: O(h) where h is the height of the tree
     //Space: O(n)
     //binary tree
     //binary search tree
