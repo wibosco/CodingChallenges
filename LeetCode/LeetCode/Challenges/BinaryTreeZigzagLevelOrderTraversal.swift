@@ -9,13 +9,19 @@ struct BinaryTreeZigzagLevelOrderTraversal {
     //Space: O(n) where n is the number of nodes in the tree (`levels` array)
     //binary tree
     //BFS
+    //queue
+    //level traversal
     //array
     //
     //Solution Description:
-    //Using BFS we traverse the tree adding the nodes at each level to a `level` array. At the end of each level we check the
-    //ordering of that level and if it is meant to be right-to-left we reverse the `level` array before adding to the `levels`;
-    //if the ordering is left-to-right we just add the `level` array without reversing. At the end of our traversal, `levels`
-    //should contain all the nodes in the tree sorted in zigzag fashion
+    //Using BFS we traverse the tree level by level, adding the value of each node at the current level to a `level` array
+    //and its children to `newQueueItems`. At the end of each level we check `leftToRight` and if the ordering is meant to
+    //be right-to-left we reverse `level` before adding it to `levels`; if the ordering is left-to-right we just add `level`
+    //without reversing. We then toggle `leftToRight` and repeat the process with `newQueueItems` as our new `queue`. At the
+    //end of our traversal, `levels` contains the values of all the nodes in the tree in zigzag order.
+    //
+    //N.B. Replacing `queue` with `newQueueItems` rather than calling `removeFirst()` on `queue` avoids shifting every
+    //remaining element along each time a node is dequeued.
     func zigzagLevelOrder(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else {
             return [[Int]]()
