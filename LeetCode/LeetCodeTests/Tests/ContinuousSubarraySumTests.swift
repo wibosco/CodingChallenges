@@ -61,4 +61,22 @@ final class ContinuousSubarraySumTests: XCTestCase {
         
         XCTAssertTrue(result)
     }
+    
+    func test_G() {
+        let nums = [0]
+        let k = 1
+        
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
+        
+        XCTAssertFalse(result)
+    }
+    
+    func test_H() {
+        let nums = [0,0]
+        let k = 1
+        
+        let result = ContinuousSubarraySum().checkSubarraySum(nums, k)
+        
+        XCTAssertTrue(result)
+    }
 }

@@ -57,6 +57,7 @@ A collection of coding challenges and their solutions from:
 | "Merge", "Intervals", "Neighbors" | `Sort` |
 | "Rotate by k" | `(i + k) % array.count` |
 | "Array" | `stack`, `monotonic stack`, `two pointers`, `sliding window`, `binary search` |
+| "Contiguous", "Subarray" | `prefix sum` |
 
 **When unable to spot a pattern, stop and write out the steps involved in the given example - work the problem without code.**
 
@@ -68,7 +69,7 @@ A collection of coding challenges and their solutions from:
 | Generate all permutations of an array | Offset nested `for` loops with the inner starting at `i+1` | `AdditiveNumber` |
 | Find "x" from an infinite array | Treat array as a graph and perform a DFS, at each level include all elements in the array | `CoinChanges` |
 | Explore possible replacement values for a given element in an array/string | `DFS`, `Memoization` | `ValidParenthesisString` |
-| Can't use additional memory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
+| Not use additional memory when working with an array | `Negative Marking` | `FindAllNumbersDisappearedInAnArray` |
 | Combine numbers together to form one number e.g. `[5, 10]` to `510`| Convert the numbers to strings | `LargestNumber` |
 | Simulate time passing or different rounds | Batch up changes either using a `Queue` or caching state between rounds | `PushDominoes` |
 | Count possible subarrays/substrings | `count * (count + 1) / 2` | `NumberOfSmoothDescentPeriodsOfAStock` |
@@ -82,7 +83,7 @@ A collection of coding challenges and their solutions from:
 | Flip neighbors to find the maximum/minimum | `Sliding window` | `MaximizeTheConfusionOfAnExam` |
 | Reverse order of substrings while keeping the same order of each substring | Two passes - one to reverse all, one to reverse each substring | `ReverseWordsInAStringII` |
 | Wrap an arrays indexes round an offset | `Modulo` | `CircularArrayLoop` |
-| Need to build a relationship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
+| Build a relationship between two arrays | Sort the arrays and nest one in the other | `Heaters` |
 | Find the next permutation of a number | `pivot & swap` | `NextPermutation` `NextGreaterElementIII` |
 | Find elements in one array and compare against another | `Two pointers`, `Fast Forwarding` | `SwapAdjacentInLRString` |
 | Find child nodes in binary tree when represented as an array | `left-child: (index * 2) + 1` <br /> `right-child: (index * 2) + 2` | `NumberOfNodesWithValueOne` |
@@ -91,7 +92,7 @@ A collection of coding challenges and their solutions from:
 | Keep track of the "last" node seen in a DFS tree traversal across levels that does not match the tree ordering | `inout` parameter | `ConvertBinarySearchTreeToSortedDoublyLinkedList` |
 | Find left and right bounds of a value in a sorted array | `Binary search` with a result value | `FindFirstAndLastPositionOfElementInSortedArray` |
 | Sum values together in a sorted array to match a target | `Two pointers` | `Foursum` |
-| You must write an algorithm that runs in `O(n)` time | Make multiple passes | `LongestConsecutiveSequence` |
+| Run in `O(n)` time | Make multiple passes | `LongestConsecutiveSequence` |
 | Repeatedly remove elements from an array | Turn array into `linked list` | `MinimumPairRemovalToSortArrayI` |
 | Find `x`th node from end of linked list | Two pointers, fast forward first pointer `x` nodes in | `RemoveNthNodeFromEndOfList` |
 | Pause recursion | Use an explicit rather than recursive implicit stack | `BinarySearchTreeIterator` |
